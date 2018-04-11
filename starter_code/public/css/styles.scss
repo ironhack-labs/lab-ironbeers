@@ -1,0 +1,28 @@
+// Imports
+@import 'media';
+@import 'mixins';
+@import 'colors';
+@import 'fonts';
+@import 'schematics';
+
+navbar{
+  @include box-shadow(5px,0,5px,$black)
+}
+a{
+  text-decoration: none;
+}
+nav{
+  transition: all 0.2s ease-out;
+  &:hover{
+    transform:scale(1.2,1.2);
+
+    &::before{
+      position: absolute;
+      content: url('/images/foam.png');
+      z-index: -1;
+      top: -10px;
+      left: calc(50% - 20px);
+    }
+  }
+}
+

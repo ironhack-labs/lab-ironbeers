@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Bubbler One';
+  src: url("/fonts/bubblerone-regular.ttf") format("truetype");
+}
+
+$skinny: 100;
+$slim: 300;
+$normal: 500;
+$bold: 700;
+
+$bubbler: 'Bubbler One', sans-serif;
+.selector {
+    font-family: $bubbler;
+}
+
+nav,footer{
+  font-family: $bubbler ,sans-serif;
+  font-weight: $bold;
+}
+nav{
+  font-size: 1.2em;
+}
+.beer, .random-beer{
+  font-family: $bubbler, sans-serif;
+}
+h2{
+  font-size: 1.3em;
+}
+html {
+  font-size: 18px;
+}

@@ -1,0 +1,230 @@
+@media screen and (max-width: 970px) {
+  h1::after {
+    display: none; } }
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680)); } }
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px; } }
+body {
+  background-color: #dfdfdf; }
+
+navbar {
+  background-color: #3182c2; }
+  navbar a {
+    color: white; }
+    navbar a:link, navbar a:active, navbar a:visited {
+      color: white; }
+
+article {
+  color: #333333; }
+  article a {
+    color: #3182c2;
+    transition: all 0.5s ease-out; }
+    article a:hover {
+      color: #0c2d41; }
+
+button {
+  border: none;
+  background-color: #3182c2;
+  color: white;
+  -webkit-box-shadow: 0 0 2px #333333;
+  -moz-box-shadow: 0 0 2px #333333;
+  box-shadow: 0 0 2px #333333; }
+
+footer {
+  background-color: #0c2d41;
+  color: white; }
+
+@font-face {
+  font-family: 'Bubbler One';
+  src: url("/fonts/bubblerone-regular.ttf") format("truetype"); }
+.selector {
+  font-family: "Bubbler One", sans-serif; }
+
+nav, footer {
+  font-family: "Bubbler One", sans-serif, sans-serif;
+  font-weight: 700; }
+
+nav {
+  font-size: 1.2em; }
+
+.beer, .random-beer {
+  font-family: "Bubbler One", sans-serif, sans-serif; }
+
+h2 {
+  font-size: 1.3em; }
+
+html {
+  font-size: 18px; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; }
+
+.container {
+  margin-top: 88px;
+  height: calc(100vh - 88px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.main {
+  width: 80%; }
+
+.splash {
+  width: auto;
+  height: 60vh;
+  margin: auto;
+  max-width: 100%;
+  z-index: 2;
+  transform: rotate(-10deg); }
+
+menu {
+  margin: 10px 0; }
+
+navbar {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  z-index: 99; }
+
+nav {
+  display: inline-block;
+  padding: 20px 10px;
+  color: white; }
+
+#beer {
+  height: 300px;
+  object-fit: contain;
+  margin-bottom: 10vh; }
+
+#beer-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.beer {
+  width: 30%;
+  display: flex;
+  flex-flow: column;
+  padding: 20px;
+  transition: all 0.3s ease-out;
+  position: relative; }
+  .beer::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    perspective: 100px;
+    transform-style: preserve-3d;
+    transform: translate(55%, 80%) rotateX(75deg);
+    z-index: 1;
+    background: -moz-radial-gradient(center, circle cover, #ccc7c7 0%, #dfdfdf 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ccc7c7), color-stop(100%, #dfdfdf));
+    background: -webkit-radial-gradient(center, circle cover, #ccc7c7 0%, #dfdfdf 100%);
+    background: -o-radial-gradient(center, circle cover, #ccc7c7 0%, #dfdfdf 100%);
+    background: -ms-radial-gradient(center, circle cover, #ccc7c7 0%, #dfdfdf 100%);
+    background: radial-gradient(center, circle cover, #ccc7c7 0%, #dfdfdf 100%);
+    background-color: #ccc7c7;
+    -webkit-box-shadow: 0 0 50px #ccc7c7;
+    -moz-box-shadow: 0 0 50px #ccc7c7;
+    box-shadow: 0 0 50px #ccc7c7; }
+  .beer:hover {
+    background: white;
+    -webkit-box-shadow: 0 0 10px #0c2d41;
+    -moz-box-shadow: 0 0 10px #0c2d41;
+    box-shadow: 0 0 10px #0c2d41; }
+  .beer .beer-img-top {
+    object-fit: contain;
+    height: 200px;
+    margin-bottom: 30px;
+    z-index: 2;
+    position: relative; }
+  .beer .beer-title {
+    margin: 0;
+    font-weight: 700; }
+  .beer .beer-tagline {
+    margin: 0;
+    color: grey; }
+  .beer .beer-text {
+    font-weight: 300;
+    line-height: 1.5em;
+    font-size: 16px;
+    text-align: justify;
+    text-justify: kashida; }
+
+.random-beer {
+  display: flex; }
+  .random-beer .beer-img-left {
+    position: relative;
+    object-fit: contain;
+    height: 200px;
+    margin-right: 100px;
+    z-index: 2;
+    transform: rotate(-30deg); }
+  .random-beer::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 100%;
+    transform: translate(-35%, 20%);
+    z-index: 1; }
+  .random-beer .beer-title {
+    margin: 0;
+    font-weight: 700; }
+  .random-beer .beer-tagline {
+    margin: 0;
+    color: grey; }
+  .random-beer .beer-text, .random-beer .beer-list, .random-beer .beer-tips {
+    font-weight: 300;
+    line-height: 1.5em;
+    font-size: 18px; }
+
+button {
+  padding: 15px 25px;
+  border-radius: 15px;
+  width: auto;
+  margin: 5px auto;
+  transition: all 0.3s ease-out; }
+  button:hover {
+    background-color: #0c2d41; }
+
+footer {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  bottom: 0; }
+  footer p {
+    padding: 0 20px; }
+
+navbar {
+  -webkit-box-shadow: 5px 0 5px black;
+  -moz-box-shadow: 5px 0 5px black;
+  box-shadow: 5px 0 5px black; }
+
+a {
+  text-decoration: none; }
+
+nav {
+  transition: all 0.2s ease-out; }
+  nav:hover {
+    transform: scale(1.2, 1.2); }
+    nav:hover::before {
+      position: absolute;
+      content: url("/images/foam.png");
+      z-index: -1;
+      top: -10px;
+      left: calc(50% - 20px); }
+
+/*# sourceMappingURL=styles.css.map */
