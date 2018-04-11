@@ -72,3 +72,32 @@ body {
 .card-text {
   font-size: 0.9rem;
 }
+
+.single-img-beer {
+  height: 40vh;
+  text-align: center;
+}
+
+.single-img-beer img {
+  height: 100%;
+}
+
+.single-info-beer h1 {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.single-info-beer h2 {
+  font-size: 1.2rem;
+  color: grey;  
+  font-weight: bold;
+}
+
+.single-info-beer h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.brewers {
+  font-weight: bold;
+}
