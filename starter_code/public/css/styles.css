@@ -26,8 +26,12 @@ font-family: Arial, Helvetica, sans-serif
     color: white;
 }
 
+.list-inline-item a:hover {
+    color: red;
+}
+
 .mifooter {
-    margin:0;
+    margin: 0;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -39,10 +43,39 @@ font-family: Arial, Helvetica, sans-serif
 }
 
 .mitext {
-  vertical-align: center;
-  padding-top: 15px;
+    vertical-align: center;
+    padding-top: 15px;
+}
+
+.mitext:hover {
+    color: red;
 }
 
 .smiley {
-  color: red;
+    color: red;
+}
+
+.beer-image {
+    padding-top: 80px;
+    width: 60%;
+    margin-left: 50px;
+}
+
+.buttons {
+    padding-top: 50px;
+    margin-right: 190px;
+}
+
+.mi-button {
+    padding: 7px 15px;
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.mi-button:hover {
+    color: red;
+}
+
+.index-padding {
+    padding-left: 50px;
 }
