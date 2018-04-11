@@ -1,0 +1,20 @@
+{{#with cerves}}
+<div class = "row">
+    <div class = "col-md-4 rand-img"/>
+    <img src = "{{this.image_url}}" alt = "{{this.name}}"/>
+    </div>
+    <div class = "col-md-6 rand-text">
+        <h1>{{this.name}}</h1>
+        <h2>{{this.tagline}}</h2>
+        <p>{{this.description}}</p>
+
+        <h3>Food Pairing</h3>
+        <ul>
+            {{#each food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p><span class = "tips">Brewers Tips: </span>{{this.brewers_tips}}</p>
+    </div>
+</div>
+{{/with}}
