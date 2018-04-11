@@ -63,7 +63,7 @@ footer {
 /* ----------BEERS---------- */
 
 .beer-file {
-  padding: 10px 50px;
+  padding: 20px 50px;
   vertical-align: top;
 }
 
@@ -73,7 +73,7 @@ footer {
   margin-bottom: 20px;
 }
 
-.beer-file img {
+.img img {
   height: 100%;
 }
 
@@ -94,3 +94,42 @@ p {
 }
 
 /* ----------RANDOM-BEER---------- */
+
+.random-beer-container h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.random-beer-container h3 {
+  font-size: 1.1rem;
+  color: rgba(145, 145, 145, 0.481);
+  margin-bottom: 16px;
+}
+
+.random-beer-container p {
+  text-align: justify;
+  font-size: 1.1rem;
+}
+
+.img-rndm {
+  height: 300px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.img-rndm img {
+  height: 100%;
+}
+
+.random-beer-container {
+  padding: 50px 0;
+}
+
+li {
+  font-size: 1.1rem;
+}
+
+span {
+  font-weight: bold;
+}
