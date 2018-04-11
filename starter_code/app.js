@@ -1,4 +1,3 @@
-
 const express = require('express');
 const hbs     = require('hbs');
 const app     = express();
@@ -10,8 +9,20 @@ app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+//Home Page
 app.get('/', (req, res, next) => {
   res.render('index');
+});
+
+//Beers Page
+app.get('/beers', (req, res, next) => {
+  res.render('beers');
+});
+
+//Random beer
+app.get('/random-beers', (req, res, next) => {
+  res.render('random');
 });
 
 
