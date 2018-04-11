@@ -17,7 +17,7 @@ h2 {
   font-size: 2.0em; }
 
 h3 {
-  font-size: 1.8em; }
+  font-size: 1.6em; }
 
 h4 {
   font-size: 1.6em; }
@@ -26,7 +26,7 @@ h5 {
   font-size: 1.4em; }
 
 p {
-  font-size: 1.2em; }
+  font-size: 1.3em; }
 
 a {
   text-decoration: none;
@@ -103,5 +103,30 @@ a {
   .footer h3 {
     align-self: center;
     margin-left: 4rem; }
+
+.beer-list-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 90px; }
+  .beer-list-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+
+.beer-item {
+  width: 30%;
+  margin-top: 30px;
+  padding: 10px;
+  text-align: center; }
+  .beer-item img {
+    max-width: 200px;
+    max-height: 250px; }
+
+.beer-description {
+  margin-top: 20px;
+  text-align: left !important; }
+  .beer-description h3 {
+    color: rgba(145, 145, 145, 0.481); }
 
 /*# sourceMappingURL=style.css.map */

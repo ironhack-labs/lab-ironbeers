@@ -1,0 +1,30 @@
+.beer-list-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.beer-item {
+    width: 30%;
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+    img {
+        max-width: 200px;
+        max-height: 250px;
+    }
+}
+
+.beer-description {
+    margin-top: 20px;
+    text-align: left !important;
+    h3{
+        color: $grey;
+    }
+}
