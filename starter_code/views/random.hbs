@@ -1,0 +1,30 @@
+
+<div class="random-container">
+  
+
+  <section class="random-content">
+    <div class="random-column">
+      <img height="430px" src="{{image_url}}">
+    </div>
+    <div class="random-column">
+      <h1>{{name}}</h1>
+      <h3>{{tagline}}</h3>
+      <hr>
+      <p>{{description}}</p>
+      <div>
+        <h3>Pairing</h3>
+        <ul>
+          {{#each food_pairing}} 
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div>
+        <p><b>Brewers tips:</b> {{brewers_tips}}</p>
+      </div>
+
+    </div>
+  </section>
+
+</div>
