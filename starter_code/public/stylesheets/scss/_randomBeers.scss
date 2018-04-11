@@ -1,0 +1,40 @@
+.beer-random-container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    margin-bottom: 90px;
+}
+
+.beer-random-content {
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    img {
+        max-height: 300px;
+    }
+}
+
+.beer-random-description {
+    margin: 0 0 0 60px;
+    text-align: left !important;
+    h2{
+        margin-bottom: 1rem;
+    }
+    h3{
+        color: $grey;
+    }
+    h4{
+        margin: 1rem 0 1rem 0;
+    }
+    p{
+        margin-top: 0.7rem;
+        font-size: 0.9rem;
+    }
+    ul{
+        padding-left: 3rem;
+        li{
+            font-size: 0.9rem;
+            list-style-type: disc;
+        }
+    }
+}
