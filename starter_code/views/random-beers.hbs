@@ -1,0 +1,15 @@
+<div class="beerRandomn">
+    <img class="birraimgR col-md-6" src="{{this.image_url}}" alt="beers image">
+    <div class="bodegonR">
+        <h4 class="titleR">{{this.name}}</h4>
+        <h5 class="taglineR">{{this.tagline}}</h5>
+        <p class="descriptionR">{{this.description}}</p>
+        <p class="foodR"><b>Food Pairing</b>
+        {{#each food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}</p>
+        <p class="brewerR">
+          <b>Brewers Tips: </b> {{brewers_tips}}
+        </p>
+    </div>
+</div>
