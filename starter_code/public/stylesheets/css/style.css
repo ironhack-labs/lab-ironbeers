@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #e8f6ff;
+  font: 62.5%/1.5 "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
+  color: #000000; }
+
+li {
+  list-style-type: none; }
+
+h1 {
+  font-size: 2.2em; }
+
+h2 {
+  font-size: 2.0em; }
+
+h3 {
+  font-size: 1.6em; }
+
+h4 {
+  font-size: 1.6em; }
+
+h5 {
+  font-size: 1.4em; }
+
+p {
+  font-size: 1.3em; }
+
+a {
+  text-decoration: none;
+  color: #F7F9F9; }
+  a:hover {
+    text-decoration-style: none; }
+
+.btest {
+  border: 1px solid red; }
+
+.index-container {
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  justify-content: center; }
+  .index-container .container {
+    margin: 1rem 0 1rem 0;
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .index-container .container img {
+      height: 250px;
+      width: auto;
+      margin-bottom: 2rem; }
+    .index-container .container a {
+      font-size: 1rem;
+      margin: 10px 0 10px 0;
+      padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+      color: #F7F9F9;
+      font-weight: bold;
+      background-color: #2081C3;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 1px 2px 4px #8a8a8a; }
+      .index-container .container a:hover {
+        color: #9dd8ff; }
+      .index-container .container a:active {
+        background-color: #0A2C42; }
+
+.container-fluid {
+  width: 100%; }
+
+.container {
+  width: 80%;
+  max-width: 1100px; }
+
+.nav {
+  height: 6.5em;
+  color: #F7F9F9;
+  background-color: #2081C3;
+  box-shadow: 1px 2px 7px #8a8a8a;
+  display: flex;
+  justify-content: center; }
+
+.navbar {
+  align-self: center; }
+  .navbar li {
+    display: inline;
+    font-size: 1.0rem;
+    margin-right: 14px; }
+    .navbar li a {
+      font-weight: bold; }
+      .navbar li a:hover {
+        color: #9dd8ff; }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 6.5em;
+  color: #F7F9F9;
+  background-color: #0A2C42;
+  display: flex;
+  justify-content: left; }
+  .footer h3 {
+    align-self: center;
+    margin-left: 4rem; }
+
+.beer-list-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 90px; }
+  .beer-list-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+
+.beer-item {
+  width: 30%;
+  margin-top: 30px;
+  padding: 10px;
+  text-align: center; }
+  .beer-item img {
+    max-width: 200px;
+    max-height: 250px; }
+
+.beer-description {
+  margin-top: 20px;
+  text-align: left !important; }
+  .beer-description h3 {
+    color: rgba(145, 145, 145, 0.481); }
+
+.beer-random-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto;
+  margin-bottom: 90px; }
+
+.beer-random-content {
+  width: 65%;
+  margin: 0 auto;
+  display: flex; }
+  .beer-random-content img {
+    max-height: 300px; }
+
+.beer-random-description {
+  margin: 0 0 0 60px;
+  text-align: left !important; }
+  .beer-random-description h2 {
+    margin-bottom: 1rem; }
+  .beer-random-description h3 {
+    color: rgba(145, 145, 145, 0.481); }
+  .beer-random-description h4 {
+    margin: 1rem 0 1rem 0; }
+  .beer-random-description p {
+    margin-top: 0.7rem;
+    font-size: 0.9rem; }
+  .beer-random-description ul {
+    padding-left: 3rem; }
+    .beer-random-description ul li {
+      font-size: 0.9rem;
+      list-style-type: disc; }
+
+/*# sourceMappingURL=style.css.map */

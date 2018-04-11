@@ -1,0 +1,46 @@
+.container-fluid {
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+}
+
+.nav {
+    height: 6.5em;
+    color: $white;
+    background-color: $light-blue;
+    box-shadow: 1px 2px 7px rgb(138, 138, 138);
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    align-self: center;
+    li {
+        display: inline;
+        font-size: 1.0rem;
+        margin-right: 14px;
+        a {
+            font-weight: bold;
+            &:hover {
+                color: $link-hover;
+            }
+        }
+    }
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    height: 6.5em;
+    color: $white;
+    background-color: $dark-blue;
+    display: flex;
+    justify-content: left;
+    h3{
+        align-self: center;
+        margin-left: 4rem;
+    }
+}
