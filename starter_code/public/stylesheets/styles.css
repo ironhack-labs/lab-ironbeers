@@ -5,4 +5,137 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+
+/* ---- reset ---- */
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
   
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /* ---- typography ---- */
+  
+  body {
+    color: #111;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 147%;
+  }
+  
+  h1 {}
+  
+  h2 {}
+  
+  h3 {}
+  
+  p {
+    margin: 0;
+  }
+  
+  
+  
+  /* ---- layout ---- */
+  
+  .nav ul{
+    background-color: #2081C3;
+}
+  
+.nav li {
+    display:inline-block;
+    padding: 10px 20px;
+}
+.nav a{
+    color:white;
+}
+  .footer {
+    color: white;
+    padding: 10px 30px;
+    background: #0A2C42;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  #site-main {
+    margin-bottom: 60px;
+  }
+  
+  .container {
+    margin: 0 20px;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 728px;
+      margin: 0 auto;
+    }
+  }
+  
+  
+  
+  
+  /* ---- components ---- */
+   /* ---- index ---- */
+   .index-container {
+        margin: 0 20px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+   }
+
+   .index-container img{
+        max-height: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        padding-top: 20px;
+   }
+
+   .index-container a{
+       display:block;
+       max-width: 300px;
+       margin-left: auto;
+       margin-right: auto;
+       padding:20px 40px;
+       background-color:  #2081C3;;
+       color:white;
+       border-radius: 10px;
+       text-align: center;
+       box-shadow: 2px 2px grey;
+       margin-bottom: 20px;
+   }
+
+    /* ---- beers ---- */
+    .beers-container {
+        margin: 0 20px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .beers-container p{
+        color:red;
+    }
+     /* ---- randomBeers---- */
+     .randomBeers-container {
+        margin: 0 20px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .randomBeers-container p{
+        color:blue;
+    }
