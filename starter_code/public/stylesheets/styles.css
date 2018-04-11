@@ -80,4 +80,11 @@ p.descrip {
 h5 {
   font-size: 30px; }
 
+  button a{
+    
+      text-decoration: none;
+      color: white;
+    
+  }
+
 /*# sourceMappingURL=styles.css.map */
