@@ -5,4 +5,79 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+header {
+  background-color: #2081C3; }
+  header ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px; }
+    header ul li a {
+      text-decoration: none;
+      color: #F7F9F9; }
+
+footer {
+  background-color: #0A2C42; }
+  footer .footer {
+    color: #F7F9F9;
+    padding: 20px; }
+
+.centrar {
+  text-align: center; }
+
+.imagen-birra {
+  width: 40%;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.btn-color {
+  background-color: #2081C3;
+  margin-top: 30px; }
+
+.img-birra-api {
+  max-width: 100px;
+  height: 100px; }
+
+.altura {
+  height: 105px;
+  margin-top: 20px; }
+
+h2 {
+  font-size: 20px;
+  font-weight: bold; }
+
+h3 {
+  font-size: 15px;
+  color: rgba(145, 145, 145, 0.481); }
+
+p {
+  font-size: 10px;
+  font-weight: bold; }
+
+.texto-birra {
+  margin-bottom: 20px; }
+
+.row {
+  margin-bottom: 100px; }
+
+h4 {
+  font-weight: bold;
+  font-size: 40px; }
+
+h5.grey {
+  color: rgba(145, 145, 145, 0.481);
+  font-size: 30px; }
+
+p.descrip {
+  font-weight: bold;
+  font-size: 20px; }
+
+.img-una {
+  height: 300px; }
+
+.margin-random {
+  margin-top: 40px; }
+
+h5 {
+  font-size: 30px; }
+
+/*# sourceMappingURL=styles.css.map */
