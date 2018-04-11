@@ -1,0 +1,80 @@
+@import "variables";
+
+body {
+  background-color: $grey;
+  font-family: $font;
+  font-size: $fsize;
+  padding-bottom:100px; 
+  h5 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  h6 {
+    color: $grey;
+  }
+}
+
+#nav {
+  margin: 0;
+  padding: 0;
+  background-color: $light-blue;
+  height: 100px;
+  width: 100%;
+  li {
+    display: inline-block;
+    padding: 30px;
+    margin: 0;
+    text-decoration-style: none;
+    color: $white;
+    a {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+}
+
+footer {
+	height: 100px;
+	background-color: $dark-blue;
+	width: 100%;
+  color: $white;
+  position: fixed;
+  bottom: 0;
+	p {
+		vertical-align: middle;
+		padding: 15px 25px;
+	}
+}
+
+#landingcover {
+  padding-top: 40px;
+  img {
+    display:block;
+    margin: 0 auto;
+  }
+  .btn {
+    display:block;
+    margin: 20px auto;
+    width: 300px;
+  }
+}
+
+.beer-container {
+  justify-content: center;
+  padding: 40px;
+  img {
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  .beer-text {
+    width: 80%
+  }
+
+}
+
+#random-beer-container {
+  padding: 50px;
+}
