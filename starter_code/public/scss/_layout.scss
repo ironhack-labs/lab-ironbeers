@@ -1,0 +1,37 @@
+.nav-layout {
+  height: 50px;
+  padding: 0;
+  margin: 0 auto;
+  background-color: $linght-blue;
+  display: flex;
+  justify-content: start;
+
+  ul {
+    align-self: center;
+    margin: 0;
+    text-align: start;
+    li {
+      display: inline;
+      padding-right: 10px;
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.last-class {
+  background-color: $dark-blue;
+  box-sizing: border-box;
+  display: flex;
+  position: fixed;
+  bottom: 0;  
+  width: 100%;
+  div {
+    padding-left: 20px;
+    justify-content: start;
+    p{
+      margin:14px 0px;      
+    }
+  }
+}

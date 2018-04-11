@@ -9,10 +9,40 @@ const punkAPI = new PunkAPIWrapper();
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
+hbs.registerPartials(__dirname + '/views/partials');
 
-app.get('/', (req, res, next) => {
-  res.render('index');
+app.get('/', (req, res) => {
+  const data = {
+    title: "Home"
+  }
+  res.render('index', data);
+});
+app.get('/beers', (req, res) => {
+  const data = {
+    title: "Beers"
+  }
+  punkAPI.getBeers()
+  .then(beers => {
+    data.beer = beers;
+    res.render('beers', data);
+  })
+  .catch(error => {
+    console.log(error)
+  })
+});
+app.get('/randomBeers', (req, res) => {
+  const data = {
+    title: "Random Beers"
+  }
+  punkAPI.getRandom()
+  .then(beers => {
+    data.beer = beers;
+    res.render('randomBeers', data);
+  })
+  .catch(error => {
+    console.log(error)
+  })
 });
 
 
-app.listen(3000);
+app.listen(3000, () => console.log(`Listening`));
