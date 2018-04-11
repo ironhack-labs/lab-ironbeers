@@ -1,0 +1,38 @@
+@import "variables";
+
+body {
+  background-color: $grey;
+  font-family: $font;
+  font-size: $fsize;
+}
+
+#nav {
+  margin: 0;
+  padding: 0;
+  background-color: $light-blue;
+  height: 100px;
+  width: 100%;
+  li {
+    display: inline-block;
+    padding: 30px;
+    margin: 0;
+    text-decoration-style: none;
+    a:link {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+}
+
+footer {
+	height: 100px;
+	background-color: $dark-blue;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	color: $white;
+	p {
+		vertical-align: middle;
+		padding: 15px 25px;
+	}
+}
