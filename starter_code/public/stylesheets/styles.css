@@ -72,3 +72,11 @@ a{
 .tips{
   margin-top: 2%;
 }
+
+.random-allBeers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4%;
+  width: 200px;
+}
