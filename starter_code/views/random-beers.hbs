@@ -1,0 +1,62 @@
+
+<div class="index-container">
+
+    <section class="col-left">
+        <img class="random-beer-image" src="{{randomBeer.image_url}}"/>
+    </section>
+
+    <section class="col-right">
+
+        <h2>{{randomBeer.name}}</h2>
+        <h3>{{randomBeer.tagline}}</h3>
+
+        <p>{{randomBeer.description}}</p>
+
+        <section>
+            <h4>Food pairing :</h4>
+            <ul>
+                {{#each foodPairing}}
+                    <li>{{this}}</li>
+
+                {{/each}}
+            </ul>
+        </section>
+
+        <p><b>Brewers tips : </b>{{randomBeer.brewers_tips}}</p>
+
+    </section>
+    
+</div>
+
+
+
+
+
+
+
+
+
+{{!-- [ { id: 184,
+    name: 'Atlantic IPA Ale',
+    tagline: 'IPA Of Yesteryear.',
+    first_brewed: '12/2008',
+    description: 'Like IPA historically would have been. Part of this beer was aged on a fishing boat in an oak cask and released as "Atlantic IPA".',
+    image_url: 'https://images.punkapi.com/v2/184.png',
+    abv: 8,
+    ibu: 80,
+    target_fg: 1013,
+    target_og: 1074,
+    ebc: 55,
+    srm: 13,
+    ph: 4.4,
+    attenuation_level: 82,
+    volume: { value: 20, unit: 'liters' },
+    boil_volume: { value: 25, unit: 'liters' },
+    method: { mash_temp: [Array], fermentation: [Object], twist: null },
+    ingredients: { malt: [Array], hops: [Array], yeast: 'Safale US-05' },
+    food_pairing:
+     [ 'Smoked venison sausage',
+       'Very mature Cheddar',
+       'Fettucine alfredo' ],
+    brewers_tips: 'Ensure you aerate the wort to get a nice clean fermentation and really get the best out of the UK hops.',
+    contributed_by: 'Sam Mason <samjbmason>' } ] --}}

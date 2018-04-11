@@ -5,4 +5,187 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* background: rgba(145, 145, 145, 0.481);; */
+}
+
+.nav-bar {
+    width:100%;
+    height:70px;
+    background-color: #2081C3;
+    padding-left:50px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.432);
+    margin-bottom: 60px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 99;
+}
+
+.nav-bar li {
+    color:#fff;
+    float: left;
+    list-style: none;
+    padding-top:25px;
+}
+
+.nav-bar li a {
+    color:#fff;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+.footer {
+    width:100%;
+    height:70px;
+    background-color: #0A2C42;
+    padding-left:50px;
+    box-sizing: border-box;
+}
+
+.footer p {
+    padding-top:25px;
+    color:#fff;
+    margin-top:60px;
+}
+
+.clear {
+    clear: both;
+}
+
+.index-container {
+    width:1200px;
+    margin:0 auto;
+    padding-top: 130px;
+}
+
+.home-page-image {
+    width:350px;
+    width:350px;
+    margin:0 auto;
+    display: block;
+}
+
+.button-section {
+    margin-top:60px;
+}
+
+.btn {
+    display: block;
+    background-color: #2081C3;
+    width:150px;
+    height:40px;
+    color:#fff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin:10px auto;
+}
+
+.btn:hover {
+    background-color: #0A2C42;
+}
+
+.btn a {
+    color:#fff;
+    text-decoration: none;
+}
+
+.beer-list-item {
+    /* background-color: rgb(226, 226, 226); */
+    float: left;
+    width:33%;
+    height: 630px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    /* border:1px solid #ddd; */
+}
+
+.beer-list-img {
+    height:264px;
+    display: block;
+    margin: 0 auto;
+}
+
+.beer-list-item h2 {
+    text-align: center;
+    padding-top:25px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.beer-list-item h3 {
+    text-align: center;
+    color:rgba(145, 145, 145, 0.481);
+    font-size: 16px;
+    padding-bottom: 10px;
+    height:45px;
+}
+
+.beer-list-item p {
+    text-align: justify;
+    font-size: 14px;
+    border-bottom:1px solid #ccc;
+    height:230px;
+}
+
+.col-left {
+    float: left;
+    width:25%;
+    /* background: #ddd; */
+    box-sizing: border-box;
+}
+
+.random-beer-image {
+    height:350px;
+    display: block;
+    margin: 0 auto;
+}
+
+.col-right {
+    float: left;
+    width:75%;
+    /* background: #bbb; */
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-bottom: 120px;
+}
+
+.col-right h2 {
+    font-size:28px;
+    padding-bottom: 20px;
+}
+
+.col-right h3 {
+    font-size:22px;
+    color:rgba(145, 145, 145, 0.481);
+    padding-bottom: 20px;
+}
+
+.col-right h4 {
+    font-size:16px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.col-right ul {
+    padding-bottom: 20px;
+}
+
+.col-right li {
+    margin-left:40px;
+    line-height: 24px;
+}
+
+.col-right p {
+    font-size:16px;
+    text-align: justify;
+    padding-bottom: 20px;
+}
