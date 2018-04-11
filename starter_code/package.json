@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "dev": "nodemon -e js,json,hbs ./app.js",
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,6 +14,6 @@
     "express": "^4.16.2",
     "hbs": "^4.0.1",
     "path": "^0.12.7",
-    "punkapi-javascript-wrapper": "^1.0.2",
+    "punkapi-javascript-wrapper": "^1.0.2"
   }
 }

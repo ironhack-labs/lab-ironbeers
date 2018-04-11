@@ -5,4 +5,80 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+
+
+
+.nav {
+    background-color: #2081C3;
+    height: 70px;
+}
   
+.nav a{
+    color:white;
+    padding-top: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    
+}
+
+.nav-link-home {
+    padding-left: 120px;
+}
+
+ .fixed-bottom {
+
+    
+    background-color: #0A2C42;
+    
+   
+   } 
+   
+   .container .text-muted {
+      margin: 20px 0;
+      color: #F7F9F9;
+    
+     }
+
+   
+
+   .col-4 {
+       margin-top: 100px;
+       margin-bottom: 40px;
+   }
+
+   .col-md-12 {
+       margin-top: 20px;
+   }
+
+   .btn {
+       margin-top: 15px;
+       background-color: #2081C3 !important;
+       border: none;
+       
+   }
+
+   .img-beer {
+       height: 300px;
+    
+   }
+
+   .img-beer img {
+       height: 100%;
+       margin-top: 20px;
+       padding-bottom: 25px;
+     }
+
+     .text-beer {
+         padding: 15px;
+     }
+
+     .one-beer-img img{
+         height: 650px;
+         padding-top: 90px;
+     }
+
+     .one-info-beer {
+         padding-top: 80px;
+     }
+
+   
