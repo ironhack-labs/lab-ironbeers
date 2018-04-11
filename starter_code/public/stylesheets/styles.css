@@ -13,20 +13,29 @@ body {
     display: inline-block;
     padding: 30px;
     margin: 0;
-    text-decoration-style: none; }
-    #nav li a:link {
+    text-decoration-style: none;
+    color: #F7F9F9; }
+    #nav li a {
       text-decoration: none;
       color: #F7F9F9; }
 
 footer {
   height: 100px;
   background-color: #0A2C42;
-  position: fixed;
-  bottom: 0;
   width: 100%;
   color: #F7F9F9; }
   footer p {
     vertical-align: middle;
     padding: 15px 25px; }
+
+#beercontainer {
+  padding-top: 40px; }
+  #beercontainer img {
+    display: block;
+    margin: 0 auto; }
+  #beercontainer .btn {
+    display: block;
+    margin: 20px auto;
+    width: 300px; }
 
 /*# sourceMappingURL=styles.css.map */

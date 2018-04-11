@@ -17,7 +17,8 @@ body {
     padding: 30px;
     margin: 0;
     text-decoration-style: none;
-    a:link {
+    color: $white;
+    a {
       text-decoration: none;
       color: $white;
     }
@@ -27,12 +28,23 @@ body {
 footer {
 	height: 100px;
 	background-color: $dark-blue;
-	position: fixed;
-	bottom: 0;
 	width: 100%;
 	color: $white;
 	p {
 		vertical-align: middle;
 		padding: 15px 25px;
 	}
+}
+
+#beercontainer {
+  padding-top: 40px;
+  img {
+    display:block;
+    margin: 0 auto;
+  }
+  .btn {
+    display:block;
+    margin: 20px auto;
+    width: 300px;
+  }
 }
