@@ -73,10 +73,15 @@ a{
   margin-top: 2%;
 }
 
-.random-allBeers{
+.random-allBeer{
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 4%;
-  width: 200px;
+
+}
+
+.random-allBeer img{
+  width: 150px;
+  height: 450px;
 }
