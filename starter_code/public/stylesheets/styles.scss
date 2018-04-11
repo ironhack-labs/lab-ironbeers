@@ -4,6 +4,15 @@ body {
   background-color: $grey;
   font-family: $font;
   font-size: $fsize;
+  padding-bottom:100px; 
+  h5 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  h6 {
+    color: $grey;
+  }
 }
 
 #nav {
@@ -29,7 +38,9 @@ footer {
 	height: 100px;
 	background-color: $dark-blue;
 	width: 100%;
-	color: $white;
+  color: $white;
+  position: fixed;
+  bottom: 0;
 	p {
 		vertical-align: middle;
 		padding: 15px 25px;
@@ -61,12 +72,9 @@ footer {
   .beer-text {
     width: 80%
   }
-  h5 {
-    color: black;
-    font-weight: bold;
-    font-size: 1.5em;
-  }
-  h6 {
-    color: $grey;
-  }
+
+}
+
+#random-beer-container {
+  padding: 50px;
 }
