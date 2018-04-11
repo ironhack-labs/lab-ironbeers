@@ -1,0 +1,12 @@
+<div class="beers">
+  {{#with randombeer}}
+    <img src="{{image_url}}" width=150 />
+    <h2>{{name}}</h2>
+    <h3>{{tagline}}</h3>
+    <h3>{{description}}</h3>
+  {{#each food_pairing}}
+  <li>{{this}}</li>
+  {{/each}}
+  {{/with}}  
+
+</div>
