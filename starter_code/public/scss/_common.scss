@@ -1,0 +1,39 @@
+footer {
+  height: 60px;
+  color: white;
+  padding-top:20px;
+  background-color: $footer-color;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.navbar {
+  background-color: $navbar-color;
+  color: white;
+}
+.nav-link {
+  color: white;
+}
+.beer-img {
+  align-self: center;
+  margin: 0 auto;
+  justify-self: center;
+  padding-top: 50px;
+}
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+.btn {
+  width: 300px;
+  align-self: center;
+  margin-top: 20px;
+}
