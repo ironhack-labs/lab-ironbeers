@@ -103,3 +103,18 @@ font-family: Arial, Helvetica, sans-serif
 .card-text {
     font-size: 14px;
 }
+
+.randomb-container {
+  width: 80%;
+  padding-top: 80px;
+}
+
+.randomb-row {
+  
+}
+
+
+
+.partial-image {
+  max-height: 300px;
+}
