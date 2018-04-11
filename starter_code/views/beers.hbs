@@ -1,0 +1,8 @@
+<section class="beers all">
+  <h2>All beers</h2>
+  {{#each allBeers}}
+  <div class="beers">
+    {{> beerPartial this }}
+  </div>
+  {{/each}}
+</section>
