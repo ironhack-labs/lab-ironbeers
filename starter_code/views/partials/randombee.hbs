@@ -1,0 +1,22 @@
+<div class="col-md-2">
+    <div class="img-beer">
+        <img src="{{image_url}}" alt="">
+    </div>
+</div>
+<div class="col-md-6 randomBeer-margin">
+    
+        <h2>{{name}}</h2>
+        <p>{{tagline}}</p>
+        <p>{{description}}</p>
+        <p>
+            <b>Food Pairing</b>
+        </p>
+        <ul>
+            {{#each food_pairing}}
+            <li>
+                <p>{{this}}</p>
+            </li> {{/each}}
+        </ul>
+        <p>{{brewers_tips}}</p>
+    
+</div>
