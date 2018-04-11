@@ -4,15 +4,22 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
   "dependencies": {
     "express": "^4.16.2",
     "hbs": "^4.0.1",
     "path": "^0.12.7",
-    "punkapi-javascript-wrapper": "^1.0.2",
+    "punkapi-javascript-wrapper": "^1.0.2"
   }
 }
