@@ -5,4 +5,39 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5vh 0 0;
+  padding: 0;
+}
+
+ul { margin: 0; padding: 0; }
+
+nav {
+  width: 100%;
+  height: 5vh;
+  background-color: #2081C3;
+  position: fixed;
+  top: 0;
+}
+
+nav li { display: inline-block; }
+
+nav a { color: #F7F9F9; }
+
+footer {
+  width: 100%;
+  height: 5vh;
+  position: fixed;
+  bottom: 0;
+  background-color: #0A2C42;
+  color: #F7F9F9;
+}
+
+.btn {
+  color: #F7F9F9;
+  background-color: #2081C3;
+  display: block;
+  margin: 1rem 0;
+}
