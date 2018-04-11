@@ -1,0 +1,24 @@
+{{#with beer}}
+
+<div class="row">
+<div class="col-md-4 single-img-beer">
+  <img src="{{image_url}}" alt="{{name}}">
+</div>
+
+<div class="col-md-6 single-info-beer">
+  <h1>{{name}}</h1>
+  <h2>{{tagline}}</h2>
+  <p>{{description}}</p>
+
+  <h3>Food Pairing</h3>
+  <ul>
+  {{#each food_pairing}}
+    <li>{{ this }}</li>
+  {{/each}}
+  </ul>
+
+  <p><span class="brewers">Brewers Tips:</span> {{brewers_tips}}</p>
+</div>
+</div>
+
+{{/with}}

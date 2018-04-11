@@ -6,3 +6,98 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+body {
+  background-color: rgba(145, 145, 145, 0.481);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #2081c3;
+  padding: 10px;
+}
+
+.header a {
+  color: #F7F9F9;
+}
+
+.footer {
+  background-color: #0a2c42;
+  padding: 10px;
+  color: #F7F9F9;
+}
+
+.main-container {
+  margin-top: 80px;
+}
+
+.beer-image {
+  width: 400px;
+}
+
+.index-block {
+  margin: 20px 0;
+}
+
+.btn-primary {
+  background-color: #2081c3;
+}
+
+.btn-primary a {
+  color: #F7F9F9;
+} 
+
+.card-beer {
+  margin-bottom: 50px;
+}
+
+.beer-img {
+  height: 200px;
+}
+
+.beer-img img {
+  height: 100%;
+}
+
+.card-beer h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-tagline {
+  color: grey;
+  line-height: 0.9rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.9rem;
+}
+
+.single-img-beer {
+  height: 40vh;
+  text-align: center;
+}
+
+.single-img-beer img {
+  height: 100%;
+}
+
+.single-info-beer h1 {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.single-info-beer h2 {
+  font-size: 1.2rem;
+  color: grey;  
+  font-weight: bold;
+}
+
+.single-info-beer h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.brewers {
+  font-weight: bold;
+}
