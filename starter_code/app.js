@@ -26,7 +26,15 @@ app.get('/beers', (req, res, next) => {
     lennyFace: "( ͡~ ͜ʖ ͡°)"
   };
 
-  res.render('beers', data);
+  punkAPI.getBeers()
+  .then(beers => {
+    res.render('beers', data);
+  })
+  .catch(error => {
+    console.log(error);
+  })
+
+
 });
 
 app.get('/random-beers', (req, res, next) => {
