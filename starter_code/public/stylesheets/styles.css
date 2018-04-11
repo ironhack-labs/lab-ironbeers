@@ -6,3 +6,93 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- typography ---- */
+
+body {
+  color: #111;
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 147%;
+}
+
+h1 {
+  margin: 24px 0 12px;
+  font-size: 28px;
+}
+
+h2 {
+  margin: 18px 0 12px;
+  font-size: 24px;
+}
+
+h3 {
+  margin: 12px 0 12px;
+  font-size: 20px;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+
+
+/* ---- layout ---- */
+
+#site-header {
+  padding: 30px 0;
+  color: #F7F9F9;
+  background:  #2081C3;
+}
+
+
+#site-footer {
+  color: #F7F9F9;
+  padding: 60px 0;
+  background: #0A2C42;
+}
+
+#site-main {
+  margin-bottom: 60px;
+}
+
+.container {
+  margin: 0 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 728px;
+    margin: 0 auto;
+  }
+}
+
+/*---------- Components--------*/
+
+.button {
+  color: #F7F9F9;
+  border-radius: 10px;
+  margin-bottom: 2%;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #2081C3;
+  border: 2px solid;
+}
