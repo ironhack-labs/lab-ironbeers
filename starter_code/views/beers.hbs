@@ -1,7 +1,7 @@
 <h1>beers</h1>
 
+<ul>
 {{#each beers}}
-  {{ this.id }}
+  <li class="listObj">{{> beerPartial this}}</li>
 {{/each}}
-
-<h2>hola</h2>
+</ul>
