@@ -29,14 +29,14 @@ app.get('/beers', (req, res, next) => {
   res.render('beers', data);
 });
 
-app.get('/random_beers', (req, res, next) => {
+app.get('/random-beers', (req, res, next) => {
 
   const data = {
     title: "Random Beers",
     lennyFace: "( ͡◉ ͜ʖ ͡◉)"
   };
 
-  res.render('random_beers', data);
+  res.render('random-beers', data);
 });
 
 
