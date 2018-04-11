@@ -36,7 +36,7 @@ footer {
 	}
 }
 
-#beercontainer {
+#landingcover {
   padding-top: 40px;
   img {
     display:block;
@@ -46,5 +46,27 @@ footer {
     display:block;
     margin: 20px auto;
     width: 300px;
+  }
+}
+
+.beer-container {
+  justify-content: center;
+  padding: 40px;
+  img {
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  .beer-text {
+    width: 80%
+  }
+  h5 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  h6 {
+    color: $grey;
   }
 }

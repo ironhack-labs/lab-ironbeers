@@ -1,7 +1,7 @@
 body {
   background-color: rgba(145, 145, 145, 0.481);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px; }
+  font-size: 16px; }
 
 #nav {
   margin: 0;
@@ -28,14 +28,31 @@ footer {
     vertical-align: middle;
     padding: 15px 25px; }
 
-#beercontainer {
+#landingcover {
   padding-top: 40px; }
-  #beercontainer img {
+  #landingcover img {
     display: block;
     margin: 0 auto; }
-  #beercontainer .btn {
+  #landingcover .btn {
     display: block;
     margin: 20px auto;
     width: 300px; }
+
+.beer-container {
+  justify-content: center;
+  padding: 40px; }
+  .beer-container img {
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px; }
+  .beer-container .beer-text {
+    width: 80%; }
+  .beer-container h5 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em; }
+  .beer-container h6 {
+    color: rgba(145, 145, 145, 0.481); }
 
 /*# sourceMappingURL=styles.css.map */
