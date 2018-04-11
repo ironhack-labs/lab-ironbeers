@@ -56,7 +56,7 @@ font-family: Arial, Helvetica, sans-serif
 body{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 11pt;
-  background-color:rgba(145, 145, 145, 0.2);
+  background-color:#d0cdc5;
 }
 
 h1 {
@@ -87,9 +87,9 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #2081C3; 
-  padding: 20px 0 15px 40px ;
-  height: 20px; 
+  background-color: rgb(49, 34, 34);
+  border-bottom: 1px #292929 solid; 
+  padding: 20px 0 15px 20px ;
   box-shadow: 0 1px 3px black;
   line-height: 0;
 }
@@ -97,32 +97,43 @@ nav {
 
 nav li{
   display:inline-block;
-  margin: 0 20px;
+  margin: 0 40px;
   
 }
 
-nav a {
+a {
   color: white;
   text-decoration: none;
 }
 
+a:hover {
+    opacity: 0.6;
+}
+
 footer {
+  text-align: center;
   position:fixed;
   bottom: 0;
   width: 100%;
   color: white;
   padding: 20px 0 15px 40px ;
   font-size: 10px;
-  background-color: #0A2C42;
+  background-color: rgb(31, 22, 22);
 }
 
 .index-container{
+  box-sizing: border-box;
+  padding-top: 120px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 80%;
-  margin: 60px auto;
-  padding: 0 60px;
+  width: 100%;
+  height: 100vh;
+  margin: 60 0 0 0;
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  background-position: left;
+  background-color: #525252;
 }
 
 .beer-block{
@@ -133,18 +144,23 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 button {
-  width: 160px;
-  box-shadow: 0 1px 2px grey;
-  background-color: #2081C3;
+  width: 180px;
+  box-shadow: 0 2px 4px rgb(78, 78, 78);
+  background-color: #f4ce33;
   color: white;
   border: 0;
   border-radius: 3px;
   padding: 10px;
-  margin: 5px;
+  margin: 10px;
+}
+
+button a{
+  color: #292929;
+  font-size: 14px;
 }
 
 .beer-container{
