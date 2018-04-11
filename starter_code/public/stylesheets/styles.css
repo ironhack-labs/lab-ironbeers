@@ -8,6 +8,7 @@ font-family: Arial, Helvetica, sans-serif
   
 body {
   background-color: rgba(145, 145, 145, 0.481);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
@@ -23,9 +24,10 @@ body {
   background-color: #0a2c42;
   padding: 10px;
   color: #F7F9F9;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+}
+
+.main-container {
+  margin-top: 80px;
 }
 
 .beer-image {
@@ -42,4 +44,31 @@ body {
 
 .btn-primary a {
   color: #F7F9F9;
+} 
+
+.card-beer {
+  margin-bottom: 50px;
+}
+
+.beer-img {
+  height: 200px;
+}
+
+.beer-img img {
+  height: 100%;
+}
+
+.card-beer h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-tagline {
+  color: grey;
+  line-height: 0.9rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.9rem;
 }
