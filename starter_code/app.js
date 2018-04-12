@@ -14,5 +14,18 @@ app.get('/', (req, res, next) => {
   res.render('index');
 });
 
+app.get('/beers', (req, res, next) => {
+  response.render ("layout.hbs");
+});
+
+app.get('/random-beers', (req, res, next) => {
+  const index = Math.floor (Math.random ()*2);
+  const chosenBeer = allBeer [index];
+
+  // "locals meaning the local variables INSIDE YOUR VIEWS"
+  response.locals.Beer = chosenBeer;
+  response.render ("layout.hbs");
+});
+
 
 app.listen(3000);
