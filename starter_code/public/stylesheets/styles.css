@@ -5,4 +5,79 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+body {
+  background-color: rgba(145, 145, 145, 0.481);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+header {
+  height: 50px;
+  color: #f7f9f9;
+  background-color: #2081c3;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  float: left;
+  margin-right: 25px;
+}
+
+footer {
+  color: #f7f9f9;
+  background-color: #0a2c42;
+  width: 100%;
+}
+
+.index-container {
+  margin: 0 auto;
+  width: 100px;
+  width: 350px;
+}
+
+button {
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #2081c3;
+  color: #f7f9f9;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.img-beer {
+  margin-top: 100px;
+  height: 400px;
+}
+
+.btn {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
+}
+
+a {
+  color: #f7f9f9;
+}
+
+#card {
+  float: left;
+  width: 300px;
+  margin: 20px;
+  height: 400px;
+}
+
+#img-card {
+  height: 150px;
+}
+
+#h2-card {
+  text-align: center;
+}
