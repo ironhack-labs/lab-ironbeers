@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BEERS</title>
+</head>
+<body>
+    <p>BEERS</p>
+    <p>{{beers0}}</p>
+
+    <ul>
+        {{#each beersList}}
+            <li>
+                partial();
+                <h2>{{this.name}}</h2>
+                <img src="{{this.image_url}}" alt="">
+            </li>
+        {{/each}}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,18 @@
+img{
+    margin: 5vh 35vw;
+    height: 50vh;
+    width: auto;
+}
+
+.index-container{
+    min-height: 80vh;
+}
+
+.beers{
+    margin-left: 42vw;
+}
+
+.random-beers{
+    margin-top: 3vh;
+    margin-left: 40.5vw;
+}
