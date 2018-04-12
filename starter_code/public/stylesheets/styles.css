@@ -5,4 +5,34 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.nav-iron-beers {
+  background-color: #2081C3;
+  padding: 10px;
+}
+.nav-iron-beers a {
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  margin-top:30px;
+}
+#site-footer {
+  background-color: #0A2C42;
+  color: white;
+}
+.index-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.index-container img {
+  padding: 30px;
+  margin: auto;
+}
+.index-container button {
+  padding: 6px;
+  margin: 6px;
+}
