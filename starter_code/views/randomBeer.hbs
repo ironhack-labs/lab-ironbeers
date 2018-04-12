@@ -1,0 +1,27 @@
+<div class="container margin-random">
+  <div class="row">
+  
+    {{#with beerArray}}
+  
+    <div class="col-md-3 ">
+      <img  src="{{this.image_url}}" alt="Birra" class="img-una">
+    </div>
+    <div class="col-md-9" >
+      <h4>{{this.name}}</h4>
+      <h5 class="grey">{{this.tagline}}</h5>
+      <p class="descrip">{{this.description}}</p>
+      <h5>Food pairing</h5>
+      {{#each this.food_pairing}}
+      <ul>
+        <li>{{this}}</li>
+      
+      </ul>
+
+      {{/each}}
+
+      <p class="descrip"><span>Brewers Tips: </span>{{this.brewers_tips}}</p>
+    </div>
+    {{/with}}
+  
+  </div>
+</div>
