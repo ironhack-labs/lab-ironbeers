@@ -1,4 +1,35 @@
 img{
-    height: 10vh;
+    height: 15vh;
     width: auto;
+    margin-bottom: 1vh;
+}
+
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item{
+    width: 25vw;
+    margin: 5vh 2vw;;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+li img{
+    margin-left: 7vw;
+}
+
+.tagline{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+li p {
+    text-align: justify;
+    font-size: 12px;
 }

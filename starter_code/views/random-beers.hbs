@@ -5,12 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Random-beers</title>
+    <link rel="stylesheet" href="/stylesheets/random-beers.css">
 </head>
 <body>
-    <p>RANDOM BEERS</p>
-    <h2>{{chosenBeer.name}}</h2>
-    <img src="{{chosenBeer.image_url}}" alt="">
-    <p>{{chosenBeer.description}}</p>
-    <p>{{chosenBeer.tagline}}</p>
+    <div class="box">
+        <div>
+            <img src="{{chosenBeer.image_url}}" alt="">
+        </div>
+
+        <div>
+            <h3>{{chosenBeer.name}}</h3>
+            <p class="tagline">{{chosenBeer.tagline}}</p>
+            <p class="description">{{chosenBeer.description}}</p>
+            <h5><b>Food Pairing: </b></h5>
+            <ul>
+                <li>{{str0}}</li>
+                <li>{{str1}}</li>
+                <li>{{str2}}</li>
+            </ul>
+            {{!-- <p class="pairing">{{chosenBeer.food_pairing}}</p> --}}
+            <p class="brewer"><b>Brewer Tips:</b> {{chosenBeer.brewers_tips}}</p>
+        </div>
+    </div>
 </body>
 </html>

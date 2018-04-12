@@ -23,7 +23,6 @@ app.get("/home", (req, res, next) => {
 app.get("/beers", (req, res, next) => {
   punkAPI.getBeers()
   .then(beers => {
-    console.log(beers[0])
     let beersList = beers;
     res.render("beers", {beersList});
   })
@@ -36,26 +35,18 @@ app.get("/beers", (req, res, next) => {
 app.get("/random-beers", (req, res, next) => {
   punkAPI.getBeers()
     .then( beers => {
-      console.log(beers)
       let n = beers.length;
       let index = Math.floor(Math.random()*n);
       let chosenBeer = beers[index];
-      res.render("random-beers", {chosenBeer});
+      let str = chosenBeer.food_pairing;
+      let str0 = str[0];
+      let str1 = str[1];
+      let str2 = str[2];
+      res.render("random-beers", {chosenBeer, str0, str1, str2});
     })
     .catch(error => {
       console.log(error);
     });
-
-
-  // punkAPI.getRandom()
-  // .then(beers => {
-  //   let chosenBeer = beers[0];
-  //   console.log(chosenBeer)
-  //   res.render("random-beers", {chosenBeer})
-  // })
-  // .catch(error => {
-  //   console.log(error)
-  // })
 })
 
 

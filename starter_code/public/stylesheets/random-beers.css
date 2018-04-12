@@ -1,0 +1,28 @@
+img {
+    height: 30vh;
+    width: 6vw;
+    margin-right: 10vw;
+}
+
+.box{
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    margin-left: 12vw;
+    margin-right: 30vw;
+    display: flex;
+    justify-content: center;
+}
+
+.tagline{
+    color: rgba(0, 0, 0, 0.4);
+    margin-top: 2.5vh;
+}
+
+.description{
+    margin: 3vh 0;
+    text-align: justify;
+}
+
+.brewer{
+    margin: 3vh 0; 
+}
