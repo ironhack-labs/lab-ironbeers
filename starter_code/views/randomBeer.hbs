@@ -1,0 +1,20 @@
+<div class="index-container row">
+    {{#with pepe}}
+    <div>
+    <img src={{image_url}} alt="beers">
+
+    </div>
+    <div>
+        
+    </div>
+    <h3>{{name}}</h3>
+    <h5>{{tagline}}</h5>
+    <p>{{description}}</p>
+    {{#each food_pairing}}
+         <li>{{this}}</li>
+    {{/each}}
+    <p>{{brewers_tips}}</p>
+
+{{/with}}
+
+</div>      
