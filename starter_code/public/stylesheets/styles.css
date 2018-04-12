@@ -6,3 +6,113 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+.navbar-default {
+  background-color: #2081C3;
+}
+
+.navbar-default .navbar-nav:first-child {
+  margin: 8px 0px 8px 35px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #F7F9F9;
+}
+
+.navbar-fixed-bottom {
+  background-color: #0A2C42;
+  color: #F7F9F9;
+}
+
+.navbar-fixed-bottom p {
+  margin: 10px 0px 10px 10px;
+}
+
+.container img {
+  display: block;
+  width: 400px;
+  margin: 150px auto 30px;
+}
+
+.btn-block {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.btn.btn-primary {
+  margin-top: 20px;
+  padding: 10px 20px;
+  box-shadow: 5px 5px 5px rgba(145, 145, 145, 0.481);
+}
+
+.container-fluid {
+  background-color: rgba(145, 145, 145, 0.481);
+  margin-top: 60px;
+  min-height: 850px;
+}
+
+.col-lg-4 {
+  margin-top: 50px;
+  padding: 0 40px;
+}
+
+.col-lg-4 img {
+  max-height: 300px;
+  height: auto;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: -15px;
+}
+
+.col-lg-4 p {
+  font-size: 1.2em;
+  margin-top: 25px;
+}
+.col-lg-4 h3 {
+  margin-top: 18px;
+  font-size: 1.3em;
+}
+
+.random-img {
+  max-height: 450px;
+  max-width: 130px;
+  position: relative;
+  top: -100px;
+}
+
+.col-lg-9 {
+  margin-top: 60px;
+}
+
+h3 {
+  color: darkgray;
+  margin-top: 35px;
+}
+
+h4 {
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+span {
+  font-weight: bold;
+}
+
+li {
+  margin: 15px 0;
+}
+
+.navbar-nav li {
+  margin: 0;
+  font-weight: bold;
+}
+
+.row {
+  margin-left: 10%;
+  margin-right: 10%;
+}
