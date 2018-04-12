@@ -1,26 +1,27 @@
 {{#with arrBeers}}
 <div class="container">
-<div class ="row">
-    <div class="col-md-4 one-beer-img">
-        <img src ="{{this.image_url}}" alt="{{name}}">
+    <div class="row">
+        <div class="col-md-4 one-beer-img">
+            <img src="{{this.image_url}}" alt="{{name}}">
+
+        </div>
+        <div class="col-md-6 one-info-beer">
+            <h1>{{this.name}}</h1>
+            <h2>{{this.tagline}}</h2>
+            <p>{{this.description}}</p>
+
+            <h3>Food Pairing</h3>
+            <ul>
+                {{#each food_pairing}}
+                <li>{{ this }}</li>
+                {{/each}}
+            </ul>
+            <p>
+                <span class="brewers">Brewers Tips:</span> {{this.brewers_tips}}</p>
+
+        </div>
 
     </div>
-<div class="col-md-6 one-info-beer">
-    <h1>{{this.name}}</h1>
-    <h2>{{this.tagline}}</h2>
-    <p>{{this.description}}</p>
-
-    <h3>Food Pairing</h3>
-    <ul>
-        {{#each food_pairing}}
-        <li>{{ this }}</li>
-        {{/each}}
-    </ul>
-<p><span class="brewers">Brewers Tips:</span> {{this.brewers_tips}}</p>
-
-</div>
-
-</div>
 </div>
 
 {{/with}}
