@@ -12,15 +12,23 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //Home Page
 app.get('/', (req, res, next) => {
+  const data = {
+    title: "Home"
+  }
   res.render('index');
 });
 
 //Beers Page
 app.get('/beers', (req, res, next) => {
+ const data = {
+   title: "BEER",
 
+   
+ }
   punkAPI.getBeers()
   .then(beers => {
-    res.render('beers');
+    data.beer = beers;
+    res.render('beers',data);
   })
   .catch(error => {
     console.log(error)
@@ -32,6 +40,9 @@ app.get('/random', (req, res, next) => {
   punkAPI.getRandom()
 
   .then(beers => {
+    const info = {
+      title: "Random"
+    }
     console.log(beers)
     res.render('random-beers');
         
@@ -39,7 +50,6 @@ app.get('/random', (req, res, next) => {
       .catch(error => {
         console.log(error)
       })
+    })
 
-
-app.listen(3000);
-});
+app.listen(3000,()=> console.log("Testing..."));
