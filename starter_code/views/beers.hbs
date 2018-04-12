@@ -1,0 +1,34 @@
+
+   {{!-- <ul>
+       {{#each beers}}
+        <li>
+         <h2>{{beers.name}}</h2> 
+         <h3>{{beers.tagline}}</h3>
+         <p>{{beers.description}}</p>
+        <img src="{{this.image_url}}" >
+        </li>
+       {{/each}}
+    </ul> --}}
+<div class="container"></div>
+<div class="row">
+ {{#each beers}}
+     <div class="card col-md-4">
+        <div class="card-body">
+           <img src="{{this.image_url}}" alt="Card image cap" height="200" width="60">
+           <h2>{{this.name}}</h2> 
+           <h4 class="card-title">{{this.tagline}}</h4>
+           <p class="card-text">{{this.description}}</p>
+           
+        </div>
+     </div>
+       </div>
+        
+   </div>
+   
+   {{/each}}
+   </div>
+</div>
+
+
+
+
