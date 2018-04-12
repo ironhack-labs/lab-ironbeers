@@ -1,0 +1,25 @@
+{
+  "name": "lab-ironbeers",
+  "version": "1.0.0",
+  "description": "![Ironhack Logo](https://i.imgur.com/1QgrNNw.png)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M-Gadd/lab-ironbeers.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/M-Gadd/lab-ironbeers/issues"
+  },
+  "homepage": "https://github.com/M-Gadd/lab-ironbeers#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "hbs": "^4.0.1",
+    "punkapi-javascript-wrapper": "^1.0.2"
+  }
+}
