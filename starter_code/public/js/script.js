@@ -1,0 +1,11 @@
+$(document).ready(function(){
+    $(".home").click(function(){
+        window.location.replace("http://localhost:3000/")
+    })
+    $(".beers").click(function(){
+        window.location.replace("http://localhost:3000/beers")
+    })
+    $(".random__beers").click(function(){
+        window.location.replace("http://localhost:3000/random-beers")
+    })
+})
