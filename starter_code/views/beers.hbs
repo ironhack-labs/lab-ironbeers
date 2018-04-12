@@ -1,0 +1,21 @@
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+</head>
+
+<body>
+    <div class="index-container">
+<ul>
+  {{#each beers}}
+    <li>{{> beerPartials this}}</li>
+  {{/each}}
+</ul>
+    </div>
+</body>
+
+</html>
+
+
+
+
