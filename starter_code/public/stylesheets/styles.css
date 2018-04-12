@@ -4,5 +4,79 @@ light-blue: #2081C3;
 dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
+
 */
+body{
+  background-color: rgba(145, 145, 145, 0.481);
+  font-family: Arial, Helvetica, sans-serif
+}
+.container{
+  background-color: #2081C3;
+  display: flex;
+  flex-direction : row;
+  justify-content : flex-start;
+}
+.row {
+  display : flex;
+  margin: 20px;
+  width: 300px;
+  justify-content: space-around;
+  color: F7F9F9;
+}
+.row, footer{
+  color: #F7F9F9;
+}
+footer{
+ /* display: flex;*/
+ 
+  position: absolute;
+  bottom: 0; 
+  background-color: #0A2C42;  
+}
+footer p{  
+  margin: 20px;
+  width:98.5vw;
+}
+.index-container, .container-section{
+  display: flex;
+  height:90vh;
+}
+/************************ css index.hbs******************/
+.index-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
+}
+.index-container-col{  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  background-color: #2081C3; 
+  border: none;
+  color: white;  
+  text-decoration: none;
+  display: inline-block;
+  border-radius : 4%;
+  align-content: center;
+  box-shadow: 3px 4px #888888;
+  height:50px;
+  /*cursor: pointer;*/
+}
+
+#btn-checkBeer{ 
+  font-size: 16px;
+  margin-top: 50px;  
+  width:10vw;
   
+}
+#btn-checkRandBeer{
+  font-size: 16px;
+  margin-top:30px;
+    width:20vw;  
+}
+/*#btn-checkBeer, #btn-checkRandBeer {
+  margin-top:
+}*/
