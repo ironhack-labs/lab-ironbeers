@@ -6,3 +6,43 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+body {
+  background-color: rgba(145, 145, 145, 0.481);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+nav {
+  background-color: #2081C3;
+  height: 8vh;
+}
+
+li {
+ list-style-type: none;
+ display: inline;
+}
+
+footer {
+  background-color: #0A2C42;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+p {
+  margin-left: 30px;
+  padding-top: 8px;
+}
+
+.img-responsive {
+  margin: 3vh auto;
+}
+
+a {
+  color:white;
+}
+
+button {
+  background-color: #2081C3;
+}
