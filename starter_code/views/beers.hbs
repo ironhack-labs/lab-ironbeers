@@ -1,6 +1,10 @@
 <h1>beers page</h1>
 <div class="beerinfo"> 
-        {{#each beers}}
+        {{#each beersArray}}
         {{> beerPartial this}}
         {{/each}}
     </div>
+
+    {{#unless somany}}
+    <h1>So many beers !</h1>
+    {{/unless}}
