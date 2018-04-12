@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  <div class="container">
+    {{#each beer}}
+      <div class="col-lg-3">
+        <img class="random-img" src="{{this.image_url}}" alt="bottle image">
+      </div>
+      <div class="col-lg-9">
+      <h2>{{this.name}}</h2>
+      <h3>{{this.tagline}}</h3>
+      <p>{{this.description}}</p>
+      <h4>Food pairing</h4>
+        <ul>
+          {{#each this.food_pairing}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      <p><span>Brewers tip :</span> {{this.brewers_tips}}</p>
+      </div>
+    {{/each}}
+  </div>
+</div>
