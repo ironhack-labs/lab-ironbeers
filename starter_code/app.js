@@ -44,8 +44,9 @@ app.get('/random', (req, res, next) => {
     const info = {
       title: "Random"
     }
+    info.beer = beers;
     console.log(beers)
-    res.render('random-beers');
+    res.render('random-beers', info);
         
       })
       .catch(error => {
