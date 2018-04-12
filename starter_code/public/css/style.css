@@ -43,10 +43,8 @@ footer {
 /* ----------INDEX---------- */
 
 .index-container {
-  position: absolute;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  margin: 50px 0;
+  text-align: center;
 }
 
 .index-container .btn {
@@ -56,8 +54,9 @@ footer {
 }
 
 .index-container img {
-  height: 50vh;
-  margin: 50px;
+  max-height: 50vh;
+  margin-bottom: 50px;
+  max-width: 100%;
 }
 
 /* ----------BEERS---------- */
