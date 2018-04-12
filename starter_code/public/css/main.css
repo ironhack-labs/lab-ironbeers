@@ -1,0 +1,49 @@
+/*
+white: #F7F9F9;
+light-blue: #2081C3;
+dark-blue: #0A2C42;
+grey: rgba(145, 145, 145, 0.481);
+font-family: Arial, Helvetica, sans-serif
+*/
+/*aqui hacemos la "programacion" de estilo*/
+footer {
+  background-color: #0A2C42;
+  color: white; }
+
+.navbar {
+  color: white;
+  background-color: #2081C3; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif; }
+
+button {
+  display: block;
+  background-color: #2081C3; }
+
+img {
+  width: 350px; }
+
+.centrar {
+  margin: 0 auto; }
+
+.boton {
+  background-color: #2081C3;
+  margin-top: 20px; }
+
+.beer-img {
+  width: 50px;
+  height: 150px; }
+
+.beers-container {
+  display: inline-block;
+  width: 400px;
+  margin: 0 auto; }
+
+.index-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px; }
+
+/*# sourceMappingURL=main.css.map */

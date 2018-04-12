@@ -1,0 +1,52 @@
+/*aqui hacemos la "programacion" de estilo*/
+footer {
+  background-color: $colorfooter;
+  color: white;
+}
+
+.navbar {
+  color: white;
+  background-color: $colornavbar;
+}
+
+body {
+  // color: white;
+  font-family: $tipoletra;
+}
+
+button {
+  display: block;
+  background-color: $button-color;
+}
+
+img {
+  width: 350px;
+}
+
+.centrar {
+  margin: 0 auto;
+}
+
+.boton {
+  background-color: $button-color;
+  margin-top: 20px;
+}
+
+.beer-img {
+  width: 50px;
+  height: 150px;
+
+}
+
+.beers-container {
+  display: inline-block;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.index-container{
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+}
