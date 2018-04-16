@@ -1,0 +1,71 @@
+$white: white;
+$black: black;  
+$light-grey: #dfdfdf;
+$shadow: #ccc7c7;
+$grey: grey;
+$dark-grey: #333333;
+$azure: #3182c2;
+$ultramarine: #0c2d41;
+
+body{
+  background-color: $light-grey;
+}
+navbar{
+  background-color: $azure;
+
+  a{
+    color: $white;
+    &:link,&:active,&:visited{
+      color:white;
+    }
+  }
+}
+article{
+  color: $dark-grey;
+  a{
+    color: $azure;
+    transition: all 0.5s ease-out;
+
+    &:hover{
+      color: $ultramarine;
+    }
+  }
+}
+navbar{
+  @include box-shadow(5px,0,5px,$black)
+}
+nav {
+  color: $white;
+}
+button{
+  border: none;
+  background-color: $azure;
+  color: $white;
+  @include box-shadow(0,0, 2px, $dark-grey)
+}
+footer{
+  background-color: $ultramarine;
+  color:white;
+}
+.beer{
+  &::after{
+    content:''; 
+    @include radial-gradient($shadow,$light-grey);
+    @include box-shadow(0,0,50px,$shadow)
+  }
+  &:hover{
+    background: $white;
+    @include box-shadow (0,0,10px, $ultramarine)
+  }
+  .beer-tagline{
+    color: $grey;
+  }
+}
+.random-beer {
+  &::after {
+      background-color: $white;
+  }
+  .beer-tagline {
+      color: $grey;
+  }
+}
