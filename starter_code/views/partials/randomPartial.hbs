@@ -1,8 +1,23 @@
-<div class="row">
-      <div class = "col-lg-4"><img class="beer-img-top size" src="{{this.image_url}}" alt=""></div>
-      <div class="beer-body">
-        <h5 class="beer-title">{{this.name}}</h5>
-        <p class="beer-text">{{this.tagline}} {{this.description}}</p>
-      </div>
+<div class="row top">
+      <div class = "col-lg-4"><img class="beer-img-top rsize" src="{{this.image_url}}" alt=""></div>
+      <div class = "col-lg-8">
+        <h3 class="beer-title">{{this.name}}</h3>
+        <br>
+        <h5 class="beer-text text-muted">{{this.tagline}} </h5>
+        <br>
+        <p>{{this.description}}</p>
+        <h5>Food Pairings</h5>
+        <br>
+        <ul class = "food-pairing">
+            {{#each this.food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <br>
+
+        <p><b>Brewers tips: </b>{{this.brewers_tips}}</p>
+        </div>
+        
+      
 
 </div>

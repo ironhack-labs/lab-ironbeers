@@ -20,7 +20,7 @@ app.get('/beers', (req, res, next) => {
    let data = {
      myBeers: punkAPI.getBeers()
   .then(beers => {
-    //console.log(beers);
+    console.log(beers);
     res.render('beers',{beers});
   })
   .catch(error => {

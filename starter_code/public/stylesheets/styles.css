@@ -7,15 +7,15 @@ font-family: Arial, Helvetica, sans-serif
 */
 
 #mainbeer{
-    height: 500px;
-    width: 500px;
+    height: 425px;
+    width: 425px;
 }
 
 .beer-container{
     display:flex;
-    padding: 10% 20%;
     justify-content: space-around;
     flex-wrap:wrap;
+    margin-top:10%
 }
 
 .size{
@@ -25,4 +25,22 @@ font-family: Arial, Helvetica, sans-serif
     align-content: center;
     justify-content: center;
     width: 33%;
+}
+.rsize{
+    height:57%;
+    width: 57%;
+
+}
+
+.rand-container{
+    display:flex;
+    padding: 4% 20%;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+
+.beer{
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
 }
