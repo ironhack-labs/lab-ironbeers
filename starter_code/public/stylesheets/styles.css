@@ -6,3 +6,7 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+.body {
+  height: 700px;
+}
+
