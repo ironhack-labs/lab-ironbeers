@@ -1,7 +1,9 @@
 <ul class="beer-list">
-	{{#each b}}
-		<li>
-			{{> beerPartial this }}
-		</li>
-	{{/each}}
+	<p><img src="{{randomBeer.image_url}}"></p>
+	<p><h1>{{randomBeer.name}}</h1></p>
+	<p>{{randomBeer.tagline}}</p>
+	<p>{{randomBeer.description}}</p>
+	<p><h2>Food Pairing</h2></p>
+	<p>{{randomBeer.food_pairing}}</p>
+	<p>Brewer's Tips: {{randomBeer.brewers_tips}}</p>
 </ul>
