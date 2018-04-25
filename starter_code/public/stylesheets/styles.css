@@ -5,4 +5,133 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+
+.nav-bar {
+  background-color: #2081C3;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
   
+.links {
+  margin: 0 10px; 
+  list-style: none;
+  color: #F7F9F9;
+}
+
+.first-link {
+  margin: 0 0 0 30px;
+}
+
+.footer {
+  height: 50px;
+  background-color: #0A2C42;
+  color: #F7F9F9;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  text-indent: 20px;
+  padding: 15px;
+}
+
+.index-container {
+  width: 100%;
+}
+
+.beer-img {
+  display: block;
+  margin: 100px auto 0 auto;
+  width: 250px;
+  height: auto;
+}
+
+.small-width {
+  width: 150px;
+}
+
+.medium-width {
+  width: 200px;
+}
+
+.homepage-button {
+  background-color: #2081C3;
+  color: #F7F9F9; 
+  border: none;
+  border-radius: 4px;
+  height: 35px;
+  display: block; 
+  margin: 20px auto;
+  text-align: center;
+  padding: 5px 0;
+  /* text-decoration: none;  */
+}
+
+.beer-info {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.beer-images {
+  height: 150px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.partial-beers {
+  width: 30%;
+  float: left;
+  margin: 20px 1.5% 0 1.5%;
+  height: 300px;
+}
+
+.partial-beers > p {
+  font-size: 10px;
+}
+
+.beer-name {
+  text-align: left;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  margin-top: 10px;
+}
+
+.beer-tagline {
+  color: lightgray;
+  text-align: left;
+  font-size: 12px;
+}
+
+.beer-description {
+  line-height: 12px;
+}
+
+.random-beers {
+  width: 60%;
+  margin: 50px 30% 0 10%;
+}
+
+.random-beer-image {
+  height: 300px;
+  float: left;
+  margin: 0 100px 100px 0;
+}
+
+.random-beer-name {
+  font-weight: bolder;
+}
+
+.random-beer-tagline {
+  color: lightgray;
+  margin: 30px 0 15px 0;
+}
+
+.ingredients-list {
+  margin-left: 100px;
+  padding-left: 100px;
+}
