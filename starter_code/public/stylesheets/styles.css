@@ -5,4 +5,11 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+/* .centered {
+	margin: 0 auto;
+} */
+
+footer {
+	margin-bottom: 0;
+}
