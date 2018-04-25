@@ -1,8 +1,32 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
+    /* white: #F7F9F9;
+    light-blue: #2081C3;
+    dark-blue: #0A2C42;
+    grey: rgba(145, 145, 145, 0.481);
+    font-family: Arial, Helvetica, sans-serif */
+
+body {
+    background: rgba(145, 145, 145, 0.481)!important;
+}
+
+.index-container{
+    /* width: 50%; */
+}
+
+.index-container img, button {
+    width: 18%;
+    margin: 0 auto;
+}
+
+.my-nav , a{
+    background: #2081C3;
+    color: #F7F9F9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+ color: #F7F9F9;
+ background: #0A2C42;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
   
