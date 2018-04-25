@@ -1,11 +1,7 @@
-
-<ul>
-	<li>
-		{{#each beers}}
-
-			{{beerPartial this}}
-
-		{{/each}}
-
-	</li>
+<ul class="beer-list">
+	{{#each b}}
+		<li>
+			{{> beerPartial this }}
+		</li>
+	{{/each}}
 </ul>
