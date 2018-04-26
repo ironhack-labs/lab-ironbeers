@@ -1,8 +1,69 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+#espacio{
+    height: 40px;;
+}
+
+nav{
+    background-color: #007FC7;
+    position: fixed;
+    width: 100%
+
+}
+nav a{
+    color:white;
+}
+
+footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #012C43;
+    color:white;
+    font-size: 15px;
+    height: 40px;
+    padding-left: 5%;
+}
+
+.index-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.chelas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.enchelado{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+#chela{
+    width: 300px;
+    margin:10% 0 0 0;
+}
+
+.chelas img{
+    width: 50px;
+}
+
+button{
+    margin: 20px 0 ;
+}
+
+footer p{
+    margin: 0;
+}
+
   
