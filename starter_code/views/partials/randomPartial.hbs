@@ -1,0 +1,29 @@
+<!-- randomPartial.hbs -->
+<div class="random-beer-wrapper">
+<div>
+      <img class="rando-beer-image" src="{{this.image_url}}" alt="beer image">
+</div>
+
+
+<div>
+      <h2 class="beer-name">{{this.name}}</h2>
+      <h3 class="tagline"><span>{{this.tagline}}</span></h3>
+      <p class="description">{{this.description}}</p>
+      <h3>Food Pairings</h3>
+
+
+      <p> {{#each this.food_pairing}} 
+        
+        <ul>
+            
+            <li> {{this}} </li>    
+        
+        </ul>
+            
+            {{/each}}</p>
+      
+      <h3>Brewers Tips</h3>
+      <p>{{this.brewers_tips}}</p>
+</div>
+      
+</div>
