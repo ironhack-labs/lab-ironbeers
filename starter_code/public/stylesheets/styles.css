@@ -5,4 +5,141 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+
+  a.button-custom {
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    background: #2081C3;
+    color: #F7F9F9;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 20px auto;
+    box-shadow: 1px 1px 1px 1px grey;
+    display: block;
+  }
+
+a.button:active {
+  border-style: inset;}
+
+  .navbar-customcolor {
+    background-color: #2081C3;
+    color: #F7F9F9;
+  }
+
+  .nav-link {
+    color: #F7F9F9;
+  }
+
+  .nav-item {
+    color: #F7F9F9;
+  }
+
+  .navbar-collapse.collapse {
+    display: block!important;
+    vertical-align: middle;
+    margin-left: 20px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1000px) {
+    .navbar-collapse.collapse {
+      padding-top: 10px;
+    }
+ }
   
+  .navbar-nav>li, .navbar-nav {
+    float: left !important;
+  }
+  
+
+
+  .image-beer {
+    width: 200px;
+    height: auto;
+    display:block;
+    margin: 20px auto;
+  }
+
+  .index-container {
+    margin: 0px auto;
+    width: 400px;
+  }
+
+  .index-buttons {
+    margin: 20px auto;
+  }
+
+  .footer-colors {
+    background-color: #0A2C42;
+    color: #F7F9F9;
+    padding-top: 10px;
+  }
+
+
+/* beers */
+
+  img {
+    height: 15vh;
+    width: auto;
+    margin-bottom: 1vh;
+}
+
+
+.theBeerList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    width: 25vw;
+    margin: 5vh 2vw;;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+li img {
+    margin-left: 7vw;
+}
+
+.tagline {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+li p {
+    text-align: justify;
+    font-size: 12px;
+}
+
+/* randombeers */
+
+
+.beerfacts {
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  margin-left: 500px;
+  margin-right: 200px;;
+  display: flex;
+  justify-content: center;
+  width: 500px;
+}
+
+.tagline{
+  color: rgba(0, 0, 0, 0.4);
+  margin-top: 2.5vh;
+}
+
+.description{
+  margin: 3vh 0;
+  text-align: justify;
+}
+
+.brewer{
+  margin: 3vh 0; 
+}
