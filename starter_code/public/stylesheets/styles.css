@@ -86,3 +86,39 @@ footer p{
   font-size: 12px;
   font-weight: 400
 }
+
+.random-beer-card{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  max-height: 400px
+}
+.random-beer-card img{
+  height: 40%;
+  align-self: center
+}
+.random-beer-card h1{
+  font-size: 20px;
+}
+.random-beer-card h2{
+  font-size: 16px;
+  margin: 0;
+  color:rgba(145, 145, 145, 0.481)
+}
+.random-beer-card h3{
+  font-size: 17px;
+  margin-bottom:5px;
+}
+.random-beer-card p{
+  font-size: 15px;
+  font-weight: 400
+}
+.random-beer-card ul{
+  margin: 0;
+}
+.random-beer-card ul li{
+  font-size: 15px;
+  font-weight: 400;
+  margin: 10px
+}
