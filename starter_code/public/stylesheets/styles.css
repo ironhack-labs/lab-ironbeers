@@ -5,4 +5,107 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+body{
+  background-color: rgba(145, 145, 145, 0.481);;
+}
+.nav-bar{
+    background-color: #2081C3;
+    display: flex;
+    height: 50px;
+  }
+nav a {
+  display: flex;
+  margin: 0 25px;
+  align-items: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color:#F7F9F9;
+}
+.index-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(145, 145, 145, 0.829);
+}
+.foot-bar{
+  background-color: #0A2C42;
+  display: flex;
   
+  height: 50px;
+}
+footer p {
+  display: flex;
+  color: #F7F9F9;
+  margin: 0 30px;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.anim-beer{
+ align-self: center;
+  width: 300px;
+  height: 300px;
+  margin: 100px auto 35px;
+}
+.check{
+  background-color: #2081C3;
+  border: 1px solid   #2081C3;
+  border-radius: 2px;
+  width: 145px;
+  height: 35px;
+  color : #F7F9F9;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin: 10px 617px 10px;
+}
+#cervezas{
+  text-align: center;
+  width: 30%;
+  display: inline-block;
+} 
+.beer-photo{
+  display: flex;
+    position: absolute;
+    width: 105px;
+    height: 335px;
+    margin-top: 100px;
+    margin-left: 70px;
+}
+.info{
+  display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin-left: 300px;
+    margin-top: 211px;
+    margin-bottom: 200px;
+}
+.beer-name{
+  font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+.beer-tagline{
+color: rgba(145, 145, 145, 0.481);
+}
+.pairing-title, .tips-title{
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bolder;
+font-size: 16px;
+margin: 10px 0;
+}
+.pairing-list, .tips, .beer-tagline, .beer-descr{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 17px;
+}
+
+
+/*.random-info{
+  display: flex;
+  flex-direction: column;
+  margin: 40px 375px;
+}
+
+#random{
+  display: flex;
+}*/
