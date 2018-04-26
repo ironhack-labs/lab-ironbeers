@@ -5,4 +5,102 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+footer{
+  background-color: #0A2C42;
+  color: #F7F9F9;
+  height: 50px;
+  position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
   
+}
+
+.index-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.index-container img{
+  height: 20%;
+  width: 20%;
+  margin: 10px auto 0;
+}
+
+.index-container a{
+  display: block;
+  text-align: center;
+  /* width: 20%; */
+  height: 50px;
+  margin: 15px auto;
+  background-color: #2081C3;
+  color:  #F7F9F9;
+  border-radius: 15px;
+  border:none;
+  padding: 10px 10px;
+}
+.index-container button{
+  width: 20%;
+  height: 50px;
+  margin: 15px auto;
+  background-color: #2081C3;
+  color:  #F7F9F9;
+  border-radius: 15px;
+  border:none;
+}
+
+.beer-container{
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 50px;
+}
+
+.beer{
+  width: 25%;
+  /* padding: 10px; */
+  margin: 5px 10px;
+}
+
+.beer img{
+  width: 35%;
+  height: 40%;
+  margin: 0 auto;
+}
+
+.beer-title{
+  font-weight: 700;
+}
+
+.beer-tagline{
+  color: rgba(145, 145, 145, 0.481);
+}
+
+.random-beer{
+  display: flex;
+  flex-flow: row;
+}
+
+.beer-img-side{
+  height: 15%;
+  width: 15%;
+}
+
+.random-beer-body{
+  display: flex;
+  flex-flow: column;
+}
