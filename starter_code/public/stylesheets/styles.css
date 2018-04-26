@@ -1,8 +1,82 @@
-/*
+/* .h }
 white: #F7F9F9;
 light-blue: #2081C3;
 dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
-*/
-  
+}
+   */
+/* .card{
+    width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;      
+} */
+
+
+   ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:  #2081C3;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.footer {
+  position: fixed;
+  overflow: hidden;
+  margin-right: 20px;
+  text-align: left; 
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0A2C42;;
+  color: white;
+  text-align: center;
+}
+
+/* Button style  */
+.button {
+  background-color:  #2081C3;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* button styles end here */
+
+
+
+/* centered button  */
+
+div.index-container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) }
