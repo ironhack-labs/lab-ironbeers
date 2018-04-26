@@ -1,0 +1,45 @@
+<div id="container">
+  <div id="cont">
+    <div id="imagen">
+      <img width="100px" height="400px" src="{{beer.image_url}}">
+    </div>
+    <div id="parrafos">
+      <p class="parrafo">{{beer.name}}</p>
+      <p class="parrafo">{{beer.description}}</p>
+      <p class="parrafo">{{beer.tagline}}</p>
+      {{#each beer.food_pairing as |pairing| }}
+      <p class="parrafo">{{pairing}}</p>
+      {{/each}}
+      <p class="parrafo">{{beer.brewers_tips}}</p>
+    </div>
+  </div>
+</div>
+
+<style>
+
+  #cont{
+    display: flex;
+    flex-wrap: wrap;
+    align-content:justify; 
+  }
+
+  #imagen{
+    align-self: flex-start;
+    width: 45%;
+    margin: 2.5%;
+  }
+  
+  #parrafos{
+    width: 45%;
+    margin-top: 50px;
+  }
+
+  img{
+    width: 40%;
+    margin: 50px 30%
+  }
+
+
+
+
+</style>

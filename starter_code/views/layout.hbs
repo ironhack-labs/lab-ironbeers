@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <title>{{title}}</title>
+</head>
+<body>
+
+  <nav class="nave">
+    <a href="/">Home</a>
+    <a href="/beers">Beers</a>
+    <a href="/random-beers">Random Beers</a>
+  </nav>
+  <div class="container">
+    {{{body}}}  
+  </div>
+  <footer class="foot">
+    <span>Develop by Ironhack ;)</span>
+  </footer>
+
+</body>
+</html>
+
+<!--Styles--->
+<style>
+  *{
+    font-family: Arial, Helvetica, sans-serif
+  }
+
+  .nave{
+    height: 70px;
+    width: 100%;
+    background-color: #2081C3;;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  a{
+    margin: 20px;
+    align-self: center;
+    text-decoration: none;
+    color: white;
+  }
+
+  footer{
+    background-color: #0A2C42;
+    width: 100%;
+    height: 56px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    position:fixed;
+    bottom:0;
+  }
+
+  span{
+    margin: 10px;
+    align-self: center;
+  }
+
+  .container{
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  body{
+    margin-bottom: 56px;
+    background-color: rgba(145, 145, 145, 0.481);
+  }
+</style>

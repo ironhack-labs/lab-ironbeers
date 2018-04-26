@@ -1,0 +1,43 @@
+<div class = "row">
+{{#each beers as |beer|}}
+  <div id="cont" class="col col-md-3 align-content-center">
+    <img width="50px" height="350px" src="{{beer.image_url}}">
+    <p class="name">{{beer.name}}</p>
+    <p class="tag">{{beer.tagline}}</p>
+    <p class="desc">{{beer.description}}</p>
+  </div>
+{{/each}}
+</div>
+
+
+
+
+<style>
+
+  #cont{
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+
+  .name{
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .tag{
+    color: gray;
+    text-align: initial;
+  }
+
+  .desc{
+    text-align: justify;
+  }
+
+  img{
+    width: 50%;
+    margin: 0 25%;
+
+  }
+
+</style>
