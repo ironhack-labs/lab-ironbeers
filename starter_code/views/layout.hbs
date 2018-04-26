@@ -1,0 +1,29 @@
+  {{!-- name of this file must be layout.hbs --}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ironbeers</title>
+  <link rel="stylesheet" href="/stylesheets/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-customcolor">
+
+    <div class="collapse navbar-collapse">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="/">Home
+          <span class="sr-only">(current)</span>
+        </a>
+        <a class="nav-item nav-link" href="/beers">Beers</a>
+        <a class="nav-item nav-link" href="/randombeers">Random Beer</a>
+      </div>
+    </div>
+  </nav>
+
+  {{{ body }}}
+
+<footer class="navbar navbar-expand-lg footer-colors">Developed by Ironhack ;)</footer>
+
+</body>
+</html>
