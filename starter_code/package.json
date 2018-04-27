@@ -13,6 +13,6 @@
     "express": "^4.16.2",
     "hbs": "^4.0.1",
     "path": "^0.12.7",
-    "punkapi-javascript-wrapper": "^1.0.2",
+    "punkapi-javascript-wrapper": "^1.0.2"
   }
 }
