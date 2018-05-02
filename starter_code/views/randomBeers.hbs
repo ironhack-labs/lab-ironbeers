@@ -1,0 +1,28 @@
+{{!-- {{#each theBeers}} 
+{{> beerPartials this}}
+{{/each}} --}}
+
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+      <img class="card-img-top" src="{{theBeers.image_url}}">
+      <br>
+      </div>
+      <div class="col-md-9">
+      <div class="card-body">
+        <h2 class="card-name">{{theBeers.name}}</h2>
+        <h5 class="card-title1">{{theBeers.tagline}}</h5>
+         <p class="card-text">{{theBeers.description}}</p>
+        <h5 class="card-title2">Food Pairings</h5>
+        <ul class="listItem">
+          {{#each theBeers.food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+      <p class="card-text"><b>Brewing Tips: </b>{{theBeers.brewers_tips}}</p>
+       
+      </div>
+      </div>
+    </div>
+  </div>    
+</div>
