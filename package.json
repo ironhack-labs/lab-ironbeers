@@ -1,0 +1,26 @@
+{
+  "name": "lab-ironbeers",
+  "version": "1.0.0",
+  "description": "IronBeers Partials App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ydnay/lab-ironbeers.git"
+  },
+  "author": "ydnay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ydnay/lab-ironbeers/issues"
+  },
+  "homepage": "https://github.com/ydnay/lab-ironbeers#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "hbs": "^4.0.1",
+    "path": "^0.12.7",
+    "punkapi-javascript-wrapper": "^1.0.2",
+    "punkapi-lib": "^2.2.2"
+  }
+}
