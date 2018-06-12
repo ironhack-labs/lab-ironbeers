@@ -63,16 +63,22 @@ footer p{
 }
 
 #beer-container{
-    display: flex;
-    flex: row wrap;
-    margin: 30px 50px;
-    /* align-items: center; */
-    /* justify-content: center; */
-    align-content: flex-end;
+    display: inline-block;
+    padding: 5% 5%;
 }
 
-#beer-container div{
-    /* flex-basis: content; */
-    height: 300px;
+
+.beer-tag{
+    float: left;
+    height: 450px;
+    overflow: auto;
+    width: 30%;
+    margin: 10px 0px;
+    padding: 0 15px;
     /* background-color: red; */
+}
+
+.beer-image{
+    height: 200px;
+    margin-left: 35%;
 }
