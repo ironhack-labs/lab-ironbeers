@@ -1,0 +1,32 @@
+<div class="jumbotron px-5">
+    <h1 class="heading">{{beer.name}}</h1>
+    <p class="text-muted">{{beer.tagline}}</p>
+    <div class="beer-and-text d-flex mx-auto">
+
+        <div class="mr-5">
+            <img class="beer-img mx-auto" src={{beer.image_url}} alt="">
+        </div>
+
+
+        <div class="beer-description mx-auto">
+            <h2 class="text-center">Description</h2>
+            <p class="lead w-75 mt-5 mx-auto">{{beer.description}}</p>
+        </div>
+
+
+    </div>
+    <hr class="my-4">
+
+    <div class="d-flex flex-row mx-auto">
+        <div class="w-50">
+            <h4 class="font-weight-bold">Food pairings:</h4>
+            <ul>{{#each beer.food_pairing}}
+                <li>- {{this}}</li>{{/each}} </ul>
+        </div>
+        <div class="w-50">
+            <h4 class="font-weight-bold">Brewers tips:</h4>
+            <p class="lead">{{beer.brewers_tips}}</p>
+        </div>
+    </div>
+
+</div>
