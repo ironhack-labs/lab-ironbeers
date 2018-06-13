@@ -26,17 +26,15 @@ app.get('/beers', (req, res, next) => {
   .catch(error => {
     console.log(error);
   });
-// console.log(beers)
-//   res.render('beers', beers);
 });
 
 app.get('/random-beer', (req, res, next) => {
-  const randomBeers = punkAPI.getRandom();
+  const randomBeer = punkAPI.getRandom();
 
-  randomBeers.then(beers => {
+  randomBeer.then(beers => {
     // alert(beer[0].name);
-    console.log(randomBeers);
-    res.render('randomBeer', randomBeers);
+    // console.log(beers[0].image_url);
+    res.render('randomBeer', {beers: beers[0]});
   })
   .catch(error => {
     console.log(error);

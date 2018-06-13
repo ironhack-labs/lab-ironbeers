@@ -56,17 +56,35 @@ footer {
   /* justify-content: flex-start; */
   /* width: 100px; */
 }
-.size{
-  width: 20%;
-  height: 20%;
-  text-align: center;
-  margin-left: auto;
-	margin-right: auto;
-	display: block;
+.beer img{
+  height: 150px;
+  margin: 0 40%;
 }
-.cards-container {
-  display: flex;
-  padding: 10% 20%;
-  justify-content: space-around;
+
+.cards-container{
+  margin: 80px;
+  /* margin-left: 80px; */
+
+  
+}
+
+.beer{
+  width: 29%;
+  float: left;
+  /* list-style-type: none; */
+  height: 400px;
+  margin: 20px;
+  /* margin-left: 40px; */
+}
+h5{
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+p{
+  font-size: 12px;
+}
+p.tag-line {
+  color: gray;
 }
   
