@@ -11,7 +11,6 @@ html {
   min-height: 100%;
 }
 body {
-  /* Margin bottom by footer height */
   margin-bottom: 60px;
   background-color: rgba(145, 145, 145, 0.481);
   font-family: Arial, Helvetica, sans-serif;
@@ -27,7 +26,6 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 50px;
   color: #F7F9F9;
   background-color: #0A2C42;
@@ -45,46 +43,41 @@ footer {
 .btn-margin{
   margin-top: 20px;
 }
-.container {
-  margin-top: 100px;
-  display: flex;
-  float: left;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 20%;
-  height: 20%;
-  /* justify-content: flex-start; */
-  /* width: 100px; */
-}
 .beer img{
   height: 150px;
-  margin: 0 40%;
+  margin: 0 auto;
+  display: block;
 }
-
-.cards-container{
+.beers-container{
   margin: 80px;
-  /* margin-left: 80px; */
-
-  
 }
-
 .beer{
   width: 29%;
   float: left;
-  /* list-style-type: none; */
   height: 400px;
   margin: 20px;
-  /* margin-left: 40px; */
 }
 h5{
   font-weight: bold;
   padding-top: 15px;
 }
-
 p{
   font-size: 12px;
 }
-p.tag-line {
+.tag-line {
   color: gray;
+}
+.random-beer{
+  margin-top: 80px;
+  /* width: 29%; */
+  float: left;
+  /* height: 400px; */
+  /* margin: 20px; */
+}
+.beers-container img{
+  height: 250px;
+  margin-right: 60px;
+  display: block;
+  float: right;
 }
   

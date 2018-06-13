@@ -1,7 +1,15 @@
-<div>
-
+<div class="container beers-container">
+        <div class="row">
+  <div class="col-sm-3">
         <img src="{{beers.image_url}}" alt="Beer image">
+        </div>
+        <div class="col-sm-7">
         <h5>{{beers.name}}</h5>
-        <p>{{beers.tagline}}</p>
+        <p class="tag-line">{{beers.tagline}}</p>
         <p>{{beers.description}}</p>
+        <p><strong>Food Pairing</strong><br>{{beers.food_pairing}}</p>
+        <p><strong>Brewers Tips: </strong>{{beers.brewers_tips}}</p>
+        </div>
+        <div class="col-sm-2"></div>
+        </div>
 </div>
