@@ -1,5 +1,6 @@
-{{#each myObjects}} 
-<ul>
-<li>{{this.name}}</li>
-</ul>
+{{#each beers}} 
+
+  {{> beerPartial this}}
+
 {{/each}}
+{{!-- <ul></ul> --}}

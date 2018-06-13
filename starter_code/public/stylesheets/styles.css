@@ -6,6 +6,15 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
 
+/* ul{
+  display:inline-block;
+} */
+
+.card {
+  display: inline-block;
+  width: 200px;
+  
+}
 
 
 .navbar {
@@ -13,9 +22,10 @@ font-family: Arial, Helvetica, sans-serif
   background-color: #2081C3;
 }
  
-.index-container {
-  
- 
+.randomBeer {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
 }
 
 .footers {
