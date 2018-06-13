@@ -15,7 +15,7 @@ body {
   background-color: rgba(145, 145, 145, 0.481);
   font-family: Arial, Helvetica, sans-serif;
 }
-.navb{
+.navb {
   color: #F7F9F9;
   background-color: #2081C3;
   height: 50px;
@@ -40,10 +40,10 @@ footer {
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
-.btn-margin{
+.btn-margin {
   margin-top: 20px;
 }
-.beer img{
+.beer img {
   height: 150px;
   margin: 0 auto;
   display: block;
@@ -51,33 +51,36 @@ footer {
 .beers-container{
   margin: 80px;
 }
-.beer{
+.beer {
   width: 29%;
   float: left;
   height: 400px;
   margin: 20px;
 }
-h5{
+h5 {
   font-weight: bold;
   padding-top: 15px;
 }
-p{
+p {
   font-size: 12px;
+}
+li {
+  font-size: 14px;
+  padding-top: 5px;
 }
 .tag-line {
   color: gray;
 }
-.random-beer{
+.random-beer {
   margin-top: 80px;
-  /* width: 29%; */
-  float: left;
-  /* height: 400px; */
-  /* margin: 20px; */
 }
-.beers-container img{
-  height: 250px;
+.random-beer img {
+  height: 200px;
   margin-right: 60px;
   display: block;
   float: right;
+}
+.bold {
+  font-weight: bold;
 }
   
