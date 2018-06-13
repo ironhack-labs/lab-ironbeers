@@ -31,6 +31,19 @@ app.get('/beers', (request, response) =>
   });
 });
 
+app.get('/random-beer', (request, response) => 
+{
+  punkAPI.getRandom()
+  .then(beers => {
+    let beer = beers[0];
+    console.log("DEBUG beer", beer)
+    response.render(`randomBeer`, {beer});
+  })
+  .catch(error => {
+    console.log("DEBUG RANDOM: ",error);
+  });
+});
+
 app.get('/:beerid', (request, response) => 
 {
   let bid = request.params.beerid
@@ -47,19 +60,6 @@ app.get('/:beerid', (request, response) =>
 
 
 
-
-app.get('/random-beer', (request, response) => 
-{
-  // punkAPI.getRandom()
-  // .then(beers => {
-  //   let beer = beers[0];
-  //   console.log("DEBUG beer", beer)
-  //   response.render(`randomBeer`, {beer});
-  // })
-  // .catch(error => {
-  //   console.log("DEBUG RANDOM: ",error);
-  // });
-});
 
 app.listen(3000, () => {
   
