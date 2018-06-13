@@ -1,3 +1,37 @@
+
+.beer-img {
+    height: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+div ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.card-body {
+    text-align: center;
+}
+.btn-middle {
+    width: 200px;
+    margin: 5px auto;
+}
+.beers-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footer {
+    height: 25px;
+    width: 100vw;
+    background-color: #0A2C42;
+    
+}
+
+
+
 /*
 white: #F7F9F9;
 light-blue: #2081C3;
