@@ -5,4 +5,68 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  background-color: rgba(145, 145, 145, 0.481);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navb{
+  color: #F7F9F9;
+  background-color: #2081C3;
+  height: 50px;
+  padding-left: 40px;
+  box-shadow: 0 8px 6px -6px #999;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 50px;
+  color: #F7F9F9;
+  background-color: #0A2C42;
+  padding-top: 15px;
+}
+.index-container {
+  width: 16rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.btn-margin{
+  margin-top: 20px;
+}
+.container {
+  margin-top: 100px;
+  display: flex;
+  float: left;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 20%;
+  height: 20%;
+  /* justify-content: flex-start; */
+  /* width: 100px; */
+}
+.size{
+  width: 20%;
+  height: 20%;
+  text-align: center;
+  margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.cards-container {
+  display: flex;
+  padding: 10% 20%;
+  justify-content: space-around;
+}
   
