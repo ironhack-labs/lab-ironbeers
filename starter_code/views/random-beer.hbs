@@ -1,15 +1,27 @@
-Beers
-{{beer.name}}
-<img src="{{beer.image_url}}" alt="">
-{{beer.name}}
+<div class="left">
+
+<img src="{{beer.image_url}}" width="120px" alt="">
+
+</div>
+
+<div class="right">
+<h1>{{beer.name}}</h1>
+
 <br>
-{{beer.tagline}}
+<h2 id="tagline">{{beer.tagline}}</h2>
 <br>
 {{beer.description}}
 <br>
-Food pairing:
-{{beer.food_pairing}}
 <br>
-{{beer.brewers_tips}}
 
+<strong> Food pairing: </strong>
+<br>
+<br>
+<ul>
+{{#each beer.food_pairing}}<li> {{this}} </li> {{/each}}
+</ul>
+<br>
+<strong>Brewers Tips: </strong>
+{{beer.brewers_tips}}
+</div>
 {{!-- {{#each beers}} <img src="{{this.image_url}}" alt=""> {{/each}} --}}

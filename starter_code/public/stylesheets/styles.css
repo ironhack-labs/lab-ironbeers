@@ -5,4 +5,55 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+body{
+    font-family: "Arial", "Helvetica", "sans-serif";
+}
+
+
+div{
+    position: relative;
+}
+
+.left{
+    position: absolute;
+    width: 30vw;
+    margin-left: 10vw; 
+    margin-top: 5vh;
+    /* margin: auto; */
+    left:0;
+}
+
+.right{
+    position: absolute;
+    width: 50vw;
+    margin-right: 10vw;
+    margin-top: 5vh;
+    right: 0;
+}
   
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    line-height: 100%;
+    background-color:  #0A2C42;
+    color: white;
+    /* text-align: center; */
+}
+
+#tagline{
+    color:rgba(145, 145, 145, 0.481);
+}
+
+.card-img-top{
+    width: 150px;
+    position: relative;
+    left:20%;
+    margin-top: 5%;
+}
+
+.card-columns{
+    margin-left:5%;
+    
+}
