@@ -6,13 +6,52 @@ const path    = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 const punkAPI = new PunkAPIWrapper();
 
+/***************************************
+ *  APP SETUP                          *
+ * *************************************/
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
+hbs.registerPartials(__dirname + '/views/partials')
+
+
+hbs.registerHelper("log", function(something) {
+  console.log(something);
+});
+
+
+/***************************************
+ *  ROUTES                             *
+ * *************************************/
 
 app.get('/', (req, res, next) => {
   res.render('index');
 });
+app.get('/beers', (req, res, next) => {
+  punkAPI.getBeers()
+    .then(beers => {
+      res.render('beers', {beers});
+    })
+    .catch(error => {
+      console.log(error);
+    })
+});
+app.get('/random', (req, res, next) => {
+  punkAPI.getRandom()
+  .then(beers => {
+    let beer = beers[0]
+    res.render('random', {beer});
+  })
+  .catch(error => {
+    console.log(error);
+  })
+});
 
 
-app.listen(3000);
+/***************************************
+ *  SERVER INIT                        *
+ * *************************************/
+
+app.listen(3000, () => {
+    console.log('### Beer serving server started ###')
+  });

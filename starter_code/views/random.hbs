@@ -1,0 +1,31 @@
+{{#with beer}}
+<div class="beer-container row">
+    <div class="col-md-3">
+        <div class="b-img-wrapper">
+            <img src="{{image_url}}" alt="{{name}}"/>
+        </div>
+    </div>
+    <div class="col-md-9">
+        <h3 class="b-title">{{name}}</h3>
+        <h4 class="b-tagline">{{tagline}}</h4>
+        <p class="b-description">
+            {{description}}
+        </p>
+        <div class="food-pairings">
+            <strong>Food pairing</strong>
+            <ul>
+                {{#each food_pairing}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="brewing-tips">
+            <strong>Brewing Tips:</strong> {{brewers_tips}}
+        </div>
+    </div>
+</div>
+{{/with}}
+
+
+
+{{!-- Could have done this with the beerItemRenderer parial.. tooo lazy to recode css specifics shit and {{#if}} --}}
