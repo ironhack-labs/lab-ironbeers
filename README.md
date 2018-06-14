@@ -91,7 +91,7 @@ After creating the partial, and loop over the array of beers, on our `/bears` ro
 Finally, let's create our `/random-beer` route. Inside our route, you should call the `getRandom()` method of the PunkAPI package, and after receiving the info, render the `randomBeer.hbs` file and passing the data of the beer.
 
 ```javascript
-punkAPI.randomBeer()
+punkAPI.getRandom()
   .then(beers => {
 
   })
