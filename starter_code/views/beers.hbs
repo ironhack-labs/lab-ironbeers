@@ -1,0 +1,12 @@
+<div id="beers-container">
+
+    {{#each beers}}
+    <div class="card" style="width: 20%; height:20%">
+        <img class="card-img-top" src="{{this.image_url}}" height="200px" width="200px" alt="Card image cap">
+        <div class="card-body">
+
+            <a class="btn-beers" href="/beers/{{this.name}}" role="button">Check {{this.name}}</a>
+        </div>
+    </div>
+    {{>beerCard this}} {{/each}}
+</div>

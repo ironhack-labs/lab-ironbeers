@@ -5,4 +5,29 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+.index-container {
+  display: flex;
+  flex-direction: column;
+  height: 610px;
+  background-color: rgba(145, 145, 145, 0.481);
+}
+.index-container img {
+  margin-left: 40%;
+  margin-top: 10%;
+}
+
+.btn {
+  width: 25%;
+  margin-left: 40%;
+  background-color: #2081c3;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1.5%;
+}
+
+#beers-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
