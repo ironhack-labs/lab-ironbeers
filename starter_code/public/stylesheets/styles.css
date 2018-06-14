@@ -7,15 +7,17 @@ font-family: Arial, Helvetica, sans-serif
 */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgba(145, 145, 145, 0.481);
+  background-color:rgba(145, 145, 145, 0.481);
 }
 
 button {
   margin-top: 3%;
   background-color: #2081C3;
-  color: #F7F9F9;
 }
 
+button > a {
+  color: #F7F9F9;
+}
 .navbar {
   background-color: #2081C3;
 }
@@ -46,6 +48,14 @@ button {
   font-size: 10px;
 }
 
+.image {
+  margin: 5% 0 0 10%;
+}
+
+.description {
+  margin: 5% 0 0 0;
+}
+
 #footer {
   background-color: #0A2C42;
   color: #F7F9F9;
@@ -65,3 +75,4 @@ button {
   padding: 0;
   margin: 0 5% 0 15%;
 }
+

@@ -18,11 +18,22 @@ app.get('/', (req, res, next) => {
 app.get('/beers', (req, res, next) => {
   punkAPI.getBeers()
   .then(beers => {
-    res.render('beers', {beers});
+    res.render('allBeers', {beers});
   })
   .catch(error => {
     console.log(error)
   })
 });
+
+app.get('/random-beer', (req, res, next) => {
+  punkAPI.getRandom()
+  .then(beers => {
+    res.render('randomBeer', {beers});
+  })
+  .catch(error => {
+    console.log(error)
+  })
+});
+
 
 app.listen(3000);
