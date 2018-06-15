@@ -17,6 +17,7 @@ font-family: Arial, Helvetica, sans-serif
     bottom: 0;
     color: white;
     padding: 10px;
+    margin-top: 55px;
   }
 
   .index-container {
@@ -26,4 +27,24 @@ font-family: Arial, Helvetica, sans-serif
 
   .index-container > img {
     width: 30%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    margin-bottom: 65px;
+  }
+
+  .beer {
+    width: 30%;
+    margin: 10px;
+  }
+
+  .img {
+    text-align: center;
+  }
+
+  .img > img {
+    height: 200px;
   }
