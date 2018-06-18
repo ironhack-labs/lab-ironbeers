@@ -1,0 +1,41 @@
+<!-- layout.hbs -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ironbeers</title>
+      <!-- Bootsrap -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+
+<body>
+  <div class = "header">
+   <nav class="navbar navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">Ironbeers</a>
+  {{!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup"> --}}
+      <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/beers">Beers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/randomBeer">Random Beer</a>
+      </li>
+
+  </div>
+</nav>
+    {{{ body }}}
+</body>
+
+<footer>
+  <div class = "footer_text">
+  <p>Develop by Ironhack :)</p>
+  </div>
+</footer>
+
+</html>
