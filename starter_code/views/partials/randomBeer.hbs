@@ -1,0 +1,17 @@
+<div class="item row">
+    <div class="image col-4">
+        <img src="{{this.image_url}}" height="350">
+    </div>
+    <div class="col-8">
+        <h5>{{this.name}}</h5>
+        <p class="tagline">{{this.tagline}}</h4>
+        <p>{{this.description}}</p><br>
+        <h7><b>Foor Pairing</b></h7><br><br>
+        <ul >
+            {{#each this.food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p><b>Brewers Tips:</b>{{this.brewers_tips}}</p>
+    </div>
+</div>
