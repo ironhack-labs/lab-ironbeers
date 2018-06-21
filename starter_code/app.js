@@ -9,6 +9,8 @@ app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
 
+hbs.registerPartials(__dirname + '/views/partials')
+
 app.get('/', (req, res, next) => {
     res.render('index');
 });
@@ -17,7 +19,12 @@ app.get('/', (req, res, next) => {
 app.get('/beers', (req, res, next) => {
 
     punkAPI.getBeers()
-        .then(beers => {
+
+
+
+    .then(beers => {
+
+            //res.locals.beers = punkAPI;
 
             res.render('/beers.hbs');
         })
@@ -29,12 +36,22 @@ app.get('/beers', (req, res, next) => {
 });
 
 
-app.get('/random-beers', (req, res, next) => {
-    res.render('/randomBeers.hbs');
+
+// app.get('/random-beers', (req, res, next) => {
+//     const theRandomBeers = Math.floor(Math.random() * punkAPI.length);
+
+//     const.data = {
+
+//         featured: punkAPI[theRandomBeers]
+//     };
+
+
+//     res.render('/randomBeers.hbs', data);
+// });
+
+
+
+app.listen(3000, () => {
+
+    console.log("Server Started");
 });
-
-
-
-
-
-app.listen(3000);
