@@ -21,15 +21,15 @@ app.get('/beers', (req, res, next) => {
     punkAPI.getBeers()
 
 
-
     .then(beers => {
 
-            //res.locals.beers = punkAPI;
 
-            res.render('/beers.hbs');
+            res.locals.myBeers = beers;
+
+            res.render('beers.hbs');
         })
         .catch(error => {
-            console.log(error)
+            console.log(error);
         })
 
 
