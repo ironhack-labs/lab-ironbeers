@@ -33,7 +33,4 @@ app.get('/random-beer', (req, res, next) => {
     });
 });
 
-
-
-
 app.listen(3000);
