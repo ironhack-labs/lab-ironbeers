@@ -14,5 +14,13 @@ app.get('/', (req, res, next) => {
   res.render('index');
 });
 
+app.get('/beers', (req, res, next) => {
+  punkAPI.getBeers()
+   .then(beers => {
+     console.log(beers);
+     res.render('beers', beers);
+ })
+});
 
 app.listen(3000);
+
