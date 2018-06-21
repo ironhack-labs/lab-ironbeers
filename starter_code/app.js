@@ -23,7 +23,6 @@ app.get('/beers', (req, res, next) => {
 
     .then(beers => {
 
-
             res.locals.myBeers = beers;
 
             res.render('beers.hbs');
@@ -37,21 +36,22 @@ app.get('/beers', (req, res, next) => {
 
 
 
-// app.get('/random-beers', (req, res, next) => {
-//     const theRandomBeers = Math.floor(Math.random() * punkAPI.length);
+app.get('/random-beers', (req, res, next) => {
 
-//     const.data = {
+    punkAPI.getRandom()
+        .then(beers => {
 
-//         featured: punkAPI[theRandomBeers]
-//     };
+            res.locals.myRandomBeer = beers[0];
 
-
-//     res.render('/randomBeers.hbs', data);
-// });
+            res.render('randomBeers.hbs');
+        })
+        .catch(error => {
+            console.log(error)
+        })
+});
 
 
 
 app.listen(3000, () => {
-
     console.log("Server Started");
 });
