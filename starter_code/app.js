@@ -33,8 +33,8 @@ app.get('/random-beer', (req, res, next) => {
       beers
 
     }).catch(error => {
-      console.log(error)
-    })
+      console.log(error);
+    });
 
   });
 
