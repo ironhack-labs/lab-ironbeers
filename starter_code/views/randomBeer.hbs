@@ -1,7 +1,19 @@
-<div>
-    <h1>Cargo</h1>
-
+<section class="row">
     {{#each beers}}
-        {{this.name}}
+    <article class="col-3">
+        <img src="{{this.image_url}}" alt="{{this.name}}" class="beer-img">
+     </article>
+     <article class="col-9">
+        <h1>{{this.name}}</h1>
+        <p class="subtitle">{{this.tagline}}</p>
+        <p>{{this.description}}</p>
+        
+        <h2 class="food-pairing">Food Pairing:</h4>
+        <li>{{this.food_pairing}}</li>
+
+        <p><strong>Brewers Tips:</strong> {{this.brewers_tips}}</p>
+     </article>
     {{/each}}
-</div>
+   
+</section>
+

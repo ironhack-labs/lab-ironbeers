@@ -1,10 +1,6 @@
-<div>
-    <img src="{{this.image_url}}" alt="">
+<article class="col-4 beer">
+    <img src="{{this.image_url}}" alt="{{this.name}}" class="beer-img">
     <h1>{{this.name}}</h1>
-    <h3>{{this.tagline}}</h3>
+    <p class="subtitle">{{this.tagline}}</p>
     <p>{{this.description}}</p>
-</div>
-
-{{#each this }}
-  {{ @key }} : {{ this }} // 
-{{/each}}
+</article>

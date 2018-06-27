@@ -1,11 +1,72 @@
-/* 
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif */
-footer{
-    background-color:#0A2C42;
-    color: #F7F9F9;
+:root {
+    --white: #F7F9F9;
+    --light-blue: #2081C3;
+    --dark-blue: #0A2C42;
+    --grey: rgba(145, 145, 145, 0.481);
+
 }
-  
+
+html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 50px;
+}
+
+header {
+    margin-bottom: 3em;
+}
+
+footer{
+    background-color:var(--dark-blue);
+    color: var(--white);
+    padding: 1em 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+main {
+    max-width: 1660px;
+}
+
+h1 {
+    margin-top: 1em;
+    margin-bottom: 0;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: 600; 
+}
+
+nav {
+    background-color: var(--light-blue);
+}
+
+.beer {
+    margin-bottom: 2em;
+}
+
+.beer-img {
+    display: block;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.subtitle {
+    font-size: 1em;
+    color: var(--grey);
+}
+
+.food-pairing {
+    margin-bottom: 1em;
+}
