@@ -70,3 +70,13 @@ nav {
 .food-pairing {
     margin-bottom: 1em;
 }
+
+.index-container a {
+    margin: 10px 0;
+}
+
+.box-shadow {
+    -webkit-box-shadow: -1px 3px 25px 0px rgba(0,0,0,0.44);
+    -moz-box-shadow: -1px 3px 25px 0px rgba(0,0,0,0.44);
+    box-shadow: -1px 3px 25px 0px rgba(0,0,0,0.44);
+}
