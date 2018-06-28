@@ -28,9 +28,10 @@ app.get('/beers', (req, res) => {
 app.get('/random-beers', (req, res) => {
   punkAPI.getRandom().then( beers => {
     console.log(beers);
-    res.render('partials/beerPartial', {
-      this: beers[0]
+    res.render('beers', {
+      beers: beers
     });
+
   })
 
 });
