@@ -5,4 +5,132 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.contenedor-nav {
+  width: 98%;
+
+  margin: 0 auto;
+  background-color: #2081c3;
+  margin-top: 20px;
+  padding-top: 10px;
+  /* flex */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-icon img {
+  margin: 0;
+  height: 75px;
+  width: 75px;
+}
+.nav-ul {
+  display: flex;
+  flex: 1;
+  list-style: none;
+}
+
+.nav-ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 16px 16px 16px 16px;
+  color: whitesmoke;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.nav-ul li :hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
+.btn-menu {
+  padding: 10px 20px;
+  margin-left: 10px;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  border: 2px solid white;
+}
+.index-container {
+  margin-top: 30px;
+  height: 450px;
+  width: 315px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  justify-items: center;
+}
+.index-container img {
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 280px;
+  height: 300px;
+  justify-content: center;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  margin-left: 10px;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  background-color: blue;
+  border: 2px solid darkblue;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.btn:hover {
+  background-color: white;
+  border: 3px solid #2081c3;
+  color: #2081c3;
+}
+
+footer {
+  height: 60px;
+  width: 100%;
+  padding-top: 20px;
+  margin-top: 20px;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  background-color: #0a2c42;
+  text-align: left;
+  color: white;
+  /* flex */
+  display: flex;
+  justify-content: flex-start;
+}
+
+footer h2 {
+  padding-left: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
