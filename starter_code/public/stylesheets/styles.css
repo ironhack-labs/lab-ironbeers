@@ -3,6 +3,19 @@ white: #F7F9F9;
 light-blue: #2081C3;
 dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
 */
-  
+body{
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+.navbar {
+  background-image:linear-gradient(to bottom,#2081C3 0,#2081C3 100%);;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #F7F9F9;
+}
+.site-footer{
+  background-color: #0A2C42;
+  color: #F7F9F9;
+  margin-top: 15px;
+  padding-top: 15px;
+}

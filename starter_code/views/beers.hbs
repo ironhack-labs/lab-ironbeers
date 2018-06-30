@@ -1,0 +1,22 @@
+<div class="container">
+  <table class="table table-sm table-hover table-dark">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">name</th>
+        <th scope="col">tagline</th>
+        <th scope="col">image</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each beers}}
+        <tr>
+          <th scope="row">{{id}}</th>
+          <td>{{name}}</td>
+          <td>{{tagline}}</td>
+          <td><img src="{{image_url}}" alt="chelita" width="20" height="50"></td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
