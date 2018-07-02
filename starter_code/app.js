@@ -6,21 +6,11 @@ const path    = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 const punkAPI = new PunkAPIWrapper();
 
-hbs.registerPartials(__dirname + '/views/partials');
+require('./configs/hbs.configs');
+
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
-
-hbs.registerHelper('splitText', function(list) {
-  let array = list.map(el => {
-    return el.split(",");
-  });
-  let li = '';
-  for(let i = 0; i< array.length; i++){
-    li += '<li>' + array[i] + '</li>';
-  }  
-  return li;
- });
 
 app.get('/', (req, res, next) => {
   res.render('index');
