@@ -9,7 +9,10 @@
         <p>{{this.description}}</p>
         
         <h2 class="food-pairing">Food Pairing:</h4>
-        <li>{{this.food_pairing}}</li>
+
+        <ul>
+        {{{splitText this.food_pairing}}}
+        </ul>
 
         <p><strong>Brewers Tips:</strong> {{this.brewers_tips}}</p>
      </article>
