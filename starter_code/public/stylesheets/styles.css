@@ -6,3 +6,52 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+.navtop {
+  background-color:#2081C3;
+  color: #ffffff;
+}
+
+.navbot {
+  background: #0A2C42;
+  color: #ffffff;
+}
+
+.index-container {
+  background: rgba(145, 145, 145, 0.481);
+  text-align: center;
+}
+
+.imgBeer {
+  width: 480px;
+  padding: 50px;
+}
+
+.button-index {
+  margin: 15px;
+  
+}
+
+
+/********beers.hbs***********/
+
+.beers-container {
+  background: rgba(145, 145, 145, 0.481);
+  padding: 0 150px;
+}
+
+.card {
+  background: rgba(145, 145, 145, 0.481);
+}
+
+.img-beers2 {
+  height: 300px;
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.img-beers2 img {
+  height: 300px;
+  width: 100px;
+}
+
