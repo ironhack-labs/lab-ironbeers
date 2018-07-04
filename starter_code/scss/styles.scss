@@ -1,0 +1,80 @@
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100vw;
+  padding: 12px;
+  background-color: #0A2C42;
+  color: white;
+}
+
+
+#home {
+  img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+#beers {
+  img {
+    max-height: 150px;
+  }
+
+  .beer-card {
+    .beerName {
+      font-weight: bold;
+      font-size: 18px;
+      text-align: left;
+    }
+
+    .beerTagline {
+      color: grey;
+      font-size: 16px;
+      text-align: left;
+    }
+
+    .beerDescription {
+      font-size: 16px;
+      text-align: left;
+    }
+  }
+}
+
+
+#random {
+  .beer-card {
+    .beerName {
+      font-weight: bold;
+      font-size: 22px;
+      text-align: left;
+    }
+
+    .beerTagline {
+      color: grey;
+      font-size: 18px;
+      text-align: left;
+    }
+
+    .beerDescription {
+      font-size: 16px;
+      text-align: left;
+    }
+
+    .beerPairingTitle {
+      font-size: 18px;
+      text-align: left;
+    }
+
+    .beerPairing {
+      font-size: 16px;
+      text-align: left;
+    }
+
+    .beerTips {
+      font-size: 16px;
+      text-align: left;
+    }
+  }
+}
