@@ -1,7 +1,9 @@
-<div class="beerPartial">
-      <img class="beer-img-top" src="{{this.image_url}}" alt="Beer image cap">
+<div class="beerRandom">
+  {{#each beers}}  
+      <img class="beer-img" src="{{this.image_url}}" alt="Beer image cap">
       <div class="beer-body">
         <h5 class="beer-title">{{this.name}}</h5>
         <p class="beer-desc">{{this.description}}</p>
+  {{/each}}
       </div>
 </div>
