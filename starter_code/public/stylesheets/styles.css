@@ -5,4 +5,106 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+body{
+  background: white;
+  font-size: 1em;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: black;
   
+}
+html{
+  position: relative;
+  min-height: 100vh;
+}
+.navbar {
+ background-color:  #2081C3;
+ color: white;
+}
+
+.nav-link {
+  color: white;
+}
+
+.page-footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  color: white;
+  text-align: left;
+  background: #0A2C42;
+}
+
+.page-footer p {
+  margin-left: 2%;
+}
+
+.index-image{
+  margin: 1% auto;
+  width: 100%;
+}
+
+
+.home-buttons{
+  width: 100%;
+}
+.index-container img {
+  margin: 0 auto;
+  display: block;
+  width: 30%;
+  height: auto;
+}
+
+.btn{
+  display: block;
+  margin: 1% auto;
+}
+
+.btn-links{
+  color: white;
+}
+.row{
+  margin: 5%;
+  height: 100px;
+}
+.row img{
+  margin: 0 auto;
+  height: 200px;
+  margin-bottom: 2%;
+}
+.beer-image{
+  display: flex;
+  justify-content: center;
+}
+
+.grey-p{
+  color: rgba(145, 145, 145, 0.481);
+}
+
+.random-image-container{
+  display: flex;
+  justify-content: center;
+  width: 60%;
+}
+
+#random-image{
+  width: 25%;
+}
+
+#random-image img{
+  margin: 10px;
+  height: 200px;
+}
+
+#random-text{
+  margin: 10px;
+}
+
+#rand{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
