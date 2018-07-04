@@ -1,0 +1,144 @@
+/*
+white: #F7F9F9;
+light-blue: #2081C3;
+dark-blue: #0A2C42;
+grey: rgba(145, 145, 145, 0.481);
+font-family: Arial, Helvetica, sans-serif
+*/
+
+body{
+  padding: 0;
+  margin: 0;
+  background: $w;
+  font-family: $font;
+  font-size: 16px;
+}
+
+h2{
+  margin-top: 20px;
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+h3{
+  font-size: 1.1em;
+  color: $grey;
+  margin: 10px 0 20px 0;
+}
+
+.container{
+  min-width: 90%;
+}
+
+a, a:hover{ @extend %a;}
+
+nav{
+  background: $lb;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top:0;
+  width: 100%;
+  -webkit-box-shadow: 0px 3px 16px -4px rgba(0,0,0,0.39);
+  -moz-box-shadow: 0px 3px 16px -4px rgba(0,0,0,0.39);
+  box-shadow: 0px 3px 16px -4px rgba(0,0,0,0.39);
+
+  ul{
+    margin: 0;
+    
+    li{
+      display: inline-block;
+      margin-right: 20px;
+      
+      a{ 
+        color: #FFF;
+        text-decoration: none;
+      }
+
+    }
+  }
+}
+
+footer{
+  background: $db;
+  height: 50px;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  p{ margin: 0;}
+}
+
+// Index
+
+.index-container{
+  margin: 20vh auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  img{ 
+    width: 30%;
+    min-width: 210px;
+    max-width: 300px;
+  }
+  .index-btn{
+    margin-top: 50px;
+  
+    a.btn{
+      background: $lb;
+      display: block;
+      margin: 0 auto 20px auto;
+      -webkit-box-shadow: 11px 13px 14px -9px rgba(0,0,0,0.35);
+      -moz-box-shadow: 11px 13px 14px -9px rgba(0,0,0,0.35);
+      box-shadow: 11px 13px 14px -9px rgba(0,0,0,0.35);
+    }
+  }
+}
+
+// Beers
+
+.beer-cont{
+  margin-top: 160px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .beer{
+    width: 30%;
+    margin-bottom: 30px;
+
+    img{
+      height: 200px;
+      width: auto;
+      margin: 0 auto;
+    }
+  }
+}
+
+// Random
+
+.random-cont{
+  display: flex;
+  flex-direction: row;
+  margin-top: 160px;
+}
+
+.random-beer-info{
+  margin-left: 60px;
+
+  h2{
+    margin: 0;
+  }
+
+  ul{
+    margin-bottom: 30px;
+  }
+}
