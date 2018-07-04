@@ -42,3 +42,8 @@ nav {
   text-decoration: none;
 }
 
+.cards-container {
+  display: flex;
+  padding: 10% 20%;
+  flex-wrap: wrap;
+}
