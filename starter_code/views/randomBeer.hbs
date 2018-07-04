@@ -1,0 +1,15 @@
+{{#each beers}}
+      <div class="beerCard rounded mx-auto d-block beer" style="width: 33.333%;">
+       <div class="beer">
+      <img class="card-img-top" src="{{this.image_url}}" alt="Card Beer">
+      </div>
+      <div class="card-body">
+        <h5 class="card-name">{{this.name}}</h5>
+        <p class="card-tagline">{{this.tagline}}</p>
+        <p class="card-description">{{this.description}}</p>
+        <p class="card-food_pairing">{{this.food_pairing}}</p>
+        <p class="card-brewers_tips">{{this.brewers_tips}}</p>
+        
+      </div>
+</div>
+  {{/each}}
