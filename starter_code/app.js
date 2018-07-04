@@ -11,7 +11,23 @@ app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res, next) => {
-  res.render('index');
+  res.render('index', {
+    'activeHome': ' active'
+  });
+});
+
+app.get('/beers', (req, res, next) => {
+  punkAPI.getBeers()
+    .then(beers => {
+      res.render('beers', {
+        'beers_page': true,
+        'activeBeers': ' active'
+      });
+    })
+    .catch(error => {
+      console.log(error)
+    });
+
 });
 
 
