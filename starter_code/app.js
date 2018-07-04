@@ -32,13 +32,10 @@ app.get('/beers', (req, res, next) => {
 });
 
 app.get('/random-beers', (req, res, next) => {
-  punkAPI.getBeers()
-    .then(beers => {
-      var random = Math.floor(Math.random() * beers.length);
-      console.log(beers[0]);
-      
+  punkAPI.getRandom()
+    .then(beer => {
       res.render('randomBeer', {
-        'beer': beers[random],
+        'beer': beer[0],
         'activeRandomBeers': ' active'
       });
     })
