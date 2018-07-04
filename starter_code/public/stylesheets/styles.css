@@ -5,4 +5,147 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+html,body{
+  height: 100vh;
+}
+body{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+/*HEADER*/
+
+header{
+  background: #2081c3;
+  color: #fff;
+  padding: 8px 20px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+}
+
+header ul{
+  display: flex;
+  justify-content: flex-start; 
+}
+header ul li{
+  width: 120px;
+}
+header ul li a{
+  color: #fff;
+  font-weight: 600;
+}
+
+/*FOOTER*/
+
+footer{
+  background-color: #0A2C42;
+  color: #fff;
+  padding: 8px 20px;
+  width: 100%;
+}
+
+
+/*MAIN*/
+
+.container{
+  height: calc(100vh - 132px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 66px;
+  box-sizing: border-box;
+}
+.container img{
+  margin-left: 60px;
+}
+
+.container button{
+   background-color: #2081c3;
+   border: none;
+   padding: 10px 18px;
+   border-radius: 5px;
+   box-shadow: 0px 2px 5px rgba(0,0,0,.5);
+}
+
+.container button a{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/*BEERS*/
+
+.beers-container{
+  padding: 30px 0;
+}
+.beers-container ul{
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.beers-container ul li{
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+.beers-container ul .img-wrap{
+  height: 200px;
+  margin-bottom: 30px;
+}
+.beers-container ul .img-wrap img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.beers-container ul li >*{
+  margin: 0 0 10px;
+}
+.beers-container ul li .tagline{
+  color: rgba(145, 145, 145, 0.481);
+}
+
+/*RANDOM BEER*/
+
+.random-container{
+  height: calc(100vh - 132px);
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+}
+.random-container .img-wrapper{
+  width: 30%;
+  text-align: center;
+  height: 100%;
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+.random-container .img-wrapper img{
+  height: 100%;
+  object-fit: contain;
+}
+
+.random-container .info{
+  width: 70%;
+}
+.random-container .info .tagline{
+  color: rgba(145, 145, 145, 0.481);
+}
+.random-container .info li{
+  list-style: initial;
+}
