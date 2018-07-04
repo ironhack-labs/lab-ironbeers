@@ -11,11 +11,6 @@ nav {
   color: #F7F9F9;
 }
 
-.card {
-  color: #F7F9F9;
-  background-color: #0A2C42;
-}
-
 .index-container {
   display: flex;
   justify-content: center;
@@ -46,4 +41,21 @@ nav {
   display: flex;
   padding: 10% 20%;
   flex-wrap: wrap;
+}
+
+.card {
+  border: none;
+  color: black;
+
+}
+
+.card-img-top{
+  margin: 0 auto;
+  width: 20%;
+  height: 30%;
+}
+
+.footer-card {
+  background-color: #0A2C42;
+  color: #F7F9F9;
 }
