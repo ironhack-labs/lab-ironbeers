@@ -14,7 +14,6 @@ app.get('/', (req, res, next) => {
   res.render('index');
 });
 
-console.log("HOLAAAAAAAAAA");
 app.get('/beer', (req, res, next) => {
   punkAPI.getBeers()
   .then(beers => {
