@@ -1,0 +1,14 @@
+    <div class="randombeer">
+      <div class="imagen">
+        <img src="{{image_url}}" height=200>
+      </div>
+      <div class="texto">
+        <h4><strong>{{name}}</strong></h4>
+        <p class="gray">{{tagline}}</p>
+        <p>{{description}}</p>
+         <p><strong>Food Pairing:</strong></p>{{#each food_pairing}} 
+          <li>{{this}}</li>
+         {{/each}}
+        <p class="tips"><strong>Brewers tips:</strong> {{brewers_tips}}</p>
+        </div>
+    </div>
