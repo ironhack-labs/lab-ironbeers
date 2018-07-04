@@ -1,8 +1,1 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
-  
+footer{position:fixed;bottom:0;height:50px;width:100vw;padding:12px;background-color:#0a2c42;color:#fff}#home img{width:300px;height:300px}#beers img{max-height:150px}#beers .beer-card .beerName{font-weight:bold;font-size:18px;text-align:left}#beers .beer-card .beerTagline{color:gray;font-size:16px;text-align:left}#beers .beer-card .beerDescription{font-size:16px;text-align:left}#random img{max-width:80px}#random .beer-card .beerName{font-weight:bold;font-size:22px;text-align:left}#random .beer-card .beerTagline{color:gray;font-size:18px;text-align:left}#random .beer-card .beerDescription{font-size:16px;text-align:left}#random .beer-card .beerPairingTitle{font-size:18px;text-align:left}#random .beer-card .beerPairing{font-size:16px;text-align:left}#random .beer-card .beerTips{font-size:16px;text-align:left}/*# sourceMappingURL=public/stylesheets/styles.css.map */
