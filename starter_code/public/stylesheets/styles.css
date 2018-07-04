@@ -14,3 +14,23 @@ nav {
   color: white;
   background-color: #0A2C42;
 }
+
+.index-container {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 20%;
+  height: 20%;
+  padding: 5% 0;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons-container button {
+  margin-bottom: 3%;
+}
