@@ -5,4 +5,59 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+body{
+    font-family: Arial, Helvetica, sans-serif; 
+    background: #F7F9F9;
+}
+  .btn-class{
+      margin: 20px;
+  }
+
+  .index-container{
+    margin: 30px auto;
+  }
+  .beer{
+      height: 220px;
+      width: 60px;
+      margin: 0 auto;
+      text-align: center;
+      
+  }
+
+  .beer img{
+    height: 220px;
+    width: 60px;
+  }
+
+  .beerCard{
+      margin-top: 10px;
   
+  }
+
+  .beer-partial{
+    height: 220px;
+    width: 60px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.beer-partial img{
+  height: 220px;
+  width: 60px;
+}
+
+.partial{
+    margin: 0 auto;
+}
+
+p{
+    font-size: 0.8em;
+}
+.card-body h5{
+    font-weight:bold;
+    font-size: 1.1em;
+}
+.card-tagline{
+    color:silver;
+}
