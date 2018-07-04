@@ -5,4 +5,23 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+
+.index-container {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #2081C3;
+  box-shadow: 5px 5px 5px grey;
+  height: 40px;
+  margin: auto 0;
+  padding: 5px 0;
+}
+
+.listaContainer {
+  display: inline-block;
+
+}
+
+.listaContainer a {
+  text-decoration: none;
+  color: #F7F9F9
+}
   
