@@ -39,7 +39,7 @@ a {
 .beers-container {
   display: flex;
   flex-wrap: wrap;
-  padding: 5% 5%;
+  padding: 5%;
 }
 
 .card-img-top {
