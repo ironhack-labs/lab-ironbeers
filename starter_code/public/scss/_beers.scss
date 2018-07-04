@@ -1,0 +1,38 @@
+.beersH2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.beersH3 {
+    color: grey;
+    font-size: 1rem;
+}
+
+.beersP {
+    font-size: .75rem;
+    font-weight: 700;
+}
+
+.card {
+    background: rgba(228, 228, 228, 0.481) !important;
+    margin: 20px;
+    width: 30% !important;
+
+    img {
+        height: 300px;
+        max-width: 100%;
+        object-fit: contain;
+        margin-top: 25px;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.container {
+    max-width: 1600px !important;
+}

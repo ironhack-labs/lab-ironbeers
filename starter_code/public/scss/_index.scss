@@ -1,0 +1,23 @@
+.beer {
+    height: 350px;
+}
+
+.index-container {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+
+    button {
+        display: block;
+        margin: 15px;
+        max-width: 250px;
+        background: #2081C3;
+        box-shadow: 5px 5px 5px black;
+    }
+}
