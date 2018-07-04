@@ -5,4 +5,80 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+ 
+.flexlife {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+}
+
+.flexlife img {
+  height: 425px;
+}
+
+
+.buttonflex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  position: relative;
+  bottom: 15px;
+}
+
+.buttonflex button {
+  padding: 10px 15px 10px 15px;
+  border-radius: 5px;
+  background-color: #2081C3;
+  color: #f7f9f9;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: rgba(145, 145, 145, 0.481);
+}
+
+nav {
+  display: flex;
+  height: 82px;
+  background-color: #2081C3;
+  list-style-type: none;
+  color: #F7F9F9;
+  align-items: center;  
+}
+
+
+
+nav li {
+  padding-left: 25px;
+  position: relative;
+  left: 3%;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #f7f9f9;
+}
+
+
+footer {
+  display: flex;
+  height: 70px;
+  width: 100%;
+  background-color: #0A2C42;
+  list-style-type: none;
+  color: #F7F9F9;
+  align-items: center;  
+  position: absolute;
+  bottom: 0px;
+}
+
+
+
+footer span {
+  position: relative;
+  left: 1.8%;
+}
