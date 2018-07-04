@@ -39,7 +39,7 @@ nav {
 
 .cards-container {
   display: flex;
-  padding: 10% 20%;
+  padding: 5%;
   flex-wrap: wrap;
 }
 
@@ -51,7 +51,7 @@ nav {
 
 .card-img-top{
   margin: 0 auto;
-  width: 20%;
+  width: 10%;
   height: 30%;
 }
 
