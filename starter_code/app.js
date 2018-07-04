@@ -7,6 +7,9 @@ const punkAPI = new PunkAPIWrapper();
 
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
+
+app.use(express.static(__dirname+'/node_modules/bootstrap/dist'))
+app.use(express.static(__dirname+'/node_modules/jquery/dist'))
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res, next) => {
