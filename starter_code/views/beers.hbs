@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+        {{#each beers}}
+        <div class="col-md-4">
+            <div class="d-flex flex-row">
+                {{> beerPartial this}}
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>>
