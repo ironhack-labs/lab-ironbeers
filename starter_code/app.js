@@ -31,7 +31,6 @@ app.get('/beers', (req, res, next) => {
   punkAPI.getBeers()
   .then(beers => {
     res.render('beers', {title: 'Beers', active: 'beers', beersArr: beers})
-    console.log(beers)
   })
   .catch(error => {console.log(error)})
 })

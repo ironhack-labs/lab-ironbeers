@@ -1,19 +1,19 @@
 <div class="container" id="random">
   <div class="row">
     <div class="col-3 d-flex flex-column justify-content-start align-items-center p-5 beer-card">
-      <img src="{{randBeer.image_url}}">
+      <img src="{{randBeer.[0].image_url}}">
     </div>
-    <div class="col-9 d-flex flex-column justify-content-start align-items-center p-5 beer-card">
-      <h1 class="beerName m-2">{{name}}</h1>
-      <p class="beerTagline">{{tagline}}</p>
-      <p class="beerDescription">{{description}}</p>
+    <div class="col-9 d-flex flex-column justify-content-start align-items-left p-5 beer-card">
+      <h1 class="beerName m-2">{{randBeer.[0].name}}</h1>
+      <p class="beerTagline">{{randBeer.[0].tagline}}</p>
+      <p class="beerDescription">{{randBeer.[0].description}}</p>
       <h2 class="beerPairingTitle">Food Pairing</h2>
       <ul>
-        {{#each randBeer.food_pairing}}
+        {{#each randBeer.[0].food_pairing}}
         <li class="beerPairing">{{this}}</li>
         {{/each}}
       </ul>
-      <p class="beerTips"><strong>Brewers Tips:</strong> {{randBeer.brewers_tips}}</p>
+      <p class="beerTips"><strong>Brewers Tips:</strong> {{randBeer.[0].brewers_tips}}</p>
     </div>
   </div>
 </div>
