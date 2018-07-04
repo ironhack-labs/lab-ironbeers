@@ -29,7 +29,22 @@ app.get('/beers', (req, res, next) => {
     .catch(error => {
       console.log(error)
     });
+});
 
+app.get('/random-beers', (req, res, next) => {
+  punkAPI.getBeers()
+    .then(beers => {
+      var random = Math.floor(Math.random() * beers.length);
+      console.log(beers[0]);
+      
+      res.render('randomBeer', {
+        'beer': beers[random],
+        'activeRandomBeers': ' active'
+      });
+    })
+    .catch(error => {
+      console.log(error)
+    });
 });
 
 
