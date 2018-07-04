@@ -35,3 +35,8 @@ a {
   text-decoration: none;
   margin-bottom: 3%;
 }
+
+.beers-container {
+  display: flex;
+  flex-wrap: wrap;
+}
