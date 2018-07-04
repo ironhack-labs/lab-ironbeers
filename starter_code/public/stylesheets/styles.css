@@ -45,4 +45,22 @@ a {
 }
 
 .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-img-top {
+    width: 20%;
+    height: 30%;
+    margin: 0 auto;
+}
+
+.card {
+    border: none;
+    padding-top: 30px;
+}
+
+.card-body {
+    padding-left: 50px;
+    padding-right: 50px;
 }
