@@ -1,0 +1,8 @@
+<div class="container center-align">
+  <div class="row">
+    <h1>Our Beers</h1>
+    {{#each beers as | beer |}}
+      {{> beerPartial beer=beer }}
+    {{/each}}
+  </div>
+</div>
