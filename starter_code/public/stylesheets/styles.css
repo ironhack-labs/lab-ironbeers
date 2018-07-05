@@ -23,3 +23,46 @@ footer {
   justify-content: flex-start;
   align-items: center;
 }
+
+.main-container {
+  height: 600px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.beer-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;  
+}
+
+.beer-card {
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+
+.beer-card-img {
+  margin: 0 auto;
+  height: 300px;
+}
+
+.beer-card-content h3 {
+  font-weight: bold;
+}
+
+.beer-card-content h5 {
+  color: rgba(145, 145, 145, 0.481);
+}
+
+.beer-card-content p {
+  text-align: justify;
+}
+
+.beer-jar-img {
+  height: 400px;
+}
