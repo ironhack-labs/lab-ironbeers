@@ -32,13 +32,18 @@ img {
     justify-content: center;
     margin: 2% 30%;
 }
+
 button {
-    margin: 3%;
-    padding: 8%;
+    margin: 1.5%;
+    padding: 6%;
     width: 20%;
     text-align: center;
     align-content: center;
     justify-content: center;
+}
+
+a {
+    color: white;
 }
 
 footer {
@@ -50,4 +55,11 @@ footer {
     color: white;
     text-align: left;
     padding: 1% 0 1% 1%;
+}
+
+
+.row {
+    flex-wrap: row;
+    justify-content: space-around;
+    height: 200px;
 }
