@@ -1,0 +1,54 @@
+body {
+  font-family: $font;
+  font-size: 18px;
+}
+
+nav {
+  height: 40px;
+  background-color: $light-blue;
+  li {
+    a {
+      color: $white;
+    }
+  }
+}
+
+.container {
+  height: 85vh;
+  margin-top: 3vh;
+  .beer-collection{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .beer{
+      max-width: 33%;
+      max-height: 50%;
+    }
+  }
+
+  .random-beer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .info-container{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  img {
+    max-width: 400px;
+    max-height: 500px;
+  }
+  a {
+    margin: 5px 0;
+  }
+}
+
+footer {
+  background-color: $dark-blue;
+  color: $white;
+  position: fixed;
+  width: 100%;
+  left:0;
+  bottom:0;
+}

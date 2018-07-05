@@ -1,8 +1,2 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
-  
+body{font-family:Arial,Helvetica,sans-serif;font-size:18px}nav{height:40px;background-color:#2081C3}nav li a{color:#F7F9F9}.container{height:85vh;margin-top:3vh}.container .beer-collection{flex-direction:row;justify-content:center;align-items:center}.container .beer-collection .beer{max-width:33%;max-height:50%}.container .random-beer-container{display:flex;justify-content:center;align-items:center}.container .random-beer-container .info-container{display:flex;flex-direction:column}.container img{max-width:400px;max-height:500px}.container a{margin:5px 0}footer{background-color:#0A2C42;color:#F7F9F9;position:fixed;width:100%;left:0;bottom:0}
+/*# sourceMappingURL=styles.css.map */
