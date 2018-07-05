@@ -5,4 +5,46 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+.index-container {
+  height: 850px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  object-fit: cover;
+  align-items: center;
+}
+.index-container img {
+  width: 600px;
+}
+.navegation {
+  background-color: #2081c3 !important;
+}
+
+.beer-container img {
+  width: auto;
+  height: 100%;
+}
+
+.beer-container {
+  max-width: 1500px;
+  margin: 1em auto;
+  padding-bottom: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.beer-container article {
+  margin: 170px 0;
+  width: 30%;
+}
+
+.beer-container article > div {
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+.beer-container article img {
+  display: block;
+  margin: auto;
+}
