@@ -10,6 +10,7 @@ app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
 
 hbs.registerPartials(__dirname + '/views/partials');
+
 hbs.registerHelper('ifEquals', function(arg1, arg2, options) {
   return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
 });
@@ -36,11 +37,11 @@ app.get('/beers', (req, res, next) => {
 
 app.get('/random-beer', (req, res, next) => {
   punkAPI.getRandom()
-  .then(beers => {
-      console.log(beers);
-      res.render('random-beer', {
+  .then(randomBeer => {
+      console.log(randomBeer);
+      res.render('random-beers', {
         title: 'Random Beer',
-        beers
+        randomBeer,
       });
     })
     .catch(error => {
