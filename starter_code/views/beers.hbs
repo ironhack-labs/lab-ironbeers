@@ -1,0 +1,21 @@
+<h1>Lista de Cervezas</h1>
+
+<ul>
+    {{#each beers as | beer |}}
+        {{> beerPartial}}
+    {{/each}}
+</ul>
+
+
+{{!-- <ul>
+    {{#each beers as | beer |}}
+    <li>nombre {{beer.name}} - {{beer.id}}</li>
+    {{/each}}
+</ul> --}}
+
+{{!-- <ul>
+    {{#each beers}}
+    <li>nombre {{this.name}} - {{this.id}}</li>
+    {{/each}}
+</ul> --}}
+
