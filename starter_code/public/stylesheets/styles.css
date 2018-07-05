@@ -5,4 +5,82 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+body
+{
+    margin: 0;
+    padding: 0;
+}
+.index-container
+{
+    height: 100px;
+    background-color: #2081C3;
+    color:white;
+    margin: 0;
+}
+
+.index-container-bot
+{
+    margin: 0;
+    height: 100px;
+    background-color:#0A2C42 ;
+    color:white;
+}
+
+#titulo
+{
+   float:left;
+    margin-top: 35px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+#titulo2
+{
+    float:left;
+    margin-top: 35px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+#titulo3
+{
+    float: left;
+    margin-top: 35px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+#letrero-fondo
+{
+    margin: 0;
+    padding-top: 35px;  
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+#contenedor-cerveza
+{
+    margin-left: 600px;
+    margin-top: 50px;
+}
+
+#chechar-cerveza
+{
+    background-color: #2081C3;
+    margin-top: 25px;
+    margin-left: 765px;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    height: 30px;
+}
+
+#cerveza-random
+{
+    background-color: #2081C3;      
+    margin-top: 25px;
+    margin-bottom: 30px;
+    margin-left: 740px;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    height: 30px;
+}
