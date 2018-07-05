@@ -1,9 +1,13 @@
 <div class="content-body">
-    
-    {{#each beers}}
-        
-        <p>{{this.name}}</p>
 
-    {{/each}}
+    <div class="beer-partials-container">
+    
+        {{#each beers}}
+            
+            {{> _beerPartial this }}
+
+        {{/each}}
+
+    </div>
 
 </div>

@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // REGISTERING OUR PARTIALS ROUTE TO /PARTIALS/
 
-hbs.registerPartials(__dirname + '/views/partials')
+hbs.registerPartials(__dirname + '/views/partials/')
 
 // MAIN INDEX.HBS ROUTE
 
@@ -34,12 +34,19 @@ app.get('/', (req, res, next) => {
 // BEERS PAGE ROUTE
 
 app.get('/beers', (req, res, next) => {
-  
   punkAPI.getBeers()
   .then(beers => {
     res.render('beers', {beers: beers});
-  })
+  });
+});
 
+// RANDOM BEER PAGE ROUTE
+
+app.get('/random-beers', (req, res, next) => {
+  punkAPI.getRandom()
+  .then(beer => {
+    res.render('random-beers', beer[0]);
+  });
 });
 
 app.listen(3000);

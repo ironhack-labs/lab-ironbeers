@@ -10,7 +10,6 @@ font-family: Arial, Helvetica, sans-serif
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
 }
 
 /* CSS STYLING FOR NAVBAR AND FOOTER, PART OF LAYOUT.HBS */
@@ -28,6 +27,7 @@ a {
     height: 100px;
     background-color: #2081C3;
     color: white;
+    font-size: 18px;
 }
 
 #navbar-ul {
@@ -54,6 +54,7 @@ a {
     background-color: #0A2C42;
     display: flex;
     align-content: center;
+    font-size: 18px;
 }
 
 .footer-text {
@@ -66,6 +67,7 @@ a {
 .content-body {
     margin-top: 100px;
     margin-bottom: 75px;
+    width: 100%;
 }
 
 /* INDEX PAGE */
@@ -100,16 +102,107 @@ img {
 /* STYLING FOR PARTIALS */
 
 .beer-partial {
-    width: 30%;
+    width: 25%;
+    margin: 25px 35px;
     display: flex;
     flex-direction: column;
+    justify-content: left;
+}
+
+.photo {
+    display: flex;
     justify-content: center;
+    height: 200px;
+    margin-bottom: 20px;
 }
 
 .photo img {
-    width: 100%;
+    width: auto;
+    height: 100%;
+}
+
+.tagline {
+    color: rgba(145, 145, 145, 0.481);
+}
+
+.beer-name h1 {
+    font-weight: 700;
+    font-size: 22px;
 }
 
 .beer-tagline {
-    color: rgba(145, 145, 145, 0.481);
+    margin-bottom: 20px;
+}
+
+.copy {
+    text-align: justify;
+}
+
+/* BEERS PAGE */
+
+.beer-partials-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100;
+    margin: 0 100px;
+    padding: 50px 0;
+}
+
+/* RANDOM BEER PAGE */
+
+.random-beer-page {
+    display: flex;
+    /* justify-content: center; */
+    padding: 100px 0;
+}
+
+.random-beer-container {
+    width: 70%;
+    display: flex;
+    align-content: center;
+}
+
+.random-beer-photo {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    height: 400px;
+    padding-right: 100px;
+}
+
+.random-beer-photo img {
+    width: auto;
+    height: 100%;
+}
+
+.random-beer-text {
+    width: 70%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.random-beer-text h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.random-beer-text .tagline {
+    margin-bottom: 20px;
+}
+
+.random-beer-text p {
+    margin-bottom: 20px;
+}
+
+.random-beer-text li {
+    margin-bottom: 15px;
+    margin-left: 25px;
+}
+
+.foodpairing {
+    font-weight: 700;
 }
