@@ -6,3 +6,9 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+
+img{
+  max-width: 1000px;
+  max-height: 1000px;
+
+}
