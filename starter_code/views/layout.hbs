@@ -27,7 +27,13 @@
     </ul>
   </nav>
   <div class="container d-flex flex-column align-items-center">
-  {{{body}}}
+    {{!-- {{#ifEquals this.title "Beers"}}
+    <div class="beer-collection">
+      {{{body}}}
+    </div>
+    {{#else}} --}}
+      {{{body}}}
+    {{!-- {{/if}} --}}
   </div>
   <footer>
     <h4>Developed by Ironhack ;)</h4>

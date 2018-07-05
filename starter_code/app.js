@@ -10,7 +10,9 @@ app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
 
 hbs.registerPartials(__dirname + '/views/partials');
-
+hbs.registerHelper('ifEquals', function(arg1, arg2, options) {
+  return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
+});
 app.use(express.static(__dirname + '/node_modules/bootstrap/dist'))
 app.use(express.static(__dirname + '/node_modules/jquery/dist'))
 app.use(express.static(path.join(__dirname, 'public')));
@@ -22,7 +24,6 @@ app.get('/', (req, res, next) => {
 app.get('/beers', (req, res, next) => {
   punkAPI.getBeers()
     .then(beers => {
-      console.log(beers);
       res.render('beers', {
         title: 'Beers',
         beers
