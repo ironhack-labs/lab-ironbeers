@@ -1,10 +1,8 @@
-
-<ul>
-
+.<ul>
   {{#each beers}}
     <li>
-      {{this}}
+      {{this.name}}
+      {{> beerPartial}}
     </li>
-    {{> _beerPartial}}
-{{/each}}
+  {{/each}}
 </ul>

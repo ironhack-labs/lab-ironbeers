@@ -17,9 +17,10 @@ app.get('/', (req, res, next) => {
 
 app.get('/beers', (req, res, next) => {
   punkAPI.getBeers()
-    // Call to the PunkAPI package, getBeers
+    // Call to the PunkAPI package, getBeers so lets iterate through the array?
   .then(beers => {
-  res.render('beers');
+      console.log(beers);
+  res.render('beers', {beers});
   //get a Beer from the package and THEN render, inside the THEN
   })
   .catch(error => {
