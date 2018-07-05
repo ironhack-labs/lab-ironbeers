@@ -19,8 +19,9 @@ app.get('/beers', (req, res, next) => {
   punkAPI.getBeers()
     // Call to the PunkAPI package, getBeers so lets iterate through the array?
   .then(beers => {
-      console.log(beers);
+
   res.render('beers', {beers});
+  //template variable {beersArray:beers}
   //get a Beer from the package and THEN render, inside the THEN
   })
   .catch(error => {
@@ -29,7 +30,20 @@ app.get('/beers', (req, res, next) => {
 });
 
 app.get('/random-beers', (req, res, next) => {
-  res.render('random-beers');
+
+  punkAPI.getRandom()
+  .then(beers => {
+
+
+
+  res.render('random-beers', {theBeer:beers[0]});
+  //template will have a thing called the Beer and itll be equal to first thing in that array
+  })
+  .catch(error => {
+    console.log(error);
+  });
+
+
 });
 
 

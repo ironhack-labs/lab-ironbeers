@@ -47,6 +47,35 @@ font-family: Arial, Helvetica, sans-serif
   margin: 10px;
 }
 
+.beer-card{
+  height: 400px;
+  width: 400px;
+  margin: 10px;
+}
+
+
+.order-cards{
+  display: flex;
+  justify-content: start;
+}
+
+
+.card-body{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-img-top{
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 250px;
+  width: 100px;
+}
+
 .beer-button{
   background-color: #2081C3;
   color: #F7F9F9;
