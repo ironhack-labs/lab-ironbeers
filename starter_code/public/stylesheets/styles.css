@@ -5,4 +5,164 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+
+
+.beerInfo3 {
+
+  width: 60%;
+}
+
+.beerInfo3 h2 {
+  color: grey;
+}
+
+
+.leftsideimg img {
+  padding: 100px;
+  height: 500px;
   
+}
+
+.flexlife2 {
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+.beerContainer {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+}
+
+.beerInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 350px;
+  
+  padding: 0px 30px 0px 30px;
+}
+
+.beerInfo h1 {
+  line-height: 0;
+  text-align: left;
+}
+
+.beerInfo h2 {
+  line-height: 0;
+  color: grey;
+  font-size: 12px;
+  text-align: left;
+}
+.beerInfo img {
+  height: 150px;
+}
+
+.beerInfo2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  width: 110%;
+  
+  
+  flex-wrap: nowrap;
+}
+
+.beerInfo2 h1{
+  font-size: 20px;
+}
+
+.beerInfo2 p{
+  font-size: 12px;
+}
+
+.beersdiv {
+  
+  padding: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+ 
+.flexlife {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+}
+
+.flexlife img {
+  height: 425px;
+}
+
+
+.buttonflex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  position: relative;
+  bottom: 15px;
+}
+
+.buttonflex button {
+  padding: 10px 15px 10px 15px;
+  border-radius: 5px;
+  background-color: #2081C3;
+  color: #f7f9f9;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: rgba(145, 145, 145, 0.481);
+}
+
+nav {
+  display: flex;
+  height: 82px;
+  background-color: #2081C3;
+  list-style-type: none;
+  color: #F7F9F9;
+  align-items: center;  
+}
+
+
+
+nav li {
+  padding-left: 25px;
+  position: relative;
+  left: 3%;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #f7f9f9;
+}
+
+
+footer {
+  display: flex;
+  height: 70px;
+  width: 100%;
+  background-color: #0A2C42;
+  list-style-type: none;
+  color: #F7F9F9;
+  align-items: center;  
+  position: fixed;
+  bottom: 0px;
+}
+
+
+
+footer span {
+  position: relative;
+  left: 1.8%;
+}
