@@ -11,7 +11,10 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2",
+    "handlebars": "^4.0.11",
     "hbs": "^4.0.1",
+    "mongoose": "^5.2.1",
+    "nodemon": "^1.17.5",
     "path": "^0.12.7",
     "punkapi-javascript-wrapper": "^1.0.2"
   }
