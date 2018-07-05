@@ -1,0 +1,19 @@
+{{#each beers}}
+<div class="container">
+  <div class="card flex-md-row mb-4" style="border: none;">
+    <img class="card-img-left flex-auto d-none d-lg-block"  style="width: 100px; height: 250px;" src="{{this.image_url}}" alt="Card Beer">
+    <div class="card-body d-flex flex-column align-items-start">
+      <strong class="d-inline-block mb-2"></strong>
+      <h3 class="mb-0">
+        {{this.name}}
+      </h3>
+      <p class="card-text mb-auto">{{this.tagline}}</p>
+      <p class="card-text mb-auto">{{this.description}}</p>
+      <p class="card-text mb-auto"><strong>Food Paring:</strong>{{this.food_pairing}}</p>
+      <p class="card-text mb-auto"><strong>Brewers Tips:</strong>{{this.brewers_tips}}</p>
+      <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+    </div>
+
+  </div>
+</div>
+{{/each}}
