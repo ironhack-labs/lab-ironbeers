@@ -75,4 +75,12 @@ font-family: Arial, Helvetica, sans-serif
   width: auto; 
   max-width: 100px; 
   max-height: 300px;
+  padding: 5px 20px;
+  }
+
+  .beerRandom {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+  
   }
