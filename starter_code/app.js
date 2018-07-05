@@ -9,9 +9,26 @@ const punkAPI = new PunkAPIWrapper();
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
+hbs.registerPartials(__dirname + '/views/partials/');
 
 app.get('/', (req, res, next) => {
   res.render('index');
+});
+
+app.get('/beers', (req, res, next) => {
+  punkAPI.getBeers()
+    // Call to the PunkAPI package, getBeers
+  .then(beers => {
+  res.render('beers');
+  //get a Beer from the package and THEN render, inside the THEN
+  })
+  .catch(error => {
+    console.log(error);
+  });
+});
+
+app.get('/random-beers', (req, res, next) => {
+  res.render('random-beers');
 });
 
 
