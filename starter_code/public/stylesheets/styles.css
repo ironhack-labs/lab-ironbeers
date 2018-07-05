@@ -6,3 +6,203 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CSS STYLING FOR NAVBAR AND FOOTER, PART OF LAYOUT.HBS */
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#top-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #2081C3;
+    color: white;
+    font-size: 18px;
+}
+
+#navbar-ul {
+    padding-top: 45px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-content: center;
+    list-style: none;
+}
+
+#navbar-ul li {
+    margin-left: 30px;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    color: white;
+    background-color: #0A2C42;
+    display: flex;
+    align-content: center;
+    font-size: 18px;
+}
+
+.footer-text {
+    padding-top: 30px;
+    padding-left: 25px;
+}
+
+/* ALL PAGE HBS FILES WILL HAVE MAIN DIV WITH CLASS 'CONTENT-BODY' */
+
+.content-body {
+    margin-top: 100px;
+    margin-bottom: 75px;
+    width: 100%;
+}
+
+/* INDEX PAGE */
+
+.index {
+    display: flex;
+    justify-content: center;
+}
+
+.index-content {
+    margin-top: 50px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    color: white;
+    background-color: #2081C3;
+    margin-bottom: 25px;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+/* STYLING FOR PARTIALS */
+
+.beer-partial {
+    width: 25%;
+    margin: 25px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.photo img {
+    width: auto;
+    height: 100%;
+}
+
+.tagline {
+    color: rgba(145, 145, 145, 0.481);
+}
+
+.beer-name h1 {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.beer-tagline {
+    margin-bottom: 20px;
+}
+
+.copy {
+    text-align: justify;
+}
+
+/* BEERS PAGE */
+
+.beer-partials-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100;
+    margin: 0 100px;
+    padding: 50px 0;
+}
+
+/* RANDOM BEER PAGE */
+
+.random-beer-page {
+    display: flex;
+    /* justify-content: center; */
+    padding: 100px 0;
+}
+
+.random-beer-container {
+    width: 70%;
+    display: flex;
+    align-content: center;
+}
+
+.random-beer-photo {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    height: 400px;
+    padding-right: 100px;
+}
+
+.random-beer-photo img {
+    width: auto;
+    height: 100%;
+}
+
+.random-beer-text {
+    width: 70%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.random-beer-text h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.random-beer-text .tagline {
+    margin-bottom: 20px;
+}
+
+.random-beer-text p {
+    margin-bottom: 20px;
+}
+
+.random-beer-text li {
+    margin-bottom: 15px;
+    margin-left: 25px;
+}
+
+.foodpairing {
+    font-weight: 700;
+}
