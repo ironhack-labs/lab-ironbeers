@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row align-items-center">
+        {{#each beers}}
+            
+            <div class="col-sm-4">
+                <div class="beer-image">
+                    <img src="{{this.image_url}}" alt="beer" class="rounded mx-auto d-block">
+                </div>
+                <h3>{{this.name}}</h3>
+                <p >{{this.tagline}}</p>
+                <p>{{this.description}}</p>
+            </div>
+    
+        {{/each}}
+    </div>
+</div>
