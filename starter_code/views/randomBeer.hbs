@@ -1,0 +1,35 @@
+  <img src="{{beer.image_url}}" alt="image">
+
+  <h4>{{beer.name}}</h4>
+
+  <h5>{{beer.tagline}}</h5>
+
+  <p>{{beer.description}}</p>
+
+  <h6>Food Pairing</h6>
+
+  {{#each beer.food_pairing}} 
+    <li>{{beer.food_pairing}}</li>
+  {{/each}}
+
+  <p>Brewers Tips: {{beer.brewers_tips}}</p>
+
+
+
+
+
+
+
+{{!-- On the randomBeer.hbs you should print the random beer you get. You should display an image, name, 
+description, tagline, food pairing and brewer tips. It should look like the following: --}}
+
+       {{!-- <h1>{{beer.name}}</h1>
++        <h5>{{beer.tagline}}</h5>
++        <p>{{beer.description}}</p>
++        <h5>Food Pairing</h5>
++        <ul>
++            {{#each beer.food_pairing}} 
++                 <li>{{this}}</li>
++            {{/each}}
++        </ul>
++        <p><strong>Brewers Tips: </strong>{{beer.brewers_tips}}</p> --}}
