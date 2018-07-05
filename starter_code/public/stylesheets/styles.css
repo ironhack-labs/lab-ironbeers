@@ -12,7 +12,7 @@ body{
   padding: 0;
   border: 0;
   font-size:18px;
-  height: 100vh;
+  //min-height: 100vh;
 }
 
 .nav-bar {
@@ -20,6 +20,7 @@ body{
   background-color: #2081C3;
   box-shadow: 0 4px 3px rgba(145, 145, 145, 0.481);
   padding-left: 2rem;
+  height:3rem;
 }
 
 .nav-bar a {
@@ -27,13 +28,14 @@ body{
   display: block;
   color: #F7F9F9;
   text-align: center;
-  padding: 1rem 1rem;
+  padding: 0 1rem;
   text-decoration: none;
   font-size: 1rem;
+  line-height: 3rem
 }
 
 .index-container {
-  height: calc(100% - 6rem);
+  height: calc(100vh - 6rem);
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -41,7 +43,7 @@ body{
 }
 
 .beers-container {
-  //height: calc(100% - 6rem);
+  //height: calc(100vh - 6rem);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -99,18 +101,19 @@ h4{
 }
 
 .random-beer-card{
-  height: calc(100% - 11rem);
+  height: calc(100vh - 10rem);
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 2rem 4rem;
   justify-content:center;
-  align-items:flex-start;
+  align-items: flex-start;
 }
 
 .random-beer-card img{
   max-height: 100%;
   width: 7rem;
+  padding-top: 2rem;
 }
 
 .random-beer-card-text-div{
@@ -118,10 +121,10 @@ h4{
   padding: 0 4rem;
 }
 
-
 .footer-bar {
   overflow:hidden;
   background-color: #0A2C42;
+  height:3rem;
 }
 
 .footer-bar a{
@@ -129,8 +132,10 @@ h4{
   display: block;
   color: #F7F9F9;
   text-align: center;
-  padding: 1rem;
+  padding-left:1rem;
   text-decoration: none;
   font-size: 1rem;
+  line-height: 3rem;
 }
+
 
