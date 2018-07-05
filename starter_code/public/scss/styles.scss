@@ -5,4 +5,8 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+@import '_layout';
+@import '_index';
+@import '_beers';
+@import '_randomBeer';

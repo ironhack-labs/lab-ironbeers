@@ -1,0 +1,20 @@
+{{#each beers}} 
+    <div class="container wrapper">
+        <div class="randomCard">
+            <div class="col-4">
+                <img class="card-img-top" src={{this.image_url}} alt="Beer">
+            </div>
+            <div class="card-body col-6 randomContent">
+                <h2 class="beersH2">{{this.name}}</h2>
+                <h3 class="beersH3">{{this.tagline}}</h3>
+                <p class="beersP">{{this.description}}</p>
+                <h3 class="randomH3">Food Pairing</h3>
+                <ul>
+                <li class="beersP">{{this.food_pairing}}</li>
+                </ul>
+                <h3 class="randomH3"></h3>
+                <p class="beersP"><b>Brewers Tips: </b>{{this.brewers_tips}}</p>
+            </div>
+        </div>
+    </div>
+{{/each}}

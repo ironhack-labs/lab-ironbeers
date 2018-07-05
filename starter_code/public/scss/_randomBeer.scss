@@ -1,0 +1,26 @@
+.randomCard  {
+    background: rgba(228, 228, 228, 0.481) !important;
+    margin: 20px;
+    width: 80% !important;
+    display: flex;
+    min-height: 450px;
+
+    img {
+        height: 300px !important;
+        max-width: 100%;
+        object-fit: contain;
+        margin-top: 25px;
+    }
+}
+
+.randomH3 {
+    color: black;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.randomContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
