@@ -63,5 +63,9 @@ img{
     margin: 10px;
     
 }
+#beerItems img{
+    height: 200px;
+    width: auto;
+}
 
 
