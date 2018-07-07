@@ -6,3 +6,56 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+nav {
+  background-color: #2081C3;
+  color: #F7F9F9;
+}
+
+.index-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.index-container img {
+  width: 20%;
+  height: 20%;
+  padding-top: 5%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn {
+  margin-bottom: 10%;
+}
+
+.btn a {
+  text-decoration: none;
+}
+
+.cards-container {
+  display: flex;
+  padding: 5%;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: none;
+  color: black;
+
+}
+
+.card-img-top{
+  margin: 0 auto;
+  width: 10%;
+  height: 30%;
+}
+
+.footer-card {
+  background-color: #0A2C42;
+  color: #F7F9F9;
+}
