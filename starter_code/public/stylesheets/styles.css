@@ -5,4 +5,92 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+.contenedor{
+        background-color: #2081C3;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .contenedor p{
+        float: left;
+        width: 190px;
+        height: 170px;
+        padding-left: 50px;
+        color: white;
+        font-size:1em;
+        text-align: left
+    }
+    body{
+        background: rgba(145, 145, 145, 0.481);
+        display: block;
+        padding:0 10px;
+    }
+.button1{
+    background-color: #2081C3;
+    width: 160px;
+    height: 30px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 680px;
+    color: white;
+    border-radius: 5px;
+}
+.button2{
+    background-color: #2081C3;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 660px;
+    color: white;
+    border-radius: 5px;
+}
+.card-img-top{
+    width: 190px;
+    height: 170px;
+    padding-left: 50px;
+    color: white;
+}
+.card-title{
+    width: 190px;
+    height: 70px;
+    padding-left: 50px;
+    color: white;
+}
+.tag{
+    width: 100px;
+    height: 170px;
+    padding-left: 50px;
+    color: white;
+}
+.card-text1{
+    width: 130px;
+    height: 130px;
+    padding-left: 200px;
+    color: white;
+    font-size:1em;
+}
+.card-text2{
+    width: 190px;
+    height: 170px;
+    padding-left: 200px;
+    color: white;
+    font-size:1em;
+   
+}
+footer p{
+   background-color:#0A2C42;
+   margin-top: 700px;
+   height: 200px;
+   color: white;
+   font-size:1.5em;
+   text-align: left
+}
+#randomBeer{
+    width: 500px;
+    margin-right: 300px;
+    margin-left: 200px;
+}
+.beer-image-cap{
+    margin-left: 600px;
+    margin-top: -80px;
+}
+
