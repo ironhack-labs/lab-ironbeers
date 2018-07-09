@@ -1,0 +1,25 @@
+{{!-- On our layout.hbs we should include the code we want to repeat on every view --}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <title>Document</title>
+
+<body>
+    <div class="navBar">
+        <a href="/">Home</a>
+        <a href="/beers">Beers</a>
+        <a href="/random-beer">Random Beer</a>
+    </div>
+
+    {{!-- To avoidd escaping a value, we should use the triple-stash --}}
+    {{{body}}}
+
+<script type="text/javascript" src="/path/to/punkapi-javascript-wrapper/dist/punkapi-javascript-wrapper.js"></script>
+
+</body>
+</html>

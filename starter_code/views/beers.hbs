@@ -1,0 +1,9 @@
+<h1>Beers!</h1>
+
+{{!-- Double curlies signify that a variable will be output to the HTML we send to the client --}}
+{{!-- The each block helps us to iterate over a list of elements, mainly objects and array (need to pass the data to our view in index.hbs) --}}
+{{#each beersArray}}
+
+{{> singleBeer}}
+
+{{/each}}
