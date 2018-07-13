@@ -1,0 +1,21 @@
+<!-- layout.hbs -->
+{{#each beer}}
+  <div>
+      <div>
+        <img src="{{image_url}}">
+      </div>
+      <div>
+        <h3>{{name}}</h3>
+        <h4>{{tagline}}</h4>
+        <h5>{{description}}</h5>
+        <h3><b>Food Pairing:</b></h3>
+        <ul>
+          {{#each food_pairing}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+        <h3><b>Brewer Tips:</b></h3>
+        <h5>{{brewers_tips}}</h5>
+      </div>
+  </div>
+{{/each}}
