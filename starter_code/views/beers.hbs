@@ -1,0 +1,10 @@
+<!--layout.hbs-->
+<div class="content container">
+    <div class="row">
+        {{#each beers}}
+            <div class="col-4 beer">
+                {{> beerPartial}}
+            </div>
+        {{/each}}
+    </div>
+</div>
