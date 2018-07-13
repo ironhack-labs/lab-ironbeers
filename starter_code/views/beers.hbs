@@ -1,5 +1,9 @@
 <!-- layout.hbs -->
 
-<div class="beers-container">
-  /beers
+<div class="beers-container container-fluid">
+  <div class="row">
+    {{#each beerArray}}
+      {{> beerPartial}}
+    {{/each}}
+  </div>
 </div>

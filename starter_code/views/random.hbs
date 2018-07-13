@@ -1,5 +1,23 @@
 <!-- layout.hbs -->
 
-<div class="random-container">
-  /random
+<div class="random-container container">
+    <div class="random-beer row">
+    {{#each randomBeer}}
+      <div class="col">
+        <img src={{{this.image_url}}}>
+        <h3>{{this.name}}</h3>
+        <h5>{{this.tagline}}</h5>
+        <p>{{this.description}}</p>
+        {{#with this.food_pairing}}
+          <ul>
+          {{#each this}}
+            <li>{{this}}</li>
+          {{/each}}
+          </ul>
+        {{/with}}
+        <p>{{this.brewers_tips}}</p>
+      </div>
+    {{/each}}
+    </div>
+  </div>
 </div>
