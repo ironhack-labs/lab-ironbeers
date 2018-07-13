@@ -1,21 +1,18 @@
 <!-- layout.hbs -->
-{{#each beer}}
-  <div>
-      <div>
-        <img src="{{image_url}}">
+  <div class="rand-container">
+      <div class="col-left">
+        <img class="rand-img"src="{{image_url}}">
       </div>
-      <div>
+      <div class="col-right">
         <h3>{{name}}</h3>
         <h4>{{tagline}}</h4>
-        <h5>{{description}}</h5>
+        <p>{{description}}</p>
         <h3><b>Food Pairing:</b></h3>
         <ul>
           {{#each food_pairing}}
             <li>{{this}}</li>
           {{/each}}
         </ul>
-        <h3><b>Brewer Tips:</b></h3>
-        <h5>{{brewers_tips}}</h5>
+        <h3><b>Brewer Tips:</b></h3><p>{{brewers_tips}}</p>
       </div>
   </div>
-{{/each}}

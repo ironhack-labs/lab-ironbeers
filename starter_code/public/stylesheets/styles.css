@@ -41,6 +41,7 @@ nav {
 
 .beer-img {
   height: 300px;
+  padding: 20px;
 }
 
 .btn-container {
@@ -48,12 +49,16 @@ nav {
   flex-direction: column;
 }
 
+.mid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .card {
   width: 25%;
   height: auto;
   background-color: rgba(145, 145, 145, 0.481);
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   padding: 2%;
   margin: 2%;
@@ -63,11 +68,9 @@ nav {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  /* justify-content: space-around; */
 }
 
 .card-img {
-  /* margin: 2%; */
   height: 300px;
   margin: 0 auto;
   padding-bottom: 10%;
@@ -87,14 +90,50 @@ nav {
   color: grey;
 }
 
+/* random */
+.rand-img {
+  height: 300px;
+}
+
+.rand-container {
+  height: auto;
+  margin: 2%;
+  display: flex;
+  flex-direction: row;
+}
+
+.col-left {
+  width: 32%;
+}
+
+.col-right {
+  width: 64%;
+  text-align: justify;
+}
+
+.col-right>h3,
+.col-right>h4,
+.col-right>p {
+  padding-bottom: 10px;
+}
+
+.col-right>h4 {
+  color: grey;
+}
+
+
+
+.btn {
+  text-decoration: none;
+  color: #F7F9F9;
+}
+
 button {
   font-size: 15px;
   margin: 10px;
-  color: #F7F9F9;
   background-color: #2081C3;
   border: none;
   border-radius: 3px;
-  text-decoration: none;
   box-shadow: 1px 1px 1px 1px rgba(145, 145, 145, 0.481);
   height: 30px;
   width: auto;
