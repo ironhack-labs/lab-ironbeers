@@ -7,5 +7,40 @@ font-family: Arial, Helvetica, sans-serif
 */
 
 body {
-  background: yellow;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.navbar {
+  background-color: #2081C3;
+  box-shadow: 1px 0px 5px;
+}
+
+.nav-link {
+  color: #F7F9F9;
+  text-decoration: none;
+}
+
+.index-content {
+  margin: 10em;
+}
+
+.btn {
+  margin-top: 1.5em;
+  width: 10em;
+  color: #F7F9F9;
+  background-color: #2081C3;
+}
+
+#big-beer {
+  width: 20em;
+}
+
+footer {
+  color: #F7F9F9;
+  background-color: #0A2C42;
+  padding: 1em;
 }
