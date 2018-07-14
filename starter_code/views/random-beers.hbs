@@ -1,0 +1,18 @@
+<!-- layout.hbs -->
+  <div class="rand-container">
+      <div class="col-left">
+        <img class="rand-img"src="{{image_url}}">
+      </div>
+      <div class="col-right">
+        <h3>{{name}}</h3>
+        <h4>{{tagline}}</h4>
+        <p>{{description}}</p>
+        <h3><b>Food Pairing:</b></h3>
+        <ul>
+          {{#each food_pairing}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+        <h3><b>Brewer Tips:</b></h3><p>{{brewers_tips}}</p>
+      </div>
+  </div>
