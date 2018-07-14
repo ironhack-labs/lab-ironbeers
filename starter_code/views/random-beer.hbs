@@ -1,0 +1,32 @@
+<div class="index-container">
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+          <div class="row">
+            <div class="col-md-12 text-centered">
+              <img class="h-25" src={{image_url}} alt={{id}}>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h3 class="font-weight-bold">{{name}}</h3>
+          <p class="text-muted">{{tagline}}</p>
+          <p class="text-justify">{{description}}</p>
+          <p class="font-weight-bold">Food Pairing:</p>
+          <ul>
+            {{#each food_pairing}}
+            <li>{{this}}</li>
+            {{else}}
+            <p class="empty">No content</p>
+            {{/each}}
+          </ul>
+          <p class="d-inline font-weight-bold">Brewers Tips:</p>
+          <p class="d-inline text-justify">{{brewers_tips}}</p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </div>
+</div>
