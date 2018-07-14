@@ -1,13 +1,16 @@
 <!-- layout.hbs -->
 
 <div class="random-container container">
-    <div class="random-beer row">
+    <div class="random-beer row ">
     {{#each randomBeer}}
-      <div class="col">
+      <div class="col-2 d-flex justify-content-end">
         <img src={{{this.image_url}}}>
+      </div>
+      <div class="random-beer-content col-10">
         <h3>{{this.name}}</h3>
-        <h5>{{this.tagline}}</h5>
+        <h6>{{this.tagline}}</h6>
         <p>{{this.description}}</p>
+        <b>Food Pairing:</b>
         {{#with this.food_pairing}}
           <ul>
           {{#each this}}
@@ -15,7 +18,7 @@
           {{/each}}
           </ul>
         {{/with}}
-        <p>{{this.brewers_tips}}</p>
+        <p><b>Brewers tips:</b>{{this.brewers_tips}}</p>
       </div>
     {{/each}}
     </div>

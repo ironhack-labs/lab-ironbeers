@@ -56,11 +56,11 @@ body {
   align-self: center;
 }
 
-.beerCard h5 {
+h5, h3 {
   font-weight: bold;
 }
 
-.beerCard h6 {
+h6 {
   margin-top: -0.3em;
   color: rgba(145, 145, 145, 0.481);
 }
@@ -70,6 +70,26 @@ body {
   font-size: 0.8em;
 }
 
+.random-beer-content {
+ padding-left: 4em;
+}
+
+.random-beer-content h6 {
+  margin-top: 1em;
+  color: rgba(145, 145, 145, 0.481);
+}
+
+.random-container {
+  margin-top: 10em;
+}
+
+.random-beer-content ul {
+  margin-top: 1em;
+}
+
+.random-beer-content li {
+  margin-top: 0.5em;
+}
 .random-beer img {
   height: 250px;
 }
