@@ -1,0 +1,5 @@
+<div class="container">
+    {{#each beers}}
+        {{>beerpartial this}} <!-- this mantiene el scope en beers / le decimos con qué objeto debe de trabajar el partial-->
+    {{/each}}
+</div>
