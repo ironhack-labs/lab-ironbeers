@@ -1,0 +1,156 @@
+/*
+white: #F7F9F9;
+light-blue: #2081C3;
+dark-blue: #0A2C42;
+grey: rgba(145, 145, 145, 0.481);
+font-family: Arial, Helvetica, sans-serif
+*/
+
+.navbar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;  /* Alinea els child elements en vertical*/
+  background-color: #2081C3;
+  margin: 0 0 0 0;
+  width: 100%;
+  height: 50px;
+
+}
+
+
+
+.index-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;  /* Alinea els child elements en vertical*/
+  background-color: rgba(145, 145, 145, 0.481);
+  margin: 0 0 0 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.container-beer {
+  margin: 100px 0 0 0;
+}
+
+.text-navbar {
+  padding: 0px 20px 0px 20px;
+  color: #F7F9F9;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+
+
+}
+
+.footer {
+  display: flex;
+  background-color: #0A2C42;
+  margin: 0 0 0 0;
+  width: 100%;
+  /* border: 2px solid green;  */
+  
+}
+
+.footer p {
+  padding: 10px 20px 10px 50px;
+  color: #F7F9F9;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.image-beer {
+  width: 250px;
+  height: auto;
+}
+
+.button {
+  background-color: #2081C3;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding: 10px 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button-beers {
+  width: 20%;
+  height: auto;
+  text-align: center;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: black;
+  /* background-color: yellow; */
+  /* font-stretch: expanded; */
+  letter-spacing: 3px;
+  /* color: yellowgreen; */
+  /* border: 2px solid green; */
+}
+
+.container-beers-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;  /* Alinea els child elements en vertical*/
+  background-color: rgba(145, 145, 145, 0.481);
+  /* border: 2px solid green;  */
+}
+
+.individual-beer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;  /* Alinea els child elements en vertical*/
+  width: 33%;
+  /* border: 2px solid blue;  */
+}
+
+.individual-beer img {
+  
+  align-self:center;
+  height: 30vh;
+  width: auto;
+  margin: 40px 0 5px 0;
+  
+}
+
+.individual-beer-name {
+  align-self: flex-start;
+  /* text-align: left; */
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  padding: 10px 20px 5px 30px;
+}
+
+.individual-beer-tag {
+  align-self: flex-start;
+  /* text-align: left; */
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  padding: 0 20px 10px 30px;
+}
+
+.individual-beer-description {
+  align-self: flex-start;
+  /* text-align: left; */
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  padding: 10px 20px 5px 30px;
+  /* border: 2px solid red;  */
+}
+
+
+
+
+  
