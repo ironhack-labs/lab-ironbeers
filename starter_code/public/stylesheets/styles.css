@@ -37,4 +37,31 @@ body {
 .nav-link {
   color: #F7F9F9;
   padding: 0 10px;
+  text-decoration: none;
+}
+
+.index-container {
+  width: 300px;
+  margin: 75px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 300px;
+  height: auto;
+}
+
+.link-button {
+  width: 200px;
+  margin: 50px auto 0;
+  background-color: #2081C3;
+  color: #F7F9F9;
+  text-decoration: none;
+  text-align: center;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #666666;
+  border-bottom: 1px solid #666666;
+  border-left: 1px solid #CCCCCC;
 }
