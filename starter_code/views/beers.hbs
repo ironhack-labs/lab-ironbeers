@@ -1,7 +1,9 @@
 <section class="beer-grid">
   <div class="container">
     <div class="row">
-      {{> beerpartial }}
+      {{#each beers}}
+        {{> beerpartial }}
+      {{/each}}
     </div>
   </div>
 </section>

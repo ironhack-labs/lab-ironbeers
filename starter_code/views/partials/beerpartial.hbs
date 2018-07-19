@@ -1,10 +1,12 @@
 <div class="col-sm-6 col-md-4">
   <figure class="row justify-content-center">
     <div class="col-4">
-      <img class="img-fluid" src="images/beer.png" alt="">
+      <img class="img-fluid" src="{{ this.image_url }}" alt="">
     </div>
   </figure>
-  <h2>Title</h2>
-  <p class="tagline">You know you shouldnt</p>
-  <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ullam nobis consequatur debitis iusto incidunt asperiores, laboriosam nemo doloremque error itaque inventore tempore quis dolore optio expedita, perferendis eum voluptate!</p>
+  <h2>{{ this.name }}</h2>
+  <p class="tagline">{{ this.tagline }}</p>
+  <p class="description">
+    {{ this.description }}
+  </p>
 </div>
