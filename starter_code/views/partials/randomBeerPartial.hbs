@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-md-2 col-sm-3">
+     <figure>
+      <img class="img-fluid" src="{{ this.image_url }}" alt="">
+    </figure>
+  </div>
+  <div class="col-md-10 col-sm-9">
+    <h2>{{ this.name }}</h2>
+    <p class="tagline">{{ this.tagline }}</p>
+    <p class="description">{{ this.description }}</p>
+    <h3>Food Pairing</h3>
+    <ul>
+      {{#each this.food_pairing}}
+        <li>{{ this }}</li> 
+      {{/each}}
+    </ul>
+    <p><strong>Brewers tips: </strong>{{ this.brewers_tips }}</p>
+  </div>
+</div>
