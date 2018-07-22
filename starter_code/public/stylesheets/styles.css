@@ -5,4 +5,41 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+body {
+
+}
+
+.nav-bar {
+    background-color: #2081C3;
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    height: 30px;
+    margin-top: 80px;
+}
   
+.list {
+    float: left;
+    list-style-type: none;
+
+}
+
+.button-beers{
+    background-color: blue;
+    color: white;
+    
+}
+
+.button-random{
+
+}
+
+.img-beer{
+    max-width: 340px;
+    margin: auto;
+    align-content: center;
+}
