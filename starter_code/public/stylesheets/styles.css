@@ -5,4 +5,23 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+ nav{
+    position: fixed;
+     top:0;
+     left:0;
+     z-index: 2;
+     width: 100%;
+     background-color: rgb(46, 131, 191);
+     color: white;
+ } 
+
+ footer{
+    width: 100%;
+    padding: 15px 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    color:white;
+ }
