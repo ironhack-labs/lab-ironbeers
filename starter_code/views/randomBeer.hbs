@@ -1,0 +1,15 @@
+<!-- layout.hbs -->
+  <div>
+        <img class="random-img"src="{{image_url}}">
+        <h3>{{name}}</h3>
+        <h4>{{tagline}}</h4>
+        <p>{{description}}</p>
+        <h3>Food Pairing:</h3>
+        <ul>
+          {{#each food_pairing}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+        <h3>Brewer Tips:</h3>
+        <p>{{brewers_tips}}</p>
+  </div> 
