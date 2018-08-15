@@ -1,0 +1,39 @@
+body {
+    white: #F7F9F9;
+    light-blue: #2081C3;
+    dark-blue: #0A2C42;
+    grey: rgba(145, 145, 145, 0.481);
+    font-family: Arial, Helvetica, sans-serif
+}
+
+img {
+    max-width: 350px;
+    max-height: 350px;
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    background: #2081C3;
+    color: #F7F9F9;
+    font-size: 2em;
+    margin: 5px;
+    padding-top: 10px;
+}
+
+#myNav {
+    background-color: #2081C3;
+    height: 50px;
+}
+
+.index-container {
+    margin: 200px auto;
+    text-align: center;
+    
+}
+
+.index-container img{
+    margin-left: auto;
+	margin-right: auto;
+	
+}
