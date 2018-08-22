@@ -1,4 +1,17 @@
-<div class='conatainer'>
-<p>{{this.name}}</p>
-<hr style='margin-bottom: 25px;'>
+{{!-- <div class='conatainer'>
+<p></p>
+<p>{{this.tagline}}</p>
+<p></p>
+<hr style='margin-bottom: 0px;'>
+</div> --}}
+
+
+
+<div class="card" style="width: 30vw;">
+    <img class="card-img-top beer-pic rounded mx-auto d-block" src="{{this.image_url}}" alt="beerpic">
+  <div class="card-body">
+    <h5 class="card-title">{{this.name}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{this.tagline}}</h6>
+    <p class="card-text">{{this.description}}</p>
+  </div>
 </div>
