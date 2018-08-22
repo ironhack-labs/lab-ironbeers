@@ -7,7 +7,7 @@ font-family: Arial, Helvetica, sans-serif
 */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f7f9f9;
+  background-color: grey;
   color: #f7f9f9;
 }
 a {
@@ -25,4 +25,7 @@ footer {
 }
 h1 {
   background-color: greenyellow;
+}
+li{
+    color:black;
 }
