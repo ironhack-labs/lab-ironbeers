@@ -5,4 +5,130 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: #2081c3;
+    display: flex;
+    height: 10vh;
+    justify-content: flex-start;
+    box-shadow: 0 3px 45px -15px rgb(0, 0, 0);
+}
+
+footer {
+    background-color: #0a2c42;
+    text-align: left;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    height: 8vh;
+    padding-left: 30px;
+    display: flex;
+    margin-top: 40px;
+}
+
+a {
+    color: #fff;
+    margin: 0 30px;
+    align-self: center;
+    text-decoration: none;
+}
+
+p {
+    color: #fff;
+}
+
+.index-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.index-container a {
+    background-color: #2081c3;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 3px 45px -15px rgb(0, 0, 0);
+    align-self: center;
+}
+
+.index-container img {
+    width: 20%;
+    margin: 40px;
+    align-self: center;
+}
+
+.description {
+    color: #000;
+    font-size: 13px;
+}
+
+.beer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto 100px auto;
+}
+.randombeer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.beer-card {
+    padding: 5px;
+    width: 30%;
+    margin-top: 40px;
+}
+
+.randombeers-card {
+    margin-top: 40px;
+    display: flex;
+    width: 75%;
+}
+
+.img-wrap {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.beer-card img,
+.randombeers-card img {
+    height: 100%;
+}
+
+.tagline {
+    color: rgba(145, 145, 145, 0.481);
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.content-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.title {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.img-wrap-random {
+    height: 200px;
+}
