@@ -6,3 +6,47 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+body{
+  font-family: Arial, Helvetica, sans-serif;
+background-color: #F7F9F9
+}
+.navbar-color{
+  background-color: #2081c3;
+  color: #F7F9F9;
+}
+.footer{
+  color: #F7F9F9;
+  background-color: #0A2C42;
+}
+.btn{
+  background-color: #2081c3;
+  color: #F7F9F9;
+  margin: 10px;
+}
+.index{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blist{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card{
+  padding: 10px 5px;
+  margin: 0 auto;
+}
+.card-img-top{
+  width:20%;
+  margin: 0 auto;
+}
+h6{
+  color: rgba(145, 145, 145, 0.481);
+  font-weight: bold;
+}
