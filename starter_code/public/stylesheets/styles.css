@@ -5,4 +5,130 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    
+}
+
+body{
+    background-color: rgba(231, 227, 227, 0.481);
+}
+
+nav {
+    position: fixed;
+}
+ul {
+    background-color: #2081C3;
+    display: flex; 
+    flex-direction: row;
+    height: 60px;
+    padding: 20px;
+}
+li {
+    padding-left: 20px;
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 101px;
+}
+footer > p {
+    background-color: #0A2C42;
+    color: white;
+    width: 100%;
+    height: 60px;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+.index-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index-container > img {
+    height: 220px;
+    width: 220px;
+    margin-top: 70px;
+    margin-left: 30px;
+}
+
+.index-container > button {
+    background-color: #2081C3;
+    color: white;
+    border: #2081C3;
+    padding: 10px;
+    border-radius: 4px;
+}
+.index-container > .b1{
+    width: 150px; 
+    margin-top: 30px;
+}
+
+.index-container > .b2 {
+    width: 180px;
+    margin-top: 20px;
+}
+
+.cards-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding: 30px 80px;
+    
+}
+
+.card {
+    height: 500px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+
+.card > img {
+    height: 150px;
+    width: 15%;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 130px;
+}
+
+.randomCard {
+    display: flex;
+    flex-direction: row;
+
+    margin: 50px;
+}
+
+.randomCard > div > img {
+    height: 200px;
+    width: 60px;
+}
+
+.randomInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    padding: 20px;
+}
+
+.randomInfo > h1{
+    font-weight: bold;
+}
