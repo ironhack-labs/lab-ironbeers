@@ -11,7 +11,28 @@ app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res, next) => {
-  res.render('index');
+  res.render(path.join(__dirname, "./views/index.hbs"));
+});
+
+app.get('/beers', (req, res, next) => {
+  punkAPI.getBeers()
+  .then(beers => {
+    res.render("beers", {beers: beers})
+    })
+  .catch(error => {
+    console.log(error)
+  });
+});
+
+app.get('/random-beer', (req, res, next) => {
+  punkAPI.getRandom()
+  .then(beers => {
+    console.log(beers);
+    res.render("random-beer", {beer: beers[0]});
+  })
+  .catch(error => {
+    console.log(error)
+  })
 });
 
 
