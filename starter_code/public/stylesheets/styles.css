@@ -6,3 +6,55 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+.dark-blue {
+background-color: #0A2C42;
+color: white;
+}
+
+.light-blue {
+   background-color : #2081C3;
+   color: white;
+}
+
+
+.img{
+    text-align: center;
+}
+
+.button {
+ display:flex;
+ flex-direction: column; 
+ align-content:center;
+ justify-content: space-around;
+ align-items: center;
+}
+
+.bMa{
+    margin: 5px;
+}
+
+/* .cards{
+    display:flex;
+    flex-direction: row; 
+    /* align-content:center;
+    justify-content: space-around;
+    align-items: center;  */
+} */
+
+#grey{
+    color:grey;
+}
+
+.cards-container{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* .card{
+    width: 30%;
+}
+
+.card-img{
+    width: 100%; 
+} */
