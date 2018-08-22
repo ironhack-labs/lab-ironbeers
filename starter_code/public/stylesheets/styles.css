@@ -35,6 +35,7 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
+  padding: 0 2rem;
 }
 
 .container {
@@ -49,6 +50,9 @@ footer {
   position: fixed;
   height: 10vh;
   width: 100%;
+}
+footer p {
+  padding: 2.5rem 5rem;
 }
 
 .index-container {
