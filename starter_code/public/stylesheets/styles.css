@@ -12,7 +12,7 @@ body {
 }
 
 nav {
-    position: fixed;
+    /* position: fixed; */
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -53,7 +53,7 @@ footer {
 .beer-image {
     width: 350px;
     height: 450px;
-    margin-top: 70px;
+    margin-top: 120px;
 }
 
 .flex-container {
