@@ -31,11 +31,16 @@ res.render("beer", { beers, title: "Beer List" });
 
 
 app.get("/random", (req, res, next) => {
-  const randomBeer = PunkAPI.getRandom();
-  randomBeer.then(beer => {
-    alert(beer[0].name);
+  punkAPI
+  .getRandom()
+  .then(ranBeer => {
+console.log(ranBeer)
+res.render("random", { ranBeer, title: "Random Beers" });
+
+  })
+  .catch(error => {
+    console.log(error);
   });
-  res.render("random", { title: "Random Beers" });
 });
 
 app.listen(3000);

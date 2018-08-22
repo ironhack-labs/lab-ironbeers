@@ -1,5 +1,8 @@
 
 <div class="index-container">
-<img src="images/chihuaha.gif" alt="pup">
-  
+<img src="images/chihuaha.gif" alt="pup" height="150px">
+  <div class="cards-container">
+  {{#each ranBeer}}
+      {{> card this}}
+  {{/each}}
 </div>
