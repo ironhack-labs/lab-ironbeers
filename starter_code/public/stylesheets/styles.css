@@ -99,3 +99,22 @@ footer {
 .beer-partial h3 {
     padding: 0 25px 0 25px;
 }
+
+.random-beer {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    /* background-color: rgba(145, 145, 145, 0.481); */
+}
+
+.random-beer div:last-child {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body > div > div > img {
+    width: 80px;
+    margin-right: 100px;
+}
