@@ -3,31 +3,120 @@ $dark-blue: #0a2c42;
 $light-blue: #2081c3;
 $grey: rgba(145, 145, 145, 0.481);
 $font: Arial, Helvetica, sans-serif;
+$shadow: 0px 2px 5px grey;
 
 * {
   margin: 0;
   padding: 0;
 }
 
-#nav-container {
-  background-color: $light-blue;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 54px;
-  padding: 0 26px;
-  box-shadow: 0px 3px 15px grey;
-}
-
-.nav-element {
-  font-size: 0.8rem;
+a {
   color: $white;
+  background-color: $light-blue;
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin: 8px 0;
+  box-shadow: $shadow;
+  text-decoration: none;
   font-family: $font;
-  margin: 0 10px;
+  font-size: 0.8rem;
 }
 
+header {
+  position: fixed;
+  width: 100vw;
+
+  #nav-container {
+    background-color: $light-blue;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 54px;
+    padding: 0 26px;
+    box-shadow: $shadow;
+    .nav-element {
+      box-shadow: none;
+      color: $white;
+      font-family: $font;
+      margin: 0 10px;
+      padding: 0;
+    }
+  }
+}
+
+.content-middle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  .main-image {
+    width: 30%;
+    margin: 90px 0 50px 0;
+    padding-left: 4%;
+  }
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 70px 0;
+
+  .beer-card {
+    margin: 0 20px;
+    width: 26vw;
+    .beer-image {
+      display: flex;
+      justify-content: center;
+    }
+    img {
+      height: 150px;
+      margin: 26px 0 12px 0;
+    }
+    .tagline {
+      color: $grey;
+      margin-bottom: 4px;
+    }
+    p {
+      font-size: 0.9rem;
+      text-align: justify;
+    }
+  }
+}
+
+.beer-container {
+  display: flex;
+  flex-direction: row;
+  padding: 70px 0;
+  img {
+    height: 150px;
+    margin: 26px 80px 12px 110px;
+  }
+  .beer-information {
+    display: flex;
+    flex-direction: column;
+    font-family: $font;
+    h3 {
+      margin: 16px 0;
+    }
+    .tagline {
+      color: $grey;
+      margin: 8px 0px;
+    }
+    ul {
+      margin-left: 16px;
+      li {
+        margin: 6px 0;
+      }
+    }
+    p {
+      margin: 8px 0px;
+    }
+  }
+}
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0%;
   width: 100vw;
   #footer-container {

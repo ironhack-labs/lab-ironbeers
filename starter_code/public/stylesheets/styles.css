@@ -3,25 +3,112 @@
   padding: 0;
 }
 
-#nav-container {
+a {
+  color: #f7f9f9;
+  background-color: #2081c3;
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin: 8px 0;
+  box-shadow: 0px 2px 5px grey;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
+
+header {
+  position: fixed;
+  width: 100vw;
+}
+header #nav-container {
   background-color: #2081c3;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 54px;
   padding: 0 26px;
-  box-shadow: 0px 3px 15px grey;
+  box-shadow: 0px 2px 5px grey;
 }
-
-.nav-element {
-  font-size: 0.8rem;
+header #nav-container .nav-element {
+  box-shadow: none;
   color: #f7f9f9;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 10px;
+  padding: 0;
+}
+
+.content-middle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+.content-middle .main-image {
+  width: 30%;
+  margin: 90px 0 50px 0;
+  padding-left: 4%;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 70px 0;
+}
+.cards-container .beer-card {
+  margin: 0 20px;
+  width: 26vw;
+}
+.cards-container .beer-card .beer-image {
+  display: flex;
+  justify-content: center;
+}
+.cards-container .beer-card img {
+  height: 150px;
+  margin: 26px 0 12px 0;
+}
+.cards-container .beer-card .tagline {
+  color: rgba(145, 145, 145, 0.481);
+  margin-bottom: 4px;
+}
+.cards-container .beer-card p {
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+.beer-container {
+  display: flex;
+  flex-direction: row;
+  padding: 70px 0;
+}
+.beer-container img {
+  height: 150px;
+  margin: 26px 80px 12px 110px;
+}
+.beer-container .beer-information {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.beer-container .beer-information h3 {
+  margin: 16px 0;
+}
+.beer-container .beer-information .tagline {
+  color: rgba(145, 145, 145, 0.481);
+  margin: 8px 0px;
+}
+.beer-container .beer-information ul {
+  margin-left: 16px;
+}
+.beer-container .beer-information ul li {
+  margin: 6px 0;
+}
+.beer-container .beer-information p {
+  margin: 8px 0px;
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0%;
   width: 100vw;
 }
