@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+    <title>{{title}}</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        {{#if homeActive}}
+        <a href="/" class='active'>Home</a>
+        {{else}}
+        <a href="/">Home</a>
+        {{/if}} {{#if homeActive}}
+        <a href="/beers" class='active'>Beers</a>
+        {{else}}
+        <a href="/beers">Beers</a>
+        {{/if}} {{#if homeActive}}
+        <a href="/randombeers" class='active'>Random Beers</a>
+        {{else}}
+        <a href="/randombeers">Random Beers</a>
+        {{/if}}
+    </nav>
+    {{{body}}}
+    <footer>
+        <p>Developed by Helene &commat; Ironhack</p>
+    </footer>
+</body>
+
+</html>

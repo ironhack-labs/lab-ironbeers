@@ -1,0 +1,163 @@
+/*
+white: #F7F9F9;
+light-blue: #2081C3;
+dark-blue: #0A2C42;
+grey: rgba(145, 145, 145, 0.481);
+font-family: Arial, Helvetica, sans-serif
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    background-color: rgba(145, 145, 145, 0.3);
+}
+.clearfix {
+    clear: both;
+}
+
+.navbar {
+    background-color: #2081c3;
+    width: 100%;
+    padding: 20px 50px;
+    box-shadow: 0 4px 10px rgba(145, 145, 145);
+    position: fixed;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 30px;
+}
+
+.active {
+    color: #0a2c42;
+}
+
+footer {
+    background-color: #0a2c42;
+    padding: 30px;
+    color: #ffffff;
+    font-size: 14px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/*----- INDEX.HTML ------------*/
+
+.cta-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta-box img {
+    width: 20%;
+    display: block;
+    margin: 100px 0 30px 0;
+}
+
+.cta-box a {
+    display: block;
+    background-color: #2081c3;
+    padding: 10px 25px;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(145, 145, 145);
+    margin: 20px 0;
+    border-radius: 7px;
+    text-decoration: none;
+
+    transition: all 0.4s;
+}
+
+.cta-box a:hover {
+    background-color: #0a2c42;
+}
+
+/*-----   BEERS.HBS ------------*/
+.beer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 7% 5%;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/*-----   BEERPARTIAL.HBS ------------*/
+
+.beer-card {
+    width: 30%;
+    padding: 20px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: first baseline;
+}
+
+.beer-img {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    margin-bottom: 35px;
+}
+
+.beer-img img {
+    height: 100%;
+}
+
+.beer-title {
+    font-size: 70%;
+}
+.beer-tagline {
+    font-size: 70%;
+    color: rgba(145, 145, 145);
+}
+.beer-text {
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+/*-----  RANDOMPARTIAL.HBS ------------*/
+
+.random-container {
+    padding: 5% 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.random-img {
+    height: 350px;
+    margin-right: 50px;
+}
+
+.random-img img {
+    height: 100%;
+}
+
+.random-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.random-tagline {
+    color: rgba(145, 145, 145);
+    margin: 30px 0;
+}
+
+.random-text,
+.food-pairing,
+.brewer-tips {
+    font-size: 14px;
+    margin: 13px 0;
+}
+
+.food-pairing ul {
+    margin-top: 20px;
+}
