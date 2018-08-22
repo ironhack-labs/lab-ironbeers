@@ -76,7 +76,7 @@ footer {
 
 .partial-flex {
     flex-wrap: wrap;
-    /* padding-top: 180px; */
+    padding-top: 180px;
 }
 
 .beer-partial {
@@ -89,4 +89,13 @@ footer {
     width: 50px;
     /* height: 200px; */
     margin: 0 auto;
+}
+
+.beer-partial p:last-child {
+    font-size: 12px;
+}
+
+.beer-partial p,
+.beer-partial h3 {
+    padding: 0 25px 0 25px;
 }
