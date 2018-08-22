@@ -3,12 +3,12 @@
     <h5 class="card-title">{{this.name}}</h5>
     <h6 class="card-subtitle mb-2 text-muted">{{this.tagline}}</h6>
     <p class="card-text">{{this.description}}</p>
+    <h6>Food Pairings:</h6>
     <ol>
         {{#each this.food_pairing}}
         <li>{{this}}</li>
         {{/each}}
     </ol>
-    <p class="card-text">{{this.food_paring}}</p>
-    <p class="card-text">{{this.brewers_tips}}</p>
+    <p class="card-text">Brewer's Tips: {{this.brewers_tips}}</p>
 
   </div>
