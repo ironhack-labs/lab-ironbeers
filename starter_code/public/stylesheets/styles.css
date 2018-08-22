@@ -5,4 +5,132 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+position: absolute;
+width: 100vw;
+font-family: Arial, Helvetica, sans-serif;
+min-height: 100vh;
+}
+
+#nav {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+
+  background-color: #2081C3;
+  padding: 10px 30px;
+
+  box-shadow: 0px 2px 10px #888888;
+
+  position: fixed;
   
+}
+#nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+}
+#footer {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  
+  background-color: #0A2C42;
+  padding: 10px 30px;
+
+  position:absolute;
+  bottom:0;
+}
+#footer p {
+  color: white;
+  margin: 10px;
+}
+
+#index-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 50px 0;
+  padding-top: 50px;
+}
+#index-container img {
+  width: 30%;
+}
+#index-container img {
+  margin-bottom: 40px;
+}
+#index-container a {
+  color: white;
+  text-decoration: none;
+  background-color: #2081C3;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px #888888;
+}
+
+#beers-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 10vw;
+  justify-content: space-between;
+}
+#card {
+  width: 30%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+#beer-img-container {
+  height: 150px;
+  margin-bottom: 15px;
+}
+#beer-img {
+  height: 100%;
+}
+#beer-name {
+  font-size: 1.2em;
+}
+#tagline {
+  color: grey;
+  margin-bottom: 10px;
+  font-size: 0.8em;
+}
+
+#rbeer-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: 0 20vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#rbeer-image-container {
+  height: 200px;
+}
+#rbeer-img {
+  height: 100%;
+}
+#info {
+  width: 80%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+#info h1 {
+  margin-bottom: 40px;
+}
+#info p, ul {
+  margin-bottom: 20px;
+}
