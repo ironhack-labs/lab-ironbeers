@@ -1,0 +1,17 @@
+<h1>
+  Hello Beers</h1>
+<div class="row">
+  {{#each beersForView}}
+  <div class="col sm-3">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src={{this.image_url}} alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{this.name}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{this.tagline}}</h6>
+        <p class="card-text">{{this.description}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>
+{{/each}}
