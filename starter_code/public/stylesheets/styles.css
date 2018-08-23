@@ -1,8 +1,167 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
-  
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F7F9F9;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: #2081C3;
+    height: 9vh;
+    width: 97vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 3vw;
+    position: fixed;
+}
+
+a{
+    color: #F7F9F9; 
+    text-decoration: none;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 99vw;
+    height: 8vh;
+    background-color: #0A2C42;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 1vw;
+}
+
+.index-container{
+    /*width: 100vw;*/
+    height: 83vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(145, 145, 145, 0.481);
+    padding-top: 9vh;
+}
+
+.center-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3.5vw;
+}
+
+.beer-main{
+    width: 20vw;
+    padding-bottom: 1.9vh;
+}
+
+button{
+    background-color: #2081C3;
+    height: 7vh;
+    width: 14vw;
+    border-radius: 5px;
+    padding: 0.2vw;
+}
+
+.button-div{
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+}
+
+.beer-img{
+   width: 40px;
+   padding: 10px;
+   height: 40%;
+}
+
+.beer-text-wrapper{
+    text-align: left;
+}
+
+.beercontainer{
+    width: 30%;
+    height: 230px;
+    color: black;
+    margin: 5px;
+    text-align: center;
+}
+
+.beerscontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items:center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 12vh;
+
+}
+
+h2{
+    font-size: large;
+    color: black;
+}
+
+h3{
+    font-size: 12px;
+    color: darkgrey;
+}
+
+.description{
+    font-size: 9px;
+    color: black;
+}
+
+.random-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding-top: 18vh;
+}
+
+.randombeer-img{
+    width: 7%;
+    height: 7%;
+}
+
+.randombeer-text-wrapper{
+    padding: 2vw 5vw;
+}
+
+.randombeer-text-wrapper p{
+    color: black;
+    font-size: 12px;
+    padding-top: 2vh;
+}
+
+span{
+    color: black;
+}
+
+ul{
+    padding-top: 2vh;
+}
+
+b{
+    color: black;
+    font-size: 12px;
+}
+
+.h3{
+    padding-top: 2vh;
+}
+
+li{
+    padding-top: 2vh;
+    color: black;
+    font-size: 12px;
+    margin-left: 3vw;
+}
