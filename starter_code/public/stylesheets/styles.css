@@ -38,8 +38,8 @@ color: white;
     flex-direction: row; 
     /* align-content:center;
     justify-content: space-around;
-    align-items: center;  */
-} */
+    align-items: center;}  */
+ 
 
 #grey{
     color:grey;
@@ -51,10 +51,33 @@ color: white;
     flex-wrap: wrap;
 }
 
-/* .card{
-    width: 30%;
+
+.imgDiv{
+    width: 15%;
+    /* border: solid black 1px; */
 }
 
-.card-img{
-    width: 100%; 
-} */
+.card {
+ display:flex;
+ flex-direction: column; 
+ align-content:center;
+ justify-content: space-around;
+ align-items: center;
+ padding-top: 25px;
+
+}
+
+.card2 {
+    display:flex;
+    flex-direction: row; 
+    align-content:center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+   
+   }
+
+   .card-body{
+       margin-left: 100px;
+       /* border: 1px black solid; */
+   }
