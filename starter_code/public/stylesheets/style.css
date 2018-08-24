@@ -1,0 +1,58 @@
+html,body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+#nav {
+    width:100%;
+    height: 50px;
+    background-color : #2081C3;
+}
+#footer{
+    background-color : #0A2C42;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:50px;
+}
+#box {
+    width: 33%;
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: red;
+}
+
+#id {
+    width : 100%;
+    display : flex;
+    justify-content: center;
+}
+
+#images-beer {
+    margin-top: 10%;
+    width : 15%;
+    height : 15%;   
+}
+
+#general-button {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+#general-button-column {
+    display: flex;
+    flex-direction: column; 
+
+}
+
+.design-button {
+    background-color:#2081C3;
+    height : 30px;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    color : #F7F9F9
+}
