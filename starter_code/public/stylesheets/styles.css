@@ -1,8 +1,25 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
-  
+body {
+  background-color: rgba(145, 145, 145, 0.481);
+  font-family: Arial, Helvetica, sans-serif
+}
+.nav-link {
+  color: #F7F9F9;
+}
+.nav {
+  background-color: #2081C3;
+  padding: 20px 50px;
+  box-shadow: grey;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #0A2C42;
+  color: white;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+}
+.btn {
+  margin: 10px;
+}
