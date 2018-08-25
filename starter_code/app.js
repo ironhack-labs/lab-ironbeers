@@ -14,5 +14,14 @@ app.get('/', (req, res, next) => {
   res.render('index');
 });
 
+app.get('/beers', (request, response, next) => {
+  console.log(request);
+  response.sendFile(__dirname + '/views/beers.html');
+});
+
+app.get('/random-beers', (request, response, next) => {
+  console.log(request);
+  response.sendFile(__dirname + '/views/random-beers.html');
+});
 
 app.listen(3000);
