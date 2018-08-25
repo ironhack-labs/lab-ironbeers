@@ -14,5 +14,22 @@ app.get('/', (req, res, next) => {
   res.render('index');
 });
 
+//Home 
+app.get('/', (req, res, next) => {
+  console.log(request);
+  response.sendFile(__dirname+"/Views/home.html");
+});
+
+//Beers
+app.get('/beers', (req, res, next) => {
+    console.log(request);
+    response.sendFile(__dirname+"/Views/beers.html");
+});
+
+//Random beers
+app.get('random-beers/', (req, res, next) => {
+    console.log(request);
+    response.sendFile(__dirname+"/Views/random-beers.html");
+});
 
 app.listen(3000);
