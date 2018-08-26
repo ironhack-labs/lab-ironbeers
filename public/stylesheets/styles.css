@@ -14,12 +14,15 @@ font-family: Arial, Helvetica, sans-serif
 
 body {
   box-sizing: border-box;
-  background: rgba(145, 145, 145, 0.481);
+  background: rgba(180, 180, 180, 0.3);
 }
 
 a {
   color: #fff;
-  font-size: 1.5rem;
+  background-color: #2081C3;
+  padding: 8px 16px;
+  font-size: 1.1rem;
+  text-decoration: none;
   margin: 10px 20px;
 }
 
@@ -27,75 +30,115 @@ a:hover {
   text-decoration: none;
 }
 
-h6 {
-  margin: 0 20px;
-}
-
 
 /* Layout */
-.cont {
-  width: 100%;
-  position: relative;
-}
-
-
-.my-nav {
+.nav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 61px;
   background-color: #2081C3; 
-  text-decoration: none;
-  padding: 15px 20px;
 }
 
 .footer {
-  width: 100%;
-  background: #0A2C42;
-  color: #fff;
-  position: absolute;
-  bottom: 0px;
+  display: flex;
+  align-items: center;
+  background-color: #0A2C42; 
+  padding: 0 16px;
 }
 
+.footer h6 {
+  color: #fff;
+  margin: 0;
+  padding: 8px 16px;
+}
+/* End Layout */
 
 /* Index */
-.index-container {
-  position: relative;
-  height: 84%;
+.index-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 85vh;
 }
 
 .index-img {
-  height: 50vh;
-  text-align: center;
-  padding-top: 50px;
+  height: 50%;
+  margin: 50px 0 50px 0;
 }
 
-img {
-  height: 100%;
+.index-btn {
+  border-radius: 6px;
 }
+/* End Index */
 
-.btn-beers {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: 0 0 40px;
-  bottom: 0;
-}
 
-.btn-beer {
-  padding: 15px;
-}
-
-.btn-beer a {
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 600;
-  background: #5fafe4; 
-  box-shadow: 0 1px 2px 2px rgba(80, 80, 211, 0.2);
-}
-
-/* Cards */
+/* Beers section */
 .cards-container {
   display: flex;
-  padding: 10% 20%;
-  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+/* Beer Partial */
+.beer-card {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 40px;
+  margin: 10px;
+  background: rgba(170, 170, 170, 0.2);
+}
+
+.beer-card h5 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.description {
+  font-size: 0.8rem;
+}
+
+.tagline {
+  font-weight: 600;
+  color: rgba(145, 145, 145, 0.8);
+}
+
+.beer-card img {
+  height: 150px;
+}
+
+.beer-img {
+  text-align: center;
+  margin-bottom: 16px;
+}
+/* End Beer Partial */
+
+
+/* Random Beer */
+.random-container {
+  display: flex;
+  flex-direction: row;
+  height: 85vh;
+}
+
+.random-img {
+  margin: 50px 30px 0 120px;
+}
+
+.random-img img {
+  height: 300px;
+}
+
+.random-container h3 {
+  font-weight: bold;
+}
+
+.random-info {
+  width: 70vw;
+  padding-top: 70px;
+  padding-left: 70px;
 }

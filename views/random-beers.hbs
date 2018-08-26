@@ -1,3 +1,21 @@
-<div class="cards-container">
-    {{>beerPartial beer}}
+<div class="random-container">
+    {{#each beer}}
+        <div class="random-img">
+            <img src="{{image_url}}" alt="beer">
+        </div>
+        <div class="random-info">
+            <h3>{{name}}</h3>
+            <p class="tagline">{{tagline}}</p>
+            <p cless="description">{{description}}</p>
+            <p><strong>Food Pairing</strong></p>
+            <ul>
+                {{#each food_pairing}}
+                <li>
+                    {{this}}
+                </li>
+                {{/each}}
+            </ul>
+            <p><strong>Brewer's Tips: </strong>{{brewers_tips}}</p>
+        </div>
+    {{/each}}
 </div>
