@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(145, 145, 145, 0.481);
+  background-color: rgba(231, 231, 231, 0.481);
   font-family: Arial, Helvetica, sans-serif
 }
 .nav-link {
@@ -7,19 +7,27 @@ body {
 }
 .nav {
   background-color: #2081C3;
-  padding: 20px 50px;
+  padding: 0 20px;
   box-shadow: grey;
+  height: 8vh;
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   background-color: #0A2C42;
   color: white;
   display: block;
   width: 100%;
-  padding: 10px 20px;
+  padding: 0 10px;
+  height: 5vh;
 }
 .btn {
   margin: 10px;
+}
+
+/* Beers view */
+
+.img-box {
+  padding: 40px;  
 }
