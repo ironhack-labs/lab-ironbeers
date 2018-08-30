@@ -5,4 +5,76 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+
+footer{
+  background-color:#0A2C42;
+  width:100%;
+  height:50px;
+  position:fixed;
+  bottom:0;
+  color:white;
+  padding: 15px 15px 15px 15px;
+}
+
+
+.index-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: 300px 50px 50px;
+}
+
+#daBeer{
+  width:300px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+.btn{
+  display: grid;
+  grid-template-rows: 30px 30px;
+  grid-gap: 15px;
+}
+
+.btn button{
+  background-color: #2081C3;
+  border-radius: 9px;
+  color: whitesmoke;
+  }
+
+.beerItem {
+  display:grid;
+  grid-gap: 5%;
+  grid-template-columns: 30% 30% 30%;
+}
+
+#item{
+  width: 50px;
+  padding: 0 auto;
+}
+
+.randBeer{
+display: flex;
+/* justify-content: center; */
+align-items: center;
+width:800px;
+margin: 0 auto;
+}
+
+#randItem{
+
+  margin-right: 30px;
+}
+
+.text{
+  padding:20px;
+}
+
+#bold, h6{
+  font-weight: bold;
+}
+
   
