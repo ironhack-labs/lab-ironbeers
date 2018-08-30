@@ -1,0 +1,128 @@
+/*
+white: #F7F9F9;
+light-blue: #2081C3;
+dark-blue: #0A2C42;
+grey: rgba(145, 145, 145, 0.481);
+font-family: Arial, Helvetica, sans-serif
+*/
+
+/*---------------- global ------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgba(145, 145, 145, 0.481);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h5 {
+    color: #808080;
+}
+
+/*---------------- header ------------------*/
+
+header {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    background: #2081C3;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/*---------------- home page ------------------*/
+
+.index-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.index-container img{
+    height: 400px;
+    width: auto;
+}
+
+.button {
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+    background: #2081C3;
+    padding: 10px 30px;
+    border-radius: 5px;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.5);
+}
+
+/*---------------- beer page ------------------*/
+.beer-list {
+    margin: 0 180px;
+}
+
+.beer-list img {
+    height: 200px;
+    width: auto;
+}
+
+.beer-item {
+    display: inline-block;
+    width: 380px;
+    padding: 40px 20px;
+    text-align: center;
+    vertical-align:top;
+}
+
+.beer-item h3 {
+    text-align: left;
+}
+
+.beer-item p {
+    text-align: left;
+}
+
+.random-item li {
+    list-style: none;
+}
+
+/*---------------- random beer page ------------------*/
+
+.random-beer {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+.random-img img {
+    height: 400px;
+    width: auto;
+}
+
+.random-text {
+    width: 900px;
+    padding-left: 70px;
+}
+
+
+
+/*---------------- footer ------------------*/
+
+footer {
+    /* display: flex;
+    align-items: center; */
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    color: #fff;
+    background: #0A2C42;
+}
+
+footer p {
+    padding-left: 20px;
+}
