@@ -1,0 +1,21 @@
+
+
+<section class = "beer-card">
+    <img  class= "description-image" src="{{this.image_url}}" alt="It's a beer">
+    <h1>{{this.name}}</h1>
+    <h2> {{this.tagline}}</h2>
+    <p>{{this.description}}</p>   
+    <h3>Food Pairing</h3>
+       
+            {{#each this.food_pairing}}
+             <ul>
+            <li>
+                
+            {{this.food_pairing }}
+             
+            </li>
+             
+        </ul>
+        {{/each}} 
+    {{this.brewers_tips}}
+</section>
