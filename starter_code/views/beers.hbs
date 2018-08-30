@@ -1,0 +1,12 @@
+<div class="beerItem">
+
+  {{#each beersList}}
+  <div>
+  <img id="item" src="{{this.image_url}}" alt="Image of a beer">
+    {{> oneBeer this}}
+  </div>
+  {{/each}}
+</div>
+
+
+<a href="/">Home</a>
