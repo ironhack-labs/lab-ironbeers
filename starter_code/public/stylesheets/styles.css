@@ -1,8 +1,61 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
+
+
+/*dark-blue: #0A2C42;*/
+
+.index-container {
+background-color: rgba(145, 145, 145, 0.481);
+height: 500px;
+vertical-align: middle;
+} 
   
+nav {
+  background-color: #2081C3;
+  height: 30px; 
+  vertical-align: middle;
+  padding: 20px;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  vertical-align: middle; 
+  margin-left: 20px;
+}
+
+footer {
+  background-color: #0A2C42;
+  height: 30px;
+  padding: 20px;
+}
+
+p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif; 
+  vertical-align: middle;
+}
+
+.cartoon-beer {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  vertical-align: middle;
+  padding-top: 100px;
+}
+
+.check-button-1 {
+  display: flex;
+  background-color: #2081C3;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 15px 10px 15px;
+  
+}
+.check-button-2 {
+  display: flex;
+  background-color: #2081C3;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 15px 10px 15px;
+}
