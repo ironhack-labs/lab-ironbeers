@@ -1,0 +1,23 @@
+
+
+
+
+<div style="margin: 7.7% 0" class="one-beer">
+
+
+ {{#each beersList}}
+
+
+   <div> {{> _beer this}}</div>
+    
+    {{!-- <b>food pairing </b>
+
+          <div style="color: rgba(145, 145, 145, 0.481);">{{this.food_pairing}}</div> --}}
+
+   <div> <b style=";"> brewer tips: </b> <p>{{this.brewers_tips}}</p></div>
+
+
+    {{/each}}
+
+  
+</div>
