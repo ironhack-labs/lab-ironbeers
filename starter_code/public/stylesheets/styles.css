@@ -6,3 +6,56 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+navbar{
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  background: #2081C3;
+  width: 100vw;
+}
+
+.beernav a{
+  text-decoration: none;
+  color: #F7F9F9;
+  padding-left: 3vw;
+}
+
+footer{
+position: fixed;
+bottom: 0;
+background: #0A2C42;
+width: 100vw;
+height: 5vh;
+padding-top: 2vh;
+}
+
+.beerfooter a{
+  padding-left: 3vw;
+  color: #F7F9F9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.index-container img{
+  height: 50vh;
+  display: block;
+  margin: auto;
+  padding: 15vh 0 35vh 0;
+}
+
+.button1{
+  position: absolute;
+  bottom: 20vh;
+  left: 43vw;
+  right: 40vw;
+
+}
+
+.button2{
+  position: absolute;
+  bottom: 14vh;
+  left: 42vw;
+  right: 40vw;
+}
+
+a{
+  text-decoration: none;
+}
