@@ -5,7 +5,11 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+body{
+  margin:0;
+}
+
 navbar{
   font-family: Arial, Helvetica, sans-serif;
   position: fixed;
@@ -66,7 +70,7 @@ a{
 }
 
 .beer-container{
-  width: 20vw;
+  width: 23vw;
   padding: 0 5vw;
   padding-top: 5vh;
   /* border-style: solid; */
@@ -94,7 +98,7 @@ h3{
 .beer-img{
   width: 8vw;
   float: left;
-  padding: 10vh 10vw 0 5vw;
+  padding: 4vh 10vw 0 5vw;
   margin-bottom: 50vh;
 }
 
@@ -102,6 +106,7 @@ h3{
   font-family: Arial, Helvetica, sans-serif;
   padding-bottom: 10vh;
   padding-top: 15vh;
+  padding-right: 5vw;
 }
 
 button{
