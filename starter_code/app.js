@@ -4,6 +4,7 @@ const app = express();
 const path = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 const punkAPI = new PunkAPIWrapper();
+hbs.registerPartials(__dirname + '/views/partials')
 
 app.set('view engine', 'hbs');
 
@@ -16,11 +17,59 @@ app.get('/', (req, res, next) => {
 });
 
 app.get('/beers', (req, res, next) => {
-  res.render('beers');
+  punkAPI.getBeers()
+  .then(beers => {
+    const newBeers = beers.map((a, b)=>{
+      let y = a
+      y.number = b+1
+      return y
+
+    })
+    console.log(beers[0])
+    res.render('beers', {list: newBeers});
+  })
+  .catch(error => {
+    console.log(error)
+  })
+
 });
 
+app.get("/allbeers", (sreq,res) => {
+  punkAPI.getBeers()
+  .then(beers => {
+    const newBeers = beers.map((a, b)=>{
+      let y = a
+      y.number = b+1
+      return y
+
+    })
+    console.log(beers[0])
+    res.render('allbeers', {list: newBeers});
+  })
+  .catch(error => {
+    console.log(error)
+  })
+
+})
+
+
 app.get('/random-beers', (req, res, next) => {
-  res.render('random');
+  punkAPI.getRandom()
+  .then(beers => {
+    console.log(beers)
+    console.log("=====================");
+    console.log(beers[0].food_pairing)
+    console.log("=====================");
+     let food = beers[0].food_pairing
+
+    // console.log(beers[0].ingredients.malt)
+    res.render('random', {list: beers, food: food});
+
+  })
+  .catch(error => {
+    console.log(error)
+  })
+
 });
 
 

@@ -1,0 +1,39 @@
+<div class="card mb-3 text-center hoverable">
+
+    <div class="card-body">
+        <div class="row">
+            {{#each list}}
+            <div class="col-md-4 offset-md-1 mx-3 my-3">
+                <div class="view overlay">
+                  <img src="{{this.image_url}}"  class="img-fluid bottle "alt="">
+                    <!-- <img src="/images/alex.jpg" class="img-fluid" alt="Sample image for first version of blog listing"> -->
+                    <a>
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-7 text-left ml-3 mt-3">
+
+                <a href="" class="green-text">
+                    
+                </a>
+                <!-- <h4 class="mb-4"><strong>Bio</strong></h4> -->
+                <h3 class="mb-4"><strong>{{this.name}}</strong></h3>
+                <p class="mytext">{{this.description}}</p>
+                <h4 class="mb-4"><strong>Food Pairing</strong></h4>
+                {{/each}}
+                <ul>
+                  {{#each food}}
+                  <li> {{this}}</li>
+
+                  {{/each}}
+                </ul>
+                {{#each list}}
+                <p class="mytext">{{this.brewers_tips}}</p>
+                {{/each}}
+            </div>
+            <!--Grid column-->
+        </div>
+        <!--Grid row-->
+    </div>
+ </div>

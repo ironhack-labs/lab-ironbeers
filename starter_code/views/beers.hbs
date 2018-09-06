@@ -1,0 +1,35 @@
+
+<div class="container">
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Ingredients</th>
+      <th scope="col">Picture</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each list}}
+    <tr>
+      <th scope="row">{{this.number}}</th>
+      <td>{{this.name}}</td>
+      <td>
+        {{this.description}}
+
+
+      </td>
+      <td>
+        <img src="{{this.image_url}}"  class="img-fluid "alt="">
+
+
+      </td>
+    </tr>
+
+    {{/each}}
+  </tbody>
+</table>
+
+
+
+</div>
