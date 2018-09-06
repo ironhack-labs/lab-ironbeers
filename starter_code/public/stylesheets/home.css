@@ -1,0 +1,38 @@
+.index-container{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+button{
+  /* width: 20vw; */
+  margin-left: 20px;
+  margin-top: 20px;
+}
+button a:visited {
+  text-decoration: none;
+  color: #F7F9F9;
+}
+img{
+  /* height: 60%; */
+  margin-left: 20px;
+  width: 20vw;
+}
+
+.beer-cards{
+
+    max-width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    padding-bottom: 100px;
+
+}
+
+.random-card{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+}

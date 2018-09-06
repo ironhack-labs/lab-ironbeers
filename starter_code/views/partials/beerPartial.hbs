@@ -1,0 +1,23 @@
+{{!-- <div class="partial" style="width: 33.333%;">
+      <img class="beer-img" src="{{this.photo}}" alt="">
+      <div class="beer-body">
+        <h5 class="beer-name">{{this.name}}</h5>
+        <p class="beer-tagline">{{this.tagline}}</p>
+      </div>
+</div> --}}
+
+<link rel="stylesheet" href="/stylesheets/partial.css">
+<div class="partial">
+<div class="card" style="width: 100%;">
+      <img class="card-img-top" src="{{this.image_url}}" alt="">
+      <div class="card-body">
+        <h4 class="card-name">{{this.name}}</h4>
+        <p class="card-tagline">{{this.tagline}}</p>
+        <p class="description">{{this.description}}</p>
+      </div>
+
+        {{!-- {{#if this.mvp}}
+            <h5>**** This player is a former MVP Winner*****</h5>
+        {{/if}} --}}
+</div>
+</div>
