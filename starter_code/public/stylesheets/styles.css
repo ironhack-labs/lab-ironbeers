@@ -57,6 +57,18 @@ font-family: Arial, Helvetica, sans-serif
   height: 50%;
 }
 
+.random-beer-img {
+  height: 45%;
+}
+
 .random-beer-div {
   text-align: center;
+}
+
+.row-margin {
+  margin-top: 10vw;
+}
+
+.random-beer-margin {
+  margin-top: 8vw;
 }
