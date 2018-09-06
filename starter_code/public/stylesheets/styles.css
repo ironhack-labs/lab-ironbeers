@@ -92,6 +92,14 @@ h3{
 }
 
 .beer-img{
-  width: 5vw;
-  padding-top: 10vh;
+  width: 8vw;
+  float: left;
+  padding: 10vh 10vw 0 5vw;
+  margin-bottom: 50vh;
+}
+
+.beer-details{
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 10vh;
+  padding-top: 15vh;
 }
