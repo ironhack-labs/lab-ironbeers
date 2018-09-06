@@ -43,7 +43,7 @@ padding-top: 2vh;
 
 .button1{
   position: absolute;
-  bottom: 20vh;
+  bottom: 21vh;
   left: 43vw;
   right: 40vw;
 
@@ -51,7 +51,7 @@ padding-top: 2vh;
 
 .button2{
   position: absolute;
-  bottom: 14vh;
+  bottom: 13vh;
   left: 42vw;
   right: 40vw;
 }
@@ -102,4 +102,15 @@ h3{
   font-family: Arial, Helvetica, sans-serif;
   padding-bottom: 10vh;
   padding-top: 15vh;
+}
+
+button{
+  padding: 10px 15px;
+  background-color: #2081C3;
+  border-radius: 5px;
+}
+
+button a{
+  text-decoration: none;
+  color: white;
 }
