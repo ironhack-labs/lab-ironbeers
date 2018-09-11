@@ -37,7 +37,7 @@ Inside the `views` folder, create a `layout.hbs` file. Our layout should look li
 
 You will find the `colors` and `fonts` on the `css` file. Remember to add the `{{{ body }}}` and link the `css` file to your **main layout**.
 
-The navbar includes three elements: 
+The navbar includes three elements:
 - *Home*. ----> Should navigate to `/`.
 - *Beers*. ----> Should navigate to `/beers`.
 - *Random Beer*. ----> Should navigate to `/random-beers`.
@@ -72,7 +72,7 @@ On the `beers.hbs` view, loop over the **beers array** using the `{{#each beers}
 
 ## Iteration 5 - Beer Partial
 
-Since each beer will be displayed in the same way, you should create a partial for display each beer. First, we need to register where our `partials` will be located. So you need to add the following code to the `app.js` file:
+Since each beer will be displayed in the same way, you should create a partial to display each beer. First, we need to register where our `partials` will be located. So you need to add the following code to the `app.js` file:
 
 ```javascript
 hbs.registerPartials(__dirname + '/views/partials')
@@ -88,7 +88,7 @@ After creating the partial, and loop over the array of beers, on our `/bears` ro
 
 ## Iteration 6 - Random Beer
 
-Finally, let's create our `/random-beer` route. Inside our route, you should call the `getRandom()` method of the PunkAPI package, and after receiving the info, render the `randomBeer.hbs` file and passing the data of the beer.
+Finally, let's create our `/random-beer` route. Inside our route you should call the `getRandom()` method of the PunkAPI package and after receiving the info, render the `randomBeer.hbs` file and pass the data of the beer.
 
 ```javascript
 punkAPI.getRandom()
@@ -103,4 +103,3 @@ punkAPI.getRandom()
 On the `randomBeer.hbs` you should print the random beer you get. You should display an image, name, description, tagline, food pairing and brewer tips. It should look like the following:
 
 ![image](https://user-images.githubusercontent.com/23629340/36724536-c5924892-1bb3-11e8-8f22-fd1f8ce316af.png)
-
