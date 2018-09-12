@@ -5,4 +5,27 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+.img-beer {
+    height: 250px;
+  }
+  .img-beer img {
+    height: 100%;
+    padding-bottom: 25px;
+  }
+  .row{
+      margin: 10% 2% 5% 2%;
+  }
+  .text-beer{
+      text-align: left;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  .text-beer h4{
+    color:grey;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  .text-beer h2{
+    font-size: 1.6em;
+    font-weight: bold;
+  }
