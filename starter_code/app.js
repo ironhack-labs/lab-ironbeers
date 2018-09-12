@@ -10,8 +10,23 @@ app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', (req, res, next) => {
-  res.render('index');
+app.get('/', (req, res) => {
+  res.render('index.hbs');
+});
+
+app.get('/beers', (req, res) => {
+  punkAPI.getBeers()
+  .then(beers => {
+    res.render('beers', {beers});
+  })
+  .catch(error => {
+    console.log(error)
+  })
+  res.render('./beers.hbs');
+});
+
+app.get('/random-beers', (req, res) => {
+  res.render('./randomBeers.hbs');
 });
 
 
