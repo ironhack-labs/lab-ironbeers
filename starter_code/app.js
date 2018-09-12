@@ -10,7 +10,13 @@ app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res, next) => {
-	res.render('index');
+	punkAPI.getBeers()
+		.then(beers => {
+			res.render('index');
+		})
+		.catch(error => {
+			console.log(error)
+		})
 });
 
 app.get('/beers', (req, res, next) => {
