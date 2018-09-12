@@ -8,22 +8,42 @@ font-family: Arial, Helvetica, sans-serif
 
 *{
     font-family: Arial, Helvetica, sans-serif;
-    color: #F7F9F9;
 }
 
 .my-navbar{
     background-color: #2081C3;
 }
 
-.container-fluid {
-    height: 100vh;
+.main{
+    min-height: 100vh;
 }
+
 
 footer{
     background-color: #0A2C42;
     height: 6vh;
+    color: #F7F9F9;
 }
 
 .index-container {
     height: 100%;
+}
+
+.card-img{
+    height: 20vh;
+    object-fit: contain;
+    margin-bottom: 3vh;
+}
+
+.beer-card {
+    display: inline-block;
+    margin:10vh 0 0 2%;
+    flex-grow: 1;
+    height:40vh;
+    width: calc(100% * (1/4) - 10px);
+}
+
+.beer-container {
+    width: 90vw;
+    margin: 0 auto;
 }
