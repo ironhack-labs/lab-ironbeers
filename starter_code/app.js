@@ -11,8 +11,15 @@ app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res, next) => {
-  res.render('index');
+  res.render('home');
 });
+app.get('/beers', (req, res, next) => {
+  res.render('beers');
+});
+app.get('/random-beers', (req, res, next) => {
+  res.render('random-beers');
+});
+
 
 
 app.listen(3000);

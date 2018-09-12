@@ -1,0 +1,40 @@
+
+$white: #F7F9F9;
+$light-blue: #2081C3;
+$dark-blue: #0A2C42;
+$grey: rgba(145, 145, 145, 0.481);
+$font-family: Arial, Helvetica, sans-serif;
+
+html,body{
+  margin:0;
+  padding:0;
+  font-family: $font-family;
+}
+nav{
+  background-color:$light-blue;
+  ul{
+    display: flex;
+    margin:0;
+    padding:0;
+    li{
+      list-style: none;
+      padding:15px;
+    }
+    a{
+      text-decoration: none;
+      color:$white;
+    }
+  }
+}
+section{
+  background-color:$white;
+  height: 100%;
+  padding: 15px;
+}
+footer{
+  width: 100%;
+  background-color:$dark-blue;
+  color:$white;
+  padding: 15px;
+  box-sizing: border-box;
+}
