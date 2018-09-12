@@ -5,4 +5,252 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.nav-blue {
+  background-color: #2081C3;
+  padding: 15px;
+}
+
+.nav-blue li a {
+  color: #F7F9F9;
+}
+
+footer {
+  background-color: #0A2C42;
+  color: #F7F9F9;
+  height: 50px;
+  clear: both;
+}
+
+footer p {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.index-container img {
+  width: 350px;
+  position: relative;
+  left: 500px;
+  margin-top: 50px;
+}
+
+.index-button {
+  background-color: #2081C3;
+  color: #F7F9F9;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.btn-1 {
+  position: absolute;
+  bottom: 270px;
+  left: 620px;
+}
+
+.btn-2 {
+  position: absolute;
+  bottom: 200px;
+  left: 600px;
+}
+
+
+.card {
+  width: 33%;
+  float: left;
+  height: 450px;
+  background-color: rgba(145, 145, 145, 0.481);
+  text-align: left;
+}
+
+
+.img-div {
+  height: 250px;
+}
+
+.img-div img {
+  height: 100%;
+  padding-bottom: 25px;
+}
+
+.row {
+  margin: 10% 2% 5% 2%;
+}
+
+.text {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text h4 {
+  color: grey;
+  font-size: 1.5em;
+}
+
+.text h2 {
+  font-size: 2em;
+}
+
+.r-card {
+  position: relative;
+  left: 400px;
+  width: 800px;
+  top:-100px;
+}
+
+.r-beer-img {
+  position: relative;
+  left: 150px;
+  top:200px;
+}
+
+.r-text {
+  text-align: left;
+  margin-top: 25px;
+}
+
+.r-beer-name {
+  font-size: 2.5em;
+  margin-bottom: 15PX;
+}
+.r-beer-name-2 {
+  font-size: 2em;
+  margin-bottom: 25px;
+}
+.r-beer-tagline {
+  color: grey;
+  font-size: 1.5em;
+  margin-bottom: 25px;
+}
+
+.r-beer-description {
+  margin-bottom: 25px;
+}
+
+.pairings_list {
+  margin-bottom: 25px;
+}
