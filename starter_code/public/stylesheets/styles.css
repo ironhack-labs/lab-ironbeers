@@ -5,4 +5,140 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #2081C3;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center  
+}
+
+.menu {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.menu-list {
+    display: flex;
+    padding-left: 0;
+
+}
+
+.menu-list li {
+    list-style-type: none;
+}
+.menu-list a{
+    padding: 15px;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #000;
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #ffffff;
+    font-size: 15px;
+    box-sizing: border-box;
+
+}
+
+.index-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 80vh; */
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.index-container button {
+    background-color: #2081C3;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 20%;
+}
+
+button a {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.beer-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    background: #F7F9F9;
+}
+
+.beer {
+    width: 30%;
+}
+
+.beer img {
+    width: 100px;
+    height: 300px
+}
+
+.beer .beer-title {
+    font-size: 25px;
+    font-weight: bolder;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.beer .beer-tag {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(145, 145, 145, 0.481);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.beer .beer-desc {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.random-beer {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    background: rgba(219, 218, 218, 0.842);
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.random-beer-tag {
+    color: rgba(145, 145, 145, 0.481);
+}
+.random-beer .beer-data {
+    padding: 40px;
+}
+.random-beer .beer-img {
+    padding: 30px;
+}
+.random-beer img {
+    width: 100px;
+    height: 300px
+}
