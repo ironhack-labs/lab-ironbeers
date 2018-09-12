@@ -10,7 +10,10 @@ app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res, next) => {
-  res.render('index');
+  let data = {
+    imgSource: 'images/beer.png'
+  }
+  res.render('index', data);
 });
 
 app.get('/beers', (req, res, next) => {

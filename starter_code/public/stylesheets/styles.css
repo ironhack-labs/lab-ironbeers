@@ -24,8 +24,6 @@ footer{
     height: 6vh;
 }
 
-/* footer > p {
-    line-height: 100%;
-    vertical-align: middle;
-} */
-  
+.index-container {
+    height: 100%;
+}
