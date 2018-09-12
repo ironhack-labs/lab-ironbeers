@@ -32,8 +32,6 @@ section{
   padding: 15px;
 }
 footer{
-  position: absolute;
-  bottom: 0;
   width: 100%;
   background-color:$dark-blue;
   color:$white;
@@ -56,5 +54,37 @@ footer{
     padding: 8px 15px;
     margin:5px;
     text-decoration: none;
+  }
+}
+#beers{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  .beer{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 25%;
+    padding: 10px;
+    color:black;
+    text-align: left;
+    img{
+      height: 150px;
+    }
+    h2{
+      font-size: 16px;
+      margin:0;
+      align-self: flex-start;
+    }
+    h3{
+      margin:0;
+      font-size: 12px;
+      color:$grey;
+      align-self: flex-start;
+
+    }
+    p{
+      font-size: 12px;
+    }
   }
 }

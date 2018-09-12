@@ -1,4 +1,5 @@
-beers
-{{#each beers}}
-{{this.name}}
-{{/each}}
+<div id="beers">
+  {{#each beers}}
+  {{>beerPartial this}}
+  {{/each}}
+</div>

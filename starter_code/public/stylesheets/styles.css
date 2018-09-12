@@ -22,8 +22,6 @@ section {
   padding: 15px; }
 
 footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   background-color: #0A2C42;
   color: #F7F9F9;
@@ -45,5 +43,31 @@ footer {
     padding: 8px 15px;
     margin: 5px;
     text-decoration: none; }
+
+#beers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  #beers .beer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 25%;
+    padding: 10px;
+    color: black;
+    text-align: left; }
+    #beers .beer img {
+      height: 150px; }
+    #beers .beer h2 {
+      font-size: 16px;
+      margin: 0;
+      align-self: flex-start; }
+    #beers .beer h3 {
+      margin: 0;
+      font-size: 12px;
+      color: rgba(145, 145, 145, 0.481);
+      align-self: flex-start; }
+    #beers .beer p {
+      font-size: 12px; }
 
 /*# sourceMappingURL=styles.css.map */
