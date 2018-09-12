@@ -5,4 +5,27 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F7F9F9;
+}
+
+.my-navbar{
+    background-color: #2081C3;
+}
+
+.container-fluid {
+    height: 100vh;
+}
+
+footer{
+    background-color: #0A2C42;
+    height: 6vh;
+}
+
+/* footer > p {
+    line-height: 100%;
+    vertical-align: middle;
+} */
   
