@@ -62,16 +62,26 @@ body{
   margin-left: 380px;
   margin-top: 20px;
 }
-
+.container{
+  margin: 0;
+}
+.row{
+  width: 150%;
+}
 .beers{
-  width: 375px;
-  margin-top:70px;
-  padding:50px;
+  width: 33%;
+  margin-top: 70px;
+  padding-left: 80px;
+}
+
+.beers p{
+margin-top:20px;
 }
 
 .beers-img{
-  display: block;
+ display: block;
  height:200px;
+ padding-left:200px; 
 
 }
 
@@ -88,10 +98,19 @@ body{
 
 .description{
   margin-left:100px;
+  width:50%;
 }
 
 .description h3{
   padding-bottom:40px; 
+}
+
+.description-text{
+  padding-bottom: 20px;
+}
+
+.description li{
+  padding-top: 10px;
 }
 
 
