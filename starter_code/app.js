@@ -11,7 +11,7 @@ app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res, next) => {
-  res.render('home');
+  res.render('');
 });
 app.get('/beers', (req, res, next) => {
   res.render('beers');

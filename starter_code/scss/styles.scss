@@ -32,9 +32,29 @@ section{
   padding: 15px;
 }
 footer{
+  position: absolute;
+  bottom: 0;
   width: 100%;
   background-color:$dark-blue;
   color:$white;
   padding: 15px;
   box-sizing: border-box;
+}
+.index-container{
+  display:flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  img{
+    width: 200px;
+  }
+  a{
+    background-color: $light-blue;
+    border-radius: 3px;
+    border:none;
+    box-shadow: 0 4px 4px -4px $dark-blue;
+    color:$white;
+    padding: 8px 15px;
+    margin:5px;
+    text-decoration: none;
+  }
 }
