@@ -97,3 +97,9 @@ ul {
 .beer-wrapper p, h2 {
   text-align: center
 }
+
+.random-beer img {
+  height: 400px;
+  margin: 100px auto;  
+  display: block;
+}
