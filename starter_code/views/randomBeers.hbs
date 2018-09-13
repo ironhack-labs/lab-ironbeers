@@ -1,0 +1,18 @@
+{{#each beers}}
+<div class='row'>
+    <div class="col-md-4 rand-img" />
+    <img src="{{image_url}}" alt="{{name}}" />
+</div>
+<div class="col-md-6 rand-text">
+    <h2>{{name}}</h2>
+    <h4>{{tagline}}</h4>
+    <p>{{description}}</p>
+    <h3>Food Pairing</h3>
+    <ul>
+        {{#each food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+    <p><span class="tips">Brewers Tips: </span>{{this.brewers_tips}}</p>
+</div>
+{{/each}}
