@@ -6,3 +6,54 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+nav{
+  background-color: #2081C3;
+}
+
+nav a{
+  color: white;
+  margin: 0 10px;
+}
+
+nav a:hover{
+  text-decoration: none;
+  color:rgb(103, 103, 103);
+}
+
+footer{
+  background-color: black;
+  color: antiquewhite;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  padding-top: 20px;
+  padding-left: 25px;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.boton{
+  margin: 20px;
+  background-color: #0A2C42;
+  color: white;
+  height: 40px;
+  width: 200px;
+  border-radius: 80%;
+}
+
+h5 {
+  font-size: 15px;
+  color: dimgrey;
+}
+.card-img-top{
+  height: 300px;
+  width: 100px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+}
