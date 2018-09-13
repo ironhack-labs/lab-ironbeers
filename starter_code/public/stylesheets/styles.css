@@ -4,6 +4,8 @@ html, body {
   font-family: Arial, Helvetica, sans-serif; }
 
 nav {
+  position: fixed;
+  width: 100%;
   background-color: #2081C3; }
   nav ul {
     display: flex;
@@ -19,9 +21,11 @@ nav {
 section {
   background-color: #F7F9F9;
   height: 100%;
-  padding: 15px; }
+  padding: 50px 15px; }
 
 footer {
+  position: fixed;
+  bottom: 0;
   width: 100%;
   background-color: #0A2C42;
   color: #F7F9F9;
@@ -69,5 +73,21 @@ footer {
       align-self: flex-start; }
     #beers .beer p {
       font-size: 12px; }
+
+#random-beers {
+  display: flex;
+  justify-content: center; }
+  #random-beers img {
+    margin-right: 75px;
+    height: 250px; }
+  #random-beers div {
+    width: 60%;
+    font-size: 16px; }
+    #random-beers div h2 {
+      font-size: 20px; }
+    #random-beers div h3 {
+      color: rgba(145, 145, 145, 0.481); }
+    #random-beers div li, #random-beers div p {
+      padding: 5px; }
 
 /*# sourceMappingURL=styles.css.map */
