@@ -42,15 +42,15 @@ ul {
   flex-direction: column;
   text-align: center;
 }
- .beer-img {
-  width: 20vh;
-  height: 40vh;
-  padding-left: 20px;
-  padding-top: 20px;
-}
+
  .beers {
   display: flex;
   flex-wrap: wrap;
+}
+.beers img {
+  width: 30px;
+  height: 20vh;
+  object-fit: contain;
 }
  .beer {
   width: 33%;
