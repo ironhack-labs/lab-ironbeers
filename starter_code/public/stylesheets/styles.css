@@ -42,8 +42,8 @@ font-family: Arial, Helvetica, sans-serif
   
 /* card styles */
 .card-img-top{
-  height: 500px;
-  width: 200px !important; 
+  width: 100px ;
+  height:230px; 
   margin: 0 auto;
 }
  .card-text{
@@ -55,10 +55,11 @@ font-family: Arial, Helvetica, sans-serif
   display: flex;
   justify-content: center;
   margin: 10px 0;
+  
 }
  .card:hover .card-text{
   display: block;
-  transition: all .3s ease;
+  transition: all 1.5s ease;
 }
  .card aside{
   color: rgba(145, 145, 145, 0.481);
