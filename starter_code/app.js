@@ -11,8 +11,18 @@ app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res, next) => {
-  res.render('index');
+  let data = {
+    name: 'DavidS',
+    bootcamp: 'Ironhack Web Dev'
+  }
+  res.render('layout', data);
 });
 
+app.set('/beers', (req, res, next) => {
+  res.render('layout');
+});
+app.set('/random-beers', (req, res, next) => {
+  res.render('layout');
+});
 
 app.listen(3000);
