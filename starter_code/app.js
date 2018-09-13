@@ -11,6 +11,8 @@ app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
 hbs.registerPartials(__dirname + '/views/partials')
 
+
+
 app.get('/', (req, res, next) => {
   res.render('index');
 });
@@ -30,7 +32,10 @@ app.get('/beers', (req, res, next) => {
 app.get('/random-beers', (req, res, next) => {
   punkAPI.getBeers()
   .then(beers => {
-    const beer = getRandomBeer(beers);
+    getRandom = (beers) => {
+      return beers[Math.floor(Math.random() * Math.floor(beers.length))];
+    }
+    const beer = getRandom(beers);
     res.render("random-beers", { beer });
   })
   .catch(error => {
