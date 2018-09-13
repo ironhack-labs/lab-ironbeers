@@ -55,13 +55,25 @@ footer {
   background-color: #2081C3;
   color: white;
   border-radius: 5px;
+  margin-top: 20px;
 }
 
 .my-card-img {
-  object-fit: cover;
+  display: flex;
+  justify-content: center;
 }
 .card-img-top {
-  width: 100%;
-  height: 15vw;
-  object-fit: cover;
+  width: 150px;
+  height: 320px;
+  margin: 0 auto;
+}
+
+.card:hover .card-text{
+  display: block;
+  transition: all 1.5s ease;
+}
+
+.card-text{
+  max-height: 500px;
+  display: none;
 }
