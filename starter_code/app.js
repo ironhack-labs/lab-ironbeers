@@ -1,4 +1,3 @@
-
 const express = require('express');
 const hbs     = require('hbs');
 const app     = express();
@@ -14,5 +13,19 @@ app.get('/', (req, res, next) => {
   res.render('index');
 });
 
+hbs.registerPartials(__dirname + '/views/partials');
+
+app.get('/beers', (req, res, next) => {
+  punkAPI.getBeers().then(beers =>{
+    res.render('beers', {beers})
+  })
+});
+
+app.get('/random-beers', (req, res, next) => {
+  punkAPI.getRandom().then(beer =>{
+    res.render('random-beers', {beer: beer[0]});
+
+  })
+});
 
 app.listen(3000);
