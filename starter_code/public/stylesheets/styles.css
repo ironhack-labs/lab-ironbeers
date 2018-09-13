@@ -1,8 +1,42 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+nav{
+  background-color: #2081C3;
+  height: 10vh;
+}
+.navText{
+  color: #F7F9F9 !important; 
+}
+
+
+.index-container{
+  background-color: rgba(39, 72, 221, 0.356);
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.index-container img{
+  height: 40vh;
+}
+.index-container a{
+  padding: 0.8% 2%;
+  background-color: #2081C3;
+  color: #F7F9F9;
+  border-radius: 10px;
+}
+
+
+footer{
+  height: 10vh;
+  padding-top: 3.5vh; 
+  padding-left: 2vw;
+  background-color: #0A2C42;
+  color: #F7F9F9;
+}
   
