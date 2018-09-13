@@ -14,5 +14,23 @@ app.get('/', (req, res, next) => {
   res.render('index');
 });
 
+app.get('/beers', (req, res, next)=>{
+  punkAPI.getBeers()
+  .then(beers => { res.render('beers', {beers}) })
+})
 
-app.listen(3000);
+app.get('/random', (req, res, next)=>{
+  punkAPI.getRandom()
+  .then(beers=>{
+    res.render("random", {beers});
+  })
+  .catch(error => {
+    console.log(error)
+  })
+})
+
+hbs.registerPartials(__dirname + '/views/partials');
+
+
+app.listen(3000,()=>{ console.log('si funciona')} );
+
