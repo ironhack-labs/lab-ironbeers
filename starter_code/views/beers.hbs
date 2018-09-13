@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+
+	<div class="container">
+		<div class="row">
+			{{#each beers}}
+				<div class="col-md-4">
+					{{> cards this }}
+				</div>
+			{{/each}}
+		</div>
+	</div>
+	
+</body>
+</html>
