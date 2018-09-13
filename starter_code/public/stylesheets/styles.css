@@ -5,4 +5,74 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+.navbar{
+    background-color: #2081C3;
+}
+
+.m{
+    color:white;
+    margin: 5%;
+    width:200px;
+}
+a{
+    text-decoration: none;
+}
+
+footer{
+    background-color:#0A2C42;
+    width:100vw;
+    height:100px;
+    color:white;
+    padding:20px;
+    margin-top:8%;
+}
+
+
+.padre{
+    margin:5%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgbeer{
+    height: 300px;
+    width: 300px;
+
+}
+
+button{
+    background-color: #2081C3;
+    border-radius: 5px;
+    color:white;
+    padding:10px;
+    margin-top:10px;
+}
+
+.card-text1{
+    color:gray;
+}
+
+.card-imag{
+    width:"50px";
+    height:"300px";
+}
+
+.father{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.f{
+    display:flex;
+    flex-direction: row;
+    padding:5%;
+}
+
+.im{
+    margin:10px;
+    padding:10px;
+}
+
+#title{
+    margin-top:50px;    
+}
