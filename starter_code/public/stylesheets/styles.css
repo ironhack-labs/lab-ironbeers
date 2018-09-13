@@ -6,3 +6,85 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.navbar {
+    background: #2081C3 !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-weight:700;
+}
+
+footer{
+    background: #0A2C42 !important;
+    padding:15px ;
+    color:#fff;
+}
+footer p{
+    margin:0;
+}
+
+.container {
+    margin: 0 auto !important;
+    text-align: center;
+    padding: 50px 0;
+    
+}
+
+button{
+    background: #2081C3;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    width: 25%;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+button a,button a:hover{
+    color: #fff;
+    text-decoration:none;
+}
+
+button:hover{
+    color: #fff;
+    text-decoration:none;
+    background:#2c92d8;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+
+.card-img-top {
+    width: 40%;
+    border-top-left-radius: calc(.25rem - 1px);
+    text-align: center;
+    border-top-right-radius: calc(.25rem - 1px);
+    margin: 0 auto;
+}
+
+.card {
+    padding: 20px;
+}
+
+#random-beer {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.navbar-light .navbar-brand {
+    color: rgb(7, 44, 72);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
