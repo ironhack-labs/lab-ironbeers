@@ -5,4 +5,53 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+nav.navbar.navbar-expand-lg {
+  background-color: #2081C3;
+}
+.nav-link{
+  color: #F7F9F9;
+}
+body{
+  background-color: rgba(145, 145, 145, 0.481);
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer{
+  color: #F7F9F9;
+  background-color: #0A2C42;
+  padding:10px;
+  position: fixed;
+  bottom:0px;
+  width:100vw;
+}
+.main-div{
+  display: flex;
+  flex-direction: column;
+  width:60%;
+  margin:30px auto;
+  padding: 30px;
+}
+.btn.btn-primary{
+  width: 50%;
+  margin: 10px auto;
+}
+.beer-icon{
+  width:40%;
+  margin:0 auto;
+  margin-bottom: 30px;
+}
+.card{
+  margin: 30px 20px;
+  background-color: transparent;
+  padding:20px;
+  border: none;
+}
+.card-title{
+  font-weight:900;
+}
+.card-tagline{
+  color: rgb(119, 119, 119);
+}
+.random-div{
+  padding:50px;
+}
