@@ -5,4 +5,19 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+
+nav {
+  background-color: #2081C3;
+
+}
   
+.nav-item {
+  color: #F7F9F9;
+}
+
+
+.beerpic {
+  position: relative;
+  width: 400px;
+  left: 35%;
+}

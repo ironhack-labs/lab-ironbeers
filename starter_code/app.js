@@ -13,6 +13,38 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res, next) => {
   res.render('index');
 });
+app.get('/home', (req, res, next) => {
+  res.render('home');
+});
+
+
+app.get('/beers', (req, res, next) => {
+punkAPI.getBeers()
+.then(beers => { res.render('beers', {beers})
+})
+
+.catch(error => {
+  console.log(error)
+})
+});
+
+
+
+//   punkAPI.getBeers()
+// .then(beers => {
+//   res.render('beers');
+//   console.log(beers)
+// })
+// .catch(error => {
+//   console.log(error)
+// })
+
+app.get('/randombeer', (req, res, next) => {
+  res.render('randombeer');
+});
+
+
+
 
 
 app.listen(3000);
