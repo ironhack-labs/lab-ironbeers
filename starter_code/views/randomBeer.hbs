@@ -1,0 +1,14 @@
+<div>
+    <div style="background-image:url('{{beer.image_url}}')"></div>
+    {{#each }}
+    <div>
+
+        <ul>
+            {{#each beer.food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+
+    </div>
+    {{/each}}
+</div>
