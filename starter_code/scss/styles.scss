@@ -11,6 +11,8 @@ html,body{
   font-family: $font-family;
 }
 nav{
+  position: fixed;
+  width: 100%;
   background-color:$light-blue;
   ul{
     display: flex;
@@ -29,9 +31,11 @@ nav{
 section{
   background-color:$white;
   height: 100%;
-  padding: 15px;
+  padding: 50px 15px;
 }
 footer{
+  position: fixed;
+  bottom: 0;
   width: 100%;
   background-color:$dark-blue;
   color:$white;
@@ -87,4 +91,26 @@ footer{
       font-size: 12px;
     }
   }
+}
+#random-beers{
+  display:flex;
+  justify-content: center;
+  img{
+    margin-right:75px;
+    height: 250px;
+  }
+  div{
+    width: 60%;
+    font-size: 16px;
+    h2{
+      font-size: 20px;
+    }
+    h3{
+      color:$grey
+    }
+    li,p{
+      padding: 5px;
+    }
+  }
+
 }
