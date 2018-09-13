@@ -5,4 +5,101 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
   
+}
+
+.navbar {
+  background-color: #2081C3;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 75px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li{
+  font-size: 1.4em;
+  display: inline-block;
+  list-style: none;
+  padding: 25px 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 1.2em;
+  background-color: #0A2C42;
+  color: white;
+}
+
+.footer p {
+  padding: 5px 20px;
+}
+
+
+.index-container img {
+  width: 15%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+.button-wrapper {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+}
+
+.button-wrapper button {
+  background-color: #2081C3;
+  padding: 20px;
+  margin: 10px; 
+  display: block
+}
+
+.partials-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 75px;
+  
+}
+
+.beer-wrapper {
+  width: 30%;
+}
+
+.beer-wrapper img {
+  height: 400px;
+  margin: 20px auto;  
+  display: block;
+  
+}
+
+.beer-wrapper p, h2 {
+  text-align: center
+}
+
+.random-beer img {
+  height: 400px;
+  margin: 100px auto;  
+  display: block;
+}
