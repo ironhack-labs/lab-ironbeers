@@ -31,7 +31,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #ffffff;
   margin-right: 20px;
   text-decoration: none;
 }
@@ -46,7 +46,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  color: #fff;
+  color: #ffffff;
 }
 
 .index-container {
@@ -65,7 +65,7 @@ footer {
 .index-container a {
   border: 0;
   padding: 10px 20px;
-  color: #fff;
+  color: #ffffff;
   background-color: #2081c3;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
     0 2px 4px -1px rgba(0, 0, 0, 0.3);
@@ -94,7 +94,7 @@ footer {
 }
 
 .beer-card p,
-.beer-info p {
+.info p {
   font-size: 13px;
   font-weight: 100;
 }
@@ -103,32 +103,4 @@ footer {
 .beer-info span {
   color: rgba(145, 145, 145, 0.481);
   font-size: 12px;
-}
-
-.beer-image-wrapper,
-.random-beer-image-wrapper {
-  height: 200px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.random-beer-wrapper {
-  width: 80%;
-  margin: 0 auto;
-  padding: 15vh 0;
-  display: flex;
-}
-
-.random-beer-image-wrapper {
-  width: 40%;
-}
-
-.beer-info {
-  padding: 0 20% 0 40px;
-}
-
-.beer-info li {
-  font-size: 14px;
-  margin-bottom: 10px;
 }
