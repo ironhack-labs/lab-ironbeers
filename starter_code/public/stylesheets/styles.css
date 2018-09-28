@@ -5,4 +5,23 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+nav {
+  background-color: #2081C3 !important;
+}
+
+
+.container {
+  height: 50px;
+  display: flex;
+
+}
+
+.bottom {
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  background-color: #0A2C42;
+  position: absolute;
+  bottom: 0;
+}
