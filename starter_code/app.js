@@ -18,18 +18,29 @@ app.get('/', (req, res, next) => {
 
 // BEERS
 app.get('/beers', (req, res) => {
- const beers = punkAPI.getBeers()
-
+  punkAPI.getBeers()
     .then(beers => {
-      res.render("beers", { beers }) //Se manda a la vista
-      //console.log(beers)
-
+      res.render("beers", {
+        beers
+      }) //Se manda a la vista
+      console.log({beers})
     })
     .catch(error => {
       console.log(error)
     })
+})
 
-
+// RANDOM BEERS
+app.get('/random-beers', (req, res) => {
+  punkAPI.getRandom()
+    .then(beers => {
+      res.render("random-beers", {
+        beers
+      }) //Se manda a la vista
+    })
+    .catch(error => {
+      console.log(error)
+    })
 })
 
 // Servidor en el puerto 3000
