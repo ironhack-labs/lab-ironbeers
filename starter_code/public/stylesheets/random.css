@@ -1,0 +1,38 @@
+.li-random a {
+  color: var(--dark-blue);
+}
+.random-container {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 1.7em;
+  padding: 4.5vh 13vw;
+}
+.random-img {
+  width: calc(100% / 3);
+}
+.random-img img {
+  display: block;
+  margin: 0 auto;
+  max-height: 50vh;
+  width: auto;
+}
+.random-info {
+  width: calc(200% / 3);
+}
+h1 {
+  font-size: 2em;
+}
+.tagline {
+  color: #d8cdc9;
+  padding: 4vh 0 2.2vh;
+}
+h2 {
+  font-size: 1.8em;
+  padding: 4vh 0 2.3vh;
+}
+.foods {
+  padding: 1vh 3.8vh;
+}
+.tips {
+  padding: 2.5vh 0;
+}

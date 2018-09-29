@@ -1,8 +1,64 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
-  
+* {
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 10px;
+  --white: #F7F9F9;
+  --light-blue: #2081C3;
+  --dark-blue: #0A2C42;
+  --grey: rgba(145, 145, 145, 0.481);
+}
+body {
+  background: #f7f9f9;
+  padding-top: 10vh;
+  width: 100%;
+  /* STICKY FOOTER */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+nav {
+  display: flex;
+  align-items: center;
+  background: var(--light-blue);
+  box-shadow: 0 5px 5px var(--grey);
+  height: 10vh;
+  padding: 0 4.6vw;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  font-size: 1.8em;
+  margin-right: 2vw;
+}
+nav ul li a {
+  color: var(--white);
+  text-decoration: none;
+  transition: all 200ms;
+}
+nav ul li a:hover {
+  color: var(--dark-blue);
+}
+main {
+  /* STICKY FOOTER */
+  flex: 1 0 auto;
+}
+footer {
+  display: flex;
+  align-items: center;
+  background: var(--dark-blue);
+  color: var(--white);
+  font-size: 1.7em;
+  height: 8vh;
+  padding: 0 2vw;
+}
