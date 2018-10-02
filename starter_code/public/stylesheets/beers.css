@@ -1,0 +1,31 @@
+.li-beers a {
+  color: var(--dark-blue);
+}
+.beers-container {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding: 6vh 10vw;
+}
+.beer-card {
+  display: inline-block;
+  padding: 1.8vh 0;
+  width: calc(100% / 3 - 1%);
+}
+.img-beer {
+  display: block;
+  max-height: calc(100vh / 3);
+  margin: 0 auto 2vh;
+  width: auto;
+}
+.beer-title {
+  font-size: 2.1em;
+}
+.tagline {
+  color: #d8cdc9;
+  font-size: 1.5em;
+  padding: 0.6vh 0 1.6vh;
+}
+.beer-description {
+  font-size: 1.6em;
+}

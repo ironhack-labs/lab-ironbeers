@@ -1,0 +1,24 @@
+.li-home a {
+  color: var(--dark-blue);
+}
+.index-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: column wrap;
+  height: 82vh;
+}
+img {
+  height: 45vh;
+  width: auto;
+}
+a.buttons {
+  background: var(--light-blue);
+  border-radius: 5px;
+  box-shadow: 0 4px 5px var(--grey);
+  color: var(--white);
+  cursor: pointer;
+  font-size: 1.8em;
+  padding: 1.6vh 1.5vw;
+  text-decoration: none;
+}
