@@ -5,4 +5,32 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+.uk-navbar-container {
+    background-color: #2081C3 !important;
+}
+
+.uk-navbar-left {
+    margin-left: 4%;
+}
+
+.uk-navbar-nav>li.uk-active>a {
+    color: #F7F9F9;
+}
+
+.uk-navbar-nav>li a {
+    color: #F7F9F9;
+}
+
+.uk-section-primary {
+    background-color: #0A2C42;
+    color: #F7F9F9;
+}
+
+.footer-content {
+    margin-left: 4%;
+}
+
+.uk-button-primary {
+    background-color: #2081C3;
+}

@@ -1,0 +1,17 @@
+<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+        <img class="uk-align-center uk-height-max-medium" src={{beer.0.image_url}} alt="">
+    </div>
+    <div class="uk-card">
+        <h1>{{beer.0.name}}</h1>
+        <h4 style="color:grey">{{beer.0.tagline}}</h4>
+        <p>{{beer.0.description}}</p>
+        <h4>Food Pairing</h4>
+        <ul>
+            {{#each beer}}
+                <li>{{this.food_pairing}}</li>
+            {{/each}}
+        </ul>
+        <p><strong>Brewers Tips: </strong> {{beer.0.brewers_tips}}</p>
+    </div>
+</div>
