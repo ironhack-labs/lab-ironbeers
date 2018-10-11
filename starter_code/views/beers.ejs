@@ -1,3 +1,7 @@
 <div class="index-container">
-<% include partials/navbar.ejs %>
 </div>
+<section>
+  <% beers.forEach((beer) => { %>
+    <% include partials/beerPartial.ejs %>
+  <%}) %>
+</section>
