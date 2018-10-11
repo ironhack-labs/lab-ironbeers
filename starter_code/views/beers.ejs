@@ -1,0 +1,10 @@
+<section>
+  <% beers.forEach(item=>{ %>
+    <article>
+      <img src=<%=item.image_url%> alt="">
+      <h2><%= item.name %> </h2>
+      <h3><%= item.tagline %> </h3>
+      <p><%= item.description %> </p>
+    </article>
+  <%}) %> 
+</section>

@@ -1,8 +1,47 @@
-/*
+/* 
 white: #F7F9F9;
 light-blue: #2081C3;
 dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
+font-family: Arial, Helvetica, sans-serif */
+
+
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif ;
+}
+
+a {
+  text-decoration: none;
+  color: #F7F9F9;
+}
+li {
+  list-style: none;
+  padding: 10px;
+}
+
+/* Nav */
+
+nav {
+  list-style: none;
+  height: 50px;
+  background-color: #2081C3;
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  
+}
+
   
