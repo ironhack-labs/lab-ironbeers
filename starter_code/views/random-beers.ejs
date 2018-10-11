@@ -1,0 +1,19 @@
+
+  <div>
+  
+    <img src="<%= beer[0].image_url %>">
+    <h1><%= beer[0].name %></h1>
+    <h2><%= beer[0].tagline %></h2>
+    <p><%= beer[0].description %></p>
+
+    <h3>Food Pairing</h3>
+    <ul>
+    <% beer[0].food_pairing.forEach(item => { %>
+      <li> <%= item %></li>
+
+    <% }) %>
+    
+    </ul>
+    <p><b>Brewers Tips: </b><%= beer[0].brewers_tips %></p>
+    
+  </div>

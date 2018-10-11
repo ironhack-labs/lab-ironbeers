@@ -1,8 +1,18 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
+body{
+  background-color: rgba(145, 145, 145, 0.481);
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+nav{
+  background-color: #2081C3;
+  color: #F7F9F9;
+}
+
+footer{
+  background-color: #0A2C42;
+  color: #F7F9F9;
+}
+
+
+
   
