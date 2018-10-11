@@ -1,0 +1,7 @@
+<% include partials/navbar.ejs %>
+<ul>
+  <% beers.forEach( item => { %>
+    <li><img src= '<%= item.image_url %>' > </li>
+    <li> <%= item.name %> </li>
+  <% }) %>
+</ul>
