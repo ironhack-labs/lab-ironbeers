@@ -1,6 +1,6 @@
 
-<ul>
+<section class="cards">
 <% beers.forEach((beer)=>{ %>
-<li>  <%- include('partials/beerPartial.ejs', {beer}) %> </li>
+<%- include('partials/beerPartial.ejs', {beer}) %>
 <% }) %>
-</ul>
+</section>
