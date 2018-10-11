@@ -1,2 +1,4 @@
 <p>hola beers</p>
-<%=beers %>
+<% beers.forEach((item) => { %>
+ <%= item.name %>
+<% }) %>
