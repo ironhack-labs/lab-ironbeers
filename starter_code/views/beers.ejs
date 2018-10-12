@@ -1,4 +1,7 @@
-<p>hola beers</p>
-<% beers.forEach((item) => { %>
- <%= item.name %>
-<% }) %>
+
+<ul>
+  <% beers.forEach((item) => { %>
+  <li><img src='<%= item.image_url %>' > </li>
+  <li><%= item.name %></li>
+  <% }) %>
+</ul>

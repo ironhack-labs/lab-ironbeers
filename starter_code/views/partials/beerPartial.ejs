@@ -1,0 +1,14 @@
+// will display an image, name, description, and tagline of the beer
+<div>
+  <img src=<%=beer.image_url%> alt="">
+  <h2><%= beer.name %> </h2>
+  <h3><%= beer.tagline %> </h3>
+  <p><%= beer.description %> </p>
+  <h3>Food Pairing</h3>
+  <ul>
+    <% beer.food_pairing.forEach( item => { %>
+    <li><%= item %> </li>
+    <% }) %> 
+  </ul>
+  <p><b>Brewers tips:</b> <%= beer.brewers_tips %> </p>
+ </div>
