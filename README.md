@@ -1,13 +1,9 @@
 ![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
-# Ironbeers
+# IronBeers
 
 ## Introduction
 
-The best part of Fridays? Ironbeers! :beer:
-
-![giphy 5](https://user-images.githubusercontent.com/23629340/36723084-8d27891c-1baf-11e8-9572-f0f2a519bd72.gif)
-
-You will do a web app where the user will be able to see a list of beers or check one randomly. For the exercise, we will work with the [PunkAPI](https://www.npmjs.com/package/punkapi-javascript-wrapper) database, through it's NPM Package. The package has some methods that retrieve beers with some info about them and fits perfect for our example.
+In this lab you will create a web app where the user will be able to see a list of beers or check one randomly. For the exercise, we will work with the [PunkAPI](https://www.npmjs.com/package/punkapi-javascript-wrapper) database, through it's NPM Package. The package has some methods that retrieve beers with some info about them and fits perfect for our example.
 
 ## Requirements
 
