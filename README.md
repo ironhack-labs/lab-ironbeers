@@ -1,5 +1,7 @@
 ![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
+
 # IronBeers
+
 
 ## Introduction
 
@@ -8,19 +10,21 @@ In this lab you will create a web app where the user will be able to see a list 
 ## Requirements
 
 - Fork this repo
-- Clone this repo
+- Then clone this repo.
+
 
 ## Submission
 
-- Upon completion, run the following commands:
-
-  ```
-  git add .
-  git commit -m "done"
-  git push origin master
-  ```
-
+- Upon completion, run the following commands
+```
+$ git add .
+$ git commit -m "done"
+$ git push origin master
+```
 - Create Pull Request so your TAs can check up your work.
+
+## Instructions
+
 
 ## Iteration 1 - Layout
 
@@ -100,4 +104,4 @@ On the `randomBeer.hbs` you should print the random beer you get. You should dis
 ![image](https://user-images.githubusercontent.com/23629340/36724536-c5924892-1bb3-11e8-8f22-fd1f8ce316af.png)
 
 
-Happy coding! :heart:
+Happy Coding! :heart:
