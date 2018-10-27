@@ -1,4 +1,4 @@
-![Ironhack Logo](https://i.imgur.com/1QgrNNw.png)
+![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
 # Ironbeers
 
@@ -12,20 +12,21 @@ You will do a web app where the user will be able to see a list of beers or chec
 
 ## Requirements
 
-- [Fork this repo](https://guides.github.com/activities/forking/)
-- Clone this repo into your `~/code/labs`
+- Fork this repo
+- Then clone this repo.
 
-## Submission Instructions
 
-Upon completion, run the following commands
+## Submission
+
+- Upon completion, run the following commands
 ```
 $ git add .
 $ git commit -m "done"
 $ git push origin master
 ```
-Navigate to your repo and create a Pull Request -from your master branch to the original repository master branch.
+- Create Pull Request so your TAs can check up your work.
 
-In the Pull request name, add your name and last names separated by a dash "-"
+## Instructions
 
 ## Iteration 1 - Layout
 
@@ -103,3 +104,5 @@ punkAPI.getRandom()
 On the `randomBeer.hbs` you should print the random beer you get. You should display an image, name, description, tagline, food pairing and brewer tips. It should look like the following:
 
 ![image](https://user-images.githubusercontent.com/23629340/36724536-c5924892-1bb3-11e8-8f22-fd1f8ce316af.png)
+
+Happy Coding! :heart:
