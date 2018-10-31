@@ -1,6 +1,6 @@
 ![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
-# IronBeers
+# IronBeers (without Partial)
 
 
 ## Introduction
@@ -66,26 +66,15 @@ punkAPI.getBeers()
 Remember you should call the `render` method after getting the `beers` from our package. That means, inside the `then`.
 
 ## Iteration 4 - Beers Views
+ 
+On the `beers.hbs` view, loop over the **beers array** using the `{{#each beers}} {{/each}}` block helper.
 
-On the `beers.hbs` view, loop over the **beers array** using the `{{#each beers}} {{/each}}` block helper. On every iteration, you should call a `partial` passing the info about each beer.
-
-## Iteration 5 - Beer Partial
-
-Since each beer will be displayed in the same way, you should create a partial to display each beer. First, we need to register where our `partials` will be located. So you need to add the following code to the `app.js` file:
-
-```javascript
-hbs.registerPartials(__dirname + '/views/partials')
-```
-
-Now, you should create a `partials` folder inside the `views`, and `beerPartial.hbs` file inside the `partials` folder. Our `beerPartial.hbs` will display an image, name, description, and tagline of the beer. It should look like the following:
-
-![image](https://user-images.githubusercontent.com/23629340/36724284-08872254-1bb3-11e8-9ff6-9b34346421ec.png)
-
-After creating the partial, and loop over the array of beers, on our `/bears` route, we should have the following:
+At the end of this iteratiom, your website should be like this:
 
 ![image](https://user-images.githubusercontent.com/23629340/36724392-61fa7336-1bb3-11e8-8468-189908167e10.png)
 
-## Iteration 6 - Random Beer
+
+## Iteration 5 - Random Beer
 
 Finally, let's create our `/random-beer` route. Inside our route you should call the `getRandom()` method of the PunkAPI package and after receiving the info, render the `randomBeer.hbs` file and pass the data of the beer.
 
