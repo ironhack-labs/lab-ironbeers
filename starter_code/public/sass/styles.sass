@@ -1,0 +1,112 @@
+
+@import mixins
+
+$white: #F7F9F9
+$light-blue: #2081C3
+$dark-blue: #0A2C42
+$grey: rgba(145, 145, 145, 0.481)
+
+*
+  box-sizing: border-box
+
+html, body
+  margin: 0
+  height: 100vh
+  font-size: calc(.9em)
+  font-family: Arial, Helvetica, sans-serif
+
+body
+  position: relative
+
+ul
+  margin: 0
+  padding: 0
+  li
+    list-style: none
+
+p
+  margin: 0
+  padding: 0
+
+a
+  display: inline-block
+  text-decoration: none
+  color: $white
+  font-weight: bold
+  opacity: .6
+  +transition_default
+  &:hover
+    opacity: .4
+  &.active
+    opacity: 1
+    &::after
+      width: 100%
+  &::after
+    content: ''
+    display: block
+    background: white
+    width: 0px
+    height: .15em
+    margin-top: .03em
+    +transition-default
+  &:hover::after
+    width: 100%
+
+.top-bar
+  background-color: $light-blue
+  height: 4em
+  +prefix(box-shadow, 0px 0px 16px 0px rgba(0,0,0,0.75))
+  +flex_row
+  ul
+    width: 90%
+    margin: 0 auto
+    li
+      display: inline
+      margin-right: 2em
+      &:last-child
+        margin-right: 0
+
+.bottom-bar
+  position: absolute
+  bottom: 0
+  left: 0
+  background-color: $dark-blue
+  color: $white
+  width: 100%
+  height: 3em
+  +flex_row
+  p
+    width: 90%
+    margin: 0 auto
+    font-weight: bold
+
+
+
+.main_container
+  height: calc(100vh - 7em)
+  background: $grey
+  +flex_center
+  .home_container
+    +flex_ccolumn
+    > *
+      margin-top: 1em
+    img
+      width: 75%
+      margin-left: 16%
+    button
+      cursor: pointer
+      font-size: 1.2em
+      border: none
+      padding: .5em
+      min-width: 12em
+      border-radius: 5em
+      color: $white
+      background-color: $light-blue
+      font-weight: bold
+      border: 4px solid transparent
+      +transition(transform 300ms cubic-bezier(0.4, 0, 0.2, 1))
+      &:hover
+        border: 4px solid $white
+        +hover_scale_opacity
+  .beers_container
+  .randomBeer_container

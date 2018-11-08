@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>{{name}}</title>
+
+  <meta property="og:title" content="{{name}}"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content=""/>
+  <meta name="description" content="Ironhack project (Dynamic views with layouts and partials). Node.js & Express & SASS. By: anæstrada">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="/img/beer.ico" type="image/x-icon">
+  <link rel="icon" href="/img/beer.ico" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+
+</head>
+
+<body>
+
+  <div class="top-bar">
+    <ul>
+      <li><a href="/" {{#if home}} class="active"{{/if}}>Home</a></li>
+      <li><a href="/beers" {{#if beers}} class="active"{{/if}}>Beers</a></li>
+      <li><a href="/random-beers" {{#if randomBeer}} class="active"{{/if}}>Random beer</a></li>
+    </ul>
+  </div>
+
+  <div class="main_container">
+    <div class="{{name}}_container">
+      {{{body}}}
+    </div>
+  </div>
+
+  <div class="bottom-bar">
+    <p class="copyright">Develop by <a href="http://www.anaestrada.es">anæstrada</a>, from an Ironhack LAB ;)</p>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+
+</html>
