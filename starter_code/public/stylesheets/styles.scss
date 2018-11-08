@@ -1,0 +1,168 @@
+$color-bg : rgba(145, 145, 145, 0.481);
+$color-bg-footer : #0A2C42;
+$color-bg-nav: #2081C3;
+
+html{
+  height: 100%;
+}
+
+body{
+  //background-color: $color-bg;
+  font-family:  Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
+  min-height: 100% !important;
+  justify-content: space-between;
+}
+
+nav{
+  flex-basis: 50px;
+
+  background-color: $color-bg-nav;
+  height: 50px;
+  display: flex;
+  align-items: center;
+
+  ul{
+    display: flex;
+    list-style: none;
+    padding: 0 0 0 20px;
+    margin: 0;
+
+    li{
+      padding: 0 10px;
+      a {
+        color: #F7F9F9;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      a:hover{
+        font-weight: 700;
+      }
+    }
+
+  }
+}
+
+footer{
+  min-height: 38px;
+  flex-basis: 38px;
+  height: 38px;
+  background-color: $color-bg-footer;
+  width: 100%;
+  color: #F7F9F9;
+  display: flex;
+  align-items: center;
+  p{
+    margin-left: 20px;
+  }
+}
+
+main{
+  flex-grow: 2;
+}
+
+.index-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+
+  img{
+    width: 30%;
+    margin: 20px 0;
+  }
+
+  button{
+    margin: 20px 0;
+    background-color: $color-bg-nav;
+    color: #F7F9F9;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+.random-beer-container{
+  margin: 70px 15% 50px 15%;
+  display: flex;
+
+  .left-section{
+    padding-right: 15px;
+    height: 210px;
+    img{
+      height: 100%;
+    }
+  }
+
+  .right-section{
+
+      padding-left: 15px;
+  }
+
+}
+
+.beers-container{
+
+  ul{
+    margin: 20px 3%;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    li{
+      width: 30%;
+      list-style: none;
+      padding: 15px 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      .beer-item{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img{
+          height: 70px;
+        }
+
+        .headings{
+          margin: 10px 0;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          h2, h4{
+            margin: 0;
+          }
+
+          h4{
+            color: lightgray;
+          }
+
+        }
+
+
+        p{
+          margin: 0;
+          font-size: 0.8rem;
+          text-align: justify;
+        }
+
+      }
+
+    }
+
+  }
+
+}
