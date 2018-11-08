@@ -3,6 +3,158 @@ white: #F7F9F9;
 light-blue: #2081C3;
 dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
 */
-  
+
+html {
+	height: 100%
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #F7F9F9;
+}
+
+main {
+	height: 100%;
+}
+
+nav {
+    height: 70px;
+	width: 100%;
+	background-color: #2081C3;
+	display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav li {
+	padding: 0 20px;
+	list-style-type: none;
+	display: inline-block;
+	font-size: 1.2em;
+	font-weight: 500;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
+ footer {
+ 	height: 60px;
+    width: 100%;
+ /*   position: fixed;
+    left: 0;
+    bottom: 0;*/
+    background-color: #0A2C42;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer p {
+	padding-left: 20px;
+	font-size: 1.2em;
+}
+
+h2 {
+	font-size: 2em;
+	line-height: 30px;
+}
+
+h4 {
+	color: rgba(145, 145, 145, 0.481);
+	line-height: 10px;
+	margin: 0;
+}
+
+li {
+	line-height: 30px;
+}
+
+
+/*########################### BEER INDEX #############################*/
+
+.index-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 850px;
+}
+
+.index-container img {
+	width: 20%;
+}
+
+.index-container a {
+	color: white;
+	background-color: #2081C3;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	text-decoration: none;
+	margin: 20px;
+}
+
+
+/*########################### BEER LIST #############################*/
+
+.beer-info-container{
+	width: 500px;
+	text-align: center;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+	
+}
+
+.beer-image {
+	height: 150px;
+	display: block;
+}
+
+.beer-info-container h2, h3, p {
+	display: block;
+}
+
+.beer-container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	
+}
+
+.one-beer {
+	display: inline-block;
+	margin-top: 30px;
+}
+
+/*########################### RANDOM BEER ###########################*/
+
+.random-wrap {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-left: 15%;
+	height: 850px;
+}
+
+.rdm-img-container {
+	width: 20%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.rdm-img-container img {
+	height: 300px;
+	padding-left: 40%;
+}
+
+.rdm-txt-container {
+	width: 50%;
+}

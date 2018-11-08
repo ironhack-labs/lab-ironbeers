@@ -1,0 +1,26 @@
+<div class="random-wrap">
+	
+	<div class="rdm-img-container">
+		<img src="{{rdmBeer.image_url}}" alt="Beer image">
+	</div>
+	
+	<div class="rdm-txt-container">
+		
+		<h2>{{rdmBeer.name}}</h2>
+		<h4>{{rdmBeer.tagline}}</h4>
+
+		<p>{{rdmBeer.description}}</p>
+
+		<h3>Food Paring</h3>
+		<ul>
+			{{#each rdmBeer.food_pairing}}
+			<li>{{this}}</li>
+
+			{{/each}}
+		</ul>
+
+		<p><b>Brewer's Tips:</b> {{rdmBeer.brewers_tips}}</p>
+
+	</div>
+	
+</div>
