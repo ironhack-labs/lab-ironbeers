@@ -1,0 +1,24 @@
+<div class="beers-random">
+      <div class="img-beer">
+        <img src="{{beers.0.image_url}}" style="height:300px"/>
+      </div>
+      <div class="content-beer">
+        <h3>{{beers.0.name}}</h3>
+        <h5>{{beers.0.tagline}}</h5>
+        <p>{{beers.0.description}}</p>
+        <div class="food-pairing">
+          <h4>Food Pairing :</h4>
+          {{#each beers.0.food_pairing}}
+          <ul>
+            <li>{{this}}</li>
+          </ul>
+          {{/each}}
+        </div>
+        <div class="brewers-tips">
+          <h4>Brewers Tips :</h4>
+          <p>{{beers.0.brewers_tips}}</p>
+        </div>
+      </div>
+</div>
+
+<!-- You should display an image, name, description, tagline, food pairing and brewer tips. -->
