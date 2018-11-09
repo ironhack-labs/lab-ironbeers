@@ -6,16 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>{{name}}</title>
+  <title>{{data.name}}</title>
 
-  <meta property="og:title" content="{{name}}"/>
+  <meta property="og:title" content="{{data.name}}"/>
   <meta property="og:type" content="website"/>
   <meta property="og:image" content=""/>
   <meta name="description" content="Ironhack project (Dynamic views with layouts and partials). Node.js & Express & SASS. By: anæstrada">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="shortcut icon" href="/img/beer.ico" type="image/x-icon">
-  <link rel="icon" href="/img/beer.ico" type="image/x-icon">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 
   <link rel="stylesheet" type="text/css" href="/css/styles.css" />
 
@@ -23,23 +22,23 @@
 
 <body>
 
-  <div class="top-bar">
+  <nav class="top-bar">
     <ul>
-      <li><a href="/" {{#if home}} class="active"{{/if}}>Home</a></li>
-      <li><a href="/beers" {{#if beers}} class="active"{{/if}}>Beers</a></li>
-      <li><a href="/random-beers" {{#if randomBeer}} class="active"{{/if}}>Random beer</a></li>
+      <li><a href="/" {{#if data.home}} class="active"{{/if}}>Home</a></li>
+      <li><a href="/beers" {{#if data.allBeers}} class="active"{{/if}}>Beers</a></li>
+      <li><a href="/random-beers" {{#if data.randomBeer}} class="active"{{/if}}>Random beer</a></li>
     </ul>
-  </div>
+  </nav>
 
   <div class="main_container">
-    <div class="{{name}}_container">
+    <div class="container {{data.name}}_container">
       {{{body}}}
     </div>
   </div>
 
-  <div class="bottom-bar">
+  <footer class="bottom-bar">
     <p class="copyright">Develop by <a href="http://www.anaestrada.es">anæstrada</a>, from an Ironhack LAB ;)</p>
-  </div>
+  </footer>
 
   <script src="/js/main.js"></script>
 </body>

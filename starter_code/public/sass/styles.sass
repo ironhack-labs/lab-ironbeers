@@ -8,15 +8,19 @@ $grey: rgba(145, 145, 145, 0.481)
 
 *
   box-sizing: border-box
+  outline: none
 
 html, body
   margin: 0
-  height: 100vh
+  height: 100%
+  min-height: 100vh
+  height: max-content
   font-size: calc(.9em)
   font-family: Arial, Helvetica, sans-serif
 
 body
   position: relative
+  padding-bottom: 3em
 
 ul
   margin: 0
@@ -52,7 +56,7 @@ a
   &:hover::after
     width: 100%
 
-.top-bar
+nav.top-bar
   background-color: $light-blue
   height: 4em
   +prefix(box-shadow, 0px 0px 16px 0px rgba(0,0,0,0.75))
@@ -66,7 +70,7 @@ a
       &:last-child
         margin-right: 0
 
-.bottom-bar
+footer.bottom-bar
   position: absolute
   bottom: 0
   left: 0
@@ -83,30 +87,130 @@ a
 
 
 .main_container
-  height: calc(100vh - 7em)
+  min-height: calc(100vh - 7em)
+  height: max-content
   background: $grey
   +flex_center
-  .home_container
-    +flex_ccolumn
-    > *
-      margin-top: 1em
-    img
-      width: 75%
-      margin-left: 16%
-    button
-      cursor: pointer
-      font-size: 1.2em
-      border: none
-      padding: .5em
-      min-width: 12em
-      border-radius: 5em
-      color: $white
-      background-color: $light-blue
-      font-weight: bold
-      border: 4px solid transparent
-      +transition(transform 300ms cubic-bezier(0.4, 0, 0.2, 1))
-      &:hover
-        border: 4px solid $white
-        +hover_scale_opacity
-  .beers_container
-  .randomBeer_container
+  .container
+    +flex_cColumn
+    margin: 3em 0
+    &.home_container
+      > *
+        margin-top: 1em
+      img
+        width: 75%
+        margin-left: 16%
+      input
+        cursor: pointer
+        font-size: 1.2em
+        border: none
+        padding: .5em
+        min-width: 12em
+        border-radius: 5em
+        color: $white
+        background-color: $light-blue
+        font-weight: bold
+        border: 4px solid transparent
+        +transition(transform 300ms cubic-bezier(0.4, 0, 0.2, 1))
+        &:hover
+          border: 4px solid $white
+          +hover_scale_opacity
+    &.beers_container
+      width: 100%
+      padding-top: 4em
+      .beerBox
+        width: 80%
+        +flex_row_sb
+        .beer
+          display: flex
+          flex-flow: column nowrap
+          width: 30%
+          margin-bottom: 6em
+          .imgBeer
+            img.bottle
+              //width: 25%
+              height: 20em
+    &.randomBeer_container
+      width: 100%
+      .beer
+        +flex_row
+        justify-content: flex-start
+        width: 60%
+        .imgBeer
+          img.bottle
+            width: calc(5.5vh + 5.5vw)
+            margin-right: 3em
+
+.beer
+  .imgBeer
+    text-align: center
+  .infoBeer
+    h1.title
+      margin: 1em 0 0
+    h2.subtitle
+      font-size: 1.5em
+      opacity: .2
+      margin: .2em 0 0
+    p
+      &.description
+        font-size: 1.2em
+        margin: 1em 0 0
+      .bold
+        font-weight: bold
+    h3.heading
+      margin: 1em 0 .5em
+    ul
+      margin-bottom: 1.5em
+      padding-inline-start: 2em
+      li
+        list-style-type: disc
+
+
+
+@media (max-width: 976px)
+
+  .main_container
+    .container
+      &.beers_container
+        .beerBox
+          width: 85%
+          .beer
+            width: 45%
+      &.randomBeer_container
+        .beer
+          width: 80%
+
+
+
+@media (max-width: 697px)
+
+  .main_container
+    .container
+      &.beers_container
+      &.randomBeer_container
+        .beer
+          display: flex
+          flex-flow: column nowrap
+          width: 80%
+          .imgBeer
+            img.bottle
+              width: calc(8vh + 8vw)
+              margin-right: 0
+
+
+
+@media (max-width: 597px)
+
+  .main_container
+    .container
+      &.beers_container
+        .beerBox
+          width: 80%
+          .beer
+            width: 100%
+            border-bottom: 2px solid $grey
+            padding-bottom: 4em
+            margin-bottom: 4em
+            &:last-child
+              border-bottom: none
+              padding-bottom: 0
