@@ -74,10 +74,17 @@ footer{
     justify-content: space-around;
 }
 .randomimg{
-    height: 40vh;
-    margin: 0 10%;
+    height: 63vh;
+    margin: 10vh 10%;
 }
 .randombeers{
     display: flex;
     flex-direction: row;
+}
+.randomdata{
+    width: 65vh;
+    padding: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
 }
