@@ -14,5 +14,6 @@
     "hbs": "^4.0.1",
     "path": "^0.12.7",
     "punkapi-javascript-wrapper": "^1.0.2"
+   
   }
 }

@@ -1,0 +1,20 @@
+<div class="beer-container d-flex flex-wrap justify-content-between align-items-center align-content-center">
+    {{#each beers}}
+    <div class="beer-card d-flex flex-row align-items-center justify-content-start">
+        <img class="card-img" src="{{this.image_url}}">
+        <div class="text-container">
+            <h5 class="card-title">{{this.name}}</h5>
+            <h6 class="card-subtitle text-muted mb-2">{{this.tagline}}</h6>
+            <p class="card-text">{{this.description}}</p>
+            <h6 class="card-subtitle text-muted mb-2">Foor Pairing</h6>
+            <ul>
+                {{#each food_pairing}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <span>Brewing Tips:</span>
+            <span>{{this.brewers_tips}}</span>
+        </div>
+    </div>
+    {{/each}}
+</div>
