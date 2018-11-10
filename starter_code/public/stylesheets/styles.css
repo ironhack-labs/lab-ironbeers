@@ -76,29 +76,26 @@ h3{
   color: rgba(145, 145, 145, 0.481);
 }
 
+.grid-beer{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .beer-page{
-  margin: 1em;
-  width: 300px;
-  height: 150px;;
-  margin: 2em;
+  display: flex;
+  padding: 10% 20%;
+  justify-content: space-around;
 }
 
 .all-beers{
-  width: 3vw;
-  height: 20vh;
-  margin-bottom: 5px
+  width: 70%;
+  height: 20%;;
 }
 
-.ul-beers{
-  display: flex;
-  align-content: space-around;
-}
 .container-beer-information{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-content: space-around;
-  margin-bottom: 10px;
+  width: 33.33%;
+  height: 20%;
+  margin: 3em;
 }
 
 .nombre-slogan{
@@ -106,6 +103,20 @@ h3{
 }
 
 .ramdon-beer{
-  width: 30vw;
-  height: 60vh;
+  width: 10vw;
+  height: 50vh;
+}
+
+.container-general-random{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10em;
+}
+.random-information{
+  margin: 5em;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between; 
 }

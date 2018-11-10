@@ -11,20 +11,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 hbs.registerPartials(__dirname + "/views/partials");
 
-const cervezas = [
-  {
-    name: "Cerve",
-    image: "beer.png"
-  },
-  {
-    name: "Cerve2",
-    image: "beer.png"
-  },
-  {
-    name: "Cerve3",
-    image: "beer.png"
-  }
-];
+
 
 app.get("/", (req, res, next) => {
   res.render("index");
@@ -47,7 +34,8 @@ app.get("/random-beers", (req, res, next) => {
 
   punkAPI.getRandom()
   .then(beers => {
-      res.render('random-beers',{beers:beers});
+    let beer = beers[0];
+      res.render('random-beers',{beer});
   })
   .catch(error => {
     console.log(error)
