@@ -1,0 +1,10 @@
+<div class="grid">
+    {{#each beers}}
+        <div class="card">
+            <img src="{{this.image_url}}" alt="" class="card-img">
+            <h2 class="card-title">{{name}}</h2>
+            <span class="card-subtitle">{{tagline}}</span>
+            <p class="card-content">{{description}}</p>
+        </div>
+    {{/each}}
+</div>
