@@ -1,0 +1,24 @@
+<div class="index-container">
+  
+<ol class="beerList">
+    {{#each listOfBeers}}
+
+        <li><strong>Name: {{this.name}}</strong></li>
+            <ul>
+        <li>Tagline: {{this.tagline}}</li>
+        <li>First Brewed: {{this.first_brewed}}</li>
+        <li>Description: {{this.description}}</li>
+        </ul>
+        <br>
+        </li>
+
+
+    {{/each}}
+</ol>
+
+
+
+
+
+
+</div>
