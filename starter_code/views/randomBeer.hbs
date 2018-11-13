@@ -1,0 +1,15 @@
+<div class="row randomBeer">
+  <img class="col-2 img-fluid" src={{beer.image_url}} />
+  <div class="col-8 textContainer">
+    <h1>{{beer.name}}</h1>
+    <h4>{{beer.tagline}}</h4>
+    <p>{{beer.description}}</p>
+    <h3>Food Pairing</h3>
+    <ul>
+      {{#each beer.food_pairing}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p><strong>Brewers Tips:</strong> {{beer.brewers_tips}}</p>
+  </div>
+</div>
