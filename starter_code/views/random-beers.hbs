@@ -1,1 +1,13 @@
-<h1>check out the random beers</h1>
+<div class="theRandomBeerBody">
+  {{#each theRandomBeer}}
+    {{> beerPartial this}}
+    <strong>Food Pairing </strong>
+    <ul>
+      {{#each this.food_pairing}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <h4><b>Brewers Tips:</b> {{this.brewers_tips}}</h4>
+    <h2>{{this.method.mash_temp.0.temp.value}}</h2>
+  {{/each}}
+</div>

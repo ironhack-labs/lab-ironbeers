@@ -1,13 +1,5 @@
-<div>
+<div class="theBeerListBody">
   {{#each beers}}
-    {{this}}
-    <div>
-    <img src="{{this.image_url}}">
-    <div>
-      <h2>{{this.name}}</h2>
-      <h3>{{this.tagLine}}</h3>
-      <h4>{{this.description}}</h4>
-    </div>
-    </div>
+    {{> beerPartial this}}
   {{/each}}
 </div>
