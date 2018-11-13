@@ -21,3 +21,40 @@ border: 1px solid black;
 margin: 10px 10px 0px -30px;
 list-style: none;
 }
+
+.font{
+  
+  color: white;
+  font-family: Arial, Helvetica, sans-serif
+
+}
+
+.buttonList{
+  list-style: none;
+  margin-top: 70px;
+}
+
+.img{
+ width: 28vw;
+ height: auto;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: left;
+    background-color: #0A2C42;
+  
+}
+
+.buttonAdjust{
+    padding: 8px 45px;
+    margin: 15px;
+}
+
+.beerImg{
+  width: 7vw;
+}

@@ -38,10 +38,10 @@ app.get("/beers", (req, res, next) => {
 app.get("/random-beers", (req, res, next) => {
 
 
-  punkAPI.getRandomBeer()
+  punkAPI.getRandom()
     .then((listOfBeers) => {
-      console.log("-=-==--=-=-==--==-"+listOfBeers[0])
-      res.render('random-beers', { listOfBeers: listOfBeers[Math.floor(Math.radnom)* 25] })
+
+      res.render('random-beers', { listOfBeers: listOfBeers})
 
     })
     .catch(error => {
