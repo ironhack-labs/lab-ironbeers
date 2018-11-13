@@ -1,12 +1,14 @@
 <div class="index-container">
-  
-RANDOM BEERS
-
-
-
-
-
-
-
-
+  <div class="theRandomBeerBody">
+  {{#each oneBeer}}
+    {{> beerPartial this}}
+    <strong>Food Pairing </strong>
+    <ul>
+      {{#each this.food_pairing}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <h4><b>Brewers Tips:</b> {{this.brewers_tips}}</h4>
+  {{/each}}
+</div>
 </div>

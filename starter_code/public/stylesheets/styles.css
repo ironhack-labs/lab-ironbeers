@@ -29,12 +29,12 @@ a:link {
     font-size: 16px;
     text-decoration: none;
     padding-left: 5%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .long {
-    margin-right: 1%;
+    padding-left: 3%;
 }
 
 .darkBlueFoot {
@@ -61,6 +61,10 @@ button {
     border-radius: 10px;
 }
 
+.longer {
+    width: 15vw;
+}
+
 .picDiv {
     display: flex;
     flex-direction: column;
@@ -72,6 +76,7 @@ button {
 .beerMug {
     margin-bottom: 10%;
     margin-top: 30%;
+    width: 25vw;
 }
 
 
@@ -83,4 +88,21 @@ button {
 .index-container {
     padding-top: 5vw;
     padding-bottom: 5vw;
+}
+
+.beerInfo img {
+    height: 15vh;
+}
+
+.beerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.beerBody {
+    display: flex;
+    flex-flow: row wrap;
+    /* padding: 0 5vw; */
 }
