@@ -1,8 +1,89 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
+/* font: white;
+background-color: light-blue;
 dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
-  
+font-family: Arial, Helvetica, sans-serif;
+} */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 10vh;
+}
+
+nav {
+    background-color: #2881c3;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 8vh;
+    width: 100vw;
+    padding-left: 2vw;
+    position: fixed;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    margin-left: 3vw;
+}
+ 
+.index-container {
+    height: 72vh;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+}
+
+.index-container img {
+    width: 25vw;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5vh;
+}
+
+.btns button {
+    border-radius: 3px;
+    height: 5vh;
+    width: 10vw;
+    background-color: #2881c3;
+    color: white;
+}
+
+.foot {
+    background-color: #0A2C42;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    height: 7vh;
+    width: 100vw;
+    padding-left: 2vw;
+}
+
+.theBeerList {
+    padding: 0 5vw;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.beerinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 28vw;
+    
+}
+
+.beerinfo img {
+    height: 20vh:
+}
