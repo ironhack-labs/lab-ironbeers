@@ -6,15 +6,45 @@ const path    = require('path');
 const PunkThing = require('punkapi-javascript-wrapper');
 const punkAPI = new PunkThing();
 
+//middleware, what connects backend to localhost:3000 page
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
+hbs.registerPartials(__dirname + '/views/partials')
 app.use(express.static(path.join(__dirname, 'public')));
+
 
 
 
 app.get('/', (req, res, next) => {
   res.render('index');
 });
+
+// this route to get list of beers
+app.get('/beersList', (req, res, next) => {
+  punkAPI.getBeers()
+  .then(theListOfBeers => {
+      // console.log("===========", beers)
+  // data = {
+  //   beers: theListOfBeers,
+  //   brewingInfo: lorem ipsum
+  //   brewingIngredients: theListOfBeers.ingredients
+  // }
+  res.render('beerViews/beerList', {beers: theListofBeers})
+  // beers key makes it easier on the page, don't have to write theListOfBeers, or let it access an object named data within the function.
+  })
+  .catch(error => {
+    console.log(error)
+  })
+})
+
+// this route to get 1 random beer from the API
+app.get('/randomBeers', (req, res, next) => {
+  punkAPI.getRandom()
+  .then(theRandomBeer) => {
+    res.render('beerViews/randomBer', {oneBeer:theRandomBeer})
+
+  })
+}
 
 
 

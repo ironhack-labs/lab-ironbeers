@@ -1,0 +1,17 @@
+<div class="theRandomBeerBody">
+ {{!-- {{#each oneBeer}} --}}
+  {{> beerPartial this }}
+  <strong>Food Pairing</strong>
+  <ul>
+    {{#each this.food_pairing}}
+    <li>
+      {{this}}
+    </li>
+    {{/each}}
+  </ul>
+  <h4><b>Brewer's Tips:</b> {{this.brewers_tips}}</h4>
+
+  {{!-- alternative instead of using oneBeer <h2>{{this.method.0.mash_temp.value}}</h2> --}}
+
+{{/each}}
+</div>

@@ -7,3 +7,74 @@
 }
 */
   
+body {
+  margin: 0;
+  padding-top: 10vh;
+}
+
+nav {
+  height: 8vh;
+  background-color: #2081C3;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  flex-direction: row;
+  width:100vw;
+}
+
+nav a {
+  color:#F7F9F9;
+  margin-left: 3 vw;
+}
+
+footer {
+  height: 7vh;
+  background-color: #0A2C42;
+}
+
+footer h4 {
+  color: #F7F9F9;
+}
+
+.navFooter {
+  display:flex;
+  justify-content: flex-start;
+  align-items:center;
+  flex-direction:row;
+  width:100vw;
+  padding-left: 2vw;
+}
+
+.index-container {
+  height:84vh;
+  padding-top:10vh;
+}
+
+.index-container img {
+  width: 25 vw;
+}
+
+.index-container div a {
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  padding: 3vh 5 vw;
+  background-color: #2081C3;
+}
+
+.theBeerListBody {
+  padding-top:0 5 vw;
+
+}
+
+.beerInfo {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 28vw;
+}
+
+.beerInfo img {
+  height: 25vh ;
+}
