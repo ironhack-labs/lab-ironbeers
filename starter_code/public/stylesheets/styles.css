@@ -15,11 +15,77 @@ font-family: Arial, Helvetica, sans-serif
     flex-direction: column;
     display: flex;
     align-items: center;
-    padding: 25px;
+   }
+   .index-container img{
+     width: 400px;
+     margin-top: 60px;
    }
    nav{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: left;
+    align-items: center;
     width: 100vw;
-    padding: 25px 0px;
+    background-color: rgba(28, 88, 250, 0.767);
    }
+   nav a{
+     display: flex;
+     justify-content: center;
+     margin-left: 25px;
+     height: 60px;
+     align-items: center;
+     font-size: 15px;
+     color: white;
+     text-decoration: none;
+   }
+   #btnOne{
+     display: flex;
+     align-content: center;
+     justify-content: center;
+
+     flex-direction: row;
+   }
+   #btnTwo{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+
+  }
+  #btnOne button{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: rgba(28, 88, 250, 0.767);
+    width: 120px;
+    margin-top: 40px;
+    padding: 12px;
+    border-radius: 10px;
+  }
+  #btnOne a{
+    color: white;
+    text-decoration: none;
+  }
+  #btnTwo a{
+    color: white;
+    text-decoration: none;
+  }
+  #btnTwo button{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: rgba(28, 88, 250, 0.767);
+    width: 160px;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  footer{
+    height: 7vh;
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+    margin: 10px 0 0 0;
+    font-size: 15px;
+  }
