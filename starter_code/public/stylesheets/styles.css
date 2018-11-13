@@ -5,4 +5,19 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+  body{
+    text-align: center;
+  }
+
+.dark{
+  text-align: left;
+  background-color: #0A2C42;
+  color: white;
+}
+
+.list {
+
+border: 1px solid black;
+margin: 10px 10px 0px -30px;
+list-style: none;
+}

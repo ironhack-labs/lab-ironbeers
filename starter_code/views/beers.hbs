@@ -1,0 +1,37 @@
+
+<ul>
+  {{#each listOfBeers}}
+
+  <li class="list">
+    <h1>Beer name: {{this.name}}</h1>
+    <h5>{{this.tagline}}</h5>
+    <h5>First Brewed: {{this.first_brewed}}</h5>
+    <h5>Description: {{this.description}}</h5>
+    <img src="{{this.image_url}}" alt="">
+   
+    <h5>ABV: {{this.abv}}</h5>
+    <h5>IBU :{{this.ibu}}</h5>
+   
+    {{!-- {{#each method.mash_temp}}
+      <h4>{{this.temp.value}}</h4>
+    {{/each}} --}}
+    <h4>Method:</h4>
+    <h5>Temp:{{this.method.mash_temp.0.temp.value}} celsius</h5>
+    <h5>Fermentation Temp: {{this.method.fermentation.temp.value}} celsius </h5>
+    <h5>Malt Ingredient: {{this.ingredients.malt.0.name}}</h5>
+    <h5>Hops:</h5>
+    {{#each ingredients.hops}}
+    <h4>Hops Name: {{this.name}}</h4>
+    {{/each}}
+   
+    <h5>Yeast: {{this.ingredients.yeast}}</h5>
+    
+    <h5> Goes Well with: {{this.food_pairing}}</h5>
+    <h5> Tips from Brewer: {{this.brewers_tips}}</h5>
+    <h5> Contributed By :{{this.contributed_by}}</h5>
+    
+  </li>
+
+
+  {{/each}}
+</ul>
