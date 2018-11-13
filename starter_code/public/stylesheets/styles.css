@@ -5,4 +5,101 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+body{
+    padding-top: 10vh;
+}
   
+
+nav ul{
+    display: flex;
+    justify-content: baseline;
+}
+
+nav li{
+    margin-left: 2vw;
+    list-style: none;
+    font-size: 1.3em;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav a:hover{
+    color: yellow;
+}
+
+nav{
+    border: 1px solid #2081C3;
+    background-color: #2081C3;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 7vh;
+}
+
+footer{
+    border: 1px solid #0a2c42;
+    background-color: #0a2c42;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    color: white;
+}
+
+footer p{
+    margin-left: 2vw;
+}
+
+.index-container{
+    display: flex;
+    justify-content: center;
+}
+
+.index-container img{
+    padding-top: 1.5vh;
+}
+
+.buttonsBeer a{
+    text-decoration: none;
+    color: white;
+}
+
+.buttonsBeer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+}
+
+.buttonsBeer button{
+    background-color: #2081C3;
+    border: 1px solid #2081C3;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.5em;
+    padding: 1vh 2vw;
+}
+
+.beerInfo img{
+    height: 25vh;
+}
+
+.theBeerList{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 10vw;
+}
+.beerInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.theRandomBeerBody{
+    
+}
