@@ -1,4 +1,3 @@
-
 const express = require('express');
 const hbs     = require('hbs');
 const app     = express();
@@ -24,7 +23,6 @@ app.get('/beers', (req, res, next) => {
     let data = {};
     data.beers = beers;
     res.render('beers', data);
-    
   })
   .catch(error => {
     console.log(error)
@@ -38,7 +36,6 @@ app.get('/randomBeer', (req, res, next) => {
   .then(beer => {
     let data = {};
     data.beer = beer[0];
-    console.log(data)
     res.render('randomBeer', data);
   })
   .catch(error => {
