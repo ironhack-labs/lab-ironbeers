@@ -18,12 +18,17 @@ nav {
 ul {
   list-style: none;
 
-
 }
 
 ul li {
   display: inline;
   margin-left: 3%;
+ 
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #F7F9F9;
 }
 
 footer {
@@ -33,4 +38,25 @@ footer {
   background-color: #0A2C42;
   color: #F7F9F9;
   padding: 2%;
+}
+
+.beer {
+  width: 20%;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+.index-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  margin-bottom: 1%;
+  padding: 0.5%;
+  background-color: #2081C3;
+  color: #F7F9F9;
+  border-radius: 10%;
+  box-shadow: rgba(145, 145, 145, 0.481) 1px 1px 0px;
+
 }
