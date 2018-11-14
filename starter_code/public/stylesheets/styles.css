@@ -6,3 +6,16 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+nav {
+  background-color: #2882C1;
+}
+
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+footer {
+  background-color: #0A2C42;
+  color: white; 
+}
