@@ -1,12 +1,6 @@
 <div class="beers">
-
-  <h1>BeersTest</h1>
-
-
   {{#each beers}}
-  
-    <p>{{this.name}}</p>
-
+    {{> beer this}}
   {{/each}}
 
 </div>
