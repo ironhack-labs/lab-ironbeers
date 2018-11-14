@@ -18,7 +18,7 @@ body {
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
+  min-height: 100vh;
 }
 
 nav {
@@ -91,7 +91,6 @@ button:hover {
 .beers {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
   align-items: space-evenly;
 }
 
