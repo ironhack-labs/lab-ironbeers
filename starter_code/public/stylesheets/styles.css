@@ -33,7 +33,7 @@ a{
     text-decoration: none;
     color: white;
 }
-img{
+.beer{
     width: 150px;
     height: 150px;
     margin: 20px 0px;
@@ -51,4 +51,23 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.beers-display{
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid black;
+    justify-content: space-around;
+
+}
+.beer-img{
+    width: 100px;
+    height: 200px;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+}
+.beers{
+    width: 30%;
 }
