@@ -26,8 +26,12 @@ body{
     background-color: #0A2C42;
     height: 40px;
     color: white;
-padding: 8px 15px;;
+    padding: 8px 15px;
+    position: absolute;
+    width: 100%;
+    
 }
+
 
 .index-container{
     display: flex;
@@ -35,6 +39,7 @@ padding: 8px 15px;;
     justify-content:center;
     align-items: center;
     margin:70px;
+    margin-bottom: 22%;
 }
 .index-container img{
     margin: 20px;
@@ -81,3 +86,34 @@ padding: 8px 15px;;
     line-height: 18px;
     padding-right: 10px;
 }
+
+.random-beer{
+    display: flex;
+    justify-content: row;
+    align-content: center;
+    margin: 40px 200px;
+}
+.text{
+    margin-left: 100px;
+}
+.random-beer h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+.tagline{
+    margin: 20px 0;
+    color: gray;
+}
+
+.random-beer h2{
+    margin: 30px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.random-beer li{
+    margin-top: 10px;
+}
+.random-beer span{
+    font-weight: bold;
+}
+
