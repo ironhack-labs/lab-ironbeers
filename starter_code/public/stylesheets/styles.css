@@ -3,6 +3,34 @@ white: #F7F9F9;
 light-blue: #2081C3;
 dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
+
 */
-  
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: #2081C3;
+  color: #F7F9F9;
+  padding: 2%;
+}
+
+ul {
+  list-style: none;
+
+
+}
+
+ul li {
+  display: inline;
+  margin-left: 3%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #0A2C42;
+  color: #F7F9F9;
+  padding: 2%;
+}
