@@ -10,6 +10,7 @@ app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
 
+hbs.registerPartials(__dirname + '/views/partials');
 
 
 app.get('/', (req, res, next) => {
@@ -20,7 +21,7 @@ app.get('/beers', (req, res, next) => {
 
   punkAPI.getBeers()
   .then(beers => {
-    console.log(beers[0].name);
+    console.log(beers);
     
     res.render('beers',{beers});
   })
