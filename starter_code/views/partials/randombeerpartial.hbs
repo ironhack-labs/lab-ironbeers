@@ -1,8 +1,10 @@
-<img class="imgH" src="{{this.image_url}}">
-  <div class="card-description">
-    <h2 class="name">{{this.name}}</h2>
-    <h3 class="tagline">{{this.tagline}}</h3><br>
-    <p class="description">{{this.description}}</p>
-    <h3 class="food-pairing">{{this.food_pairing}}</h3><br>
-    <p class="description">{{this.brewers_tips}}</p>
-  </div>
+<img class="imgHrandom" src="{{this.image_url}}">
+<div class="card-description">
+  <h2 class="name">{{this.name}}</h2>
+  <h3 class="tagline">{{this.tagline}}</h3><br>
+  <p class="description">{{this.description}}</p>
+  <ul class="food-pairing">
+    {{this.food_pairing}}
+  </ul><br>
+  <p class="description">{{this.brewers_tips}}</p>
+</div>
