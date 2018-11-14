@@ -31,5 +31,19 @@ app.get('/beers', (req, res, next) => {
   
 });
 
+app.get('/randomBeer', (req, res, next) => {
+
+  punkAPI.getRandom()
+  .then(beers => {
+    console.log(beers);
+    res.render('randomBeer',{beers});
+  })
+  .catch(error => {
+    console.log(error)
+  })
+  
+});
+
+
 
 app.listen(3000);

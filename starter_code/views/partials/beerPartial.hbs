@@ -3,9 +3,12 @@
 {{name}}
 {{/with}}
 {{/each}} --}}
+
+{{#with this}}
 <div>
   <img src="{{this.image_url}}" alt="">
   <h1>{{this.name}}</h1>
   <span>{{this.tagline}}</span>
   <p>{{this.description}}</p>
 </div>
+{{/with}}
