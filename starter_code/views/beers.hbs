@@ -8,15 +8,7 @@
 <div class="beers-container">
 
   {{#each this}}
-  <div class="beers-photo" style="width:30%;">
-
-    <img src="{{this.image_url}}" alt="" class="photo">
-    <h5 class="beer-title"> {{this.name}}</h5>
-    <p class="beer-tag">{{this.tag}}</p>
-    <p class="beer-description">{{this.description}}</p>
-
-  </div>
-
+  {{>beerPartial this}}
   {{/each}}
 </div>
 <div class="footer"> Develop by Ironhack ;)</div>

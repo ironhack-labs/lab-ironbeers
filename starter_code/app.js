@@ -22,7 +22,7 @@ app.get('/beers', (req, res, next) => {
 punkAPI.getBeers()
 .then(beers => {
   res.render('beers', beers);
-console.log(beers)
+  console.log(beers)
 })
 .catch(error => {
   console.log(error)
@@ -31,10 +31,22 @@ console.log(beers)
 });
 
 
+hbs.registerPartials(__dirname + '/views/partials')
 
 app.get('/randomBeers', (req, res, next) => {
-  res.render('randomBeers');
-});
+
+  punkAPI.getRandom()
+  .then(beersRandom => {
+    console.log(beersRandom)
+    res.render('randomBeers', beersRandom[0]);
+  
+  })
+  .catch(error => {
+    console.log(error)
+  })
+    
+  });
+  
 
 
 app.listen(3000);
