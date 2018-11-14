@@ -37,7 +37,7 @@ footer {
   width: 100%;
   background-color: #0A2C42;
   color: #F7F9F9;
-  padding: 2%;
+  padding: 1.5%;
 }
 
 .beer {
@@ -58,5 +58,4 @@ button {
   color: #F7F9F9;
   border-radius: 10%;
   box-shadow: rgba(145, 145, 145, 0.481) 1px 1px 0px;
-
 }
