@@ -6,12 +6,11 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 body {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
-  font-family: Roboto;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -19,7 +18,7 @@ body {
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 
 nav {
@@ -51,6 +50,8 @@ footer {
   background: #0A2C42;
   color: #F7F9F9;
   width: 100%;
+  position: relative;
+  bottom: 0;
 }
 
 footer p {
@@ -85,4 +86,49 @@ button {
 button:hover {
   background: rgb(26, 103, 155);
   transition: all 0.25s;
+}
+
+.beers {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: space-evenly;
+}
+
+.beers img {
+  height: 20rem;
+  width: 5rem;
+}
+
+#beer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  height: 50%;
+  margin: 1rem;
+}
+
+#beer img {
+  align-self: center;
+}
+
+#beer span {
+  color: rgba(145, 145, 145, 0.481);
+}
+
+.random-beer {
+  display: flex;
+  justify-content: space-evenly;
+  height: 50%;
+  margin: 3rem;
+}
+
+.random-beer img {
+  height: 20rem;
+  width: 5rem;
+}
+
+.random-beer li {
+  padding: 0.25rem 0;
 }
