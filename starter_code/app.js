@@ -16,6 +16,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res, next) => {
   res.render('index');
 });
+
+
 app.get('/beers', (req, res, next) => {
   punkAPI.getBeers()
   .then(beers => {
@@ -26,10 +28,20 @@ app.get('/beers', (req, res, next) => {
   .catch(error => {
     console.log(error)
   })
-  //res.render('beers');
 });
+
+
+
 app.get('/random-beers', (req, res, next) => {
-  res.render('Random-Beers');
+  punkAPI.getRandom()
+  .then(beer => {
+    console.log(beer)
+    res.render('randomBeer', {beer:beer[0]});
+  })
+  .catch(error => {
+    console.log(error)
+  })
+  // res.render('randomBeer');
 });
 
 
