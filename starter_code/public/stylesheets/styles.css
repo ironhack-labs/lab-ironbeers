@@ -61,7 +61,7 @@ button{
 }
 .beer-img{
     width: 100px;
-    height: 200px;
+    height: 300px;
 }
 .image{
     display: flex;
@@ -70,4 +70,11 @@ button{
 }
 .beers{
     width: 30%;
+}
+.random-img{
+
+}
+
+.random-parent{
+    display: flex;
 }
