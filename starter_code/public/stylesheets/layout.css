@@ -1,0 +1,7 @@
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
