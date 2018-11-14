@@ -12,6 +12,7 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: rgba(145, 145, 145, 0.481);
 }
 
 header{
@@ -44,3 +45,16 @@ footer{
   
   height: 40px;
 }
+
+.index-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+}
+.beerimg{
+  width: 250px;
+  height: auto;
+}
+
