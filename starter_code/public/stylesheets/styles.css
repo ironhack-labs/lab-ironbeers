@@ -50,3 +50,34 @@ padding: 8px 15px;;
 .index-container a{
     color: white;
 }
+.beers-container{
+    display: flex;
+    justify-content: row;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 5% 10%;
+}
+.each-beer{
+    width: 33%;
+
+}
+.each-beer img{
+    height: 170px;
+    display: block;
+    margin: 0 auto;
+}
+.each-beer h1{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.subtitle{
+    margin-top: -10px;
+    color: gray;
+}
+
+.description{
+    line-height: 18px;
+    padding-right: 10px;
+}
