@@ -6,3 +6,20 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+.index-container{
+  padding: 5% 25%;
+  /* width: 50%; */
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.beers-container{
+  /* padding: 5% 15%; */
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+.beer-container{
+  width: 33%;
+}
