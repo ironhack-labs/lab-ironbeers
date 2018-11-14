@@ -19,3 +19,22 @@ footer {
   background-color: #0A2C42;
   color: white; 
 }
+
+#beerPicture {
+  width: auto;
+  height: 100px;
+  margin-top: 10px;
+  margin-left: 45%;
+}
+
+#randBeer {
+  width: auto;
+  height: 280px;
+  margin-left: 20%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+#randBeerExplain{
+  margin-top: 7%;
+}
