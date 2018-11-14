@@ -58,3 +58,24 @@ footer{
   height: auto;
 }
 
+.beers-container{
+  display: flex;
+  width: 100%;
+  flex-flow: row;
+  height: 500px;
+}
+
+.beer{
+  width: 33%;
+  margin: 0;
+  height: 250px;
+}
+.beer-img{
+  width: 100%;
+}
+.beer-img img{
+  margin: auto;
+  width: 10%;
+  height: auto;
+}
+
