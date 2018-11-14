@@ -17,5 +17,14 @@ app.get('/', (req, res, next) => {
 });
 
 
+app.get('/beers', (req, res, next) => {
+  res.render('beers');
+});
+
+
+app.get('/randomBeers', (req, res, next) => {
+  res.render('randomBeers');
+});
+
 
 app.listen(3000);
