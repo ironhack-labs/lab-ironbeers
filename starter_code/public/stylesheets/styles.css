@@ -52,10 +52,11 @@ footer {
 }
 
 button {
-  margin-bottom: 1%;
-  padding: 0.5%;
+  margin-bottom: 10%;
+  padding: 8%;
+  width: 120%;
   background-color: #2081C3;
   color: #F7F9F9;
-  border-radius: 10%;
+  border-radius: 5px;
   box-shadow: rgba(145, 145, 145, 0.481) 1px 1px 0px;
 }
