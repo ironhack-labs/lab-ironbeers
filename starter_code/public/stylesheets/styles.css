@@ -43,6 +43,24 @@ header nav a {
   text-decoration: none;
 }
 
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin: 1rem;
+  margin-left: 3.3rem;
+}
+
+.random-beer li {
+  list-style-type: disc;
+  padding-bottom: 1rem;
+}
+
+.subtitle, b {
+  font-weight: 600;
+}
+
 /*----------------------------------*/
 /******** MAIN CONTENT *************/
 /*----------------------------------*/
@@ -95,14 +113,29 @@ section.content {
   margin: 0 auto 2rem;
 }
 
-.beer-card p.title {
+p.title {
   font-size: 1.3rem;
   font-weight: 900;
 }
 
-.beer-card p.tagline {
+p.tagline {
   color: #C4C6C6;
   margin: .5rem 0 1rem;
+}
+
+.random-beer {
+  display: flex;
+  margin: 0 3rem;
+  max-width: 900px;
+}
+
+.random-beer .img-col img {
+  height: 20rem;
+  margin: 0 5rem;
+}
+
+.random-beer p.title {
+  margin: 1.5rem 0;
 }
 
 /*----------------------------------*/
