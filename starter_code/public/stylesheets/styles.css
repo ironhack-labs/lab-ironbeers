@@ -28,6 +28,7 @@ a {
 section {
     height: 500px;
     background-color:rgba(145, 145, 145, 0.481);
+
   
 }
 footer {
@@ -44,4 +45,37 @@ footer {
 }
 .index-container *  {
 margin: 20px 0;
+}
+.card-img-top {
+    height: 200px;
+    margin: 20px 0;
+
+}
+h2 {
+  font-size: 20px;
+  font-weight: 300;
+}
+.beer {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+}
+.beers-container {
+    display: flex;
+flex-wrap: wrap;
+    text-align: center;
+}
+.beerArt {
+    width: 25vw;
+    height: 70vh;
+}
+article div {
+    display: flex;
+    justify-content: center;
 }
