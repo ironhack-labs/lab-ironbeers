@@ -5,4 +5,128 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+
+
+/* ---- reset ---- */
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
   
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  
+  /* ---- typography ---- */
+  
+  body {
+    color: #111;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 147%;
+  }
+  
+  h1 {}
+  
+  h2 {
+    font-size: 1.5vw;
+    font-weight: bold;
+  }
+  
+  h3 {
+    color: rgba(145,145,145,0.481);
+    font-size: 1vw;
+  }
+  
+  p {
+    margin: 0;
+  }
+ nav{
+     top: 0;
+     background-color: #2081C3;
+     padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+ }
+ nav ul{
+     margin: 0px;
+ }
+nav li{
+    display: inline;
+    padding: 10px;
+    
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    
+}
+main li {
+  width: 30%;
+  float: left;
+  margin: 10px;
+  list-style-type: none;
+  font-size: 1vw;
+}
+main li:nth-of-type(3n + 1){
+  clear: both;
+}
+main img {
+  display: block;
+  margin: 0 auto;
+  max-height: 161px;
+  margin-bottom: 15px;
+}
+
+
+.index-container{
+  width: 25%;
+  margin: 0 auto;
+  margin-top: 7%;
+  text-align: center;
+
+}
+.index-container img {
+  max-width: 100%;
+}
+button {
+  background: #1e81c3;
+  padding: 5%;
+  color: white;
+  border-radius: 9px;
+  box-shadow: 0px 3px 7px 0px #0000004f;
+  margin: 5px;
+}
+
+.beers{
+
+}
+.beers img{
+  width: 10%;
+  float: left;
+}
+footer {
+    background-color: #082c42;
+    padding: 20px;
+    text-align: left;
+    clear: both;
+    position: fixed;
+    width: 100%;
+    bottom:0;
+}
+footer p {
+    color: white;
+}
+
+
+

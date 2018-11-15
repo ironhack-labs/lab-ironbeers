@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www",
+    "star-dev": "nodemon -e js,json,hbs, ./bin/www"
   },
   "author": "",
   "license": "ISC",
@@ -14,5 +14,13 @@
     "hbs": "^4.0.1",
     "path": "^0.12.7",
     "punkapi-javascript-wrapper": "^1.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
   }
 }
