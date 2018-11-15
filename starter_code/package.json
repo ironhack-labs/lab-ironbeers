@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
+    "start-dev": "nodemon -e js,json, hbs app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -13,6 +14,6 @@
     "express": "^4.16.3",
     "hbs": "^4.0.1",
     "path": "^0.12.7",
-    "punkapi-javascript-wrapper": "^1.0.2"
+    "punkapi-javascript-wrapper": "file:punkapi-javascript-wrapper"
   }
 }
