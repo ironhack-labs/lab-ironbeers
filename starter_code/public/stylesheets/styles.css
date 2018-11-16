@@ -7,53 +7,129 @@ font-family: Arial, Helvetica, sans-serif */
 
 
 body {
-    font-family: Arial, Helvetica, sans-serif; 
+    color: #F7F9F9;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0 0;
 }
-  
 
-.flex {
-    display: flex;
-    width: 40vw;
-    justify-content: space-evenly;
+
+.darkBlue {
+    background-color: #0A2C42;
 }
 
 .lightBlue {
     background-color: #2081C3;
 }
 
-a:visited {
-    text-decoration: none;
-    color: #F7F9F9;
+.padding {
+    padding-left: 25px;
 }
 
-a:link {
-    text-decoration: none;
-    color: #F7F9F9;
+.defaultBarSize {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    height: 70px;
+    padding-top: 12px;
 }
 
-.darkBlue {
-    background-color: #0A2C42;
+#footer img {
+    width: 50px;
 }
 
-.spaceBetween {
+#stuffInBetween {
+    height: 526px;
+}
+
+#stuffInBetween2 {
+    height: 526px;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+#beerImage img {
+    width: 380px;
+    padding-left: 60px;
+}
+
+.extraPadding {
+    padding-top: 8px;
+}
+
+.flexSpaceEvenly {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.wholePage {
-    min-height: 100vh;
-}
-
-#h3 {
+#buttonsBelowBeerImage {
     display: flex;
-    width: 30vw;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 115px;
+}
+
+.partialPicture img{
+    width: 20px;
+}
+
+.partialTitle h3 {
+    color: black;
+}
+
+.partialTagline h5 {
+    color: gray;
+}
+
+.partialDescription p {
+    color: black;
+}
+
+#allThePartialContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.partialContent {
+    width: 20vw;
+    border: 1px black dotted;
+    margin-top: 25px;
+    padding: 10px;
+}
+
+.randomPartialContent {
+    
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #F7F9F9;
 }
 
-#banana {
-    width: 30px;
+.randomPartialPicture img{
+    width: 200px;
 }
+
+.randomPartialTagline h5 {
+    color: gray;
+}
+
+.randomPartialDescription p {
+    color: black;
+}
+
+.randomPartialTitle h3 {
+    color: black;
+}
+
+/* #allTheRandomPartialContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} */
