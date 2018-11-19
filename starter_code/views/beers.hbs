@@ -1,0 +1,29 @@
+{{!-- <div class="beerListPage">
+    <h3> Im in the beers page </h3>
+
+    <div class="beer-img">
+
+
+    <img src="/images/beer.png">
+
+      <div>
+        <a href="#"> Get All Beers</a>
+        <a href="#"> Get Random Beers</a>
+
+
+    </div>
+    </div>
+<label for=""></label>
+
+</div> --}}
+
+
+<div class="theBeerlistBody">
+    {{#each beers}}
+    <img src="{{this.image_url}}" alt="beer">
+
+    {{/each}}
+
+
+
+</div>

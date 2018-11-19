@@ -1,0 +1,16 @@
+
+<div class="theRandomBeerBody">
+  {{#each oneBeer}}
+    {{> beerPartial this}}
+    <strong>Food Pairing </strong>
+    <ul>
+      {{#each this.food_pairing}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <h4><b>Brewers Tips:</b> {{this.brewers_tips}}</h4>
+
+    {{!-- example: how to get index 0 in an array --}}
+    <h2>{{this.method.mash_temp.0.temp.value}}</h2>
+  {{/each}}
+</div>
