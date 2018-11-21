@@ -5,33 +5,28 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    font-family: Arial, Helvetica, sans-serif
+  }
   
-header{
+  header {
     position: fixed;
     top: 0;
     background-color: #2081C3;
     width: 100vw;
     height: 50px;
-    padding: 10x;
+    padding: 10px;
     color: white;
-}
-
-header a{
+  }
+  
+  header a {
     color: white;
-    text-decoration: none;
-}
-
-a{
     text-decoration: none white;
-}
-
-footer{
+  }
+   
+  footer {
     position: fixed;
     background-color: #0A2C42;
     bottom: 0;
@@ -39,28 +34,69 @@ footer{
     height: 50px;
     padding: 5px;
     color: white;
-}
-
-.index-container{
+  }
+  
+  .index-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-}
-
-.index-container button{
+  }
+  
+  .index-container img {
+    width: 10%;
+  }
+  
+  .index-container button {
+    color: white;
+    background-color: #2081C3;
     height: 50px;
     width: 100px;
-    background-color: #2081C3;
-    color: white;
-}
-.index-container img{
-    width: 10%;
+  }
+  
+  .index-container * {
+    margin: 10px;
+  }
+  
+  .card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .card-container div {
+    width: 25vw;
+    height: 650px;
+    border: 1px solid rgba(0,0,0,0.7);
+    text-align: center;
+  }
+  
+  .card-container * {
+    margin: 2vw;
+  }
+
+.random-beer{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
 }
 
-.index-container button{
-    color: white;
-    background-color: #2081C3;
+.random-beer img{
+    width: 200px;
+    height: 400px;
 }
+
+.description{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+} 

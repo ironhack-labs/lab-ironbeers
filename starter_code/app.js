@@ -1,4 +1,3 @@
-
 const express = require('express');
 const hbs     = require('hbs');
 const app     = express();
@@ -9,25 +8,31 @@ const punkAPI = new PunkAPIWrapper();
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
-hbs.registerPartials(__dirname + '/views/partials')
-
 
 app.get('/', (req, res, next) => {
-  res.render('index')
-})
+  res.render('index');
+});
 
-app.get('/beers', (req, res, next) => {
+app.get('/beers', (req, res) => {
   punkAPI.getBeers()
   .then(beers => {
-    res.render('beers',{beers})
+    res.render('beers', {beers});
+  })
+  .catch(err => {
+    console.log(err);
+  })
+});
+
+app.get('/randombeer', (req, res) => {
+  punkAPI.getRandom()
+  .then(beer => {
+    res.render('random', {beer})
   })
   .catch(err => {
     console.log(err)
   })
-})
+});
 
-
-
-app.listen(3000,()=>{
-  console.log('Servidor corriendo en 3000')
-})
+app.listen(3000, () => {
+  console.log('Listening on 3000');
+});
