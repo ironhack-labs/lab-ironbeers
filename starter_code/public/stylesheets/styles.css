@@ -5,4 +5,91 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+header{
+    position:fixed;
+    background: blue;
+    top:0;
+    width: 100vw;
+    height: 50px;
+    padding:5px;
+}
+header a{
+    color:white;
+    text-decoration: none white;
+}
+
+footer{
+    position:fixed;
+    color:white;
+    background-color:#0A2C42;
+    bottom:0;
+    width: 100vw;
+    height: 50px;
+    padding:5px;
+}
+
+.index-container{
+    margin-top:100px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+
+}
+
+.index-container img{
+    width: 10%;
+}
+
+.index-container button{
+    color:white;
+    background-color:blue;
+    height:50px;
+    width: 100px;
+} 
+.index-container *{
+    padding:10px;
+}
+
+.card-container{
+margin-top:100px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+    flex-grow: 1;
+    width: 100vw;
+    padding-top:100px;
+}
+
+.card-container div{
+    width: 25vw;
+    height: 600px;
+    border:1px solid black;
+    text-align: center;
+    
+}
+.card-container *{
+    
+   margin: 2vw;
+}
+
+#random{
+    width: 25vw;
+    height: 600px;
+    border:1px solid black;
+    text-align: center;
+    padding:100px;
+    margin: 2vw;
+    
+
+}
