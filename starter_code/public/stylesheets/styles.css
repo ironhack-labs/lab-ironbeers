@@ -6,3 +6,84 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+header{
+  position: fixed;
+  top: 0;
+  background-color: blue;
+  width: 100vw;
+  height: 100px;
+  padding:  5px;
+  color: white;
+}
+header a{
+  color: white;
+  text-decoration: none white;
+
+}
+
+footer{
+  position: fixed;
+  background-color: black;
+  bottom: 0;
+  width: 100vw;
+  height: 50px;
+  padding: 5px;
+  color: white;
+
+}
+.index-container *{
+  margin: 10px;
+  
+}
+
+.index-container{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.index-container img{
+  width: 10%;
+}
+
+.index-container button{
+  color: white;
+  background-color: blue;
+  height: 50px;
+  width: 100px;
+}
+
+.card-container{
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.card-container div{
+  width: 25vw;
+  border: 1px solid black;
+  height: 650px;
+  text-align: center;
+}
+
+.card-container *{
+  margin: 2vh;
+}
