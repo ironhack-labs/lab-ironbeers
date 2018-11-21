@@ -1,0 +1,99 @@
+/*
+white: #F7F9F9;
+light-blue: #2081C3;
+dark-blue: #0A2C42;
+grey: rgba(145, 145, 145, 0.481);
+font-family: Arial, Helvetica, sans-serif
+*/
+
+*{
+  margin:0;
+  padding:0;
+  font-family: Arial;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  background-color: #2081C3;
+  width: 100vw;
+  height: 60px;
+  padding: 5px;
+  color: white;
+
+}
+header a{
+  color: white;
+  text-decoration: none;
+
+}
+
+footer{
+  padding: 5px;
+  color:white;
+  width: 100vw;
+  height: 50px;
+  position: fixed;
+  background-color: #0A2C42;
+  bottom: 0;
+}
+
+.index-container{
+ 
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vw;
+  width: 100vw;
+}
+
+.index-container img{
+  width: 15%;
+}
+
+.index-container button{
+  height: 40px;
+  width: 150px;
+  margin: 20px;
+  color: white;
+  background-color: #2081C3
+}
+
+.index-container *{
+  margin: 10px;
+}
+
+.card-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  height: 100vw;
+  width: 100vw;
+  padding-top: 100px;
+
+}
+
+.card-container div{
+  width: 25vw;
+  height:680px;
+  border: 1px solid blue;
+  text-align: center;
+}
+
+.card-container *{
+  margin: 2vw;
+}
+
+.random-beer{
+  
+  text-align: center;
+  margin: 20px;
+  width: 25vw;
+  height:680px;
+  border: 1px solid blue;
+  text-align: center;
+}
