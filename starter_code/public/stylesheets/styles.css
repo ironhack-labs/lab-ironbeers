@@ -5,4 +5,95 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  background-color: #2081c3;
+  width: 100vw;
+  height: 50px;
+  padding: 10px;
+  color: white;
+}
+
+header a{
+  text-decoration: none white;
+  color: white;
+}
+
+footer{
+  position: fixed;
+  background-color: #0a2c42;
+  bottom: 0;
+  width: 100vw;
+  height: 50px;
+  padding: 5px;
+  color: white;
+}
+
+.index-container{
+  margin: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.index-container img{
+  width: 20%;
+}
+
+.index-container button{
+  display: inline;
+  color: white;
+  background-color: #2081c3;
+  height: 30px;
+  width: 120px;
+}
+.index-container *{
+  margin: 10px;
+}
+
+.card-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.card-container div{
+  width: 25vw;
+  height: 650px;
+  border: 1px solid rgb(0,0,0,7);
+  text-align: center;
+}
+
+.card-container *{
+  margin: 2vw;
+}
+
+.random{
+  width: 100vw;
+  height: 650px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+}
+
+.random img{
+  width: 80px;
+  height: 250px;
+  text-align: left;
+}
