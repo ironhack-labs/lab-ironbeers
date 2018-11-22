@@ -5,4 +5,9 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+.card-container {
+  display: flex;
+  padding: 10% 20%;
+  justify-content: space-around;
+}
