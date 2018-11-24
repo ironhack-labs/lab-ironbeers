@@ -9,3 +9,11 @@ font-family: Arial, Helvetica, sans-serif
 .cards-container img{
     height:300px;
 }
+
+.image img{
+    height:200px;
+}
+
+.description {
+    width:150px;
+}

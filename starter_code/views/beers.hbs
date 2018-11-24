@@ -1,9 +1,8 @@
-{{#each beers}} {{/each}}
 
 {{!-- When looping through items in each, you can optionally reference the current loop index via {{@index}} --}}
 
  <ul>
   {{#each beers}}
-    <li>{{@index}}: {{this}}</li>
+     {{> beerPartial this}}
   {{/each}}
 </ul> 
