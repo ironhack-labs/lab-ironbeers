@@ -8,6 +8,8 @@ const punkAPI = new PunkAPIWrapper();
 app.set("view engine", "hbs"); // connects hbs and express
 app.set("views", __dirname + "/views");
 app.use(express.static(path.join(__dirname, "public")));
+hbs.registerPartials(__dirname + '/views/partials')
+
 
 app.get("/", (req, res, next) => {
   res.render("index");
@@ -26,11 +28,16 @@ app.get("/beers", (req, res, next) => {
 });
 
 app.get("/randombeer", (req, res, next) => {
-  res.render("randombeer");
-});
-
-hbs.registerPartials(__dirname + '/views/partials')
-
+  punkAPI
+    .getRandom()
+    .then(beers => {
+    // res.send(beers)
+      res.render("beer", {beers})
+    })
+    .catch(error => {
+      console.log(error);
+    });
+ });
 
 
 
