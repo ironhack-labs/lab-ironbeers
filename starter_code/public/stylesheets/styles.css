@@ -1,8 +1,93 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
-  
+body {
+  background-color: #f7f9f9;
+  color: #f7f9f9;
+  margin: 0 auto;
+  font-family: Helvetica, sans-serif;
+}
+/*----HEADER--------*/
+#header {
+  background-color: #2081c3;
+  height: 60px;
+  width: 100%;
+  margin: 0;
+  box-shadow: 0px 4px 7px 0px #8f8f8f;
+}
+
+/*-----NAVBAR---------*/
+.nav-bar {
+  padding-top: 10px;
+  padding-right: 20px;
+}
+.nav {
+  list-style-type: none;
+}
+.nav li {
+  display: inline;
+  padding-left: 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #f7f9f9;
+  padding-right: 10px;
+}
+
+/*----------FOOTER------------*/
+#footer {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  flex-direction: row;
+  background-color: #0a2c42;
+  padding-left: 20px;
+}
+
+/*----------MAIN------------*/
+#main {
+  padding-top: 60px;
+  text-align: center;
+  width: 100%;
+  color: black;
+}
+
+/*----------IMAGEBEER------------*/
+.imagebeer {
+  max-width: 200px;
+  margin-bottom: 30px;
+}
+
+/*----------BUTTON------------*/
+.myButton {
+  background: #2081c3;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  height: 30px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.index-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*----------PARTIAL------------*/
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-img {
+  width: 50px;
+  height: 100px;
+}
+
+.card-beer {
+  max-width: 300px;
+}
