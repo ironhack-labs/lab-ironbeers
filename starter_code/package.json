@@ -12,7 +12,8 @@
   "dependencies": {
     "express": "^4.16.*",
     "hbs": "^4.0.*",
+    "nodemon": "^1.18.6",
     "path": "^0.12.*",
-    "punkapi-javascript-wrapper": "^1.0.*"
+    "punkapi-javascript-wrapper": "^1.0.2"
   }
 }
