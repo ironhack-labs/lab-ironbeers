@@ -28,5 +28,17 @@ app.get('/beers', (req, res, next) => {
    })
 });
 
+app.get('/random-beer', (req, res, next) => {
+  punkAPI.getRandom()
+    .then(beers => {
+      // res.send(beers)
+      res.render('randomBeer', {beers});
+    })
+    .catch(error => {
+      console.log(error)
+    })
+ });
+
+ hbs.registerPartials(__dirname + '/views/partials')
 
 app.listen(3000);
