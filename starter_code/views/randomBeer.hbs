@@ -1,0 +1,27 @@
+<div class="container-fluid beers">
+  <div class="row">
+    <div class="col-2">
+      <img src={{beers.0.image_url}} class="img-responsive random-img"></div>
+    <div class="col-10">
+      <h3>
+        {{beers.0.name}}
+      </h3>
+      <h4 class="gray">
+        {{beers.0.tagline}}
+      </h4>
+      <br>
+      <p>
+        {{beers.0.description}}
+      </p>
+      <br>
+      <h4>Food pairing:
+      </h4>
+      <ul>
+        {{#each beers.0.food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <p><strong>Brewers Tips:</strong>{{beers.0.brewers_tips}}</p>
+    </div>
+  </div>
+</div>
