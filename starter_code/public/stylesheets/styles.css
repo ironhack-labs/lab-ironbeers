@@ -2,8 +2,12 @@
 
 .beer-container {
   display: flex;
-  padding: 10%;
+  padding: 5%;
   justify-content: space-around;
+}
+
+.text-container {
+  padding: 2% 0 0 5%;
 }
 
 img {
