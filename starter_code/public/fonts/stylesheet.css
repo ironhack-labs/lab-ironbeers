@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Heavitas';
+    src: url('Heavitas.eot');
+    src: url('Heavitas.eot?#iefix') format('embedded-opentype'),
+        url('Heavitas.woff2') format('woff2'),
+        url('Heavitas.woff') format('woff'),
+        url('Heavitas.ttf') format('truetype'),
+        url('Heavitas.svg#Heavitas') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
