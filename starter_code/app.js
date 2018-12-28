@@ -18,6 +18,25 @@ app.get('/', (req, res, next) => {
   res.render('index');
 });
 
+app.get('/beers', (req, res, next) => {
+  punkAPI.getBeers()
+  .then(beers => {
+    res.render('beers',{beers:beers})
+  })
+  .catch(error => {
+    console.log(error)
+  })
+});
+
+app.get('/random-beers', (req, res, next) => {
+  punkAPI.getRandom()
+  .then(randbeer => {
+    res.render('randombeer',{randbeer:randbeer})
+  })
+  .catch(error => {
+    console.log(error)
+  })
+});
 
 app.listen(PORT, () => {
   console.info(`App listen ar ${PORT} port`);

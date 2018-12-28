@@ -30,7 +30,7 @@ nav{
 }
 
 .card img {
-  max-width: 250px;
+  max-width: 50px;
 }
 
 .card {
@@ -76,7 +76,7 @@ nav{
 }
 
 .product-image img {
-  max-width: 500px;
+  max-width: 120px;
 }
 
 .card:hover {
