@@ -1,0 +1,17 @@
+<div class="random-beer-container container">
+  <div class="media">
+    <img src="{{this.image_url}}" class="align-self-start mr-3" alt="{{this.name}}">
+    <div class="media-body">
+      <h4 class="my-3"><strong>{{this.name}}</strong></h4>
+      <h6>{{this.tagline}}</h6>
+      <p>{{this.description}}</p>
+      <p><strong>Food Pairing</strong></p>
+      <ul>
+        {{#each this.food_pairing}}
+          <li class="my-2">{{this}}</li>
+        {{/each}}
+      </ul>
+      <p><strong>Brewers Tips: </strong>{{this.brewers_tips}}</p>
+    </div>
+  </div>
+</div>
