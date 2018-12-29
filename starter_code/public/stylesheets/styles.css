@@ -5,4 +5,36 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: #2081C3;
+  color: aliceblue;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
   
+.nav-link {
+  color: #fff;
+  --font-weight: bold;
+  font-size: 1.2rem;
+}
+
+footer {
+  color: #fff;
+  background-color: #0A2C42;
+  height: 50px;
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+footer p {
+  margin: 0;
+}
