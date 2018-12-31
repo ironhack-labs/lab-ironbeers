@@ -1,0 +1,18 @@
+{{#each beers}}
+<div class="position-relative overflow-hidden p-3 p-md-5 text-left beer-box">
+  <div class="col-md-5 p-lg-5 mx-auto my-5">
+    <h1 class="h1 font-weight-normal text-uppercase font-weight-bold">{{name}}</h1>
+    <h5 class="h3 font-weight-normal text-secondary">{{this.tagline}}</h5>
+    <p class="lead font-weight-normal">{{this.description}}</p>
+    <a class="btn btn-outline-secondary" href="/beerDetails/{{this.id}}">View More</a>
+  </div>
+  <div class="beer-img">
+      <img src="{{this.image_url}}" alt="{{this.name}}">
+  </div>
+    <div class="beer-img beer-img-2">
+      <img src="{{this.image_url}}" alt="{{this.name}}">
+  </div>
+</div>
+<hr class="style-four">
+
+{{/each}}
