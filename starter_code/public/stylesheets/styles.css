@@ -36,6 +36,10 @@ font-family: Arial, Helvetica, sans-serif
     transform: rotate(20deg);
 }
 
+.img-fluid {
+    max-width: 60%;
+}
+
 .beer-img-2 {
     top: 10%;
     right: auto;

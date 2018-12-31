@@ -1,13 +1,29 @@
-<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-left">
-  <div class="col-md-5 p-lg-5 mx-auto my-5">
-    <h1 class="h1 font-weight-normal">{{name}}</h1>
-    <h5 class="h3 font-weight-normal">{{this.tagline}}</h5>
-    <p class="lead font-weight-normal">{{this.description}}</p>
-  </div>
-  <div class="beer-img">
-      <img src="{{this.image_url}}" alt="{{this.name}}">
-  </div>
-    <div class="beer-img beer-img-2">
-      <img src="{{this.image_url}}" alt="{{this.name}}">
-  </div>
-</div>
+  <main class="mt-5">
+    <div class="container dark-grey-text mt-5">
+      <div class="row fadeIn">
+        <div class="">
+          <img src="{{beers.image_url}}" class="img-fluid" alt="{{beers.name}}">
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="p-4">
+            <div class="mb-3">
+              <a href="">
+                <span class="badge badge-primary">ABV {{beers.abv}}</span>
+              </a>
+              <a href="">
+                <span class="badge badge-danger">IBU {{beers.ibu}}</span>
+              </a>
+              <a href="">
+                <span class="badge badge-success">SRM {{beers.srm}}</span>
+              </a>
+            </div>
+            <p class="h2">{{beers.name}}</p>
+            <p class="lead font-weight-bold">{{beers.tagline}}</p>
+            <p>{{beers.description}}</p>
+            <blockquote class="blockquote text-right font-italic pt-4">
+  <p class="mb-0">{{beers.brewers_tips}}</p>
+  <footer class="blockquote-footer">contributed_by <cite title="Source Title">{{beers.contributed_by}}</cite></footer>
+</blockquote>
+          </div>
+        </div>
+      </div>
