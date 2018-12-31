@@ -1,8 +1,33 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
+
+/* dark-blue: #0A2C42;
+grey: rgba(145, 145, 145, 0.481); */
+
+#main-container{
+  background: rgba(145, 145, 145, 0.481)
+}
+
+.navbar-custom{
+  background: #2081C3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-custom .nav-link{
+  color: #F7F9F9;
+  margin-left: 30px;
+}
+
+.custom-list{
+  padding-left: 60px;
+}
+
+.custom-footer{
+  background: #0A2C42;
+}
+
+.custom-footer a{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 50px;
+  color: #F7F9F9;
+}
   
