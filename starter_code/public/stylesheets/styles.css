@@ -33,3 +33,41 @@ header{
   margin-left: 40px;
 }
 
+.big-beer{
+  width: 25%;
+  margin-left: 40px;
+}
+
+.index-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.custom-btn{
+  background: #2081C3;
+  width: 200px;
+  margin: 10px 0px 10px 0px;
+}
+
+.custom-btn:hover{
+  background: #0A2C42;
+  
+}
+
+#choice-buttons{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .index-container{
+    margin-top: 200px;
+  }
+
+  .big-beer{
+    width: 45%;
+  }
+}
