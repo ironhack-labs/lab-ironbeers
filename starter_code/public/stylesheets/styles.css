@@ -5,4 +5,21 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+
+nav {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-index {
+    background-color: rgba(145, 145, 145, 0.481);
+  }
+
+#beer {
+    width: 100px;
+    length: 200px;
+}
+
+body {
+    background: green;
+}
   
