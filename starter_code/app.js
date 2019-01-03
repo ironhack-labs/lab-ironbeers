@@ -9,6 +9,7 @@ const PORT = process.env.PORT || 3000;
 
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
+hbs.registerPartials(__dirname + '/views/partials')
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -22,7 +23,7 @@ app.get('/beers', (req, res, next) => {
   punkAPI.getBeers()
   .then(beers => {
     res.render('beers', { beers });
-    console.log(beers)
+    // console.log(beers)
   })
   .catch(error => {
     console.log(error)
@@ -34,7 +35,7 @@ app.get('/random-beers', (req, res, next) => {
   punkAPI.getRandom()
   .then(beers => {
     res.render("randomBeer", { beers: beers[0] });
-    console.log(beers)
+    // console.log(beers)
   })
   .catch(error => {
     console.log(error)
@@ -42,11 +43,9 @@ app.get('/random-beers', (req, res, next) => {
 });
 
 app.get('/beerDetails/:id', (req, res, next) => {
-  const term  = 20
-  punkAPI.getBeer(term)
+  punkAPI.getBeer(req.params.id)
   .then(beers => {
-    console.log("entra")
-    res.render('beerDetails', { beers: beers });
+    res.render('beerDetails', { beers: beers[0] });
     console.log(beers)
   })
   .catch(error => {
