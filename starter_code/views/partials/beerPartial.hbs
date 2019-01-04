@@ -1,0 +1,11 @@
+<div class="container">
+    {{#grouped_each 3 beers}}
+    <div class="row">
+        {{#each this }}
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <strong>{{ name }}</strong>
+        </div>
+        {{/each}}
+    </div>
+    {{/grouped_each}}
+</div>
