@@ -18,7 +18,7 @@
  <div class="card-style" style="width: 40rem;">
    <div class="card-body">
     <h3 class="card-title">{{this.name}}</h3>
-    <h6 class="card-subtitle mb-2">{{this.tagline}}</h6>
+    <p class="card-subtitle mb-2"><small class="text-muted">{{this.tagline}}</small></p> 
     <p class="card-text">{{this.description}}</p>
     <p><strong>Food Pairing</strong></p>
       <ul>
@@ -26,7 +26,7 @@
           <li>{{this}}</li>
         {{/each}}
       </ul>
-    <p><strong>Brewers Tips:</strong>{{this.brewers_tips}}</p>
+    <p><strong>Brewers Tips:</strong> {{this.brewers_tips}}</p>
     
   </div>
  </div>
