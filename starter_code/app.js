@@ -10,12 +10,22 @@ app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
 
-
+//Registar location of partials
+hbs.registerPartials(__dirname + '/views/partials')
 
 app.get('/', (req, res, next) => {
   res.render('index');
 });
 
 
+app.get('/beers', (req, res, next) => {
+  punkAPI.getBeers()
+    .then(beers => {
+      res.render('beers', { beers });
+    })
+    .catch(error => {
+      console.log(error);
+    })
+})
 
 app.listen(3000);
