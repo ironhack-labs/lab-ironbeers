@@ -5,15 +5,17 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
         <a class="text-links" href="/">Home</a>
-        <a class="text-links active" href="/Beers">Beers <span class="sr-only">(current)</span> </a>
+        <a class="text-links active" href="/Beers">Beers</a>
         <a class="text-links" href="/random-beers">Random Beer</a>
         </div>
       </div>
     </nav>
 </div>
 
-<footer>
-  <div class="container-footer">
-    <a class="text-muted">Delevop by Ironhack ;)</a>
-  </div>
-</footer>
+
+<div class="beers-container container-fluid">
+  {{#each beers}}
+    {{> BeerTemplate this}}
+  {{/each}}
+</div>
+
