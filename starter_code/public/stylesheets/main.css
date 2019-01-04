@@ -56,6 +56,12 @@ a:hover {
 
 }
 
+.img-random{
+
+  display: flex;
+  
+}
+
 .text-links {
   overflow: hidden;
   list-style-type: none;
@@ -77,6 +83,7 @@ footer {
  }
 
 footer .text{
+  margin-left: 15px;
   color: #fff !important;
 }
 
