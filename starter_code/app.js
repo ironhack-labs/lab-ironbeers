@@ -12,23 +12,6 @@ app.use(express.static(path.join(__dirname, "public")));
 //Ruta de las vistas parciales
 hbs.registerPartials(path.join(__dirname, "/views/partials"));
 
-hbs.registerHelper("grouped_each", function(every, context, options) {
-  var out = "",
-    subcontext = [],
-    i;
-  if (context && context.length > 0) {
-    for (i = 0; i < context.length; i++) {
-      if (i > 0 && i % every === 0) {
-        out += options.fn(subcontext);
-        subcontext = [];
-      }
-      subcontext.push(context[i]);
-    }
-    out += options.fn(subcontext);
-  }
-  return out;
-});
-
 //Home
 app.get("/", (req, res) => {
   res.render("index");
