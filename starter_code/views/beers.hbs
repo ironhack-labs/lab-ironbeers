@@ -1,22 +1,7 @@
-{{#grouped_each 3 beers}}
-
-<div class="container">
-    <div class="row" style="text-align:center">
-        {{#each this }}
-
-        <div class="col-md-4 col-xs-4">
-            <img src={{image_url}} class="img-responsive" style="height:480px;width:180px;" />
-            <h1>{{name}}</h1>
-            <p class="beer__tagline">{{tagline}}</p>
-            <p class="beer__description">{{description}}</p>
-        </div>
-
-
-
-
-
-
+<div class="container-index">
+    <div class="row">
+        {{#each beers}}
+        {{> beerPartial this}}
         {{/each}}
     </div>
 </div>
-{{/grouped_each}}
