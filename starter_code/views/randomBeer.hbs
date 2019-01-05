@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{beers.name}}</title>
+</head>
+<body>
+  <div class="beer-container">
+    <img src="{{beers.image_url}}" alt="{{beers.name}}" class="beer-img--random">
+    <div class="beer-card--random">
+      <div class="beer-headers">
+      <h2 class="beer-title">{{beers.name}}</h2>
+      <h3 class="beer-tagline">{{beers.tagline}}</h3>
+      </div>
+      <p class="beer-description--random">{{beers.description}}</p>
+      <div class="pairings">
+      <strong>Food Pairing</strong>
+        <ul class="beer-food-pairing">
+          <li>{{beers.food_pairing.[0]}}</li>
+          <li>{{beers.food_pairing.[1]}}</li>
+          <li>{{beers.food_pairing.[2]}}</li>
+        </ul>
+      </div>
+      <div class="beer-tips">
+      <strong>Brewers' Tips: </strong> <span class="beer-tips">{{beers.brewers_tips}}</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
