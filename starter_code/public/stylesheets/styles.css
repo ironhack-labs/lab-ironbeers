@@ -5,4 +5,15 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+.beer-img {
+  margin: 50px;
+}
+
+.beer-button {
+  margin-left: 50px;
+}
+
+.punkapi-img img {
+  height: 200px;
+}
