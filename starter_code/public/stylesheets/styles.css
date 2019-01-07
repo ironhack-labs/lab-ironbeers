@@ -12,7 +12,7 @@ grey: rgba(145, 145, 145, 0.481); */
 }
 
 header{
-  margin-bottom: 55px;
+  padding-bottom: 50px;
 }
 
 .navbar-custom .nav-link{
@@ -43,6 +43,7 @@ header{
   flex-direction: column;
   align-items: center;
   margin-top: 90px;
+  height: 800px;
 }
 
 .custom-btn{
@@ -62,6 +63,31 @@ header{
   margin-top: 20px;
 }
 
+.beer {
+  /* background: green; */
+  padding: 50px;
+  
+}
+
+.beer-image{
+  width: 80px;
+  margin-left: 30%;
+  margin-bottom: 20px;
+}
+
+#beers-container{
+  display: flex;
+  padding: 10% 20%;
+  justify-content: space-around;
+}
+
+#individual-beer{
+  display: flex;
+  align-items: center;
+}
+
+
+
 @media only screen and (max-width: 600px) {
   .index-container{
     margin-top: 200px;
@@ -70,4 +96,8 @@ header{
   .big-beer{
     width: 45%;
   }
+}
+
+h2{
+  color: gray;
 }
