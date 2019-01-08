@@ -31,26 +31,18 @@ a:hover {
 }
 
 .card-style {
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: transparent;
-  background-clip: border-box;
-  border: 0px solid transparent;
-  border-radius: 1.5rem !important;
-  
+
+  padding: 1rem;
 }
 
 .card-body{
   text-align: justify;
   flex: 1 1 auto;
   padding: 0rem !important;
+}
+
+.card-title{
+  margin-top: 1rem;
 }
 
 .card-img {
