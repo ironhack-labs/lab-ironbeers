@@ -49,6 +49,8 @@ a:hover {
 
 .card-body{
   text-align: justify;
+  flex: 1 1 auto;
+  padding: 0rem !important;
 }
 
 .card-img {
@@ -58,8 +60,15 @@ a:hover {
 
 .img-random{
 
+  margin-left: 10rem;
+  margin-top: 5rem;
+}
+
+.main-container{
   display: flex;
-  
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-links {
