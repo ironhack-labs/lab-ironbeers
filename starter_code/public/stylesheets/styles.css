@@ -43,3 +43,15 @@ font-family: Arial, Helvetica, sans-serif
   width: 150px;
   height: 150px;
 }
+
+.tagline {
+  color: rgba(145, 145, 145, 0.481);
+}
+
+.beer-card {
+  height: 200px;
+}
+
+.beer-list {
+  list-style: none;
+}
