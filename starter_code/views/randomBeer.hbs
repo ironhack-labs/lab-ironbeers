@@ -1,8 +1,14 @@
-<div class="card h-100" style="width: 18rem;">
-  <img src={{item.image_url}} class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">{{item.name}}</h5>
-    <h6 class="card-text tagline">{{item.tagline}}</h6>
-    <p class="card-text">{{item.description}}</p>
+<div class="container mx-auto pt-5">
+  <div class="row">
+    {{#each items as |item|}}
+      <div class="col ml-5">
+        <img src={{item.image_url}} class="card-img-top w-25" alt="...">
+      </div>
+      <div class="col">
+        <h5>{{item.name}}</h5>
+        <h6 class="tagline">{{item.tagline}}</h6>
+        <p>{{item.description}}</p>
+      </div>
+    {{/each}}  
   </div>
 </div>
