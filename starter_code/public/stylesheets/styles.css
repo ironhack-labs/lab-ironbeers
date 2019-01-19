@@ -5,4 +5,25 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+#nav-bar button {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #F7F9F9;
+  background-color: #2081C3;
+}
+
+#footer {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #F7F9F9;
+  background-color: #0A2C42;
+}
+
+#index-container {
+  background-color: rgba(145, 145, 145, 0.481);
+}
+
+/* #button {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #F7F9F9;
+  background-color: #2081C3;
+} */
