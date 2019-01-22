@@ -5,14 +5,48 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-#bg-dark-update {
 
-    background-color: #2081C3!important;
+.navbar-new-blue{
+    background-color: #2081C3;
 }
-
-.cards-container {
+.footer-layout{
+    background-color: #0A2C42;
+    color: #F7F9F9;
+}
+.index-container {
     display: flex;
     flex-wrap: wrap;
-    padding: 10% 20%;
+    padding: 5% 10%;
     justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.anchor-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tag-line-par{
+    color: rgba(145, 145, 145, 0.481);
+}
+.card{
+    border: none !important;
+    border-radius: none !important;
+}
+.card-img-update{
+    width: 40px;
+    height: 100px;
+    align-self: center;
+}
+
+.bold-tips{
+    font-weight: bold;
+}
+.random-card{
+    display: flex;
+    flex-flow: nowrap;
+}
+.random-img{
+    width: 70px;
+    height: 170px;
 }
