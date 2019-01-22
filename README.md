@@ -12,7 +12,6 @@ In this lab you will create a web app where the user will be able to see a list 
 - Fork this repo
 - Then clone this repo.
 
-
 ## Submission
 
 - Upon completion, run the following commands
