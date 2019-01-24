@@ -1,6 +1,11 @@
-{{!-- 'each' represents for/forEach loop available in hbs file --}}
-  {{#each beers}}
 
-      {{> beerCard this }}
+    <ul>
+    
+        <li><img src="{{ this.image_url }}" alt="beer" width="50"></li><br>
+        <li>{{ this.name }}</li><br>
+        <li>{{ this.description }}</li><br>
+        <li>{{ this.tagline }}</li>
+    
+    </ul>
 
-  {{/each}}
+  

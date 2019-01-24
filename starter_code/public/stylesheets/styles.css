@@ -6,24 +6,41 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
 
-#nav-bar button {
+ul li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  padding-right: 30px;
+}
+
+#nav-bar {
   font-family: Arial, Helvetica, sans-serif;
   color: #F7F9F9;
   background-color: #2081C3;
 }
 
-#footer {
+footer {
+  position: fixed;
+  bottom: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: #F7F9F9;
   background-color: #0A2C42;
+}
+
+.beer-cover-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #index-container {
   background-color: rgba(145, 145, 145, 0.481);
 }
 
-/* #button {
+button {
   font-family: Arial, Helvetica, sans-serif;
   color: #F7F9F9;
   background-color: #2081C3;
-} */
+}
