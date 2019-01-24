@@ -18,6 +18,8 @@
   "homepage": "https://github.com/nicolas-castro/lab-ironbeers#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "hbs": "^4.0.1"
+    "hbs": "^4.0.1",
+    "path": "^0.12.7",
+    "punkapi-javascript-wrapper": "^1.0.2"
   }
 }

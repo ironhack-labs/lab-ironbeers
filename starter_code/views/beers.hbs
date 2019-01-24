@@ -1,1 +1,9 @@
-<p>Beer Page!</p>
+
+{{#each beerData}} 
+  <ul>
+    <li><img src="{{ this.image_url }}" alt=""></li>
+    <h1>{{ this.name }} </h1> 
+    <h3>{{ this.tagline }}</h3>
+    <p>{{ this.description }}</p>
+  </ul>
+{{/each}}
