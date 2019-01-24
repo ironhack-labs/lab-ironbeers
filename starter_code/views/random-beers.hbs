@@ -1,0 +1,21 @@
+{{#with beer}}
+
+<img class="beer-image" src="{{image_url}}" alt="beer image">
+</div>
+
+<h4>{{name}}</h4>
+<h6>{{tagline}}</h6>
+<p>{{description}}</p>
+<h4><strong>Food Pairing</strong></h4>
+
+{{#each food_pairing}}
+<ul>
+  <li>{{this}}</li>
+</ul>
+{{/each}}
+
+{{!-- {{food_pairing}} --}}
+<p><strong>Brewers Tips:</strong> {{brewers_tips}}</p>
+
+
+{{/with}}

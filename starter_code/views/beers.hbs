@@ -1,0 +1,7 @@
+<div class="cards-container">
+  {{#each beers}}
+  {{!-- Need to pass partial + this ===> when looping through
+  array this represents each obhect in the array --}}
+    {{> beerPartial this}}
+  {{/each}}
+</div>
