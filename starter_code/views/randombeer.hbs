@@ -1,8 +1,34 @@
-{{ randomBeer.name}}
+<img src="{{ randomBeer.image_url }}" alt="..." class=" random-beer float-left">
 
-{{#each randomBeer.food_pairing}} 
-<ul>
-  <li>{{this}}</li>
-</ul>
+<div class="card w-50 random-beer-card">
+  <div class="card-body ">
+    <h2 class="card-title">{{ randomBeer.name }}</h2>
+    
+    <h5 class="tagline">{{ randomBeer.tagline }} </h5>
+    <p class="card-text">{{ randomBeer.description }} </p>
+    <h5><b>Food Pairing</b></h5>
+    <ul>
+      <li>{{ randomBeer.food_pairing/[0] }}</li>
+      <li>{{ randomBeer.food_pairing/[1] }}</li>
+      <li>{{ randomBeer.food_pairing/[2] }}</li>
+      {{#if randomBeer.food_pairing/[3]}}
+      <li>{{randomBeer.food_pairing/[3]}}</li>
+        {{else}}
+      {{/if}}
+    </ul>
+    <p class="card-text"><b>Brewer Tips:</b> {{ randomBeer.brewers_tips }} </p>
+      
+    <a href="/randombeer" class="btn btn-outline-secondary">Check out more beers !</a>
+  </div>
+</div>
 
-{{/each}}
+
+
+
+
+
+
+
+
+ 
+
