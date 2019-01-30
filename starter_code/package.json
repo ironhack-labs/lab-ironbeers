@@ -5,14 +5,23 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
+    "start-dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^2.6.1",
     "express": "^4.16.3",
+    "express-ejs-layouts": "^2.5.0",
     "hbs": "^4.0.1",
     "path": "^0.12.7",
     "punkapi-javascript-wrapper": "^1.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "nodemon": "^1.18.9"
   }
 }
