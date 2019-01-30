@@ -1,0 +1,14 @@
+
+      <img src="{{this.image_url}}" alt="Card image cap" height="200px">
+      <div class="flex-row">
+        <h5><b>{{this.name}}</b></h5>
+        <h6 class="mb-2 text-muted">{{this.tagline}}</h6>
+        <p>{{this.description}}</p>
+        <h5><b>Food Pairing</b></h5>
+        <ul>
+          {{#each food_pairing}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+        <h5><b>Brewers Tips</b>: {{this.brewers_tips}}</h5>
+      </div>
