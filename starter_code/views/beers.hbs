@@ -1,0 +1,10 @@
+<div class="beer-container d-flex justify-content-evenly flex-wrap">
+    {{#each beers}}
+    <div class="beer-card">
+        <img src="{{this.image_url}}">
+        <h2>{{this.name}}</h2>
+        <span class="beer-tagline">{{this.tagline}}</span>
+        <span class="beer-desc">{{this.description}}</span>
+    </div>
+    {{/each}}    
+</div>
