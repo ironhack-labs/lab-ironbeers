@@ -4,9 +4,23 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="stylesheets/styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <%= body %>
+    <header class="header">
+      <nav class="nav-bar">
+        <ul>
+          <li><a class="nav-bar-item" href="/">Home</a></li>
+          <li><a class="nav-bar-item" href="/beers">Beers</a></li>
+          <li><a class="nav-bar-item" href="/random-beers">Random Beer</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <%- body %>
+
+    <footer class="footer">
+      <h2>Develop by Ironhack ;)</h2>
+    </footer>
   </body>
 </html>

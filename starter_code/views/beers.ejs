@@ -1,1 +1,5 @@
-<h1>beers</h1>
+<div class="beer-list-container">
+  <% beers.forEach(function(beer){ %>
+  <%- include('partial', {beer: beer}); %>
+  <% }); %>
+</div>
