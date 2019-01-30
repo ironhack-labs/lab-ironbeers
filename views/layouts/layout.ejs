@@ -5,21 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>IronBeers</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/styles.css" />
   <script src="main.js"></script>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/beers">Beers</a></li>
-      <li><a href="/randomBeer">Random Beers</a></li>
+  <nav class="navbar">
+    <ul class="navbar-list">
+      <li class="navbar-item"><a class="navbar-link" href="/">Home</a></li>
+      <li class="navbar-item"><a class="navbar-link" href="/beers">Beers</a></li>
+      <li class="navbar-item"><a class="navbar-link" href="/randomBeer">Random Beers</a></li>
     </ul>
   </nav>
   
   <%- body %>
 
-  <footer>
+  <footer class="footer">
     <p>Developed by Miguel :)</p>
   </footer>
 </body>

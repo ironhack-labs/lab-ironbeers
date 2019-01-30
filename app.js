@@ -22,7 +22,7 @@ app.set('layout', 'layouts/layout');
 
 // Set Express to serve static files
 
-app.use(express.static('assets'));
+app.use(express.static('public'));
 
 // Set routes
 
@@ -31,11 +31,23 @@ app.get('/', (req, res, next) => {
 });
 
 app.get('/beers', (req, res, next) => {
-  res.render('beers');
+  punkAPI.getBeers()
+  .then(beers => {
+    res.render('beers', {beers});
+  })
+  .catch(error => {
+    console.log(error)
+  })
 });
 
 app.get('/randomBeer', (req, res, next) => {
-  res.render('randomBeer');
+  punkAPI.getRandom()
+  .then(beers => {
+    res.render('randomBeer');
+  })
+  .catch(error => {
+    console.log(error)
+  })
 });
 
 app.listen(port);

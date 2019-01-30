@@ -2,11 +2,102 @@
 white: #F7F9F9;
 light-blue: #2081C3;
 dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
+grey: ;
 */
+
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+
+ *,* :before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
 
 /* Typography */
 
 body {
-  font-family: Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Layout */
+
+body {
+  margin: 0;
+}
+
+/* Template */
+
+.navbar{
+  background-color: #2081C3; 
+  height: 3rem;
+}
+
+.navbar-list{
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+.navbar-link{
+  text-decoration: none;
+  color: #F7F9F9;
+}
+
+.footer{
+  background-color: #0A2C42; 
+}
+
+/* Index */
+
+.index-container{
+  background-color:rgba(145, 145, 145, 0.481);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image{width: 20rem;align-self: center;margin: 2rem;}
+
+.buttons-container{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.button{
+  border: none;
+  background-color: #2081C3;
+  color: #F7F9F9;
+  padding: 1rem;
+  max-width: 15rem;
+  text-align: center;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+/* Beers */
+
+.beers-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.information-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 33%;
+  margin:
+}
+
+.beer-image{
+  height: 25rem;
 }
