@@ -6,3 +6,54 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(145, 145, 145, 0.481);
+}
+
+header {
+  background-color: #2081C3;
+  width: 100%;
+  padding: 1rem;
+}
+
+.nav-bar-div ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.nav-bar-div ul li {
+  list-style: none;
+  margin-left: 2rem;
+}
+
+.nav-bar-div ul li a {
+  text-decoration: none;
+  color: #F7F9F9;
+}
+
+footer {
+  background-color: #0A2C42;
+  width: 100%;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-message span{
+  color: #F7F9F9;
+}
