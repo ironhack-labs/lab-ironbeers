@@ -5,4 +5,38 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+body, html{
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav {
+  background-color: #2081C3;
+  padding: 20px;
+}
+
+#nav a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+}
+
+
+footer{
+  background-color: #0A2C42;
+  color: white;
+  height: 70px;
+}
+
+footer > p{
+  padding: 20px;
+}
+
+#bigBeer{
+  height: 400px;
+}
+
+img{
+  height: 200px;
+}
