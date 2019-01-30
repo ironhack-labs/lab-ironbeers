@@ -1,8 +1,39 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
-  
+:root {
+    --lightBlue-color:#2081C3; 
+    --darkBlue-color:#0A2C42;
+    --white-color:#F7F9F9;
+    --grey-color:rgba(145, 145, 145, 0.481);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+nav {
+    background-color: var(--lightBlue-color);
+    padding: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+footer {
+    position: fixed;
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    bottom: 0;
+    background-color:var(--darkBlue-color);
+    color: var(--white-color);
+}
