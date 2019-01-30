@@ -1,0 +1,44 @@
+.img-index {
+    margin-top: 4% !important;
+    width: 200px !important;
+    height: 150px !important;
+    margin: 0 auto;
+}
+
+.img-beer {
+    width: 30% !important;
+    margin: 0 auto;
+}
+
+.index-container {
+    text-align: center;
+}
+
+button {
+    margin: 1% !important;
+}
+
+.card-text {
+   font-size: 15px; 
+}
+
+a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+footer {
+    color: white;
+    background-color: blue;
+    width: 100%;
+    position: fixed;
+    bottom: 0; 
+    height: 30px;
+    padding-top: 5px;
+    z-index: 1;
+}
+
+footer div {
+    padding-left: 10px;
+}
+
