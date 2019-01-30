@@ -1,0 +1,12 @@
+<div class="information-container">
+    <img class="beer-image" src= <%= encodeURI(beers[0].image_url) %> alt=<%= beers[0].name %> >
+    <h2 class="name"><%= beers[0].name %></h2>
+    <p class="description"><%= beers[0].description %></p>
+    <h3 class="subheader"><%= beers[0].tagline %></h3>
+    <ul>
+        <% beers[0].food_pairing.forEach(function(pairing){ %>
+          <li><%= pairing %></li>
+        <% }); %>
+    </ul>
+    <p>Brewer tips: <%= beers[0].brewers_tips %></p>
+  </div>
