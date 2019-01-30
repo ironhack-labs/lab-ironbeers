@@ -32,6 +32,7 @@ nav a:hover {
 }
 
 footer {
+    margin-top: 115px;
     background-color: #0A2C42;
     color: #F7F9F9;
     padding: 10px;
@@ -56,5 +57,27 @@ footer {
     padding: 10px;
     border-radius: 5px;
     margin: 20px auto;
+
+}
+
+.beers-container{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(145, 145, 145, 0.481);
+}
+
+.beer-container {
+    display: flex;
+    width: 33.3333%;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.beer-container img {
+    height: 300px;
+    object-fit: contain;
 
 }

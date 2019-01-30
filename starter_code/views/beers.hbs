@@ -1,1 +1,5 @@
-<h1>Soy Beers</h1>
+<div class="beers-container">
+{{#each beers}}
+    {{> beerPartial this}}
+{{/each}}
+</div>
