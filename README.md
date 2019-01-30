@@ -81,7 +81,7 @@ Now, you should create a `partials` folder inside the `views`, and `beerPartial.
 
 ![image](https://user-images.githubusercontent.com/23629340/36724284-08872254-1bb3-11e8-9ff6-9b34346421ec.png)
 
-After creating the partial, and loop over the array of beers, on our `/bears` route, we should have the following:
+After creating the partial, and loop over the array of beers, on our `/beers` route, we should have the following:
 
 ![image](https://user-images.githubusercontent.com/23629340/36724392-61fa7336-1bb3-11e8-8468-189908167e10.png)
 
