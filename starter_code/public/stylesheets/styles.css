@@ -17,7 +17,8 @@ body, html{
   height: 10vh;
 }
 
-#indexCont{
+#indexContainer{
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +27,6 @@ body, html{
 }
 
 #bodySection{
-  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,4 +58,9 @@ footer > p{
 
 img{
   height: 200px;
+}
+
+
+#randomContainer{
+  height: 80vh;
 }
