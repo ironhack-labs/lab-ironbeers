@@ -1,12 +1,18 @@
-<div class="information-container">
-    <img class="beer-image" src= <%= encodeURI(beers[0].image_url) %> alt=<%= beers[0].name %> >
-    <h2 class="name"><%= beers[0].name %></h2>
-    <p class="description"><%= beers[0].description %></p>
-    <h3 class="subheader"><%= beers[0].tagline %></h3>
-    <ul>
-        <% beers[0].food_pairing.forEach(function(pairing){ %>
-          <li><%= pairing %></li>
-        <% }); %>
-    </ul>
-    <p>Brewer tips: <%= beers[0].brewers_tips %></p>
+<div class="random-container">
+  <div class="random-image-container">
+    <img class="random-beer-image" src= <%= encodeURI(beers[0].image_url) %> alt=<%= beers[0].name %> >
+  </div>
+    <div class="text-container">
+      <h2 class="name"><%= beers[0].name %></h2>
+      <p class="description"><%= beers[0].description %></p>
+      <div class="indentation">
+        <p class="static-text">Food Pairing</p>
+        <ul class="pairing-list">
+            <% beers[0].food_pairing.forEach(function(pairing){ %>
+              <li class="pairing-item"><%= pairing %></li>
+            <% }); %>
+        </ul>
+      </div>
+      <p class="description"><span class="static-text">Brewer tips: </span> <%= beers[0].brewers_tips %></p>
+    </div>
   </div>

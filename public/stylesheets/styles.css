@@ -18,6 +18,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background-color: rgba(145, 145, 145, 0.1);
 }
 
 /* Typography */
@@ -36,22 +37,39 @@ body {
 
 .navbar{
   background-color: #2081C3; 
-  height: 3rem;
+  height: 4rem;
 }
 
 .navbar-list{
   display: flex;
   justify-content: flex-start;
   list-style: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin-right: 0;
+  margin-top: 0;
+}
+
+.navbar-list:first-child{
+  margin-left: 3rem;
 }
 
 .navbar-link{
   text-decoration: none;
   color: #F7F9F9;
+  margin-right: 2rem;
 }
 
 .footer{
   background-color: #0A2C42; 
+  height: 4rem;
+  color: #F7F9F9;
+}
+
+.footer-text{
+  padding: 1.5rem;
+  font-size: 1rem;  
+  margin: 0;
 }
 
 /* Index */
@@ -63,12 +81,17 @@ body {
   justify-content: center;
 }
 
-.image{width: 20rem;align-self: center;margin: 2rem;}
+.index-image{
+  width: 25rem;
+  align-self: center;
+  margin: 2rem;}
 
 .buttons-container{
   display: flex;
   flex-direction: column;
   align-self: center;
+  padding-bottom: 5rem;
+  padding-top: 2rem;
 }
 
 .button{
@@ -76,10 +99,12 @@ body {
   background-color: #2081C3;
   color: #F7F9F9;
   padding: 1rem;
-  max-width: 15rem;
+  max-width: 20rem;
   text-align: center;
   margin-top: 1rem;
   border-radius: 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
 }
 
 /* Beers */
@@ -88,16 +113,66 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 5rem 10rem;
 }
 
 .information-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 33%;
-  margin:
+  width: 31%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.image-container{
+  height: 15rem;
 }
 
 .beer-image{
-  height: 25rem;
+  display: block;
+  width: auto;
+  margin: auto auto;
+  align-self: center;
+  height: 100%;
+}
+
+/* Random Beers */
+
+.random-container{
+  display: flex;
+  flex-direction: row;
+  margin: 5rem 10rem 20rem 10rem;
+}
+
+.random-image-container{
+  width: 10%;
+}
+
+.random-beer-image{
+  height: 20rem;
+  width: 5rem;
+}
+
+.text-container{
+  padding-left: 1rem;
+  width: 60%;
+}
+
+.pairing-item{
+  margin: 2rem 0;
+  font-size: 1.2rem;
+}
+
+.indentation{
+  margin-left: 2rem;
+}
+
+.name{
+  font-size: 1.5rem;
+}
+.description{
+  font-size: 1.2rem;
+}
+
+.static-text{
+  font-weight: bold;
+  font-size: 1.3rem;
 }
