@@ -62,3 +62,24 @@ button {
   height: 10%;
   width: auto;
 }
+
+h3 {
+  color: rgba(145, 145, 145, 0.481);
+}
+
+.random-beer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.random-img {
+  height: auto;
+  width: auto;
+}
+
+.img-flex {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 20%;
+}
