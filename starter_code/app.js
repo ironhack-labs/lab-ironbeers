@@ -2,7 +2,6 @@
 const express = require('express');
 const path    = require('path');
 const expressLayouts = require('express-ejs-layouts');
-const ejs = require('ejs');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 const punkAPI = new PunkAPIWrapper();
 const app     = express();
