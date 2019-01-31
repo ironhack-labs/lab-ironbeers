@@ -1,7 +1,6 @@
 {
   "name": "starter_code",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -11,8 +10,12 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
+    "global": "^4.3.2",
     "hbs": "^4.0.1",
+    "nodemon": "^1.18.9",
     "path": "^0.12.7",
     "punkapi-javascript-wrapper": "^1.0.2"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
