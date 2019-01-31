@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+	<link rel="stylesheet" href="/stylesheets/styles.css">
+	<title>Iron Beers</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-sm navbar-dark bg-primary text-white">
+		<a class="navbar-brand" href="/">🍺</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03"
+		 aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarsExample03">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="/">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/beers">Beers</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/random-beer">Random Beers</a>
+				</li>
+
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			{{{ body }}}
+		</div>
+	</div>
+
+	<footer class="bg-dark py-2 fixed-bottom">
+		<div class="container-fluid">
+			<span class="text-muted"><small>Crafted with ❤️ love at
+					<a href="https://www.ironhack.com/enp/"> Ironhack</a>.</small>
+			</span>
+		</div>
+	</footer>
+</body>
+
+</html>

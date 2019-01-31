@@ -1,0 +1,23 @@
+<div class="jumbotron">
+
+	{{#each beers}}
+	<div class="row">
+		<div class="col-md-2 bg-white rounded d-flex flex-wrap align-items-center">
+			<img class="mx-auto d-block" src="{{this.image_url}}" alt="{{this.name}}" height="250px">
+		</div>
+
+		<div class="col-md-6">
+			<h5 class="card-title">{{this.name}}</h5>
+			<p class="card-text"><small class="text-muted">{{this.tagline}}</small></p>
+			<p class="card-text">{{this.description}}</p>
+			<h5>Food pairings :</h5>
+			<ul>
+				{{#each this.food_pairing}}
+				<li> {{this}}</li>
+				{{/each}}
+			</ul>
+			<p><b>Brewer tips</b> : {{this.brewers_tips}} </p>
+			{{/each}}
+		</div>
+	</div>
+</div>
