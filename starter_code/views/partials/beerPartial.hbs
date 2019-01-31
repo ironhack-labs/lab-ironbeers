@@ -1,0 +1,23 @@
+<section>
+  <h2>All of the Beers</h2>
+  <div class="flex-beers">
+
+    {{#each beersList}}
+    <div class="one-beer">
+      <ul class="beers-list">
+        <li class="image-center"><img class="item-image" src="{{this.image_url}}" alt="" /></li>
+        <li>
+          <h3>{{this.name}}</h3>
+        </li>
+        <li>
+          <h4>{{this.tagline}}</h4>
+        </li>
+        <li>
+          <p>{{this.description}}</p>
+        </li>
+      </ul>
+    </div>
+    {{/each}}
+  </div>
+
+</section>

@@ -1,0 +1,30 @@
+<h2>Random Beers</h2>
+
+
+
+{{#each beersList}}
+<div class="flex-random">
+  <div class="image-random"><img class="item-image" src="{{this.image_url}}" alt="" /></div>
+
+  <ul class="beers-list">
+    <li>
+      <h3>{{this.name}}</h3>
+    </li>
+    <li>
+      <h4>{{this.tagline}}</h4>
+    </li>
+    <li>
+      <h5>Description</h5>
+      <p>{{this.description}}</p>
+    </li>
+    <li>
+      <h5>Food Pairing</h5>
+      <p>{{this.food_pairing}}</p>
+    </li>
+    <li>
+      <h5>Brewer Tips</h5>
+      <p>{{this.brewers_tips}}</p>
+    </li>
+  </ul>
+</div>
+{{/each}}
