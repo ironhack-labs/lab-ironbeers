@@ -23,6 +23,9 @@ footer {
   height: 50px;
   line-height: 50px;
   padding-left: 10px;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }
 
 img{
