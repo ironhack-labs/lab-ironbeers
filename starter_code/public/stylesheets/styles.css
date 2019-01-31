@@ -1,8 +1,60 @@
 /*
+
 white: #F7F9F9;
 light-blue: #2081C3;
 dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+html {
+  height: 100vh;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  height: 100%;
+}
+
+header {
+  background-color: #2081c3;
+  width: 100%;
+}
+
+.content {
+  background-color: rgba(145, 145, 145, 0.481);
+  height: 100%;
+}
+
+.index-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.beerMug {
+  height: 350px;
+  width: 300px;
+  object-fit: contain;
+}
+
+footer {
+  background-color: #0a2c42;
+  color: #f7f9f9;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: #f7f9f9;
+}
+
+button {
+  background-color: #2081c3;
+  color: #f7f9f9;
+  margin: 5px;
+  border-radius: 10%;
+}

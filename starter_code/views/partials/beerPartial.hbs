@@ -1,0 +1,15 @@
+{{!-- <h2>Beers</h2>
+
+<ul> --}}
+
+  {{!-- {{#each beers}} --}}
+  <!-- "this" in HBS ONLY works inside an #each -->
+  <li>
+    <img src="{{this.image_url}}" />
+    <h3>{{this.name}}</h3>
+    <h4>{{this.tagline}}</h4>
+    <p>{{this.description}}</p>
+  </li>
+  {{!-- {{/each}} --}}
+  {{!--
+</ul> --}}
