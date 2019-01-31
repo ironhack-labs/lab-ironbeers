@@ -115,6 +115,7 @@ footer {
   width: 30%;
   margin-right: 2rem;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .partial-img-wrap {
@@ -139,6 +140,7 @@ footer {
   margin-block-start: 0;
 }
 
-.beer-partial-container span {
-
+.random-beer-partial-container {
+  display: flex;
+  flex-direction: row;
 }

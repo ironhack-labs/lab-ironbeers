@@ -1,0 +1,16 @@
+<div class="random-beer-partial-container">
+  <div class="random-beer-img-wrap">
+    <img src="<%= beer[0].image_url %>" alt="beer bottle">
+  </div>
+  <div class="random-beer-text-wrap">
+    <h1><%= beer[0].name %></h1>
+    <h2><%= beer[0].tagline %></h2>
+    <span><%= beer[0].description %></span>
+    <ul>
+      <li><%= beer[0].food_pairing[0] %></li>
+      <li><%= beer[0].food_pairing[1] %></li>
+      <li><%= beer[0].food_pairing[2] %></li>
+    </ul>
+    <span><%= beer[0].brewers_tips %></span>
+  </div>
+</div>
