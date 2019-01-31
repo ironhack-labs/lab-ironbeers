@@ -5,4 +5,92 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+body,
+html {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+	background-color: #2081c3;
+	padding: 20px;
+}
+a {
+	text-decoration: none;
+	color: white;
+	margin-left: 20px;
+}
+section {
+}
+
+.containerAllBeers {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.containerAllBeers > div {
+	width: 350px;
+	margin: 50px;
+}
+
+img {
+	height: 140px;
+	margin: auto;
+	display: block;
+}
+
+.titleBeer {
+	margin-top: 40px;
+}
+
+.eslogan {
+	color: rgba(145, 145, 145, 0.481);
+}
+
+.eachBeer {
+	width: 200px;
+}
+
+.description {
+	width: 350px;
+}
+
+.randomBeer {
+	height: 180px;
+	margin: left;
+}
+
+footer {
+	padding: 20px;
+	background-color: #0a2c42;
+	color: white;
+	margin-top: 50px;
+}
+button {
+	background-color: #2081c3;
+	color: white;
+	height: 40px;
+	width: 160px;
+	border-radius: 5px;
+	display: block;
+	margin: 20px auto;
+}
+
+.bigBeer {
+	width: 272px;
+	height: 300px;
+	display: block;
+	margin: auto;
+	margin: 80px auto;
+}
+
+.onlyImgRandom {
+	margin: 40px;
+}
+
+.containerAll {
+	display: flex;
+	justify-content: flex-start;
+}
