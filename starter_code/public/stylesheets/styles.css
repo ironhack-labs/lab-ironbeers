@@ -83,16 +83,6 @@ footer {
   padding: 0 40% 0 40%;
 }
 
-@media (max-width: 600px) {
-  .buttons-container {
-    padding: 0 5% 0 5%;
-  }
-
-  .img-container img {
-    height: 40vh;
-  }
-}
-
 .buttons-container a {
   padding: 1rem;
   text-decoration: none;
@@ -143,4 +133,22 @@ footer {
 .random-beer-partial-container {
   display: flex;
   flex-direction: row;
+}
+
+@media (max-width: 600px) {
+  .buttons-container {
+    padding: 0 5% 0 5%;
+  }
+
+  .img-container img {
+    height: 40vh;
+  }
+
+  .big-beer-container {
+    padding: 2rem;
+  }
+
+  .beer-partial-container {
+    width: 100%;
+  }
 }
