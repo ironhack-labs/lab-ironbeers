@@ -7,9 +7,9 @@
     <h2><%= beer[0].tagline %></h2>
     <span><%= beer[0].description %></span>
     <ul>
-      <li><%= beer[0].food_pairing[0] %></li>
-      <li><%= beer[0].food_pairing[1] %></li>
-      <li><%= beer[0].food_pairing[2] %></li>
+      <% beer[0].food_pairing.forEach((pairing) => { %>
+          <li><%= pairing %></li>   
+      <% }); %>
     </ul>
     <span><%= beer[0].brewers_tips %></span>
   </div>
