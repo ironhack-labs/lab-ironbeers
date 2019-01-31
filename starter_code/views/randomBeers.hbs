@@ -3,11 +3,11 @@
     <img src=" {{randomBeer.0.image_url}}" class="random-img">
   </div>
 
-  <div>
+  <div class="text-part">
     <h2>{{randomBeer.0.name}}</h2>
     <h3>{{randomBeer.0.tagline}}</h3>
     <p> {{randomBeer.0.description}}</p>
-    <p> Food Pairing
+    <p> <b>Food Pairing</b>
       <ul>
         {{#each randomBeer.0.food_pairing}}
         <li>
@@ -17,7 +17,7 @@
       </ul>
 
     </p>
-    <p>Brewers Tips: {{randomBeer.0.brewers_tips}}</p>
+    <p> <b>Brewers Tips:</b> {{randomBeer.0.brewers_tips}}</p>
 
   </div>
 </div>
