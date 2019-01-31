@@ -20,7 +20,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgba(145, 145, 145, 0.481);
+  background-color: #F7F9F9;
 }
 
 header {
@@ -117,6 +117,28 @@ footer {
   margin-top: 2rem;
 }
 
-.beer-partial-container img {
-  width: 25%;
+.partial-img-wrap {
+  height: 180px;
+}
+
+.partial-img-wrap img {
+  display: block;
+  margin: auto auto;
+  width: auto;
+  height: 100%;
+}
+
+.beer-partial-container h1 {
+  font-size: 1.2rem;
+  margin-block-end: 0;
+}
+
+.beer-partial-container h2 {
+  color: rgba(145, 145, 145, 0.481);
+  font-size: 1rem;
+  margin-block-start: 0;
+}
+
+.beer-partial-container span {
+
 }
