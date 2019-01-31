@@ -1,5 +1,6 @@
 
-
-<% beers.forEach(function(beer){ %>
-  <%= beer.name %>
-<% })%>
+<div class="beer-container"> 
+  <% beers.forEach(function(beer){ %>
+    <%- include('partials/list', {beer}); %>
+  <% })%>
+</div>

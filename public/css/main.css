@@ -35,12 +35,12 @@ body{
 
 
 
-.footer{
+footer{
+  bottom: 0;
+  width: 100%;
   color: #F7F9F9;
   background-color: #0A2C42 ;
-  display: flex;
   padding: 1rem 2rem;
-  justify-content: baseline;
 }
 
 .index-container{
@@ -61,4 +61,22 @@ body{
   text-decoration: none;
   border-radius: 1rem;
   margin: 1rem 0;
+}
+
+.beer-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.beer{
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  width: 25%;
+}
+
+.beer-img{
+  max-width: 5rem;
+  
 }
