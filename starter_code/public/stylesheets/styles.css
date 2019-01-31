@@ -5,4 +5,60 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  background-color: #0a2c42;
+  color: #f7f9f9;
+}
+
+nav {
+  background-color: #2081c3;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.index-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+}
+
+button {
+  background-color: #2081c3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 9px;
+  margin: 10px;
+}
+
+.big-beer {
+  height: 60%;
+  width: 20%;
+  display: block;
+  margin: 10px;
+}
+
+.one-beer {
+  width: 30%;
+  /* height: 40%; */
+}
+
+.beer-collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  flex-direction: row;
+}
+
+.bottle-img {
+  height: 10%;
+  width: auto;
+}
