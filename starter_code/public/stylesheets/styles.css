@@ -14,9 +14,17 @@ footer {
   background-color: #0a2c42;
   color: #f7f9f9;
   height: 40px;
+  display: flex;
+  align-items: center;
+}
+.footer-text {
+  margin-left: 50px;
 }
 
 nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   background-color: #2081c3;
   margin-bottom: 10px;
   height: 40px;
@@ -25,6 +33,7 @@ nav {
 .nav-link {
   text-decoration: none;
   color: white;
+  margin-left: 40px;
 }
 
 .index-container {
@@ -52,24 +61,28 @@ button {
 
 .beer-collection {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-around;
-  width: 80%;
-  flex-direction: row;
+  margin: 50px 50px;
 }
 
 .one-beer {
   width: 30%;
-  height: 300px;
+  height: 500px;
 }
 
 .bottle-img {
-  height: 10%;
+  height: 30%;
   width: auto;
+  display: block;
+  margin: auto;
 }
 
 h3 {
   color: rgba(145, 145, 145, 0.481);
+  margin-top: -15px;
+  font-weight: normal;
+  font-size: 15px;
 }
 
 .random-beer {
