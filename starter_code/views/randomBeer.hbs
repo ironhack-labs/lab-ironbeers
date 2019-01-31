@@ -1,0 +1,17 @@
+<div class="media">
+  <img class="align-self-center ml-5 mr-5" src="{{image_url}}" alt="{{name}}">
+  <div class="media-body align-self-center">
+    <h3>{{name}}</h3>
+    <h6>{{tagline}}</h6>
+    <p>{{description}}</p>
+    <p>
+      <span>Food Pairing:</span><br />
+      <ul>
+        {{#each food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </p>
+    <p><span>Brewer Tips:</span><br />{{brewers_tips}}</p>
+  </div>
+</div>
