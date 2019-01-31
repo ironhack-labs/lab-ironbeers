@@ -1,0 +1,15 @@
+<div class="rd-container">
+  <img class="beer-img" src=<%= beers[0].image_url %> alt="beer-image">
+  <div class="rd-beer">
+    <h2><%= beers[0].name %></h2>
+    <p class="tagline"><%= beers[0].tagline %></p>
+    <p><%= beers[0].description %></p>
+    <p>Food pairing</p>
+    <ul>
+        <% beers[0].food_pairing.forEach( (food) => { %>
+          <li><%= food %></li>
+        <% }); %>
+    </ul>
+    <p><span>Brewers Tips: </span><%= beers[0].brewers_tips %></p>
+  </div>
+</div>
