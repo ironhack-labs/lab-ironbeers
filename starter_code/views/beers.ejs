@@ -1,3 +1,5 @@
-<% beers.forEach((beer) => { %>
-  <%- include('partials/beerPartial', {beer: beer}); %>
-<% }); %>
+<div class="big-beer-container">
+    <% beers.forEach((beer) => { %>
+      <%- include('partials/beerPartial', {beer}); %>
+    <% }); %>    
+</div>
