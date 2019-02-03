@@ -9,7 +9,7 @@ const expressLayouts = require('express-ejs-layouts');
 const punkAPI = new PunkAPIWrapper();
 
 app.set('view engine', 'ejs');
-app.set('views', `${__dirname }/views`);
+app.set('views', `${__dirname}/views`);
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(expressLayouts);
 app.set('layout', 'layouts/layout');
@@ -31,7 +31,13 @@ app.get('/beers', (req, res, next) => {
 });
 
 app.get('/random-beers', (req, res, next) => {
-  res.render('random-beers');
+  punkAPI.getRandom()
+    .then((beer) => {
+      res.render('random-beers', { beer: beer[0] });
+    })
+    .catch((error) => {
+      console.log(error);
+    });
 });
 
 
