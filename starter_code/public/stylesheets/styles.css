@@ -5,4 +5,88 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+nav{
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3%;
+}
+nav >a{
+    text-decoration: none;
+    color:white;
+    padding: 0 2%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: -webkit-fill-available;
+}
+footer{
+    background-color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer >h3{
+    color:white;
+    padding:0 2%;
+}
+.index-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.index-container >button{
+    margin: 2%;
+    padding: 2%;
+    background-color: lightblue;
+    border-radius: 10px;
+}
+.index-container >button>a{
+    text-decoration: none;
+    color:white;
+}
+.beers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+.beer{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 5% 1%;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.beer >img{
+    display: flex;
+    align-self: center;
+}
+.beer >p{
+    display: flex;
+    align-self: center;
+}
+.beer >h3{
+    display: flex;
+    align-self: center;
+}
+.random{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 50%;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.random >img{
+    margin: 0 auto;
+}
+.random >p{
+    margin: 0 auto;
+    padding: 1% 0;
+}
+.random >h3{
+    margin: 0 auto;
+    padding: 1% 0;
+}
