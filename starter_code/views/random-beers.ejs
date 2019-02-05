@@ -1,23 +1,6 @@
-<!-- <div class="beer">
-    <img class="beer-images" src= <%= beer.image_url %>>
-    <div class="beer-name" > <%= beer.name %> </div> 
-    <div class="beer-tagline" > <%= beer.tagline %> </div> 
-    <div> <%= beer.description %> </div> 
-  </div>  -->
-
 <div class="beer">
-  <img class="beer-images" src= <%= beers[number].image_url %>>
-  <div class="beer-name" > <%= beers[number].name %> </div> 
-  <div class="beer-tagline" > <%= beers[number].tagline %> </div> 
-  <div> <%= beers[number].description %> </div> 
-</div> 
-  <!-- <div class = "beers">
-      <% beers.forEach((beer) => { %>
-        <div class="beer">
-            <img class="beer-images" src= <%= beer.image_url %>>
-            <div class="beer-name" > <%= beer.name %> </div> 
-            <div class="beer-tagline" > <%= beer.tagline %> </div> 
-            <div> <%= beer.description %> </div> 
-          </div> 
-      <% }) %>
-  </div> -->
+    <img class="beer-images" src= <%= beer[0].image_url %>>
+    <div class="beer-name" > <%= beer[0].name %> </div> 
+    <div class="beer-tagline" > <%= beer[0].tagline %> </div> 
+    <div> <%= beer[0].description %> </div> 
+  </div> 

@@ -42,18 +42,14 @@ app.get('/beers', (req, res, next) => {
 
 app.get('/random-beers', (req, res, next) => {
   punkAPI.getRandom()
-  .then(beers => {
-    let number = Math.floor(Math.random()*beers.length);
-    let beer = beers[number];
+  .then(beer => {
     console.log(beer)
-    res.render('random-beers', { beer }, { beer } );
+    res.render('random-beers', { beer });
   })
   .catch(error => {
     console.log(error)
   })
 });
-
-Math.fl
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
