@@ -1,0 +1,16 @@
+<div class ="card">
+    <img src= {{image_url}} >
+    <div class="beer-info">
+        <h3>{{name}}</h3>
+        <h5>{{tagline}}</h5>
+        <p>{{description}}</p>
+        <h4>Food pairing</h4>
+        <ul>
+            {{#each food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <h4>Brewers tips</h4>
+        <p>{{brewers_tips}}</p>
+    </div>
+</div>
