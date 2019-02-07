@@ -5,4 +5,119 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100vw;
+}
+nav {
+  background-color: #2081c3;
+  height: 30px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+}
+nav a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 60%;
+  margin-left: 15px;
+}
+.index-container {
+  display: flex;
+  flex-direction: row;
+}
+.index-container img {
+  position: fixed;
+  height: 200px;
+  width: 160px;
+  /* position: absolute;
+  left: 300px;
+  top: 80px; */
+  flex-basis: auto;
+  order: 1;
+  margin-left: 250px;
+  padding-top: 10px;
+}
+
+.thebuttons {
+  display: flex;
+  flex-direction: row;
+  /* text-align: center; */
+  padding-left: 240px;
+  order: 2;
+  padding-top: 240px;
+  /* line-height: 120%; */
+}
+
+.button {
+  font-size: 60%;
+  display: block;
+  width: 50px;
+  height: 12px;
+  background: #2081c3;
+  padding: 10px;
+  text-align: center;
+  border-radius: 2.5px;
+  color: white;
+
+  text-decoration: none;
+}
+
+.beer-layout {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* align-items: stretch; */
+  min-height: 100%;
+  width: 100%;
+  transform: scale(0.9);
+  height: 100vh;
+}
+/* .card-layout { */
+/* position: absolute; */
+/* display: flex;
+  flex-direction: column; */
+
+/* width: 100px;
+  height: 100%;
+} */
+.card {
+  transform: scale(0.5);
+  width: 300px;
+  height: 600px;
+  text-align: justify;
+  margin: auto;
+
+  /* height: 400px; */
+  /* flex-direction: row; */
+  /* flex-wrap: wrap;
+  align-content: stretch; */
+  /* text-align: center; */
+}
+
+/*
+.card {
+  max-height: 200px;
+  width: 200px;
+  flex-direction: row;
+  align-content: flex-start;
+  transform: scale(0.5);
+}
+.card img {
+  transform: scale(0.5);
+}
+.card-layout {
+  display: flex;
+  height: 250px;
+  width: 200px;
+  justify-content: center;
+}
+*/
