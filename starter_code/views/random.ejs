@@ -1,0 +1,17 @@
+<div class="random-beer">
+  <img src= <%= beer[0].image_url %>>
+  <div class="random-beer-info">
+    <h2 class='partial-beer-name'><%= beer[0].name %></h2>
+    <h3 class='.partial-beer-tag'><%= beer[0].tagline %></h3>
+    <p><%= beer[0].description %></p>
+    <div>
+      <h3>Food Pairing</h3>
+      <ul>
+        <% beer[0].food_pairing.forEach((food) => { %>
+        <li><%= food%></li>
+        <% }); %>
+      </ul>
+    </div>
+    <p><% beer[0].brewers_tips %></p>
+  </div>
+</div>
