@@ -13,7 +13,9 @@ font-family: Arial, Helvetica, sans-serif */
     margin: 0;
     padding: 0;
     height: 70px;
-    
+    padding-top: 20px;
+    position: fixed;
+    width: 100%;
   }
 
 .navbar a {
@@ -21,6 +23,7 @@ font-family: Arial, Helvetica, sans-serif */
     text-decoration-line: none;
     padding-right: 10px;
     margin-left: 20px;
+    
 }
 
 .navbar ul {
@@ -35,9 +38,16 @@ footer {
     margin: 0;
     padding: 0;
     height: 50px;
+    padding-top: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 footer a {
     margin-left: 30px;
+}
 
+body{
+    margin: 0;
 }
