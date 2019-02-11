@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "nodemonOptions": {
+    "exec": "app.js",
+    "watch": "./",
+    "ext": [".hbs", ".js"]
+  },
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
