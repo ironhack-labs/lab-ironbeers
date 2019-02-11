@@ -5,4 +5,86 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+  *{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .navbar{
+    background-color: #2081C3;
+  }
+.nav-item{
+  color: white;
+}
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background-color: #0A2C42;
+  height: 40px;
+}
+.footer p{
+  margin-left: 20px;
+  line-height: 40px;
+}
+
+.img-div{
+  height: 30%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.beer-img{
+  max-height: 100%;
+  max-width: auto;
+}
+
+
+.btn-primary{
+  background-color: #2081C3;
+}
+.button-div{
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.card{
+  height: 50%;
+  width: 33%;
+}
+.card-img-div{
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.card-img-div img{
+  height: 100%;
+  width: auto;
+}
+
+.card{
+  float: left;
+  border: 0;
+}
+
+.card-body p{
+  font-size: 10px;
+}
+.card-body h3{
+  font-size: 18px;
+  font-weight: bold;
+}
+.card-body h6{
+  color: rgba(145, 145, 145, 0.481);
+}
+.cards-container{
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
