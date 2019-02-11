@@ -1,0 +1,23 @@
+{{!-- <div class="cards-container">
+<div class="card">
+      <div class="card-img-div">
+        <img src="{{beer.image_url}}" alt="Card image cap">
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">{{this.name}}</h3>
+        <h6> {{beer.tagline}} </h6>
+        <p class="card-text">{{beer.description}}</p>
+      </div>
+</div>
+</div> --}}
+
+<div class="rand-img">
+  <img src="{{beer.image_url}}">
+</div>
+<div class="info-div">
+  <h3>{{beer.name}}</h3>
+  <h6>{{beer.tagline}}</h6>
+  <p>{{beer.description}}</p>
+  <p>{{beer.food_pairing}}</p>
+  <p>{{beer/brewers_tips}}</p>
+</div>
