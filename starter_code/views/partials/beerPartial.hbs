@@ -1,4 +1,17 @@
-<div class="col-md-3">
+{{!-- <div class="col-md-3">
   <img src="{{this.image_url}}" class="beer-image">
   <h5>{{this.name}}</h5>
+</div> --}}
+
+<div class="cards-container">
+  <div class="card">
+    <div class="card-img-div">
+      <img src="{{this.image_url}}" alt="Card image cap">
+    </div>
+    <div class="card-body">
+      <h3 class="card-title">{{this.name}}</h3>
+      <h6> {{this.tagline}} </h6>
+      <p class="card-text">{{this.description}}</p>
+    </div>
+  </div>
 </div>
