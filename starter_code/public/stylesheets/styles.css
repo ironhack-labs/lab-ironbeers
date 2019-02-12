@@ -21,11 +21,11 @@ nav {
 
 nav ul {
   list-style-type: none;
-  word-spacing: 1.5rem;
 }
 
 nav ul li {
   display: inline-block;
+  margin: 10px;
 }
 
 footer {
@@ -137,4 +137,10 @@ footer span {
 .random-beer-card h4 {
   margin-top: 10px;
   font-size: 0.8rem;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
