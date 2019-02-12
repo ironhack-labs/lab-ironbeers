@@ -12,16 +12,17 @@ font-family: Arial, Helvetica, sans-serif */
     list-style-type: none;
     margin: 0;
     padding: 0;
-    height: 70px;
-    padding-top: 20px;
+    height: 50px;
+    padding-top: 10px;
     position: fixed;
     width: 100%;
+    box-shadow: 0px 3px 5px grey;
   }
 
 .navbar a {
     color: white;
     text-decoration-line: none;
-    padding-right: 10px;
+    padding-right: 5px;
     margin-left: 20px;
     
 }
@@ -50,4 +51,37 @@ footer a {
 
 body{
     margin: 0;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    margin-left: 500px;
+    margin-top: 100px;
+}
+
+.button1 {
+    width: 130px;
+    height: 40px;
+    color: white;
+    background-color: #2081C3;
+    border-radius: 5px;
+    font-size: 10pt;
+    position: absolute;
+    top: 62%;
+    right: 46%;
+    box-shadow: 0px 1px 3px grey;
+}
+
+.button2 {
+    width: 170px;
+    height: 40px;
+    color: white;
+    background-color: #2081C3;
+    border-radius: 5px;
+    font-size: 10pt;
+    position: absolute;
+    top: 70%;
+    right: 44.5%;
+    box-shadow: 0px 1px 3px grey;
 }
