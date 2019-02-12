@@ -1,6 +1,12 @@
-<div style="width: 33.333%;">
-      <img src="{{randomBeer.image_url}}">
-      <div>
-        <h5>{{randomBeer.name}}</h5>
-      </div>
+<div class="cards-container">
+    <div class="card">
+        <div class="card-img-div">
+            <img src="{{randomBeer.image_url}}">
+        </div>
+        <div class="card-body">
+            <h4 class="beer-title">{{randomBeer.name}}</h4>
+            <h6>{{randomBeer.tagline}}</h6>
+            <p>{{randomBeer.description}}</p>
+        </div>
+    </div>
 </div>
