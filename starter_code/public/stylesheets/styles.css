@@ -32,6 +32,11 @@ nav ul li {
   display: inline-block;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 footer {
   position: fixed;
   background: #0a2c42;
