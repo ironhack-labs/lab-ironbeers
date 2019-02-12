@@ -19,13 +19,16 @@ hbs.registerPartials(__dirname + '/views/partials')
 
 
 app.get('/', (req, res, next) => {
+  console.log('went to home page')
   res.render('index');
 });
 
-app.get('/beers', (req, res, next) => {
-  punkAPI.getBeers()
+app.get('/beers', (req, res, next) => { //first go the the page and this fires
+  console.log('went to beers url')
+  punkAPI.getBeers() //get all the beer data from PunkAPI 
   .then(beers => {
-    res.render('beers', {data:beers});
+    //console.log(beers)
+    res.render('beers', {data:beers}); //sending all the beers to the front
   })
   .catch(error => {
     console.log(error)

@@ -23,7 +23,6 @@ nav {
   background-color: #2081C3;
   width: 100%;
   height: 70px;
-
 }
  
 nav ul {
@@ -33,7 +32,7 @@ nav ul {
 
 nav ul li {
   margin-left: 15px;
-  padding: 20px;
+  padding: 25px;
 }
 
 nav ul a {
@@ -44,10 +43,12 @@ nav ul a {
 footer {
   background-color: #0A2C42;
   color: #F7F9F9;
-  height: 30px;
+  height: 20px;
   position: fixed;
   bottom: 0;
   width: 100%;
+  margin-top: 20px;
+  padding: 5px;
 }
 
 button {
@@ -59,11 +60,11 @@ button {
   display: block;
 }
 
-img {
+#homeImage {
   display: block;
   margin: 0 auto;
-  width: 50%;
-  padding: 20px;
+  width: 35%;
+  padding: 30px;
 }
 
 .beers {
@@ -72,12 +73,56 @@ flex-wrap: wrap;
 }
 
 .container {
-  padding: 20px;
-flex: 1 1 33%;
+padding-top: 5%;
+  padding-right: 5px;
+  flex: 1 1 15%;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
-.imgBeer{
-width: 100px;
-height: 250px;
+/* .biggerC {
+  width: 85%;
+} */
+
+.imgBeer {
+width: 60px;
+height: 180px;
+margin: 0 160px;
+padding-bottom: 20px;
 }
 
+.tagline {
+  padding-bottom: 20px;
+}
+/* 
+.des {
+  width: 90%;
+} */
+
+.randomBeer img{
+  width: 80px;
+  height: 250px;
+ position: absolute;
+ left: 15%;
+ top:20%;
+}
+.desBeer{
+  border: 1px solid none;
+  position: absolute;
+  left: 30%;
+ top:30%;
+ padding-right: 20%;
+}
+.desBeer h1{
+  margin-bottom: 5%;
+}
+.desBeer h4{
+  margin-bottom: 3%;
+  color:rgba(145, 145, 145, 0.481)
+}
+.desBeer p{
+  text-align: justify;
+}
+.desBeer h1,h4,p{
+font-family: Arial, Helvetica, sans-serif;
+}
