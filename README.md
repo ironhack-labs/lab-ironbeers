@@ -11,6 +11,10 @@ In this lab you will create a web app where the user will be able to see a list 
 
 - Fork this repo
 
+## Purpose
+
+- Create a basic web app, where you can Check the beers or get a random beer.
+- Use PunkAPI Database
 
 ## Submission
 
