@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -12,6 +13,7 @@
   "dependencies": {
     "express": "^4.16.3",
     "hbs": "^4.0.1",
+    "nodemon": "^1.18.10",
     "path": "^0.12.7",
     "punkapi-javascript-wrapper": "^1.0.2"
   }
