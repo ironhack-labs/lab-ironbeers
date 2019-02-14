@@ -11,10 +11,10 @@ body{
   margin: 0;  
 }
 
-div:first-of-type{
+body > div:first-of-type{
   height: 50px;
 }
-div:last-of-type{
+body > div:last-of-type{
   height: 50px;
 }
 
@@ -65,6 +65,32 @@ nav:last-of-type p{
   transform: translateY(-50%);
 }
 
+.beer-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.beer-partial{
+  margin-top: 3rem;
+  padding-left: 1.66%;
+  padding-right: 1.66%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.beer-partial img{
+  width: auto;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.beer-partial span{
+  font-style: italic;
+  color: gray;
+}
+
 .index-container{
   display: flex;
   flex-direction: column;
@@ -96,4 +122,23 @@ nav:last-of-type p{
 .index-container a:last-of-type{
   margin-bottom: 2rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.random-beer-container{
+  margin: 6rem 6rem;
+  display: flex;
+}
+
+.random-beer-container div{
+  margin: 0 5rem;
+}
+
+.random-beer-container img{
+  max-height: 300px;
+  max-width: auto;
+}
+
+.random-beer-container > span{
+  font-style: italic;
+  color: gray;
 }
