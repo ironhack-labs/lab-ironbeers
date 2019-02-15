@@ -1,0 +1,167 @@
+aside>nav {
+    background-color: #2081C3;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, .2);
+}
+
+nav a {
+    color: #F7F9F9;
+    text-decoration: none;
+    padding: 2px;
+}
+
+nav>div {
+    padding-top: 10px;
+}
+
+body {
+    background-color: rgba(145, 145, 145, 0.481);
+    margin: 0;
+    height: 100%;
+    overflow: auto;
+    padding: 10px;
+    padding-bottom: 5px;
+}
+
+#container {
+    min-height: 100%;
+}
+
+#main {
+    overflow: auto;
+    padding-bottom: 50px;
+}
+
+#top {
+    height: 30px;
+    background-color: black;
+    margin-bottom: 0.5px;
+}
+
+#footer-container {
+    clear: both;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    bottom: 0px;
+}
+
+footer {
+    background-color: #0A2C42;
+    color: #F7F9F9;
+    width: 100%;
+    height: 30px;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+#bottom {
+    height: 20px;
+    background-color: #222222;
+    width: 100%;
+}
+
+#main-beer {
+    text-align: center;
+    width: 60%;
+    position: absolute;
+    left: 245px;
+    margin-top: 40px;
+}
+
+#beer img {
+    width: 50%;
+}
+
+.check-beers {
+    background-color: #2081C3;
+    margin-top: 20px;
+    border-radius: 8px;
+    color: #F7F9F9;
+    padding: 4px 12px;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, .2);
+    text-decoration: none;
+    line-height: 5ex;
+}
+
+.buttons {
+    margin-top: 20px;
+    bottom: 25px;
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+}
+
+.all-beers {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.beer-details {
+    display: flex;
+    height: 900px;
+    width: 33%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    flex-flow: column;
+    align-items: center;
+}
+
+#image {
+    object-fit: contain;
+    width: 50%;
+    height: 50%;
+}
+
+#description {
+    text-align: left;
+    height: 240px;
+    font-size: 15px;
+    min-width: 200px;
+}
+
+#tagline {
+    color: grey;
+}
+
+#random {
+    float: left;
+}
+
+#random-image {
+    height: 50%;
+    width: 20%;
+    padding: 45px;
+}
+
+#random-details {
+    float: right;
+    width: 340px;
+    margin-top: 50px;
+}
+
+#tagpne {
+    color: grey;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+span {
+    font-weight: normal;
+}
+
+@media (max-width: 720px) {
+    .beer-details {
+        width: 55%
+    }
+}
