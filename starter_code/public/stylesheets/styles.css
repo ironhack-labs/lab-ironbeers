@@ -1,8 +1,162 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
-  
+/* Index and general styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    width: 100%;
+    background-color: #2081C3;
+    box-shadow: 0px 0px 20px;
+}
+
+nav ul {
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F7F9F9;
+}
+
+.index-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.index-container .button-div button {
+    background-color: #2081C3;
+    box-shadow: 0px 0px 10px;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 15px;
+    margin: 20px 0;
+}
+
+.index-container .button-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.index-container .button-div button a {
+    text-decoration: none;
+    color: #F7F9F9;
+}
+
+footer {
+    width: 100vw;
+    background-color: #0A2C42;
+    color: #F7F9F9;
+    padding: 25px 30px;
+    height: 70px;
+    position: fixed;
+    top: calc(100vh - 70px);
+}
+
+/* Beers section */
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 40px;
+    justify-content: space-evenly;
+}
+
+.container-beers {
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.img-beer {
+    height: 300px;
+}
+
+.img-beer img {
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.beer-name {
+    margin: 20px 0 5px 0;
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
+.beer-tagline {
+    color: rgba(145, 145, 145, 0.481);
+    margin-bottom: 18px;
+}
+
+.beer-description {
+    font-size: 1.1em;
+    letter-spacing: 0.3px;
+    line-height: 1.2em;
+}
+
+/* Random Beer */
+
+.random-beer-section {
+    display: flex;
+    margin: 100px;
+    width: 70%;
+}
+
+.random-img-beer {
+    height: 500px;
+    margin-right: 150px;
+}
+
+.random-img-beer img {
+    height: 100%;
+}
+
+.random-beer-name {
+    margin: 20px 0 20px 0;
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
+.random-food-pairing {
+    margin: 20px 0 20px 0;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+.random-description li {
+    font-size: 1.1em;
+    letter-spacing: 0.3px;
+    line-height: 1.2em;
+    list-style-type: disc;
+    margin: 7px;
+}
+
+.random-brewers-tips {
+    font-size: 1.1em;
+    letter-spacing: 0.3px;
+    line-height: 1.2em;
+    margin: 15px 0;
+}
+
+.random-brewers-tips span {
+    font-weight: 600;
+}
