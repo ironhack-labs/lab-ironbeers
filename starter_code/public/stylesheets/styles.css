@@ -32,3 +32,50 @@ footer{
   padding: 30px;
   margin-top: auto;
 }
+#beer-img{
+  width: 200px;
+  height: auto;
+}
+.index-container{
+  margin:auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  padding: 10px;
+  background-color: #2081C3;
+  color: white;
+  border-radius: 5px;
+  margin: 20px;
+}
+.cerver{
+  margin:auto;
+}
+.beer_list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.random-beer{
+  margin: auto;
+  width: 100%;
+  max-width: 600px;
+}
+.beer{
+  width: 29%;
+  padding:2%;
+}
+.beer img, .random-beer img{
+  height: 200px;
+  display:block;
+  margin:auto;
+}
+.headline{
+  margin-bottom: 0px;
+  font-size: 25px;
+}
+.tagline{
+  color: lightgrey;
+  margin-top: 10px;
+}
