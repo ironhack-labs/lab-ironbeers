@@ -1,3 +1,134 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.nav {
+    background-color: #2081C3;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 25px 40px;
+    margin: 0;
+}
+
+.nav li {
+    list-style-type: none;
+    padding: 0 10px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #F7F9F9;
+}
+
+.index-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.beer-illustration {
+    width: 30%;
+    height: auto;
+    margin: 30px 0;
+}
+
+.button {
+    color: #F7F9F9;
+    font-weight: 600;
+    background-color: #2081C3;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    box-shadow: 0 8px 6px -6px rgba(145, 145, 145, 0.481);
+    text-decoration: none;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    color: #F7F9F9;
+    background-color: #0A2C42;
+    width: 100%;
+    padding: 20px 30px;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.beers-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.beer-item {
+    margin: 10px;
+    width: 25%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.beer-item p, .beer-item h1 {
+    margin: 10px 0;
+}
+
+.beer-item img {
+    height: 200px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.random-beer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin: 50px 10%;
+}
+
+.random-beer img {
+    width: 5%;
+    height: auto;
+}
+
+.random-beer-info {
+    width: 60%;
+}
+
+.random-beer-info p {
+    font-size: 0.9em;
+}
+
+.random-beer-info li {
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+.tagline {
+    color: rgba(145, 145, 145, 0.481);
+    font-weight: 600;
+}
+
+@media (max-width: 900px) {
+    .beer-item {
+        height: 100%;
+    }
+}
+
 /*
 white: #F7F9F9;
 light-blue: #2081C3;
@@ -5,4 +136,3 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
