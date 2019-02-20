@@ -3,8 +3,6 @@ const hbs = require('hbs');
 const app = express();
 const path = require('path');
 const axios = require('axios');
-const PunkAPIWrapper = require('punkapi-javascript-wrapper');
-const punkAPI = new PunkAPIWrapper();
 
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
@@ -20,7 +18,8 @@ app.get('/', (req, res, next) => {
 app.get('/beers', (req, res, next) => {
   axios.get("https://api.punkapi.com/v2/beers")
   .then(beers => {
-    res.render('beers', {beers})
+    debugger
+    res.render('beers', {beers: beers.data})
   })
     .catch(error => {
       console.log(error)
@@ -30,7 +29,7 @@ app.get('/beers', (req, res, next) => {
 app.get('/random-beers', (req, res, next) => {
   axios.get("https://api.punkapi.com/v2/beers")
   .then(beers => {
-    res.render('random-beers', {beers})
+    res.render('random-beers', {beers: beers.data})
   })
     .catch(error => {
       console.log(error)
