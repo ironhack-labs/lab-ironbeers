@@ -7,6 +7,8 @@
 
 In this lab you will create a web app where the user will be able to see a list of beers or check one randomly. For the exercise, we will work with the [PunkAPI](https://www.npmjs.com/package/punkapi-javascript-wrapper) database, through it's NPM Package. The package has some methods that retrieve beers with some info about them and fits perfect for our example.
 
+⚠️ Notice that this setup has handlebars as a view engine. If you are to use some other view engine (like ejs) you have to install that package and edit your app.js manually.
+
 ## Requirements
 
 - Fork this repo
