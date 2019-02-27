@@ -5,4 +5,111 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #F7F9F9;
+}
+
+nav{
+    background-color: #2081C3;
+    height: 80px;
+}
+
+nav a{
+    display: inline-block;
+    color: #F7F9F9;
+    padding: 30px;
+    font-size: 1.3em;
+}
+
+footer{
+    background-color: #0A2C42;
+    color: #F7F9F9;
+    padding: 20px;
+    height: 55px;
+    font-size: .9em;
+}
+
+.index-container{
+    text-align: center;
+    margin: 100px 0 30px 0;
+}
+
+.index-container img{
+    height: 400px;
+}
+
+.index-container a{
+    display: block;
+    height: 40px;
+    width: 300px;
+    margin: 30px auto 10px auto;
+    border-radius: 4px ;
+    background-color: #2081C3;
+    color: #F7F9F9;
+    padding: 8px;
+}
+
+.cards-container {
+    display: flex;
+    flex-flow: wrap;
+    padding: 4% 10%;
+    justify-content: flex-start;
+    background-color: #F7F9F9;
+  }
+
+.card{
+    width: 33.33%;
+    text-align: left;
+    padding: 10px 5px;
+    border: none;
+    background-color: #F7F9F9;
+}
+
+.card h4{
+    font-weight: 600;
+}
+
+.card h5{
+    font-weight: 600;
+    color: rgba(145, 145, 145, 0.481);
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.card-img-top{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 15rem;
+    object-fit: contain;
+}
+
+.randombeer{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.randombeer img{
+    width: 60%;
+    object-fit: contain;
+}
+
+.randombeer h2{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.randombeer h5{
+    font-weight: 600;
+    color: rgba(145, 145, 145, 0.481);
+    margin-bottom: 20px;
+}
+
+.randombeer h6{
+    font-weight: 600;
+}
   

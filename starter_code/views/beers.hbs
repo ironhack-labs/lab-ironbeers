@@ -1,0 +1,6 @@
+<!-- Recorremos los datos pasados (beers) cargando un partial por cada elemento -->
+<div class="cards-container">
+  {{#each beers}}
+      {{> beerCard this}}
+  {{/each}}
+</div>
