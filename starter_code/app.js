@@ -10,12 +10,34 @@ app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
 
+hbs.registerPartials(__dirname + '/views/partials');
 
 
-app.get('/', (req, res, next) => {
-  res.render('index');
-});
 
+app.get('/', (req, res, next) => res.render('index'));
+
+app.get('/beers', (req, res, next) => {
+  punkAPI.getBeers() 
+  .then(beerapi => {
+
+    res.render('beers', { beerapi })
+  })
+  .catch(err => console.log(err))
+  
+})
+
+app.get('/randombeer', (req, res, next) => {
+  
+  punkAPI.getRandom()
+  .then(randombeerapi => {
+    console.log(randombeerapi)
+    res.render('randombeer', {randombeerapi})
+  })
+  .catch(error => {
+    console.log(error)
+  })
+  
+})
 
 
 app.listen(3000);
