@@ -1,0 +1,11 @@
+<div class="random-container">
+    {{#each randomBeer}}
+    <div class="cards" style="width: 33.333%;">
+        <img class="cards-img-top" src="{{this.image_url}}" alt="Card image cap">
+        <div class="cards-body">
+            <h5 class="cards-title">{{this.name}}</h5>
+            <p class="cards-text">{{this.description}}</p>
+        </div>
+    </div>
+    {{/each}}
+</div>

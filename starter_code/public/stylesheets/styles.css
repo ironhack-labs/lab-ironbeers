@@ -5,4 +5,69 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+*{
+    color:  #F7F9F9;
+    text-decoration: none;
+    padding: 5px 10px;
+
+}
+nav {
+    background-color:#2180c4;
+    height: 50px;
+}
+footer {
+    background-color: #0a2d42;
+    height: 50px;
+    color: white;
+}
+section a{
+    color:white;
+    border: 1px solid #2180c4;
+    background-color: #2180c4;
+    margin: 0 20px;
+
+    
+}
+.index-container section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+.index-container section img {
+    max-width: 500px;
+}
+.cards-container  {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+    
+  }
+  .cards-container .card{
+  width: 30%!important;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  }
+  .cards-container .card img {
+ height: 200px;
+    
+  }
+  .cards-container .card-body h5,
+  .cards-container .card-body p.card-text{
+      color:black;
+  }
+  .cards-img-top{
+
+    height: 350px;
+  }
+  .random-container .cards-body h5,
+  .cards-container .cards-body .cards-text{
+      color:black;
+      
+  }
+  .cards-text{
+      color:black;}
