@@ -5,4 +5,164 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+    background-color: #2081C3;
+    padding-left: 20px;
+}
+
+.nav-link {
+    color: #F7F9F9;
+    padding: 20px;
+}
+
+.section {
+    padding: 10px;
+    /* text-align: justify; */
+    font-size: 12px;
+}
+
+.footer {
+    background-color: #0A2C42;
+    padding: 5px;
+    color: #F7F9F9;
+}
+
+.footer-p {
+    margin: 0;
+    padding: 5px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    padding: 40px
+}
+
+.div-button {
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.btn {
+    background-color: #2081C3;
+    border-color: #2081C3;
+}
+
+.imgheight {
+    height: 200px;
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50% */
+}
+
+
+/* body {
+    margin: 0;
+    padding: 0;
+   }
+   
+   nav {
+    background: #2081C3;
+    padding: 20px 0px;
+   }
+   
+   nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #F7F9F9;
+    font-size: 1.2rem;
+    margin-left: 30px;
+   }
+   
+   .index-container img {
+    height: 500px;
+    display: block;
+    margin: 60px auto;
+   }
+   
+   .index-container a {
+    background: #2081C3;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #F7F9F9;
+    padding: 10px 5px;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    text-align: center;
+   }
+   
+   footer {
+    background: #0A2C42;
+    padding: 20px 0;
+    margin-top: 100px;
+    margin-bottom: 0;
+   }
+   
+   footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
+    color: #F7F9F9;
+   }
+   
+   .beers-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 30px 30px;
+   }
+   
+   
+   .beer-body{
+    width: 400px;
+    text-align: center;
+    margin: 30px auto 0 auto;
+   }
+   
+   .beer-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    margin-top: 30px;
+   }
+   
+   .beer-tagline {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: grey;
+    margin-bottom: 10px;
+    text-align: center;
+   }
+   
+   .beer-text {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+    text-align: left;
+    padding: 0 30px;
+   }
+   
+   .beer-img {
+    height: 200px;
+    margin: 0 auto;
+   }
+   
+   .random-beer {
+    text-align: center;
+    width: 30%;
+    margin: 50px auto 0 auto;
+   }
+   
+   .foodPairing {
+    list-style-type: none;
+   } */
