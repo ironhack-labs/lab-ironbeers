@@ -1,4 +1,4 @@
-/*
+/* /*
 white: #F7F9F9;
 light-blue: #2081C3;
 dark-blue: #0A2C42;
@@ -58,9 +58,9 @@ p {
 }
 
 footer {
-    /* bottom: 0; */
+    bottom: 0;
     width: 100%;
-    /* position: absolute; */
+    position: fixed;
     height: 60px;
     line-height: 60px;
     background-color: #0A2C42;
@@ -103,6 +103,7 @@ footer {
 .beers-container{
     width: 80%;
     margin: 40px auto;
+    margin-bottom: 80px;
     display:flex;
     flex-wrap: wrap;
 }
