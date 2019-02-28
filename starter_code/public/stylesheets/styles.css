@@ -5,4 +5,36 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+
+
+/* Not required for template or sticky footer method. */
+
+.index-container {
+    text-align: center
+}
+
+.footer {
+    background-color: rgba(145, 145, 145, 0.481);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.my-shadow {
+    -webkit-box-shadow: 2px 5px 16px 0px #666, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 2px 5px 16px 0px #666, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.card img {
+    width: 20%;
+    height: 20%;
+}
+
+.container img {
+    width: 40%;
+    height: 40%;
+}
