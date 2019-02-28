@@ -32,6 +32,8 @@ font-family: Arial, Helvetica, sans-serif
 .card img {
     width: 20%;
     height: 20%;
+    display: block;
+    margin: 0 auto;
 }
 
 .container img {
