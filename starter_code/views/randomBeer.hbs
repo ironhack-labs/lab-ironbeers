@@ -1,0 +1,21 @@
+{{#each beerObject}}
+<div class="beer-item-random"> 
+  <div class="beer-image-center">
+    <img class="beer-image-random" src="{{image_url}}" alt="Image of the {{name}} beer">
+  </div>
+  <div class="beer-item-random-right">
+    <h2>{{name}}</h2>
+    <p class="beer-tagline">{{tagline}}</p>
+    <p class="beer-description">{{description}}</p>
+    <h3>Food pairing</h3>
+    <ul>
+    {{#each food_pairing}}
+      <li>{{this}}</li>
+    {{/each}}
+    </ul>
+    <b>Brewer Tips: </b>{{brewers_tips}}
+  </div>
+</div>
+{{/each}}
+
+{{!-- Why an each is needed here? Because the object contains an Array --}}

@@ -1,0 +1,7 @@
+{{!-- One container for all beers (flexbox) with a loop for each beer in it --}}
+<div class="beer-items-container">
+{{#each beerObject}}
+{{> beerPartial this}}
+{{/each}}
+</div>
+ 
