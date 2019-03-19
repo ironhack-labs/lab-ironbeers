@@ -1,0 +1,23 @@
+  {{#each x}}
+   <div class="card" style="width: 33.333%;">
+      <img class="beer-img-top" src="{{this.image_url}}" alt="beer-image">
+      <div class="details">
+        <h2 class="beer-title">{{this.name}}</h2>
+        <p class="beer-text">{{this.tagline}}</p>
+        <p class="beer-description">{{this.description}}</p>
+      </div>
+</div>
+  {{/each}}
+
+    {{#each y}}
+   <div class="card" style="width: 33.333%;">
+      <img class="beer-img-top" src="{{this.image_url}}" alt="beer-image">
+      <div class="details">
+        <h2 class="beer-title">{{this.name}}</h2>
+        <p class="beer-text">{{this.tagline}}</p>
+        <p class="beer-description">{{this.description}}</p>
+        <p class="beer-food-pairing">{{this.food_pairing}}</p>
+        <p class="brewer-tips">{{this.brewers_tips}}</p>
+      </div>
+</div>
+  {{/each}}
