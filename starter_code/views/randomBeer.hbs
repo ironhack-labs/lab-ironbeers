@@ -1,8 +1,10 @@
 {{#each beerObject}}
 <div class="beer-item-random"> 
+  {{!-- left part --}}
   <div class="beer-image-center">
     <img class="beer-image-random" src="{{image_url}}" alt="Image of the {{name}} beer">
   </div>
+  {{!-- right part --}}
   <div class="beer-item-random-right">
     <h2>{{name}}</h2>
     <p class="beer-tagline">{{tagline}}</p>
@@ -18,4 +20,4 @@
 </div>
 {{/each}}
 
-{{!-- Why an each is needed here? Because the object contains an Array --}}
+{{!-- Why an each is needed here? Because the object contains an Array of 1--}}

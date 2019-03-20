@@ -1,16 +1,11 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #F7F9F9;
 }
 
 .container {
+  /* Because margin body is 0 (for header), for content we do want margin */
   margin: 10px;
 }
 
@@ -71,7 +66,7 @@ footer p {
 
 .big-image {
   max-width: 300px;
-  margin: 20px;
+  margin: 40px;
 }
 
 /* Beers */ 
@@ -79,7 +74,7 @@ footer p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .beer-item {
@@ -102,6 +97,14 @@ footer p {
 /* Random beer */
 .beer-item-random {
   display: flex;
+}
+
+/* display image above text on small screens */
+@media screen and (max-width: 650px) {
+  .beer-item-random {
+    flex-direction: column; 
+    align-items: center;
+  }
 }
 
 .beer-image-random {
