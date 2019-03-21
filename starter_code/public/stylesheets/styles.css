@@ -1,8 +1,137 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .barra{
+    background-color:#2081C3;
+    color: #F7F9F9;
+}
+
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+	nav ul li {
+		display: inline-block;
+		line-height: 80px;
+		}
+
+	nav ul li a {
+		display: block;
+		padding: 0 10px;
+		color: #F7F9F9;
+		}
+  
+  .pie {
+    background-color: #0A2C42;
+    color: white;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+  }
+  
+  .pie {
+    margin-left: 50px;
+  }
+  
+  .index-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .index-container>img {
+    width: 200px;
+    height: 200px;
+    margin-top: 7%;
+  }
+  
+  .index-container>ul {
+    margin-top: 20px;
+  }
+  
+  .index-container>ul>li {
+    padding: 10px;
+    background-color: #2081C3;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .beersContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  
+  .beersContainer li {
+    width: 30%;
+    margin: 20px 10px;
+    list-style-type: none;
+  }
+  
+  .beersContainer img {
+    width: auto;
+    height: 220px;
+  }
+  
+  .partial-beersContainer {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+  
+  .partial-beersimg {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .beersContainer h2, .beersContainer h5, .beersContainer p {
+    margin-top: 10px;
+  }
+  
+  .beersContainer p {
+    color: rgba(145, 145, 145, 0.481);
+  }
+  
+  .random-beerContainer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .rbeer {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-top: 7%;
+  }
+  
+  .rbeerimg img {
+    width: auto;
+    height: 220px;
+  }
+  
+  .rbeerbody {
+    margin-left: 30px;
+  }
+  
+  .rbeerbody li {
+    margin-left: 40px;
+  }
+  
+  .rbeerbody h2, .rbeerbody p, .rbeerbody h5, .rbeerbody ul {
+    margin-top: 10px;
+  }
+  
+  #random-tagline {
+    color: rgba(145, 145, 145, 0.481);
+  }
   
