@@ -1,8 +1,145 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
-  
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: #2081C3;
+  color: white;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 30px;
+}
+
+nav li {
+  list-style-type: none;
+  margin: 0 20px;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #0A2C42;
+  color: white;
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+}
+
+footer>p {
+  margin-left: 50px;
+}
+
+.index-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.index-container>img {
+  width: 200px;
+  height: 200px;
+  margin-top: 7%;
+}
+
+.index-container a {
+  margin-top: 20px;
+}
+
+.index-container button {
+  padding: 10px;
+  background-color: #2081C3;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.beers-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.beers-list li {
+  width: 30%;
+  margin: 20px 10px;
+  list-style-type: none;
+}
+
+.beers-list img {
+  width: auto;
+  height: 220px;
+}
+
+.partial-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.beers-list h2, .beers-list h5, .beers-list p {
+  margin-top: 10px;
+}
+
+.beers-list p {
+  color: rgba(145, 145, 145, 0.481);
+}
+
+.random-beers {
+  display: flex;
+  justify-content: center;
+}
+
+.random-beer-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin-top: 7%;
+}
+
+.random-image-container img {
+  width: auto;
+  height: 220px;
+}
+
+.random-desc-container {
+  margin-left: 30px;
+}
+
+.random-desc-container li {
+  margin-left: 40px;
+}
+
+.random-desc-container h2, .random-desc-container p, .random-desc-container h5, .random-desc-container ul {
+  margin-top: 10px;
+}
+
+#random-tagline {
+  color: rgba(145, 145, 145, 0.481);
+}
+
