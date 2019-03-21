@@ -6,3 +6,17 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+.nab{
+    background-color: #2081C3;
+}
+
+.foot{
+    background-color: #0A2C42;
+}
+
+.beer{
+  
+    display: flex;
+    padding: 10% 20%;
+    justify-content: space-around;
+}
