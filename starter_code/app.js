@@ -8,14 +8,23 @@ const punkAPI = new PunkAPIWrapper();
 
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
+hbs.registerPartials(__dirname + '/views/partials')
 app.use(express.static(path.join(__dirname, 'public')));
 
 
 
 app.get('/', (req, res, next) => {
-  res.render('index');
+  const beerImage = '/images/beer.png';
+  res.render('index', {beerImage});
+});
+app.get('/beers', (req, res, next) => {
+  res.render('beers');
+});
+app.get('/random-beers', (req, res, next) => {
+  res.render('random-beers');
 });
 
 
 
 app.listen(3000);
+//porque no hace falta poner en los href el hbs?
