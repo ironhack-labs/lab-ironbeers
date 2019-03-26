@@ -5,4 +5,38 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+
+#navigation-bar {
+    background-color: #2081C3;
+    color: #F7F9F9; 
+    margin: 0;
+    box-shadow: 0px 7px 12px -5px rgba(77,77,77,1);
+  }
   
+  #navigation-bar ul {
+    margin-top: 0;
+  }
+  
+  #navigation-bar li {
+    display: inline-block;
+    padding: 20px;
+  }
+
+  .container {
+    /* Because margin body is 0 (for header), for content we do want margin */
+    margin: 10px;
+  }
+
+  .big-image {
+    max-width: 300px;
+    margin: 40px;
+  }
+
+  .beer-button {
+    /* display: inline-block; */
+    padding: 10px 20px;
+    background-color: #2081C3;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0px 7px 12px -5px rgba(77,77,77,1);
+  }
