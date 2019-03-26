@@ -20,14 +20,28 @@ app.get('/', (req, res, next) => {
 });
 
 app.get('/beers', (req, res, next) => {
-  res.render('beers', {
-    title: "Beers"
+  punkAPI.getBeers()
+  .then(beers => {
+    res.render('beers', {
+      beers
+    });
+  })
+  
+  .catch(error =>{
+    console.log(error)
   })
 });
 
 app.get('/random-beers', (req, res, next) => {
-  res.render('random-beers',{
-    title: "Random-beers"
+  punkAPI.getBeers()
+  .then(beers => {
+    res.render('random-beers', {
+      title: "random-beers"
+    });
+  })
+  
+  .catch(error =>{
+    console.log(error)
   })
 });
 
