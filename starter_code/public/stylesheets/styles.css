@@ -11,7 +11,7 @@ font-family: Arial, Helvetica, sans-serif
 }
 
 body {
-  background-color:rgba(145, 145, 145, 0.481);
+  background-color:#f7f9f9;
   position: relative;
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif
@@ -65,4 +65,35 @@ a {
   padding: 1em;
   display: block;
   margin:auto;
+}
+
+.beers-container {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.beers-box {
+  width: 30%;
+  margin: 1.2em;
+}
+img {
+height: 150px;
+}
+.beer-title {
+  font-size: 16px;
+}
+
+.beer-text {
+  font-size: 12px;
+  text-align: justify;
+}
+
+.beer-tagline {
+  color: grey;
+  margin: 5px 0px;
 }

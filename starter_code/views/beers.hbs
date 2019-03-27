@@ -1,1 +1,8 @@
-<h1>hello!</h1>
+<div class="beers-container">
+  {{#each beers as |beer|}}
+    {{>beer beer=beer }}
+  {{else}}
+  <p>Empty List :(</p>
+  {{/each}}
+</div>
+
