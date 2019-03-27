@@ -10,7 +10,7 @@ const punkAPI = new PunkAPIWrapper();
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
 hbs.registerPartials(__dirname + "/views/partials");
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname + "/public"));
 
 
 
@@ -21,16 +21,17 @@ app.get('/', (req, res) => {
 
 
 
-app.listen(3000, () => {
-  console.log('listening')
-});
 
 app.get('/beers', (req, res) => {
 punkAPI.getBeers()
   .then(beers => {
-
+    
   })
   .catch(error => {
     console.log(error);
   })
 })
+
+app.listen(3000, () => {
+  console.log("listening");
+});
