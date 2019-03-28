@@ -24,7 +24,7 @@ app.get('/beers', (req, res, next) => {
       title: 'Beers',
       beers
     });
-    console.log('tengo las birras men')
+    //console.log(beers)
   })
   .catch(error => {
     console.log(error)
