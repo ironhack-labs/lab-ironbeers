@@ -85,3 +85,43 @@ font-family: Arial, Helvetica, sans-serif
     -moz-box-shadow: 14px 13px 16px -17px rgba(0,0,0,0.75);
     box-shadow: 14px 13px 16px -17px rgba(0,0,0,0.75);
   }
+  .BeerPartial{
+    padding: 55px 35px;
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .BeerItem{
+    width: 30%;
+    margin: 20px 1% 15px 1%;
+  }
+  .BeerItem__image{
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .BeerItem__image img{
+    width: auto;
+    height: 100%;
+  }
+  .BeerItem__content{
+    padding: 0 10px;
+  }
+  .BeerItem__content-title{
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 3px;
+    font-size: 2em;
+  }
+  .BeerItem__content-tagline{
+    font-weight: bold;
+    color: #cccccc;
+    margin-bottom: 8px;
+    font-size: 1.3em;
+  }
+  .BeerItem__content-description{
+    font-size:  1em;
+  }
