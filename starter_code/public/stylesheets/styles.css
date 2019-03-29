@@ -23,3 +23,113 @@ a {
     color: white;
     font-weight: bold;
 }
+
+
+
+/**BEER PARTIAL STYLES**/
+.beer-image {
+    margin-left: 40%;
+    margin-top: 5%;
+    width: 500px;
+}
+
+.beer-button {
+    display: flex;
+    margin-top: 3%;
+    margin-left: 46%;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 0;
+}
+
+.random-beer-button {
+    display: flex;
+    margin-top: 1%;
+    margin-left: 45%;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 0;
+}
+
+.beer-container {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;    
+}
+
+.beer-body {
+    width: 25%;
+    margin: 2% 4%;
+}
+
+.beer-img {
+    width: 120px;
+    height: 350px;
+    margin: 10px 150px;  
+}
+
+.beer-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.beer-tagline {
+    color: #C4C6C6;
+    margin: 10px 0;
+}
+
+.beer-description {
+    text-align: justify;
+}
+
+
+
+/**RANDOM BEERS PARTIAL STYLES**/
+
+.randomBeers-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;    
+}
+.randomBeers-body {
+    width: 10%;
+    margin: 5% 0 2% 12%;   
+}
+
+.randomBeers-body2 {
+    width: 60%;
+    margin: 5% 4% 2% 2%;
+}
+
+.randomBeers-img {
+   display: block;
+   height: 300px;
+   width: 100px;
+   margin: 0 auto;
+}
+.randomBeers-name {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.randomBeers-tagline {
+    color: #C4C6C6;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.randomBeers-description,
+.food-pairing-list,
+.randomBeers-brewers-tips {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.randomBeers-food-pairing {
+    text-align: justify;
+    font-size: 20px;
+    font-weight: bold;
+}

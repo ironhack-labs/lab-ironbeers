@@ -1,15 +1,17 @@
-<div class="randomBeers">
-  <img class="randomBeers-img" src="{{randomBeers.imageurl}}">
-  <div class="randomBeers-body">
-    <h5 class="randomBeers-name">{{randomBeers.name}}</h5>
-    <p class="randomBeers-tagline">{{randomBeers.tagline}}</p>
-    <p class="randomBeers-description">{{randomBeers.description}}
-    </p>
-    <p class="randomBeers-food-pairing">Food Pairing</p>
-    <ul>
-        <li>{{ randomBeers.foodPairing}}</li>
-    </ul>
-    <p class="randomBeers-brewer-tips">{{randomBeers.brewerTips}}
-    </p>
-  </div>
+<div class="randomBeers-container">
+  {{#each beers as |beer|}} 
+    <div class="randomBeers-body">
+      <img class="randomBeers-img" src="{{beer.image_url}}">
+    </div>
+    <div class="randomBeers-body2">
+      <h5 class="randomBeers-name">{{beer.name}}</h5>
+      <p class="randomBeers-tagline">{{beer.tagline}}</p>
+      <p class="randomBeers-description">{{beer.description}}</p>
+      <p class="randomBeers-food-pairing">Food Pairing</p>
+      <ul>
+        <li class="food-pairing-list">{{beer.food_pairing}}</li>
+      </ul>
+      <p class="randomBeers-brewers-tips"><b>Brewers Tips:</b> {{beer.brewers_tips}}</p>
+    </div>
+  {{/each}}
 </div>
