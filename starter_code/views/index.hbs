@@ -1,14 +1,10 @@
-<div class="index-container">
 
-    <div class="container">
-        <img class="beer_pic" src="images/beer.png">
-        <div class="buttons">
-            <button type="button" class="btn btn-primary">
-                <a href="/beers">Check the Beers!</a>
-            </button>
-            <button type="button" class="btn btn-primary">
-                <a href="/random-beers">Check a Random Beer!</a>
-            </button>
-        </div>
-    </div>
+
+
+{{!-- PARTE CENTRAL CON IMAGEN DE CERVEZA + 2 BOTONES --}}
+<div class="index-container">
+    {{!-- En la src, le metemos la constante declarada en app.js, que corresponde a la imagen --}}
+    <img class="imgBeer" src="{{beerImage}}">
+    <button class="button"><a href="/beers">Check the Beers!</a></button>
+    <button class="button"><a href="/random-beers">Check a random Beer!</a></button>
 </div>
