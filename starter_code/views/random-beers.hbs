@@ -1,1 +1,22 @@
-Random Beers
+<div class="RandomBeer">
+  <div class="RandomBeer__item">
+    <div class="RandomBeer__item-image">
+      <img src="{{beer.image_url}}">
+    </div>
+    <div class="RandomBeer__item-content">
+      <div class="BeerItem__content-title RandomBeer__item-title">{{beer.name}}</div>
+        <div class="BeerItem__content-tagline RandomBeer__item-tagline">{{beer.tagline}}</div>
+        <div class="BeerItem__content-description RandomBeer__item-description">{{beer.description}}</div>
+        <div class="RandomBeer__item-subtitle">Food Pairing</div>
+        <ul class="RandomBeer__item-list">
+            {{#each beer.food_pairing as |food_pairing|}}
+            <li class="RandomBeer__item-list-item">{{food_pairing}}</li>
+            {{/each}}
+        </ul>
+        <div class="RandomBeer__item-tips">
+          <b>Brewers Tips: </b> 
+          <span>{{beer.brewers_tips}}</span>
+          </div>
+    </div>
+  </div>
+</div> 

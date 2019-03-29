@@ -44,7 +44,6 @@ font-family: Arial, Helvetica, sans-serif
     background-color: rgba(145, 145, 145, 0.1);
     min-height: 500px;
     min-height: calc(100vh - 140px);
-    border: 1px solid red;
   }
   .HomeContainer{
     display: flex;
@@ -54,7 +53,6 @@ font-family: Arial, Helvetica, sans-serif
   }
   .HomeContainer__item{
     width: 500px;
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,7 +85,6 @@ font-family: Arial, Helvetica, sans-serif
   }
   .BeerPartial{
     padding: 55px 35px;
-    border: 1px solid red;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -124,4 +121,52 @@ font-family: Arial, Helvetica, sans-serif
   }
   .BeerItem__content-description{
     font-size:  1em;
+  }
+
+  .RandomBeer{
+    padding: 35px;
+    width: 90%;
+    min-height: calc(100vh - 140px);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .RandomBeer__item{
+    display: flex;
+    align-items: flex-start;
+  }
+  .RandomBeer__item-image{
+    width: 20%;
+    height: 400px;
+    text-align: center;
+  }
+  .RandomBeer__item-image img{
+      height: 100%;
+      width: auto;
+  }
+  .RandomBeer__item-content {
+    width: 75%;
+    margin-left: 5%;
+  }
+  .RandomBeer__item-title{
+
+  }
+  .RandomBeer__item-tagline{
+    
+  }
+  .RandomBeer__item-description{
+    margin-bottom: 20px;
+  }
+  .RandomBeer__item-subtitle{
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 12px;
+    font-size: 1.1em;
+  }
+  .RandomBeer__item-list{
+    padding-left: 35px;
+  }
+  .RandomBeer__item-list-item{
+
   }
