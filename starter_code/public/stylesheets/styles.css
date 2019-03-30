@@ -6,3 +6,46 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .9em;
+  background-color: #F7F9F9;
+}
+
+.text-white {
+  color: #F7F9F9;
+}
+
+.navbar {
+  background-color: #2081C3;
+}
+
+.navbar, footer {
+  font-size: 1.1rem;
+  letter-spacing: -0.5px;
+}
+
+footer {
+  background-color: #0A2C42;
+}
+
+.item-beer {
+  width: 30%;
+}
+
+.beers-container {
+  padding: 1% 5%;
+}
+
+.img-beer {
+  height: 200px;
+}
+
+.random-beer img {
+  height: 400px;
+}
+
+.random-beer {
+  font-size: 1.3rem;
+}
+

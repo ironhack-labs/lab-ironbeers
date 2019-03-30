@@ -17,15 +17,36 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.get('/', (req, res, next) => {
-  res.render('index');
+  
+  res.render('index', {
+    title: "Home",
+  });
 });
 
-app.get('/', (req, res, next) => {
-  res.render('random-beer');
+app.get('/random-beer', (req, res, next) => {
+  punkAPI.getRandom()
+    .then(beers => {
+      res.render('random-beer', {
+        title: `${beers[0].name} - Random Beer`,
+        beers,
+      });
+    })
+    .catch(error => {
+      console.log(error)
+    })
 });
 
-app.get('/', (req, res, next) => {
-  res.render('beers');
+app.get('/beers', (req, res, next) => {
+  punkAPI.getBeers()
+  .then(beers => {
+    res.render('beers', { 
+      title: "Beers",
+      beers
+    });
+  })
+  .catch(error => {
+      console.log(error)
+  })
 });
 
 
