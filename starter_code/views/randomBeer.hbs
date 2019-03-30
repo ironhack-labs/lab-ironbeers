@@ -1,0 +1,8 @@
+<h2>Random Beers</h2>
+<div class="beer-colums mt-3">
+    {{#each randomPartial as |beer|}}
+      {{>randomPartial beer=beer}}
+    {{else}}
+    <p>Empty beers!!</p>
+    {{/each}}
+</div>

@@ -1,0 +1,10 @@
+<h2>Popular Beers</h2>
+<div class="row">
+    {{#each beers as |beer|}}
+    <div class="beer-colums col-4">
+      {{>beerPartials beer=beer}}
+    </div>
+    {{else}}
+    <p>Empty beers!!</p>
+    {{/each}}
+</div>

@@ -1,8 +1,45 @@
 /*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
+    white: #F7F9F9;
+    light-blue: 
+    dark-blue: #0A2C42;
+    grey: rgba(145, 145, 145, 0.481);
+    font-family: Arial, Helvetica, sans-serif;
 */
+
+.navbar{
+    background: #2081C3;
+}
+.navbar a{
+    color: #fff;
+}
+.jumbotron{
+    margin: 0 auto;
+}
+.botton-beer {
+    width: 208px;
+    padding: 20px;
+    background: #2081C3;
+    color: #fff;
+    border-radius: 15px;
+    text-transform: capitalize;
+    margin: 20px auto;
+    text-align: center;
+}
+.botton-beer a{
+    display: block;
+    color: #fff;
+}
+.jumbotron img{
+    display: block;
+    width: 320px;
+    margin: 0 auto;
+}
+footer{
+    background: #0A2C42;
+    color: #fff; 
+}
+footer p{
+    padding: 10px;
+}
+
   
