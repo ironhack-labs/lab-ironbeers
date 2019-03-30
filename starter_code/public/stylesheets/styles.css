@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
 }
 
 .nav {
@@ -28,7 +29,7 @@ footer {
   color: #F7F9F9;
   background-color: #0A2C42;
   height: 60px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   display: flex!important;
@@ -41,7 +42,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .my-button{
@@ -50,4 +51,42 @@ footer {
 
 .my-image {
   padding: 50px 0 40px 0;
+}
+
+.single-beer {
+  display: flex;
+  flex-flow: column wrap;
+  width: 30%;
+  padding: 30px;
+}
+
+.all-beers {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 10px 50px;
+}
+
+.beer-image {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  
+}
+
+h5 {
+  color: rgba(145, 145, 145, 0.481);
+}
+
+.random-beer {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  width: 80%;
+  padding: 30px;
+  padding-left: 15%;
+}
+
+.single-beer p {
+  padding-bottom: 20px;
 }
