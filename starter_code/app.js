@@ -20,7 +20,8 @@ app.get('/', (req, res, next) => {
 app.get('/beers', (req, res, next) => {
   punkAPI.getBeers()
   .then(beers => {
-    res.render('beers'); //no creo que esté completo iteracion 3
+    console.log(beers);
+    res.render('beers', {beers});
   })
   .catch(error => {
     console.log(error)
@@ -30,7 +31,7 @@ app.get('/beers', (req, res, next) => {
 app.get('/random-beer', (req, res, next) => {
   punkAPI.getRandom()
   .then(beers => {
-    res.render('randomBeer');//me falta algo
+    res.render('randomBeer', {beers});
   })
   .catch(error => {
     console.log(error)
