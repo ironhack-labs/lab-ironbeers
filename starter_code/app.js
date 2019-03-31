@@ -9,6 +9,8 @@ const punkAPI = new PunkAPIWrapper();
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
+//0.3 hbs partials
+hbs.registerPartials(__dirname + '/views/partials');
 
 
 

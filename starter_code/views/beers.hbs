@@ -1,11 +1,6 @@
 <div class="beer-container">
   {{#each this.data}}
-  <div class="card" style="width: 33.333%;">
-      <div class="card-body">
-        <h5 class="card-title">{{this.name}}</h5>
-        <p class="card-text">{{this.description}}</p>
-      </div>
-</div>
+    {{> beercard this}}
   {{/each}}
 
 </div>
