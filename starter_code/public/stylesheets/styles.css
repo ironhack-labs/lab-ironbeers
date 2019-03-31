@@ -31,6 +31,36 @@ box-shadow: 0 0 30px black;
     color:#F7F9F9;
 }
 .footer span{
-
    margin-left: 30px; 
+}
+
+
+.index-beer{
+height: 300px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 50px;
+margin-bottom: 10px;
+}
+.beer{
+  display: block;
+  width: 250px;
+  height: 250px;  
+
+}
+.buttonss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+.btn{
+
+    box-shadow: 0 0 10px grey;
+    margin-top:10px;
+    background-color: #2081C3;
+    color:#F7F9F9;
+
+
 }
