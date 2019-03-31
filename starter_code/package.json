@@ -5,8 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "dev": "nodemon -e js,css,hbs app"  },
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -14,5 +13,8 @@
     "hbs": "^4.0.1",
     "path": "^0.12.7",
     "punkapi-javascript-wrapper": "^1.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
   }
 }
