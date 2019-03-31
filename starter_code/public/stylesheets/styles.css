@@ -6,3 +6,42 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+*{  
+    padding: 0 ;
+    margin: 0;
+}
+div {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+} 
+
+.Menu{
+    height: 80px;
+    background-color: #2081C3;
+    align-items: center;
+    padding: 0 50px;
+}
+.MenuLink{
+    color: white;
+    font-size: 1em;
+}
+.MenuLink:hover{
+    color: #0A2C42;
+}
+.Footer {
+    background-color: #0A2C42;
+    height: 60px;
+    padding: 0 25px;
+    align-items: center;
+}
+.FooterLink {
+    color: white;
+    font-size: 0.8em;
+}
+.MainContainer{
+    background-color: rgba(145, 145, 145, 0.481);
+    min-height: 500px;
+}
