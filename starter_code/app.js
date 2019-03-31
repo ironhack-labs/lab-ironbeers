@@ -1,7 +1,7 @@
 
 const express = require('express');
 const hbs     = require('hbs');
-const PORT = 3000;
+const PORT = 3002;
 const app     = express();
 const path    = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
@@ -18,7 +18,7 @@ app.use((req, res, next) => {
 })
 
 app.get('/', (req, res, next) => {
-  res.render('home');
+  res.render('index');
 });
 
 app.get('/beers', (req, res, next) => {
@@ -31,4 +31,4 @@ app.get('/random-beers', (req, rest, next) => {
 
 
 
-app.listen(3000);
+app.listen(3002);
