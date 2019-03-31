@@ -1,0 +1,32 @@
+
+<div class="beers-container d-flex flex-wrap justify-content-between">
+  {{#each beers as |beer|}}
+  <div class="item-beer mb-3">
+        <div class="img-beer">
+           <img src={{beer.image_url}} class="h-100 rounded mx-auto d-block" alt={{beer.name}}>
+        </div>
+      <h5 class="font-weight-bold mt-4">{{beer.name}}</h5>
+      <span class="text-secondary">{{beer.tagline}}</span>
+      <p class="mt-2 text-justify">{{beer.description}}</p>
+  </div>
+  {{/each}}
+</div>
+
+
+ {{!--   name: 'Russian Doll – India Pale Ale',
+    tagline: 'Nesting Hop Bomb.',
+    first_brewed: '08/2014',
+    description:
+     'The levels of hops vary throughout the range. We love hops, so all four beers are big, bitter badasses, but by tweaking the amount of each hop used later in the boil and during dry- hopping, we can balance the malty backbone with some unexpected flavours. Simcoe is used in the whirlpool for all four beers, and yet still lends different characters to each',
+    image_url: 'https://images.punkapi.com/v2/18.png',
+    abv: 6,
+    ibu: 70,
+    target_fg: 1012,
+    target_og: 1058,
+    ebc: 25,
+    srm: 12.5,
+    ph: 5.2,
+    attenuation_level: 79.3,
+    volume: { value: 20, unit: 'liters' },
+    boil_volume: { value: 25, unit: 'liters' },
+    method: { mash_temp: [Array], fermentation: [Object], twist: null }, --}}
