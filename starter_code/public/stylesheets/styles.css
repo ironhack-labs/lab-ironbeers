@@ -41,9 +41,9 @@ body {
     color: white;
     font-size: 0.8em;
 }
-.MainContainer{
+.index-container{
     background-color: rgba(145, 145, 145, 0.481);
-    min-height: 500px;
+    min-height: 50px;
     background-color: rgba(145, 145, 145, 0.1);
     min-height: calc(100vh - 140px);
     /* border: 1px solid blue; */
