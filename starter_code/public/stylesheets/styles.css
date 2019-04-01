@@ -5,4 +5,53 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
   
+
+nav {
+    background-color:#2081C3;
+    padding: 10px;
+}
+
+nav a {
+    padding-right: 10px;
+    color:#F7F9F9;
+    text-decoration:none;
+}
+
+nav li {
+    display: flex;
+}
+
+footer{
+    background-color: #0A2C42;
+    color: #F7F9F9;
+    padding: 10px;
+    margin-top: auto;
+}
+
+.cerve{
+    margin:auto
+}
+button{
+    
+    align-content: center;
+    margin-left: 160px;
+    margin-top: 50px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #000b61;
+
+   
+}
