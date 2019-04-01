@@ -1,0 +1,12 @@
+<div class="beers-container d-flex flex-wrap justify-content-between">
+  {{#each beers as |beer|}}
+  <div class="item-beer mb-3">
+        <div class="img-beer">
+           <img src={{beer.image_url}} class="h-100 rounded mx-auto d-block" alt={{beer.name}}>
+        </div>
+      <h5 class="font-weight-bold mt-4">{{beer.name}}</h5>
+      <span class="text-secondary">{{beer.tagline}}</span>
+      <p class="mt-2 text-justify">{{beer.description}}</p>
+  </div>
+  {{/each}}
+</div>

@@ -1,0 +1,16 @@
+<div class="random-beer d-flex m-5 ">
+  {{#each randomBeer as |randomBeer|}}
+  <div class="p-2 w-25 h-25"><img src="{{#if randomBeer.image_url }} {{randomBeer.image_url}} {{else}}/images/noImageBeer.png {{/if}}" class="rounded mx-auto d-block mt-5" alt="Logo Beers!"></div>
+  <div class="p-2 w-75">
+    <h2 class="font-weight-bold">{{randomBeer.name}}</h2>
+    <span class="text-secondary">{{randomBeer.tagline}}</span>
+    <p class="mt-3">{{randomBeer.description}}</p>
+    <b>Food Pairing</b>
+    <ul class="mt-3">
+      {{#each randomBeer.food_pairing as |food_pairing|}}
+        <li>{{food_pairing}}</li>
+      {{/each}}
+    </ul>
+    <p><b>Brewers Tips: </b>{{randomBeer.brewers_tips}}</p>
+  </div>
+  {{/each}}
