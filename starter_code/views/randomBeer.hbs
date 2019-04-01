@@ -1,0 +1,20 @@
+
+   <div class="card flex-row flex-wrap">
+       {{#each randombeer as |randombeer|}}
+        <div class="p-2 w-25 h-25">
+            <img src="{{}}{{randombeer.image_url}}" alt="{{randombeer.name}}">
+        </div>
+        <div class="p-2 w-75">
+            <h4 class="card-title">{{randombeer.name}}</h4>
+            <span class="text-secondary">{{randombeer.tagline}}</span>
+            <p class="card-text">{{randombeer.description}}</p>
+        <b>Food Pairing</b>
+        <ul class="mt-3">
+          {{#each randombeer.food_pairing as |food_pairing|}}
+            <li>{{randombeer.food_pairing}}</li>
+          {{/each}}
+        </ul>
+        <p><b>Brewers Tips: </b>{{randombeer.brewers_tips}}</p>            
+        </div>
+      {{/each}}
+    </div>

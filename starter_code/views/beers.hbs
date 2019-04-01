@@ -1,5 +1,33 @@
-<div>
+{{!-- <div>
   {{#each beers as |beer|}}
     {{>beer beer=beer}}
   {{/each}}
+</div> --}}
+
+{{!-- <div class="d-flex flex-wrap justify-content-between pl-5 pr-5">
+  {{#each beers as |beer|}}
+  <div class="card ml-2 mr-2 mt-2 mb-2" style="width: 18rem;">
+    <img src={{beer.image}} class="card-img-top" alt={{beer.title}}>
+    <div class="card-body text-center">
+      <h5 class="card-title">{{beer.title}}</h5>
+    </div>
+  </div>
+  {{/each}}
+</div> --}}
+<div class="container">
+<div class="d-flex flex-wrap justify-content-between pl-5 pr-5">
+  {{#each beers as |beer|}}
+    <div class="card ml-2 mr-2 mt-2 mb-2" style="width: 18rem;">
+
+    {{>beerPartial beer=beer }}
+  </div>
+  {{/each}}
 </div>
+</div>
+{{!-- <div class="card-columns mt-3">
+  {{#each beers as |beer|}}
+    {{>beerPartial beer=beer }}
+  {{else}}
+  <p>Empty beers!!</p>
+  {{/each}}
+</div> --}}
