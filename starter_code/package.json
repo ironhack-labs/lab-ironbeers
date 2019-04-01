@@ -5,12 +5,14 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -e js,hbs,css,app"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
+    "handlebars": "^4.1.1",
     "hbs": "^4.0.1",
     "path": "^0.12.7",
     "punkapi-javascript-wrapper": "^1.0.2"
