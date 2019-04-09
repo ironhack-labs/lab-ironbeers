@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="/stylesheets/styles.css">
+
+{{>nav}}
+
+<div class="beers-container">
+  {{#each beers}}
+  {{>beerPartial this}}
+  {{/each}}
+
+</div>
+
+{{>footer}}

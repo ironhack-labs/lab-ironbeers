@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/stylesheets/styles.css">
+
+{{>nav}}
+<div class="container">
+  {{#each beer}}
+  <div class="beer-random">
+    <img class="beer-img-top-random" src="{{this.image_url}}" alt="Beer image cap2">
+    <div class="beerBody-random">
+      <h5 class="beerName-random">{{this.name}}</h5>
+      <h6 class="beerTagline-random">{{this.tagline}}</h6>
+      <p class="beerDescription-random">{{this.description}}</p>
+      <h6 class="beerFoodPairing">Food pairing
+        <ul>
+          {{#each this.food_pairing}}
+          <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </h6>
+      <p class="brewerTips"><span style="font-weight:bold"> Brewer Tips: </span>{{this.brewers_tips}}</p>
+    </div>
+  </div>
+
+  {{/each}}
+</div>
+{{>footer}}
