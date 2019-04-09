@@ -1,3 +1,31 @@
-<div class="index-container">
-  
-</div>
+{{> head}}
+
+<body>
+  <div class="index-container">
+    <nav class="nav shadow">
+      <ul class="nav-content ">
+        <a href="/home">
+          <li>Home</li>
+        </a>
+        <a href="/beers">
+          <li>Beers</li>
+        </a>
+        <a href="/random-beer">
+          <li>Random Beer</li>
+        </a>
+      </ul>
+    </nav>
+  </div>
+  <main class="main">
+    <div class="img-container">
+      <img class="main-img" src="/images/beer.png" alt="beer">
+    </div>
+    <button id="checkBtn" class="btn shadow">Check the Beers</button>
+    <button id="randomBtn" class="btn shadow">Check a Random Beer</button>
+  </main>
+  <footer class="footer">
+    <p>Developed by Ironhack ;)</p>
+  </footer>
+</body>
+
+</html>
