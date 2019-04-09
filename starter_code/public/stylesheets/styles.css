@@ -1,8 +1,130 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
-  
+
+@import url('https://fonts.googleapis.com/css?family=Heebo');
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Heebo', sans-serif;
+  background: #F7F9F9;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+
+}
+ul#listnav {
+  list-style-type: none;
+  display: flex;
+  width: 35%;
+  /* justify-content: space-between; */
+}
+
+.nav-item {
+ margin-right: 20px;
+}
+
+
+nav#nav {
+  background :#2081C3; 
+  padding: 20px 30px;
+}
+nav#nav a {
+  color: #F7F9F9
+};
+
+ul {
+  display: flex;
+}
+#footer {
+background:#0A2C42; 
+width: 100%;
+height: 30px;
+padding : 10px;
+color:#F7F9F9;
+}
+/* white: #F7F9F9; */
+/* light-blue: #2081C3; */
+/* dark-blue: #0A2C42; */
+/* grey: rgba(145, 145, 145, 0.481); */
+
+.beers-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.beer-container {
+display: flex;
+flex-direction: column;
+ padding: 30px;
+}
+
+
+.beer-container img {
+  height: 300px;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.beer-tagline {
+  color: rgba(145, 145, 145, 0.481);
+}
+.random-beer{
+  display:flex;
+}
+.random-beer img {
+  height: 300px;
+  align-self: center;
+  margin-bottom: 20px;
+  margin-right: 100px;
+}
+.container-random{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+  height: 72vh;
+}
+
+.container-random ul{
+list-style-type: none;
+}
+.container-random ul li{
+  padding-left: 20px;
+  }
+
+  /* .random-beer > * {
+    margin-bottom: 15px;
+  } */
+
+  button {
+    background-color:#2081C3;
+    width : 10rem;
+    height: 1.8rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+  }
+
+  .index-container{
+    left:45%;
+  justify-content: center;
+  display:flex;
+  flex-direction: column;
+   position: relative;
+   height:85vh;
+   width: 20vw;
+  }
+
+  .index-container img{
+    height: 35vh;
+    position: relative;
+    right: 18%;
+  }
+  #random{
+    width: 12rem;
+  }
+  #check{
+    margin-left: 15px;
+  }

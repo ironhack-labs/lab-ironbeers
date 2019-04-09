@@ -1,0 +1,8 @@
+  {{#each beersRes}}
+  <div class="beer-container">
+    <img src="{{this.image_url}}" alt="beer-img">
+    <h2 class="beer-name">{{this.name}}</h2>
+    <p class="beer-tagline">{{this.tagline}}</p>
+    <article class="beer-desc">{{this.description}}</article>
+  </div>
+  {{/each}}
