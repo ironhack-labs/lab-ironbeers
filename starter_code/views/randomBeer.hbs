@@ -1,5 +1,18 @@
 
     {{> navbar}}
-    <div class="index-container">
+    <div class="random-beer-container">
+         {{#each beer}}
+    <div class="info-container">
+        <h1>{{this.name}}</h1>
+        <h2>{{this.tagline}}</h2>
+        <p>{{this.description}}</p>
+        <h3>Food Paring</h3>
+        <ol>
+            <li></li>
+        </ol>
+        <p><span>Brewers tips:</span>{{this.brewers_tips}}</p>
     </div>
+     {{/each}}
+    </div>
+
     {{> footer}}

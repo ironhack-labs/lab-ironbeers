@@ -10,8 +10,7 @@ body{
     margin:0;
     padding:0; 
     font-family: Arial, Helvetica, sans-serif;
-    position: relative; 
-    height:100vh;
+    position: relative;     
 }
 
 ul.list-item{
@@ -27,14 +26,15 @@ li.nav-item{
 nav.nav-bar{
     background: #2081C3;
     color: #F7F9F9;
-    height: 2.5rem; 
+    height: 4rem; 
     display: flex; 
     align-items: center; 
+    position:absolute;
+    top:0px;
+    width: 100%;
 }
 
 .footer{
-    position: absolute;
-    bottom: 0px;
     background:#0A2C42;
     width: 100%;
     color: #F7F9F9;
@@ -77,12 +77,22 @@ li.nav-item a{
 }
 
 div.carte{
-    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1 0 33%;
+    
 }
 
 .beer-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    flex-wrap: wrap;  
+    padding-top: 8%;
+  
+}
+.image-beers{
+    height: auto;
 }
