@@ -5,4 +5,84 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+body{
+    margin:0;
+    padding:0; 
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative; 
+    height:100vh;
+}
+
+ul.list-item{
+    display: flex;
+    list-style: none;
+    margin: 0 10px; 
+}
+
+li.nav-item{
+    margin:0 10px;
+}
+
+nav.nav-bar{
+    background: #2081C3;
+    color: #F7F9F9;
+    height: 2.5rem; 
+    display: flex; 
+    align-items: center; 
+}
+
+.footer{
+    position: absolute;
+    bottom: 0px;
+    background:#0A2C42;
+    width: 100%;
+    color: #F7F9F9;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer p{
+    margin-left: 20px;
+
+}
+
+
+li.nav-item a{
+    text-decoration: none;
+    color: white;
+}
+
+.index-container{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    
+}
+
+.image-logo{
+    height: 25rem;
+}
+
+.btn{
+    background:#2081C3;
+    color:white;
+    text-decoration: none;
+    margin: 8px;
+    border-radius: 4px;
+    padding: 5px; 
+}
+
+div.carte{
+    height: 1rem;
+}
+
+.beer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
