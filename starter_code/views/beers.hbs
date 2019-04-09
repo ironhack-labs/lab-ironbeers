@@ -1,4 +1,5 @@
 <div id="beers-container">
-	{{ beers }}
-	hello there
+	{{#each beers}}
+	{{> beersPartials this}}
+	{{/each}}
 </div>
