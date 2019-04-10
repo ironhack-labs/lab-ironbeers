@@ -1,0 +1,12 @@
+<div class="beer-page">
+    {{#each beerList}}
+    <br><img class="cart-image" src="{{this.image_url}}"> </img><br>
+    <br>
+    <p class="cart-name"> {{this.name}} </p><br>
+    <br>
+    <p class="cart-tagline">{{this.tagline}}</p><br>
+    <br>
+    <p class="cart-description">{{this.description}}</p><br>
+    <br><button class="buy-button">Want to buy it!</button>
+    {{/each}}
+</div>
