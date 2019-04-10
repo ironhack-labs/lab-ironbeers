@@ -18,7 +18,13 @@ body{
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
-  min-height: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container{
+  height: 80vh;
 }
 
 .navigation{
@@ -53,4 +59,40 @@ body{
   padding: 1rem;
   padding-left: 2rem;
   min-height: 2.5rem;
+}
+
+.index-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.image-box{
+  width: 33vw;
+}
+
+.image-box img{
+  width: 100%;
+}
+
+.buttons-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons-box .btn{
+  margin-top: 2rem;
+}
+
+.btn{
+  background-color: var(--light-blue);
+  color: var(--white);
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+  box-shadow: .1rem .2rem .5rem var(--grey);
+  text-decoration: none;
 }
