@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
 /*
 white: #F7F9F9;
@@ -25,14 +25,13 @@ body {
 
 .nav {
     background-color: #2081C3;
-    height: 10vh;
-    display: flex;
-    align-items: center;
     font-size: 1.3rem;
 }
 
 .nav-list {
+    height: 10vh;
     display: flex;
+    align-items: center;
     list-style: none;
     margin-left:5vw; 
 }
@@ -88,8 +87,83 @@ body {
     border-radius: 10px;  
     color: #F7F9F9;
     font-size: 1.2rem;
+    transition: transform 0.5s ease;
 }
 
 .btn:hover {
     transform: scale(1.05);
+    
+}
+
+.beers-container {
+    flex: 1 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5vh 5vw;
+}
+
+.beers-partial {
+    width: 27vw;
+    margin: 5vh 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.beers-img {
+    height: 25vh;
+    display: flex;
+    align-items: flex-end; 
+    justify-content: center;
+    margin-bottom: 3vh; 
+}
+
+.beers-img img{
+    height: 100%;
+}
+
+.beers-partial h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.beers-partial h4 {
+    color: rgba(145, 145, 145, 0.481); 
+    margin-bottom: 2vh;  
+}
+
+.beers-partial p {
+    font-size: 0.9rem; 
+} 
+
+.beersRandom-container {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.beersRandom-img {
+    height: 50vh;
+}
+
+.beersRandom-img img {
+    height: 100%;
+}
+
+.beersRandom-section {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 50vh;
+    margin-left: 10vh;
+}
+
+.beersRandom-section h4 {
+    margin: 3vh 0;
+    color: rgba(145, 145, 145, 0.481); 
+}
+
+.beersRandom-section p {
+    font-size: 1.2rem; 
 }
