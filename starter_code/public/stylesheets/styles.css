@@ -1,8 +1,56 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
-  
+:root{
+  --white: #F7F9F9;
+  --light-blue: #2081C3;
+  --dark-blue: #0A2C42;
+  --grey: rgba(145, 145, 145, 0.481);
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  min-height: 100%;
+}
+
+.navigation{
+  background-color: var(--light-blue);
+  color: var(--white);
+  display: flex;
+  box-shadow: 0 .3rem .3rem var(--grey);
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navigation ul li{
+  padding: 1rem;
+  list-style: none;
+}
+
+.navigation ul li a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 1rem;
+  padding-left: 2rem;
+  min-height: 2.5rem;
+}
