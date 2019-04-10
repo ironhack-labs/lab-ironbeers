@@ -5,4 +5,48 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+
+div {
+  outline: 1px solid silver;
   
+}
+
+.topnav {
+  background-color: #2081C3;
+}
+
+nav{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+a{
+  margin-left: 5px;
+  color: white;
+}
+
+.bottfoot{
+  background-color: #0A2C42;
+  color: white;
+}
+
+.container {
+  width:100%;
+  text-align:center;
+ }
+
+ .container > div {
+  width: calc(100% / 3);  
+  display: inline-block;
+  vertical-align: top;   
+  border:1px solid red;
+  /* text-align:center; */
+  /* margin:2%; */    
+  /* padding:20px; */
+ }
+
+ .partial-logo{
+  width: 50%; 
+  max-width: 300px; 
+  height: auto; 
+ }
