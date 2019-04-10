@@ -19,12 +19,7 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.container{
-  height: 80vh;
+  padding-bottom: 2.5rem;
 }
 
 .navigation{
@@ -51,9 +46,7 @@ body{
 }
 
 .footer{
-  position: absolute;
   width: 100%;
-  bottom: 0;
   background-color: var(--dark-blue);
   color: var(--white);
   padding: 1rem;

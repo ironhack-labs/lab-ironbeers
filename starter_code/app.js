@@ -9,22 +9,24 @@ const punkAPI = new PunkAPIWrapper();
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
+hbs.registerPartials(__dirname + '/views/partials')
 
 
 
 app.get('/', (req, res, next) => {
-  res.render('index');
+  res.render('partials/index');
 });
 app.get('/beers', (req, res, next) => {
-  let beers;
-  punkAPI.getBeers()
-    .then(data => beers = data)
-    .catch(err => console.log(err));
+  const beers = punkAPI.getBeers()
+    .then(beers => {
+      res.render('partials/beers', {beers});
+    })
+    .catch(err => console.error(err));
     
-  res.render('beers', beers);
+  
 });
 app.get('/random-beers', (req, res, next) => {
-  res.render('index');
+  res.render('partials/index');
 });
 
 
