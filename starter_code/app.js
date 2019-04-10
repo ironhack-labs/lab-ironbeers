@@ -24,12 +24,16 @@ app.get('/beers', (req, res, next) => {
     .catch(err => console.error(err));
 });
 app.get('/random-beers', (req, res, next) => {
-  punkAPI.getBeers()
-    .then(beers => {
-      res.json(beers);
-    })
-  //res.render('index');
+  punkAPI.getRandom()
+    .then(beer => res.render('randomBeer', beer[0]))
+    .catch(err => console.error(err));
 });
+app.get('/test', (req, res, next) => {
+  punkAPI.getRandom()
+    .then(beer => res.json(beer))
+    .catch(err => console.error(err));
+});
+
 
 
 

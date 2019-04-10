@@ -1,0 +1,24 @@
+<div class="random-section">
+  <div class="image-box">
+    <img src={{image_url}} alt={{tagline}}>
+  </div>
+  <div>
+    <h2>{{name}}</h2>
+    <small>{{tagline}}</small>
+    <p>{{description}}</p>
+    {{#if food_pairing}}
+      <h3>Food pairing</h3>
+      <ul>
+        {{#each food_pairing}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    {{/if}}
+    {{#if brewers_tips}}
+      <h3 class="inline">Brewers Tips:</h3>
+      <p class="inline">
+        {{brewers_tips}}
+      </p>
+    {{/if}}
+  </div>
+</div>
