@@ -1,3 +1,110 @@
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
 /*
 white: #F7F9F9;
 light-blue: #2081C3;
@@ -5,4 +112,99 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    background-color: #2081C3;
+    /* color: white; */
+}
+
+nav a {
+    padding-left: 30px;
+    color: white;
+}
+
+.index-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bodyimage {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.bodyimage img {
+    height: 60vh;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
+    background-color: #0A2C42;
+    color: white;
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    padding-left: 30px;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn1 {
+    background-color: #2081C3;
+    color: white;
+    border-radius: 4px;
+    width: 10vw;
+    height: 5vh;
+    font-size: 12px;
+}
+
+.btn2 {
+    margin-top: 5px;
+    background-color: #2081C3;
+    color: white;
+    border-radius: 4px;
+    width: 15vw;
+    height: 5vh;
+    font-size: 12px;
+}
+
+.modelo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
