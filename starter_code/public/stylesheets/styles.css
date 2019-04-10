@@ -89,3 +89,51 @@ body{
   box-shadow: .1rem .2rem .5rem var(--grey);
   text-decoration: none;
 }
+
+.section-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.beer{
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+.beer img{
+  align-self: center;
+  max-height: 30rem;
+}
+
+.beer h2{
+  font-size: 3.2rem;
+  align-self: flex-start;
+}
+
+.beer small{
+  font-size: 2.4rem;
+  color: var(--grey);
+}
+
+@media (min-width: 50rem){
+  .beer{
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 100rem){
+  .beer{
+    max-width: 33%;
+  }
+}
+@media (min-width: 120rem){
+  .beer{
+    max-width: 25%;
+  }
+}

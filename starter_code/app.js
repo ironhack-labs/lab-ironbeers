@@ -14,19 +14,21 @@ hbs.registerPartials(__dirname + '/views/partials')
 
 
 app.get('/', (req, res, next) => {
-  res.render('partials/index');
+  res.render('index');
 });
 app.get('/beers', (req, res, next) => {
-  const beers = punkAPI.getBeers()
+  punkAPI.getBeers()
     .then(beers => {
-      res.render('partials/beers', {beers});
+      res.render('beers', {beers});
     })
     .catch(err => console.error(err));
-    
-  
 });
 app.get('/random-beers', (req, res, next) => {
-  res.render('partials/index');
+  punkAPI.getBeers()
+    .then(beers => {
+      res.json(beers);
+    })
+  //res.render('index');
 });
 
 
