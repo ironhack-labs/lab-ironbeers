@@ -6,37 +6,76 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
 
-/* body {
-	position: relative;
-} */
-
+/*the nav in all the pages*/
 #main-nav {
-	background-color: #0A2C42;
-	display: flex;
+  background-color: #2081c3;
+  display: flex;
+  height: 4em;
+  align-items: center;
 }
-
+.nav-item {
+  display: inline-flex;
+  justify-content: flex-start;
+  margin-right: 2em;
+}
 .navLink {
-	color: white;
+  color: white;
 }
-
-.footer {
-	position: fixed;
-	bottom: 0;
+/* The body part*/
+body {
+  /* position: relative; */
+  font-family: Arial, Helvetica, sans-serif;
 }
-
+/*The main page style*/
 .index-container {
-	display: flex;
-	flex-flow: column;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .featureBeer {
-	max-width: 350px;
-	margin: 20px;
+  max-width: 350px;
+  margin: 20px;
 }
 
 .clickButton {
-	max-width: 200px;
-	margin: 10px;
+  max-width: 200px;
+  margin: 20px 10px;
+  background-color: #2081c3;
+  color: white;
+  border-radius: 10% 10%;
+  padding: 10px 10px 10px 10px;
+}
+/*The div containing all the beers and info based on partials*/
+#beers-container {
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.beerItem {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 20px;
+  background-color: white;
+  flex: 1 0 33%;
+}
+
+h2 {
+  /* color: rgb(145, 145, 145, 0.481); */
+  color: grey;
+}
+/*the footer in all the pages*/
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-end;
+  background-color: #0a2c42;
+  color: white;
+  bottom: 0;
+  margin-top: 4em;
+  padding: 25px 50px;
 }
