@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 hbs.registerPartials(__dirname + "/views/partials");
 
 app.get('/', (req, res) => {
-  res.render('index');
+  res.render("partials/index");
 });
 
 app.get('/beers', (req, res) => {

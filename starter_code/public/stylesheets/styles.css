@@ -11,26 +11,26 @@ body {
     background-color: rgba(145, 145, 145, 0.481);
 }
 
-.nav {
+nav {
     display: flex;
     background-color: #2081C3;
     height: 10vh;
     align-items: center;
 }
 
-.ul {
+ul {
     display: flex;
     width: 400px;
     justify-content: space-around;
 }
 
-.ul li{
+ul li{
     font-family: Arial, Helvetica, sans-serif;
     list-style: none;
     color: #F7F9F9;
 }
 
-.footer {
+footer {
     display: flex;
     background-color: #0A2C42;
     color: #F7F9F9;
@@ -41,7 +41,7 @@ body {
     align-items: center;
 }
 
-.footer p {
+footer p {
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 70px;
 }
