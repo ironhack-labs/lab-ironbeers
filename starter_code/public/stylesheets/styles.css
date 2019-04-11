@@ -7,7 +7,7 @@ font-family: Arial, Helvetica, sans-serif
 */
 
 div {
-  outline: 1px solid silver;
+  outline: 1px solid transparent;
   
 }
 
@@ -28,6 +28,11 @@ a{
 .bottfoot{
   background-color: #0A2C42;
   color: white;
+  position: relative;
+  margin-top: 75px; /* negative value of footer height */
+  height: 50px;
+  clear:both;
+  padding-top:20px;
 }
 
 .container {
@@ -51,7 +56,14 @@ a{
   height: auto; 
  }
 
+
+ .topdiv{
+  margin-top: 25px;
+  margin-bottom: 25px;
+ }
+
  .anchorbtn {
+  
   border-radius: .25rem; 
   border: 1px solid transparent; 
   padding: .5rem 1rem;
