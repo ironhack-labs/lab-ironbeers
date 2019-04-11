@@ -1,0 +1,11 @@
+{{!-- <ol>
+    {{#each beers}}
+    <li class="item-{{@index}}">{{@value}} {{beersPartials}}</li>
+    {{/each}}
+</ol> --}}
+
+<div>
+	{{#each beers}}
+	{{> beerPartial this}}
+	{{/each}}
+</div>
