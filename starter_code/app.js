@@ -10,7 +10,7 @@ console.log(__dirname);
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
-//app.use(express.static('./public'));
+
 hbs.registerPartials(__dirname + '/views/partials');
 
 

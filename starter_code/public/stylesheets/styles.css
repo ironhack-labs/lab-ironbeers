@@ -50,3 +50,12 @@ a{
   max-width: 300px; 
   height: auto; 
  }
+
+ .anchorbtn {
+  border-radius: .25rem; 
+  border: 1px solid transparent; 
+  padding: .5rem 1rem;
+  background: #2081C3; 
+  color: white;
+}
+
