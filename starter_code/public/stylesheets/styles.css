@@ -5,4 +5,18 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+.content {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    height: 90vh;
+    flex-direction: column;
+}
+.beerimg{
+    width: 200px;
+    height: auto;
+}
+.btn{
+    margin: 5px;
+}
