@@ -1,8 +1,41 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
-  
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header{
+}
+
+body{
+    background-color: rgba(145, 145, 145, 0.481);
+}
+
+.div-body{
+    height: 760px;
+
+}
+
+.nav-bar{
+    list-style-type: none;
+    background-color: #2081C3;
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px 50px;
+    box-shadow: 0 0 10px 0 black;
+}
+
+.li-bar{
+    color: #F7F9F9;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 0 25px;
+    font-weight: bold;
+}
+
+footer{
+    background-color: #0A2C42;
+    color: #F7F9F9;
+    font-size: 24px;
+    padding: 20px 0 20px 50px;  
+}
+
