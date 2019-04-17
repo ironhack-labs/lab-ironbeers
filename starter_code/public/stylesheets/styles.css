@@ -6,3 +6,25 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+nav {
+  color: #F7F9F9;
+  background-color: #2081C3 !important;
+}
+
+footer {
+  color: #F7F9F9 !important;
+  background-color: #0A2C42 !important;
+  padding: 3px 0px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+a {
+  display: block;
+}
+
+.img-responsive {
+  max-width: 40%; 
+  max-height: 40%; 
+}

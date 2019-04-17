@@ -1,0 +1,12 @@
+<div class="row mt-5">
+  {{#each beers}}
+    <div class="col-3">
+      <figure class="figure"><img width="100" src="{{this.image_url}}"></figure>
+    </div>
+    <div class="col-9">
+      <h5>{{this.name}}</h5>
+      <p>{{this.tagline}}</p>
+      <p>{{this.description}}</p>
+    </div>
+  {{/each}}
+</div>
