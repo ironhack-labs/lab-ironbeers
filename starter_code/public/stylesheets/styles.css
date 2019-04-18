@@ -5,4 +5,23 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+#beer-home{
+  max-width: 300px;
+}
+  .nav-link{
+    color: white !important;
+  }
+  footer{
+    position: absolute;
+    bottom:0px;
+    width: 100%;
+    background-color: #0A2C42;
+    padding-top: 15px;
+    height: 60px;
+    box-sizing: border-box;
+    color:white;
+    padding-left: 20px;
+  }
+img{
+  max-width: 100%;;
+}
