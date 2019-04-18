@@ -5,4 +5,43 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #F7F9F9;
+    background-color: #0A2C42;
+}
+
+.index-container{
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 28vw;  
+}
+
+.grey{
+  background-color: rgba(145, 145, 145, 0.481);;  
+}
+
+.generalBody{
+    
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
