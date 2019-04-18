@@ -1,0 +1,15 @@
+
+
+        {{#each beers}}
+        <div class="d-flex">
+            <div class="d-flex justify-content-around">
+                <img class="float-left img-fluid" src={{this.image_url}} alt="" style="height:200px;">
+            </div>
+            <div class="d-flex justify-content-around">
+                <h5 class="card-title">{{this.name}}</h5>
+                <h6></h6>
+                <p class="card-text">{{this.description}}</p>
+            </div>
+        </div>
+        {{/each}}
+
