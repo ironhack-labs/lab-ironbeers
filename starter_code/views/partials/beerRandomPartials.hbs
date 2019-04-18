@@ -1,0 +1,21 @@
+<div class="container">	
+	<div class="block">
+      <div class="row">
+        <div class="span4">
+          <img class="img-left" src="{{this.image_url}}"/>
+          <div class="content-heading">
+            <h5><strong>{{this.name}}</strong></h5>
+            <h5 id = "tagline">{{this.tagline}}</h5>
+            </div>
+          <p>{{this.description}}</p>
+          <h5><strong>Food Pairing</strong></h5>
+          {{#each  this.food_pairing}}  
+            <ul>
+              <li>{{this}}</li>
+            </ul> 
+          {{/each}}          
+          <p>{{this.brewers_tips}}</p>
+        </div>
+     </div>   
+  </div>  
+</div>
