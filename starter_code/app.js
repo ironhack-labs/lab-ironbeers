@@ -16,6 +16,9 @@ app.get('/', (req, res, next) => {
   res.render('index');
 });
 
+let PORT=5000
 
+app.listen(PORT,()=>{
+  console.log(`funcionando ${PORT}`)
+} );
 
-app.listen(3000);
