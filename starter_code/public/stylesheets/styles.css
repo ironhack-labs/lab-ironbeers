@@ -5,4 +5,177 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+/* Reset CSS */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+/* -----------------*/
+
+body {
+  background-color: #f7f9f9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: #2081c3;  
+  font-size: 23px;
+  height: 50px;  
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+}
+
+nav > ul > li {
+  flex-direction: row;
+  margin: 0 2rem;
+  margin-top: 10px;
+}
+
+nav > ul > li > a {
+  color: #f7f9f9;
+  text-decoration: none;     
+}
+
+nav > ul > li > a:hover{
+  text-decoration: none; 
+  color: yellow;  
+}
+
+.button {
+  background-color: #2081c3;
+  height: 50px;
+  color: yellow;
+  width: 100%;
+  margin-left: -16%;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+.button:hover {
+  background-color: red;
+  color: white;
+}
+
+footer {
+  background-color: #0a2c42;
+  color: #f7f9f9;
+  height: 3rem;
+  padding: 1rem;
+  margin-top: 32px;
+}
+
+/*index.hbs*/
+.index-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-container > img {
+  height: 300px;
+  width: 22%;
+  margin: 3rem 0;
+}
+/* -----------------*/
+
+/*beers.hbs + beerPartial*/
+.beers-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 10%; 
+}
+
+/* Size image beerPartial.hbs*/
+.card-body > img {
+  height: auto;
+  margin-left: 40%;
+  height: 20vh; 
+}
+
+.card-body > h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.card-body > h3 {
+  font-size: 23px;  
+}
+
+.card-body > p {
+  text-align: justify;  
+}
+/* ------------------------ */
+
+/* beerPartial.hbs */
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 10%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+/* ------------------------ */
+
+/* img - randomBeerPartial.hbs */
+.random-beers-container {
+  display: flex;  
+}
+
+.div-random-img {
+  height: 505px;
+  width: 250px;
+  background-size: 100%;
+  margin: 0 10%;
+}
+
+.random-img {
+  height: 400px;
+  width: 150px;
+  background-size: 100%;
+  margin-top: 60px;
+  margin-left: 40%;
+}
+/* ------------------------ */
+
+/* txt randomBeerPartial.hbs*/
+.random-txt {
+  margin-top: 60px;
+  width: 60%;
+}
+
+.random-txt > h2 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.random-txt > h3 {
+  margin-top: 2%;
+  font-weight: bold;
+  font-size: 25px;
+  padding-left: 10px;
+  padding-right: 30px;
+}
+
+.random-txt > p {
+  margin-top: 2%;
+  font-size: 20px;
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 30px;
+}
+/* ------------------------ */
+
+
+
+
+
