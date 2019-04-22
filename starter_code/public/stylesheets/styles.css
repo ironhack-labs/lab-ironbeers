@@ -1,3 +1,8 @@
+nav.navbar {
+background-color: blue !important;
+}
+
+
 /*
 white: #F7F9F9;
 light-blue: #2081C3;
@@ -6,3 +11,7 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+
+body {
+  background-color: purple;
+}
