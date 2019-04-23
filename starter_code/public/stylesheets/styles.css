@@ -5,4 +5,119 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+
+nav {
+background-color: #2081C3;
+}
+
+/* .nav > li, nav > ul{
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav > li {
+  display: flex;
+
+} */
+
+.imagen {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+
+.button {
+  margin: 20px; 
+  padding: 10px 15px 10px 5px;
+  width: auto;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons > button > a.navbar-brand {
+  color: white;
+  padding: 0 0 0 25px;
+}
+
+footer {
+  background-color: #0A2C42;
+  margin:0;
+  padding:15px 0 5px 20px;
+  color: white;
+}
+
+
+.beers {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  margin: 0 20px;
+  
+}
+
+
+div#allbeers{
+ font-family:'Arial,Helvetica, sans-serif';
+ width: 30vw;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ text-align: left;
+ height: max-content;
+} 
+
+div#allbeers > p {
+  margin: 0 20px;
+  text-align: justify;
+}
+
+div#allbeers > h3, div#allbeers > h5 {
+  margin: 0 20px;
+}
+
+
+div.imagebeer{
+ width: 30vw;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ margin: 30px 0;
+}
+
+.mybeer {
+  width: auto;
+ display: flex;
+ text-align: left;
+}
+
+.information {
+display: flex;
+flex-direction: column;
+margin: 100px 100px 150px 0;
+}
+
+.information > p{
+  margin: 0 250px 0 0;
+}
+
+.information > h5 {
+  margin: 20px 0 10px 0;
+}
+
+.onlybeer {
+  margin: 100px 100px 150px 200px;
+}
+
+
+
+
+
+
+
   

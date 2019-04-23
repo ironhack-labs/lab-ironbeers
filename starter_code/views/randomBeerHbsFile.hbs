@@ -1,0 +1,26 @@
+<div class="mybeer">
+  <div class = "onlybeer">
+    <img src="{{this.image_url}}" width="100" height="250">
+  </div>
+
+  <div class="information">
+    <h3>{{this.name}}</h3>
+    <h5>{{this.tagline}}</h5>
+    <p>{{this.description}}</p>
+
+
+    <h5>Food Pairing:</h5>
+    <ul>
+      {{#each food_pairing}}
+      <li>
+        <p>{{this}}</p>
+      </li>
+      {{/each}}
+    </ul>
+
+
+    <p><strong>Brewers Tips: </strong>{{this.brewers_tips}}</p>
+
+
+  </div>
+</div>
