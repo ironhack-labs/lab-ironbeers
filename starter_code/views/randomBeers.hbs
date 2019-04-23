@@ -1,0 +1,12 @@
+<div>
+    {{#each beers}}
+    <div class="rndmbeer">
+        <img src={{this.image_url}} alt="" style="height:450px; width:250px; margin-left:45%; margin-top:10px;">
+        <div class="body">
+            <h5 class="title" style="font-size:40px; margin-left:50px; margin-top:20px; text-align:center;">{{this.name}}</h5>
+            <p class="text" style="font-size:20px; margin-left:50px; text-align:center;">{{this.description}}</p>
+        </div>
+
+    </div>
+    {{/each}}
+</div>
