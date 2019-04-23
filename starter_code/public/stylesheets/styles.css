@@ -6,3 +6,41 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+/* body {
+  background-color: red;
+} */
+
+.nav-color {
+  background-color:#2081C3;
+  color: white;
+  
+}
+
+.li-color {
+  color: white;
+}
+
+/* nav > div > ul > li > a {
+  color: white !important; */
+
+  a {
+    color: white !important;
+  }
+
+  .img-beer {
+    width: 30vh;
+    height:auto;
+  }
+
+  .btn-blue {
+    background-color: #2081C3;
+    color: white;
+  }
+
+  .position{
+    display:block;
+    margin:auto;
+    margin-top: 10px;
+  }
+
+ 

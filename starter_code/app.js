@@ -13,9 +13,17 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.get('/', (req, res, next) => {
-  res.render('index');
+  res.render('index.hbs');
+});
+
+app.get('/beers', (req, res, next) => {
+  res.render('beers.hbs');
+});
+
+app.get('/randomBeer', (req, res, next) => {
+  res.render('RandomBeer.hbs');
 });
 
 
-
+ 
 app.listen(3000);
