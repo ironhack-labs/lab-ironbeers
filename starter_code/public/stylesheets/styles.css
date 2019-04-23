@@ -59,6 +59,7 @@ a {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+
 }
 /* ================================= 
   Media Queries
@@ -105,7 +106,7 @@ button{
     background-color: #2081C3;
     color: white;
     width: 150px;
-    height: 40px;
+    height: 60px;
     
     
 }
@@ -131,3 +132,63 @@ button{
     /* padding: 30px; */
     margin: auto;
 }
+
+a{
+    color: white;
+}
+
+.randomimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.randombeerimg{
+    height: 300px;
+}
+
+.parentdiv{
+    text-align: center;
+    padding: 50px;
+}
+
+.col-md-4{
+    padding: 40px;
+    text-align: center;
+}
+
+/* //buttom navbar// */
+.navbar {
+    overflow: hidden;
+    background-color: #2081C3;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background: #f1f1f1;
+    color: black;
+  }
+  
+  .navbar a.active {
+    background-color: rgba(145, 145, 145, 0.481);
+    color: white;
+  }
+  
+  .main {
+    padding: 16px;
+    margin-bottom: 30px;
+  }
+  
