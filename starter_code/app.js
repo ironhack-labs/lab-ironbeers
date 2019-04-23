@@ -30,8 +30,16 @@ app.get('/beers', (req, res, next) => { //whats in chrome
 
 });
 
-app.get('/randomBeer', (req, res, next) => {
-  res.render('RandomBeer.hbs');
+app.get('/RandomBeer', (req, res, next) => {
+
+  punkAPI.getRandom()
+  .then(beers => {
+    console.log("RandomBeer is returning", beers)
+    res.render('RandomBeer.hbs', {beers} ); //refers to the hbs file 
+  })
+  .catch(error => {
+    console.log(error)
+  })
 });
 
 
