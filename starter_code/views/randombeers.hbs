@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>IronBeers</title>
+  <link rel="stylesheet" href="/stylesheets/styles.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      {{#each beer}}
+      <div class="col beerdesc">
+        <h1>{{this.name}}</h1>
+        <h2>{{this.tagline}}</h2>
+        <img src="{{this.image_url}}">
+        <p>{{this.description}}</p>
+        <p>Brewing Tips: {{this.brewers_tips}}</p>
+        <p>Food Pairings: {{this.food_pairing}}</p>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</body>
+</html>
