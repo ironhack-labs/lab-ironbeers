@@ -63,6 +63,7 @@ font-family: Arial, Helvetica, sans-serif
 
 #beers {
   padding-top: 100px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -73,11 +74,21 @@ font-family: Arial, Helvetica, sans-serif
   width: 33%;
   list-style: none;
   flex-shrink: 1;
-  padding: 55px 40px 0px 40px;
+  padding: 55px 40px 30px 40px;
+  text-align: center;
+  box-shadow: 2px 2px 2px black;
+  text-align: center;
+  line-height: 28px;
+  transition: all .2s;
 }
 
-#beers img {
-  margin-left: 100px;
+#beers li:hover {
+  box-shadow: 20px 20px 20px black;
+  background-color: rgba(33, 130, 192,.6);
+}
+
+#beers img:hover {
+  transform: scale(1.4) rotate(-100deg);
 }
 
 #beers h5 {
