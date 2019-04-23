@@ -1,5 +1,5 @@
 nav.navbar {
-background-color: blue !important;
+background-color: #2081C3 !important;
 }
 
 
@@ -13,5 +13,11 @@ font-family: Arial, Helvetica, sans-serif
   
 
 body {
-  background-color: purple;
+  
+}
+
+.mainfooter {
+  position: sticky;
+  
+  background-color: blue;
 }
