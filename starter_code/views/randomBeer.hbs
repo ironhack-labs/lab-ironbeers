@@ -1,0 +1,14 @@
+<div class="container my-5">
+    {{#each beer}}
+    <div class="card">
+        <img src={{this.image_url}} alt="" class=" my-3" style="height:50%; width:10%; margin-left:47% !important;">
+        <div class="body">
+            <h5 class="title" style="font-size:40px; margin-left:50px; margin-top:20px; text-align:center;">
+                {{this.name}}</h5>
+            <p class="text" style="font-size:20px; margin-left:50px; text-align:center;">{{this.description}}</p>
+        </div>
+
+    </div>
+    {{/each}}
+
+</div>

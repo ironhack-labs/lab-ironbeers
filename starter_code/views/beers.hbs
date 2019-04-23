@@ -1,0 +1,13 @@
+<div class='row container justify-content-center text-center mx-auto '>
+    {{#each beers}}
+    <div class="card col-md-3 m-1">
+        <img class="card-img-top mx-auto my-3" src={{this.image_url}} alt="Card image cap"
+            style="height:100px; width:30px;">
+        <div class="card-body">
+            <h5 class="card-title">{{this.name}}</h5>
+            <p class="card-text">{{this.description}}</p>
+        </div>
+
+    </div>
+    {{/each}}
+</div>
