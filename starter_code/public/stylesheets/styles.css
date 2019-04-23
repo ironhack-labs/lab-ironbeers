@@ -114,3 +114,20 @@ button{
     padding-top: 50px;
     width: 400px;
 }
+
+.beers{
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.allbeers{
+    width: 50px;
+
+}
+
+.card-img-top{
+    height: 150px;
+    width: auto;
+    /* padding: 30px; */
+    margin: auto;
+}
