@@ -155,7 +155,19 @@ a{
 .col-md-4{
     padding: 40px;
     text-align: center;
+    box-shadow: 2px 2px 2px black;
+    text-align: center;
+    line-height: 28px;
+    transition: all .2s;
 }
+
+.col-md-4:hover  {
+    box-shadow: 20px 20px 20px black;
+} 
+.col-md-4:hover  img{
+ transform: scale(1.4) rotate(-100deg)
+} 
+
 
 /* //buttom navbar// */
 .navbar {
@@ -192,3 +204,6 @@ a{
     margin-bottom: 30px;
   }
   
+  img{
+      transition: all .3s;
+  }
