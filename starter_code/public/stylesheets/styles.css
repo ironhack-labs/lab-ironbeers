@@ -5,4 +5,72 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    height: 80vh;    
+}
+
+.navig{
+    background-color: #2081C3;
+    height: 10vh;
+}
+
+.navig li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 30px;
+    list-style: none;
+}
+
+.navig li a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.foot{
+    
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    background-color: #0A2C42; 
+    
+
+}
+
+.foot p{
+    display: inline-block;
+    font-size: 25px;
+    color: white;
+    margin-left: 60px;
+    margin-top: 30px;
+
+}
+
+
+.index-container img, button{
+    display: block;
+    margin: 0 auto;
+   
+}
+
+.index-container img{
+    height: 400px;
+    padding-top: 100px;
+}
+
+.index-container button{
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: #2081C3;
+    padding: 10px 20px;
+}
+
+.index-container button a{
+    text-decoration: none;
+    color: white;
+}
   
