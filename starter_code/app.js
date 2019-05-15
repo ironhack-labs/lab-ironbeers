@@ -10,6 +10,7 @@ app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
 
 
+hbs.registerPartials(__dirname + '/views/partials')
 
 app.get('/', (req, res) => {
   res.render('index')
@@ -20,7 +21,9 @@ app.get('/beers', (req, res) => {
   punkAPI.getBeers()
     .then(beers => {
       //console.log(beers)
-      res.render('beers', beers)
+      res.render('beers', {
+        beers
+      }) //siempre pasar objeto!!
     })
     .catch(err => console.log(err))
 })

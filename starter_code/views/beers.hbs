@@ -1,11 +1,7 @@
 <section class="beer-list">
-
-
-
-  <div class="row">
     {{#each beers}}
-    <li>{{this}}</li>
+    <div class="row beer-card">
+      {{>beerPartial}}
+    </div>
     {{/each}}
-  </div>
-
 </section>
