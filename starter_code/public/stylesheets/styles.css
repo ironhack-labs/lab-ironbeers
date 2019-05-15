@@ -29,7 +29,7 @@ a {
   display: inline-block
 }
 
-nav a:hover {
+a:hover {
   color: var(--white);
   text-decoration: none;
 }
@@ -40,4 +40,30 @@ footer {
   padding: 25px;
   display: flex;
 
+}
+
+section {
+  padding-top: 30px;
+}
+
+/* index */
+
+.index {
+  display: flex;
+  justify-content: center;
+}
+
+.index img {
+  width: 200px;
+
+}
+
+.button {
+  padding: 10px 5px;
+  border-radius: 5px;
+  background-color: var(--light-blue);
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 10px;
 }
