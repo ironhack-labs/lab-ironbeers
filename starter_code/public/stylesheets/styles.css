@@ -16,6 +16,10 @@ main{
 .navig{
     background-color: #2081C3;
     height: 10vh;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    z-index: 10;
 }
 
 .navig li {
@@ -72,5 +76,14 @@ main{
 .index-container button a{
     text-decoration: none;
     color: white;
+}
+
+.card{
+    width: 300px;
+}
+
+.card img{
+    
+    object-fit: cover;
 }
   
