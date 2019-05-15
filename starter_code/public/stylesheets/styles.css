@@ -8,9 +8,8 @@
 /* General Styles */
 body {
   font-family: 'Arial', 'Helvetica', sans-serif;
-  color: var(--white);
+  color: var(--grey);
 
-  height: 100vh;
 }
 
 /* Nav bar */
