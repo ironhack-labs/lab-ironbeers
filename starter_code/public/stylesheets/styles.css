@@ -6,3 +6,161 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+*{
+ margin: 0;
+ padding: 0;
+ font-family: Arial, Helvetica, sans-serif
+}
+
+html,
+body {
+ /* height: 100%; */
+ min-height: 100vh;
+ position: relative;
+}
+
+.navbar{
+  background-color: #2081C3;
+  height: 5em;
+  
+}
+.footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: #0A2C42;
+  height: 5em;
+  font-size: 19px;
+  color: #F7F9F9;
+}
+
+.superContainer {
+  /* height: 100%; */
+}
+
+.footer p{
+  padding-top: 1.7em;
+  padding-left: 2em;
+}
+
+.navbar ul, .navbar li, a{
+  font-size: 19px;
+  color: #F7F9F9;
+  display: inline-block;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.navbar ul {
+  padding-top: 1.7em;
+  padding-left: 4em;
+}
+
+.navbar li{
+  padding: 0 1em;
+}
+
+.beerHome {
+  width: 300px;
+  margin-top: 8em;
+}
+
+.btn {
+  margin: 1em 0;
+  padding: 10px 20px;
+  background-color: #2081C3;
+  border-radius: 10px;
+  box-shadow:3px 3px 5px 6px rgb(0, 0, 0, .2);
+}
+
+.index-container{
+  text-align: center;
+}
+
+.btn-container{
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.container{
+  /* width: 100vw; */
+}
+.beers-container{
+  padding: 100px 0;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between
+}
+
+.beerCard{
+  margin: 50px 10px;
+  width: 20%;
+  
+}
+
+.cardImage{
+    height: 100%;
+    /* object-fit: cover;
+    object-position: center; */
+}
+
+.cardImageContainer{
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 300px;
+  padding-bottom: 20px;
+}
+
+.tagline {
+  color: rgba(145, 145, 145, 0.481);
+  padding: 10px 0;
+}
+
+
+.randomImage {
+  width: 100px;
+}
+
+.randomImage img {
+  width: 100%;
+}
+
+.container-random{
+  padding: 150px 300px;
+  display: flex;
+  justify-content: space-around
+}
+
+.randomArticle{
+  width: 60%;
+  padding: 0 100px;
+}
+
+.beerTitleRandom, .taglineRandom, .descriptionRandom{
+  padding: 15px 0;
+}
+
+.taglineRandom {
+  color: rgba(145, 145, 145, 0.481);
+}
+
+.descriptionRandom h3{
+  display: inline;
+  font-weight: 600;
+}
+
+.descriptionRandom ul{
+  color: black;
+  display: block;
+  font-size: 14px;  
+  list-style-type: disc;
+}
+
+.descriptionRandom li{
+ padding: 25px 0 5px 0px;
+ margin-left: 55px;
+}
