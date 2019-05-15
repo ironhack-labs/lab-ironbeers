@@ -8,7 +8,8 @@
 /* General Styles */
 body {
   font-family: 'Arial', 'Helvetica', sans-serif;
-  color: var(--grey);
+  color: var(--white);
+  background-color: var(--grey);
 
 }
 
@@ -69,6 +70,11 @@ section {
 
 /* beer card */
 
+.beer-card {
+
+  padding: 30px;
+}
+
 .beer-card figure {
   display: flex;
   justify-content: center;
@@ -80,4 +86,21 @@ section {
   object-fit: contain;
   object-position: center;
   text-align: center;
+}
+
+.beer-card h1 {
+  color: black;
+  font-size: 1.8em;
+  font-weight: 600
+}
+
+.beer-card h2 {
+  font-size: 1.5em;
+  color: grey;
+}
+
+.beer-card p {
+  color: black;
+  font-weight: 100;
+  font-size: .8em;
 }
