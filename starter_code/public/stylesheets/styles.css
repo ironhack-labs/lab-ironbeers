@@ -9,9 +9,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-main{
-    height: 80vh;    
-}
+
 
 .navig{
     background-color: #2081C3;
@@ -62,8 +60,8 @@ main{
 }
 
 .index-container img{
-    height: 400px;
-    padding-top: 100px;
+    height: 60vh;
+    padding-top: 150px;
 }
 
 .index-container button{
@@ -79,11 +77,24 @@ main{
 }
 
 .card{
-    width: 300px;
+    margin: 150px 80px 10vh 80px;
+    width: 300px;    
+}
+
+
+.card p{
+    text-align: justify;
+    font-size: 20px;
 }
 
 .card img{
-    
-    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    height: 400px;
+}
+
+.card-title{
+    font-size: 30px;
+    text-align: center;
 }
   
