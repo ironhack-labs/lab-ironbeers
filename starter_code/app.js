@@ -27,6 +27,16 @@ app.get('/beers', (req, res) => {
     })
     .catch(err => console.log(err))
 })
+app.get('/random-beers', (req, res) => {
+  punkAPI.getRandom()
+    .then(beer => {
+      console.log(beer)
+      res.render('random-beer', {
+        beer
+      }) //siempre pasar objeto!!
+    })
+    .catch(err => console.log(err))
+})
 
 
 app.listen(3000);
