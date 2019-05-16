@@ -5,4 +5,26 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #F7F9F9;
+}
+nav {
+  background-color: #2081C3;
+}
+li {
+  padding: 10px;
+  list-style: none;
+  display: inline-block;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+main {
+ background-color: rgba(145, 145, 145, 0.481)
+}
+footer {
+  background-color:#0A2C42
+}
   
