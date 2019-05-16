@@ -74,7 +74,8 @@ body {
 }
 
 .card {
-  width: 33%;
+  width: 30%;
+  margin: 10px;
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -84,5 +85,7 @@ body {
   object-fit: contain;
 }
 
-
+.random {
+  color: black;
+}
   
