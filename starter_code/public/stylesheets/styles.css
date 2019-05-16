@@ -5,4 +5,59 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+body {
+  text-align: center;
+  font-family: Arial,
+    Helvetica,
+    sans-serif;
+}
+
+.navblue {
+  background-color: #2081C3;
+}
+
+/* .container {
+  text-align: center;
+   background-color: gba(145, 145, 145, 0.481);
+ /* } */
+
+.btn-primary {
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  margin-top: 12px;
+  text-align: center;
+  background-color: #2081C3;
+  /* object-position: center; */
+}
+
+/* .index-container {
+  text-align: center;
+
+
+} */
+
+img {
+  width: 250px;
+  margin: 100px;
+}
+
+.footer {
+  text-align: left;
+  color: white;
+  background-color: #0A2C42;
+  padding: 10px;
+  margin-top: 70px;
+
+}
+
+.card-img {
+  width: 100px;
+
+}
+
+.card {
+  text-align: center;
+}
