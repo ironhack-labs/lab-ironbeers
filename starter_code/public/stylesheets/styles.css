@@ -3,6 +3,91 @@ white: #F7F9F9;
 light-blue: #2081C3;
 dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
+
 */
+
+body{
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif; 
+    padding : 0px; 
+    margin: 0px; 
+}
+
+.index-container {
+    height: 80vh;
+    display : flex; 
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+.img-index{
+    height: 50vh;
+}
+
+.btn{
+    background:  #2081C3;
+    color : #F7F9F9;
+    padding: 15px; 
+    border-radius: 5px; 
+    font-size: 1em; 
+}
+
+nav{
+    background : #2081C3;
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center;
+    height: 10vh; 
+
+}
+
+nav a{
+
+    padding : 0 10px; 
+    text-decoration: none;
+    color: #F7F9F9;
+}
+
+footer{
+    height: 10vh; 
+    background: #0A2C42;
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center;
+    color : white; 
+    padding-left: 15px; 
+}
+
+.wrapper-beers{
+    margin : 5%; 
+    display: flex; 
+    justify-content: space-evenly; 
+    flex-flow: row wrap;
+    align-items: flex-start; 
+}
+
+.wrapper-beer{
+    margin : 2%; 
+    width: 25%; 
+    display: flex; 
+    flex-flow: column wrap;
+    align-items: center; 
+
+}
+
+.wrapper-beer h2{
+    font-size : 1.5em; 
+}
+
+.wrapper-beer h3{
+    color : rgba(145, 145, 145, 0.481);
+    font-size : 1.3em; 
+}
+
+.wrapper-beer img{
+    height: 150px; 
+}
+
+
   
