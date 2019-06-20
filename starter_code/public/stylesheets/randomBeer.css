@@ -1,0 +1,21 @@
+
+.wrapper-random{
+    margin : 5%; 
+    display: flex; 
+    flex-flow: row nowrap; 
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    height: 70vh;
+}
+
+#text-random{
+    padding: 0px 5%; 
+    width: 100%; 
+    display: flex; 
+    flex-flow: column wrap;
+    align-items: flex-start; 
+}
+
+#img-random{
+    padding: 0px 5%; 
+}

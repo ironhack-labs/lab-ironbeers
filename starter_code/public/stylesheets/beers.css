@@ -1,0 +1,39 @@
+
+.wrapper-beers{
+    margin : 5%; 
+    display: flex; 
+    justify-content: space-evenly; 
+    flex-flow: row wrap;
+    align-items: flex-start; 
+}
+
+.wrapper-beer{
+    margin : 2%; 
+    width: 25%; 
+    display: flex; 
+    flex-flow: column wrap;
+    align-items: center; 
+}
+
+.wrapper-beer h2{
+    font-size : 1.5em; 
+}
+
+.wrapper-beer h3{
+    color : rgba(145, 145, 145, 0.481);
+    font-size : 1.3em; 
+}
+
+
+@media screen and (max-width: 899px) {
+.wrapper-beer img{
+    height: 30vh; 
+}
+
+}
+
+@media screen and (min-width: 900px) {
+.wrapper-beer img{
+    height: 40vh; 
+}
+}

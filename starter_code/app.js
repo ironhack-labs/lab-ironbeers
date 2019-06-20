@@ -25,12 +25,28 @@ app.get('/beers', (req, res, next)=>{
   punkAPI.getBeers()
         .then(beers => { 
           res.render('beers', {beers})
+          beers.forEach(b => { 
+            console.log( "beer name:", b.name )
+          });
+          
         })
         .catch(error => {
-          console.log(error)
+          console.log("error while getting beers", error)
         })
 
 })
 
+
+app.get( '/random-beer', (req, res, next) =>{
+
+  punkAPI.getRandom()
+      .then( random => { 
+        res.render('randomBeer', random[0])
+        console.log("random beer object", random);
+        console.log('random beer name', random[0].name)
+      })
+      .catch( err => {console.log( "error while getting a random beer", err)})
+
+})
 
 app.listen(3000);

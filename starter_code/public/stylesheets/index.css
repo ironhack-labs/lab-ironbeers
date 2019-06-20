@@ -1,0 +1,20 @@
+
+.index-container {
+    height: 80vh;
+    display : flex; 
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+.img-index{
+    height: 40vh;
+}
+
+.btn{
+    background:  #2081C3;
+    color : #F7F9F9;
+    padding: 15px; 
+    border-radius: 5px; 
+    font-size: 1em; 
+}
