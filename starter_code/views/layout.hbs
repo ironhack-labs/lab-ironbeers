@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./stylesheets/styles.css">
-    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+ <!--
     {{#each css}}
-    <link rel="stylesheet" href="./stylesheets/{{this}}.css">
+    <link rel="stylesheet" href="/stylesheets/{{this}}.css">
     {{/each}}
-    <!--<script src="./js/client.js" type="module"></script> -->
+    -->
 
+     <link rel="stylesheet" href="/stylesheets/styles.css"> 
+     <link rel="stylesheet" href="/stylesheets/index.css"> 
+     <link rel="stylesheet" href="/stylesheets/beers.css"> 
+     <link rel="stylesheet" href="/stylesheets/randomBeer.css">  
     <title>Elin-Ironbeers lab</title>
 </head>
 <body>
@@ -19,8 +22,7 @@
     {{>nav_main}}
 </header>
 
-    {{{body}}}
-    
+    {{{body}}}   
 
 <footer>Developped by Ironhackers </footer>
 </body>

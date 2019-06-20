@@ -1,3 +1,6 @@
+#img-random{
+    padding: 0px 5%; 
+}
 
 .wrapper-random{
     margin : 5%; 
@@ -5,17 +8,40 @@
     flex-flow: row nowrap; 
     align-items: flex-start; 
     justify-content: flex-start; 
-    height: 70vh;
+    height: 80vh;
 }
 
 #text-random{
     padding: 0px 5%; 
     width: 100%; 
     display: flex; 
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     align-items: flex-start; 
 }
 
-#img-random{
-    padding: 0px 5%; 
+@media screen and (max-width: 899px) {
+    .wrapper-random{
+        width: 77%; 
+    }
+
+    #img-random{
+        padding: 0px 5%; 
+        width: 50%; 
+    }
+
+    #text-random{
+        height: 80vh;
+    }
+
+    #text-random p{
+        font-size: 0.8em; 
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    #img-random{
+        padding: 0px 5%; 
+        width: 40%; 
+    }
 }

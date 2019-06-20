@@ -8,12 +8,12 @@
 }
 
 .wrapper-beer{
-    margin : 2%; 
-    width: 25%; 
+    margin : 2%;   
     display: flex; 
     flex-flow: column wrap;
     align-items: center; 
 }
+
 
 .wrapper-beer h2{
     font-size : 1.5em; 
@@ -26,14 +26,26 @@
 
 
 @media screen and (max-width: 899px) {
-.wrapper-beer img{
-    height: 30vh; 
-}
+    .wrapper-beer img{
+        height: 30vh; 
+    }
+
+    .wrapper-beer{
+        width: 75%; 
+    }
 
 }
 
 @media screen and (min-width: 900px) {
-.wrapper-beer img{
-    height: 40vh; 
+    .wrapper-beer{
+        width: 25%; 
+    }
+
+    .wrapper-beer img{
+        height: 40vh; 
+    }
 }
-}
+
+
+
+
