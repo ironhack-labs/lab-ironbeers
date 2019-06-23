@@ -1,0 +1,7 @@
+# Dependency directory
+node_modules/
+.idea/
+test/screen/
+test/html/
+dist/
+

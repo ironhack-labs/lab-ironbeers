@@ -1,0 +1,29 @@
+{
+  "name": "starter_code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/server.js",
+  "scripts": {
+    "rebuild": "tsc",
+    "nodemon": "nodemon /dist/server.js localhost 3006",
+    "test": "mocha test/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "hbs": "^4.0.4",
+    "path": "^0.12.7",
+    "punkapi-javascript-wrapper": "^1.0.2",
+    "@types/express": "^4.17.0",
+    "chai": "^4.2.0",
+    "nodemon": "^1.19.1",
+    "puppeteer": "^1.18.0"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "test/*"
+    ],
+    "delay": "2500"
+  }
+}
