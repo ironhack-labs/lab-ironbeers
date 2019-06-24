@@ -5,7 +5,11 @@ import {Application, Request, Response} from "express";
 
 const BeerAction = {
    execute: (req: Request, res: Response) => {
-      res.send('Beer');
+      const data = {
+         title:"Beer"
+      };
+
+      res.render('beer', data);
    }
 };
 

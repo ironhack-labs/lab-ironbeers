@@ -5,7 +5,12 @@ import {Application, Request, Response} from "express";
 
 const HomeAction = {
    execute: (req: Request, res: Response) => {
-      res.send('Home');
+
+      const data = {
+         title:"Home"
+      };
+
+      res.render('index', data);
    }
 };
 

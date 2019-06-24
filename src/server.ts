@@ -7,15 +7,22 @@ const express = require('express');
 const app: Application = express();
 
 
-const hbs = require('hbs');
 const path = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 const punkAPI = new PunkAPIWrapper();
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('./public'));
 
+
+
+const pathViews = path.join(__dirname, '../views');
+
+app.set('views',pathViews);
 app.set('view engine', 'hbs');
-app.set('views', path.join(__dirname, 'views'));
+
+
+const hbs = require('hbs');
+
 
 routerBuilder(app);
 

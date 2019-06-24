@@ -5,7 +5,13 @@ import {Application, Request, Response} from "express";
 
 const RandomBeerAction = {
    execute: (req: Request, res: Response) => {
-      res.send('Random');
+
+      const data = {
+         title:"Random Beer"
+      };
+
+      res.render('beer_random', data);
+
    }
 };
 
