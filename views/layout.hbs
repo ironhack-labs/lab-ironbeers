@@ -21,10 +21,52 @@
          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
 
-
    <title>{{title}}</title>
 </head>
 <body>
-   {{{body}}}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+           aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="mainMenu">
+
+      <div class="container">
+
+         <ul class="navbar-nav mr-auto mt-2 mt-lg-0"  >
+            <li class="nav-item ">
+               <span class="navbar-brand" style="margin-right: 50px">IronBeers</span>
+            </li>
+
+            <li class="nav-item active">
+               <a class="nav-link" href="/">Home </a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="/beer">Beer</a>
+            </li>
+
+            <li class="nav-item">
+               <a class="nav-link" href="/random-beer">Random Beer</a>
+            </li>
+         </ul>
+      </div>
+
+
+   </div>
+</nav>
+
+{{{body}}}
+
+<nav class="navbar fixed-bottom navbar-dark bg-dark">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <a class="navbar-brand" href="#">@iqdavidh</a>
+         </div>
+      </div>
+   </div>
+
+</nav>
 </body>
 </html>

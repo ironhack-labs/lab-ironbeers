@@ -14,6 +14,10 @@ function routerBuilder(app : Application ){
       HomeAction.execute(req,res);
    });
 
+   app.get("/home", function (req: Request, res: Response) {
+      HomeAction.execute(req,res);
+   });
+
    app.get("/beer", function (req: Request, res: Response) {
       BeerAction.execute(req,res);
    });

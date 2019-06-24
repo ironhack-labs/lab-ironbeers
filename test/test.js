@@ -5,16 +5,16 @@ const puppeteer = require('puppeteer');
 let browser;
 
 
-describe('Array', function () {
-   describe('#indexOf()', function () {
-      it('Solo es probar que corren los test', function () {
-         assert(true, "Es para robar que esta funconando testing");
-      });
-   });
-});
+// describe('Array', function () {
+//    describe('#indexOf()', function () {
+//       it('Solo es probar que corren los test', function () {
+//          assert(true, "Es para robar que esta funconando testing");
+//       });
+//    });
+// });
 
 
-/*
+
 before(async () => {
    browser = await puppeteer.launch();
    page = await browser.newPage();
@@ -25,18 +25,20 @@ after(async () => {
 });
 
 let listaPage = [
-   {urlRel: 'index.html', nombre: 'Home', htmlBody: ''},
-   {urlRel: 'about.html', nombre: 'About', htmlBody: ''},
-   {urlRel: 'fotos.html', nombre: 'Fotos', htmlBody: ''},
+   {urlRel: 'home', nombre: 'Home', htmlBody: ''},
+   {urlRel: 'beer', nombre: 'Beer', htmlBody: ''},
+   {urlRel: 'random-beer', nombre: 'Random Beer', htmlBody: ''},
 ];
 
 
-const urlSite = 'http://localhost:3005';
+const urlSite = 'http://localhost:3006';
 
 
 let fnTestPage = itemPagina => {
 
    const urlRel = itemPagina.urlRel;
+
+
 
 
    describe(`Test Pagina  ${urlRel}`, async () => {
@@ -54,7 +56,7 @@ let fnTestPage = itemPagina => {
                    b => {
                       const statusActual = response.status();
 
-                      assert(200 === statusActual, `no devolvio un 200 ${urlRel} - devolvio ${statusActual}`);
+                      assert(200 === statusActual, `no devolvió un 200 ${urlRel} - devolvio ${statusActual}`);
 
                       if (statusActual === 200) {
                          const promise = response.text();
@@ -83,15 +85,12 @@ let fnTestPage = itemPagina => {
 
          await page.screenshot({path: 'test/screen/' + urlRel + '.png'});
 
-         //Verificar el contenido del html
+         //Verificar que existe el elemento del main menu
 
+         const htmlMainMenu = `id="mainMenu"`;
+         let index = itemPagina.htmlBody.indexOf(htmlMainMenu);
+         assert(index > 0, `No aparece el "mainMenu" ${urlRel} en ${itemPagina.nombre}`);
 
-         listaPage.forEach(item => {
-            const htmlLink = `<a class="nav-link" href="${item.urlRel}">${item.nombre}</a>`;
-            let index = itemPagina.htmlBody.indexOf(htmlLink);
-
-            assert(index > 0, `No aparece el link ${item.urlRel} en ${itemPagina.nombre}`);
-         });
 
 
       }).timeout(6000)
@@ -105,4 +104,4 @@ listaPage.forEach(itemPagina => {
 });
 
 
-*/
+
