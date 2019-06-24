@@ -1,12 +1,7 @@
 'use strict';
 
 import {Application, Request, Response} from "express";
-
-import HomeAction from "./Action/HomeAction";
-import homeAction from "./Action/HomeAction";
-import BeerAction from "./Action/BeerAction";
-import RandomBeerAction from "./Action/RandomBeerAction";
-
+import routerBuilder from "./Action/Routes/BuildRouter";
 
 const express = require('express');
 const app: Application = express();
@@ -22,24 +17,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
-
-app.get("/debug", function (req: Request, res: Response) {
-   res.send('yea baby');
-});
-
-
-app.get("/", function (req: Request, res: Response) {
-   HomeAction.execute(req,res);
-});
-
-app.get("/beer", function (req: Request, res: Response) {
-   BeerAction.execute(req,res);
-});
-
-app.get("/random-beer", function (req: Request, res: Response) {
-   RandomBeerAction.execute(req,res);
-});
-
+routerBuilder(app);
 
 
 const port: number = 3006;
