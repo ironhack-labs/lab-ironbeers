@@ -10,7 +10,7 @@ const HomeAction = {
          title:"Home"
       };
 
-      res.render('index', data);
+      res.render('home', data);
    }
 };
 

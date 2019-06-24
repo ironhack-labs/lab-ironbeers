@@ -7,11 +7,13 @@ const express = require('express');
 const app: Application = express();
 
 
+app.use(express.static('public'));
+
 const path = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 const punkAPI = new PunkAPIWrapper();
 
-app.use(express.static('./public'));
+app.use(express.static( path.join(__dirname, '../public')));
 
 
 

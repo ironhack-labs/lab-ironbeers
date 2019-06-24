@@ -22,41 +22,55 @@
 
 
    <title>{{title}}</title>
+
+   <style>
+      .mnuHomeBeers{
+         display: flex;
+      }
+
+
+   </style>
+
 </head>
 <body>
 
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-           aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-   </button>
-   <div class="collapse navbar-collapse" id="mainMenu">
 
-      <div class="container">
+   <div class="container">
+      <div class="row col-xs-12">
 
-         <ul class="navbar-nav mr-auto mt-2 mt-lg-0"  >
-            <li class="nav-item ">
-               <span class="navbar-brand" style="margin-right: 50px">IronBeers</span>
-            </li>
+         <span class="navbar-brand hidden-xs-down" >IronBeers</span>
 
-            <li class="nav-item active">
-               <a class="nav-link" href="/">Home </a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="/beer">Beer</a>
-            </li>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
 
-            <li class="nav-item">
-               <a class="nav-link" href="/random-beer">Random Beer</a>
-            </li>
-         </ul>
+
+               <li class="nav-item active">
+                  <a class="nav-link" href="/">Home </a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="/beers">Beers</a>
+               </li>
+
+               <li class="nav-item">
+                  <a class="nav-link" href="/random-beer">Random Beer</a>
+               </li>
+            </ul>
+         </div>
+
       </div>
-
-
    </div>
+
 </nav>
 
+
 {{{body}}}
+
+
 
 <nav class="navbar fixed-bottom navbar-dark bg-dark">
    <div class="container">

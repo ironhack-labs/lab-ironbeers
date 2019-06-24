@@ -3,15 +3,15 @@
 import {Application, Request, Response} from "express";
 
 
-const BeerAction = {
+const BeersAction = {
    execute: (req: Request, res: Response) => {
       const data = {
-         title:"Beer"
+         title:"Beers"
       };
 
-      res.render('beer', data);
+      res.render('beers', data);
    }
 };
 
 
-export default BeerAction;
+export default BeersAction;

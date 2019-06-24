@@ -26,7 +26,7 @@ after(async () => {
 
 let listaPage = [
    {urlRel: 'home', nombre: 'Home', htmlBody: ''},
-   {urlRel: 'beer', nombre: 'Beer', htmlBody: ''},
+   {urlRel: 'beers', nombre: 'Beers', htmlBody: ''},
    {urlRel: 'random-beer', nombre: 'Random Beer', htmlBody: ''},
 ];
 

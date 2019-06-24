@@ -1,6 +1,6 @@
 import {Application, Request, Response} from "express";
 import HomeAction from "../HomeAction";
-import BeerAction from "../BeerAction";
+import BeersAction from "../BeersAction";
 import RandomBeerAction from "../RandomBeerAction";
 
 function routerBuilder(app : Application ){
@@ -18,8 +18,8 @@ function routerBuilder(app : Application ){
       HomeAction.execute(req,res);
    });
 
-   app.get("/beer", function (req: Request, res: Response) {
-      BeerAction.execute(req,res);
+   app.get("/beers", function (req: Request, res: Response) {
+      BeersAction.execute(req,res);
    });
 
    app.get("/random-beer", function (req: Request, res: Response) {
