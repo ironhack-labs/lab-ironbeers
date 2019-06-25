@@ -1,8 +1,57 @@
 <div class="container">
    <div class="row">
-      <div class="col-md-12">
+      <div class="col-xs-12 col-md-6 offset-md-3 ">
 
-         bbbbb
+         <h3>{{ numRecords}} Cervezas</h3>
+
+         {{{{vue-js}}}}
+         <div id="app">
+
+            <div class="row">
+
+               <div class="card col-xs-12 "
+                    v-for=" item in listaBeers"
+               >
+                  <div class="card-body">
+                     <h5 class="card-title">Card title</h5>
+
+                     <img class="img-fluid img-thumbnail"
+                          :src="item.image_url"
+                          alt="">
+
+                     <div class="h-100">
+                        {{item}}
+                     </div>
+                     <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                     <a href="#" class="card-link">Card link</a>
+                     <a href="#" class="card-link">Another link</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         {{{{/vue-js}}}}
+
       </div>
    </div>
 </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+
+   const app = new Vue(
+           {
+              el: '#app',
+              data: {
+                 listaBeers:{{{jsonBeers}}},
+                 isDebug: false
+              },
+              methods:{},
+              mounted() {
+
+              }
+           }
+   );
+
+</script>

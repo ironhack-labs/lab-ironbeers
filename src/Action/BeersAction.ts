@@ -16,13 +16,12 @@ const BeersAction = {
 
       let promise = promiseGetBeers.default();
 
-      let beers = await  promise;
-
-      console.log(beers);
+      let beers = await promise;
 
 
       const data = {
-         beers,
+         jsonBeers: JSON.stringify(beers),
+         numRecords: beers.length,
          title: "Beers"
       };
 

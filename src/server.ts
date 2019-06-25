@@ -10,8 +10,7 @@ const app: Application = express();
 app.use(express.static('public'));
 
 const path = require('path');
-const PunkAPIWrapper = require('punkapi-javascript-wrapper');
-const punkAPI = new PunkAPIWrapper();
+
 
 app.use(express.static( path.join(__dirname, '../public')));
 
@@ -24,7 +23,9 @@ app.set('view engine', 'hbs');
 
 
 const hbs = require('hbs');
-
+hbs.registerHelper('vue-js', function(options:any) {
+   return options.fn();
+});
 
 routerBuilder(app);
 
