@@ -24,8 +24,41 @@
    <title>{{title}}</title>
 
    <style>
+
       .mnuHomeBeers{
          display: flex;
+      }
+
+      .mnuHomeBeers a {
+         width: 100%;
+      }
+
+      /* Small devices (landscape phones, 576px and up)*/
+      @media (min-width: 576px) {
+         .mnuHomeBeers a {
+            width: 100%;
+         }
+      }
+
+      /* Medium devices (tablets, 768px and up) */
+      @media (min-width: 768px) {
+         .mnuHomeBeers a {
+            width: 100%;
+         }
+      }
+
+      /* Large devices (desktops, 992px and up) */
+      @media (min-width: 992px) {
+         .mnuHomeBeers a {
+            width: 50%;
+         }
+      }
+
+      /* Extra large devices (large desktops, 1200px and up) */
+      @media (min-width: 1200px) {
+         .mnuHomeBeers a {
+            width: 50%;
+         }
       }
 
 
@@ -35,36 +68,26 @@
 <body>
 
 
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+   <a class="navbar-brand" href="#">IronBeers</a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+         <li class="nav-item active">
+            <a class="nav-link" href="/">Home </a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/beers">Beers</a>
+         </li>
 
-   <div class="container">
-      <div class="row col-xs-12">
-
-         <span class="navbar-brand hidden-xs-down" >IronBeers</span>
-
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse" id="mainMenu">
-            <ul class="navbar-nav">
-
-
-               <li class="nav-item active">
-                  <a class="nav-link" href="/">Home </a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="/beers">Beers</a>
-               </li>
-
-               <li class="nav-item">
-                  <a class="nav-link" href="/random-beer">Random Beer</a>
-               </li>
-            </ul>
-         </div>
-
-      </div>
+         <li class="nav-item">
+            <a class="nav-link" href="/random-beer">Random Beer</a>
+         </li>
+      </ul>
    </div>
-
 </nav>
 
 
