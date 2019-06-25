@@ -5,8 +5,7 @@ const punkAPI = new PunkAPIWrapper();
 let listaBeers: object[];
 
 /*
-* Proceso para obtener las lista de beers del serviciio, se utiliza cache para solo hacer el primer
-* request y posteriormente se utilzia el cache
+* Proceso para obtener las lista de beers del serviciio, se utiliza cache para solo hacer un request
 * **/
 
 async function promiseGetBeers(): Promise<object[]> {
