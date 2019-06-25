@@ -1,7 +1,6 @@
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 const punkAPI = new PunkAPIWrapper();
 
-
 let listaBeers: object[];
 
 /*
@@ -14,7 +13,6 @@ async function promiseGetBeers(): Promise<object[]> {
    if (listaBeers) {
 
       p = Promise.resolve(listaBeers);
-
 
    } else {
 
@@ -29,8 +27,8 @@ async function promiseGetBeers(): Promise<object[]> {
                  console.log(error);
                  throw error;
               }
-          );
-
+          )
+      ;
    }
 
    return p;

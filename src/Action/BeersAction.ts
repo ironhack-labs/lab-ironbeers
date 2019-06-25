@@ -11,13 +11,9 @@ const punkAPI = new PunkAPIWrapper();
 const BeersAction = {
    execute: async (req: Request, res: Response) => {
 
-      console.log('iniia');
-
-
       let promise = promiseGetBeers.default();
 
       let beers = await promise;
-
 
       const data = {
          jsonBeers: JSON.stringify(beers),
@@ -29,6 +25,5 @@ const BeersAction = {
 
    }
 };
-
 
 export default BeersAction;
