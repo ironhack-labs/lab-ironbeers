@@ -5,4 +5,114 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+nav {
+    background: #2081c3;
+    height: 50px;
+    padding-top: 30px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #f7f9f9;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgba(145, 145, 145, 0.481);
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer {
+    background-color: #0a2c42;
+    height: 50px;
+    color: #f7f9f9;
+    padding-top: 25px;
+    padding-left: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.index-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.index-container img {
+    height: 400px;
+    width: 400px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.index-container button {
+    margin-bottom: 30px;
+    background: #2081c3;
+    color: #f7f9f9;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 17px;
+    
+}
+ .whatever {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+} 
+
+#randomImg {
+    height: 650px;
+}
+.beerCard img {
+    height: 250px;
+    display: block;
+    margin: 0 auto 15px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+
+}
+
+.beerCard {
+    width: 400px;
+    font-size: 1.2em;
+    text-align: justify;
+    /* margin-top: 20px;  */
+    /* margin-bottom: 10px; */
+    /* padding-bottom: 80px; */
+}
+.container {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.beersRandom-img {
+    width: 160px;
+    height: 500px;
+    margin-top: 100px;
+}
+
+.beersRandoms {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 50vh;
+    margin-left: 10vh;
+}
+.beersRandoms h4 {
+    margin: 3vh 0;
+    margin-top: 1vh;
+    color: rgba(145, 145, 145, 0.481);
+}
+.beersRandoms p {
+    font-size: 1.2rem;
+}
+.brewer-bold {
+    font-weight: bold;
+}
