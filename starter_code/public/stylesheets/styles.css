@@ -14,6 +14,8 @@ nav{
   background-color: #2081C3;
   height: 50px;
   width: 100vw;
+  position: fixed;
+
 }
 a{
   margin-left: 20px;
@@ -27,10 +29,50 @@ footer{
   background-color: #0A2C42;
   height: 50px;
   width: 100vw;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   color: aliceblue;
   padding-left: 25px;
 
 }
+.img-index{
+  margin-top: 50px;
+  width: 20vw;
+  height: 40vh;
+  
+}
+.index-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+}
+.imagenCard{
+  height: 200px;
+  width: 50px;
+  margin-left: 120px;
+}
+
+.columns-cards{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card  {
+  margin-top: 75px;
+	width: 29%;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #fff;
+}
+.card h3{
+  font-size: 20px;
+}
+.card h4{
+  font-size: 15px;
+  color: gray
+}
+.card p{
+  text-align: justify;
+  font-size: 10px;
+}
