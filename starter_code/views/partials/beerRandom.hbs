@@ -1,0 +1,21 @@
+ <div class="img-random">
+        <img class="imagenCard" src={{this.image_url}} alt="">
+</div>
+ <div class="card">
+      <h3>{{this.name}}</h3>
+      <h4>{{this.tagline}}</h4>
+      <p>{{this.description}}</p>
+      <b>Food Pairing</b>
+      <br>
+      <ul>
+        {{#each food_pairing }}
+        <li>
+          
+          {{this}}
+          
+        </li>
+        {{/each}}
+      </ul>
+      <p><b>Brewers Tips:</b>{{this.brewers_tips}}</p>
+    
+  </div>
