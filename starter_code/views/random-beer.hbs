@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Random Beer</title>
+  <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+
+<body>
+
+  {{#each beers}}
+  <div class="random-container">
+    <div>
+      <img class="pict-random" src="{{this.image_url}}" alt="Beer photo">
+    </div>
+    <div class="info-random">
+      <h1>{{this.name}}</h1>
+      <h4 class="h4-random">{{this.tagline}}</h4> 
+      <p>{{this.description}}</p>
+      <h3 class="h3-random">Food Pairing</h3>
+      <ul>
+      {{#each food_pairing}}
+        <li>{{this}}</li>
+      {{/each}}
+      </ul>
+      <p><span class="span-random">Brewer Tips:</span> {{this.brewers_tips}}</p>
+    </div>
+  </div>
+  {{/each}}
+</body>
+
+</html>
