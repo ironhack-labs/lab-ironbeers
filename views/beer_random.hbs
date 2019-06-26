@@ -1,7 +1,7 @@
 <div class="container">
 
 
-    <h3>{{ numRecords}} Cervezas</h3>
+
 
     {{{{vue-js}}}}
         <div id="app">
@@ -9,23 +9,35 @@
             <div class="row">
 
 
-                <div class="col-xs-12">
-                    <h5 class="card-title">
-                        {{item.name}}
-                    </h5>
+                <div class="col-xs-12 col-md-3">
 
-                    <p>
-                        {{item.tagline}}
-                    </p>
+                    <div v-if="!item.image_url"
+                         class="text-align:center; margin:30px">
+                        Imagen no disponible
+                    </div>
+
                     <img class="img-fluid img-thumbnail"
-                         style="height:400px"
-
+                         v-if="item.image_url"
+                         style="max-height: 600px"
                          :src="item.image_url"
                          :alt="item.name"/>
+
+
+                </div>
+                <div class="col-xs-12 col-md-9">
+                    <h3 style="margin-bottom: 20px">Random beer</h3>
+
+                    <h1 class="card-title">
+                        {{item.name}}
+                    </h1>
+
+                    <h3>
+                        {{item.tagline}}
+                    </h3>
+
                     <p>
                         {{item.description}}
                     </p>
-
                 </div>
             </div>
 
