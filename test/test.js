@@ -93,7 +93,7 @@ let fnTestPage = itemPagina => {
 
 
 
-      }).timeout(6000)
+      }).timeout(20000)
    });
 };
 

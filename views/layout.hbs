@@ -25,6 +25,9 @@
 
    <style>
 
+      [v-cloak] > * { display:none; }
+      [v-cloak]::before { content: "loading..."; }
+
       .mnuHomeBeers{
          display: flex;
       }
@@ -80,14 +83,14 @@
    </button>
    <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
-         <li class="nav-item " id="mnuHome">
+         <li class="nav-item " id="mnu0">
             <a class="nav-link" href="/">Home </a>
          </li>
-         <li class="nav-item">
+         <li class="nav-item" id="mnu1">
             <a class="nav-link" href="/beers">Beers</a>
          </li>
 
-         <li class="nav-item">
+         <li class="nav-item" id="mnu2">
             <a class="nav-link" href="/random-beer">Random Beer</a>
          </li>
       </ul>
@@ -108,5 +111,16 @@
       </div>
    </div>
 </nav>
+
+<script>
+
+   (()=>{
+      let mnu =document.getElementById('mnu{{id_page}}');
+      mnu.classList.add("active");
+   })();
+
+   var isPAgeLoaded=true;
+
+</script>
 </body>
 </html>

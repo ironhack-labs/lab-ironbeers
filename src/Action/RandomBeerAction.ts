@@ -14,7 +14,9 @@ const RandomBeerAction = {
 
         let jsonRandomBeer : string = JSON.stringify(randomBeer);
         const data = {
+
             jsonRandomBeer,
+            id_page:2,
             title: "Random Beer"
         };
 

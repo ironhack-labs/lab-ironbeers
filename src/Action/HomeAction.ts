@@ -7,6 +7,7 @@ const HomeAction = {
    execute: (req: Request, res: Response) => {
 
       const data = {
+         id_page:0,
          title:"Home"
       };
 

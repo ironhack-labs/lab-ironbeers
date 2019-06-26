@@ -6,7 +6,7 @@
   "scripts": {
     "rebuild": "tsc",
     "nodemon": "nodemon /dist/server.js localhost 3006",
-    "test": "mocha test/"
+    "test": "mocha --timeout 20000 test/"
   },
   "author": "",
   "license": "ISC",

@@ -16,6 +16,7 @@ const BeersAction = {
       let beers = await promise;
 
       const data = {
+         id_page:1,
          jsonBeers: JSON.stringify(beers),
          numRecords: beers.length,
          title: "Beers"
