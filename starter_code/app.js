@@ -14,6 +14,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res, next) => {
   res.render('index');
+  punkAPI.getBeers()
+  .then(beers => {
+
+  })
+  .catch(error => {
+    console.log(error)
+  })
 });
 
 
