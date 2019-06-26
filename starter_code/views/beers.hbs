@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<div class="whatever">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>beers</title>
-</head>
+{{#each beers }}
+{{> beer}}
+{{/each}}
 
-<body class="allBeers">
-  {{#each beers}}
-  {{> beer}}
-  {{/each}}
-</body>
 
-</html>
+</div>

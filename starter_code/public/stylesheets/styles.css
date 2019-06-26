@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box
+}
+
 
 nav {
   background:  #2081C3;
@@ -25,7 +29,6 @@ footer{
   color: #F7F9F9;
   padding-top: 25px;
   padding-left: 20px; 
-  position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
@@ -52,3 +55,45 @@ footer{
   font-size: 17px; 
 }
 
+/* .allbeers {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.tpm {
+  width: 250px;
+}
+
+.tpm img {
+  width: 200px;
+} */
+
+.whatever{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ }
+ .container {
+  margin-top: 80px;
+ }
+ 
+ #randomImg{
+  height: 650px;
+ }
+ 
+ .beerCard img{
+  height: 250px;
+  display: block;
+  margin: 0 auto 15px;
+ 
+ }
+ 
+ .beerCard {
+  width: 400px;
+  font-size: 1.2em;
+  text-align: justify;
+ }
+
+ 
