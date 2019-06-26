@@ -47,6 +47,9 @@ footer{
   justify-content: center;
 
 }
+.index{
+  margin-top: 30px;
+}
 .imagenCard{
   height: 200px;
   width: 50px;
@@ -76,3 +79,27 @@ footer{
   text-align: justify;
   font-size: 10px;
 }
+.random{
+  border-radius:7px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #2081C3;
+  font-family: sans-serif;
+  font-size:20px;
+  color:#ffffff;
+  margin-left: -30px;
+  padding:16px 31px;
+ }
+ .beers{
+  border-radius:7px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #2081C3;
+  font-family: sans-serif;
+  font-size:20px;
+  color:#ffffff;
+  margin-left: -10px;
+  padding:16px 31px;
+
+
+ }
