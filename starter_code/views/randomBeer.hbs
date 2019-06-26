@@ -1,0 +1,17 @@
+<div class="random-container">
+    <article class="chela-detalle">
+        <div>
+            <img src="{{beer.image_url}}" alt="">
+        </div>
+        <div>
+            <h2>{{beer.name}}</h2>
+            <h3>{{beer.tagline}}</h3>
+            <p>{{beer.description}}</p>
+            <b>Food pairing</b>
+            <ul>
+                {{#each beer.food_pairing}} <li>{{this}}</li> {{/each}}
+            </ul>
+            <p><b>Brewer Tips:</b> {{beer.brewers_tips}}</p>
+        </div>
+    </article>
+</div>
