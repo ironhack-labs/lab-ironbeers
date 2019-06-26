@@ -1,8 +1,138 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
+html{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none
+}
+ul li{
+  display: inline;
+  padding: 10px;
   
+}
+.image-index{
+  width: 20%;
+  height: auto;
+  }
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#header {
+  background-color: #2081c3;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 15px;
+  
+}
+#footer {
+  background-color: #0a2c42;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: row;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.index-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.btn {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #2081c3;
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+}
+
+
+
+#insert-partial{
+  display: inline-table;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  padding: 30px;
+}
+/*  ============ BEERs=============== */
+.beer-container {
+  display: inline-table;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+ 
+}
+
+
+.beer {
+  display: inline-flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 0px;
+  margin-bottom: 80px;
+}
+.beer-img-top{
+  width: 15%;
+  height: auto;
+  }
+
+.beer-title {
+  font-size: 20px;
+}
+.beer-tagline {
+  font-size: 10px;
+  color: grey;
+}
+.beer-text {
+  font-size: 10px;
+  width: auto;
+  padding: 0,0,30px,0;
+  max-width: 300px;;
+}
+/*  ============RANDOM BEER=============== */
+.random-beer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.random-beer-img-top{
+width: 7%;
+height: auto;
+}
+
+.random-beer-body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.random-beer-text {
+  width: 400px;
+}
+.random-beer-title {
+  font-size: 20px;
+}
+.random-beer-tagline {
+  font-size: 15px;
+  color: grey;
+}
+.random-beer-text {
+  font-size: 10px;
+}
+
