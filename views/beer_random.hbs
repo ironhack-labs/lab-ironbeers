@@ -1,7 +1,57 @@
 <div class="container">
-   <div class="row">
-      <div class="col-md-12">
-         rrrr
-      </div>
-   </div>
+
+
+    <h3>{{ numRecords}} Cervezas</h3>
+
+    {{{{vue-js}}}}
+        <div id="app">
+
+            <div class="row">
+
+
+                <div class="col-xs-12">
+                    <h5 class="card-title">
+                        {{item.name}}
+                    </h5>
+
+                    <p>
+                        {{item.tagline}}
+                    </p>
+                    <img class="img-fluid img-thumbnail"
+                         style="height:400px"
+
+                         :src="item.image_url"
+                         :alt="item.name"/>
+                    <p>
+                        {{item.description}}
+                    </p>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    {{{{/vue-js}}}}
 </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+
+    const app = new Vue(
+            {
+                el: '#app',
+                data: {
+                    item: {{{ jsonRandomBeer  }}},
+                    isDebug: false
+                },
+                methods:{
+                },
+                mounted(){
+
+                }
+            }
+    );
+
+</script>

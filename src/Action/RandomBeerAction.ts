@@ -1,18 +1,26 @@
 "use strict";
 
 import {Application, Request, Response} from "express";
+import promiseGetRandomBeer = require("../Pro/promiseGetRandomBeer");
+
 
 
 const RandomBeerAction = {
-   execute: (req: Request, res: Response) => {
+    execute: async (req: Request, res: Response) => {
 
-      const data = {
-         title:"Random Beer"
-      };
+        let promise = promiseGetRandomBeer.default();
 
-      res.render('beer_random', data);
+        let randomBeer = await promise;
 
-   }
+        let jsonRandomBeer : string = JSON.stringify(randomBeer);
+        const data = {
+            jsonRandomBeer,
+            title: "Random Beer"
+        };
+
+        res.render('beer_random', data);
+
+    }
 };
 
 
