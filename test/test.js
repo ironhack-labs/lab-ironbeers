@@ -26,8 +26,8 @@ after(async () => {
 
 let listaPage = [
    {urlRel: 'home', nombre: 'Home', htmlBody: ''},
-   {urlRel: 'beers', nombre: 'Beers', htmlBody: ''},
-   {urlRel: 'random-beer', nombre: 'Random Beer', htmlBody: ''},
+   /*{urlRel: 'beers', nombre: 'Beers', htmlBody: ''},*/
+   {urlRel: 'random-beer', nombre: 'Random Beer', htmlBody: ''}
 ];
 
 
@@ -81,9 +81,24 @@ let fnTestPage = itemPagina => {
          });
 
 
+
+
          await page.goto(urlAbs, {waitUntil: 'networkidle2'});
 
          await page.screenshot({path: 'test/screen/' + urlRel + '.png'});
+
+
+         /* -------------------------------------------- */
+         // const functionToInject = function(){
+         //    return window.isPageLoaded;
+         // };
+         //
+         // let isPageLoaded = await page.evaluate(functionToInject);
+         // assert(isPageLoaded,'No se ejecutó todo el javascript - isPageLoaded');
+
+         /* -------------------------------------------- */
+
+
 
          //Verificar que existe el elemento del main menu
 
