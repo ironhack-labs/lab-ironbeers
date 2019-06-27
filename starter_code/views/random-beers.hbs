@@ -1,0 +1,16 @@
+  
+{{#each beers}}
+<div class="rand-box">
+<img src="{{image_url}}" alt="">
+    <h2>{{name}}</h2>
+    <h4>{{tagline}}</h4>
+    <p>{{description}}</p>
+    <h3>Food Pairing</h3>
+    <ul>
+      {{#each food_pairing as |food|}}
+      <li>{{food}}</li>
+      {{/each}}
+    </ul>
+    <p><b>Brewer Tips:</b> {{brewers_tips}}</p>
+  </div>
+{{/each}}
