@@ -42,9 +42,7 @@ body {
 
 .beers-container {
   display: flex;
-  width: 80%;
-  margin: 100px auto;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .card {
