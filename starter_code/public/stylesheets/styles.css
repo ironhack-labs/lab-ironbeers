@@ -79,14 +79,14 @@ footer {
   align-items: center;
 }
 .beers-wrap {
+  padding-top: 80px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  padding-top: 35px;
+  justify-content: center;
 }
 .beer-container {
-  width: 30vw;
+  width: 28vw;
   height: 50vh;
   display: flex;
   flex-direction: column;
