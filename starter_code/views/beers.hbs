@@ -1,0 +1,18 @@
+<div class="beers-container">
+
+          <div class="row">
+               {{#each beerList}}
+
+               <div class="col-4">
+                    <div class="d-flex justify-content-center">
+                         <img style="height: 8rem;" src="{{this.image_url}}" alt="">
+                    </div>
+
+                    <h5 class="font-weight-bold">{{this.name}}</h5>
+                    <p class="font-weight-light text-secondary">{{this.tagline}}</p>
+                    <h6 class="text-sm">{{this.description}}</h6>
+               </div>
+               {{/each}}
+          </div>
+
+</div>
