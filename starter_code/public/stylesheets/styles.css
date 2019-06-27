@@ -6,3 +6,21 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+nav {
+  flex-direction: row;
+}
+
+.index-container {
+  display: flex;
+  justify-content: center;
+}
+
+.divButton {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  background: #2081C3;
+  font-size: 20px;
+}
