@@ -5,4 +5,86 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+nav {
+  background: #2081c3;
+  height: 50px;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #f7f9f9;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(145, 145, 145, 0.481);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  width: 100%;
+  padding: 17px 0;
+  padding-left: 25px;
+  background: #0a2c42;
+  color: white;
+  text-align: left;
+  position: fixed;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+.beers img {
+  width: 50px;
+}
+
+.button {
+  background: #2081c3;
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  color: white;
+  padding: 10px 0;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.index-container {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.index-container img{
+  display: block;
+  width: 300px;
+  margin: 50px auto;
+  /* width: 400px;
+  height: 500px; */
+}
+
+.index-container p{
+  font-size: 20px;
+}
+
+#random-container{
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#random-container p{
+  font-size: 30px;
+}

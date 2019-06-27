@@ -1,0 +1,10 @@
+<h2>Os presentamos la gama de cervezas que tenemos</h2>
+
+<div class="index-container">
+  {{#each beers}}
+  <h1>{{this.name}}</h1>
+  <img src="{{this.image_url}}" alt="cervezas">
+  <h4>{{this.tagline}}</h4>
+  <p>{{this.description}}</p>
+  {{/each}}
+</div>
