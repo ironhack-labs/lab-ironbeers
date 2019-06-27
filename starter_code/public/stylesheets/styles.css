@@ -5,4 +5,138 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overscroll-behavior: none;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  margin: 0;
+}
+
+footer {
+  background: #0A2C42;
+  height: 8vh;
+  padding: 0 15px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+footer p {
+  color: #F7F9F9;
+}
+
+.button-container a {
+  border-radius: 30px;
+  background: #2081C3;
+  color: #F7F9F9;
+  padding: 5px 20px;
+  letter-spacing: 2.5px;
+  min-height: 50px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.nav-bar {
+  background: #2081C3;
+  height: 10vh;
+  padding: 0 50px;
+}
+
+.nav-bar ul {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar ul li {
+  display: inline;
+  padding: 0 10px;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: #F7F9F9;
+  font-weight: bold;
+}
+
+.index-container img {
+  width: 400px;
+}
+
+.index-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 18vh);
+  justify-content: center;
+}
+
+.button-container {
+  display: flex;
+  padding: 50px 0 0 0;
+}
+
+.columns {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 50px 0;
+}
+
+.card {
+  width: 33.33%;
+  height: 50%;
+  padding: 20px 50px;
+}
+
+.random {
+  display: flex;
+  height: calc(100vh - 18vh);
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.random div ul li {
+  padding: 10px 0;
+}
+
+.card img, .random img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.card small, .random small {
+  color: rgba(145, 145, 145, 0.481);
+}
+
+.card p, .random p {
+  font-size: 12px;
+}
