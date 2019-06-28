@@ -1,5 +1,12 @@
 <div>
   {{#each beers}}
-  hoho
+   <div class="beers-container">
+    <div class="card" style="width: 18rem;">
+      <img src="{{image_url}}" alt="" height="180px;" width="50px;">
+      <div>
+        <h5>{{this.name}}</h5>
+        <p >{{this.tagline}}</p>
+        <a>{{this.description}}</a>
+      </div>
   {{/each}}
 </div>

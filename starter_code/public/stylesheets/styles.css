@@ -33,3 +33,6 @@ footer{
 .navbar{
   height: 70px;
 }
+.beers-container {
+  display: inline;
+}
