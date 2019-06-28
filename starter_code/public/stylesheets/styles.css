@@ -1,8 +1,35 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
-  
+body{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+img{
+ margin-top: 7%;
+}
+.index-container{
+  position: relative;
+  left: 40%;
+}
+.btn{
+  background-color: #2081C3;
+  color: white;
+  margin-top: 5%;
+}
+footer{
+  height: 50px;
+  width: 100%;
+  background-color:#08286F;
+  color:white;
+  position: fixed;
+  top: 93%;
+}
+.footer{
+  padding-top: 1%;
+  padding-left: 5%;
+}
+.navbar-brand{
+  margin-right: 5%;
+}
+.navbar{
+  height: 70px;
+}
