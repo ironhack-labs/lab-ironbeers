@@ -1,12 +1,23 @@
-<div>
+{{!-- <div>
   {{#each beers}}
    <div class="beers-container">
     <div class="card" style="width: 18rem;">
       <img src="{{image_url}}" alt="" height="180px;" width="50px;">
-      <div>
-        <h5>{{this.name}}</h5>
-        <p >{{this.tagline}}</p>
-        <a>{{this.description}}</a>
+      <div class = "card-body">
+        <h5 class = "card-title">{{this.name}}</h5>
+        <h6  class = "card-text" >{{this.tagline}}</h6>
+        <p class = "card-text"> {{this.description}}</p>
       </div>
   {{/each}}
+</div> --}}
+
+<div class="card">
+   {{#each beers}}
+    <img src="{{image_url}}" class="card-img-top" alt="..." >
+    <div class="card-body">
+      <h5 class="card-title">{{this.name}}</h5>
+      <h6 class="card-text"> {{this.tagline}}</h6>
+      <p class="card-text"> {{this.description}}</p>
+    </div>
+   {{/each}}
 </div>

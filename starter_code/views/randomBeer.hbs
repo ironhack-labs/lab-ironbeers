@@ -1,3 +1,26 @@
-<div>
-  hola random
-</div>
+
+  
+   <div class="beers-container">
+    {{#each randomBeer}}
+    <div class = "imgRandomD">
+      <img src="{{image_url}}" alt="" height="260px;" width="70px;" class = "imgRandom">
+      <div>
+        
+        <div class = "textRandom">
+         <h5><b>{{this.name}}</b></h5><br>
+        <h6 class = "tagline">{{this.tagline}}</h6><br>
+        <!-- CHECK TUTORIAL FOR FOOD_PAIRING print each one
+          -->
+        <p class = "card-text"> {{this.description}}</p><br>
+        <h5><b>Food Pairing</b></h5><br>
+        <ul> 
+          {{#each food_pairing}}
+          <li> {{this}} </li>
+          {{/each}}
+        </ul><br>
+        <h6> <b>Brewer Tips:</b> {{this.brewers_tips}}</h6>
+        {{/each}}
+      </div>
+   </div>
+        
+  
