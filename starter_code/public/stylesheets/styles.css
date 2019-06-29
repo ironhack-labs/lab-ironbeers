@@ -63,20 +63,25 @@ margin-top: 0.65%;
 .imgRandomD{
   margin-top: 5%;
 }
+.all-beers{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 
 .beer-container{
   background-color:#FBFBFB;
-  width: 25%;
+  width: 90%;
   margin-top:2.5%;
   margin-bottom:2.5%;
   margin-left:5%;
-  display: inline-block;
+  height: 400px;
 }
 
 .beer-picture{
   height: 200px;
-  width: 50px;
+  width: 52px;
   margin-left: 20%;
+  margin-top: 2%;
 }
 .beer-name{
   font-weight: 700;
@@ -92,7 +97,7 @@ margin-top: 0.65%;
 .beer-description{
 font-weight: 500;
 justify-content: auto;
-font-size: 15px;
+font-size: 12px;
 margin-left: 5%;
 margin-right: 5%;
 }
