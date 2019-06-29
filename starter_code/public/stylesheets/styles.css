@@ -1,103 +1,103 @@
-body{
+body {
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
 }
-.beerImg{
+.beerImg {
   margin-top: 7%;
 }
-.card{
+.card {
   display: inline;
 }
-.card-img-top{
+.card-img-top {
   height: 180px;
-  width:80px;
+  width: 80px;
 }
-.card-body{
-  width:10%;
+.card-body {
+  width: 10%;
 }
 
-.btn{
-  background-color: #2081C3;
+.btn {
+  background-color: #2081c3;
   color: white;
   margin-top: 5%;
 }
 
-footer{
+footer {
   height: 50px;
   width: 100%;
-  background-color:#08286F;
-  color:white;
+  background-color: #08286f;
+  color: white;
   position: fixed;
   top: 95%;
   left: 0%;
 }
-.footer{
-margin-left: 2%;
-margin-top: 0.65%;
+.footer {
+  margin-left: 2%;
+  margin-top: 0.65%;
 }
-.navbar-brand{
+.navbar-brand {
   margin-right: 5%;
 }
-.navbar{
+.navbar {
   height: 70px;
 }
-.index-container{
+.index-container {
   text-align: center;
 }
-.tagline{
-  color:grey;
+.tagline {
+  color: grey;
 }
-.imgRandom{
+.imgRandom {
   position: relative;
   left: 10%;
 }
-.textRandom{
+.textRandom {
   position: absolute;
   left: 19%;
   top: 20%;
-  width:60%;
+  width: 60%;
   text-justify: auto;
 }
-.imgRandomD{
+.imgRandomD {
   margin-top: 5%;
 }
-.all-beers{
+.all-beers {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
-.beer-container{
-  background-color:#FBFBFB;
+.beer-container {
+  background-color: #fbfbfb;
   width: 90%;
-  margin-top:2.5%;
-  margin-bottom:2.5%;
-  margin-left:5%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  margin-left: 5%;
   height: 400px;
 }
 
-.beer-picture{
+.beer-picture {
   height: 200px;
   width: 52px;
   margin-left: 20%;
   margin-top: 2%;
 }
-.beer-name{
+.beer-name {
   font-weight: 700;
   margin-left: 5%;
   font-size: 21px;
 }
-.beer-tagline{
-  color:lightgrey;
+.beer-tagline {
+  color: lightgrey;
   font-weight: 400;
   font-size: 16px;
   margin-left: 5%;
 }
-.beer-description{
-font-weight: 500;
-justify-content: auto;
-font-size: 12px;
-margin-left: 5%;
-margin-right: 5%;
+.beer-description {
+  font-weight: 500;
+  justify-content: auto;
+  font-size: 12px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
