@@ -5,4 +5,46 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+  img{
+    width: 30%;
+    margin: 2% auto;
+    
+  }
+
+  .btn{
+    padding: 10px 30px;
+    color: #F7F9F9;
+    background-color:  #2081C3;
+    width: 20%;
+    margin: 10px;
+  }
+
+  .flex-container{
+    background-color: rgba(145, 145, 145, 0.481);
+    padding: 0%;
+    margin:  0%;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+  }
+
+.card{
+  background-color: rgba(145, 145, 145, 0.481);
+  padding: 5px;
+  /* width: 500;
+  height: 600px; */
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.card img{
+  width: 25%;
+  height: 55%;
+  margin: 5%;
+}
+
+.card-img{
+  margin: auto;
+}
