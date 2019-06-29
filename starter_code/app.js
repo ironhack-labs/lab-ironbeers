@@ -10,6 +10,7 @@ app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
 
+hbs.registerPartials(__dirname + '/views/beerPartial')
 
 app.get('/', (req, res) => {
   res.render('index');
@@ -40,4 +41,4 @@ app.get('/randomBeer',(req,res) => {
 
 
 
-app.listen(3000);
+app.listen(3001);

@@ -5,7 +5,7 @@ body{
   font-weight: 500;
 }
 .beerImg{
-  margin-top: 5%;
+  margin-top: 7%;
 }
 .card{
   display: inline;
@@ -62,4 +62,37 @@ margin-top: 0.65%;
 }
 .imgRandomD{
   margin-top: 5%;
+}
+
+.beer-container{
+  background-color:#FBFBFB;
+  width: 25%;
+  margin-top:2.5%;
+  margin-bottom:2.5%;
+  margin-left:5%;
+  display: inline-block;
+}
+
+.beer-picture{
+  height: 200px;
+  width: 50px;
+  margin-left: 20%;
+}
+.beer-name{
+  font-weight: 700;
+  margin-left: 5%;
+  font-size: 21px;
+}
+.beer-tagline{
+  color:lightgrey;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 5%;
+}
+.beer-description{
+font-weight: 500;
+justify-content: auto;
+font-size: 15px;
+margin-left: 5%;
+margin-right: 5%;
 }
