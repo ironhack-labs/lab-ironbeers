@@ -5,4 +5,118 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body {
+    background-color:#F7F9F9;
+    
+  }
   
+  .beerCard {
+    display: inline-grid;
+    grid-template-columns: 350px;;
+    grid-template-rows: 220px 50px 50px 250px;
+    grid-template-areas: 
+    "image"
+    "beerName"
+    "beerTagline"
+    "beerDescription";
+    margin: 10px;
+  }
+  .beer-card-img {
+    height: 200px;
+    grid-area: image;
+    place-self: center;
+  }
+  .beer-card-name {
+    grid-area: beerName;
+    place-self: center;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .beer-card-tagline {
+    grid-area: beerTagline;
+    place-self: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(145, 145, 145, 0.481);
+  }
+  .beer-card-description {
+    grid-area: beerDescription;
+    place-self: center;
+  }
+
+.beerRandom {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 60px 60px 1fr 1fr 1fr 100px;
+  grid-template-areas: 
+  "randomBeer beerRandName"
+  "randomBeer beerRandTagline"
+  "randomBeer beerRandDesc"
+  ". beerRandPair"
+  ". beerRandTips";
+}
+
+.beer-card-img {
+  grid-area: randomBeer;
+  place-self: center;
+
+}
+.beer-random-name {
+  grid-area: beerRandName;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+
+}
+.beer-random-tagline {
+  grid-area: beerRandTagline;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(145, 145, 145, 0.481);
+}
+.beer-random-description {
+  grid-area: beerRandDesc;
+  
+}
+.beer-random-pairing {
+  grid-area: beerRandPair;
+}
+.beer-random-tips {
+  grid-area: beerRandTips;
+}
+  nav {
+    height: 60px;
+    background-color: #2081C3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0px 5px 5px grey;
+  }
+  nav a {
+    padding: 15px;
+    margin-left: 30px;
+    color: #F7F9F9;
+    text-decoration: none;
+  }
+  footer {
+    height: 60px;
+    background-color: #0A2C42;
+    color: #F7F9F9;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    box-shadow: 0px -1px 5px grey;
+  }
+  footer p {
+    margin-left: 45px;
+  }
+
+ 
