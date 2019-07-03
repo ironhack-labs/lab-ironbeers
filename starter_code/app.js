@@ -20,8 +20,8 @@ app.get('/', (req, res, next) => {
 app.get('/beers', (req, res, next) => {
   punkAPI.getBeers()
   .then(beers => {
-    console.log(JSON.stringify(beers[0].image_url));
-    res.render('beers');
+    console.log(JSON.stringify(beers.name));
+    res.render('beers', {beers});
   })
   .catch(error => {
     console.log("result error " + error);

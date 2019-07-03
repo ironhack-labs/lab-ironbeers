@@ -2,28 +2,63 @@
   <div class="row" >
     <div class="col-1"></div>
     <div class="col-3 pr-0">
-        <div class="card " style="height: 400px; width:auto;">
-          <img class="card-img-top" src="{{ image_url }}" alt="Card image cap" style="height: 400px; width:auto;">
-          {{!-- <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div> --}}
+        <div class="card justify-content-center align-items-center" style="height: 100%;">
+          <img class="card-img-top" src="{{ image_url }}" alt="Card image cap" style="height: 200px; width:100px;">
+          
         </div>
     </div>
 
     <div class="col-6 pl-0">
-      <div class="card" style="height: 100px;">
+      <div class="card" style="height: 100%;">
         <div class="card-body">
           <h5 class="card-title">{{ name }}</h5>
           <h6 class="card-subtitle mb-2 text-muted">Hello My Name is {{ contributed_by }}</h6>
           <p class="card-text">{{ description }}</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+          <h5 class="card-title mb-2">Food Pairing</h5>
+          <ul>
+            {{#each food_pairing}}
+              <li>{{this}}</li>
+            {{/each}}
+          </ul>
+          <p class="card-text"><strong>Brewers Tips: </strong> {{ brewers_tips }}</p>
         </div>
       </div>
     </div>
 
   </div>
 </div>
-<div>random beer name: {{ name }}</div>
-<div>random beer image url: {{ image_url }}</div>
+
+
+
+
+{{!-- <div class="container">
+  <div class="row" >
+    <div class="col-1"></div>
+    <div class="col-3 pr-0">
+        <div class="card " style="height: 400px; width:auto;">
+          <img class="card-img-top" src="{{ image_url }}" alt="Card image cap" style="height: 400px; width:auto;">
+          
+        </div>
+    </div>
+
+    <div class="col-6 pl-0">
+      <div class="card" style="height: 100%;">
+        <div class="card-body">
+          <h5 class="card-title">{{ name }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Hello My Name is {{ contributed_by }}</h6>
+          <p class="card-text">{{ description }}</p>
+          <h5 class="card-title mb-2">Food Pairing</h5>
+          <ul>
+            {{#each food_pairing}}
+              <li>{{this}}</li>
+            {{/each}}
+          </ul>
+          <p class="card-text"><strong>Brewers Tips: </strong> {{ brewers_tips }}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div> --}}
+
 
