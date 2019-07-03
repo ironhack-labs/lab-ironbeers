@@ -1,0 +1,14 @@
+<div class="main">
+    <div class="randbeerimg">
+  <img class="rand-img" src={{image_url}} alt="A Beer">
+    </div>
+  <div class="rand-body">
+    <h5 class="rand-title">{{name}}</h5>
+    <p class="rand-text">{{description}}</p>
+    <ul>
+        {{#each food_pairing }}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+  </div>
+</div>
