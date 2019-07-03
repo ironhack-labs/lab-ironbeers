@@ -1,0 +1,19 @@
+<div style="display: flex; justify-content: center; align-items: center;">
+  {{#each beer}}
+  <div class="random-beer-container">
+    <img src="{{image_url}}" alt="{{name}}">
+    <div class="card-text">
+      <h2 class="card-title">{{name}}</h2>
+      <h5 class="card-subtitle" style="color: rgba(145, 145, 145, 0.481);">{{tagline}}</h5>
+      <p>{{description}}</p>
+      <h4>Food Pairing</h4>
+      <ul>
+        {{#each food_pairing}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <p><strong>Brewers Tips: </strong>{{brewers_tips}}</p>
+    </div>
+  </div>
+  {{/each}}
+</div>
