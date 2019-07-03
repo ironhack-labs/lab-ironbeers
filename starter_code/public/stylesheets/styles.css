@@ -5,4 +5,147 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+body {
+    background-color:#F7F9F9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.beers-container {
+    width: 80%;
+    margin: auto;
+}
+
+nav {
+    background-color: #2081C3;
+    color: #F7F9F9;
+    padding-left: 25px;
+}
+
+section {
+    color: black;
+}
+
+section#beers {
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+section#random-beer {
+    padding-top: 60px;
+}
+
+footer {
+    background-color: #0A2C42 !important;
+    color: #F7F9F9;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer > .row {
+    margin: 0;
+}
+
+div.beer-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 541px;
+    justify-content: center;
+}
+
+div.beer-img > img {
+    width: 250px;
+}
+
+div.check-beers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90px;
+    margin-top: 50px;
+}
+
+a.check-btn {
+    background-color: #2081C3;
+}
+
+a.check-btn:hover {
+    background-color: #2081C3;
+}
+
+a.check-btn:focus {
+    background-color: #2081C3;
+}
+
+div.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.card {
+    width: 33.3%;
+    background-color: #F7F9F9;
+    box-shadow: none;
+}
+
+div.card-image {
+    text-align: center;
+}
+
+img.beer-image {
+    display: inline-block !important;
+    width: 68px !important;
+    height: 185px;
+}
+
+span.card-title {
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    margin: 0 !important;
+}
+
+span.card-tagline {
+    color: rgba(145, 145, 145, 0.481);
+    font-size: 12px;
+}
+
+div.card-content {
+    padding: 0 !important;
+}
+
+div.card-content > p {
+    font-size: 11px;
+    width: 90%;
+    display: inline-block;
+}
+
+img.random-beer {
+    width: 50px;
+}
+
+h5 {
+    font-weight: 700;
+    margin-top: 0;
+}
+
+p.random-tagline {
+    color: rgba(145, 145, 145, 0.481);
+}
+
+p.food-pairing-text {
+    font-weight: 800;
+}
+
+ul.food-pairing-lists {
+    margin-left: 40px;
+}
+
+ul.food-pairing-lists > li {
+    list-style: disc;
+}
+
+p.b-tips > span {
+    font-weight: 800;
+}
