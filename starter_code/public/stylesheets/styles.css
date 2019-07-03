@@ -5,4 +5,146 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+body {
+  background-color: #f7f9f9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer p {
+  font-size: 0.7rem;
+}
+
+.index-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-container img {
+  height: auto;
+  width: 20%;
+  margin: 27px;
+}
+
+.index-button {
+  padding: 8px 15px;
+  background-color: #0f7cfa;
+  border-radius: 5px;
+  color: white !important;
+  margin: 5px;
+  text-decoration: none;
+  box-shadow: 1px 1px 5px rgb(145, 145, 145);;
+}
+
+.index-button:hover {
+  text-decoration: none;
+}
+
+.index-button:active {
+  box-shadow: none;
+}
+
+/*----- partialBeerInfo.hbs -----*/
+#beer-info-container {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 28%;
+  height: 40%;
+  margin: 10px 20px;
+}
+
+#beer-info-container img {
+  width: auto;
+  height: 100%;
+}
+
+#beer-info-container figure {
+  align-self: center;
+  height: 150px;
+}
+
+#beer-info-text-container h1 {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin-bottom: 5px;
+}
+
+#beer-info-text-container h2 {
+  color: rgba(145, 145, 145, 0.481);
+  font-size: 0.7rem;
+  line-height: 1rem;
+}
+
+#beer-info-text-container p {
+  font-size: 0.7rem;
+  line-height: 1rem;
+}
+
+/*----- beers.hbs -----*/
+.beers-container {
+  padding: 0 5vw;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+
+/*----- random-beer.hbs -----*/
+#random-beer-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-top: 30px;
+  height: 90vh;
+}
+
+#random-beer-container figure {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 40vh;
+  width: 20%;
+}
+
+#random-beer-container img {
+  height: 100%;
+  width: auto;
+}
+
+#random-beer-text-container {
+  width: 60%;
+}
+
+#random-beer-text-container h1 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1rem;
+  margin-bottom: 20px;
+}
+
+#random-beer-text-container h2 {
+  color: rgba(145, 145, 145, 0.481);
+  font-size: 0.8rem;
+  line-height: 1rem;
+  margin-bottom: 15px;
+}
+
+#random-beer-text-container h3 {
+  font-weight: bold;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  margin-bottom: 15px;
+}
+
+
+#random-beer-text-container p, #random-beer-text-container li{
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+  margin-bottom: 25px;
+}
+
+#random-beer-text-container li {
+  margin-bottom: 6px;
+}
