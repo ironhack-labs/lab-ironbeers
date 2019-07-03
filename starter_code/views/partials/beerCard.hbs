@@ -1,3 +1,4 @@
+
 <div class="beer-card-wrapper">
   {{#each beerRack}}
  
@@ -10,3 +11,26 @@
   
   {{/each}}
 </div>
+
+<script type="text/javascript">
+const beerCard = document.querySelectorAll('.beerCard');
+const beerImage = document.querySelectorAll('.beer-card-img')
+
+
+
+for(let i=0; i< beerCard.length; i++) {
+  beerCard[i].onmouseover = function(){ beerImage[i].classList.add('beer-card-img-active')
+  }
+}
+for(let i=0; i< beerCard.length; i++) {
+  
+  beerCard[i].onmouseout = function(){ 
+
+    
+    beerImage[i].classList.remove('beer-card-img-active')
+   
+  }
+ }
+
+
+</script>

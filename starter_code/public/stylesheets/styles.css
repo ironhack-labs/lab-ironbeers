@@ -28,11 +28,26 @@ font-family: Arial, Helvetica, sans-serif
     "beerDescription";
     margin: 10px;
   }
+  .beerCard:hover {
+
+    
+      transform: scale(1.05);
+      box-shadow: 0 0 7px 7px rgb(32,129,195, 0.8);
+      transition: all 0.25s;
+      z-index: 2;
+      border: 1px solid #999;
+    
+  }
+  
   
   .beer-card-img {
     height: 200px;
     grid-area: image;
     place-self: center;
+  }
+  .beer-card-img-active {
+    transform: rotateZ(115deg);
+    transition: all 3.25s;
   }
   .beer-card-name {
     grid-area: beerName;
@@ -50,20 +65,27 @@ font-family: Arial, Helvetica, sans-serif
   .beer-card-description {
     grid-area: beerDescription;
     place-self: stretch;
+    padding: 10px;
   }
 
 .beerRandom {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 60px 60px 1fr 1fr 1fr 100px;
+  grid-template-rows: 60px 60px 120px 180px 150px 100px;
   grid-template-areas: 
-  "randomBeer beerRandName"
+  ". beerRandName"
   "randomBeer beerRandTagline"
   "randomBeer beerRandDesc"
-  ". beerRandPair"
+  "randomBeer beerRandPair"
   ". beerRandTips";
 }
 
+.beer-random-img{
+  grid-area: randomBeer;
+  place-self: center;
+  max-height: 400px;
+  
+}
 
 .beer-random-name {
   grid-area: beerRandName;
