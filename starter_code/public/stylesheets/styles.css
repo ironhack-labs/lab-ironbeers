@@ -5,4 +5,50 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+
+html {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  background: rgba(145, 145, 145, 0.481);
+}
+
+nav {
+  background: #2081c3;
+  height: 60px;
+  width: 100%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.a-tag {
+  width: 326px;
+  margin-left: 35px;
+  display: flex;
+  height: 52px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.index-container {
+  display: flex;
+  margin: 0 auto;
+  height: 368px;
+  align-items: center;
+}
+
+.cartoon-beer img {
+  height: 201px;
+}
+
+.btns {
   
+}

@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
-    "hbs": "^4.0.1",
+    "hbs": "^4.0.4",
     "path": "^0.12.7",
     "punkapi-javascript-wrapper": "^1.0.2"
   }
