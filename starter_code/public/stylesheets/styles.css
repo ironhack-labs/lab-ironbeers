@@ -5,4 +5,145 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+body {
+	padding: 0;
+	padding-bottom: 50px;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #f7f9f9;
+}
+
+.navbar {
+	color: white;
+	background-color: #2081c3;
+	height: 50px;
+	width: 100%;
+	display: flex;
+	padding: 0 30px;
+}
+
+.navbar__list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}
+
+.navbar__list__item {
+	padding: 0 20px;
+}
+
+.navbar__list__item__link {
+	text-decoration: none;
+	color: white;
+}
+
+.index-container {
+	display: flex;
+	justify-self: center;
+	align-self: center;
+	flex-direction: column;
+}
+.index-container__beer {
+	width: 250px;
+	margin: 50px auto;
+}
+.btn {
+	width: 200px;
+	padding: 13px;
+	margin: 10px auto;
+	border-radius: 5px;
+	border: none;
+}
+
+.index-container__btn {
+	color: white;
+	background-color: #2081c3;
+	font-size: 14px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.beer {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.beer__card {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	padding-top: 30px;
+	margin: 0 auto;
+}
+
+.beer__card__image {
+	height: 250px;
+}
+
+.beer__card__body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 0 25px;
+}
+
+.beer__card__body--header {
+	padding-top: 10px;
+	font-size: 20px;
+	margin: 0;
+}
+.beer__card__body--subheader {
+	font-size: 15px;
+	color: rgba(145, 145, 145, 0.481);
+	margin: 0;
+}
+
+.random-beer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 70%;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.random-beer--container__image {
+	height: 300px;
+	margin: 50px;
+}
+
+.random-beer__description__header {
+	padding-top: 30px;
+	margin: 0;
+}
+
+.random-beer__description__subheader {
+	margin: 0;
+	font-size: 15px;
+	color: rgba(145, 145, 145, 0.481);
+	margin: 0;
+}
+
+.random-beer__description__tips--brewers {
+	font-weight: 800;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	height: 50px;
+	width: 100%;
+	color: white;
+	background-color: #0a2c42;
+	padding: 0 20px;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
