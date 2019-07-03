@@ -12,14 +12,14 @@ app.set("views", __dirname + "/views");
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res, next) => {
-res.render("index");
+  res.render("index");
 });
 
 app.get("/beers", (req, res, next) => {
   punkAPI
     .getBeers()
     .then(beers => {
-      // console.log(beers);
+      console.log(beers);
       res.render("beers", { theBeers: beers });
     })
     .catch(error => {
@@ -28,17 +28,16 @@ app.get("/beers", (req, res, next) => {
 });
 
 app.get("/random-beers", (req, res, next) => {
-
-  punkAPI.getRandom()
-  .then(beers => {
-    res.render("random-beers", {randomBeer: beers[0]});
-
-  })
-  .catch(error => {
-    console.log(error)
-  })
-
-
+  punkAPI
+    .getRandom()
+    .then(beer => {
+      console.log(beer);
+      console.log("It works");
+      res.render("random-beers", { randomBeer: beer[0] });
+    })
+    .catch(error => {
+      console.log(error);
+    });
 });
 
 app.listen(3000);
