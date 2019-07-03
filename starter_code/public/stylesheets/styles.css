@@ -5,4 +5,85 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+*{
+    margin: 0;
+  }
+  .nav-bar{
+    background-color: #2081C3;
+    height: 50px;
+    display: flex;
+    align-content: center;
+    justify-content: start;
+    padding: 10px 0 0 20px;
+  }
+  .nav-bar a{
+    color: #F7F9F9;
+    text-decoration: none;
+    margin: 5px 10px;
+  }
+  .index-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .buttons{
+    background-color: #2081C3;
+    color: #F7F9F9;
+    padding: 10px 15px;
+    font-size: 15px;
+    margin: 5px 0;
+    border-radius: 4px;
+  }
+  .index-container img{
+    width: 40%;
+    height: 40%;
+    padding: 50px 0;
+  }
+  .theBeer{
+    display: flex;
+    margin: 5% 8%;
+    flex-wrap: wrap;
+  }
+  .eachBeer{
+    margin: 0 2%;
+    width: 28%;
+  }
+  .eachBeer img{
+    height: 40%;
+    width: 30%;
+    padding-left: 25%;
+    margin-bottom: 1%;
+  }
+  .eachBeer h4{
+    color:rgba(145, 145, 145, 0.481);
+    margin-bottom: 2%;
+  }
+  .whole-container{
+    display: flex;
+    margin: 5% 15%;
+  }
+  .whole-container img{
+    height: 10%;
+    width: 5%;
+    margin-right: 5%;
+  }
   
+  .content{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+  }
+  .content h2{
+    margin-bottom: 5%;
+  }
+  .content h4,
+  .content p{
+    margin-bottom: 3%;
+  }
+  .pairing{
+    margin-bottom:3%;
+  }
+  .content li{
+    margin-bottom: 2%;
+  }
