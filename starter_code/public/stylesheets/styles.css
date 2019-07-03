@@ -14,10 +14,12 @@ font-family: Arial, Helvetica, sans-serif
     background-color:#F7F9F9;
     
   }
-  
+  .beer-card-wrapper {
+    margin: 25px 10px 10px 20px;
+  }
   .beerCard {
     display: inline-grid;
-    grid-template-columns: 350px;;
+    grid-template-columns: 350px;
     grid-template-rows: 220px 50px 50px 250px;
     grid-template-areas: 
     "image"
@@ -26,6 +28,7 @@ font-family: Arial, Helvetica, sans-serif
     "beerDescription";
     margin: 10px;
   }
+  
   .beer-card-img {
     height: 200px;
     grid-area: image;
@@ -46,7 +49,7 @@ font-family: Arial, Helvetica, sans-serif
   }
   .beer-card-description {
     grid-area: beerDescription;
-    place-self: center;
+    place-self: stretch;
   }
 
 .beerRandom {
@@ -61,11 +64,7 @@ font-family: Arial, Helvetica, sans-serif
   ". beerRandTips";
 }
 
-.beer-card-img {
-  grid-area: randomBeer;
-  place-self: center;
 
-}
 .beer-random-name {
   grid-area: beerRandName;
   display: flex;
