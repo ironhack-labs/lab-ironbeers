@@ -1,8 +1,70 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
-  
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+  background-color: #2081C3 !important;
+}
+.nav-item {
+  color: #F7F9F9 !important;
+}
+.footer {
+  /* position: fixed; */
+  bottom: 0;
+  background-color: #0A2C42;
+}
+.text-muted {
+  color: #F7F9F9 !important;
+}
+.img {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.button-div {
+  margin: 0 auto;
+  padding-top: 5px;
+}
+.btn {
+  background-color: #2081C3;
+  color: #F7F9F9;
+  margin: 0 auto;
+}
+.card-img-top {
+  width: 30%;
+  margin: 0 auto;
+}
+.card {
+  background-color: rgba(145, 145, 145, 0.481);
+}
+.random-beer-flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  height: 48vw;
+  margin: auto;
+}
+.random-img-container {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+.random-img-container img {
+  width: 30%;
+}
+.random-info-container {
+  width: 50%;
+}
+.brewers-tips {
+  font-weight: bold;
+}
+.food-pairing-list {
+  margin-bottom: 2%;
+  margin-left: 30px;
+}
+.food-pairing-list:first-child {
+  margin-top: 2%;
+}
