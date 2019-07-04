@@ -1,18 +1,15 @@
 {
-  "name": "starter_code",
+  "name": "views",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "hbs": "^4.0.4",
-    "path": "^0.12.7",
-    "punkapi-javascript-wrapper": "^1.0.2"
+    "hbs": "^4.0.4"
   }
 }
