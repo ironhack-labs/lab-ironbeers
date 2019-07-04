@@ -13,7 +13,7 @@
   <body>
     
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
   <div class="container">
   <a class="navbar-brand" href="/">Home</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,26 +36,16 @@
     </div>
 </nav>
 
-    
+    <div class="spaceForNavBar"></div>
     {{{ body }}}
 <div class="container">
 
-
-    <ul class="nav">
-
-  <li class="nav-item">
-    <a class="nav-link active" href="#">Develop by Ironhack</a>
-  </li>
-  {{!-- <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#">Disabled</a>
-  </li> --}}
-</ul>
+<div class="spaceForFooter"></div>
+  <ul class="nav bg-primary fixed-bottom">
+    <li class="nav-item">
+      <a class="nav-link text-white" href="#">Develop by Ironhack</a>
+    </li>
+  </ul>
 </div>
 
     <!-- Optional JavaScript -->

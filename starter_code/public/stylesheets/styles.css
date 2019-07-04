@@ -14,3 +14,17 @@ body {
     height: 400px;
     width: auto;
   }
+
+  .card-img-top {
+    width: 100%;
+    height: 40vh;
+    object-fit: scale-down;
+  }
+
+  .spaceForNavBar {
+    height:70px;
+  }
+
+  .spaceForFooter {
+    height: 60px;
+  }
