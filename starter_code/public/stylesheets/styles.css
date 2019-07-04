@@ -3,6 +3,38 @@ white: #F7F9F9;
 light-blue: #2081C3;
 dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
+
 */
-  
+
+html, body {
+  height: 100%;
+  width: 100;
+}
+
+body {
+  background-color: #F7F9F9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#beers {
+  font-size: 12px;
+}
+#beers h4 {
+  font-size: 14px;
+}
+#beers h4 span {
+  color: rgba(145, 145, 145, 0.481);
+  font-size: 10px;
+}
+#beers h5 {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.img {
+  height: 195px;
+}
+
+nav, footer {
+  color: #F7F9F9;
+}
