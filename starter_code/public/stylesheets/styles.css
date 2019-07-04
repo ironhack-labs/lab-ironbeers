@@ -5,4 +5,140 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F7F9F9;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  background-color: #2081C3;
+  color: #F7F9F9;
+  height: 50px;
+}
+
+.navbar__list {
+  list-style: none; 
+  display: flex;
+}
+.navbar__list__item {
+  padding: 0 20px;
+}
+
+.navbar__list__item__link {
+  color: #F7F9F9;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #0A2C42;
+  color: #F7F9F9;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 30px;
+}
+
+.index-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.index-container__beer {
+  width: 250px;
+  margin: 50px auto;
+}
+
+.link {
+  padding: 15px;  
+  margin: 10px auto;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px auto;
+  width: 250px;
+  background-color: #2081C3;
+  border-radius: 5px;
+  color: #F7F9F9;
+}
+
+.beer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: 0 auto; 
+}
+
+.beer__card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+  margin: 5px auto;
+  border: 1px solid lightgray;
+}
+
+.beer__card__image {
+  height: 250px;
+}
+
+
+.beer__card__body__name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+
+.beer__card__body__tagline {
+  color: rgba(145, 145, 145, 0.481);
+  font-size: 15px;
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+
+
+.random-beer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 70%;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.random-beer--container__image {
+	height: 300px;
+	margin: 50px;
+}
+
+.random-beer__description__header {
+	padding-top: 30px;
+	margin: 0;
+}
+
+.random-beer__description__subheader {
+	margin: 0;
+	font-size: 15px;
+	color: rgba(145, 145, 145, 0.481);
+	margin: 0;
+}
+
+.random-beer__description__tips--brewers {
+	font-weight: 800;
+}

@@ -1,4 +1,4 @@
-
+// config
 const express = require('express');
 const hbs     = require('hbs');
 const app     = express();
@@ -10,12 +10,35 @@ app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
 
+hbs.registerPartials(__dirname + '/views/partials');
 
+// routes
 
 app.get('/', (req, res, next) => {
   res.render('index');
 });
 
+app.get('/beers', (req, res, next) => {
+  punkAPI.getBeers()
+  .then(beers => {
+    let data = { beers }
+    res.render('beers', data);
+  })
+  .catch(error => {
+    console.log(error)
+  })
+});
 
+app.get('/random-beer', (req, res, next) => {
+  punkAPI.getBeers()
+  .then(beer => {
+  res.render('random-beer', beer[0]);
+  })
+  .catch(error => {
+    console.log(error)
+  })
+});
+
+// listener
 
 app.listen(3000);
