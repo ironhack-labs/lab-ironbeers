@@ -62,6 +62,29 @@ footer {
     text-decoration: none;
 }
 
-.one-beer {
+.list-image {
     height: 10vw;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 5%;
+    
+}
+
+.beer-container {
+    margin-top: 5%;
+    padding: 0 10%;
+}
+
+.list-title {
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+
+.list-tagline {
+    opacity: 0.5;
+    font-size: 1vw;
+}
+
+.list-description {
+    font-size: 1vw;
 }
