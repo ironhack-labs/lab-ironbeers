@@ -97,7 +97,7 @@ footer p {
   flex-flow: row wrap;
   justify-content: center;
   padding-top: 30px;
-  height: 90vh;
+  min-height: 77.8vh;
 }
 
 #random-beer-container figure {
