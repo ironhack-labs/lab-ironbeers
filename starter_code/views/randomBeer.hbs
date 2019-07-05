@@ -1,0 +1,36 @@
+{{!-- This is how to reuse the partial with randomBeer to get one beer card
+<div class="beer-container">
+  <div class="row">
+    {{#each randomBeer}}
+      {{>_beerPartial}}
+    {{/each}}
+  </div>
+</div> --}}
+
+
+<div class="beer-container">
+  <div class="row">
+
+    <div class="image col-3">
+      <img src="{{randomBeer.image_url}}" alt="image of a beer">
+    </div>
+
+    <div class="col-9">
+      <h2>{{randomBeer.name}}</h2>
+      <h3>{{randomBeer.tagline}}</h3>
+      <p>{{randomBeer.description}}</p>
+      <p><strong>Food Pairing</strong> </h4>
+      <ul>
+        {{#each randomBeer.food_pairing}}
+        <li>
+          {{this}}
+        </li>
+        {{/each}}
+      </ul>
+      <p> <strong>Brewers Tips</strong> {{randomBeer.brewers_tips}}</p>
+
+    </div>
+
+  </div>
+
+</div>

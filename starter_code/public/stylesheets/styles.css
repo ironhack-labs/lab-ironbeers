@@ -5,4 +5,110 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+#navigation.navbar-custom  {
+  background-color: #2081C3;
+  color: #F7F9F9;
+}
+
+#navigation svg.svg-inline--fa.fa-bars.fa-w-14{
+  color: #F7F9F9;
+}
+
+#navigation a.nav-link{
+  color: #F7F9F9;
+}
+
+.row{
+  padding-bottom: 100px;
+}
+
+footer {
+  position: fixed;
+  color: #F7F9F9;
+  background-color: #0A2C42;
+  width: 100%;
+  bottom: 0;
+}
+
+footer div{
+  padding-left: 50px;
+  height: 50px;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 180px;
+  margin: 50px 0 25px 0;
+}
+
+.btn{
+  color: #F7F9F9;
+  background-color: #2081C3;
+  width:200px;
+  margin:10px 0;
+}
+
+.beer-container{
+  margin: 0 auto;
+  width: 85%;
+}
+
+.image{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.col-4 img{
+  height: 180px;
+}
+
+h2{
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+h3{
+  font-size: 1rem;
+  color: rgba(145, 145, 145, 0.481);
+}
+
+.col-9{
+  /* padding-top: 7%; */
+  padding-top: 65px;
+}
+
+
+
+
+/* styles for '...' */ 
+.ellipse {
+  overflow: hidden;
+  position: relative; 
+  max-height: 289px; 
+}
+/* create the ... */
+.ellipse:before {
+  content: '...';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+/* hide ... if we have text, which is less than or equal to max lines */
+.ellipse:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  background: white;
+}
+
+
+
+
