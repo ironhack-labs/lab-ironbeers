@@ -1,8 +1,16 @@
-<figure class="col-md-4">
-    <img src="{{ beer.image_url }}" alt="" class="list-image">
-    <figcaption>
-        <h1 class="list-title">{{ beer.name }}</h1>
-        <p class="list-tagline">{{ beer.tagline }}</p>
-        <p class="list-description">{{ beer.description }}</p>
-    </figcaption>
-</figure>
+<div class="random-container container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-md-2">
+            <img src="{{ beer.image_url }}" alt="" class="random-image">
+        </div>
+        <div class="col-md-8">
+            <div class="caption">
+                <h1 class="title">{{ beer.name }}</h1>
+                <p class="tagline">{{ beer.tagline }}</p>
+                <p class="desc">{{ beer.description }}</p>
+                
+            </div>
+        </div>
+
+    </div>
+</div>

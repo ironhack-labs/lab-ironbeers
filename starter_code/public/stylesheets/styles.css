@@ -62,29 +62,32 @@ footer {
     text-decoration: none;
 }
 
-.list-image {
+.list-image, .random-image {
     height: 10vw;
     margin: 0 auto;
     display: block;
     margin-bottom: 5%;
-    
 }
 
-.beer-container {
+.random-image {
+    height: 15vw;
+}
+
+.beer-container, .random-container {
     margin-top: 5%;
     padding: 0 10%;
 }
 
-.list-title {
+.title {
     font-weight: bold;
     font-size: 1.2vw;
 }
 
-.list-tagline {
+.tagline {
     opacity: 0.5;
     font-size: 1vw;
 }
 
-.list-description {
+.desc {
     font-size: 1vw;
 }
