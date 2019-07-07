@@ -9,6 +9,7 @@ font-family: Arial, Helvetica, sans-serif
 body {
     background-color: #F7F9F9;
     font-family: Arial, Helvetica, sans-serif;
+    position: relative;
 }
   
 nav {
@@ -29,8 +30,8 @@ nav a:hover{
 }
 
 footer {
-    /* position: fixed;
-    bottom: 0; */
+    position: fixed;
+    bottom: 0;
     background-color: #0A2C42;
     width: 100%;
     color: white;
@@ -80,7 +81,7 @@ footer {
 
 .title {
     font-weight: bold;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
 }
 
 .tagline {
@@ -88,6 +89,6 @@ footer {
     font-size: 1vw;
 }
 
-.desc {
+.desc, .extra {
     font-size: 1vw;
 }

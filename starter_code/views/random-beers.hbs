@@ -8,7 +8,17 @@
                 <h1 class="title">{{ beer.name }}</h1>
                 <p class="tagline">{{ beer.tagline }}</p>
                 <p class="desc">{{ beer.description }}</p>
-                
+            </div>
+            <div class="extra">
+                <p>
+                    <strong>Food Pairing</strong>
+                </p>
+                <ul>
+                    {{#each beer.food_pairing}}
+                    <li>{{ this }}</li>
+                    {{/each}}
+                </ul>
+                <p><strong>Brewers Tips: </strong>{{ beer.brewers_tips }}</p>
             </div>
         </div>
 
