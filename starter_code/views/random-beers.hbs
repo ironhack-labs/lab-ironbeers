@@ -1,0 +1,15 @@
+<div class=" beers index-container d-flex flex-column align-items-center">
+    <a class="btn" href="/random-beers"> Press for a random beer </a>
+</div>
+
+<div class="beer-random">
+  {{#each randomBeer}}
+     <div class="card" style="">
+      <img class="card-img-top" src={{this.image_url}} alt="Card image cap"></img>
+      <div class="card-body">
+        <h5 class="card-name">{{this.name}}</h5>
+        <p class="card-ingredients">{{this.description}}</p>
+      </div>
+</div>
+  {{/each}}
+</div> 
