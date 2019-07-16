@@ -1,4 +1,3 @@
-
 const express = require('express');
 const hbs     = require('hbs');
 const app     = express();
@@ -16,7 +15,15 @@ app.get('/', (req, res, next) => {
 });
 
 app.get('/beers', (req, res, next) => {
-  res.render('beers.hbs');
+
+  punkAPI.getBeers()
+  .then(beers => {
+    res.render('beers.hbs', {beerList: beers});
+  })
+  .catch(error => {
+    console.log(error)
+  })
+
 });
 
 app.get('/random-beer', (req, res, next) => {
