@@ -1,11 +1,3 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
-
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -21,6 +13,12 @@ h2 {
   font-size: 1.8em;
   margin: 15px 0 5px 0 ;
 }
+
+h3 {
+  font-size: 1.4em;
+  margin: 5px 0 5px 0 ;
+}
+
 
 nav ul {
   list-style-type: none;
@@ -100,9 +98,25 @@ footer {
   width: 350px;
 }
 
-.beer-img {
+.beer-container p {
+  font-size: 1.4em; 
+}
+
+.beer-container ul li {
+  font-size: 1.4em; 
+  margin: 0;
+  line-height: 0.6;
+}
+
+.img-beer {
   height: 250px;
   align-self: center;
+}
+
+.img-random-beer {
+  margin: 55px;
+  height: 250px;
+  vertical-align: top;
 }
 
 .beer-container aside {
@@ -110,6 +124,8 @@ footer {
   font-size: 1.8em;
 }
 
-.beer-container p {
-  font-size: 1.4em; 
+
+.random-beer-container{
+  display: flex;
+  margin: 20px 100px;
 }
