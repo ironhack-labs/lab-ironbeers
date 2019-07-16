@@ -29,7 +29,7 @@ app.get('/beers', (req, res, next) => {
 app.get('/random-beer', (req, res, next) => {
   punkAPI.getRandom()
   .then(beer => {
-    res.render('random-beer.hbs', {beer});
+    res.render('random-beer.hbs', beer[0]);   // getRandom returns an array with 1 object in - so beer[0] is an object (don't need to turn it into one with curly braces)
   })
   .catch(error => {
     console.log(error)
