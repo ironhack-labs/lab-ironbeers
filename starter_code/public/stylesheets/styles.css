@@ -5,4 +5,152 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+body {
+    min-height: 100vh;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#beer {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+#yellow-beer {
+    height: 300px;
+    width: 300px;
+}
+
+#check-beers, #random-beer, #yellow-beer {
+    display: block;
+    margin: 0 auto;
+}
+
+#check-beers, #random-beer{
+    margin-top: 20px;
+    background-color: #2081C3;
+    box-shadow: 0 8px 6px -9px black;
+    color: #F7F9F9;
+    border: 1px solid #2081C3;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: #2081C3;
+    box-shadow: 0 8px 6px -8px black;
+}
+
+nav, footer {
+    color: #F7F9F9;
+}
+
+nav ul, footer p {
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style-type: none;
+    height: inherit;
+    padding-left: 30px;
+  }
+  
+nav ul li {
+    margin: 0 30px;
+}
+  
+li a {
+    text-decoration: none;
+    color:#F7F9F9;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: #0A2C42;
+    bottom: 0;
+}
+
+footer p {
+    padding-left: 20px;
+}
+
+#beers-container {
+    margin-top: 60px;
+    padding: 0 40px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.each-beer {
+    padding: 0 20px;
+    margin-bottom: 30px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.each-beer img {
+    display: block;
+    margin: 0 auto;
+    height: 150px;
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.each-beer h2, #random h2 {
+    margin: 10px 0;
+    font-size: 15px;
+    color: rgba(145, 145, 145, 0.481);
+}
+
+.each-beer h1, #random h1 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.each-beer p {
+    font-size: 15px;
+}
+
+#random {
+    margin-top: 50px;
+    margin-left: 20px; 
+    display: flex;
+    justify-content: center;
+}
+
+#random img {
+    width: 50px;
+    height: 170px;
+    margin-right: 40px;
+}
+
+#random-text {
+    width: 50%;
+}
+
+#random-text ul {
+    padding-left: 30px;
+}
+
+#random-text li {
+    margin: 0 0 10px 0;
+}
   
