@@ -11,12 +11,17 @@ app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
 hbs.registerPartials(__dirname + '/views/partials')
 
-
-
 app.get('/', (req, res, next) => {
   res.render('index.hbs');
 });
 
+app.get('/beers', (req, res, next) => {
+  res.render('beers.hbs');
+});
+
+app.get('/random-beer', (req, res, next) => {
+  res.render('random-beer.hbs');
+});
 
 
 app.listen(3000);
