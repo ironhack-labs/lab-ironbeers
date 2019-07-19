@@ -6,12 +6,52 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
 
-.navbar {
+body{
+    margin:0;
+}
+.navbar,footer {
     display: flex;
     flex-direction: row;
     justify-content: left;
     list-style-type: none;
-    text-decoration-style: none;
+    margin: 0;
+    background-color: #2081C3;
+    color: white;
+    padding: 20px;
+}
+
+.navbar a {
+    display: flex;
+    justify-content: left;
+    text-decoration: none;
     background-color:#2081C3;
     color: white;
+    margin-right: 20px;
+}
+
+.index-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+    width: 100%;
+    margin: auto;
+}
+.button-beers{
+    text-decoration: none;
+    background-color:#2081C3;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.index-container img{
+    width: 450px;
+    margin-top: 58px;
+}
+footer{
+    background-color: #0A2C42;
+}
+footer p{
+    margin:0;
 }
