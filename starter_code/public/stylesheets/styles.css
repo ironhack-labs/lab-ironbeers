@@ -5,4 +5,40 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+body {
+	position: relative;
+	margin: 0;
+	padding-bottom: 6rem;
+	min-height: 100vh;
+}
+
+img {
+	width: 200px;
+	margin: 25px 0;
+}
+.button {
+	margin: 25px 0;
+}
+h1 {
+	text-align: center;
+}
+.footer {
+	background: #0a2c42;
+	color: white;
+	padding: 20px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.card img {
+	align-self: center;
+	width: 150px;
+	height: 300px;
+	object-position: top;
+}
+
+.card {
+	margin-top: 10px;
+}
