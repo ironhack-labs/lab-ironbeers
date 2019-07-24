@@ -1,0 +1,9 @@
+<div class="container">
+
+    <div class="row">
+
+        {{#each beers}}  <!-- itero en el array beers -->
+        {{>randomBeerInfo this}}  <!-- le indico el partial -->  
+        {{/each}}
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>Estas son todas las cervezas</h1>
+
+    <div class="row">
+
+        {{#each beers}}  <!-- itero en el array beers -->
+        {{>beersInfo this}}  <!-- le indico el partial -->  
+        {{/each}}
+    </div>
+</div>

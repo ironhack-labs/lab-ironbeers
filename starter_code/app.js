@@ -6,15 +6,41 @@ const path    = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 const punkAPI = new PunkAPIWrapper();
 
-app.set('view engine', 'hbs');
-app.set('views', __dirname + '/views');
+// middleWhere
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.set('view engine', 'hbs');
+app.set('views', __dirname + '/views');
 
 
-app.get('/', (req, res, next) => {
-  res.render('index');
+hbs.registerPartials(__dirname + '/views/partials') //tengo que poner esto para que me coja la carpeta partials
+
+
+app.get('/', (req, res) => { // con el método get accedo a la ruta /...
+  res.render('index');  // .....  y con el método render le digo que me randerice (que me lo pinte en pantalla)
 });
+
+app.get('/beers', (req, res) => { // aquí indico que el directorio beers que...
+  punkAPI.getBeers() // ... con el método getBeers de la api punkAPI que me retorna un array....
+  .then(beers => {  //... que para cada elemento de ese array me randerice abajo (me pinte) los elm del array en /beers
+    res.render("beers", {beers})
+  })
+  .catch(error => {
+    console.log(error)
+  })
+})
+
+
+app.get('/random-beer', (req, res) => {
+  punkAPI.getRandom()
+  .then(beers => {
+    res.render("random-beer", {beers})
+  })
+  .catch(error => {
+    console.log(error)
+  })
+
+})
 
 
 
