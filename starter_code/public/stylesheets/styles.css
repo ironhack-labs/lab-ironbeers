@@ -5,4 +5,75 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    background-color: #0A2C42;
+    color:#ffffff;
+}
+.footer{
+    background-color: #0A2C42;
+    color:#ffffff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-bottom:30px;
+}
+.flexbox{
+    display: flex;
+    justify-content: center;
+}
+.jarra{
+    width: 20%;
+    margin-top:200px;
+    margin-bottom: 20px;
+}
+
+.card{
+    border: 1px dotted darkmagenta;
+    margin: 10px;
+    padding-bottom: 10px;
+    max-height: 600px;
+}
+.card-img-top{
+    object-fit: contain;
+    height: 300px;
+    margin-top:10px;
+}
+.card-title{
+    color:#0A2C42;
+    font-size: 16px;
+}
+
+.card-text-tag{
+    color:#363636;
+    font-size: 12px;
+}
+.card-text-des{
+    color:darkcyan;
+    font-size: 11px;
+}
+
+#random{
+    background-color: #f6f6f6;
+}
+
+.img-random{
+    object-fit: contain;
+    height: 300px;
+    margin-top:10px;
+}
+.titulo{
+    color:blueviolet;
+}
+.titulo-1{
+    color:purple;
+}
+.titulo-2{
+    color:plum;
+}
+.descrip{
+    padding-bottom: 20px;
+}
