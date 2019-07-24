@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>These are the beers!</h1>
+  <div class="row">
+    {{#each beers}}
+    {{>beerPartial this}}
+    {{/each}}
+  </div>
+</div>
