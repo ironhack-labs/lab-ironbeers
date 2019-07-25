@@ -17,8 +17,7 @@ font-family: Arial, Helvetica, sans-serif
 
     margin-bottom: 20px;
     margin-left: 45%
-    
-    
+        
 }
 
 .fixed-bottom {
@@ -33,4 +32,9 @@ font-family: Arial, Helvetica, sans-serif
 
 nav a {
     color: white
+}
+
+.card-img-top {
+    width: 30%;
+    
 }
