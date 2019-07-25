@@ -1,8 +1,32 @@
-/*
+/* 
 white: #F7F9F9;
 light-blue: #2081C3;
 dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+.footer-bottom {
+  width: 100%;
+  padding: 20px 0;
+  text-align: left;
+  color: #fff;
+  background: #0a2c42;
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+}
+.navbar-custom {
+  color: #ffffff;
+  background-color: #2081c3;
+}
+p {
+  margin-left: 2%;
+}
+div {
+  display: block;
+  text-align: center;
+}
+img {
+  width: 20%;
+}
