@@ -1,0 +1,25 @@
+<h1 class="page-title">Random Beer</h1>
+<h2 class="page-subtitle">Surprise me with a random beer!</h2>
+
+{{#with beer}}
+<div class="random-beer">
+
+  <div class="img">
+    <img src="{{image_url}}" alt="beer image" class="">
+  </div>
+
+  <div class="rand-beer-info">
+    <h1>{{name}}</h1>
+    <h2>{{tagline}}</h2>
+    <p>{{description}}</p>
+    <h3>Food Pairing</h3>
+    <ul>
+      {{#each food_pairing}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p>Brewers Tips: {{brewers_tips}}</p>
+  </div>
+
+</div>
+{{/with}}

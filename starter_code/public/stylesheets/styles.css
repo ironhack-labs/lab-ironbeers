@@ -5,4 +5,147 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f9f9;
+  height: 100vh;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ---------------- */
+/*  TEXT STYLES 
+/* ---------------- */
+h2 {
+  color: #999;
+  font-size: 19px;
+}
+
+.page-title {
+  text-transform: uppercase;
+  text-align: center;
+  color: #777;
+}
+
+.page-subtitle {
+  text-align: center;
+  color: #777;
+  line-height: 1px;
+  margin-bottom: 50px;
+}
+
+/* ---------------- */
+/*  NAV 
+/* ---------------- */
+nav {
+  background: #2081C3;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+/* ---------------- */
+/*  BUTTONS 
+/* ---------------- */
+button {
+  background: #2081C3;
+  padding: 12px 15px;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+/* ---------------- */
+/*  INDEX 
+/* ---------------- */
+.index-container img {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ---------------- */
+/*  CARD LAYOUT
+/* ---------------- */
+.card-layout-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 33px;
+}
+
+.card {
+  width: 25%;
+  margin: 10px;
+  background-color: #eee;
+  border-radius: 8px;
+  padding: 15px;
+
+}
+
+.card-layout-container img {
+  max-height: 200px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.card h1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.card h2 {
+  font-size: 16px;
+}
+
+.card h1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* ---------------- */
+/*  RANDOM BEER
+/* ---------------- */
+.random-beer {
+  display: flex;
+  max-width: 1000px;
+  margin: 30px auto 150px auto;
+}
+
+.random-beer img {
+  max-height: 300px;
+  padding: 30px 50px 20px 0;
+}
+
+/* ---------------- */
+/*  FOOTER
+/* ---------------- */
+footer {
+  background-color: #0A2C42;
+  padding: 10px 0;
+  color: white;
+  margin-top: 40px;
+  width: 100%;
+}
+
+footer p {
+  margin-left: 40px;
+}
