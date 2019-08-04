@@ -1,7 +1,8 @@
 
-const express = require('express');
+const myExpress = require('express');
+const PORT = 3000;
+const app     = myExpress();
 const hbs     = require('hbs');
-const app     = express();
 const path    = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 const punkAPI = new PunkAPIWrapper();
@@ -18,4 +19,4 @@ app.get('/', (req, res, next) => {
 
 
 
-app.listen(3000);
+app.listen(PORT);
