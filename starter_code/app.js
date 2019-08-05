@@ -1,9 +1,10 @@
-
+//require all the packages you will need
 const myExpress = require('express');
+
+//package that allows templating and dynamic views
 const PORT = 3000;
-const app     = myExpress();
-const hbs     = require('hbs');
-const path    = require('path');
+const app = myExpress();
+const hbs = require('hbs');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 const punkAPI = new PunkAPIWrapper();
 
@@ -15,6 +16,7 @@ app.use(express.static((__dirname, 'public')));
 
 app.get('/', (req, res, next) => {
   res.render('index');
+  res.render('layout.hbs');
 });
 
 
