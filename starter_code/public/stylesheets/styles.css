@@ -5,4 +5,123 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+.navbar-default{
+    background-color: #2081C3;
+
+}
+
+.nav-item{
+    color: #F7F9F9;
+}
+
+.mainPage{
+    display: flex;
+    justify-content: center;
+}
+.theBeer {
+margin-top: 60px;
+}
+.theBeer > img{
+    margin: 0px auto;
+    height: 370px;
+    width: 350px;
+}
+
+.theBtn{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-secondary > a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn{
+    margin-top: 40px;
+}
   
+.btn-secondary{
+    background-color: #2081C3;
+}
+
+.theBeerList{
+    margin-top: 50px;
+
+}
+
+.card-img-top{
+    height: 150px;
+    width: 70px;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    float: left;
+    width: 33.333%;
+    height: 500px;
+    border: 0px;
+}
+
+.card > img{
+    margin: 0px auto;
+}
+
+.card-title{
+    margin: 0px 0px;
+}
+
+.card-tag{
+    color:lightgrey;
+
+}
+
+.theRandomBeer{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+
+}
+
+.randomBeer-img{
+    display: flex;
+    justify-content: center;
+width: 180px;
+
+}
+
+
+.randomBeer-img > img{
+    height: 300px;
+    width: 70px;
+}
+
+.randomBeer-name{
+    float: right;
+}
+
+.randomBeer-text{
+    width: 600px; 
+}
+
+.randomBeer-text > h5{
+color: lightgrey;
+} 
+
+.page-footer{
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    color: #F7F9F9;
+    position: fixed;
+    top: 94vh;
+    height: 50px;
+    width: 100vw;
+    background-color: #0A2C42;
+}
+
+.footer-text{
+    margin-left: 50px;
+}
