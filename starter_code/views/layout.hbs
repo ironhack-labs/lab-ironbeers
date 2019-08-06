@@ -1,0 +1,42 @@
+<!-- layout.hbs -->
+
+{{!-- This is the only page that will have full html setup --}}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>IronBeers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+  </head>
+
+  <body>
+
+
+    <div id = "page-container">
+      <div id="content-wrap">
+    
+        <nav class="navbar navbar-expand-lg navbar">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" href="/">Home</a>
+              <a class="nav-item nav-link" href="/beers">Beers</a>
+              <a class="nav-item nav-link" href="/random-beers">Random Beer</a>
+            </div>
+          </div>
+        </nav>
+        <!-- all other page content that we want, will be "plugged in" here -->
+        {{!-- so if there is anything you want on each page it will come from here;
+                ex. navbar, header, footer, etc --}}
+        {{{ body }}}
+      </div>
+    
+      <footer id="footer">
+        <P> Developed by Ironhack ;)</P>
+      </footer>
+
+    </div>
+    
+  </body>
+
+</html>
