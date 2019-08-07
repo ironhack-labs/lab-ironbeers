@@ -1,0 +1,20 @@
+{{!-- this is without partials
+{{!-- <div> --}}
+    {{#each beers}}
+        <li>Name: {{this.name}}
+        <br>
+            Tagline:{{this.tagline}}
+        <br>
+            <img src="{{this.image_url}}" width="50" alt="">
+        </li>
+    {{/each}}
+</div> --}}
+
+
+{{!-- this is with partials --}}
+<div>
+    {{!-- use beerPartial in all the objects in the array --}}
+    {{#each beers}}
+    {{> beerPartial this}}
+    {{/each}}
+</div>
