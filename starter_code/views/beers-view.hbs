@@ -1,5 +1,7 @@
 <div>
-    {{#each beers}}
-    {{> beerCard this}}
-    {{/each}}
+    <div class="card-beers flex flex-wrap">
+        {{#each beers}}
+        {{> beerCard this}}
+        {{/each}}
+    </div>
 </div>

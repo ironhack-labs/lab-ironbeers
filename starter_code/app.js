@@ -35,7 +35,7 @@ app.get('/route-random-beers', (req, res, next) => {
     .getRandom()
     .then((oneBeer) => {
       console.log(oneBeer);
-      res.render('randomBeers-view', { beers: oneBeer });
+      res.render('randomBeers-view', { randomBeers: oneBeer });
     })
     .catch((error) => {
       console.log(error);
