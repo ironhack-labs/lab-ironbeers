@@ -1,8 +1,78 @@
-/*
+/* 
 white: #F7F9F9;
 light-blue: #2081C3;
 dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+body{
+  background-color: rgba(145, 145, 145, 0.481);
+  margin: 0%;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+nav{
+  background-color: #2081C3;
+  height: 100px; 
+}
+
+li {
+  display: inline-block;
+  padding: 10px;
+}
+
+a {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  font-size: 25px;
+  margin-left: 30px; 
+}
+
+.index-container{
+/* margin-bottom: 10px; */
+}
+
+.index-container img {
+ padding: 35px;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.index-container button{
+  background-color: #2081C3;
+  padding: 20px;
+  color: white;
+  font-size: 22px;
+  border-radius: 12px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#firstbutton{
+  margin-bottom: 20px;
+}
+
+#bigRandom{
+  display: auto;
+}
+
+#bigRandom img{
+  width: 250px;
+}
+
+#beers img{
+  width: 100px;
+}
+
+#beers{
+  display: inline-block;
+  justify-content: space-evenly;
+  padding: 40px;
+  width: 33%;
+}
