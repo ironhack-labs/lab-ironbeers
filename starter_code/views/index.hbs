@@ -1,11 +1,16 @@
 <div class="index-container">
-    <div>
-        <img src="/images/beer.png" alt="beer image">
+    <div class="image-container">
+        <img src="/images/beer.png" alt="beer image" height="250px">
     </div>
-    <div>
+    <div class="index-btn">
 
-        <button> <a href="/beers">Check the Beers!</a></button>
-        <button> <a href="/random-beers">Check a Random Beer!</a></button>
+        <form action="/beers">
+            <input type="submit" value="Check the Beers!" class="index-button" />
+        </form>
+
+        <form action="/random-beers"> <input type="submit" value="Check a Random Beer!" class="index-button" />
+        </form>
+
 
     </div>
 

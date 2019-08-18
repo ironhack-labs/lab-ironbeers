@@ -6,20 +6,85 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
 
-.index-container {
-  display: flex;
-  padding: 10% 20%;
-  justify-content: space-around;
+* {
+  font-family: Arial, Helvetica, sans-seri;
 }
 
-.cards-container img {
-  object-fit: cover;
+.navbar-nav {
+  background-color: #2081c3;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.navbar-nav a {
+  padding: 25px;
+  color: #f7f9f9;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 800;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #0a2c42;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #f7f9f9;
+}
+
+.footer-text {
+  text-align: left;
+  padding: 20px;
+  font-weight: 800;
+}
+.index-container {
+  flex-direction: column;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+}
+.image-container {
+  margin: 0 auto;
+}
+
+.index-btn {
+  padding: 5%;
+  margin: 0 auto;
+}
+
+.beers-container {
+  border: 1px solid black;
+  display: flex;
+  padding: 10%;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.beer-img-top {
   object-position: center;
   height: 100px;
 }
 
-.beer-img-top {
-  height: 30px;
+.index-button {
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  color: #f7f9f9;
+  background-color: #2081c3;
+  text-align: center;
+  transition: all 0.2s;
 }
 
 h4 {
