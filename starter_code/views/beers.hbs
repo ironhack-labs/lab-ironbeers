@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Beers</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+
+<body>
+
+    <div class="beers-container">
+
+        {{#each beers}}
+        {{> beerPartial this}}
+        {{/each}}
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>
