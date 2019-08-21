@@ -59,12 +59,14 @@ footer {
   color: white;
   width: 100%;
   padding:15px;
+  bottom: 0;
+  position: fixed;
 }
 
 .beer > img {
-  width: 100px !important;
+  width: 80px !important;
   display: block !important;
-  margin: 0 auto o auto !important;
+  margin: 0 auto 0 auto !important;
 }
 
 .beer-container {
@@ -81,7 +83,8 @@ footer {
   padding: 10px !important;
   width: 25%;
   text-align: justify;
-  margin: 0 10px 0 10px
+  margin: 0 10px 0 10px;
+  background-color: red;
 }
 
 .random-beer {

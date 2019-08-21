@@ -11,14 +11,6 @@ app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
 hbs.registerPartials(__dirname + '/views/partials')
 
-// punkAPI.getBeers()
-//   .then(beers => {
-//     console.log('beers', beers.length, beers[0])
-//   })
-//   .catch(error => {
-//     console.log(error)
-//   })
-
 app.get('/', (req, res, next) => {
   res.render('index');
 });
