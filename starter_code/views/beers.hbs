@@ -1,7 +1,7 @@
 <div class="index-container">
     <p>hello</p>
-    {{!-- {{#each beers}} --}}
-    {{> beerPartial }}
-    {{!-- {{/each}} --}}
+    {{#each beers}}
+    {{> beerPartial this }}
+    {{/each}}
 
 </div>
