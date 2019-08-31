@@ -5,4 +5,119 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+/* Typographical Elements
+--------------------------------------------- */
+body {
+  background-color: #f7f9f9;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+h3 {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Default Elements
+--------------------------------------------- */
+.btn-blue {
+  background-color: #2081c3;
+  border-color: #2081c3;
+  color: #fff;
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.5);
+}
+.btn:hover {
+  opacity: 0.9;
+  color: #fff;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Navigation
+--------------------------------------------- */
+.bg-blue {
+  background-color: #2081c3;
+}
+
+/* Main
+--------------------------------------------- */
+main > .container {
+  padding: 60px 15px 0;
+}
+
+/* footer
+--------------------------------------------- */
+.footer {
+  background-color: #0a2c42;
+  color: #fff;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Index
+--------------------------------------------- */
+.index-container {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.index-container img {
+  width: 100%;
+  max-width: 350px;
+}
+.index-container .btn-blue {
+  margin-top: 20px;
+}
+
+/* Beers
+--------------------------------------------- */
+.beer-container {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.beer-container img {
+  height: 250px;
+  width: auto;
+  margin-bottom: 20px;
+}
+.beer-container .beer-title {
+  margin-bottom: 0;
+}
+.beer-tagline {
+  font-weight: bold;
+  font-size: 16px;
+  color: rgba(145, 145, 145, 0.481);
+  margin-bottom: 10px;
+}
+
+/* Single beer
+--------------------------------------------- */
+.single_beer img {
+  height: 350px;
+}
+.single_beer .beer-title {
+  margin-bottom: 20px;
+}
