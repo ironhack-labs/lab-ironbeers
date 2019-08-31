@@ -5,4 +5,142 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+  background-color:#F7F9F9;
+  padding-top:60px;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+#header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width:100%;
+  background-color: #2081C3;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.6);
+  padding:20px 10px;
+}
+
+.nav-item{
+  display: inline;
+  margin:0 1em;
+}
+.nav-link{
+  color:white !important;
+  text-decoration: none;
+}
+
+.img-container{
+  display:flex;
+  justify-content: center;
+  margin-top:40px;
+}
+.img-container img{
+  width:30%;
+  height:auto;
+}
+
+.button-container{
+  width:100%;
+  display:flex;
+  flex-flow:column;
+  align-items: center;
+  margin-top:50px;
+}
+.button-container button{
+  margin: 5px 0;
+  background-color: #2081C3;
+  padding:10px;
+  border:none;
+  border-radius: 2px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.6);
+}
+.button-container a{
+  color:white;
+  text-decoration: none;
+  font-size:14px;
+}
+
+.beerlist-container{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: space-around;
+  margin:0 30px;
+}
+.beer-container{
+  display:flex;
+  flex-flow:column nowrap;
+  width:30%;
+  margin:10px;
+}
+
+.randombeer-container{
+  display:flex;
+  flex-flow:row nowrap;
+}
+.randombeer-desc-container{
+  display: flex;
+  flex-flow:column nowrap;
+}
+
+.beer-name{
+  font-size:20px;
+  font-weight: bold;
+  padding:20px 0;
+}
+
+.beer-img-container{
+  display:flex;
+  justify-content: center;
+  margin:0 20px;
+}
+.beer-img{
+  padding:10px;
+  width:90px;
+  height:240px;
+}
+.beer-tagline{
+  color:#D0CECB;
+  padding:10px 0;
+}
+.beer-description{
+  font-size:15px;
+  padding:10px 0;
+}
+
+.randombeer-img-container{
+  display:flex;
+  justify-content: center;
+  margin:0 20px;
+  width:40%;
+}
+
+.foodlist{
+  padding-left: 25px;
+}
+
+.foodpair{
+  font-size:16px;
+  font-weight: bold;
+  margin:10px 0;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0A2C42;
+  color: white;
+  padding:15px 2px;
+}
+.footer-container{
+  margin-left:1em;
+  text-align: left;
+}
