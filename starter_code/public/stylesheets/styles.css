@@ -5,4 +5,35 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+/* .index-container img {
+
+    width: 70%;
+} */
+.show-beers {
+    padding: 7% 7%;
+}
+
+/* .show-beers .item {
+    display: none;
+} */
+.active {
+    text-decoration: underline;
+}
+
+
+.nav-color,
+.lbutton {
+    background-color: #2081C3;
+}
+
+.nav-color a {
+    color: #F7F9F9;
+}
+
+.all-links a {
+    color: #F7F9F9;
+}
+
+.footer-color {
+    background-color: #0A2C42;
+}
