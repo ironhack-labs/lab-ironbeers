@@ -48,7 +48,6 @@ app.get("/single_beer", (req, res, next) => {
   punkAPI
     .getBeers()
     .then(beers => {
-      debugger;
       const single_beer = beers.find(beer => beer.id == id);
       res.render("single_beer", { singleBeer: single_beer });
     })
