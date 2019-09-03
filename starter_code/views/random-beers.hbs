@@ -6,5 +6,12 @@
     <h1 class="beer-title">{{beer.name}}</h1>
     <h2 class = "beer-tag">{{beer.tagline}}</h2>
     <p class="beer-desc">{{beer.description}}</p>
+    <h2 class = "food-pairing">Food Pairing</h2>
+    <ul>
+      {{#each beer.food_pairing}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+   <p class ="beer-tips"><span>Brewers Tips: </span>{{beer.brewers_tips}}</p>
   </div>
 </div>

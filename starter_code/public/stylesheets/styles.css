@@ -139,3 +139,17 @@ body {
 .random-beer-infos{
   margin:50px 0;
 }
+
+.beer-tips > span{
+  font-weight: bold;
+  font-size: 2vh;
+}
+.food-pairing{
+  font-size: 2vh;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .beer-tips{
+
+} */
