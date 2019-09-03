@@ -6,3 +6,136 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+.main{
+  min-height: 86vh;
+}
+
+body {
+  padding:0;
+  margin:0;
+}
+
+.footer{
+  background-color: #0A2C42;
+  color: white; 
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  bottom: 0;
+  
+}
+
+.nav_main{
+  background-color: #2081C3;
+  color: white; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 7vh;
+  justify-content: flex-start;
+  align-content: space-between;
+  width: 100%;
+  /* margin-top: 10px; */
+}
+
+.link-container >a {
+  text-decoration: none;
+  color: white; 
+  margin-left: 2vw;
+  margin-right: 2vw;
+} 
+.link-container{
+  margin-left: 3vw;
+}
+
+.footer-text{
+  margin-left: 2vw;
+}
+
+.btn{
+  background-color: #2081C3;
+  color: white; 
+  border-radius: 5px;
+  height: 40px;
+  margin: 10px 0;
+}
+
+.index-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 84vh;
+  width: 100%;
+}
+
+.beers-img{
+    height: 20vh;
+    width: 10vw;
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.one-beer-img{
+  grid-area: one-beer-img;
+  height: 20vh;
+  justify-self: center;
+
+  /* widows: 30vw; */
+  /* justify-items: center; */
+}
+
+.beer-title{
+  grid-area: beer-title;
+  font-size: 3vh;
+  margin-bottom: 0;
+}
+
+.beer-tag{
+  grid-area: beer-tag;
+  font-size: 2vh;
+  color:rgba(145, 145, 145, 0.646);
+  margin-top: 0;
+  margin-bottom: 0;
+
+}
+
+.beer-desc{
+  grid-area: beer-desc;
+}
+
+.one-beer-container{
+  margin:30px 5vh;
+  display: grid;
+  grid-template-areas:
+  'one-beer-img'
+  'beer-title'
+  'beer-tag'
+  'beer-desc';
+  /* height: 40vh; */
+  /* width:30%;   */
+}
+
+.all-beers-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+  grid-gap: 1rem;
+}
+
+.random-beer-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.img-random > img{
+  margin :50px 7vw;
+}
+
+.random-beer-container{
+  width: 50vw;
+}
+
+.random-beer-infos{
+  margin:50px 0;
+}
