@@ -4,6 +4,10 @@ const app = express();
 const path = require("path");
 const PunkAPIWrapper = require("punkapi-javascript-wrapper");
 const punkAPI = new PunkAPIWrapper();
+const bodyParser = require("body-parser");
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }));
 
 //set my view engine to hbs
 app.set("view engine", "hbs");
@@ -21,8 +25,12 @@ app.get("/", (req, res, next) => {
 });
 
 app.get("/beers", (req, res, next) => {
+
+  const term = req.query.s;
+  const options = term ? { 'beer_name': term } : {};
+
   punkAPI
-    .getBeers()
+    .getBeers(options)
     .then(beers => {
       res.render("beers", { beers: beers });
     })
@@ -33,27 +41,32 @@ app.get("/beers", (req, res, next) => {
 
 app.get("/random_beer", (req, res, next) => {
   punkAPI
-    .getBeers()
-    .then(beers => {
-      let random_beer = beers[Math.floor(Math.random() * beers.length)];
-      res.render("random_beer", { randomBeer: random_beer });
+    .getRandom()
+    .then(beer => {
+      res.render("single_beer", { beer: beer[0] });
     })
     .catch(error => {
       console.log(error);
     });
 });
 
-app.get("/single_beer", (req, res, next) => {
-  const id = req.query.id;
+app.get("/single_beer/:beerId", (req, res, next) => {
+  const id = req.params.beerId;
   punkAPI
-    .getBeers()
-    .then(beers => {
-      const single_beer = beers.find(beer => beer.id == id);
-      res.render("single_beer", { singleBeer: single_beer });
+    .getBeer(id)
+    .then(beer => {
+      res.render("single_beer", { beer: beer[0] });
     })
     .catch(error => {
       console.log(error);
     });
+});
+
+app.post("/search", (req, res) => {
+
+  const nameBeer = req.body.nameBeer;
+  res.redirect(`/beers/?s=${nameBeer}`);
+
 });
 
 app.listen(3000);

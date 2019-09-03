@@ -9,7 +9,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="stylesheets/styles.css">
+  <link rel="stylesheet" href="/stylesheets/styles.css">
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -33,6 +33,11 @@
             <a class="nav-link" href="/random_beer">Random beer</a>
           </li>
         </ul>
+        <form class="form-inline mt-2 mt-md-0" action="search" method="POST">
+          <input class="form-control mr-sm-2" type="text" placeholder="Enter beer name" name="nameBeer"
+            aria-label="Search">
+          <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
+        </form>
       </div>
     </nav>
   </header>
@@ -42,7 +47,7 @@
     </div>
   </main>
 
-  <footer class="footer mt-auto py-3">
+  <footer class=" footer mt-auto py-3">
     <div class="container">
       <span class="text-muted">Made by a Ironhacker.</span>
     </div>
