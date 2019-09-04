@@ -24,10 +24,11 @@ app.get("/beers", (req, res, next) => {
   punkAPI
     .getBeers()
     .then(beersFromApi => {
-      // Render /views/beers-list.hbs
-      res.render("beers", {
+      const data = {
         beers: beersFromApi
-      });
+      }
+      // Render /views/beers-list.hbs
+      res.render("beers", data);
     })
     .catch(error => {
       console.log(error);
@@ -40,10 +41,11 @@ app.get("/random-beer", (req, res, next) => {
   punkAPI
     .getRandom()
     .then(beersFromApi => {
-      // beersFromApi is an array with 1 element (I know it's weird)
-      res.render("randomBeer", {
+      const data = {
         beer: beersFromApi[0]
-      });
+      }
+      // beersFromApi is an array with 1 element (I know it's weird)
+      res.render("randomBeer", data);
     })
     .catch(error => {
       console.log(error);
