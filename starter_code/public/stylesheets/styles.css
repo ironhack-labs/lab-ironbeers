@@ -1,8 +1,106 @@
-/*
+/* This CSS file use the BEM convention 
+
 white: #F7F9F9;
 light-blue: #2081C3;
 dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f9f9;
+  justify-content: space-between;
+}
+
+.beer-home-img {
+  height: 120px;
+}
+
+/* .navbar block entity */
+.navbar {
+  background-color: #2081c3;
+  height: 50px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  /* box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.3); */
+}
+
+/* .navbar__link element part of .navbar block */
+.navbar__link {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+
+.main {
+  /* If you remove flex-grow: 1, the .main will be centered */
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #0A2C42;
+  color: white;
+  height: 50px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* .button block entity */
+.button {
+  background-color: #2081c3;
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.index-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.index-container__element {
+  margin: 10px;
+}
+
+/* .button--green modifier entity */
+.button--green {
+  background-color: #23b100;
+}
+
+
+.beer-information {
+  max-width: 400px;
+  padding: 40px;
+}
+.beer-information__name {}
+.beer-information__tagline {
+  color: rgba(145, 145, 145, 0.481);
+}
+.beer-information__description {}
+.beer-information__img {
+  height: 120px;
+  margin: auto;
+  display: block;
+}
+
+.informations-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
   
