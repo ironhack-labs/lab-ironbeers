@@ -5,4 +5,62 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F7F9F9;
+    background-color: rgba(145, 145, 145, 0.481);
+}
+
+#navbarNav {
+    background-color: #2081C3;
+    color: white;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+#footer .nav-link {
+    color: #F7F9F9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#footer{
+    background-color: #0A2C42;
+}
+
+
+.nav-link {
+    text-decoration: none;
+    color: #F7F9F9;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+a.btn.btn-primary.btn-m.active {
+    background-color: #2081C3;
+    margin: 10px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.button-div{
+    margin: 20px;
+}
+
+img.card-img-top {
+    height: 50%;
+    width: 20%;
+}
+
+div.card {
+    width: 20rem;
+    height: 20rem;
+    
+}
