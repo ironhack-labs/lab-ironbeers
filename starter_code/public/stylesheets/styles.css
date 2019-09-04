@@ -9,7 +9,6 @@ font-family: Arial, Helvetica, sans-serif
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #F7F9F9;
-    background-color: rgba(145, 145, 145, 0.481);
 }
 
 #navbarNav {
@@ -17,7 +16,6 @@ body {
     color: white;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 
@@ -28,6 +26,12 @@ body {
 
 #footer{
     background-color: #0A2C42;
+}
+
+#beers{
+    padding: 30px 10px;
+    background-color: #F7F9F9;
+    width: 100%;
 }
 
 
@@ -55,19 +59,25 @@ a.btn.btn-primary.btn-m.active {
 }
 
 img.card-img-top {
-    height: 120px;
-    width: 40px;
+    height: 150px;
+    width: auto;
 }
 
 div.card{
     font-size: 0.8em;
     display: flex;
     justify-content: center;
-    height: 500px;
-    margin: 0;
+    width: 350px;
+    padding: 40px;
+    background-color: transparent;
     
 }
 
-#beers{
-    background-color: rgba(145, 145, 145, 0.481);
+h5.card-title {
+    font-weight: 700;
+}
+
+div#beers.row {
+  
+
 }
