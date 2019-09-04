@@ -1,0 +1,18 @@
+<div class="card d-flex justify-content-center m-auto">
+    <img src={{ beer.image_url }} class="card-img-top auto" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{beer.name}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{beer.tagline}}</h6>
+    <br />
+    <p class="font-weight-bold">Description: </p>
+    <p class="card-text">{{beer.description}}</p>
+    <p class="font-weight-bold">Food Pairing: </p>
+    <ul>
+      {{#each beer.food_pairing}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p class="font-weight-bold">Brewer Tips: </p>
+    <p class="card-text">{{beer.brewers_tips}}</p>
+  </div>
+</div>
