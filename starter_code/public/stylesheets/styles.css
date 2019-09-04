@@ -5,4 +5,79 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between
+}
+.navbar {
+    background-color: #2081C3;
+    
+}
+
+.navbar a {
+    color: white;
+}
+
+footer {
+    background-color: #0A2C42;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 111vh;
+}
+
+.container img {
+    max-width: 100%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 100%;
+}
   
+btn btn-primary btn-lg {
+    margin: 5px;
+}
+
+.buttons a {
+    color: white;
+    text-decoration-style: none;
+}
+
+.allbeers {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: baseline;
+    justify-content: space-around;
+    padding: 50px 65px;
+    font-size: 11px;
+}
+
+.allbeers img {
+    display: flex;
+    align-self: center;
+    height: 150px;
+    max-width: 50px;
+}
+
+.card {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-self: baseline;
+    align-content: space-between;
+    justify-content: center;
+}
+
+
+
+
+
+
