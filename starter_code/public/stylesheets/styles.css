@@ -5,4 +5,78 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+* {
+    margin: 0
+}
+
+.navbar {
+    background-color: #2081C3 !important;
+    color: #F7F9F9 !important;
+}
+
+.nav-link {
+    color: #F7F9F9 !important;
+}
+
+.index-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index-container img {
+    margin: 2vw;
+    width: 300px;
+}
+
+.btn {
+    background-color: #2081C3;
+    margin: 2vw 0;
+    color: #F7F9F9;
+}
+
+.beers {
+    display: flex!important;
+    flex-wrap: wrap!important;
+    width: 100%;
+    place-content: center;
+}
+
+.card-beer {
+    margin: 4vh 2vw!important;
+}
+
+.card-beer img {
+    height: 290px;
+    width: 124px!important;
+    align-self: center!important;
+}
+
+.random-beers {
+    text-align: -webkit-center;
+}
+
+.card-random {
+    max-width: 90% !important;
+    text-align: left;
+}
+
+.card-img {
+    text-align: center;
+}
+
+.card-img img {
+    width: 30%;
+    margin: 2vh;
+}
+
+footer {
+    background-color: #0A2C42;
+    color: #F7F9F9;
+    height: 45px;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+}
