@@ -55,12 +55,19 @@ a.btn.btn-primary.btn-m.active {
 }
 
 img.card-img-top {
-    height: 50%;
-    width: 20%;
+    height: 120px;
+    width: 40px;
 }
 
-div.card {
-    width: 20rem;
-    height: 20rem;
+div.card{
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    margin: 0;
     
+}
+
+#beers{
+    background-color: rgba(145, 145, 145, 0.481);
 }
