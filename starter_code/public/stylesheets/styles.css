@@ -5,4 +5,72 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+footer {
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.index-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 64px);
+}
+
+.index-container img {
+  width: 280px;
+  min-width: 200px;
+  margin-bottom: 3rem;
+}
+
+.index-container a {
+  margin-bottom: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1rem 2rem;
+  grid-gap: 1rem;
+}
+
+.grid img {
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.grid .card {
+  padding: 2rem 3rem;
+}
+
+.grid .card h2 {
+  font-size: 1.75rem;
+}
+
+.grid-2 {
+  padding: 6.5rem 0;
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.grid-2 h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.right-side p:nth-child(2) {
+  opacity: 0.5;
+}
+
+.grid-2 img {
+  width: 50%;
+}
+
+.food-pairing ul li {
+  list-style-type: disc;
+}

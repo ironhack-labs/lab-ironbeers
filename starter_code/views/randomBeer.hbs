@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="grid-2">
+    {{#each beers}}
+    <div class="left-side">
+      <img src={{image_url}} alt={{name}}>
+    </div>
+    <div class="right-side">
+      <h2>{{name}}</h2>
+      <p>{{tagline}}</p>
+      <p>{{description}}</p>
+
+      <div class="food-pairing">
+        <h3>Food pairing</h3>
+        <ul>
+          {{#each food_pairing}}
+          <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div class="brewers-tips">
+        <p><b>Brewers Tips:</b>{{brewers_tips}}</p>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
