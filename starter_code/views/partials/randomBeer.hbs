@@ -1,0 +1,23 @@
+<div class="random-card">
+    <div class="random-img-container">
+        <img class="random-portrait" src={{this.image_url}} alt={{this.name}}>
+    </div>
+
+    <div class="random-content-container">
+        <h2 class="random-name">{{this.name}}</h2>
+        <h3 class="random-tagline "> {{this.tagline}} </h3>
+        <p class="random-description"> {{this.description}} </p>
+
+        <h4>Food pairing:</h4>
+        <ul class="pairing-list">
+            {{#each this.food_pairing}}
+            <li> {{this}} </li>
+            {{/each}}
+        </ul>
+
+        <p class="tips">
+            <span>Brewer Tips:</span>
+            {{this.brewers_tips}}
+        </p>
+    </div>
+</div>
