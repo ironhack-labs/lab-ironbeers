@@ -5,4 +5,174 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+/* //'####      NAVBAR       ####*/
+nav {
+    background-color: #2081C3;
+    color: white;
+    height: 60px;
+    box-shadow: 2px 2px 5px #2081C3;
+    display: flex;
+    align-content: center;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    align-content: center;
+    height: 100%;
+    margin: 0;
+    padding-left: 20px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    width: 120px;
+    height: 60px;
+}
+
+
+/* //'####      FOOTER     ####*/
+
+
+footer {
+    background-color: #0A2C42;
+    color: white;
+    height: 60px;
+    display: flex;
+    align-content: center;
+}
+
+footer p {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* //'####      Body       ####*/
+
+
+.container {
+    min-height: calc(100vh - 120px);
+}
+
+
+/* //'####      Index       ####*/
+
+.index-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.index-container img {
+    height: auto;
+    width: 30%;
+    padding: 40px 0;
+}
+
+.index-container button {
+    background-color: #2081C3;
+    color: white;
+    border-radius: 3px;
+    width: 200px;
+    height: 40px;
+    margin: 20px 0;
+    box-shadow: 2px 2px 5px grey;
+}
+
+/* //'####      beer partial       ####*/
+
+
+.beers {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 30px 50px 50px;
+}
+
+.beer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    min-height: 500px;
+    padding: 20px;
+}
+
+.beer-img {
+    height: 210px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
+
+.beer img {
+    width: auto;
+    height: 200px;
+}
+
+
+/* #####Random Beers##### */
+
+h2 {
+    padding-bottom: 10px;
+}
+
+h3 {
+    padding-bottom: 8px;
+    color: rgba(145, 145, 145, 0.481);
+}
+
+h4 {
+    padding: 10px 0;
+}
+
+
+.list-food-pairing li {
+    margin-left: 25px;
+    padding-bottom: 10px;
+}
+
+.random-beer {
+    display: flex;
+    padding: 50px 20% 0 10%;
+    align-items: center;
+}
+
+.random-beer div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+.random-beer img {
+    width: 100px;
+    height: auto;
+}
+
+.random-beer article {
+    flex: 3;
+}
+
+.list-food-pairing {
+    list-style-type: disc;
+}
