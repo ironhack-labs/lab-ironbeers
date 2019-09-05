@@ -1,8 +1,132 @@
-/*
-white: #F7F9F9;
+.bg-dark {
+    background-color: #2081C3 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+
+    color: #F7F9F9;
+    font-size: 12px;
+}
+
+footer {
+    background-color: #0A2C42;
+    clear: both;
+    position: relative;
+    height: 50px;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    color: #F7F9F9;
+    font-size: 12px;
+    align-items: center;
+    padding: .6rem 1.5rem;
+    margin-top: 30px;
+}
+
+body {
+    min-height: 100%;
+    background-color: rgba(145, 145, 145, 0.481);
+}
+
+.index-container img {
+    height: 250px;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+
+.index-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-primary {
+    background-color: #2081C3;
+    margin-top: 25px;
+}
+
+.btn-primary button:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+.beer-container {
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 40px;
+}
+
+.beers-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: 0% 1.5% 0% 1.5%;
+}
+
+.beers-item img {
+    height: 120px;
+
+}
+
+.beers-item p {
+    font-size: 10px;
+    text-align: left;
+}
+
+.beers-item h2 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.beers-item h4 {
+    font-size: 12px;
+    color: grey;
+    text-align: left;
+}
+
+.beerDetail {
+    display: flex;
+    flex-direction: column;
+}
+
+.beer-container {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 100px;
+    ;
+}
+
+.beer-container img {
+    height: 150px;
+
+}
+
+.beer-container p {
+    font-size: 14px;
+    text-align: left;
+}
+
+.beer-container h2 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.beer-container h4 {
+    font-size: 12px;
+    color: grey;
+    text-align: left;
+}
+
+
+
+/* white: #F7F9F9;
 light-blue: #2081C3;
 dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
-  
+font-family: Arial, Helvetica, sans-serif */
