@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Ironbeers</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+	<link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+
+<body>
+	<nav class="navbar is-link" role="navigation" aria-label="main navigation">
+		<div class="navbar-brand">
+			<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			</a>
+		</div>
+
+		<div id="navbarBasicExample" class="navbar-menu">
+			<div class="navbar-start">
+				<a href="/" class="navbar-item">
+					Home
+				</a>
+
+				<a href="/beers" class="navbar-item">
+					Beers
+				</a>
+
+				<a href="/randombeers" class="navbar-item">
+					Randombeers
+				</a>
+			</div>
+		</div>
+	</nav>
+	<section class="section">
+		<div class="container">
+			{{{ body }}}
+		</div>
+	</section>
+	<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      Developed in <strong>Ironhack</strong> by <strong>Lariicsa & Diana</strong>
+    </p>
+  </div>
+</footer>
+</body>
+
+</html>
