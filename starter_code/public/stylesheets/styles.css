@@ -6,3 +6,61 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+
+nav {
+    background-color:#2081C3 
+}
+
+nav a {
+    color: #F7F9F9
+}
+
+footer {
+    background-color: #0A2C42;
+    color: #F7F9F9;
+    padding: 8px 16px;
+}
+
+body {
+    background-color: rgba(145, 145, 145, 0.481);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.homePadd{
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.homePadd div{
+    text-align: center
+
+}
+
+.btn {
+    background-color:#2081C3 
+}
+
+h4 {
+    color: rgba(145, 145, 145, 0.481);
+
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px
+}
+
+.card {
+    display: flex;
+    width: 30vw;
+  }
+
+  .card img {
+    height: 150px;
+    width: 100px;
+    align-self: center;
+  }
