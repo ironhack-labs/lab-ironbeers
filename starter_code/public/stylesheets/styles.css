@@ -5,4 +5,52 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+body {
+  width: 100%;
+}
+
+#footer {
+  margin-top: 50px;
+}
+
+#footer div p {
+  color: white;
+}
+
+.index-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.index-container img {
+  width: 500px;
+  height: 400px;
+  margin-top: 50px;
+}
+
+.boton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.boton a {
+  padding: 5px 40px 5px 40px;
+}
+
+#random-beer {
+  display: flex;
+  flex-wrap: wrap !important; 
+}
+
+#random-beer img {
+  width: 100px;
+  height: 300px;
+}
+
+#random-beer-text {
+  justify-content: right;
+}
