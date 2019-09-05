@@ -42,8 +42,8 @@ body {
 }
 
 #random-beer {
-  display: flex;
-  flex-wrap: wrap !important; 
+  display: flex !important;
+  flex-wrap: wrap !important;
 }
 
 #random-beer img {
