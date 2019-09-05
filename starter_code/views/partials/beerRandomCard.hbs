@@ -1,0 +1,21 @@
+<div class="randombeers">
+    <div>
+        <img src="{{this.image_url}}" alt="...">
+    </div>
+    <div>
+        <h3>{{this.name}}</h3>
+        <br>
+        <span>{{this.tagline}}</span>
+        <br><br>
+        <p>{{this.description}}</p>
+        <h5>Food Pairing</h5>
+        <ul>
+            {{#each food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>
+            <h5>Brewer Tips:</h5> {{this.brewers_tips}}
+        </p>
+    </div>
+</div>
