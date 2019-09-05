@@ -5,4 +5,148 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2081c3;
+}
+
+.navbar li {
+  float: left;
+}
+
+.button a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.footer {
+  background-color: #0a2c42;
+  height: 70px;
+  color: white;
+  text-align: left;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer p {
+  margin-left: 15px;
+  padding-top: 25px;
+  /* bottom: 0; */
+}
+
+.index-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.index-container img {
+  height: 350px;
+  width: 350px;
+  margin: 40px 0;
+}
+
+.button {
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #2081c3;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 15px;
+}
+
+.button-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#container {
+  flex: 1;
+}
+.container {
+  display: flex;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.beer-container {
+  width: 25%;
+  margin: 30px 60px;
+}
+
+.beer-container p,
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tagline {
+  color: rgba(145, 145, 145, 0.481);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 60px;
+  height: 170px;
+  margin: 20px auto;
+  display: block;
+}
+
+.random-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.random-container p,
+h2,
+li {
+  padding: 10px;
+}
+
+.random-container ul {
+  padding-left: 30px;
+}
+
+.beer-image {
+  margin: 50px;
+}
+
+.random-beer-content {
+}
