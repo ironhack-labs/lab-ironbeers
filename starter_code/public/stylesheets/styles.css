@@ -11,7 +11,7 @@ body {
 }
 
 #footer {
-  margin-top: 50px;
+  margin-top: 133px;
 }
 
 #footer div p {
@@ -41,16 +41,35 @@ body {
   padding: 5px 40px 5px 40px;
 }
 
-#random-beer {
-  display: flex !important;
-  flex-wrap: wrap !important;
+.random-beer {
+  display: grid;
+  grid-template-columns: 30% 30%;
 }
 
-#random-beer img {
+.random-beer img {
   width: 100px;
   height: 300px;
+  padding: 10px;
 }
 
-#random-beer-text {
-  justify-content: right;
+.random-beer-text {
+  padding: 10px;
+}
+
+.beers {
+  display: flex !important;
+  flex-direction: column;
+  flex-wrap: wrap !important;
+  width: 100%;
+}
+
+.card img {
+  height: 290px;
+  width: 150px !important;
+  align-self: center !important;
+}
+.card-beer {
+  height: 209px;
+  width: 124px !important;
+  align-self: center !important;
 }
