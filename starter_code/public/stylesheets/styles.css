@@ -5,9 +5,22 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+* {
+    margin: 0;
+    padding: 0;
+}
 
 nav {
     height: 10vh;
+}
+
+body {
+    font-size: 16px;
+
+}
+
+h6 {
+    color: rgba(145, 145, 145, 0.481);
 }
 
 .index-container {
@@ -28,31 +41,68 @@ nav {
     background-color: #0A2C42;
 }
 
+/* fotter */
 p {
-    margin: 1cm;
+    margin-left: 20px;
 }
 
-.flex {
+/* beer container */
+.beer-container {
+    margin: 30px;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    align-content: space-between;
+    align-content: space-around;
 }
 
-/* .test {
-    width: 120px;
-    height: 120px;
-    height: auto;
-    float: left;
-    margin: 3px;
-    padding: 3px;
-} */
+/* each card */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    height: 35%;
+    border: none;
+}
 
+/* image frame  to make image center*/
+.imgCv {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+/* image container */
+.img-beer img {
+    width: auto;
+    height: 100%;
+}
+
+/* image frame */
 .img-beer {
-    width: 20vw;
+    height: 25vh;
+    width: auto;
+}
+
+/* text container  */
+.description {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* beer container */
+.beer-container-rand {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
 }
 
-.card-img {
-    max-width: 20%;
-    height: auto;
+.space {
+    display: flex;
+    justify-content: center;
+    border: 6px solid black;
+
 }

@@ -1,0 +1,16 @@
+<div class="space">
+    <div>
+        <div class="beer-container-rand">
+            {{#each beers}}
+            {{> beerCard}}
+            {{/each}}
+        </div>
+        <div>
+            <ul>
+                {{#each beers}}
+                {{> randomCard}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>

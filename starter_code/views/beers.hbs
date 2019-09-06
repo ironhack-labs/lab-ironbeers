@@ -1,11 +1,6 @@
 <div class="beer-container">
-    <div class="row flex">
-        {{#each beers}}
-        <div class="col-4 test">
-            {{> beerCard this}}
-            {{!-- {{this.name}} --}}
-        </div>
-        {{/each}}
+  {{#each beers}}
+  {{> beerCard}}
+  {{/each}}
 
-    </div>
 </div>
