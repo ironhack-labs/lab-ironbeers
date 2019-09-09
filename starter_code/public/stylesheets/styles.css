@@ -7,3 +7,6 @@ grey: rgba(172, 126, 126, 0.481);
 font-family: Arial, Helvetica, sans-serif 
 }
   
+.card p{
+  font-size: 0.9em;
+}
