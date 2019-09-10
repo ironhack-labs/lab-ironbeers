@@ -17,13 +17,27 @@ app.get('/', (req, res, next) => {
 });
 
 app.get('/beers', (req, res, next) => {
-  res.render('index')
+
+  punkAPI.getBeers()
+
+  .then(beers => { 
+    res.render('beers', { beers })
+  })
+
 })
 
-app.get('/random-beers', (req, res, next) => {
-  res.render('index')
+app.get('/random-beer', (req, res, next) => {
+  punkAPI.getRandom()
+  .then(beers => {
+    console.log(beers)
+    res.render('randomBeer', { beer })
+  })
+  .catch(error => {
+    console.log(error)
+  })
+  
 })
 
-
+hbs.registerPartials(__dirname + '/views/partials')
 
 app.listen(3000);
