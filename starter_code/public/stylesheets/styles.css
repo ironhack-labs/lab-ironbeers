@@ -13,6 +13,10 @@ h2 {
 h3 {
     font-size: 18px;
 }
+
+.col {
+    margin-top: 3rem;
+}
   
 .navbar {
     background-color: #2081C3;
@@ -39,4 +43,26 @@ h3 {
     max-height: 150px;
     display: block;
     margin: 0 auto;
+}
+
+.randombeer img {
+    float: left;
+    width: 100%;
+    max-width: 200px;
+}
+
+.randombeer .info {
+    margin-left: 200px;
+    padding-left: 15px;
+}
+
+
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background: #0A2C42;
+    padding: 1rem;
 }

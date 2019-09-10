@@ -1,7 +1,9 @@
 <div class="beers container" >
     <div class="row row-eq-height justify-content-center">
         {{#each beers}}
+        <div class="col col-4">
             {{> beerPartial this}}
+        </div>
         {{/each}}
     </div>
 </div>
