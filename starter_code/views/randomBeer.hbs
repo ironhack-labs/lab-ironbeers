@@ -1,0 +1,22 @@
+<link rel = "stylesheet" type="text/css" href="/stylesheets/styles.css">
+<div class="random-beers">
+ {{#each beers}}
+        <img class="beer-images" src={{this.image_url}} alt="beer-image">
+        <div class="card-title">
+            <h2>{{this.name}}</h2>
+            <h3>{{this.contributed_by}}</h3>
+        </div>
+        <h4>{{this.tagline}}</h4>
+        <div class="card-body">
+            <p>{{this.description}}</p>
+        </div>
+        <h3>Food Pairing</h3>
+        <ul>
+            {{#each this.food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        {{this.brewers_tips}}
+        <br>
+    {{/each}}
+</div>

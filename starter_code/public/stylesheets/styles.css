@@ -163,3 +163,7 @@ font-family: Arial, Helvetica, sans-serif
 }
 
 /*----------------END OF BEERPARTIAL.HBS--------------------*/
+
+.random-beers {
+ margin-bottom: 100px;
+}
