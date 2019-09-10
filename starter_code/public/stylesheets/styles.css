@@ -114,3 +114,6 @@ body {
     font-size: 1.0em;
 }
 
+span {
+    font-weight: bold;
+}
