@@ -69,15 +69,16 @@ footer {
     justify-content: center;
 }
 
-
-/* .cards-container {
-    display: flex;
-    padding: 10% 20%;
-    justify-content: space-around;
+.beerImg {
+    width: 10%;
 }
 
-.cards-container img {
-    object-fit: cover;
-    object-position: center;
-    height: 100px;
-} */
+.description {}
+
+.cards-container {
+    width: 900px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
