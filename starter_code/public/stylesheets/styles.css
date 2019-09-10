@@ -7,6 +7,7 @@ font-family: Arial, Helvetica, sans-serif
 */
 
 body{
+  position: relative;
   margin: 0%;
   padding: 0%;
   font-family: Arial, Helvetica, sans-serif;
@@ -15,23 +16,26 @@ body{
   
 nav{
   position: fixed;
+  padding: 0%;
+  margin: 0%;
   top: 0;
   left: 0;
   width: 100%;
   height: 75px;
+  /* margin-bottom: 700px; */
 
   background: #2081C3;
-  color: white;
+  color: #F7F9F9;;
   box-shadow: 0 0 5px black;
 }
 
 nav > ul{
   list-style: none;
   margin: 0%;
-  padding: 0%;
+  padding: 30px 0 0 30px;
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
-  margin: 30px 0 0 30px;
 }
 
 nav > ul > li{
@@ -42,7 +46,7 @@ nav > ul > li{
 
 nav > ul > li > a{
   text-decoration: none;
-  color: white;
+  color: #F7F9F9;;
 }
 
 footer{
@@ -52,9 +56,110 @@ footer{
   height: 50px; 
 
   background: #0A2C42;
-  color: white;
+  color: #F7F9F9;;
 
   box-sizing: border-box;
   margin: auto 0; 
   padding-left: 15px; 
+}
+
+.index-container {
+  margin-top: 75px;
+  /* width: 100%; */
+  height: 85%;
+  /* box-sizing: border-box; */
+  background: #F7F9F9;
+  text-align: center;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; */
+}
+
+.index-container > img{
+  margin: 15px auto;
+  width: 350px;
+  height: auto;
+
+}
+
+.index-container > button{
+  margin: 15px 0;
+  background: #2081C3;
+  color: #F7F9F9;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 1 3px black;
+  /* display: inline-block; */
+}
+
+.cards-container{
+  margin-top: 75px;
+  padding-top: 30px;
+  padding: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card{
+  /* text-align: center; */
+  width: 28%;
+  height: 350px;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+.card-img-top{
+  max-width: 100%;
+  max-height: 150px;
+  
+  display: block;
+  margin:  auto auto;
+  margin-bottom: 25px;
+  /* padding: auto 0; */
+  /* min-height: 80px; */
+}
+
+.card-title{
+  color: black;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.card-sub-title{
+  color: rgba(145, 145, 145, 0.481);;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.card-text{
+  font-size: 0.8rem;
+}
+
+.random-beer{
+  margin-top: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.random-beer > div{
+  height: 350px;
+}
+
+.random-beer > div:nth-child(1){
+  width: 30%;
+}
+
+.random-beer > div:nth-child(2){
+  width: 800px;
+}
+
+.random-beer img{
+  max-width: 100%;
+  max-height: 200px;
 }
