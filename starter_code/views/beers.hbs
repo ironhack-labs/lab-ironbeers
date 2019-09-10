@@ -1,0 +1,16 @@
+<!-- beers.hbs -->
+<div class='container beer-wrapper'>
+    <div class='row'>
+        {{#each beers}}
+
+        <div class='col-4 beer-card'>
+            <img src='{{this.image_url}}' alt="Beer image">
+            <div class='beer-text'>
+                <h5>{{this.name}}</h5>
+                <h6>{{this.tagline}}</h6>
+                <p>{{this.description}}</p>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
