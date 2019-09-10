@@ -33,3 +33,8 @@ nav,footer {
     
     padding: 1rem;
 }
+ 
+.btn {
+    width: 25%;
+    margin: .5rem auto;
+}
