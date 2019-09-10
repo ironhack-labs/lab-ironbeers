@@ -1,11 +1,13 @@
-<div class="index-container">
+<div class="index-container ">
 {{#each beers}} 
     
     <div class="container mt-3">
 
     <div class="row">
     
-    <img id="random" class="rand d-block mx-auto" src="{{this.image_url}}">
+    <div class="col-6">
+        <img id="random" class="rand d-block mx-auto" src="{{this.image_url}}">
+    </div>
    <div class="col-6">
     <h2 class="name">{{this.name}}</h2>
     <h4 class="tagline">{{this.tagline}}</h4>

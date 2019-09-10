@@ -38,7 +38,9 @@ nav,footer {
     
     padding: 1rem;
 }
- 
+ .index-container{
+     padding: 5rem;
+ }
 .btn {
     width: 25%;
     margin: .5rem auto;
