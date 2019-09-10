@@ -69,16 +69,35 @@ footer {
     justify-content: center;
 }
 
-.beerImg {
-    width: 10%;
+.beerDescription {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 32%;
+    height: 25%;
 }
 
-.description {}
+.smallLetter {
+    color: rgba(145, 145, 145, 0.481);
+    font-size: 0.9em;
+}
 
-.cards-container {
-    width: 900px;
-    height: 400px;
+.description {
+    font-size: 0.8em;
+}
+
+.beername {
+    font-weight: 600;
+    font-size: 1.0em;
+}
+
+.container {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.beerImg {
+    margin: 7vh auto 3vh auto;
+    height: 230px;
 }
