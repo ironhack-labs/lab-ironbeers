@@ -1,0 +1,106 @@
+/*
+white: #F7F9F9;
+light-blue: #2081C3;
+dark-blue: #0A2C42;
+grey: rgba(145, 145, 145, 0.481);
+font-family: Arial, Helvetica, sans-serif
+*/
+body{
+    background-color: #F7F9F9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+  background-color: #2982c1;
+  -webkit-box-shadow: -1px 2px 6px 1px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: -1px 2px 6px 1px rgba(0, 0, 0, 0.37);
+  box-shadow: -1px 2px 6px 1px rgba(0, 0, 0, 0.37);
+  margin-bottom: 50px;
+}
+
+nav a {
+  color: #f7f9f9;
+}
+
+footer {
+  position: fixed;
+  bottom: 0%;
+  background-color: #0a2c42;
+  color: #f7f9f9;
+  width: 100%;
+}
+
+.py-3 {
+  margin-left: 20px;
+  text-align: left;
+  font-size: 1.5vh;
+}
+
+.beer-mug {
+  width: 30vw;
+}
+
+.btn {
+  display: block;
+  width: 200px;
+  margin-top: 20px;
+}
+
+.buttons {
+  padding-top: 20px;
+}
+
+.beer{
+    margin-bottom: -200px;
+    /* width: 600px; */
+}
+
+.col-md-4 img{
+    width: 30%; 
+    height: 30%; 
+    object-fit: contain; 
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+}
+
+h4{
+    font-size: 2vw;
+}
+
+h6{
+    color: #C9CED5;
+    padding-top: 5px;
+}
+
+p {
+    font-size: 1.2vw;
+}
+
+.random-img{
+    width: 40%; 
+    height: 40%; 
+    object-fit: contain; 
+    padding-top: 20px;
+}
+
+.random-beer{
+    width: 80%;
+}
+
+.col-sm{
+    margin-right: -400px !important;
+    margin-left: 200px;
+}
+
+.col-lg{
+    padding-top: 50px;
+}
+
+.card-text{
+    font-size: 12px;
+}

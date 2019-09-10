@@ -1,0 +1,31 @@
+<!-- randomBeer.hbs -->
+<div class="row justify-content-center random-beer">
+{{#each beers}}
+  <div class="col-sm">
+    <img
+      class="random-img"
+      src={{this.image_url}}
+    />
+</div>
+<div class='col-lg'>
+    <div class="content-heading"><h4><b>{{this.name}}</b></h4></div>
+    <h6 class="content-tagline">{{this.tagline}}</h6>
+    <p>
+      {{this.description}}
+    </p>
+    <h5><b>
+        Food Pairing    
+        </b>
+    </h5>
+    <ul>
+        {{#each this.food_pairing}}
+            <li>{{this}}</li>
+        {{/each}}
+    </ul>
+    <p>
+      <b>Brewers Tips: </b>{{this.brewers_tips}}
+    </p>
+  </div>
+  </div>
+{{/each}}
+</div>
