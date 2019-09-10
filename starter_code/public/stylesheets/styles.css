@@ -5,4 +5,139 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+
+body {
+  font-family: "Arial, Helvetica, sans-serif";
+  margin: 0;
+  padding: 0;
+  background-color: #F7F9F9;
+  font-size: 18px;
+  margin-top: 100px;
+}
+
+header {
+  background-color: #2081c3;
+  height: 70px;
+  display: flex;
+  width: 100vw;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+nav {
+  width: 20vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 30px;
+}
+
+a {
+  color: #f7f9f9;
+  text-decoration: none;
+}
   
+
+footer {
+  background-color: #0a2c42;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 30px;
+  color: #f7f9f9;
+}
+
+
+.index-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.index-container img {
+  height: 40vh;
+  width: auto;
+}
+
+.index-container a {
+  background-color: #2081c3;
+  color: white;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+.buttons {
+  display: flex;
+  height: 15vh;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+
+.beer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.beer-single {
+  font-family: "Arial, Helvetica, sans-serif";
+  width: 28vw;
+  height: 500px;
+  margin: 25px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 16px;
+}
+
+.beer-single h1 {
+  font-size: 22px;
+  padding: 0;
+  margin: 0;
+}
+
+.beer-single h2,
+.beer-random h2 {
+  font-size: 18px;
+  color: rgba(145, 145, 145, 0.481);
+}
+
+.beer-single img {
+  width: auto;
+  height: 200px;
+  align-self: center;
+}
+
+
+.beer-random {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.beer-random img {
+  height: 250px;
+  width: auto;
+  padding: 50px 100px;
+}
+
+.info {
+  width: 50vw;
+}
+
+ul {
+  list-style-type: initial;
+}

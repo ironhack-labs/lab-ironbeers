@@ -1,0 +1,22 @@
+
+  <!-- You should display an image, name, description, tagline, food pairing and brewer tips. -->
+  {{#each beer}} 
+    {{> beerPartial this}}
+    <div class="beer-random">
+      <img src="{{this.image_url}}" alt="">
+      <div class="info">
+      <h1>{{this.name}}</h1>
+      <h2>{{this.tagline}}</h2>
+      <p>{{this.description}}</p>
+      <ul>
+        <h3>Food Pairing</h3>
+        <ul>
+        {{#each this.food_pairing}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <h3>Brewers Tips</h3>
+      <p>{{this.brewers_tips}}</p>
+      </div>
+    </div>
+  {{/each}}

@@ -1,0 +1,14 @@
+<div class="beer-container">
+
+  <!-- will display an image, name, description, and tagline of the beer.  -->
+  {{#each beers}} 
+    {{> beerPartial this}}
+    <div class="beer-single">
+      <img src="{{this.image_url}}" alt="">
+      <h1>{{this.name}}</h1>
+      <h2>{{this.tagline}}</h2>
+      <p>{{this.description}}</p>
+    </div>
+  {{/each}}
+
+</div>
