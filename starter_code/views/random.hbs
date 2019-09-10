@@ -1,4 +1,25 @@
 <div class="index-container">
-<p>RANDOM BEER PAGE</p>
+{{#each beers}} 
+    
+    <div class="container mt-3">
 
+    <div class="row">
+    
+    <img id="random" class="rand d-block mx-auto" src="{{this.image_url}}">
+   <div class="col-6">
+    <h2 class="name">{{this.name}}</h2>
+    <h4 class="tagline">{{this.tagline}}</h4>
+    <p class="desc">{{this.description}}</p>
+    <b>Food Pairing</b>
+    <ul>
+    {{#each this.food_pairing}} 
+    <li>{{this}}</li>
+    {{/each}}
+    </ul>
+    <p><b>Brewers Tip:</b> {{this.brewers_tips}}</p>
+   </div>
+    </div>
+    </div>
+
+{{/each}}
 </div>
