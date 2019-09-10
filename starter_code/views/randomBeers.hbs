@@ -1,0 +1,19 @@
+{{#each beers}}
+
+<div class ="flexing">
+<div>
+  <img class="allBeer" src="
+  {{this.image_url}}">
+</div>
+
+<div class="smallWidth">
+<h2> {{this.name}} </h2>
+<h3> {{this.tagline}}</h3>
+<h4> {{this.description}} </h4>
+<p> Food Pairing </p>
+<ul>{{#each food_pairing}}
+<li> {{this}} </li>
+{{/each}}</ul>
+</div>
+</div>
+{{/each}}

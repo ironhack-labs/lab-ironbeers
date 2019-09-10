@@ -1,8 +1,118 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
-  
+nav {
+  background-color: #2081c3;
+  margin-top: -10px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0px 0px 6px gray;
+  margin-left: -10px;
+  width: 100vw;
+  margin-right: -10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f7f9f9;
+  margin-left: 20px;
+  line-height: 70px;
+  padding-left: 20px;
+}
+
+body {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 300px auto;
+  height: auto;
+  background-color: peachpuff;
+}
+
+#flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#checkBeers {
+  display: flex;
+  text-align: center;
+  margin-top: 500px;
+  margin-bottom: 20px;
+  background-color: #2081c3;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 5px;
+  color: white;
+  box-shadow: 2px 2px 3px gray;
+  text-decoration: none;
+}
+#checkBeers:hover {
+  cursor: pointer;
+}
+
+#randomBeers {
+  text-align: center;
+  background-color: #2081c3;
+  border: none;
+  padding: 7px 12px;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px gray;
+  margin-bottom: 50px;
+  text-decoration: none;
+}
+
+#randomBeers:hover {
+  cursor: pointer;
+}
+
+footer {
+  background-color: rgb(0, 0, 77);
+  color: white;
+  width: 100%;
+  font-size: 18px;
+  margin-left: 0px;
+  padding-bottom: 5px;
+  padding-top: 12px;
+  position: absolute;
+  bottom: 0;
+}
+
+img {
+  text-align: center;
+  max-width: 90px;
+  height: auto;
+  padding-top: 120px;
+}
+
+.allBeers h2 {
+  font-size: 0.9em;
+}
+
+h3 {
+  font-size: 0.9em;
+  color: gray;
+}
+
+h4 {
+  font-size: 0.8em;
+}
+
+col-4 img {
+  text-align: center;
+}
+
+.flexing{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+
+}
+
+.smallWidth{
+  width: 400px;
+  margin-left: 100px;
+}
+
+.mug{
+  margin-top: 200px;
+}
