@@ -1,15 +1,13 @@
 <div class="beer-content">
-    {{#each beers}}
-        <div class="card-body">
-            <img src={{this.image_url}}>
-            <div class="card-title">
-                <h2>{{this.name}}</h2>
-            </div>
-            <h4>{{this.tagline}}</h4>
-            <div class="card-body">
-                <p>{{this.description}}</p>
-            </div>
-            <br>
+    <div class="card">
+            <img class="beer-images" src={{this.image_url}} alt="beer-image">
+        <div class="card-title">
+            <h2>{{this.name}}</h2>
         </div>
-    {{/each}}
+        <h4>{{this.tagline}}</h4>
+        <div class="card-body">
+            <p>{{this.description}}</p>
+        </div>
+        <br>
+    </div>
 </div>

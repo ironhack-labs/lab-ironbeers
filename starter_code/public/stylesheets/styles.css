@@ -1,3 +1,5 @@
+/*----------------------LAYOUT W/ NAV BAR-----------------------------*/
+
 /* Add a black background color to the top navigation */
 .nav-bar {
     background-color: #2081C3;
@@ -28,9 +30,62 @@
   color: white;
 }
 
+#footer {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #0A2C42;
+    color: white;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+    
+  }
+  
+  html {
+      position: relative;
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100%;
+  }
+  
+  body {
+      margin: 0;
+      background: white;
+      /* background: rgba(145, 145, 145, 0.481); */
+      font-family: Arial, Helvetica, sans-serif;
+      /* margin: 0 0 100px;
+      padding: 25px; */
+  } 
 
+  /*
 
+white: #F7F9F9;
+light-blue: #2081C3;
+dark-blue: #0A2C42;
+grey: rgba(145, 145, 145, 0.481);
+font-family: Arial, Helvetica, sans-serif
+*/
+  
 
+/*----------------------END OF LAYOUT-----------------------------*/
+
+/*------------------------INDEX.HBS------------------------------*/
+
+.beer-content {
+    float:left;
+    width:30%;
+    height: 80%;
+    overflow:hidden;
+    margin-bottom: 150px;
+    margin-top: 50px;
+    /* display: flex; */
+    /* flex-direction: row-reverse; */
+}
 
 .beer-container {
     font-family: Arial, Helvetica, sans-serif;
@@ -73,64 +128,38 @@
     font-size: 13px;
 }
 
+/*------------------------INDEX.HBS------------------------------*/
 
+/*----------------------BEERPARTIAL.HBS--------------------------*/
 
-
-
-.cards-container {
+.card {
+    float: left;
     display: flex;
-    padding: 10% 20%;
-    justify-content: space-around;
-  }
-  
-  .cards-container img {
-    object-fit: cover;
-    object-position: center;
-    height: 100px;
-  }
-
-
-
-
-
-
-#footer {
-  font-family: Arial, Helvetica, sans-serif;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 30px;
-  background-color: #0A2C42;
-  color: white;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  overflow: hidden;
-  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
 }
 
-html {
-    position: relative;
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 100%;
+.beer-images {
+    height: 190px;
+    width: 70px;
+    padding: 0 30px 20px 30px;
 }
 
-body {
-    margin: 0;
-    background: white;
-    /* background: rgba(145, 145, 145, 0.481); */
+.card-title {
     font-family: Arial, Helvetica, sans-serif;
-    /* margin: 0 0 100px;
-    padding: 25px; */
-} 
-/*
+}
 
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
-  
+.card-body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin: 0 100px; */
+}
+.beer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----------------END OF BEERPARTIAL.HBS--------------------*/

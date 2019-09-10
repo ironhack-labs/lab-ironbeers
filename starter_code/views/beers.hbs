@@ -1,9 +1,7 @@
 <link rel = "stylesheet" type="text/css" href="/stylesheets/styles.css">
 <div class="beers-card">
+
 {{#each beers}}
-    {{this.image_url}}
-    {{this.name}}
-    {{this.tagline}}
-    {{this.description}}
+    {{> beerPartial this}}
 {{/each}}
 </div>
