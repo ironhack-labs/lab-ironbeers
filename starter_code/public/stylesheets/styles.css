@@ -1,4 +1,89 @@
+/* Add a black background color to the top navigation */
+.nav-bar {
+    background-color: #2081C3;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.nav-bar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 20px;
+}
+
+/* Change the color of links on hover */
+.nav-bar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.nav-bar a.active {
+  /* background-color: #4CAF50; */
+  color: white;
+}
+
+.beer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.beer-container img {
+    height: 222px;
+    width: 215px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.beer-container .button {
+    display: inline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 50px;
+    height: 40px;
+    background: #2081C3;
+    color: white;
+}
+
+#footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #0A2C42;
+  color: white;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+html {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    background: rgba(145, 145, 145, 0.481);
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin: 0 0 100px;
+    padding: 25px; */
+} 
 /*
+
 white: #F7F9F9;
 light-blue: #2081C3;
 dark-blue: #0A2C42;
