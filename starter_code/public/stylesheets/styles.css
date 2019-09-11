@@ -82,7 +82,36 @@ img {
     align-items: center;
 }
 
+.beers-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px;
+}
+
+.each-beer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 30%;
+    margin: 10px;
+}
+
+h5 {
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.beer-img {
+    align-self: center;
+    height: 300px;
+    width: auto;
+}
+
 #beer, #btn-beer, #btn-random-beer {
     font-size: 1.8rem;
     margin: 20px;
 }
+
