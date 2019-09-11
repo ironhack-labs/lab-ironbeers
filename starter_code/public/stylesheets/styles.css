@@ -6,9 +6,15 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+}
 
 body{
   margin: 0;
+  padding: 0;
 } 
 
 nav{
@@ -22,7 +28,7 @@ nav a{
   text-decoration: none;
   color: white;
   font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif
+  font-family: 'Montserrat', sans-serif;
 } 
 
 footer{
@@ -31,7 +37,7 @@ padding: 25px;
 box-shadow: grey 1px;
 color: white;
 font-size: 18px;
-font-family: Arial, Helvetica, sans-serif
+font-family: 'Montserrat', sans-serif;
 } 
 
 .index-container {
@@ -52,6 +58,7 @@ font-family: Arial, Helvetica, sans-serif
   height: 40px;   
   border-radius: 10px; 
   font-size: 17px; 
+  font-family: 'Montserrat', sans-serif;
 }
 
 .loquesea{
@@ -85,6 +92,7 @@ font-family: Arial, Helvetica, sans-serif
   width: 400px;
   font-size: 1.2em;
   text-align: justify;
+  font-family: 'Montserrat', sans-serif;
 } 
 
 .containerRand {
@@ -109,15 +117,23 @@ font-family: Arial, Helvetica, sans-serif
   width: 60vw;
   height: 50vh;
   margin-left: 10vh;
+  font-family: 'Montserrat', sans-serif;
+
 }
 .beersRandoms h4 {
   margin: 3vh 0;
   margin-top: 1vh;
   color: rgba(145, 145, 145, 0.481);
+  font-family: 'Montserrat', sans-serif;
+
 }
 .beersRandoms p {
   font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+
 }
 .brewer-bold {
   font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+
 }     
