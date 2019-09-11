@@ -73,7 +73,7 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 32%;
+    width: 52%;
     height: 25%;
 }
 
@@ -84,6 +84,7 @@ footer {
 
 .description {
     font-size: 0.8em;
+    margin-bottom: .1em;
 }
 
 .beername {
@@ -99,5 +100,12 @@ footer {
 
 .beerImg {
     margin: 7vh auto 3vh auto;
+    padding-top: 0;
     height: 230px;
+}
+
+.container-one {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    width: 35%;
 }
