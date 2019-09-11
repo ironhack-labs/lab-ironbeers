@@ -1,0 +1,19 @@
+<div class="row">
+    {{#each beers}}
+    <div class="col-4">
+        <div class="card">
+            <div class="row">
+                <img src="{{this.image_url}}" class="card-img-top" alt="...">
+            </div>
+            <div class="row">
+                <div class="card-body">
+                    <div class="card-body">
+                        <h5 class="-title">{{this.name}}</h5>
+                        <p class="card-text">{{this.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
