@@ -73,7 +73,7 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 52%;
+    width: 33%;
     height: 25%;
 }
 
@@ -108,4 +108,8 @@ footer {
     margin-bottom: 10px;
     padding-bottom: 10px;
     width: 35%;
+}
+
+a {
+    text-decoration: none;
 }
