@@ -95,8 +95,9 @@ img {
     flex-direction: column;
     justify-content: left;
     align-items: left;
+    height: 700px;
     width: 30%;
-    margin: 10px;
+    margin: 10px auto;
 }
 
 h5 {
@@ -115,3 +116,20 @@ h5 {
     margin: 20px;
 }
 
+.random-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 100px;
+}
+
+.random-container img {
+    align-self: left;
+    height: 300px;
+    width: auto;
+}
+
+.random-left {
+    margin: auto 50px;
+}
