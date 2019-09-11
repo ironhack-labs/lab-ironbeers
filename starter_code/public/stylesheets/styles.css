@@ -1,8 +1,57 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
-  
+
+
+.divbutton {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    background-color: #2081C3;
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+a {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    left: 50px;
+}
+
+footer {
+    width: 100%;
+    background-color: #0A2C42;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+}
+
+
+img {
+    padding-left: 42vw;
+    padding-top: 10vh;
+    display: flex-box;
+    align-items: center;
+    width: 20%;
+    padding-bottom: 10vh;
+}
+
+button {
+    background-color: #2081C3;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+}
