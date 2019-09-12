@@ -1,6 +1,6 @@
 punkAPI.getBeers()
   .then(beers => {
-
+    res.render("beers", {beers: beers});
   })
   .catch(error => {
     console.log(error)

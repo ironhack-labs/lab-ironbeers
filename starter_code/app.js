@@ -8,6 +8,7 @@ const punkAPI = new PunkAPIWrapper();
 
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
+app.set('views', __dirname + '/beers');
 app.use(express.static(path.join(__dirname, 'public')));
 
 
