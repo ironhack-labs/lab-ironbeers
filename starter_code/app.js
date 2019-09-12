@@ -23,7 +23,16 @@ app.get("/beers", (req, res) => {
   .catch(error => {
     console.log(error)
   })
-  
+})
+
+app.get("/random-beers", (req, res) => {
+  punkAPI.getRandom()
+  .then(beers => {
+    res.render("random-beers", {beers})
+  })
+  .catch(error => {
+    console.log(error)
+  })
 })
 
 

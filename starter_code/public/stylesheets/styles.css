@@ -193,7 +193,7 @@ img {
 .card {
   display: flex;
   flex-wrap: wrap;
-  width: 30%
+  width: 20%
 }
 .card img {
   width: 100px;
