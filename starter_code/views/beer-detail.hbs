@@ -1,0 +1,48 @@
+<div class="beer container">
+  {{!-- {{#each beerData}} --}}
+  <img src="{{image_url}}" alt="{{name}} image" class="beer__image">
+  <div>
+    <h3 class="beer__title">{{name}}</h3>
+    <p class="beer__tagline">{{tagline}}</p>
+    <p class="beer__description">{{description}}</p>
+    <dl class="beer__properties">
+      <div class="beer__property">
+        <dt>First brewed</dt>
+        <dd>{{first_brewed}}</dd>
+      </div>
+      <div class="beer__property">
+        <dt>ABV</dt>
+        <dd>{{abv}}</dd>
+      </div>
+      <div class="beer__property">
+        <dt>IBU</dt>
+        <dd>{{ibu}}</dd>
+      </div>
+      <div class="beer__property">
+        <dt>Target fg</dt>
+        <dd>{{target_fg}}</dd>
+      </div>
+      <div class="beer__property">
+        <dt>Target of</dt>
+        <dd>{{target_fog}}</dd>
+      </div>
+      <div class="beer__property">
+        <dt>EBC</dt>
+        <dd>{{ebc}}</dd>
+      </div>
+      <div class="beer__property">
+        <dt>SRM</dt>
+        <dd>{{srm}}</dd>
+      </div>
+      <div class="beer__property">
+        <dt>Ph</dt>
+        <dd>{{ph}}</dd>
+      </div>
+      <div class="beer__property">
+        <dt>Attenuation level</dt>
+        <dd>{{attenuation_level}}</dd>
+      </div>
+    </dl>
+  </div>
+  {{!-- {{/each}} --}}
+</div>

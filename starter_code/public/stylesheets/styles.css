@@ -5,4 +5,218 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Special+Elite|Yeon+Sung&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #F7F9F9;
+  --light-blue: #2081C3;
+  --dark-blue: #0A2C42;
+  --grey: rgba(145, 145, 145, 0.481);
+}
+
+html {
+  font-size: 24px;
+}
+
+body {
+  font-family: 'Nanum Pen Script', cursive;
+  font-family: 'Reenie Beanie', cursive;
+  /* font-family: 'Yeon Sung', cursive; */
+  /* font-family: 'Special Elite', cursive; */
+  background-color: #F8F8F8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  padding: .5rem 1rem;
+  background-color: #FFFFFF;
+  color: var(--light-blue);
+  border: 2px solid var(--light-blue);
+  transition: border-color .3s, color .3s;
+}
+
+.button:hover {
+  color: var(--dark-blue);
+  border-color: var(--dark-blue);
+}
+
+.main-nav {
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 2px solid var(--light-blue);
+  margin-bottom: 2rem;
+  position: -webkit-sticky;
+  background-color: #FFFFFF;
+  position: sticky;
+  top: 0;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-menu__item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.main-menu__link {
+  color: var(--light-blue);
+  transition: color .3s;
+}
+
+.main-menu__link:hover {
+  color: var(--dark-blue);
+}
+
+.beer-image {
+  max-width: 250px;
+  margin-bottom: 2rem;
+}
+
+.index-container {
+  /* padding: 1rem; */
+  text-align: center;
+}
+
+.index-container__title {
+  margin-bottom: 2rem;
+}
+
+.button-links-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-links-container .button {
+  width: 250px;
+}
+
+.button-links-container .button:first-child {
+  margin-right: 1rem;
+}
+
+.main-footer {
+  width: 100%;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.beers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.beer {
+  padding: 1rem 2rem;
+  /* margin-bottom: 1rem; */
+  display: flex;
+  align-items: flex-start;
+  color: #888888;
+}
+
+.beer:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.beer__title {
+  color: #343434;
+  margin-bottom: .75rem;
+}
+
+.beer img {
+  margin-right: 1rem;
+}
+
+.beer > div {
+  padding: 0 1rem 1rem;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.beer__tagline {
+  margin-bottom: .5rem;
+  color: #343434;
+}
+
+.beer__description {
+  color: #888888;
+  margin-bottom: 1rem;
+}
+
+.beer__show-details {
+  color: var(--light-blue);
+}
+
+.beer__show-details:hover {
+  text-decoration: underline;
+}
+
+.beer__subtitle {
+  margin-bottom: 1rem;
+}
+
+.beer__food-pairing {
+  list-style: disc;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.beer__food-pairing li:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+
+.beer__properties {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.beer__property {
+  display: flex;
+}
+
+.beer__property:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.beer__property dt {
+  font-weight: 600;
+  margin-right: .6rem;
+}
+
+.beer__property dd {
+  color: #888888;
+}
+
+.beer__image {
+  max-width: 50px;
+}
