@@ -3,9 +3,10 @@
     <h3>{{this.name}}</h3>
     <p>{{this.description}}</p>
     <p><ul>
-        <li>{{this.food_pairing[0]}}</li>
-        {{!-- <li>{{this.food_pairing[1]}}</li>
-        <li>{{this.food_pairing[2]}}</li> --}}
+        {{#each this.food_pairing}}
+            {{this}}
+        {{/each}}
+        {{!-- <li>{{this.food_pairing[0]}}</li> --}}
     </ul></p>
     <p>{{this.brewers_tips}}</p>
 </div>
