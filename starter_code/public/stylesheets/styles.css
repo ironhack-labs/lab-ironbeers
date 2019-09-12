@@ -5,4 +5,196 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgba(145, 145, 145, 0.481);
+}
+nav {
+  background: #2081c3;
+  display: flex;
+  height: 10vh;
+}
+nav ul {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+.noUnderline {
+  text-decoration: none;
+  color: #f7f9f9;
+}
+nav ul li {
+  padding: 25px;
+}
+section {
+  padding-top: 10vh;
+  height: 84vh;
+}
+footer {
+  position: fixed;
+  width: 100%;
+  background: #0a2c42;
+  padding: 12.5px;
+  color: #f7f9f9;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+img {
+  width: 400px;
+  padding: 30px;
+  /* justify-content: center;
+  align-content: center; */
+}
+.button {
+  background: #2081c3;
+  color: #f7f9f9;
+  width: 240px;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%
+}
+.card img {
+  width: 100px;
+}
