@@ -1,0 +1,27 @@
+
+
+  <img class='randomMar' src="{{this.image_url}}" >
+ 
+  <div class='randomMar'>
+    <strong><p >{{this.name}}</p></strong>
+	  <p class='silver'>{{this.tagline}}</p>
+    <strong><p >{{this.description}}</p></strong>
+	<br>
+	 <strong><p >Food Pairing</p></strong>
+	 
+	 <ul>
+	 
+	 {{#each this.food_pairing}}
+         <li>{{this}}</li>
+      {{/each}}
+	 
+	 </ul>
+	 
+	 <br>
+	 <p ><strong>Food Pairing:</strong>{{this.brewers_tips}}</p>
+	 
+	 
+  </div>
+  
+  </div>
+ 
