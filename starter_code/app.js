@@ -1,21 +1,40 @@
+const express = require("express");
+const app = express();
 
-const express = require('express');
-const hbs     = require('hbs');
-const app     = express();
-const path    = require('path');
-const PunkAPIWrapper = require('punkapi-javascript-wrapper');
+app.set("views", `${__dirname}/views`);
+app.set("view engine", "pug");
+
+app.use(express.static("public"));
+
+const path = require("path");
+const PunkAPIWrapper = require("punkapi-javascript-wrapper");
 const punkAPI = new PunkAPIWrapper();
 
-app.set('view engine', 'hbs');
-app.set('views', __dirname + '/views');
-app.use(express.static(path.join(__dirname, 'public')));
-
-
-
-app.get('/', (req, res, next) => {
-  res.render('index');
+app.get("/", (req, res) => {
+  let data = {
+    title: "Home"
+  };
+  res.render("home", data);
 });
 
+app.get("/beers", (req, res) => {
+  let data = {
+    title: "Home",
+    small_content: "This is the Beers content bitch"
+  };
+  res.render("home", data);
+});
 
+app.get("/random-beers", (req, res) => {
+  let data = {
+    title: "Home",
+    small_content: "This is the Random Beer content bitch"
+  };
+  res.render("home", data);
+});
 
-app.listen(3000);
+app.listen(3000, () => {
+  console.log("Servidor corriendo en el pruerto 3000");
+});
+
+//coment

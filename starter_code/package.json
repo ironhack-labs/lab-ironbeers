@@ -5,14 +5,16 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
+    "dev": "nodemon app.js -e js,pug",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3",
+    "express": "^4.17.1",
     "hbs": "^4.0.1",
     "path": "^0.12.7",
+    "pug": "^2.0.4",
     "punkapi-javascript-wrapper": "^1.0.2"
   }
 }
