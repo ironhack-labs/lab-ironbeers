@@ -1,0 +1,8 @@
+extends layout
+
+include mixins/_beerinfo
+
+block content
+  div(class="all-beers-container")
+    each beer in beers
+            +beerinfo(beer)

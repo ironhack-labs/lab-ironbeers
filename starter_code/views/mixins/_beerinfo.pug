@@ -1,0 +1,11 @@
+mixin beerinfo(beer = {})
+
+  -let imagen = beer.image_url
+  div(class="beer-item")
+    div(class="beer-image-container")
+      img(src=imagen, alt="")
+    h1(class="beer-name") #{beer.name}
+    h2(class="beer-tagline") #{beer.tagline}
+    p(class="beer-description") #{beer.description}
+
+  
