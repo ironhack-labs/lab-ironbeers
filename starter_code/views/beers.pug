@@ -1,0 +1,8 @@
+extends layout
+
+include mixins/_beerMixin
+
+block content
+  .beers-container
+    each beer in beers
+      +singleBeer(beer)
