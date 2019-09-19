@@ -1,0 +1,17 @@
+mixin randombeer(beer = {})
+
+  -let imagen = beer.image_url
+  div(class="beer-random-item")
+    div(class="beer-random-image-container")
+      img(src=imagen, alt="")
+    div(class="beer-random-info-container") 
+      h1(class="beer-random-name") #{beer.name}
+      h2(class="beer-random-tagline") #{beer.tagline}
+      p(class="beer-random-description") #{beer.description}
+      div(class="beer-random-food-pair") 
+        h3 Food Pairing
+        ul
+          each val in beer.food_pairing
+            li= val
+      div
+       <strong>Brewers Tips:</strong>  #{beer.brewers_tips}

@@ -1,0 +1,7 @@
+extends layout
+include mixins/_randombeer
+
+block content
+  div(class="random")
+    each beer in beers
+      +randombeer(beer)

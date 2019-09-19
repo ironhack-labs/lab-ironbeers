@@ -134,3 +134,48 @@ body {
   max-width: 100%;
   max-height: 100%;
 }
+
+/* RANDOM BEER STYLES */
+
+.beer-random-item {
+  background-color: #f7f9f9;
+  display: flex;
+}
+
+.beer-random-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  width: 25%;
+  padding: 3%;
+  /* border: 1px solid blue; */
+}
+
+.beer-random-image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.beer-random-info-container {
+  padding: 7%;
+}
+
+.beer-random-item h1 {
+  text-align: justify;
+  margin-bottom: 0;
+  font-size: 170%;
+}
+
+.beer-random-tagline {
+  margin-top: 1%;
+  color: #c6c7c7;
+  font-size: 105%;
+}
+.beer-random-item p {
+  text-align: justify;
+}
+
+.random {
+  background-color: #f7f9f9;
+}

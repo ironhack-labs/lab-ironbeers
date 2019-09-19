@@ -18,11 +18,6 @@ app.get("/", (req, res) => {
 });
 
 app.get("/beers", (req, res) => {
-  // let data = {
-  //   title: "Beers",
-  //   small_content: "This is the Beers content bitch"
-  // };
-
   punkAPI
     .getBeers()
     .then(beers => {
@@ -36,11 +31,16 @@ app.get("/beers", (req, res) => {
 });
 
 app.get("/random-beers", (req, res) => {
-  let data = {
-    title: "Home",
-    small_content: "This is the Random Beer content bitch"
-  };
-  res.render("home", data);
+  punkAPI
+    .getRandom()
+    .then(beers => {
+      res.render("randombeer", { beers });
+      console.log("Here begins");
+      console.log(beers);
+    })
+    .catch(error => {
+      console.log(error);
+    });
 });
 
 app.listen(3000, () => {
