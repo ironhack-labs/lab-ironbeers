@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  .image-container
+    img(src="../images/beer.png", alt="Cold beer")
+  .buttons
+    input(type="button", onclick="location.href='/beers'", value="Check the beers")
+    input(type="button", onclick="location.href='/random-beers'", value="Check a random beer")

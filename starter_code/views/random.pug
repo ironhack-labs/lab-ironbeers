@@ -1,0 +1,21 @@
+extends layout
+include mixins/beerPartial.pug
+
+block content
+    each beer in beers
+      .beer-card-random
+        .beer-image
+          img(src=beer.image_url, alt="Beer image")
+        .text-container
+          h2 #{beer.name}
+          br
+          h3 #{beer.tagline}
+          br
+          p #{beer.description}
+          br
+          h4 Food Pairing
+          each pairing in beer.food_pairing
+            li #{pairing}
+          br
+          h4 Brewer's Tips
+          p #{beer.brewers_tips}
