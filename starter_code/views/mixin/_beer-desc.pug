@@ -1,0 +1,11 @@
+mixin beer-desc(beer={img_url:"",name:"?",tagline:"N/A",desc:"N/A",food_pairings:[],tips:"N/A"})
+  div(id="beer-img-cont")
+    img(src=beer.img_url alt="/images/beer.png")
+  div(id="beer-content-cont")
+    p=beer.name
+    p=beer.tagline
+    p=beer.decription
+    ul
+      each food_paring in beer.food_pairings
+        li=food_paring
+    p=`BREWER TIPS: ${beer.tips}` 
