@@ -1,0 +1,17 @@
+extends layout
+
+
+block styles
+  link(rel="stylesheet" href="/css/styles.css")
+
+block content
+  -let perro=valid?"Bowow":"Grrr";
+  -let text="El perro dice "+perro;
+  h1(class= valid ? 'valid': 'anon')=titulo
+  a(href= valid ? "/login":"/") Google
+  p=text
+  case friends
+    when 0:    p you have no friends
+    when 1:      p you have a friend
+    default:      p you have #{friends} friends
+

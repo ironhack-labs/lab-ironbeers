@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+}
+
+nav {
+  height: 10vh;
+  display: flex;
+  flex-flow: row;
+  background-color: blue;
+  align-items: center;
+  color: antiquewhite;
+}
+nav > div > a {
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+footer {
+  height: 10vh;
+  background-color: blue;
+  color: ivory;
+  display: flex;
+
+  align-content: center;
+}
+
+footer > p {
+  margin-left: 1em;
+}

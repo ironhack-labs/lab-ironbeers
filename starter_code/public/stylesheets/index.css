@@ -1,0 +1,28 @@
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 80vh;
+  background-color: ivory;
+}
+
+#button-cont {
+  height: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#button-cont > button {
+  margin: 1em;
+}
+#beer-img-cont {
+  width: 30vh;
+  height: 30vh;
+}
+
+#beer-img-cont > img {
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,9 @@
+extends layout
+include mixin/_card
+block content
+  h4  #{titulo}
+  ul
+    each persona,key in objs
+      +card(persona)
+    //li= key+persona.name+"; edad:"+persona.age
+    //li #{key} :  #{persona.name}, #{persona.age} años

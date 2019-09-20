@@ -10,9 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3",
-    "hbs": "^4.0.1",
+    "express": "^4.17.1",
+    "hbs": "^4.0.4",
+    "node": "^12.10.0",
     "path": "^0.12.7",
+    "pug": "^2.0.4",
     "punkapi-javascript-wrapper": "^1.0.2"
   }
 }

@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    link(rel="stylesheet" href="/stylesheets/layout.css")
+    block styles
+    title=title || "Mi pagina con pug"
+
+  body
+    nav 
+      div 
+        a Home
+      div 
+        a Beers
+      div 
+        a Random Beer
+
+    block content
+
+    footer
+      p Develop By Ironhack :
+    block scripts

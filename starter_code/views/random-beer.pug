@@ -1,0 +1,15 @@
+extends layout
+
+block styles
+  link(rel="stylesheet" href="/stylesheets/random.css")
+  -let title = "Random beer"
+block content
+  section
+    div(id="beer-img-cont")
+      img(src="/images/beer.png")
+    div(id="beer-content-cont")
+      p=title
+      p=tagline
+      p=decription
+      each food_paring in foord pairing
+        p=food_paring

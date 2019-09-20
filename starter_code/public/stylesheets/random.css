@@ -1,0 +1,22 @@
+section {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-gap: 1em;
+}
+
+#beer-img-cont {
+  grid-row: 2/12;
+  grid-column: 2/4;
+  background-color: gold;
+}
+#beer-content-cont {
+  grid-row: 2/11;
+  grid-column: 4/11;
+}
+#beer-img-cont > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
