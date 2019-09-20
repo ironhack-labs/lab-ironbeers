@@ -4,10 +4,4 @@ include mixins/beerPartial.pug
 block content
   div.beers
     each beer in beers
-      .beer-card
-        .beer-image
-          img(src=beer.image_url, alt="Beer image")
-        .text-container
-          h3 #{beer.name}
-          h4 #{beer.tagline}
-          p #{beer.description}
+      +beerPartial(beer)

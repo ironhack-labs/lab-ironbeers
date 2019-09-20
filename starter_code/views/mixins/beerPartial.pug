@@ -1,8 +1,8 @@
-mixin beerPartial
+mixin beerPartial( beer = {} )
 
   .beer-card
     .beer-image
-      img(src="../images/beer.png", alt="Beer image")
+      img(src=beer.image_url, alt="Beer image")
     .text-container
       h3 #{beer.name}
       h4 #{beer.tagline}
