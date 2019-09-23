@@ -1,0 +1,16 @@
+extends layout
+  
+block content
+  .beers-container-random
+    each beer in beers
+      .beer-random
+        img(src=beer.image_url alt=beer.name)
+        .description
+          h3=beer.name
+          h4=beer.tagline
+          p=beer.description
+          h4 Food Pairing
+          ul
+            each food in beer.food_pairing
+              li=food
+          p Brewer's Tips: #{beer.brewers_tips}

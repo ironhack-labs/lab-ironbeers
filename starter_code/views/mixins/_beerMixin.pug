@@ -1,9 +1,7 @@
 mixin singleBeer(beer = {})
-  -let image = beer.image_url;
-  -let name = beer.name;
 
   .beer-container
-    img(src=image alt=name)
+    img(src=beer.image_url alt=beer.name)
     h1=name
     h2=beer.tagline
     p=beer.description
