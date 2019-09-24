@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <div class="random">
+        <div>
+        {{#if randombeer.[0].image_url}}
+        <img src="{{randombeer.[0].image_url}}" alt="imgbeer">
+        {{/if}}
+        </div>
+        <div class="beer-data">
+            <h5>{{randombeer.[0].name}}</h5>
+            <p class="text-secondary">{{randombeer.[0].tagline}}</p>
+            <p>{{randombeer.[0].description}}</p>
+            <ul>
+                <h5 class="font-weight-bold">Food Pairing</h5>
+                <li>{{randombeer.[0].food_pairing.[0]}}</li>
+                <li>{{randombeer.[0].food_pairing.[1]}}</li>
+                <li>{{randombeer.[0].food_pairing.[2]}}</li>
+            </ul>
+            <p><span class="font-weight-bold">Brewers Tips: </span>{{randombeer.[0].brewers_tips}}</p>
+        </div>
+    </div>
+</div>
