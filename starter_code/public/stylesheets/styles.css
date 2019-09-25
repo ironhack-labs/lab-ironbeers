@@ -40,4 +40,14 @@ img{
   text-decoration: none;
   outline: none;
 }
+
+.footer{
+  background-color:#0A2C42;
+  color:white;
+  position:absolute;
+  bottom: 0;
+  width:100vw;
+  height: 50px;
+  padding: 15px;;
+}
   
