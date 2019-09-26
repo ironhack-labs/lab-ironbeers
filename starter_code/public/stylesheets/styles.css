@@ -5,4 +5,165 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6px;
+}
+
+.navbar {
+  background-color: #2081C3;
+  color: #F7F9F9;
+  padding: 40px 60px;
+  position: fixed;
+  width: 100%;
+}
+
+.navlist {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #F7F9F9;
+  padding: 0 15px;
+  font-size: 15em;
+  font-weight: 700;
+}
+
+.fixedfooter {
+  background-color: #0A2C42;
+  color: #F7F9F9;
+  padding: 30px;
+  font-size: 13em;
+  font-weight: 700;
+  bottom: 0;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+.index-container {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.index-container button {
+  background-color: #2081C3;
+  padding: 15px 20px;
+  border: 1px solid #2081C3;;
+  border-radius: 5px;
+  margin: 20px;
+  box-shadow: 0px 6px 5px 1px rgba(145, 145, 145, 0.481);
+}
+
+.index-container a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #F7F9F9;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-size: 13em;
+  font-weight: 700;
+}
+
+.imgBeer {
+  width: 22vw;
+  margin: 60px;
   
+}
+
+.cardBeer {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.beersContainer{
+  background-color: rgba(145, 145, 145, 0.481);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 100px 200px;
+}
+
+.imgBeer {
+  width: 20%;
+}
+
+.beerTitle {
+  font-size: 20em;
+  font-weight: 700;
+}
+
+.beerTagline {
+  font-size: 10em;
+  color: darkgray;
+  font-weight: 700;
+
+}
+.beerText {
+  font-size: 8em;
+}
+
+.randomImg {
+  position: absolute;
+  left: 15%;
+  top: 20%;
+  width: 8%;
+}
+
+.randomContainer {
+  display: Flex;
+  padding: 100px 0;
+  justify-content: center;
+}
+
+.randomInformation {
+  padding: 80px 30px;
+  width: 50%;
+}
+
+.randomTitle {
+  font-size: 25em;
+  font-weight: 700;
+  padding: 20px 0;
+}
+
+.randomTagline {
+  font-size: 15em;
+  color: darkgray;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+.randomDescription {
+  font-size: 15em;
+}
+
+.randomTitleFood {
+  font-size: 15em;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+.randomList {
+  font-size: 15em;
+  list-style-position: inside
+}
+
+.randomTips {
+  font-size: 15em;
+  padding: 10px 0;
+}
