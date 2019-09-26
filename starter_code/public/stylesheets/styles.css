@@ -5,4 +5,14 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+
+nav {
+  color: #F7F9F9;
+  background-color: #2081C3;
+}
+
+button {
+  background-color: #2081C3;
+  color:#F7F9F9;
+}
   
