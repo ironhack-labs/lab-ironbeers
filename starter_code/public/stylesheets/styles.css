@@ -5,4 +5,43 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+.navbar {
+  background-color: #2081C3;
+}
+
+.index-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.beer-png {
+  height: 350px;
+  position: relative;
+  top: 50px;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 70px;
+}
+
+.btns > button {
+  margin-top: 10px;
+  background-color: #2081C3;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
