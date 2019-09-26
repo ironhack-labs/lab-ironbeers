@@ -22,6 +22,8 @@ body {
 
 img {
   width: 300px;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .index-container {
@@ -44,8 +46,8 @@ img {
 .footer {
   background-color: #0A2C42;
   color: white;
-  /* position:absolute; */
-  /* bottom: 0; */
+  position:fixed;
+  bottom: 0;
   width: 100vw;
   height: 50px;
   padding: 15px;
@@ -69,6 +71,7 @@ img {
   flex-direction: column;
   width: 33%;
   border:0;
+  margin-bottom: 60px;
 }
 
 .cards-container{
@@ -89,5 +92,38 @@ p{
 .tagline{
   font-size: 12px;
   color: grey;
+}
+
+.beers-container{
+  display: flex;
+  width: 80vw;
+  flex-direction: row;
+  margin: 60px 100px;
+  align-items:flex-start;
+  justify-content: space-around;
+}
+
+.random-beer-img > img{
+  /* height:500px; */
+  max-width:50px;
+}
+
+.info{
+  /* width: 80%; */
+  margin: 30px;
+}
+
+
+.info >p {
+  /* width: 80%; */
+  font-size:16px;
+}
+
+.random-tagline{
+  color: grey;
+}
+
+li{
+  margin-left: 40px;
 }
 
