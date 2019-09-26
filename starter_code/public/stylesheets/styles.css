@@ -1,8 +1,62 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
-  
+body{
+background-color: #F7F9F9;
+
+font-family: Arial, Helvetica, sans-serif;
+display:flex;
+flex-direction: column;
+}
+  footer{
+    margin-top: auto;
+ background-color:  #2081C3;
+  }
+  nav{
+   background-color:  #2081C3;
+  }
+
+  h1{
+      font-size: 30px;
+  }
+  h2{
+ font-size: 25px;
+ color: rgba(145, 145, 145, 0.481) 
+  }
+  .beerDiv{
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      margin-left: 30px;
+     
+      
+  }
+  .beerDiv img{
+    width: 40px;
+    height: 100%;
+}
+#main{
+display: flex;
+
+flex-direction: column;
+}
+img{
+  width: 60px;
+  height: 100px;
+}
+.index-container{
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+button{
+  margin-right: 60px;
+  width: 100px;
+  background-color: #2081C3;
+}
+.index-container img{
+width: 320px;
+height: 500px;
+}
+h3{
+  color: white;
+}
