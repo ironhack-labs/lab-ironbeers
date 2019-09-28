@@ -1,0 +1,19 @@
+
+<div class="all-height d-flex align-items-center
+  justify-content-center">
+  <div class="d-flex justify-content-center align-items-start"> <img
+      src="{{image_url}}"
+      alt="beer"></div>
+  <div class="d-flex flex-column justify-content-center
+    align-items-start">
+    <h1>{{name}}</h1>
+    <h5 class="text-muted">{{tagline}}</h5>
+    <p>{{description}}</p>
+    <h3>Food Paring:</h3>
+    <ul>
+      {{#each food_pairing}} <li>{{this}}</li>{{/each}}
+    </ul>
+    <h3>Brewers Tips:</h3>
+    <p>{{brewers_tips}}</p>
+  </div>
+</div>
