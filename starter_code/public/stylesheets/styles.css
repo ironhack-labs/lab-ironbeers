@@ -35,7 +35,7 @@ body {
   border: #0A2C42 solid 1px;
   padding: 4px;
   border-radius: 4px;
-  transition: ease 1s all;
+  transition: ease 0.4s color, ease 0.4s background-color;
 }
 
 .index-btn:hover {
