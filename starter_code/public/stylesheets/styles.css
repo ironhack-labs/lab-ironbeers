@@ -10,7 +10,7 @@ body {
   margin: 0;
 }
 .nav {
-  width: 100%;
+  width: calc(100% - 48px);
   height: 30px;
   background-color: #2081C3;
   display: flex;
@@ -23,4 +23,19 @@ body {
   text-decoration: none;
   margin: 0 8px;
   color: aliceblue;
+}
+
+.index-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 96px);
+}
+
+.index-btns {
+  height: 68px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
