@@ -9,8 +9,31 @@ body {
   padding: 0;
   margin: 0;
 }
+
+p {
+  text-align: justify;
+}
+
+h5{
+  margin: 0;
+}
+
 .btn-clean {
   all: unset;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  margin: 1.5vw;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer {
