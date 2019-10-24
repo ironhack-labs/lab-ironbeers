@@ -7,7 +7,7 @@ font-family: Arial, Helvetica, sans-serif
 */
 body {
   padding: 0;
-  margin: 0;
+  margin: 0 0 40px 0;
 }
 
 p {
@@ -16,6 +16,11 @@ p {
 
 h5{
   margin: 0;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
 }
 
 .btn-clean {
@@ -45,6 +50,8 @@ h5{
   align-items: center;
   justify-content: flex-start;
   padding: 0 24px;
+  position: fixed;
+  bottom: 0;
 }
 .index-container {
   display: flex;
@@ -72,6 +79,11 @@ h5{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+.rand-beer {
+  max-width: 70vw;
+  margin: auto;
 }
 
 .nav {

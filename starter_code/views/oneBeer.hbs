@@ -1,0 +1,12 @@
+<div class="rand-beer">
+  <img src="{{beer.0.image_url}}" alt="" height="148px" width="64">
+  <h4>{{beer.0.name}}</h4>
+  <h5>{{beer.0.tagline}}</h5>
+  <p>{{beer.0.description}}</p>
+  <h3>Food Pairing</h3>
+  {{#each beer.0.food_pairing}}
+  <p>{{this}}</p>
+  {{/each}}
+  <h3>Brewers Tips</h3>
+  <p>{{beer.0.brewers_tips}}</p>
+</div>
