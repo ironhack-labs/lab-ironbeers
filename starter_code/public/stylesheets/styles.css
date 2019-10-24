@@ -3,22 +3,50 @@
     border: solid, 3px, red;
 }
 
-nav > ul > li {
-    color: #F7F9F9;
+nav>ul {
+    background-color: #2081C3;
+    display: flex;
+    justify-items: left;
+    flex-direction: row;
 }
 
-nav {
-    background-color: #2081C3;
+nav>ul>li {
+    color: #F7F9F9;
+    padding: 30px;
+    list-style: none;
 }
 
 footer {
     background-color: #0A2C42;
 }
 
-footer > span {
-    color: #F7F9F9;
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-/* color: rgba(145, 145, 145, 0.481); */
+button {
+    background-color: #2081C3;
+    border-radius: 10px;
+    font-size: 24pt;
+    width: 400px;
+}
 
-  
+.home {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: #F7F9F9;
+    text-decoration: none;
+}
+
+footer>span {
+    color: #F7F9F9;
+    font-size: 20px;
+}
+
+
+/* color: rgba(145, 145, 145, 0.481); */
