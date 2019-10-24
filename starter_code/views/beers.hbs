@@ -1,3 +1,5 @@
-<div id='beer'>
-    <img src='images/beer.png'>
+<div class="cards-container"></div>
+{{#each filterBeers}}    
+    {{> beerPartial this}}
+{{/each}}
 </div>
