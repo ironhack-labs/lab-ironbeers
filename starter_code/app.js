@@ -21,11 +21,22 @@ app.get('/home', (req, res, next) => {
 });
 
 app.get('/beers', (req, res, next) => {
-  res.render('beers');
+  const allBeers = punkAPI.getBeers();
+  allBeers.then(beers => {
+    console.log(beers);
+    res.render('beers', {beers});
+  });
 });
 
 app.get('/randombeers', (req, res, next) => {
-  res.render('random-beers');
+  const randomBeer = punkAPI.getRandom();
+  randomBeer.then(beer => {
+    console.log(beer);
+
+    res.render('random-beers', beer[0]);
+
+  });
+
 });
 
   app.listen(3000);
