@@ -28,16 +28,17 @@ font-family: Arial, Helvetica, sans-serif
 
 footer{
     position: fixed;
+    padding-top: 8px;
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 50px;
+    height: 40px;
     background-color: #0A2C42;
     color: white;    
 }
 
 footer > span{
-    margin: 20px;
+    margin-left: 20px;
 }
 
 .button {
@@ -66,14 +67,16 @@ footer > span{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 400px;
-    height:350px;
+    width: 402px;
+    height:274px;
     float:left;
     /* border: 1px solid black; */
 }
 
 .card-img{
-    width: 8%;    
+    width: 25px;   
+    height: 80px; 
+    padding-top: 5px;
     /* border: 1px solid black; */
 }
 
@@ -84,9 +87,16 @@ footer > span{
 }
 
 .card-text{
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .cards-container{
-    padding: 5px 20px;
+    /* border: 1px solid black; */
+    width: 1210px;
+    height: 550px;
+    margin: 10px auto 2px auto;
+}
+
+h2{
+    font-size: 20px;
 }
