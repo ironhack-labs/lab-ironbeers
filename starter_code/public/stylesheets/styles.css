@@ -63,3 +63,44 @@ footer > p{
 .buttons a {
     text-decoration: none;
 }
+
+.card {
+    height: 450px;
+    padding: 18px;
+    border-radius: 4px;
+    width: 26vw;
+    margin: 1.5vw;
+    transition: ease 0.4s box-shadow;
+}
+.card:hover{
+    box-shadow: 2px 4px #f1e0f1;
+}
+.texts{
+    margin-top: 15%;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.thumbnail {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.thumnail-img {
+    height: 150%;
+  }
+.randon-beer{
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 25%;
+}
+.informations{
+    margin-left: 10%;
+    margin-top: 8%;
+}
