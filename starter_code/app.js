@@ -35,7 +35,7 @@ app.get("/beer/:id", (req, res, next) => {
   punkAPI
     .getBeer(id)
     .then(beer => {
-      res.render("oneBeer", { beer });
+      res.render("oneBeer", { beer: beer[0] });
       console.log(beer);
     })
     .catch(error => {

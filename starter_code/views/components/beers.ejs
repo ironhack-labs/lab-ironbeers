@@ -1,10 +1,10 @@
-<a href="/beer/{{this.id}}">
+<a href="/beer/<%=beers[i].id%>">
   <div class="card">
     <div class="thumbnail">
-      <img src="{{this.image_url}}" alt="" class="thumnail-img">
+      <img src="<%=beers[i].image_url%>" alt="" class="thumnail-img">
     </div>
     <h4><%=beers[i].name%></h4>
-    <h5>{{this.tagline}}</h5>
-    <p>{{this.description}}</p>
+    <h5><%=beers[i].tagline%></h5>
+    <p><%=beers[i].description%></p>
   </div>
 </a>
