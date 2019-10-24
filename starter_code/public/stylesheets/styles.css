@@ -90,7 +90,7 @@ a {
 
 .rand-beer {
   max-width: 70vw;
-  margin: 24px auto;
+  margin: 24px auto 64px auto;
 }
 
 .nav {

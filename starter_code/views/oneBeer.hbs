@@ -6,9 +6,11 @@
   <h5>{{beer.0.tagline}}</h5>
   <p>{{beer.0.description}}</p>
   <h3>Food Pairing</h3>
+  <ul>
   {{#each beer.0.food_pairing}}
-  <p>{{this}}</p>
+  <li style="margin: 5px 0;">{{this}}</li>
   {{/each}}
+  </ul>
   <h3>Brewers Tips</h3>
   <p>{{beer.0.brewers_tips}}</p>
 </div>
