@@ -1,0 +1,16 @@
+<div class="rand-beer">
+  <div style="height: 200px;">
+    <img src="<%= beer.image_url %>" alt="" style="height: 100%;">
+  </div>
+  <h4><%= beer.name %></h4>
+  <h5><%= beer.tagline %></h5>
+  <p><%= beer.description %></p>
+  <h3>Food Pairing</h3>
+  <ul>
+    <% for( let i = 0; i < beer.food_pairing.length; i++){ %>
+    <li style="margin: 5px 0;"><%= beer.food_pairing[i] %></li>
+    <% } %>
+  </ul>
+  <h3>Brewers Tips</h3>
+  <p><%= beer.brewers_tips %></p>
+</div>
