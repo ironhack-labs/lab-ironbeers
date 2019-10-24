@@ -1,0 +1,15 @@
+<div class="detail-beer-container">
+    <div>
+        <img class="img-detail" src="{{data.image_url}}" alt="">
+    </div>
+    <div class="detail-beer-info">
+    <h3>{{data.name}}</h3>
+        <p id="tagline">{{data.tagline}}</p>
+        <p id="description">{{data.description}}</p>
+        <ul>
+            {{#each data.food_pairing}}
+                <li>{{this}}</li>
+            {{/each}}    
+        </ul>
+    </div>
+</div>
