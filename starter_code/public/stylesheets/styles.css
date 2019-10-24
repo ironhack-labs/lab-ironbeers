@@ -8,6 +8,7 @@ font-family: Arial, Helvetica, sans-serif
 body {
   padding: 0;
   margin: 0 0 40px 0;
+  font-family: 'Liu Jian Mao Cao', cursive;
 }
 
 p {
@@ -28,16 +29,22 @@ a {
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 30vw;
+  height: 360px;
+  overflow: scroll;
+  padding: 18px;
+  border-radius: 4px;
+  width: 26vw;
   margin: 1.5vw;
+  transition: ease 0.4s box-shadow;
+}
+.card:hover{
+  box-shadow: 2px 4px #f1e0f1;
 }
 
 .cards {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -83,7 +90,7 @@ a {
 
 .rand-beer {
   max-width: 70vw;
-  margin: auto;
+  margin: 24px auto;
 }
 
 .nav {
@@ -100,4 +107,15 @@ a {
   text-decoration: none;
   margin: 0 8px;
   color: aliceblue;
+}
+
+.thumbnail {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.thumnail-img {
+  height: 100%;
 }
