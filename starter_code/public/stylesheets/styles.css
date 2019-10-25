@@ -28,8 +28,12 @@ header {
 
 body {
     background-color: rgba(145, 145, 145, 0.481);
+   
 }
   
+/* .align {
+    align-content: center;
+} */
 footer {
     background-color: #0A2C42;
     color: white;
@@ -45,7 +49,6 @@ footer {
 
 .img-setup {
     padding-top: 5%;
-    align-content: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -59,4 +62,20 @@ footer {
     color: white;
 }
 
+.align-btn {
+    margin-left: auto;
+    margin-right: auto; 
+    justify-items: center;
+}
 
+.cards-container {
+    display: flex;
+    padding: 10% 20%;
+    justify-content: space-around;
+  }
+  
+  .cards-container img {
+    object-fit: cover;
+    object-position: center;
+    height: 100px;
+  }     

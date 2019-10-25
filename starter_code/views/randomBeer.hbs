@@ -1,0 +1,10 @@
+  <head>
+    <title>Random Beers</title>
+  </head>
+  <body>
+    <div class="cards-container">
+      {{#each beers}}
+        {{> randomBeerPartial this}}
+      {{/each}}
+    </div>
+  </body>
