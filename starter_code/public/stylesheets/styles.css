@@ -6,3 +6,26 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+.beer-partial {
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  padding: 50px 100px;
+  align-items:center;
+  max-width: 400px;
+}
+
+.beer-partial img {
+  object-fit: content;
+  object-position: center;
+  height: 200px;
+}
+
+.beers-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer {
+  color: white;
+}
