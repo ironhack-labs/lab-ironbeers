@@ -5,4 +5,143 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+* {
+  font-family: Arial,
+    Helvetica,
+    sans-serif;
+}
+
+body {
+  background-color: #F7F9F9;
+}
+
+/*navbar*/
+.navbar {
+  background-color: #2081C3;
+  -webkit-box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.51);
+  box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.51);
+}
+
+.nav-item {
+  color: white;
+  font-weight: bold;
+}
+
+/*footer*/
+.page-footer {
+  background-color: #0A2C42;
+  color: white;
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+}
+
+.footer-text {
+  margin-left: 20px;
+}
+
+/*index*/
+.index-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.beers-img {
+  width: 30rem;
+  margin: 5rem;
+}
+
+.btn {
+  margin: 1rem;
+}
+
+/*beers*/
+.beers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+  margin: 4rem auto;
+}
+
+.beer-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+}
+
+.beer-img {
+  height: 250px;
+}
+
+.beer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+.beer-name {
+  font-size: x-large;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.beer-tag {
+  color: rgba(145, 145, 145, 0.481);
+  font-weight: bold;
+  font-size: smaller;
+}
+
+.beer-description {
+  font-size: smaller;
+}
+
+/*random beer*/
+.rnd-beer-container {
+  margin: 4rem 16rem;
+  display: flex;
+}
+
+.rnd-beer-img {
+  height: 300px;
+}
+
+.rnd-beer-text {
+  width: 55rem;
+  margin: 2rem 9rem;
+}
+
+.rnd-beer-name {
+  font-size: xx-large;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.rnd-beer-tag {
+  font-size: unset;
+  margin-bottom: 1rem;
+  color: rgba(145, 145, 145, 0.481);
+}
+
+.rnd-beer-description {
+  margin-bottom: 2rem;
+}
+
+.rnd-beer-food-pairing-container {
+
+}
+
+.rnd-beer-food-pairing {
+  font-size: x-large;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.rnd-beer-food-pairing-item {
+  margin-bottom: 0.5rem;
+}
