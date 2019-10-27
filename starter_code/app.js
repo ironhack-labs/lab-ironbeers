@@ -26,7 +26,7 @@ app.get('/beers', (request, response, next) => {
   })
 });
 
-app.get('/randomBeer', (request, response, next) => {
+app.get('/random-beer', (request, response, next) => {
   punkAPI.getRandom()
   
   .then(beers => {
