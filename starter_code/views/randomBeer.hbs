@@ -1,0 +1,18 @@
+<div class="random-beer">
+  {{!-- PENDIENTE DE PONER ESTILOS --}}
+  <img class="ml-100" src={{beer.image_url}}>
+  <div class="beer-info ml-100">
+    <h1 class="name">{{beer.name}}</h1>
+    <p class="tagline">{{beer.tagline}}</p>
+    <p class="description">{{beer.description}}</p>
+
+    <h2><b>Food pairing:</b></h2>
+    <ul class="pl-50">
+      {{#each beer.food_pairing}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+
+    <p><b>Brewers Tips:</b>{{beer.brewers_tips}}</p>
+  </div>
+</div>
