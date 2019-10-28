@@ -59,3 +59,22 @@ nav a {
     object-position: center;
     height: 200px;
   }
+
+  .random-beer-container{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .random-beer-img{
+    padding: 3%;
+    margin-left: 3%;
+  }
+
+  .random-beer-info{
+    padding: 3%;
+    margin-right: 3%;
+  }
+
+  .card-img {
+      max-width: 100px;
+  }
