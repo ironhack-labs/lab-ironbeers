@@ -2,12 +2,14 @@
   <img class="card-img-top" src="{{this.image_url}}" alt="Card image cap">
 </div>
 <div class="col-8">
-  <h1 class="display-3">{{this.name}}</h1>
-  <h2>{{this.tagline}}</h2>
+  <h1 class="display-4">{{this.name}}</h1>
+  <h2 class="mb-4">{{this.tagline}}</h2>
   <p>{{this.description}}</p>
+  <h5 class="mb-4 font-weight-bold">Food pairing</h5>
   <ul>
-    {{#each this.food }} 
-      <li></li>
+    {{#each this.food_pairing}} 
+      <li>{{this}}</li>
     {{/each}}
   </ul>
-</div>
+  <p><strong>Brewer tips: </strong> {{this.brewers_tips}}</p> 
+</div> 
