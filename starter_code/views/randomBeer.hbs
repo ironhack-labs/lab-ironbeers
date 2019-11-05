@@ -1,0 +1,23 @@
+<div class="random-beer-vista card flex-row">
+    {{#each randomBeers as |randomBeer|}}
+        <div class="p-2 w-25 h-25">
+            <img src="{{randomBeer.image_url}}" alt="{{randomBeer.name}}">
+        </div>
+        <div class="p-2 w-75 things">
+            <h4 class="card-title">{{randomBeer.name}}</h4>
+            <span class="text-secondary">{{randomBeer.tagline}}</span>
+            <p class="card-text description">{{randomBeer.description}}</p>
+    
+
+        <b>Food Pairing</b>
+        
+            <ul class="mt-3">
+                {{#each randomBeer.food_pairing as |food_pairing|}}
+                    <li>{{food_pairing}}</li>
+                {{/each}}
+            </ul>
+        
+        <p><b>Brewers Tips: </b>{{randomBeer.brewers_tips}}</p>
+        </div>
+   {{/each}}
+</div>

@@ -1,0 +1,9 @@
+<div class="container">
+<div class="d-flex flex-wrap justify-content-between pl-5 pr-5">
+ {{#each beers as |beer|}}
+   <div class="card ml-2 mr-2 mt-2 mb-2" style="width: 18rem;">
+   {{>beerCard beer=beer }}
+ </div>
+ {{/each}}
+</div>
+</div>
