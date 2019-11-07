@@ -5,4 +5,92 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+.html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    min-height: 90vh;
+}
+
+.blue-bar {
+    color: #F7F9F9;
+    background-color:  #2081C3;
+    padding-left: 2vw;
+    max-height: 5vh;
+}
+
+.blue-bar > li > a {
+    color: #F7F9F9;
+}
+
+.bottom {
+    background-color: #0A2C42;
+    width: 100%;
+    max-height: 5vh;
+}
+
+.white-text {
+    color: #F7F9F9;
+}
+
+.index-container > img {
+    width: 30vw;
+}
+
+.index-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 10vh;
+}
+
+.all-beers {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5vh 10vw;
+    justify-content: space-between;
+}
+
+.beer-partial {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+}
+
+.beer-partial > img {
+    height: 20vh;
+    align-self: center;
+}
+
+.beer-partial-text > h1 {
+    font-size: 20px;
+    margin-top: 2vh;
+}
+
+.beer-partial-text > h2 {
+    font-size: 15px;
+    color: rgba(145, 145, 145, 0.481);
+}
+
+.beer-partial-text > p {
+    font-size: 13px;
+    line-height: 17px;
+}
+.random-img {
+    width: 20vh;
+}
+
+.random-img > img {
+    height: 20vh;
+}
+
+.random-beers {
+    display: flex;
+    padding: 5vh 10vw;
+    justify-content: space-between;
+}
