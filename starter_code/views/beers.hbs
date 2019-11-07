@@ -1,0 +1,10 @@
+<h1>funktionierst du?</h1>
+
+<div>
+    {{#each beersList}}
+    {{>beerPartials this}}
+    {{!-- imagine beersListPartial as a function and this as the parameter
+    -> do beersListPartial for each "this-element". Next step: Create Partial --}}
+
+    {{/each}}
+</div>
