@@ -5,4 +5,46 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    background-color: #0A2C42;
+    padding: 0 1rem;
+}
+
+.index-container,
+.beer-container,
+.random-container {
+    padding-top: 5rem;
+}
+
+.index-container {
+    height: calc(100vh - 116px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.beer-img {
+    height: 300px;
+}
+
+.beer-tagline {
+    color: rgba(145, 145, 145, 0.481);
+}
