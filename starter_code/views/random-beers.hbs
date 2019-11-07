@@ -1,0 +1,19 @@
+<div class="divBeer">
+    <div>
+<img class="iconBeer" src="{{this.image_url}}" alt="beer photo">
+    </div>
+    <div>
+        <h1 class="titleBeer">{{this.name}}</h1>
+        <p class="tagline">{{this.tagline}}</p>
+        <p class="description">{{this.description}}</p>
+        <h2 class="paring">Food Paring</h2>
+        <ul class="food">
+            {{#each this.food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p class="tips">{{this.brewers_tips}}</p>
+    </div>
+   
+   
+</div>
