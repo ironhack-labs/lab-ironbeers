@@ -11,10 +11,6 @@ router.get("/", (req, res) => {
     })
 })
 
-router.get("/random-beers", (req, res) => {
-    res.render('randomBeers')
-})
-
 router.get("/beers", (req, res) => {
     punkAPI.getBeers().then(apiRes => {
             res.render("beers", {
@@ -24,5 +20,15 @@ router.get("/beers", (req, res) => {
         })
         .catch(dbErr => console.log(dbErr))
 });
+
+router.get("/random-beers", (req, res) => {
+    punkAPI.getRandom().then(apiRes => {
+            res.render('randomBeers', {
+                beer: apiRes[0],
+                css: ['beersStyle']
+            })
+        })
+        .catch(apiErr => console.log(apiErr))
+})
 
 module.exports = router;
