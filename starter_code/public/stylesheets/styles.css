@@ -10,11 +10,13 @@ body {
 }
 
 .nav {
-    /* height: 70px; */
+    height: 70px;
     background-color: #2081C3;
-    -webkit-box-shadow: 1px 11px 12px 1px rgba(0, 0, 0, 0.35);
-    box-shadow: 1px 11px 12px 1px rgba(0, 0, 0, 0.35);
-    padding: 20px;
+    -webkit-box-shadow: 2px 3px 32px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 3px 32px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 3px 32px 1px rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
 }
 
 .nav a {
@@ -25,12 +27,12 @@ body {
 }
 
 .container {
-    min-height: calc(100vh - 70px);
+    min-height: calc(100vh - 70px - 45px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
+
 
 }
 
@@ -56,13 +58,46 @@ body {
 
 footer {
     background-color: #0A2C42;
-    height: 70px;
+    height: 45px;
+    display: flex;
+    align-items: center;
 }
 
 footer p {
     color: white;
     font-size: 15px;
     margin: 0;
-    padding-top: 30px;
     margin-left: 20px;
+}
+
+.bodyPartial {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.beerPartial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    padding: 20px;
+}
+
+.beerPartial img {
+    margin: auto;
+    width: 40px;
+    text-align: center;
+}
+
+.beerPartial h1 {
+    font-size: 25px;
+}
+
+.beerPartial h2 {
+    font-size: 15px;
+    color: rgba(145, 145, 145, 0.481);
+}
+
+.beerPartial p {
+    font-size: 15px;
 }
