@@ -1,0 +1,32 @@
+#beers-section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 40px;
+    margin-top: 50px;
+    padding: 0 50px;
+}
+
+.beer-images {
+    text-align: center;
+}
+
+.beer-images img {
+    max-height: 200px;
+}
+
+.beer {
+    padding: 20px;
+}
+
+.beer-infos h3 {
+    margin: 10px 0;
+}
+
+.beer-infos h4 {
+    margin: 0;
+    color: #CDCDCB;
+}
+
+.beer-additional-info {
+    display: none;
+}

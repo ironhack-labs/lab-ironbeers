@@ -1,0 +1,32 @@
+.index-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px 0;
+}
+
+#beer-img {
+    width: 25%;
+}
+
+#beer-img img {
+    width: 100%;
+}
+
+.index-container button {
+    background: #2081C3;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.index-container a {
+    color: white;
+    text-decoration: none;
+}
+
+#buttons-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}

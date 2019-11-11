@@ -1,0 +1,31 @@
+.beer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.beer-images {
+    width: 5%;
+}
+
+.beer-images img {
+    width: 100%;
+}
+
+.beer-infos {
+    width: 50%;
+    height: 70%;
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.pairing-list {
+    margin: 10px 0;
+}
+
+.beer-additional-info p span {
+    font-weight: bold;
+}

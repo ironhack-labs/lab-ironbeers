@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    {{#each css}}
+    <link rel="stylesheet" href="../stylesheets/{{this}}.css">
+    {{/each}}
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/beers">Beers</a>
+        <a href="/random-beer">Random Beer</a>
+    </nav>
+    <div class="container">
+        {{{body}}}
+    </div>
+    <footer>
+        <span>Develop by Ironhack ;)</span>
+    </footer>
+</body>
+
+</html>
