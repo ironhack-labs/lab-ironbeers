@@ -1,0 +1,29 @@
+.beer-container {
+    display: flex;
+    flex-wrap: wrap;
+width: 200px;
+margin-right: 0px;
+margin-left: 0px;
+}
+
+.beer-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.beer-name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* .beer-list {
+width: 100px;
+} */
+
+ .beer-single {
+width: 100px;
+}
+
+/* .beer-info {
+
+}  */

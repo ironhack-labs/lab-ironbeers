@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    {{#each css}}
+    <link rel="stylesheet" href="/css/{{this}}.css">
+    {{/each}}
+</head>
+<body>
+<nav class="nav">
+    <a href="/">Home</a>
+    <a href="/beers">Beers</a>
+    <a href="/random-beer">Random Beers</a>
+</nav>
+
+    {{{body}}}
+
+</body>
+</html>
