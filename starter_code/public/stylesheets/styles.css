@@ -5,4 +5,85 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-size: cover;
+}
+
+.nav-bar {
+  padding-left: 30px;
+  height: 60px;
+  background-color: #2081c3;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+}
+.link {
+  text-decoration: none;
+  color: #f7f9f9;
+  padding: 0 15px;
+}
+.check-btn {
+  padding: 10px;
+  border: none;
+  width: 100%;
+  height: 30px;
+  background-color: #2081c3;
+  border-radius: 9px;
+  color: #f7f9f9;
+}
+.btn-container {
+  display: flex;
+  flex-direction: column;
+}
+.button {
+  padding: 10px;
+}
+.text-container {
+  padding: 40px;
+}
+.container {
+  min-height: calc(100vh - 30px);
+}
+.index-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.beers-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.display-beers {
+  padding: 20px;
+}
+.display-beers img {
+  height: 300px;
+}
+
+.random-img {
+  padding: 20px;
+  height: 300px;
+}
+.beers-random {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+footer > p {
+  padding: 20px;
+  margin: 0 auto;
+}
+footer {
+  height: 50px;
+  background: #0a2c42;
+  color: #f7f9f9;
+}
