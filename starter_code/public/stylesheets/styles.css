@@ -21,9 +21,10 @@ body {
 
 .nav a {
     color: #F7F9F9;
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
     padding: 5px;
+    margin-left: 20px;
 }
 
 .container {
@@ -70,12 +71,105 @@ footer p {
     margin-left: 20px;
 }
 
-.bodyPartial {
+.beerCard {
+    /* width: 30%; width enlevée avec la grid */
+    /* pour avoir 3 bières pour une longeur de 100%*/
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; à enlever sinon titre pas alignées */
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+
+.beer-image img {
+    max-height: 100px;
+    /* pour qu'elles aient toutes la meme hauteur*/
+}
+
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 15px;
+    color: rgba(145, 145, 145, 0.481);
+}
+
+p {
+    font-size: 15px;
+}
+
+/* .bodyAllCards {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    width: 90%;
+    margin: auto;
+    padding: 70px 10px 0px 10px;
+} */
+
+.bodyAllCards {
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    /* fr = fraction ici , 3 colonnes réparties sur 1 seule fraction de l'espace */
+    /* repeat(10, 1fr) = 10 colonnes sur 1fr */
+    column-gap: 5%;
+    margin-top: 20px;
+}
+
+/* grid-template-areas {
+    "nav nav nav"
+    "main main main"
+    "footer footer footer"
+}
+
+@media (min-width: 900px)
+grid-template-areas {
+    "footer footer footer"
+    "main main main"
+    "nav nav nav"
+}
+Pour changer l'emplacement des div en fonction de la taille de l'écran*/
+
+.randomBeer {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+}
+
+.randomBeer-image img {
+    max-width: 50px;
+}
+
+.randomBeer-image {
+    margin: 0px 30px 0px;
+    width: 200px;
+    text-align: center;
+}
+
+.randomBeer-description {
+    width: 500px;
+}
+
+.randomBeer-description span {
+    font-weight: bold;
+}
+
+.foodPairing li {
+    padding: 5px;
+}
+
+
+
+/* .bodyCard {
     display: flex;
     flex-wrap: wrap;
 }
 
-.beerPartial {
+.beerCard {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,21 +177,9 @@ footer p {
     padding: 20px;
 }
 
-.beerPartial img {
+.beerCard img {
     margin: auto;
     width: 40px;
     text-align: center;
 }
-
-.beerPartial h1 {
-    font-size: 25px;
-}
-
-.beerPartial h2 {
-    font-size: 15px;
-    color: rgba(145, 145, 145, 0.481);
-}
-
-.beerPartial p {
-    font-size: 15px;
-}
+*/

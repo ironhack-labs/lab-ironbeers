@@ -1,9 +1,13 @@
 {{!-- image, name, description, and tagline of the bears --}}
 {{!-- use this. and not beers. --}}
 
-<div class="beerPartial">
-    <img src="{{this.image_url}}" alt="{{this.name}}">
-    <h1>{{this.name}}</h1>
-    <h2>{{this.tagline}}</h2>
-    <p>{{this.description}}</p>
+<div class="beerCard">
+    <div class="beer-image">
+        <img src="{{this.image_url}}" alt="{{this.name}}">
+    </div>
+    <div class="beer-description">
+        <h1>{{this.name}}</h1>
+        <h2>{{this.tagline}}</h2>
+        <p>{{this.description}}</p>
+    </div>
 </div>
