@@ -1,0 +1,26 @@
+.index-container {
+    display: flex;
+    flex-direction: column;
+    height: 84vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.beerPic {
+    height: 50vh;
+    width: 50vh;
+}
+
+.btn {
+    background-color: #2081C3;
+    color: white;
+    font-size: 1.2em;
+    padding: .5em 1.5em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
