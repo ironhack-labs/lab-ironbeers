@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#beer-image {
+    width: auto;
+    height: 300px;
+}
+
+#index-btn {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
