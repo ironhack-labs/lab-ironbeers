@@ -6,3 +6,54 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    font-size: 1.1em;
+}
+
+#beer1 {
+    width: 400px;
+    display: block;
+    margin: 20px auto;
+}
+
+.img-beers {
+    object-fit: contain;
+    height: 200px;
+    margin: 20px 0;
+}
+
+.img-random {
+    display: block;
+    max-width:300px;
+    max-height:50px;
+    width: auto;
+    height: auto;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+.random-container{
+    margin: 20px 0;
+}
+
+footer {
+    color: #F7F9F9;
+    background-color: #0A2C42;
+    text-align: justify;
+    clear: both;
+    position: relative;
+    height: -200px;
+    margin-top: 20px;
+}
+
+.center {
+    display: block;
+    margin: 10px auto;
+}
