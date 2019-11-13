@@ -1,0 +1,9 @@
+<img src="{{this.image_url}}" alt="">
+<h2>{{this.name}}</h2>
+<h4>{{this.tagline}}</h4>
+<p>{{this.description}}</p>
+<ul>
+    {{#each beers}}
+    <h1>{{> card }}</h1>
+    {{/each}}
+</ul>
