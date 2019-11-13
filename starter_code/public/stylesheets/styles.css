@@ -5,4 +5,33 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gray {
+    background: rgba(145, 145, 145, 0.481);
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+footer {
+    background: #0A2C42;
+    color: #F7F9F9;
+
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.image {
+    height: 230px;
+    margin-top: 25px;
+}
+
+.button {
+    margin-top: 20px
+}
