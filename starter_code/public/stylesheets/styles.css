@@ -5,4 +5,47 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
+
+
+header {
+    background-color: #2081C3;
+    color: #F7F9F9;
+}
+
+section {
+    background-color: rgba(145, 145, 145, 0.481);
+}
+
+footer {
+    background-color: #0A2C42;
+    color: #F7F9F9;
+}
+
+/* unvisited link */
+a:link {
+    color: #F7F9F9;
+  }
   
+  /* visited link */
+  a:visited {
+    color: #F7F9F9;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #F7F9F9;
+  }
+
+  .index-container {
+      display: flex;
+      flex-direction: column;
+  }
+
+  image {
+      size: 50%;
+  }
