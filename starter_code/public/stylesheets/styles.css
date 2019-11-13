@@ -100,3 +100,23 @@ footer p {
   -moz-box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
+
+.beers-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.beers{
+  margin-top: 60px;
+  width: 30%;
+}
+
+img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+}

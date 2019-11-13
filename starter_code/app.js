@@ -14,19 +14,29 @@ app.get("/", (req, res, next) => {
 });
 
 app.get("/beers", (req, res, next) => {
-  res.render("beers");
+  punkAPI
+    .getBeers()
+    .then(beer => {
+      const descriptions = {
+        beersList: beer
+      };
+      console.log(beer);
+      res.render("beers.hbs", descriptions);
+    })
+    .catch(error => {
+      console.log(error);
+    });
 });
 
 app.get("/random-beers", (req, res, next) => {
-  res.render("random-beers");
+  punkAPI
+    .getRandom()
+    .then(beer => {
+      res.render("random-beers", beer[0]);
+    })
+    .catch(error => {
+      console.log(error);
+    });
 });
-
-punkAPI.getBeers()
-  .then(beers => {
-
-  })
-  .catch(error => {
-    console.log(error)
-  })
 
 app.listen(3000);
