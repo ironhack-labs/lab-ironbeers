@@ -1,1 +1,31 @@
-Hey i'm a random beer mate
+<div class="random-beer-container container">
+
+    <div class="img-wrp">
+        <img src="{{randomBeer.image_url}}" alt="{{randomBeer.name}}">
+    </div>
+
+    <div class="content-wrp">
+        <h2>{{randomBeer.name}}</h2>
+        <h3>{{randomBeer.tagline}}</h3>
+        <p>{{randomBeer.description}}</p>
+
+        {{#if randomBeer.food_pairing}}
+        <h4>Food Pairing:</h4>
+        <ul>
+
+            {{#each randomBeer.food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+
+        {{/if}}
+
+
+        {{#if randomBeer.brewers_tips}}
+        <h4>Brewers Tips:</h4>
+        <p>{{randomBeer.brewers_tips}}</p>
+        {{/if}}
+
+    </div>
+
+</div>
