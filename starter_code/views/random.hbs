@@ -1,0 +1,21 @@
+<div class="card mb-3 mx-auto border-0 mt-5" style="max-width: 540px;">
+  <div class="row">
+    <div class="col-md-4">
+      <img src={{beerPartial.image_url}} class="card-img w-50" alt="Image">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{beerPartial.name}}</h5>
+        <p class="card-text text-secondary">{{beerPartial.tagline}}</p>
+        <p class="card-text">{{beerPartial.description}}</p>
+        <h6>Food Pairing</h6>
+        <ul>
+            {{#each beerPartial.food_pairing}}
+                <li>{{this}} </li>
+            {{/each}}
+        </ul>
+        <p class="card-text"><strong>Brewer Tips:</strong> {{beerPartial.brewers_tips}}</p>
+      </div>
+    </div>
+  </div>
+</div>
