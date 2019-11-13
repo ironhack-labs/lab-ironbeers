@@ -6,3 +6,39 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+.center-image{
+   display: block;
+   margin: auto;
+   width: 400px;
+   padding: 30px 0;
+}
+.button{
+   display: block;
+   width: 300px;
+   text-align: center;
+   color: white;
+   padding: 10px;
+   background-color: #2081C3 ;
+   margin: 20px auto;
+   text-decoration: none;
+}
+.button:hover{
+   color:#2081C3;
+   border: 1px solid #2081C3;
+   background-color: white;
+   text-decoration: none;
+}
+.asd{
+   object-fit: contain;
+   height: 150px;
+}
+.card {
+   margin: 20px 0px;
+}
+footer {
+    font-family:
+        sans-serif;
+    background-color: black;
+    color: #F7F9F9;
+    padding: 20px;
+}
