@@ -19,6 +19,15 @@ app.get('/', (req, res, next) => {
 });
 
 
+app.get('/random-beer', (req, res, next) => {
+  res.render('random-beer');
+});
+
+
+app.get('/beers', (req, res, next) => {
+  res.render('beers');
+});
+
 
 app.listen(3000, ()=>{
   console.log("Listen on port 3000")
