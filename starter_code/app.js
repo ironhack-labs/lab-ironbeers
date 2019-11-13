@@ -10,6 +10,8 @@ app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
 
+hbs.registerPartials(__dirname + '/views/partials');
+
 
 
 app.get('/', (req, res, next) => {
@@ -18,4 +20,6 @@ app.get('/', (req, res, next) => {
 
 
 
-app.listen(3000);
+app.listen(3000, ()=>{
+  console.log("Listen on port 3000")
+});
