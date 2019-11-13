@@ -5,4 +5,212 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Styles start */
+html{
+    font-size:10px;
+}
+nav{
+    width:100%;
+    display:flex;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: #0A2C42;
+}
+
+nav ul{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding:2rem;
+    width:100%;
+}
+
+ul a{
+    color:#ffffff;
+    padding: 3rem;
+    font-size:2rem;
+    text-decoration: none;
+}
+
+ul a:hover{
+    color:#ffffff;
+    text-decoration: underline;
+}
+
+#main-wrapper{
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+
+div{
+    display:flex;
+    width:80%;
+    margin-top:5rem;
+    justify-content: center;
+    margin-bottom:10rem;
+}
+
+.index-container{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.index-container img{
+    align-self:center;
+    width:30%;
+    text-align: center;
+    margin-bottom: 2rem;;
+}
+
+.index-container a{
+    display:flex;
+    padding:2rem 4rem;
+    background-color:#2081C3;
+    color:orange;
+    font-size:2rem;
+    margin:2rem;
+    align-self: center;
+}
+
+footer{
+    position:fixed;
+    display: flex;
+    background-color: #0A2C42;
+    bottom:0;
+    left:0;
+    width:100%;
+    justify-content:center;
+}
+
+footer span{
+    padding:2rem;
+    color:#ffffff;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.beer{
+    display:flex;
+    justify-content: center;
+    width:100%;
+}
+
+.beer ul{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    flex-wrap: wrap;
+}
+
+.beer ul li{
+    width:30%;
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items:center;
+}
+
+.beer img{
+    width:30%;
+}
+
+.beer h2, .random-beer h2{
+    font-size: 3rem;
+    font-weight: bold;
+    padding:1.5rem;
+    margin:2rem 2rem 0 2rem;
+}
+
+.beer h2:hover , .random-beer h2:hover{
+    text-decoration:underline;
+    background-color:yellow;
+}
+
+
+.beer h3, .random-beer h3{
+    font-size: 2rem;
+    font-weight: bold;
+    margin:0 1rem 1rem 1rem;
+    color:#0A2C42;
+}
+
+.beer p, .random-beer p{
+    padding: 1rem;
+    margin-bottom:3rem;
+    font-size:1.5rem;
+}
+
+.beer p:hover, .random-beer p:hover{
+    background-color:rgba(0, 153, 255, 0.267);
+}
+
+
+.random-beer{
+    width:80%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.random-beer img{
+    max-height:400px;
+    transition:0.5s ease-in;
+}
+
+.random-beer img:hover{
+    transform: rotate(30deg);
+    transition:0.5s ease-in;
+   
+}
