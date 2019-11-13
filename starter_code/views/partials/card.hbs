@@ -2,8 +2,11 @@
 <h2>{{this.name}}</h2>
 <h4>{{this.tagline}}</h4>
 <p>{{this.description}}</p>
+{{#if this.flag}}
+<h3>Food Pairing</h3>
 <ul>
-    {{#each beers}}
-    <h1>{{> card }}</h1>
+    {{#each this.food_pairing}}
+    <h1>{{this}}</h1>
     {{/each}}
 </ul>
+{{/if}}
