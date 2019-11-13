@@ -1,12 +1,15 @@
 <img src="{{this.image_url}}" alt="">
-<h2>{{this.name}}</h2>
-<h4>{{this.tagline}}</h4>
-<p>{{this.description}}</p>
-{{#if this.flag}}
-<h3>Food Pairing</h3>
-<ul>
-    {{#each this.food_pairing}}
-    <h1>{{this}}</h1>
-    {{/each}}
-</ul>
-{{/if}}
+<div class="info">
+    <h2>{{this.name}}</h2>
+    <h4>{{this.tagline}}</h4>
+    <p>{{this.description}}</p>
+    {{#if this.flag}}
+    <h3>Food Pairing</h3>
+    <ul>
+        {{#each this.food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+    <p><span>Brewer tip: </span>{{this.brewers_tips}}</p>
+    {{/if}}
+</div>

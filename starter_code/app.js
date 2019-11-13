@@ -1,8 +1,7 @@
-
 const express = require('express');
-const hbs     = require('hbs');
-const app     = express();
-const path    = require('path');
+const hbs = require('hbs');
+const app = express();
+const path = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 const punkAPI = new PunkAPIWrapper();
 
@@ -21,24 +20,26 @@ app.get('/', (req, res, next) => {
 
 app.get('/beers', (req, res, next) => {
   punkAPI.getBeers()
-  .then(beers => {
-    res.render("beers", { beers });
-  })
-  .catch(error => {
-    console.log(error)
-  })
-  
+    .then(beers => {
+      res.render("beers", {
+        beers
+      });
+    })
+    .catch(error => {
+      console.log(error)
+    })
+
 });
 
 app.get('/random-beers', (req, res, next) => {
   punkAPI.getRandom()
-  .then(beers => {
-    beers[0].flag = true;
-    res.render('random-beer',beers[0]);
-  })
-  .catch(error => {
-    console.log(error)
-  })
+    .then(beers => {
+      beers[0].flag = true;
+      res.render('random-beer', beers[0]);
+    })
+    .catch(error => {
+      console.log(error)
+    })
 });
 
 app.listen(3000);
