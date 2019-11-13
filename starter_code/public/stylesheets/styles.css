@@ -164,6 +164,12 @@ footer span{
 
 .beer img{
     width:30%;
+    transition:0.2s;
+}
+
+.beer img:hover{
+    transform: rotate(20deg);
+    transition:0.2s ease-in;
 }
 
 .beer h2, .random-beer h2{
