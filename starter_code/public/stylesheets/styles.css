@@ -16,6 +16,7 @@ ul {
     overflow: hidden;
     background-color: #2081C3;
     color: white;
+
   }
   
   li {
@@ -36,13 +37,14 @@ ul {
   }
 
   footer{
-    padding: 10px;
+    padding: 8px;
     overflow: hidden;
     background-color: #0A2C42;
     color: white;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    margin-left: -10px;
+    width: 120%;
   }
 
   body{
@@ -73,6 +75,10 @@ ul {
     margin:10px 2px;
     cursor: pointer;
     border-radius: 4px;
-    width: 10%;
+    width: 100%;
   }
   
+a{
+text-decoration: none;
+color:white;
+  }
