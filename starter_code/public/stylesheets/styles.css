@@ -12,12 +12,10 @@ font-family: Arial, Helvetica, sans-serif
 
 ul {
     list-style-type: none;
-    margin: 0px;
-    padding: 30px;
+    padding: 18px;
     overflow: hidden;
     background-color: #2081C3;
     color: white;
-
   }
   
   li {
@@ -28,9 +26,8 @@ ul {
   li a {
     display: block;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px;
     text-decoration: none;
- 
   }
   
   /* Change the link color to #111 (black) on hover */
@@ -39,7 +36,7 @@ ul {
   }
 
   footer{
-    padding: 25px;
+    padding: 10px;
     overflow: hidden;
     background-color: #0A2C42;
     color: white;
@@ -47,3 +44,35 @@ ul {
     bottom: 0;
     width: 100%;
   }
+
+  body{
+      background-color: rgba(145, 145, 145, 0.481);
+  }
+
+  .beer{
+    height: 300px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+  }
+
+.index-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+  .button {
+    background-color: #2081C3;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin:10px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 10%;
+  }
+  
