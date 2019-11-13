@@ -41,4 +41,33 @@ app.get('/random-beers', (req, res, next) => {
   })
 });
 
+app.get('/single-beer', (req, res, next) => {
+  punkAPI.getRandom()
+  .then(singleBeer => {
+    console.log(singleBeer);
+    res.render('single-beer', {
+      singleBeer
+    });
+  })
+  .catch(error => {
+    console.log(error)
+  })
+});
+
+
+app.get('/beers/:id', (req, res, next) => {
+ const beerNum = req.params.id
+  console.log(beerNum)
+  punkAPI.getBeer(beerNum)
+  .then(singleBeer => {
+    res.render('single-beer', {
+      singleBeer
+    });
+  })
+  .catch(error => {
+    console.log(error)
+  })
+});
+
+
 app.listen(3000);
