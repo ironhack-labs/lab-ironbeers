@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
 /*
 white: #F7F9F9;
 light-blue: #2081C3;
@@ -6,17 +7,102 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-
 html,
-body {
-    background: #F7F9F9;
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    vertical-align: baseline;
     font-size: 10px;
+}
+
+
+body {
+    background: #F7F9F9;
+   
     font-family: 'Rubik', sans-serif;
     height: 100vh;
+    width: 100vw;
 }
 
 header {
@@ -43,7 +129,7 @@ a {
 }
 
 h6 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 
 }
 
@@ -57,9 +143,9 @@ h6 {
     margin-bottom: 4rem;
 }
 
-#mainImg {
-    width: 25%;
-    margin-bottom: 4rem;
+.mainImg {
+    width: 15%;
+    margin-bottom: 3rem;
 }
 
 #buttons {
@@ -81,6 +167,48 @@ h6 {
     text-decoration: none;
     margin-bottom: 2rem;
     width: fit-content;
+}
+
+.beerList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+
+.beerItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 30vw;
+    padding: 3rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.beerItem img {
+    align-self: center;
+    height: 20rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2.6rem;
+    margin-bottom: 1.2rem;
+}
+
+h3 {
+    color: rgba(145, 145, 145, 0.481);
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+}
+
+p {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
 }
 
 footer {
