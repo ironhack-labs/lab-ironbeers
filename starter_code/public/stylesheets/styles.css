@@ -70,6 +70,10 @@ html {
     color: #F7F9F9;
     font-size: 2rem;
     padding-left: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
 }
 
 #nav-bar a {
@@ -96,12 +100,14 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin: 3rem;
 }
 
 .index-img {
     width: 40rem;
     margin: 1rem;
+    margin-top: 5rem;
 }
 
 .btn {
@@ -119,16 +125,17 @@ html {
     height: 60rem;
     width: 28vw;
     background-color: rgba(145, 145, 145, 0.481);
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     padding: 1rem 2rem;
-    margin: 1rem;
+    margin: 2rem 1rem;
 }
 
 .partial-img {
-    height: 25rem;
+    height: 20rem;
 }
 
 .h1-partial {
@@ -152,4 +159,72 @@ ul.beers {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.random-beer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: lightgrey; */
+    height: 100%;
+    
+}
+
+.img-container {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.article-container {
+    margin: 1rem;
+    width: 40vw;
+}
+
+.article-container h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.article-container h2{
+    font-size: 2rem;
+    font-weight: 500;
+    color: grey;
+    margin-bottom: 1rem;
+}
+
+.article-container p {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.article-container h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.article-container ul{
+    margin-bottom: 1rem;
+}
+
+.article-container li{
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.article-container li::before{
+    content: "-";
+    margin-right: .5rem;
+}
+
+.random-beer-container {
+    display:flex;
+    flex-direction: row;
+    border-radius: 1rem;
+    background-color: lightgray;
+    padding: 4rem;
 }
