@@ -132,7 +132,7 @@ h6 {
 }
 
 section {
-    height: 80vh;
+    
 }
 .index-container {
     display: flex;
@@ -141,7 +141,7 @@ section {
     align-items: center;
     background: #F7F9F9;
     padding: 2rem;
-    margin-bottom: 4rem;
+    height: 80vh;
 }
 
 .mainImg {
@@ -222,6 +222,7 @@ p {
     justify-content: space-evenly;
     align-items: center;
     padding: 4rem;
+    height: 80vh;
   
 }
 
