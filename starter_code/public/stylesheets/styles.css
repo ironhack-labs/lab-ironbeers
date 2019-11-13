@@ -9,7 +9,7 @@ font-family: Arial, Helvetica, sans-serif
 
 html,
 body {
-    background:#F7F9F9;
+    background: #F7F9F9;
     margin: 0;
     padding: 0;
     border: 0;
@@ -42,21 +42,51 @@ a {
     margin-right: 3rem;
 }
 
-h6{
+h6 {
     font-size: 1.2rem;
-    
+
 }
 
-.index-container{
-    display:block;
-    background:#F7F9F9;
+.index-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #F7F9F9;
     padding: 2rem;
+    margin-bottom: 4rem;
+}
+
+#mainImg {
+    width: 25%;
+    margin-bottom: 4rem;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.button {
+    box-shadow: 0 1rem 1rem .1rem rgba(145, 145, 145, 0.481);
+    background-color: #2081C3;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 1.6rem;
+    padding: 1.5rem 2rem;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    width: fit-content;
 }
 
 footer {
+    /* float:bottom; */
     color: #F7F9F9;
     background: #0A2C42;
-    margin-top: 4rem;
-    padding: 1.5rem;
-    vertical-align: baseline;
+    margin-top: 2rem;
+    padding: 1.5rem 2rem;
 }
