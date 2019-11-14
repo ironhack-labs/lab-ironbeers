@@ -135,27 +135,51 @@ button {
     align-self: center;
 }
 
-.beer h2 {
+.beer h2, .beer-info h2 {
     margin-top: 20px;
     font-weight: bold;
     font-size: 24px;
 }
 
-.beer h3 {
+.beer h3, .beer-info h3 {
     color: rgba(145, 145, 145, 0.481);
     font-size: 18px;
     margin-bottom: 10px;
 }
 
-.beer p {
+.beer p, .beer-info p {
     padding: 10px 50px 10px 0;
 }
 
 .random-beer {
     display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.random-beer img {
+    height: 300px;
+    width: auto;
 }
 
 .beer-info {
     display: flex;
     flex-direction: column;
+    margin: 100px 50px;
+}
+.beer-info h3 {
+    padding: 20px 0;
+}
+
+.beer-info h4 {
+    padding: 10px 0;
+}
+.beer-info h4, .beer-info p strong {
+    font-weight: bold;
+}
+
+.beer-info ul li {
+    list-style-type: disc;
+    margin-left: 30px;
+    padding: 5px 0;
 }
