@@ -5,4 +5,26 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+/* imagenes */
+
+img{
+    width:30%;
+    padding:30px;
+    
+    
+}
+.center{
+    display:flex;
+    justify-content: center;
+}
+
+/* botones */
+
+.butt1{
+    margin-left: 650px;
+}
+.butt2{
+    margin-top:30px;
+    margin-left: 630px;
+}
+
