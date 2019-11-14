@@ -1,0 +1,27 @@
+<div class="card">
+  <div class="card-image">
+    <figure class="image is-4by3">
+      <img src="{{this.image_url}}" alt="Placeholder image">
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media">
+      <div class="media-content">
+        <p class="title is-4">{{this.name}}</p>
+        <p class="subtitle is-6">{{this.tagline}}</p>
+        <div class="content">
+            {{this.description}}
+        </div>
+        <p class="title is-6">Food Pairing</p>
+        <div class="content">
+            <ul>
+                {{!-- <li>{{this.food_pairing[0]}}</li>
+                <li>{{this.food_pairing[1]}}</li>
+                <li>{{this.food_pairing[2]}}</li> --}}
+            </ul>
+        </div>
+        <b>Brewer Tips: {{this.brewers_tips}}</b>
+      </div>
+    </div>
+  </div>
+</div>

@@ -5,4 +5,71 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html,
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+}
+
+nav {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 35px;
+	color: white;
+	padding: 16px;
+	background-color: #2081c3;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li {
+	float: left;
+	font-size: 15px;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 1rem;
+	background-color: #0a2c42;
+	color: white;
+	padding: 16px;
+}
+
+.index-container {
+	top: 35px;
+	width: 500px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	justify-content: center;
+}
+
+.index-container > img {
+	width: 50%;
+	height: 50%;
+}
