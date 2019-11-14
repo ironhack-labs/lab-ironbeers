@@ -91,3 +91,25 @@ footer {
     padding: 20px;
 }
 
+.index-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 100px;
+}
+
+img {
+    margin: 100px 0 5px;
+    height: auto;
+    width: 300px;
+}
+
+button {
+    background-color: #2081C3;
+    color: #F7F9F9;
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+    margin: 10px;
+}
