@@ -3,6 +3,155 @@ white: #F7F9F9;
 light-blue: #2081C3;
 dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
+
 */
-  
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F7F9F9;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+nav {
+    background-color: #2081C3;
+    height: 60px;
+    box-shadow: 0px 1px 10px 10px rgba(145, 145, 145, 0.481);
+    position: fixed;
+    width: 100vw;
+}
+
+nav>ul {
+    display: flex;
+    list-style: none;
+    margin-left: 50px;
+}
+
+nav>ul>li {
+    padding: 20px;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+
+footer {
+    background-color: #0A2C42;
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+    font-size: 1.1em;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+button {
+    display: block;
+    background-color: #2081C3;
+    padding: 14px 18px;
+    border: 1px solid #2081C3;
+    border-radius: 6px;
+    box-shadow: 0px 2px 5px 3px rgba(145, 145, 145, 0.481);
+    margin: 10px 0;
+}
+
+button>a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6em;
+
+}
+
+img[alt="main beer"] {
+    width: 26%;
+    margin-bottom: 30px;
+    margin-top: 120px;
+}
+
+.index-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.beer-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin: 20px 20px;
+}
+
+.beer-card>img {
+    height: 140px;
+    padding-bottom: 20px;
+
+
+}
+
+.beer-text {
+    text-align: left;
+}
+
+.beers-wrapper {
+    padding: 140px 0;
+    margin: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.beer-text>h4 {
+    color: rgba(145, 145, 145, 0.481);
+    margin: 4px 0 14px 0;
+    font-size: 0.9em
+}
+
+.beer-text>h2 {
+    font-size: 1.2em;
+}
+
+.beer-text>p {
+    font-size: 0.7em
+}
+
+.beer-card-random {
+    padding: 100px 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.beer-card-random img {
+    height: 250px;
+    padding: 40px;
+}
+
+.beer-card-random ul {
+    padding: 20px 40px;
+}
+
+.beer-card-random li {
+    padding: 4px;
+}
+
+.beer-card-random p {
+    font-size: 1.1em;
+    padding-bottom: 14px;
+}

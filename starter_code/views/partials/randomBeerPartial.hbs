@@ -1,0 +1,18 @@
+<div class="beer-card-random">
+    <img src="{{this.[0].image_url}}" alt="Placeholder image">
+    <div class="beer-text">
+        <h2>{{this.[0].name}}</h2>
+        <h4>{{this.[0].tagline}}</h4>
+        <p>{{this.[0].description}}</p>
+        <h3>Food Pairing:</h3>
+        <ul>
+            {{#each this.[0].food_pairing as |caca|}}
+                <li>{{caca}}</li>
+            {{/each}}
+            {{!-- <li>{{this.[0].food_pairing[0]}}</li>
+            <li>{{this.[0].food_pairing[1]}}</li>
+            <li>{{this.[0].food_pairing[2]}}</li> --}}
+        </ul>
+        <p><strong>Brewers Tips: </strong>{{this.[0].brewers_tips}}</p>
+    </div>
+</div>
