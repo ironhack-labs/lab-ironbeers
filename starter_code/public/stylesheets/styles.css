@@ -6,3 +6,136 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+#navbar {
+    background-color: #2081C3;
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    width: 25%;
+}
+
+.menu li {
+    list-style: none;
+    margin: 3%;
+    
+}
+
+.menu a {
+    text-decoration: none;
+    color: #F7F9F9;
+}
+
+.index-container{
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    background-color: #0A2C42;
+    color: #F7F9F9;
+    padding: 0.5%;
+}
+
+
+
+.myButton {
+	box-shadow: 0px 10px 14px -7px #2081C3;
+	background-color:#2081C3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* .index-container{
+    height: 100%;
+    width: 100%;
+} */
+.center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.center a{
+    margin-bottom: 40px;
+}
+
+.center img{
+    padding: 5%;
+    width: 30%;
+}
+
+#card {
+    width: 24%;
+    padding: 1.5%;
+    /* background-color: red; */
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+}
+
+.card-image img{
+    height: 150px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2%;
+}
+
+.media-description p {
+    font-size: 0.7em;
+}
+
+h5 {
+    color: rgba(145, 145, 145, 0.481);
+}
+
+#randomCard{ 
+    width: 60%;
+    display: flex;
+    margin: 3% 0 15% 10%;
+}
+
+.random-card-image img {
+    height: 200px;
+}
+
+.random-card-content {
+    padding-left: 5%;
+}
+
+.random-media-description ul > li {
+    padding: 5px 0;
+}
