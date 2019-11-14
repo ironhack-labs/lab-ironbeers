@@ -6,8 +6,10 @@ const path    = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 const punkAPI = new PunkAPIWrapper();
 
+
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
+hbs.registerPartials(__dirname + '/views/partials');
 app.use(express.static(path.join(__dirname, 'public')));
 
 
@@ -17,11 +19,23 @@ app.get('/', (req, res, next) => {
 });
 
 app.get('/beers', (req, res, next) => {
-  res.render('');
+  punkAPI.getBeers()
+  .then(beers => {
+    res.render('beers', { beers: beers });
+  })
+  .catch(error => {
+    console.log(error);
+  })
 });
 
 app.get('/random-beer', (req, res, next) => {
-  res.render('');
+  punkAPI.getRandom()
+  .then(beers => {
+    res.render('random-beer', { beers: beers });
+  })
+  .catch(error => {
+    console.log(error)
+  })
 });
 
 

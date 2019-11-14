@@ -113,3 +113,49 @@ button {
     padding: 10px;
     margin: 10px;
 }
+
+.beers-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.beer {
+    width: 30%;
+    display:flex;
+    flex-direction: column;
+}
+
+.beer img {
+    width: auto;
+    height: 250px;
+    display: flex;
+    align-self: center;
+}
+
+.beer h2 {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.beer h3 {
+    color: rgba(145, 145, 145, 0.481);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.beer p {
+    padding: 10px 50px 10px 0;
+}
+
+.random-beer {
+    display: flex;
+}
+
+.beer-info {
+    display: flex;
+    flex-direction: column;
+}
