@@ -1,8 +1,30 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
+body {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    /* color : #F7F9F9; */
+}
+.imagen1  {
+    width: 300px;
+    height: 300px;;
+    
+}
+.block {
+    display: block;
+    margin: auto 0;
+}
+
+.flex-direction{
+    flex-direction: column;
+}
+.justify-content {
+    justify-content: space-around;
+}
+.align-items {
+    align-items: center;
+}
+
+
+/* light-blue: #2081C3;
 dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
-  
+grey: rgba(145, 145, 145, 0.481); 
+:white */
