@@ -1,37 +1,36 @@
-<div class="container">
+<div class="container random-beer-container">
   <h1 class="is-size-1">Beers</h1>
-
   <div class="columns is-mobile is-multiline is-centered ">
     <div class="columns is-mobile is-multiline is-centered ">
-    <div class="column is-8">
-      <div class="card">
-  <div class="card-image">
-    <figure class="image is-4by3">
-      <img src="{{randomBeer.image_url}}" alt="Placeholder image">
-    </figure>
-  </div>
-  <div class="card-content">
-    <div class="media">
-      <div class="media-content">
-        <p class="title is-4">{{randomBeer.name}}</p>
-        <p class="subtitle is-6">{{randomBeer.tagline}}</p>
-        <div class="content">
-            {{randomBeer.description}}
+      <div class="column is-8">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="{{randomBeer.image_url}}" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">{{randomBeer.name}}</p>
+                <p class="subtitle is-6">{{randomBeer.tagline}}</p>
+                <div class="content">
+                  {{randomBeer.description}}
+                </div>
+                <p class="title is-6">Food Pairing</p>
+                <div class="content">
+                  <ul>
+                    {{#each randomBeer.food_pairing}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                  </ul>
+                </div>
+                <b>Brewer Tips: {{randomBeer.brewers_tips}}</b>
+              </div>
+            </div>
+          </div>
         </div>
-        <p class="title is-6">Food Pairing</p>
-        <div class="content">
-            <ul>
-                {{#each randomBeer.food_pairing}}
-                <li>{{this}}</li>
-                {{/each}}
-            </ul>
-        </div>
-        <b>Brewer Tips: {{randomBeer.brewers_tips}}</b>
       </div>
     </div>
-  </div>
-</div>
-    </div>
-  </div>
   </div>
 </div>
