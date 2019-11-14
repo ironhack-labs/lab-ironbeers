@@ -1,8 +1,121 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
+body, html {
+    margin:0;
+    padding:0;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+}
+
+.view-container {
+    min-height: 600px;
+    padding: 20px 50px;
   
+  }
+
+.beers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.index-container {
+    display: flex;
+   flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.image {
+ display:inline;
+ margin:50px auto;
+
+}
+
+.btns button {
+    margin:20px auto;
+    font-size:1rem;
+    padding: 10px 15px 10px 15px;
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+  .navbar {
+    color: #F7F9F9;
+    background-color: #2081C3;
+    padding: 15px;
+    font-size:1.1rem;
+  }
+  
+  .navbar a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    
+  }
+  
+  .navbar-nav {
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #0A2C42;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  button {
+    color: #F7F9F9;
+    background-color: #2081C3;
+    padding: 10px;
+    border:none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 1px rgba(99, 89, 89, 0.2);
+  }
+
+  button a {
+    color: #F7F9F9;
+    text-decoration:none;
+  }
+
+  img {
+    height:330px;
+    width:auto;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+ 
+    padding: 0px 20px;
+    margin: 10px;
+    width: 300px;
+    
+  }
+
+  #tagline {
+    color: rgba(145, 145, 145, 0.481);
+  }
+
+  #name-card {
+      font-weight:800;
+      font-size:1.2rem;
+
+  }
+
+  #beer-image {
+     display:block;
+     margin:0 auto;
+     height:200px;
+  }
