@@ -1,0 +1,14 @@
+    <div class="col-md-5 ">
+    <img class="card-img-top imgRandom" src="{{image_url}}" alt="{{name}}">
+    </div>
+    <div class="col-md-7 card-body">
+        <h5 class="card-title">{{name}}</h5>
+        <h4 class="card-text">{{tagline}}</h4>
+        <p class="card-text">{{description}}</p>
+        <h5 class="card-title">Food Pairing</h5>
+        {{#each food_pairing}}
+            <li>{{this}}</li>
+        {{/each}}
+        <br>
+        <p class="card-text"><b>Brewers Tips: </b>{{brewers_tips}}</p>
+    </div>
