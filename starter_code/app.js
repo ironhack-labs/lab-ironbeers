@@ -44,6 +44,7 @@ app.get('/random-beers', (req, res) => {
 // render random beers ...?
 
 app.get('/random-beers', (req, res) => {
+  
   res.render('randomBeers');
 })
 
