@@ -1,3 +1,17 @@
 <div class="index-container">
-  
+    <img id= "imgbeer" src="/images/beer.png" alt="beer">
+</div>
+ <div class="button">  
+  <form method="get" action="/beers"><button type="submit">check the beers!</button></form>
+  <form method="get" action="/randomBeers"><button type="submit">check a Random beer!</button></form>
+</div>
+
+<div class="container">
+  {{#each beers}}
+  <div class="card">
+    <h2>{{@name}}</h2>
+    <h1>{{tagline}}</h1>
+    <p>{{description}}</p>
+  </div>
+  {{/each}}
 </div>

@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="columns">
+    {{#each beers}}
+    <div class="columnb">
+      <div class="beer">
+        <div class="beer-image">
+            <figure class="image">
+            <img src="{{this.image_url}}" alt="Placeholder image">
+            </figure>
+        </div>
+        <div class="beer-content">
+            <div class="media-content">
+                <h2 class="title">{{this.name}}</h2>
+                <h3 class="subtitle">{{this.tagline}}</h3><br>
+                <p class="description">{{this.description}}</p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    {{/each}}
+  </div>
+</div>

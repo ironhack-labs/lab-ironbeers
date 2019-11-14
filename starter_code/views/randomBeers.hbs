@@ -1,0 +1,25 @@
+ <div class="container">
+  <div class="columnsrandom">
+    {{ randomBeers}}
+    <div class="column">
+      <div class="beer">
+        <div class="beers-image">
+            <figure class="image">
+            <img src="{{this.image_url}}" alt="Placeholder image">
+            </figure>
+        </div>
+        <div class="beer-content">
+            <div class="media">
+            <div class="media-content">
+                <h2 class="title">{{this.name}}</h2> <br>
+                <p class="description">{{this.description}}</p><br>
+                <h3 class="subtitle">{{this.tagline}}</h3><br>
+                <p class="food_pairing"><strong>Food pairing:</strong><li>{{this.food_pairing}}</li></p><br>
+                <p class="brewers_tips"><strong>Brewer tips:</strong><li>{{this.brewers_tips}}</li></p>
+            </div>
+            </div>
+        </div>
+        </div>
+        </div>
+  </div>
+  </div> 
