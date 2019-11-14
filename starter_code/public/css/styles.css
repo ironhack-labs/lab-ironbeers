@@ -1,0 +1,40 @@
+/*
+white: #F7F9F9;
+light-blue: #2081C3;
+dark-blue: #0A2C42;
+grey: rgba(145, 145, 145, 0.481);
+font-family: Arial, Helvetica, sans-serif
+*/
+
+.textwhite {
+    color: white;
+}
+  
+
+.colorazure {
+    background: #2081C3;
+    color: white;
+}
+
+
+.imgdim {
+    padding: 10px;
+    height: 300px;
+    object-fit: contain;
+    
+}
+
+.img-responsive{
+    display: block;
+    height: auto;
+    max-width: 100%;
+      margin:0 auto;
+      object-fit: contain;
+}
+
+.button{
+  margin:0px auto;
+  align-content: center;
+  text-align: center;
+  padding: 10px;
+}

@@ -9,6 +9,7 @@ const punkAPI = new PunkAPIWrapper();
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
+hbs.registerPartials(__dirname + "/views/partials");
 
 
 
@@ -16,6 +17,31 @@ app.get('/', (req, res, next) => {
   res.render('index');
 });
 
+app.get("/beers", (req, res, next) => {
+  punkAPI.getBeers()
+  
+    .then(beers => {
+      console.log(beers);
+      res.render("Beers", { beers })
+    })
+  .catch(error => {
+    console.log(error)
+  })
+  
+  
+});
 
+
+app.get("/randombeers", (req, res, next) => {
+  punkAPI
+    .getRandom()
+    .then(beers => {
+      console.log(beers);
+      res.render("randombeers", { beers });
+    }) 
+    .catch(error => {
+      console.log(error);
+    });
+});
 
 app.listen(3000);
