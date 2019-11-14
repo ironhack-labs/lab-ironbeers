@@ -1,0 +1,17 @@
+<div class="side-img">
+    <img src="{{this.[0].image_url}}" alt="random-beer">
+</div>
+<div class="random-content">
+    <h2>{{this.[0].name}}</h2><br>
+    <h5>{{this.[0].tagline}}</h5><br>
+    <p>{{this.[0].description}}</p><br>
+    <strong>Food Pairing</strong>
+    <br>
+    <ul>
+        {{#each this.[0].food_pairing as |item|}}
+            <li>{{item}}</li>
+        {{/each}}
+    </ul>
+    <br>
+    <strong>Brewers Tips:</strong><p>{{this.[0].brewers_tips}}</p>
+</div>
