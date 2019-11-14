@@ -3,6 +3,80 @@ white: #F7F9F9;
 light-blue: #2081C3;
 dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
 */
-  
+
+
+*{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav1{
+ background-color: #2081c3!important;
+}
+.navbarNav{
+    color: white!important;
+}
+
+#footer{
+background-color: #0A2C42 !important;
+    
+}
+
+#buttom1{
+background-color: #2081C3 ;
+color:  white;
+border-radius: 5px;
+width: 17%;
+height: 47%;
+margin-left: 42%;
+
+}
+
+
+#buttom2{
+    background-color: #2081C3 ;
+    color:  white;
+    border-radius: 5px;
+    width: 17%;
+    height: 47%;
+    margin-left: 42%;
+    margin-bottom: 20px;
+}
+
+.index-container{
+    display: flex;
+        flex-direction: column;
+    }
+
+
+#tarro{
+    width: 30%;
+    height: 10%;
+    margin-left: 38%;
+}
+
+
+#fotochela{
+width: auto;
+height: 100%;
+padding-left: 30%;
+}
+
+
+#caja{
+padding: 0 15px;
+}
+
+
+#caja2{
+
+    margin-bottom: 40px;
+margin-left: 7000px;
+
+}
+
+#fotochela2{
+    width: auto;
+height: 100%;
+padding-left: 40%;
+}
