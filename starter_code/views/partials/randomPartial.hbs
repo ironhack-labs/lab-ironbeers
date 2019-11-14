@@ -7,7 +7,9 @@
             <p class="card-text">{{description}}</p>
             <p><strong>Food Pairing:</strong></p>
             <ul>
-                <li>{{food_pairing}}</li>
+                {{#each food_pairing}}
+                <li>{{this}}</li>
+                {{/each}}
             </ul>
             <p><strong>Brewers tips:</strong> {{brewers_tips}}</p>
 

@@ -29,36 +29,45 @@ button {
     background-color: #2081C3;
     color: #F7F9F9;
     border-radius: 8px;
-    margin:15px
+    margin: 15px
 }
 
-.btn2{
+.btn2 {
     margin-bottom: 40px;
 }
-a{
-    color:white;
+
+a {
+    color: white;
     text-decoration-line: none;
 }
+
 a:hover {
     text-decoration-line: none;
     color: white
 }
 
-.cerveza{
+.cerveza {
     align-items: center;
     justify-content: center;
 }
+
 .center {
     display: flex;
     justify-content: center;
 }
 
-img{
+img {
     padding: 50px;
     width: 30%;
 }
 
-.card img { 
+.card img {
+    margin: 0 auto;
     height: 400px;
     width: 200px;
+
+}
+
+.flex {
+    display: flex;
 }
