@@ -5,4 +5,31 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+html,
+body {
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    background-color: #F7F9F9;
+    font-family: Arial,Helvetica,sans-serif
+}
+
+
+
+footer{
+    background-color:#0A2C42;
+    height: 50px;
+    padding-top: 12px;
+    color: #F7F9F9;
+}
+.btn{
+margin:25px;
+}
+.pint{
+    width: 370px;
+    height: 370px;
+}
+.img{
+   height: 350px;
+    object-fit: contain;
+}

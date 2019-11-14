@@ -1,0 +1,17 @@
+<div class="col-md-4">
+
+    <div class="justify-content-between">
+        <img class="img" src="{{image_url}}" alt="{{name}}">
+        <div >
+            <h2 >{{name}} </h2>
+            <h3>{{tagline}}</h3>
+            <p>{{description}}</p>
+            <ul>
+            {{#each food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+            </ul>
+        </div>
+    </div>
+
+</div>
