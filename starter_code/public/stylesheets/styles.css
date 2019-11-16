@@ -1,4 +1,4 @@
-/*
+/* 
 white: #F7F9F9;
 light-blue: #2081C3;
 dark-blue: #0A2C42;
@@ -6,3 +6,38 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F7F9F9;
+    display:flex;
+    flex-direction: column;
+}
+
+.navbar {
+    color: #F7F9F9;
+    background-color: #2081C3;
+
+}
+
+.index-container {
+    background-color: rgba(145, 145, 145, 0.481);
+    height: 40em;
+    text-align: center;
+    overflow: scroll;
+
+    
+    
+    
+}
+
+.index-container img {
+    width:250px;
+}
+
+.footer {
+    background-color: #0A2C42;
+    height:5em;
+    color: #F7F9F9;
+    
+
+}
