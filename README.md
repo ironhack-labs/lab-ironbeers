@@ -2,7 +2,6 @@
 
 # IronBeers
 
-
 ## Introduction
 
 In this lab you will create a web app where the user will be able to see a list of beers or check one randomly. For the exercise, we will work with the [PunkAPI](https://www.npmjs.com/package/punkapi-javascript-wrapper) database, through it's NPM Package. The package has some methods that retrieve beers with some info about them and fits perfect for our example.
@@ -12,19 +11,19 @@ In this lab you will create a web app where the user will be able to see a list 
 - Fork this repo
 - Then clone this repo.
 
-
 ## Submission
 
 - Upon completion, run the following commands
+
 ```
 $ git add .
 $ git commit -m "done"
 $ git push origin master
 ```
+
 - Create Pull Request so your TAs can check up your work.
 
 ## Instructions
-
 
 ## Iteration 1 - Layout
 
@@ -37,9 +36,10 @@ Inside the `views` folder, create a `layout.hbs` file. Our layout should look li
 You will find the `colors` and `fonts` on the `css` file. Remember to add the `{{{ body }}}` and link the `css` file to your **main layout**.
 
 The navbar includes three elements:
-- *Home*. ----> Should navigate to `/`.
-- *Beers*. ----> Should navigate to `/beers`.
-- *Random Beer*. ----> Should navigate to `/random-beers`.
+
+- _Home_. ----> Should navigate to `/`.
+- _Beers_. ----> Should navigate to `/beers`.
+- _Random Beer_. ----> Should navigate to `/random-beers`.
 
 ## Iteration 2 - The Index
 
@@ -54,13 +54,12 @@ Create a `/beers` route inside the `app.js` file. You will also need a `beers.hb
 Inside the `/beers` route, call to the `getBeers()` method of our **PunkAPI** package. The package will return you an array of 25 beers, and you should pass that array to the `beers.hbs` view.
 
 ```javascript
-punkAPI.getBeers()
-  .then(beers => {
-
-  })
+punkAPI
+  .getBeers()
+  .then(beers => {})
   .catch(error => {
-    console.log(error)
-  })
+    console.log(error);
+  });
 ```
 
 Remember you should call the `render` method after getting the `beers` from our package. That means, inside the `then`.
@@ -74,7 +73,7 @@ On the `beers.hbs` view, loop over the **beers array** using the `{{#each beers}
 Since each beer will be displayed in the same way, you should create a partial to display each beer. First, we need to register where our `partials` will be located. So you need to add the following code to the `app.js` file:
 
 ```javascript
-hbs.registerPartials(__dirname + '/views/partials')
+hbs.registerPartials(__dirname + '/views/partials');
 ```
 
 Now, you should create a `partials` folder inside the `views`, and `beerPartial.hbs` file inside the `partials` folder. Our `beerPartial.hbs` will display an image, name, description, and tagline of the beer. It should look like the following:
@@ -90,18 +89,18 @@ After creating the partial, and loop over the array of beers, on our `/bears` ro
 Finally, let's create our `/random-beer` route. Inside our route you should call the `getRandom()` method of the PunkAPI package and after receiving the info, render the `randomBeer.hbs` file and pass the data of the beer.
 
 ```javascript
-punkAPI.getRandom()
+punkAPI
+  .getRandom()
   .then(beers => {
-
+    // ...
   })
   .catch(error => {
-    console.log(error)
-  })
+    console.log(error);
+  });
 ```
 
 On the `randomBeer.hbs` you should print the random beer you get. You should display an image, name, description, tagline, food pairing and brewer tips. It should look like the following:
 
 ![image](https://user-images.githubusercontent.com/23629340/36724536-c5924892-1bb3-11e8-8f22-fd1f8ce316af.png)
-
 
 Happy Coding! :heart:
