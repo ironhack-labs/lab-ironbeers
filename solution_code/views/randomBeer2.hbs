@@ -1,0 +1,25 @@
+{{#> layout}}
+
+{{#*inline "title"}}Random IronBeer{{/inline}}
+
+{{#*inline "body"}}
+  <div class="randombeer-container">
+    <img src="{{beer.image_url}}">
+    <div>
+      <h1>{{beer.name}}</h1>
+      <p class="tagline">{{beer.tagline}}</p>
+
+      <p>{{beer.description}}</p>
+
+      <h2>Food pairing</h2>
+      <ul>
+        {{#each beer.food_pairing}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <div class="tips"><strong>Brewers tips</strong>: {{beer.brewers_tips}}</div>
+    </div>
+  </div>
+{{/inline}}
+
+{{/layout}}
