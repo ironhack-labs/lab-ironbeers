@@ -40,6 +40,7 @@ font-family: Arial, Helvetica, sans-serif;
     padding-top: 20px;
     margin-left: 20px;
     font-family: Arial, Helvetica, sans-serif;;
+    margin-top: 0px;
 }
 
 .image {
@@ -48,9 +49,48 @@ font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    margin-left: 60px;
 }
 
 .button {
-    background-color: #2081c3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #f7f9f9;
+    margin-top: 20px;
+}
+
+.b1 {
+    display: block;
+    width: 140px;
+    height: 20px;
+    background: #2081c3;
+    padding: 10px;
+    text-align: center;
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: -5px;
+    margin-top: 5px;
+}
+
+.b2 {
+    display: block;
+    width: 180px;
+    height: 20px;
+    background: #2081c3;
+    padding: 10px;
+    text-align: center;
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: -15px;
 }
