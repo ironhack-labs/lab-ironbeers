@@ -95,3 +95,31 @@ font-family: Arial, Helvetica, sans-serif;
     margin-top: -15px;
 }
 
+.random {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: 80px;
+}
+
+.info {
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.tag {
+    color: rgb(202, 182, 157);
+}
+
+.cards-container {
+    display: grid;
+    padding: 10% 20%;
+    margin-top: -120px;
+  }
+  
+.cards-container img {
+    object-fit: cover;
+    object-position: center;
+    width: 70px;
+    margin-top: 70px;
+  }

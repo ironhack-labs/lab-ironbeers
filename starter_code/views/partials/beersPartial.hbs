@@ -1,9 +1,8 @@
-<div style="display: inline;">
-    <img src="{{ this.image_url }}" width="200" alt="">
-    <br>
-    <b>{{ this.name }}</b> 
-    <br>
-    {{ this.tagline }}
-    <br>
-    {{this.description}}
+<div class="card" style="width: 1000px">
+  <img class="card-img-top" src="{{this.image_url}}" width="100px" alt="Card image cap">
+  <div class="card-body">
+    <h2 class="card-title">{{this.name}}</h2>
+    <p class="tag">{{this.tagline}}</p>
+    <p class="card-text">{{this.description}}</p>
+  </div>
 </div>
