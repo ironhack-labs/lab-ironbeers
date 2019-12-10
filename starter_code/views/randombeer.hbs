@@ -1,0 +1,59 @@
+<div class='beer-info'>
+    <table>
+        <tbody>
+            <tr><td><b>Characteristic</b></td><td><b>Info</b></td></tr>
+            <!-- <tr><td>ID</td><td>{{id}}</td></tr> -->
+            <tr><td>Name</td><td>{{name}}</td></tr>
+            <tr><td>image</td><td>{{image_url}}</td></tr>
+            <tr><td>abv</td><td>{{abv}}</td></tr>
+            <tr><td>ibu</td><td>{{ibu}}</td></tr>
+            <tr><td>target fg</td><td>{{target_fg}}</td></tr>
+            <tr><td>target og</td><td>{{target_og}}</td></tr>
+            <tr><td>ebc</td><td>{{ebc}}</td></tr>
+            <tr><td>srm</td><td>{{srm}}</td></tr>
+            <tr><td>pH</td><td>{{ph}}</td></tr>
+            <tr><td>attenuation_level</td><td>{{attenuation_level}}</td></tr>
+            <tr><td>volume:</td><td>{{volume.value}}&nbsp;{{volume.unit}}</td></tr>
+            <tr><td>boil volume:</td><td>{{boil_volume.value}}&nbsp;{{boil_volume.unit}}</td></tr>
+            <tr><td>Malts</td><td>{{>malts ingredients.malt}}</td></tr>
+            <tr><td>Hops</td><td>{{>hops ingredients.hops}}</td></tr>
+            <tr><td>Yeast</td><td>{{ingredients.yeast}}</td></tr>
+            <tr><td>food pairing</td><td>{{food_pairing}}</td></tr>
+            <tr><td>brewers tips</td><td>{{brewers_tips}}</td></tr>
+            <tr><td>contributed by</td><td>{{contributed_by}}</td></tr>
+        </tbody>
+    </table>
+    <!--
+    id: 8,
+    name: 'Fake Lager',
+    tagline: 'Bohemian Pilsner.',
+    first_brewed: '03/2013',
+    description: 'Fake is the new black. Fake is where it is at. Fake Art, fake brands, fake breasts, and fake lager. We want to play our part in the ugly fallout from the Lager Dream. Say hello to Fake Lager – a zesty, floral 21st century faux masterpiece with added BrewDog bitterness.',
+    image_url: 'https://images.punkapi.com/v2/8.png',
+    abv: 4.7,
+    ibu: 40,
+    target_fg: 1010,
+    target_og: 1046,
+    ebc: 12,
+    srm: 6,
+    ph: 4.4,
+    attenuation_level: 78,
+    volume: { value: 20, unit: 'litres' },
+    boil_volume: { value: 25, unit: 'litres' },
+    method: { mash_temp: [Array], fermentation: [Object], twist: null },
+    ingredients: {
+      malt: [Array],
+      hops: [Array],
+      yeast: 'Wyeast 2007 - Pilsen Lager™'
+    },
+    food_pairing: [
+      'Fried crab cakes with avocado salsa',
+      'Spicy shredded pork roll with hot dipping sauce',
+      'Key lime pie'
+    ],
+    brewers_tips: "Once the primary fermentation is complete get this beer as cold as you can and let it mature for as long as you've got.",
+    contributed_by: 'Sam Mason <samjbmason>'
+-->
+    <div><img src="{{image_url}}" alt="Image of beer {{name}}"></div>
+    <div>You're looking at: {{name}}</div>
+</div>
