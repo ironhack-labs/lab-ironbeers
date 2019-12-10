@@ -80,7 +80,7 @@ Now, you should create a `partials` folder inside the `views`, and `beerPartial.
 
 ![image](https://user-images.githubusercontent.com/23629340/36724284-08872254-1bb3-11e8-9ff6-9b34346421ec.png)
 
-After creating the partial, and loop over the array of beers, on our `/bears` route, we should have the following:
+After creating the partial, and loop over the array of beers, on our `/beers` route, we should have the following:
 
 ![image](https://user-images.githubusercontent.com/23629340/36724392-61fa7336-1bb3-11e8-8468-189908167e10.png)
 
@@ -103,4 +103,16 @@ On the `randomBeer.hbs` you should print the random beer you get. You should dis
 
 ![image](https://user-images.githubusercontent.com/23629340/36724536-c5924892-1bb3-11e8-8f22-fd1f8ce316af.png)
 
+## Bonus Exercise
+
+Make all the beers of iteration 4 clickable. If you click on that beer, you need to render a page with the detailed information of that particular beer. You can reuse the same partial you used for iteration 5. Matter of fact, you should. That's what partials are for. The trick is to wrap an anchor tack around every beer that has the beer id in the href. Something like: 
+```
+<a href="/beers/thebeeridadf89p213">
+  ... previous html
+</a>
+```
+To find out how you can get the id out of the url on backend, read this section of the Express
+<a href="http://expressjs.com/en/4x/api.html#req.params">docs</a>.
+
+To find out how you can get an individual beer from the punkAPI using the beerId check out the punkAPI<a href="https://www.npmjs.com/package/punkapi-javascript-wrapper">docs</a>.
 Happy Coding! :heart:
