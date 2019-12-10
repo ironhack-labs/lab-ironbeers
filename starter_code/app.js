@@ -15,14 +15,24 @@ app.get('/', (req, res, next) => {
 });
 app.get('/beers', (req, res, next) => {
     punkAPI.getBeers()
-        .then((beers) => {
+        .then(beers => {
             console.log('beers');
             res.render('beers', { beers });
         })
         .catch(error => {
-            res.render('error');
             console.log(error);
         });
 });
+
+app.get('/randombeer', (req, res, next) => {
+    punkAPI.getRandom()
+        .then(beerPartial => {
+            res.render('randomBeer', beerPartial[0]);
+        })
+        .catch(error => {
+            console.log(error);
+        });
+});
+
 
 app.listen(3000);
