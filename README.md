@@ -111,8 +111,7 @@ Make all the beers of iteration 4 clickable. If you click on that beer, you need
   ... previous html
 </a>
 ```
-To find out how you can get the id out of the url on backend, read this section of the Express
-<a href="http://expressjs.com/en/4x/api.html#req.params">docs</a>.
+To find out how you can get the id out of the url on the backend, read this section of the <a href="http://expressjs.com/en/4x/api.html#req.params">Express docs</a>.
 
-To find out how you can get an individual beer from the punkAPI using the beerId check out the punkAPI<a href="https://www.npmjs.com/package/punkapi-javascript-wrapper">docs</a>.
+To find out how you can get an individual beer from the punkAPI using the beerId, check out the punkAPI<a href="https://www.npmjs.com/package/punkapi-javascript-wrapper">docs</a>.
 Happy Coding! :heart:
