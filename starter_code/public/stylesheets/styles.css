@@ -5,3 +5,115 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+html {
+    font-family: Helvetica;
+    font-size: 16px;
+}
+
+body {
+    background-color: #f7f9f9;
+}
+
+nav {
+    background-color: #2081c3;
+    margin: -10px -10px 30px -10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 5px 5px #bfbfbf;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    padding-right: 30px;
+    text-decoration: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f7f9f9;
+}
+
+.index-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#comicbeer {
+    width: 400px;
+}
+
+button {
+    background-color: #2081c3;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    color: #f7f9f9;
+    box-shadow: 0px 5px 5px #bfbfbf;
+    margin: 10px;
+}
+
+footer{
+    margin-top: 50px;
+    background-color: #0a2c42;
+    height: 40px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    color: #f7f9f9;
+}
+
+.beers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    height: 500px;
+    width: 450px;
+    margin: 0 50px;
+}
+
+.card img {
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.random-card{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.random-image-container { 
+    width: 20%;
+}
+
+.random-image {
+    height: 300px;
+    margin-right: 50px
+}
+
+.random-content {
+    width: 60%;
+}
+
+h1 {
+    margin:10px 0 5px 0;
+    font-size: 24 px;
+}
+
+h2 {
+    color: #bfbfbf;
+    margin: 0;
+    font-size: 20px;
+}

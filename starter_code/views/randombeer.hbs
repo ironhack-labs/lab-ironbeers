@@ -1,0 +1,17 @@
+<div class="random-card">
+    <div class="random-image-container">
+        <img src="{{image_url}}" alt="" class="random-image" align="right">
+    </div>
+    <div class="random-content">
+        <h1>{{name}}</h1>
+        <h2>{{tagline}}</h2>
+        <p>{{description}}</p>
+        <p><b>Food Pairing</b></p>
+            {{#each food_pairing}}
+            <ul>
+                <li>{{this}}</li>
+            </ul>
+            {{/each}}
+        <p><b>Brewer's Tips:</b> {{brewers_tips}}</p>
+    </div>
+</div>
