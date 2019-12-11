@@ -15,7 +15,34 @@ app.get('/', (req, res, next) => {
   res.render('index');
 });
 
+app.get('/beers', (req, res, next) => {
+   punkAPI.getBeers()
+    .then(beers => { 
+    console.log(beers);
+    let data = {
+      beerArr: beers
+    };
+    res.render('beers',data);
+    })
+    .catch(error => { 
+      console.log(error);
+    });
+});
+
+hbs.registerPartials(__dirname + '/views/partials');
+
+app.get('/random-beers', (req, res, next) => {
+  punkAPI
+  .getRandom()
+  .then(beers => {
+    let x = beers[0];
+    res.render('random_beers', x);
+  })
+  .catch(error => {
+    console.log(error);
+  });
+  
+});
 app.listen(3000);
 
 
-.
