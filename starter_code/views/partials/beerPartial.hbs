@@ -7,12 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <ul>
-  {{#each beers}}
- {{>beerPartial this}}
-  {{/each}}
-</ul>
-
+    <div class="index-container">
+    {{this.name}}
+    {{this.tagline}}
+    {{this.description}}
+    <img  src={{this.image_url}}>
+</div>
 </body>
 </html>
 

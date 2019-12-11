@@ -37,6 +37,7 @@ body{
 padding-bottom:3em;
 color: #f7f9f9;
 background-color: #bfbfbf;
+margin-top: 10vh;
 }
   
 .main{
@@ -70,3 +71,4 @@ color: #bfbfbf;
     padding-left: 3%;
     padding-right: 3%;
 }
+

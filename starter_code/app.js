@@ -18,11 +18,13 @@ app.get('/', (req, res, next) => {
 app.get('/beers', (req, res, next) =>{
   punkAPI.getBeers()
         .then(beers => {
-        res.render('beers')
+        res.render('beers', {beers})
   })
   .catch(error => {
     console.log(error);
   });
+
+  hbs.registerPartials(__dirname + '/views/partials')
 })
 
 app.listen(3000);
