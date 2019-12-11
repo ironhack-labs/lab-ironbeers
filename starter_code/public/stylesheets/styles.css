@@ -98,8 +98,9 @@ button {
 }
 .beerPartial img {
     
-    height: 140px;
-    margin: 0 162px;
+    margin: 7vh auto 3vh auto;
+    padding-top: 0;
+    height: 230px;
 }
 
 .beerPartial h3 {
