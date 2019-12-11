@@ -15,6 +15,15 @@ body {
     background-color: #f7f9f9;
 }
 
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 40px;    /* Footer height */
+  }
+
 nav {
     background-color: #2081c3;
     margin: -10px -10px 30px -10px;
@@ -60,7 +69,10 @@ button {
 }
 
 footer{
-    margin-top: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0 -10px -10px -10px;
     background-color: #0a2c42;
     height: 40px;
     padding-left: 30px;
