@@ -1,7 +1,91 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+
+
+body {
+    background: white;
+    
+}
+.navbar-nav {
+    background-color: #2081C3;
+    height: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3rem;
+}
+.nav-link {
+    padding: 20px 0 0 40px;
+    color: white;
+    text-decoration: none;
+    
+}
+footer {
+    background: #0A2C42;
+    color: white;
+    font-size: 1.1rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+
+}
+.beerpicture {
+    padding-left: 42vw;
+    padding-top: 10vh;
+    display: flex-box;
+    align-items: center;
+    width: 20%;
+    padding-bottom: 10vh;
+}
+.card-body {
+    display: flex;
+    justify-content: center;
+}
+.button {
+    background-color: #2081C3;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+}
+.beerDescription {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 33%;
+    
+}
+
+.small {
+    color: rgba(145, 145, 145, 0.481);
+    font-size: 0.9em;
+}
+.description {
+    font-size: 0.8em;
+    margin-bottom: .1em;
+}
+.beername {
+    font-weight: 600;
+    font-size: 1.0em;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.beerImg {
+    margin: 7vh auto 3vh auto;
+    padding-top: 0;
+    height: 230px;
+}
+.container-one {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    width: 35%;
+}
+a {
+    text-decoration: none;
+}
