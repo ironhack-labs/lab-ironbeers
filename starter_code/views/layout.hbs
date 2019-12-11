@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ironbeers</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        {{!-- add links here --}}
+        <a href="/"> Home  </a> &nbsp;
+        <a href="/beers"> Beers </a> &nbsp; 
+        <a href="/random-beers"> Random Beer </a> &nbsp;
+       
+    </nav>
+    {{!-- any page we want to render will be "plugged in" here --}}
+    {{!-- this is the only page that will have full html setup --}}
+    {{!-- if there's anything you want to have on each page, it will come from here
+    ex. navbar, header, footer, etc --}}
+    
+    {{{ body }}}
+
+<footer>
+    <p> Develop by Ironhack;)</p>
+</footer>   
+</body>
+</html>
