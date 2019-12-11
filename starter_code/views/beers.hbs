@@ -1,0 +1,14 @@
+<h1>Beer</h1>
+{{!-- <div>
+  <ul>
+    {{#each beers}}
+    <li>{{name}} </li>
+    {{/each}}
+  </ul>
+</div> --}}
+
+<div>
+  {{#each beers}}
+    {{> beerPartial }}
+  {{/each}}
+</div>
