@@ -13,6 +13,7 @@ body {
     padding: 0;
     width: 100vw;
     height: 100vh;
+    background-color: #F8F9F9;
 }
 
 .nav {
@@ -113,4 +114,35 @@ button {
 
 .beerPartial p {
     margin: 4px 0;
+}
+
+.randomPartial {
+    color: black;
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    
+}
+
+.randomPartial div {
+    width: 720px;
+    margin: 48px;
+    text-align: justify;
+}
+.randomPartial img {
+    height: 240px;
+    margin: 48px;
+
+}
+
+.randomPartial li {
+    list-style: circle;
+    margin: 12px 36px;
+
+}
+
+
+.randomPartial h5 {
+    color: lightgrey;
+    text-decoration: none;
 }
