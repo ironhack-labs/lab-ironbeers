@@ -47,3 +47,45 @@ footer span {
     background-color: #2081c3;
     color: #f7f9f9;   
 }
+
+.beerPartial{
+    width: 30vw;
+    height: auto;
+    /*display: flex;
+    flex-direction: column;*/
+    text-align: center;
+}
+
+.beers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.beerPartial img {
+    height: 200px;
+    width: auto;
+}
+
+.beername {
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: left;
+}
+.beertag{
+    text-align: left;
+    color: #bfbfbf;
+}
+.beerdescription{
+    text-align: left;
+}
+
+.random-beer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.random-beer img{
+    height: 200px;
+    widht: auto;
+}
