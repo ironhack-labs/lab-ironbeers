@@ -12,16 +12,9 @@ body{
 
 .navBar{
     background-color: #2081c3;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: lightblue;
-    display: block;
-    margin: 1rem 3rem;
-    padding: 1rem 3rem;
+    padding: 1rem 1rem;
     text-align: left;
-    font-size: 1.5rem;
-    
+    font-size: 1rem;    
 }
 
 .navBar a{
@@ -32,26 +25,88 @@ body{
 footer{
     background-color: #0a2c42;
     color: #f7f9f9;
-    font-family: Arial, Helvetica, sans-serif;
-    display: block;
-    margin: 1rem 3rem;
-    padding: 1rem 3rem;
+    padding: 0.1rem 1rem;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1rem;
+}
+
+.index-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1rem;               
+}
+
+.index-container button{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background-color: #2081c3;
+    border-style: solid;
+    border-radius: 0.3rem;
+    border-color:#2081c3;        
 }
 
 .index-container button a {
     text-decoration: none;
+    color: #f7f9f9;   
+}
+
+.index-container img {
+    height: 20rem;
+    width: 20rem;
+    padding-left: 4rem;
+    padding-bottom: 2rem;    
 }
 
 .beers-container {
     display: flex;
-    padding: 10% 20%;
-    justify-content: space-around;
-  }
-  
-  .beers-container img {
-    object-fit: cover;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;                 
+}
+.beers-container img {
+    object-fit: scale-down;
     object-position: center;
-    height: 100px;
-  }
+    height: 10rem;
+    width: 10rem;    
+}
+.beers-container div{
+    padding: 1rem;
+    margin: 1rem;
+    width: 33.333%;    
+}
+.beers-container p {
+    font-size: 0.8rem;
+    color: #bfbfbf;
+    font-weight: bolder;    
+}
+.beers-container div article {
+    font-size: 0.8rem;      
+}
+
+.randomBeer-container div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem;    
+}
+.randomBeer-container p {
+    font-size: 0.8rem;
+    color: #bfbfbf;
+    font-weight: bolder;    
+}
+.randomBeer-container section{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 0.8rem;        
+}
+
+.randomBeer-container img{
+    object-fit: scale-down;
+    object-position: center;
+    height: 20rem;
+    width: 20rem;    
+}
