@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Random Beers</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+  </head>
+  <body>
+
+	<div class="beers-container2">
+	  <!-- {{#each beers}} -->
+	    
+    <div class="beer-card2" >
+      <img class="beer-img-top2" src="{{this.image_url}}" alt="Beer img not found">
+      <div class="beer-body2">
+        <h5 class="beer-title">{{this.name}}</h5>
+        <h3 class = 'beer-subtitle'>{{this.tagline}}</h3> 
+        <p class='beer-description'>{{this.description}}</p>
+        <h3 class = 'food-pairing'>{{this.food_pairing}}</h3> 
+        <p class='beer-tips'>{{this.brewers_tips}}</p>
+      </div>
+    </div>
+
+
+
+	  <!-- {{/each}} -->
+	</div>
+  </body>
+</html>
+
