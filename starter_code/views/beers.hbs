@@ -1,0 +1,17 @@
+<div class="cards-container">
+
+
+    <div class="row">
+    {{#each chelas}}
+        <div class="col-4 row-eq-heigh">
+            <div class="card">
+                <img class="mx-auto my-2" src="{{image_url}}" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">{{name}}</h5>
+                    <p class="card-text">{{description}}</p>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+    </div>
+</div>
