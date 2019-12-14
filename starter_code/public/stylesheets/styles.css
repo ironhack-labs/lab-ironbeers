@@ -5,3 +5,114 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    background-color:#2081c3;
+   overflow: hidden;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding-left: 50px;
+}
+  /* Style the links inside the navigation bar */
+.header a {
+float: left;
+color: #F2F2F2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+
+}
+  /* Change the color of links on hover */
+.header a:hover {
+background-color: #ddd;
+color: black;
+}
+  /* Add a color to the active/current link */
+.header a.active {
+background-color: #4CAF50;
+color: white;
+}
+
+.footer {
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#0a2c42;
+    color: white;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.button {
+    background-color:#2081c3; 
+   border: none;
+   border-radius: 12px;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+    font-size: 16px;
+    width: 15%;
+    margin-bottom: 20px;
+  }
+  .button a {
+    float: left;
+    color: #F2F2F2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+    }
+
+  .index-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(25%);
+  }
+
+  .index-container img {
+      width: 20%;
+      margin-bottom: 20px;
+  }
+
+  .cards-container {
+      background-color:  #e1e4e8;
+      right: 0;
+      left: 0;
+      padding-left: 90px;
+      padding-right: 90px;
+      padding-top: 100px;
+      padding-bottom: 100px;   
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 10px;
+  }
+
+  .card-info {
+    margin: 80px;
+  }
+
+  .card-img-top {
+    align-self: center;
+    width: 10%;
+  }
+
+  .card-slogan {
+    color: #9da1a6;
+  }
