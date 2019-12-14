@@ -14,5 +14,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res, next) => {
   res.render('index');
 });
+app.get('')
 
-app.listen(3000);
+app.listen(3000, () => console.log('servidorlisto'));
