@@ -21,7 +21,7 @@ body {
   .container img {
     height: 250px;
   }
-  
+
   .container div{
     margin-top: 10px;
   }
@@ -37,4 +37,17 @@ body {
   .page-footer {
     color: #f7f9f9;
     background-color: #0a2c42;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    padding: 10% 20%;
+  }
+  
+  .cards-container img {
+    object-fit: cover;
+    object-position: center;
+    height: 100px;
   }

@@ -20,7 +20,7 @@ app.get('/beers', (req, res, next) => {
   .getBeers()
   .then(beers => {
     console.log(beers[0]);
-    res.render('beers',beers);
+    res.render('beers', { beers });
   })
   .catch(error => {
     console.log(error);
