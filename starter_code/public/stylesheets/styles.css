@@ -5,6 +5,11 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .cards-container {
     display: flex;
     flex-direction: column;
@@ -20,4 +25,17 @@ font-family: Arial, Helvetica, sans-serif;
   }
   .cards-container div{
     margin-top: 10px;
+  }
+
+  .navbar {
+    background-color: #2081c3;
+  }
+
+  .navbar a {
+    color: #f7f9f9;
+  }
+
+  .page-footer {
+    color: #f7f9f9;
+    background-color: #0a2c42;
   }
