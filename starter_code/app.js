@@ -22,6 +22,7 @@ app.get('/beers', (req, res, next) => {
   .getBeers()
   .then(beers => {
     res.render('beers', {beers});
+    //console.log(beers)
   })
   .catch(error => {
     console.log(error);
@@ -29,7 +30,15 @@ app.get('/beers', (req, res, next) => {
 });
 
 app.get('/random-beers', (req, res, next) => {
-  res.render('randombeers');
+  punkAPI
+  .getRandom()
+  .then(beers => {
+    res.render('random-beers', {beers});
+    console.log(beers)
+  })
+  .catch(error => {
+    console.log(error);
+  });
 });
 
 app.listen(3000, () => console.log('Listones!!!'));

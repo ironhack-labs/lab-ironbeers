@@ -8,4 +8,26 @@ font-family: Arial, Helvetica, sans-serif;
 
 .beer-img-top {
     height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.beer-title{
+    text-align: left;
+    font-weight: bold;
+}
+
+.beer-tagline{
+    text-align: left;
+    color: gray;
+}
+
+.beer-description{
+    text-align: justify;
+    padding: 20px 0px 30px 0px;
+}
+
+.tabeers{
+    padding: 100px;
 }
