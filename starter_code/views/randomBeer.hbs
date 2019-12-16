@@ -1,3 +1,7 @@
-{{#each this}}
-{{> randomBeerPartial}}
-{{/each}}
+<div class="container">
+    <div class="row">
+        {{#each beers}}
+        {{> randomBeerPartial }}
+        {{/each}}
+    </div>
+</div>

@@ -1,4 +1,15 @@
-<img src="{{image_url}}" alt="">
-<h1>{{name}}</h1>
-<p>{{slogan}}</p>
-<p>{{description}}</p>
+<div class="col-2 justify-content-center mt-5">
+    <div><img class="w-50" src="{{image_url}}" alt=""></div>
+</div>
+<div class="col-10 justify-content-start mt-5">
+    <h2>{{name}}</h2>
+    <p class="tagline">{{tagline}}</p>
+    <p>{{description}}</p>
+    <h1><strong>Food Pairing</strong></h1>
+    <ul>
+        {{#each food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+    <p><strong>Brewers Tips: </strong>{{brewers_tips}}</p>
+</div>
