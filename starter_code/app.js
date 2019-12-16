@@ -19,7 +19,7 @@ app.get('/beers', (req, res, next) => {
   punkAPI
   .getBeers()
   .then(beers => {
-    console.log(beers[0]);
+    // console.log(beers[0]);
     res.render('beers', { beers });
   })
   .catch(error => {
