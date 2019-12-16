@@ -18,7 +18,7 @@ body {
     padding: 10% 20%;
   }
   
-  .container img {
+  #beer-img {
     height: 250px;
   }
 
