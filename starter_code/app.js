@@ -41,4 +41,19 @@ app.get('/random-beers', (req, res, next) => {
   });
 });
 
+app.get('/thebeerid:id?', function userIdHandler (req, res, next) {
+  let bId = req.params.id
+  punkAPI
+  .getBeer(bId)
+  .then(beers => {
+    //console.log(req)
+    //res.send('GET')
+    res.render('random-beers', {beers});
+    //console.log(bId)
+  })
+  .catch(error => {
+    console.log(error);
+  });
+});
+
 app.listen(3000, () => console.log('Listones!!!'));
