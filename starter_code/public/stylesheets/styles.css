@@ -22,6 +22,15 @@ img {
     height: 50vh;
 }
 
+.index-container {
+    height: 84vh;
+    margin: 12px;
+}
+
+.footer {
+    height: 7vh;
+}
+
 .btn {
     background-color: #2081c3;
     color: #f7f9f9;
