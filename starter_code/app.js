@@ -30,7 +30,17 @@ app.get('/beers', (req, res, next) => {
 });
 
 app.get('/random-beers', (req, res, next) => {
-  res.render('random-beers.hbs');
+  punkAPI
+  .getRandom()
+  .then(beers => {
+    console.log(beers);
+    let randomBeer = beers[0];
+    console.log(randomBeer);
+    res.render('random-beers', randomBeer);
+  })
+  .catch(error => {
+    console.log(error);
+  });
 });
 
 app.listen(3000);

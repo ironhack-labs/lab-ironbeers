@@ -65,3 +65,14 @@ img {
 .beer-text {
     margin-top: 20px;
 }
+
+.random-beer {
+    display: flex;
+    flex-direction: row;
+    height: 75vh;
+    margin: 52px;
+}
+
+.random-info {
+    margin: 50px;
+}
