@@ -5,3 +5,57 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.navbars {
+  background-color: #2081c3 !important;
+}
+
+.buttons a {
+  color: white !important;
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+
+.index-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f7f9f9;
+  padding-bottom: 2vh;
+  height: 85vh;
+}
+
+img {
+  width: 50vh;
+  height: 50vh;
+  margin-top: 10vh;
+  margin-bottom: 6vh;
+}
+
+.clicks {
+  margin-bottom: 3vh;
+  font-size: 15px;
+}
+
+
+
+footer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #0a2c42;
+  color: white;
+  height: 10vh;
+  margin-bottom: 0;
+}
+
+footer p {
+  margin: 4vh;
+}

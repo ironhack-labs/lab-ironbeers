@@ -11,8 +11,36 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 app.get('/', (req, res, next) => {
   res.render('index');
 });
 
-app.listen(3000);
+hbs.registerPartials(__dirname + '/views/partials');
+
+app.get('/beers', (req, res, next) => {
+  punkAPI
+  .getBeers()
+  .then(beers => {
+    console.log(beers)
+    res.render('beers', {beers})
+  })
+  .catch(error => {
+    console.log(error);
+  });
+});
+
+hbs.registerPartials(__dirname + '/views/partials');
+
+app.get('/randombeers', (req, res, next) => {
+  punkAPI
+  .getRandom()
+  .then(beers => {
+    res.render('randombeers', {beers})
+  })
+  .catch(error => {
+    console.log(error);
+  });
+});
+
+app.listen(3000, () => console.log('We are running!'));
