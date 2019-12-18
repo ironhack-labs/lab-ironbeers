@@ -5,3 +5,64 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.navBar {
+    display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+    background-color: #2081c3;
+    color: #f7f9f9; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navBar ul{
+    display: flex;
+    list-style: none;
+
+}
+
+.navBar ul li {
+    padding: 10px;
+}
+
+.footer {
+    display: flex;
+    background-color:#0a2c42;
+    color: #f7f9f9;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+
+.index-container {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    align-content: flex-start
+    
+    
+    
+}
+
+a {
+    color: #f7f9f9;
+    text-decoration: none;
+}
+
+
+.buttons {
+    display: flex;
+	flex-direction: column;
+    color:#2081c3 ;
+    margin: 10px;
+
+}
+
+.buttons button{
+    background-color: #2081c3 ;
+    color: #f7f9f9;
+    margin: 10px;
+    padding: 10px;
+}
