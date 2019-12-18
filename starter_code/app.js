@@ -11,12 +11,22 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+hbs.registerPartials(__dirname + '/views/partials');
+
 app.get('/', (req, res, next) => {
   res.render('index.hbs');
 });
 
 app.get('/beers', (req, res, next) => {
-  res.render('beers.hbs');
+  punkAPI
+  .getBeers()
+  .then(beers => {
+    console.log(beers);
+    res.render('beers', {beers});
+  })
+  .catch(error => {
+    console.log(error);
+  });
 });
 
 app.get('/random-beers', (req, res, next) => {
