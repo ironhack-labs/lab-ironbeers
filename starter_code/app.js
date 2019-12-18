@@ -15,4 +15,12 @@ app.get('/', (req, res, next) => {
   res.render('index');
 });
 
-app.listen(3000);
+app.get('/beers', (req, res, next) => {
+  res.render('beers');
+});
+
+app.get('/random-beer', (req, res, next) => {
+  res.render('random-beer');
+});
+
+app.listen(5000);
