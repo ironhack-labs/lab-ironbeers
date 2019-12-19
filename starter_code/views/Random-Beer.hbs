@@ -1,6 +1,7 @@
 
+ {{#each beers}}
 <div class="card" style="width: 70%;">
-  <img class="card-img-top" src="{{this.image}}" alt="image">
+  <img class="card-img-top" src="{{this.image_url}}" alt="image">
   <div class="card-body">
     <h5 class="name">{{this.name}}</h5>
  
@@ -15,9 +16,12 @@
   </div>
 </div>
 
+  {{/each}}
+
+    
+    
+ 
 
 
 
 
-
-{{!-- image, name, description, tagline, food pairing and brewer tips. --}}
