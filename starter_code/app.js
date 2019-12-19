@@ -22,34 +22,52 @@ app.get('/', (req, res, next) => {
 
 app.get('/beers', (req, res, next) => {
   punkAPI
-  .getBeers()
-  .then(beers => {
-    const data = {
-      beers: beers,
-    }
-    res.render('beers', data);
-  })
-  .catch(error => {
-    console.log(error);
-  });
+    .getBeers()
+    .then(beers => {
+      const data = {
+        beers: beers,
+      }
+      res.render('beers', data);
+    })
+    .catch(error => {
+      console.log(error);
+    });
 });
 
 // how to call the function to see whats inside the Premise
-punkAPI.getRandom().then(beers => console.log(beers[0]));
+// punkAPI.getRandom().then(beers => console.log(beers[0]));
 
 app.get('/random-beer', (req, res, next) => {
   punkAPI
-  .getRandom()
-  .then(beers => {
-    const data = {
-      beers: beers[0],
-    }
-    res.render('randomBeer', data);
-  })
-  .catch(error => {
-    console.log(error);
-  });
+    .getRandom()
+    .then(beers => {
+      const data = {
+        beers: beers[0],
+      }
+      res.render('randomBeer', data);
+    })
+    .catch(error => {
+      console.log(error);
+    });
 });
 
+app.get('/beers/:id', (req, res, next) => {
+
+  const id = req.params.id;
+
+  punkAPI
+    .getBeer(id)
+    .then(beers => {
+      const data = {
+        beers: beers[0],
+      }
+      res.render('beerId', data);
+    })
+    .catch(error => {
+      console.log(error);
+    });
+});
+
+// como chegar nessa pagina
 
 app.listen(3000);
