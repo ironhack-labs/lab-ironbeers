@@ -38,6 +38,10 @@ footer {
   color: #bfbfbf;
 }
 
+.random-beer-content {
+  height: 450px;
+}
+
 #beer-img {
   width: 300px;
 }

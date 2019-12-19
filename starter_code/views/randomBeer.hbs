@@ -1,21 +1,15 @@
-<div class="card mb-3" style="max-width: 1200px;">
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <img src="{{beers.image_url}}" class="card-img img-size" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">{{beers.name}}</h5>
-        <h6 class="card-subtitle mb-2 text-muted pb-2"> {{beers.tagline}} </h6>
-        <p class="card-text">{{beers.description}}</p>
-        <p class="card-text font-weight-bold">Food Pairing</p>
-        {{#each beers.food_pairing}}
-        <ul>
-          <li>{{this}}</li>
-        </ul>
-        {{/each}}
-        <p><b>Brewers Tips:</b> {{beers.brewers_tips}}</p>
-      </div>
-    </div>
+<div class="card mb-5 ml-5 pl-5 d-flex flex-row mt-5 random-beer-content" style="max-width: 900px;">
+  <img src="{{beers.image_url}}" class="card-img img-size mr-5" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{beers.name}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted pb-2"> {{beers.tagline}} </h6>
+    <p class="card-text">{{beers.description}}</p>
+    <p class="card-text font-weight-bold">Food Pairing</p>
+    {{#each beers.food_pairing}}
+    <ul>
+      <li>{{this}}</li>
+    </ul>
+    {{/each}}
+    <p><b>Brewers Tips:</b> {{beers.brewers_tips}}</p>
   </div>
 </div>
