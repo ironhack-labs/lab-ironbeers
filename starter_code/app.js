@@ -15,4 +15,23 @@ app.get('/', (req, res, next) => {
   res.render('index');
 });
 
+hbs.registerPartials(__dirname + '/views/partials');
+
+
+app.get('/beers', (req, res, next) => {
+  punkAPI
+    .getBeers()
+    .then(beers => {
+      console.log(beers)
+      res.render('beers', { beers });
+    })
+    .catch(error => {
+      console.log(error);
+    });
+});
+
+app.get('/random_beer', (req, res, next) => {
+  res.render('random_beer');
+});
+
 app.listen(3000);
