@@ -5,3 +5,118 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.nav-link {
+  color: #f7f9f9 !important;
+  margin-top: 17px;
+  font-size: 22px;
+}
+
+.navbar-nav {
+  margin-left: 40px;
+  height: 10vh;
+}
+
+.footer {
+  background-color: #0a2c42;
+  color: #bfbfbf;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 8vh;
+  clear: both;
+  position: relative;
+  bottom: 0;
+  font-size: 17px;
+}
+
+.footer p {
+  padding-top: 24px;
+  margin-left: 20px;
+}
+
+.index-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  flex-direction: column;
+}
+
+.beer_photo {
+  widows: 400px;
+  height: 500px;
+
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+
+}
+
+.myButton {
+  background: linear-gradient(to bottom, #2d82c3 5%, #2d82c3 100%);
+  background-color: #2d82c3;
+  border-radius: 11px;
+  border: 1px solid #2d82c3;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 13px 28px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2d82c3;
+}
+
+.myButton:hover {
+  background: linear-gradient(to bottom, #2d82c3 5%, #2d82c3 100%);
+  background-color: #2d82c3;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.card {
+  width: 600px;
+  border-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 82vh;
+
+}
+
+.card>img {
+  height: 320px;
+  width: 120px;
+
+}
+
+.card-img {
+  height: 360px;
+  width: 120px;
+
+}
+
+.card-body {
+  text-align: justify;
+}
+
+.p {
+  font-weight: bold;
+}
