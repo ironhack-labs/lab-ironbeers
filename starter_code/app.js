@@ -14,15 +14,15 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res, next) => {
-  res.render('beerPartial');
-  // res.render('index');
+  // res.render('beerPartial');
+  res.render('index');
 });
 
 app.get('/beers', (req, res, next) => {
   punkAPI
     .getBeers()
-    .then(data => {
-      res.render('beers', { data });
+    .then(beers => {
+      res.render('beers', { beers });
     })
     .catch(error => {
       throw new Error(error);
