@@ -24,18 +24,21 @@ app.get('/', (req, res) => {
   res.render('index.hbs');
 });
 app.get('/beers', (req, res) => {
-  //TODO try with async/await
-  // .get(calls this stuff whenever it wants, therefore promise handling must happen inside it)
-  // TODO como o array getBeers esta disponivel pra partials? bruxaria!!
-  punkAPI.getBeers()
-  .then((resolvedProm) => {
-      const objArr = resolvedProm;
-      console.log('objArr: ', objArr[0]) // check properties
-      res.render('beers', {objArr})
-    });
+  // app.get() calls this stuff whenever it listen to path, therefore promise handling must happen inside this block.
+  punkAPI.getBeers().then((resolvedProm) => {
+    const objArr = resolvedProm;
+    // console.log('objArr: ', objArr[0]) // check properties
+    res.render('beers', { objArr });
+  });
 });
+// now with Async/await
 app.get('/random-beers', (req, res) => {
-  res.render('random-beers.hbs');
+  const getRandomBeer = async () => {
+    const resolvedProm = await punkAPI.getRandom();
+    // console.log(resolvedProm[0]);
+    res.render('random-beers', resolvedProm[0]);
+  };
+  getRandomBeer();
 });
-
-app.listen(3000, console.log('listening on port 3000'));
+const port = 3000;
+app.listen(port, console.log(`listening on port ${port}`));
