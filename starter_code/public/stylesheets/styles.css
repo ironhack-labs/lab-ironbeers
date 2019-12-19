@@ -21,9 +21,13 @@ font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 
+.imgFirst {
+    width: 30%;
+}
 
 img {
     margin-top: 40px;
+    width: 100%;
 }
 
 .card {
@@ -36,3 +40,14 @@ img {
     align-items: center;
     text-align: center;
 }
+
+.random-beer {
+    display: flex;
+    flex-direction: row;
+    height: 75vh;
+    margin: 52px;
+}
+
+.random-info {
+    margin: 50px;
+} 
