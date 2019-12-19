@@ -6,6 +6,12 @@ const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 const app = express();
 const punkAPI = new PunkAPIWrapper();
 
+//PARTIALS ARE REGISTERED HERE
+// \/\/\/\/\/\/\/\/\/\/\/\/\/
+hbs.registerPartials(__dirname + '/views/partials');
+
+
+
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
@@ -17,20 +23,31 @@ app.get('/', (req, res, next) => {
 
 app.get('/beers', (req, res, next) => {
   punkAPI
-    .getBeer()
+    .getBeers()
     .then(beers => {
-      console.log(beers)
+      // console.log(beers)
 
       res.render('beers',{beers});
     })
     .catch(erro =>{
-      console.log(erro)
+      // console.log(erro)
       throw new Error(erro);
     })
 });
 
 app.get('/random-beers', (req, res, next) => {
-  res.render('random-beers');
+
+  punkAPI
+    .getRandom()
+    .then(beers => {
+      // console.log(beers)
+      res.render('random-beers', {beers});
+    })
+    .catch(erro =>{
+      // console.log(erro)
+      throw new Error(erro);
+    })
+
 });
 
 
