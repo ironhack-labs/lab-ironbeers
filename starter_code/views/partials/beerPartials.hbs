@@ -1,10 +1,10 @@
-<div class="card text-start mt-3" style="width: 33.333%;">
-  <div class="container">
-    <a href="/beers/{{this.id}}" " class="mx-auto">
-      <img class="card-img-top img-size" src="{{this.image_url}}" alt="">
+<div class="card mt-3" style="width: 33.333%;">
+  <div class="container clickable_img">
+    <a href="/beers/{{this.id}}">
+      <img class="card-img-top img-size justify-center" src="{{this.image_url}}" alt="">
     </a>
   </div>
-  <div class="card-body">
+  <div class="card-body text-start">
     <h5 class="card-title font-weight-bold">{{this.name}}</h5>
     <h6 class="card-subtitle mb-2 text-muted pb-2"> {{this.tagline}} </h6>
     <p class="card-text">{{this.description}}</p>

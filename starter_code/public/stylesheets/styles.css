@@ -42,6 +42,12 @@ footer {
   height: 450px;
 }
 
+.container {
+  padding: 0px 150px !important;
+}
+
+
+
 #beer-img {
   width: 300px;
 }
