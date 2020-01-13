@@ -31,7 +31,7 @@ $ git push origin master
 
 ## Instructions
 
-## Iteration 0: Initial setup
+### Iteration 0: Initial setup
 
 To run our application, the first thing you have to do is to install its dependencies. After changing directories to `/starter_code`, run the following command:
 
