@@ -12,6 +12,14 @@ body {
   padding: 0;
   margin: 0;
 }
+a {
+  text-decoration: none;
+  color: #f7f9f9;
+}
+p,
+li {
+  font-size: 14px;
+}
 .navbar {
   background-color: #2081c3;
   overflow: hidden;
@@ -20,14 +28,9 @@ body {
 .navbar a {
   float: left;
   display: block;
-  color: #f7f9f9;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
   font-size: 16px;
-}
-.index-container {
-  height: 170px;
 }
 .navbar ul {
   margin: 8px 0 0 0;
@@ -36,7 +39,8 @@ body {
 .navbar a:hover {
   color: #000;
 }
-.beer-div {
+.main {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,21 +58,32 @@ button {
 footer {
   background-color: #0a2c42;
   color: #f7f9f9;
-
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100 wv;
+  z-index: 1;
   /* height: 50px; */
 }
 footer h5 {
   font-weight: lighter;
-  padding: 20px;
+  margin-left: 50px;
+  /* padding: 20px; */
 }
 .beers-collection {
-  height: 500px;
-  float: left;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  align-self: center;
+  margin: 10px 20px;
 }
 
-.beer_images {
-  height: 50px;
-}
-li {
-  list-style: none;
+.randomBeer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
 }
