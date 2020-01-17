@@ -61,3 +61,14 @@ footer h5 {
   font-weight: lighter;
   padding: 20px;
 }
+.beers-collection {
+  height: 500px;
+  float: left;
+}
+
+.beer_images {
+  height: 50px;
+}
+li {
+  list-style: none;
+}

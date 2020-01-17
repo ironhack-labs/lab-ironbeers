@@ -1,0 +1,11 @@
+<h1>Beers</h1>
+<div class="beers-collection">
+    {{#each beers}}
+    <div style="display:flex;">
+        <p> {{this.id}}: {{this.name}} </p>
+        <img style="width: 20px; height:50px" class="beer-images" src="{{this.image_url}}" alt="{{this.name}}">
+    </div>
+    {{/each}}
+</div>
+
+{{> beerPartials}}
