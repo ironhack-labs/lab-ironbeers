@@ -1,6 +1,14 @@
 <div class="beers-collection">
+
     {{#each beers}}
-    {{> beerPartials}}
-    {{!-- {{log this}} --}}
-    {{/each}}
+    <div class="eachBear">
+        {{> beerPartials}}
+        {{!--this extra </div> closing tag, because it opens in beerPartials --}}
+    </div>
+</div>
+{{!-- {{log .}} --}}
+{{!-- it's the same - this and dot . --}}
+{{!-- {{log this}} --}}
+{{/each}}
+
 </div>

@@ -16,9 +16,13 @@ a {
   text-decoration: none;
   color: #f7f9f9;
 }
-p,
-li {
+i {
+  color: #bfbfbf;
   font-size: 14px;
+}
+p,
+h3 {
+  margin: 0;
 }
 .navbar {
   background-color: #2081c3;
@@ -69,21 +73,28 @@ footer {
 footer h5 {
   font-weight: lighter;
   margin-left: 50px;
-  /* padding: 20px; */
 }
 .beers-collection {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  align-self: center;
+  align-items: center;
   margin: 10px 20px;
+}
+.eachBear {
+  width: 300px;
+  padding: 10px 10px;
 }
 
 .randomBeer {
   margin-top: 20px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-content: center;
   width: 80%;
+}
+.randomBeer li {
+  padding: 5px;
+  font-size: 14px;
 }

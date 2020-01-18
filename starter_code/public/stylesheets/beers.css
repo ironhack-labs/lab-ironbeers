@@ -1,0 +1,12 @@
+.beer-images {
+  width: 30px;
+  height: 80px;
+  position: relative;
+  left: 50%;
+  top: 10%;
+}
+.div2 {
+  height: 200px;
+  /* width: 200px; */
+  overflow: hidden;
+}

@@ -1,7 +1,32 @@
-<div class="eachBear" style="width: 300px; padding:10px 10px;">
-    <img style="width: 30px; height:80px; position:relative;left: 50%;top:10%;" class="beer-images"
-        src="{{this.image_url}}" alt="{{this.name}}">
-    <h4 style="margin: 0;"> {{this.name}} </h4>
-    <i style="color:#bfbfbf; font-size:14px"> {{this.tagline}} </i>
-    <p style="font-size: 12px;"> {{this.description}} </p>
+<div>
+    <img class="beer-images" src="{{this.image_url}}" alt="{{this.name}}">
 </div>
+{{!--this extra <div> opening tag, because it closes in beer and randomBeer --}}
+<div class="div2">
+    <h3> {{this.name}} </h3>
+    <i> {{this.tagline}} </i>
+    <p> {{this.description}} </p>
+
+
+
+    {{!-- !-passing through partials, methods like #each or #if is not rendering in other files --}}
+    {{!-- {{#each beers}} --}}
+    {{!-- <div>
+    <img class="beer-images" src="{{this.image_url}}" alt="beer-img">
+</div>
+<div class="div2">
+    <h3> {{this.name}} </h3>
+    <i> {{this.tagline}} </i>
+    <p> {{this.description}} </p>
+    {{#if ../len}}
+    {{log ../len}}
+    <b> Food Pairing </b>
+    <ul>
+        {{#each this.food_pairing}}
+        <li> {{this}} </li>
+        {{/each}}
+    </ul>
+    <p><b>Brewers Tips:</b> {{this.brewers_tips}} </p>
+    {{/if}}
+</div> --}}
+    {{!-- {{/each}} --}}

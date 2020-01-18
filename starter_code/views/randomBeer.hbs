@@ -1,22 +1,20 @@
 <div class="randomBeer">
-    {{#each beer}}
-    <div>
-        <img style="width: 70px; height:200px; position:relative;left: 50%;top:10%;" class="beer-images"
-            src="{{this.image_url}}" alt="beer-img">
-    </div>
-    <div style="width: 500px; padding:10px 20px;">
-        <h3 style="margin: 0;"> {{this.name}} </h3>
-        <i style="color:#bfbfbf; font-size:14px"> {{this.tagline}} </i>
-        <p> {{this.description}} </p>
-        <b> Food Pairing </b>
-        <ul>
-            {{#each this.food_pairing}}
-            <li style="padding: 5px;"> {{this}} </li>
-            {{/each}}
-        </ul>
-        <p><b>Brewers Tips:</b> {{this.brewers_tips}} </p>
-    </div>
-    {{!-- {{log this}} --}}
-    {{!-- {{log this}} --}}
-    {{/each}}
+    {{#each beers}}
+    {{> beerPartials}}
+    {{!-- variables inside #each needs 2 dots and slash ../variable --}}
+    {{#if ../len}}
+    {{!-- {{log ../len}} --}}
+    <b> Food Pairing </b>
+    <ul>
+        {{#each this.food_pairing}}
+        <li> {{this}} </li>
+        {{/each}}
+    </ul>
+    <p><b>Brewers Tips:</b> {{this.brewers_tips}} </p>
+    {{/if}}
+    {{!--this extra </div> closing tag, because it opens in beerPartials --}}
+</div>
+{{!-- {{log ../len}} => works --}}
+{{!-- {{log len}} => undefined- --}}
+{{/each}}
 </div>
