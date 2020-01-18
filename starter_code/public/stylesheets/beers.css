@@ -6,7 +6,6 @@
   top: 10%;
 }
 .div2 {
-  height: 200px;
-  /* width: 200px; */
-  overflow: hidden;
+  height: 100px;
+  overflow: scroll;
 }

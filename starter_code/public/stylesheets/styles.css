@@ -81,6 +81,7 @@ footer h5 {
   flex-wrap: wrap;
   align-items: center;
   margin: 10px 20px;
+  margin-bottom: 70px;
 }
 .eachBear {
   width: 300px;

@@ -11,13 +11,6 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 hbs.registerPartials(__dirname + '/views/partials');
 
-// Handlebars.registerHelper('ifeq', function(a, b, options) {
-//   if (a == b) {
-//     return options.fn(this);
-//   }
-//   return options.inverse(this);
-// });
-
 // /Routes:
 app.get('/', (req, res, next) => {
   res.render('index', { title: 'Home' });
@@ -31,7 +24,6 @@ app.get('/beers', (req, res, next) => {
     .getBeers()
     .then(beers => {
       // console.log('Output for: beers', beers.length);
-
       res.render('beers', {
         title: 'Beers',
         myStyle: ' stylesheets/beers.css',
