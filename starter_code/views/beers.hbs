@@ -1,10 +1,7 @@
 <div class="beers-container">
     {{#each beers}}
-    <div class="beer-item">
-        <img src="{{this.image_url}}" alt="beer-photo">
-        <h2>{{this.name}}</h2>
-        <p>{{this.description}}</p>
-        <p>{{this.tagline}}</p>
+    <div>
+        {{> beerpartial}}
     </div>
     {{/each}}
 </div>
