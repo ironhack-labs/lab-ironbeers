@@ -11,6 +11,8 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
+
 // add the routes here
 app.get('/', (req, res) => res.render('index'));
 
@@ -26,8 +28,8 @@ app.get('/beers', (req, res) => {
 app.get('/random-beer', (req, res) => {
     punkAPI
     .getRandom()
-    .then(beers => {
-        res.render('random-beer', {title: 'Raondom Beer ', beer });
+    .then(beer => {
+        res.render('randomBeer', {title: 'Raondom Beer', beer });
     })
     .catch(error => console.log(error));
 });
