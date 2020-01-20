@@ -12,33 +12,52 @@ app.use(express.static(path.join(__dirname, 'public')));
 hbs.registerPartials(__dirname + '/views/partials');
 
 // /Routes:
+//Home page
 app.get('/', (req, res, next) => {
-  res.render('index', { title: 'Home' });
+  res.render('index', {
+    title: 'Home'
+  });
 });
-
-// Iteration - 3;
-// Inside the /beers route, call to the getBeers() method of our PunkAPI package.
-// The package will return you an array of 25 beers, and you should pass that array to the beers.hbs view.
+//beers page
 app.get('/beers', (req, res, next) => {
   punkAPI
     .getBeers()
     .then(beers => {
-      // console.log('Output for: beers', beers.length);
+      // console.log( beers.length);
       res.render('beers', {
         title: 'Beers',
-        myStyle: ' stylesheets/beers.css',
+        myStyle: '/stylesheets/beers.css',
         beers,
         len: false
       });
     })
     .catch(error => console.log(error));
 });
+//beers/beer-id page
+app.get('/beers/:id', (req, res, next) => {
+  // console.log(req.params.id);
+  punkAPI
+    .getBeers()
+    .then(beer => {
+      const beers = beer.filter(beer => `beer-${beer.id}` === req.params.id);
+      res.render('randomBeer', {
+        title: req.url.substr(7),
+        myStyle: '/stylesheets/randomBeer.css',
+        beers,
+        len: true
+        // layout: true
+      });
+      // console.log( aBeer);
+      // res.json(aBeer);
+    })
+    .catch(error => console.log(error));
+});
+//random-beer page
 app.get('/random-beer', (req, res, next) => {
   punkAPI
     .getRandom()
     .then(beers => {
-      // console.log('Output for: beers', beers.length);
-
+      // console.log( beers.length);
       res.render('randomBeer', {
         title: 'Random Beer',
         myStyle: 'stylesheets/randomBeer.css',

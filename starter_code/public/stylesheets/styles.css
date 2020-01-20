@@ -24,6 +24,9 @@ p,
 h3 {
   margin: 0;
 }
+.div2 a {
+  color: #333;
+}
 .navbar {
   background-color: #2081c3;
   overflow: hidden;
