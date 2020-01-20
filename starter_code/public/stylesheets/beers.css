@@ -9,3 +9,7 @@
   height: 100px;
   overflow: scroll;
 }
+p,
+h3 {
+  margin: 0;
+}
