@@ -14,9 +14,7 @@ hbs.registerPartials(__dirname + '/views/partials');
 // /Routes:
 //Home page
 app.get('/', (req, res, next) => {
-  res.render('index', {
-    title: 'Home'
-  });
+  res.render('index', { title: 'Home' });
 });
 //beers page
 app.get('/beers', (req, res, next) => {
@@ -38,17 +36,17 @@ app.get('/beers/:id', (req, res, next) => {
   // console.log(req.params.id);
   punkAPI
     .getBeers()
-    .then(beer => {
-      const beers = beer.filter(beer => `beer-${beer.id}` === req.params.id);
+    .then(beers => {
+      const beer = beers.filter(beer => `beer-${beer.id}` === req.params.id);
       res.render('randomBeer', {
         title: req.url.substr(7),
         myStyle: '/stylesheets/randomBeer.css',
-        beers,
+        beer,
         len: true
-        // layout: true
+        // layout: false
       });
-      // console.log( aBeer);
-      // res.json(aBeer);
+      // console.log( beer);
+      // res.json(beer);
     })
     .catch(error => console.log(error));
 });
@@ -56,12 +54,11 @@ app.get('/beers/:id', (req, res, next) => {
 app.get('/random-beer', (req, res, next) => {
   punkAPI
     .getRandom()
-    .then(beers => {
-      // console.log( beers.length);
+    .then(beer => {
       res.render('randomBeer', {
         title: 'Random Beer',
         myStyle: 'stylesheets/randomBeer.css',
-        beers,
+        beer,
         len: true
       });
     })
