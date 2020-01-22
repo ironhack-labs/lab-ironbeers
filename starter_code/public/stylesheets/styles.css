@@ -46,7 +46,7 @@ nav a {
 /* Footer */
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;  
     background-color: #F4F3F4;
     display: flex;
@@ -91,7 +91,7 @@ footer ul {
     width: 25vw;
 }
 
-.index-container button {
+.index-container a {
     padding-top: 5vh;
     background-color: #2081c3; 
     border: none;
@@ -105,3 +105,35 @@ footer ul {
     margin: 4px 2px;
     cursor: pointer;
   }
+
+.beers-container {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.beer-img {
+height: 15vw;
+}
+
+.eachBeer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 40vw;
+    padding: 2vw;
+}
+
+.random-beers-container {
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+    padding: 12vw;
+}

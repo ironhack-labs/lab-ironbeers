@@ -1,0 +1,29 @@
+<!-- random-beers.hbs -->
+
+<div class="random-beers-container">
+  <img class="beer-img" src="{{0.image_url}}" alt="beer image" />
+  <div>
+    <h4>
+      {{0.name}}
+    </h4>
+    <h5>
+      {{0.tagline}}
+    </h5>
+    <p>
+      {{0.description}}
+    </p>
+
+    <p>
+      <strong> Food Pairing: </strong>
+      <ul class="food-list">
+        {{#each 0.food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </p>
+
+    <p>
+      <strong> Brewers tips: </strong> {{0.brewers_tips}}
+    </p>
+  </div>
+</div>
