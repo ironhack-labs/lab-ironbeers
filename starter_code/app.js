@@ -15,3 +15,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => res.render('index'));
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
+
+app.get('/beers', (req, res) => {
+    punkAPI.getBeers()
+    // punkAPI.then(beers => console.log('Beers from the database: ', beers))
+    // punkAPI.catch(error => console.log(error));
+    res.render('beers', beers);
+  });
