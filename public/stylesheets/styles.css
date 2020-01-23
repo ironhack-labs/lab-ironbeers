@@ -53,6 +53,11 @@ body {
     margin: 10%;
 }
 
+#random-beer-media {
+    width: 60%;
+    margin: 0.5%;
+}
+
 #footer {
     position: fixed;
     width: 100%;

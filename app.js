@@ -21,6 +21,7 @@ app.get('/', (req, res) => res.render('index'));
 
 app.get('/beers', (req, res) =>  {
     myBeers.then(beers => {
+        console.log(beers);
         res.render('beers', {beers});
     });
     myBeers.catch(error => 
@@ -28,9 +29,9 @@ app.get('/beers', (req, res) =>  {
 });
 
 app.get('/random-beer', (req, res) =>  {
-    myRandomBeer.then(beers => {
-        console.log(beers);
-        res.render('random-beer', {beers});
+    myRandomBeer.then(beer => {
+        console.log(beer);
+        res.render('random-beer', beer[0]);
     });
     myRandomBeer.catch(error => 
         console.log(error));    
