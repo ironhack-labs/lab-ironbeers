@@ -11,15 +11,12 @@ app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
-// API calls
-const myBeers = punkAPI.getBeers();
-const myRandomBeer = punkAPI.getRandom();
-
 
 // View routes
 app.get('/', (req, res) => res.render('index'));
 
 app.get('/beers', (req, res) =>  {
+    const myBeers = punkAPI.getBeers();
     myBeers.then(beers => {
         console.log(beers);
         res.render('beers', {beers});
@@ -29,6 +26,7 @@ app.get('/beers', (req, res) =>  {
 });
 
 app.get('/random-beer', (req, res) =>  {
+    const myRandomBeer = punkAPI.getRandom();
     myRandomBeer.then(beer => {
         console.log(beer);
         res.render('random-beer', beer[0]);
