@@ -1,16 +1,15 @@
 <div class="media">
-    {{beers}}
     <img src={{this.image_url}} class="align-self-center mr-3" alt="Beer-image">
     <div class="media-body">
-        <h3 class="mt-0">{{this.name}}</h3>
+        <h3 class="mt-0">{{name}}</h3>
         <h5>{{this.tagline}}</h5>
         <p>{{this.description}}</p>
         <p>Food Pairing</p>
         <ul>
-            {{!-- <li>{{this.food_pairing[0]}}</li>
-            <li>{{this.food_pairing[1]}}</li>
-            <li>{{this.food_pairing[2]}}</li> --}}
+            {{#each food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
         </ul>
-        <p><b>Brewer tips:</b>{{this.brewers_tips}}</p>
+        <p><b>Brewer tips:</b> {{this.brewers_tips}}</p>
     </div>
 </div>
