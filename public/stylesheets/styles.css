@@ -1,0 +1,47 @@
+body {
+    background-color: white;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.button-margin {
+    margin: 7.5px;
+}
+
+.index-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#second-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 40%;
+    margin: 5%;
+}
+
+#beer-img {
+    width: 300px;
+}
+
+#button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 40%;
+    margin: 10%;
+}
+
+#footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #0a2c42!important;
+}
