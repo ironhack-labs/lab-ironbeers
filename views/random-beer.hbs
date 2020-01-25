@@ -1,21 +1,21 @@
 <div class="index-container">
     <div id="random-beer-media" class="media">
         {{#if image_url}}
-        <img src={{this.image_url}} class="align-self-center mr-3" alt="Beer-image">
+        <img src={{image_url}} class="align-self-center mr-3" alt="Beer-image">
         {{else}}
         <img src="/images/image-not-available-png-8.png" class="align-self-center mr-3" alt="Beer-image">
         {{/if}}
         <div class="media-body">
             <h3 class="mt-0">{{name}}</h3>
-            <h5>{{this.tagline}}</h5>
-            <p>{{this.description}}</p>
+            <h5>{{tagline}}</h5>
+            <p>{{description}}</p>
             <p>Food Pairing</p>
             <ul>
                 {{#each food_pairing}}
                 <li>{{this}}</li>
                 {{/each}}
             </ul>
-            <p><b>Brewer tips:</b> {{this.brewers_tips}}</p>
+            <p><b>Brewer tips:</b> {{brewers_tips}}</p>
         </div>
     </div>
 </div>
