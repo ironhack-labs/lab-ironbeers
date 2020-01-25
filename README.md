@@ -33,7 +33,7 @@ $ git push origin master
 
 ### Iteration 0: Initial setup
 
-To run our application, the first thing you have to do is to install its dependencies. After changing directories to `/starter_code`, run the following command:
+To run our application, the first thing you have to do is to install its dependencies. After changing directories to **`starter-code`**, run the following command:
 
 ```shell
 $ npm install
@@ -91,7 +91,7 @@ In this step, we will have a couple of micro-steps:
 ```js
 punkAPI
   .getBeers()
-  .then(beers => console.log('Beers from the database: ', beers))
+  .then(beersFromApi => console.log('Beers from the database: ', beersFromApi))
   .catch(error => console.log(error));
 ```
 
@@ -99,7 +99,7 @@ punkAPI
 
 - Create a `beers.hbs` file to render every time we call this route.
 - This file should have access to the beers we get as a response from the database. Remember, you should call the `render` method after getting the _beers_ array. _Hint:_ That means inside the `then`. :wink:
-- On the `beers.hbs` view, loop over the **beers array** using the `{{#each beers}} {{/each}}` loop. Display an **image**, **name**, **description** and **tagline**.
+- On the `beers.hbs` view, loop over the **beers array** using the `{{#each}}` loop. Display an **image**, **name**, **description** and **tagline**.
 
 Now, when you click on the `Beers` on the top navigation or on the `Check the beers` button, you should be able to see all the beers. Boom! :boom:
 
@@ -117,7 +117,7 @@ The example of how this method works is shown below:
 ```js
 punkAPI
   .getRandom()
-  .then(beers => {
+  .then(responseFromAPI => {
     // your magic happens here
   })
   .catch(error => console.log(error));
