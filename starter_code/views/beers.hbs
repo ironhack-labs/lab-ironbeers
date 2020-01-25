@@ -1,0 +1,14 @@
+<section>
+    <h1>***List of Beers***</h1>
+</section>
+<table >
+  <tr>
+    <th>Picture</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Tagline</th>
+  </tr>
+  {{#each beersObj }}
+     {{>beerpartial this}}
+  {{/each}}  
+</table>
