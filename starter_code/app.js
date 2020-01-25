@@ -35,13 +35,14 @@ app.get('/random-beers', (req, res) => {
 });
 app.get('/beers/:beerId', (req, res) => {
 
-    const bLink = punkAPI.getBeer(req.params.beerId);
-    bLink.then((beerInfo) => {
-        res.render('random-beer.hbs', { beerInfo });
-    });
-    bLink.catch((err) => {
-        console.log(err);
-    });
+    punkAPI
+        .getBeer(req.params.beerId)
+        .then((beers) => {
+            res.render('random-beer.hbs', { beers });
+        })
+        .catch((err) => {
+            console.log(err);
+        });
 });
 
 
