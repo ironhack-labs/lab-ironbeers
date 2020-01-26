@@ -5,3 +5,20 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+.index-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    max-width: 100%;
+}
+
+.index-container img{
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    margin: 5px;
+}
