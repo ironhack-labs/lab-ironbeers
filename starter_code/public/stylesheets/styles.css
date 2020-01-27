@@ -32,7 +32,7 @@ font-family: Arial, Helvetica, sans-serif;
   height: 85vh;
 }
 
-img {
+.home-beer {
   width: 50vh;
   height: 50vh;
   margin-top: 10vh;
@@ -52,10 +52,25 @@ footer {
   align-items: center;
   background-color: #0a2c42;
   color: white;
-  height: 10vh;
+  height: 70px;
   margin-bottom: 0;
 }
 
 footer p {
   margin: 4vh;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10% 20%;
+  justify-content: space-around;
+}
+
+.cards-container img {
+  object-fit: cover;
+  object-position: center;
+  height: 20vh;
+  width: 10vh;
 }

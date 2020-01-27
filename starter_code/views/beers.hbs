@@ -1,5 +1,6 @@
 <div class="cards-container">
   {{#each beers}} 
+  <!--When /beers route is acessed, app JS try to execute this HBS and in this HBS we are making reference to the partial to be executed inside this for loop-->
     {{> partial this}}
   {{/each}}
 </div>
