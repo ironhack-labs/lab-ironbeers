@@ -22,3 +22,31 @@ font-family: Arial, Helvetica, sans-serif;
 .btn-primary {
     margin: 5px;
 }
+
+.grid {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+	align-content: flex-end;
+}
+
+.beer-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+    align-content: center;
+    width: 50%;
+    padding: 5% 10%;
+}
+
+.beer-container picture img {
+    width: 50%;
+}
+
+.beer-info {
+    padding: 5% 0;
+}

@@ -1,35 +1,34 @@
 const express = require('express');
 const hbs = require('hbs');
 const path = require('path');
-const PunkAPIWrapper = require('punkapi-javascript-wrapper');
+const beers = require('./utils/beers');
+const randomBeer = require('./utils/randomBeer');
 
 const app = express();
-const punkAPI = new PunkAPIWrapper();
 
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
-hbs.registerPartials(path.join(__dirname + "/views/partials"));
 
 // add the routes here
 app.get('/', (req, res) => {
-    console.log(req)
     return res.render('index');
 });
 
 app.get('/beers', (req, res) => {
-    punkAPI
-        .getBeers()
-        .then(beers => res.render('beers', {beers}))
-        .catch(error => console.log(error));
+    beers( (err, beersArr) => {
+        if (err) console.log( err );
+        res.render('beers', {beersArr})
+    })
 });
 
 app.get('/random-beer', (req, res) => {
-    punkAPI
-        .getRandom()
-        .then(beer => res.render('random-beer', beer[0]))
-        .catch(error => console.log(error));
+    randomBeer( (err, rndBeer) => {
+        if (err) console.log( err );
+        const {name, tagline, description, image_url} = rndBeer;
+        res.render('random-beer', {name, tagline, description, image_url})
+    })
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

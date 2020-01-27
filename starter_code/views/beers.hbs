@@ -1,7 +1,19 @@
-<div class='media'>
-  {{#each beers}}
-    <div class="media-body">
-     {{>beerpartial this}}
+<div class="grid">
+  {{#each beersArr}}
+    <div class="beer-container">
+      <div>
+        <picture>
+          <source srcset={{image_url}}>
+          <source srcset="/images/beer.png">
+          <img src='' alt={{tagline}}>
+        </picture>
+      </div>
+      <div class="beer-info">
+        <div><strong>Name: </strong>{{name}}</div>
+        <div><strong>Tagline: </strong>{{tagline}}</div> 
+        <div><strong>Description: </strong>{{description}}</div>
+      </div>
     </div>
   {{/each}}
 </div>
+
