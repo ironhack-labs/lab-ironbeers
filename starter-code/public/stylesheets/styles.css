@@ -5,3 +5,106 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid greenyellow; */
+}
+
+nav {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: #2081c3;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+li {
+    padding: 10px 30px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2em;
+    color: #f7f9f9;
+}
+
+.button {
+    width: 300px;
+    height: 100px;
+    background-color: #2081c3;
+    border-radius: 10px;
+    padding: 35px 30px;
+    box-sizing: border-box;
+    margin: 10px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.card {
+    width: 300px;
+    height: 750px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body {
+    width: 275;
+    padding: 20px 5px;
+}
+
+.card-title {
+    font-size: 2em;
+    text-align: center;
+}
+.card-text {
+    margin-top: 30px;
+    font-size: 1em;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+img {
+    height: 250px;
+    width: auto;
+}
+
+#beer {
+    width: 300px;
+    height: 300px;
+}
+
+#principal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+#random {
+    display: flex;
+    justify-content: center;
+}
+
+h5 {
+    font-size: 1.8rem;
+}
+#foods {
+    display: inline-block;
+}
+#side {
+    width: 40%;
+}
