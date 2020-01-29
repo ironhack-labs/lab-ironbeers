@@ -1,0 +1,6 @@
+{{#each beersFromApi as |random-beer|}}
+<img src="{{random-beer.image_url}}" alt="image">
+<h1>{{random-beer.name}}</h1>
+<p>{{random-beer.description}}</p>
+<p>{{random-beer.tagline}}</p>
+{{/each}}
