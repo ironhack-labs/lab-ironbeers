@@ -1,0 +1,48 @@
+ <div class="card col-4">
+    {{#if image_url}}
+    {{#if randomBeer}}
+    <img  src={{image_url}} class="card-img-top" style="height: 300px; width:100px;" alt="...">
+    {{else}}
+    <img  src={{image_url}} class="card-img-top" style="height: 300px; width:100px;" alt="...">
+    {{/if}}
+
+    {{/if}}
+    <div class="card-body w-30">
+      <h5 class="card-title"><a href="/beers/{{id}}">{{name}}</a></h5>
+      <p class="card-text"><small class="text-muted">{{tagline}}</small></p>
+      <p class="card-text">{{description}}</p>
+      {{#if randomBeer}}
+      <p class="card-text">Food Pairing</p>
+      <ul>
+      {{#each food_pairing as |pairing|}}
+      <li class="card-text">{{pairing}}</li>
+      {{/each}}
+      </ul>
+      <p class="card-text">Brewers Tips: {{brewers_tips}}</p>
+      {{/if}}
+    </div>
+  </div>
+
+  {{!-- <div class="card mb-3" style="height: 300px;width: 100px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src={{image_url}} class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+          <h5 class="card-title">{{name}}</h5>
+        <p class="card-text"><small class="text-muted">{{tagline}}</small></p>
+      <p class="card-text">{{description}}</p>
+      {{#if randomBeer}}
+      <p class="card-text">Food Pairing</p>
+      <ul>
+      {{#each food_pairing as |pairing|}}
+      <li class="card-text">{{pairing}}</li>
+      {{/each}}
+      </ul>
+      <p class="card-text">Brewers Tips: {{brewers_tips}}</p>
+      {{/if}}
+      </div>
+    </div>
+  </div>
+</div> --}}
