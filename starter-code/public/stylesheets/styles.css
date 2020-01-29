@@ -5,3 +5,86 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+*{
+    background-color: #2081c3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.index_cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.index_cont img{
+    width: 300px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.index_cont button{
+    margin: 15px;
+}
+
+.section-beers{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+    justify-content: space-around;
+    
+    
+
+
+}
+.section-beers p{
+    font-size: 0.8rem;
+    margin: 0;
+}
+#title-beers{
+    margin: 0;
+}
+.section-beers article{
+    
+    width: 380px;
+    height: 500px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.95;
+    text-align: center;
+    
+}
+.section-beers img{
+    width: 60px;
+}
+
+
+#section-random{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+    justify-content: space-around;
+}
+#section-random img{
+
+    width: 100px;
+}
+
+#section-random article{
+    margin: 50px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.95;
+    text-align: center;
+
+}
+#section-random h6{
+    color: rgb(51, 51, 51);
+}

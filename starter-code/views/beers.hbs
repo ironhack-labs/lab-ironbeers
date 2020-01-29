@@ -1,0 +1,13 @@
+<h1 id="title-beers">Cervezas:</h1>
+<section class="section-beers">
+{{#each beersFromApi as |cheve|}}
+
+<article>
+    <img src={{cheve.image_url}} alt="imagen">
+    <h5><b>{{cheve.name}}</b> </h5>
+    <p>{{cheve.description}}</p>
+    </article>
+
+
+{{/each}}
+</section>

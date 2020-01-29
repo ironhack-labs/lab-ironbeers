@@ -1,0 +1,18 @@
+<section id="section-random">
+<article>
+    {{#each randomBeer as |ceve|}}
+<img src={{ceve.image_url}} alt="imagen">
+<h5><b>{{ceve.name}}</b></h5>
+<h6><b>{{ceve.tagline}}</b></h6>
+<p>{{ceve.description}}</p>
+
+    <ul>
+        <p><b>Food Pairing:</b></p>
+        {{#each ceve.food_pairing as |food|}}
+        <li>{{food}}</li>
+        {{/each}}
+    </ul>
+<p><b>Brewers Tips: </b>{{ceve.brewers_tips}}</p>
+{{/each}}
+</article>
+</section>
