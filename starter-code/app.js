@@ -16,12 +16,10 @@ hbs.registerPartials(path.join(__dirname, 'views/partials'));
 // add the routes here:
 
 app.get('/', (req, res) => {
-  console.log('HOME');
   res.render('index');
 });
 
 app.get('/beers', (req, res) => {
-  console.log('WHAT HAPPENED?');
   punkAPI
     .getBeers()
     .then(beersFromApi =>
@@ -42,12 +40,11 @@ app.get('/random-beers', (req, res) => {
     .catch(error => console.log(error));
 });
 
-app.get('/beers/beer-:id', (req, res) => {
-  console.log('works');
+/* app.get('/beers/beer-:id', (req, res) => {
   punkAPI
     .getBeer(id)
     .then(responseFromAPI =>
       res.render('clickedBeer', { clickedBeer: responseFromAPI })
     );
-});
-app.listen(3000, () => console.log('🏃‍ on port 3000'));
+}); */
+app.listen(3001, () => console.log('🏃‍ on port 3001'));
