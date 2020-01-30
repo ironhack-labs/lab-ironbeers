@@ -5,3 +5,44 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+section {
+
+    text-align: center;
+}
+
+button {
+    background-color: darkblue;
+}
+
+button>a {
+    color: white;
+}
+
+.beers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 90vh;
+    align-items: center;
+    justify-content: space-around
+}
+
+.beers div {
+    width: 10%
+}
+
+
+.card {
+    width: 100vw;
+}
+
+#random {
+    align-items: center;
+    width: 50vw;
+}
+
+#random>img {
+    width: 15%;
+    height: 15%;
+}

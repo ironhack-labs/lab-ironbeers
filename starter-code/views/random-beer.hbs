@@ -1,6 +1,16 @@
-{{#each beersFromApi as |random-beer|}}
+<section class="card" id="random">
+    {{#each beersFromApi as |random-beer|}}
 <img src="{{random-beer.image_url}}" alt="image">
 <h1>{{random-beer.name}}</h1>
 <p>{{random-beer.description}}</p>
 <p>{{random-beer.tagline}}</p>
+<h3>Food Pairing</h3>
+<ul>
+    <li>{{random-beer.food_pairing.[0]}}</li>
+    <li>{{random-beer.food_pairing.[1]}}</li>
+    <li>{{random-beer.food_pairing.[2]}}</li>
+</ul>
+<h3>Brewes Tips</h3>
+<p>{{random-beer.brewers_tips}}</p>
 {{/each}}
+</section>
