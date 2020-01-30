@@ -1,0 +1,13 @@
+<div class="beer-container">
+
+    {{#each beersList}}
+    <div class="beer-card">
+        {{>beerImg this}}
+        <div class="beer-details">
+            {{>beerCard this}}
+        </div>
+    </div>
+
+    {{/each}}
+
+</div>
