@@ -1,0 +1,11 @@
+{{#if extended}}
+    {{#each beersList}}
+        {{>beerDetailed this extended=true }}
+    {{/each}}
+
+{{else}}
+    {{#each beersList}}
+        {{>beer this column=true }}
+    {{/each}}
+{{/if}}
+

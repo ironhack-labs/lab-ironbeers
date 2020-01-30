@@ -1,0 +1,22 @@
+<div class="beer-wrapper {{#if this.column}}column{{/if}}">
+    <div class="image-wrapper">
+        <img src="{{this.image_url}}">    
+    </div>
+    <div class="description-wrapper">
+       <h2 class="beer-name">{{this.name}}</h2>
+        <h3 class="beer-tagline font-italic font-weight-lighter">{{this.tagline}}</h3>
+        <div class="description">{{this.description}}</div>
+        {{#if this.extended}}
+        </br>
+        <div class="food-pairing">
+            <p class="font-weight-bold">Food-Pairings</p>
+            <ul>
+                {{#each this.food_pairing}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ul> 
+        </div>
+        <div class="brewer-tips"><span class="font-weight-bold">Brewers Tips:</span> {{this.brewers_tips}}</div>
+        {{/if}}
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="beer-wrapper {{#if this.column}}column{{/if}}" style="max-width: 33%;">
+    <div class="image-wrapper">
+        <img src="{{this.image_url}}">    
+    </div>
+    <div class="description-wrapper">
+       <a href="beers/beer-{{this.id}}" class="text-dark text-decoration-none"><h2 class="beer-name">{{this.name}}</h2></a>
+        <p class="beer-tagline font-italic font-weight-lighter">{{this.tagline}}</p>
+        <div class="description">{{this.description}}</div>
+    </div>
+</div>
