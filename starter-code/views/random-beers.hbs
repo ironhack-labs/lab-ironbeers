@@ -1,5 +1,12 @@
-<h1>Random</h1>
 
+<img src={{image_url}}>
 <h4>{{name}}</h4>
 <p>{{description}}</p>
 <p>{{tagline}}</p>
+<p>food paring</p>
+<ul>
+    {{#each food_pairing as |cervesa|}}
+    <li> {{cervesa}} </li>
+    {{/each}}
+</ul>
+<p>Brewers Tips: {{brewers_tips}}</p>
