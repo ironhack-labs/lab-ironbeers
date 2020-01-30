@@ -1,0 +1,14 @@
+<div class="beerOverview">
+    {{#each randomBeers}}
+    {{> beersTemplate this}}
+    <p>Some brewer tipps:{{this.brewers_tips}}</p>
+    <p>Best to enjoy with: </p>
+    <ul>
+        {{#each this.food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+    </p>
+</div>
+{{/each}}
+</div>
