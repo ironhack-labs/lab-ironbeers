@@ -5,3 +5,53 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: start;
+}
+
+.principal {
+    color: #f7f9f9;
+    padding: 10px;
+    background-color:#f7f9f9;
+    border-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.beers{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.cardbeer{
+   display: flex;
+   justify-content: center;
+}
+
+.card{
+    margin: 5px 5px 5px 5px;
+}
+
+.principal img {
+    width: 40%;
+    height: auto;
+}
+
+.principal a {
+    color: #f7f9f9;
+    background-color:#2081c3;
+    width: auto;
+    padding: 5px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
