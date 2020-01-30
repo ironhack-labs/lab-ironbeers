@@ -15,5 +15,21 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // add the routes here:
 app.get('/', (req, res) => res.render('index'));
+app.get('/beers', (req,res) =>{
+    punkAPI.getBeers()
+    .then(beersFromApi => {res.render('beers', {beersFromApi})
+    })
+    .catch ( error  =>  console.log (error));
+})
+app.get('/random-beers', (req,res) =>{
+    punkAPI.getBeers()
+    .then(beersFromApi => {res.render('random-beers', beersFromApi[0])
+    })
+    .catch ( error  =>  console.log (error));
+})
+
+
+
+
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
