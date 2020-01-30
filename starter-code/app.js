@@ -36,4 +36,11 @@ app.get('/random-beers', (req, res) => {
     .catch(error => console.log(error));
 });
 
+// app.get('/' + req.params.name, (req, res) => {
+//   punkAPI.getBeers(req.param.name).then(beersFromApi => {
+//     console.log('Beers from the database: ', beersFromApi);
+//     res.render('beers', { beers: beersFromApi });
+//   });
+// });
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
