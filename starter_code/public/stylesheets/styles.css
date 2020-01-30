@@ -89,16 +89,23 @@ nav a {
 
 /* Random beer */
 .random-beer-container {
-    height: 75vh;
-    margin: 0 50px;
+    height: 70vh;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .random-beer-container img {
     float: left;
+    margin-right: 50px;
 }
 
 .random-beer-container h2, p {
     margin: 20px 0;
+}
+
+.random-beer-container > div:nth-child(2) {
+    clear: left;
+    margin-left: 130px;
 }
 
 /* Footer */
