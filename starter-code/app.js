@@ -34,17 +34,17 @@ app.get('/random-beers', (req, res) => {
     .getRandom()
     .then(responseFromAPI =>
       // your magic happens here
-      //console.log('Beers from the database: ', responseFromAPI)
       res.render('random-beers', { beer: responseFromAPI })
     )
     .catch(error => console.log(error));
 });
 
-/* app.get('/beers/beer-:id', (req, res) => {
+app.get('/beers/beer-:id', (req, res) => {
+  let id = req.params.id;
   punkAPI
     .getBeer(id)
     .then(responseFromAPI =>
-      res.render('clickedBeer', { clickedBeer: responseFromAPI })
+      res.render('random-beers', { beer: responseFromAPI })
     );
-}); */
-app.listen(3001, () => console.log('🏃‍ on port 3001'));
+});
+app.listen(3002, () => console.log('🏃‍ on port 3001'));
