@@ -5,3 +5,31 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+.navbar .home > img {
+  display: flex;
+  justify-content: center;
+}
+
+.imgsize {
+  height: 70%;
+  width: 70%;
+}
+.randombeer-img {
+  height: 5%;
+  width: 5%;
+}
+.container-beers {
+  /* display: flex; */
+}
+
+.specs {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: flex-end; */
+  text-align: center;
+  width: 450px;
+}
+
+.infocard {
+  display: flex;
+}

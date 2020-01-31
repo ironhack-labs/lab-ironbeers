@@ -1,0 +1,16 @@
+<div class="container-beers">
+    {{#each beers}}
+    <div class='infocard'>
+        <div class='specss'>
+            <img class="imgsize" src="{{this.image_url}}" alt="">
+        </div>
+
+        <div class='specs'>
+            <p>{{this.name}}</p>
+            <p>{{this.description}}</p>
+            <p>{{this.tagline}}</p>
+        </div>
+
+    </div>
+    {{/each}}
+</div>
