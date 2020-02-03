@@ -97,6 +97,15 @@ footer {
     width: 500px;
 }
 
+
+.beerDetails h3 {
+    margin: 15px 0;
+}
+
+.beerDetails ul {
+    padding-left: 20px;
+}
+
 .beerDetails img {
     height: inherit;
     display: block;

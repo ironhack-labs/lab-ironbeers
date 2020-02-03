@@ -3,6 +3,12 @@
     <h2>{{data.name}}</h2>
     <p class="beer-tagline">{{data.tagline}}</p>
     <p class="beer-description">{{data.description}}</p>
-    <p>{{data.food_pairing}}</p>
-    <p>{{data.brewers_tips}}</p>
+    <h3>Food pairing :</h3>
+    <ul class="food_pairing">
+        {{#each data.food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+    <h3>Brewers tips :</h3>
+    <p class="brewers_tips">{{data.brewers_tips}}</p>
 </div>
