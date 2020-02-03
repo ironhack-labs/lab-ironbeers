@@ -3,9 +3,6 @@
     <p>No beers available</p>
     {{/unless}}
     {{#each beersFromApi}}
-        <img src={{this.image_url}} alt="beer">
-        <h2>Name: {{this.name}}</h2>
-        <p>Tagline: {{this.tagline}}</p>
-        <p>Description: {{this.description}}</p>
+        {{> beerpartial}}
     {{/each}}
 </div>
