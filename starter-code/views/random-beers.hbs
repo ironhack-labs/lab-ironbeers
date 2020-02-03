@@ -1,0 +1,12 @@
+<div id="beer-list">
+    <div id="beer">
+
+        {{>beerpartial beer}}
+
+        {{#each beer.food_pairing}}
+            <li>{{this}}</li>
+        {{/each}}
+        </ul>
+        <p><b>brewers_tips:</b>{{beer.description}}</p>
+    </div>
+</div>
