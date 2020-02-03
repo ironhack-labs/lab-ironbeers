@@ -1,0 +1,12 @@
+
+
+{{!-- <p>{{beer.name}}</p>
+<img src="{{beer.image_url}}" alt="" > --}}
+
+<ul>
+{{#each responseFromAPI}}
+<li>
+{{>beerpartial}}
+</li>
+{{/each}}
+</ul>
