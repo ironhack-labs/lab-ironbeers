@@ -1,10 +1,12 @@
-<div>
+<div class="beer-partial">
     {{#if this.image_url}}
         <img src={{this.image_url}} alt="random-beer">
     {{else}}
         <img src="/images/random-beer.png" alt="random-beer">
     {{/if}}
-    <h2>Name: {{this.name}}</h2>
-    <p>Tagline: {{this.tagline}}</p>
-    <p>Description: {{this.description}}</p>
+    <div>
+        <a href="/beers/beer-{{this.id}}"><h2>{{this.name}}</h2></a>
+        <p>{{this.tagline}}</p>
+        <p>Description: {{this.description}}</p>
+    </div>
 </div>

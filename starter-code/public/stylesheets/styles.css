@@ -5,3 +5,118 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.navBar {
+    background-color: #2081c3;
+    height: 50px;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    box-shadow:0 5px 10px #bfbfbf;
+}
+
+.navBar div {
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
+    padding-left: 20px;
+}
+
+.navBar a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #f7f9f9;
+}
+
+/* HOME */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #f7f9f9;
+}
+
+.home img {
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+}
+
+.home a {
+    margin: 10px;
+}
+
+.home button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2081c3;
+    color: #f7f9f9;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow:0 5px 10px #bfbfbf;
+}
+
+footer {
+    background-color: #0a2c42;
+    height: 60px;
+    color: #f7f9f9;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+/* BEERS PAGE */
+
+.beers {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    align-content: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.beer-partial {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 300px;
+}
+
+.beer-partial img {
+    height: 100px;
+    padding: 0 40%;
+}
+
+.beer-partial a {
+    text-decoration: none;
+    color: black;
+}
+
+.beer-partial h2 {
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.beer-partial p {
+    font-size: 15px;
+    text-align: justify;
+}
+
+.one-beer {
+    padding: 50px;
+    font-size: 15px;
+}
