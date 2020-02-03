@@ -85,6 +85,16 @@ img{
     flex-direction: column;
     justify-content: baseline;
     align-items: center;
+}
+
+.random{
+    border: 8px solid rgb(255, 228, 73);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
     max-width: 40%;
 }
 
