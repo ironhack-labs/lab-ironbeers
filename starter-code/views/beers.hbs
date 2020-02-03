@@ -1,0 +1,7 @@
+<div class="beers-gallery">
+    {{#each beers}}
+        <div class="beer-box">
+            <a href="/beers/beer-{{this.id}}">{{> beerpartial}}</a>
+        </div>
+    {{/each}}
+</div>
