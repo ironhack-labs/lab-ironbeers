@@ -1,0 +1,5 @@
+<div id="specific-beer">
+  {{#each beers}}
+    {{> beercard pairing=this.food_pairing tips=this.brewers_tips}}
+  {{/each}}
+</div>

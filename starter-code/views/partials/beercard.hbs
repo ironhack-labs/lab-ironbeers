@@ -1,0 +1,10 @@
+<div class="beer-card">
+  <img src="{{this.image_url}}" alt="{{this.name}}">
+  <div class="beer-details">
+    <h3><a href="/beers/{{this.id}}">{{this.name}}</a></h3>
+    <p>{{this.description}}</p>
+    <p>"{{this.tagline}}"</p>
+    {{#if pairing}}<p>Food pairing : {{pairing}}</p>{{/if}}
+    {{#if tips}}<p>Brewers tips : {{tips}}</p>{{/if}}
+  </div>
+</div>

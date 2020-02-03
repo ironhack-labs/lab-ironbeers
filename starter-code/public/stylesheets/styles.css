@@ -43,7 +43,7 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 #splash-home img {
-  height:200px;
+  height:50vh;
 }
 
 #splash-home {
@@ -51,16 +51,23 @@ font-family: Arial, Helvetica, sans-serif;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height:100vh;
 }
 
-#splash-home button {
+#splash-home a {
+  display:flex;
+  justify-content: center;
+  align-items: center;
   background:#2081c3;
   border:1px solid #2081c3;
   width: 220px;
   height:50px;
   color:white;
   font-size: 1rem;
+  text-decoration: none;
 }
+
+#splash-home a:hover { transform: scale(1.2) }
 
 /** BEERS PAGE **/
 .beer-card {
@@ -85,4 +92,13 @@ font-family: Arial, Helvetica, sans-serif;
 .beer-details h3 {
   font-weight: bold;
   font-size:1.2rem;
+}
+
+/** SPECIFIC BEER **/
+#specific-beer img {
+  height:300px;
+}
+
+#specific-beer .beer-card {
+  border-bottom:none;
 }
