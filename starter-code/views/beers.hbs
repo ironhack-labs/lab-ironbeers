@@ -1,0 +1,11 @@
+<div>
+    {{#unless beersFromApi}}
+    <p>No beers aveilable</p>
+    {{/unless}}
+    {{#each beersFromApi}}
+        <img src={{this.image_url}} alt="beer">
+        <h2>Name: {{this.name}}</h2>
+        <p>Tagline: {{this.tagline}}</p>
+        <p>Description: {{this.description}}</p>
+    {{/each}}
+</div>
