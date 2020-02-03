@@ -12,11 +12,21 @@ hbs.registerPartials(path.join(__dirname, "views/partials"));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// add the partials here:
-
-// add the routes here:
+// Home
 app.get('/', (req, res) => res.render('index'));
-app.get('/beers', (req, res) => res.render('beers'));
-app.get('/random-beers', (req, res) => res.render('random-beers'));
+
+// Beers
+app.get('/beers', (req, res) => {
+  punkAPI
+  .getBeers()
+  .then(beersFromApi => {
+    console.log('Beers from the database: ', beersFromApi)
+    res.render('beers', {beers:beersFromApi})
+  })
+  .catch(error => console.log(error));
+});
+
+// Random beer
+app.get('/random-beer', (req, res) => res.render('random-beer'));
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
