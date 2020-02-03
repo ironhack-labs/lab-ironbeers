@@ -5,3 +5,100 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header{
+    padding: 30px 150px;
+    font-size: 3em;
+    font-weight: bold;
+    background-color: rgb(255, 228, 73);
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.page{
+    padding: 100px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+button{
+    text-decoration: none;
+    border: 8px solid rgb(255, 228, 73);
+    border-radius: 12px;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.homeimg{
+    min-height: 600px;
+}
+
+img{
+    max-height: 200px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+}
+
+.beer{
+    border: 8px solid rgb(255, 228, 73);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    max-width: 40%;
+}
+
+.beer p{
+    text-align: center;
+}
+
+footer{
+    padding: 30px 150px;
+    font-size: 3em;
+    font-weight: bold;
+    background-color: rgb(255, 228, 73);
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
