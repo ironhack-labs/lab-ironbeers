@@ -1,0 +1,16 @@
+<h1>Info beer!</h1>
+
+<div id="img-beer">
+    <img src="{{data.image_url}}">
+</div>
+
+<h2>{{data.name}}</h2>
+{{data.description}}
+{{data.tagline}}
+    <ul>
+{{#each data.food_pairing}}
+        <li>{{this}}</li>
+{{/each}}
+    </ul>
+
+{{data.brewers_tips}}

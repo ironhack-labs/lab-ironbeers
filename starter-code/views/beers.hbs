@@ -1,0 +1,17 @@
+<h1>All the beers from the API</h1>
+
+<div id="all-beers">
+    <ul>
+    {{#each beers}}
+       <div id="box-beer">
+            <a href="/beers/info-beer/{{this.id}}">
+            <li><img src="{{this.image_url}}"></li>
+            <li>{{this.name}}</li>
+            <li>{{this.description}}</li>
+            <li>{{this.tagline}}</li>
+            </a>
+        </div>
+    {{/each}}
+</ul>
+</div>
+
