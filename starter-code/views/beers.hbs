@@ -1,0 +1,19 @@
+<h2 class="title">Beer Page</h2>
+<hr>
+
+<div class="all-beers">
+    {{!-- <div class="beer-box"> --}}
+    {{#each beersFromApi}}
+    <div class="beer-image">
+        <li><img src="{{this.image_url}}" alt="Beer image"></li>
+    </div>
+    <div class="beer-infos">
+        <ul>
+            <li class="beer-title"><a href="/">{{this.name}}</a></li>
+            <li><a href="/">{{this.description}}</a></li>
+            <li><a href="/">{{this.tagline}}</a></li>
+        </ul>
+    </div>
+    {{/each}}
+    {{!-- </div> --}}
+</div>

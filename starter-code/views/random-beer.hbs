@@ -1,0 +1,23 @@
+<section class="rdm">
+
+    <div class="rdm-title">
+        <h2 class="title">Random Beer Page</h2>
+        <hr>
+    </div>
+
+    {{#each randomBeer}}
+    <div class="random-beer">
+        <div class="beer-image">
+            <img src="{{this.image_url}}" alt="Beer image">
+        </div>
+        <div class="beer-infos">
+            <ul>
+                <li class="beer-title"><a href="/">{{this.name}}</a></li>
+                <li class="beer-description"><a href="/">{{this.description}}</a></li>
+                <li class="beer-tagline"><a href="/">{{this.tagline}}</a></li>
+            </ul>
+        </div>
+    </div>
+    {{/each}}
+
+</section>
