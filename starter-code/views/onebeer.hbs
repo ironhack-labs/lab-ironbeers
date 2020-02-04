@@ -1,0 +1,10 @@
+<div>
+One beer
+</div>
+<div class="beer1">
+ <ul>{{#each beersFromApi}}
+    <li>
+        <div>{{> myPart paramsBeer=this  }}</div>
+    </li>
+    {{/each}}</ul>
+</div>

@@ -1,0 +1,20 @@
+<div>
+Random beer
+</div>
+<div class="allbeer">
+    <div class="beer1">
+        <ul>
+        {{#each beersFromApi}}
+               <li>{{> myPart paramsBeer=this  }}</li>
+               <li>ABV: {{this.abv}}</li>
+               <li>IBU: {{this.ibu}}</li>
+               <li>Target_FG: {{this.target_fg}}</li>
+               <li>Target_og: {{this.target_og}}</li>
+               <li>EBC:{{this.ebc}}</li>
+               <li>SRM: {{this.srm}}</li>
+               <li>PH: {{this.ph}}</li>
+               <li>Atenuation Leval: {{this.attenuation_level}}</li>
+        {{/each}}
+        </ul>
+    </div>
+</div>
