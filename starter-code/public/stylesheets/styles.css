@@ -5,3 +5,55 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+    background-color: #bfbfbf;
+}
+
+.navbar {
+    background : #0069d9;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.ulli, a {
+    color: #f7f9f9;
+    list-style-type: none;
+    margin: 0 40px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration:none;
+}
+
+button {
+    background-color: #fbe600;
+    border: none;
+    border-radius: 25px;
+    color: #0a2c42;
+    font-size: 25px; 
+    margin-top: auto;
+    width: 100%;
+    padding: 20px;
+    
+}
+
+.background-image {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 100%;
+    margin-top: 100px;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
