@@ -5,3 +5,24 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+img {
+margin: 20px 50px;
+height: 350px;
+object-fit: cover;
+text-align: center;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f9f9;
+}
+
+h1,h2 {
+
+     margin-bottom: 0px;
+}
+
+.btn-primary{
+    margin: 20px;
+}
