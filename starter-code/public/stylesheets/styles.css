@@ -5,3 +5,41 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+img{
+    width:50%;
+}
+
+main{
+    background-color: whitesmoke;
+}
+/* 
+a{
+    text-decoration: none;
+    color:black
+}
+
+main{
+    margin:50px;
+    text-align: center;
+}
+
+.headnav{
+    display: flex;
+    justify-content: center;
+    background-color: #a1c6ea;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+ol{
+    list-style: none;
+}
+li {
+    padding: 20px;
+}
+
+figure{
+    margin:50px;
+} */
