@@ -1,0 +1,16 @@
+<div class="col-4">
+    <img id="random-image"
+        src="{{#if image_url}}{{image_url}}{{else}}https://images.squarespace-cdn.com/content/v1/5b734e049f87701f7c34d332/1543428667408-KZ4MCGLUPCVQBTSS01H1/ke17ZwdGBToddI8pDm48kEv22MHMRJ_KWC9-wgAvyWgUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8PaoYXhp6HxIwZIk7-Mi3Tsic-L2IOPH3Dwrhl-Ne3Z2EnT3B38hCfDS93m24qLs3t-d_idPsx1D1bQbV3szn6IKMshLAGzx4R3EDFOm1kBS/GENERIC02.png{{/if}}"
+        alt="{{name}}">
+</div>
+<div class="col-8">
+    <h1 id="title">{{name}}</h1>
+    <h5 id="tagline">{{tagline}}</h5 id="title">
+    <p id="description">{{description}}</p>
+    <p id="food-pairing">Food Pairing:</p>
+    {{#each food_pairing}}
+    <p>{{this}}</p>
+    {{/each}}
+    <p id="brewer-tips">Brewer Tips:</p>
+    <p>{{brewers_tips}}</p>
+</div>
