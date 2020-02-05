@@ -5,3 +5,135 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fcfcfc;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    min-height: 100vh;
+}
+
+nav {  
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #2081c3;
+    height: 3rem;
+    box-shadow: 0 3px 5px rgb(58, 58, 58);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    color: #f7f9f9;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #e9e634;
+}
+
+.main {
+    padding: 4rem 0; 
+    display: flex;
+    justify-content: center;
+}
+
+.index {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.index img {
+    max-height: 500px;
+    margin-bottom: 30px;
+}
+
+.index a {
+    text-align: center;
+    width: 200px;
+    margin: 15px 0;
+    padding: 15px;
+    background-color: #2081c3;
+    color: #fcfcfc;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform .3s;
+}
+
+.index a:hover {
+    color: #e9e634;
+    transform: scale(1.1);
+}
+
+.container, .container-info {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.beer-wrapper {
+    width: 30%;
+    margin: 15px;
+    padding: 15px;
+    border: 1px solid rgba(23, 52, 77, .3);
+    border-radius: 5px;
+}
+
+.beer-wrapper img {
+    max-height: 300px;
+}
+
+.beer-wrapper a {
+    text-decoration: none;
+    color: #0c3652;
+}
+
+.beer-wrapper a:hover {
+    color: #2081c3;
+}
+
+.container-info .beer-wrapper {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    border: 0;
+}
+
+.container-info .beer-wrapper img{
+    max-height: 400px;
+    object-fit: contain;
+}
+
+footer {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    width: 100vw;
+    background-color: #0c3652;
+    box-shadow: 0 -3px 5px rgb(58, 58, 58);
+    bottom: 0;
+    position: absolute;
+}
+
+footer span {
+    color:#f7f9f9;
+    font-size: .9rem;
+}
