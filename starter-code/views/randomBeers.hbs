@@ -1,0 +1,10 @@
+<div class='container'>
+    {{#each beer}}
+    {{> beerpartial}}
+    {{#each this.food_pairing}}
+    <ul>
+        <li>{{this}}</li>
+    </ul>
+    {{/each}}
+    {{/each}}
+</div>
