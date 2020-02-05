@@ -5,3 +5,15 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+.photo-beer{
+    margin:50px;
+    width: 30%
+}
+
+.row, .btn{
+    margin: 7px
+}
+
+.cont{
+    text-align: center;
+}
