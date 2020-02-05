@@ -1,10 +1,12 @@
 <section class="randombeer">
+    {{#each beer}}
     <div class="randombeerCard">
-        <img src="{{image_url}}" alt="{{name}}"/>
-        <h2>{{name}}</h2>
-        <blockquote>{{tagline}}</blockquote>
-        <p>{{description}}</p>
-        <p>{{food_pairing}}</p>
-        <p>{{brewers_tips}}</p>
+        <img src="{{this.image_url}}" alt="{{this.name}}"/>
+        <h2>{{this.name}}</h2>
+        <blockquote>{{this.tagline}}</blockquote>
+        <p>{{this.description}}</p>
+        <p>{{this.food_pairing}}</p>
+        <p>{{this.brewers_tips}}</p>
     </div>
+    {{/each}}
 </section>

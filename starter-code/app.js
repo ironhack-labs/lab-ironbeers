@@ -20,10 +20,9 @@ app.get('/beers', (req, res) => {
     .then(beersFromApi => res.render('beers', { beersFromApi }))
     .catch(error => console.log(error));
 });
-
 app.get('/randombeer', (req, res) => {
     punkAPI.getRandom()
-    .then(randombeer => res.render('randombeer',randombeer))
+    .then(beer => res.render('randombeer', { beer }))
     .catch(error => console.log(error));
 });
 
