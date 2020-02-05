@@ -1,0 +1,22 @@
+img {
+  height: 300px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  padding: 5px;
+  background-color: rgb(77, 77, 255);
+  color: white
+}
+
+nav {
+  margin-bottom: 20px;
+}
