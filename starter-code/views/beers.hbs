@@ -1,0 +1,25 @@
+  
+<div class="container">
+
+    <div class="row">
+
+        {{#each beersArray}}
+
+        <div class="col-4 beersCard">
+             <img class="card-img-top" src="{{this.image_url}}">
+             <h1>{{this.name}}</h1>
+             <h2>{{this.tagline}}</h2>
+             <p>{{this.description}}</p>
+              
+         </div>
+
+        {{/each}}
+
+    </div>
+</div>
+
+  <div class="col-3">
+            <img class="card-img-top" src="{{randomBeer.image_url}}">
+        </div>
+
+        
