@@ -37,7 +37,7 @@ h2 {
 }
 
 .container {
-    margin: 100px 100px
+    margin: 50px 100px
 }
 
 footer {
@@ -75,9 +75,13 @@ section {
     ;
 }
 
+.first-img {
+    max-width: 400px;
+}
+
 .img-beer {
     margin: 15px;
     text-align: center;
-    height: 200px;
+    height: 150px;
     object-fit: cover;
 }
