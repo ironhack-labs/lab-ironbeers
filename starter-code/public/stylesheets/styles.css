@@ -5,3 +5,47 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+
+h5, p{
+    margin-top: 30px;
+}
+
+button a{
+    color: white;
+    font-weight: bolder;
+}
+
+a {
+    font-size: large;
+    color: black;
+    text-decoration: none;
+}
+
+.beer-card img{
+    height: 200px;
+    object-fit: scale-down;
+    margin-top: 30px
+    
+}
+
+.beer-card{
+    margin-top: 30px;
+}
+
+.single-beer-card img{
+    
+    height: 400px;
+    object-fit: scale-down;
+    margin: 30px 0px
+}
+
+button{
+    margin-top: 30px;
+    padding: 0;
+}
+
+#paulaner{
+    height: 400px;
+    margin-top: 50px;
+}
