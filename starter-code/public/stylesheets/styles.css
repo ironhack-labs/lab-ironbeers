@@ -5,3 +5,23 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+img {
+    display: block;
+    max-width:230px;
+    max-height:200px;
+    width: auto;
+    height: auto;
+}
+
+.navbar {
+    background-color: #2081c3;
+    color: white;
+    font-size: 1.2em;
+}
+
+li, h1, .navbar {
+    margin-bottom: 20px;
+}
+
+
