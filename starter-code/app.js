@@ -32,9 +32,17 @@ app.get('/random-beers', (req,res) => {
     punkAPI.getRandom()
     .then(randomBeerFromApi => {
         console.log('Random beer from the database: ', randomBeerFromApi);
-        res.render('random-beers', {randomBeerFromApi})
+        res.render('random-beers', {randomBeerFromApi})  // {} because it is an object with properties
     })
     .catch(error => console.log(error));
+});
+
+// to get each seperate beer and save it in a variable
+app.get('/beers/:beerId', (req, res) => {
+    console.log('req.params', req.params);
+    console.log('req.params.beerId', req.params.beerId);
+
+    const beerId = req.params.beerId;
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
