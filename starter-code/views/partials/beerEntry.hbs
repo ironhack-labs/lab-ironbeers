@@ -1,13 +1,8 @@
-<article class="entry">
-  <img src="{{this.image_url}}" alt="this.name">
-
-  <div>
-    <h3><a href="/beers/{{id}}">{{this.name}}</a></h3>
-    <p>
+<div class="media">
+    <img src="{{this.image_url}}" class="mr-3 rounded float-left" style="max-height:100px" alt="this.name">
+    <div class="media-body">
+        <h5 class="mt-0"><a href="/beers/{{id}}">{{this.name}}</a></h5>
         {{this.description}}
-    </p>
-    <p class="tags">{{this.tagline}}</p>
-  </div>
-
-</article>
-
+        <p class="font-italic">>{{this.tagline}}</p>
+    </div>
+</div>
