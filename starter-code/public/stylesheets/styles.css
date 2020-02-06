@@ -5,3 +5,19 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+.navbar{
+background-color: #2081c3 ;
+color: #f7f9f9;             
+}
+.btn{
+    background-color: #2081c3;
+    color: #f7f9f9;
+}
+
+.img-beer{
+    margin:50px;
+    widows: 150px;
+}
+/* .col-size{
+    display:flex
+} */
