@@ -1,6 +1,20 @@
+body {
+  background-color: #f7f9f9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: #2081c3;
+  padding: 15px;
+}
+
+nav > a {
+  text-decoration: none;
+  color: #f7f9f9;
+  margin-left: 15px;
+}
+
 /*
-white: #f7f9f9;
-light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
