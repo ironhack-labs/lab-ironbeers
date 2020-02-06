@@ -1,0 +1,8 @@
+<div>
+    {{#each beersData}}
+    <img src="{{ this.image_url }}" alt="beer">
+    <h1> {{{ this.name }}}</h1>
+    <h2> {{{ this.description }}}</h2>
+    <h2> {{{ this.tagline }}}</h2>
+    {{/each}}
+</div>
