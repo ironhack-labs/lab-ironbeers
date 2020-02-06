@@ -1,0 +1,27 @@
+ {{#each random}}
+        <div>
+  
+  <div style="margin:130px"    class="container">
+      <div class="row">
+<div class="col">
+
+      <img src="{{image_url}}">
+</div>
+<div class="col">
+
+    <h5 class="card-title">{{name}}</h5>
+    <p class="card-text">{{description}}</p>
+    <p class="card-text">{{tagline}}</p>
+    <h7>-Food Pairing:</h7>
+    <br>
+    <br>
+    <p class="card-text">{{food_pairing}}</p>
+    <p class="card-text">Brewers tips: {{brewers_tips}}</p>
+
+</div>
+    <hr>
+
+      </div>
+  </div>
+
+{{/each}}
