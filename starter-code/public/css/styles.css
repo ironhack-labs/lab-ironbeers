@@ -24,3 +24,17 @@ height: 450px;
 .navbar navbar-expand-lg navbar-dark bg-dark{
     background-color: #2081c3;
 }
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #0C71B5;
+    height: 5vh;
+}
+
+nav a {
+    color: #E9E9E9;
+    text-decoration: none;
+    margin: 0 10px;
+}
