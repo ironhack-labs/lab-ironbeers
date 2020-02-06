@@ -14,6 +14,35 @@ app.use(express.static(path.join(__dirname, 'public')));
 // add the partials here:
 
 // add the routes here:
-app.get('/', (req, res) => res.render('index'));
+app.get('/', (req, res, next) => res.render('index'));
+
+app.get('/beers', (req, res, next) => {
+    punkAPI
+        .getBeers()
+        .then(beersFromApi =>{ 
+            const selectedBeersArr = beersFromApi.slice(0,25);
+
+            const data = { 
+                beers: selectedBeersArr
+            };
+
+            res.render("beers", data )})
+        .catch(error => console.log(error))
+
+});
+
+app.get('/random-beer', (req, res, next) => {
+    punkAPI
+    .getRandom()
+    .then(beersFromApi => {
+        const singleBeer = beersFromApi[0]
+        console.log(singleBeer);
+        
+        res.render("random-beer", singleBeer)
+
+})
+    .catch(error => console.log(error));
+
+});
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
