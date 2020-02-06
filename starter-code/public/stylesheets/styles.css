@@ -13,7 +13,7 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h5 {
   font-weight: 100;
 }
 
@@ -31,8 +31,24 @@ h1 {
 }
 img {
   height: 150px;
+  margin-left: 100px;
 }
 .cardbeer {
   margin-bottom: 50px;
-  
+}
+p {
+  font-size: small;
+}
+h5 {
+  font-size: 20px;
+  color: lightgray;
+}
+.bigBeer {
+  height: 500px;
+
+  margin-left: 300px;
+}
+.button {
+  display: flex;
+  justify-content: space-around;
 }

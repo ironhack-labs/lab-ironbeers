@@ -1,4 +1,4 @@
-<div class="container">
+{{!-- <div class="container">
     {{#each Beer}}
     <img src={{image_url}} alt={{name}}>
 
@@ -11,4 +11,19 @@
     </ul>
     {{/each}}
 
+</div> --}}
+<div class="container">
+    <h1>Cerveza Sorpresa</h1>
+
+    <div class="row">
+
+        {{#each Beer}}
+        {{>BeersCards this}}
+        <ul>
+            <li><strong> Food pairings: </strong>{{food_pairing}}</li>
+            <li><strong> Brewer tips: </strong>{{brewers_tips}}</li>
+        </ul>
+        {{/each}}
+
+    </div>
 </div>
