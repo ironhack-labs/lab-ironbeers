@@ -1,20 +1,12 @@
 {{#each randomBeer}}
 <div class="container">
+    <h2>Random Beers</h2>
     <div class="row">
-        <div class="col-md-4">
-            <div class="beer">
-                <img class="img-beer" src="{{image_url}}" alt="{{name}}">
-            </div>
-        </div>
-        <div class="beer-body col-md-8">
-            <h4>{{name}}</h4>
-            <p>{{description}}</p>
-            <p>{{tagline}}</p>
+        {{>beerpartial this}}
+        <div class="beer">
             <p>{{food_pairing}}</p>
             <p>{{brewers_tips}}</p>
-            <hr>
         </div>
     </div>
-</div>
-</div>
-{{/each}}
+
+    {{/each}}
