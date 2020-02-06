@@ -1,8 +1,10 @@
 <article class="card">
-    <img src="{{this.image_url}}" alt="{{this.name}} image">
+    <a href="/beers/{{id}}">
+        <img src="{{image_url}}" alt="{{name}} image">
+    </a>
   <div>
-    <h3>{{this.name}}</h3>
-    <h4>{{this.tagline}}</h4>
-    <p>{{this.description}}</p>
+    <h3>{{name}}</h3>
+    <h4>{{tagline}}</h4>
+    <p>{{description}}</p>
   </div>
 </article>
