@@ -12,13 +12,18 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // add the partials here:
+hbs.registerPartials(__dirname + "/views/partials")
 
 // add the routes here:
 app.get('/', (req, res) => res.render('index'));
 
 app.get('/beers', (req, res) => {
-    let beerList = getBeers();
-    res.render('beers', beerList)
+    punkAPI.getBeers() //returns a promise
+    .then(beerList => {
+        res.render('beers', {beerList:beerList});
+        console.log(beerList);
+        })
+    .catch(error => console.log(error));
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
