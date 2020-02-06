@@ -1,0 +1,10 @@
+<main>
+    
+    {{#each randomBeerFromApi}}
+        {{> beerpartial this }}
+
+         {{this.food_pairing}}
+         {{this.brewer_tips}}
+    {{/each}}
+    
+</main>
