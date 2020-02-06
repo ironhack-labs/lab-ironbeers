@@ -10,8 +10,7 @@ img {
     display: block;
     max-width:230px;
     max-height:200px;
-    width: auto;
-    height: auto;
+    
 }
 
 .navbar {
@@ -21,6 +20,15 @@ img {
 }
 
 li, h1, .navbar {
+    margin-bottom: 20px;
+}
+
+.player.card img {
+    height: 150px;
+    object-fit: cover;
+}
+
+.player.card {
     margin-bottom: 20px;
 }
 
