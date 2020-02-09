@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/StefanK2ff/lab-ironbeers/issues"
   },
-  "homepage": "https://github.com/StefanK2ff/lab-ironbeers#readme"
+  "homepage": "https://github.com/StefanK2ff/lab-ironbeers#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
 }
