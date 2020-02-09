@@ -1,8 +1,13 @@
-<div class="media">
-    <img src="{{this.image_url}}" class="mr-3 rounded float-left" style="max-height:100px" alt="this.name">
-    <div class="media-body">
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="{{this.image_url}}" class="rounded mx-auto d-block list-img" alt="{{this.name}}">
+    </div>
+    <div class="col-md-10">
         <h5 class="mt-0"><a href="/beers/{{id}}">{{this.name}}</a></h5>
         {{this.description}}
         <p class="font-italic">>{{this.tagline}}</p>
     </div>
+    
 </div>
+<hr class="my-4">

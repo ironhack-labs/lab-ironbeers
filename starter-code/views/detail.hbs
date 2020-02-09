@@ -1,12 +1,15 @@
-<h1 class="display-3">This is the {{name}}</h1>
+<h2 class="display-3 my-h2">This is the {{name}}</h2>
 
-
-<img class="img-fluid rounded mx-auto d-block" alt="Responsive image" style="max-width: 100%; max-height: 200px;"
-    src="{{image_url}}">
-
-<ul class="list-group list-group-flush">
-    <li class="list-group-item">{{description}}</li>
-    <li class="list-group-item">{{tagline}}</li>
-    <li class="list-group-item">{{food_pairing}}</li>
-    <li class="list-group-item">{{brewers_tips}}</li>
-</ul>
+<div class="row">
+    <div class="col-sm-4">
+        <img class="img-fluid rounded mx-auto d-block detail-img" alt="Responsive image" src="{{image_url}}">
+    </div>
+    <div class="col-sm-8">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">{{description}}</li>
+            <li class="list-group-item">{{tagline}}</li>
+            <li class="list-group-item">{{food_pairing}}</li>
+            <li class="list-group-item">{{brewers_tips}}</li>
+        </ul>
+    </div>
+</div>
