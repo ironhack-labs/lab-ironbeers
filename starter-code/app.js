@@ -26,7 +26,7 @@ app.get('/beers', (request, response) => {
       // console.log('Beers from the database: ', beersFromApi);
       response.render('beers.hbs', { beersFromApi });
     })
-    .catch(error => console.log(error));
+    .catch(error);
 });
 
 app.get('/random-beer', (req, res) => {
@@ -36,7 +36,7 @@ app.get('/random-beer', (req, res) => {
       // console.log('Beers from the database: ', beersFromApi);
       res.render('random-beer.hbs', { beersFromApi });
     })
-    .catch(error => console.log(error));
+    .catch(error);
 });
 
 app.listen(3000);
