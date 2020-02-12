@@ -1,7 +1,51 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+body {
+  /* white: #f7f9f9;
+  light-blue: #2081c3;
+  dark-blue: #0a2c42;
+  grey: #bfbfbf; */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #2081c3;
+  padding: 20px;
+  /* box-shadow: ; */
+}
+
+nav > a {
+  color: #f7f9f9;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+nav > a:hover {
+  color: yellow;
+}
+
+.btn {
+  background-color: #2081c3;
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home img {
+  width: 300px;
+  padding: 50px;
+}
+
+.beer-img {
+  height: 300px;
+}
