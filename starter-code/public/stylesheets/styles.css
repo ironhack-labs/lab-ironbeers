@@ -5,3 +5,104 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #bfbfbf;
+}
+
+header {
+  padding: 20px 0;
+  background-color: #2081c3;
+  margin-bottom: 25px;
+}
+
+img {
+  max-width: 350px;
+  margin-bottom: 20px;
+}
+
+ul {
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul a li {
+  margin: 0 20px;
+  color: white;
+}
+
+.allign {
+  text-align: center;
+}
+
+.beer-randomlist .beer-pic {
+  width: 30%;
+}
+
+.beer-randomlist .beer-info {
+  width: 50%;
+}
+
+.beer-randomlist .beer-item {
+  display: flex;
+  width: 100%;
+}
+
+.brewers-tips {
+  margin: 0px auto 75px;
+  width: 35%;
+}
+
+button {
+  background-color: #2081c3;
+  color: white;
+  font-size: 0.9em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 2px;
+  margin: 12px 0px;
+}
+
+.button-holder {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: auto;
+}
+
+.beer-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.beer-item {
+  width: 25%;
+  margin: 50px 2.5% 0px;
+}
+
+.beer-pic img {
+  max-height: 200px;
+}
+
+.beer-pic {
+  text-align: center;
+}
+
+footer {
+  background-color: #0a2c42;
+  position: inherit;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  font-size: 0.8em;
+  padding: 12px 50px;
+}
