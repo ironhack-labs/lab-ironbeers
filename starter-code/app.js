@@ -12,8 +12,28 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // add the partials here:
+hbs.registerPartials(__dirname + '/views/partials');
 
 // add the routes here:
 app.get('/', (req, res) => res.render('index'));
+
+app.get('/:beers', (req, res) => {
+  const list = [];
+
+  punkAPI
+    .getBeers()
+    .then(beersFromApi =>
+      console.log('Beers from the database: ', beersFromApi)
+    )
+    .catch(error => console.log(error));
+
+  const data = {
+    list: list
+  };
+
+  res.render('beers');
+});
+
+app.get('/random-beers', (req, res) => res.render('random-beers'));
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
