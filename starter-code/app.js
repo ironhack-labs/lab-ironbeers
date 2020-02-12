@@ -46,11 +46,11 @@ app.get('/random-beers', (req, res) => {
 app.get('/beers/:id', (req, res) => {
   const id = req.params.id;
   punkAPI
+    .getBeer(id)
     .then(beerInfo => {
-      const beer = punkAPI.getBeer(id);
-      console.log(punkAPI.getBeer(4));
+      console.log(beerInfo);
       const chosenBeer = {
-        beer: beer
+        singleBeer: beerInfo[0]
       };
       res.render('single', chosenBeer);
     })

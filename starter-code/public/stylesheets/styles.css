@@ -49,3 +49,7 @@ nav > a:hover {
 .beer-img {
   height: 300px;
 }
+
+.beerCard {
+  width: 30%;
+}
