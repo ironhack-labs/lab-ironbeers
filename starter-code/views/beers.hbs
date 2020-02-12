@@ -1,6 +1,6 @@
-<h1>Beers List</h1>
+<div class="beers">
+  {{#each beers}}
+    {{> beer this}}
+  {{/each}}
 
-{{#each listOfAllBeers}}
- {{> beerpartial }}
-
-{{/each}}
+</div>
