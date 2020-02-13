@@ -51,16 +51,16 @@ app.get('/random-beers', (req, res) => {
     .catch(error => console.log(error));
 });
 
-app.get('/search/:searcH', (req, res) => {
+app.get('/search', (req, res) => {
   const searc = req.query.beerId;
-  console.log(req.query);
-  // punkAPI
-  //   .getBeer(searc)
-  //   .then(single => {
-  //     console.log(single[0]);
-  //     res.render('singleBeer', single[0]);
-  //   })
-  //   .catch(error => console.log(error));
+  // console.log(req.query);
+  punkAPI
+    .getBeer(searc)
+    .then(single => {
+      // console.log(single[0]);
+      res.render('singleBeer', single[0]);
+    })
+    .catch(error => console.log(error));
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

@@ -65,3 +65,11 @@ footer {
   width: 30%;
   color: black;
 }
+
+.randomBeers {
+  display: flex;
+}
+
+.randomBeers img {
+  width: 100%;
+}
