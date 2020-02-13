@@ -1,10 +1,6 @@
 <h1>Beers</h1>
 
-{{#each beersFromApi}} {{!-- //to iterate over the list --}}
 
-  {{> image }}
-  {{> name }}
-  {{> description }}
-  {{> tagline }}
-  
+{{#each beers}}
+  {{>listOfBeers}}
 {{/each}}
