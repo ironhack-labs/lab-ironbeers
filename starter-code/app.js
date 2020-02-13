@@ -52,15 +52,15 @@ app.get('/random-beers', (req, res) => {
 });
 
 app.get('/search/:searcH', (req, res) => {
-  const search = req.query.beerId;
+  const searc = req.query.beerId;
   console.log(req.query);
-  punkAPI
-    .getBeer(search)
-    .then(single => {
-      console.log(single[0]);
-      res.render('singleBeer', single[0]);
-    })
-    .catch(error => console.log(error));
+  // punkAPI
+  //   .getBeer(searc)
+  //   .then(single => {
+  //     console.log(single[0]);
+  //     res.render('singleBeer', single[0]);
+  //   })
+  //   .catch(error => console.log(error));
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

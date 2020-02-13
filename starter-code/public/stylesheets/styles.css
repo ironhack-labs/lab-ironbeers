@@ -36,6 +36,10 @@ footer {
   width: 15%;
 }
 
+.beerPartialsImg {
+  height: 300px;
+}
+
 .beers {
   padding-top: 5%;
   background-color: lightgrey;
@@ -50,10 +54,9 @@ footer {
 }
 .beers h6 {
   color: grey;
-  align-self: ;
 }
 .beers img {
-  width: 100px;
+  height: 100%;
   margin-left: 25%;
   padding-bottom: 2%;
 }
