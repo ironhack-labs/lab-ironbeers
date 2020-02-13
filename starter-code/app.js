@@ -25,7 +25,19 @@ app.get('/beers', (req, res) => {
         listOfBeers: beersFromApi
       };
       res.render('beers', data);
-      console.log(beersFromApi);
+      // console.log(beersFromApi);
+    })
+    .catch(error => console.log(error));
+});
+
+app.get('/singleBeer/:id', (req, res) => {
+  const idId = req.params.id;
+  console.log(idId);
+  punkAPI
+    .getBeer(idId)
+    .then(single => {
+      console.log(single);
+      res.render('singleBeer', single[0]);
     })
     .catch(error => console.log(error));
 });
@@ -35,6 +47,18 @@ app.get('/random-beers', (req, res) => {
   randomBeer
     .then(beer => {
       res.render('random-beers', beer[0]);
+    })
+    .catch(error => console.log(error));
+});
+
+app.get('/search/:searcH', (req, res) => {
+  const search = req.query.beerId;
+  console.log(req.query);
+  punkAPI
+    .getBeer(search)
+    .then(single => {
+      console.log(single[0]);
+      res.render('singleBeer', single[0]);
     })
     .catch(error => console.log(error));
 });

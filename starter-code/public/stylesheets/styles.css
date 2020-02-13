@@ -3,5 +3,62 @@ white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
+
 */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  background-color: #0a2c42;
+  margin: 0%;
+  padding-left: 3em;
+  height: 3em;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+}
+.indexStyle {
+  display: flex;
+  flex-direction: column;
+  background-color: cornflowerblue;
+  padding: 5% 0%;
+}
+
+.indexStyle img {
+  width: 45%;
+  margin: 0% auto;
+  padding-bottom: 5%;
+}
+
+.indexStyle a {
+  margin: 1% auto;
+  width: 15%;
+}
+
+.beers {
+  padding-top: 5%;
+  background-color: lightgrey;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+}
+.listOfBeers {
+  width: 30%;
+  padding-bottom: 3%;
+}
+.beers h6 {
+  color: grey;
+  align-self: ;
+}
+.beers img {
+  width: 100px;
+  margin-left: 25%;
+  padding-bottom: 2%;
+}
+.beers a {
+  text-decoration: none;
+  width: 30%;
+  color: black;
+}

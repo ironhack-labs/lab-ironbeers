@@ -1,13 +1,22 @@
 <html>
   <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Iron Beers</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css" type="text/css">
   </head>
   <body>
-    <nav>
-      <a href="/"> Home </a>
-      <a href="/beers"> Beers </a>
-      <a href="/random-beers"> Random Beer </a>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="/"> Home </a>
+      <a class="nav-item nav-link" href="/beers"> Beers </a>
+      <a class="nav-item nav-link" href="/random-beers"> Random Beers </a>
+      <form class="form-inline" action="/search" method="GET">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="beerId">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
     </nav>
     {{{ body }}}
+    <footer>
+      <p>Develop by Ironhack ;)</p>
+    </footer>
   </body>
 </html>
