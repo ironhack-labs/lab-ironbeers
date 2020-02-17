@@ -5,13 +5,15 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 */
 
+/* Navigation */
+
 .nav {
   font-family: Arial, Helvetica, sans-serif;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #3498db;
+  background-color: #2081c3;
 }
 
 .navbar-nav {
@@ -31,7 +33,10 @@ grey: #bfbfbf;
   background-color: #2980b9;
 }
 
+/* Index Page */
+
 .beer-image {
+  margin-top: 2%;
   width: 300px;
   height: 300px;
 }
@@ -53,5 +58,18 @@ grey: #bfbfbf;
 	box-shadow: 0 2px #95a5a6;
   margin-top: 20px;
   cursor: pointer;
+}
+
+/* Footer */
+
+.footer {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0a2c42;
+  color: white;
+  font-size: 0.9rem;
+  padding: 20px 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
