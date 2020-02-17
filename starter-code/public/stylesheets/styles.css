@@ -3,16 +3,15 @@ white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
 */
 
-
 .nav {
+  font-family: Arial, Helvetica, sans-serif;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #3498db;
 }
 
 .navbar-nav {
@@ -29,5 +28,30 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-item:hover {
-  background-color: #111;
+  background-color: #2980b9;
 }
+
+.beer-image {
+  width: 300px;
+  height: 300px;
+}
+
+.beers-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-button {
+  color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	background: #1e3799;
+  width: 180px;
+  height: 50px;
+	border-radius: 6px;
+	box-shadow: 0 2px #95a5a6;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
