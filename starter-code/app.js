@@ -12,8 +12,18 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 const texts = {
-    headTitle: "Beers",
-    nav: ["home", "beers", "random-beers"]
+    headTitle: "IronBeers",
+    nav: [
+        {url: "",
+        text: "home"
+        }, 
+        {url: "beers", 
+        text: "beers"
+        }, 
+        {url: "random-beers",
+        text: "random-beers"
+        }
+    ]
 }
 
 // add the partials here:

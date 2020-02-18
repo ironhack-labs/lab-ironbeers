@@ -14,7 +14,7 @@
         <nav class="nav container flex-row pb-2 pt-1 ">
             <ul class="col-6--nr pl-1 pr-1 flex-row justify-content-end align-self-center">
                 {{#each nav}}
-                <li class="pl-1 pr-1 col-4 ta-right--nr"><a href="/{{this}}">{{this}}</a></li>
+                <li class="pl-1 pr-1 col-4 ta-right--nr"><a href="/{{this.url}}">{{this.text}}</a></li>
                 {{/each}}
             </ul>
         </nav>
