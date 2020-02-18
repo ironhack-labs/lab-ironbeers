@@ -16,10 +16,12 @@ app.get('/', (req, res) => res.render('index'));
 
 app.get('/beers', (req, res) => {
   punkAPI.getBeers().then((response) => {
+    console.log(response)
     res.render('beers.hbs', {
       beers: response
     })
-    // console.log(respose.data);
+    //console.log(respose.data);
+    
   });
   // .then(responseFromApi =>
   //   //console.log('Beers from database', responseFromApi))
