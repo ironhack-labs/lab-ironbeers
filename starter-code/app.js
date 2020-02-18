@@ -21,7 +21,15 @@ const texts = {
         text: "beers"
         }, 
         {url: "random-beers",
-        text: "random-beers"
+        text: "random beers"
+        }
+    ],
+    buttons: [
+        {url: "beers", 
+        text: "Check the beers"
+        }, 
+        {url: "random-beers",
+        text: "Check a random beer"
         }
     ]
 }

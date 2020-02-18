@@ -1,3 +1,8 @@
+
+
 <div>
-    index
+    <img src="images/beer.png" alt="beer">
 </div>
+{{#each buttons}}
+<div><button><a href="/{{this.url}}">{{this.text}}</a></button></div>
+{{/each}}
