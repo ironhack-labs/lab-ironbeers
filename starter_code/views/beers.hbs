@@ -1,0 +1,15 @@
+<ul>
+    {{#each beers}}
+    <li>{{this.name}}
+       
+            <ul>
+               {{#each this.food_pairing}}
+                  <li>{{this}}</li>
+               {{/each}}
+            </ul>
+        
+        <p>{{this.tagline}}</p>
+    </li>
+    
+    {{/each}}
+</ul>
