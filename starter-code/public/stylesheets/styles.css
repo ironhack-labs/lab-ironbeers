@@ -73,3 +73,22 @@ grey: #bfbfbf;
   width: 100%;
 }
 
+/* Beers Page */
+
+.allbeers {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.beer-image {
+  width: auto;
+  height: 200px;
+}
+
+.beer-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.beer-tagline {
+  color: gray;
+}
