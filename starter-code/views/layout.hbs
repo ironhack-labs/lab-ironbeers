@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <script src="https://kit.fontawesome.com/23ee95315c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <title>{{headTitle}}</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container flex-row pb-2 pt-1 ">
+            <ul class="col-6--nr pl-1 pr-1 flex-row justify-content-end align-self-center">
+                {{#each nav}}
+                <li class="pl-1 pr-1 col-4 ta-right--nr"><a href="/{{this}}">{{this}}</a></li>
+                {{/each}}
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {{{body}}}
+    </main>
+</body>
+</html>
