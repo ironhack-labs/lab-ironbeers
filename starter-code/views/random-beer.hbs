@@ -6,8 +6,10 @@
     <p class="random-beer-tagline">{{this.tagline}}</p>
     <p class="random-beer-description">{{this.description}}</p>
     <h3 class="food-pairing-title">Food Pairing</h3>
-    <p class="random-beer-food-pairing"> {{this.food_pairing}}</p>
-    <p class="random-beer-brewer-tips"> Brewer Tips: {{this.brewers_tips}}</p>
+    {{#each food_pairing}} 
+    <li class="random-beer-food-pairing"> {{this}}</li>
+    {{/each}}
+    <p class="random-beer-brewer-tips"> <b class="bold-brewer">Brewer Tips:</b> {{this.brewers_tips}}</p>
   </div>
   {{/each}}
 </div>

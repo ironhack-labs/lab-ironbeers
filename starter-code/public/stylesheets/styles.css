@@ -120,7 +120,7 @@ grey: #bfbfbf;
 
 .random-beer-container {
   display: flex;
-  margin: 10%;
+  margin: 8%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -144,5 +144,14 @@ grey: #bfbfbf;
 }
 
 .food-pairing-title {
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+
+.random-beer-food-pairing {
+  margin-bottom: 2%;
+}
+
+.bold-brewer {
   font-weight: bold;
 }
