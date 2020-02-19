@@ -10,37 +10,22 @@ app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
-
-const texts = {
-    headTitle: "IronBeers",
-    nav: [
-        {url: "",
-        text: "home"
-        }, 
-        {url: "beers", 
-        text: "beers"
-        }, 
-        {url: "random-beers",
-        text: "random beers"
-        }
-    ],
-    buttons: [
-        {url: "beers", 
-        text: "Check the beers"
-        }, 
-        {url: "random-beers",
-        text: "Check a random beer"
-        }
-    ]
-}
-
+    
 // add the partials here:
 
 // add the routes here:
 
-app.get("/", (req, res) => res.render("index", texts));
-app.get("/beers", (req, res) => res.render("beers", texts));
-app.get("/random-beers", (req, res) => res.render("random-beers", texts));
+app.get("/", (req, res) => res.render("index"));
+app.get("/beers", (req, res) => {
+    punkAPI
+        .getBeers()
+        .then((beersFromApi) => {
+            const beers = { beersFromApi }
+            res.render("beers", beers)
+        })
+        .catch(error => console.log(error));
+});
+app.get("/random-beers", (req, res) => res.render("random-beers"));
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
 
