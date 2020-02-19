@@ -28,6 +28,14 @@ app.get('/beers', (req, res) => {
   .catch(error => console.log(error));
 });
 
-app.get('/random-beer', (req, res) => res.render('random-beer', { title: "Random Beers" }));
+app.get('/random-beer', (req, res) => {
+  punkAPI
+  .getRandom()
+  .then(responseFromAPI => {
+    console.log(responseFromAPI);
+    res.render('random-beer', { responseFromAPI, title: "Random Beers" });
+  })
+  .catch(error => console.log(error));
+}); 
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

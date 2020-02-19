@@ -91,7 +91,7 @@ grey: #bfbfbf;
   padding: 20px 30px;
 }
 
-.beer-image {
+.beer-images {
   width: 50px;
   height: 200px;
 }
@@ -109,4 +109,40 @@ grey: #bfbfbf;
 
 .beer-description {
   font-size: 0.8em;
+}
+
+/* Random Beers */
+
+.beer-random-image {
+  width: auto;
+  height: 250px;
+}
+
+.random-beer-container {
+  display: flex;
+  margin: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.random-beer-descriptions {
+  margin: 0 5%;
+}
+
+.random-beer-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+
+.random-beer-tagline {
+  color:gray;
+  margin-bottom: 2%;
+}
+
+.random-beer-description {
+  margin-bottom: 2%;
+}
+
+.food-pairing-title {
+  font-weight: bold;
 }
