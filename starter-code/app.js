@@ -22,5 +22,12 @@ app.get('/beers', (req, res) => {
   .then(beersFromApi => res.render('beers', {beersFromApi}))
   .catch(error => console.log(error));
 });
-app.get('/random-beer', (req, res) => res.render(`${__dirname}/views/random-beer`));
+app.get('/random-beer', (req, res) => {
+    punkAPI
+    .getRandom()
+    .then(responseFromAPI => {
+      // your magic happens here
+      
+    },res.render('random-beer',{responseFromAPI}))
+    .catch(error => console.log(error));});
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

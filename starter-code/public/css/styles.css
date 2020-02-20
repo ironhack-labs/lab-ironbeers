@@ -23,10 +23,11 @@ body{
    padding-bottom: 45px;
    padding-top: 40px;
    margin: 0;
+   
 
 }
 .footer p{
-   padding-left: 50px
+   padding-left: 50px;
 }
 
 .menu a{
@@ -34,7 +35,6 @@ body{
    text-decoration: none;
    padding-left: 50px;
    padding-bottom: 50px;
-   
    
    
 }
@@ -70,4 +70,38 @@ button{
 button a{
    text-decoration: none;
    color: #f7f9f9;
+}
+
+.beers-container{
+   margin-top: 70px;
+   display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+   padding-left: 70px;
+   padding-right: 70px;
+   margin-bottom: 100px;
+}
+.beer{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   justify-content: space-around;
+   align-items: center;
+   width: 500px;
+   margin-right: 5px;
+   margin-left: 5px;
+   
+}
+.beer-name{
+   font-size: 25px;
+   font-weight: bold;
+}
+.beer-image{
+   width: 65px;
+  
+}
+.tagline{
+   color: #bfbfbf;
+   margin-top: 5px;
+   margin-bottom: 5px;
 }
