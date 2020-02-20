@@ -1,0 +1,15 @@
+      <article class="beer">
+        <img src="{{this.image_url}}" alt="{{this.name}}">
+        <div class="text-beer">
+          <h3>
+            <a href="/beers/beer-{{this.id}}" class="link-beer">{{this.name}}</a> 
+          </h3>
+        <p>
+          {{this.description}}
+        </p>
+        <p>
+          {{this.tagline}}
+          {{> random}}
+        </p>
+        </div>
+      </article>

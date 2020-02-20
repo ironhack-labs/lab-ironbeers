@@ -40,6 +40,10 @@ body{
   height: 250px;
 }
 
+.specific-beer{
+  display: flex;
+  justify-content: center;}
+
 .button{
   background-color: #2081c3;
   width: fit-content;
@@ -48,6 +52,52 @@ body{
   border: 0;
   border-radius: 5%;
 }
+
+.beers{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+.link-beer{
+  text-decoration: none;
+  color: #000;
+}
+
+.beer{
+  width: 30%;
+  text-align: center;
+}
+
+.one-beer{
+  width: 60%;
+}
+
+.beer img{
+  height: 120px;
+  
+}
+
+.text-beer{
+  text-align: left;
+}
+
+.random-beer{
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.random-image img{
+  height: 150px;
+  margin-right: 50px;
+}
+
+.text-random{
+  width: 50%;
+}
+
 
 .text-footer{
   background-color: #0a2c42;
