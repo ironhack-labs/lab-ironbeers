@@ -1,5 +1,4 @@
 /*
-dark-blue: #0a2c42;
 */
 
 body {
@@ -30,7 +29,7 @@ nav a {
 }
 
 #home {
-  height: 550px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -53,6 +52,7 @@ nav a {
 
 #beer-list {
   width: 70%;
+  min-height: 600px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -71,4 +71,16 @@ nav a {
 
 .beer-thumb {
   height: 300px;
+}
+
+footer {
+  height: 60px;
+  background-color: #0a2c42;
+  color: #f7f9f9;
+  display: flex;
+  align-items: center;
+}
+
+footer p {
+  margin-left: 20px;
 }
