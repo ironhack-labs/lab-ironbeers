@@ -12,7 +12,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // add the partials here:
-hbs.registerPartials(__dirname + "/views/partials");
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 // add the routes here:
 app.get('/', (req, res) => res.render('index'));
@@ -22,31 +22,33 @@ app.get('/beers', (req, res) => {
       .then(beersFromApi => res.render('beers', { beersFromApi }))
       .catch(error => console.log(error));
 })
-app.get('/random-beers', (req, res) => res.render('random-beers'))
+app.get('/random-beers', (req, res) => {
+  
+  punkAPI
+    .getRandom()
+    .then(randomBeer => {
+        res.render('random-beers', { randomBeer })
+    })
+    .catch(error => console.log(error));
+    })
+    
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
 
 
-
-
-
-
-
-
+// app.get('/random-beer', (req, res) =>
+//   punkAPI
+//     .getRandom()
+//     .then(randomBeer => {
+//       console.log(randomBeer);
+//       res.render('random-beer', { randomBeer });
+//     })
 
 // app.get('/allbeers', (req, res) => {
 //     punkAPI
 //         .getBeers()
-//         .then(beersFromApi => console.log('Beers from the database: ', beersFromApi))
+//         // todo ok, para el then
+//         .then(beersFromApi => res.render('vista', { beersFromApi }))
+//         // algo va mal, para el catch
 //         .catch(error => console.log(error));
 // })
-
-
-app.get('/allbeers', (req, res) => {
-    punkAPI
-        .getBeers()
-        // todo ok, para el then
-        .then(beersFromApi => res.render('vista', { beersFromApi }))
-        // algo va mal, para el catch
-        .catch(error => console.log(error));
-})
