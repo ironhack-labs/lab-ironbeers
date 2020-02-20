@@ -7,6 +7,13 @@
       <h2>{{randomBeer.[0].name}}</h2>
       <h3>{{randomBeer.[0].tagline}}</h3>
       <p>{{randomBeer.[0].description}}</p>
+      <span><strong>Food Pairing</strong></span>
+      <ul>
+        {{#each randomBeer.[0].food_pairing}}
+          <li class="food-pairing">{{this}}</li>
+        {{/each}}
+      </ul>
+      <p><strong>Brewers Tips:</strong> {{randomBeer.[0].brewers_tips}}</p>
     </div>
   </div>
 </main>

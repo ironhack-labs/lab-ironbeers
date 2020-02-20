@@ -73,6 +73,10 @@ nav a {
   height: 300px;
 }
 
+.food-pairing {
+  padding: 5px 0;
+}
+
 footer {
   height: 60px;
   background-color: #0a2c42;
