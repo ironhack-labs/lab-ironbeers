@@ -1,15 +1,13 @@
 const express = require('express');
-const hbs = require('hbs');
-const path = require('path');
+const router = new express.Router();
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
-
-const app = express();
-
 const punkAPI = new PunkAPIWrapper();
 
-router.get("/random-beers", (req, res) => {
-       const randomBeer = PunkAPI.getRandom()
-
+router.get("/random-beers", (req, res, next) => {
+    const randomBeer = punkAPI.getRandom()
     randomBeer.then(beer => {
-        alert(beer[0].name)
-    })
+        res.render("random-beers", { beer: beer[0]})
+    });
+});
+
+module.exports = router;

@@ -1,20 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/stylesheets/styles.css">
-    <title>Random Beer</title>
-</head>
-<body>
-
-image: String,
-name: String,
-description: String,
-tagline: String,
-food pairing: String,
-brewer tips: String,
-
-</body>
-</html>
+<div class="orange-page">
+    {{> beerpartial beer}}
+    <h3>{{beer.food_pairing}}</h3>
+    <p>{{beer.brewers_tips}}</p>
+</div>

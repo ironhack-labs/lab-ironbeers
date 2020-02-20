@@ -1,20 +1,18 @@
 const express = require('express');
-const hbs = require('hbs');
-const path = require('path');
+const router = new express.Router();
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
-
-const app = express();
-
 const punkAPI = new PunkAPIWrapper();
 
-    router.get("/beers", (req, res) => {
-        punkAPI
-            .getBeers()
-            .then(dbRes => {
-                console.log(dbRes)
-                res.render("beers", {
-                    beers: dbRes
-                });
-            })
-            .catch(err => console.log(err));
-    });
+router.get("/beers", (req, res, next) => {
+    punkAPI
+        .getBeers()
+        .then(dbRes => {
+            console.log("ici =>", dbRes)
+            res.render("beers", {
+                beers: dbRes
+            });
+        })
+        .catch(err => console.log(err));
+});
+
+module.exports = router;
