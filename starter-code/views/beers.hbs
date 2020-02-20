@@ -1,5 +1,6 @@
 <div class="beers-container">
   {{#each beersFromApi }} 
     {{> beerPartials this}}
+    <a href="/beers{{this.id}}">link</a>
   {{/each}}
 </div>
