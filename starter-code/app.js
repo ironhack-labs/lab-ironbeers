@@ -10,6 +10,8 @@ app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
+
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
     
 // add the partials here:
 
@@ -20,11 +22,32 @@ app.get("/beers", (req, res) => {
     punkAPI
         .getBeers()
         .then((beersFromApi) => {
+            console.log(beersFromApi)
             res.render("beers", { beersFromApi })
         })
         .catch(error => console.log(error));
 });
-app.get("/random-beers", (req, res) => res.render("random-beers"));
+
+app.get('/beers/:id', (req, res) => {
+    punkAPI
+        .getBeer(req.params.id)
+        .then((beer) => {
+            console.log(beer)
+            res.render("beer", { beer } )
+        })
+        .catch(error => console.log(error))
+})
+
+app.get("/random-beer", (req, res) => {
+        punkAPI
+            .getRandom()
+            .then((random) => {
+                res.render("random-beer", { random })
+            })
+            .catch(error => console.log(error));
+});
+
+
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
 
