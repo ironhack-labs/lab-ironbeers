@@ -1,6 +1,14 @@
-<h2>Beers</h2>
-<ul>
+<main id="beer-list">
   {{#each beers}}
-    <li>{{this.name}}</li>
+  <div class="beer-card">
+    <div class="beer-thumb-container">
+      <img class="beer-thumb" src="{{this.image_url}}" />
+    </div>
+    <div>
+      <h2>{{this.name}}</h2>
+      <h3>{{this.tagline}}</h3>
+      <p>{{this.description}}</p>
+    </div>
+  </div>
   {{/each}}
-</ul>
+</main>
