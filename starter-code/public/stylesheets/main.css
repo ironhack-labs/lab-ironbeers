@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+}
+
+header{
+  margin-top: 0;
+  height: 15%;
+  background-color: #1497F4;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+header>ul{
+  display: flex;
+  flex-direction: row;
+}
+header>ul>li{
+  width: 110px;
+  display: flex;
+  align-items: flex-end;
+}
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#img-beer{
+  max-height: 550px;
+  max-width: 300px;
+  width: 180px;
+  height: 220px;
+  margin: 5% 0;
+}
+.btn{
+  margin: 5% 0;
+}
