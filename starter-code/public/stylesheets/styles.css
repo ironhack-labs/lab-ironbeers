@@ -24,3 +24,25 @@ nav a {
   padding-left: 40px;
   color: #f7f9f9;
 }
+
+main {
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#beer {
+  width: 310px;
+}
+
+.button {
+  padding: 13px 20px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 400;
+  background-color: #2081c3;
+  color: #f7f9f9;
+}
