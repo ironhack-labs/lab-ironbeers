@@ -16,6 +16,7 @@ hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 // add the routes here:
 app.get('/', (req, res) => res.render('index'));
+
 app.get('/beers', (req, res) => {
     punkAPI
       .getBeers()
@@ -25,6 +26,7 @@ app.get('/beers', (req, res) => {
       })
       .catch(error => console.log(error));
 })
+
 app.get('/beers:id', (req, res) => {
     const id = req.params.id
      punkAPI
@@ -36,6 +38,7 @@ app.get('/beers:id', (req, res) => {
         .catch(error => console.log(error))
 
 })
+
 app.get('/random-beers', (req, res) => {
   
   punkAPI
@@ -48,21 +51,3 @@ app.get('/random-beers', (req, res) => {
     
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
-
-
-// app.get('/random-beer', (req, res) =>
-//   punkAPI
-//     .getRandom()
-//     .then(randomBeer => {
-//       console.log(randomBeer);
-//       res.render('random-beer', { randomBeer });
-//     })
-
-// app.get('/allbeers', (req, res) => {
-//     punkAPI
-//         .getBeers()
-//         // todo ok, para el then
-//         .then(beersFromApi => res.render('vista', { beersFromApi }))
-//         // algo va mal, para el catch
-//         .catch(error => console.log(error));
-// })
