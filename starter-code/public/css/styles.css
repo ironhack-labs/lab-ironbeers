@@ -10,7 +10,12 @@ font-family: Arial, Helvetica, sans-serif;
    padding: 0;
    font-family: Arial, Helvetica, sans-serif;
 }
-
+.pic{
+   margin-top:50px ;
+   margin-bottom: 50px;
+   width: 475px;
+   padding-left: 70px;
+}
 body{
    background-color: #f7f9f9;
 
@@ -20,9 +25,11 @@ body{
 .footer{
    background-color:#0a2c42 ;
    color: white;
-   padding-bottom: 45px;
-   padding-top: 40px;
-   margin: 0;
+   
+   padding: 30px 10px;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
    
 
 }
@@ -105,3 +112,4 @@ button a{
    margin-top: 5px;
    margin-bottom: 5px;
 }
+
