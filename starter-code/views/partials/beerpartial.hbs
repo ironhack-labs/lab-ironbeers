@@ -1,0 +1,19 @@
+{{#each beersFromApi as |item|}}
+<div class="beeritm">
+    <img class="img1" src="{{item.image_url}}" width="60px" alt="">
+
+    <div class="textobeer">
+        <h1> {{item.tagline}}</h1>
+
+        <h4>{{item.name}}</h4>
+        <p>{{item.description}}</p>
+
+        <h4>Food Pairing</h4>
+        {{item.food_pairing}}
+
+        <p>{{item.brewers_tips}}</p>
+
+
+    </div>
+</div>
+{{/each}}

@@ -1,0 +1,23 @@
+<ul>
+
+    <!-- name of the beer -->
+    {{#each beersFromApi as |item|}}
+    {{#if (eq orderID.id "Buzz" )}}
+
+    a
+    <li>
+        <img src="{{item.image_url}}" width="60px" alt="">
+        {{item.tagline}}
+    </li>
+    <li>
+
+        {{item.name}}: {{item.description}}
+    </li>
+
+    {{/if}}
+
+
+    {{/each}}
+
+
+</ul>

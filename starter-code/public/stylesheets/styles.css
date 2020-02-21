@@ -5,3 +5,84 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav {
+  background-color: #2081c3;
+  color: white;
+  height: 50px;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.nav ul li {
+  text-decoration: none;
+  margin: 20px;
+  color: white;
+  display: inline;
+}
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+.footer {
+  background-color: #0a2c42;
+  color: white;
+  height: 50px;
+  bottom: 0px;
+  position: fixed;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 200px;
+  width: 100vw;
+}
+.centermidle img {
+  padding-top: 140px;
+  padding-bottom: 30px;
+  width: 350px;
+}
+.centermidle {
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+}
+.checkbutton {
+  width: auto;
+  color: white;
+  padding: 14px;
+  border-radius: 10px;
+  box-shadow: rgb(112, 112, 112) 2px 2px 2px 2px;
+  background-color: #2081c3;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+.img1 {
+}
+.center {
+  display: flex;
+  padding: 20px;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.center2 {
+  padding: 20px;
+
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+.textobeer {
+}
+.beeritm {
+  width: 28%;
+}
