@@ -46,9 +46,9 @@ nav li a {
 }
 
 .footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0rem;
 
   background: #0a2c42;
   color: white;
