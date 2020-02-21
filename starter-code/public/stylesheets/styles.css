@@ -31,7 +31,7 @@ body {
     height: 60px;
     background-color: #0a2c42;
     color: white;
-    position: absolute;
+    position: fixed;
 }
 
 .footer-text{
@@ -74,4 +74,25 @@ body {
     left: 50%;
     transform: translate(-50%);
     top: 500px;
+}
+
+.beers-img{
+    width: 100px;
+    height: 300px;
+}
+
+.part-view-beer{
+    width: 30%;
+    padding: 10px;
+    height: 550px;
+    float: left;
+}
+
+.beers-name{
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.beers-tagline{
+    line-height: 40px;
 }
