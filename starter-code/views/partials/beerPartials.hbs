@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/stylesheets/styles.css">
+  <title>Beer Partials</title>
+</head>
+<body>
+
+    <article class="beer">
+        <img src="{{this.image_url}}" alt="{{this.name}}">
+          <div class="text-beer">
+            <h3>
+              <a href="/beers/beer-{{this.id}}" class="link-beer">{{this.name}}</a> 
+            </h3>
+          <p>
+            {{this.tagline}}
+            {{this.description}}
+          </p>
+        </div>
+    </article>
+  
+</body>
+</html>

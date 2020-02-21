@@ -5,11 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="/stylesheets/styles.css">
-  <title>Document</title>
+  <title>Beers</title>
 </head>
 <body>
-    <main class="home-container">
-      <img class="beer-image" src="/images/beer.png" alt="beer-image">
+
+  <main>
+    <div class="beers">
+      {{#each beersFromApi}}
+        {{> beerPartials}}
+      {{/each}}
+    </div>
       <button class="button-home"> <a href="/beers" class="link">Check the Beers!</a></button>
       <button class="button-home"> <a href="/random-beers" class="link">Check a Random Beers!</a></button>
   </main>
