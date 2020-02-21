@@ -1,4 +1,9 @@
-<div>
-  RANDOM BEER PAGE
-
+<div class="random-beer-container">
+  {{#each beers}}
+  {{> partialBeers }}
+  <p>Food Pairing tips:</p>
+  {{this.food_pairing}}
+  <p>Brewer tips:</p>
+  {{this.brewers_tips}}
+  {{/each}}
 </div>
