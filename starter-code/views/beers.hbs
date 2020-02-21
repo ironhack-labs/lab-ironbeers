@@ -1,0 +1,16 @@
+<div class="all-beer-wrapper">
+    {{#each beersFromApi }}
+        <a href="/beer/beer-{{this.id}}" class="beer-wrapper">
+            <div class="beer-image">
+                <img src="{{this.image_url}}">
+            </div>
+            <div class="beer-info">
+                {{> beerpartial beer=this }}
+            </div>
+        </a>
+    {{/each}}
+</div>
+
+{{#if failed}}
+    {{failed}}
+{{/if}}

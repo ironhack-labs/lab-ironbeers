@@ -1,0 +1,18 @@
+<div class="wrapper">
+    <div class="beer-image">
+        <img src="{{beer.image_url}}">
+    </div>
+    <div class="beer-info">
+       {{> beerpartial}}
+        <h3>Food pairing</h3>
+        <ul>
+            {{#each beer.food_pairing}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p class="brewer-tips"><b>Brewer Tips: </b>{{beer.brewers_tips}}</p>
+    </div>
+</div>
+{{#if failed}}
+    {{failed}}
+{{/if}}
