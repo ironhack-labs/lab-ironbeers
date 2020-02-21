@@ -1,1 +1,7 @@
-{{> beerpartial }}
+<section>
+  <div>
+    {{#each beerFromApi }}
+      {{> beerpartial }}
+    {{/each}}
+  </div>
+</section>

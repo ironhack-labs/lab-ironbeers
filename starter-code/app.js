@@ -13,9 +13,6 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// add the partials here:
-
-// add the routes here:
 app.get('/', (req, res) => res.render('index', { title: "IronBeers" }));
 
 app.get('/beers', (req, res) => {
@@ -28,9 +25,15 @@ app.get('/beers', (req, res) => {
   .catch(error => console.log(error));
 });
 
-app.get('/beers/:beerId/', (req, res, next) => {
-  res.send(req.params)
-})
+app.get('/beers/beer-:beer_id', (req, res) => {
+  const { beer_id } = req.params;
+  punkAPI
+    .getBeer(beer_id)
+    .then(beerFromApi => {
+      res.render('beers', { beerFromApi });
+    })
+    .catch(error => console.log(error));
+});
 
 app.get('/random-beer', (req, res) => {
   punkAPI
