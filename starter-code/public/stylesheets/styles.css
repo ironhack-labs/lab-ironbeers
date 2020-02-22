@@ -1,7 +1,76 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+body {
+  background-color: #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+footer {
+  background-color: #0a2c42;
+  color: white;
+
+  padding-left: 15px;
+  padding-top: 5px;
+}
+
+.general {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  align-items: center;
+
+}
+
+.button {
+  background-color: #2081c3;
+  display: block;
+  align-content: space-around;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+
+
+nav {
+  justify-content: space-evenly;
+  background-color: #2081c3;
+  height: 50px;
+  padding: 10px;
+  box-shadow: black;
+  
+}
+
+
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.listbeers {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.beer {
+  width: 250px;
+  text-align: center;
+  margin: 20px;
+}
+
+.imgbeer {
+  width: 50px;
+  height: 175px;
+}
+
+.imagebeer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 200px;
+  height: 200px;
+}
