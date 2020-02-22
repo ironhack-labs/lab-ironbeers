@@ -1,0 +1,13 @@
+<div class="randomBeer-container">
+  {{#each responseFromAPI}}
+  <img src="{{ this.image_url }}">
+  <div class="randomBeer">
+    <p class="p-name">{{this.name}}</p>
+    <p class="p-tagline">{{this.tagline}}</p>
+    <p>{{this.description}}</p>
+    <p><b>Food Pairing</b></p>
+    <p>{{this.food_pairing}}</p>
+    <p>{{this.brewers_tips}}</p>
+  </div>
+  {{/each}}
+</div>

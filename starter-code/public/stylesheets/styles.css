@@ -31,11 +31,20 @@ nav li a {
   width: 20rem;
 }
 
-.container {
+.beer-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+
+.beer {
+  margin: 0 0rem 0rem 15rem;
+}
+
+.beer img {
+  width: 3rem;
+  padding: 2rem;
 }
 
 .check-beers-btn button {
@@ -43,6 +52,36 @@ nav li a {
   color: white;
   height: 2rem;
   border-radius: 10%;
+}
+
+.randomBeer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.randomBeer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35rem;
+  padding-left: 5rem;
+}
+
+.randomBeer-container img {
+  width: 5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.p-name {
+  font-weight: bold;
+}
+
+.p-tagline {
+  color: #747373;
 }
 
 .footer {
