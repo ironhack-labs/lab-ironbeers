@@ -3,5 +3,48 @@ white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
+
 */
+
+
+
+html {
+    background-color: #e8eaf6;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.navbar {
+    margin-bottom: 50px;
+}
+
+.container {
+    max-width: 500px;
+}
+
+.beers-wrapper {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.beers-wrapper img {
+    display: block;
+  max-width:230px;
+  max-height:150px;
+  width: auto;
+  height: auto;
+  margin-right: 50px;
+}
+
+.img-container {
+    width: 300px;
+}
+
+.beer-icon {
+    margin-bottom: 100px;
+}
