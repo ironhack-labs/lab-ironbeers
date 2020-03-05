@@ -6,11 +6,7 @@ grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
 
-#whole{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
+
 .nav-width{
     width: 100%;
 }
@@ -30,11 +26,35 @@ font-family: Arial, Helvetica, sans-serif;
     max-width: 100%;
 }
 
+
 button{
     background-color: #2081c3;
     border-radius: 6px;
     color: #f7f9f9;
+}
 
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-beers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.random-beer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.random-beer>img{
+    width:200px;
+    height: 300px;
 }
 
 footer{

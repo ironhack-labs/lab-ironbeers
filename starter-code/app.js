@@ -31,12 +31,14 @@ punkAPI.getBeers()
 app.get('/random-beer', (req,res) => {
     punkAPI.getRandom()
         .then(blabla=>{
-            blabla
+            
             console.log('Beers from the database: ', blabla)
-            return res.render('random-beer')
+            return res.render('random-beer', {blabla})
         })
         .catch(error => console.log(error));
 
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
+
+

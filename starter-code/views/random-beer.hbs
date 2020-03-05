@@ -1,13 +1,29 @@
-
-<div class="random-beer">
-    {{blabla}}
-    <h1>{{name}}</h1>
+{{!-- <div class="random-beer">
+    {{#each blabla}}
     <img src={{image_url}} alt="">
+    <h1>{{name}}</h1>
     <span>{{tagline}}</span>
     <p>{{description}}</p>
-    <ul>{{food_pairing}}</ul>
-    <p>{{brewers_tips}}</p>
+    <ul>Food pairing:{{food_pairing}}</ul>
+    <p>Brewers tips:{{brewers_tips}}</p>
+    {{/each}}
+</div> --}}
+
+<div class="card mb-3" style="max-width: 540px;">
+    {{#each blabla}}
+    <div class="row no-gutters">
+        <div class="col-md-4">
+            <img src={{image_url}} class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">{{name}}</h5>
+                    <p class="card-text">{{tagline}}</p>
+                    <p class="card-text">{{description}}</p>
+                    <p class="card-text">Food pairing: {{food_pairing}}</p>
+                    <p class="card-text">Brewers tips: {{brewers_tips}}</p>
+            </div>
+        </div>
+    </div>
+    {{/each}}
 </div>
-
-
-
