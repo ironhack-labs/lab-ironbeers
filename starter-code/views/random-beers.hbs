@@ -1,0 +1,23 @@
+<div>
+    {{#each randombeerfromAPI}}
+
+    <div class = "parent">
+        <div class= "children-11">
+                    <img src = {{this.image_url}}>
+        </div>
+        <div class = "children-2">
+            <h3>{{this.name}}</h3>
+            <h4>{{this.tagline}} </h4> 
+            <h4>{{this.description}} </h4>
+            <ul>
+                <h3> Food Pairing </h3>
+                {{#each food_pairing}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <h4>{{this.brewers_tips}}</h4>
+        </div>
+
+    </div>
+    {{/each}}
+</div>

@@ -1,0 +1,11 @@
+<div class="diva">
+    {{#each beerfromAPI}}
+
+    <div class = "beerfromAPI">
+        <img src = {{this.image_url}}>
+        <h3>Name: {{this.name}}</h3>
+        <h4>Tagline: {{this.tagline}} </h4>
+        <h4>Description: {{this.description}} </h4>
+    </div>
+    {{/each}}
+</div>
