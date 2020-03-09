@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row d-flex align-items-end pb-5">
+        <div class="col-md-3">
+            <div><img class="myImageHeight" src="{{myBeers.image_url}}" alt="Card image cap"></div>
+        </div>
+        <div class="col-md-9">
+            <div>
+                <h3>{{myBeers.name}}</h3>
+                <p>{{myBeers.description}}</p>
+                <p class="text-secondary font-italic">{{myBeers.tagline}}</p>
+                <p class="font-weight-bold">Food pairing:</p>
+                <ul>
+                    {{#each myBeers.food_pairing}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                <p> <strong>Brewers tips: </strong>{{myBeers.brewers_tips}}</p>
+            </div>
+        </div>
+    </div>
+</div>

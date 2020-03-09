@@ -1,0 +1,35 @@
+
+<div class="container">
+    <div class="row">
+
+        {{#each myBeers}} 
+
+            {{> beerpartial this}}
+
+        {{/each}}
+
+    </div>
+</div>
+
+
+{{!-- 
+<div class="container">
+    <div class="row">
+
+        {{#each myBeers}} 
+
+            <div>
+                <div class="card bg-light m-3" style="width: 18rem;">
+                    <div class="card-header h5">{{name}}</div>
+                    <img class="card-img-top myImageHeight" src="{{image_url}}" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">{{description}}</p>
+                        <p class="card-text text-secondary font-italic">{{tagline}}</p>
+                    </div>
+                </div>
+            </div>
+
+        {{/each}}
+
+    </div>
+</div> --}}
