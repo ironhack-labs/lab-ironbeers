@@ -16,6 +16,8 @@ hbs.registerPartials(__dirname + '/views/partials');
 
 // add the routes here:
 app.get('/', (req, res) => res.render('index'));
+
 app.get('/beers', (req, res) => res.render('beers'));
+app.get('/random', (req, resp) => res.render('random'));
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
