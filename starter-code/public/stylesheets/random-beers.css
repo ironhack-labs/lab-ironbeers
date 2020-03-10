@@ -1,0 +1,30 @@
+.rand-beer-container {
+    margin-top: 15vh;
+    margin-left: 10%;
+    margin-right: 30%;
+    height: 75vh;
+    display: flex;
+  
+}
+
+.rand-beer-container img {
+    margin: 50px;
+    height: 30vh;
+    background-size: contain;
+}
+.rand-info{
+    margin-left: 5rem;
+}
+
+.rand-info h3{
+    font-size: 2rem;
+}
+.rand-info h5{
+    font-size: 1.2rem;
+    color: #bfbfbf;
+}
+
+.rand-info p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}

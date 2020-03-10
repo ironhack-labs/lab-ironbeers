@@ -2,6 +2,7 @@ nav {
     background-color: #2081c3;
     height: 10vh;
     position: fixed;
+    top: 0;
     width: 100vw;
     display: flex;
     align-items: center;

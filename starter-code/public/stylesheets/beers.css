@@ -1,0 +1,42 @@
+
+
+.beers-container {
+    margin-top: 15vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-evenly;
+
+    
+}
+
+.beer-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 40vh;
+    padding: 4px;
+    text-decoration: none;
+    color: black;
+}
+
+.beer-holder img {
+    height: 50%;
+    background-size: contain;
+}
+
+.text-info h3 {
+    font-size: 1rem;
+}
+
+.text-info h4 {
+    font-size: 0.8rem;
+    color: #bfbfbf;
+}
+
+.text-info p{
+    font-size: 0.8rem;
+}
