@@ -1,4 +1,3 @@
-
 <div class="block">
   <div class="row">
     <div class="span4">
@@ -7,17 +6,16 @@
         <h3>{{randomBeer.name}}</h3>
       </div>
       <div class="beertext">
-      <h4>{{randomBeer.tagline}}</h4>
-      <p>{{randomBeer.description}}</p>
-      <h5>Food pairing:</h5>
-      <ul>
-        {{#each randomBeer.food_pairing}}
-        <li>{{this}}</li>
-        {{/each}}
-      </ul>
+        <h4>{{randomBeer.tagline}}</h4>
+        <p>{{randomBeer.description}}</p>
+        <h5>Food pairing:</h5>
+        <ul>
+          {{#each randomBeer.food_pairing}}
+          <li>{{this}}</li>
+          {{/each}}
+        </ul>
         <p><strong>Brewers tips: </strong>{{randomBeer.brewers_tips}}</p>
-        </div>
+      </div>
     </div>
   </div>
 </div>
-

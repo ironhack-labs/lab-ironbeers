@@ -40,13 +40,12 @@ app.get("/beer/:id", (req, res) =>{
 })
 
 
-
 app.get('/random-beers', (req, res) => {
   punkAPI
     .getRandom()
     .then(responseFromAPI => {
       console.log('Random beer: ', responseFromAPI);
-      res.render('random-beers', { randomBeer: responseFromAPI[0] });
+      res.render('beer-detail', { theBeer: responseFromAPI[0] });
     })
     .catch(error => console.log(error));
 });
