@@ -1,0 +1,26 @@
+body {
+    background-color: #fff;
+}
+
+.beer-homepage-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.beer-hero-image {
+    width: 20%;
+}
+
+.beer-homepage-item {
+    padding: 10px;
+}
+
+.beer-homepage-button button {
+    color: white;
+    background-color: #2081c3;
+    padding: 10%;
+    border-radius: 10px;
+    box-shadow: 2px #888888;
+    font-size: 14px;
+}

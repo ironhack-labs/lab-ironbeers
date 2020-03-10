@@ -1,0 +1,56 @@
+/* 
+white: #f7f9f9;
+light-blue: #2081c3;
+dark-blue: #0a2c42;
+grey: #bfbfbf;
+
+ */
+
+body {
+ padding: 0;
+ margin: 0;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color:#2081c3;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;2
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: #f7f9f9;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding-top: 3%;
+}
+
+.beer-container {
+    width: 28%;
+}
+
+.beer-img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.beer-img img {
+    width: 10%;
+}
+
+.tagline {
+    font-size: 15px;
+    color: grey;
+}
+

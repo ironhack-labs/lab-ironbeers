@@ -1,0 +1,37 @@
+@import "./homepage.css";
+@import "./beer-page.css";
+@import "./random-beer-page.css";
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+   
+nav {
+    background-color:#2081c3;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+   
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: #f7f9f9;
+}
+
+footer {
+    background-color: #0a2c42;
+    color: #f7f9f9;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer p {
+    padding-left: 5%;
+}
+   

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronBeers</title>
+    <link rel="stylesheet" href="/stylesheets/random-beer-page.css">
+</head>
+<body>
+    <div class="random-beers-container">
+        <div class="random-beer-image">
+            <img src="{{randomBeer.image_url}}" alt="">     
+        </div>
+        <div class="random-beer-content">
+            <h1>{{randomBeer.name}}</h1>
+            <p class="tagline">{{randomBeer.tagline}}</p>
+            <p>{{randomBeer.description}}</p>
+        <h3>Food Pairing</h3>
+        <ul>
+            <li>{{randomBeer.food_pairing}}</li>
+        </ul>
+        <span>Brewers Tips:</span><p>{{randomBeer.brewers_tips}}</p>
+        </div> 
+    </div>
+        
+</body>
+</html>
+
+

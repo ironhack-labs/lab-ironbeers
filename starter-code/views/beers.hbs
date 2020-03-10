@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronBeers</title>
+    <link rel="stylesheet" href="/stylesheets/beer-page.css">
+</head>
+<body>
+    <div class="container">
+        {{#each beers }}
+            <div class="beer-container">
+                <div class="beer-img">
+                    <img src="{{image_url}}" alt="">   
+                </div>
+                
+                <h1>{{name}}</h1>
+                <p class="tagline">{{tagline}}</p>
+                <p>{{description}}</p>
+            </div>
+        {{/each}}
+    </div>
+</body>
+</html>
+
+
+
+
+
+
