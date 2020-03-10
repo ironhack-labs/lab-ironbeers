@@ -1,0 +1,33 @@
+.beer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  padding: 3%;
+  width: 25%;
+}
+
+.beer-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.beer-img-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.beer-img {
+  height: 150px;
+}
+
+.beer-name {
+  font-size: medium;
+}
+
+.beer-text {
+  font-size: small;
+  width: 100%;
+}
