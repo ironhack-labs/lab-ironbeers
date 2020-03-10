@@ -1,18 +1,14 @@
 <div class="random">
-    <div class="random-img">
-        <img src={{image_url}} alt={{name}}>
-    </div>
-    <div class="random-content">
-        <h3>{{name}}</h3>
-        <h6>{{tagline}}</h6>
-        <p>{{description}}</p>
+
+    {{> beerBottle}}
+    <div class="extra-content">
         <p><b>Food Pairing </b></p> 
         <ul>
             {{#each food_pairing}}
                 <li>{{this}}</li>
             {{/each}}
         </ul>
-        <p><b>Brewers Tips: </b>{{brewers_tips}}</p> 
-
+        <p><b>Brewers Tips: </b>{{brewers_tips}}</p>
     </div>
 </div>
+
