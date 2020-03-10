@@ -1,0 +1,15 @@
+<div class="six-pack">
+    {{#each beers}}
+        <div class="beer-can">
+            <div>
+                <img src={{image_url}} alt={{name}}>
+            </div>
+            <div>
+            <h3>{{name}}</h3>
+            <h6>{{tagline}}</h6>
+            <p>{{description}}</p>
+            </div>
+        </div> 
+    {{/each}}
+</div>
+
