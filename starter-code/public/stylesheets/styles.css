@@ -5,3 +5,11 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    padding:0;
+    margin:0;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+

@@ -1,0 +1,36 @@
+nav {
+    background-color: #2081c3;
+    height: 10vh;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 1px 10px black;
+}
+
+nav div {
+    width: 25vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: #f7f9f9;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: #0a2c42;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    color: #f7f9f9;
+    font-size: 1.5rem;
+    padding-left: 20px;
+}
