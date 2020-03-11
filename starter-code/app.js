@@ -17,7 +17,7 @@ hbs.registerPartials(__dirname + '/views/partials');
 // add the routes here:
 app.get('/', (req, res) => res.render('index'));
 
-app.get('/beers', (req, res) => {
+app.get('/beers/:id', (req, res) => {
   punkAPI
     .getBeers()
     .then(beersFromApi => {
