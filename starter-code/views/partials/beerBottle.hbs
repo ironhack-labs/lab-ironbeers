@@ -1,9 +1,10 @@
 <div class="image">
-    {{!-- <a href="/beer-detail/{{id}}"></a> --}}
-    <img src={{image_url}} alt={{name}}>
+    <a href="/beer-detail/{{this.id}}">
+        <img src={{this.image_url}} alt={{this.name}}>
+    </a>
 </div>
 <div class="content">
-    <h3>{{name}}</h3>
-    <h6>{{tagline}}</h6>
-    <p>{{description}}</p>
+    <h3>{{this.name}}</h3>
+    <h6>{{this.tagline}}</h6>
+    <p>{{this.description}}</p>
 </div>

@@ -1,0 +1,21 @@
+.nav {
+    padding: 10px 20px;
+    background-color: #2081c3;
+    box-shadow: 0 0 4px 0 black;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    list-style-type: none;
+}
+
+.nav li {
+    padding: 0 10px;
+}

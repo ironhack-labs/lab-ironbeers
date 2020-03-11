@@ -1,0 +1,25 @@
+.six-pack {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 80vw;
+    margin: 60px auto;
+}
+
+.beer-can {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    width: 30%;
+    padding: 15px;
+}
+.beer-can img {
+    height: 20vh;
+}
+
+.beer-can .content {
+    width: 90%;
+}

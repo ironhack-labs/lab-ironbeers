@@ -1,0 +1,22 @@
+.index {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 60px;
+    height: 75vh;
+
+}
+
+.index img {
+    width: 20%;
+}
+
+.index a {
+    text-decoration: none;
+    background-color: #2081c3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 3px black;
+}

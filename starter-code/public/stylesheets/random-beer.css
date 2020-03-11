@@ -1,0 +1,20 @@
+.random {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: 75vh;
+    margin-top: 60px;
+    padding: 0 8vw;
+}
+
+.random > div {
+    margin-left: 80px;
+}
+
+.random img{
+    height: 30vh;
+
+}
