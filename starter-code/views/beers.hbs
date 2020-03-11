@@ -1,0 +1,11 @@
+<div class="contain">
+<ul class= "lista">
+    {{#each someBeers}}
+    <img src="{{this.image_url}}"  alt="beer-image">
+    <li>{{this.name}},
+         {{this.description}},
+        {{this.tagline}}
+        </li> 
+    {{/each}}
+    </ul>
+</div>
