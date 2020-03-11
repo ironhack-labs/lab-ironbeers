@@ -1,0 +1,17 @@
+<div class="col-12"style="max-height: 100%;">
+
+  <div class="d-flex row">
+    <div>
+      <img class="col-3" src={{this.image_url}} alt="Card image cap">
+    </div>
+    <div class="col-9">
+      <h5 class="">{{this.name}}</h5>
+      <h5 class="">{{this.tagline}}</h5>
+      <p class="">{{this.description}}</p>
+      <h5>Food Pairing:</h5>
+      {{#each method}}
+      <p>{{this}}</p>
+      {{/each}}
+    </div>
+  </div>
+</div>
