@@ -1,9 +1,9 @@
-.randombeer img {
+.beer img,.randombeer img {
     height: 300px;
     margin-right: 40px;
 }
 
-.randombeer {
+.beer, .randombeer {
     display: flex;
     flex-direction: row;
     margin: 40px;

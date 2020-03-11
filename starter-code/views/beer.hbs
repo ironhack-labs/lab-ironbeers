@@ -1,11 +1,16 @@
 <div class="beer">
-    <img src={{myBeer.image_url}} alt="beer-image">
+    <div>
+        <img src={{myBeer.image_url}} alt="beer-image">
+    </div>
 
-    <h1>{{myBeer.name}}</h1>
-    <p>
-        {{myBeer.description}}
-    </p>
-    <p>
-        {{myBeer.tagline}}
-    </p>
+    <div>
+        <h1>{{myBeer.name}}</h1>
+        <p class="tagline">
+            {{myBeer.tagline}}
+        </p>
+        <p>
+            {{myBeer.description}}
+        </p>
+
+    </div>
 </div>

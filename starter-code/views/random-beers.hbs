@@ -3,22 +3,23 @@
         <img src="{{myRandomBeer.image_url}}" alt="beer-image">
     </div>
     <div>
-          <h1>{{myRandomBeer.name}}</h1>
-    <p>
-        {{myRandomBeer.description}}
-    </p>
-    <p>
-        {{myRandomBeer.tagline}}
-    </p>
-    <h2>Food pairing:</h2>
-    <ul>
-        {{#each myRandomBeer.food_pairing}}
-        <li>{{this}}</li>
-        {{/each}}
-    </ul>
-    </p>
-    <p>
-        {{myRandomBeer.brewer_tips}}
-    </p>
-    </div>    
+        <h1>{{myRandomBeer.name}}</h1>
+        <p class="tagline">
+            {{myRandomBeer.tagline}}
+        </p>
+        <p>
+            {{myRandomBeer.description}}
+        </p>
+
+        <h2>Food pairing:</h2>
+        <ul>
+            {{#each myRandomBeer.food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        </p>
+        <p>
+            {{myRandomBeer.brewer_tips}}
+        </p>
+    </div>
 </div>

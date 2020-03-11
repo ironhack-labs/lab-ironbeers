@@ -10,7 +10,7 @@ grey: #bfbfbf;
 @import "./index.css";
 @import "./footer.css";
 @import "./beercards.css";
-@import "./randombeer.css";
+@import "./beer.css";
 
 body {
     font-family: Arial, Helvetica, sans-serif;
