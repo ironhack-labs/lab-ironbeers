@@ -1,0 +1,14 @@
+{{!-- Create a beers.hbs file to render every time we call this route.
+This file should have access to the beers we get as a response from the database. 
+Remember, you should call the render method after getting the beers array. Hint: That means inside the then. 😉
+On the beers.hbs view, loop over the beers array using the {{#each}} loop. 
+Display an image, name, description and tagline. --}}
+<section>
+    <article class="column">
+    {{#each beersFromApi}}
+    {{> beerpartial this}}
+    {{/each}}
+    </article>
+</section>
+
+

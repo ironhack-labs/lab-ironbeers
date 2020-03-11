@@ -1,0 +1,14 @@
+{{!-- Our beerpartial.hbs will display the properties that both views share: image, name, description, 
+and tagline of the beer.
+Now, you can go ahead and plug in this partial in the beers.hbs view inside the each loop.
+After creating the partial, and looping over the array of beers, on our /beers route,
+ we should have the following: --}}
+
+ <div class="card" style="width: 33.333%;">
+    <img class="card-img-top" src="{{this.image_url}}" alt="">
+    <div class="card-body">
+        <h5 class="card-title">{{this.name}}</h5>
+        <p class="card-text">{{this.description}}</p>
+        <p><em>{{this.tagline}}</em></p>
+    </div>
+</div>

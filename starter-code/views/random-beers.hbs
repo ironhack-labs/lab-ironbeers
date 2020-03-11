@@ -1,0 +1,18 @@
+<section>
+    <article class="beers">
+    {{#each responseFromAPI}}
+    <div class="cards-container">
+        <img src="{{this.image_url}}" alt="{{this.name}}">
+        <h2>{{this.name}}</h2>
+        <h3>Description:</h3>
+        <p>{{this.description}}</p>
+        <p><em>{{this.tagline}}</em></p>
+        <h3>Food Pairing</h3>
+        <p>{{this.food_pairing}}</p>
+        <h3>Tips</h3>
+        <p>{{this.brewers_tips}}</p>
+    </div>
+    {{/each}}
+    </article>
+</section>
+

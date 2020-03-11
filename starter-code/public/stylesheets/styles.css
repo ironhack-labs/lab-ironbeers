@@ -5,3 +5,49 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+* {
+    margin: 0;
+    padding: 0;
+}
+div.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.column a {
+    margin: 10px 0;
+}
+
+.column img {
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+.bg-dark {
+    color: white;
+}
+
+footer {
+    height: 50px;
+    font-size: 12px;
+    padding: 8px 16px;
+}
+
+
+.cards-container img {
+    width: 5%;
+}
+
+.beers {
+    display: flex;
+    margin: 56px 20px;
+    padding: 10%;
+    height: 100vh;
+}
+
+section {
+    margin: 80px;
+}
