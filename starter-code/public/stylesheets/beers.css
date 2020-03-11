@@ -1,10 +1,6 @@
-.beer-content {
-  display: inline-block;
-  /* flex-direction: column; */
-  width: 100%;
-}
-
 .beer-img-container {
+  padding: 1%;
+  text-align: center;
   width: 30%;
 }
 
@@ -17,6 +13,12 @@
 }
 
 .beer-text {
+  text-align: left;
   font-size: small;
   width: 100%;
+}
+
+.beer-name,
+.beer-tagline {
+  margin-bottom: 0.5rem;
 }

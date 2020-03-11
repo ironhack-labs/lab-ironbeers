@@ -4,13 +4,14 @@
   justify-content: flex-start;
   background-color: #2081c3;
   height: 50px;
-  width: 100%;
+  width: 100vw;
 }
 
 .nav {
   display: flex;
   justify-content: space-evenly;
-  width: 20%;
+  padding-left: 3%;
+  width: 25%;
   list-style: none;
 }
 
