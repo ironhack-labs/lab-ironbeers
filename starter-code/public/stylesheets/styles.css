@@ -5,3 +5,15 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+.btn{
+    margin: 4px
+}
+
+.margin{
+    margin: 40px;
+}
+.card img{
+    width: 40%;
+    display:block;
+    margin: auto;
+}
