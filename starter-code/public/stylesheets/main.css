@@ -50,6 +50,17 @@ body {
   height: 25%;
 }
 
+.main-btn {
+  background-color: #2081c3;
+  border-radius: 5px;
+  padding: 3% 5%;
+}
+
+.main-btn a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .debug {
   border: 1px solid red;
 }
