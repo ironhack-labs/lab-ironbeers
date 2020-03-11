@@ -68,7 +68,28 @@ img{
   width: 33.4%;
 }
 
-img {
-  width: 50%;
-  height: auto;
+
+.beerimage { 
+    width: 200px; 
+    height: 200px;
+    object-fit: scale-down;
+  }
+
+  .randombeer { 
+    width: 500px; 
+    height: 500px;
+    object-fit: scale-down;
+  }
+ 
+
+.homebeer{
+  height: 375px
+}
+
+.card-img-left {
+  border-bottom-left-radius: calc(.25rem - 1px);
+  border-top-left-radius: calc(.25rem - 1px);
+  float: left;
+  padding-right: 12em;
+  margin-bottom: 1.25em;
 }

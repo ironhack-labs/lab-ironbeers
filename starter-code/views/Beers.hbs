@@ -1,11 +1,21 @@
-<div class="diva">
-    {{#each beerfromAPI}}
+<div class="container " >
+    <div class="row">
+        {{#each beerfromAPI}}
+        <div class="card bg-white m-4 h-100 border-0" style="width: 300px">
+            <img class="card-img-top beerimage card-img-left" src="{{this.image_url}}" alt="Card image cap">
+            <div class="card-header bg-white border-0  h5">
+                {{this.name}}
+            </div>
+            <div class="card-header bg-white border-0 h5">
+                <p class="card-text text-secondary font-italic">{{this.tagline}}</p>
+            </div>
 
-    <div class = "beerfromAPI">
-        <img src = {{this.image_url}}>
-        <h3>Name: {{this.name}}</h3>
-        <h4>Tagline: {{this.tagline}} </h4>
-        <h4>Description: {{this.description}} </h4>
+            <div class="card-body">
+                <p class="card-text">{{this.description}}</p>
+            </div>
+        </div>
+        {{/each}}
     </div>
-    {{/each}}
 </div>
+
+
