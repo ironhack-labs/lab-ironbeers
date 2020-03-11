@@ -5,3 +5,86 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+
+* {
+    font-family: Sen;
+}
+
+#cerveza {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100px;
+}
+
+.cerveza-imagen{
+   width: 400px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn {
+    margin-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+p {
+    font-size: 1em;
+}
+
+
+
+.beers {
+    flex: auto;
+    margin-top: 100px;
+    margin-left: 2%;
+    margin-right: 2%;
+    max-width: 25%;
+}
+
+.beer-images {
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40%;
+    margin-bottom: 10%;
+}
+
+.title {
+    font-size: 1.5em;
+}
+
+.selected {
+    width: 200px;
+    margin-top: 50px;
+}
+
+.selected2 {
+    width: 200px;
+    margin-top: 50px;
+}
