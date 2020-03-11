@@ -1,0 +1,20 @@
+<div  id="content" class="d-flex flex-column justify-content-center container-fluid align-items-center">
+    <div class="row justify-content-center random-beer">
+        <div class="col-lg-3">
+            <img class="random-beer-image justify-content-center" src="{{image_url}}" alt="random beer">
+        </div>
+        <div class="col-lg-6">
+            <h3 class="font-weight-bold">{{name}}</h3>
+            <p class="text-secondary font-italix">{{tagline}}</p>
+            <p>{{description}}</p>
+            <h5 class="font-weight-bold">Food pairing</h5>
+            <ul>
+            {{#each food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+            </ul>            
+            <h5 class="d-inline font-weight-bold">Brewer's tips:</h5>
+            <p class="d-inline">{{brewers_tips}}</p>
+        </div>
+    </div>
+</div>

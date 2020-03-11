@@ -5,3 +5,30 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+#content{
+    height:100vh;
+    width: 100vw;
+}
+
+.card > img {
+    max-height: 300px;
+    max-width: 180px;
+    height: auto;
+    width: auto;
+    display: block;
+    margin: auto;
+  }
+
+.random-beer-image {
+    max-height: 500px;
+    max-width: 280px;
+    height: auto;
+    width: auto;
+    display: block;
+    margin: auto;
+  }
+
+.card {
+    width: 250px !important;
+}
