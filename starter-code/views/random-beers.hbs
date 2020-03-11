@@ -1,0 +1,12 @@
+<div>
+    <ul>
+    {{#each resposFromAPI}}
+    <img src="{{ this.image_url}}" alt="beer">
+    <li>{{ this.name }}</li>
+    <li>{{ this.description }}</li>
+    <li>{{ this.tagline }}</li>
+    <li>{{ this.food_pairing}}</li>
+    <li>{{ this.brewers_tips}}</li>
+    {{/each}}
+    </ul>
+</div>

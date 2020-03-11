@@ -1,7 +1,56 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+body{
+    white: #f7f9f9;
+    light-blue: #2081c3;
+    dark-blue: #0a2c42;
+    grey: #bfbfbf;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+footer{
+    background-color: #0a2c42;
+    color: white;
+    display: flex;
+    text-align: left;
+}
+
+img{
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.contenido a{
+    margin: 20px;
+}
+
+.cerveza{
+    flex-direction: row;
+}
+
+ul img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+}
+
+div img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+}
