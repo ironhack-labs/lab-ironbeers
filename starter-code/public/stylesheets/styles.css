@@ -5,3 +5,39 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+* {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #2081c3;
+  max-width: 100vw;
+  width: 100%;
+  padding: 30px;
+}
+
+nav {
+  text-align: left;
+  width: 50%;
+}
+
+ul {
+  display: flex;
+  margin-left: 30px;
+}
+li {
+  color: #f7f7f7;
+  padding-right: 10px;
+}
+
+footer {
+  background-color: #0a2c42;
+  padding: 30px;
+  color: #f7f7f7;
+  max-width: 100vw;
+  width: 100%;
+}
