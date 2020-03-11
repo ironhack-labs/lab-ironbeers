@@ -1,2 +1,14 @@
-<p>{{randomBeer.description}}</p>
-<h1>{{randomBeer.name}}</h1>
+<div class="random-container">
+  <img src="{{randomBeer.image_url}}" alt="" class="random-img">
+  <div class="random-text">
+    <h1 class="random-name">{{randomBeer.name}}</h1>
+    <h5 class="random-tagline">{{randomBeer.tagline}}</h5>
+    <div class="random-description">{{randomBeer.description}}</div>
+    <br>
+    <div class="random-pairing">
+      <h5 class="random-subheading">Food Pairing</h5>
+      {{randomBeer.food_pairing}}
+    </div>
+    <div class="random-tips"><span class="tips-subheading">Brewers Tips:</span>{{randomBeer.brewers_tips}}</div>
+  </div>
+</div>

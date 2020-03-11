@@ -1,1 +1,35 @@
+.random-container {
+  display: flex;
+  align-items: center;
+  padding: 3% 0;
+  height: 80vh;
+  width: 65%;
+}
+.random-img {
+  margin: auto;
+  height: 150px;
+}
 
+.random-name {
+  font-size: 1rem;
+}
+
+.random-text {
+  text-align: left;
+  font-size: small;
+  margin-left: 5%;
+  width: 80%;
+}
+
+.random-name,
+.random-tagline,
+.random-description,
+.random-pairing,
+.random-tips {
+  margin-bottom: 0.5rem;
+}
+
+.tips-subheading {
+  font-size: small;
+  font-weight: bold;
+}
