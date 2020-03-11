@@ -1,16 +1,16 @@
 .img-index{
     width: 400px;
+    padding-left: 50px;
 }
 .beer-img{
     width: 100px;
 }
 
 
-#beerCard{
-    width: 100px !important;
-    text-align: center;
-    margin: 20px;
-    border: 2px solid #0A2C42;
-    padding: 80px 20px;
-    text-decoration: none;
+#tarjetas{
+    
+    border: 5px solid black;
+}
+section{
+    min-height: 500px;
 }
