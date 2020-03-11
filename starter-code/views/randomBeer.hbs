@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/starter-code/public/stylesheets/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-<div>
 
+<div>
 
 
 <h2>{{this.name}}</h2>
@@ -16,13 +7,10 @@
 <p>{{this.description}}</p>
 
 <ul>
-    {{#each foodparing}}
+    {{#each food_pairing}}
     <li>{{this}}</li>
-
+    {{/each}}
 </ul>
+<p>{{brewers_tips}}</p>
 
 </div>
-
-    
-</body>
-</html>
