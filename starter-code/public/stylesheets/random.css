@@ -7,7 +7,7 @@
 }
 .random-img {
   margin: auto;
-  height: 150px;
+  height: 185px;
 }
 
 .random-name {
@@ -21,10 +21,16 @@
   width: 80%;
 }
 
+.random-subheading {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
 .random-name,
 .random-tagline,
 .random-description,
 .random-pairing,
+.random-subheading,
 .random-tips {
   margin-bottom: 0.5rem;
 }
