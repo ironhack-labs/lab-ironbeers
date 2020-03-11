@@ -1,5 +1,7 @@
 .beer-img-container {
   padding: 1%;
+  color: #000000;
+  text-decoration: #ffffff;
   text-align: center;
   width: 30%;
 }
@@ -21,4 +23,8 @@
 .beer-name,
 .beer-tagline {
   margin-bottom: 0.5rem;
+}
+
+.beer-tagline {
+  color: #bfbfbf;
 }
