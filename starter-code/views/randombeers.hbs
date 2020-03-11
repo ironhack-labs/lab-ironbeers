@@ -4,6 +4,11 @@
         <h5 class="card-title">{{name}}</h5>
         <p class="card-text">{{description}}</p>
         <p class="card-text">{{tagline}}</p>
+        <ul>
+            {{#each food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
 
     </div>
 
