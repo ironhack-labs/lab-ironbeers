@@ -19,6 +19,7 @@ app.get('/', (req, res) => res.render('index'));
 
 // app.get('/beers', (req, res) => );
 app.get('/beers', (req, res) => {
+  debugger;
   punkAPI
     .getBeers()
     .then(beersData => {
