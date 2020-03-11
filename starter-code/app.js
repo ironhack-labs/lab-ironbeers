@@ -30,10 +30,10 @@ app.get('/beers', (req, res) => {
 
 app.get('/random', (req, res) => {
   punkAPI
-    .getBeers()
+    .getRandom()
     .then(beersData => {
-      let theBeer = beersData.filter(beers => beers === req.params.beers)[0];
-      res.render('random', { beers: theBeer });
+      console.log('Getting beers from the database:', beersData);
+      res.render('random', { randomBeer: beersData[0] });
     })
     .catch(error => console.log(error));
 });
