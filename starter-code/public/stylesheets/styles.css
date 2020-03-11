@@ -1,7 +1,16 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+.img-index{
+    width: 400px;
+}
+.beer-img{
+    width: 100px;
+}
+
+
+#beerCard{
+    width: 100px !important;
+    text-align: center;
+    margin: 20px;
+    border: 2px solid #0A2C42;
+    padding: 80px 20px;
+    text-decoration: none;
+}
