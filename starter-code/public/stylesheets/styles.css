@@ -23,6 +23,10 @@ body {
 }
 
 .card-img-top {
-    width: 200px!important;
-    height: 200px!important;
+  width: 100%;
+  height: 15vw;
+  object-fit: contain;
+}
+.mt-90{
+  margin-top: 90px;
 }

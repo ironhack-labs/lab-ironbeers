@@ -1,8 +1,11 @@
-<div class="card-containers">
-    <div class="card-deck mt-5 mr-5 ml-5 d-flex d-inline flex-wrap">
+<div class="card-containers mt-90">
+    <div class="row">
+
+    <div class=" d-flex flex-wrap justify-content-center">
         {{#each beersFromApi}}
         {{>beerCard this}}
         {{/each}}
+    </div>
     </div>
 
 </div>
