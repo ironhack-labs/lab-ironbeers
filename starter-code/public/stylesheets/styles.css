@@ -1,7 +1,53 @@
-/*
+/* 
 white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
+font-family: Arial, Helvetica, sans-serif; 
 */
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    height: 80vh;
+}
+
+.navbar {
+    background-color: #2081c3;
+    height: 10vh;
+}
+
+.nav-item {
+    color: #f7f9f9;
+}
+
+footer {
+    background-color: #0a2c42;
+    color: #f7f9f9;
+    height: 10vh;
+}
+
+.footertext {
+    margin-left: 20px;
+}
+
+img {
+    max-width: 400px;
+    margin: 40px;
+}
+
+.btn {
+    margin: 10px;
+}
+
+.mainbtns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.beers {
+    max-width: 60px;
+}
