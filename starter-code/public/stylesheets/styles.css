@@ -1,3 +1,33 @@
+.main-img {
+    
+    width: 45%;
+   }
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-container{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 35%;
+    
+}
+
+.buttons-container a{
+    font-size: small;
+    margin-top: 10%;
+}
+
+.all-beers{
+display: flex;
+flex-wrap: wrap;
+}
+.beer-container{
+    width: 33%;
+}
 /*
 white: #f7f9f9;
 light-blue: #2081c3;
