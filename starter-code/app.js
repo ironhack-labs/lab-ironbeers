@@ -27,6 +27,18 @@ app.get("/beers", (req, res) => {
     .catch(error => console.log(error));
 });
 
+app.get("/random-beers" , (req, res) => { //creates url
+    punkAPI
+    .getRandom()
+    .then(randomBeer => {
+        console.log('Random beer from the Database: ', randomBeer);
+        res.render("random-beers", {myRandomBeer: randomBeer[0]}); //random-beers refer to hbs. my randombeer is used in the hbs file as a reference
+     })
+    .catch(error => console.log(error));
+})
+
+
+
 
 app.listen(3001, () => { 
     console.log('🏃‍ on port 3001')

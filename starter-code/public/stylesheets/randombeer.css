@@ -1,0 +1,23 @@
+.random-image-container img {
+    width: auto;
+    height: 60vh;
+    padding: 60px;
+}
+
+.random-beer-container {
+    display: flex;
+    flex-direction: row;; 
+}
+
+.random-beer-text {
+    padding: 60px;
+
+}
+
+p {
+    font-weight: bold;
+}
+
+.name {
+    font-weight: bold;
+}
