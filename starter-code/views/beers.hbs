@@ -1,8 +1,8 @@
-{{#each beersFromApi}}
-<div>
-    <img src="{{this.image_url}}" alt="">
-    <h3>{{this.name}}</h3>
-    <h6>{{this.tagline}}</h6>
-    <p>{{this.description}}</p>
+<div class="container-beers">
+    {{#each beersFromApi}}
+    <div>
+        {{> beerpartials }} 
+        <a href="/beer?id={{this.id}}">DETAILS</a>
+    </div>
+    {{/each}}
 </div>
-{{/each}}

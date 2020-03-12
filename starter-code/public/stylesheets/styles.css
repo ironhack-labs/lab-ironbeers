@@ -3,5 +3,125 @@ white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
+
 */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color:  #2081c3;
+    height: 85px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+
+nav > a {
+    color: #f7f9f9;
+    text-decoration: none;
+    margin-left: 20px;
+
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height:750px;
+
+}
+
+.main-container-img {
+    height: 450px;
+}
+
+.container-buttons{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.container-buttons button {
+    color: #f7f9f9;;
+    background-color:  #2081c3;
+    border-radius: 10px;
+    width: auto;
+    height: 40px;
+    padding: 5px 10px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #0a2c42;
+    padding-left: 20px;
+    height: 75px;
+    color: #f7f9f9;
+    width: 100%;
+}
+
+.container-beers{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-beers > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 30px;
+    height: 400px;
+    width: 500px ;
+    text-align: left;
+    
+
+}
+
+.container-beers > div > h6 {
+    text-align: left;
+    
+
+}
+
+.container-beers > div > img {
+    height: 220px;
+    
+}
+
+.container-one-beer {
+    display: flex;
+    align-items: center;
+    
+}
+
+.container-one-beer img{
+    height: 350px;
+    
+}
+
+.container-one-beer > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+
+
+
+
+
