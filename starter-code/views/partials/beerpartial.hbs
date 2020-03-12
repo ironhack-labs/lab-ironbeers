@@ -1,21 +1,10 @@
-<div class="partial--container">
-    <img class="partial--img" src={{this.image_url}} alt="beer-image">
+<div class="beerPartial--container">
+    <img class="beerPartial--img" src={{this.image_url}} alt="beer-image">
     <div class="beer--description">
         <a href="/beers/beer?id={{this.id}}">
             <h2>{{this.name}}</h2>
         </a>
         <h4>{{this.tagline}}</h4>
         <h3>{{this.description}}</h3>
-        {{#if this.food_pairing}}
-        <h2>Food Pairing</h2>
-        <ul class="pairing-list">
-            {{#each this.food_pairing}}
-            <li>{{this}}</li>
-            {{/each}}
-        </ul>
-        {{/if}}
-        {{#if this.brewers_tips}}
-        <h3>Brewers Tips: {{this.brewers_tips}}</h3>
-        {{/if}}
     </div>
 </div>

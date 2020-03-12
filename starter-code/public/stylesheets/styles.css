@@ -83,7 +83,7 @@ a {
   height: 100%;
 }
 
-.partial--container {
+.randomPartial--container {
   display: flex;
   flex-direction: row;
   width: 80%;
@@ -91,9 +91,22 @@ a {
   margin-left: 80px;
 }
 
-.partial--img {
+.beerPartial--container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 100px auto;
+}
+
+.randomPartial--img {
   width: 100px;
   height: auto;
+  margin: 0 100px;
+}
+
+.beerPartial--img {
+  width: 100px;
+  height: 250px;
   margin: 0 100px;
 }
 
@@ -133,4 +146,21 @@ a {
   color: black;
   list-style: disc;
   margin-bottom: 10px;
+}
+
+.beers--container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  padding: 50px;
+  align-items: start;
+}
+
+.beers--container > .beerPartial--container {
+  margin: 50px auto;
+}
+
+.beers--container > .beerPartial--container > .beer--description > h3 {
+  width: 100%;
+  font-size: 0.75rem;
 }
