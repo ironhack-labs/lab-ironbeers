@@ -1,23 +1,33 @@
-<div>
     {{#each randombeerfromAPI}}
 
-    <div class = "parent">
-        <div class= "children-11">
-                    <img class = "randombeer" src = {{this.image_url}}>
+    <div class="parent">
+            <img class="randombeer" src={{this.image_url}}>
+        <div class="container align-self-center">
+            <div class="row ">
+                <div class="card bg-white h-100 border-0" style="width: 500px">
+                    <h3>{{this.name}}</h3>
+                <div>
+                    <p class="font-weight-bold text-muted font-italic">{{this.tagline}} </p>
+                </div>
+                
+                <div class="card-body">
+                    <p>{{this.description}} </p>
+                </div>
+                <div>
+                 <div>
+                    <p class= "font-weight-bold">Food Pairings</p>
+                </div>
+                    <ul>
+                        {{#each this.food_pairing}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ul> 
+                </div>
+                <div>
+                    <p class= "font-weight-bold">Brewer Tips:</<p> <p>{{this.brewers_tips}}</p>
+                </div>
+                </div>
+            </div>
         </div>
-        <div class = "children-2">
-            <h3>{{this.name}}</h3>
-            <h4>{{this.tagline}} </h4> 
-            <h4>{{this.description}} </h4>
-            <ul>
-                <h3> Food Pairing </h3>
-                {{#each food_pairing}}
-                <li>{{this}}</li>
-                {{/each}}
-            </ul>
-            <h4>{{this.brewers_tips}}</h4>
-        </div>
-
     </div>
     {{/each}}
-</div>
