@@ -1,0 +1,20 @@
+<div class="py-5" style="width: 90%;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card" >
+            <div class="card-body">
+           <h5 class="card-title">{{this.name}}</h5>
+              <p class="card-text">{{this.description}}</p>
+              <p>Food pairing:</p>
+              {{#each this.food_pairing}}<p>{{this}}</p>{{/each}}
+              <p>Brewer Tips:</p>
+              <p>{{this.brewers_tips}}</p>
+              <p class="card-text"><small class="text-muted">{{this.tagline}}</small></p>
+              <img class="card-img-bottom" src="{{this.image_url}}" alt="Beer image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
