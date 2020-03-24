@@ -1,7 +1,8 @@
 {{#with this}}
-<img src={{image_url}}>
-<h2>{{name}}</h2>
-<p>
-{{description}}
-{{tagline}}</p>
+<a class='beer-name' href="/beers/{{id}}">
+    <h1>{{name}}</h1>
+</a>
+<img src={{image_url}} alt="">
+<dir>{{tagline}}</dir>
+<p>{{description}}</p>
 {{/with}}
