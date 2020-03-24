@@ -1,0 +1,9 @@
+{{#if parameter}}
+<a href="/beers/beer-{{this.id}}"><img src="{{this.image_url}}" alt="beers"></a>
+{{else}}
+<img src="{{this.image_url}}" alt="beers">
+{{/if}}
+<h2>{{this.name}}</h2>
+<p>{{this.tagline}}</p>
+<p>{{this.description}}</p>
+

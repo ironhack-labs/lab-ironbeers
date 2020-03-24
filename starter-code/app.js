@@ -12,6 +12,7 @@ app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
 
 // add the partials here:
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 // add the routes here:
 app.get('/', (req, res) => res.render('index'));
@@ -22,11 +23,16 @@ app.get('/beers', (req, res) => {
         res.render('beers', {beers})
         console.log({beers})
     })
-    .catch(error => console.log(error))
+    .catch(error => console.log(`Beers: ${error}`))
 })
 
-// app.get('/beers', (req, res) => res.render('beers'));
-
-app.get('/random-beers', (req, res) => res.render('random-beers'));
+app.get('/random-beers', (req, res) => {
+    punkAPI.getRandom()
+    .then(randomBeer => {
+        res.render('random-beers', {randomBeer})
+        console.log({randomBeer})
+    })
+    .catch(error => console.log(`Random Beer: ${error}`))
+});
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
