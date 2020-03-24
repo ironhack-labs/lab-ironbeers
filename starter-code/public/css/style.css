@@ -1,4 +1,37 @@
 .beer {
-	border: 2px solid black;
-	width: 10px;
+	height: auto;
+	max-width: 50px;
+}
+
+.beer-container {
+	margin: 20px;
+	height: 200px;
+	display: flex;
+	align-items: center;
+}
+
+.card-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: space-around;
+}
+
+.normal {
+	display: flex;
+	align-items: center;
+	align-content: space-around;
+}
+
+.random {
+	display: flex;
+	flex-direction: row;
+	margin-top: 100px;
+	align-items: center;
+	align-content: space-around;
+}
+
+.random .beer {
+	height: auto;
+	max-width: 100px;
 }

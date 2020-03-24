@@ -1,10 +1,24 @@
-<div class="col mb-4">
-    <div class="card">
-        <img src="{{this.image_url}}" class="card-img-top" alt="{{this.id}}">
+<div class="{{#if isRandom}} col {{else}} col-md-4 {{/if}}">
+    <div class="card h-100 {{#if isRandom}} random {{else}} normal {{/if}}">
+        <div class="beer-container">
+            <img src="{{this.image_url}}" class="card-img-top beer" alt="{{this.id}}">
+        </div>
         <div class="card-body">
             <h5 class="card-title"> <a href="/beer/{{this.id}}">{{this.name}}</a></h5>
             <h6 class="card-subtitle text-muted">{{this.tagline}}</h6>
             <p class="card-text">{{this.description}}</p>
+            {{#if isRandom}}
+            <div>
+                <h4><b>Food Pairing</b></h4>
+                <ul>
+                    {{#each food_pairing}}
+                        <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                <h4><b>Brewer Tips: </b></h4>
+                <p> {{brewers_tips}} </p>
+            </div>
+            {{/if}}
         </div>
     </div>
 </div>

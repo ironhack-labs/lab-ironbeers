@@ -30,13 +30,13 @@ app.get('/random-beers', (req, res) => {
 	punkAPI
 		.getRandom()
 		.then((randomBeerFromApi) => {
+			randomBeerFromApi[0]['isRandom'] = true;
 			res.render('randomBeers', randomBeerFromApi[0]);
 		})
 		.catch((error) => console.log(error));
 });
 
 app.get('/beer/:id', (req, res) => {
-	// res.send(req.params.id);
 	punkAPI
 		.getBeer(req.params.id)
 		.then((beerFromApi) => {
