@@ -27,14 +27,14 @@ app.get('/beers', (req, res) => {
 app.get('/beers/:id', (req, res) => {
     punkAPI
         .getBeer(req.params.id)
-        .then(beersFromApi => res.render('beers', { beersFromApi }))
+        .then(beersFromApi => res.render('random-beers', { beersFromApi }))
         .catch(error => console.log(error));
 });
 
 app.get('/random-beers', (req, res) => {
     punkAPI
         .getRandom()
-        .then(random => res.render('random-beers', { random }))
+        .then(beersFromApi => res.render('random-beers', { beersFromApi }))
         .catch(error => console.log(error));
 });
 
