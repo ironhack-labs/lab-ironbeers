@@ -13,7 +13,7 @@ hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// add the partials here:
+
 app.get('/beers', (req, res) => {
   punkAPI
     .getBeers()
@@ -24,6 +24,7 @@ app.get('/beers', (req, res) => {
     .catch(error => console.log(error));
 });
 
+// add the partials here:
 app.get('/random-beer', (req, res) => {
     punkAPI
       .getRandom()
