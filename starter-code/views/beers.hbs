@@ -1,5 +1,9 @@
-<div class="cards-container">
-  {{#each beers}}
-    {{> beersPartial this}}
-  {{/each}}
+<div class="constainer">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+    {{#each beers}}
+    <div class="col">
+      {{> beersPartial this}}
+    </div>
+    {{/each}}
+  </div>
 </div>
