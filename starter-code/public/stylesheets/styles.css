@@ -15,7 +15,7 @@ body {
   background-color: #0a2c42;
 }
 
-.nav-bottom > p {
+.nav-bottom  p {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,10 +60,10 @@ a:hover {
   align-items: flex-start;
 }
 
-.random-beer > img {
+.random-beer  img {
   margin: 4rem 5rem;
   height: 20rem;
-  width: 10rem;
+  width: 15rem;
 }
 
 .card {
