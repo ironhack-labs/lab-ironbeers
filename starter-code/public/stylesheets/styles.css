@@ -22,6 +22,7 @@ grey: #bfbfbf;
     position: fixed;
     top: 0;
     box-shadow: 0px 0px 10px #888888;
+    z-index: 999;
 }
 
 .nav-bar ul {
@@ -141,8 +142,9 @@ footer {
     padding-left:20px;
     width: 100vw;
     height:50px;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
+    z-index: 999;
 }
 
 footer p {
@@ -181,5 +183,4 @@ footer p {
 #beer-tagline {
     color: grey;
     margin-bottom: 15px;
-}
 }
