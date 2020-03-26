@@ -1,15 +1,17 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-}
-
-/*
+/* PATTERNS
 white: #f7f9f9;
 light-blue: #2081c3;    
 dark-blue: #0a2c42;
 grey: #bfbfbf;
 */
 
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+
+/* HEADER STYLE */
 .nav-bar {
     display: flex;
 	flex-direction: row;
@@ -19,7 +21,6 @@ grey: #bfbfbf;
     height: 90px;
     overflow: hidden;
     width: 100vw;
-    position: fixed;
     top: 0;
     box-shadow: 0px 0px 10px #888888;
     z-index: 999;
@@ -47,6 +48,8 @@ grey: #bfbfbf;
     padding-right: 10px;
 }
 
+
+/* HOME PAGE STYLE */
 .beer-home {
     display: flex;
 	flex-direction: column;
@@ -58,7 +61,7 @@ grey: #bfbfbf;
 
 #beer-img {
     width: 330px;
-    padding-top: 250px;
+    padding-top: 50px;
     margin-bottom: 50px;
     padding-left: 50px;
 }
@@ -80,12 +83,14 @@ button {
     margin: 8px 0;
     height: 30px;
     width: 130px;
+    color: #fff;
 }
 
 button:hover {
     background-color: #0a2c42;
     transform: scale(1.2);
-  }
+    cursor: pointer;
+}
 
 #button2 {
     width: 180px;
@@ -93,18 +98,63 @@ button:hover {
 
 a {
     text-decoration: none;
-    color: #fff;
 }
 
 
-
-.random-beers {
-    margin-top: 300px;
+/* BEERS PAGE STYLE */
+.beer-box {
     display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+    align-content: center;
+    margin-top: 60px;
+    padding: 0px;
+}
+
+#beer-box-inner {
+    width: 330px;
+    height: 450px;
+    display: flex;
+	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: center;
+    align-content: center;
+    margin: 10px 10px;
+}
+
+
+#beer-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#beer-tagline {
+    color: grey;
+    margin-bottom: 15px;
+}
+
+#beers-img {
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+
+/* RANDOM BEERS STYLE */
+#random-beers-img {
+    height: 200px;
+    margin-right: 90px;
+}
+
+.random-beers {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
     align-content: center;
 }
 
@@ -135,6 +185,8 @@ a {
     margin-top: 20px;
 }
 
+
+/* FOOTER STYLE */
 footer {
     background-color:#0a2c42;
     color:#fff;
@@ -158,9 +210,7 @@ footer p {
 	justify-content: space-between;
 	align-items: center;
     align-content: center;
-    height: 50px;
-    margin-top: 2000px;
-    
+    height: 100%;
 }
 
 #beer-box-inner {
