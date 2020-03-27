@@ -27,10 +27,10 @@ app.get('/beers', (req, res) => {
 });
 
 app.get('/beers/:id', (req, res) => {
-    punkAPI
-        .getBeer(req.params.id)
-        .then(beers => res.render('randomBeers', { beers }))
-        .catch(error => console.log(error));
+  punkAPI
+    .getBeer(req.params.id)
+    .then(beers => res.render('randomBeers', { beers }))
+    .catch(error => console.log(error));
 });
 
 app.get('/random-beers', (req, res) => {
