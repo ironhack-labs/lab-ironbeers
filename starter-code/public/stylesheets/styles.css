@@ -18,7 +18,7 @@ grey: #bfbfbf;
 	justify-content: center;
     align-items: center;
     background-color: #2081c3;
-    height: 90px;
+    height: 70px;
     overflow: hidden;
     width: 100vw;
     top: 0;
@@ -44,7 +44,7 @@ grey: #bfbfbf;
 .nav-bar ul li a {
     text-decoration: none;
     color: white;
-    padding-left: 10px;
+    padding-left: 50px;
     padding-right: 10px;
 }
 
@@ -60,7 +60,7 @@ grey: #bfbfbf;
 }
 
 #beer-img {
-    width: 330px;
+    width: 280px;
     padding-top: 50px;
     margin-bottom: 50px;
     padding-left: 50px;
@@ -109,13 +109,13 @@ a {
 	justify-content: space-between;
 	align-items: center;
     align-content: center;
-    margin-top: 60px;
+    margin: 60px 80px;
     padding: 0px;
 }
 
 #beer-box-inner {
-    width: 330px;
-    height: 450px;
+    width: 300px;
+    height: 500px;
     display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -131,16 +131,44 @@ a {
     margin-bottom: 10px;
 }
 
+#beer-name:hover {
+    cursor: pointer;
+}
+
 #beer-tagline {
     color: grey;
     margin-bottom: 15px;
 }
 
-#beers-img {
+
+.beer-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+}
+
+#beer-box-inner {
+    position: relative;
+}
+
+#beers {
     height: 200px;
     margin-bottom: 20px;
 }
 
+#beer-name {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#beer-tagline {
+    color: grey;
+    margin-bottom: 15px;
+}
 
 /* RANDOM BEERS STYLE */
 #random-beers-img {
@@ -149,7 +177,7 @@ a {
 }
 
 .random-beers {
-    margin-top: 100px;
+    margin-top: 80px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -203,34 +231,3 @@ footer p {
     margin-top: 15px;
 }
 
-.beer-box {
-    display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-    align-content: center;
-    height: 100%;
-}
-
-#beer-box-inner {
-    width: 500px;
-    height: 400px;
-    position: relative;
-}
-
-#beers {
-    width: 50px;
-    margin-left: 200px;
-    margin-bottom: 20px;
-}
-
-#beer-name {
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-
-#beer-tagline {
-    color: grey;
-    margin-bottom: 15px;
-}
