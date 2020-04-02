@@ -1,7 +1,9 @@
-{{#with this}}
-<img src={{image_url}}>
-<h2>{{name}}</h2>
-<p>
-{{description}}
-{{tagline}}</p>
-{{/with}} 
+<div class="col-6">
+    <img src={{this.image_url}} class="img-fluid">
+</div>
+<div class="col-6">
+    <h2>{{this.name}}</h2>
+    <p>
+        {{this.description}}
+        {{this.tagline}}</p>
+</div>
