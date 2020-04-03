@@ -11,7 +11,12 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+
 // add the partials here:
+
+hbs.registerPartials(path.join(__dirname, 'views/partials'))
+
 
 // add the routes here:
 app.get('/', (req, res) => res.render('index'));
@@ -34,8 +39,6 @@ app.get('/random-beers', (req, res) => {
             res.render('random-beers', {oneRandomBeer : randomBeerFromApi})
             console.log('Random brewskie from the database: ', randomBeerFromApi)
         })
-
-
     })
 
 
