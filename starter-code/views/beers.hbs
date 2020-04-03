@@ -1,1 +1,8 @@
-beers
+{{#each beersArray}}
+<ul>
+<li>{{this.name}}
+    <br>{{this.description}}
+    <br>{{this.tagline}}
+    <br><img src="{{this.image_url}}"></li>
+</ul>
+{{/each}}

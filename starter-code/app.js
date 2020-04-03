@@ -20,9 +20,18 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => res.render('index'));
 
 //To the page beers
-app.get('/beers', (req, res) => res.render('beers'));
+
+app.get('/beers', (req, res) => 
+punkAPI.getBeers().then(beersFromApi => {
+console.log('Beers from the database: ', beersFromApi)
+res.render('beers', {beersArray : beersFromApi})}));
 
 //To the page random-beer
-app.get('/random-beer', (req, res) => res.render('random-beer'));
+//app.get('/random-beer', (req, res) => res.render('random-beer'));
+
+app.get('/random-beer', (req, res) => 
+punkAPI.getRandom().then(randomBeerFromAPI => {
+console.log('Random beer from the database: ', randomBeerFromAPI[0])
+res.render('random-beer', {randomBeer : randomBeerFromAPI[0]})}));
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
