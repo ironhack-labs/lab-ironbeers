@@ -5,3 +5,35 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    background-color: rgb(246, 251, 255);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+#main {
+    min-width: 250px;
+    min-height: 250px;
+}
+
+
+#navbar {
+    min-width: 250px;
+    height: 80px;
+    background-color: #2081C3;
+    color: rgb(246, 251, 255);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
