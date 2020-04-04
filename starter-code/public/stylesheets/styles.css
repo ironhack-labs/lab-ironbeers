@@ -5,3 +5,112 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+
+    background-color: #bfbfbf;
+
+    margin: 0px;
+    padding: 0px !important;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+nav {
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 50px;
+    width: 100%;
+    background-color: #2081c3;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+}
+
+nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: #0a2c42;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+/* Style the first page (index,hbs) */
+#firstPage-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+
+}
+
+#firstPage-content img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 400px;
+    max-width: 100%;
+}
+
+#firstPage-content button {
+    background-color: #2081c3;
+    color: white;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#firstPage-content a {
+    text-decoration: none;
+    color: white;
+}
+
+/* style random beer page */
+.ramdonBeercontainer img {
+    width: 100px;
+}
+
+.ramdonBeercontainer {
+    height: 620px;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-left: 100px;
+
+}
+
+.ramdonBeercontainer .flex-beer-detail {
+    max-width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
