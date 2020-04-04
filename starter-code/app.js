@@ -26,7 +26,7 @@ app.get('/beers', (req, res) => {
 
   punkAPI.getBeers().then((beers) => {
     //console.log(beer[0])   //Test
-    res.render('beers', { allMyBeersArray: beers })
+    res.render('beers', { beersArr: beers })
   })
 
 /*  //general code 
