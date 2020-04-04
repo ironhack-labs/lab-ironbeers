@@ -18,7 +18,9 @@ hbs.registerPartials(path.join(__dirname, 'views/partials'));
 app.get('/', (req, res) => res.render('index'));
 
 app.get('/beers', (req, res) => {
+    // beersFromApi could be named something else
     punkAPI.getBeers().then( beersFromApi => {
+        // data could be named anything else
            res.render('beers', {data: beersFromApi});
            }).catch(error => console.log(error));
  });
@@ -29,11 +31,13 @@ app.get('/random-beers', (req, res) => {
            }).catch(error => console.log(error));
  });
 
- app.get("/partials/beerdetailpartial:id", (req, res) => {
-    punkAPI.getBeer().then( beersFromApi => {
-        res.render('beerdetailpartial[id]', {data: beersFromApi});
+ app.get('/beerdetail/:id', (req, res) => {
+    punkAPI.getBeer(req.params.id).then( beersFromApi => {
+        res.render('beerdetail', {data: beersFromApi});
         }).catch(error => console.log(error));
     }); 
- 
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
+
+// hint for monitoring special files
+// nodemon -e js,hbs,json app.js
