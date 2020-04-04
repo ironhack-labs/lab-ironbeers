@@ -6,9 +6,11 @@ const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 const app = express();
 const punkAPI = new PunkAPIWrapper();
 
+// two lines that set up handlebars - always the same
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
+// set up public folder
 app.use(express.static(path.join(__dirname, 'public')));
 
 // add the partials here:
@@ -16,20 +18,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 // add the routes here:
 app.get('/', (req, res) => res.render('index'));
 
-
 app.get('/beers', (req, res) => {
-    res.getBeers()
-});
+    punkAPI.getBeers().then((beers) => {
+        res.render('beers', { allMyBeers: beers })
+    })
 
-app.get('/random-beer', (req, res) => {
-    res.getRandom()
-});
-
-
-// app.get('/beers', function(req, res) {
-//     res.getBeers()
-// })
-
-app.get('/beers', (req, res) => res.getBeers());
+app.get('/random-beer', (req, res) => res.render('random-beer'));
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
