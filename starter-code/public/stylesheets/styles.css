@@ -3,5 +3,144 @@ white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
+
 */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+nav{
+    background-color: #2081c3;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    padding-left: 2em;
+    box-shadow: 0 3px 5px #bfbfbf;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+footer{
+    background-color: #0a2c42;
+    color: white;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+}
+
+#home-screen{
+    height: 86vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#home-screen img{
+    width: 20em;
+}
+
+.buttons{
+    background-color: #2081c3;
+    padding: 0.9em 1.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.all-beers{
+    width: 100vw;
+    padding: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.beer-short-info{
+    width: 25vw;
+    padding-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+.beer-short-info img{
+    height: 30vh;
+}
+
+.beer-short-info p{
+    text-align: left;
+}
+
+.beer-short-info a, .beer-info a{
+    margin-top: 1em;
+    text-decoration: none;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: black;
+}
+
+.beer-short-info a:hover{
+    text-decoration: underline;
+}
+
+.tagline{
+    color: #bfbfbf;
+    padding: 0.5em 0 1em 0;
+}
+
+
+.beer-info{
+    /* background-color: aquamarine; */
+    width: 100vw;
+    height: 86vh;
+    padding: 8em;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.beer-info img{
+    /* background-color: cornflowerblue; */
+    height: 30vh;
+    padding: 0 3em 0 0;
+}
+
+.beer-info .info{
+    width: 60vw;
+}
+
+.more-info{
+    width: 30vw;
+    padding-left: 5em;
+    padding-top: 4.5em;
+}
+
+.more-info ul{
+    padding: 2em 0 2em 2em;
+}
+
+.more-info ul li{
+    padding-bottom: 1em;
+}
+
+.more-info p{
+    font-size: 12px;
+}
+
+.more-info span{
+    font-weight: bold;
+}
