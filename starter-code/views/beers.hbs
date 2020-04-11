@@ -1,0 +1,8 @@
+<div class="container-beers">
+    {{#each beersFromApi}}
+    <div>
+    {{> beerpartial }}
+    <a href="/beer?id={{this.id}}">MORE</a>
+    </div>
+    {{/each}}
+</div>

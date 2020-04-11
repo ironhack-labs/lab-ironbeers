@@ -1,7 +1,93 @@
-/*
-white: #f7f9f9;
+body {
+/* white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
-grey: #bfbfbf;
+grey: #bfbfbf; */
 font-family: Arial, Helvetica, sans-serif;
-*/
+text-align: center;
+}
+footer {
+    background-color: #0a2c42;
+    color: white;
+    padding: 2px;
+    text-align: left;
+}
+.navbar {
+text-align: left;
+background-color: #2081c3;
+color: white;
+padding: 20px;
+}
+.beer {
+    height: 400px;
+    width: 350px;
+}
+.beer-img {
+    padding: 30px;
+    text-align: center;
+    height: 300px;
+}
+.btn {
+    background-color: #2081c3;
+    color: white;
+    border-radius: 5%;
+    padding: 10px;
+    font-weight: 600;
+}
+.button {
+    padding: 20px;
+}
+a:visited {
+    color: white;
+  }
+#flex-container {
+    display: inline-grid;
+    /* grid-template-columns: 1fr;
+    grid-template-rows: 1fr; */
+    grid-template-columns: 450px 450px 450px;
+    grid-template-rows: 500px 500px 500px; 
+    column-gap: 10px;
+    row-gap: 15px;
+    justify-items: start;
+    align-items: start;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-content: space-between;
+}
+.container-beers {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+.container-beers > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 30px;
+    height: 400px;
+    width: 500px ;
+    text-align: left;
+}
+.container-beers > div > h6 {
+    text-align: left;
+}
+.container-beers > div > img {
+    height: 220px;
+}
+.container-random-beer {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.container-random-beer img{
+    height: 350px;
+}
+
+.container-random-beer > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
