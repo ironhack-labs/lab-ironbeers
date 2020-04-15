@@ -9,7 +9,7 @@ font-family: Arial, Helvetica, sans-serif;
 /* layout styles*/
 body {
   margin: 0;
-
+background-color: rgb(233, 227, 227);
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -46,7 +46,8 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
+  height: 100%;
+  width: auto;
 }
 .buttonContainer {
   display: flex;
@@ -68,5 +69,8 @@ body {
   border-radius: 5px;
   box-shadow: 3px 4px 3px 0px rgba(0, 0, 0, 0.226);
 }
-
+.cardIMG {
+  width: 30%;
+  height: 50%;
+}
 /* home styles*/
