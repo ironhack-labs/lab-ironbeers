@@ -5,3 +5,70 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    background-color: #f8f9f9;
+}
+
+.navbarBack {
+    background-color: #2081c3;
+}
+
+.navbar-nav li a {
+    color: white;
+}
+
+.index-container {
+    margin-left: 400px;
+}
+
+.main-beer {
+    width: 300px;
+}
+
+.index-container {
+    padding: 70px 0;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+.card-images {
+    margin-top: 40px;
+    border: none;
+    background-color: #f8f9f9;
+}
+
+.card-images img {
+    height: 250px;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+.random-beer-card {
+    margin-top: 50px;
+}
+
+.random-image {
+    background-color: #f8f9f9;
+    border: none;
+}
+
+.random-image img {
+    height: 400px;
+    object-fit: contain;
+}
+
+.footer {
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+    background-color: #2081c3;
+}
+
+.footer p {
+    color: white;
+    margin-left: 30px;
+    padding: 10px 0;
+}
