@@ -1,0 +1,18 @@
+<div>
+
+    <h1>Soy la Ruta Beers</h1>
+
+    <div class="row">
+
+        {{#each beersFromApi}}
+
+            <img src="{{this.image_url}}" alt="Beer">
+            <p>{{this.name}}</p>
+            <p>{{this.description}}</p>
+            <p>{{this.tagline}}</p>
+            <hr>
+
+        {{/each}}
+
+    </div>
+</div>
