@@ -1,0 +1,14 @@
+
+<h1>La cerveza aleatoria:</h1>
+
+<div class="row">
+
+    {{#each responseFromAPI}}
+
+        {{> partialRandomBeer this}}
+
+    {{/each}}
+
+</div>
+
+<a href="/" class="btn btn-primary btn-md">Volver a inicio</a>

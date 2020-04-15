@@ -1,0 +1,17 @@
+
+<div class="card mb-3">
+  <img src="{{image_url}}" class="card-img-top" alt="{{name}}">
+  <div class="card-body">
+    <h4 class="card-title">{{name}}</h4>
+    <p class="card-text"><em class="text-muted">{{tagline}}</em></p>
+    <p class="card-text">{{description}}</p>
+    <h5 class="card-title">Brewer's Tips</h5>
+    <p class="card-text">{{brewers_tips}}</p>
+    <h5 class="card-title">Pairings:</h5>
+    <p class="card-text"><small class="text-muted">        
+        {{#each food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}</small>
+    </p>
+  </div>
+</div>
