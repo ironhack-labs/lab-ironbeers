@@ -5,3 +5,36 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    background-color: #f7f9f9;
+}
+
+.navbar {
+    margin-bottom: 60px;
+}
+
+.card img {
+    height: 200px;
+    object-fit: contain;
+
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+.index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.index img,
+a {
+    margin: 10px;
+}
