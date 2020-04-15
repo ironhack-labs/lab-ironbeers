@@ -1,0 +1,6 @@
+    <div class="row">
+        {{#each beersFromApi}}
+            {{> beerpartial this}} 
+        {{/each}}
+    </div>  
+    <a href="/"><button type="button" class="btn btn-primary btn-sm">Go back</button></a>
