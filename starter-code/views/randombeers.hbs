@@ -1,12 +1,19 @@
-
-
-<div class="card border border-0" style="width:30%;">
-    <img class="card-img-top mt-5 centeredImg" style=" height:200px; width:auto;" src="{{image_url}}" alt="">
+<div class="card border border-0 flex-row" style="width:100%;">
+    <div style="width:35%">
+        <img class=" card-img-top mt-5 centeredImg" style=" height:300px; width:auto;" src="{{image_url}}" alt="">
+    </div>
     <div class="card-body">
         <h5 class="card-title font-weight-bold">{{name}}</h5>
         <h6 class="card-subtitle text-muted">{{tagline}}</h6>
         <br>
         <p class="card-text text-justify">{{description}}</p>
+        <h3>Food Pairing</h3>
+        <ul>
+            {{#each food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <h3>Brewer Foods</h3>
+        <p class="card-text text-justify">{{brewers_tips}}</p>
     </div>
 </div>
-  

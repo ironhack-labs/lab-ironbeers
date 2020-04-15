@@ -9,7 +9,7 @@ font-family: Arial, Helvetica, sans-serif;
 /* layout styles*/
 body {
   margin: 0;
-background-color: rgb(233, 227, 227);
+  background-color: rgb(233, 227, 227);
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -74,3 +74,7 @@ background-color: rgb(233, 227, 227);
   height: 50%;
 }
 /* home styles*/
+
+.card_random {
+  display: flex;
+}
