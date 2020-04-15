@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // add the routes here:
 app.get('/', (req, res) => res.render('index'));
 app.get('/beers', (req, res, next) => {
-  const beers = punkAPI.getBeers()
+  punkAPI.getBeers()
     .then((beersFromApi) => {
       console.log(`Fetched beers: ${beersFromApi}`);
       res.render('beers', { beers: beersFromApi });
