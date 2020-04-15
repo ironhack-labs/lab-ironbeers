@@ -1,0 +1,32 @@
+<section>
+      <div class="row single-beer justify-content-between">
+            <div class="col-md-3">
+                  <figure>
+                        <img src="{{image_url}}" alt="Beer {{name}}">
+                  </figure>
+            </div>
+            <div class="col-md-9">
+                  <header>
+                        <h4>{{name}}</h4>
+                        <h6>{{tagline}}</h6>
+                  </header>
+                  <article>
+                        <p>
+                              {{description}}
+                        </p>
+
+                        <p>
+                              <h5>Food Pairing</h5>
+                              <ul>
+                                    {{#each food_pairing}}
+                                    <li>{{this}}</li>
+                                    {{/each}}
+                              </ul>
+                        </p>
+                        <p>
+                              <span>Brewers Tips:</span> {{brewers_tips}}
+                        </p>
+                  </article>
+            </div>
+      </div>
+</section>
