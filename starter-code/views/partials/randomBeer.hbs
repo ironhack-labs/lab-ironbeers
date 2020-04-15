@@ -1,0 +1,19 @@
+<div class="col-md-3">
+    <img src="{{image_url}}" alt="{{name}}">
+</div>
+
+<div class="col-md-9">
+    <h5>{{name}}</h5>
+    <em>{{tagline}}</em>
+    <hr>
+    <p>{{description}}</p>
+    <hr>
+    <h6>Brewer's Tips</h6>
+    <p>{{brewers_tips}}</p>
+    <hr>
+    <small>This beer is perfect with:
+        {{#each food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}
+    </small>
+</div>
