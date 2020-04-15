@@ -9,13 +9,12 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
   <link rel="stylesheet" href="./stylesheets/styles.css">
-  <title>Document</title>
+  <title>IronBeers</title>
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="./">IronBeers</a>
+  <nav class="navbar position-fixed navbar-expand-lg">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -27,9 +26,15 @@
         <a class="nav-item nav-link" href="./random-beers">Random Beer</a>
       </div>
     </div>
+
   </nav>
 
   <div class="container">{{{body}}}</div>
+
+
+  <nav class="navbar fixed-bottom">
+    <p class="nav-item">Made in Ironhack</p>
+  </nav>
 
   {{!-- BOOTSTRAP DEPENDENCIES --}}
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

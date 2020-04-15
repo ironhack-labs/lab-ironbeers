@@ -3,11 +3,49 @@ light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf; */
 
+.container {
+  padding-top: 70px;
+}
+
 .navbar {
-  margin-bottom: 24px;
+  z-index: 100;
+  width: 100vw;
+  background: #2081c3;
+  box-shadow: 5px 5px 17px 0px rgba(0, 0, 0, 0.3);
+}
+.nav-link {
+  color: #f7f9f9;
+}
+
+.nav-link:hover {
+  color: #0a2c42;
+}
+
+.col img {
+  display: block;
+  margin: auto;
+}
+
+.row > .col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fixed-bottom {
+  background: #0a2c42;
+  color: #f7f9f9;
+}
+
+.fixed-bottom > .nav-item {
+  margin-bottom: 0;
 }
 
 .card img {
   max-height: 350px;
   object-fit: contain;
+}
+
+.extended-img {
+  max-height: 550px;
 }
