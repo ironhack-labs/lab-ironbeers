@@ -20,7 +20,6 @@ hbs.registerPartials(path.join(__dirname, 'views/partials'));
 app.get('/', (req, res) => res.render('index'));
 
 app.get('/beers', (req, res, next) => {
-
   punkAPI
 
     .getBeers()
@@ -33,24 +32,33 @@ app.get('/beers', (req, res, next) => {
     .catch((err) => {
       console.log(err);
     });
-
 });
 
 app.get('/random-beers', (req, res, next) => {
-
   punkAPI
 
     .getRandom()
 
     .then((randomBeer) => {
       console.log(`fetched random beer: ${randomBeer}`);
-      res.render('random-beers', { beer: randomBeer });
+      res.render('extended', { beer: randomBeer });
     })
 
     .catch((err) => {
       console.log(err);
     });
-    
+});
+
+app.get('/:id', (req, res, next) => {
+  punkAPI
+    .getBeer(req.params.id)
+    .then((fetchedBeer) => {
+      console.log(`fetched beer by ID: ${fetchedBeer}`);
+      res.render('extended', { beer: fetchedBeer });
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

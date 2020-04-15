@@ -1,15 +1,16 @@
- <div class="card" style="width: 18rem;">
+<div class="card" style="width: 18rem;">
 
-    <img src="{{this.image_url}}" class="card-img-top" alt="{{this.name}}">
+  <img src="{{this.image_url}}" class="card-img-top" alt="{{this.name}}">
 
-    <div class="card-body">
-
+  <div class="card-body">
+    <a href="/{{this.id}}">
       <h5 class="card-title">{{this.name}}</h5>
-      <p class="card-text">{{this.tagline}}</p>
-      <hr>
-      <p class="card-text">{{this.description}}</p>
+    </a>
+    <p class="card-text">{{this.tagline}}</p>
+    <hr>
+    <p class="card-text">{{this.description}}</p>
 
-
-    </div>
 
   </div>
+
+</div>
