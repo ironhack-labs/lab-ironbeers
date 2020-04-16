@@ -1,6 +1,8 @@
 <h1>All beers</h1>
-<ul>
+<div>
     {{#each allMyBeersArr}}
-    <li>{{this.name}}: {{this.description}}</li>
+    <h2>{{this.name}}</h2>
+    <img src="{{this.imgage_url}}" alt="">
+    <p>{{this.description}}</p>
     {{/each}}
-</ul>
+</div>
