@@ -1,0 +1,7 @@
+<div class="single-beer-info">
+    {{#each singleBeerFromApi}}
+    {{> beerpartial this}}
+    {{this.food_pairing}}<br><br>
+    {{this.brewer_tips}}<br><br>
+    {{/each}}
+</div>
