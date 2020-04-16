@@ -1,0 +1,44 @@
+{{!-- <h1>random-beer.hbs test</h1> --}}
+
+<div class="randomBeer">
+    {{#each randomBeer}}
+    <div class="randomBeerImage">
+        <img src="{{this.image_url}}" alt="picture of a beer">
+    </div>
+    <div class="randomBeerText">
+        {{>beerpartial}}
+        <h3>Food Pairing</h3>
+        <ul>
+            <li>{{this.food_pairing}}</li>
+            <li>{{this.food_pairing}}</li>
+            <li>{{this.food_pairing}}</li>
+        </ul>
+        <h3>Brewers Tips:</h3>
+        <p>{{this.brewers_tips}}</p>
+    </div>
+    {{/each}}
+</div>
+
+
+{{!-- <div class="randomBeer">
+    {{#each randomBeer}}
+    <div class="randomBeerImage">
+        <img src="{{this.image_url}}" alt="picture of a beer">
+    </div>
+    <div class="randomBeerText">
+        <h1>{{this.name}}</h1>
+        <h2>{{this.tagline}}</h2>
+        <p>{{this.description}}</p>
+    </div>
+    <div class="randomBeerText">    
+        <h3>Food Pairing</h3>
+        <ul>
+            <li>{{this.food_pairing}}</li>
+            <li>{{this.food_pairing}}</li>
+            <li>{{this.food_pairing}}</li>
+        </ul>
+        <h3>Brewers Tips:</h3>
+        <p>{{this.brewers_tips}}</p>
+    </div>
+    {{/each}}
+</div> --}}

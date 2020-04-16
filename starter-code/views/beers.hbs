@@ -1,0 +1,39 @@
+{{!-- <h1>beers.hbs test</h1> --}}
+
+<div class="containerBeers">
+    <div class="beersDiv">
+        {{#each beers}}
+        <div>
+            <img src="{{this.image_url}}" alt="picture of a beer">
+        </div>
+        <div>
+            {{>beerpartial}}
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+
+{{!-- <div class="containerBeers">
+    <div class="beersDiv">
+        {{#each beers}}
+        {{>beerpartial}}
+        {{/each}}
+    </div>
+</div> --}}
+
+
+{{!-- <div class="containerBeers">
+    <div class="beersDiv">
+        {{#each beers}}
+        <div>
+            <img src="{{this.image_url}}" alt="picture of a beer">
+        </div>
+        <div>
+            <h1>{{this.name}}</h1>
+            <h2>{{this.tagline}}</h2>
+            <p>{{this.description}}</p>
+        </div>
+        {{/each}}
+    </div>
+</div> --}}
