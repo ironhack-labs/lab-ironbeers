@@ -1,0 +1,22 @@
+<h1 class="justify-content-center">Beers</h1>
+
+         <div class="card-columns beer-container ">
+
+            {{#each beersFromApi}}
+
+            <div class="card beer-card " style="width: 18rem;">
+  <img src="{{this.image_url}}" class="card-img-top beer-card-img align-self-center" alt="{{this.name}}">
+  <div class="card-body ">
+    <hr>
+    <h5 class="card-title">{{this.tagline}}</h5>
+    <hr>
+    <p class="card-text">{{this.description}}</p>
+    
+  </div>
+</div>
+
+
+
+            {{/each}}
+
+        </div>

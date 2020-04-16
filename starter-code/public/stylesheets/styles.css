@@ -5,3 +5,88 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.h1,
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.img-beer {
+  max-width: 300;
+  margin-top: 2rem;
+}
+
+.beer-btn {
+  max-width: 250px;
+  margin-top: 1rem;
+}
+
+.beer-card-img {
+  max-width: 100px;
+  margin: 30px 0;
+}
+
+.beer-card {
+  margin: 10px;
+}
+
+.beer-container {
+  justify-content: center;
+  padding: 15px;
+}
+
+.random-beer-card {
+  margin: 50px;
+}
+
+.random-beer-card-img {
+  max-width: 300px;
+  margin: 30px;
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+/* // No media query since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .card-columns {
+    column-count: 2;
+  }
+  .card-columns .card {
+    display: inline-flex;
+    width: 100%;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .card-columns {
+    column-count: 2;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .card-columns {
+    column-count: 3;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .card-columns {
+    column-count: 4;
+  }
+}
+
+/* // Extra extra large devices (large desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .card-columns {
+    column-count: 5;
+  }
+}
