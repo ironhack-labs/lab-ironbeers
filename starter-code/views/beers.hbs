@@ -1,5 +1,12 @@
-  
-<h1>Beers</h1>
-  {{#each beers}}
+  <div class="container-fluid">
+<h1>All the Beers</h1>
+<div class="row everyBeer">
+{{#each beers}}
+<div class="col-md-4">
      {{>viewBeers this}}
+     </div>
   {{/each}}
+</div>
+</div>
+
+  </div>

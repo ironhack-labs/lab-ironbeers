@@ -32,4 +32,13 @@ punkAPI
   })
   .catch(error => console.log(error))
 )
+app.get("/:id", function (req, res) {
+    let id = req.params.id
+    punkAPI
+  .getBeer(id)
+  .then(responseFromAPI => {
+    res.render("beer", {onlyBeer : responseFromAPI[0]})
+  })
+  .catch(error => console.log(error))
+  })
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
