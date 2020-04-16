@@ -8,6 +8,7 @@ font-family: Arial, Helvetica, sans-serif;
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .headingBox {
@@ -31,7 +32,7 @@ font-family: Arial, Helvetica, sans-serif;
 .nav li a {
     color: #f7f9f9;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     padding: 2vh;
 
@@ -93,4 +94,17 @@ font-family: Arial, Helvetica, sans-serif;
 .footerBox h5 {
     color: #f7f9f9;
     font-size: 18px;
+}
+
+.mainBeers {
+    height: 100%;
+}
+
+.beerName {
+    height: 5vh;
+}
+
+.beerImg img {
+    height: 10vh;
+
 }
