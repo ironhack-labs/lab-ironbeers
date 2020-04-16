@@ -40,4 +40,15 @@ app.get('/random-beers', (req, res) => {
 
 hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
+app.get('/beers/:id', (req, res) => {
+  const id = req.params.id;
+  punkAPI
+    .getBeer(id)
+    .then((beerFromApi) => {
+      console.log(beerFromApi);
+      res.render('beerrandom', beerFromApi[0]);
+    })
+    .catch((error) => console.log(error, 'dioni'));
+});
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

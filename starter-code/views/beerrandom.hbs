@@ -1,7 +1,4 @@
-<img src={{this.image_url}}>
-<h4>Name : {{this.name}}</h4>
-<p>Description: {{this.description}}</p>
-<p>Tag line: {{this.tagline}}</p>
+{{>beerpartial this}}
 <p>Food Pairing:{{#each this.food_pairing}}
     <li class="black">{{this}}</li>
     {{/each}}
