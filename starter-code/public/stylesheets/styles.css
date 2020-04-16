@@ -5,3 +5,46 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+nav {
+  background-color: #2081c3;
+  color: #f7f9f9;
+  padding: 1em;
+}
+ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style-type: none;
+}
+
+li {
+  padding-right: 2em;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.a-like-button {
+  margin: auto;
+  margin-bottom: 1em;
+  width: 15em;
+  background-color: #2081c3;
+  color: #f7f9f9;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#bold {
+  font-weight: 700;
+}
+
+#tagline {
+  color: #bfbfbf;
+}
