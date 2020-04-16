@@ -5,6 +5,14 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  min-height: calc(100vh - 9em);
+}
 nav {
   background-color: #2081c3;
   color: #f7f9f9;
@@ -47,4 +55,20 @@ a {
 
 #tagline {
   color: #bfbfbf;
+}
+
+.food-pairing {
+  list-style-type: circle;
+}
+
+img {
+  margin-top: 1em;
+}
+
+footer {
+  background-color: #0a2c42;
+  color: #f7f9f9;
+  padding: 0.5em;
+  margin-bottom: 0;
+  width: 100%;
 }
