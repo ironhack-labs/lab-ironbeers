@@ -5,3 +5,37 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+  background-color: aqua;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  background-color: blue;
+  list-style: none;
+}
+li,
+a {
+  margin: 20px;
+  color: black;
+  text-decoration: none;
+}
+.beer {
+  margin: 5% 30%;
+  height: 40%;
+  width: 40%;
+}
+.home-button {
+  background-color: black;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  margin: 2% 40%;
+}
