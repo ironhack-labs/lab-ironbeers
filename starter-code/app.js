@@ -39,11 +39,12 @@ app.get('/random-beers', (req, res) => {
     .catch((error) => console.log('Error rendering random beer', error));
 });
 
-// app.get('/user/:id', function (request, response) {
-//   punkAPI.getBeer().then((selectedBeer) => {
-//     console.log('Beer selected and info received from database:', selectedBeer);
-//   response.send('user ' + request.params.id)
-// })
+//Iteration 6, step one: get beer ID from the url
+//step two: use getBeer(:id) to load this beer from the api
+// app.get('/beers/:id', function (req, res) {
+//   console.dir(req.params.name);
+//   res.send('beer ' + req.params.id);
+// });
 
 let beerID;
 app.get('/beer-closeup', (req, res) => {

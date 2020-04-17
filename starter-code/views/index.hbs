@@ -1,11 +1,31 @@
-<div class="container">
-    <img class="beer-image" src="images/beer.png" alt="beer image">
-    <div class="btn-group">
-        <button type="button"><a href="/beers">Check the Beers!</a></button>
-        <button type="button"><a href="/random-beers">Check a Random Beer!</a></button>
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Iron beers</title>
+    <meta name="description" content="width=device-width, initial-scale=1.0" />
+    {{!-- <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"  what does this do?> --}}
+    <link rel="stylesheet" type="text/css" href="/css/about-style.css" />
+    {{!-- do i need to link style sheet on every hbs file?? --}}
+</head>
+
+<body>
+
+    <div class="container">
+        <img class="beer-image" src="images/beer.png" alt="beer image">
+        <div class="btn-group">
+            <button type="button"><a href="/beers">Check the Beers!</a></button>
+            <button type="button"><a href="/random-beers">Check a Random Beer!</a></button>
+        </div>
     </div>
-</div>
+    <footer>
+        <p>Developed by Ironhack ;)</p>
+    </footer>
+</body>
 
-
+</html>
 <!-- QUESTION FOR TA'S: Should I put the html stuff in like I did in the random-beers and other hbs files? 
 Or is it better to leave it out like here since it is in the layout file?
