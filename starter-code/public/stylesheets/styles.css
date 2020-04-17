@@ -5,3 +5,76 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg {
+  background-color: #f0f0f0;
+  padding: 50px;
+}
+
+nav {
+  /* position: fixed; */
+  background-color: #2081c3;
+  padding: 0px 25px;
+  width: 100%;
+  height: 65px;
+  top: 0;
+  box-shadow: 0 4px 10px 4px rgba(26, 26, 26, 0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  padding: 10px;
+  padding-top: 23px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.img-beer {
+  width: 40%;
+  margin: 50px 50px 50px 15%;
+}
+
+.container a {
+  background-color: #2081c3;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 0 3px 10px 3px rgba(26, 26, 26, 0.1);
+}
+
+.product {
+  max-width: 80px;
+  padding: 20px 0 0 20px;
+  justify-content: center;
+}
+
+.list {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding: 10px 0 10px 20px;
+  text-indent: -1em;
+}
