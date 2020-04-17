@@ -39,6 +39,20 @@ app.get('/random-beers', (req, res) => {
     .catch((error) => console.log('Error rendering random beer', error));
 });
 
+// app.get('/user/:id', function (request, response) {
+//   punkAPI.getBeer().then((selectedBeer) => {
+//     console.log('Beer selected and info received from database:', selectedBeer);
+//   response.send('user ' + request.params.id)
+// })
+
+let beerID;
+app.get('/beer-closeup', (req, res) => {
+  punkAPI.getBeer(118).then((selectedBeer) => {
+    console.log('Beer selected and info received from database:', selectedBeer);
+    res.render('beer-closeup', { selectedBeer });
+  });
+});
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
 
 // on api -- mongoose.connection.close() //you have to close the connection otherwise the script keeps running on the machine

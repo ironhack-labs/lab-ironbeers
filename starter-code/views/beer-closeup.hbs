@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Iron beers</title>
+    <meta name="description" content="width=device-width, initial-scale=1.0" />
+    {{!-- <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"  what does this do?> --}}
+    <link rel="stylesheet" type="text/css" href="/css/about-style.css" />
+    {{!-- do i need to link style sheet on every hbs file?? --}}
+</head>
+
+<body>
+    <h1>Beer Closeup</h1>
+    <div>
+        {{#each selectedBeer}}
+        <div>
+            {{> beerpartial }}
+        </div>
+
+        <p><strong>Food Pairing: </strong>
+            {{#each food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </p>
+
+        <p><strong>Brewer's Tips: </strong>{{brewers_tips}}</p>
+
+        <div>
+            <h4>Further Information</h4>
+            <p>First brewed: {{first_brewed}}</p>
+            <p>pH level: {{ph}}</p>
+            <h5>Ingredients:</h5>
+            <!--Not quite sure how to target the ingredients without it becoming really messy-->
+            <li>{{ingredients.malt}}</li>
+            <li>{{ingredients.yeast}}</li>
+        </div>
+        {{/each}}
+    </div>
+
+</body>
+
+</html>
