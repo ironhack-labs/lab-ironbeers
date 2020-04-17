@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Random beer</title>
+    <meta name="description" content="width=device-width, initial-scale=1.0" />
+    {{!-- <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"  what does this do?> --}}
+    <link rel="stylesheet" type="text/css" href="/css/about-style.css" />
+    {{!-- do i need to link style sheet on every hbs file?? --}}
+</head>
+
+<body>
+    <h1>Random Beer</h1>
+    <div class="random-beer-container">
+        <div>
+            <h2>{{{randomBeer.[0].name}}}</h1> {{! because randomBeer is an array with 1 object --}}
+                <img src={{{randomBeer.[0].image_url}}} alt="image of random beer">
+                <h3>{{randomBeer.[0].tagline}}</h3>
+                <p>{{randomBeer.[0].description}}</p>
+            </h2>
+        </div>
+
+    </div>
+</body>

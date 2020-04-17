@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Iron Beers</title>
+    <meta name="description" content="width=device-width, initial-scale=1.0" />
+    {{!-- <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"  what does this do?> --}}
+    <link rel="stylesheet" type="text/css" href="/css/about-style.css" />
+</head>
+
+<body>
+    <h1>Iron Beers</h1>
+    <div class="beers-container">
+        {{#each beersFromApi}}
+        <div>
+            <h2>{{this.name}}</h1>
+                <img src={{this.image_url}} alt="beer images">
+                <h3>{{this.tagline}}</h3>
+                <p>{{this.description}}</p>
+            </h2>
+        </div>
+        {{/each}}
+    </div>
+</body>
