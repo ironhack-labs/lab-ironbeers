@@ -5,3 +5,62 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+   min-height: 100vh;
+}
+
+nav {
+    background-color: #2081c3;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+nav > a {
+    color: #f7f9f9;
+    text-decoration: none;
+    padding: 2vw;
+}
+
+.container {
+    height: 100%;
+    background-color: #bfbfbf;
+}
+
+.main-page {
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-page > img {
+    width: 28vw;
+    margin-top: 5vw;
+}
+
+
+.main-page > a {
+    text-decoration: none;
+    background-color: #2081c3;
+    color: white;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+footer {
+    background-color: #0a2c42;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: #f7f9f9;
+    padding-left: 2vw;
+}
