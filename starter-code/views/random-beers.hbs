@@ -1,0 +1,16 @@
+<div class="card-wrap">
+
+    {{#each responseFromAPI}}
+        {{> beerPartial this}}
+        <br/>
+        <div class="card">
+            <h5> <u>Advised food pairing:</u></h5>
+            <p>{{food_pairing}}</p>
+            <h5> <u>Brewer Tips:</u></h5>
+            <p>{{brewers_tips}}</p>
+        </div>
+    {{/each}}
+
+</div>
+
+<button type="button" class="btn btn-outline-primary"><a href="/beers"/>Back to beers page</a></button>

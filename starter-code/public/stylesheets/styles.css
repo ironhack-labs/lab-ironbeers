@@ -3,5 +3,80 @@ white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
+
 */
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+    padding:0;
+    margin:0;
+}
+
+a, a:focus, a:visited, a:active, a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding:0;
+    margin:0!important;
+    list-style-type: none;
+}
+
+li {
+    padding: 1rem;
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav {
+    background-color:#2081c3;
+    color:white;
+}
+button {
+    margin: 10px;
+}
+
+.button-wrap, nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: .5rem;
+}
+
+.button-wrap, .wrap {
+    flex-direction: column;
+}
+
+.card-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.button-wrap {
+    margin: 1.5rem;
+}
+
+img {
+    width: auto;
+    max-height: 120px;
+    margin: 30px auto 0;
+}
+
+.card {
+    width: calc(33% - 20px);
+    padding: 1em;
+    box-sizing: border-box;
+    background: #fafafa;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: -7px 3px 10px rgba(0, 0, 0, 0.10);
+}
+
+.card p {
+    font-size: 12px;
+    line-height: 1.5em;
+}
