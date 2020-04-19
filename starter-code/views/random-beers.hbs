@@ -2,12 +2,11 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <div>
     <h1>Random Beers</h1>
+    {{>beercard cervezaR.[0]}}
 
-    <h2>Hello my name is {{cervezaR.[0].name}}</h2>
-    <article></article>
-    <h2>Food Pairing: </h2>
-    <article>{{cervezaR.[0].description}}</article>
-    <h3>Brewers Tips</h3>
-    <article><img src={{cervezaR.[0].image_url}} alt=""></article>
+    <h2>
+        {{cervezaR.[0].food_pairing}}
+        {{cervezaR.[0].brewer_tips}}
+    </h2>
 
 </div>

@@ -33,7 +33,7 @@ app.get('/random-beers', (req, res, next) => {
     .getRandom()
     .then((beersFromApi) => {
       console.log('Random Beer from the database: ', beersFromApi);
-      res.render('random-beers', { cervezaR: beersFromApi });
+      res.render('random-beers', {cervezaR: beersFromApi });
     })
     .catch((error) => console.log(error));
 });
