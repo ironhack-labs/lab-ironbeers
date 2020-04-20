@@ -1,7 +1,111 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+/*white: #f7f9f9;light-blue: #2081c3;dark-blue: #0a2c42;grey: #bfbfbf;font-family: Arial, Helvetica, sans-serif;*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: #2081c3;
+    height: 7vh;
+}
+
+nav a {
+    color: #f7f9f9;
+    text-decoration: none;
+    font-size: 4vh;
+    line-height: 7vh;
+    margin-left: 5vw;
+}
+
+.beerpictures {
+    height: 30vh;
+}
+
+#allBeers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5vw;
+    row-gap: 3vh;
+    padding: 40px;
+}
+
+#beer {
+    text-align: justify;
+}
+
+h3 {
+    height: 2em;
+    color: grey;
+    margin-top: 2vh;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3vh;
+}
+
+#imghome {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60vh;
+    margin-top: 10vh;
+
+}
+
+#bt1,
+#bt2 {
+    text-decoration: none;
+    display: block;
+    color: #f7f9f9;
+    line-height: 7vh;
+
+}
+
+.button {
+    background-color: #2081c3;
+    width: 13vw;
+    height: 7vh;
+    margin-bottom: 2vh;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+#oneBeer {
+    padding: 40px;
+    width: 70%;
+    text-align: justify;
+    position: relative;
+}
+
+.oneBeer {
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    width: 70%;
+}
+
+.oneBeer img {
+    position: absolute;
+    left: -10vw;
+}
+
+.oneBeer li {
+    margin: 10px;
+    margin-left: 2vw;
+}
+
+.oneBeer h4 {
+    margin-top: 10px;
+}
+
+.brewers {
+    font-weight: bold;
+}
