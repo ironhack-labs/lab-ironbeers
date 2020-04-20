@@ -5,3 +5,106 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+article {
+	padding: 50px;
+}
+
+nav {
+	background-color: #2081c3;
+	color: white;
+}
+nav ul {
+	height: 50px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+nav ul li {
+	margin: 0 50px;
+	list-style-type: none;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.home-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+/* Beers page */
+
+.general-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+
+.home-container img {
+	margin-bottom: 20px;
+}
+
+.beer-container {
+	width: 25%;
+	margin: 20px;
+}
+
+.beer-container,
+img {
+	height: 10%;
+	margin-bottom: 10px;
+}
+
+.btn {
+	padding: 20px;
+	background-color: #2081c3;
+	margin: 15px;
+	border-radius: 6px;
+	text-decoration: none;
+	color: white;
+}
+
+/* Random beer page */
+
+.random {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.right-corner {
+	margin-left: 150px;
+	width: 50%;
+}
+
+.right-corner h2,
+p,
+h3,
+ul {
+	margin-bottom: 10px;
+}
+
+.right-corner ul {
+	margin-left: 19px;
+}
+
+.left-corner,
+img {
+	height: 250px;
+	margin-bottom: 10px;
+}
