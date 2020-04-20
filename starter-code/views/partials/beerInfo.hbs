@@ -1,0 +1,23 @@
+<div class="beer-display">
+  {{#unless beers}}
+  <p class=“nothing”>Sorry, nothing here yet...</p>
+  {{/unless}}
+  <img src="{{beers.image_url}}" alt="">
+
+  <div class="title">
+    <h1>{{beers.name}}</h1>
+    <p class="tagline">{{beers.tagline}}</p>
+    <p class="description">{{beers.description}}</p>
+
+
+    <h4>Food pairing</h4>
+    <ul>
+      {{#each beers.food_pairing}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+
+    <h4>Brewer tips</h4>
+    <p>{{beers.brewers_tips}}</p>
+  </div>
+</div>

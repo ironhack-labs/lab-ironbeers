@@ -1,7 +1,139 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+img {
+  max-width: 500px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background: #F6F9FC;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+nav {
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  align-content: stretch;
+}
+nav .nav-links {
+  margin: 30px 20px;
+}
+nav li {
+  text-decoration: none;
+  display: inline;
+  margin-right: 16px;
+  color: #4a4a4a;
+  font-size: 16px;
+}
+nav li:hover {
+  color: #24273E;
+}
+
+.footer {
+  padding: 5px 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #24273E;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: 60px auto;
+}
+.container .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .content button {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 12px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 7px 25px 0;
+  margin: 50px 5px;
+}
+
+.beer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.beer-container .beer-card {
+  width: 250px;
+  height: 430px;
+  padding: 20px;
+  margin: 10px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+.beer-container .beer-card .description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  color: black;
+  -webkit-line-clamp: 4;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
+  margin-top: 10px;
+}
+.beer-container a {
+  cursor: pointer;
+}
+.beer-container .beer-display {
+  width: 600px;
+}
+.beer-container .beer-display .description {
+  overflow: visible;
+}
+.beer-container .title {
+  margin-bottom: 0px;
+}
+.beer-container .title h1 {
+  margin: 32px 0 8px;
+  color: black;
+}
+.beer-container .title h4 {
+  margin: 20px 0 10px;
+  color: black;
+}
+.beer-container .title .tagline {
+  text-transform: uppercase;
+  color: #4a4a4a;
+  font-size: 12px;
+}
+.beer-container img {
+  margin-top: 20px;
+  max-width: 50px;
+}
+
+/*# sourceMappingURL=styles.css.map */
