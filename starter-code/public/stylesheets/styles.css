@@ -1,7 +1,24 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+/* Merci PrinCSS nina pour le flex */
+.imgBeer {
+  height: 200px;
+  max-width: 200px;
+}
+.beer {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.beer-img-ctn {
+  width: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.beer-info {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
