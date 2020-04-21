@@ -1,0 +1,17 @@
+<div class="rondom-beer page-padding">
+
+{{!-- brewer tips --}} 
+    <img class="rondom-beer-img" src="{{beer.0.image_url}}" alt="beer-image">
+    <div class="random-beer-info">
+        <h2>{{beer.0.name}}</h2>
+        <p>Description: {{beer.0.description}}</p>
+        <p>Tagline: {{beer.0.tagline}}</p>
+        <p>Food pairing:</p>
+        <ul>
+            {{#each beer.0.food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    </div>
+
+</div>
