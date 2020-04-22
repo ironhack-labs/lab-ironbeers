@@ -1,0 +1,25 @@
+<div>
+    {{#each beer}}
+    {{> randombeerpartial this}}
+    <p>First brewed: {{this.first_brewed}}</p>
+
+    <ul>
+        <li>abv: {{this.abv}}</li>
+        <li>ibu: {{this.ibu}}</li>
+        <li>Target fg: {{this.target_fg}}</li>
+        <li>Target og: {{this.target_og}}</li>
+        <li>ebc: {{this.ebc}}</li>
+        <li>srm: {{this.srm}}</li>
+        <li>ph: {{this.ph}}</li>
+        <li>Attenuation level: {{this.attenuation_level}}</li>
+        <li>Volume: {{this.volume.value}} litres</li>
+        <li>Boil volume: {{this.boil_volume.value}} litres</li>
+
+    </ul>
+
+
+    {{/each}}
+
+
+
+</div>
