@@ -5,3 +5,35 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+nav {
+    background-color: #2081c3;
+}
+
+img {
+    height: 30em;
+}
+
+.beerCont {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* why can I not make the things wrap??? why does the beerItem element take up whole width of the page?*/
+.beerItem {
+    width: 25%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    background-color: #0a2c42;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f9f9;
+}

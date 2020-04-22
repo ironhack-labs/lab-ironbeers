@@ -1,0 +1,21 @@
+
+<div>
+    <h1>
+        beer yum yum
+    </h1>
+</div>
+<div class="beerCont">
+
+    {{#each beers}}
+    {{> beerpartial this}}
+    {{/each}}
+
+</div>
+
+{{!-- so this is how it was here before doing the partial:
+    {{#each beers}}
+    {{this.name}}
+    <img src="{{this.image_url}}" alt="image not found"> 
+    <p>{{this.description}}</p>
+    <p>{{this.tagline}}</p>
+    {{/each}} --}}

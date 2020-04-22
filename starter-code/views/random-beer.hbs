@@ -1,0 +1,16 @@
+
+<h1>
+    random beer yum yum
+</h1>
+
+{{!-- image, name, description, tagline, food pairing and brewer tips --}}
+
+{{> beerpartial rndmBeer}}
+
+<h4>Food pairings:</h4>
+{{#each rndmBeer.food_pairing}}
+<ul>
+    <li>{{this}}</li>
+</ul>
+{{/each}}
+<p>{{rndmBeer.brewers_tips}}</p>
