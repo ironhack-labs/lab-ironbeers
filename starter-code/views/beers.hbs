@@ -1,0 +1,12 @@
+{{!-- iteration 3.2 --}}
+
+<article>
+    {{#each beerlist}}
+    <img src="{{this.image_url}}" alt="">
+    <div>
+        <h3>{{this.name}}</h3>
+        <p>{{this.description}}</p>
+        <h5>{{this.tagline}}</h5>
+    </div>
+    {{/each}}
+</article>

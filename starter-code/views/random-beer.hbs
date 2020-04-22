@@ -1,0 +1,15 @@
+{{!-- iteration 4.2 --}}
+
+<article>
+    {{#each randomlist}}
+    <img src="{{this.image_url}}" alt="">
+    <div>
+        <h2>{{this.name}}</h2>
+        <p>{{this.description}}</p>
+        <h5>{{this.tagline}}</h5>
+        <h4>Food Pairing:</h4>
+        <p>{{this.food_pairing}}</p>
+        <p><strong>Brew tips: </strong>{{this.brewers_tips}}</p>
+    </div>
+    {{/each}}
+</article>
