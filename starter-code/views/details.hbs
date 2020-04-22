@@ -1,0 +1,41 @@
+<div>
+
+    {{#each beer}}
+    
+    {{>beerpartial this}}
+
+    {{this.abv}}
+    {{this.ibu}}
+    {{this.target_fg}}
+    {{this.target_og}}
+    {{this.ebc}}
+    {{this.srm}}
+    {{this.ph}}
+    {{this.attenuation_level}}
+    {{this.volume.value}}
+    {{this.volume.unit}}
+
+    {{this.boil_volume.value}}
+    {{this.boil_volume.unit}}
+    {{#each this.method.mash_temp}}
+    {{@key}}   
+    {{/each}}
+    
+    {{this.method.fermentation}}
+
+    {{this.method.twist}}
+
+    <h1>
+
+    {{@key}}
+    </h1>
+    {{this.ingredients.hops}}
+    {{this.ingredients.yeast}}
+
+    {{this.food_pairing}}
+    {{this.brewers_tips}}
+    {{this.contributed_by}}
+
+    {{/each}}
+
+</div>
