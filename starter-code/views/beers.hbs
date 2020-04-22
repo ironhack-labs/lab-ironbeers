@@ -1,0 +1,14 @@
+<div class="beer-div flex">
+
+    {{#each allBeers}}
+
+    <div class="flex-item">
+        <img class="beer-img" src="{{this.image_url}}" alt="beer_img">
+
+        <h3>{{this.name}}</h3>
+        <p>{{this.tagline}}</p>
+        <p>{{this.description}}</p>
+    </div>
+
+    {{/each}}
+</div>
