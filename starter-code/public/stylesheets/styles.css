@@ -40,3 +40,33 @@ p{
     margin-left: 20px;
     padding-top: 10px;
 }
+
+/* INDEX */
+
+.index-btn {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+}
+
+.check-beer{
+  background-color:  #2081c3;
+  color: white;
+  height: 35px;
+  width: 150px;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 15px 0;
+}
+
+.img-beer {
+  margin: 0 auto;
+  height: 200px;
+}
