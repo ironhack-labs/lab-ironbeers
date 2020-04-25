@@ -1,0 +1,13 @@
+<h1>Single beer</h1>
+{{#each theBeers}}
+<p>Name: {{this.name}}</p>
+<p>Description: {{this.description}}</p>
+<p>Tagline: {{this.tagline}}</p>
+<ul>Food pairings:
+    {{#each food_pairing as |pairing|}}
+    <li>{{pairing}}</li>
+    {{/each}}
+</ul>
+<p>Brewer's tips: {{this.brewers_tips}}</p>
+
+{{/each}}

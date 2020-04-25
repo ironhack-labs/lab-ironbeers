@@ -1,16 +1,6 @@
 <h1>Beers</h1>
 <div class="allBeers">
     {{#each theBeers}}
-    <div class="beer">
-        <div class="beer-img-ctn">
-            <img src="{{this.image_url}}" class="imgBeer" alt="">
-        </div>
-
-        <div class="beer-info">
-            <h2>{{this.name}}</h2>
-            <p>{{this.description}}</p>
-        </div>
-
-    </div>
+    {{> beerpartials}}
     {{/each}}
 </div>

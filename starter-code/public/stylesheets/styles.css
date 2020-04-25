@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 /* Merci PrinCSS nina pour le flex */
+* {
+  font-family: 'Roboto', sans-serif;
+}
 .imgBeer {
   height: 200px;
   max-width: 200px;
@@ -21,4 +25,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.beerImg {
+  height: 300px;
+  max-width: 100%;
+  margin-bottom: 20px;
 }
