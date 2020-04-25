@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="/stylesheets/styles.css">
+
+{{#each beer}}
+    <article class="partialflex">
+        <div class="imgcontainer">
+            <img class="img" src="{{this.image_url}}" alt="Image of a {{this.name}} beer">
+        </div>
+        <div class='othercontainer'>
+            <div>
+            <a href="/beers/{{this.id}}">{{this.name}}</a>
+            <p class="description">{{this.description}}</p>
+            <p>{{this.tagline}}</p>
+            </div>
+            <div class="rightblank">
+                
+            </div>
+        </div>
+        
+    </article>
+{{/each}}
