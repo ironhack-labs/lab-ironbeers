@@ -1,14 +1,16 @@
 <article>
 
-{{!-- {{#each beers}}
-    <img src="{{this.image_url}}" alt="beer">
-    <h2>{{this.name}}</h2>
-    <h3>{{this.tagline}}</h3>
-    <p>{{this.description}}</p>
-{{/each}} --}}
+<div class="general-container">
 
+    {{#each beers}}
+    <div class="beer-container">
+        <a href="/beers/{{id}}"> <img src="{{this.image_url}}" alt="beer"></a>
 
+        <h2>{{this.name}}</h2>
+        <h3>{{this.tagline}}</h3>
+        <p>{{this.description}}</p>
+    </div>
+    {{/each}}
+</div>
 
-
-    {{> beerpartials }}
 </article>

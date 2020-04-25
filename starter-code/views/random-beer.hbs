@@ -1,23 +1,5 @@
-
 <article class="random">
 
-<div class="left-corner">
-    <img src="{{beer.image_url}}" alt="beer">
-</div>
-<div class="right-corner">
-    <h2>{{beer.name}}</h2>
-    <p>{{beer.description}}</p>
-    <h3>{{beer.tagline}}</h3>
-
-    <h3>Food Pairing</h3>
-    <ul>
-        {{#each beer.food_pairing}}
-        <li>{{this}}</li>
-        {{/each}}
-    </ul>
-
-    <p><strong>Brewers Tips : </strong> {{beer.brewers_tips}}</p>
-
-</div>
+    {{> beerpartials this}}
 
 </article>

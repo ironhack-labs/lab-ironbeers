@@ -20,6 +20,7 @@ nav {
 	background-color: #2081c3;
 	color: white;
 }
+
 nav ul {
 	height: 50px;
 	display: flex;
@@ -46,8 +47,7 @@ nav ul li a {
 	align-content: center;
 }
 
-/* Beers page */
-
+/* BEERS  */
 .general-container {
 	display: flex;
 	flex-wrap: wrap;

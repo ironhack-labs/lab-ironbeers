@@ -1,8 +1,8 @@
 
 
-
+{{!-- 
 <div class="general-container">
-    {{#each beers}}
+    {{#each beer}}
 <div class= "beer-container">
     <img src="{{this.image_url}}" alt="beer">
     <h2>{{this.name}}</h2>
@@ -10,8 +10,49 @@
     <p>{{this.description}}</p>
     </div>
     {{/each}}
-    </div>
+    </div> --}}
 
+{{!-- 
+<div class="general-container">
+    <div class="beer-container">
+        <img src="{{this.image_url}}" alt="beer">
+        <h2>{{this.name}}</h2>
+        <h3>{{this.tagline}}</h3>
+        <p>{{this.description}}</p>
+    </div>
+</div>
+ --}}
+
+{{!-- <div class="beer">
+    <img src="{{this.image_url}}" alt="" srcset="">
+    {{this.name}}
+    {{this.tagline}}
+    {{this.description}}
+</div> --}}
+
+
+<article class="random">
+
+<div class="left-corner">
+    <img src="{{this.image_url}}" alt="beer">
+</div>
+<div class="right-corner">
+    <h2>{{this.name}}</h2>
+    <p>{{this.description}}</p>
+    <h3>{{this.tagline}}</h3>
+
+    <h3>Food Pairing</h3>
+    <ul>
+        {{#each this.food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+
+    <p><strong>Brewers Tips : </strong> {{this.brewers_tips}}</p>
+
+</div>
+
+</article>
 
     
 
