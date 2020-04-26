@@ -1,0 +1,19 @@
+<div style="text-align:center;">
+    <h1>RANDOM BEER</h1>
+    <h2><a href="/">Back to home page</a></h2>
+</div>
+
+
+{{>beerpartial beer}}
+
+<div class="food">
+    <h2>Food pairing</h2>
+    {{#each beer.food_pairing}}
+    <li>{{this}}</li>
+    {{/each}}
+</div>
+
+<div class="food">
+    <h2>Brewer tips</h2>
+    <p>{{beer.brewers_tips}}</p>
+</div>

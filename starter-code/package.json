@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "main": "app.js",
   "scripts": {
+    "dev": "nodemon app.js -e hbs js",
     "start": "node app.js"
   },
   "author": "",

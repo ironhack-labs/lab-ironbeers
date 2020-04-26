@@ -5,3 +5,51 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 50vh;
+}
+
+.window {
+    margin: 10px;
+    background-color: rgba(30, 143, 255, 0.26);
+    border-radius: 10px;
+}
+
+.one {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+#description {
+    padding: 10px;
+    text-align: center;
+}
+
+#tagline {
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.food {
+    margin: 10px;
+    background-color: rgba(30, 143, 255, 0.26);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.food h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
