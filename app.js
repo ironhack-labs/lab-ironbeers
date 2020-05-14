@@ -1,4 +1,5 @@
 const express = require('express');
+
 const hbs = require('hbs');
 const path = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
@@ -11,9 +12,14 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// add the partials here:
+// Register the location for handlebars partials here:
 
-// add the routes here:
-app.get('/', (req, res) => res.render('index'));
+// ...
+
+// Add the route handlers here:
+
+app.get('/', (req, res) => {
+  res.render('index');
+});
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
