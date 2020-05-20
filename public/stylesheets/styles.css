@@ -5,3 +5,11 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.home-beer {
+    height: 200px;
+}
+
+.beer-image {
+    height: 100px;
+}
