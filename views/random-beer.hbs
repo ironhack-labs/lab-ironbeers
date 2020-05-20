@@ -1,20 +1,19 @@
 <div class="container">
-    <div class="row my-5 justify-content-center">
+    <div class="row justify-content-center">
         {{#each randomBeer}}
-        <div class="col-sm-12 col-md-2 border-right">
-            <img class="img-fluid" style="height:18rem;" src="{{image_url}}" alt="">
-        </div>
-        <div class="col-sm-12 col-md-6">
-            <h4>{{name}}</h4>
-            <h5>{{tagline}}</h5>
-            <p>{{description}}</p>
+        {{>beerpartial}}
+        <div class="col column">
             <ul>
                 {{#each food_pairing}}
                 <li>{{this}}</li>
                 {{/each}}
             </ul>
             <p>Tips: {{brewers_tips}}</p>
+
+
+            {{/each}}
         </div>
-        {{/each}}
+
     </div>
+
 </div>

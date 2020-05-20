@@ -23,13 +23,23 @@ footer {
     color: #bfbfbf;
 }
 
-button a {
+
+.btn {
     background-color: #2081c3;
-    color: #f7f9f9;
-    text-decoration: none;
-    padding: 10px
+
 }
 
-button {
-    margin: 15px 0;
+.btn a {
+    color: #f7f9f9;
+}
+
+
+
+.column,
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+
 }

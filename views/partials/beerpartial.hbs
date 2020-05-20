@@ -1,13 +1,7 @@
-<a href="/beerdetails/{{id}}">
-    <img src="{{this.image_url}}" alt="">
-</a>
-
-<h2>
-    {{name}}
-</h2>
-<h3>
-    {{tagline}}
-</h3>
-<h4>
-    {{description}}
-</h4>
+<div class="col-sm-12 col-md-4" align="center">
+    <img class="img-fluid mx-auto my-5" style="height:18rem;" src="{{this.image_url}}" alt="beer-photo">
+    <h4>{{name}}</h4>
+    <h5>{{tagline}}</h5>
+    <p class="text-justify">{{description}}</p>
+    <hr>
+</div>
