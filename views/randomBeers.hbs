@@ -1,4 +1,14 @@
-<h1>random beers</h1>
-<div>
-    
+<h1>random beer</h1>
+
+
+<div class="container">
+    <div class="row">
+
+        {{#each randomBeer }}
+
+            {{> randomBeerCard}}      
+        
+        {{/each}}
+
+    </div>
 </div>
