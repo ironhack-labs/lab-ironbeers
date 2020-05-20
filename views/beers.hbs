@@ -4,12 +4,9 @@
         {{#each responsAPI }} 
         
             <div class="col-md-4">
-                <img class="card-img-top" src={{image_url}} alt="Card image cap" />
-                <div class="card-body">
-                    <h5 class="card-title">{{name}}</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">{{tagline}}</h6>
-                    <p class="card-text">{{description}}</p>
-                </div>
+
+                {{> beerpartial }}
+
             </div>
 
         {{/each}}
