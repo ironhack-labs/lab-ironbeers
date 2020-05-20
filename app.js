@@ -28,14 +28,22 @@ app.get('/beers', (req, res) => {
     .then(beersFromApi => res.render('beers', { beers: beersFromApi }));
 });
 
+app.get('/beers/:id', (req, res) => {
+  punkAPI
+    .getBeer(req.params.id)
+    .then(beersFromApi => res.render('random-beer', beersFromApi[0]));
+});
+
 app.get('/random-beers', (req, res) => {
   punkAPI
     .getRandom()
-    .then(beersFromApi => {
-      console.log(JSON.stringify(beersFromApi));
-      res.render('random-beer', beersFromApi[0]);
-    })
-    .catch(console.log(`We don't have a random beer`));
+    .then(beersFromApi => res.render('random-beer', beersFromApi[0]));
+});
+
+app.get('/beers/', (req, res) => {
+  punkAPI
+    .getBeer()
+    .then(beersFromApi => res.render('random-beer', beersFromApi[0]));
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
