@@ -12,6 +12,10 @@ body {
   font-size: 14px !important;
 }
 
+section {
+  padding: 80px 0;
+}
+
 .navbar {
   background-color: var(--light-blue);
 }
@@ -25,7 +29,6 @@ body {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  padding: 80px;
 }
 
 #home .wrapper img {
@@ -44,7 +47,6 @@ body {
 #beersList .wrapper {
   display: flex;
   flex-flow: row wrap;
-  padding: 80px 0;
   margin: -20px;
 }
 
@@ -70,6 +72,15 @@ body {
 #beersList .item .tagline {
   color: var(--grey);
   font-size: small;
+}
+
+#singleBeer .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#singleBeer .wrapper img {
+  float: left;
 }
 
 footer {
