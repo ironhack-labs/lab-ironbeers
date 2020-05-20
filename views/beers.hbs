@@ -1,13 +1,7 @@
-<h1>beers</h1>
-
 <div class="container">
-    <div class="row">
+{{#each allBeers }}
 
-        {{#each allBeers }}
+{{> beerCard}}
 
-            {{> beerCard}}      
-        
-        {{/each}}
-
-    </div>
+{{/each}}
 </div>
