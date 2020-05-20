@@ -1,12 +1,14 @@
 <div class="container">
-    <div class="row">
+    <div class="row justify-content-center my-5">
         {{#each beers}}
-        <div class="col">
-            <h2>{{this.name}}</h2>
-            <h3>{{this.tagline}}</h3>
-            <p>{{this.description}}</p>
-            <img src="{{this.image_url}}" alt="">
+        <div class="col-sm-12 col-md-4 px-5" align="center">
+            <img class="img-fluid mx-auto my-5" style="height:18rem;" src="{{image_url}}" alt="beer-photo">
+            <hr>
+            <h4>{{name}}</h4>
+            <h5>{{tagline}}</h5>
+            <p class="text-justify">{{description}}</p>
+            <hr>
         </div>
         {{/each}}
-
     </div>
+</div>
