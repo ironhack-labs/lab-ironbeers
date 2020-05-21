@@ -1,4 +1,18 @@
-<main>
-    <h1>{{id}}</h1>
+<main class="d-flex container my-5">
+    <div class="">
+        <img src="{{image_url}}" alt="{{name}} image" height="25%">
+    </div>
+    <div>
+        <h2 class="font-weight-bold">{{name}}</h2>
+        <p class="text-muted">{{tagline}}</p>
+        <p>{{description}}</p>
+        <h6 class="font-weight-bold">Food Pairing</h6>
+        <ul>
+            {{#each food_pairing }}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p><span class="font-weight-bold">Brewer Tips: </span> {{brewers_tips}}</p>
+    </div>
 
 </main>
