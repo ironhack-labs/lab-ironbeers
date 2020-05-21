@@ -1,8 +1,5 @@
-<h1>Beers</h1>
 <div>
     {{#each beers}}
-    <img class="beer-image" src={{this.image_url}} alt="Beer image">
-    {{this.name}}
-    <p> {{this.description}} </p>
+    {{> beerpartial }}
     {{/each}}
 </div>
