@@ -26,7 +26,7 @@ body {
 
 .beer-img>img {
     padding-top: 15%;
-    width: 60%;
+    width: 400px;
     margin-bottom: 10%
 }
 
@@ -48,6 +48,38 @@ body {
     color: #f7f9f9;
     text-decoration: none;
 
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: 5%;
+}
+
+.beer-partial {
+    width: 100%;
+    text-align: center;
+}
+
+.beer-partial>img {
+    height: 300px;
+}
+
+.grey {
+    color: #bfbfbf;
+}
+
+.random-beer {
+    display: flex;
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.random-beer-img>img {
+    height: 300px;
+    margin-right: 100px;
 }
 
 .footer {

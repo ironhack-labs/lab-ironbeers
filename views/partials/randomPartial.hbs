@@ -5,16 +5,16 @@
     <div>
         <h3>{{name}}</h3>
 
-        <h5 class="tagline">{{tagline}}</h5>
+        <h5 class="tagline"><span class="grey">{{tagline}}</span></h5>
         <p class="beer-description">{{description}}</p>
 
-        <h5 class="food">Food Pairing</h5>
+        <h5 class="food"><b>Food Pairing</b></h5>
         <ul>
             {{#each food_pairing}}
             <li>{{this}}</li>
             {{/each}}
         </ul>
 
-        <p class="tips">Brewers Tips: {{brewers_tips}}</p>
+        <p class="tips"><b>Brewers Tips:</b> {{brewers_tips}}</p>
     </div>
 </div>
