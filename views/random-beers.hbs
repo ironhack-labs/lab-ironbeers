@@ -1,1 +1,5 @@
-<h1>Random Beers Page</h1>
+<div class="random-page">
+    {{#each randomBeer}}
+    {{>randomPartial this}}
+    {{/each}}
+</div>
