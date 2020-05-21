@@ -5,3 +5,64 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+.center {
+  padding: 100px 0px;
+  padding-left: 500px;
+}
+
+.center img {
+  margin-left: 140px;
+  margin-bottom: 20px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+}
+
+.list li {
+  margin: 0px 20px;
+}
+
+.card-container {
+  display: flex;
+  padding: 10% 20%;
+  justify-content: space-around;
+}
+
+.beer {
+  width: 15%;
+  display: flex;
+  justify-items: center;
+}
+
+.row {
+  display: flex;
+  text-align: justify;
+}
+
+.body {
+  background-color: #2081c3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.random-container {
+  padding: 10px 20%;
+  justify-content: space-around;
+  display: flex;
+}
+
+.random-div {
+  padding: 5% 20%;
+  justify-content: space-around;
+  display: flex;
+}
+
+.random-div img {
+  float: left;
+  width: 15%;
+}
+
+.tagline {
+  font-size: 20px;
+}
