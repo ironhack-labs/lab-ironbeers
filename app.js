@@ -29,10 +29,17 @@ app.get('/beers', (req, res) => {
     .catch(error => console.log(error));
 });
 
+app.get('/beers/:id', (req,res) => {
+  punkAPI
+    .getBeer(req.params.id)
+    .then(responsAPI => res.render('random-beers', {beerCard: responsAPI}))
+    .catch(error => console.log(error));
+})
+
 app.get('/random-beers', (req, res) => {
   punkAPI
     .getRandom()
-    .then(responsAPI => {res.render('random-beers', { randomBeer: responsAPI })
+    .then(responsAPI => {res.render('random-beers', { beerCard: responsAPI })
     })
     .catch(error => console.log(error));
 });
