@@ -20,16 +20,16 @@ hbs.registerPartials(path.join(__dirname, 'views/partials'))
 
 app.get('/', (req, res) => { res.render('index')});
 app.get('/beers', (req, res) => {
-    punkAPI
-      .getBeers()
-      .then(beersFromApi => res.render('beers', { beersFromApi }))
-      .catch(error => console.log(error));
-  });
+  punkAPI
+    .getBeers()
+    .then(beersFromApi => res.render('beers', { beersFromApi }))
+    .catch(error => console.log(error));
+});
   app.get('/random-beers', (req, res) => {
     punkAPI
       .getRandom()
       .then(randomBeersFromApi =>
-        res.render('random-beers', { randomBeersFromApi })
+      res.render('random-beers', { randomBeersFromApi })
       )
       .catch(error => console.log(error));
   });
