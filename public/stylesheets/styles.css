@@ -12,9 +12,15 @@ html {
     background-color: #2081c3;
     margin-bottom: 140px;
 }
+#bar {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     background-color: #0a2c42;
@@ -26,6 +32,7 @@ footer {
     width: 300px;
     display: block;
     margin: auto;
+    margin-top: 200px;
     margin-bottom: 40px;
 }
 .home {
@@ -38,4 +45,21 @@ footer {
     color: white;
     margin: 20px;
     
+}
+#beer-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#imgBeer {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+p {
+    text-align: center;
 }

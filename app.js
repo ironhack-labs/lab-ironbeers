@@ -19,19 +19,22 @@ hbs.registerPartials(path.join(__dirname, 'views/partials'))
 // Add the route handlers here:
 
 app.get('/', (req, res) => { res.render('index')});
-app.get('/beers', (req, res) => {
+app.get("/beers", (req, res) => {
   punkAPI
     .getBeers()
-    .then(beersFromApi => res.render('beers', { beersFromApi }))
+    .then(beersFromApi => {
+      res.render('beers', {beersFromApi: beersFromApi})
+      console.log('Beers from the database: ', beersFromApi)})
     .catch(error => console.log(error));
 });
-  app.get('/random-beers', (req, res) => {
+
+  app.get('/random-beer', (req, res) => {
     punkAPI
       .getRandom()
-      .then(randomBeersFromApi =>
-      res.render('random-beers', { randomBeersFromApi })
-      )
-      .catch(error => console.log(error));
+      .then(randomBeersFromApi => {
+      res.render('random-beer', { randomBeersFromApi: randomBeersFromApi })
+      console.log('Beers from the database: ', randomBeersFromApi)})     
+    .catch(error => console.log(error));
   });
     
 

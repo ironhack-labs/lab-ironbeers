@@ -1,3 +1,14 @@
-<div>
-    
+<div> 
+    <div class="beer-card">
+         {{#each randomBeersFromApi}}
+
+        <img id="imgBeer" src="{{ image_url }}" />
+        <p>Name: {{ name }}</p>
+        <p>Description: {{ description }} </p>
+        <p>Tagline: {{ tagline }} </p>
+        <p>Food Pairing: {{food_pairing}} </p>
+        <p>Brewer tips: {{brewers_tips}} </p>
+
+        {{/each}}
+    </div>
 </div>
