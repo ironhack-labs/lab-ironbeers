@@ -5,3 +5,27 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+body {
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.cerveza {
+    padding: 10px;
+    margin: 30px;
+}
+
+.cerveza img {
+    height: 200px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.alineacion {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
