@@ -51,3 +51,24 @@ footer p{
     padding-top: 10px;
     padding-left: 7px;
 }
+
+.random-beer{
+    margin-top: 30px;
+}
+
+.tagline{
+    color: #A3A39D;
+}
+
+.card-img-top{
+    width: 200px;
+    height: 300px;
+    margin-left: 60px;
+
+}
+
+.card-group{
+    border: none;
+
+}
+
