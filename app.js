@@ -33,4 +33,13 @@ app.get('/beers/:id', (req, res) => {
     .catch(error => console.log(error));
 });
 
+app.get('/random-beers', (req, res) => {
+  punkAPI
+    .getRandom()
+    .then(responsAPI => {
+      res.render('random-beers', { beerCard: responsAPI });
+    })
+    .catch(error => console.log(error));
+});
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

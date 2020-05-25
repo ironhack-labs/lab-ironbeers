@@ -3,5 +3,67 @@ white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
+font-family: Arial, Helvetica, sans-serif;*/
 
+body {
+  background-color: #ececec;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.navbar {
+  background-color: #2081c3;
+  color: #f7f9f9;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #0a2c42;
+  width: 100%;
+  color: #f7f9f9;
+}
+
+.img-index {
+  margin: 60px;
+}
+
+.img-index img {
+  max-height: 600px;
+}
+
+#img-card {
+  text-align: center;
+  padding: 20px;
+}
+
+#img-card img {
+  max-height: 40vh;
+  height: 100%;
+}
+
+#beer-card h5 {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#beer-card span {
+  font-size: 12px;
+  color: grey;
+}
+
+#beer-card p {
+  font-size: 12px;
+}
+
+.random-beer {
+  font-size: 12px;
+}
+
+.bold {
+  font-weight: bold;
+}
