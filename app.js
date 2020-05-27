@@ -18,16 +18,26 @@ app.get('/', (req, res) => {
 });
 
 app.get('/beers', (req, res) => {
-  let beers = punkAPI.getBeers();
-  beers.then(beersFromApi => {
+  punkAPI
+    .getBeers()
+    .then(beersFromApi => {
     res.render('beers',beersFromApi);
   });
 });
 
 app.get('/random-beer', (req, res) => {
-  let randomBeer = punkAPI.getRandom();
-  randomBeer.then(randomBeerReturned => {
+  punkAPI
+    .getRandom()
+    .then(randomBeerReturned => {
     res.render('random-beer',randomBeerReturned[0]);
+  })
+});
+
+app.get('/beer:id', (req, res) => {
+  punkAPI
+    .getBeer(req.params.id)
+    .then(beerReturned => {
+    res.render('beer',beerReturned[0]);
   })
 });
 

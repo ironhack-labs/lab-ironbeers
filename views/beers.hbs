@@ -1,13 +1,11 @@
 <div class="container">
     <div class="row">
-        <div class="col-4">
-            {{#each this}}
-                <h5>{{name}}</h5>
-                <h6>{{tagline}}</h6>
-                <img src="{{image_url}}" alt="{{name}}">
-                <p>{{description}}</p>
-            {{/each}}
-        </div>
+        {{#each this}}
+            <div class="col-4 beer-info">
+                <img src="{{image_url}}" alt="{{name}}" class="mx-auto d-block m-4">
+                {{>beerpartial}}
+            </div>
+        {{/each}}
     </div>
 </div>
 
