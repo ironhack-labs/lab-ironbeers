@@ -1,0 +1,15 @@
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro > img{
+    width: 20%;
+    padding: 50px 0;
+}
+
+.intro > a{
+    margin: 10px;
+}

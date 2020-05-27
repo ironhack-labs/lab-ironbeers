@@ -1,0 +1,32 @@
+.beers{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.beer{
+    padding: 30px;
+    width: 30%;
+}
+
+.beer-image{
+    height: 200px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 10px;
+}
+
+.beer-name{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.beer-tagline{
+    color: #bfbfbf;
+    font-size: 12px;
+}
+
+.beer-description{
+    font-size: 12px;
+}

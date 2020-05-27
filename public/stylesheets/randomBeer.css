@@ -1,0 +1,33 @@
+.random-beer{
+    width: 80%;
+    margin: 50px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex;
+}
+
+.random-beer-image{
+    margin: 0 50px;
+    height: 200px;
+}
+
+.text-random-beer{
+    margin: 20px 50px;
+    width: 60%;
+}
+
+.random-beer-name{
+    margin: 10px 0;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+
+.random-beer-tagline{
+    color: #bfbfbf;
+}
+
+.text-random-beer p, .text-random-beer ul li{
+    font-size: 14px;
+}
