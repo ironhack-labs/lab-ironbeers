@@ -1,15 +1,10 @@
-.nav-color{
+.footer{
+    background-color: #0a2c42;
     color: #f7f9f9;
     font-size: 14px;
-}
-
-.bg-light-blue{
-    background-color: #2081c3;
-}
-
-.navbar{
+    padding: 15px;
     position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
     z-index: 1;
