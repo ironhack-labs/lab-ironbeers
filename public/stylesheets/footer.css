@@ -1,0 +1,15 @@
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #0a2c42;
+    color: #f7f9f9;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    bottom: 0px;
+}
+
+footer span{
+    margin-left: 20px;
+}

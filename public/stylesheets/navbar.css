@@ -1,0 +1,24 @@
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    background-color: #2081c3;
+    color: #f7f9f9;
+    height: 80px;
+    width: 100%;
+    top: 0px;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav ul a{
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+}

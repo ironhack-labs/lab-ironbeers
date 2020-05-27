@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Beers</title>
+</head>
+<body>
+    <div class="beer-single">
+        {{#each beers}}
+        {{>beerpartial}}
+        <p>{{food_pairing}}</p>
+        <p>{{brewers_tips}}</p>
+        {{/each}}
+    </div>
+</body>
+</html>
