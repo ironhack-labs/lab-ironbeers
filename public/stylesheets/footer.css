@@ -8,6 +8,7 @@ footer{
     height: 50px;
     position: relative;
     bottom: 0px;
+    margin-bottom: 0px;
 }
 
 footer span{
