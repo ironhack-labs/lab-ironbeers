@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+            <div class="col-4">
+                <img src="{{image_url}}" alt="{{name}} image">
+            </div>
+
+            <div class="col-4">
+                <h5>{{name}}</h5>
+                <h6>{{tagline}}</h6>
+                <p>{{description}}</p>
+                <p>Food Pairing</p>
+                <ul>
+                    {{#each food_pairing}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                <p>Brewers Tips: {{brewers_tips}}</p>
+            </div>           
+    </div> 
+</div>
+
+
+
