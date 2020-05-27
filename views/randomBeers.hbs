@@ -1,0 +1,13 @@
+<section id="random_beer">
+    {{#each beersFromApi}}
+            <img src={{this.image_url}} alt="Card image cap" />
+            <div class="content">
+                <h5>{{this.name}}</h5>
+                <h6>{{this.tagline}}</h6>
+                <p><span>Informations : <br></span>{{this.description}}</p>
+                <p><span>It goes well with : <br></span>{{this.food_pairing}} </p>
+                <p><span>You can pair it with :</span> <br>{{this.brewers_tips}}</p>
+            </div>
+    {{/each}}
+</section>
+

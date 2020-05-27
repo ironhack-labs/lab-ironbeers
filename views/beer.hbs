@@ -1,0 +1,13 @@
+<section id="beers">
+    {{#each beersFromApi}}
+        <div id="card">
+            <img src={{this.image_url}} alt="Card image cap" />
+            <div class="content">
+                <h5>{{this.name}}</h5>
+                <h6>{{this.tagline}}</h6>
+                <p>{{this.description}}</p>
+            </div>
+        </div>
+    {{/each}}
+</section>
+
