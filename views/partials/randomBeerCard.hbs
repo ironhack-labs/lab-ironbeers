@@ -5,9 +5,7 @@
         <img class="random-beer-image" src="https://www.horiba.com/fileadmin/_processed_/csm_01_02-2019_Beer_Brewing_53ef2818e5.png" alt="beer">
     {{/if}}
     <div class="text-random-beer">
-        <h2 class="random-beer-name">{{name}}</h2>
-        <p class="random-beer-tagline">{{tagline}}</p>
-        <p class="random-beer-description">{{description}}</p>
+        {{>beerCard}}
         <p><strong>Food Pairing</strong></p>
         <ul>
             {{#each food_pairing}}

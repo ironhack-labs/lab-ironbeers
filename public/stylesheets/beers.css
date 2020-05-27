@@ -1,13 +1,5 @@
 .beers{
-    margin: 100px 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-.beer{
-    padding: 30px;
-    width: 30%;
+    margin: 100px 100px;
 }
 
 .beer-image{

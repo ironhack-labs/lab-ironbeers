@@ -1,5 +1,9 @@
-<div class="beers">
+<div class="beers row">
 {{#each beers}}
-    {{> beerCard}}
+    <div class="beer col-4 mb-5">
+        <img class="beer-image" src="{{image_url}}" alt="{{image_url}}">
+        {{> beerCard}}
+    </div>
 {{/each}}
 </div>
+
