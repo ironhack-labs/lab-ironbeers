@@ -2,7 +2,10 @@
     {{> beerpartial}}
 
     {{#each responseFromAPI}}
-    
+    <img src={{this.image_url}}>
+    <h1>{{this.name}}</h1>
+    <li>Description: {{this.description}}</li>
+    <li>Tagline: {{this.tagline}}</li>
     <li>Food Pairing: {{this.food_pairing}}</li>
     <li>Brewer's Tips: {{this.brewers_tips}}</li>
     
