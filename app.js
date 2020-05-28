@@ -6,7 +6,7 @@ const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 
 const app = express();
 const punkAPI = new PunkAPIWrapper();
-
+console.log(punkAPI)
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 

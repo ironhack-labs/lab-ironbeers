@@ -1,4 +1,6 @@
 <div>
-    {{> beerpartial}}
+  {{#each beersFromApi}}
+    <P>{{> beerpartial }}</P>
+     {{/each}}
   </div>
   
