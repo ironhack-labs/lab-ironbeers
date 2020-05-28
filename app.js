@@ -32,10 +32,8 @@ app.get('/beers', (req, res) => {
 app.get('/random-beers', (req, res) => {
   punkAPI
   .getRandom()
-  .then(responseFromAPI => res.render('random-beer.hbs', { responseFromAPI }))
-  .catch(error => console.log(error));
+    .then(responseFromAPI => res.render('random-beer.hbs', { responseFromAPI }))
+    .catch(error => console.log(error));
 })
-
-hbs.registerPartial('beerInfo', 'beerpartial.hbs');
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

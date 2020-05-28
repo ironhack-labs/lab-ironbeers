@@ -1,5 +1,8 @@
-<div>
-    {{#each beersFromApi}}
-        {{> beerInfo}}
-    {{/each}}
+<div class="beer-container">
+
+        {{#each beersFromApi}}
+            <div class="beer">
+                {{> beerpartial this}}
+            </div>
+        {{/each}} 
 </div>
