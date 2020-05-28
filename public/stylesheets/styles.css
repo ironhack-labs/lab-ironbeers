@@ -5,3 +5,32 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+footer {
+    padding: 3px;
+    background-color: rgb(4, 16, 48);
+    color: white;
+    margin-top: 257px;
+    
+}
+
+h4{
+  font-size: 28 px;
+}
+
+
+
+img.beer-img {
+    vertical-align: super;
+    width: 520 px;
+    height: 450px;
+    padding-left: 770px;
+    padding-top: 110px;
+}
+
+div.boton1{
+  margin-left: 770px;
+  margin-top: 25px;
+  display: flex;
+  margin-right: 900px;
+}
