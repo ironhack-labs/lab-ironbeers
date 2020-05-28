@@ -12,6 +12,10 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('/',  (req, res) => {
+  res.sendFile(__dirname + '/views/home.hbs)
+  })
+
 // Register the location for handlebars partials here:
 
 // ...
