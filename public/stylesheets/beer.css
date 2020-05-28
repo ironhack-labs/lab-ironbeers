@@ -1,0 +1,13 @@
+#card-wrapper {
+    width: 100%;
+    position: absolute;
+    top: 100px;
+}
+
+.beer {
+    display: flex;
+    flex-direction: row;
+}
+.beer img {
+    max-height: 250px;
+}

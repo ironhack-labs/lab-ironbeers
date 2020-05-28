@@ -1,6 +1,10 @@
-{{> navbar}}
-{{#with this}}
-    {{> beerPartial}}
-    {{food_pairing}}
-    {{brewers_tips}}
-{{/with}}
+<link rel="stylesheet" href="/stylesheets/beer.css">
+<div id="card-wrapper">
+    {{#with this}}
+        <div class="beer">
+            {{> beerPartial}}
+            {{food_pairing}}
+            {{brewers_tips}}
+        </div>
+    {{/with}}
+</div>

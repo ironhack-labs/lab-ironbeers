@@ -1,0 +1,18 @@
+#nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 25px 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    background-color: #2081c3;
+}
+
+#nav a {
+    padding: 0 5px;
+    text-decoration: none;
+    color: #ffffff;
+}

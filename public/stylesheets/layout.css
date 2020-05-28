@@ -1,0 +1,39 @@
+html,
+body {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+/* Home page container */
+#flex-container {
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Home page beer image */
+#flex-container img {
+    max-width: 250px;
+    margin: 10px 0;
+
+}
+
+/* Home page buttons */
+#flex-container a{
+    text-decoration: none;
+    background-color: #2081c3;
+    color: #f7f9f9;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px 0;
+    padding: 10px 10px;
+}
