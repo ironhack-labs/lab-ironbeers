@@ -5,3 +5,123 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height:95vh;
+}
+
+/* Nav bar styles */
+nav{
+    background-color: #2081c3;
+    height: 5vh;
+    padding:0.5%;
+}
+
+nav a{
+    color:#f7f9f9;
+}
+
+/* Home page styles */
+main{
+    background-color:#f7f9f9;
+}
+
+main img{
+    width:22%;
+    padding:4.5% 0.75%;
+}
+
+main div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3%;
+}
+
+main a{
+    background-color: #2081c3;
+    color:white;
+    padding: 0.5% 1%;
+    margin: 0.5%;
+    text-decoration: none;
+    border-radius: 5%;
+}
+
+main a:hover{
+    text-decoration: none;
+}
+
+/* Beer Partials styles */
+.beerDetails{
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.beerDetails p{
+    font-size: 0.75em;
+}
+
+.beerDetails img{
+    width: 100px;
+    height: 200px;
+}
+
+.beerDetails h5{
+    white-space: nowrap;
+}
+
+/* Footer styles */
+footer{
+    background-color: #0a2c42;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 5vh;
+}
+footer p{
+    color:#f7f9f9;
+    padding: 0.5%;
+}
+
+/* beer detail (beer random) page styles */
+.left img{
+    width:50%;
+}
+
+.right h3{
+    font-size: 1.1em;
+    font-weight: 900;
+    padding: 2% 0;
+}
+
+h4{
+    font-size: 0.9em;
+    font-weight: 800;
+    margin-bottom: 3%;
+}
+
+.tagline{
+    color:#bfbfbf
+}
+
+.right p{
+    font-size: 0.9em;
+    margin-bottom: 2%;
+}
+
+.right ul li{
+    font-size: 0.9em;
+}
+
+span{
+    font-size: 1em;
+    font-weight: 800;
+}
+
+/* Beers page styles */
+.beer-card,.beer-card:hover{
+    color: black;
+    text-decoration: none;
+}
