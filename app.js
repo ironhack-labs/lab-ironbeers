@@ -20,8 +20,8 @@ app.get('/', (req, res) => {
 app.get('/beers', (req, res) => {
   punkAPI
     .getBeers()
-    .then(beersFromApi => {
-    res.render('beers',beersFromApi);
+    .then(beers => {
+    res.render('beers',{beers});
   });
 });
 
