@@ -5,3 +5,44 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.footer {
+    background-color: #0a2c42;
+    color: white;
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.center{
+    margin-top: 20px;
+}
+.bg{ 
+    color: #f7f9f9; 
+    background-color: #2081c3}
+.button{
+   margin-left: 40%;
+   margin-right: 40%;
+   margin-top: 40px;
+
+}
+.button2{
+    margin-left: 38%;
+    margin-right: 38%;
+    margin-top: 40px;
+ 
+ }
+ .myRandomBeer{ 
+    width: 50%;
+    height:50%;
+    margin: 0 auto; }
+    .img{ max-width: 150px;
+        max-height: 300px;
+   justify-content: center;}
