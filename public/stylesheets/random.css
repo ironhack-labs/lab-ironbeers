@@ -1,0 +1,23 @@
+.beer-card-img{
+    width: 5%;
+}
+.random-image{
+   width: fit-content;
+}
+.beer-card-img{
+    width: 30%;
+}
+.beer-card{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.beer-card span{
+    font-size: small;
+}
+.random-beer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

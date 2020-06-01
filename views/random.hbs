@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="stylesheets/random.css">
+<div class="random-beer">
+
+    <div class="random-image-container">
+        <img class = "beer-card-img" src="{{image_url}}" alt="beer">
+    </div>
+
+    <div class="random-info">
+        <h1>{{name}}</h1>
+        <span>{{tagline}}</span>
+        <p>{{description}}</p>
+        <ol>
+            {{#each food_pairing}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ol>
+        <p><span><strong>Brewers tips</strong></span>{{brewers_tips}}</p>
+    </div>
+
+</div>

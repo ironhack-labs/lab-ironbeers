@@ -1,0 +1,20 @@
+.beer-card-img{
+    width: 10%;
+    align-self: center;
+}
+.beer-card{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+.beer-card span{
+    font-size: small;
+}
+.beer-card h1, p, span{
+    text-decoration: none;
+    color: gray;
+}
+
+

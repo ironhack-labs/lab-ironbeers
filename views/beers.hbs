@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="stylesheets/beers.css">
+<div class="container py-5">
+    <div class="row row-cols-3">
+        {{#each beersFromApi}} 
+            <div class="beer-box col-4">  
+                <a href="">{{>beerContainer}}</a>
+            </div>
+        {{/each}}
+    </div>
+</div>
