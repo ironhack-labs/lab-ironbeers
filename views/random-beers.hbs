@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+{{#each randombeers}}
+    <img src="{{this.image_url}}">
+    <h1>{{this.name}}</h1>
+    <span>{{this.tagline}}</span>
+    <p>{{this.description}}</p>
+    <p>{{this.food_pairing}}</p>
+    <p>{{this.brewers_tips}}</p>
+{{/each}}    
+</body>
+</html>
