@@ -6,8 +6,13 @@
 
 .beer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .beer img {
-    max-height: 250px;
+    max-height: 300px;
+}
+
+.beer a {
+    text-decoration: none;
+    color: #000;
 }
