@@ -1,0 +1,11 @@
+<div class="container">
+    {{#each this}}
+        {{#if name}}
+            <div class="beer-card">
+                <a href='/beers/beer-{{id}}'>
+                    {{> beerpartials this}}
+                </a>
+            </div>
+        {{/if}}
+    {{/each}}
+</div>

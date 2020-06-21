@@ -1,0 +1,14 @@
+<div class="container">
+    <div id="radom-beer-container">
+        {{> beerpartials this}}
+        <p><b>Food Pairing</b></p>
+        {{#if food_pairing}}
+            <ul>
+                {{#each food_pairing}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        {{/if}}
+        <p><b>Brewers Tips: </b>{{brewers_tips}}</p>
+    </div>
+</div>
