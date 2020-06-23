@@ -8,6 +8,11 @@
                 <h1>{{name}}</h1>
                 <p id="tagline">{{tagline}}</p>
                 <p>{{description}}</p>
+                <h3>Food pairing</h3>
+                    {{#each food_pairing as |food|}}
+                        <li>{{food}}</li>
+                    {{/each}}
+                <p><b>Brewers tips:</b>{{brewers_tips}}</p>
             </div>
         </div>
     {{/if}}

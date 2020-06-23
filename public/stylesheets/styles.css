@@ -126,6 +126,10 @@ footer {
     flex-direction: column;
 }
 
+li {
+    padding: 5px;
+}
+
 
 /*
 white: #f7f9f9;
