@@ -1,0 +1,18 @@
+<div class="row row-cols-1 row-cols-md-4 beers-row">
+    {{#each this}}
+    {{#if name}}
+
+    <div class="col mb-4">
+        <div class="card">
+            <a href="/beer-{{id}}" class="card-header">
+                <div class="card-pic" style="background: url({{image_url}}) no-repeat center center / contain;"></div>
+            </a>
+            <div class=" card-body">
+                {{> beerpartial}}
+            </div>
+        </div>
+    </div>
+
+    {{/if}}
+    {{/each}}
+</div>

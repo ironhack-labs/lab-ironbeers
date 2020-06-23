@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: content-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 2;
+  color: #333;
+  font-size: 1.6rem;
+  background: url(../images/beer-bg2.jpg) no-repeat bottom center / contain;
+  background-attachment: fixed;
+}
+
+.logo {
+  width: 3rem;
+  height: 3rem;
+}
+
+nav {
+  padding: 0;
+  margin: 0;
+  border-bottom: 0.1rem solid #333;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  background: white;
+  align-items: center;
+
+  a {
+    color: #333;
+    border-bottom: 0.3rem solid white;
+
+    &:hover {
+      color: #333;
+      border-bottom: 0.3rem solid #333;
+    }
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background: white;
+  color: #333;
+  width: 100%;
+  border-top: 0.1rem solid #333;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+}
+
+.btns {
+  justify-content: center;
+  a {
+    color: #333;
+    border: 0.1rem solid #333;
+    padding: 1rem 3rem;
+    border-radius: 0.4rem;
+    background: white;
+    display: block;
+    text-align: center;
+    margin-top: 20rem;
+
+    &:hover {
+      text-decoration: none;
+      background: #333;
+      color: white;
+    }
+  }
+}
+
+.beers-row {
+  justify-content: center;
+  margin: 6rem 0;
+}
+
+.tagline {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: rgba(black, 0.4);
+}
+
+.card {
+  margin-top: 2rem;
+  .card-header {
+    height: 30rem;
+    position: relative;
+    padding: 3rem;
+
+    &::before {
+      content: '';
+      width: 3rem;
+      height: 3rem;
+      background: url(../images/more-info.svg) no-repeat center center / contain;
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+    }
+
+    .card-pic {
+      position: absolute;
+      content: '';
+      width: 80%;
+      height: 80%;
+      margin: auto;
+      transform: scale(1);
+      transition: all 200ms ease-in-out;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:hover > .card-pic {
+      transform: scale(1.1);
+    }
+  }
+
+  .card-body {
+    ul {
+      padding: 0;
+      list-style: none;
+    }
+
+    h6 {
+      font-size: 1.4rem;
+    }
+  }
+
+  .card-title {
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+
+  .card-text,
+  .card-body ul {
+    font-size: 1.2rem;
+  }
+
+  .card-footer {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    background: #e9ecef;
+    strong {
+      font-weight: 700;
+      color: #000;
+      display: block;
+    }
+  }
+}
+
+.random {
+  margin-top: 8rem;
+
+  .card-header {
+    border: 0;
+    border-right: 0.1rem solid rgba(0, 0, 0, 0.125);
+
+    &:before {
+      display: none;
+    }
+
+    &:hover {
+      cursor: auto;
+    }
+
+    &:hover > .card-pic {
+      transform: scale(1);
+    }
+  }
+
+  .card-footer {
+    display: block;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+}

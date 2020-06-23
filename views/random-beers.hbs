@@ -1,0 +1,24 @@
+<div class="card mb-3 random">
+    <div class="row no-gutters">
+        <div class="col-md-4">
+            <div class="card-header">
+                <div class="card-pic" style="background: url({{image_url}}) no-repeat center center / contain;"></div>
+            </div>
+        </div>
+        <div class="col-md-8 info">
+            <div class=" card-body">
+                {{>beerpartial}}
+                <hr>
+                <h6 class="card-title">Perfect with</h6>
+                <ul>
+                    {{#each food_pairing}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted"><strong>TIP</strong> {{brewers_tips}}</small>
+            </div>
+        </div>
+    </div>
+</div>
