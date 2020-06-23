@@ -3,5 +3,89 @@ white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
+
 */
+
+/* GLOBAL*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f9f9 ;
+}
+
+/*NAV*/
+.navbar li {
+    font-size: 1.5em;
+
+}
+
+.navbar a {
+    padding:10px 40px !important;
+    color: #f7f9f9 !important;
+
+    
+}
+
+.navbar{
+  box-shadow: 0 10px 10px 0px rgba(0,0,0,.2);
+  background-color: #2081c3 !important;
+}
+
+/*INDEX*/
+
+.btn {
+    display: block;
+    padding: 10px;
+    margin: 15px auto;
+}
+
+/*BEERS*/
+img {
+    height: 200px;
+    object-fit: cover;
+    display:block; 
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+article{
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+/*RANDOM BEERS*/
+
+h3{
+    font-size:1.1em ;
+    font-weight: bold;
+}
+
+.random-beer-img img{
+    margin-bottom: 0px ;
+     height: 100%;
+     object-fit: contain;
+}
+
+.random-beer-img {
+    height: 350px;
+}
+
+/* HAY FORMA MÁS CUQUI DE HACER ESTO? */
+.inline {
+    display: inline;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: #0a2c42;
+    
+}
+
+footer span {
+    margin:0 50px;
+    color: #f7f9f9 ;
+}
