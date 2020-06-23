@@ -1,0 +1,14 @@
+<div class="beers">
+    {{#each this}}
+        {{#if image_url}}
+            <div class="card">
+                <img src="{{image_url}}" alt="beer">
+                <div id="info">
+                    <h1>{{name}}</h1>
+                    <p id="tagline">{{tagline}}</p>
+                    <p>{{description}}</p>
+                </div>
+            </div>
+        {{/if}}
+    {{/each}}
+</div>
