@@ -5,3 +5,57 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+    font-family: Arial, Helvetica,
+        sans-serif;
+}
+
+/* ---LAYOUT: NAV BAR--- */
+nav {
+    background-color: #2081c3;
+    margin-top: 1px;
+}
+
+nav ul {
+    margin-left: 40px;
+    padding: 10px
+}
+
+nav a {
+    color: white;
+    margin-left: 10px;
+}
+
+/* ---INDEX: MAIN--- */
+main {
+    margin-top: 50px;
+
+}
+
+main img {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    margin-top: 20px;
+    background-color: #2081c3;
+    color: white;
+}
+
+footer {
+    background-color: #0a2c42;
+    color: white;
+    padding-left: 20px;
+}
+
+/* ---BEERS--- */
+article .cards {
+    margin-top: 100px;
+}
+
+article img {
+    height: 200px;
+
+}
