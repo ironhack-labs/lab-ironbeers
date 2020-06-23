@@ -111,8 +111,13 @@ footer {
 .rbcard{
     margin-top: 80px;
     display: flex;
+    flex-direction: column;
     align-content: flex-start;
     width: 60%;
+}
+
+.rbpartial {
+    display: flex;
 }
 
 .rbcard img{
@@ -120,11 +125,6 @@ footer {
     margin-right: 40px;
 }
 
-#rbinfo {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-}
 
 li {
     padding: 5px;
