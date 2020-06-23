@@ -14,9 +14,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Register the location for handlebars partials here:
 
-// ...
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 // Add the route handlers here:
+
+
 
 app.get('/', (req, res) => {
   res.render('index');

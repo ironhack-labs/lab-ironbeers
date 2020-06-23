@@ -3,10 +3,7 @@
     <div>
          {{#each responseFromApi}}
 
-        <img  src="{{ image_url }}" />
-        <p>Name: {{ name }}</p>
-        <p>Description: {{ description }} </p>
-        <p>Tagline: {{ tagline }} </p>
+        {{>beerpartial this}}
         <p>Food Pairing: {{food_pairing}} </p>
         <p>Brewer tips: {{brewers_tips}} </p>
 
