@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+
+
+            {{#each beersFromApi}}
+            <img src="{{this.image_url}}" alt="">
+        </div>
+        <div class="col">
+            <h1>{{this.name}}</h1>
+            <p>{{this.description}}</p>
+            <p>{{this.tagline}}</p>
+
+            <h5>Food pairing</h5>
+            <ul>
+                <li>{{this.food_pairing}}</li>
+            </ul>
+
+            <p>Brewer Tips: {{brewers_tips}}</p>
+            {{/each}}
+        </div>
+    </div>
+</div>
