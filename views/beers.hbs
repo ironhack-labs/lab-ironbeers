@@ -1,18 +1,18 @@
 <main>
 
 
-    {{#each data}}
-    <ul>
-        <li>
-            <h4>{{name}}</h4>
-                <p>{{description}}</p>
-                <img src='{{image_url}}'>
-                <p>{{tagline}}</p>
-        </li>
+    <div class='container-fluid'>
 
-    </ul>
+        <div class="row">
 
-    {{/each}}
+        {{#each data}}  
+            <div class='col-4'> {{>beerpartial this}}</div>
+        {{/each}}
+        </div>
+
+    </div>
+
+  
 
 
 </main>

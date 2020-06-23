@@ -1,12 +1,16 @@
 <main>
+    <div class='container-fluid'>
+
     {{#each data}}
-        <h4>{{name}}</h4>
-        <p>{{description}}</p>
-        <img src='{{image_url}}'>
-        <p>{{tagline}}</p>
+
+        {{>beerpartial this}}
         <p>{{food_pairing}}</p>        
         <p>{{brewer_tips}}</p>
 
     
     {{/each}}
+
+
+    </div>
+
 </main>
