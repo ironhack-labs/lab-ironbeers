@@ -5,3 +5,55 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    background-color:#f7f9f9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a{
+    font-size: 18px;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #bfbfbf;
+}
+
+img {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    width: 300px;
+}
+
+.beer-center{
+    display: flex;
+    justify-content: center;
+}
+
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+.title {
+    color: black;
+    font-weight: bold;
+}
+
+#beer {
+    height: 200px;
+    object-fit: contain;
+    
+}
+
+.btn {
+    display: block;
+    background-color: #2081c3;
+    border: none;
+    margin: 0 Auto;
+    margin-bottom: 20px;
+    width: fit-content;
+}
