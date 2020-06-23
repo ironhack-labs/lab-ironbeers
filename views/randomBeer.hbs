@@ -1,13 +1,18 @@
 {{#each beerData}}
-{{>basicBeerInfo this}}
-<h2>Food Pairing</h2>
-<ul>
-    {{#each this.food_pairing}}
-    <li>
-        {{this}}
-    </li>
-    {{/each}}
-</ul>
-<p><strong>Brewer Tips:</strong>{{this.brewers_tips}}</p>
-
+<main class="unique-beer-container">
+    {{>basicBeerInfo this}}
+    <div class="new-info">
+        <div class="card-body">
+            <h5 class="card-title">Food Pairing</h5>
+            <ul>
+                {{#each this.food_pairing}}
+                <li class="card-text">
+                    {{this}}
+                </li>
+                {{/each}}
+            </ul>
+            <p class="card-text"><strong>Brewer Tips:</strong>{{this.brewers_tips}}</p>
+        </div>
+    </div>
+</main>
 {{/each}}

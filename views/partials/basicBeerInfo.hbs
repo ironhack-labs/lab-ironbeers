@@ -1,10 +1,17 @@
-<img src="{{image_url}}" alt="{{name}}">
-<h2>{{name}}</h2>
-<h3>{{tagline}}</h3>
-<p>{{description}}</p>
-
-
 {{!-- <img src="{{image_url}}" alt="{{name}}">
 <h2>{{name}}</h2>
 <h3>{{tagline}}</h3>
 <p>{{description}}</p> --}}
+
+
+<div class="card">
+    <article class="beer-collection">
+        <img class="card-img-top" src="{{image_url}}" alt="{{name}}">
+        <div class="card-body">
+            <h5 class="card-title">{{name}}</h5>
+            <p class="card-text tagline">{{tagline}}</p>
+            <p class="card-text">{{description}}</p>
+        </div>
+    </article>
+
+</div>

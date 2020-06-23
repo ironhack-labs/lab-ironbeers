@@ -1,12 +1,6 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f9f9;
 }
 .main-nav {
   background-color: #2081c3;
@@ -18,10 +12,11 @@ nav a {
 .ironhack-footer {
   background-color: #0a2c42;
   color: white;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  padding: 10px 0
+  padding: 10px 0;
 }
 .color-button-blue {
   background-color: #2081c3;
@@ -35,9 +30,49 @@ nav a {
   justify-content: space-evenly;
   align-items: center;
 }
-.row {
-  justify-content: center;
-}
+
 .main-beer-img {
   width: 100%;
+}
+.card img {
+  width: auto;
+  height: 150px;
+}
+.beer-collection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  font-size: 0.85em;
+}
+.main-of-beers {
+  margin: 80px 0;
+}
+.card {
+  border: none;
+  background-color: #f7f9f9;
+}
+.card h5,
+.unique-beer-container h5 {
+  font-weight: 800;
+}
+.card .tagline {
+  color: #bfbfbf;
+}
+
+.unique-beer-container .card img {
+  width: auto;
+  height: 300px;
+  position: absolute;
+  left: -230px;
+}
+.unique-beer-container {
+  margin: 100px 200px 60px 350px;
+}
+.unique-beer-container .card {
+  align-items: flex-start;
+}
+.new-info p,
+.new-info li {
+  font-size: 0.85em;
 }
