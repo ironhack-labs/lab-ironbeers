@@ -72,13 +72,12 @@ footer {
     align-items: center;
     flex-direction: column;
     width: 30%;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .beers img {
-    width: 80px;
     height: 240px;
-    margin-right: 40px;
+    margin-bottom: 20px;
 }
 
 #tagline {
@@ -97,8 +96,34 @@ footer {
 }
 
 #info p {
-    font-size: 12px;
+    font-size: 14px;
     margin: 2px;
+}
+
+
+
+.rb {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.rbcard{
+    margin-top: 80px;
+    display: flex;
+    align-content: flex-start;
+    width: 60%;
+}
+
+.rbcard img{
+    height: 280px;
+    margin-right: 40px;
+}
+
+#rbinfo {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
 
