@@ -5,4 +5,39 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
-
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main-nav {
+  background-color: #2081c3;
+  padding: 15px 0;
+}
+nav a {
+  color: white;
+}
+.ironhack-footer {
+  background-color: #0a2c42;
+  color: white;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0
+}
+.color-button-blue {
+  background-color: #2081c3;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 250px;
+}
+.main-section {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.row {
+  justify-content: center;
+}
+.main-beer-img {
+  width: 100%;
+}

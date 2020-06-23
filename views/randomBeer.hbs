@@ -1,8 +1,5 @@
 {{#each beerData}}
-<img src="{{this.image_url}}" alt="Random beer: {{this.name}}">
-<h1>{{this.name}}</h1>
-<h2>{{this.tagline}}</h2>
-<p>{{this.description}}</p>
+{{>basicBeerInfo this}}
 <h2>Food Pairing</h2>
 <ul>
     {{#each this.food_pairing}}
