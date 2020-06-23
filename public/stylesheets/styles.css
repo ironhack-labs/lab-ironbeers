@@ -9,14 +9,17 @@ nav {
     color: #f7f9f9;
 }
 
-.card img {
+.card-body img {
     width: auto;
     height: 150px;
 }
 
 .card .card-body {
-    height: 20px;
     object-fit: cover;
+}
+
+.card {
+    text-align: center;
 }
 
 .btn {
