@@ -5,3 +5,47 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 250px 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  margin: 60px 10px;
+}
+
+.card-body h5 {
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.listBeers img {
+  width: 80px;
+  height: 270px;
+}
+
