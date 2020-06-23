@@ -1,7 +1,35 @@
-/*
-white: #f7f9f9;
+
+/*white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+font-family: Arial, Helvetica, sans-serif;*/
+
+nav{
+    margin-bottom: 50px;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.beerClass{
+    width: 250px;
+    height: 100px;
+    
+}
+
+.button{
+    color: white;
+    text-decoration: none;
+    background-color: royalblue;
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 2%;
+
+
