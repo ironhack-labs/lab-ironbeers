@@ -5,3 +5,30 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+
+
+
+
+
+
+
+/* todo lo de abajo, copiado, no vale, no merito */
+
+nav {
+    margin-bottom: 20px;
+
+}
+
+h1{
+    margin-bottom: 40px;
+}
+
+.beers-page .card{
+    margin-bottom: 40px;
+}
+
+.beers-page .card img{
+    height: 100px;
+    object-fit: cover;
+}

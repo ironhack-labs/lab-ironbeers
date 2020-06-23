@@ -1,0 +1,45 @@
+<main class="container random-beer-page">
+
+    <h1>Random Beer</h1>
+
+    <div class="row">
+
+        {{#each responseFromAPI}}
+        {{>beerCard this}}
+        {{/each}}
+
+    </div>
+
+ <div class="col-md-3">
+    <article class = "card">
+        <img src = "{{image_url}}" alt = "beer image">
+        {{name}}
+        {{description}}
+        {{tagline}}
+        {{food_pairing}}
+        {{brewer_tips}}
+        <div class="card-body">
+            <h5 class="card-title">{{name}}</h5>
+            <hr>
+            <p class="card-text">{{beers}}</p>
+        </div>
+    </article>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>

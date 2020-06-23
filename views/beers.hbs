@@ -1,0 +1,13 @@
+<main class="container beers-page">
+
+    <h1>Beers</h1>
+
+    <div class="row">
+
+        {{#each beersFromApi}}
+        {{>beerCard this}}
+        {{/each}}
+
+    </div>
+
+</main>
