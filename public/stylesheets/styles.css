@@ -5,3 +5,84 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.img-beer {
+    margin: 15px;
+    text-align: center;
+    height: 150px;
+    object-fit: cover;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f9f9;
+}
+h1{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+h2{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.navbar-nav {
+    padding-left: 50px;
+
+}
+
+.navbar-expand {
+    background-color: #2081c3;
+    
+}
+.nav-link {
+    color: #f7f9f9;
+    padding: 10px 20px
+}
+
+
+.row {
+    justify-content: center;
+}
+
+
+.buttons{
+    
+    margin-top: 400px;
+}
+
+.btn{
+   background-color: #2081c3;
+    color: #f7f9f9;
+    margin: 0 20px
+
+}
+
+.imagenCerveza{
+    max-width: 400px;
+}
+.beer {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: white;
+    box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.10);
+    ;
+}
+
+.container {
+    margin: 50px 100px;
+}
+footer {
+    padding: 20px 10px;
+    background-color: #0a2c42;
+    color: #f7f9f9;
+}
+
+section {
+    margin: 50px
+}
