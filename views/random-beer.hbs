@@ -1,14 +1,25 @@
 <div>
-    {{#each beer}}
-    {{>beerpartials}}
-    {{/each}}
-    <h6>Perfect with:</h6>
-    <ul>
-        {{#each beer}}
-        <li>{{food_pairing}}</li>
+    {{#each fullBeer as |beer|}}
+        {{>beerpartials}}
+        <p>Ingredients:</p>
+        {{#each beer.ingredients as |ingredients|}}
+        <ul>
+            <li>{{ingredients.malt}}</li>
+        </ul>
         {{/each}}
-    </ul>
-    {{#each beer}}
-    <p><strong>TIP:</strong><br>{{brewers_tips}}</p>
     {{/each}}
+        {{#each oneBeer as |beer|}}
+        {{>beerpartials}}
+        
+        <h6>Perfect with:</h6>
+        <ul>
+        
+            <li>{{beer.food_pairing}}</li>
+            
+        </ul>
+    
+        <p><strong>TIP:</strong><br>{{beer.brewers_tips}}</p>
+        {{/each}}
+
+
 </div>

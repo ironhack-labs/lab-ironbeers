@@ -33,10 +33,18 @@ app.get('/beers', (req, res) => {
 app.get('/random-beer', (req, res) => {
   punkAPI
   .getRandom()
-  .then(randomBeer => { res.render( 'random-beer', { beer : randomBeer})
+  .then(randomBeer => { res.render( 'random-beer', { oneBeer : randomBeer})
 
   })
   .catch(error => console.log(error))
 })
+
+app.get('/beer-:id', (req, res) => {
+  punkAPI
+  .getBeer(req.params.id)
+  .then(beer => res.render('random-beer', { fullBeer : beer }))
+  .catch(error => console.log(error))
+})
+  
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
