@@ -1,25 +1,23 @@
-const express = require('express');
+const express = require('express')
+const app = express()
+const beers = require('./router/beers')
 
-const hbs = require('hbs');
-const path = require('path');
-const PunkAPIWrapper = require('punkapi-javascript-wrapper');
+const expressLayouts = require('express-ejs-layouts');
 
-const app = express();
-const punkAPI = new PunkAPIWrapper();
+const path = require('path')
 
-app.set('view engine', 'hbs');
-app.set('views', path.join(__dirname, 'views'));
+app.use(express.static(path.join(__dirname, 'public')))
+app.use(expressLayouts)
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.set('view engine', 'ejs')
+app.set('views', path.join(__dirname, 'views'))
 
 // Register the location for handlebars partials here:
 
-// ...
 
 // Add the route handlers here:
+app.use('/', beers)
+app.use('/beers', beers)
+app.use('/random-beer', beers)
 
-app.get('/', (req, res) => {
-  res.render('index');
-});
-
-app.listen(3000, () => console.log('🏃‍ on port 3000'));
+app.listen(3000, () => console.log('🏃‍ on port 3000 - http://localhost:3000/'))
