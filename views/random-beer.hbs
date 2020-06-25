@@ -6,12 +6,12 @@
         <p>Contributed by : {{beer.contributed_by}}</p>
         <p>Ingredients:</p>
         <p>- Malt:</p>
-        {{#each beer.ingredients.malt as |malt|}} 
+        {{#each beer.ingredients.malt as |ing|}} 
         <ul>
             
-            {{!-- {{#each malt}} --}}
-            <li>{{malt}}</li>
-            {{!-- {{/each}} --}}
+            {{#each ing}}
+            <li>{{this}}</li>
+            {{/each}}
             
         </ul>
         {{/each}}
