@@ -1,0 +1,9 @@
+{{> beercard this}}   
+
+{{#each beers}} 
+    <h2>Food pairing:</h2>
+    {{#each food_pairing}}
+        <ul><li>{{this}}</li></ul>
+    {{/each}}
+    <p>Brewer Tips: {{brewers_tips}}</p>
+{{/each}}
