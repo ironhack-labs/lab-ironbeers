@@ -24,14 +24,20 @@ app.get('/', (req, res) => {
 
 app.get('/beers', (req, res) => {
   punkAPI.getBeers().then(
-    beers => res.render('beers', {beers: beers})  // 'beers' é o nome do arquivo beers.hbs
+    beers => res.render('beers', {beers})  // 'beers' é o nome do arquivo beers.hbs
   )
 });
 
 app.get('/random', (req, res) => {
   punkAPI.getRandom().then(
-    beers => res.render('random', {beers: beers}) 
+    beers => res.render('random', {beers}) 
   )
 });
+
+// app.get('/{{this.id}}', (req, res) => {
+//   punkAPI.getBeer({{this.id}}).then(
+//     beers => res.render('beer', {beers}) 
+//   )
+// });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
