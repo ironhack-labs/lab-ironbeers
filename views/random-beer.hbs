@@ -1,12 +1,22 @@
 <div>
     {{#each fullBeer as |beer|}}
         {{>beerpartials}}
+        <p>First Brewed : {{beer.first_brewed}}</p>
+        <p>Acidity : Ph {{beer.ph}} </p>
+        <p>Contributed by : {{beer.contributed_by}}</p>
         <p>Ingredients:</p>
-        {{#each beer.ingredients as |ingredients|}}
+        <p>- Malt:</p>
+        {{#each beer.ingredients.malt as |malt|}} 
         <ul>
-            <li>{{ingredients.malt}}</li>
+            
+            {{!-- {{#each malt}} --}}
+            <li>{{malt}}</li>
+            {{!-- {{/each}} --}}
+            
         </ul>
         {{/each}}
+
+
     {{/each}}
         {{#each oneBeer as |beer|}}
         {{>beerpartials}}
