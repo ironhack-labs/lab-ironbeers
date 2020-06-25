@@ -1,0 +1,22 @@
+<ul class="random-beer-list">
+
+{{#each responseFromAPI }}
+   
+    <li>
+        <img src={{ image_url }} alt="{{ name }} image">
+        <div>
+        <span class="name">{{ name }}</span>
+        <span class="tagline">{{ tagline }}</span>
+        <span class="description"> {{ description }}</span>
+        
+        <span><b>Food Pairing</b></span>
+        <span>{{ food_pairing }}</span>
+        <span><b>Brewer tips:</b> {{ brewers_tips }}</span>
+        </div>
+
+
+
+
+    </li>
+    {{/each}}
+    </ul>
