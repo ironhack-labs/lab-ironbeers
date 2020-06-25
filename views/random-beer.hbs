@@ -1,9 +1,5 @@
         <div class="beer-card-random">
-            <img src="{{this.image_url}}" alt="{{this.name}} beer image">
-            <h3>{{this.name}}</h3>
-            <p class="tagline">{{this.tagline}}</p>
-            <p>{{this.description}}</p>
-            
+            {{> beerpartial this}}
             <h4>Food Pairing</h4>
             <ul>
                 {{#each this.food_pairing}}
