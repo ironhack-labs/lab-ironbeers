@@ -1,15 +1,17 @@
-<div class="col-md-4 row" >
-    <div class="container">
-        <a href="/beer-{{id}}">  
-            <div class="image-container">
+<div class="col-md-4 py-5 mx-auto">
+    <div class="card ">
+        <div class="image-container">
+            <a href="/beer-{{id}}">    
                 <img class="beer-img" src="{{image_url}}" alt="beer-image">
-            </div>
-            <h5 class="">{{name}}</h5>
-         </a> 
-        <div class="">
-             <p class="text-muted">{{tagline}}</p> 
-             <p>{{description}}</p>
+            </a> 
+        </div>
+        <div class="card-body">
+            <a href="/beer-{{id}}">  
+                <h5 class="card-title">{{name}}</h5>
+            </a>
+            <p><small class="text-muted">{{tagline}}</small></p> 
+            <p class="card-text">{{description}}</p>
         </div>
     </div>
-</div> 
+</div>
 

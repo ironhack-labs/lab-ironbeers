@@ -6,62 +6,63 @@ grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
 
- body {
-    margin: 0;
-    }
-    
-    nav {
-        padding: 15px 0;
-        color: white;
-        background-color:  #2081c3;
-    }
+body {
+margin: 0;
+}
 
-    nav a {
-        color:white;
-    }
-    
-    .beer-img {
-        width: auto;
-        height: 200px;
-    }
+nav {
+    padding: 15px 0;
+    color: white;
+    background-color:  #2081c3;
+    box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.75);
+}
 
-    .image-container {
-        text-align: center;
-    }
+nav a {
+    color:white;
+}
+
+.beer-img {
+    width: auto;
+    height: 200px;
+    margin: 21px 0 0 0;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.75);
+}
+
+.card {
+    box-shadow: 10px 10px 5px -9px rgba(0,0,0,0.75);
+}
     
-    .card .card-body {
-        height: 20px;
-        object-fit: cover;
-    }
+.card-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
     
-    .btn {
-        display: flex;
-        align-items: center;
-        margin-top: 50px;
-        width: 35%;
-        text-align: center;
-        padding: 10px;
-    }
-    
-    /* .beer-img {
-        width: 100%;
-        margin-left: 80px;
-    } */
-    .init {
-        margin-top: 50px;
-        margin-bottom: 50px;
-        align-items: center;
-        flex-flow: column;
-        display: flex;
-    }
-    
-    footer {
-        background-color:  #0a2c42;
-        color: white;
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        margin-top: 10px;
-        width: 100%;
-        padding: 10px 0;
-    } 
+}
+
+.container-random {
+    display: flex;
+}
+
+footer {
+    background-color:  #0a2c42;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 0;
+} 

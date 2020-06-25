@@ -1,34 +1,59 @@
-<div>
+<div class="container pb-5">
     {{#each fullBeer as |beer|}}
         {{>beerpartials}}
-        <p>First Brewed : {{beer.first_brewed}}</p>
-        <p>Acidity : Ph {{beer.ph}} </p>
-        <p>Contributed by : {{beer.contributed_by}}</p>
-        <p>Ingredients:</p>
-        <p>- Malt:</p>
-        {{#each beer.ingredients.malt as |ing|}} 
-        <ul>
-            
-            {{#each ing}}
-            <li>{{this}}</li>
-            {{/each}}
-            
-        </ul>
-        {{/each}}
-
+         <div class="container-random">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4  mx-auto">
+                    <div class="card p-3 pb-5">
+                        <h6 class="card-title font-weight-bold">First Brewed :</h6>
+                        <p class="card-text">{{beer.first_brewed}}</p>
+                        <p class="card-title font-weight-bold">Acidity:</p>
+                        <p class="card-text">Ph {{beer.ph}}</p>
+                        <h6 class="card-title font-weight-bold">Ingredients:</h6>
+                        <p class="card-text">- Yeast: {{beer.ingredients.yeast}}.</p>
+                        <p class="card-text font-weight-bold">- Malt:</p>
+                        {{#each beer.ingredients.malt as |ing|}} 
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                {{ing.name}} : {{ing.amount.value}} kg.
+                            </li>
+                        </ul>
+                        {{/each}}
+                        <p class="card-text font-weight-bold pt-3">- Hops :</p>
+                        {{#each beer.ingredients.hops as |ing|}} 
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                {{ing.name}} : {{ing.amount.value}} grams.
+                            </li>
+                        </ul>
+                        {{/each}}
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     {{/each}}
         {{#each oneBeer as |beer|}}
-        {{>beerpartials}}
-        
-        <h6>Perfect with:</h6>
-        <ul>
-        
-            <li>{{beer.food_pairing}}</li>
-            
-        </ul>
-    
-        <p><strong>TIP:</strong><br>{{beer.brewers_tips}}</p>
+        <div class="mx-auto">
+            {{>beerpartials}}
+        </div>
+        <div class="container-random">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4  mx-auto">
+                    <div class="card p-3">
+                        <h6 class="card-title">Perfect with:</h6>
+                            <ul>                     
+                                <li>{{beer.food_pairing}}</li>
+                            </ul>
+                        <p class="card-text"><strong>TIP:</strong><br>{{beer.brewers_tips}}</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         {{/each}}
 
 

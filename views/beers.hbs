@@ -1,8 +1,9 @@
-<main class="container-fluid">
+<main class="container py-5 mx-auto">
     <div class="row">
-        {{#each beers}}
-        {{>beerpartials}}
-        {{/each}}
+        <div class="card-deck card-flex">
+            {{#each beers}}
+                {{>beerpartials}}
+            {{/each}}
+        </div>
     </div>
-
 </main>
