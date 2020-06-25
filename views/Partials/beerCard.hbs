@@ -1,7 +1,6 @@
-<div class="beers-card">
-  <div class="beers-details">
-    <h3>{{this.name}} </h3>
-    <h3>Test </h3>
-      {{!-- <span>{{this.description}}</span> --}}
-  </div>
-</div>
+ <div>
+     {{#each beersFromApi}}
+        {{> beerCard.hbs this}}
+        <h2> {{this.name}} </h2>
+        {{/each}}
+ </div>
