@@ -101,3 +101,29 @@ footer p {
     margin-right: auto;
     height: 9rem;
 }
+
+/* RANDOM BEERS */
+
+.random-beer {
+    color: black;
+    display: flex;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    width: 75%;
+}
+
+.beer-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.random-beer img {
+    height: 15rem;
+    margin: 3rem;
+}
+
+.random-beer ul {
+    list-style: outside;
+}
