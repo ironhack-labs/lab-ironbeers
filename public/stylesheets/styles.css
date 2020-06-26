@@ -130,6 +130,11 @@ li {
     padding: 5px;
 }
 
+.link {
+    color: black;
+    text-decoration: none;
+}
+
 
 /*
 white: #f7f9f9;
