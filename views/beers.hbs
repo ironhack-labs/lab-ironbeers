@@ -1,5 +1,29 @@
-<div>
+{{!-- <div>
     {{#each beers}}
-     <p>{{this}}</p>
+    <img src="{{this.image_url}}" alt="{{this.name}}">
+     <p>{{this.name}}</p>
+     <p>{{this.desciption}}</p>
+
     {{/each}}
+</div> --}}
+
+<div class="col-md-4 py-5 mx-auto">
+  <div class="card">
+    <div class="col-sm">
+      {{#each beers}}
+        <div class="image-container">
+            <a href="/beer-{{id}}">    
+                <img src="{{this.image_url}}" alt="{{this.name}}">
+            </a> 
+        </div>
+        <div class="card-body">
+            <a href="/beer-{{id}}">  
+                <h5 class="card-title">{{this.name}}</h5>
+            </a>
+            <p><small class="text-muted">{{tagline}}</small></p> 
+            <p class="card-text">{{this.description}}</p>
+        </div>
+    {{/each}}
+    </div>
+  </div>
 </div>
