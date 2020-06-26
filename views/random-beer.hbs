@@ -5,30 +5,36 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-4  mx-auto">
-                    <div class="card p-3 pb-5">
-                        <h6 class="card-title font-weight-bold">First Brewed :</h6>
-                        <p class="card-text">{{beer.first_brewed}}</p>
-                        <p class="card-title font-weight-bold">Acidity:</p>
-                        <p class="card-text">Ph {{beer.ph}}</p>
-                        <h6 class="card-title font-weight-bold">Ingredients:</h6>
-                        <p class="card-text">- Yeast: {{beer.ingredients.yeast}}.</p>
-                        <p class="card-text font-weight-bold">- Malt:</p>
-                        {{#each beer.ingredients.malt as |ing|}} 
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                {{ing.name}} : {{ing.amount.value}} kg.
-                            </li>
-                        </ul>
-                        {{/each}}
-                        <p class="card-text font-weight-bold pt-3">- Hops :</p>
-                        {{#each beer.ingredients.hops as |ing|}} 
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                {{ing.name}} : {{ing.amount.value}} grams.
-                            </li>
-                        </ul>
-                        {{/each}}
-                    </div>
+                        <div class="card p-3 pb-5">
+                            <h6 class="card-title font-weight-bold">First Brewed :</h6>
+                            <p class="card-text">{{beer.first_brewed}}</p>
+                            <p class="card-title font-weight-bold">Acidity:</p>
+                            <p class="card-text">Ph {{beer.ph}}</p>
+                            <h6 class="card-title font-weight-bold">Ingredients:</h6>
+                            <p class="card-text font-weight-bold">- Yeast:</p>
+                            <p class="card-text">{{beer.ingredients.yeast}}.</p>
+                            <p class="card-text font-weight-bold">- Malt:</p>
+                            {{#each beer.ingredients.malt as |ing|}} 
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    {{ing.name}} : {{ing.amount.value}} kg.
+                                </li>
+                            </ul>
+                            {{/each}}
+                            <p class="card-text font-weight-bold pt-3">- Hops :</p>
+                            {{#each beer.ingredients.hops as |ing|}} 
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    {{ing.name}} : {{ing.amount.value}} grams.
+                                </li>
+                            </ul>
+                            {{/each}}
+                            <h6 class="card-title pt-3">Perfect with:</h6>
+                                <ul>                     
+                                    <li>{{beer.food_pairing}}</li>
+                                </ul>
+                            <p class="card-text"><strong>TIP:</strong><br>{{beer.brewers_tips}}</p>
+                        </div>
                     </div>
                 </div>
             </div>
