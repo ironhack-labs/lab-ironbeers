@@ -20,9 +20,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/beers', (req, res) => {
-  const beers = new PunkAPIWrapper()
 
-  beers.getBeers()
+  punkAPI.getBeers()
     .then(beer => {
       res.render('beers', beer)
     })
@@ -30,9 +29,8 @@ app.get('/beers', (req, res) => {
 })
 
 app.get('/random-beers', (req, res) => {
-  const beers = new PunkAPIWrapper()
 
-  beers.getRandom()
+  punkAPI.getRandom()
     .then(responseFromAPI => {
       res.render('random-beers', responseFromAPI[0])
     })
