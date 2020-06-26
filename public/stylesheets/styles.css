@@ -20,6 +20,10 @@ font-family: Arial, Helvetica, sans-serif;
 body {
   min-height: 100vh;
 }
+nav{
+  margin-bottom: 20px;
+  color: white
+}
 .btn-block {
   width: fit-content;
   margin: auto;
@@ -30,12 +34,17 @@ body {
   display: block;
 }
 
+
+/* LIST BEERS */
+
 .beers-list, .random-beer-list {
   display: flex;
   width: 90%;
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
+  margin: 0 auto;
+  min-height: calc(100vh - 166px);
 }
 
 .beers-list li {
@@ -44,17 +53,37 @@ body {
   flex-wrap: wrap;
   align-items: flex-start;
   flex-direction: column;
+  margin-bottom: 20px;
+}
+.beers-list li a{
+ width: 100%;
+ margin-bottom: 10px;
+ 
 }
 .beers-list li img{
   
   height: 120px;
+  margin: 0 auto;
+  display: block;
  
+}
+
+.name{
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.tagline{
+
+color: var(--grey);
+font-weight: bold;
+margin-bottom: 10px;
 }
 
 footer {
   background-color: var(--dark-blue);
   padding: 20px;
   color: white;
+  margin-top: 30px;
 }
 
 
@@ -66,6 +95,7 @@ footer {
 
 .random-beer-list li img{
     height: 180px;
+    margin-right: 20px;
 
 }
 
