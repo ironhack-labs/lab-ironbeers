@@ -1,0 +1,21 @@
+<div id="random">
+    <div>
+        <img src={{image_url}} alt="">
+    </div>
+
+    <div>  
+        <h2>{{name}}</h2>
+        <p>{{description}}</p>
+        <p>{{tagline}}</p>
+        <p>Food Pairing</p>
+        <ul>
+            {{#each food_pairing}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p><span>Brewer Tips:</span> {{brewers_tips}}</p>
+    </div>
+
+</div>
+
+
