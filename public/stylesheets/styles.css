@@ -28,10 +28,18 @@ a {
     text-decoration: none;
 }
 
+main {
+    height: 32rem;
+    overflow-y: scroll;
+}
+
 footer {
     background-color: #0a2c42;
     padding: 0.03rem 0;
     box-shadow: 0 -4px 15px 3px #bfbfbf;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p {
@@ -45,6 +53,7 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 #home-div img {
@@ -59,4 +68,36 @@ footer p {
     font-weight: bold;
     border-radius: 8%;
     border: none;
+}
+
+/* BEERS */
+
+#beers {
+    color: black;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.7rem auto;
+}
+
+.beer-card {
+    width: 24%;
+    padding: 0px 3rem;
+    font-size: 0.6rem;
+}
+
+.beer-card h3 {
+    margin-bottom: 0.2rem;
+}
+
+.tagline {
+    color: #bfbfbf;
+    margin-top: 0;
+}
+
+.beer-card img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 9rem;
 }
