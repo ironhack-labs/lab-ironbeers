@@ -1,5 +1,17 @@
-{{#each beers}}
-<img src="{{this.image_url}}">
-{{this.name}}
-{{this.description}}
-{{/each}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beers</title>
+</head>
+<body>
+    
+    {{#each beers}}
+        <img src="{{this.image_url}}">
+        <h1>{{this.name}}</h1>
+        <h4>{{this.description}}</h4>
+    {{/each}}
+
+</body>
+</html>
