@@ -1,0 +1,19 @@
+<div>
+    <article class="card">
+        {{> beerpartial randomBeer}}
+        
+        <ul>
+            {{#each randomBeer.food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    </article>
+</div>
+
+
+
+
+
+
+
+
