@@ -1,0 +1,17 @@
+<section>
+    <div class="cards-beers">
+        {{#each beersFromApi as |beer|}}
+        <div class="list-beers">
+            <div class="card" style="width: 10rem;">
+                <img class="card-img-top" src="{{beer.image_url}}" alt="beerImg">
+                <div class="card-body">
+                    <h5 class="card-title">{{beer.name}}</h5>
+                    <p class="card-text">{{beer.description}}</p>
+                    <p class="card-text">{{beer.tagline}}</p>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+</section>

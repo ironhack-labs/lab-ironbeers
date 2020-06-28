@@ -5,3 +5,33 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+  background-color: #d3d3d3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.light-blue-nav {
+  background-color: #2081c3;
+  padding-left: 40px;
+}
+
+.home-beer {
+  padding-top: 10%;
+  padding-left: 30%;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 25px 0;
+}
+
+.list-beers img {
+    padding-top: 5%;
+    width: 30%;
+    height: auto;
+    align-self: center;
+  }
