@@ -1,11 +1,6 @@
 <section>
 
-    <div>
-        <img src="{{image_url}}" alt="Beer image">
-    </div>
-    <div>
-        <h2>{{name}}</h2>
-        <p>{{description}}</p>
+    {{> beerpartial}}
         <h3>Food pairing</h3>
             <ul>
                 {{#each food_pairing}}
