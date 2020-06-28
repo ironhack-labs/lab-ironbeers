@@ -1,8 +1,22 @@
-<div>
-    {{#each beer}}
-    <img src="{{this.image_url}}" alt="{{this.name}}">
-     <p>{{this.name}}</p>
-     <p>{{this.desciption}}</p>
+<div class="card mb-3" style="max-width: 1000px;">
+    <div class="row no-gutters">
+        <div class="col-md-4">
+            {{#each beer}}
 
-    {{/each}}
+            <img src="{{this.image_url}}" class="card-img" alt="{{this.name}}">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">{{this.name}}</h5>
+                <p class="card-text"><small class="text-muted">{{this.tagline}}</small></p>
+                <p class="card-text">{{this.description}}</p>
+                <br>
+                <p class="card-text">Food Pairing: {{this.food_pairing}}</p>
+                <br>
+                <p class="card-text">Brewers Tips: {{this.brewers_tips}}</p>
+                
+            </div>
+            {{/each}}
+        </div>
+    </div>
 </div>
