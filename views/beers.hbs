@@ -1,0 +1,20 @@
+
+<head>
+    <link type="text/css" rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="/stylesheets/styles.css" />
+</head>
+<div class="container">
+    <div class="row flex-row">
+        {{#each beers}}
+        <div class="col-4">
+            <img src="{{this.image_url}}" alt="{{this.tagline}}" class="align-self-center mr-3 beer-img" />
+            <h3 class="mt-0">
+                {{ this.name }}
+            </h3>
+            <h5> {{this.tagline}} </h5>
+            <p>{{this.description}}</p>
+        </div>
+        {{/each}}
+    </div>
+</div>
