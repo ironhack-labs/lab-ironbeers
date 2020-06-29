@@ -104,7 +104,7 @@ footer p {
 
 /* RANDOM BEERS */
 
-.random-beer {
+.beer-info {
     color: black;
     display: flex;
     align-items: center;
@@ -119,11 +119,11 @@ footer p {
     align-items: center;
 }
 
-.random-beer img {
+.beer-info img {
     height: 15rem;
     margin: 3rem;
 }
 
-.random-beer ul {
+.beer-info ul {
     list-style: outside;
 }
