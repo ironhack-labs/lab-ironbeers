@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    {{#if beers}}
+      {{#each beers as |beer|}}
+      <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+        <div class="card profile-card-3">
+          <div class="background-block">
+            <div class="profile-thumb-block">
+              <img src="{{ beer.image_url }}" alt="{{ beer.name }}" class="img-fluid" />
+            </div>
+            <img src="{{ beer.image_url }}" alt="{{ beer.name }}" class="background" />
+          </div>
+          <div class="card-content">
+            <h2><a href="/beer/{{ beer.id }}">{{ beer.name }}</a></h2>
+            <p><a href="/beer/{{ beer.id }}">{{ beer.tagline }}</a></p>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+  {{else}}
+    <h1>Sorry no beers here with this term: {{ term }}</h1>
+  {{/if}}
+  </div>
+</div>

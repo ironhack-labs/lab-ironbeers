@@ -1,0 +1,28 @@
+<div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-3 offset-md-1">
+        <img class="img-fluid" src="{{ beer.image_url }}">
+      </div>
+      <div class="col-12 col-md-7 offset-md-1">
+        <h1>{{ beer.name }}</h1>
+        <h2>{{ beer.tagline }}</h2>
+        <p>{{ beer.description }}</p>
+        {{#if beer.food_pairing}}
+        <h3>Foof Pairing</h3>
+        <ul>
+          {{#each beer.food_pairing as |food|}}
+          <li>{{ food }}</li>
+          {{/each}}
+        </ul>
+        {{/if}}
+        {{#if beer.brewers_tips}}
+        <h3>Brewers tips</h3>
+        <div class="alert alert-info" role="alert">
+          <p class="mb-0">{{ beer.brewers_tips }}</p>
+        </div>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</div>
