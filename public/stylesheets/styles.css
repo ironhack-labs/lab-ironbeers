@@ -5,3 +5,55 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.beer-container {
+    height: calc(100vh - 80px);
+}
+
+.navbar {
+    height: 80px;
+}
+
+.footer {
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(111, 111, 111);
+    color: white;
+    align-items: center;
+    padding: 12px 0 0 20px;
+}
+
+.container {
+    padding: 50px;
+}
+
+.card {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card-img-top {
+    max-width: 70px;
+    max-height: 280px;
+    padding-top: 20px;
+}
+
+.card-text {
+    font-size: 12px;
+}
+
+.beer {
+    width: 20%;
+}
+
+.random {
+    height: calc(100vh - 140px);
+}
+
+.same-height {
+    display: flex;
+    justify-content: center;
+    align-items: inherit;
+}

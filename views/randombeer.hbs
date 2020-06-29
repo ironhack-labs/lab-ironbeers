@@ -1,0 +1,13 @@
+<div class="container random">
+    <div class="row">
+        {{#each beer}}
+        <div class="col-sm-4">
+            <img class="beer" src="{{this.image_url}}" alt="{{this.name}}">
+        </div>
+        <div class="col-sm-8">
+            <h3>{{this.name}}</h3>
+            <p>{{this.description}}</p>
+        </div>
+        {{/each}}
+    </div>
+</div>

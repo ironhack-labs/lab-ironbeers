@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>Beers</h1>
+    <div class="row">
+        <div class="card-group">
+            {{#each beersFromApi}}
+            <div class="col-sm-4 mb-3 same-height">
+                <div class="card">
+                    <img class="card-img-top" src="{{this.image_url}}" alt="{{this.name}}">
+                    <div class="card-body">
+                        <h5>{{this.name}}</h3>
+                            {{!-- <p class="card-text">{{this.description}}</p> --}}
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+
+        </div>
+
+    </div>
+
+
+</div>
+</div>
