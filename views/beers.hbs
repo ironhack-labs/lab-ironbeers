@@ -9,10 +9,11 @@
     <div class="album  my-5 bg-light  row flex-row" > 
    {{#each beers}}
         <div class="col-md-4">
-          <div class="card mb-4 " style="width: 20rem;">
+          <div class="card mb-4" style="width: 20rem;">
             <img class="align-self-center mr-3 beer-img card-img" src="{{this.image_url}}" style="width:100px; height:350px" Placeholder="{{this.tagline}}">
             <div class="card-body">
-            <h3 class="mt-0 card-title"> {{ this.name }} </h3>
+            <a class="badge" href="/beers/{{this.id}}"> {{ this.name }}  </a>
+            {{!-- <h3 class="mt-0 card-title"> {{ this.name }} </h3> --}}
             <h5 class="card-title"> {{this.tagline}} </h5>
             <p class="card-text">{{this.description}}</p>
             </div>
