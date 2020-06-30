@@ -3,41 +3,26 @@
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
     <link type="text/css" rel="stylesheet" href="/stylesheets/styles.css" />
 </head>
-<div class="container">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="./">Home</a>
-      </li>
-        <li class="nav-item active">
-        <a class="nav-link" href="./beers">Beers</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="./random-beers">Random Beers</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+
 
     <div class="container text-align">
         {{#with beers}}
-        <div class="row">
-            <div class="align-items-start col-mb-4">
-                <img src="{{this.image_url}}" alt="{{this.tagline}}" class="align-self-center mr-3 beer-img" />
+        <div class="row my-5">
+            <div class="align-items-start col-mb-4 my-5" >
+                <img src="{{this.image_url}}" alt="{{this.tagline}}" class="align-self-center mr-3 beer-img" style="width:100px; height:350px"/>
             </div>
-            <div class="align-items-start col-mb-4" >
-                <h3 class="mt-0">
+             <div class="col-md-8 my-5" >
+                <div class="card-body"></div>
+                <h3 class="card-text">
                     {{ this.name }}
                 </h3>
-                <h5> {{this.tagline}} </h5>
-                <p>{{this.description}}</p>
+                <h5 class="card-text"> {{this.tagline}} </h5>
+                <p class="card-text" >{{this.description}}</p>
 
-                <ul class="people_list"></ul>
+                <ul class="people_list  "></ul>
                     {{#each food_pairing}}
-                        <li> {{this}} </li> 
+                        <li class="ul-sl"> {{this}} </li> 
                     {{/each}}
-
                     <p><strong>Brewers Tips:</strong> {{this.brewers_tips}}</p>
                 </ul>
             </div>
@@ -45,3 +30,4 @@
         {{/with}}
     </div>
 </div>
+       

@@ -3,32 +3,8 @@
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
     <link type="text/css" rel="stylesheet" href="/stylesheets/styles.css" />
 </head>
-<div class="container">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="./">Home</a>
-      </li>
-        <li class="nav-item active">
-        <a class="nav-link" href="./beers">Beers</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="./random-beers">Random Beers</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-    <div class="row flex-row">
-        {{#each beers}}
-        <div class="col-4">
-            <img src="{{this.image_url}}" alt="{{this.tagline}}" class="align-self-center mr-3 beer-img" />
-            <h3 class="mt-0">
-                {{ this.name }}
-            </h3>
-            <h5> {{this.tagline}} </h5>
-            <p>{{this.description}}</p>
-        </div>
-        {{/each}}
-    </div>
+<div class="main-container">
+    <img class="content-img" src="/images/beer.png" />
+    <a class="button" href="/beers">Check the Beers!</a>
+    <a class="button" href="/random-beers">Check a Random Beer!</a>
 </div>
