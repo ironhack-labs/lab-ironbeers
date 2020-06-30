@@ -3,33 +3,23 @@
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
     <link type="text/css" rel="stylesheet" href="/stylesheets/styles.css" />
 </head>
-<div class="container">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="./">Home</a>
-      </li>
-        <li class="nav-item active">
-        <a class="nav-link" href="./beers">Beers</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="./random-beers">Random Beers</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-    <div class="row flex-row">
-        {{#each beers}}
-        <div class="col-4">
-            <img src="{{this.image_url}}" alt="{{this.tagline}}" class="align-self-center mr-3 beer-img" />
-            <h3 class="mt-0">
-                {{ this.name }}
-            </h3>
-            <h5> {{this.tagline}} </h5>
-            <p>{{this.description}}</p>
+ 
+  <div class="container">
+    <div class="album  my-5 bg-light  row flex-row" > 
+   {{#each beers}}
+        <div class="col-md-4">
+          <div class="card mb-4 " style="width: 20rem;">
+            <img class="align-self-center mr-3 beer-img card-img" src="{{this.image_url}}" style="width:100px; height:350px" Placeholder="{{this.tagline}}">
+            <div class="card-body">
+            <h3 class="mt-0 card-title"> {{ this.name }} </h3>
+            <h5 class="card-title"> {{this.tagline}} </h5>
+            <p class="card-text">{{this.description}}</p>
+            </div>
+            </div>
+            
+          </div>
+            {{/each}}
+          </div>
         </div>
-        {{/each}}
-    </div>
-</div>
+        
