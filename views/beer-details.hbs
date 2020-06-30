@@ -1,0 +1,35 @@
+<head>
+    <link type="text/css" rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="/stylesheets/styles.css" />
+</head>
+
+
+    <div class="container text-align">
+        {{#with beers}}
+        <div class="row my-5">
+            <div class="align-items-start col-mb-4 my-5" >
+                <img src="{{this.image_url}}" alt="{{this.tagline}}" class="align-self-center mr-3 beer-img" style="width:100px; height:350px"/>
+            </div>
+             <div class="col-md-8 my-5" >
+                <div class="card-body"></div>
+                <h3 class="card-text">
+                    {{ this.name }}
+                </h3>
+                <h5 class="card-text"> {{this.tagline}} </h5>
+                <p class="card-text" >{{this.description}}</p>
+
+                <ul class="people_list  "></ul>
+                    {{#each food_pairing}}
+                        <li class="ul-sl"> {{this}} </li> 
+                    {{/each}}
+                    <p><strong>Brewers Tips:</strong> {{this.brewers_tips}}</p>
+                </ul>
+            </div>
+        </div>
+        {{/with}}
+        <div>
+            <a href="/beers">Go back to beers list</a>
+        </div>
+    </div>
+</div>

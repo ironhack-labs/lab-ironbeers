@@ -1,4 +1,3 @@
-
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 
 const punkAPI = new PunkAPIWrapper();

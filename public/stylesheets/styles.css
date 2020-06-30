@@ -1,18 +1,133 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+.item-menu {
+  list-style:  none;
+}
 
-.beer-img {
-    max-width: 100px;
-    max-height: 200px;
-  }
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #f7f9f9;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
   
-  .flex-row {
-    display: flex;
-    align-items: center;
-  }
+}
+
+.navbar {
+  background: #2081c3;
+  width:100%
+}
+
+.menu {
+  display:flex;
+  padding: 20px;
+  margin-bottom:10px;
+}
+
+.item-menu a { 
+  color: #f7f9f9;
+  margin:0 10px;
+}
+
+.main-container {
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  margin:10px auto;
+  padding:50px;
+}
+
+.content-img {
+  height: 100%;
+  max-height: 300px;
+  margin: 20px auto;
+}
+
+.button {
+  background:#2081c3;
+  color: #fff;
+  padding:15px;
+  margin:5px;
+  border-radius: 10px;
+}
+
+.beers-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.beer-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items:center;
+  width:400px;
+  height: auto;
+  border:solid 1px #bfbfbf;
+  padding:30px;
+  margin:20px auto;
+  border-radius: 15px;
+  
+}
+
+.card-img {
+  height: 300px;
+  width:100px
+}
+
+.card-title {
+  text-align: center;
+}
+ 
+.card-subtitle {
+  text-align: center;
+  color: #bfbfbf;
+}
+
+.card-brewed {
+  margin: 10px 0;
+}
+
+.card-Description {
+  text-align: justify;
+}
+
+.card-tips {
+  margin: 10px 0;
+}
+
+.card-list { 
+  align-self: start;
+}
+
+.footer {
+  background:#0a2c42;
+  color: #fff;
+  padding:15px;
+  display: flex;
+  align-items:center;
+  justify-content: flex-start;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+.image-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%
+}
+
+.ul-sl {
+  list-style: none;
+}
