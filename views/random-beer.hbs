@@ -1,0 +1,15 @@
+<div class="container h-20 d-flex justify-content-start mt-5" id="random-beer">
+    <img class="mr-5" src="{{image_url}}" alt="{{name}}">
+    <div class="mt-5">
+        <h3 class="font-weight-bold">{{name}}</h3>
+        <q class="my-5 text-muted">{{tagline}}</q>
+        <p>{{description}}</p>
+        <h6 class="font-weight-bold">Food Pairing</h6>
+        <ul>
+            {{#each food_pairing as |item|}}
+            <li>{{item}}</li>
+            {{/each}}
+        </ul>
+        <p><b>Brewers Tips:</b> {{brewers_tips}}</p>
+    </div>
+</div>
