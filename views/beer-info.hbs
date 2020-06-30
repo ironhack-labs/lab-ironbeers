@@ -1,0 +1,14 @@
+<div class="container">
+<div class="card mb-3 container" style="max-width: 540px;">
+  <div class="row no-gutters">
+      {{> beerpartial}}
+        <p class="card-text"><small class="text-muted">{{brewers_tips}}</small></p>
+        <ul class="list-group list-group-flush">
+            {{#each food_pairing}}
+            <li class="list-group-item">{{this}}</li>
+            {{/each}}
+        </ul>
+    </div>
+  </div>
+</div>
+</div>
