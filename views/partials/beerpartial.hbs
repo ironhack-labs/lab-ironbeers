@@ -1,11 +1,13 @@
-<!-- {{#each this}} -->
+{{#each this}}
 
-    <div>
-        <a href="beers/beer-{{this.id}}"><h3>{{this.name}} </h3></a>
-        <img src="{{this.image_url}} " alt="">
+<div class="item">
     
+    <img src="{{this.image_url}} " class="pic_Beer" alt="{{this.name}} image">
+    <a href="beers/beer-{{this.id}}">
+        <h3>{{this.name}} </h3>
+    </a>
     <aside>{{this.tagline}} </aside>
     <p>{{this.description}} </p>
-    </div>
+</div>
 
-<!-- {{/each}} -->
+{{/each}}

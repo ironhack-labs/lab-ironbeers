@@ -1,13 +1,17 @@
-<h1> our Beers : </h1>
+<!-- <h1> our Beers : </h1> -->
 
-<ul class="Beers">
+<div id="beers-display">
 
 
-{{#each beersFromApi }}
+{{> beerpartial beersFromApi }}
+
+
+<!-- {{#each beersFromApi }}
+
 
 {{> beerpartial this }}
 
-{{/each }}
+{{/each }}-->
 
 
-</ul>
+</div>

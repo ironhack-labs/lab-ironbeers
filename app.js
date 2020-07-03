@@ -17,7 +17,6 @@ hbs.registerPartials(path.join(__dirname, 'views/partials'));
 // ...
 
 // Add the route handlers here:
-
 app.get('/', (req, res) => {
   res.render('index');
 });
@@ -36,11 +35,12 @@ app.get('/beers', async (req, res) => {
 
 app.get('/random-beer',
   async (req, res) => {
-    //console.log(`on the random beer route !`);
+    console.log(`on the random beer route !`);
     try {
     var randomBeerArray = await punkAPI.getRandom();
-     //console.log(`got the random beer !, it is ${randomBeer}`);
-     var randomBeer = randomBeerArray[0];
+    var randomBeer = randomBeerArray;
+     console.log(`got the random beer !, it is ${randomBeer}`);
+     //var randomBeer = randomBeerArray[0];
      res.render('random-beer', {randomBeer});
 
     } catch (err) {
