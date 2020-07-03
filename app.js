@@ -56,11 +56,15 @@ app.get('/random-beers', async (req, res) => {
 
 // TODO: FINISH ITERATION 6 !!!!
 app.get('/beers/beer-:id', async (req, res) => {
-  const selectedBeer = await punkAPI.getBeer(req.params.id)[0];
-  console.log('ITE 6 : selected beer ID is >> ', req.params.id);
-  console.log('bizarre');
+  try {
+    const selectedBeer = await punkAPI.getBeer(req.params.id);
 
-  res.render('oneBeer', selectedBeer);
+    console.log('ITE 6 : selected beer ID is >> ', req.params.id);
+    console.log('Selected beer is : ', selectedBeer);
+    res.render('oneBeer', selectedBeer);
+  } catch (err) {
+    console.log(err);
+  }
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
