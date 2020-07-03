@@ -1,22 +1,17 @@
-
+<div class="main flex inRow">
 
     {{#each allBeers}}
+    <div class="wrap">
 
         <img
             class="image small"
             src="{{this.image_url}}"
         />
+        {{> beerpartial}}
+    
+    </div>
 
-        <h2 class="subtitle">
-            {{this.name}}
-        </h2>
+    {{/each}}
 
-        <p class="description">
-            {{this.description}}
-        </p>
 
-        <p class="tag">
-            {{this.tagline}}
-        </p>
-
-        {{/each}}
+</div>

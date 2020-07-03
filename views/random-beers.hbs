@@ -1,27 +1,21 @@
-<img
-    class="image big"
-    src="{{image_url}}"
-/>
+<div class="main">
 
-<h2 class="subtitle">
-    {{name}}
-</h2>
+    <img
+        class="image big"
+        src="{{image_url}}"
+    />
 
-<p class="description">
-    {{description}}
-</p>
+    {{> beerpartial}}
 
-<p class="tag">
-    {{tagline}}
-</p>
+    <b> Food pairing :</b> <br>
+    <ul id="food-pairing-list">
+        {{#each food_pairing}}
+        <li class="item">
+            {{this}}
+        </li>
+        {{/each}}
+    </ul>
 
-<b> Food pairing :</b> <br>
-<ul id="food-pairing-list">
-    {{#each food_pairing}}
-    <li class="item">
-        {{this}}
-    </li>
-    {{/each}}
-</ul>
+    <p class="text">{{brewers_tips}}</p>
 
-<p class="text">{{brewers_tips}}</p>
+</div>
