@@ -5,3 +5,46 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blueBtn {
+    background-color: blue;
+    color: wheat;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2vh 25vw;
+}
+
+li {
+    list-style: none;
+}
+
+.pic_randomBeer {
+    height: 30vh;
+    float: left;
+    margin: 2%;
+}
+
+.text_randomBeer {
+    position: relative;
+    left: 10vw;
+    display: flex;
+    align-items: flex-start;
+    word-wrap: break-word;
+    width: 50vw;
+}
