@@ -16,34 +16,42 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+p {
+  font-size: 14px;
+}
+
 .main {
-  height: 60vh;
-  max-width: 80%;
+  height: 70vh;
+  width: 70%;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-top: 60px;
   text-align: justify;
+  padding-top: 50px;
 }
 
+/* 
+.beers-container {
+}
+.beer-box {
+  
+} */
+
 .image {
-  margin-bottom: 50px;
 }
 
 .image.big {
-  height: 500px;
+  height: 400px;
 }
 
 .image.medium {
   height: 250px;
-
-  width: unset;
 }
 
 .image.small {
-  margin-top: 50px;
+  margin: 20px 0px;
   height: 150px;
 }
 
@@ -71,18 +79,23 @@ body {
 }
 
 .subtitle {
-  margin-bottom: 20px;
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
 .description {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .tag {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+#food-pairing-list {
+  margin-bottom: 10px;
 }
 
 .text {
-    margin-bottom: 50px;
-    text-align: center;
+  margin-bottom: 50px;
+  text-align: center;
 }

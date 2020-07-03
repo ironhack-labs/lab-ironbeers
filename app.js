@@ -14,6 +14,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Register the location for handlebars partials here:
 hbs.registerPartials(__dirname + '/views/partials');
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
+
 
 // ...
 
@@ -45,7 +47,7 @@ app.get('/random-beers', async (req, res) => {
     const apiResult = await punkAPI.getRandom();
     
     console.log('ITERATION 4 - RANDOM BEER >>>>>');
-    //console.log('>>> Random beer from the database: ', apiResult);
+    console.log('>>> Random beer from the database: ', apiResult);
     
     //apiResult is an array so get the only element or it :
     const randomBeer = apiResult[0];

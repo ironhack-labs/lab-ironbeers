@@ -15,8 +15,13 @@
     {{tagline}}
 </p>
 
-<p class="text">
-    <b> Food pairing :</b> <br> {{food_pairing}}</p>
+<b> Food pairing :</b> <br>
+<ul id="food-pairing-list">
+    {{#each food_pairing}}
+    <li class="item">
+        {{this}}
+    </li>
+    {{/each}}
+</ul>
 
-<p class="text">
-    {{brewer_tips}}</p>
+<p class="text">{{brewers_tips}}</p>
