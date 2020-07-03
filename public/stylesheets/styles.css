@@ -4,6 +4,9 @@ light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
 
+
+** I know it's messy, sorry **
+
 */
 
 body {
@@ -39,6 +42,7 @@ nav {
 
 a {
     text-decoration: none;
+    color: #0a2c42;
 }
 
 #menu ul {
@@ -68,7 +72,10 @@ a {
 
 .text_randomBeer {
 
-    margin: 5vh 10vw;
+    margin: 5vh 20vw;
+    width: 60vw;
+    word-wrap: break-word;
+    text-align: justify;
 }
 
 #beers-display {

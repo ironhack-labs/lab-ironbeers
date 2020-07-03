@@ -27,6 +27,8 @@ app.get('/beers', async (req, res) => {
   try {
     var beersFromApi = await punkAPI.getBeers();
     console.log(`retrived the fresh beers ${beersFromApi}`);
+    console.log(Array.isArray(beersFromApi));
+    
     res.render('beers', { beersFromApi });
   } catch (err) {
     console.error(err);
@@ -38,13 +40,12 @@ app.get('/random-beer',
     console.log(`on the random beer route !`);
     try {
     var randomBeerArray = await punkAPI.getRandom();
-    var randomBeer = randomBeerArray;
      console.log(`got the random beer !, it is ${randomBeer}`);
-     //var randomBeer = randomBeerArray[0];
+     var randomBeer = randomBeerArray[0];
      res.render('random-beer', {randomBeer});
 
     } catch (err) {
-     // console.error(err);
+     console.error(err);
     }
   });
 

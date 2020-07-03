@@ -3,21 +3,16 @@
 <div class="text_randomBeer">
 {{> beerpartial randomBeer }}
 
-<!-- {{> tips randomBeer }} -->
 
 
-{{#each randomBeer}}
 
 <h4>Food Pairing :</h4>
 <ul>
-{{#each this.food_pairing}}
+{{#each randomBeer.food_pairing}}
 <li>{{this}}</li>
 {{/each}}
 </ul>
 
-
 <h4>Brewers tips :</h4>
-<p>{{this.brewers_tips}}</p>
-
-{{/each}}
+<p>{{randomBeer.brewers_tips}}</p>
 </div>
