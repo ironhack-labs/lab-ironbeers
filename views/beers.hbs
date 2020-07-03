@@ -1,0 +1,22 @@
+
+
+{{#each allBeers}}
+
+<img
+    class="image small"
+    src="{{this.image_url}}"
+/>
+
+<h2 class="subtitle">
+    {{this.name}}
+</h2>
+
+<p class="description">
+    {{this.description}}
+</p>
+
+<p class="tag">
+    {{this.tagline}}
+</p>
+
+{{/each}}
