@@ -1,0 +1,9 @@
+{{> beerInfo this}}
+<p class="beer-info-subtitle">Food pairing:</p>
+<ul class="beer-info">
+    {{#each this.food_pairing }}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+<p class="beer-info-subtitle">Brewers tips</p>
+<p class="beer-info"> {{this.brewers_tips}}</p>

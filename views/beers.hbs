@@ -1,0 +1,8 @@
+{{#each this}}
+    <section class="beer-wrapper">
+        <a class="beer-link" href="/detailed-beer/{{this.id}}">
+            <img class="beer-img" src="{{this.image_url}}" alt="Beer image">
+        </a>
+    {{> beerInfo this}}
+    </section>
+{{/each}}
