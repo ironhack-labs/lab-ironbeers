@@ -57,8 +57,8 @@ app.get('/random-beers', async (req, res) => {
 // TODO: FINISH ITERATION 6 !!!!
 app.get('/beers/beer-:id', async (req, res) => {
   const selectedBeer = await punkAPI.getBeer(req.params.id)[0];
-  
   console.log('ITE 6 : selected beer ID is >> ', req.params.id);
+  console.log('bizarre');
 
   res.render('oneBeer', selectedBeer);
 });
