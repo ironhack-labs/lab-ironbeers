@@ -1,0 +1,33 @@
+{{#each beers}}
+
+
+<h2 class="header">{{name}}</h2>
+<div class="card horizontal small">
+    <div class="card-image">
+        <img src="{{this.image_url}}">
+    </div>
+    <div class="card-stacked">
+        <div class="card-content">
+            <p>{{description}}</p>
+        </div>
+        <div class="card-action">
+            <a href="#">{{tagline}}</a>
+        </div>
+    </div>
+</div>
+
+
+{{/each}}
+
+
+
+{{!-- <div class="card horizontal">
+    <ul>
+        <li class="name">{{name}}</li>
+        <li>{{description}}</li>
+        
+    </ul>
+
+    <img class='card-image' src="{{this.image_url}}" alt="">
+    <span class="card-action">{{tagline}}</span>
+    </div> --}}
