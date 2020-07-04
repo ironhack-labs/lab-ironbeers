@@ -1,0 +1,11 @@
+{{!-- image, name, description, and tagline --}}
+<h1>{{this.name}}</h1>
+{{#if this.image_url}}
+<a href="/beers/beer-{{this.id}}"><img src="{{this.image_url}}" alt="{{this.name}} image"></a>
+{{else}}
+<p>No image available</p>
+{{/if}}
+<h2>Beer description:</h2>
+<p>{{this.description}}</p>
+<h3>Beer tagline:</h3>
+<p>{{this.tagline}}</p>
