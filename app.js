@@ -14,8 +14,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Register the location for handlebars partials here:
-/* hbs.registerPartials(__dirname + '/views/partials');
- */ hbs.registerPartials(path.join(__dirname, 'views/partials'));
+/* hbs.registerPartials(__dirname + '/views/partials');*/ 
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 // ...
 
@@ -54,14 +54,15 @@ app.get('/random-beers', async (req, res) => {
   }
 });
 
-// TODO: FINISH ITERATION 6 !!!!
 app.get('/beers/beer-:id', async (req, res) => {
   try {
-    const selectedBeer = await punkAPI.getBeer(req.params.id);
+    const apiResult = await punkAPI.getBeer(req.params.id);
+    const selectedBeer = apiResult[0];
 
-    console.log('ITE 6 : selected beer ID is >> ', req.params.id);
-    console.log('Selected beer is : ', selectedBeer);
-    res.render('oneBeer', selectedBeer);
+    console.log('ITE 6 : selected beer is >> ', selectedBeer);
+    console.log('selected beer ID = ', req.params.id);
+    
+    res.render('beer-selection', selectedBeer);
   } catch (err) {
     console.log(err);
   }
