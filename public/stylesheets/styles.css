@@ -1,7 +1,139 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+:root {
+    --color-white:#f7f9f9;
+    --color-light-blue: #2081c3;
+    --color-dark-blue: #0a2c42;
+    --color-grey: #bfbfbf;
+}
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* LAYOUT */
+body{
+    background-color: var(--color-white);
+    height:100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-light-blue);
+    color: var(--color-white);
+    width: 100%;
+    font-size: 25px;
+    height:100px;
+    box-shadow: 0px 5px 5px grey;
+}
+
+#content-main {
+    position: relative;
+    top: 100px;
+    padding: 20px 20px 60px; 
+    min-height: calc(100vh - (100px + 80px));
+  }
+
+.link{
+    margin-left: 70px;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.link:hover{
+    color: var(--color-dark-blue); 
+}
+
+#footer{
+    height: 80px;
+    position: relative;
+    top: 100px;
+    display:flex;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+    background-color: var(--color-dark-blue); 
+    color:var(--color-white);
+  }
+
+#span-footer{
+    margin-left:40px;
+}
+
+
+/* INDEX */
+
+#main-content{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-content img{
+    max-width: 380px;
+    height:auto;
+}
+
+#main-content a {
+    color: var(--color-white);
+    text-decoration: none;
+    margin-top: 30px;
+    background-color: var(--color-light-blue);
+    border-radius: 10px;
+    padding:10px 20px;
+    box-shadow: 0px 5px 5px grey;
+}
+
+.img-beer{
+    height: 300px;
+    width: auto;
+}
+/* BEERS */
+#blocks{
+    display:flex;
+    flex-wrap: wrap;
+    margin:60px;
+}
+.beer-display{
+    width:30%;
+    margin: 20px;
+}
+
+
+.link-beer{
+    display:block;
+    color: black;
+    font-size:25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.tagline{
+    color: var(--color-grey);
+}
+
+.description{
+    margin-top:20px;
+}
+/* RANDOM BEER */
+
+.brewer{
+    display:inline;
+    font-weight: bold;
+}
+
+.beer-content{
+    padding:50px;
+} 
+
+li{
+    list-style: inside;
+    margin: 30px 50px;
+}
+h3{
+    margin-top: 30px;
+}
