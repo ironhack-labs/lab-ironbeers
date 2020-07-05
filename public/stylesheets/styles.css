@@ -5,3 +5,9 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
