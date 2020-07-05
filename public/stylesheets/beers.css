@@ -8,8 +8,12 @@
 
 #display-beers img {
     height: 100px;
-    align-self: center;
     margin-bottom: 10px;
+}
+
+#display-beers a {
+    display: block;
+    text-align: center;
 }
 
 .beer-box {

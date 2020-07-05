@@ -1,0 +1,21 @@
+<div id="beer-onepage">
+    {{> onlybeerpartial specificBeer }}
+    <div id="additional-content">
+        <div class="component">
+            <p>Malts:</p>
+            <ul>
+                {{#each specificBeer.ingredients.malt}}
+                <li>{{this.name}}</li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="component">
+            <p>Hops:</p>
+            <ul>
+                {{#each specificBeer.ingredients.hops}}
+                <li>{{this.name}} ({{this.attribute}})</li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>

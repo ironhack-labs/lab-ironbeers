@@ -1,0 +1,18 @@
+#additional-content {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.component {
+    width: 50%
+}
+
+.component p {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.component li {
+    padding-bottom: 0px;
+}

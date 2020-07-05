@@ -1,19 +1,20 @@
-#random-beer {
+#beer-onepage {
     width: 100%;
     padding: 50px 15% 50px 15%;
     display: flex;
+    flex-direction: column;
 }
 
-#random-beer img {
+#beer-onepage img {
     height: 200px;
     margin-right: 15%;
 }
 
-#random-beer h3 {
+#beer-onepage h3 {
     margin-bottom: 30px;
 }
 
-#random-beer .tagline {
+#beer-onepage .tagline {
     margin-bottom: 20px;
 }
 
@@ -28,11 +29,15 @@
     font-weight: bold;
 }
 
-#random-beer li {
+.dish {
     padding-bottom: 20px;
 }
 
-#random-beer ul {
+#beer-onepage ul {
     overflow: hidden;
     padding-left: 10%;
+}
+
+#one-beer {
+    display: flex;
 }
