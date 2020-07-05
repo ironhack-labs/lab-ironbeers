@@ -145,3 +145,8 @@ html {
 .random > .beer-card > .beer-img {
   max-width: 40%;
 }
+
+.btn-container{
+  text-align: center;
+  padding-top: 1rem;
+}
