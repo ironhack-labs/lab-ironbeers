@@ -5,3 +5,70 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+@import url("/stylesheets/navMain.css");
+@import url("/stylesheets/home.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header-height: 100px;
+    --footer-height: 80px;
+    --header-background-color: #2081c3;
+    --footer-background-color: #0a2c42;
+    --header-color: #f7f9f9;
+    --secondary-color: #bfbfbf;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+header {
+    background: var(--header-background-color);
+    color: var(--header-color);
+    top: 0;
+    position: fixed;
+    height: var(--header-height);
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    position: relative;
+    top: var(--header-height);
+    width: 100%;
+    min-height: calc(100% - var(--header-height) - var(--footer-height)); 
+}
+
+footer {
+    background: var(--footer-background-color);
+    color: var(--header-color);
+    height: var(--footer-height);
+    bottom: 0;
+    position: relative;
+    top: var(--header-height);
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    margin-left: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    cursor: grab;
+}
+
