@@ -2,10 +2,7 @@
 
     {{#each beersFromApi}}
     <div class="beer-box">
-        <img src="{{this.image_url}}" alt="{{this.name}}">
-        <h3>{{this.name}}</h3>
-        <p class="tagline">{{this.tagline}}</p>
-        <p class="description">{{this.description}}</p>
+        {{> beerpartial }}
     </div>
     {{/each}}
 

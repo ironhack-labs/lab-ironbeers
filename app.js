@@ -36,7 +36,6 @@ app.get('/random-beer', (req, res) => {
   .then((beer) => {
     const randomBeer = beer[0];
     res.render('randomBeer', { randomBeer })
-    console.log(randomBeer);
   })
   .catch(err => console.log(err));
 });
