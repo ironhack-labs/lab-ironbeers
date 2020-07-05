@@ -1,0 +1,28 @@
+#display-beers {
+    width: 100%;
+    padding: 20px 10% 20px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+#display-beers img {
+    height: 100px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.beer-box {
+    width: calc(100%/3);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.beer-box .tagline {
+    margin-bottom: 10px;
+}
+
+.beer-box p {
+   font-size: 0.8rem;
+}
