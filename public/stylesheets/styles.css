@@ -9,6 +9,7 @@ font-family: Arial, Helvetica, sans-serif;
 @import url("/stylesheets/home.css");
 @import url("/stylesheets/beerpartial.css");
 @import url("/stylesheets/beers.css");
+@import url("/stylesheets/randomBeer.css");
 
 * {
     margin: 0;
