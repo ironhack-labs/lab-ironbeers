@@ -24,9 +24,16 @@ html {
   }
 }
 
+:root {
+  --main-bg-color: #7209b7;
+  --main-pink: #f72585;
+  --main-white: #f7fff7;
+  --main-yellow: #ffbe0b;
+}
+
 .beers-container {
   padding: 4rem;
-  background-color: #7209b7;
+  background-color: var(--main-bg-color);
 }
 
 .img-container {
@@ -39,14 +46,14 @@ html {
 }
 
 .btn-pink {
-  background-color: #f72585;
-  color: #f7fff7;
+  background-color: var(--main-pink);
+  color: var(--main-white);
   text-transform: capitalize;
 }
 
 .btn-pink:hover,
 :focus {
-  background-color: #f7fff7;
+  background-color: var(--main-white);
   color: #f72585;
 }
 
@@ -59,8 +66,8 @@ html {
 
 .beer-card {
   padding-top: 1rem;
-  background-color: #7209b7;
-  color: #f7fff7;
+  background-color: var(--main-bg-color);
+  color: var(--main-white);
   text-transform: capitalize;
 }
 
@@ -71,7 +78,7 @@ html {
 .card-title {
   text-align: center;
   padding-bottom: 2px;
-  border-bottom: 1px solid#f7fff7;
+  border-bottom: 1px solid var(--main-white);
 }
 
 .card-tagline {
@@ -79,14 +86,45 @@ html {
 }
 
 .highlight {
-    background-color: #f72585;
+    background-color: var(--main-yellow);;
     padding: 5px;
 }
 
-
+.random-img-container {
+  background-color: var(--main-bg-color);
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  border-radius: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
 
 .title {
   text-align: center;
-
   margin: 0 auto;
+}
+
+.random-desc-container {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 4rem;
+}
+
+.random-title {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding: 1rem;
+    border-radius: 10px;
+}
+
+.description {
+  padding: 2rem;
+}
+
+.random-tag {
+  border: 1px solid var(--main-pink);
+  padding: 10px;
+  display: inline-block;
+  margin-bottom: 1rem;
+
 }
