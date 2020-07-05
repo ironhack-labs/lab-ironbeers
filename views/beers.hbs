@@ -1,1 +1,21 @@
-<h1>Beers</h1>
+<div class="container">
+  <div class="row-title">
+    <h1 class="title">{{title}}</h1>
+  </div>
+  <div class="row">
+    {{#if beers}}
+      {{#each beers as |beer|}}
+      <div class="col-3 beer-container">
+        <div class="card beer-card">
+          <img class="card-img-top img-fluid beer-img" src="{{beer.image_url}}" alt="{{beer.name}}">
+          <div class="card-body">
+            <h5 class="card-title">{{beer.name}}</h5>
+            <p class="card-tagline highlight">{{beer.tagline}}</p>
+            <p class="card-text">{{beer.description}}</p>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    {{/if}}
+  </div>
+</div>
