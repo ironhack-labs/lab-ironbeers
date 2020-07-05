@@ -1,11 +1,12 @@
 #random-beer {
     width: 100%;
-    padding: 50px 20% 50px 20%;
-    display: flex;    
+    padding: 50px 15% 50px 15%;
+    display: flex;
 }
 
 #random-beer img {
     height: 200px;
+    margin-right: 15%;
 }
 
 #random-beer h3 {
