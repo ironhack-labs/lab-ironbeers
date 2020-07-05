@@ -13,11 +13,13 @@ const randomBeerRoutes = require('./routes/random-beer');
 
 const punkAPI = new PunkAPIWrapper();
 
+hbs.registerPartials(__dirname + '/views/partials', function (err) {});
 
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
+
 
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 app.use('/js', express.static(__dirname + '/node_modules/jquery/dist'));

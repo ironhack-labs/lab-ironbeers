@@ -5,7 +5,6 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
-
 * {
   margin: 0;
   padding: 0;
@@ -54,7 +53,7 @@ html {
 .btn-pink:hover,
 :focus {
   background-color: var(--main-white);
-  color: #f72585;
+  color: var(--main-pink);
 }
 
 .beer-img {
@@ -102,6 +101,8 @@ html {
 .title {
   text-align: center;
   margin: 0 auto;
+  color: var(--main-pink);
+  padding: 1rem 0;
 }
 
 .random-desc-container {
@@ -126,5 +127,21 @@ html {
   padding: 10px;
   display: inline-block;
   margin-bottom: 1rem;
+}
 
+.footer{
+  padding: 1.5rem 0 1.5rem 1rem;
+}
+
+.footer > p {
+  margin: 0;
+}
+
+.random {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.random > .beer-card > .beer-img {
+  max-width: 40%;
 }

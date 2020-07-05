@@ -1,23 +1,14 @@
 <div class="container mt-3 mb-3">
-  <h1>{{title}}</h1>
-  <div class="row">
-    <div class="col-3 random-img-container">
-      <img class="img-fluid beer-img" {{#if beer.image_url}} src="{{beer.image_url}}" {{/if}} src="/images/beer.png"
-        alt="{{beer.name}}">
-    </div>
-    <div class="col-9 random-desc-container">
-      <h2 class="random-title highlight">{{beer.name}}</h2>
-      <div class="description">
-        <h3>Description</h3>
-        <p class="random-desc">{{beer.description}}</p>
-        <h4>Tags</h4>
-        <span class="random-tag">{{beer.tagline}}</span>
+  <h1 class="title">{{title}}</h1>
+  <div class="row random">
+    <div class="col-md-6 random">
+      <div class="card beer-card">
+        {{> beerpartial beer}}
         <h4>Food Pairing</h4>
         <p class="random-food">{{beer.food_pairing}}</p>
         <h4>Brewer tips</h4>
         <p class="random-tips">{{beer.brewers_tips}}</p>
       </div>
-
     </div>
   </div>
 </div>
