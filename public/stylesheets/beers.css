@@ -1,0 +1,18 @@
+.table{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+height: 700px;
+}
+
+#chope{
+    display : flex;
+    width:400px;
+
+}
+
+.table a{
+    display: flex;
+    background-color: --color-1;
+}
