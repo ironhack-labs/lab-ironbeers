@@ -12,7 +12,8 @@ router.get('/', (req, res) => {
   punkAPI.getRandom().then(beer => {
     res.render('random-beer', {
       title: 'IronHack Random Beer',
-      beer: beer[0]
+      beer: beer[0],
+      path: '/random-beer'
     })
     // console.log(beer);
   }).catch(error => {

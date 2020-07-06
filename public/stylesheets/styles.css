@@ -28,6 +28,8 @@ html {
   --main-pink: #f72585;
   --main-white: #f7fff7;
   --main-yellow: #ffbe0b;
+  --light-blue:  #2081c3;
+  --dark-blue: #0a2c42;
 }
 
 .beers-container {
@@ -149,4 +151,34 @@ html {
 .btn-container{
   text-align: center;
   padding-top: 1rem;
+}
+
+.active {
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--main-pink);
+}
+
+.nav-link:hover{
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--main-pink);
+}
+
+.navbar-brand, .nav-item {
+  margin-right: 3rem;
+}
+
+.nav-item {
+  margin-right: 1.5rem;
+}
+
+.navbar-brand {
+  padding: 1rem;
+  background-color: var(--main-pink);
+  color: var(--main-white)!important;
+  border-radius: 5px;
+}
+
+nav.custom.nav {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem 1rem;
 }

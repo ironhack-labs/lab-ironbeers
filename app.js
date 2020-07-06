@@ -1,6 +1,7 @@
 const express = require('express');
 
 const hbs = require('hbs');
+const customHelpers = require('./helpers/helpers');
 const path = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 
@@ -14,6 +15,17 @@ const randomBeerRoutes = require('./routes/random-beer');
 const punkAPI = new PunkAPIWrapper();
 
 hbs.registerPartials(__dirname + '/views/partials', function (err) {});
+
+hbs.registerHelper('ifCond', function(v1, v2, options) {
+  if(v1 === v2) {
+    return options.fn(this);
+  }
+  return options.inverse(this);
+});
+
+hbs.registerHelper('getYear', function() {
+  return new Date().getFullYear();
+});
 
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));

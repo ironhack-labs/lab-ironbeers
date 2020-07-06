@@ -10,6 +10,7 @@ router.get('/', (req, res) => {
   punkAPI.getBeers().then(beers => {
     res.render('beers', {
       title: 'IronHack Beers',
+      path: '/beers',
       beers
     })
   }).catch(error => {
