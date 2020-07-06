@@ -5,3 +5,14 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+#navbar {
+    background: #2081c3;
+    width:100%;
+    height: 80px;
+  }
+
+  body{
+font-family: Arial, Helvetica, sans-serif;
+
+  }
