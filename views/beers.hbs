@@ -1,0 +1,9 @@
+<h2 class="title">All the Beers</h2>
+<section id="beers">
+{{#each beersFromApi}}
+ <div class="item">
+        <img src="{{this.image_url}}" class="img-beer"> 
+        <h2>{{this.name}}</h2>  <p class="tagline">{{this.tagline}}</p> <p>{{this.description}}</p> 
+    </div>
+{{/each}}
+</section>
