@@ -10,6 +10,17 @@
                             <p class="card-text">{{beer.first_brewed}}</p>
                             <p class="card-title font-weight-bold">Acidity:</p>
                             <p class="card-text">Ph {{beer.ph}}</p>
+                            <p class="card-title font-weight-bold">Attenuation level:</p>
+                            <p class="card-text">{{beer.attenuation_level}}</p>
+                            <p class="card-title font-weight-bold">Volume:</p>
+                            <p class="card-text"> {{beer.volume.value}} {{beer.volume.unit}}</p>
+                            <p class="card-title font-weight-bold">Boil volume:</p>
+                            <p class="card-text"> {{beer.boil_volume.value}} {{beer.boil_volume.unit}}</p>
+                            <p class="card-title font-weight-bold">Method:</p>
+                            {{#each beer.method.mash_temp as |mash|}}
+                            <p class="card-text"> - Mash temp: {{mash.temp.value}} {{mash.temp.unit}} for {{mash.duration}} minutes</p>
+                            {{/each}}
+                            <p class="card-text"> - Fermentation: {{beer.method.fermentation.temp.value}} {{beer.method.fermentation.temp.unit}}</p>
                             <h6 class="card-title font-weight-bold">Ingredients:</h6>
                             <p class="card-text font-weight-bold">- Yeast:</p>
                             <p class="card-text">{{beer.ingredients.yeast}}.</p>
