@@ -21,6 +21,19 @@ main{
     padding: 40px 0;
 }
 
+footer{
+    background-color: #0a2c42;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 56px;
+}
+
+footer p{
+    font-size: 1.3rem;
+    margin: 0;
+}
+
 nav {
     background-color: #2081c3;
     justify-content: flex-start;
@@ -64,9 +77,14 @@ nav {
 }
 
 .home figure{
-    max-width: 400px;
+    max-width: 100%;
     margin: 0 auto 20px;
-    transform: translateX(-40px);
+}
+
+.home figure img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .home_butons{
@@ -84,6 +102,14 @@ nav {
     display: flex;
     flex-wrap: wrap;
 }
+
+    .cards .card a{
+        text-decoration: none;
+    }
+
+    .cards .card a p{
+        color: #000
+    }
 
     .cards .card{
         width: 100%;
@@ -208,5 +234,9 @@ nav {
 
         .post-beer .card_title{
             min-height: 0;
+        }
+
+        .home figure{
+            max-width: 400px;
         }
 }
