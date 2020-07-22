@@ -5,3 +5,129 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav {
+    background-color: #2081c3;
+    height: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 60px;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: lightgrey;
+
+}
+
+.home-container img {
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.btn-index {
+    background-color: #2081c3;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #2081c3;
+    color: white;
+    border-radius: .5rem;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24)
+}
+
+
+.btn-index a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+.container-beers {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: initial;
+    background-color: lightgrey;
+}
+
+.beer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+    align-items: center;
+    width: 30%;
+    padding: 10px;
+
+}
+
+.info {
+    padding: 20px;
+}
+
+.img-beer {
+    height: 300px;
+}
+
+.img-beer img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.beer-info h5 {
+    font-size: 1.5rem;
+}
+
+
+.random-beer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin: 0;
+    background-color: lightgrey;
+    height: 80vh;
+}
+
+.beer-random {
+    padding: 30px;
+    margin: 30px;
+}
+
+
+.random-beer-container img {
+    max-height: 700px;
+}
+
+.beer-random h5 {
+    font-size: 2rem;
+}
+
+
+footer {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    height: 60px;
+    background-color: #0a2c42;
+    color: white;
+}
