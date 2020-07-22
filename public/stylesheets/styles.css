@@ -15,6 +15,7 @@ font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: row;
     align-items: center;
+    box-shadow: 2px 2px 6px black;
 
  }
 
@@ -47,18 +48,18 @@ font-family: Arial, Helvetica, sans-serif;
 
  #index-container > a {
      margin: 0.5rem;
+     box-shadow: 2px 2px 5px black;
  }
 
  #index-container img {
     width: 25%;
     height: 50%;
-    margin-bottom: 1rem;
+    margin: 2rem;
 
 }
 
 .cards-container{
     width: 100%;
-    border: 2px solid yellow;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -69,18 +70,22 @@ font-family: Arial, Helvetica, sans-serif;
 .cards-container > div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: initial;
     align-items: center;
     width: 33%;
     padding: 2rem;
 
 }
 
-.cards-container img {
-    max-width: 100px;
-    max-height: 300px;
+.cards-container span {
+    height: 300px;
     padding: 1rem 0;
     
+}
+
+.cards-container img {
+    object-fit: cover;
+    height: 100%;
 }
 
 
@@ -101,5 +106,9 @@ font-family: Arial, Helvetica, sans-serif;
     width: 70%;
     padding: 1rem 1rem;
     margin-left: 8rem;
+}
+
+#random-container > img {
+    height: 400px;
 }
 
