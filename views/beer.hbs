@@ -1,0 +1,23 @@
+<h1>Random Beer</h1>
+<div class="post-beer">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="post-beer_img">
+                <figure>
+                    <img src="{{image_url}}">
+                </figure>
+            </div>
+        </div>
+        <div class="col-md-8">
+            {{> beerpartials this}}
+            <ul class="post_foodPairingWrapper">
+                {{#each food_pairing}}
+                <li class="post_foodPairing">{{{this}}}</li>
+                {{/each}}
+            </ul>
+            <p class="post_brewerTips">{{{brewers_tips}}}</p>
+        </div>
+    </div>
+</div>
+
+<!-- image, name, description, tagline, food pairing and brewer tips. -->
