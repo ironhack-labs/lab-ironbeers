@@ -48,7 +48,7 @@ app.get('/beer/:id', (req, res) => {
   .getBeer(myParams)
   .then(beer => { 
     console.log(beer);
-    res.render('beers', { beersFromApi : beer });
+    res.render('selectedBeer', { beersFromApi : beer });
   })
   .catch(error => console.log(error))
 })

@@ -97,9 +97,23 @@ p {
     font-size: 0.8rem;
 }
 
-.aditional-div {
+.selected-beer-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+
+.random-beer-div {
+    padding-right: 2rem;
+    padding-left: 2rem;
     display: flex;
     flex-direction: column;
+    
 }
 
 footer {
