@@ -9,13 +9,14 @@ const punkAPI = new PunkAPIWrapper();
 
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
+
 hbs.registerPartials(__dirname + "/views/partials")
 
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Register the location for handlebars partials here
 
-// ..
+// ...
 
 // Add the route handlers here:
 
@@ -35,7 +36,7 @@ app.get('/beers', (req, res, next) => {
 //Llamamos a la Api y le pasamos el método getRandom()
 //Con la respuesta, lo renderizamos en su hbs correspondiente y
 //pasamos a un objeto y declaramos que la oneRandomBeer es el primer índice del array
-//de la respuesta de la Api
+//de la respuesta de la Api.
 app.get('/random-beers', (req, res, next) => {
   punkAPI
     .getRandom()
