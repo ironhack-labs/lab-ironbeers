@@ -5,3 +5,40 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+#home-center {
+    width: fit-content;
+}
+
+#home-center img {
+    height: 20rem;
+    padding-top: 10px;
+}
+
+.btn {
+    margin: 17px;
+}
+
+.card {
+    width: 13rem;
+    margin: 3rem;
+}
+
+#list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-img-top {
+    max-height: 350px;
+}
+
+.text-descrip {
+    overflow: scroll;
+    height: 150px;
+}
+
+#random-img {
+    width: 100%;
+    height: 30rem;
+}
