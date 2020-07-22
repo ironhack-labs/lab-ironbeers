@@ -1,5 +1,25 @@
-<div>
+<div class="beer-div">
     {{#each this}}
         {{> beerpartial}}
+    {{/each}}
+
+    {{#each beersFromApi}}
+        {{> beerpartial this}}
+    <div class="aditional-div">
+        <p>First brewed: {{first_brewed}}</p>
+        <p>abv: {{abv}}</p>
+        <p>ibu: {{ibu}}</p>
+        <p>target fg: {{target_fg}}</p>
+        <p>target og: {{target_og}}</p>
+        <p>ebc: {{ebc}}</p>
+        <p>srm: {{srm}}</p>
+        <p>ph: {{ph}}</p>
+        <p>Attenuation level: {{attenuation_level}}</p>
+        <p>Volume: {{volume.value}} {{volume.unit}}</p>
+        <p>Boil volume: {{boil_volume.value}} {{boil_volume.unit}}</p>
+        <p>Food pairing: {{food_pairing}}</p>
+        <p>Brewers tips: {{brewers_tips}}</p>
+        <p>Contributed by: {{contributed_by}}</p>
+    </div>
     {{/each}}
 </div>

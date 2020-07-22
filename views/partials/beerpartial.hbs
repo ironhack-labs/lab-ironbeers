@@ -1,8 +1,10 @@
-<div>
-    <img src="{{this.image_url}}" alt="">
+<div class="box-beer">
+    <a href="/beer/{{id}}">
+        <img src="{{image_url}}" alt="beer" class="beer-image">
+    </a>
     <div>
-        <h5>{{this.name}}</h5>
-        <p>{{this.description}}</p>
-        <p>{{this.tagline}}</p>
+        <a href="/beer/{{id}}"><h5>{{name}}</h5></a>
+        <p class="tagline">{{tagline}}</p>
+        <p>{{description}}</p>
     </div>
 </div>
