@@ -5,3 +5,34 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+body{
+    background-color: rgb(247, 249, 249);
+}
+
+/* .navbar-dark{
+    margin-left:50px;
+    padding:10px;
+
+} */
+
+.beer-container{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-top:90px;
+}
+.beer-image{
+    width:30%;
+   
+}
+.buttons{
+    margin-top:50px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border:1px solid blue;
+    padding:20px;
+    color:white;
+    width:200px;
+}
