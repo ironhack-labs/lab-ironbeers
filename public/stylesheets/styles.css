@@ -5,3 +5,26 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.navbar-dark {
+background-color: #2081c3;
+}
+
+#main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}    
+
+#content {
+    padding: 20px;
+}
+
+.beer-image {
+    width: 300px;
+    padding: 20px;
+}
+
+#content p {
+    text-align: center;
+}
