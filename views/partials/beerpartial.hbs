@@ -1,0 +1,23 @@
+{{#if this.image_url}}
+{{!-- <div class="beer-container">
+    <div class="imgbox"> --}}
+<div class="img">
+    <img src="{{this.image_url}}" alt="{{this.tagline}}">
+</div>
+<a class="name" href="/beer/{{id}}">
+    <h2>{{this.name}}</h2>
+</a>
+<p class="description">{{this.description}}</p>
+<p class="tag">{{this.tagline}}</p>
+{{!--     </div>
+</div> --}}
+{{else}}
+<div class="default-img">
+    <img src="images/beer.png" alt="">
+</div>
+<a class="name" href="/beer/{{id}}">
+    <h2>{{this.name}}</h2>
+</a>
+<p class="description">{{this.description}}</p>
+<p class="tag">{{this.tagline}}</p>
+{{/if}}

@@ -1,7 +1,166 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+*,
+*:after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #f7f9f9;
+  --light-blue: #2081c3;
+  --dark-blue: #0a2c42;
+  --grey: #bfbfbf;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.main-content img {
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  margin: 1rem;
+  background-color: bisque;
+  padding: 1rem 3rem;
+  color: rgb(112, 66, 10);
+  transition: all .3s ease-in-out;
+  font-size: 2rem;
+}
+
+.btn:hover {
+  box-shadow: 10px 10px 5px 0px rgba(82, 47, 4, 0.616);
+  ;
+}
+
+.random-main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 2rem;
+}
+
+.beer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem auto;
+  flex-wrap: wrap;
+  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.imgbox {
+  max-width: 32rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 8rem 2rem;
+}
+
+.img {
+  width: 30%;
+  margin-bottom: 2rem;
+}
+
+.default-img {
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+footer {
+  text-align: center;
+  background-color: #d1d1d1;
+  padding: 3rem 0;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.nav-menu a {
+  color: black;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid black;
+  font-size: 2rem;
+}
+
+.nav-menu a:hover {
+  color: rgb(112, 66, 10);
+  background-color: bisque;
+  border-bottom: none;
+}
+
+.name {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  color: rgb(173, 158, 140);
+  border-bottom: 1px solid rgb(167, 130, 85);
+}
+
+.description {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.tag {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+}
+
+.foodpair {
+  padding-bottom: 1rem;
+  align-self: flex-start;
+  font-size: 1.4rem;
+}
+
+.tips {
+  font-size: 1.4rem;
+}

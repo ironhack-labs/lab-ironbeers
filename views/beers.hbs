@@ -1,0 +1,13 @@
+<div class="wrapper">
+    <div class="main">
+
+        {{#each beersFromApi}}
+        <div class="beer-container">
+            <div class="imgbox">
+                {{> beerpartial this}}
+            </div>
+        </div>
+        {{/each}}
+
+    </div>
+</div>
