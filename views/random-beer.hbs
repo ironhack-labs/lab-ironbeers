@@ -1,7 +1,9 @@
-<!--Iteration 3.2 random-beers.hbs-->
+<!--Iteration 3.2 random-beer.hbs-->
 <div>
     {{#each responseFromAPI}}
+    {{> beerPartial this}}
     <div> 
+        {{> beerpartials this}}
         <img src={{this.image_url}}>
         <h1>{{this.name}}</h1>
             <h2>Description</h2>
@@ -15,3 +17,4 @@
     </div>
     {{/each}}
 </div>
+
