@@ -38,14 +38,13 @@ app.get('/beers', function (req, res) {
 //Iteration 4.1_route-random-beer
 app.get('/random-beer', function (req, res) {
   punkAPI
-  .getRandom()
-  .then(responseFromAPI => {
-    console.log(responseFromAPI)
-    res.render('random-beer.hbs', responseFromAPI [0])
-  })
-  .catch(error => console.log(error));
-})
-
+    .getRandom()
+    .then(responseFromAPI => {
+      console.log(responseFromAPI);
+      res.render('random-beer.hbs', { responseFromAPI });
+    })
+    .catch(error => console.log(error));
+});
 app.get('/', (req, res) => {
   res.render('index');
 });
