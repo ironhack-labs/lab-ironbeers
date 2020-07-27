@@ -1,0 +1,12 @@
+<h3> Beers list</h3>
+{{!-- image_url: image, name, description and tagline.  --}}
+<section>
+    <p> </p>
+    <ul>
+        {{#each this }}
+        <li>
+            {{> beerpartial}}
+        </li>
+        {{/each }}
+    </ul>
+</section>
