@@ -1,7 +1,10 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f7f9f9;
-  /* text-align: center; */
+  background-color: #bfbfbf;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .nav-bar {
@@ -15,16 +18,32 @@ a {
   color: #f7f9f9;
   background-color: #2081c3;
   border-radius: 2%;
-  padding: 10px;
-  margin: 10px;
+  padding: 10px 10px 10px 10px;
+  margin: 20px 20px 20px 20px;
 }
 
 img {
-  width: 300px;
+  margin-top: 50px;
+  width: 100px;
 }
 
 footer {
   background-color: #0a2c42;
   color: #bfbfbf;
   padding: 10px;
+}
+
+.buttons {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.card-description {
+  margin-right: 30%;
+  margin-left: 30%;
+}
+
+.img2 {
+  width: 300px;
+  margin-top: 100px;
 }
