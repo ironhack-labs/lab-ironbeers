@@ -36,7 +36,7 @@ app.get('/beers', (req, res) => {
 
         beersList.push({ randStr, id, name, tagline, description, image_url });
       }
-      // console.log(beersList[0].randStr);
+      // console.log(beersList.length);
       res.render('hbs-files/beers.hbs', beersList);
     })
     .catch(error => console.log(error));
@@ -48,6 +48,7 @@ app.get('/random-beers', (req, res) => {
   punkAPI
     .getRandom()
     .then(responseFromAPI => {
+      // console.log(responseFromAPI);
       res.render('hbs-files/random-beers.hbs', responseFromAPI[0]);
     })
     .catch(error => console.log(error));

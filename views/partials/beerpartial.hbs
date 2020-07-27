@@ -1,9 +1,13 @@
-<a href="/beers/beer-{{id}}-{{randStr}}">
-    {{name}}
-</a>
+<div class="each-beer">
+    <div class="beer-img">
+        <img src="{{image_url}}">
+    </div>
 
-<p> {{id}}</p>
-<img src="{{image_url}}" height="200" width="150">
-<h4>{{name}}</h4>
-<caption>{{tagline}} </caption>
-<aside> {{description}}</aside>
+    <a href="/beers/beer-{{id}}-{{randStr}}">
+        {{name}}
+    </a>
+
+    {{!-- <h4>{{name}}</h4> --}}
+    <span>{{tagline}} </span>
+    <aside> {{description}}</aside>
+</div>

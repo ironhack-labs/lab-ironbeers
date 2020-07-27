@@ -5,3 +5,136 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+/* Main menu styling */
+.navbar {
+  background-color: #2081c3;
+  height: 70px;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-top: 25px;
+}
+
+.menu-item {
+  padding: 0 20px 0 20px;
+}
+
+.menu-link {
+  color: #f7f9f9;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+/* Footer styling */
+#ih-footer {
+  height: 40px;
+  background-color: #0a2c42;
+}
+
+#ih-footer p {
+  color: #f7f9f9;
+  font-size: 1em;
+  padding: 10px 0 0 10px;
+}
+
+/* Home Page Styling  index.hbs */
+#home-body {
+  padding: 50px 30% 100px 30%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#home-body img {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+#btn-sec {
+  background-color: blue;
+}
+
+.btn-beer {
+  height: 25px;
+  color: #f7f9f9;
+  background-color: #2081c3;
+  margin-top: 30px;
+  padding: 10px 20px 5px 20px;
+  font-size: 0.85em;
+  width: max-content;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-left: -15px;
+}
+
+/* Beers list styling */
+#beer-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* margin: 100px 0; */
+  overflow: hidden;
+  list-style: none;
+}
+.each-beer {
+  width: 500px;
+  margin: 0 auto 20px;
+  height: 400px;
+}
+
+.beer-img {
+  margin: 0 auto 20px;
+  height: 200px;
+  padding-left: 60%;
+}
+.each-beer span {
+  color: #bfbfbf;
+}
+.each-beer aside {
+  padding: 10px 10px 10px 10px;
+}
+
+.each-beer a {
+  font-size: larger;
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.each-beer img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+/*  Random Beer Styling */
+.beer-sub-titles {
+  font-size: larger;
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+#beer-addi {
+  padding: 0 50px 0 100px;
+  margin-top: -10px;
+}
+
+#beer-partial {
+  margin-left: -60%;
+  /* margin-bottom: -5%; */
+}
+
+#beer-random {
+  display: inline;
+}
+
+#beer-partial img {
+  float: left;
+}

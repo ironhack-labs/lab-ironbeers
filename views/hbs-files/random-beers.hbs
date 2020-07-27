@@ -1,9 +1,11 @@
-<h3> Beer Information</h3>
+<section id="beer-random">
+    <div id="beer-partial">
+        {{> beerpartial}}
+    </div>
 
-<section>
-    {{> beerpartial}}
-    <p>{{brewers_tips}}</p>
-    <section>
+
+    <section id="beer-addi">
+        <article class="beer-sub-titles"> Food Pairing</article>
         <ul>
             {{#each food_pairing }}
             <li>
@@ -11,6 +13,8 @@
             </li>
             {{/each }}
         </ul>
+        <article class="beer-sub-titles">Brewers Tips </article>
+        <p>{{brewers_tips}}</p>
     </section>
 
 </section>
