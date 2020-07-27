@@ -1,11 +1,10 @@
-<ol>
-    <li>
-        {{#each beersFromApi}}
+<div class="container">
+    {{#each beersFromApi}}
+        <div class="beerCard">
             <img src="{{ image_url }}" alt="beer image">
             <h3>{{ name }}</h3>
-            <p>{{ description }}</p>
             <p>{{ tagline }}</p>
-        {{/each}}
-
-    </li>
-</ol>
+            <p>{{ description }}</p>
+        </div>
+    {{/each}}
+</div>
