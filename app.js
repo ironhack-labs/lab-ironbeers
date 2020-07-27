@@ -2,6 +2,8 @@ const express = require('express');
 
 const hbs = require('hbs');
 const path = require('path');
+const crypto = require('crypto');
+// const kruptein = require('kruptein')(opts);
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 
 const app = express();
@@ -30,11 +32,11 @@ app.get('/beers', (req, res) => {
     .getBeers()
     .then(beersFromApi => {
       for ({ id, name, tagline, description, image_url } of beersFromApi) {
-        let randStr = Math.random().toString(36).slice(2).concat;
-        // `${id}`.app
-        // console.log(randStr);
-        beersList.push({ randStr, name, tagline, description, image_url });
+        let randStr = Math.random().toString(36).slice(2);
+
+        beersList.push({ randStr, id, name, tagline, description, image_url });
       }
+      // console.log(beersList[0].randStr);
       res.render('hbs-files/beers.hbs', beersList);
     })
     .catch(error => console.log(error));
@@ -46,53 +48,40 @@ app.get('/random-beers', (req, res) => {
   punkAPI
     .getRandom()
     .then(responseFromAPI => {
-      let randomBeerInfo = [];
-      // console.log(responseFromAPI);
-      let randStr = Math.random().toString(36).slice(2);
-
-      for ({
-        randStr,
-        name,
-        tagline,
-        description,
-        image_url,
-        brewers_tips,
-        food_pairing
-      } of responseFromAPI) {
-        randomBeerInfo.push({
-          randStr,
-          name,
-          tagline,
-          description,
-          image_url,
-          brewers_tips,
-          food_pairing
-        });
-      }
-
-      console.log(randomBeerInfo[0]);
-      // let randomBeerInfo = responseFromAPI[0];
-
-      res.render('hbs-files/random-beers.hbs', randomBeerInfo[0]);
+      res.render('hbs-files/random-beers.hbs', responseFromAPI[0]);
     })
     .catch(error => console.log(error));
 });
 
 // uid
-app.get('/beers/:id', function (req, res, next) {
+app.get('/beers/:randStr', function (req, res, next) {
   console.log(' beer clicked ');
-  // res.end(req.params.id);
-  console.log(req.params.id);
-
+  //  console.log(req.params.randStr.split('-')[1]);
+  let id = req.params.randStr.split('-')[1];
   punkAPI
-    .getBeer(req.params.id)
+    .getBeer(id)
     .then(responseFromAPI => {
-      let randomBeerInfo = [];
-
-      console.log(randomBeerInfo[0]);
-      res.render('hbs-files/random-beers.hbs', randomBeerInfo[0]);
+      console.log(responseFromAPI);
+      res.render('hbs-files/random-beers.hbs', responseFromAPI[0]);
     })
     .catch(error => console.log(error));
 });
+
+// /** generate a key for the input string */
+// function myEncrypt(num) {
+//   let str = `${num}`;
+//   let mykey = crypto.createCipheriv('aes-128-cbc', 'mypassword');
+//   let mystr = mykey.update(str, 'utf8', 'hex');
+//   mystr += mykey.final('hex');
+//   return mystr;
+// }
+
+// /** generate a string  from the key */
+// function myDecrypt(str) {
+//   let mykey = crypto.createDecipheriv('aes-128-cbc', 'mypassword');
+//   let mystr = mykey.update(str, 'hex', 'utf8');
+//   mystr += mykey.final('utf8');
+//   return mystr;
+// }
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
