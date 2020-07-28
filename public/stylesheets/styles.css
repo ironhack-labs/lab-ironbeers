@@ -5,9 +5,36 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif; */
 
+html, body{
+    height:100vh;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    flex: 1 0 auto;
+}
+
 nav{
     background-color: #2081c3;
     height: 50px;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    
+}
+
+#aContainer{
+    margin-left: 50px;
+}
+
+nav a{
+    padding: 10px;
+    margin-left: 20px;
 }
 
 a:link , a:visited, button{
@@ -15,12 +42,58 @@ a:link , a:visited, button{
     color: #f7f9f9; 
   }
 
+h1{
+    color: black;
+}
+
+#mainSection{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+}
+
+#beerMug{
+    width: 20vw;
+    height: auto;
+    margin: 0 auto;
+}
+
 button{
     background-color: #2081c3;
-  }
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;  
+}
 
 footer{
     background-color: #0a2c42;
     color: #f7f9f9; 
-    height:50px;
+    width: 100vw;
+}
+
+#footerText{
+    padding:20px;
+}
+ul{
+    /* border:3px solid green; */
+    list-style-type: none;
+}
+
+
+.beerContainer{
+    /* border: 3px solid blue; */
+    display: flex;
+}
+
+.beerImg{
+    /* border:3px solid red; */
+    width: 100px;
+    height: auto;
+}
+
+#beerInfo{
+    /* border:1px solid black; */
+    padding: 20px;
+    margin-left: 100px;
 }
