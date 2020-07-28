@@ -1,12 +1,9 @@
 <div>
     {{#each randomFromApi}}
-<img src={{this.image_url}}>
-<h1>{{this.name}}</h1>
-<p>{{this.description}}</p>
-<p>{{this.tagline}}</p>
-<p>{{this.food_pairing}}</p>
-<p>{{this.brewers_tips}}</p>
+        {{> beerpartial this}}
+        <h5>Food Pairing:</h5>
+        <p>{{this.food_pairing}}</p>
+        <h5>Brewer's Tips:</h5>
+        <p>{{this.brewers_tips}}</p>
     {{/each}}
-<a href="/beers" class="button">Check The Beers!</a>
-<a href="/random-beers" class="button">Check a Random Beer</a>
 </div>
