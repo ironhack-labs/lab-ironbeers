@@ -1,0 +1,10 @@
+
+{{#each responseFromAPI}}
+    {{this.name}}
+    <img src="{{this.image_url}}" alt="Image of the beer">
+    {{this.description}}
+    {{this.tagline}}
+    {{this.food_pairing}}
+    {{this.brewers_tips}}
+
+{{/each}}

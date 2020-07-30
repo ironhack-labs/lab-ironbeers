@@ -1,4 +1,4 @@
-const express = require('express');
+cconst express = require('express');
 
 const hbs = require('hbs');
 const path = require('path');
@@ -19,7 +19,30 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Add the route handlers here:
 
 app.get('/', (req, res) => {
-  res.render('index');
+  res.render('index.hbs');
 });
 
-app.listen(3000, () => console.log('🏃‍ on port 3000'));
+
+app.get('/beers', (req, res) => {
+  //res.render(__dirname + '/views/beers.hbs', ) // how it was before
+  punkAPI.getBeers()
+    .then(beersFromApi => 
+      {console.log('Beers from the database: ', beersFromApi)
+      res.render(__dirname + '/views/beers.hbs', { beersFromApi: beersFromApi }) // always pass information as objects ( with {})
+  })
+    .catch(error => console.log(error));  
+})
+    
+
+
+app.get('/random-beer', (req, res) => {
+  punkAPI.getRandom()
+    .then(responseFromAPI  => 
+      {console.log('Random beer: ', responseFromAPI )
+      res.render(__dirname + '/views/random-beer.hbs', { responseFromAPI : responseFromAPI  }) // always pass information as objects ( with {})
+  })
+    .catch(error => console.log(error));  
+});
+
+
+app.listen(3001, () => console.log('running on port 3001'));
