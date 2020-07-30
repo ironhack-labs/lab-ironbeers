@@ -1,0 +1,9 @@
+<div class="wrap">
+    {{#each beers}}
+        <div class="beersName">
+            <img class ="beerImg" src="{{this.image_url}}">
+            {{> randomBeerTemplate this}}
+        </div>
+    {{/each}}
+</div>
+    
