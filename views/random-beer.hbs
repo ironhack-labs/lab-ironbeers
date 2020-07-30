@@ -1,0 +1,14 @@
+
+{{> beerpartial beer}}
+<ul>Food Pairing
+    {{#each beer.food_pairing}}
+      <li>
+    {{this}}
+    </li>   
+    {{/each}}
+</ul>
+
+ {{beer.brewer_tips}}
+
+
+
