@@ -1,3 +1,10 @@
+<div class="beers-container">
 {{#each beersFromApi}}
-<li>{{this.id}}</li>
+<div class="beer-item">
+    <img src="{{this.image_url}}" alt="">
+    <p class="beer-name">{{this.name}}</p>
+    <p class="beer-description">{{this.description}}</p>
+    <p class="beer-tagline"><i>{{this.tagline}}</i></p>
+</div>
 {{/each}}
+</div>

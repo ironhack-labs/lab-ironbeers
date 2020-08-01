@@ -10,7 +10,7 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="#">IronBeers</a>
+      <a class="navbar-brand" href="/">IronBeers</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -24,12 +24,12 @@
       </button>
       <div class="collapse navbar-collapse">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="/"
+          <a class="nav-item nav-link {{#if active.home}}active{{/if}}" href="/"
             >Home
             <span class="sr-only">(current)</span>
           </a>
-          <a class="nav-item nav-link" href="/beers">Beers</a>
-          <a class="nav-item nav-link" href="/random-beers">Random Beer</a>
+          <a class="nav-item nav-link {{#if active.beers}}active{{/if}}" href="/beers">Beers</a>
+          <a class="nav-item nav-link {{#if active.random}}active{{/if}}" href="/random-beers">Random Beer</a>
         </div>
       </div>
     </nav>
