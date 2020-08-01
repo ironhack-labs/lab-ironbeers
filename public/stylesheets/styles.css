@@ -28,3 +28,38 @@ background-color: #2081c3;
 #content p {
     text-align: center;
 }
+
+.beers-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 50px;
+
+}
+.beer-item {
+    width: 200px;
+    margin: 10px;
+}
+
+.beer-item img {
+    height: 120px;
+    padding-bottom: 15px;
+}
+
+.beer-name {
+    font-weight: 700;
+}
+
+.beer-description, .beer-tagline  {
+    font-size: 0.8rem;
+}
+
+.single-beer img {
+    height: 400px;
+    padding: 35px 35px;    
+    float: left;
+}
+
+.single-beer > div {
+    padding: 35px
+}
