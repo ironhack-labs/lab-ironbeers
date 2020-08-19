@@ -1,0 +1,11 @@
+<section>
+    {{> beerPartial }}
+    <div>
+      <h4>Food pairings</h4>
+      <ul>
+        {{#each this.food_pairing}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </div>
+</section>
