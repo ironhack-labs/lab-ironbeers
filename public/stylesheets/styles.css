@@ -56,6 +56,10 @@ footer>p {
     padding: 50px 0;
 }
 
+#home img {
+    height: 60%;
+}
+
 #home button {
     background-color: #2081c3;
     border-radius: 5px;
@@ -88,7 +92,7 @@ h1 {
 h2 {
     font-size: 1.4rem;
     color: #bfbfbf;
-    margin-bottom: 15px;
+    margin-bottom: 15px !important;
 }
 
 #random-beers {
