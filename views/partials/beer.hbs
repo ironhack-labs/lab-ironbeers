@@ -1,0 +1,48 @@
+ {{#if randomBeer}}
+ <div class="col-md-8">
+  <div class="card">
+    <img class="card-img-top" src="{{image_url}}" alt="{{name}}" />
+    <div class="card-body">
+      <h5 class="card-title">
+        {{name}}
+      </h5>
+      <p class="card-text">
+        {{description}}
+      </p>
+      <p class="card-text">
+        {{tagline}}
+      </p>
+      <p class="card-text">
+          {{#each food_pairing}}
+          <div class="col-md-12">
+            <p>{{this}}</p>
+          </div>
+          {{/each}}
+      </p>
+      <p class="card-text">
+        {{brewers_tips}}
+      </p>
+    </div>
+  </div>
+</div>
+
+{{else}}
+
+<div class="col-md-4">
+  <div class="card">
+    <img class="card-img-top" src="{{this.image_url}}" alt="{{this.name}}" />
+    <div class="card-body">
+      <h5 class="card-title">
+        <a href="/specificBeer?id={{this.id}}">{{this.name}}</a>
+      </h5>
+      <p class="card-text">
+        {{this.description}}
+      </p>
+      <p class="card-text">
+        {{this.tagline}}
+      </p>
+    </div>
+  </div>
+</div>
+
+{{/if}}
