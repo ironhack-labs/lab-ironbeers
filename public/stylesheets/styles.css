@@ -95,12 +95,12 @@ h2 {
     margin-bottom: 15px !important;
 }
 
-#random-beers {
+#full-page-beers {
     padding-top: 100px;
     display: flex;
 }
 
-#random-beers>img {
+#full-page-beers>img {
     height: 300px;
     object-fit: contain;
     margin-right: 80px;
