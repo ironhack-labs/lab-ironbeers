@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
 
 body {
- /*   white: #f7f9f9;
-
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-*/
 font-family: 'Baloo Tamma 2', cursive;
+padding: auto;
+margin: auto;
+background-color: rgb(245, 242, 242);
 }
 
 nav {
-    background-color: turquoise;
+    background-color: lightseagreen;
 }
 
 nav div {
@@ -25,51 +28,96 @@ nav a {
 
 footer {
     background-color: darkblue;
-    margin-top: 50px;
+    min-height: 100%;
+    position: relative;
+    clear: both;
+    margin-top: auto;
 }
 
-footer div {
+footer p {
     padding: 10px;
     color: white;
 }
 
-
-
 .container-home {
-    margin: 0px 500px;
+    width: 1200px;
 }
 
 .container-home img {
-    width: 95%;
-    padding: 100px 0px 50px 0px;
+    width: 30%;
+    margin: 100px 550px 0px 550px;
 }
 
 .container-button {
     display: flex;
     flex-direction: column;
-    padding: 0px 575px;
+    padding: 50px 600px;
 }
 .container-button div {
     margin-bottom: 30px;
 }
 .container-button a {
     text-decoration: none;
-    background-color: turquoise;
-    border: solid 1px turquoise;
+    background-color: lightseagreen;
+    border: solid 1px lightseagreen;
     padding: 5px 20px;
     color: white;
     border-radius: 5%;
 }
 
-/*.container-beers {
-    display: flex;
-    float: left;
+.container-beers {
+    margin: 50px 100px;
 }
-.container-beer{
-    width: 500px;
+
+.container-beer {
+    float: left;
+    width: 33.33%;
+    height: 420px;
+    margin: 0px;
+    padding: 0px 20px;
+}
+
+.container-beer-image {
+    width: 150px;
+    height: 150px;
+    margin: 0px 150px;
 }
 
 #beer-image {
-    width: 50px;
+    width: 40px;
 }
-*/
+#name {
+    margin: 20px 0px 0px 0px;
+}
+
+#tagline {
+    font-size: 0.9em;
+    margin: 0px;
+    color: grey;
+}
+
+#description {
+    font-size: 0.8em;
+}
+
+.container-random-beer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 75px 250px;
+}
+
+#random-beer-image {
+    width: 70px;
+}
+
+.random-beer-details {
+    padding: 0px 100px;
+}
+
+#random-beer-tagline {
+   color: gray;
+}
+
+#food-pairing, #brewers-tips {
+    font-weight: 700;
+}

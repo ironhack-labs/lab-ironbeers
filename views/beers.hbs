@@ -1,14 +1,16 @@
 {{#each beersFromApi}}
     {{> beerpartial}}
-<!-->
+<!--
     <div>
-         <div>
-            <img src="{{this.image_url}}" alt="{{this.name}}">
-        </div>
         <div>
-            <h1>{{this.name}}</h1>
-            <p>{{this.description}}</p>
+            <div>
+            <a href="/beers/beer-{{this.id}}"><img src="{{this.image_url}}" alt="{{this.name}}"></a>
+            </div>
+            <div>
+            <h3>{{this.name}}</h3>
             <p>{{this.tagline}}</p>
+            <p>{{this.description}}</p>
+            </div>
         </div>
     </div>
 -->
