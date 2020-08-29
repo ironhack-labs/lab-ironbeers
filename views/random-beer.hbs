@@ -1,7 +1,10 @@
 <div>
     {{#each randBeer}}
     {{>beerpartial}}
-    <p>{{food_pairing}}</p>
-    <p>{{brewers_tips}}</p>
+    <a href="/one-beer/{{id}}">
+        <p>{{food_pairing}}</p>
+        <p>{{brewers_tips}}</p>
+    </a>
+
     {{/each}}
 </div>
