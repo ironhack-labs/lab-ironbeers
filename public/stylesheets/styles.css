@@ -16,7 +16,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     font-size: 62,5%;
-    background-color: #bfbfbf;
+    background-color: #f7f9f9;
 }
 
 a {
@@ -49,8 +49,6 @@ ul {
 footer {
     height: 50px;
     background-color: #0a2c42;
-    position: fixed;
-    bottom: 0;
     color: white;
     width: 100%;
     padding-left: 20px;
@@ -80,3 +78,56 @@ footer {
     margin-bottom: 25px;
     box-shadow: 0 2px 4px -1px rgba(0,0,0,0.40);
 }
+
+/* beers page */
+.beer-container a {
+    color: black;
+}
+
+.beer-container ul li:nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.beer-container ul li:nth-child(3) {
+    color: #bfbfbf;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.beer-container ul li:nth-child(4) {
+    padding-top: 15px;
+    font-size: 0.8rem;
+}
+
+.beer-container img {
+    height: 180px;
+}
+
+.beer-container ul {
+    display: inline;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.beer-container a{
+    margin-bottom: 50px;
+}
+
+.beer-container a li:first-child {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.beer-container li {
+    width: 25vw;
+}
+
+.beer-container {
+    width: 90%;
+    margin: 100px auto;
+}
+
