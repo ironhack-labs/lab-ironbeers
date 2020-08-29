@@ -1,11 +1,14 @@
-    <ul>
+<ul>
+    {{!-- take the "beers" from "app.js" --}}
     {{#each beers}}
-        <ul>
-            <li>{{name}}</li>
-             <li>{{image_url}}</li>
-              <li>{{description}}</li>
-               <li>{{tagline}}</li>
-        </ul>
+    <ul>
+        {{!-- take the fields from the "beers" --}}
+        <img src="{{image_url}}" alt="">
+        <li>{{name}}</li>
+       
+        <li>{{description}}</li>
+        <li>{{tagline}}</li>
+    </ul>
     <br>
     {{/each}}
-    </ul>
+</ul>

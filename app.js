@@ -28,12 +28,23 @@ app.get('/beers', (req, res) => {
   //after getting all bears - let's show them on the page
   beerObj
     .then(beers => {
+      //render the page only when we have content for it
       res.render('beers', {beers})
     })
     .catch(error => {
       console.log(error)
     })
-   
+})
+app.get('/random-beer', (req, res) => {
+  const randomBeerObj = punkAPI.getRandom()
+  randomBeerObj
+    .then(randBeer => {
+      console.log(randBeer)
+      res.render('random-beer', {randBeer})
+    })
+    .catch(error => {
+      console.log(error)
+    })
 })
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
