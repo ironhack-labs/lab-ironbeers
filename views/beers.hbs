@@ -1,9 +1,15 @@
 <div class="all-beers">
     {{!-- take the "beers" from "app.js" --}}
     {{#each beers }}
-    <div class='test'>
-        {{>beerpartial}}
-        {{>imagepartial}}
+    <div class="all-beers-wrapper">
+        <div class='test'>
+            {{>beerpartial}}
+
+        </div>
+        <div class="image-all-bears">
+            {{>imagepartial}}
+        </div>
     </div>
+
     {{/each}}
 </div>

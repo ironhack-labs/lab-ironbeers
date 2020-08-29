@@ -1,7 +1,8 @@
 
-<div class='no-underline'>
+
+<div>
     {{#each oneBeer}}
-    <div class="random-text no-underline">
+    <div class="random-text">
         {{>beerpartial}}
         <a href="/one-beer/{{id}}">
             <p>{{food_pairing}}</p>
@@ -13,4 +14,4 @@
     </div>
     {{/each}}
 </div>
-{{log this}}
+{{!-- {{log this}} --}}

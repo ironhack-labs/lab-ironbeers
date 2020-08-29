@@ -79,30 +79,26 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: baseline;
     
     
 }
 
-.test {
+.all-beers-wrapper {
     display: flex;
     flex-direction: column-reverse;
     width: 300px;
     margin-left: 40px;
     margin-right: 40px; 
     
+    
 }
 
-.text > h1 {
-    text-decoration: none;
-    list-style-type: none;
-}
+/* .image-all-bears {
+    height: 300px;   
+    width: auto;
+}  */  
 
-
-
-.text {
-    list-style-type: none;
-    text-decoration: none;
-}
 
 
 /* random page */
