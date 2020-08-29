@@ -1,7 +1,75 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
+
+body {
+ /*   white: #f7f9f9;
+
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
+*/
+font-family: 'Baloo Tamma 2', cursive;
+}
+
+nav {
+    background-color: turquoise;
+}
+
+nav div {
+    padding: 20px 0px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+footer {
+    background-color: darkblue;
+    margin-top: 50px;
+}
+
+footer div {
+    padding: 10px;
+    color: white;
+}
+
+
+
+.container-home {
+    margin: 0px 500px;
+}
+
+.container-home img {
+    width: 95%;
+    padding: 100px 0px 50px 0px;
+}
+
+.container-button {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 575px;
+}
+.container-button div {
+    margin-bottom: 30px;
+}
+.container-button a {
+    text-decoration: none;
+    background-color: turquoise;
+    border: solid 1px turquoise;
+    padding: 5px 20px;
+    color: white;
+    border-radius: 5%;
+}
+
+/*.container-beers {
+    display: flex;
+    float: left;
+}
+.container-beer{
+    width: 500px;
+}
+
+#beer-image {
+    width: 50px;
+}
 */
