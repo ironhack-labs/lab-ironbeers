@@ -1,8 +1,9 @@
-<ul>
+<div class="all-beers">
     {{!-- take the "beers" from "app.js" --}}
-    {{#each beers}}
-    
-
+    {{#each beers }}
+    <div class='test'>
         {{>beerpartial}}
+        {{>imagepartial}}
+    </div>
     {{/each}}
-</ul>
+</div>

@@ -1,9 +1,16 @@
 
-<div>
+<div class='no-underline'>
     {{#each oneBeer}}
-    {{>beerpartial}}
-    <p>{{food_pairing}}</p>
-    <p>{{brewers_tips}}</p>
+    <div class="random-text no-underline">
+        {{>beerpartial}}
+        <a href="/one-beer/{{id}}">
+            <p>{{food_pairing}}</p>
+            <p>{{brewers_tips}}</p>
+        </a>
+    </div>
+    <div class="beer-image">
+        {{>imagepartial}}
+    </div>
     {{/each}}
 </div>
 {{log this}}
