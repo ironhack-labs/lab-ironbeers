@@ -136,6 +136,22 @@ h1 {
     text-decoration: none;
 }
 
+/* one beer  */
+.one-beer-wrapper {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.one-text {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+}
+
+
 footer {
    background-color: #0a2c42; 
    position: fixed;

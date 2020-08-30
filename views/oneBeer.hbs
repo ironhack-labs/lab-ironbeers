@@ -1,10 +1,8 @@
-
-
-<div>
+<div class='one-beer-wrapper'>
     {{#each oneBeer}}
-    <div class="random-text">
+    <div class="one-text">
         {{>beerpartial}}
-        <a href="/one-beer/{{id}}">
+        <a href="/{{id}}">
             <p>{{food_pairing}}</p>
             <p>{{brewers_tips}}</p>
         </a>

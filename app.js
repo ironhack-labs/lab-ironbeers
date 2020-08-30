@@ -40,20 +40,20 @@ app.get('/random-beer', (req, res) => {
   randomBeerObj
     .then(randBeer => {
       console.log(randBeer)
-      res.render('random-beer', {randBeer})
+      res.render('randomBeer', {randBeer})
     })
     .catch(error => {
       console.log(error)
     })
 })
-app.get('/one-beer/:id', (req, res) => {
+app.get('/:id', (req, res) => {
   const beerId = req.params.id
  // console.log(beerId)
  // const beerById = punkAPI.getBeer(beerId)
   punkAPI.getBeer(beerId)
     .then(oneBeer => {
      // console.log(oneBeer)
-      res.render('one-beer', {oneBeer})
+      res.render('oneBeer', {oneBeer})
     })
     .catch(error => {
       console.log(error)
