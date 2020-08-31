@@ -5,3 +5,11 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.beers {
+    height: 200px;
+}
+
+.beersOfAll {
+    height: 300px;
+}
