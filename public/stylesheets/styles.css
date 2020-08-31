@@ -59,21 +59,24 @@ footer h5{
 
 /* beerpartial */
 .beers{
-    float: left;
-    width: 33.33%;
+    width:33.33%;
+    margin-bottom:10px;
 }
 
-.beer-container{
-    margin: 5px;
-   
-}
-   
 
 #beer-bottle{
-    width:15%;
+    margin-top:10px;
+    width:25%;
 }
 
-#list ul, li{
+
+ul{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+
+.list ul, li{
     list-style: none;
     margin:10px;
 }
@@ -81,3 +84,11 @@ footer h5{
 #beername{
     text-decoration: none;
 }
+
+#tag{
+    color:grey;
+    font-weight:bold;
+}
+
+
+
