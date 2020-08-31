@@ -1,4 +1,4 @@
-<div>
+<div class="main-random-beer">
     <ul>
     {{#each randomBeer}}
         <!--  <li><img src="{{this.image_url}}" alt="image of beer: {{this.name}} ">  </li> 
@@ -6,8 +6,12 @@
         <li>{{description}}</li>
         <li>{{this.tagline}}</li> -->
         {{> beerpartial }}
-        <li>{{food_pairing}}</li>
-        <li>{{brewers_tips}}</li>
+        <li> Food Paring </li> 
+        {{#each food_pairing}} 
+                <li> {{this}}</li>
+        {{/each}} 
+        <li> <span> Brewers tips:</span> {{brewers_tips}} </li> 
+
     {{/each}}
     </ul>
 

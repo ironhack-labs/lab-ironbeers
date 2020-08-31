@@ -17,6 +17,17 @@ body {
     color: black;
     font-size: 62,5%;
     background-color: #f7f9f9;
+    height: 100%;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+#content-wrap {
+    padding: 50px 0;
 }
 
 a {
@@ -28,13 +39,12 @@ ul {
     list-style: none;
 }
 
-.nav-bar {
+.nav-bar{
     background-color: #2081c3;
     height: 50px;
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
-    /* border-bottom: 2px solid black; */
     box-shadow: 0 2px 4px -1px rgba(0,0,0,0.40);
 }
 
@@ -51,10 +61,15 @@ footer {
     background-color: #0a2c42;
     color: white;
     width: 100%;
-    padding-left: 20px;
     display: flex;
     align-items: center;
     font-size: 0.8rem;
+    position: absolute;
+    bottom: 0;
+}
+
+footer p {
+    padding-left: 20px; 
 }
 
 /* element home */
@@ -63,24 +78,25 @@ footer {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 15vh 0;
+    margin-top: 8vh;
 }
 
 .main-home img{
-    width: 40%;
-    margin-bottom: 40px;
+    width: 30%;
+    margin-bottom: 15px;
 }
 
 .main-home a {
     border-radius: 8px;
     background-color: #2081c3;
     padding: 10px 20px;
-    margin-bottom: 25px;
+    margin-top: 25px;
     box-shadow: 0 2px 4px -1px rgba(0,0,0,0.40);
 }
 
 /* beers page */
-.beer-container a {
+.beer-container a,
+.main-random-beer a {
     color: black;
 }
 
@@ -89,7 +105,8 @@ footer {
     font-weight: 600;
 }
 
-.beer-container ul li:nth-child(3) {
+.beer-container ul li:nth-child(3),
+.main-random-beer ul li:nth-child(3) {
     color: #bfbfbf;
     font-weight: 600;
     letter-spacing: 0.1rem;
@@ -130,4 +147,46 @@ footer {
     width: 90%;
     margin: 100px auto;
 }
+
+/* random beer page */
+
+.main-random-beer a{
+    text-decoration: none;
+}
+
+.main-random-beer img {
+    height: 250px;
+    margin-right: 50px;
+    float: left;
+    padding-bottom: 200px;
+}
+
+.main-random-beer ul {
+    width: 65%;
+    margin: 10vh 0 0 10vw;
+}
+
+.main-random-beer ul li:nth-child(2){
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.main-random-beer ul li:nth-child(4) {
+    margin-top: 15px;
+}
+
+.main-random-beer ul li:nth-child(5) {
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.main-random-beer ul li:last-child {
+    margin-top: 15px;
+}
+
+.main-random-beer ul li:last-child span {
+    font-weight: 600;
+}
+
 
