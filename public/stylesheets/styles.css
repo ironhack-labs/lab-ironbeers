@@ -57,38 +57,42 @@ footer h5{
     border-radius:5px;
 }
 
+
 /* beerpartial */
-.beers{
-    width:33.33%;
-    margin-bottom:10px;
+.beers {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px
+}
+.beerimg img {
+    width: 100px
+}
+.beer-container {
+    /* to avoid overlapping the text when there is no img */
+    min-height: 300px;
+}
+.beer-container, .additional-info {
+    width: 60%;
 }
 
-
-#beer-bottle{
-    margin-top:10px;
-    width:25%;
+.beer-conatiner a{
+    text-decoration:none;
 }
 
-
-ul{
-    display:flex;
-    flex-wrap:wrap;
+#random-beer-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+.additional-info {
+    position: relative;
+    bottom: 160px;
+    left: 30px
 }
 
-
-.list ul, li{
-    list-style: none;
-    margin:10px;
+.additional-info-single{
+    width:90%;
+    position: relative;
+    
+    left: 100px
 }
-
-#beername{
-    text-decoration: none;
-}
-
-#tag{
-    color:grey;
-    font-weight:bold;
-}
-
-
 

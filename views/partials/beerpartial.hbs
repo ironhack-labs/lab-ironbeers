@@ -1,16 +1,13 @@
-    
-      <div class='beers'>
-      <div class='beerimg'>
-            <img src={{image_url}} id='beer-bottle'>
-      </div>
-       <div class='beer-container'>
-             <div class='list'>
-                  <li><a id='beername' href='/singlebeer/{{id}}'>{{name}}</a></li> 
-                  <li>{{description}}</li>
-                  <li><p id='tag'>{{tagline}}</p></li>
-            </div>
-       </div>
+   <div class='beers'>
+        <div class='beerimg'>
+              <a href='/singlebeer/{{id}}'>
+              <img src={{image_url}} id='beer-bottle'></a>
+        </div>
+         <div class='beer-container'>
+              <h1>{{name}}</h1>
+              <p>{{description}}</p>
+              <p id='tag'>{{tagline}}</p>  
+         </div>
       </div>
    
-
     
