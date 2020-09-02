@@ -13,11 +13,81 @@ font-family: Arial, Helvetica, sans-serif;
 nav {
   background-color: #2081c3;
   padding: 20px;
-  box-shadow: 10px 5px 5px #bfbfbf;
+  box-shadow: 5px 5px 5px #bfbfbf;
+}
+
+footer {
+  background-color: #0a2c42;
+  padding: 20px 10px;
 }
 
 a {
   padding: 10px;
   color: #f7f9f9;
   text-decoration: none;
+}
+
+h6 {
+  color: #bfbfbf;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.home > img {
+  width: 20%;
+  margin: 40px;
+}
+
+.home > a {
+  background-color: #2081c3;
+  padding: 10px;
+  color: #f7f9f9;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #bfbfbf;
+  margin: 10px;
+}
+
+.beers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.beers > article {
+  display: flex;
+  flex-direction: column;
+}
+
+.beers > article > div {
+  width: 500px;
+  margin: 50px;
+}
+
+.beers > article > div > img {
+  display: block;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.random {
+  display: flex;
+  margin: 50px 50px;
+}
+
+.random > div > img {
+  width: 75px;
+  margin: 50px;
+}
+
+.random > .beer-text {
+  width: 900px;
 }
