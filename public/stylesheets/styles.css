@@ -111,39 +111,39 @@ font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
 
-.random-beer-img {
+.specific-beer-img {
     height: 300px;
     margin-right: 120px;
 }
 
-.random-beer {
+.specific-beer {
     margin-left: 10%;
     margin-top: 50px;
     width: 80%;
     display: flex;
 }
 
-.random-beer-text {
+.specific-beer-text {
     margin-top: 6px;
     line-height: 1.5;
     width: 50%;
 }
 
-.random-beer-text h1 {
+.specific-beer-text h1 {
     font-size: 4rem;
 }
 
-.random-beer-text h2 {
+.specific-beer-text h2 {
     font-size: 2.5rem;
     color: #bfbfbf;
 }
 
-.random-beer-text p {
+.specific-beer-text p {
     font-size: 2rem;
     width: 1100px;
     text-align: justify;
 }
 
-.random-beer-text ul,li {
+.specific-beer-text ul,li {
     font-size: 2rem;
 }

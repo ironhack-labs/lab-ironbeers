@@ -1,6 +1,6 @@
 <section class="container">
 {{#each beersFromApi}}
-    <a class="beer" href="">
+    <a class="beer" href="/beer-info/{{this.id}}">
         <img class="beer-img"src="{{this.image_url}}">
         <h2>{{this.name}}</h2>
         <h3>{{this.tagline}}</h3>
