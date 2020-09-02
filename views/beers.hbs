@@ -1,15 +1,4 @@
-<p>teste beers</p>
-<ul>
-    {{#each beersFromApi}}
-        <div>
-            <div>
-                <img src={{this.image_url}}>
-            </div>
-            <div>
-                <p>{{this.name}}</p>
-                <p>{{this.description}}</p>
-                <p>{{this.tagline}}</p>
-            </div>
-        </div>
-    {{/each}}
-</ul>
+
+{{#each beersFromApi}}
+    {{>beerpartial}}
+{{/each}}
