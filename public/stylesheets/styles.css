@@ -19,6 +19,10 @@ nav {
 footer {
   background-color: #0a2c42;
   padding: 20px 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 a {
@@ -68,10 +72,10 @@ h6 {
 
 .beers > article > div {
   width: 500px;
-  margin: 50px;
+  margin: 5px 50px;
 }
 
-.beers > article > div > img {
+.beers img {
   display: block;
   height: 200px;
   margin-left: auto;
@@ -83,7 +87,7 @@ h6 {
   margin: 50px 50px;
 }
 
-.random > div > img {
+.random img {
   width: 75px;
   margin: 50px;
 }
