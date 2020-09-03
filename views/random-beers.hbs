@@ -1,0 +1,11 @@
+{{#each responseFromAPI}}
+ <img src="{{this.image_url}}" alt="Image for {{this.name}}">
+<p>Name: {{this.name}}</p>
+<p>Description: {{this.description}}</p>
+<p>Tagline: {{this.tagline}}</p>
+<p>Food Pairing: {{#each this.food_pairing}}
+    <span>{{this}}</span>
+    {{/each}}
+</p>
+<p>Brewer Tips: {{this.brewer_tips}}</p>
+{{/each}}
