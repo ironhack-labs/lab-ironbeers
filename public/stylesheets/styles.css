@@ -1,7 +1,17 @@
-/*
-white: #f7f9f9;
+body{
+/* white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
-grey: #bfbfbf;
+grey: #bfbfbf; */
 font-family: Arial, Helvetica, sans-serif;
-*/
+}
+
+nav {
+    background-color: #2081c3;
+    
+}
+
+nav a {
+    color: #f7f9f9;
+    text-decoration: none
+}
