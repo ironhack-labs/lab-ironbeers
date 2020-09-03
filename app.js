@@ -16,12 +16,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // ...
 app.get("/beers/:id", (req, res)=>{
-  console.log(req.params.id);
   punkAPI
-  .getBeers()
+  .getBeer(req.params.id)
   .then(beersFromApi => {      
     res.render("clickedbeer", {
-      clickedBeer: beersFromApi.find(beer => beer.id == req.params.id)
+      clickedBeer: beersFromApi[0]
     })
   })
   .catch(error => 
