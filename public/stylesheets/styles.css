@@ -5,3 +5,31 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+font-family: Arial, Helvetica, sans-serif; 
+margin: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+}
+
+.index-pic {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.main-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    
+
+    
+}
