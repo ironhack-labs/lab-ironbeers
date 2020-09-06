@@ -5,3 +5,70 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: turquoise;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav {
+   background-color: #2081c3;
+   padding: 20px 40px;
+   position: fixed;
+   width: 100%;
+   
+}
+
+nav a{
+    margin-right: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.tarro-botones {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-home {
+    margin-top: 30px;
+    background-color: #2081c3;
+    border: none;
+    height: 50px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    
+}
+
+.boton-home a {
+    color: white;
+    font-size: 20px;
+}
+
+.image-home{
+    width: 400px;
+}
+
+footer {
+    position: fixed;
+    background-color: #0a2c42;
+    color: white;
+    padding: 5px 10px;
+    width: 100%;
+    bottom: 0;
+    letter-spacing: 2px;
+
+}
