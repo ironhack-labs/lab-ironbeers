@@ -29,7 +29,17 @@ app.get('/beers/', (req, res) => {
     .getBeers()
     .then(beersFromApi => {
       res.render('beers', { beersFromApi })
-      //console.log(beersFromApi)
+    })
+    .catch(error => console.log(error));
+
+});
+
+app.get('/beers/id', (req, res) => {
+
+  punkAPI
+    .getBeers(req.param.id)
+    .then(beersFromApi => {
+      res.render('beers', { beersFromApi })
     })
     .catch(error => console.log(error));
 
