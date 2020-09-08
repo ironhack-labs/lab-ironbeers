@@ -12,14 +12,43 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Register the location for handlebars partials here:
+// Register the location for handlebars partials 
+hbs.registerPartials(path.join(__dirname, "views", "partials"))
 
-// ...
 
-// Add the route handlers here:
+// Add the route handlers 
 
 app.get('/', (req, res) => {
-  res.render('index');
+  res.render('index')
 });
 
-app.listen(3000, () => console.log('🏃‍ on port 3000'));
+app.get("/beers", (req, res) => {
+
+  //Get the array of all the beer
+  punkAPI
+    .getBeers()
+    .then(beersFromApi => res.render("beers", { beersFromApi }))
+    .catch(error => console.log(error));
+
+
+})
+
+app.get('/beers/:id', (req, res) => {
+  punkAPI.getBeer(req.params.id).then(beersFromApi => {
+    res.render("beers", { beersFromApi });
+  })
+  .catch(error => console.log('Error to accesing this beer', error))
+})
+
+app.get("/random-beers", (req, res) => {
+  // Get a random beer
+  punkAPI
+    .getRandom()
+    .then(randomBeer => res.render("random-beers",  randomBeer[0] ))
+    .catch(error => console.log(error));
+  
+})
+
+
+
+app.listen(3000, () => console.log('*Emoji*‍ on port 3000'));

@@ -1,0 +1,25 @@
+<main class="container">
+    <div class="row">
+
+    {{> beerspartials}}
+
+        <div class="row">
+            <div class="col-md-3 col-lg-6 card-group">
+
+            <h5>Foof pairing: </h5>
+        
+            <ul>
+                {{#each food_pairing}}
+                <li class="text-center">{{this}}</li>
+                {{/each}}
+            </ul>
+            
+            <p class="text-center"><strong>Brewer tips:</strong> {{brewers_tips}}</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
