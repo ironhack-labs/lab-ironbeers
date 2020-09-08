@@ -5,3 +5,101 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+/* LAYOUT */
+
+.nav {
+  padding: 10px;
+  background-color: #2081c3;
+}
+.nav ul {
+  display: flex;
+}
+.nav li {
+  list-style: none;
+}
+.nav a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  padding: 0 15px;
+  color: #f7f9f9;
+  text-decoration: none;
+}
+footer {
+  margin-top: 4em;
+  padding: 20px;
+  background-color: #0a2c42;
+  color: #f7f9f9;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+}
+
+/* INDEX */
+
+.index figure img {
+  display: block;
+  margin: 3em auto;
+  height: 25em;
+}
+.buttom {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  color: #f7f9f9;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #2081c3;
+  width: 12em;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+}
+:hover .buttom{
+  text-decoration: none;
+  color: #f7f9f9;
+}
+
+/* BEERS */
+.beer {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5em;
+}
+.beers img {
+  display: block;
+  /* width: 10em; */
+  height: 150px;
+  object-fit: cover;
+  margin: 2em auto;
+}
+
+.beers h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.beers h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color:grey
+}
+.beers p {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 20em;
+  margin: 0 auto;
+}
+
+/* RANDOM */
+.random {
+  width: 50em;
+  margin: 3em auto;
+}
+.random img {
+  width: 5em;
+}
+.flex {
+  display: flex;
+}
+.container {
+  width: 40em;
+  margin-left: 3em;
+}

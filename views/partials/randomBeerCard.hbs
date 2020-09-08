@@ -1,0 +1,22 @@
+<article class='random'>
+    <div class='flex'>
+        <div>
+            <img src="{{this.image_url}}" alt="{{this.name}} " />
+
+        </div>
+        <div class='container'>
+
+            <h2>{{this.name}}</h2>
+            <p>{{this.description}}</p>
+            <p>{{this.tagline}}</p>
+            <p><strong>Food Pairing:</strong></p>
+            <ul>
+                {{#each food_pairing}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p><strong>Brewers Tips:</strong> {{this.brewers_tips}}</p>
+        </div>
+
+    </div>
+</article>
