@@ -5,3 +5,67 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+
+body {
+    font-weight: 100;
+    font-family: sans-serif;
+}
+
+img {
+    width: 100%;
+    /* height: 100px; */
+    height: 300px;
+    
+}
+
+a {
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: left;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.init {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.init img {
+    width: 400px;
+}
+
+
+.beer-title {
+    font-weight: 900;
+}
+.beer-text {
+    color:  #bfbfbf;
+}
+.random {
+    width: 800px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+footer {
+    margin-top: 150px;
+    padding: 35px 100px;
+    background-color: #0a2c42;
+    color: white;
+    
+}
+
+footer h4 {
+    margin-left: 40px;
+}
