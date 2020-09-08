@@ -1,6 +1,17 @@
-{{#each beersFromApi}}
-<img class="img-beers" src="{{image_url}}" alt="{{name}}">
-<p>{{name}}</p>
-<p>{{description}}</p>
-<p>{{tagline}}</p>
-{{/each}}
+<main class="container beer-page">
+
+
+    <div class="row">
+
+        {{#each beersFromApi}}
+        <div class="col-lg-4">
+            {{> beerpartial}}
+        </div>
+
+
+        {{/each}}
+
+
+    </div>
+
+</main>

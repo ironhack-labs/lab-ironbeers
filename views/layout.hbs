@@ -4,22 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="/stylesheets/styles.css">
     <title>Lab IronBeer</title>
 </head>
 
 <body>
-    <header>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/beers">Beer</a></li>
-            <li><a href="/random-beer">Random Beer</a></li>
-        </ul>
+    <header class="menu">
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/beers">Beer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/random-beer">Random Beer</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
+
+
+
+
+
+
     {{{body}}}
 
-    <footer>
-        <p>Develop by ironhack</p>
+
+    <footer class="page-footer font-small white bg-dark">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3"> Develop by IronHack
+
+        </div>
+        <!-- Copyright -->
+
     </footer>
 </body>
 

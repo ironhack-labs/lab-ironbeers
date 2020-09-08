@@ -1,8 +1,12 @@
-{{#each responseFromAPI}}
-<img class="img-beers" src="{{image_url}}" alt="{{name}}">
-<h2>{{name}}</h2>
-<p>{{description}}</p>
-<p>{{tagline}}</p>
-<h5>{{food_pairing}}</h5>
-<h5>{{brewers_tips}}</h5>
-{{/each}}
+<main class="container players-page">
+
+
+    <div class="row">
+        {{#each responseFromAPI}}
+
+        {{> beerpartial}}
+
+        {{/each}}
+    </div>
+
+</main>
