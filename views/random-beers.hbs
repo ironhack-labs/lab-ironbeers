@@ -1,0 +1,46 @@
+<div>
+    <h1>Random-beers</h1>
+</div>
+<div class="random-main">
+    <div class="row all-beers">
+        {{#each beersFromApi}}
+
+        {{> beerCard}}
+
+        {{/each}}
+        <div class="food paring">
+            <h3>Food pairing</h3>
+            <ul>
+                <li>
+                    {{#each beersFromApi}}
+                    {{food_pairing}}
+
+
+                    {{!-- {{#each food_pairing as |food|}}
+                                        {{food}}
+                                        {{/each}} --}}
+
+                    {{/each}}
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    {{#each beersFromApi}}
+                    {{brewer_tips}}
+
+
+                    {{!-- {{#each food_pairing as |food|}}
+                                                    {{food}}
+                                                    {{/each}} --}}
+
+                    {{/each}}
+                </li>
+            </ul>
+
+
+        </div>
+    </div>
+
+
+
+</div>
