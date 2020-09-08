@@ -5,31 +5,57 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;*/
 
-nav{
-    margin-bottom: 50px;
+.beer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: .9em;
 }
 
-.mainContainer {
+.random {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.beerClass{
-    width: 250px;
-    height: 100px;
-    
+.beer-row {
+    display: flex;
+    align-items: baseline;
+
 }
 
-.button{
-    color: white;
-    text-decoration: none;
-    background-color: royalblue;
-    display: block;
-    text-align: center;
-    padding: 10px 15px;
-    margin-bottom: 20px;
-    border-radius: 2%;
+.beer img {
+    width: 100px;
+    object-fit: cover;
+
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    width: 500px;
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #0a2c42;
+    padding: 10px;
+    color: #f7f9f9;
+}
+
+footer p{
+    padding-top: 20px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+
+
+
+
 
 

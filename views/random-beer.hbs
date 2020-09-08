@@ -1,0 +1,9 @@
+<main class="container beers-page random">
+   <div>
+   {{#each data}}
+      {{>beerpartials this}}
+    <p>Food pairing: {{this.food_pairing}}</p>
+    <p>Brewers Tips: {{this.brewers_tips}}</p>
+   </div>
+    
+</main>
