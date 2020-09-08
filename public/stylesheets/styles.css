@@ -9,13 +9,17 @@ font-family: Arial, Helvetica, sans-serif;
 body{
     background-color: #f5f7f7;
 }
-.home-beer{
+img{
+    margin: 0 auto;
     display: block;
-    margin:0 auto;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+}
+
+.home-beer{
     padding-top: 50px;
     width: 350px;
     position: relative;
-    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));;
+
 }
 
 .button-st{
@@ -23,26 +27,21 @@ body{
     margin-bottom: 30px;
     display: block;
     text-align: center;
-    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
     
 }
 
 #imgbeers{
-   
-    object-fit: cover;
-    width: 30%;
-    margin: 0 auto;
-    display: block;
+
+    width: 120px;
     padding-top: 30px;
     padding-bottom: 30px;
-}
 
+}
 
 .random-beer-text{
     margin-left: 20px ;
 }
-
-
 
 h4{
     padding-bottom: 15px;
