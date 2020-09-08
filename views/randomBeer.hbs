@@ -1,0 +1,37 @@
+<article class="container random-body">
+
+    <div class="row align-items-center">
+
+        {{#each beer}}
+       
+        <div class="col-md-6 col-lg-6">
+
+        <img src="{{this.image_url}}" alt="photo" />
+
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+        
+        <article>
+
+        <h3>{{this.name}}</h3>
+        
+        <p>{{this.description}}</p>
+
+        <p>{{this.tagline}}</p>
+        
+        <h3>Pairing</h3>
+
+        <p>{{this.food_pairing}}</p>
+
+        <h3>Brewers Tips</h3>
+        
+        <p>{{this.brewers_tips}}</p>
+
+        </article>
+
+        {{/each}}
+
+    </div>
+
+</article>
