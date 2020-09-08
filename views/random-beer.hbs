@@ -1,0 +1,25 @@
+<div class="container d-flex random">
+<div class= 'row align-self-center'>
+    <div class="col-3">
+        <img src="{{image_url}}" alt="{{name}}">
+    </div>
+    
+    <article class= 'col-9'>
+        <h1>{{name}}</h1>
+        <p>{{description}}</p>
+        <p><i>{{tagline}}</i></p>
+        <h3>Food Pairing</h3>
+        <ul>
+            {{#each food_pairing}}
+
+            <li>{{this}}</li>
+            
+            {{/each}}
+        </ul>
+        <p>{{brewers_tips}}</p>
+    </article>
+</div>
+
+</div>
+
+

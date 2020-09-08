@@ -5,3 +5,44 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.index{
+    margin: 80px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+
+}
+
+.index img{
+    margin: auto;
+    height: 500px;
+}
+
+
+.beer img{
+    display: block;
+    height: 250px;
+    margin: 20px auto;
+}
+
+.random{
+    height: 85vh
+}
+
+.random img{
+    height: 300px
+   
+}
+
+
+footer{
+    background: black;
+    color:white;
+    padding: 15px 100px;
+}
