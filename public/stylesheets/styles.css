@@ -5,3 +5,16 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+* {
+  margin: 0;
+  padding: 0;
+}
+.mBox > div {
+  margin: 20px auto;
+}
+.logo {
+  width: 40%;
+  display: block;
+  margin: 50px auto;
+  object-fit: contain;
+}
