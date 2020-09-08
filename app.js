@@ -34,10 +34,14 @@ app.get("/beers", (req, res) => {
 })
 
 app.get('/beers/:id', (req, res) => {
+  // Get the beer page using the id. The link is created from /beers, using the id
+
+  // Selected the beer with the same id that the beer clicked
   punkAPI.getBeer(req.params.id).then(beersFromApi => {
+    // Create the page using the /beers page as base/parent, but with only one object of the array
     res.render("beers", { beersFromApi });
   })
-  .catch(error => console.log('Error to accesing this beer', error))
+  .catch(error => console.log(error))
 })
 
 app.get("/random-beers", (req, res) => {
