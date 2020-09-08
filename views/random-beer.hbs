@@ -1,0 +1,19 @@
+{{#each choosenBeer}}
+
+<div class="d-flex flex-column align-items-center>
+
+
+    {{>beersCard}}
+
+    <p><strong>Food Pairing</strong></p>
+
+    {{#list this.food_pairing}}
+
+    {{this}}
+
+    {{/list}}
+
+    <p><strong>Brewers Tips: </strong>{{this.brewers_tips}}</p>
+</div>
+
+{{/each}}

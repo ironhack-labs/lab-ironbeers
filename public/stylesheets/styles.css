@@ -5,3 +5,80 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+
+
+main{
+
+    height: 100%;
+
+    padding-top: 50px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+}
+
+h2{
+
+    font-size: 1.3em;    
+    font-weight: 900;
+
+}
+
+h3{
+
+    font-size: .8em;
+    text-transform: uppercase;
+    color: darkgray
+
+}
+
+img{
+
+    height: 200px;
+
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+}
+
+#white{
+    color: white
+}
+
+#index img {
+
+    height: 300px;
+    margin-bottom: 50px;
+
+}
+
+.random-header{
+
+    margin-bottom: 30px;
+
+}
+
+.btn-toolbar{
+    
+    margin-bottom: 20px;
+
+}
+
+
+
+#footer{
+
+    padding: 15px 0 12px 0;
+
+    color:white;
+    background-color: #0a2c42;
+
+}
+
+footer p{
+
+    margin:0
+
+}
