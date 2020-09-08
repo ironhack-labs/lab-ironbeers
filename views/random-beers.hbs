@@ -1,0 +1,19 @@
+
+      <div class="row">
+        {{#each beersFromApi}}
+    <div col= class="col-md-6 col-lg-6">>
+    {{> beerCard}}
+    </div>
+    <ul>
+        <strong>Pairing</strong> 
+        {{#each this.food_pairing}}
+        <li>{{this}}</li>
+         {{/each}} 
+        <strong>brewers tips</strong>
+        <p class="card-text">{{this.brewers_tips}}</p>
+    </ul>
+    
+        {{/each}} 
+       
+        
+        </div>
