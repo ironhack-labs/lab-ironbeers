@@ -3,12 +3,23 @@
   "version": "2.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "nodemon app.js"
   },
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "hbs": "^4.1.1",
     "punkapi-javascript-wrapper": "^1.0.2"
-  }
+  },
+  "description": "![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carolinacervelaf/lab-ironbeers.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/carolinacervelaf/lab-ironbeers/issues"
+  },
+  "homepage": "https://github.com/carolinacervelaf/lab-ironbeers#readme"
 }
