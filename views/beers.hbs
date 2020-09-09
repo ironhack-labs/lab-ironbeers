@@ -1,8 +1,9 @@
 <main class="container">
     <div class="row">
-        <div class="col-md-6 col-lg-4">
             {{#each beers}}
-                {{> beerpartial }} 
+                <div class="col-md-6 col-lg-4">
+                    {{> beerpartial }} 
+                </div>    
                 <hr>
             {{/each}}
         </div>
