@@ -33,10 +33,11 @@ img{
 
 #imgbeers{
 
-    width: 120px;
+    width: 100px;
+    height: 460px;
     padding-top: 30px;
     padding-bottom: 30px;
-
+    object-fit: cover;
 }
 
 .random-beer-text{
@@ -45,4 +46,24 @@ img{
 
 h4{
     padding-bottom: 15px;
+    display: block;
+    height: 2rem;
+    overflow: hidden;
 }
+
+p{
+    text-align: justify;
+    display: block;
+    height: 4.8rem;
+    overflow: hidden;
+}
+
+h6{
+    display: block;
+    height: 1.4rem;
+    overflow: hidden;
+}
+
+
+
+
