@@ -7,32 +7,38 @@ font-family: Arial, Helvetica, sans-serif;
 */
 
 body {
-  background-color: #bfbfbf;
+  background-color: #f7f9f9;
   font-family: Arial, helvetica, sans-serif;
+  margin: 0px;
 }
 
 /* .container {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  justify-content: space-between;
+  margin: 0px;
 } */
 
 a {
+  text-decoration: none;
+  color: black;
+}
+
+/* -- layout.hbs -- */
+
+.navBar a {
   display: block;
   padding: 16px;
-  text-decoration: none;
   color: #f7f9f9;
   text-align: center;
 }
 
-a:hover {
+.navBar a:hover {
   text-shadow: 3px 3px 3px #0a2c42;
 }
 
 .navBar {
   background-color: #2081c3;
   color: #f7f9f9;
+  width: 100%;
+  margin: 0;
 }
 
 .navList {
@@ -46,7 +52,20 @@ a:hover {
   float: left;
 }
 
+.footerBar {
+  background-color: #0a2c42;
+  color: #f7f9f9;
+  padding: 16px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* -- index.hbs -- */
+
 .home-div {
+  margin: 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,6 +77,10 @@ a:hover {
 }
 
 .home-div a {
+  display: block;
+  padding: 16px;
+  color: #f7f9f9;
+  text-align: center;
   background-color: #2081c3;
   margin: 10px 0;
   border-radius: 3px;
@@ -69,8 +92,63 @@ a:hover {
   background-color: #0a2c42;
 }
 
-.footerBar {
-  background-color: #0a2c42;
-  color: #f7f9f9;
-  padding: 16px;
+/* -- beerpartial.hbs -- */
+
+.beer {
+  margin: 20px 10px;
+}
+
+span {
+  color: #bfbfbf;
+}
+
+/* -- beers.hbs -- */
+
+.beers-div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin-bottom: 60px;
+}
+
+.beers-div .beer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.beers-div img {
+  height: 150px;
+  width: auto;
+}
+
+.beers-div .beer-info {
+  width: 350px;
+}
+
+/* -- random-beer.hbs -- */
+
+.random-beer-div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.random-beer-div .beer{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.random-beer-div img {
+  display: flex;
+  width: auto;
+  height: 400px;
+  padding: 5px 20px;
+  justify-self: right;
+}
+
+.random-beer-div .beer-info {
+  width: 50%;
 }
