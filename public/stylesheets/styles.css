@@ -38,7 +38,9 @@ a {
   background-color: #2081c3;
   color: #f7f9f9;
   width: 100%;
-  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .navList {
@@ -65,7 +67,7 @@ a {
 /* -- index.hbs -- */
 
 .home-div {
-  margin: 20px 0;
+  margin: 65px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -108,7 +110,7 @@ span {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  margin-bottom: 60px;
+  margin: 65px auto;
 }
 
 .beers-div .beer {
@@ -133,7 +135,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-bottom: 60px;
+  margin: 65px auto;
 }
 
 .random-beer-div .beer{
@@ -146,7 +148,6 @@ span {
   width: auto;
   height: 400px;
   padding: 5px 20px;
-  justify-self: right;
 }
 
 .random-beer-div .beer-info {
