@@ -9,6 +9,7 @@ const punkAPI = new PunkAPIWrapper();
 
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -29,7 +30,12 @@ app.get('/beers', async (req, res) => {
 
 app.get('/random-beer', async (req, res) => {
   const beer = await punkAPI.getRandom();
-  console.log(beer);
+  res.render('random-beer', { beer });
+});
+
+app.get('/beers/:beerid', async (req, res) => {
+  const beerId = req.params.beerid;
+  const beer = await punkAPI.getBeer(beerId);
   res.render('random-beer', { beer });
 });
 

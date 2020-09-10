@@ -3,21 +3,21 @@
     {{#each beers}}
 
     <div class="col-md-4">
+        <a href="/beers/{{this.id}}">
+            <div class="card">
 
-        <div class="card">
+                <img class="card-img-top" src="{{this.image_url}}" alt="{{this.name}}" />
 
-            <img class="card-img-top" src="{{this.image_url}}" alt="{{this.name}}" />
+                <div class="card-body">
 
-            <div class="card-body">
+                    <h5 class="card-title">{{this.name}} {{this.Name}}</h5>
+                    <h6 class="card-title">{{this.name}} {{this.tagline}}</h6>
+                    <p class="card-text">{{this.description}}</p>
 
-                <h5 class="card-title">{{this.name}} {{this.Name}}</h5>
-                <h6 class="card-title">{{this.name}} {{this.tagline}}</h6>
-                <p class="card-text">{{this.description}}</p>
+                </div>
 
             </div>
-
-        </div>
-
+        </a>
     </div>
 
     {{/each}}
