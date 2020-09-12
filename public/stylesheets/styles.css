@@ -5,3 +5,21 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    height: 92vh;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.beer-image{
+    height: 200px;
+    width: auto;
+    object-fit: scale-down;
+}

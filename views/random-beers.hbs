@@ -1,11 +1,12 @@
 <div>
     <div class="media">
-        <img src="{{image_url}}" class="align-self-start mr-3" alt="...">
-        <div class="media-body">
+        <img src="{{image_url}}" class="align-self-start mr-3 beer-image m-3" alt="beer lable"
+            style="width: auto; height: 400px">
+        <div class="media-body m-5">
             <h5 class="mt-0">{{name}}</h5>
             <p>{{tagline}}</p>
             <p>{{description}}</p>
-            <h3>Food Pairing</h3>
+            <h5>Food Pairing</h5>
             <ul>
                 {{#each food_pairing}}
                 <li>{{this}}</li>
