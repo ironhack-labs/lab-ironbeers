@@ -1,20 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <ul>
-  {{#each this}}
-    <li><img src={{image_url}}></li>
-    <li>{{name}}</li>
-    <li>{{description}}</li>
-    <li>{{tagline}}</li>  
-    <li>{{food_pairing}}</li>
-    <li>{{brewers_tips}}</li>  
-  {{/each}}
-</ul>
-</body>
-</html>
+<section class="random-beer-info">
+  {{#each beersFromApi}}
+  <div class="random-card">
+    <a href="/beers/beer-{{this.id}}">
+      {{> beerPartial this}}
+      <h2>Food pairing</h2>
+      <ul>
+        {{#each food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <h2><b>Brewer Tips: </b>{{this.brewers_tips}}</h2>
+    </a>
+  </div>
+  {{/each}} 
+</section>
+ 
+    

@@ -1,0 +1,23 @@
+<section class="beer-details">
+  {{#each beersFromApi}}
+  <div class="detail-card">
+    {{> beerPartial this}}
+    <h2>First Brewed: {{this.first_brewed}}</h2>
+    <h2>Abv: {{this.abv}}</h2>
+    <h2>Ibu: {{this.ibu}}</h2>
+    <h2>Target fg: {{this.target_fg}}</h2>
+    <h2>Target og: {{this.target_og}}</h2>
+    <h2>Ebc: {{this.ebc}}</h2>
+    <h2>Srm: {{this.srm}}</h2>
+    <h2>Ph: {{this.ph}}</h2>
+    <h2>Attenuation level: {{this.attenuation_level}}</h2>
+    <h2>Food pairing</h2>
+     <ul>
+         {{#each food_pairing}}
+         <li>{{this}}</li>
+         {{/each}}
+     </ul>
+    <h2>Brewer Tips: {{this.brewers_tips}}</h2>
+  </div>
+  {{/each}} 
+</section>
