@@ -3,16 +3,16 @@
   <div class="random-card">
     <a href="/beers/beer-{{this.id}}">
       {{> beerPartial this}}
-      <h2>Food pairing</h2>
-      <ul>
-        {{#each food_pairing}}
-        <li>{{this}}</li>
-        {{/each}}
-      </ul>
-      <h2><b>Brewer Tips: </b>{{this.brewers_tips}}</h2>
+      <div class="beers">
+        <h3><b>Food pairing</b></h3>
+        <ul>
+          {{#each food_pairing}}
+          <li>{{this}}</li>
+          {{/each}}
+        </ul>
+        <h3><b>Brewer Tips: </b>{{this.brewers_tips}}</h3>
+      </div>
     </a>
   </div>
-  {{/each}} 
+  {{/each}}
 </section>
- 
-    
