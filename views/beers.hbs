@@ -1,20 +1,5 @@
 <ul>
     {{#each beers}}
-    <li>
-        <p>
-            {{this.name}}
-        </p>
-        <p>
-            {{this.tagline}}
-        </p>
-        <p>
-            {{this.description}}
-        </p>
-        <img src="{{this.image_url}}" alt="" srcset="">
-        <hr>
-
-    </li>
+    {{> beerpartials this}}
     {{/each}}
-
-
 </ul>
