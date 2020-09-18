@@ -3,5 +3,75 @@ white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
+
 */
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+#nav-main {
+  display: flex;
+  align-items: center;
+  background-color: #2081c3;
+  color: white;
+  height: 80px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  padding-left: 30px;
+}
+
+#mainImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#beers {
+  width: 200px;
+  padding-top: 100px;
+}
+
+#btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+}
+
+.btn {
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+  border: solid;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #2081c3;
+  color: white;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #0a2c42;
+  height: 50px;
+  color: white;
+  margin-top: 100px;
+  padding-left: 20px;
+}
+
+img {
+  width: 70px;
+  margin-top: 20px;
+}
