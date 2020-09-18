@@ -1,11 +1,8 @@
-<h1>Beers</h1>
+
 <ul>
 {{#each beers}}
   <li class="item">
-    <h2 class="title">{{this.name}}</h2><br>
-    <p>{{this.description}}</p>
-    <p>{{this.tagline}}</p>
-    <img src={{this.image_url}}>
+      {{> beer}}
   </li>
 {{/each}}
 </ul>

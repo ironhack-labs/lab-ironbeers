@@ -5,21 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ironbeer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <link rel="stylesheet" href="/css/index.css">
-    {{#each css}}
-    <link rel="stylesheet" href="/css/{{this}}.css">
-    {{/each}}
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+   
 </head>
 
 <body>
-    <nav id="navbar">
-        <a href="/">Home</a>
-        <a href="/beers">Beers</a>
-        <a href="/random-beer">Random Beer</a>
-    </nav>
+ {{>navbar}}
     {{{body}}}
-
+ {{>footer}}
 </body>
 
 </html>
