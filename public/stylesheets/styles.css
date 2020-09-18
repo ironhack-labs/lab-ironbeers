@@ -5,3 +5,40 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+header {
+    background-color:#2081c3 ;
+    height: 60px;
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+}
+
+nav{
+   
+    font-size: 1.2em;
+    color: white;
+    
+}
+
+.home-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    height: 200px;
+    object-fit: contain;
+  }
