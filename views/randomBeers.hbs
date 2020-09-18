@@ -1,0 +1,6 @@
+<h1>Find random beers</h1>
+
+{{> displayBeer randomBeers}}
+{{#each randomBeers}}
+<p>{{this.food_pairing}} - {{this.brewers_tips}}</p>
+{{/each}}
