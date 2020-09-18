@@ -11,15 +11,16 @@ app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
+//hbs.registerPartials(__dirname + "/views/partials");
 
 // Register the location for handlebars partials here:
 
 // ...
 
 // Add the route handlers here:
-
 app.get('/', (req, res) => {
-  res.render('index');
+    res.render('index');
 });
 
-app.listen(3000, () => console.log('🏃‍ on port 3000'));
+
+app.listen(4000, () => console.log('🏃‍ on port http://localhost:4000'));
