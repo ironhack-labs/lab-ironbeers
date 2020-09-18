@@ -47,4 +47,14 @@ app.get('/random-beers', (req, res) => {
   .catch(error => console.log(error)); 
 });
 
+app.get("/beers/:id", (req, res) => {
+  punkApi
+  .getBeer(req.params.id)
+  .then(beerId => {
+    res.render('beerId', {beerId});
+    console.log('Beer ID: ', beerId)
+  })
+  .catch(error => console.log(error)); 
+});
+
 app.listen(4000, () => console.log('🏃‍ on port http://localhost:4000'));
