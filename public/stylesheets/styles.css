@@ -5,3 +5,15 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+a {
+    width: 100px;
+    background-color: cornflowerblue;
+}
+
+#beer-img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20%;
+    width: 25%;
+}
