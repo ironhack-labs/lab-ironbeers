@@ -10,9 +10,9 @@
   box-shadow: 1.2px 0.6px 1.5px var(--color-dark);
   border-radius: 0.3rem;
   padding: 10px;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
   list-style: none;
 }
 
