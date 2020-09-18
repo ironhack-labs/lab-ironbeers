@@ -1,10 +1,7 @@
-<div class="partial-beer">
-		<img src={{beer.image_url}} alt="tasty beer">
-		<h2>{{beer.name}}</h2>
-		<p>{{beer.description}}</p>
-		<p><span>{{beer.tagline}}</span></p>
+<div>	
+	{{> beerpartials beer}}
+	<h3>Food pairing :</h3>
+	<p>{{beer.food_pairing}}</p>
+	<h3>Brewer's tips :</h3>
+	<p>{{beer.brewers_tips}}</p>
 </div>
-<h3>Food pairing :</h3>
-<p>{{beer.food_pairing}}</p>
-<h3>Brewer's tips :</h3>
-<p>{{beer.brewers_tips}}</p>

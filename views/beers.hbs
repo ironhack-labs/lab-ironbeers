@@ -1,10 +1,11 @@
-<ul>
-	{{#each beers}}
-	<li>
-		<img src={{this.image_url}} alt="tasty beer">
-		<h2>{{this.name}}</h2>
-		<p>{{this.description}}</p>
-		<p><span>{{this.tagline}}</span></p>
-	</li>
-	{{/each}}
-</ul>
+<div>
+	<ul>
+		{{#each beers}}
+		<li>
+			<a href="/beers/beer-{{this.id}}">
+				{{> beerpartials this}}
+			</a>
+		</li>
+		{{/each}}
+	</ul>
+</div>
