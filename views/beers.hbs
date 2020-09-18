@@ -2,11 +2,6 @@
 <hr>
 <ul class="list grid users">
     {{#each beersFromAPI}}
-    <li class="item">
-        <h2 class="title">{{this.name}}</h2>
-        <h4>{{this.tagline}}</h4>
-        <p>{{this.description}}</p>
-        <img src="{{this.image_url}}" alt="beer-img">
-    </li>
+       {{> beerpartial}}
     {{/each}}
 </ul>

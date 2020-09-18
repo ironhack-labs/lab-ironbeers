@@ -2,10 +2,7 @@
 <hr>
 
 <div class="random-beer">
-    <img src="{{randomBeer.image_url}}" alt="">
-    <h1>{{randomBeer.name}}</h1>
-    <h3>{{randomBeer.tagline}}</h3>
-    <p>{{randomBeer.description}}</p>
+    {{> beerpartial randomBeer}}
     <p>{{randomBeer.food_pairing}}</p>
     <p>{{randomBeer.brewers_tips}}</p>
 </div>
