@@ -28,14 +28,20 @@ app.get('/beers', (req, res) => {
   .getBeers()
   .then(beersFromApi => {
     res.render('beers', {beersFromApi});
-    console.log('Beers from the database: ', beersFromApi)
+  //  console.log('Beers from the database: ', beersFromApi)
 })
   .catch(error => console.log(error));
   
 });
 
 app.get('/random-beers', (req, res) => {
-  res.render('ranbeers');
+  punkAPI
+  .getRandom()
+  .then(randomFromAPI => {
+    res.render('ranbeers', {randomFromAPI});
+    console.log('Beers from the database: ', randomFromAPI)
+  })
+  .catch(error => console.log(error)); 
 });
 
 app.listen(4000, () => console.log('🏃‍ on port http://localhost:4000'));

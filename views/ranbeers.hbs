@@ -1,1 +1,18 @@
 <h1>RANDOM BEERS</h1>
+
+<div>
+    {{#each randomFromAPI}}
+<ul>
+    <img src=" {{image_url }}" alt="beers">
+    <li> Name : {{name}}</li>
+    <li> Description : {{description}} </li>
+    <li> Tagline : {{tagline}} </li>
+    <li> Food Pairing : {{food_pairing}} </li>
+    <li> Brewers tips : {{brewers_tips}} </li>
+</ul>
+
+    
+    
+       
+    {{/each}}
+</div>
