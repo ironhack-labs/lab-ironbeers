@@ -10,6 +10,19 @@ h1 {
     font-size: 60px;
 }
 
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: darkslateblue;
+    color: white;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
 .description {
     font-size: 18px;
 }
@@ -28,6 +41,15 @@ h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+#nav-main ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+
 }
 
 #nav-main a {
