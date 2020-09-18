@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronBeers</title>
+    {{#each stylesheets}}
+    <link rel="stylesheet" href="./stylesheets/{{this}}">
+    {{/each}}
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="/" class="">Home</a>
+        <a href="/beers" class="">Beers</a>
+        <a href="/random-beer" class="">Random Beer</a>
+    </nav>
+    {{{body}}}
+</body>
+
+</html>
