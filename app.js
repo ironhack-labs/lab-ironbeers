@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 app.get('/beers', async (req, res) => {
   try {
     const beers = await punkAPI.getBeers();
-    console.log(beers);
+    // console.log(beers);
     res.render(`beers`, {beers})
   } catch (err) {error => console.log(error);}
 });
@@ -34,8 +34,18 @@ app.get('/beers', async (req, res) => {
 app.get('/random-beer', async (req, res) => {
   try {
     const randomBeers = await punkAPI.getRandom();
-    console.log(randomBeers);
+    // console.log(randomBeers);
     res.render(`random-beer`, {randomBeers})
+  } catch (err) {error => console.log(error);}
+});
+
+app.get('/beers/:beer_id', async (req, res) => {
+  try {
+    const idbeer = await punkAPI.getBeer(req.params.beer_id);
+   // console.log(req.params.beer_id);
+    //console.log(idbeer);
+    res.render(`detailedbeer`, {oneBeer:idbeer[0]});
+   // res.send("test")
   } catch (err) {error => console.log(error);}
 });
 
