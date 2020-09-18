@@ -27,6 +27,7 @@ app.get('/beers', async (req, res) => {
   try {
     const apiBeers = await punkAPI.getBeers();
     res.render('beers', { beers: apiBeers });
+    console.log(beers);
   } catch (err) {
     console.log(err);
   }

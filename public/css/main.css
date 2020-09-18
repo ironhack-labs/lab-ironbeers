@@ -14,15 +14,16 @@ a {
 }
 
 #nav-main {
-  background-color: dodgerblue;
+  background-color: rgb(27, 104, 180);
   color: whitesmoke;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-#home img, #home a{
+#home img,
+#home a {
   display: block;
   margin-bottom: 40px;
   padding: 20px;
@@ -48,3 +49,30 @@ a {
 .beers img {
   max-height: 200px;
 }
+
+.beers {
+  display: flex;
+  flex-wrap: wrap;
+}
+.allBeers a li {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  min-height: auto;
+  margin: 20px;
+}
+.allBeers a {
+  display: block;
+}
+/* .allBeers a li div img {
+  width: 100px;
+  min-height: fit-content;
+} */
+.tagLine {
+  color: grey;
+  margin-bottom: 5px;
+  margin-bottom: 6px;
+}
+

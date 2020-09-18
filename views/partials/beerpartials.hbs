@@ -1,17 +1,19 @@
-<hr>
+<div class="allBeers">
+    <a href="/beer/{{this.id}}">
+        <li>
+            <div>
+                <img src="{{this.image_url}}" alt="">
+            </div>
+            <p>
+                <b>{{this.name}}</b>
+            </p>
+            <p class="tagLine">
+                {{this.tagline}}
+            </p>
+            <p>
+                {{this.description}}
+            </p>
 
-<a href="/beer/{{this.id}}">
-    <li>
-        <p>
-            {{this.name}}
-        </p>
-        <p>
-            {{this.tagline}}
-        </p>
-        <p>
-            {{this.description}}
-        </p>
-        <img src="{{this.image_url}}" alt="">
-
-    </li>
-</a>
+        </li>
+    </a>
+</div>
