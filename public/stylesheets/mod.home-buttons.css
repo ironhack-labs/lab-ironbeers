@@ -1,0 +1,23 @@
+.home-buttons {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-buttons .btn {
+    outline: none;
+    background: var(--color-light-blue);
+    color: var(--color-white);
+    cursor: pointer;
+    border-color: var(--color-grey);
+    margin-top: 0.4rem;
+    padding: 1em;
+    border-radius: 8px;
+  }
+  
+  .home-buttons  .btn.is-active,
+  .home-buttons  .btn:hover {
+    background: var(--color-hover);
+    color:   var(--color-white);
+  }

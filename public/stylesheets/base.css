@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  body > * {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  hr {
+    margin: 20px 0;
+  }

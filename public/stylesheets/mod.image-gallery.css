@@ -1,0 +1,12 @@
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+}
+
+.image-gallery img {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
