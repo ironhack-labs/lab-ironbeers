@@ -1,0 +1,15 @@
+img {
+	width: 150px;
+}
+
+.flex-cont {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 100%;
+}
+
+li {
+	display: block;
+	width: 300px;
+	margin-left: 50px;
+}
