@@ -11,9 +11,19 @@ router.get('/', (req, res) => {
 router.get('/beers', async (req, res) => {
   try {
     const beers = await punkAPI.getBeers();
-
-    console.log(beers);
     res.render("beers", {beers})
+  } catch (err) {
+    error => console.log(error);
+  }
+});
+
+
+router.get('/random-beers', async (req, res) => {
+  try {
+    const randomBeer = await punkAPI.getRandom();
+
+    console.log(randomBeer);
+    res.render("random", {randomBeer})
   } catch (err) {
     error => console.log(error);
   }
