@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Avenir;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#nav-main {
+  background-color: dodgerblue;
+  color: whitesmoke;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#home img, #home a{
+  display: block;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+#home a {
+  background-color: dodgerblue;
+  color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 2px;
+}
+#home img {
+  width: 400px;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.beers img {
+  max-height: 200px;
+}
