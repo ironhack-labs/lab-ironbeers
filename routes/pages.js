@@ -10,23 +10,32 @@ router.get('/', (req, res) => {
 
 router.get('/beers', async (req, res) => {
   try {
-    const beers = await punkAPI.getBeers();
-    res.render("beers", {beers})
+    const beer = await punkAPI.getBeers();
+    res.render('beers', { beer });
   } catch (err) {
     error => console.log(error);
   }
 });
 
-
 router.get('/random-beers', async (req, res) => {
   try {
-    const randomBeer = await punkAPI.getRandom();
+    const beer = await punkAPI.getRandom();
+    res.render('random-beer', { beer });
+  } catch (err) {
+    error => console.log(error);
+  }
+});
 
-    console.log(randomBeer);
-    res.render("random", {randomBeer})
+router.get('/beers/beer-:id', async (req, res, next) => {
+  try {
+    const beer = await punkAPI.getBeer(req.params.id);
+
+    console.log(beer);
+    res.render('../views/partials/beer', {beer});
   } catch (err) {
     error => console.log(error);
   }
 });
 
 module.exports = router;
+ 
