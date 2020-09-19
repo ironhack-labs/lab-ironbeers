@@ -1,15 +1,23 @@
-img {
-	width: 150px;
-}
-
 .flex-cont {
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 100%;
+	padding: 50px;
 }
 
-li {
-	display: block;
-	width: 300px;
-	margin-left: 50px;
+.flex-cont li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 250px;
+	margin: 30px;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 10px 10px 44px -24px rgba(0,0,0,0.75);;
 }
+
+.flex-cont img {
+	display: block;
+	height: 200px;
+}
+

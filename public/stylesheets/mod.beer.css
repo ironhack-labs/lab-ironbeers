@@ -1,3 +1,10 @@
-img {
-	width: 250px;
+.beer-big {
+	padding: 50px;
+	height: 100vh;
+}
+
+.beer-big img {
+	height: 500px;
+	margin-right: 70px;
+	float: left;
 }

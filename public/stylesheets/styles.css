@@ -1,5 +1,6 @@
 @import url('./mod.var.css');
 @import url('./mod.nav.css');
+@import url('./mod.footer.css');
 
 body {
 	padding: 0;
@@ -26,18 +27,11 @@ h2 {
 	font-size: 1.3rem;
 }
 
-h3 {
+h4 {
 	color: var(--grey);
 	font-size: 0.9rem;
 }
 
 li {
 	list-style: none;
-}
-
-body {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
 }

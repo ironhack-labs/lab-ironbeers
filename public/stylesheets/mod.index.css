@@ -1,0 +1,29 @@
+.flex-cont-index {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 50px;
+}
+
+.flex-cont-index a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+	width: 200px;
+	background-color: var(--dark-blue);
+	color: var(--white);
+	border-radius: 5px;
+}
+
+.flex-cont-index img {
+	width: 500px;
+	margin-bottom: 30px;
+}
+
+.btns {
+	display: flex;
+	justify-content: space-between;
+	width: 500px;
+}
