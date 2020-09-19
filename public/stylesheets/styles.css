@@ -3,10 +3,9 @@ white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
 */
 * {
-  font-family: Avenir;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -15,14 +14,14 @@ body {
   padding: 0;
 }
 
-#main-content {
+/* #main-content {
   padding-top: 40px;
   padding-bottom: 60px;
-}
+} */
 
 .navbar {
   background-color: #2081c3;
-  height: 50px;
+  height: 70px;
   color: white;
   text-decoration: none;
   display: flex;
@@ -32,7 +31,7 @@ body {
 a {
   color: white;
   text-decoration: none;
-  margin: 10px;
+  margin: 20px;
 }
 
 .home-container {
@@ -43,14 +42,21 @@ a {
 }
 
 #home-pic {
-  height: 200px;
+  height: 300px;
   width: auto;
+  margin: 30px;
 }
 .home-btn {
   padding: 10px;
-  margin: 5px;
+  margin: 15px;
   background-color: #2081c3;
   border-radius: 5%;
   color: white;
   text-decoration: none;
+}
+
+footer {
+  background-color: #0a2c42;
+  color: white;
+  padding: 15px;
 }

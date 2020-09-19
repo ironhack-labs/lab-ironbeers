@@ -1,6 +1,6 @@
 .list.grid {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 30% 30% 30%;
   grid-gap: 20px;
   padding: 20px 0;
   align-items: center;
@@ -10,9 +10,9 @@
 .list.grid .item {
   box-shadow: 1.2px 0.6px 1.5px darkblue;
   border-radius: 0.3rem;
-  height: 80%;
-  width: 80%;
-  padding: 3%;
+  height: 350px;
+  width: 350px;
+  padding: 10%;
   margin: 1%;
   display: flex;
   flex-direction: column;

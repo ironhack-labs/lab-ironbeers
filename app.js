@@ -42,9 +42,9 @@ app.get('/random-beer', (req, res, next) => {
 app.get('/beers/:id', (req, res, next) => {
   punkAPI
     .getBeer(req.params.id)
-    .then(dbRes => {
-      console.log(dbRes);
-      res.render({ beer: dbRes });
+    .then(selectedPunk => {
+      console.log(selectedPunk);
+      res.render('selectedBeer', { selectedPunk, css: ['modbeers'] });
     })
     .catch(next);
 });
