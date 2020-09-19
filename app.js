@@ -26,14 +26,16 @@ app.get('/', (req, res) => {
 app.get('/beers', (req, res, next) => {
   punkAPI
     .getBeers()
-    .then(punks => res.render('beers', { punks, css: [] }))
+    .then(punks => res.render('beers', { punks, css: ['modbeers'] }))
     .catch(err => console.log(err));
 });
 
 app.get('/random-beer', (req, res, next) => {
   punkAPI
     .getRandom()
-    .then(randomBeer => res.render('randomBeers', { randomBeer, css: [] }))
+    .then(randomBeer =>
+      res.render('randomBeers', { randomBeer, css: ['modbeers'] })
+    )
     .catch(err => console.log(err));
 });
 

@@ -1,9 +1,7 @@
 <div class="list grid">
     <ul>
         {{#each randomBeer}}
-        {{> beerpartial}}
-        <li>{{this.food_pairing}}</li>
-        <li>{{this.brewers_tips}}</li>
+        {{> randomBeerPartial}}
         {{/each}}
     </ul>
 </div>

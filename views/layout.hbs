@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IronBeers</title>
-
     <link rel="stylesheet" href="./stylesheets/index.css">
-    <link rel="stylesheet" href="./stylesheets/modbeers.css">
-    <link rel="stylesheet" href="./stylesheets/styles.css">
+    {{#each stylesheets}}
+    <link rel="stylesheet" href="./stylesheets/{{this}}.css">
+    {{/each}}
 </head>
 
 <body>
@@ -17,9 +17,9 @@
         <a href="/beers" class="">Beers</a>
         <a href="/random-beer" class="">Random Beer</a>
     </nav>
-    <main id="main-content">
-        {{{body}}}
-    </main>
+
+    {{{body}}}
+
 </body>
 
 </html>

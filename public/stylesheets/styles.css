@@ -23,6 +23,34 @@ body {
 .navbar {
   background-color: #2081c3;
   height: 50px;
-  color: #f7f9f9;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home-pic {
+  height: 200px;
+  width: auto;
+}
+.home-btn {
+  padding: 10px;
+  margin: 5px;
+  background-color: #2081c3;
+  border-radius: 5%;
+  color: white;
   text-decoration: none;
 }
