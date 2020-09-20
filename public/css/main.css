@@ -1,78 +1,109 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: 1px solid magenta;*/
 }
 
 body {
-  font-family: Avenir;
+    font-family: Avenir;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 #nav-main {
-  background-color: rgb(27, 104, 180);
-  color: whitesmoke;
-  padding: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+    background-color: rgb(27, 104, 180);
+    color: whitesmoke;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #home img,
 #home a {
-  display: block;
-  margin-bottom: 40px;
-  padding: 20px;
+    display: block;
+    margin-bottom: 40px;
+    padding: 20px;
 }
 
 #home a {
-  background-color: dodgerblue;
-  color: whitesmoke;
-  border-radius: 10px;
-  box-shadow: 2px;
+    background-color: dodgerblue;
+    color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 2px;
 }
+
 #home img {
-  width: 400px;
+    width: 400px;
 }
 
 #home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.beers img {
-  max-height: 200px;
+.allBeers img {
+    max-height: 200px;
 }
 
 .beers {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
-.allBeers a li {
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 25%;
-  min-height: auto;
-  margin: 20px;
+.allBeers {
+    width: 33%;
 }
+
+.allBeers a li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+    margin: 20px;
+}
+
 .allBeers a {
-  display: block;
+    display: block;
 }
+
+
 /* .allBeers a li div img {
   width: 100px;
   min-height: fit-content;
 } */
+
 .tagLine {
-  color: grey;
-  margin-bottom: 5px;
-  margin-bottom: 6px;
+    color: grey;
+    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 
+.random {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.random h3 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+
+.random li {
+    margin-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.random>div {
+    width: 66%;
+}
