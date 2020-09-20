@@ -1,10 +1,12 @@
 {{#each beer}}
-<div class="beer">
-    <a href="/beers/beer-{{this.id}}"><img src="{{this.image_url}}" alt="{{this.name}}"></a>
+<li class="beer">
+    <a href="/beers/beer-{{this.id}}"><img class="beer-img" src="{{this.image_url}}" alt="{{this.name}}"></a>
     <a href="/beers/beer-{{this.id}}">
-        <h2 class="title">{{this.name}}</h2>
+    <div class="beer-details"><h2 class="title">{{this.name}}</h2>
     </a>
-    <p>{{this.description}}</p>
-    <p>{{this.tagline}}</p>
-</div>
+    <p class="tagline">{{this.tagline}}</p>
+    <p class="description">{{this.description}}</p>
+    
+    </div>
+</li>
 {{/each}}

@@ -31,7 +31,7 @@ router.get('/beers/beer-:id', async (req, res, next) => {
     const beer = await punkAPI.getBeer(req.params.id);
 
     console.log(beer);
-    res.render('../views/partials/beer', {beer});
+    res.render('../views/partials/beer', {beer, css: ["styles"]});
   } catch (err) {
     error => console.log(error);
   }

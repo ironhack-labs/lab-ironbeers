@@ -1,7 +1,16 @@
-<h1>Random beer</h1>
-
-{{>beer}}
-{{#each beer}}
-<p>{{this.food_pairing}}</p>
-<p>{{this.brewers_tips}}</p>
-{{/each}}
+<div class="random-beer">
+    {{>beer}}
+    {{#each beer}}
+    <div class="more-details">
+        <span class="details">Food pairing</span>
+        <ul>
+            {{#each food_pairing}}
+            <li>
+                {{this}}
+            </li>
+            {{/each}}
+        </ul>
+        <p><span class="details">Brewer tips</span> : {{this.brewers_tips}}</p>
+    </div>
+    {{/each}}
+</div>
