@@ -3,10 +3,7 @@
 
     <ul> {{#each rand}}
         <li>
-            <img src="{{this.image_url}}" atl="beers pic">
-            <h2>{{this.name}} </h2>
-            <h4>{{this.tagline}}</h4>
-            <p>{{this.description}}</p>
+            {{>beerpartial}}
             <p>{{this.food_pairing}}</p>
             <p>{{this.brewers_tips}}</p>
         </li>
