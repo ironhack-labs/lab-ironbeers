@@ -4,7 +4,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev" : "nodemon app.js -e .hsb,.js"
+    "dev" : "nodemon app.js -e .hbs,.js"
   },
   "license": "ISC",
   "dependencies": {

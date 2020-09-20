@@ -2,7 +2,10 @@
 <p>Sorry, no recorded beers for now ...</p>
 {{/unless}}
 
-{{#each beersFromApi}}
-{{>beerPartial this}}
-
-{{/each}}
+<div id="beer-list" class="flex center">
+    {{#each beersFromApi}}
+        <div class="flex center beer-card beer-card-multiple">
+            {{>beerPartial this}}
+        </div>
+    {{/each}}
+</div>
