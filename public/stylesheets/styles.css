@@ -42,7 +42,7 @@ nav{
 }
 
 img {
-    height: 300px;
+    height: 500px;
 
   }
 
@@ -60,8 +60,20 @@ img {
     height: 30px;
     width: auto;
     border: 1px solid #000;
-
     text-align: center;
     border-radius: 10px;
 
   }
+
+  .container img{
+    
+      }
+      
+ .random-container {
+    display:flex;
+    flex-direction: row;
+        max-width:  20%;
+        height: 150px;
+        object-fit: cover;
+        margin: 2em auto;
+ }
