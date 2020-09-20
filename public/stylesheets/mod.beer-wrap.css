@@ -1,62 +1,18 @@
-/*  
+ 
 .beer-wrap {
     display: grid;
     grid-template-columns: repeat(3, minmax(200px, .30fr));
 }
 
 .item img {
-    display: block;
-    max-width: 50px;
-   justify-content: center;
+    display: grid;
+    max-height: 200px;
+justify-content: center;
     align-content: center;
 }
 
+
 .item {
     grid-gap: 10px;
-} */
-
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: center; Or space-between or space-around */
-    max-width: 100%;
-  }
-
-  .item {
-    /* align-items: center;
-    display: flex;
-    flex: 1 1 0;
-    flex-direction: column;
-    text-align: center; */
-    display: block;
-  }
-  
-  .flex > section > p {
-    flex-grow: 1;
-  }
-  
-  /* This rule ist just because of the responsive images */
-@media (max-width: 1600px) {
-    .flex > section {  
-      max-width: 250px;
-    }
-  }
-
-  img {
-    width: 40px;
-    border-radius: 2px;
-  }
-
-  @media (max-width: 1600px) {
-    img{
-      width: 25px;
-    }
-  }
-
-
-.flex > section {
-    background: #fff;
-    padding: 1em;
-    margin: 0.5em;
-    border-radius: 4px;
-  }
+    
+} 
