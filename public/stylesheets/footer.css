@@ -4,7 +4,4 @@
     display: flex;
     align-items: center;
     font-family: --var(--font-family);
-
-    height: calc(100vh - 80px - 2.5rem);
-    /* height: 4px; */
 }
