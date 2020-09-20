@@ -1,8 +1,18 @@
-<a href="/beers/{{this.id}}">
+{{!-- <a href="/beers/{{this.id}}">
 <div class="item">
+     <img src="{{this.image_url}}" alt="a nice beer pic">
         <h2 class="title">Beers</h2>
         {{this.name}} - {{this.tagline}}
-        <img src="{{this.image_url}}" alt="a nice beer pic">
+       
         {{this.description}}
 </div>
+</a> --}}
+
+<a href="/beers/{{this.id}}" class="flex">
+<section class="item">
+     <img src="{{this.image_url}}" alt="a nice beer pic">
+        <h2 class="title">Beers</h2>
+        <p>{{this.name}} - {{this.tagline}}</p>
+        <p>{{this.description}}</p>
+</section>
 </a>
