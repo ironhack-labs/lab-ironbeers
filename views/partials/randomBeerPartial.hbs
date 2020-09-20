@@ -1,12 +1,15 @@
 <div class="beer-container">
-    <a href="/beers/{{this.id}}" class="beer-card item">
-        <li>
-            <img src="{{this.image_url}}" alt="beer" class="catalog-beers"><br>
-            {{this.name}}<br>
-            {{this.tagline}}<br>
-            {{this.description}}<br>
-            {{this.food_pairing}}<br>
-            {{this.brewers_tips}}<br>
-        </li>
+    <a href="/beers/{{this.id}}" class="beer-card">
+        <div class="random-container">
+            <img src="{{this.image_url}}" alt="beer" class="random-beer-pic">
+            <li>
+                <h3 id="beer-name">{{this.name}}</h3>
+                <p id="tag-line">{{this.tagline}}</p>
+                <p class="text">{{this.description}}</p>
+                <h5>Food Pairing</h5>
+                <ul id="pairings">{{this.food_pairing}}</ul>
+                <p class="text"><b>Brewers Tips:</b>{{this.brewers_tips}}</p>
+            </li>
+        </div>
     </a>
 </div>

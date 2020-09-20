@@ -1,10 +1,12 @@
 <div class="beer-container">
     <a href="/beers/{{this.id}}" class="beer-card item">
-        <li>
-            <img src="{{this.image_url}}" alt="beer" class="catalog-beers"><br>
-            {{this.name}}<br>
-            {{this.tagline}}<br>
-            {{this.description}}<br>
+        <li id="box">
+            <img src="{{this.image_url}}" alt="beer" class="catalog-beers">
+            <div class="beer-description">
+                <h3 id="beer-name-catalog">{{this.name}}</h3>
+                <p id="tag-line-catalog">{{this.tagline}}</p>
+                <p id="text-catalog">{{this.description}}</p>
+            </div>
         </li>
     </a>
 </div>
