@@ -1,0 +1,16 @@
+:root {
+    --color-dark: rgba(0,0,0,0.4);
+    --color-white: #f7f9f9;
+    --color-dark-blue: #0a2c42;
+    --color-light-blue: #2081c3;
+    --color-grey: #bfbfbf;
+    --font-text: Arial, Helvetica, sans-serif;
+}
+
+/*
+white: #f7f9f9;
+light-blue: #2081c3;
+dark-blue: #0a2c42;
+grey: #bfbfbf;
+font-family: Arial, Helvetica, sans-serif;
+*/

@@ -1,0 +1,60 @@
+.card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0,0,0, 0.2);
+    padding: 20px;
+}
+
+.single-beer {
+    display:flex;
+    background-color: white;
+}
+
+.card.single-beer img {
+    max-height: 200px !important; 
+    width: auto !important;
+    margin-right: 20px;
+    
+}
+
+.card.single-beer {
+    color: #101;
+}
+
+.img-single {
+    padding: 0 20px;
+}
+
+.single-beer .title {
+    margin-bottom: 20px;
+}
+
+.single-beer .tagline {
+    color: #bfbfbf;
+    margin-bottom: 10px;
+}
+
+.single-beer .description {
+    padding: 10px 0;
+}
+
+.single-beer .food-pairing {
+    margin: 20px 0 15px 25px; 
+}
+
+.single-beer .food-pairing.item {
+    list-style: disc;
+    padding: 2px 0;
+}
+
+.single-beer .food-pairing.item:first-child: {
+    padding-top: 0;
+}
+
+.single-beer .title-2.brewer-tips, .single-beer .brewer-tips {
+    display: inline;
+}
+
+.single-beer .title-2.brewer 
+
+

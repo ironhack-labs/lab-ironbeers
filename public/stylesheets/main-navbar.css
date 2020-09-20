@@ -1,0 +1,30 @@
+.navbar {
+    background-color: #2081c3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar .list {
+    height: 60px;
+    display: flex;
+    padding-left: 30px;
+}
+
+.navbar .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 60px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.navbar .link:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+
+}

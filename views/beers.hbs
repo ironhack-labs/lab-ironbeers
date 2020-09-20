@@ -1,0 +1,18 @@
+<div class="wrapper">
+    <ul class="list grid beers">
+        {{#each beers}}
+        <li class="item">
+            <div class="circle">
+                <img src={{this.image_url}} />
+            </div>
+            <a class="link-beer" href="/beer/{{this.id}}">
+                <h2 class="name-beer">{{this.name}}</h2>
+            </a>
+            <p class="tagline">{{this.tagline}}</p>
+            <p class="description">{{this.description}}</p>
+
+            <a href="/beer/{{this.id}}" class="btn btn-show">Show that beer!</a>
+        </li>
+        {{/each}}
+    </ul>
+</div>
