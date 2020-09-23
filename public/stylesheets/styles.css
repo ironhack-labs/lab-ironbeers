@@ -34,8 +34,32 @@ font-family: Arial, Helvetica, sans-serif;
 /*body*/
 #container {
   box-sizing: border-box;
-  height: 100vh;
+  height: 90vh;
 }
+
+.pinte {
+  height: 55vh;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+button {
+  background-color: #2081c3;
+  border: 1px solid #2081c3;
+  border-radius: 6px;
+  padding: 5px;
+}
+.home a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+/*render beer*/
 .grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -46,17 +70,21 @@ font-family: Arial, Helvetica, sans-serif;
 
 .grid .item {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center; 
 }
 
-.random img, .grid img{
+
+.random img,
+.grid img {
   height: 40vh;
 }
 
-
-
-
-
+.random{
+  margin: 20px;
+  padding: 10px;
+  list-style: none;
+}
 
 /*footer*/
 footer {

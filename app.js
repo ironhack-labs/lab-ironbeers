@@ -3,7 +3,7 @@ const express = require('express');
 const hbs = require('hbs');
 const path = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
-const router = require('../../../../dev-squad-248/module-2/week-1/day-5/1-basic-CRUD/routes/pages');
+
 
 const app = express();
 const punkAPI = new PunkAPIWrapper();
@@ -34,10 +34,10 @@ app.get('/beers', (req, res) => {
     .catch(error => console.log(error));
 });
 
-app.get('/randomBeers', async (req, res) => {
+app.get('/random-beers', async (req, res) => {
   const rand = await punkAPI.getRandom();
   try {
-    res.render('randomBeers', { rand });
+    res.render('random-beers', { oneBeer:rand[0] });
     console.log(rand);
   } catch (err) {
     console.error(err);
