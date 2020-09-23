@@ -2,7 +2,8 @@
 
     <ul class="grid"> {{#each beersFromApi}}
         <li>
-         {{>beerpartial}}
+            {{>beerpartial}}
+            <a href="/beer-detail/{{this._id}}">See more</a>
         </li>
         <br>
         {{/each}}
