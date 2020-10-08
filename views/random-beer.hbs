@@ -1,0 +1,16 @@
+<div>
+    {{#each responseFromAPI}}
+    <div class="random-beer-layout">
+
+        {{> beerpartial this}}
+    </div>
+    <div class="random-beer-bonus-info">
+        Food pairing: {{this.food_pairing}}
+        <br>
+        Brewers' Tips: {{this.brewers_tips}}
+    </div>
+
+
+
+    {{/each}}
+</div>
