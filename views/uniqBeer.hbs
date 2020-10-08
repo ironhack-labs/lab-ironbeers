@@ -1,13 +1,16 @@
 {{#each beer}}
 <div>
     {{> beerDesc this }}
-    <p>Food Pairing</p>
+    <p>First brewed on {{this.first_brewed}}</p>
+    <p>Food pairing</p>
     <ul>
         {{#each this.food_pairing}}
         <li>{{this}}</li>
         {{/each}}
     </ul>
-    <p>Brewers Tips!</p>
+    <p>Brewers tips!</p>
     <p>{{this.brewers_tips}}</p>
+    <p>So whats the twist?</p>
+    <p>{{this.twist}}</p>
 </div>
 {{/each}}

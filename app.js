@@ -33,9 +33,25 @@ app.get('/random-beer', (req, res) => {
   punkAPI.getRandom()
     .then((beer)=>{
       console.log('rng beer passed')
+      console.log(beer)
       res.render('random-beer', {beer});
     })
     .catch((err)=>console.log(err))
 });
+//Trying to make a unique beer page
+
+app.get('/beer/*', (req, res) => {
+    let beerId = req.params[0]
+    console.log('beerId', beerId)
+    punkAPI.getBeer(beerId)
+    .then((beer)=>{
+      res.render('uniqBeer', {beer})
+    })
+    .catch((err)=>{console.log(err)})
+    
+})
+
+
+
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
