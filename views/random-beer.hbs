@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>im rnadom beer</div>
+    {{#each responseFromAPI }}
+    <div><img src="{{this.image_url}}"></div>
+  <p>{{this.name}}</p> 
+   <p> {{this.description}}</p> 
+   <p>{{this.tagline}}</p>
+   <p> {{this.food_pairing}}</p>
+   <p> {{this.brewers_tips}}</p>
+
+    {{/each}}
+</body>
+</html>
