@@ -1,0 +1,11 @@
+
+    {{#each responseFromApi}}
+    <div>
+        <img src="{{this.image_url}}">
+        {{this.name}}
+        {{this.description}}
+        {{this.tagline}}
+        {{this.food_pairing}}
+        {{this.brewer_tips}}
+    </div>
+{{/each}}
