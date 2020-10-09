@@ -1,9 +1,10 @@
 {{#each beer }}
-    <div><img class="beer-pic" src="{{ this.image_url }}"></div>
+    {{!-- <div><img class="beer-pic" src="{{ this.image_url }}"></div>
     <div> {{ this.name }} </div>
     <div> {{ this.description }} </div>
-    <div> {{ this.tagline }} </div>
-    <br>
+    <div> {{ this.tagline }} </div> --}}
+    {{ > beerpartial this }}
+    {{!-- <br>
     <hr/>
-    <br>
+    <br> --}}
 {{/each}}
