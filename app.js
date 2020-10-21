@@ -1,3 +1,4 @@
+const { randomBytes } = require('crypto');
 const express = require('express');
 
 const hbs = require('hbs');
@@ -14,12 +15,24 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Register the location for handlebars partials here:
 
-// ...
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 // Add the route handlers here:
 
 app.get('/', (req, res) => {
   res.render('index');
+});
+
+app.get('/beers', async (req, res) => {
+  const beer = await punkAPI.getBeers()
+  console.log(beer)
+  res.render('beers', {beer:beer});
+});
+
+app.get('/random-beers', async (req, res) => {
+  const randomBeers = await punkAPI.getRandom()
+  console.log(randomBeers)
+  res.render('random-beers', randomBeers[0]);
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
