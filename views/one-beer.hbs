@@ -1,0 +1,12 @@
+<h1>Info choosen beer</h1>
+<div class='beer'>
+    {{> punkApi beer}}
+    <h3>Food pairing</h3>
+    <ul>
+    {{#each beer.food_pairing}}
+    <li>{{this}}</li>
+    {{/each}}
+    </ul>
+    <h3>Brewer tips</h3>
+    <p>{{beer.brewers_tips}} </p>
+</div>
