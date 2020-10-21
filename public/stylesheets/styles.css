@@ -7,17 +7,65 @@ font-family: Arial, Helvetica, sans-serif;
 */
 * {
     font-family: Arial, Helvetica, sans-serif;
-    
+    background-color: red;
 }
 
 nav {
     background-color: #2081c3;
-    color: #f7f9f9;
     height: 70px;
-    margin: auto;
-    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+.nav-items{
+    color: #f7f9f9;
+    font-size: 20px;
+    text-decoration: none; 
+    padding: 15px;
 }
 
 body {
-    background-color: #bfbfbf;
+    background-color: white;
+    height: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.beer-container {
+    display:flex;
+    flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+    align-content: stretch;
+    height: 650px;
+}
+
+.image {
+    width: 300px;
+}
+
+.buttons {
+    background-color: #2081c3;
+    color: #f7f9f9;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 6px;
+    border: 2px solid #2081c3;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.div-buttons {
+    display:flex;
+    flex-direction: column;
+}
+
+.nav-footer {
+    background-color: #0a2c42;
+    height: 70px;
+}
+
+.card {
+    width: 300px;
 }
