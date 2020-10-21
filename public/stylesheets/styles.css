@@ -5,3 +5,19 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+nav {
+    background-color: #2081c3;
+    color: #f7f9f9;
+    height: 70px;
+    margin: auto;
+    text-align: center;
+}
+
+body {
+    background-color: #bfbfbf;
+}

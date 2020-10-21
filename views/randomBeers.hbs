@@ -1,5 +1,7 @@
 <div class="cards-container">
     {{#each randomBeers}}
-    {{> randomBeersCard this}}
+    {{> beersCard this}}  
+    <p class="card-text">{{this.food_pairing}}</p>
+    <p class="card-text">{{this.brewer_tips}}</p>
     {{/each}}
 </div>
