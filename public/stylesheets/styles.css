@@ -5,3 +5,78 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+* {
+  margin: 0;
+}
+.cards-container {
+    display: flex;
+    padding: 20px 100px;
+    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  h5 {
+    font-weight: bold;
+  }
+
+  
+  body {
+    background-color: #e9e9e9;
+    width: 100%;
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    height: auto;
+    width: auto;
+    margin: 5px; 
+    border-radius: 20px;
+    background-color:#2081c3;
+    color: white;
+  }
+
+  .cards-container img {
+    object-fit: contain;
+    object-position: center;
+    height: 200px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 20px; */
+  }
+
+  .img-beer {
+    width: 15vw;
+    margin-top: 30px;
+  }
+
+  .btn {
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color:#2081c3;
+    margin: 20px;
+    border-radius: 10px;
+    border: solid #bfbfbf;
+    color: white;
+
+  }
+
+  nav {
+    background-color:#2081c3;
+  }
+
+  footer {
+    background-color: #0a2c42;
+    padding:15px;
+    color: white;
+    margin: 50px 0;
+  }
