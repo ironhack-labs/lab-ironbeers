@@ -1,0 +1,9 @@
+<div class="beers">
+    {{#each beersFromApi}}
+    {{!-- {{> punkApi this}} --}}
+    <img src="{{image_url}}" alt="imagen cerveza">
+    <h2>{{name}}</h2>
+    <p>{{description}}</p>
+    <p>{{tagline}}</p>
+    {{/each}}
+</div>
