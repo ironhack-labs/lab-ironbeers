@@ -5,3 +5,29 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.img-home{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+.img-home img{
+    width: 20%;
+}
+.bt-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+    padding-top: 10px;
+}
+.card-beer{
+    background-color: aqua;
+}
+
+footer {
+    width:100%;
+    margin: 50px auto;
+    background-color: #bfbfbf;
+    padding-top: 50px;
+}
