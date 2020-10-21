@@ -1,3 +1,4 @@
+const { exception } = require('console');
 const express = require('express');
 
 const hbs = require('hbs');
@@ -16,6 +17,24 @@ hbs.registerPartials(__dirname + '/views/partials');
 
 app.get('/', (req, res) => {
   res.render('index');
+});
+
+app.get('/beers', async (req, res) => {
+  try {
+   const beers = await punkAPI.getBeers();
+   res.render('beers', {beers});
+  } catch (err) {
+   console.error('Could not retrieve beers.');
+ }
+});
+
+app.get('/random-beers', async (req, res) => {
+  try {
+    const randomBeer = await punkAPI.getRandom();
+    res.render('random-beers', {randomBeer});
+   } catch (err) {
+    console.error('Could not retrieve random beers.');
+  }
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

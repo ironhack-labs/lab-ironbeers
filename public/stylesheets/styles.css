@@ -5,3 +5,148 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.footer {
+    font-size: 1.3rem;
+    padding: 30px;
+    width: 100%;
+    height: 80px;
+    background-color: #0a2c42;
+    color: #fff;
+}
+
+h5 {
+    font-weight: bolder;
+}
+
+.container {
+    margin: 145px auto;
+}
+
+.rndMargin {
+    margin-top: 160px;
+    margin-bottom: 91px;
+}
+
+.navbar-style{
+    font-size: 1.3rem;
+    background-color: #2081c3;
+    box-shadow: 2px 2px 10px rgba(0,0,0, .3);
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-link {
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    padding-left: 10px;
+}
+
+.nav-link:hover {
+    background-color: #0a2c42;
+}
+
+.navbar-toggler {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.navbar-dark {
+    background-color: #2081c3;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    padding: 5px 10px;
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.dark-blue {
+    background-color: #0a2c42;
+}
+
+.grey {
+    color: #bfbfbf;
+}
+
+img.rndSize {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+  }
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 460px;
+    margin-bottom:30px;
+}
+
+.btn-primary {
+    font-size: 1.3rem;
+    padding: 10px 30px;
+    background-color: #2081c3;
+    box-shadow: 2px 2px 10px rgba(0,0,0, .3);
+    margin: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0a2c42;
+    border: 1px solid  #0a2c42;
+}
+
+;
+
+.footer-copyright {
+    font-size: 1.3rem;
+}
+
+.card-img-top {
+    width: auto;
+    max-height: 200px;
+    margin-top:30px;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+
+@media only screen and (max-width: 615px) {
+    .footer-txt {
+      font-size:1.1rem;
+    }
+  }
+
+
+  @media only screen and (max-width: 520px) {
+    .footer-txt {
+      font-size:0.9rem;
+    }
+  }
+
+  @media only screen and (max-width: 439px) {
+    .footer-txt {
+      font-size:0.75rem;
+    }
+  }
+

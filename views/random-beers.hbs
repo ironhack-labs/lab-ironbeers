@@ -1,0 +1,19 @@
+<div class="container rndMargin">
+    <div class="row">
+        <div class="col-12 col-md-2">
+            <img class="rndSize d-block mx-auto" src="{{randomBeer.[0].image_url}}" alt="">
+        </div>
+        <div class="col-12 col-md-10">
+            <h1>{{randomBeer.[0].name}}</h1>
+            <p class="grey">{{randomBeer.[0].tagline}}</p>
+            <p>{{randomBeer.[0].description}}</p>
+            <h5>Food Pairing</h3>
+            <ul>
+                <li>{{randomBeer.[0].food_pairing.[0]}}</li>
+                <li>{{randomBeer.[0].food_pairing.[1]}}</li>
+                <li>{{randomBeer.[0].food_pairing.[2]}}</li>
+            </ul>
+            <p><b>Brewer Tips:</b> {{randomBeer.[0].brewers_tips}}</p>
+        </div>
+    </div>
+</div>
