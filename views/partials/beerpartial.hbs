@@ -1,0 +1,12 @@
+<div class="superdiv">
+    {{#each beers}}
+    <div class="partial-beers">
+    <img src="{{this.image_url}}" alt="beer image">
+    <div>
+    <p>Name: {{this.name}}</p>
+    <p>Description: {{this.description}}</p>
+    <p>Tagline: {{this.tagline}}</p>
+    </div>
+    </div>
+    {{/each}}
+</div>
