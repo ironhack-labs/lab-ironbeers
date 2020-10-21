@@ -1,7 +1,13 @@
-<div>
+<div id="random-page">
     {{#each responseFromAPI}}
     {{> beerpartial this}}
-    <p>{{this.food_pairing}}</p>
-    <p>{{this.brewers_tips}}</p>
+    <h3>Food Pairing</h3>
+    <ul>
+    {{#each responseFromAPI.food_pairing}}
+    <li>{{this.food_pairing}}</li>
+    {{/each}}
+    </ul>
+
+    <p><span>Brewer Tips: </span>{{this.brewers_tips}}</p>
     {{/each}}
 </div>

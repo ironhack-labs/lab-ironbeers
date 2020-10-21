@@ -1,5 +1,7 @@
-<div>
+<div id="beers-page">
     {{#each beersFromApi}}
-    {{> beerpartial this}}
+    <div class="single-beer">
+        {{> beerpartial this}}
+    </div>
     {{/each}}
 </div>
