@@ -5,3 +5,27 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+.imgbeer{
+    margin-left: 35%;
+    margin-top: 10%;
+}
+.button{
+    margin-left: 35%;
+    padding: -20px;
+}
+a{
+    text-decoration: none;
+}
+.beerimg1{
+    width: auto;
+    height: auto;
+    margin-left: 40%;
+}
+.descbeer{
+text-align: center;
+}
+h1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
