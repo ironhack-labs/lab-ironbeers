@@ -7,6 +7,7 @@
   },
   "license": "ISC",
   "dependencies": {
+    "epxress": "0.0.1-security",
     "express": "^4.17.1",
     "hbs": "^4.1.1",
     "punkapi-javascript-wrapper": "^1.0.2"

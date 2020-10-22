@@ -5,3 +5,30 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+
+body {
+    font-family: "Varela Round", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #2D3142;
+    background-color: #F6F4D2;
+  }
+  #navbar {
+    display: flex;
+    background-color: #2D3142;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .nav-link {
+    color: #F6F4D2;
+    margin-right: 50px;
+    font-size: 1.2em;
+  }
+
+  img {
+      height: 100px;
+  }
