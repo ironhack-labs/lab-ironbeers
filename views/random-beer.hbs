@@ -8,7 +8,9 @@
 <body>
     <div class="card">
         {{#each randomBeer}}
-        <img src="{{this.image_url}}" alt="{{this.name}}">
+        <div class="imgholder">
+            <img src="{{this.image_url}}" alt="{{this.name}}">
+        </div>
         <h2>{{this.name}}</h2>
         <p>{{this.description}}</p>
         <p>{{this.tagline}}</p>
