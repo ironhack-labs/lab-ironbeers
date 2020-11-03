@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronBeers</title>
+</head>
+
+<body>
+    <div class="card">
+        {{#each randomBeer}}
+        <img src="{{this.image_url}}" alt="{{this.name}}">
+        <h2>{{this.name}}</h2>
+        <p>{{this.description}}</p>
+        <p>{{this.tagline}}</p>
+        <p>{{this.food}}</p>
+        <p>{{this.brewers_tips}}</p>
+        {{/each}}
+    </div>
+</body>
+
+</html>
