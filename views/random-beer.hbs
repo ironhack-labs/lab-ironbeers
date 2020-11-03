@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Random Beer</title>
+</head>
+
+<body>
+    <div class="card">
+        {{#each randomBeer}}
+        <img src="{{this.image_url}}" alt="{{this.name}}">
+        <h2>{{this.name}}</h2>
+        <p>{{this.description}}</p>
+        <p>{{this.tagline}}</p>
+        <p>{{this.food}}</p>
+        <p>{{this.brewers_tips}}</p>
+        {{/each}}
+    </div>
+</body>
+
+</html>
