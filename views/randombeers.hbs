@@ -1,3 +1,15 @@
+<!-- The random-beer.hbs should display the random beer that was retrieved from the database. You should display an image, name, description, tagline, food pairing and brewer tips. The following image shows how this page could look like if you give it a bit of style. However, the styling will come later, so, for now, focus on rendering all the information: -->
 <div class="">
   <p>randombeers</p>
+</div>
+<div>
+  {{#each responseFromAPI}}
+<!-- Display an image, name, description and tagline. -->
+<h3>{{this.name}}</h3>
+    <img src="{{this.image_url}}" alt="">
+    <p>{{this.description}}</p>
+    <p>{{this.tagline}}</p>
+  {{/each}}
+
+
 </div>
