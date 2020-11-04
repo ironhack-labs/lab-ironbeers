@@ -5,3 +5,62 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body{
+    background-color:#bfbfbf;
+}
+
+.img{
+    width: 42%;
+}
+
+.button{
+    align-items: center;
+    text-align: center;
+}
+
+.cardholder {
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 10%;
+    background-color: #bfbfbf ;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-style: none;
+    width: 400px;
+    padding: 2rem;
+    background-color: #bfbfbf;
+    height: 700px;
+}
+
+.card img {
+     height: 200px;
+     align-items: center;
+}
+
+.card h5 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.fixed-bottom{
+    background-color: #0a2c42;
+    color : white;
+    height: 50px;
+}
+
+.text-muteTd{
+    color : gray
+}
+
+.card-img{
+    align-items: flex-end;
+    height: 400px;
+    width: 100px;
+}
