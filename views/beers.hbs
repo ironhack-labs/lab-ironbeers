@@ -1,10 +1,5 @@
-<div class="content-wrapper">
-        {{#each allBeers}}
-     <div class='oneBeer'>
-    <img src=`{{this.image_url}}` alt=`{{this.name}}`>
-    <h2>{{this.name}}</h2>
-    <p>{{this.description}}</p>
-    <p><i>{{this.tagline}}</i></p>
-</div>
+<div class="Beers">
+{{#each allBeers}}
+{{> beerpartial this}}
 {{/each}}
 </div>
