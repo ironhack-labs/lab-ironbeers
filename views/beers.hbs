@@ -1,7 +1,10 @@
 <div>
   {{#each beersFromApi}}
-
+<!-- Display an image, name, description and tagline. -->
+<h3>{{this.name}}</h3>
     <img src="{{this.image_url}}" alt="">
+    <p>{{this.description}}</p>
+    <p>{{this.tagline}}</p>
   {{/each}}
 
 
