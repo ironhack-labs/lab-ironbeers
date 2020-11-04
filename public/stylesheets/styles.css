@@ -1,10 +1,3 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
 .body {
     display: flex;
     flex-direction: column;
@@ -22,4 +15,20 @@ font-family: Arial, Helvetica, sans-serif;
 .main-image {
     text-align: center;
     max-width: 30%;
+}
+
+.Beers {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.one-beer {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+}
+
+.one-beer img {
+    max-width: 150px;
+    height: 300px;
 }

@@ -3,10 +3,10 @@
 {{> beerpartial this}}
 {{/each}}
 <ul>Food pairing:
-            <li>{{[this.food_pairing]}}</li>
-            <li>{{[,this.food_pairing]}}</li>
+            <li>{{this.[foodPairing]}}</li>
+            <li>{{[,food_pairing]}}</li>
             <li>{{[,,this.food_pairing]}}</li>
         </ul>
-        <p><b>Brewers Tips:</b>{{this.brewers_tips}}
+        <p><b>Brewers Tips:</b>{{randomBeer.brewer_tips}}
         </p>
 </div>
