@@ -1,23 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IronBeers</title>
-</head>
-
-<body>
-    <div class="card">
-        {{#each randomBeer}}
-        <img src="{{this.image_url}}" alt="{{this.name}}">
-        <h2>{{this.name}}</h2>
+{{#each randomBeer}}
+<div class="card">
+    <img src="{{this.image_url}}" alt="{{this.name}}" style="width:20%">
+    <div class="container">
+        <h4><b>{{this.name}}</b></h4>
         <p>{{this.description}}</p>
         <p>{{this.tagline}}</p>
-        <p>{{this.food}}</p>
+        <p>{{this.food_pairing}}</p>
         <p>{{this.brewers_tips}}</p>
-        {{/each}}
     </div>
-</body>
-
-</html>
+</div>
+{{/each}}

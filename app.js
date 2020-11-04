@@ -21,21 +21,22 @@ app.get('/', (req, res) => {
 });
 
 app.get('/beers', (req, res) => {
-  getBeers()
+  punkAPI
+    .getBeers()
     .then(beersFromApi => {
-      res.render('beers.hbs', { beersFromApi });
+      res.render('beers', { beersFromApi });
       console.log('Beers from the database: ', beersFromApi);
-      console.log(beersFromApi.length);
     })
     .catch(error => console.log(error));
 });
 
 app.get('/random-beers', (req, res) => {
-  getRandom()
+  punkAPI
+    .getRandom()
     .then(randomBeer => {
-      res.render('random-beers.hbs', { randomBeer });
+      res.render('random-beers', { randomBeer });
     })
     .catch(error => console.log(error));
 });
 
-app.listen(5000, () => console.log('running‍ on port ${PORT}'));
+app.listen(8000, () => console.log('running‍ on port ${PORT}'));
