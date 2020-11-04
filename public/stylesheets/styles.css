@@ -4,4 +4,34 @@ light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
+
+
 */
+
+
+.randomBeers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#beerIndex {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+#btn a{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 600px;
+    padding: 5px;
+background-color:#2081c3 ;
+color: blanchedalmond;
+}
+.beers{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
