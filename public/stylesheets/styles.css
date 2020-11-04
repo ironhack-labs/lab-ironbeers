@@ -1,10 +1,15 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
-* img{
-    size: 50px;
+*{
+    light-blue: #2081c3;
+    dark-blue: #0a2c42;
+    grey: #bfbfbf;
+    background-color: #f7f9f9;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.image{
+   height: 60px;
+}
+.beer-btn{
+    margin: 80px;
 }
