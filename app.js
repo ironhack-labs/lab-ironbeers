@@ -25,22 +25,27 @@ hbs.registerPartials(`${__dirname}/views/partials`)
 app.get('/', (req, res) => {
   res.render('index');
 });
+
 app.get('/beers', (req, res) => {
   punkAPI
   .getBeers()
     .then(beersFromApi => {
-      console.log(beersFromApi);
+      // console.log(beersFromApi);
     res.render('beers', {beersFromApi})}
   )
     .catch(error => console.log(error));
 
 });
 app.get('/randombeers', (req, res) => {
-  res.render('randombeers');
+  punkAPI
+  .getRandom()
+  .then(responseFromAPI => {
+    res.render('randombeers', {responseFromAPI});
+  })
+  .catch(error => console.log(error));
+
 });
 
-// app.get("/", (request, response) => {
-//   response.sendFile(`${__dirname}/views/index.html`)
-// })
+
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
