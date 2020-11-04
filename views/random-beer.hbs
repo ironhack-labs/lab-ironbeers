@@ -1,12 +1,28 @@
 <div class="randomflex">
   <div class="randomgrid">
     {{#each randomBeer}}
-    <img class="randomimg" src='{{this.image_url}}'>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <img class="randomimg" src='{{this.image_url}}' alt="No picture available of the beer {{this.name}}">
+    <div class="randomname">
+      {{this.name}}
+    </div>
+    <div class="randomtagline">
+      {{this.tagline}}
+    </div>
+    <div class="randomdescription">
+      {{this.description}}
+    </div>
+    <div class="randomfoodpairing">
+      <p><strong>Pairing:</strong> </p>
+      <ul>
+        {{#each this.food_pairing}}
+        <li class="pairedfood">{{this}}</li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="randomtips">
+      <strong>Brewers tips:</strong>
+      {{this.brewers_tips}}
+    </div>
     {{/each}}
   </div>
 

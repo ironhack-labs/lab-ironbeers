@@ -61,8 +61,8 @@ body {
   grid-template-rows: 20% 20% 20% 20% 20%;
   justify-items: center;
   align-items: end;
-  height: 400px;
-  width: 400px;
+  height: 410px;
+  width: 410px;
   border: 2px solid black;
   font-size: 0.8rem;
   padding: 15px;
@@ -94,6 +94,8 @@ body {
   grid-column: 3/6;
   grid-row: 3/6;
   align-self: start;
+  text-align: justify;
+  padding: 0px 5px;
 }
 
 .beersdiv {
@@ -103,6 +105,54 @@ body {
 	justify-content: center;
 	align-items: center;
 	align-content: center;
+}
+
+.randomflex {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+.randomgrid {
+  display: grid;
+  grid-template-columns: 250px 800px;
+  grid-template-rows: 75px 50px 150px 250px 150px;
+  column-gap: 20px;
+  font-size: 1.1em;
+}
+
+.randomimg {
+  grid-row: 1/5;
+  max-width: 250px;
+  max-height: 600px;
+  
+}
+
+.randomname {
+  grid-column: 2/3;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.randomtagline {
+  grid-area: 2/2; 
+}
+
+.randomdescription {
+  grid-area: 3/2;
+}
+
+.randomfoodpairing {
+  grid-area: 4/2;
+}
+
+.randomtips {
+  grid-area: 5/2;
+}
+
+.pairedfood {
+  padding: 10px;
 }
 
 /*
