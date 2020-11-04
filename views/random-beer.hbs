@@ -1,0 +1,16 @@
+{{!-- <div class="container-fluid">
+    The Random Beer : 
+    <div class="row">
+        <div class="col-6">
+      
+        </div>
+    </div>
+</div> --}}
+
+      <div class="random-beer">
+                {{#each responseFromAPI}}
+                    <div class="beer-div">
+                        {{this.name}}
+                    </div>
+               {{/each}}
+            </div>
