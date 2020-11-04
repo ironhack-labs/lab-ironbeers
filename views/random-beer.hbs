@@ -1,16 +1,28 @@
-{{!-- <div class="container-fluid">
+ <div class="container-fluid">
     The Random Beer : 
     <div class="row">
-        <div class="col-6">
-      
-        </div>
-    </div>
-</div> --}}
-
-      <div class="random-beer">
+        <div class="col-10">
+            <div class="random-beer">
                 {{#each responseFromAPI}}
                     <div class="beer-div">
-                        {{this.name}}
+                        <div class="row text-center">
+                            <div class="col-5 align-center">
+                                <img src=" {{this.image_url}} " alt=" {{this.name}} ">
+                            </div>
+                            <div class="col-5">
+                                <h1>{{this.name}}</h1>
+                            </div>
+                            <div class="col-5"> {{this.description}}</div>
+                            <div class="col-5">{{this.tagline}}</div>
+                            <div class="col-5"> <h1>Food Pairings </h1> {{this.food_pairing}}</div>
+                            <div class="col-5"> <h1>Brewer's Tips</h1> {{this.brewers_tips}}</div>
+                        </div>
                     </div>
                {{/each}}
             </div>
+
+        </div>
+    </div>
+</div> 
+
+      
