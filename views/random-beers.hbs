@@ -1,1 +1,10 @@
-l;akjsdfi
+<div class="container">
+    {{#each beersFromRandom}}
+    <img class="beerimg1" src="{{this.image_url}}">
+       <p>{{responseFromAPI.name}}</p>
+        <p>{{responseFromAPI.description}}</p>
+        <p>{{responseFromAPI.tagline}}</p>
+        <p>{{this.food_pairing}}</p>
+        <p>{{this.brewers_tips}}</p>
+    {{/each}}
+</div
