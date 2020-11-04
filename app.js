@@ -23,6 +23,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
   res.render('index');
 });
+app.get('/beers', (req, res) => {
+  res.render('beers');
+});
+app.get('/randombeers', (req, res) => {
+  res.render('randombeers');
+});
 
 // app.get("/", (request, response) => {
 //   response.sendFile(`${__dirname}/views/index.html`)
