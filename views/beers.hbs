@@ -1,0 +1,22 @@
+<div>
+<h1>BEERS</h1>
+
+{{#each beersFromApi}}
+
+
+
+
+<div class="card-deck d-flex flex-row">
+ <div class="beer-card">
+      <div class="card">
+    <img src="{{this.image_url}}" class="beer-bottle" alt="{{this.name}}">
+    <div class="card-body">
+      <h5 class="card-title">{{this.name}}<br>{{this.tagline}}</h5>
+      <p class="card-text"><i>{{this.description}}</i></p>
+    </div>
+  </div>
+ </div>
+</div>
+{{/each}}
+
+</div>
