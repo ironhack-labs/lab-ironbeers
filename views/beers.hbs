@@ -1,5 +1,10 @@
 <h1>Beers</h1>
 
 {{#each beersFromApi}}
-    {{this.id}}<!--TODO: Create Card-->
+    <ul>
+        <li>{{this.name}}</li>
+        <img src="{{this.image_url}}" alt="">
+        <li>{{this.description}}</li>
+        <li>{{this.tagline}}</li>
+    </ul>
 {{/each}}
