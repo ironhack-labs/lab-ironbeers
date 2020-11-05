@@ -21,6 +21,11 @@ font-family: Arial, Helvetica, sans-serif;
     margin :50px;
   }
 
+  footer{
+      background-color: #0a2c42 ;
+      text-decoration: white;
+      color: white;
+  }
 
 .btn-block{
     width: 200px;
