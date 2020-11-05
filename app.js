@@ -17,19 +17,26 @@ app.get('/', (req, res) => {
 });
 
 app.get('/beers', (req, res) => {
-  punkAPI.getBeers().then(beersFromApi => res.render('beers', {
-    beersFromApi
-  })).catch(error => console.log(error));
+  punkAPI.getBeers().then(beersFromApi =>
+    res.render('beers', {
+      beersFromApi
+    })
+  ).catch(error => console.log(error));
 });
 
 app.get('/random-beer', (req, res) => {
-  punkAPI.getRandom().then(randomBeer => {
+  punkAPI.getRandom().then(randomBeer =>
     res.render('random-beer', {
       randomBeer
     })
-  }).catch(error => console.log(error))
+  ).catch(error => console.log(error))
 });
 
+app.get(`/beers/beer-:id`, function (req, res) {
+  punkAPI.getBeer((req.params).id).then(beerID => res.render(`beer-by-id`, {
+    beerID
+  })).catch(error => error)
+})
 
 app.listen(3000);
 

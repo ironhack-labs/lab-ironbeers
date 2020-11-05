@@ -13,6 +13,7 @@
     align-items: center;
     width: 100%;
     background-color: rgb(216, 150, 163);
+    min-height: 600px;
 }
 
 .main-page-wrapper a {
@@ -67,25 +68,40 @@
     justify-content: space-between;
 }
 
+section {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: paleturquoise;
+}
+
 .random-beer {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     height: 90%;
-    padding: 1%;
+    padding: 3%;
     box-shadow: 2px 2px grey;
-    margin: 7% 30%;
-    border-radius: 5%;
+    margin: 7% 10%;
+    border-radius: 20px;
     background-color: rgb(216, 150, 163);
+    width: 800px;
 }
 
 .random-beer img {
     padding: 5%
 }
 
+.random-beer a {
+    display: none;
+}
+
 .extra-info {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 300px;
 }
 
 footer {
