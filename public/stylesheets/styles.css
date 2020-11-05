@@ -1,7 +1,46 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+body {
+  background-color: #f7f9f9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  background-color: #2081c3;
+}
+
+.navbar.fixed-bottom {
+  background-color: #0a2c42;
+}
+
+.navbar.fixed-bottom a {
+  font-size: 16px;
+}
+
+.btn{
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+  background-color:  #2081c3;
+}
+
+#home img{
+  height: 400px;
+  object-fit: contain;
+}
+
+.card img {
+  height: 200px;
+  object-fit: contain;
+}
+
+.card-body {
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 14px;
+}
+
+.card {
+  border: none;
+  background-color: #f7f9f9;
+}
+
+footer {
+  margin: 0;
+}
