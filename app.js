@@ -36,7 +36,7 @@ app.get(`/beers/beer-:id`, function (req, res) {
   punkAPI.getBeer((req.params).id).then(beerID => res.render(`beer-by-id`, {
     beerID
   })).catch(error => error)
-})
+});
 
 app.listen(3000);
 
