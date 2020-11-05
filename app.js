@@ -1,3 +1,4 @@
+const PORT = 3000;
 const express = require('express');
 const hbs = require('hbs');
 const path = require('path');
@@ -38,6 +39,6 @@ app.get(`/beers/beer-:id`, function (req, res) {
   })).catch(error => error)
 });
 
-app.listen(3000);
+app.listen(PORT, () => console.log('Server is running on port ${PORT}'))
 
 module.exports = app;
