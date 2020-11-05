@@ -1,0 +1,10 @@
+<div class="topnav">
+  <h1>Random Beer</h1>
+  {{#each responseFromAPI}}
+    <p>{{> somebeer this}}</p> 
+     <p><h3>Food Pairing :</h3>{{#each this.food_pairing}}
+          <li>{{this}}</li>
+          {{/each}}</p>
+        <p>Brewer Tips: {{this.brewers_tips}}</p>
+   {{/each}}  
+  </div>
