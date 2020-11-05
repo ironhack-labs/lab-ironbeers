@@ -5,3 +5,71 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+
+.indexDiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    text-align: center;
+}
+
+a {
+    margin: 1rem 1rem;
+}
+
+.indexDiv>img {
+    width: 297px;
+    height: auto;
+    margin-left: 4rem;
+    margin-top: 4rem;
+}
+
+.card>ul>li {
+    font-style: italic;
+}
+.card {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.card>img {
+   
+    width: 120px;
+    /* height: auto; */
+    height: 300px;
+    
+}
+
+.beers {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ranBeerDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 100px 150px;
+    box-sizing: border-box;
+}
+.ranBeerDiv > img {
+     width: 150px;
+     /* height: 350px; */
+     height: auto;
+     padding-right: 50px;
+     
+}
+/* 
+.imgRandom {
+    width: 120px;
+    height: 350px;
+} */

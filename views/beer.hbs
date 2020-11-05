@@ -1,0 +1,7 @@
+{{!-- <p>beer</p> --}}
+<h1>Beers!</h1>
+<div class="beers">
+    {{#each beersFromApi}}
+    {{> beerCard this}}
+    {{/each}}
+</div>
