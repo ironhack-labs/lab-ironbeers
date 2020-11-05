@@ -1,6 +1,6 @@
 const express = require("express");
 
-const { renderIndex } = require("../controllers/home.controller");
+const { renderIndex } = require("../controllers/home.controllers");
 
 const router = express.Router();
 
