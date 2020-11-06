@@ -23,7 +23,6 @@ app.get('/', (req, res) => {
   });
 
 app.get('/beers', (req, res) => {
-  //const greeting = "Hi there!";
   punkAPI
   .getBeers()
   .then(beersFromApi => {
@@ -35,7 +34,6 @@ app.get('/beers', (req, res) => {
 
 
  app.get('/randombeers', (req, res) => {
-  //const greeting = "Hi there!";
   punkAPI
   .getRandom()
   .then(responseFromAPI => {
@@ -43,6 +41,11 @@ app.get('/beers', (req, res) => {
     res.render("randombeers.hbs", { responseFromAPI });
    })
   .catch(error => console.log(error)); 
+ });
+
+ 
+ app.get('/beers/:beerId', (req, res) => {
+  
  });
 
 
