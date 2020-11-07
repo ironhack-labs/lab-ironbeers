@@ -5,3 +5,20 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+.card-img-top {
+    width: 20rem;
+    height: 45rem;
+    object-fit: contain;
+}
+
+#ranBeerImg{
+    width: 10rem;
+}
+
+#beerDesc{
+    margin-top: 100px;
+}
+
+#NoImage{
+   margin-top: 250px;
+}

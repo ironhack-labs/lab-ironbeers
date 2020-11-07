@@ -1,0 +1,16 @@
+
+{{#each beersFromApi}}
+    <div class="row">
+        <div class="col text-center">
+            <div class="card mt-5" style="width: 100%;">
+                <img class="card-img-top mx-auto mt-2" src="{{this.image_url}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{this.name}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{this.tagline}}</h6>
+                    <p class="card-text">{{this.description}}</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/each}}

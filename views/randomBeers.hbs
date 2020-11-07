@@ -1,0 +1,23 @@
+<div class="row mt-5">
+    {{#each randomBeerFromAPI}}
+        <div class="col-3">
+            {{#if image_url}}
+                <img id="ranBeerImg" src="{{image_url}}">
+            {{else}}
+                <h3 id="NoImage" class="mx-auto">NO IMAGE TO DISPLAY</h3>                
+            {{/if}}
+        </div>
+        <div id="beerDesc" class="col-9">
+            <h2>{{name}}</h2>
+            <h6 class="card-subtitle mb-2 text-muted mt-5">{{tagline}}</h6>
+            <p>{{description}}</p>
+            <p><strong>Food Pairing</strong></p>
+            <ul>
+                {{#each food_pairing}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p><strong>Brewers Tips:</strong> {{brewers_tips}}</p>
+        </div>
+    {{/each}}
+</div>
