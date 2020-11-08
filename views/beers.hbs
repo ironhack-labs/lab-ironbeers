@@ -1,11 +1,7 @@
-{{#each beersFromApi}}
-
-<div class="card" style="width: 18rem;">
-  <img src="{{this.image_url}}" class="card-img-top" alt="{{this.name}}">
-  <div class="card-body">
-    <h5 class="card-title">{{this.name}}</h5>
-    <p class="card-text">{{this.description}}</p>
-    <p class="card-text"><small class="text-muted">{{this.tagline}}</small></p>
+<div class="container">
+  <div class="row">
+      {{#each beersFromApi}} 
+        {{> beerpartial this }} 
+      {{/each}}
+  </div>
 </div>
-</div>
-{{/each}}
