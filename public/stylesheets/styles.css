@@ -5,3 +5,31 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: #2081c3;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    padding: 20px 50px;
+    color: white;
+    text-decoration: none;
+}
+
+#landing-img-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+#landing-img-btn a {
+    margin: 10px;
+}
