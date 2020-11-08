@@ -1,0 +1,15 @@
+<div class="topnav">
+  <h1>Random Beer</h1>
+  {{#each randomBeer}}
+  <div class="col-md-4">
+        <div class="card">
+            <img class="card-img-top" id="beerimg" src="{{this.image_url}}" alt="{{this.name}} {{this.lastName}}"/>
+            <div class="card-body">
+            <h1 class="card-title">{{this.name}}</h1>
+            <p class="card-text">Description: {{this.description}}</p>
+            <h2 class="card-text">Tagline : {{this.tagline}}</h2>
+            </div>
+        </div>
+        </div>
+   {{/each}}  
+  </div> 

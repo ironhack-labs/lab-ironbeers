@@ -89,6 +89,14 @@ In this step, we will have a couple of micro-steps:
 
 The example of how this method works is shown below:
 
+
+
+punkAPI
+  .getBeers()
+
+punkAPI.getBeers()
+
+
 ```js
 punkAPI
   .getBeers()

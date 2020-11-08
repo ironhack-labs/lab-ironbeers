@@ -5,3 +5,35 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+
+#beerimg{
+    height: 200px;
+    width: 100px;
+    margin: 0 30%;
+}
+
+h1{
+    color: #0a2c42;
+}  
+h2{
+    border: #0a2c42 solid 2px;
+    border-radius: 20px;
+    background-color: #0a2c42;
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+}
+
+.card{
+    background-color: #bfbfbf;
+    margin: 5%;
+}
+.btn-block{
+    width: 200px;
+    background-color: steelblue;
+    margin: 15% 0;
+    }
+.bg-dark {
+    background-color: #0a2c42!important;
+}
