@@ -6,6 +6,52 @@ grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
 
-img {
-    width: 50px;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: #2081c3;
+    padding: 20px 10px;
+}
+
+.navbar a {
+    padding-right: 10px;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+} 
+
+.main-image {
+    width: 200px;
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+.button {
+    background-color: #2081c3;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.home-buttons {
+    padding-top: 20px;
+}
+
+.grid-container {
+    display: grid;
 }
