@@ -123,3 +123,21 @@ a {
     padding-top: 1.2rem;
     height: 300px;
 }
+
+@media (max-width: 750px) {
+    #gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    #gallery .col.l4 {
+        max-width: 70vw;
+    }
+    
+    #gallery .card {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+}
