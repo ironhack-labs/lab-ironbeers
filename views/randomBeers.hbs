@@ -2,9 +2,9 @@
     {{#each randomBeerFromAPI}}
         <div class="col-3">
             {{#if image_url}}
-                <img id="ranBeerImg" src="{{image_url}}">
+                <img id="ranBeerImg" src="{{this.image_url}}">
             {{else}}
-                <h3 id="NoImage" class="mx-auto">NO IMAGE TO DISPLAY</h3>                
+                <h3 class="mx-auto mt-5">NO IMAGE TO DISPLAY</h3>                
             {{/if}}
         </div>
         <div id="beerDesc" class="col-9">

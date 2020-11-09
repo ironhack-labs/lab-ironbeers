@@ -1,0 +1,13 @@
+<div class="col-3">
+        {{#if image_url}}
+            <img id="ranBeerImg" src="{{this.image_url}}">
+        {{else}}
+            <h3 class="mx-auto mt-5">NO IMAGE TO DISPLAY</h3>                
+        {{/if}}
+    </div>
+    <div id="beerDesc" class="col-9">
+        <h2>{{this.name}}</h2>
+        <h6 class="card-subtitle mb-2 text-muted mt-5">{{this.tagline}}</h6>
+        <p>{{this.description}}</p>
+    </div>
+</div>
