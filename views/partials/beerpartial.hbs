@@ -1,10 +1,17 @@
-<article>
-    <div>
+<div class="text-center beer-img">
 
-        <img src={{image_url}}>
-        <h1>{{name}}</h1>
-        <p>{{description}}</p>
-        <p>{{tagline}}</p>
+    <img src="{{this.image_url}}" alt="{{this.name}}">
 
-    </div>
-</article>
+</div>
+
+<h2>
+    <a href="/beers/{{this.id}}">
+
+        {{this.name}}
+
+    </a>
+</h2>
+
+<p class="text-muted">{{this.tagline}}</p>
+
+<p>{{this.description}}</p>

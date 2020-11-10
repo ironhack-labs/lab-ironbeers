@@ -1,32 +1,66 @@
-
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-
 body {
-    font-weight: 100;
-    font-family: sans-serif;
-}
-img {
-    width: 30%;
-    margin-top: 100px;
-   
-    margin-left: 200px;
-
-
+    background-color: #f7f9f9;
 }
 
 h1, h2, h3, h4, h5 {
-    margin-bottom: 30px;
-    font-weight: 100;
+    font-weight: bold;
 }
 
-.players-page img{
-    height: 150px;
-    object-fit: cover;
+a {
+    color: black;
 }
-.menu {
-    margin-bottom:  30px;
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.nav {
+    background-color: #2081c3 !important;
+    padding: 25px;
+    padding-left: 80px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+main {
+    padding: 50px;
+    object-fit: contain;
+}
+
+main img {
+
+    height: 300px;
+
+}
+
+.btn-custom {
+    background-color: #2081c3;
+    margin: 20px;
+}
+
+.beers {
+    margin: 30px 0;
+}
+
+
+.beers img {
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.beers p {
+    font-size: 0.8em;
+}
+
+.random-beer img {
+    height: 300px;
+}
+
+.beerOne {
+
+    margin-top: 100 px;
+
 }
