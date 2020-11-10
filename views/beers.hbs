@@ -1,0 +1,11 @@
+<h2>These are our Beers</h2>
+
+<div class="row" >
+  {{#each beer}}
+    <div class="col-md-4 beer-item">
+      {{>beerPartial this}}
+    </div>
+  {{/each}}
+</div>
+
+<a class="btn btn-lg green-btn" href="/">Back to home page</a>

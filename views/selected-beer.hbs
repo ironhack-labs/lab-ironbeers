@@ -1,0 +1,12 @@
+<h2>{{name}}</h2>
+  <article>
+    {{>beerPartial}}
+    <ul>
+      {{#each food_pairing}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p><strong>Brewers Tips: </strong>{{brewers_tips}}</p>  
+  </article>
+
+<a class="btn btn-lg green-btn" href="/">Back to home page</a>
