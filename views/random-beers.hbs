@@ -1,0 +1,27 @@
+<div class="row align-items-center">
+
+    <main class="container">
+
+        {{#each beers}}
+            
+            {{>beerpartials this}}
+
+            <div>
+            
+                <article>
+
+                    <h3>Pairing</h3>
+            
+                    <p>{{this.food_pairing}}</p>
+            
+                    <h3>Brewers Tips</h3>
+            
+                    <p>{{this.brewers_tips}}</p>
+
+                </article>
+            </div>
+        {{/each}}
+
+    </main>
+
+</div>
