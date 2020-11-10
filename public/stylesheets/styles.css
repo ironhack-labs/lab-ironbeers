@@ -40,10 +40,6 @@ footer {
     padding-left: 1vh;
 }
 
-.card>ul>li {
-    font-style: italic;
-}
-
 .card {
     display: flex;
     align-items: center;
@@ -52,6 +48,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 10px;
+    margin: 50px;
 }
 
 .card>img {
