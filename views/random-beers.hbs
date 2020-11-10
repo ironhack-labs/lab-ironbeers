@@ -1,0 +1,17 @@
+<section class="container">
+
+
+    <div class="row beers-list">
+        
+
+        {{#each randomBeers}}
+        {{>beerpartial this}}
+        <p>{{this.brewer_tips}}</p>
+        <br>
+        <p>{{this.food_pairing}}</p>
+        {{/each}}
+        </div>
+
+ 
+
+</section>
