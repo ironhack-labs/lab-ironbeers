@@ -3,19 +3,19 @@
 </head>
 
 <body>
-    <div class="card">
+    <div class="random-beer">
         {{#each randomBeer}}
-        <div class="imgholder">
+        <div>
             <img src="{{this.image_url}}" alt="{{this.name}}">
         </div>
-        <div class="rbox">
+        <div>
             <h2>{{this.name}}</h2>
             <p>{{this.description}}</p>
             <p>{{this.tagline}}</p>
             <h4> Food Pairing </h4>
 
 
-            <ul class="list">
+            <ul>
                 {{#each this.food_pairing}}
                 <li>{{this}} </li>
                 {{/each}}
