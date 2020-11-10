@@ -1,7 +1,70 @@
-/*
-white: #f7f9f9;
+
+/* white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
-*/
+*/ 
+
+body {
+    background-color: rgb(223, 221, 221);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+}
+
+img {
+    height: 300px;
+    display:block;
+    margin: auto;
+    padding: 30px 0px;
+}
+
+.navbar {
+    margin-bottom: 60px;
+    padding: 10px 50px;
+    box-shadow: 0px 7px 13px 0px rgba(10,44,66,0.68);
+    background-color: #2081c3;
+}
+
+.navbar li {
+    margin-left: 10px;
+}
+
+
+h1, h2, h3, h5, h6 {
+    font-weight: 900;
+}
+
+h4 {
+    color: #bfbfbf; 
+    font-size: medium;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    margin-top: 20px;
+    box-shadow: 0px 7px 13px 0px rgba(10,44,66,0.68);
+    background-color: #2081c3;
+    color: white;
+}
+
+.beer-image {
+    display: block;
+    margin: auto;
+    height: 400px;
+}
+
+.fixed-bottom {
+    padding: 20px 0px 20px 40px;
+    background-color: #0a2c42;
+    color: white;
+}
+
+.fixed-bottom a {
+    color: white;
+}
