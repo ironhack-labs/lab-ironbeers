@@ -1,9 +1,7 @@
-<div>
+<div id="grid-container">
     {{#each beersFromAPI}}
-      {{!-- <img src="{{this.image_url}}" alt="{{this.name}}" />
-      <h2>{{this.name}}</h2>
-      <h3>{{this.tagline}}</h3>
-      <p>{{this.description}}</p> --}}
+      <div class="grid-item">
       {{> beerpartial }}
+      </div>
     {{/each}}
 </div>

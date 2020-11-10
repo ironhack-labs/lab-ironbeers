@@ -52,6 +52,18 @@ body {
     padding-top: 20px;
 }
 
-.grid-container {
+#grid-container {
+    padding: 20px 20px;
     display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+}
+
+.grid-item img {
+    height: 150px;
+}
+
+.grid-item {
+    align-self: start;
 }

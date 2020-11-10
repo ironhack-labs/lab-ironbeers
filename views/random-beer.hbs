@@ -1,9 +1,6 @@
-<div>
+<div id="grid-container">
     {{#each randomBeer}}
-        {{!-- <img src="{{this.image_url}}" alt="{{this.name}}"/>
-        <h1>{{this.name}}</h1>
-        <h2>{{this.tagline}}</h2>
-        <p>{{this.description}}</p> --}}
+        <div class="grid-item">
         {{> beerpartial }}
         <h3>Food Pairing:</h3>
             <ul>
@@ -12,5 +9,6 @@
                 {{/each}}
             </ul>
         <p><strong>Brewers tips:</strong> {{this.brewers_tips}}</p>
+        </div>
     {{/each}}
 </div>

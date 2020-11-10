@@ -1,5 +1,7 @@
-<div>
+<div id="grid-container">
     {{#each beerFromAPI}}
-    {{> beerpartial }}
+        <div class="grid-item">
+        {{> beerpartial }}
+        </div>
     {{/each}}
 </div>
