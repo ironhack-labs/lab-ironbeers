@@ -1,4 +1,4 @@
-<div class="container">
+{{!-- <div class="container">
   <h1>Random Beer</h1>
   <div class="row">
       {{#each randomBeer}} 
@@ -14,4 +14,18 @@
         <p>{{this.brewers_tips}}</p>
       {{/each}}
   </div>
+</div> --}}
+
+<div class="container">
+  
+      {{#each randomBeer}} 
+        {{> beerpartial this}} 
+        <ul>
+             {{#each this.food_pairing}}
+                <li>{{this}}</li>
+             {{/each}} 
+        </ul>
+        <p>{{this.brewers_tips}}</p>
+      {{/each}}
+  
 </div>
