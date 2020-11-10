@@ -1,0 +1,50 @@
+
+<section class="container">
+
+    <article class="row">
+
+        {{#each beersObj}}
+        
+        <article class="col-4">
+            {{>beerPartial}}
+        </article>
+        
+        {{/each}}
+
+    </article>
+
+</section>
+
+
+{{!-- <section class="container">
+    {{#each beersObj}}
+    <article class="row">
+        <div class="col-4">
+            <div class="row">
+                <div class="col-2 ">
+                    <img src="{{this.image_url}}">
+                </div>
+
+                <div class="col-8 col-md-12">
+                    <a href="/beers/beer-i3f4d34s34b">
+                        <h1>{{this.name}}</h1>
+                    </a>
+                    <p>{{this.tagline}}</p>
+                    <hr>
+                    <p>{{this.description}}</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    {{/each}}
+</section> --}}
+
+
+
+{{!-- <section class="container">
+    {{#each beersObj}}
+    <article class="row">
+        {{>beerPartial}}
+    </article>
+    {{/each}}
+</section> --}}
