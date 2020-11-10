@@ -1,7 +1,55 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+img.logo {
+   width: 500px;
+   display: block;
+   margin: auto;
+   padding-top: 60px;
+   padding-bottom: 30px;
+}
+p{
+   font-size: small;
+   text-align: left;
+}
+
+a{
+   margin: 10px;
+}
+
+.beerCard-img {
+
+  display: block;
+  margin: auto;
+  height: 400px;  
+  padding-bottom: 20px;
+ 
+}
+
+.beerCard { 
+  height: 50%;
+  object-fit: cover;
+  
+
+}
+
+.randomBeerCard-img {
+   margin-top: 60px;
+   height: 200px;
+   object-fit: cover; 
+   display: flex;
+   
+}
+
+.col-md-3{
+    margin: 30px ;
+}
+
+/* .container {
+    display: flex;
+    align-items: center;
+} */
+
