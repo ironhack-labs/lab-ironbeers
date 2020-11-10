@@ -1,0 +1,14 @@
+<div class="col-md-3">
+    {{#each beers}}
+    <article>
+        <img class="beerimg2" src="{{this.image_url}}">
+        <hr>
+        <div class="beerinfo">
+            <h2 class="name">{{this.name}}</h2>
+            <h4 class="tagline">{{this.tagline}}</h4>
+            <h3 class="description">{{this.description}}</h3>
+        </div>
+    </article>
+    {{/each}}
+</div>
+

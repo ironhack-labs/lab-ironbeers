@@ -5,3 +5,74 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.navbar {
+    margin-bottom: 30px;
+}
+
+.navbar2 {
+    margin-top: 30px;
+}
+
+.beerimg {
+    display: block;
+    margin: auto;
+    width: 35%;
+    padding: 40px;
+
+}
+
+.center-info {
+    text-align: center;
+}
+
+.beerbtn{
+    margin: 15px 600px;
+}
+
+.beerimg2 {
+    width: 30%;
+    align-items: center;
+}
+
+.beerinfo {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.tagline {
+    font-size: 16px;
+    color: #bfbfbf; 
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 14px;
+}
+
+.foodpair, .brew {
+    font-size: 14px;
+}
+
+
+.randombeerimg {
+    width: 100px;
+    height: auto;
+    
+}
+
+.randominfo {
+    display: flex;
+}
+
+.randominfo2 {
+    padding-right: 150px;
+    padding-left: 30px;
+}
+
