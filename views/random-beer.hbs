@@ -1,0 +1,18 @@
+ 
+<section class="container random">
+
+
+ {{#each responseFromAPI}} 
+  {{> beerCard}} 
+  
+    <h3>Food Pairing</h3>
+   
+    {{this.food_pairing}}
+     <h3>Brewers Tips</h3>
+    {{this.brewers_tips}}
+
+
+ {{/each}}
+
+ 
+ </section>

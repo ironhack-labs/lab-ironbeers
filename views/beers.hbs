@@ -1,0 +1,16 @@
+
+<section class="container">
+
+    <h1>Beers </h1>
+
+    <div class="row">
+    {{#each beersFromApi}}
+   
+        <div class="col-md-4 beers">
+        {{> beerCard}} 
+         
+    </div>
+   
+ {{/each}}
+ </div>
+ </section>
