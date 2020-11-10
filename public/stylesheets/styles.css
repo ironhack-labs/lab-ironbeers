@@ -5,3 +5,60 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    height: 80px;
+    background-color: #2081c3!important;
+    -webkit-box-shadow: 2px 4px 7px -4px #000000; 
+    box-shadow: 2px 4px 7px -4px #000000;
+}
+.navbar a {
+    color:white!important;
+    font-weight: bold;
+}
+article img{
+    object-fit: cover;
+}
+.home{
+    height: 85vh;
+}
+
+.beer-jar{
+    width: 400px;
+}
+
+.check-btn{
+    background-color: #2081c3;
+    color:white;
+    font-weight: bold;
+    -webkit-box-shadow: 2px 4px 7px -4px #000000; 
+    box-shadow: 2px 4px 7px -4px #000000;
+}
+
+.margin-top{
+    margin-top:70px
+}
+
+.margin-bottom{
+    margin-bottom:40px
+}
+
+footer.navbar {
+    background-color: #0a2c42!important; 
+}
+
+.img-random{
+    height:250px
+}
+.random{
+    height:85vh
+}
+
+.card-img-top{
+    height: 200px;
+    object-fit: scale-down;
+}
