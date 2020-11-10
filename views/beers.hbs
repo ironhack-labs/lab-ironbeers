@@ -1,12 +1,15 @@
 <section class="container">
 
     <div class="row beers-list">
-
         {{#each beers}}
-        {{>beerInfo this}}
-        {{/each}}
-
+        <div class="col-md-4">
+            <article>
+                {{>beerInfo this}}
+            </article>
+        </div>
+        {{/each}}   
     </div>
+
 
 
 </section>

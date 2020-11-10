@@ -1,16 +1,20 @@
-<section class="container">
-    <div>
-        <img src="{{this.image_url}}" alt="">
-        <p>{{this.name}}</p>
-        <p>{{this.description}}</p>
-        <p>{{this.tagline}}</p>
-        <hr>
-        <ul>
-            {{#each this.food_pairing}}
-            <li>{{this}}</li>
-            {{/each}}
-        </ul>
-        <p>{{this.brewers_tips}}</p>
 
+
+<section class="container">
+
+    <div class="row beers-list">
+        <div class="col-md-8">
+            <article>
+                {{>beerInfo this}}
+                <h6>Food pairing:</h6>
+                <ul>
+                    {{#each this.food_pairing}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                <p>{{this.brewers_tips}}</p>
+            </article>
+        </div>
     </div>
+
 </section>

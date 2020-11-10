@@ -26,7 +26,7 @@ body{
 /*  BEERS PAGE  */
 
 .beers-list img {
-    height: 140px;
+    height: 180px;
     object-fit: cover;   
 }
 
@@ -54,3 +54,13 @@ body{
     margin: 20px 0;
 }
 
+/* RANDOM BEER */
+
+.beers-list li {
+    font-size: small;
+}
+
+h6 {
+    font-size: small;
+    font-weight: bold;
+}
