@@ -1,0 +1,11 @@
+{{!-- <p>Estas en beers</p> --}}
+{{!-- On the beers.hbs view, loop over the array of beers using an {{#each}} loop. Display an image, name, description and
+tagline. --}}
+<section class="container">
+    <div class="row beer-list">
+        {{#each beersArray}}
+        {{>beerpartial}}
+        {{/each}}
+    </div>
+
+</section>

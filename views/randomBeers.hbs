@@ -1,0 +1,30 @@
+{{!-- You should display an image, name, description, tagline, food pairing and brewer tips. --}}
+
+<section class="container">
+    <div class="row justify-content-between beer-list">
+        {{#each randomBeer}}
+        <div class="col-md-4">
+            <article>
+                <div class="image-container">
+                    <img src="{{image_url}}">
+                </div>
+                <div>
+                    <h3>{{this.name}}</h3>
+                    <p>{{this.description}}</p>
+                    <p><i>{{this.tagline}}</i></p>
+                    <p><strong>Food Pairing</strong></p>
+                        
+                        {{#each this.food_pairing}}
+                    <ul>
+                        <li>{{this}}</li> {{!-- tambien vale poner un array vacio --}}
+                    </ul>
+                        {{/each}}
+                    
+                    <p><strong>Brewer Tips</strong>: {{this.brewers_tips}}</p>
+                </div>
+            </article>
+        </div>
+        {{/each}}
+    </div>
+
+</section>
