@@ -1,0 +1,10 @@
+<section class="container">
+    <h2 class="title"><strong>Beers</strong></h2>
+
+    <div class="row card-List">
+        {{#each beersFromApi}}
+        {{>beerCard this}}
+        {{/each}}
+    </div>
+
+</section>

@@ -1,0 +1,31 @@
+<section class="container">
+    <h2 class="title"><strong>Random Beer</strong></h2>
+
+    <div class="row">
+        {{#each responseFromApi}}
+
+
+        <div class="col-md-2">
+            <img class="card-img-top" src="{{this.image_url}}">
+        </div>
+
+        <div class="col-md-9 description">
+
+            <h3><strong>{{this.name}}</strong></h3>
+            <h5 class="headline">{{this.tagline}}</h5>
+            <p>{{this.description}}</p>
+            <h5><strong>Food Pairing</strong></h5>
+
+            <ul>
+                {{#each this.food_pairing}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+
+
+            <p><strong>Brewers Tips: </strong>{{this.brewers_tips}}</p>
+        </div>
+
+        {{/each}}
+    </div>
+</section>

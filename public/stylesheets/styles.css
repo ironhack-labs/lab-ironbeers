@@ -5,3 +5,49 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    margin-bottom: 40px;
+    background-color: #2081c3;
+    padding: 20px;
+}
+
+.title {
+    margin-bottom: 40px;
+}
+
+
+.main-button {
+    background-color: #0a2c42;
+}
+
+.main-photo {
+    height: 30em;
+    margin: 30px 0;
+}
+
+.headline {
+    color: #808080;
+}
+
+.tagLine {
+    color: #808080;
+}
+
+.card-List article {
+    margin-bottom: 30px;
+}
+
+.card-List img {
+    width: 20%;
+    object-fit: cover;
+
+}
+
+.description {
+    margin-left: 40px;
+}
