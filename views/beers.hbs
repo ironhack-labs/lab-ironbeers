@@ -1,7 +1,3 @@
 {{#each beers}}
-<img src={{image_url}}>
-<h2>{{name}}</h2>
-<p>{{description}}</p>
-<h3>{{tagline}}</h3>
-
+{{> beerpartial this}}
 {{/each}}
