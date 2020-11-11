@@ -1,0 +1,17 @@
+
+<div id="beers" class="container column content-center">
+
+    <div  class="container row wrap">
+
+        {{#each beersFromApi}}
+        <div class="container column card align-center">
+
+        <a class="container column content-center" href="/{{id}}">
+        {{> beerPartial this}}
+        </a>
+
+        </div>
+        {{/each}}
+
+    </div>
+</div>

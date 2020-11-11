@@ -5,3 +5,120 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+body{
+    background-color: #f7f9f9;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black
+}
+nav{
+    background-color: #2081c3;
+    height: 4rem;
+    margin:0
+}
+nav li{
+    font-size: 1rem;
+}
+p, li{
+    font-size: .8rem;
+}
+footer{
+    background-color: #0a2c42;
+    height: 4rem;
+}
+footer p{
+    margin-left: 1rem;
+}
+a{
+    text-decoration: none;
+    color: #f7f9f9;
+}
+a p{
+    color:black
+}
+a h4{
+    color:black
+}
+li{
+
+    list-style: none;
+}
+nav li{
+    margin-left: 1.2rem
+}
+.text-white{
+    color: #f7f9f9;
+}
+.container{
+    display: flex;
+}
+.row{
+    flex-direction: row;
+}
+.column{
+    flex-direction: column;
+}
+.content-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+#img-beer img{
+    width: 18rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+#img-beer ul{
+    padding: 0
+}
+.button-blue{
+    background-color: #2081c3;
+    color: #f7f9f9;
+    padding: .5rem 1.5rem .5rem 1.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: .2rem;
+}
+#beers{
+    margin: auto;
+    padding:auto;
+}
+#beers > div{
+    margin: auto;
+    width: 80%;
+}
+
+#beers img{
+    height: 8rem;
+    object-fit: contain;
+    text-align: center;
+}
+.card{
+    width: 25%;
+    margin: 1rem 2.5rem 0 0;
+}
+.card img{
+    margin: 0 30%;
+}
+.tagline{
+    color: #bfbfbf;
+}
+.one-beer {
+    padding: 3rem 10%;
+    margin: auto;
+}
+.one-beer img{
+    height: 10rem;
+    margin: 0 10%;
+}
+.food-pairing{
+    margin-left: 25%;
+}
+.food{
+    list-style-type: disc;
+    margin: 1% 0
+}
