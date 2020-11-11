@@ -1,0 +1,8 @@
+<div class="container">
+<h1>Random Beer</h1>
+    {{#each beersFromApi}}
+        {{>beerPartial this }}
+    <p>Food pairing: {{food_pairing}}</p>
+    <p>Brewers Tips: {{brewers_tips}}</p>
+    {{/each}}
+</div>
