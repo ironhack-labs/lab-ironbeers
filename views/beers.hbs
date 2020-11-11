@@ -1,8 +1,17 @@
-<div>
+
+<div class="container">
+    <div class="row">
+        {{#each beers}}
+        {{> beerpartial this}}
+        {{/each}}
+    </div>
+</div>
+
+{{!-- <div>
     {{#each beers}}
     <img src="{{this.image_url}}" alt="{{this.name}}"/>
     <h5>{{this.name}}</h5>
     <h5>{{this.description}}</h5>
     <h5>{{this.tagline}}</h5>
     {{/each}}
-</div>
+</div> --}}

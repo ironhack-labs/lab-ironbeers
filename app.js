@@ -37,11 +37,22 @@ app.get("/beers", (req, res, next) => {
   .catch(error => console.log(error));
 })
 
+// app.get("/beers", (req, res, next) => {
+//   punkAPI
+//   .getBeer(id)
+//   .then(beers => {
+//     req.params.id
+//     res.render("beers", {beers});
+//   })
+//   .catch(error => console.log(error));
+// })
+
 app.get("/random-beer", (req, res, next) => {
   punkAPI
   .getRandom()
   .then(randomBeers => {
     res.render("random-beer", {randomBeers});
+    console.log(randomBeers)
   })
   .catch(error => console.log(error));
 })
