@@ -1,14 +1,14 @@
-<div class="card-random">
+<div class="random-beer">
+  <div class="card-beer">
+    {{> beerPartial beer}}
 
-  {{> beerPartial beer}}
+    <h3>Food Pairing</h3>
+    <ul>
+      {{#each beer.food_pairing}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
 
-  <h3>Food Pairing</h3>
-  <ul>
-    {{#each beer.food_pairing}}
-    <li>{{this}}</li>
-    {{/each}}
-  </ul>
-
-  <p><b>Brewer Tips:</b> {{beer.brewers_tips}}</p>
-
+    <p><b>Brewer Tips:</b> {{beer.brewers_tips}}</p>
+  </div>
 </div>

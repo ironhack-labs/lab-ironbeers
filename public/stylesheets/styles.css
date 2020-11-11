@@ -21,6 +21,8 @@ body {
 nav {
   background-color: #2081c3;
   padding: 20px; 
+  position: sticky;
+  top: 0;
 }
 
 nav a {
@@ -86,4 +88,10 @@ footer {
   width: 60px;
   height: 140px;
   align-self: center;
+  margin-bottom: 20px;
+}
+
+.random-beer {
+  display: flex;
+  justify-content: center;
 }
