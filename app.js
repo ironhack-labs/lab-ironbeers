@@ -24,6 +24,17 @@ punkAPI
   .then(beersFromApi => console.log('Beers from the database: ', beersFromApi))
   .catch(error => console.log(error));
 
+app.get('/beers/beer-:id', (req, res) => {
+  punkAPI
+    .getBeer(req.params.id)
+    .then(beersFromApi => {
+      // console.log('Beers from the database: ', beersFromApi);
+      console.log(req.params.id);
+      res.render('beers', { beers: beersFromApi });
+    })
+    .catch(error => console.log(error));
+});
+
 app.get('/beers', (req, res) => {
   punkAPI
     .getBeers()
