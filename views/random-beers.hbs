@@ -1,23 +1,17 @@
 <div>
     {{#each rBeers}}
+    <a href="/">
+        <div>
+            {{> beerpartial this}}
+            <br>
+            <br>
+            {{food_pairing}}
+            <br>
+            <br>
+            {{brewers_tips}}
+        </div>
+    </a>
 
-    <div>
-        <img src={{image_url}} style="width: 50px;">
-        <br>
-        {{name}}
-        <br>
-        <br>
-        {{description}}
-        <br>
-        <br>
-        {{tagline}}
-        <br>
-        <br>
-        {{food_pairing}}
-        <br>
-        <br>
-        {{brewers_tips}}
-    </div>
 
     {{/each}}
 </div>

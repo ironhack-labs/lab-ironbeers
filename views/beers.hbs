@@ -1,17 +1,8 @@
-<div>
-    {{#each beers}}
+{{#each beers}}
+<a href="/beers/{{beerId}}">
+    {{> beerpartial this}}
+</a>
 
-    <div>
-        <img src={{image_url}} style="width: 50px;">
-        <br>
-        {{name}}
-        <br>
-        <br>
-        {{description}}
-        <br>
-        <br>
-        {{tagline}}
-    </div>
 
-    {{/each}}
-</div>
+
+{{/each}}

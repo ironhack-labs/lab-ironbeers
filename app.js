@@ -18,6 +18,8 @@ app.get('/', (request, response) => {
 
 // Register the location for handlebars partials here:
 
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
+
 // ...
 
 // Add the route handlers here:
@@ -32,6 +34,15 @@ app.get('/beers', (request, response) => {
     .then(beersFromApi => {
       console.log(beersFromApi);
       response.render('beers', { beers: beersFromApi });
+    })
+    .catch(error => console.log(error));
+});
+
+app.get('/beers/:id', (request, response) => {
+  punkAPI
+    .getBeer()
+    .then(idFromAPI => {
+      response.render('beers', { beerId: idFromAPI });
     })
     .catch(error => console.log(error));
 });
