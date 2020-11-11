@@ -5,3 +5,38 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color:white;
+}
+
+.navbar {
+    background-color: #2882c1;
+    margin-bottom: 130px;
+    padding: 30px;
+}
+
+.navbar a {
+    color: white;
+    margin: 10px;
+}
+
+.btn-home {
+    display: flex;
+    align-items: center;
+    background-color: #2081c3;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.card {
+    width: auto;
+    height: auto;
+}
