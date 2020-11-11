@@ -5,3 +5,76 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 60px;
+
+  background-color: #2081c3;
+}
+.navLink {
+  margin: 20px;
+  color: #f7f9f9;
+  text-decoration: none;
+  font-size: larger;
+}
+.pint {
+  margin: 30px 50vw;
+  width: 500px;
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border-radius: 5%;
+  background-color: #2081c3;
+  box-shadow: 0 5px 0#0a2c42;
+  color: white;
+  padding: 1em 1.5em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.button:hover {
+  background-color: #0a2c42;
+}
+.button:active {
+  box-shadow: none;
+  top: 5px;
+}
+
+footer {
+  width: 100vw;
+  height: 40px;
+
+  background-color: #0a2c42;
+}
+.footerTag {
+  margin-left: 10vw;
+  color: #f7f9f9;
+}
+#card {
+  width: 200px;
+  height: 200px;
+  border: 3px solid yellow;
+  display: flex;
+  flex-direction: row;
+}
+img {
+  width: 40px;
+}
+h1 {
+  font-size: 16px;
+  width: 200px;
+}
