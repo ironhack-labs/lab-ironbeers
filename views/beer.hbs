@@ -1,0 +1,9 @@
+<div>
+  {{#each beer}}
+  {{> beerpartial this}}
+  <div class="col-md-4">
+    <p><span>Food pairing: </span> {{food_pairing}}</p>
+    <p><span>Brewer tips: </span> {{brewers_tips}}</p>
+  </div>
+  {{/each}}
+</div>

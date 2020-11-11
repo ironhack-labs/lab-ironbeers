@@ -5,3 +5,38 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+.container-fluid {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.main-beer {
+  width: 100vw;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#randomBeer {
+  width: 100%;
+  justify-self: center;
+  align-self: center;
+}
+
+.image-beer {
+  height: 6rem;
+}
+
+.m-1 {
+  text-align: center;
+}
+
+.card-img-top {
+  max-height: 50vh;
+}

@@ -1,0 +1,14 @@
+<div class="container-fluid">
+    {{#each beer}}
+  <div class="col-lg-12 description" >
+    <img class="card-img-top col-md-4" id="randomBeer" src="{{this.image_url}}" alt="{{this.name}}"/>
+    <div class="card-body">
+      <h5 class="card-title">{{this.name}}</h5>
+      <h5 class="card-text">{{this.description}}</h5>
+      <h5 class="card-text">{{this.tagline}}</h5>
+      <h5 class="card-text">{{this.food_pairing}}</h5>
+      <h5 class="card-text">{{this.brewer_tips}}</h5>
+    </div>
+  </div>
+    {{/each}}
+</div> 

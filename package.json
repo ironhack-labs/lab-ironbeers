@@ -5,10 +5,22 @@
   "scripts": {
     "start": "node app.js"
   },
-  "license": "ISC",
+  "license": "BSD",
   "dependencies": {
+    "chalk": "^4.1.0",
     "express": "^4.17.1",
     "hbs": "^4.1.1",
     "punkapi-javascript-wrapper": "^1.0.2"
+  },
+  "readmeFilename": "README.md",
+  "gitHead": "f46d08ce1f749525b1ed54d7aa6be8baff56e7fd",
+  "description": "![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VictorIzquier2/lab-ironbeers.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/VictorIzquier2/lab-ironbeers/issues"
   }
 }
