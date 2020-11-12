@@ -1,0 +1,12 @@
+<h1>Have random Beer!</h1>
+
+    <div >
+      {{#each response}}
+  <img src="{{image_url}}" alt="Poster for {{title}}">
+        <p>{{this.name}}</p>
+        <p>{{description}}</p>
+        <p>{{this.tagline}}</p>
+        <p>{{this.food_pairing}}</p>
+        <p>{{this.brewers_tips}}</p>
+      {{/each}}
+    </div>
