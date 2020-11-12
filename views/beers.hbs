@@ -1,0 +1,13 @@
+<div id="beers-page">
+    <div class='beers'>
+        <div class="beers-container">
+            {{#each apiBeers}}
+            {{> beersPartial this}}
+            {{/each}}
+        </div>
+    </div>
+</div>
+{{!-- <h2>{{name}}</h2>
+    <img src="{{image_url}}" alt="">
+    <p>Description: {{description}} </p>
+    <p>Tagline: {{tagline}} </p> --}}

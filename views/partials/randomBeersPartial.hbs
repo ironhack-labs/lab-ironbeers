@@ -1,0 +1,13 @@
+<div class='random-beers-partial'>
+<img src="{{image_url}}" alt="">
+<div class='partial-text'>
+    <h2>{{name}}</h2>
+    <p class='tagline'>{{tagline}} </p>
+    <p> {{description}} </p>
+    <p> <span class='bold'>Brewers Tips:</span> {{brewers_tips}} </p>
+    <p> <span class='bold'>Food pairings:</span> </p>
+    {{#each food_pairing}}
+    <li>{{this}}</li>
+    {{/each}}
+</div>
+</div>
