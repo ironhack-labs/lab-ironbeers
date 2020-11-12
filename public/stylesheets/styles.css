@@ -5,3 +5,14 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+.beerImg {
+    max-height: 25vh;
+}
+.beerWrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.btn {
+    margin: .3rem;
+}

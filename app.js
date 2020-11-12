@@ -21,7 +21,13 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 app.get('/beers', (req, res) => {
-  res.render('beers');
+  punkAPI
+  .getBeers()
+  .then(beersFromApi => { // beersFromApi ist der Name, den wir der ANTWORT der Api geben (die Antwort ist nun also darin gestored, ist vermutlich ein array)
+    res.render('beers', {apiBeers: beersFromApi}); // hier geben wir dem beersFromApi einen neuen Namen (apiBeers), während wir es in ein Objekt verwandeln
+    console.log('Beers from the database: ', beersFromApi)} 
+    )
+  .catch(error => console.log(error));
 });
 app.get('/random-beers', (req, res) => {
   res.render('random-beers');
