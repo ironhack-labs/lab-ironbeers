@@ -5,3 +5,35 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.navbar {
+    display: flex;
+    /* color: red; */
+    background-color: #0a2c42;
+}
+
+
+.navbar a {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    padding: 10x;
+    /* margin-left: 60px;
+    margin-top: 10px; */
+    margin: 10px 60px 10px 60px;
+    
+}
+
+/* 
+body img {
+    height: 50% ;
+    width: auto;
+} */
+
+.image {
+    width: 300px;
+    /* height:150px; */
+}
