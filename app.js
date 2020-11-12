@@ -19,12 +19,6 @@ hbs.registerPartials(path.join(__dirname, 'views/partials'));
 //   res.render('movies', { moviesList: movies })
 // });
 
-// app.get('/godfather', (req, res) => {
-//   const godfather = movies.find(movie => movie.title === 'The Godfather');
-//   console.log(godfather);
-//   res.render('movieDetails', { clickedMovie: godfather });
-// })
-
 // app.get('/onemovie', (req, res) => {
 //   res.render('onemovie')
 // });
@@ -41,13 +35,19 @@ app.get('/beers', (req, res) => {
     .getBeers()
     .then(beersFromApi => {
       res.render('beers', { beers: beersFromApi });
-      //console.log(beersFromApi);
     })
     .catch(error => {
       console.log('error in get/beers: ', error);
     });
 
-  app.get('/random-beers')
+  app.get('/random-beer', (req, res) => {
+    punkAPI
+      .getRandom()
+      .then(random => {
+        res.render('random-beer', { random });
+      })
+      .catch(error => console.log(error));
+  });
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
