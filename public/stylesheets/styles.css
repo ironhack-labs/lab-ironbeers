@@ -13,6 +13,19 @@ font-family: Arial, Helvetica, sans-serif;
   flex-direction: row;
   flex-wrap: wrap;
 }
+.beerWrapper ul {
+  width: 20%;
+  min-width: 300px;
+	max-width: 33vw;
+	padding: 1.4rem;
+	margin: 1rem;
+  border: 2px dotted gold;
+  list-style: none;
+}
+.tagline {
+  font-style: italic;
+}
 .btn {
     margin: .3rem;
 }
+
