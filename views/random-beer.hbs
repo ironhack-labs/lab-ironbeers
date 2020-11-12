@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div >
+        {{#each randomBeer}}
+        <div >
+            <img src="{{this.image_url}}">
+        </div>
+        <div >
+        <h2>{{this.name}}</h2>
+        <p>{{this.description}}</p>
+        <p>{{this.tagline}}</p>
+        <h4> Food Pairing </h4>
+
+
+        <ul >
+        {{#each this.food_pairing}}
+        <li >{{this}} </li>
+        {{/each}} 
+        </ul>
+
+        <p><span >Brewers tips: </span>{{this.brewers_tips}}</p>
+        {{/each}}
+        </div>
+    </div>
+</body>
+</html>
