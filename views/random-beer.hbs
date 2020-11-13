@@ -1,29 +1,18 @@
 
-<div class="beers-container">    
-    {{#each beer}}
-    <div>
-    <img class="image-beer" src="{{this.image_url}}" alt="beer"></img>
-    <p><span style="font-weight: bold;">Name: </span><a href="/beers/{{this.id}}">{{this.name}}</a></p>
-    <p><span style="font-weight: bold;">Description: </span>{{this.description}}</p>
-    <p><span style="font-weight: bold;">Tags: </span> {{this.tagline}}</p>
+<div>
+    <div class="beers-container">
+        {{#each radomBeer}}
+            {{> beerpartial this}}
+            <h4>Food Pairing</h4>
+            <ul> 
+                {{#each food_pairing}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <h5>Brewers Tips:</h5>
+            <span>{{brewers_tips}}</span>
+        {{/each}}
     </div>
-
-    <div>
-    <p><span style="font-weight: bold;">Food pairing: </span> {{food_pairing}}</p>
-    <p><span style="font-weight: bold;">Brewer tips: </span> {{brewers_tips}}</p>
-    </div>
-    {{/each}}
 </div>
-    {{!-- 
-    <img class="beer-image" src={{image_url}}>
-    {{this.name}}
-    {{this.description}}
-    {{this.tagline}}
-</div>
-
-    <div>
-        {{food_pairing}}
-        {{brewers_tips}}
-    </div> --}}
 
     

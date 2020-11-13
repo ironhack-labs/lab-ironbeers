@@ -27,14 +27,16 @@ app.get('/beers', (req, res) => {
     console.log(beerList)
     res.render('beers', {beers: beerList})
   }).catch(error => {
-    console.log("error in Random beers: ", error)
+    console.log("error in beers: ", error)
   })
   })
 
 app.get('/random-beers', (req, res) => {
-  punkAPI.getRandom().then((response) => {
-    res.render('random-beers', {random: response})
-  });
+  punkAPI.getRandom().then((responseFromAPI) => {
+    res.render('random-beers', {randomBeer: responseFromApi});
+  }).catch((error) => {
+    console.log("error in Random beers: ", error)
+  })
 });
 
 

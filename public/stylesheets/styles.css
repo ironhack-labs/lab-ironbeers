@@ -29,7 +29,30 @@ body {
 
 }
 .beers-container {
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.beer-card img{
+    height: 200px;
+    width: auto;
+}
+
+.beer-card{
+    width: 30%;
+    margin: 3rem 1rem;
+}
+.imgCard{
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+
+    background-color: #0a2c42;
+    padding: 1rem;
+    margin: 4.5rem 0;
+    color: #f7f9f9;
 }
