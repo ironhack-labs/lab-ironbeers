@@ -5,3 +5,40 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+  font-family: Arial, Helvetica, sans-serif !important;
+  /* font-weight: bolder !important; */
+  /* font-size: 20px; */
+}
+
+nav {
+  background-color: #2081c3 !important;
+  font-weight: bolder !important;
+}
+.c-white {
+  color: #f7f9f9 !important;
+}
+
+footer {
+  background-color: #0a2c42 !important;
+  color: #f7f9f9 !important;
+  font-weight: bolder !important;
+}
+
+a {
+  background-color: #2081c3 !important;
+  font-weight: bolder !important;
+}
+.init-img {
+  height: 36.55rem !important;
+}
+.card-img-top {
+  width: 100%;
+  height: 15rem;
+  object-fit: contain;
+}
+
+
+  
+ 

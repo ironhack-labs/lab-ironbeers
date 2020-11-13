@@ -1,0 +1,7 @@
+<dv class="row-cols-7 ">
+    <div class="m-5 p-5 d-flex flex-row align-items-baseline justify-content-center card-deck">
+        {{#each beersFromApi}}
+        {{> beerCard this}}
+        {{/each}}
+    </div>
+</dv>

@@ -1,0 +1,20 @@
+<div class="d-flex flex-row m-5 p-5">
+    {{#with responseFromAPI}}
+    <div class="col-2 mb-4 d-flex justify-content-center " style="width: 30rem;">
+        <img style=" width: 100%; height: 15rem;  object-fit: contain;" class="" src={{image_url}} alt="beer-img">
+    </div>
+    <div class="col-6 mx-5">
+        <h2 class="font-weight-bold"><strong>{{name}}</strong></h2>
+        <h4 class="mb-2 text-muted py-3">{{tagline}}</h4>
+        <p style="line-height: 1rem" class="">{{description}}</p>
+        <h5 class="my-3"><strong>Food Pairing</strong></h5>
+        <ul class="my-3">
+            {{#each food_pairing}}
+            <li class="my-3">{{this}}</li>
+            {{/each}}
+        </ul>
+
+        <p><strong>Brewers tips:</strong> {{brewers_tips}}</p>
+    </div>
+    {{/with}}
+</div>
