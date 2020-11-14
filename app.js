@@ -20,7 +20,7 @@ handlebars.registerPartials(path.join(__dirname, "views", "partials"))
 // Add the route handlers here:
 
 app.get('/', (req, res) => {
-  res.render('index');
+  res.render('home-page');
 });
 
 app.get('/beers', (req, res) => {
@@ -29,14 +29,17 @@ app.get('/beers', (req, res) => {
   .catch(error => console.log(error))
 })
 
-app.get('/beerCard', (req, res) => {
-  res.render('beerCard')
-})
-
 app.get('/random-beer', (req, res) => {
   punkAPI
   .getRandom()
   .then(responseFromApi => res.render('random-beer', {randomBeer: responseFromApi}))
+  .catch(error => console.log(error))
+})
+
+app.get('/beers/:id', (req, res) => {
+  punkAPI
+  .getBeer(req.params.id)
+  .then(data => res.render('beerDetails', {clickedBeer: data}))
   .catch(error => console.log(error))
 })
 

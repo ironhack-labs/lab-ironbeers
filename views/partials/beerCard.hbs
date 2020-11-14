@@ -1,11 +1,11 @@
-<div class="beer-card">
-    <a href="/beers">
+{{!-- <div class="beer-partial"> --}}
+    <a href="/beers/{{id}}">
         <img src="{{image_url}}" alt="Image for {{name}}">
     </a>
-    
     <div class="beer-details">
         <h3>{{name}}</h3>
-        <p>{{description}}</p>
-        <p>{{tagline}}</p>
+        <p class="tagline">{{tagline}}</p>
+        <p class="description">{{description}}</p>
     </div>
-</div>
+{{!-- </div> --}}
+

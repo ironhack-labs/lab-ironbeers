@@ -1,7 +1,23 @@
-{{!-- with style --}}
+{{!-- without style --}}
+
+{{!-- {{#each clickedBeer}}
+    
+    {{> beerCard this}}
+
+    <h5>Food Pairing</h5>
+    <ul>
+        {{#each food_pairing}}
+            <li>{{this}}</li>
+        {{/each}}
+    </ul>
+    <p>Brewer Tips: {{brewers_tips}}</p>
+    
+{{/each}} --}}
+
+{{!-- style with the same random-beer format --}}
 
 <div class="random-beer">
-    {{#each randomBeer}}
+    {{#each clickedBeer}}
         {{!-- {{> beerCard this}} --}}
     <a href="/beers/{{id}}"><img src="{{image_url}}" alt="Image for {{name}}"></a>
     <div class="random-beer-details">
