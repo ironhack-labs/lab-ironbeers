@@ -1,16 +1,20 @@
-<div>
-    {{#each oneBeer}}
-        <img class="beer-img" src={{image_url}} alt="beer image">
-        <h3>{{name}}</h3>
-        <h4>{{tagline}}</h4>
-        <p>Description: {{description}}</p>
-        <p>Food pairing: 
-            <ul>
-                {{#each food_pairing}} 
-                <li>{{ this }}</li>
-                {{/each}}
-            </ul>
-        </p>
-        <p>Brewers tips: {{brewers_tips}}</p>
-    {{/each}}
-</div>
+{{#each oneBeer}}
+    <div class="detailed"></div>
+        <div class="box">
+            <img class="detail-beer-img" src={{image_url}} alt="beer image">
+        </div>
+        <div class="box">
+            <h3>{{name}}</h3>
+            <p class="tagline" >{{tagline}}</p>
+            <p><strong>Description:</strong> {{description}}</p>
+            <p><strong>Food pairing:</strong> 
+                <ul>
+                    {{#each food_pairing}} 
+                    <li>{{ this }}</li>
+                    {{/each}}
+                </ul>
+            </p>
+            <p><strong>Brewers tips:</strong> {{brewers_tips}}</p>
+        </div>
+    </div>
+{{/each}}

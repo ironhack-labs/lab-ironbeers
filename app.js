@@ -29,44 +29,14 @@ app.get('/beers', async (req, res) => {
   res.render('beers', { beerList: beersFromApi } );
 });
 
-// app.get('/beers/:id', async (req, res) => {
-//   const beer = await punkAPI.getBeer(req.params.id);
-//   res.render('random-beer', { oneBeer: beer })
-// })
-
-app.get('/beers/:id', (req, res) => {
-  console.log(req.params.id)
-  punkAPI.getBeer(req.params.id)
-  .then(beer => {
-    console.log('BEER', beer)
-    res.render('random-beer', { oneBeer: beer });
-  })
-  .catch(err => console.log(err));
+app.get('/beers/:id', async (req, res) => {
+  let beer = await punkAPI.getBeer(req.params.id);
+  res.render('random-beer', { oneBeer: beer })
 })
 
 app.get('/random-beer', async (req, res) => {
   let responseFromAPI = await punkAPI.getRandom()
-  console.log(responseFromAPI) //
   res.render('random-beer', { oneBeer: responseFromAPI });
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
-
-
-// app.get('/beers', (req, res) => {
-//   punkAPI
-//   .getBeers()
-//   .then(beersFromApi => {
-//     res.render('beers', { beerList: beersFromApi } );
-//     // console.log('Beers from the database: ', beersFromApi)
-//   })
-//   .catch(error => console.log(error));
-// });
-
-// app.get('/beers/:id', (req, res) => {
-//   punkAPI.find(beer => beer.id === req.params.id)
-//   console.log(req.params.id)
-//   .then(beer => {
-//     res.render('random-beer', { oneBeer: beer });
-//   })
-// })
