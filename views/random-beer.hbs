@@ -1,8 +1,10 @@
 {{#each oneBeer}}
-    <div class="detailed"></div>
-        <div class="box">
-            <img class="detail-beer-img" src={{image_url}} alt="beer image">
-        </div>
+    <div class="detailed">
+        {{#if image_url}}
+            <div class="box">
+                <img class="detail-beer-img" src={{image_url}} alt="beer image">
+            </div>
+        {{/if}}
         <div class="box">
             <h3>{{name}}</h3>
             <p class="tagline" >{{tagline}}</p>
