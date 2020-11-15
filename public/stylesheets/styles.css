@@ -28,10 +28,12 @@ h1 {
   flex-wrap: nowrap;
   justify-content: center;
 }
-.randomBeerWrapper>div {
-  width: 50vw;
+.randomBeerWrapper>div:nth-child(2) {
+  width: 70%;
 }
 .randomBeerWrapper>div:first-child {
+  width: 30%;
+  min-width: 200px;;
   display:flex;
   justify-content: end;
 }
@@ -52,7 +54,7 @@ h1 {
 	margin: 1rem;
   list-style: none;
 }
-.food_pairing {
+ul .foodPairingList {
   list-style: disc;
 }
 .beerName {
@@ -66,5 +68,5 @@ h1 {
   font-style: italic;
 }
 .btn {
-    margin: .3rem;
+    margin: .6rem .3rem;
 }
