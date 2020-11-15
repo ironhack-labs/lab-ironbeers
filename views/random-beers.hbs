@@ -1,24 +1,30 @@
 <h1>The most random beer</h1>
 <div class="randomBeerWrapper">
-    {{!-- {{#with randomBeerFromApi}} --}} 
+    {{!-- {{#with randomBeerFromApi}} --}}
     {{!-- with wird anstelle foreach benutzt. wenn wir das nicht machenm müssenw ir vor jedes parameter den namen des objekts schreiben,w eile s ja sein könnte, dass diese Seite mehrere Objekte bekommen hat, bpsw. noch "user" zu den "movies" --}}
+    <div class="imgWrapper">
+        <img src="{{randomBeerFromApi.image_url}}" alt="Bottle of {{randomBeerFromApi.name}}" class="beerImg" />
+    </div>
     <div>
-        <img src="{{randomBeerFromApi.image_url}}" alt="Bottle of {{name}}" class="beerImg"/>
-        </div>
-<div>
-    <ul>
-        <li class="beerName">{{randomBeerFromApi.name}}</li>
-        <li><span class="firstWord">Description:</span> {{randomBeerFromApi.description}}</li>
-        <li><span class="firstWord">Food Pairing:</span> {{randomBeerFromApi.food_pairing}}</li>
-        <li class="tagline"randomBeerFromApi.><span class="firstWord">Tagline:</span> {{randomBeerFromApi.tagline}}</li>
-        <li><span class="firstWord">Brewer Tips:</span> {{brewer_tips}}</li>
-    </ul>
-</div>
-{{!-- {{/with}} --}}
+        <ul>
+            <li class="beerName">{{randomBeerFromApi.name}}</li>
+            <li class="tagline" randomBeerFromApi.>{{randomBeerFromApi.tagline}}</li>
+            <li><span class="firstWord">Description:</span> {{randomBeerFromApi.description}}</li>
+            <li><span class="firstWord">Food Pairing:</span>
+                <ul class="foodPairingList">
+                    {{#each randomBeerFromApi.food_pairing}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </li>
+            <li><span class="firstWord">Brewer Tips:</span>{{randomBeerFromApi.brewers_tips}}</li>
+        </ul>
+    </div>
+    {{!-- {{/with}} --}}
 </div>
 
 {{!-- <h1>The most random beer</h1>
 <div>{{randomBeerFromApi.name}}</div>
 {{!-- <div>{{randomBeerFromApi[0].name}}</div>
 <div>{{randomBeerFromApi[0]}}</div> --}}
-{{!-- <div>{{name}}</div> --}} 
+{{!-- <div>{{name}}</div> --}}
