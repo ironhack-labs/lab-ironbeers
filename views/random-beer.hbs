@@ -1,17 +1,24 @@
-<img src="{{image_url}}" alt="{{name}}">
+<div class="random-wrapper">
 
-<h1>{{name}}</h1>
-<p>{{tagline}}</p>
-<p>{{description}}</p>
+    <div class="random-image">
+        <img class="random-beer-img" src="{{image_url}}" alt="{{name}}">
+    </div>
 
-<h1>Pairing</h1>
-<ul>
-    {{#each food_pairing}}
+    <div class="random-content">
+        <h2>{{name}}</h2>
 
-    <li>{{this}}</li>
+        <p class="tagline">{{tagline}}</p>
+        
+        <p>{{description}}</p>
+        
+        <p><strong>Food Pairing: </strong></p>
+            <ul>
+                {{#each food_pairing}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        
+        <p><strong>Brewers Tips: </strong>{{brewers_tips}}</p>
+    </div>
 
-    {{/each}}
-</ul>
-<p>{{brewers_tips}}</p>
-
-</ul>
+</div>
