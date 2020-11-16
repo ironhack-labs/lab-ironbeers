@@ -1,0 +1,21 @@
+<div> 
+    <img src="{{image_url}}" alt="">
+
+    <h1>Details for {{name}}</h1>
+
+    <p>{{tagline}}</header>
+
+    <p>{{description}}</p>
+
+    <h5>Food Pairing</h5>
+    
+    <ul>
+        {{#each food_pairing}}
+
+        <li>{{this}}</li>
+
+        {{/each}}
+
+    </ul>
+
+</div>
