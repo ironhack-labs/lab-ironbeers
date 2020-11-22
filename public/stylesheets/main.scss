@@ -104,7 +104,7 @@ body {
         width: auto;
       }
       div.info {
-        width: 500px;
+        max-width: 500px;
         margin-left: 2em;
         > * {
           margin: 15px 0;
@@ -143,5 +143,60 @@ body {
     position: fixed;
     bottom: 0;
     width: 100vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    main {
+      article.beers {
+        div.beer {
+          width: 48%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    header {
+      nav {
+        ul {
+          width: fit-content;
+          margin: 0 auto;
+        }
+      }
+    }
+    main {
+      article.beers {
+        div.beer {
+          width: 100%;
+          img {
+            width: 10%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    main {
+      padding: 80px 1em;
+      .beer-info {
+        flex-direction: column;
+        img {
+          width: 30%;
+          height: unset;
+          margin: 0 auto;
+        }
+        div.info {
+          margin-left: unset;
+          margin: 1em;
+        }
+      }
+    }
   }
 }

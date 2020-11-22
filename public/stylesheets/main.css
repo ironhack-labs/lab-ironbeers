@@ -120,7 +120,7 @@ body main .beer-info img {
 }
 
 body main .beer-info div.info {
-  width: 500px;
+  max-width: 500px;
   margin-left: 2em;
 }
 
@@ -165,4 +165,41 @@ body footer {
   position: fixed;
   bottom: 0;
   width: 100vw;
+}
+
+@media (max-width: 1024px) {
+  body main article.beers div.beer {
+    width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  body header nav ul {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  body main article.beers div.beer {
+    width: 100%;
+  }
+  body main article.beers div.beer img {
+    width: 10%;
+  }
+}
+
+@media (max-width: 500px) {
+  body main {
+    padding: 80px 1em;
+  }
+  body main .beer-info {
+    flex-direction: column;
+  }
+  body main .beer-info img {
+    width: 30%;
+    height: unset;
+    margin: 0 auto;
+  }
+  body main .beer-info div.info {
+    margin-left: unset;
+    margin: 1em;
+  }
 }
