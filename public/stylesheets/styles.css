@@ -7,6 +7,7 @@ font-family: Arial, Helvetica, sans-serif;
 */
 
 footer {
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     padding: 3px;
     background-color: #0a2c42;
@@ -16,4 +17,22 @@ footer {
 
 img{
     vertical-align: text-top;
+}
+
+.media{
+    display: flex;
+    padding: 2% 20%;
+    justify-content: space-around;
+    border-top: black;
+}
+
+.media img{
+    object-position: left;
+}
+
+.media h3{
+    font-weight: bold;
+}
+.media p{
+    font-weight: bolder;
 }
