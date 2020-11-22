@@ -5,3 +5,132 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background-color: #2081c3;
+  padding: 20px; 
+  position: sticky;
+  /* position: fixed;
+  width: 100%; */
+  top: 0;
+}
+
+nav a {
+  color: #f7f9f9;
+  text-decoration: none;
+  margin-left: 20px;
+}
+footer {
+  background-color: #0a2c42;
+  color: #bfbfbf;
+  padding: 20px; 
+  /* position: sticky; */
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+.index{
+  margin-top: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.index img {
+  height: 300px;
+  object-fit: cover;
+}
+.index button {
+  background-color: #2081c3;
+  margin-top: 5%;
+  margin-bottom: -50px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: none;
+
+}
+.index a {
+  color: #f7f9f9;
+  text-decoration: none;
+}
+
+.beers{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  align-self: center;
+  margin-left: 20px;
+}
+.beer{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+.beer img {
+  width: 80px;
+  height: 210px;
+  align-self: center;
+  margin-bottom: 20px;
+}
+.nameBeer{
+  text-decoration: none;
+  color: black;
+}
+p {
+  font-size: 0.8em;
+  color: #bfbfbf;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+h5 {
+  font-weight: 100;
+}
+h4{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.randomBeer ul{
+font-size: 0.8em;
+}
+.brewers {
+  font-size: 0.8em;
+  color: black;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+li {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+.randomBeer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* .beerR{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+.beerR img {
+  width: 80px;
+  height: 210px;
+  justify-content: center;
+  margin-bottom: 20px;
+} */
