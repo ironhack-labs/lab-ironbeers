@@ -1,0 +1,147 @@
+@import 'variables';
+
+body {
+  font-family: $font;
+  background-color: $grey;
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+  a.button {
+    background-color: $light-blue;
+    padding: 20px;
+    border-radius: 10px;
+    display: block;
+    width: fit-content;
+    box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.21);
+    &:hover {
+      background-color: $dark-blue;
+      transition: background-color 1s;
+    }
+  }
+  header {
+    background-color: $light-blue;
+    padding: 1.5em 3em;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.21);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100vw;
+    nav {
+      li {
+        display: inline-block;
+        margin: 0 10px;
+        a {
+          color: $white;
+          &:hover {
+            color: $dark-blue;
+          }
+        }
+      }
+    }
+  }
+  main {
+    padding: 90px 3em;
+    .home {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      img {
+        height: 300px;
+      }
+      .buttons {
+        a {
+          margin: 3em auto;
+        }
+      }
+    }
+    article.beers {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      div.beer {
+        width: 30%;
+        background-color: $white;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2em;
+        margin: 20px 0;
+        border: 2px solid $dark-blue;
+        > * {
+          margin: 10px 0;
+        }
+        img {
+          width: 15%;
+        }
+        .info {
+          > * {
+            margin: 15px 0;
+          }
+          h3 {
+            font-size: 1.25em;
+            font-weight: 600;
+          }
+          .tagline {
+            font-style: italic;
+            font-weight: 500;
+            color: $light-blue;
+          }
+        }
+      }
+    }
+    .beer-info {
+      display: flex;
+      justify-content: space-evenly;
+      max-width: 1200px;
+      margin: 3em auto;
+      img {
+        height: 400px;
+        width: auto;
+      }
+      div.info {
+        width: 500px;
+        margin-left: 2em;
+        > * {
+          margin: 15px 0;
+        }
+        h1 {
+          font-size: 2em;
+          font-weight: 600;
+        }
+        .tagline {
+          font-style: italic;
+          font-weight: 500;
+          color: $light-blue;
+        }
+        h3 {
+          font-size: 1.25em;
+          color: $dark-blue;
+          font-weight: 600;
+        }
+        ul {
+          margin-left: 20px;
+          list-style: initial;
+          > * {
+            margin-top: 10px;
+          }
+        }
+        strong {
+          font-weight: 800;
+        }
+      }
+    }
+  }
+  footer {
+    padding: 1em 3em;
+    color: $white;
+    background-color: $dark-blue;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+  }
+}

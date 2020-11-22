@@ -1,8 +1,8 @@
-{{#each beers}}
-
-<div class="beer">
-    {{> beerpartial}}
-    <a href="/beers/beer-{{id}}" class="buttn">More info</a>
-</div>
-
-{{/each}}
+<article class="beers">
+    {{#each beers}}
+    <div class="beer">
+        {{> beerpartial}}
+        <a href="/beers/beer-{{id}}" class="button">More info</a>
+    </div>
+    {{/each}}
+</article>
