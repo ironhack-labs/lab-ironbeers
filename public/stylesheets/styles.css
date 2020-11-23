@@ -8,13 +8,58 @@ font-family: Arial, Helvetica, sans-serif;
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color:#bfbfbf ;
+    color: #f7f9f9;
+    margin: 0;
+    padding:0;
 }
+
+.nav-bar{
+    background-color: #2081c3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav-bar a{
+    color: #f7f9f9;
+    text-decoration: none;
+    margin-right: 10px;
+
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.home img{
+    height: 300px;
+    margin: 20px;
+    margin-top: 100px;
+}
+
+.home button{
+    margin:10px;
+    background-color: #2081c3;
+
+}
+
+button a{
+    color: #f7f9f9;
+    text-decoration: none;
+}
+
 
 .container{
     display: flex;
     margin-top: 30px;
     margin-left: 10%;
     margin-right: 10%;
+    color: black;
 }
 #img{
     height: 200px;
