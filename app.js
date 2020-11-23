@@ -22,9 +22,7 @@ app.get('/', (req, res) => {
 
 app.get('/beers', async (req, res) => {
   const beerList = await punkAPI.getBeers()
-  console.log(beerList)
   res.render('beers', {beerList} );
-
 });
 
 app.get('/random-beers', async (req, res) => {
@@ -33,7 +31,12 @@ app.get('/random-beers', async (req, res) => {
   res.render('random-beers', {beerRandom});
 });
 
-
+//Algo no tengo bien entendido con los parametros en los partials.
+// app.get('/beers/:beerId', async (req, res,) => {
+//   const { beerId } = await punkAPI.getBeer(req.params.id) 
+//   console.log("Beer ID:", beerId)
+//   res.send(`${beerId}`)
+// })
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
 

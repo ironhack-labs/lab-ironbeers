@@ -1,18 +1,15 @@
 <div>
-    <h1>RANDOM BEER</h1>
-
 
     {{#each beerRandom}}
         {{> beerpartial }}
-
-        <li> {{this.food_pairing}} </li>
-        <li> {{this.first_brewed}} </li>
-
+        <p>Food Pairing {{this.food_pairing}} </p>
+        <p>Brewers Tips: {{this.first_brewed}} </p>
     {{/each}}
 
-
-    <a href="/beers">Beers</a>
-    <a href="/random-beers">Check a Random Beer</a>
+    <div class="buttons">
+        <a href="/beers">Beers</a>
+        <a href="/random-beers">Random Beer</a>
+    </div>
 
 </div>
 

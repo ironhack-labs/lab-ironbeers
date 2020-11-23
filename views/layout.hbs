@@ -5,18 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Project</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
     <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/beers">Beers</a></li>
-            <li><a href="/random-beers">Random Beer</a></li>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/beers">Beers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/random-beers">Random Beer</a>
+            </li>
         </ul>
     </nav>
-    {{!-- <h1>This is the layout</h1> --}}
-    {{{body}}}
-</body>
 
+    {{{body}}}
+
+    <div class="footer-copyright py-3">Developed by Monica ;)</div>
+    
+</body>
 </html>

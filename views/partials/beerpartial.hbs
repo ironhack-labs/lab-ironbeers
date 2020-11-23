@@ -1,11 +1,13 @@
-<div>
+<div class="random-beer">
 
-    <ol>
-        <p>lista ordenada</p>
-        <li><img src="{{this.image_url}}" alt="{{this.tagline}}"></img></li>
-        <li> {{this.name}} </li>
-        <li> {{this.description}} </li>
-        <li> {{this.tagline}} </li>
-    </ol>
+    <img id="random-beer-img" src="{{this.image_url}}" alt="{{this.tagline}}"></img>
+    <div class="random-beer-description">
+        <h3> {{this.name}}</h3>
+        <p> {{this.description}} </p>
+        <p> {{this.tagline}} </p>
+        <p><a href="/beers/{{this.beerId}}">Check details</a></p> 
+    </div>
 
 </div>
+
+

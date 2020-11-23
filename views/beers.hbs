@@ -1,16 +1,12 @@
-<div>
-    <h1>beers</h1>
+<div class="beers">
 
     {{#each beerList}}
-        
         {{> beerpartial }}
-
     {{/each}}
 
-    <h2>something else after partials here</h2>
-
-    <a href="/beers">Beers</a>
-    <a href="/random-beers">Check a Random Beers</a>
-
+    <div class="buttons">
+        <a href="/beers">Beers</a>
+        <a href="/random-beers">Random Beer</a>
+    </div>
 </div>
 

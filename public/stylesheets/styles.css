@@ -1,7 +1,62 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+/*TEMPLATE*/
+    /* white: #f7f9f9;
+    light-blue: #2081c3;
+    dark-blue: #0a2c42;
+    grey: #bfbfbf;
+    font-family: Arial, Helvetica, sans-serif; */
+
+html {
+    background-color: #0a2c42;
+}
+
+.nav {
+    background-color: #2081c3;
+}
+
+.nav-link {
+    color: #f7f9f9;
+}
+
+.footer-copyright {
+    background-color: #0a2c42;
+    color: #f7f7f7;
+}
+
+/*INDEX.HBS*/
+.buttons {
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 0;
+}
+img {
+    align-self: center;
+    width: 50vh;
+    margin-bottom: 30px;
+}
+
+.buttons a {
+    background-color: #2081c3;
+    color: #f7f9f9;
+    align-self: center;
+    padding: 5px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: #bfbfbf 3px 3px;
+}
+
+/*RANDOM BEER*/
+.random-beer {
+    background-color: #ededed;
+    display: flex;
+    padding: 50px 30px;
+}
+#random-beer-img {
+    width: 50px;
+}
+
+.random-beer-description {
+    padding-left: 50px;
+}
+
