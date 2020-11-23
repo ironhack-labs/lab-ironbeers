@@ -1,0 +1,18 @@
+<div>
+    <h1>RANDOM BEER</h1>
+
+
+    {{#each beerRandom}}
+        {{> beerpartial }}
+
+        <li> {{this.food_pairing}} </li>
+        <li> {{this.first_brewed}} </li>
+
+    {{/each}}
+
+
+    <a href="/beers">Beers</a>
+    <a href="/random-beers">Check a Random Beer</a>
+
+</div>
+
