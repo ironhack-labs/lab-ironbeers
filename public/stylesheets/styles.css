@@ -53,17 +53,21 @@ button a{
     text-decoration: none;
 }
 
+main{
+    display: flex;
+    flex-wrap: wrap
+}
+
 
 .container{
     display: flex;
-    margin-top: 30px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
     color: black;
+    flex-direction: column;
+    width: 20%;
 }
 #img{
     height: 200px;
-}
-.container div{
-    padding: 20px;
 }

@@ -1,5 +1,5 @@
 {{#each beers }}
-<section class="container">
+{{!-- <section class="container">
     <div>
         <img id="img" src="{{image_url}}" alt="image-beer">
     </div>
@@ -12,6 +12,10 @@
 
 
 
+</section> --}}
+
+<section class="container">
+    {{> beerpartial this}} 
 </section>
 
 
