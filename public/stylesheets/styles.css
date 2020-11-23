@@ -5,3 +5,20 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#img{
+    height: 200px;
+}
+.container div{
+    padding: 20px;
+}
