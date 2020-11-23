@@ -1,5 +1,6 @@
-
-<img src={{this.image_url}} alt={{this.name}}>
+{{#if this.image_url}}
+  <img src={{this.image_url}} alt={{this.name}}>
+{{/if}}
 <h4><a class="nameBeer" href="/beers/{{this.id}}"> {{this.name}} </a></h4>
 <p>{{this.tagline}}</p>
 <h5>{{this.description}}</h5>
