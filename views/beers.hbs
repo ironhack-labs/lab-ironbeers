@@ -1,0 +1,9 @@
+{{#each beers}}
+{{!-- iterate over the beers array and call the beersPartial on each iteration --}} {{!-- {{> beersPartial}} --}}
+    <div>
+        <img src="{{this.image_url}}" alt="{{this.name}}">
+        <h4>{{this.name}}</h4>
+        <p>{{this.description}}</p>
+        <p><em>{{this.tagline}}</em></p>
+    </div>
+{{/each}}
