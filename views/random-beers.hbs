@@ -1,11 +1,11 @@
-<div class="container">
-    <div class="beers-box">
+<div>
+    <div>
         {{#each data}}
         <div align="center"><img class="imgBeers" alt="{{name}}" src="{{image_url}}" /></div>
-        <div class="info" align="center">
+        <div align="center">
             <h2>{{name}}</h2>
-            <h5 class="tagline">{{tagline}}</h5>
-            <p class="descript">{{description}}</p>
+            <h5>{{tagline}}</h5>
+            <p>{{description}}</p>
             <h4>Food Pairing</h4>
             <ul>
                 {{#each this.food_pairing}}
