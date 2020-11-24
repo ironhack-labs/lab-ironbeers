@@ -5,3 +5,79 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.barra-navegacion {
+  background: #2081c3;
+  color: white;
+  line-height: 50px;
+}
+
+.barra-navegacion a {
+  
+  color: white;
+  margin: 10px;
+}
+
+.randombeer {
+  display: flex;
+  margin-top: 5%;
+
+}
+
+.randombeer img {
+  width: 50px;
+  margin-left: 200%;
+}
+
+.bearinfo {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+.index-img  {
+    text-align: -webkit-center;
+    margin-top: 5%;
+}
+
+.index-img img {
+    width: 25%;
+}
+
+.check-beers {
+    writing-mode: vertical-lr;
+}
+
+footer {
+
+    background-color: #0a2c42;
+    padding: 5px;
+    margin-top: 3%;
+}
+footer p {
+    color: white;
+    font-size: 10px;
+    margin-left: 1%;
+}
+
+.buttonOne {
+    margin-left: 770%;
+    margin-top: 20%;
+    
+}
+.buttonTwo {
+    margin-top: 90%;
+    margin-left: -190%;
+}
+
+button {
+    background-color: #2081c3;
+    padding: 10px;
+    border-radius: 5px;
+    border: white;
+}
+a {
+   color: cornsilk;
+}
