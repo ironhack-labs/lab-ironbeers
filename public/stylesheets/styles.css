@@ -5,3 +5,68 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+}
+.beerImg {
+    max-height: 25vh;
+}
+.beerWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.beerWrapper > div {
+    width: 23vw;
+    min-width: 300px;
+    max-width: 100vw;
+}
+.randomBeerWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.randomBeerWrapper>div:nth-child(2) {
+    width: 70%;
+}
+.randomBeerWrapper>div:first-child {
+    width: 30%;
+    min-width: 200px;
+    display: flex;
+    justify-content: end;
+}
+.beerWrapper ul {
+    padding: 1.4rem;
+    margin: 1rem;
+    border: 2px double #0a2c42;
+    list-style: none;
+}
+.imgWrapper {
+    display: flex;
+    align-items: center;
+}
+.randomBeerWrapper ul {
+    min-width: 300px;
+    max-width: 500px;
+    padding: 1.4rem;
+    margin: 1rem;
+    list-style: none;
+}
+ul .foodPairingList {
+    list-style: disc;
+}
+.beerName {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.firstWord {
+    font-weight: 600;
+}
+.tagline {
+    font-style: italic;
+}
+.btn {
+    margin: .6rem .3rem;
+}

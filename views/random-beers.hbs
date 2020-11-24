@@ -1,0 +1,21 @@
+<h1>The most random beer</h1>
+<div class="randomBeerWrapper m-4">
+    <div class="imgWrapper">
+        <img src="{{randomBeerFromApi.image_url}}" alt="Bottle of {{randomBeerFromApi.name}}" class="beerImg"/>
+    </div>
+</div>
+<ul>
+    <li class="beerName">{{randomBeerFromApi.name}}</li>
+    <li class="tagline" randomBeerFromApi.>{{randomBeerFromApi.tagline}}</li>
+    <li><span class="firstWord">Description:</span>{{randomBeerFromApi.description}}</li>
+    <li><span class="firstWord">Food Pairing:</span>
+     <ul class="foodPairingList">
+        {{#each randomBeerFromApi.food_pairing}}
+        <li>{{this}}</li> 
+        {{/each}} 
+     </ul>
+    </li>
+    <li><span class="firstWord">Brewer Tips:</span>{{randomBeerFromApi.brewers_tips}}</li>
+</ul>
+</div>
+</div>
