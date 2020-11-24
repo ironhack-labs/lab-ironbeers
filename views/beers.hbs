@@ -1,0 +1,11 @@
+<h1>Beers</h1>
+<div>
+{{#each beers}}
+<ul>
+    <li>
+        {{> beerpartial}}
+        <a href="/beers/{{this.id}}"><img src="{{this.image_url}}"></a>
+    </li>
+</ul>
+{{/each}}
+</div>

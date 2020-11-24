@@ -5,3 +5,50 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+html, body{
+    margin:0;  
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: space-between;
+}
+.margin-top{
+    margin-top: 20px;
+}
+.margin-left{
+    margin-left: 60px;
+}
+nav{
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.21);
+    background-color: #2081c3;
+    height: 50px;
+}
+nav ul{
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    display:inline;
+}
+nav a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+    color: #fff;
+}
+button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+img{
+    margin-top: 50px;
+    height:300px;
+}
+
