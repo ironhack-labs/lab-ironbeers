@@ -1,12 +1,10 @@
 {{#each randomBeer }}
-<div class="media">
-    <img src="{{image_url}}" width="100" height="400" >
-    <div class="media-body">
-        <h3 >{{name}}</h3>
-        <h5>Description:</h5>
+<div class="column">
+    <div class="card_2">
+     <img src="{{image_url}}" width="100" height="400" >
+          <h3 >{{name}}</h3>
+        <p class="tagline">{{tagline}}</p>
         <p>{{description}}</p>
-        <h5>Tagline:</h5>
-        <p>{{tagline}}</p>
         <h5>Food Pairing:</h5>
         <ul>
             <li>
@@ -18,6 +16,8 @@
     </div>
 </div>
 {{/each}}
+
+
 
 
 <footer class="t-random">
