@@ -14,9 +14,11 @@ font-family: Arial, Helvetica, sans-serif;
 }
 a {
   text-decoration: none;
+}
+nav a {
   color: white;
 }
-a:hover {
+nav a:hover {
   font-weight: bold;
 }
 nav {
@@ -65,8 +67,9 @@ button {
   flex-direction: column;
   justify-content: space-between;
 }
-.beer-text-div > * {
+.beer-text-div * {
   margin: 10px;
+  color: black;
 }
 .food-pairings,
 .brewers-tips {
