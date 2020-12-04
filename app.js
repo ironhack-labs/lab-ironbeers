@@ -62,12 +62,12 @@ app.get("/beers/beer-:id", async (req, res) => {
   const detail = await punkAPI
     .getBeer(req.params.id)
     .then(responseFromAPI => {
-      const randomBeer = responseFromAPI[0]
-      res.render("random-beer", { randomBeer });
+      const detail = responseFromAPI[0]
+      res.render('detail-beer', { detail })
     })
     .catch(error => console.log(error))
-
-  res.render('detail-beer', { detail })
+  
+  
 })
 
 

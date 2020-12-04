@@ -1,0 +1,27 @@
+<div class="random-page">
+
+        {{#with detail}}
+
+        {{> BeerPartial}}
+
+        <a href="/beers/beer-{{this.id}}">
+                <div>
+                        <p class="item-heading">Food Pairing</p>
+                        <ul>
+                                {{#each food_pairing}}
+                                <li class="item-food-paring">{{this}}</li>
+                                {{/each}}
+                        </ul>
+
+                </div>
+
+                <div>
+                        <p><span class="item-heading">Brewer Tips: </span><span
+                                        class="item-tips">{{this.brewers_tips}}</span></p>
+
+                </div>
+        </a>
+
+        {{/with}}
+
+</div>
