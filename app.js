@@ -2,6 +2,7 @@ const express = require('express');
 
 const hbs = require('hbs');
 const path = require('path');
+const { send } = require('process');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 
 const app = express();
@@ -14,7 +15,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Register the location for handlebars partials here:
 
-// ...
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 // Add the route handlers here:
 
@@ -22,4 +23,23 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-app.listen(3000, () => console.log('🏃‍ on port 3000'));
+app.get('/beers', (req, res) => {
+  punkAPI
+    .getBeers()
+    .then(beersFromApi => {
+      res.render('beers', { beersFromApi });
+      console.log('Beers from the database: ', beersFromApi);
+    })
+    .catch(error => console.log(error));
+});
+
+app.get('/random-beers', (req, res) => {
+  punkAPI
+    .getRandom()
+    .then(responseFromAPI => {
+      res.render('random-beers', { responseFromAPI });
+    })
+    .catch(error => console.log(error));
+});
+
+app.listen(3000, () => console.log('🏃‍ on port http://localhost:3000'));
