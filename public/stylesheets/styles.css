@@ -10,12 +10,72 @@ font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  font-weight: bold;
 }
 nav {
   background-color: #2081c3;
+  box-shadow: 3px 3px 5px grey;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+#home-beer {
+  width: 40vw;
 }
 #indexPageDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#indexPageDiv > * {
+  margin-bottom: 20px;
+}
+button {
+  color: white;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 3px 3px 5px grey;
+  padding: 10px;
+  background-color: #2081c3;
+}
+.all-beers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.beer-image {
+  width: 7vw;
+  margin: 10px;
+}
+.one-beer {
+  display: flex;
+}
+.beer-text-div {
+  width: 35vw;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.beer-text-div > * {
+  margin: 10px;
+}
+.food-pairings,
+.brewers-tips {
+  margin-left: 10px;
+}
+footer {
+  background-color: #0a2c42;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
 }
