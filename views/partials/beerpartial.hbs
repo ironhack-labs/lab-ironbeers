@@ -1,0 +1,11 @@
+{{#each this}}
+
+<div class="beer">
+
+    <img src="{{this.image_url}}"><br>
+    <a href="/beers/beer/{{this.id}}">{{this.name}} </a><br>
+    {{this.desciption}} - {{this.tagline}} <br>
+
+
+</div>
+{{/each}}

@@ -1,0 +1,40 @@
+<h1>Random beers</h1>
+{{!-- 4.2 The random-beer.hbs view --}}
+
+
+{{> beerpartial responseFromAPI}}
+
+<p>Food Pairing</p>
+
+{{#each responseFromAPI}}
+
+<ul>
+    {{#each this.food_pairing}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+<br>
+<p>Brewer Tips: {{this.brewers_tips}}</p>
+
+
+{{/each}}
+
+
+{{!-- {{#each responseFromAPI}}
+<div class="randomBeer">
+
+    <img src="{{this.image_url}}"><br>
+    {{this.name}} - {{this.desciption}} - {{this.tagline}} <br>
+    <p>Food Pairing</p>
+    <ul>
+        {{#each this.food_pairing}}
+
+        <li>{{this}}</li>
+
+        {{/each}}
+    </ul>
+    <br>
+    <p>Brewer Tips: {{this.brewers_tips}}</p>
+
+
+    {{/each}} --}}
