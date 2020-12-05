@@ -130,3 +130,22 @@ ul,
 #tips {
   font-size: 12px;
 }
+
+.details {
+  /* position: absolute; */
+  height: 88vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.details #details-beer {
+  /* position: relative;
+  top: 20vh; */
+  width: 80vw;
+  margin: 50px;
+}
+
+strong {
+  color: #2081c3;
+}

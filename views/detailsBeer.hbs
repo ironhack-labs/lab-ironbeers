@@ -1,19 +1,7 @@
-{{name}}
-{{this.id.tagline}}
-{{this.first_brewed}}
-{{this.description}}
-{{this.image_url}}
-{{this.abv}}
-{{this.ibu}}
-{{this.target_fg}}
-{{this.target_og}}
-{{this.ebc}}
-{{this.srm}}
-{{this.ph}}
-{{this.attenuation_level}}
-{{this.volume}}
-{{this.boil_volume}}
-{{this.method}}
-{{this.ingredients}}
-{{this.food_pairing}}
-{{this.brewers_tips}}
+<div class="details">
+    <ul id="details-beer">
+        {{#each oneBeerDetail}}
+        <li><strong>{{@key}}:</strong> {{this}}</li>
+        {{/each}}
+    </ul>
+</div>
