@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 20px;
+    font-family: Avenir;
+  }
+  
+  img {
+      max-width: 150px;
+  }
+
+  a {
+      background-color: blue;
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+  }
