@@ -13,10 +13,12 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+// route for the index
 app.get('/', (req, res) => {
   res.render('index'); //page home
 });
 
+// route for the page beers
 app.get('/beers', (req, res) => {
   punkAPI
     .getBeers()
@@ -29,6 +31,7 @@ app.get('/beers', (req, res) => {
   // res.render('beers');
 });
 
+// route for the random beers
 app.get('/random-beers', (req, res) => {
   punkAPI
     .getRandom()

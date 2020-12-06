@@ -5,3 +5,87 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+:root{
+    --background:  #2081c3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background);
+    padding: 15px;
+}
+
+.navbar a, .menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.homepage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* image de la biere de la page d'accueil */
+.imgBeers{
+    width: 40vw;
+    margin: 20px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+/* a:first-child{
+    padding: 10px;
+} */
+
+.menu a{
+    background-color: var(--background);
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+    margin: 40px;
+    font-size: 50px;
+}
+
+.allItems{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.imgBiere{
+    width: 100px;
+}
+
+.description{
+    width: 30vw;
+    margin: 10px;
+}
