@@ -1,7 +1,9 @@
 <h1 class="title">random Beer</h1>
 
-{{#each randomBeer}}
-{{> beerpartial}}
-<p>{{food_pairing}}</p>
-<p>{{brewer_tips}}</p>
-{{/each}}
+<div class="affiche">
+    {{#each randomBeer}}
+    {{> beerpartial}}
+    <p>{{food_pairing}}</p>
+    <p>{{brewer_tips}}</p>
+    {{/each}}
+</div>

@@ -70,6 +70,7 @@ body{
 .allItems{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .card{
@@ -87,5 +88,5 @@ body{
 
 .description{
     width: 30vw;
-    margin: 10px;
+    margin: 20px;
 }
