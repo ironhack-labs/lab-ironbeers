@@ -1,10 +1,7 @@
 <div>
+    <div>
+    {{>beerpartial responseFromAPI}}
     {{#each responseFromAPI}}
-        <div>
-        <img src="{{this.image_url}}" alt="beers image">
-        {{this.name}}
-        {{this.description}}
-        {{this.tagline}}
         {{this.food_pairing}}
         {{this.brewers_tips}}
         </div>
