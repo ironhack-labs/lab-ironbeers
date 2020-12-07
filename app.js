@@ -37,16 +37,17 @@ app.get('/random-beers', (req, res) => {
   punkAPI
     .getRandom()
     .then(responseFromAPI => {
-      res.render('random-beers', { responseFromAPI });
+      res.render('random-beers', { responseFromAPI }); // same as { responseFromAPI: responseFromAPI }
     })
     .catch(error => console.log(error));
 });
 
 app.get('/beers/:id', (req, res) => {
   punkAPI
-    .getBeer({ _id: req.params.name })
+    .getBeer(req.params.id)
     .then(beerToClick => {
-      res.render('partials/beerpartial', { beerToClick });
+      res.render('oneBeer', { beer: beerToClick[0] }); // why we need to precise
+      console.log(beerToClick);
     })
     .catch(error => console.log(error));
 });
