@@ -13,10 +13,20 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Register the location for handlebars partials here:
+hbs.registerPartials(__dirname + "/views/partials");
 
 // ...
 
 // Add the route handlers here:
+app.get('/', (req, res) => {
+  const getBeers = punkAPI.getBeers()
+  getBeers.then(beersFromApi => {
+    console.log('Beers from the database: ', beersFromApi)
+
+  })
+  
+  res.render('beers');
+})
 
 app.get('/', (req, res) => {
   res.render('index');
