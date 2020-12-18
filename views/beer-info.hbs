@@ -1,0 +1,67 @@
+<div>
+    {{>beerpartial responseFromAPI}}
+    {{#each responseFromAPI}}
+        <div>
+            <div>
+                {{this.id}}
+            </div>
+            <div>
+                {{this.food_pairing}}
+            </div>
+            <div>
+                {{this.brewers_tips}}
+            </div>
+            <div>
+                {{this.first_brewed}}
+            </div>
+            <div>
+                <p>this.ABV</p>
+                {{this.abv}}
+            </div>
+            <div>
+                <p>IBU:</p>
+                {{this.ibu}}
+            </div>
+            <div>
+                <p>Target FG:</p>
+                {{this.target_fg}}
+            </div>
+            <div>
+                <p>Target OG:</p>
+                {{this.target_og}}
+            </div>
+            <div>
+                <p>EBC:</p>
+                {{this.ebc}}
+            </div>
+            <div>
+                <p>SMR:</p>
+                {{this.srm}}
+            </div>
+            <div>
+                <p>PH:</p>
+                {{this.ph}}
+            </div>
+            <div>
+                <p>Attenuation level</p>
+                {{this.attenuation_level}}
+            </div>
+            <div>
+                <p>Volume:</p>
+                {{this.volume}}
+            </div>
+            <div>
+                <p>Boil Volume:</p>
+                {{this.boil_volume}}
+            </div>
+            <div>
+                <p>Method:</p>
+                {{this.method}}
+            </div>
+            <div>
+                <p>Ingredients:</p>
+                {{this.ingredients}}
+            </div>
+        </div>
+    {{/each}}      
+</div>

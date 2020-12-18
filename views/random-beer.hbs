@@ -1,0 +1,16 @@
+<div class="card mt-5">
+    {{>beerpartial responseFromAPI}}
+    <div>
+        {{#each responseFromAPI}}
+            <div class="card-body">
+                <div>
+                    {{this.food_pairing}}
+                </div>
+                <div>
+                    {{this.brewers_tips}}
+                </div>  
+            </div>
+        {{/each}} 
+    </div>
+         
+</div>

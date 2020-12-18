@@ -1,0 +1,22 @@
+
+<div class="row">
+    {{#each this}}
+    <div class="col-3">
+        <div class="card">
+            <img  style="width: 50%" class="card-img-top" src="{{this.image_url}}" alt="beers image">
+            <div class="card-body">
+                <div>
+                    <a href="/views/beer-info.hbs"><h3 class="card-title">{{this.name}}</h3></a>
+                </div>
+                <div>
+                    {{this.description}}
+                </div>
+                <div>
+                    {{this.tagline}}
+                </div>  
+            </div>
+        </div>
+    </div>
+        
+    {{/each}}
+</div>
