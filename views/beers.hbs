@@ -1,9 +1,4 @@
 
-{{#each beersList}}
-    {{this.name}}
-    <img src="{{this.image_url}}" alt="">
-    {{description}}
-    {{tagline}}
-    {{food_pairing}}
-    {{brewers_tips}}
+{{#each beersFromApi}}
+    {{>beerpartial}}
 {{/each}}

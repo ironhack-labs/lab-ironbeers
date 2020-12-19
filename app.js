@@ -13,14 +13,14 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Register the location for handlebars partials here:
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
-// ...
 
 app.get('/random-beers', (req, res) => {
   punkAPI
     .getRandom()
     .then(responseFromAPI => {
-      res.render('random-beers', {beersList: responseFromAPI});
+      res.render('random-beers', { beersList: responseFromAPI });
     })
     .catch(error => console.log(error));
 });
@@ -30,10 +30,21 @@ app.get('/beers', (req, res) => {
     .getBeers()
     .then(beersFromApi => {
       console.log('Beers from the database: ', beersFromApi);
-      res.render('beers', {beersList: beersFromApi});
+      res.render('beers', { beersFromApi });
     })
     .catch(error => console.log(error));
   // res.render('beers', {features: ['smart','kind','sometimes an idiote']})
+});
+
+app.get('/beers/:id', (req, res) => {
+  const id = req.params.id;
+  punkAPI
+    .getBeer(id)
+    .then(beerByID => {
+      console.log(beerByID)
+      res.render('beersDetailPage', { beerByID });
+    })
+    .catch(error => console.log(error));
 });
 
 app.get('/', (req, res) => {
