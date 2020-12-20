@@ -15,7 +15,6 @@ module.exports.beers = (req, res, next) => {
    })
  }
 
-
 module.exports.random = (req, res, next) => {
   const randomBeer = punkAPI.getRandom()
   randomBeer.then(beer => {

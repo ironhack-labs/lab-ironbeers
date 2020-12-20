@@ -1,4 +1,4 @@
-<div class="mt-2 mx-auto d-block" style="max-width: 840px;">
+<div class="mt-2 mx-auto d-block mt-5 mb-5" style="max-width: 840px;">
     <div class="row g-0">
         <div class="col-md-4 img-responsive center-block">
             <img src="{{ image }}" alt="..." style="max-width: 100px;">
@@ -12,7 +12,7 @@
                 <h5>Food Pairing</h5>
                 {{#each food_pairing as |food| }}
                 {{#with food}}
-                <div class="card">
+                <div class="card border-white ">
                     <ul>
                         <li>
                 <p class="card-text">{{ food }}</p>
@@ -28,5 +28,7 @@
         </div>
     </div>
 </div>
+
+
 
 

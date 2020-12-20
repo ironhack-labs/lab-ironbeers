@@ -1,17 +1,8 @@
-
-
-<div class="mt-2 mx-auto d-block" style="max-width: 840px;">
-    <div class="row g-0">
-        <div class="col-md-4 img-responsive center-block">
-            <img src="{{ image_url }}" alt="..." style="max-width: 50px;">
-        </div>
-        <div class="col-md-8">
-            <div class="card-body">
-                <h5 class="card-title">{{ name }}</h5>
-                <p class="card-text"><small class="text-muted">{{ tagline }}</small></p>
-
-                <p class="card-text">{{ description }}</p>
-                  </div>
-        </div>
+<div class="card border-white mt-5 mb-5 pt-3 pb-3 width: 400px;">
+    <img class="mx-auto" src="{{ image_url }}" alt="..." style="height: 150px;">
+    <div class="card-body">
+        <h5 class="card-title">{{ name }}</h5>
+        <p class="card-text"><small class="text-muted">{{ tagline }}</small></p>
+        <p class="card-body">{{ description }}</p>
     </div>
 </div>
