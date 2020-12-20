@@ -1,3 +1,9 @@
-<div>
-<img src="/../public/images/beer.png" class="img-fluid" alt="...">
-</div>
+
+{{#each beers as |birra| }}
+{{#with birra}}
+<div class="card-group">
+
+    {{>beerpartial}}
+</div>>
+{{/with}}
+{{/each}}

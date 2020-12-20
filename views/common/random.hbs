@@ -1,1 +1,32 @@
-Random
+<div class="mt-2 mx-auto d-block" style="max-width: 840px;">
+    <div class="row g-0">
+        <div class="col-md-4 img-responsive center-block">
+            <img src="{{ image }}" alt="..." style="max-width: 100px;">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">{{ randomBeer }}</h5>
+                <p class="card-text"><small class="text-muted">{{ tagline }}</small></p>
+
+                <p class="card-text">{{ description }}</p>
+                <h5>Food Pairing</h5>
+                {{#each food_pairing as |food| }}
+                {{#with food}}
+                <div class="card">
+                    <ul>
+                        <li>
+                <p class="card-text">{{ food }}</p>
+                        </li>
+                    </ul>
+                </div>
+                {{/with}}
+                {{/each}}
+                <h5>Brewers tips</h5>
+                <p class="card-text">{{ brewers_tips }}</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
