@@ -1,5 +1,12 @@
-<a href="/beers/{{id}}"></a>
-{{ name }}
-<img src="{{ image_url }}" alt="">      
-{{ description }}
-{{ tagline }}
+<div class="container">
+   <div class="row">
+   <div class="card" align="center">
+     <img alt="{{name}}" src="{{image_url}}" />
+         <div class="card-body">
+         <h3 class="card-title">{{name}}</h3>
+           <h5 class="tagline">{{tagline}}</h5>
+           <p class="description">{{description}}</p>
+         </div>
+     </div>
+   </div>
+ </div>
