@@ -1,0 +1,18 @@
+
+<div class="bFlex beer">
+ 
+{{#each beersFromApi}}
+
+    <div class="bItems">
+      
+    <img class="beerImg" src="{{this.image_url}}" alt="beer here">
+   
+  <h5><b><a href="/beers/beer-{{this.id}}">{{this.name}}</a></b></h5>
+  <h6>{{this.tagline}}</h6>
+  <p>{{this.description}}</p>
+ </div>
+ {{/each}}  
+  
+
+</div>
+</div>
