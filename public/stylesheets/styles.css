@@ -7,49 +7,60 @@ font-family: Arial, Helvetica, sans-serif;
 */
 
 
-*{
-  padding:0;
-  margin:0;
-}
-
 body{
   font-family: Arial, Helvetica, sans-serif;
- 
+  margin: 0;
 }
 
-h6, p{
+
+a, footer{
+  color: #f7f9f9; 
+  text-decoration: none;
+}
+
+.minH{
+  min-height: calc(100vh - 180px);
+  margin: 20px 100px;
+}
+
+ .bItems p{
   font-size:0.8rem;
 }
 
-h6{
+.tagLine{
   color:#bfbfbf;
+  
 }
+
+
+/* //////////////////////////// */
+/* NAV*/
+
 nav{
+  
   background-color:  #2081c3;
   color: #f7f9f9;
-  height: 65px;
+  height: 60px;
   margin-bottom: 50px;
+  
+}
+
+nav ul{
+  margin:0;
+  display: flex;
+ width: 300px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav li{
+line-height: 60px;
+list-style-type: none;
+
 }
 
 
-nav a, button a, footer{
-  color: #f7f9f9;
-}
-
-a{
-  text-decoration: none;
-  color: black;
-}
-
-li{
-  list-style-type: none;
-}
-
-
-
-
-
-
+/* //////////////////////////// */
 /* index */
 .inFlex{
   display: flex;
@@ -57,49 +68,86 @@ li{
   justify-content: space-evenly;
   align-items: center;
   height: 600px;
-  
 }
+
+
 .beerMug{
   height: 400px;
 }
 
+.button{
+  background-color: #2081c3;
+  border-radius: 5px;
+  padding: 10px 15px;
+  box-shadow: 1px 1px 3px black;
+}
+
+
+
+/* //////////////////////////// */
 /* beers */
 .bFlex{
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-align-items: stretch;
 
-margin: 0px 100px;
 }
 
 .bItems{
 width: 30%;
-margin: 0px 20px;
+margin: 20px;
 }
 
+.bItems .tagLine, h3{
+ margin:1px;
+}
 
 .beerImg{
-  
   height: 150px;
   position: relative;
-  margin-bottom: 20px;
+  margin: 0 calc(50% - 47px);
+}
+
+.bLinks, h2{
+  color: black;
 }
 
 
 
-button{
-  background-color: #2081c3;
-  border-radius: 10%;
-  border: none;
-  padding: 5px 10px;
-  
+/* //////////////////////////// */
+/* random beers */
+.random{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.aBeerFlex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+ }
+
+.rImg{
+  height: 200px;
+  margin-right: 100px;
+  align-self: flex-start;
+}
+
+.random li{
+  line-height: 2;
+}
+
+
+
+/* //////////////////////////// */
+/* Footer */
 
 footer{
   height: 50px;
   background-color: #0a2c42;
- 
+  
 }
 
 footer p{

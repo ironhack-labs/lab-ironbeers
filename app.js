@@ -7,6 +7,8 @@ const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 const app = express();
 const punkAPI = new PunkAPIWrapper();
 
+
+
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
@@ -20,17 +22,59 @@ hbs.registerPartials(__dirname + "/views/partials")
 app.get('/beers',(req, res)=>{
   punkAPI
   .getBeers()
-  .then(beersFromApi => res.render("beers.hbs", {beersFromApi}))
-  .catch(error => console.log(error));
-  
+  .then(beers => res.render("beers.hbs", {beers}))
+  .catch(error => console.log(error)); 
 });
 
+
+
 app.get('/random-beers',(req, res)=>{
-  res.render("random-beers.hbs")
+
+  punkAPI
+  .getRandom()
+  .then(random =>res.render("random-beers.hbs", {random: random[0]}))
+  .catch(error => console.log(error));
+ 
 });
+
+
+app.get('/random-beers',(req, res)=>{
+  const random = punkAPI.getRandom()
+  const randImg = random.image_url !== null 
+  random
+    .then(random => {
+      random = random[0]
+  
+      res.render("random-beers.hbs", {random})
+      // your magic happens here
+    })
+    .catch(error => console.log(error));
+  });
+
+
+//image_url: null fix if happens
+// get rid of beers with no image .image_url !== null
+// 1-25 have img thats why no prob
+// total 325
+// last with img 257
+// .filter(random => random.image_url != null) does not work prob cuz 1 beer returns
+
 
 app.get('/', (req, res) => {
   res.render('index');
 });
 
-app.listen(3000, () => console.log('🏃‍ on port 3000'));
+
+
+
+app.listen(3000, () => {
+  console.log('🏃‍ on port 3000')
+});
+
+
+
+
+
+
+
+
