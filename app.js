@@ -28,23 +28,12 @@ app.get('/beers',(req, res)=>{
 
 
 
-app.get('/random-beers',(req, res)=>{
 
+app.get('/random-beers',(req, res)=>{
   punkAPI
   .getRandom()
-  .then(random =>res.render("random-beers.hbs", {random: random[0]}))
-  .catch(error => console.log(error));
- 
-});
-
-
-app.get('/random-beers',(req, res)=>{
-  const random = punkAPI.getRandom()
-  const randImg = random.image_url !== null 
-  random
     .then(random => {
       random = random[0]
-  
       res.render("random-beers.hbs", {random})
       // your magic happens here
     })
