@@ -14,6 +14,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Register the location for handlebars partials here:
 
+const router = require('./config/routes.js');
+app.use('/', router);
+
+
+app.get('/', (req, res) => {
+  res.render('/');
+});
+
 // ...
 
 // Add the route handlers here:
@@ -21,5 +29,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
   res.render('index');
 });
+
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
