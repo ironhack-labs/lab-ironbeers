@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beers</title>
+</head>
+<body>
+    
+    {{#each allBeers as |beer|}}
+        {{#with allBeers}}
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src={{ image }} class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">{{ name }}</h5>
+                        <p class="card-text">{{ description }}</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">{{tagline}}</small>
+                    </div>
+                </div>
+            </div>
+        {{/with}}
+    {{/each}}
+
+</body>
+</html>

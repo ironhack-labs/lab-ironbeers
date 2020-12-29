@@ -17,11 +17,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 hbs.registerPartials(path.join(__dirname, 'views'));
 
 // Add the route handlers here:
+app.get('/beers', (req, res) =>{
+  const allBeers = punkAPI.getBeers();
+  allBeers.then(beersFromApi => res.render('beers', beersFromApi));
+  allBeers.catch(error => console.log(error));
+});
 
 app.get('/', (req, res) => {
   res.render('index');
 });
-
-
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
