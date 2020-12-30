@@ -64,6 +64,7 @@ app.listen(3000, () => {
 
 
 
-
+punkAPI.getBeer(241)
+.then(beer => console.log(beer))
 
 
