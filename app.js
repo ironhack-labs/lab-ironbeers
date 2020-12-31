@@ -41,12 +41,6 @@ app.get('/random-beers',(req, res)=>{
   });
 
 
-//image_url: null fix if happens
-// get rid of beers with no image .image_url !== null
-// 1-25 have img thats why no prob
-// total 325
-// last with img 257
-// .filter(random => random.image_url != null) does not work prob cuz 1 beer returns
 
 
 app.get('/', (req, res) => {
@@ -63,8 +57,7 @@ app.listen(3000, () => {
 
 
 
+//punkAPI.getBeer(298).then(beer => console.log(beer[0].image_url))
 
-punkAPI.getBeer(241)
-.then(beer => console.log(beer))
 
 

@@ -1,18 +1,8 @@
- 
+
+
 <div class="random">
-  
-   
-  <div class="aBeerFlex " >
-    {{#if random.image_url}}
-      <img class="rImg" src="{{random.image_url}}" alt="{{random.name}}">
-      {{/if}}
-      <div>
-  {{!-- <h2><b><a class="bLinks" href="/beers/beer-{{random.id}}">{{random.name}}</a></b></h2> -- to check ID}}
-      
-      <h2><b>{{random.name}}</b></h2>
-      <h4 class="tagLine" >{{random.tagline}}</h4>
-      <p>{{random.description}}</p>
-    
+  <div class="aBeerFlex" > 
+    {{> partials random}}
       <p><b>Food Pairing</b> </p>
       <ul> 
       {{#each random.food_pairing}}
@@ -21,10 +11,41 @@
       </ul>
       <p> <b>Brewers Tips:</b>  {{random.brewers_tips}} </p>
       </div>
-</div>
-      
-     
-</div>
+    </div>
+  </div>  
 
 
-{{!-- ????{{#if this.image_url}} !== null --}}
+
+
+
+
+{{!-- original --}}
+{{!--  
+<div class="random">
+  <div class="aBeerFlex " >
+    {{#if random.image_url}}
+      <img class="rImg" src="{{random.image_url}}" alt="{{random.name}}">
+      {{else}}
+      <img class="rImg2" src="images/beer.png" alt="{{random.name}}">
+      {{/if}}
+    <div>
+      <h2><b><a class="bLinks" href="/beers/beer-{{random.id}}">{{random.name}}</a></b></h2> 
+      <h4 class="tagLine" >{{random.tagline}}</h4>
+      <p>{{random.description}}</p>
+      <p><b>Food Pairing</b> </p>
+      <ul> 
+      {{#each random.food_pairing}}
+        <li>{{this}}</li>
+      {{/each}}
+      </ul>
+      <p> <b>Brewers Tips:</b>  {{random.brewers_tips}} </p>
+    </div>
+  </div>
+</div>  --}}
+
+
+
+
+
+
+ 

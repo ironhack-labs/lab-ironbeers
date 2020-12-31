@@ -1,4 +1,32 @@
-{{!-- {{image_url}} 
-{{name}} 
-{{description}} 
-{{tagline}} --}}
+
+ 
+
+ 
+
+    {{!-- <div class="bItems">
+      <img class="beerImg" src="{{image_url}}" alt="beer here">
+      <h2><b><a class="bLinks" href="/beers/beer-{{id}}">{{name}}</a></b></h2>
+      <h4 class="tagLine" >{{tagline}}</h4>
+      <p>{{description}}</p>
+    </div> --}}
+
+
+  
+  
+      {{#if image_url}}
+      <img class="rImg beerImg" src="{{image_url}}" alt="{{name}}">
+      {{else}}
+      <img class="rImg2 beerImg" src="images/beer.png" alt="{{name}}">
+      {{/if}}
+      <div>
+      <h2><b><a class="bLinks" href="/beers/beer-{{id}}">{{name}}</a></b></h2>
+      <h4 class="tagLine" >{{tagline}}</h4>
+      <p>{{description}}</p>
+
+
+
+
+
+
+
+     

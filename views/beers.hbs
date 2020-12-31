@@ -1,18 +1,34 @@
-  
-<div class="bFlex beer">
- 
-{{#each beers}}
+  {{!-- {{> partials}} --}}
 
-    <div class="bItems">
-      
-    <img class="beerImg" src="{{this.image_url}}" alt="beer here">
+ 
+
+{{!-- <div class="bFlex beer">
+ {{#each beers}}
+<div class="bItems">
+  
+    {{> partials this}}
    
-  <h3><b><a class="bLinks" href="/beers/beer-{{this.id}}">{{this.name}}</a></b></h3>
-  
-  <h5 class="tagLine" >{{this.tagline}}</h5>
-  <p>{{this.description}}</p>
+    {{!-- <img class="beerImg" src="{{this.image_url}}" alt="beer here">
+    <h2><b><a class="bLinks" href="/beers/beer-{{this.id}}">{{this.name}}</a></b></h2>
+    <h4 class="tagLine" >{{this.tagline}}</h4>
+    <p>{{this.description}}</p> 
+</div> 
+{{/each}}   
+</div>   --}}
+
+
+
+
+
+
+{{!-- original --}}
+<div class="bFlex beer">
+  {{#each beers}}
+  <div class="bItems">
+    <img class="beerImg" src="{{this.image_url}}" alt="beer here">
+    <h2><b><a class="bLinks" href="/beers/beer-{{this.id}}">{{this.name}}</a></b></h2>
+    <h4 class="tagLine" >{{this.tagline}}</h4>
+    <p>{{this.description}}</p>
  </div>
- {{/each}}  
-  
-  
+ {{/each}}    
 </div>

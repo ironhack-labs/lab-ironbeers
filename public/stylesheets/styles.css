@@ -20,12 +20,10 @@ a, footer{
 
 .minH{
   min-height: calc(100vh - 180px);
-  margin: 20px 100px;
+  margin: 20px 80px;
 }
 
- .bItems p{
-  font-size:0.8rem;
-}
+
 
 .tagLine{
   color:#bfbfbf;
@@ -90,7 +88,7 @@ list-style-type: none;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-
+ 
 }
 
 .bItems{
@@ -98,19 +96,33 @@ width: 30%;
 margin: 20px;
 }
 
-.bItems .tagLine, h3{
- margin:1px;
+.bLinks{
+  color: black;
 }
 
-.beerImg{
+ .bItems .tagLine, .bItems h2{
+ margin:1px;
+ width: fit-content;
+}
+
+
+.beer .bLinks{
+  font-size:0.8em;
+}
+
+.beer p, .beer .tagLine{
+  font-size:0.9em;
+}
+
+
+.beer .beerImg{
   height: 150px;
   position: relative;
   margin: 0 calc(50% - 47px);
+  margin-bottom: 20px;
 }
 
-.bLinks, h2{
-  color: black;
-}
+
 
 
 
@@ -120,26 +132,42 @@ margin: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 .aBeerFlex{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 80%;
-  height: 100%;
  }
 
-.rImg{
+
+ 
+.random .rImg{
   height: 200px;
   margin-right: 100px;
   align-self: flex-start;
 }
 
-.random li{
-  line-height: 2;
+.random .rImg2{
+  width: 120px;
+  height: 175px;
+  margin-right: 80px;
+  align-self: flex-start;
 }
 
 
+.random li{
+  margin: 25px;
+}
+
+.random h2{
+  margin-bottom: 35px;
+}
+
+ .random a{
+  pointer-events: none;
+}
 
 /* //////////////////////////// */
 /* Footer */
