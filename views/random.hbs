@@ -1,11 +1,7 @@
-<div>
+<div class="container">
     <div>
         {{#each data}}
-        <div align="center"><img class="imgBeers" alt="{{name}}" src="{{image_url}}" /></div>
-        <div align="center">
-            <h2>{{name}}</h2>
-            <h5>{{tagline}}</h5>
-            <p>{{description}}</p>
+            {{> beerpartial this}}
             <h4> Food Pairing </h4>
             <ul>
                 {{#each this.food_pairing}}

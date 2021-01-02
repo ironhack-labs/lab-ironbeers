@@ -41,8 +41,6 @@ hbs.registerPartials(__dirname + '/views/partials');
 const router = require('./config/routes.js');
 app.use('/', router);
 
-
 // Add the route handlers here:
-
 
 app.listen(3000, () => console.log('Que rule el 3000!'));
