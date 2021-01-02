@@ -10,18 +10,28 @@
   </head>
 
 <body>
-  <nav>
-    <a class="navbar" href="/"> Home </a>
-    <a class="navbar" href="/beers"> Beers </a>
-    <a class="navbar" href="/random" style="height: 20px; width: 200px"> Random Beers </a>
+ <nav class="navbar navbar-expand-lg navbar-light bg-primary shadow">
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active text-white ms-4" aria-current="page" href="/"> Home </a>
+        <a class="nav-link  text-white ms-4" href="beers"> Beers </a>
+        <a class="nav-link  text-white ms-4" href="random"> Random Beers </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="img img-fluid p-5">
     {{{body}}}
-  </nav>
+</div>
 
-  
-
-  <footer>
-    <p> Created by Silvia G. A. </p>
+  <footer class="d-flex justify-end">
+    <div class="d-flex flex-column justify-content-center">
+      <a type="button" class="btn btn-primary mb-4 mx-auto shadow-lg" style="width: 160px" href="beers"> Check the Beers! </a>
+      <a type="button" class="btn btn-primary mb-5 mx-auto shadow-lg" style="width: 200px" href="random"> Check a Random Beer </a>
+    </div>
+    <p class="d-flex text-white-50 bg-dark p-3"> Created by Silvia G. A. </p>
   </footer>
 </body>
-  
+
 </html>

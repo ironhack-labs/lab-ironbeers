@@ -1,6 +1,6 @@
 <div>
     <div>
-        {{ #each beersFromAPI }}
+        {{#each data }}
         <div align="center">
             <img class ="imgBeers" alt="{{name}}" src="{{image_url}}"/>
             <div>
@@ -9,6 +9,6 @@
                 <p>{{ description }}</p>
             </div>
         </div>
-        {{ /each }}
+        {{/each }}
     </div>
 </div> 
