@@ -1,0 +1,12 @@
+
+
+
+<div class="beers">
+  <h1>Beers</h1>
+  <div class="row">
+  {{#each punkAPI}}
+
+    {{> beerpartial this}}
+    {{/each}}
+  </div>
+</div>
