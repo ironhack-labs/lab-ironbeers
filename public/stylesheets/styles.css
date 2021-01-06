@@ -5,3 +5,22 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.beer-home-img {
+    display: block;
+    margin: auto;
+}
+
+.btn {
+    color: #fff;
+    background-color: #000;
+    padding: 20px;
+}
+
+.align {
+    text-align: center;
+}
