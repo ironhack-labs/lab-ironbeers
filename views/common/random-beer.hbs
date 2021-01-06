@@ -1,0 +1,27 @@
+
+<div class="d-flex d-column m-6 pt-3" style="margin: 25px auto; width:60%; ">
+  {{#if randomBeer}}
+    <div class="imagen" style="height: 350px; width: 250px; background-image: url({{randomBeer.image_url}}); background-size: cover;" >
+        
+    </div>
+    <div class="column" style="width: 80%; margin: 0 auto;">
+         <div class="contenido" style="padding-left:25px;">
+             <h2>{{randomBeer.id}}. {{randomBeer.name}}</h2>
+             <h4>{{randomBeer.tagline}}</h4>
+             <p>{{randomBeer.description}}</p>
+
+             <p>{{randomBeer.food}}</p>
+             <p>{{randomBeer.brewers_tips}}</p>
+         </div>
+            
+    </div>
+        
+
+{{/if}}
+
+   
+</div>
+
+<div class="card-body d-flex d-row justify-content-center">
+    <a href="/random-beer" class="card-link">Random Beer</a>
+</div>
