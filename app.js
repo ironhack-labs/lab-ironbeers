@@ -18,9 +18,10 @@ hbs.registerPartials(path.join(__dirname, 'views'));
 
 // Add the route handlers here:
 app.get('/beers', (req, res) =>{
-  const allBeers = punkAPI.getBeers();
-  allBeers.then(beersFromApi => res.render('beers', beersFromApi));
-  allBeers.catch(error => console.log(error));
+  punkAPI
+    .getBeers()
+    .then(beersFromApi => res.render('beers', beersFromApi))
+    .catch(error => console.log(error));
 });
 
 app.get('/', (req, res) => {
