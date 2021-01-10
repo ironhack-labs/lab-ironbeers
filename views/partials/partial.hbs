@@ -1,18 +1,8 @@
-
- 
-
- 
-
-    {{!-- <div class="bItems">
-      <img class="beerImg" src="{{image_url}}" alt="beer here">
-      <h2><b><a class="bLinks" href="/beers/beer-{{id}}">{{name}}</a></b></h2>
-      <h4 class="tagLine" >{{tagline}}</h4>
-      <p>{{description}}</p>
-    </div> --}}
-
-
-  
-  
+      
+      
+    {{!--won't work because of initial html & styling, but example in styling how to set up separate  behaviors for similar hbs pages  --}}
+    
+      
       {{#if image_url}}
       <img class="rImg beerImg" src="{{image_url}}" alt="{{name}}">
       {{else}}
@@ -22,11 +12,3 @@
       <h2><b><a class="bLinks" href="/beers/beer-{{id}}">{{name}}</a></b></h2>
       <h4 class="tagLine" >{{tagline}}</h4>
       <p>{{description}}</p>
-
-
-
-
-
-
-
-     
