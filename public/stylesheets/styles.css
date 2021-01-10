@@ -5,3 +5,66 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  footer{
+  background-color:#0a2c42; 
+  height: 60px;
+  }
+  
+  footer p{
+    color: white;
+  }
+  
+  .index{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  margin-top: 90px;
+  }
+  
+  .index img{
+    height: 500px;
+    width: 500px;
+  }
+  
+  button{
+    background-color: #2081c3;
+    width: 200px;
+    height: 45px;
+   border-radius: 25px;
+  }
+  
+  button a{
+    color: white;
+  }
+  
+  .row img{
+      height: 200px;
+  
+  }
+  
+  h2{
+    size: 20px;
+  }
+  
+  .beer{
+  width: 500px;
+  margin-left: 100px;
+  }
+  
+  .tagline{
+    font-size:12px;
+    color: gray;
+  }
+  
+  .beers {
+   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  }
