@@ -20,7 +20,7 @@ hbs.registerPartials(path.join(__dirname, 'views'));
 app.get('/beers', (req, res) =>{
   punkAPI
     .getBeers()
-    .then(beersFromApi => res.render('beers', beersFromApi))
+    .then(beersFromApi => res.render('beers', {beersFromApi:beersFromApi}))
     .catch(error => console.log(error));
 });
 

@@ -8,11 +8,11 @@
 <body>
     
     {{#each beersFromApi as |beer|}}
-        {{#with beersFromApi}}
+        {{#with beer}}
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card h-100">
-                        <img src={{ image }} class="card-img-top" alt="...">
+                        <img class="imgSz" src={{ image_url }} class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">{{ name }}</h5>
                         <p class="card-text">{{ description }}</p>
