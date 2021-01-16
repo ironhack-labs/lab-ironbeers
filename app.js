@@ -1,3 +1,4 @@
+const { response } = require('express');
 const express = require('express');
 
 const hbs = require('hbs');
@@ -23,17 +24,21 @@ app.get('/', (req, res) => {
 });
 
 app.get('/beers', (req, res) => {
-  punkAPI
-    .getBeers()
+  punkAPI.getBeers()
     .then(beersFromApi => {
-      res.render('beers');
       console.log('Beers from the database: ', beersFromApi)
+      res.render('beers', {beers: beersFromApi});
     })
     .catch(error => console.log(error));
 });
 
 app.get('/random-beers', (req, res) => {
-  res.render('random-beer');
+  punkAPI.getRandom()
+  .then(responseFromAPI => {
+    console.log(responseFromAPI);
+    res.render('random-beer', {randomBeer: responseFromAPI});
+  })
+  .catch(error => console.log(error));
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
