@@ -14,3 +14,7 @@ img {
     width: 10rem;
     object-fit: cover;
 }
+
+footer p {
+    color: white;
+}
