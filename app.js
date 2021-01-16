@@ -22,4 +22,10 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+// Configure 404 page
+app.use((req, res, next) => {
+  res.render('error');
+  // We could define a template for the 404 screen so it'll look prettier!
+});
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
