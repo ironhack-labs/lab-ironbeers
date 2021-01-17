@@ -5,7 +5,9 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
-
+body{
+    background-color:#bfbfbf; ;
+}
 .nav-bar{
 
     background-color: #2081c3 ;
