@@ -1,14 +1,7 @@
-<div class="row row-cols-1 row-cols-md-3 g-4 py-4 mb-5">
+<div class="container-fluid mx-auto">
+<div class="row row-cols-1 row-cols-md-3 g-4 py-4 mb-5 d-flex justify-content-around">
 {{#each beers}}
-<div class="card p-3" style="width: 18rem;">
-  <img src="{{image_url}}" class="rounded mx-auto d-block" alt="{{name}}" height="200px">
-  <div class="card-body">
-    <h5 class="card-title">{{name}}</h5>
-    <p class="card-text">{{description}}</p>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item"><i>"{{tagline}}"</i></li>
-  </ul>
-</div>
+{{> beerpartial this}}
 {{/each}}
+</div>
 </div>

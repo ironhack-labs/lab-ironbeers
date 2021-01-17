@@ -20,3 +20,13 @@ footer {
     width: 100%;
     background-color: #0a2c42;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+    text-emphasis: none;
+}
+
+a:hover {
+    color: #0a2c42;
+}
