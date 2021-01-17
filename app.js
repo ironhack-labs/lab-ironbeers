@@ -22,10 +22,32 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-// Configure 404 page
+app.get('/beers', (req, res) => {
+  let results = []
+  punkAPI
+  .getBeers()
+  .then((beers) => {
+    return results = beers;
+  })
+  .then((beers) => {
+    res.render('beers', { beers } );
+  })
+});
+
+app.get('/random-beers', (req, res) => {
+  let result = []
+  punkAPI
+  .getRandom()
+  .then((beer) => {
+    return result = beer;
+  })
+  .then((beer) => {
+    res.render('random-beers', { beer } );
+  })
+});
+
 app.use((req, res, next) => {
   res.render('error');
-  // We could define a template for the 404 screen so it'll look prettier!
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
