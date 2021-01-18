@@ -6,8 +6,23 @@ grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
 
+* {
+    text-align: center;
+}
 
+main {
+    margin: 10px auto;
+}
 
 .container-fluid {
+    margin-top: 10px;
+}
+
+.cupofbeer {
+    width: 400px;
+    height: 450px;
+}
+
+.row {
     margin-top: 10px;
 }
