@@ -6,7 +6,11 @@ grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
 
-body {
+* {
+    box-sizing: border-box;
+}
+
+html, body {
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -16,6 +20,8 @@ nav {
     background-color: #2081c3;
     padding: 25px 55px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.562);
+    position: fixed;
+    width: 100%;
 }
 
 nav > a {
@@ -25,19 +31,20 @@ nav > a {
 }
 
 .container {
-    padding: 55px 55px 0 55px;
+    padding: 120px 55px 0 55px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: calc(100vh - 160px);
 }
 
 .container > img {
     margin-bottom: 30px;
 }
 
-.container > a {
+.beer-btn {
     margin-top: 15px;
     background-color: #2081c3;
     color: #fff;
@@ -45,4 +52,88 @@ nav > a {
     padding: 10px 15px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: .1s all;
+}
+
+.beer-btn:hover {
+    background-color: #0a2c42;
+    color: #fff;
+}
+
+#beerLogo {
+    width: 420px;
+}
+
+footer {
+    padding: 10px 55px;
+    background-color: #0a2c42;
+    color: white;
+    position: sticky;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.beers-container {
+    padding: 100px 55px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.beer {
+    text-decoration: none;
+    padding: 25px;
+    border: 1px solid rgb(219, 219, 219);
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px;
+    width: 31.5%;
+    margin: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.beer h3 {
+    margin: 0;
+    padding: 3px 0;
+}
+
+.beer p {
+    margin: 0 0 30px 0;
+    padding: 3px 0;
+}
+
+.beer > img {
+    width: 50px;
+    margin-right: 30px;
+}
+
+.beer-container {
+    padding: 100px 105px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.beer-container img {
+    height: 350px;
+}
+
+.beer-content {
+    width: 75%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .beer {
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .beer {
+        width: 100%;
+    }
+    #beerLogo {
+        width: 280px;
+    }
 }

@@ -1,1 +1,5 @@
-BEERS PAGE
+<div class="beers-container">
+    {{#each beersFromApi as |beer|}}
+        {{> beerCard beer }}
+    {{/each}}
+</div>
