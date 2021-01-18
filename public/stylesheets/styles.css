@@ -26,3 +26,7 @@ main {
 .row {
     margin-top: 10px;
 }
+
+img {
+    height: 200px;
+}
