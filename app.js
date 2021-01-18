@@ -12,11 +12,11 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 // Register the location for handlebars partials here:
 
-// ...
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
+
 
 // Add the route handlers here:
 
@@ -32,6 +32,12 @@ app.get('/beers', (req, res) => {
     return results = beers;
   })
   .then((beers) => {
+    if (req.query.search) {
+      beers = beers.filter(beer => beer.name.toLocaleLowerCase().includes(req.query.search))
+    }
+    if (beers.length == 0) {
+      res.render('error')
+    }
     res.render('beers', { beers } );
   })
 });
