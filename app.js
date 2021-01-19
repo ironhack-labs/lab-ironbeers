@@ -27,7 +27,7 @@ app.get('/beers', (req, res) => {
   .getBeers()
   .then(beersFromApi => {
     console.log('Beers from the database: ', beersFromApi)
-    res.render('beers', {punkAPI: beersFromApi});
+    res.render('beers', {beersArr: beersFromApi});
    })
   .catch(error => console.log(error));
 });
