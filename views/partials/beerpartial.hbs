@@ -1,14 +1,8 @@
-<div class="container">
-    <div class="row">
-        <div class="col mb-3">
-            <div class="col mb-3">
-                <img src="{{this.image_url}}" alt="this.name">
-            </div>
-            <div class="col mb-3">
-                <h2><a href="/beers/beer-i3f4d34s34b">{{this.name}}</a></h2>
-                <p><em>{{this.tagline}}</em></p>
-                <p>{{this.description}}</p>
-            </div>
-        </div>
-    </div>
+<div class="col mb-3">
+    <img src="{{this.image_url}}" alt="this.name">
+</div>
+<div class="col mb-3">
+    <h2><a href="/beers/beer-{{this.id}}">{{this.name}}</a></h2>
+    <p><em>{{this.tagline}}</em></p>
+    <p>{{this.description}}</p>
 </div>

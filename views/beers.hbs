@@ -1,3 +1,9 @@
-{{#each beers as |beer|}}
-    {{> beerpartial this}}
+{{#each beers}}
+<div class="container">
+    <div class="row">
+        <div class="col mb-3">
+            {{> beerpartial this}}
+        </div>
+    </div>
+</div>
 {{/each}}
