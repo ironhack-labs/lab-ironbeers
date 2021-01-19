@@ -21,7 +21,7 @@ font-family: Arial, Helvetica, sans-serif;
      margin: 10px;
  }
 
- .beer-img{
+ #beer-img{
     height: 100%;
-    width: 20px;
+    width: 200px;
  }
