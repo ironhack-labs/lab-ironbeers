@@ -5,3 +5,14 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+
+#bigBeer{
+    width: 400px;
+    height: 100%;
+    margin: 50px auto; 
+}
+
+.myButton{
+    margin:20px auto;
+}

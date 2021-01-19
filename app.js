@@ -7,7 +7,7 @@ const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 const app = express();
 const punkAPI = new PunkAPIWrapper();
 
-app.set('view engine', 'hbs');
+app.set('view engine', 'hbs'); //It renders the views with handlebars
 app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -20,6 +20,20 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
   res.render('index');
+});
+
+app.get('/beers', (req, res) => {
+  punkAPI
+  .getBeers()
+  .then(beersFromApi => {
+    console.log('Beers from the database: ', beersFromApi)
+    res.render('beers', {punkAPI: beersFromApi});
+   })
+  .catch(error => console.log(error));
+});
+
+app.get('/random-beers', (req, res) => {
+  res.render('random-beer');
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
