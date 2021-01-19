@@ -5,3 +5,14 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+#beer-img{
+    width: 600px;
+    height: 100%;
+
+    margin: 100px;
+}
+
+ .home-button{
+     margin: 10px;
+ }
