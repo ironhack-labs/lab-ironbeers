@@ -1,0 +1,18 @@
+<div class="container mt-5 pl-2">
+    <div class="row">
+        <div class="col">
+            <img style="height : 250px;" src="{{beer.image_url}}" alt="">
+        </div>
+        <div class="col-10">
+            <h2 class="card-title py-3">{{beer.name}}</h2>
+            <h6 class="card-subtitle mb-2 text-muted py-1">{{beer.tagline}}</h6>
+            <p class="card-text">{{beer.description}}</p>
+            <h5 class="card-subtitle mb-1 py-3">Food pairing</h5>
+            <div class="container">
+                {{#each beer.food_pairing as |food|}}
+                <li class="ml-3">{{food}}</li>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>
