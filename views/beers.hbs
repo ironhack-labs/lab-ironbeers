@@ -1,7 +1,15 @@
-    <div>
-         {{#each beersFromApi}}
-         <h3>{{this.name}}</h3>
-         <p>{{this.tagline}}</p>
-         <p>{{this.description}}</p>
-         {{/each}}
-    </div>
+<div class="container">
+     <h1>Beers</h1>
+     <div class="row d-flex justify-content-center">
+          {{#each beers as |beer|}}
+          <div class="col-4">
+               <img src="{{beer.image_url}}" alt="Birra" height="170px">
+          </div>
+          <div class="col-8 mb-3">
+               <h2>{{beer.name}}</h2>
+               <p>{{beer.description}}</p>
+               <p>{{beer.tagline}}</p>
+          </div>
+          {{/each}}
+     </div>
+</div>

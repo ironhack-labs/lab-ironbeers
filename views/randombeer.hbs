@@ -1,0 +1,24 @@
+   <div class="container">
+     <h1>Beer</h1>
+     <div class="row d-flex justify-content-center">
+          {{#each randomBeer as |randomBeer|}}
+          <div class="col-4">
+               <img src="{{randomBeer.image_url}}" alt="Birra" height="400px">
+          </div>
+          <div class="col-8">
+               <h2>{{randomBeer.name}}</h2>
+               <p>{{randomBeer.description}}</p>
+               <p>{{randomBeer.tagline}}</p>
+               <p>{{randomBeer.foodpairing}}</p>
+               <p>{{randomBeer.brewertips}}</p>
+               <h4>Food Pairing</h4>
+            <ul>
+                {{#each food_pairing}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p><strong>Brewer Tips:</strong> {{randomBeer.brewers_tips}}</p>
+          </div>
+          {{/each}}
+     </div>
+</div>
