@@ -37,10 +37,30 @@ app.get('/random-beer', (req, res, next) => {
   punkAPI
   .getRandom()
   .then(responseFromAPI => {
-    // console.log(responseFromAPI.food_pairing)
     res.render('random-beer',{beer: responseFromAPI[0]})
   })
   .catch(error => console.log(error));
+})
+
+
+// BEER BY ID
+app.get('/beer/:id', (req, res, next) => {
+  const beerId = req.params.id
+  punkAPI
+  .getBeer(beerId)
+  .then(beer => {
+    // console.log(beer[0])
+    console.log(beer[0])
+    res.render('random-beer', { beer: beer[0]});
+  })
+  .catch(error => console.log(error));
+});
+
+
+// 404
+app.use((req, res, next) => {
+  res.status(400)
+  res.render('error', {title: '404 Error'})
 })
 
 

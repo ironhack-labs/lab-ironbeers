@@ -7,12 +7,14 @@
             <h2 class="card-title py-3">{{beer.name}}</h2>
             <h6 class="card-subtitle mb-2 text-muted py-1">{{beer.tagline}}</h6>
             <p class="card-text">{{beer.description}}</p>
-            <h5 class="card-subtitle mb-1 py-3">Food pairing</h5>
+            <h5 class="card-subtitle mb-1 py-3">Food pairing:</h5>
             <div class="container">
                 {{#each beer.food_pairing as |food|}}
                 <li class="ml-3">{{food}}</li>
                 {{/each}}
             </div>
+            <h5 class="card-subtitle mb-1 py-3 mt-1">Brewers tips:</h5>
+            <p class="card-text">{{beer.brewers_tips}}</p>
         </div>
     </div>
 </div>

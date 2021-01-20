@@ -1,6 +1,8 @@
-<img style="height : 250px;" src="{{this.image_url}}" alt="">
+<div class="position-absolute">
 
+<img class="position-relative" style="height : 250px;" src="{{this.image_url}}" alt="">
+</div>
 <h5 class="card-title">{{this.name}}</h5>
-<small>{{tagline}}</small>
+<h6 class="card-subtitle mb-2 text-muted py-1">{{this.tagline}}</h6>
 <p class="card-text" style="width: 400px;">{{this.description}}</p>
-<a href="#" class="btn btn-primary">Go somewhere</a>
+<a href="beer/{{id}}" class="btn btn-warning">More</a>
