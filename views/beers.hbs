@@ -1,0 +1,14 @@
+<div class="container">
+
+<div class="row">
+{{#each beers as |beer|}}
+    <div class="card col-3 m-3">
+      <div class="card-body">
+        <img src="{{image_url}}" class="mx-auto d-block each-beer" alt="Pic of {{name}}">
+        <h5 class="card-title">{{name}}</h5>
+        <p class="card-text">{{description}}</p>
+      </div>
+    </div>
+  {{/each}}
+    </div>
+</div>
