@@ -60,7 +60,7 @@ app.get('/beer/:id', (req, res, next) => {
 // 404
 app.use((req, res, next) => {
   res.status(400)
-  res.render('error', {title: '404 Error'})
+  res.render('error')
 })
 
 

@@ -1,8 +1,9 @@
-<div class="position-absolute">
-
-<img class="position-relative" style="height : 250px;" src="{{this.image_url}}" alt="">
+<div class="d-flex p-2 justify-content-center pb-3" >
+<img  style="height : 250px;" src="{{this.image_url}}" alt="">
 </div>
+<div class="px-2">
 <h5 class="card-title">{{this.name}}</h5>
-<h6 class="card-subtitle mb-2 text-muted py-1">{{this.tagline}}</h6>
-<p class="card-text" style="width: 400px;">{{this.description}}</p>
+<h6 class="card-subtitle text-muted">{{this.tagline}}</h6>
+<p class="card-text  m-0" style="width: 400px;">{{this.description}}</p>
 <a href="beer/{{id}}" class="btn btn-warning">More</a>
+</div>
