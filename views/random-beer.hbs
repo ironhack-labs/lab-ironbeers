@@ -1,5 +1,18 @@
 {{#each randomBeer as |beer|}}
-<img src="{{image_url}}" class="mx-auto d-block each-beer" alt="Pic of {{name}}">
-{{name}}
-{{description}}
+<div class="myCont-random container">
+    <img src="{{image_url}}" class="random-beer" alt="Pic of {{name}}">
+    <div>
+        <h2 class="display-4">{{name}}</h2>
+        <h5 class="tagline-beers">{{tagline}}</h5>
+        <p>{{description}}</p>
+        <p><b>Food pairing:</b></p>
+        <ul>
+            {{#each food_pairing as |food|}}
+            <li>{{food}}</li>
+            {{/each}}
+        </ul>
+        <p><b>Brewers tips:</b> {{brewers_tips}}</p>
+        <a class="btn btn-warning btn-sm col-2" href="/random-beers" role="button">Another one!</a>
+    </div>
+</div>
 {{/each}}
