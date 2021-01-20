@@ -1,0 +1,21 @@
+{{#each cervecita}}
+<div class="container beer">
+    <div class="row align-items-center justify-content-center">
+        <div class="col-1">
+            <img src={{this.image_url}} class="card-img-top" alt={{this.name}}>
+        </div>
+        <div class="col-6">
+            <h3><b>{{this.name}}</b></h5>
+            <h5 class="tagline">{{this.tagline}}</h5>
+            <p class="text">{{this.description}}</p>
+            <h6><b>Food Pairing</b></h6>
+            {{#each food_pairing}}
+            <ul>
+                <li>{{this}}</li>
+            </ul>
+            {{/each}}
+            <p class="text" ><b>Brewers Tips: </b>{{this.brewers_tips}}</p>
+        </div>
+    </div>
+</div>
+{{/each}}
