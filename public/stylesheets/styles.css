@@ -11,9 +11,22 @@ font-family: Arial, Helvetica, sans-serif;
     margin: 3%;
 }
 
+/* /beer */
 .each-beer {
-    width: 60px;
+    height: 120px;
 }
+
+.beer-margins{
+    margin-right: 30px;
+}
+
+.myContainer-beer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* /random-beer */
 
 .random-beer{
     width: 10%;

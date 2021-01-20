@@ -1,13 +1,17 @@
 <div class="container">
 
-<div class="row">
+<div class="row justify-content-center">
 {{#each beers as |beer|}}
-    <div class="card col-3 m-3">
-      <div class="card-body">
-        <img src="{{image_url}}" class="mx-auto d-block each-beer" alt="Pic of {{name}}">
-        <h5 class="card-title">{{name}}</h5>
-        <p class="card-text">{{description}}</p>
-        <a class="btn btn-primary btn-sm col-3" href="/random-beers" role="button">More...</a>
+    <div class="card col-3 m-3 align-item-sm-center">
+      <div class="card-body myContainer-beer">
+        <div class="beer-margins">
+          <img src="{{image_url}}" class="mx-auto d-block each-beer" alt="Pic of {{name}}">
+        </div>
+        <div>
+          <h5 class="card-title">{{name}}</h5>
+          <p class="card-text">{{tagline}}</p>
+          <a class="btn btn-light btn-sm" href="/random-beers" role="button">Details ></a>
+        </div>
       </div>
     </div>
   {{/each}}
