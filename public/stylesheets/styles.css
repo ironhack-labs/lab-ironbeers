@@ -18,11 +18,16 @@ font-family: Arial, Helvetica, sans-serif;
 
 .beer-margins{
     margin-right: 30px;
+    width: 30%;
+}
+.margs{
+    width: 60%;
 }
 
 .myContainer-beer{
     display: flex;
-    justify-content: center;
+    
+    justify-content: space-around;
     align-items: center;
 }
 
