@@ -53,3 +53,8 @@ font-family: Arial, Helvetica, sans-serif;
     color: grey;
     font-weight: 200;
 }
+
+.s{
+    font-size: small;
+    margin: 1px;
+}

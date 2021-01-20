@@ -1,17 +1,15 @@
-
 <div class="myCont-random container">
-    <img src="{{beer.image_url}}" class="random-beer" alt="Pic of {{beer.name}}">
+    <img src="{{beers.image_url}}" class="random-beer" alt="Pic of {{beers.name}}">
     <div>
-        <h2 class="display-4">{{beer.name}}</h2>
-        <h5 class="tagline-beers">{{beer.tagline}}</h5>
-        <p>{{beer.description}}</p>
+        <h2 class="display-4">{{beers.name}}</h2>
+        <h5 class="tagline-beerss">{{beers.tagline}}</h5>
+        <p>{{beers.description}}</p>
         <p><b>Food pairing:</b></p>
         <ul>
-            {{#each beer.food_pairing as |food|}}
+            {{#each beers.food_pairing as |food|}}
             <li>{{food}}</li>
             {{/each}}
         </ul>
-        <p><b>Brewers tips:</b> {{beer.brewers_tips}}</p>
-        <a class="btn btn-secondary btn-sm col-2" href="/random-beers" role="button">Another one!</a>
-    </div>
+        <p><b>Brewers tips:</b> {{beers.brewers_tips}}</p>
+        <p class="s">Not convinced? <a class="btn btn-secondary btn-sm col-1 s" href="/random-beers" role="button">Next!</a></p>
 </div>
