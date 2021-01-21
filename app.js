@@ -29,15 +29,22 @@ app.get('/beers', (req, res) => {
   .then(beersFromApi => {
     let allBeers = [...beersFromApi]
     res.render('beers', {beers: allBeers});
-    console.log('Beers from the database: ', allBeers);
-
+   
   }
   )
   .catch(error => console.log(error))
 });
-      
-app.get('/random-beers', (req, res) => {
-  res.render('index');
+   
+app.get('/random-beer', (req, res) => {
+
+  punkAPI.getRandom()
+  .then(responseFromAPI => {
+    let randomBeer = responseFromAPI[0];
+    res.render('random-beer', {beer: randomBeer});
+   }
+  )
+  .catch(error => console.log(error))
+
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

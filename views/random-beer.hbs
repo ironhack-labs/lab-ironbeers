@@ -1,0 +1,26 @@
+<div class="container">
+   {{#with beer}}
+  <div class="row">
+    <div class="col">
+       <img src="{{this.image_url}}" alt=""/>
+        <h5 class="card-title">{{this.name}}</h5>
+           <h6 class="card-text">{{this.tagLine}}</h6>      
+        <p class="card-text">{{this.description}}</p>    
+        <h6>Food Pairing</h6>
+        <ul>  
+        {{#each this.food_pairing as |pairing|}}
+          <li>{{pairing}}</li>
+        {{/each}}
+
+     </ul>
+    
+
+              <p class="card-text"><b>Breewers Tips: </b>{{this.brewers_tips}}</p>    
+
+    </div>
+
+  </div>
+
+
+  {{/with}}
+</div>
