@@ -62,4 +62,6 @@ app.get('/beers/beer-:id', (req, res, next) => {
     .catch(error => console.log(error));
 })
 
-app.listen(3000, () => console.log('🏃‍ on port 3000'));
+
+
+app.listen(process.env.PORT || 3000, () => console.log('🏃‍ on port 3000'));
