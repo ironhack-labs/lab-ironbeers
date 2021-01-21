@@ -62,4 +62,4 @@ app.get('/beers/beer-:id', (req, res, next) => {
     .catch(error => console.log(error));
 })
 
-app.listen(3001, () => console.log('🏃‍ on port 3001'));
+app.listen(3000, () => console.log('🏃‍ on port 3000'));
