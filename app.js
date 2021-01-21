@@ -40,7 +40,7 @@ app.get('/beers/:id', (req, res, next) => {
   //console.log(req.params)
   punkAPI
   .getBeer (req.params.id)
-  .then (foundBeer => res.render('beers', {beers : foundBeer}))
+  .then (foundBeer => res.render('beerDetails', {beers : foundBeer}))
   .catch(error => console.log(error))
 });
 
