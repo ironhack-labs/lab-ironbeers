@@ -15,6 +15,11 @@ main {
   font-family:Arial, Helvetica, sans-serif ;
 }
 
+li {
+  margin-left: 20px;
+  line-height: 1.5;
+}
+
 .home-btn {
   margin: 1%;
   background-color:#2081c3;
@@ -42,8 +47,19 @@ main {
     object-fit: contain;
 }
 
-.card-text {
+.card-body p, .card-body li {
     font-size: 14px;
+}
+
+.tagline {
+  color: #bfbfbf;
+}
+
+.detail-image {
+    padding: 40px;
+    height: 25vh;    
+    object-fit: contain;
+    margin: auto;
 }
 
 #nav-bar {
@@ -55,6 +71,8 @@ main {
 }
 
 #footer {
+  display: flex;
+  align-items: center;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -63,8 +81,7 @@ main {
   color:#f7f9f9
 }
 
-footer {
-  margin-top: 50px;
+#footer p {
+  margin: auto 30px;
 }
-
 

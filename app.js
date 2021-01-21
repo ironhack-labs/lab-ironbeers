@@ -28,10 +28,21 @@ app.get('/beers', (req, res) => {
   .then(beersFromApi =>{
     let beersList = [...beersFromApi]
       res.render('beers', {beers: beersList});
-      console.log('Beers from the database: ', beersList)
+      console.log('Beers from the database: ', beersList.name);
 
     }
     )
+    .catch(error => console.log(error));
+});
+
+app.get('/random-beers', (req, res) => {
+  punkAPI
+    .getRandom()
+    .then(responseFromAPI => {
+      let randomBeer = responseFromAPI[0];
+      res.render('random-beer', { beer: randomBeer });
+      console.log('Beer from the database: ', randomBeer);
+    })
     .catch(error => console.log(error));
 });
 
