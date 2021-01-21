@@ -20,6 +20,7 @@ li {
   line-height: 1.5;
 }
 
+
 .home-btn {
   margin: 1%;
   background-color:#2081c3;
@@ -85,3 +86,8 @@ li {
   margin: auto 30px;
 }
 
+#detail-card {
+  display: flex;
+  flex-direction: row !important;
+
+}

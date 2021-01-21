@@ -1,28 +1,16 @@
 <div class="card mb-3" style="max-width: 110wh;">
         {{#with beer}}
   <div class="row g-0">
-    <div class="col-md-2 d-flex  justify-content-center align-items-center">
-        {{#if image_url }}
-      <img class="detail-image" src="{{image_url}}" alt="random beer image"> 
-        {{else}}
-        <div>
-            <img class="detail-image" src="/images/default_beer.png" alt="random beer image"> 
-            <h6 class="tagline">Image no avalible</h6>            
-        </div>
-        {{/if}}       
+    <div class="col-md-2 d-flex justify-content-center align-items-center">
+       {{>imagePartial}}     
     </div>
     <div class="col-md-10">
       <div class="card-body">
-        <h5 class="h5 card-title">{{name}}</h5>
-        <p class="tagline">{{tagline}}</p>
-        <p class="card-text">{{description}}</p>
-        <h6>Food Pairing</h6>
-    
-        {{#with food_pairing as |food|}}
-        {{#each food as |option|}}
+        {{>beerPartial}}
+       <p><strong>Food Pairing</strong></p>      
+        {{#each food_pairing as |option|}}
             <li>{{option}}</li>
-        {{/each}}
-        {{/with}}
+        {{/each}}       
         <br>
         <p class="card-text"><b>Brewers Tips:</b>{{brewers_tips}}</p>
       </div>
@@ -30,3 +18,5 @@
   </div>
         {{/with}}
 </div>
+
+
