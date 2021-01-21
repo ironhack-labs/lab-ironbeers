@@ -1,13 +1,14 @@
 <div class="row row-cols-1 row-cols-md-3 g-4">
-    {{#each beers}}
-  <div class="col">
-    <div class="card h-100"> 
-       {{>imagePartial}}
-       <div class="card-body">
-          {{>beerPartial}}
-       </div>
-    </div>
-  </div>
+    {{#each beers}}    
+      <div class="col">
+        <div class="card h-100"> 
+            {{>imagePartial}}
+            <div class="card-body">
+                {{>beerPartial}}
+            </div>
+        <a href="/beers/beer-{{id}}" class="stretched-link"></a>
+        </div>
+      </div>   
     {{/each}}
 </div>
 
