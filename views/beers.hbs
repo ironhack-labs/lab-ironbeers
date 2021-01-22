@@ -1,7 +1,8 @@
-{{!-- <div class="container mx-auto"> --}}
-    <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2">
-        {{#each beers}}
+<div class="row row-cols-md-3 row-cols-sm-2 row-cols-1">
+    {{#each beers}}
+    <div class="col">
         {{> beerpartial}}
-        {{/each}}
     </div>
-{{!-- </div> --}}
+
+    {{/each}}
+</div>
