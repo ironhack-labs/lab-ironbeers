@@ -5,3 +5,10 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar-style {
+    background-color: #2081c3;
+    color: #f7f9f9;
+}
