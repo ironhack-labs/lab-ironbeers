@@ -1,8 +1,20 @@
-<div class="col mb-3">
-    <img src="{{this.image_url}}" alt="this.name">
-</div>
-<div class="col mb-3">
-    <h2><a href="/beers/beer-{{this.id}}">{{this.name}}</a></h2>
-    <p><em>{{this.tagline}}</em></p>
-    <p>{{this.description}}</p>
+{{!-- <div class="col my-2 d-flex justify-content-center align-items-strecth">
+    <div class="col text-dark d-flex-justify-content-center" style="width: 18rem;">
+        <img class="mb-2" src="{{this.image_url}}" alt="{{this.name}}">
+        <div class="mt-2">
+            <h2><a href="/beers/beer-{{this.id}}">{{this.name}}</a></h2>
+            <p class="text-secondary"><em>{{this.tagline}}</em></p>
+            <p>{{this.description}}</p>
+        </div>
+    </div>
+</div> --}}
+<div class="col">
+    <div class="mt-2 mx-2">
+        <img src="{{this.image_url}}" alt="{{this.name}}">
+    </div>
+    <div class="mt-2 mx-2">
+        <h2><a href="/beers/beer-{{this.id}}">{{this.name}}</a></h2>
+        <p class="text-secondary"><em>{{this.tagline}}</em></p>
+        <p>{{this.description}}</p>
+    </div>
 </div>
