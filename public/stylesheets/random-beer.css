@@ -1,0 +1,22 @@
+body, .card-body, .card{
+    background-color: #f7f9f9;;
+}
+.card-tagline{
+    color: #bfbfbf;
+    font-weight: bold;
+}
+
+.rbeerImage{
+    width: 25%;
+    height: 50%;
+}
+
+.randomBeerDiv .card{
+    height: 100vh;
+    position: relative;
+    margin: 0 auto;
+    border: none;
+
+
+
+}

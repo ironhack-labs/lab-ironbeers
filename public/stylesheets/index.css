@@ -3,13 +3,20 @@
 }
 .beerBtn {
 
+   margin-top: 25px;
 
 
+}
+
+#button {
+    margin-top: 55px;
+    margin-bottom: 35px;
 }
 
 img {
-   position: relative;
-    width: 455px;
-    margin-top: 15%;
-    margin-left: 15%;
+    width: 255px;
+    display:block;
+    margin:auto;
+    margin-top: 25px;
 }
+

@@ -1,0 +1,10 @@
+.beerImage {
+width: 150px;
+  height: 400px;
+
+}
+
+.beerDiv .card{
+position: relative;
+margin: 0 auto;
+}
