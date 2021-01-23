@@ -10,6 +10,7 @@ font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;   
+    
 }
 
 .index{
@@ -50,7 +51,7 @@ h1{
 
 .card-img-top{
   height: 30%;
-  width: 25%;
+  width: 23%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -65,4 +66,28 @@ h1{
 .card-text{
   margin-top: 5%;
   font-size: 15px;
+}
+
+.tag-line{
+  color:#bfbfbf;
+  font-size: 10px;
+}
+
+footer{
+  padding: 10px 55px;
+  background-color: #0a2c42;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.big-beer{
+  height: 30%;
+  margin-top: 20%;
+}
+
+.card-body{
+  margin-left: 20%;
+  height: 200px;
 }
