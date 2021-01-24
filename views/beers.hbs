@@ -1,12 +1,15 @@
 <div class="container">
     {{#each beers}}
   <div class="row">
+            <div class="col-3"></div>
+
     <div class="col">
         <h5 class="card-title">{{this.name}}</h5>
-        <img src="{{this.image_url}}" alt=""/>
+        <img src="{{this.image_url}}" alt="" class="beer-image-style"/>
         <h6 class="card-text">{{this.tagline}}</h6>      
         <p class="card-text">{{this.description}}</p>      
     </div>
+        <div class="col-3"></div>
 
   </div>
 

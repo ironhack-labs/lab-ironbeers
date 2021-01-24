@@ -1,8 +1,9 @@
 <div class="container">
    {{#with beer}}
   <div class="row">
+        <div class="col-3"></div>
     <div class="col">
-       <img src="{{this.image_url}}" alt=""/>
+       <img src="{{this.image_url}}" alt="" class="beer-image-style"/>
         <h5 class="card-title">{{this.name}}</h5>
            <h6 class="card-text">{{this.tagLine}}</h6>      
         <p class="card-text">{{this.description}}</p>    
@@ -18,7 +19,7 @@
               <p class="card-text"><b>Breewers Tips: </b>{{this.brewers_tips}}</p>    
 
     </div>
-
+    <div class="col-3"></div>
   </div>
 
 
