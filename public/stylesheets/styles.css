@@ -12,3 +12,7 @@ body {
     background-color: #2081c3;
     color: #f7f9f9;
 }
+.image-style {
+    height: 680px;
+    width: 680px;
+}
