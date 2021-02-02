@@ -1,8 +1,10 @@
-<ul class="allBeers">
-    {{#each allBeers}}
-        <li><img src="{{image_url}}" alt="{{name}}"></li>
-        <li>{{name}}</li>
-        <li>{{description}}</li>
-        <li>{{tagline}}</li>
-    {{/each}}
-</ul>
+<div class="container">
+    <div class="row">
+
+        {{#each allBeers}}
+        {{>beerpartial}}
+        {{/each}}
+    </div>
+
+    
+</div>
