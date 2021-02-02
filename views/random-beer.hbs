@@ -1,0 +1,12 @@
+<h1>Random beer</h1>
+<section>
+    {{#each beers}}
+    <div class="beer">
+        {{>beerpartial this}}
+    </div>
+    {{/each}}
+
+    <div class="buttons">
+        <a class="btn btn-primary button-margin" href="/random-beer">Choose another random beer</a>
+    </div>
+</section>
