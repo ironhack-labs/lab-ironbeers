@@ -22,4 +22,51 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+app.get('/beers', (req, res) => {
+  punkAPI
+    .getBeers()
+    .then(beersFromApi => {
+      const data = {
+        beer: beersFromApi
+      };
+      // console.log('START 1=====================');
+      // console.log(data.beer[0]);
+      // console.log('START 2=====================');
+      // console.log(data.beer[0].name);
+      // console.log('END =====================');
+      res.render('beers', data);
+    })
+    .catch(error => console.log(error));
+});
+
+app.get('/random-beer', (req, res) => {
+  punkAPI
+    .getBeers()
+    .then(beersFromApi => {
+      const data = {
+        beer: beersFromApi
+      };
+      const randBeer = Math.floor(Math.random() * data.beer.length);
+      console.log(randBeer);
+      res.render('random-beer', data.beer[randBeer]);
+    })
+    .catch(error => console.log(error));
+});
+
+// http://127.0.0.1:3000/beers/beer-5
+
+app.get('/beers/beer-:donaldduck', (req, res) => {
+  punkAPI
+    .getBeer(req.params.donaldduck) // this is the magic bit
+    .then(beerFromApi => {
+      console.log(beerFromApi);
+      res.render('selected-beer', beerFromApi[0]);
+    })
+    .catch(error => console.log(error));
+});
+
+app.get('');
+
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
