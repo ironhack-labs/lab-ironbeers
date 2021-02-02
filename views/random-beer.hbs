@@ -1,0 +1,7 @@
+{{#each randomBeer}}
+<a href="/beers/beer-{{this.id}}">
+{{>beerpartial}}
+<p>Food pairing: {{this.food_pairing}}</p>
+<p>Brewer Tips: {{this.brewer_tips}}</p>
+</a>
+{{/each}}
