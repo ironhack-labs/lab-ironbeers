@@ -14,13 +14,18 @@ body {
 }
 
 
-h1, h2, h3 {
-    font-weight: 200;
-    
+h1, h2 {
+    font-weight: 1.3em;   
+}
+h3,h4,h5 {
+    font-weight: 1.3em;
+    color: #bfbfbf,
+
 }
 #img-beer {
     width: 40%;
     margin: 20px;
+    
 }
 
 .link {
@@ -35,4 +40,5 @@ h1, h2, h3 {
 
 .beers {
     width: 150px;
+    padding: 10px;
 }
