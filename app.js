@@ -55,11 +55,11 @@ app.get('/random-beers', (req, res) => {
 app.get('beers/beer-:id', (req, res) => {
   punkAPI
     .getBeer(req.params.id)
-    .then((beerFromApi) => {
+    .then(beerFromApi => {
       const selectedBeer = {
         beer: beerFromApi
       };
-      res.render(`selected`, selectedBeer);
+      res.render(`selected-beer`, selectedBeer);
     })
     .catch(error => {
       console.log(error);

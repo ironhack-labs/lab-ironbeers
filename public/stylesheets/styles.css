@@ -33,6 +33,14 @@ nav a {
 
 }
 
+footer{
+background-color:#0a2c42 ;
+height: 50px;
+}
+
+footer p{
+ color: #f7f9f9;
+}
 .beerimg{
 height: 400px;
 margin: 90px 550px;
@@ -66,29 +74,28 @@ margin-bottom: 20px;
 }
 
 .link{
- margin-right:100px;
- text-align: left;
- margin: 2px solid black;
+
+ text-align: justify;
+ font-size: 1.3em;
  
 }
 
-.des{
- padding: 50px;
- text-align: left;
- display: inline-block;
-}
-
-.tag {
-margin-top:50px;
-
-}
 
 .contain{
 display: flex;
 align-items: center;
 }
 
-.description{
+article{
  font-size: 1em;
- margin-right: 100px;
+ margin: 80px;
+ padding: 50px;
+ text-align: justify;
+ line-height: 1;
+}
+
+.random{
+ display: flex;
+ justify-items:center;
+ margin-left: 100px;
 }

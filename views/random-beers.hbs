@@ -6,16 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-   <div>
+
+
+
 {{#each random}}
+<p class="random">
+
   {{> beerpartial}}
- <div class= "food"> 
+ 
  {{this.food_pairing}}
- </div>
- <div class="tip">
+
+ 
+ </p>
+
+ <p class="tip">
  {{this.brewers_tip}}
- </div>
+ </p>
  {{/each}}
- </div>  
 </body>
 </html>
