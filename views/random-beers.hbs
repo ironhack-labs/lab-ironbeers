@@ -1,0 +1,11 @@
+<h1>Random beers page</h1>
+
+    <main class="cards-container">
+    {{#each beer}}
+    <div style="border: 1px solid black; padding: 20px">
+        {{> beerpartial}}
+        <p>Food pairing: {{this.food_pairing}}</p>
+        <p>Brewers Tips: {{this.brewers_tips}}</p>
+    </div>
+    {{/each}}
+  </main>
