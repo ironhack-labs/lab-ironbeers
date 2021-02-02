@@ -1,0 +1,27 @@
+
+<article class="randomBeer">
+    <div class="row d-flex align-items-center">
+
+        <div class="col-sm-3">
+            <img class='beersImg' src="{{image_url}}" alt="{{name}}">
+        </div>
+        
+
+        <div class="col-sm-9">
+            <div class="beerInfo">
+                <h3>{{name}}</h3>
+                <h4>{{tagline}}</h4>  
+                <p>{{description}}</p>            
+            </div>
+
+            <h5>Food Pairing:</h5>
+            <ul>
+                {{#each food_pairing}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ul>
+
+            <p><span>Brewers Tips: </span>{{brewers_tips}}</p>
+        </div>
+    </div>
+</article>
