@@ -1,11 +1,10 @@
-<div>
-    <div>
-        <img src="{{image_url}}" alt="{{name}}">
-    </div>
-    <div>
-        <h1><a href="/beers/{{id}}">{{name}}</a></h1>
-        <p> {{tagline}}</p>
-        <p>{{description}}</p>
-    </div>
-
+<div class="img-container">
+    <img src="{{image_url}}" alt="{{name}}">
 </div>
+<div class="main-info-container">
+    <header>
+        <h1><a href="/beers/{{id}}">{{name}}</a></h1>
+    </header>
+
+    <h2> {{tagline}}</h2>
+    <p>{{trimString description trim}}</p>

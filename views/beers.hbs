@@ -1,6 +1,14 @@
-<div>
-    <p>Your beers: </p>
-    {{#each beersFromApi}}
-    {{>beerPartial}}
+<div class="container">
+    <div class="row">
+        {{#each beersFromApi}}
+        <div class="col-12 col-md-6 col-xl-4">
+            <div class="beers-list">
+                {{>beerPartial trim=true}}
+            </div>
+        </div>
+    </div>
     {{/each}}
+
+
+</div>
 </div>

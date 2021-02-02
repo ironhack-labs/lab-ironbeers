@@ -1,9 +1,16 @@
-<div>
+<div class="beers-detail">
     {{>beerPartial}}
-    <p>First brewed</p>
-    <p>{{first_brewed}}</p>
-    <p>Food Pairing</p>
-    <p>{{food_pairing}}</p>
-    <p>Brewers Tips</p>
-    <p>{{brewers_tips}}</p>
+    <p> <strong>First brewed: </strong>{{first_brewed}} </p>
+
+    <p><strong>Food pairing: </strong></p>
+    <ul>
+        {{#each food_pairing}}
+        <li>
+            {{this}}
+        </li>
+        {{/each}}
+    </ul>
+
+    <p><strong>Brewers Tips: </strong>{{brewers_tips}} </p>
+</div>
 </div>

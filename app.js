@@ -16,6 +16,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 hbs.registerPartials(path.join(__dirname, '/views/partials'));
 
+hbs.registerHelper('trimString', (passedString, trim = false) => {
+  if (!trim || passedString.length <= 150) return passedString;
+  const trimmedString = passedString.substring(0, 150);
+  return new hbs.SafeString(`${trimmedString}...`);
+});
+
 // Add the route handlers here:
 
 app.get('/', (req, res) => {
@@ -26,7 +32,6 @@ app.get('/beers', (req, res) => {
   punkAPI
     .getBeers()
     .then(beersFromApi => {
-      //console.log(beersFromApi);
       res.render('beers', { beersFromApi });
     })
     .catch(error => console.log(error));
@@ -36,7 +41,6 @@ app.get('/random-beer', (req, res) => {
   punkAPI
     .getRandom()
     .then(([randomBeerFromApi]) => {
-      console.log(randomBeerFromApi);
       res.render('beer-detail', randomBeerFromApi);
     })
     .catch(error => console.log(error));
@@ -44,7 +48,6 @@ app.get('/random-beer', (req, res) => {
 
 app.get('/beers/:beerID', (req, res) => {
   punkAPI.getBeer(req.params.beerID).then(([selectedBeer]) => {
-    console.log(selectedBeer);
     res.render('beer-detail', selectedBeer);
   });
 });
