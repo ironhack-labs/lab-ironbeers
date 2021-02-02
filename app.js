@@ -12,9 +12,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Register the location for handlebars partials here:
-
-// ...
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 // Add the route handlers here:
 
@@ -28,12 +26,6 @@ app.get('/beers', (req, res) => {
     .then(beersFromApi => {
       const data = {
         beer: beersFromApi
-      };
-      // console.log('START 1=====================');
-      // console.log(data.beer[0]);
-      // console.log('START 2=====================');
-      // console.log(data.beer[0].name);
-      // console.log('END =====================');
       res.render('beers', data);
     })
     .catch(error => console.log(error));
@@ -65,8 +57,6 @@ app.get('/beers/beer-:donaldduck', (req, res) => {
     .catch(error => console.log(error));
 });
 
-app.get('');
-
-hbs.registerPartials(path.join(__dirname, 'views/partials'));
+app.get(''); // what for?
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
