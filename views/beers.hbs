@@ -1,0 +1,11 @@
+<div>
+    <ul class="beerlist">
+  {{#each beers}}
+    {{!-- <li>{{this.name}}</li>
+    <li><img src="{{this.image_url}}"/></li>
+     <li>{{this.description}}</li>
+      <li>{{this.tagline}}</li> --}}
+    {{> beerpartial this }}
+  {{/each}}
+</ul>
+</div>
