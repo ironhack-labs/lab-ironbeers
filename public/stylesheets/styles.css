@@ -19,6 +19,7 @@ img {
 .beer-card {
     border: 1px solid #ccc;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .beer-card > div {
