@@ -16,6 +16,7 @@ font-family: Arial, Helvetica, sans-serif;
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--white);
+  padding: 56px 0;
 }
 
 .custom-navbar {
@@ -37,6 +38,62 @@ body {
   background-color: var(--light-blue);
   margin: 10px;
 }
+
+.beers-list .img-container {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.beers-list img {
+  height: 200px;
+  width: auto;
+}
+
+.beers-list .main-info-container {
+  padding: 0 15px;
+}
+
+.beers-list .main-info-container a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.beers-list .main-info-container h2 {
+  color: var(--grey);
+  font-size: 1em;
+}
+
+.beers-detail {
+  display: flex;
+  padding: 30px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.beers-detail .img-container {
+  height: 300px;
+  width: auto;
+  margin: 30px;
+}
+.beers-detail .img-container img {
+  height: 100%;
+}
+
+.beers-detail .main-info-container {
+  padding: 0 50px;
+}
+
+.beers-detail .main-info-container a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.beers-detail .main-info-container h2 {
+  color: var(--grey);
+  font-size: 1em;
+}
+
 .footer {
   background-color: var(--dark-blue);
   color: var(--white);
@@ -56,5 +113,9 @@ body {
 @media (min-width: 768px) {
   .index-img {
     max-width: 450px;
+  }
+
+  .beers-detail {
+    flex-wrap: nowrap;
   }
 }
