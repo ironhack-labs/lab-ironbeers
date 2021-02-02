@@ -5,3 +5,65 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+html,
+body {
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #2081c3;
+  height: 50px;
+  display: flex;
+  justify-content: end;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.link {
+  color: #f7f9f9;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  padding-right: 50px;
+}
+
+#main-img {
+  width: 400px;
+  padding-bottom: 50px;
+}
+
+.home-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 800px;
+  justify-content: center;
+}
+
+.btn {
+  background-color: #2081c3;
+  border-radius: 10px;
+  color: #f7f9f9;
+  padding: 12px;
+  text-decoration: none;
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#partial {
+  background-color: #bfbfbf;
+}
+
+img {
+  width: 100px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+
+div {
+  width: 450px;
+}
