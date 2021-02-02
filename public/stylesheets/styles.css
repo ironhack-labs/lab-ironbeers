@@ -5,3 +5,34 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 120;
+;
+
+}
+
+
+h1, h2, h3 {
+    font-weight: 200;
+    
+}
+#img-beer {
+    width: 40%;
+    margin: 20px;
+}
+
+.link {
+    color: white;
+    margin: 10px;
+
+}
+
+.btn {
+    margin: 20px;
+}
+
+.beers {
+    width: 150px;
+}
