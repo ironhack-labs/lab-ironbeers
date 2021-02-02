@@ -1,6 +1,6 @@
 <div>
     <p>Your beers: </p>
     {{#each beersFromApi}}
-    <p><img src="{{image_url}}" alt="{{name}}"> {{name}} {{description}} {{tagline}}</p>
+    {{>beerPartial}}
     {{/each}}
 </div>
