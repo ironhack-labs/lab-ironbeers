@@ -1,12 +1,9 @@
 <div class="container">
-    <h1>Estas son mis Beers</h1>
+    <!--<h1>Estas son mis Beers</h1>-->
 
     <div>
         {{#each beers}}
-        {{name}}
-        <img src="{{image_url}}" alt="{{name}}" class="beers">
-        {{description}}
-        {{tagline}}
+        {{>beerpartials}}
         {{/each}}
     </div>
     
