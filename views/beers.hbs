@@ -4,15 +4,7 @@
 
 
 {{#each this}}
-<div class="chelillas">
-    
-    <img style="height: 100px" src="{{this.image_url}}"/>
-    <div class="insideText">
-        <p>{{this.name}}</p>
-        <p>{{this.tagline}}</p>
-        <p>{{this.description}}</p>
-    </div>
-</div>
+{{> beerpartial }}
 
 {{/each}}
 
