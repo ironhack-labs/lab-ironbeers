@@ -1,0 +1,17 @@
+{{#each this.chelaRan}}
+<div>
+    <img src="{{image_url}}" style="width:50px;" alt=" beer">
+    <p>{{name}}</p>
+    <p>{{description}}</p>
+    <p>{{tagline}}</p>
+    <h3>Food Pairing</h3>
+    {{#each food_pairing}}
+    <ul>
+        <li>
+            {{this}}
+        </li>
+    </ul>
+    {{/each}}
+    <p><strong>Brewer Tips:</strong> {{brewers_tips}}</p>
+</div>
+{{/each}}
