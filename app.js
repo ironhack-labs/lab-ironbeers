@@ -1,5 +1,4 @@
 const express = require('express');
-
 const hbs = require('hbs');
 const path = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
@@ -17,9 +16,29 @@ app.use(express.static(path.join(__dirname, 'public')));
 // ...
 
 // Add the route handlers here:
-
 app.get('/', (req, res) => {
   res.render('index');
+});
+app.get('/beers', (req, res) => {
+
+  const beers = async () => {
+    const listaCerv = await punkAPI.getBeers()
+    res.render('beers' , listaCerv)
+  }
+
+  beers()
+  
+});
+
+app.get('/random-beers', (req, res) => {
+
+  const beers = async () => {
+    const listaCerv = await punkAPI.getRandom()
+    console.log(listaCerv)
+    res.render('rndBeer' , listaCerv[0] )
+  }
+
+  beers()
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

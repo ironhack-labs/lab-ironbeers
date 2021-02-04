@@ -1,0 +1,11 @@
+ {{#each this}}
+         <div>
+            <div class="card" style="width: 16rem;box-sizing: content-box">
+                <img class="card-img-top cervezasC mt-3" src="{{this.image_url}}"  style="height:150px ;width:40px" alt="">
+                <div class="card-body">
+                <h5 class="card-title">{{this.id}} {{this.name}}</h5>
+                <p class="card-text">{{this.tagline}}</p>
+                </div>
+            </div>
+         </div>
+{{/each}}
