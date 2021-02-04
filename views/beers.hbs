@@ -1,0 +1,18 @@
+
+
+{{!--On the `beers.hbs` view, loop over the **array of beers** using an `{{#each}}` loop. Display an **image**, **name**, **description** and **tagline**.--}}
+
+
+{{#each this}}
+<div class="chelillas">
+    
+    <img style="height: 100px" src="{{this.image_url}}"/>
+    <div class="insideText">
+        <p>{{this.name}}</p>
+        <p>{{this.tagline}}</p>
+        <p>{{this.description}}</p>
+    </div>
+</div>
+
+{{/each}}
+
