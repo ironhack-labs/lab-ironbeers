@@ -1,0 +1,22 @@
+<div class="col-md-4">
+    <div class="card">
+        <img class="card-img-top" src="{{this.image_url}}" alt="{{this.name}}" />
+        <div class="card-body">
+            <h5 class="card-title">{{this.name}}</h5>
+            <p class="card-text">{{this.description}}</p>
+            <p class="card-text">{{this.tagline}}</p>
+            {{#if this.food_pairing}}
+            {{#each this.food_pairing}}
+            <ul>
+                <li>
+                    {{this}}
+                </li>
+            </ul>
+            {{/each}}
+            {{/if}}
+            {{#if this.brewers_tips}}
+            <p><strong>Brewer Tips:</strong> {{this.brewers_tips}}</p>
+            {{/if}}
+        </div>
+    </div>
+</div>

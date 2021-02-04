@@ -1,4 +1,14 @@
-{{#each this.chelaSola}}
+
+<div class="container">
+  <h1>Beer</h1>
+  <div class="row">
+      {{#each this.chelaSola}} 
+        {{> beerCard this}} 
+      {{/each}}
+  </div>
+</div>
+
+{{!-- {{#each this.chelaSola}}
 <div class="card" style="width: 18rem   ; diplay:flex;">
   <img src="{{image_url}}" style="width:50px; margin: 0 auto" class="card-img-top" alt="beer">
   <div class="card-body">
@@ -7,5 +17,5 @@
     <a href="#" class="btn btn-primary">{{tagline}}</a>
   </div>
 </div>
-{{/each}}
+{{/each}} --}}
 
