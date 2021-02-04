@@ -16,3 +16,12 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited, a:hover, a:active {
+    color: inherit;
+}

@@ -1,4 +1,4 @@
 <h1>Beers</h1>
 {{#each beers }}
-    {{> beerpartial this}}
+    <a href="/beers/{{ id }}">{{> beerpartial this}}</a>
 {{/each}}
