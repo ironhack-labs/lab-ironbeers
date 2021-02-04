@@ -1,0 +1,41 @@
+<!-- Column -->
+        <div class="my-1 px-1 w-full md:w-full lg:my-4 lg:px-4 lg:w-full">
+            <!-- Article -->
+            <article class="bg-gradient-to-r from-from-white to-yellow-50 overflow-hidden rounded-lg shadow-lg">
+                <a href="#">
+                  <div class="block h-60 w-full">  
+                    <img alt="{{name}} beer" class="object-cover w-full h-full md:object-scale-down" src="{{image_url}}">
+                  </div> 
+                </a>
+                <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                    <h1 class="text-lg font-bold">
+                        <a class="no-underline hover:underline text-black" href="#">
+                            {{name}}
+                        </a>
+                    </h1>
+                    <p class="text-grey-darker text-sm">
+                        {{tagline}}
+                    </p>
+                </header>
+                <footer class="flex flex-col space-y-3 justify-between p-2 leading-none">                   
+                        <p class="text-sm">
+                            {{description}}
+                        </p>
+                        <h3 class="font-bold">Food pairing:</h3>
+                        <p class="text-sm">
+                             
+                             <ul>
+                            {{#each food_pairing}}
+                                <li>{{this}}</li>
+                            {{/each}}   
+                            </ul>
+                        </p>
+                        <h3 class="font-bold">Brewers Tips</h3>
+                        <p class="text-sm">  
+                            {{brewers_tips}}
+                        </p>                 
+                </footer>
+            </article>
+            <!-- END Article -->
+        </div>
+<!-- END Column -->

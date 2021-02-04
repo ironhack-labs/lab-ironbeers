@@ -9,6 +9,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "hbs": "^4.1.1",
-    "punkapi-javascript-wrapper": "^1.0.2"
+    "punkapi-javascript-wrapper": "^1.0.2",
+    "tailwind": "^4.0.0"
   }
 }
