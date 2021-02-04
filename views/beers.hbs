@@ -1,4 +1,22 @@
-<h1>Beers</h1>
-{{#each beers }}
-    <a href="/beers/{{ id }}">{{> beerpartial this}}</a>
-{{/each}}
+<div id="beers">
+    <div class=container>
+        <div class="row">
+            {{#each beers }}
+            <div class="col-lg-4 col-md-2 col-sm-12 p-3">
+                <div class="card ">
+                    <a href="/beers/{{ id }}" class="card-link"></a>
+                    <img class="card-img-top" src="{{image_url}}" alt="{{name}}">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">{{ name }}</h5>
+                        <p class="tagline d-flex justify-content-center">{{ tagline }}</p>
+                        <p class="card-text">{{ description }}</p>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+    {{!-- {{#each beers }}
+        <a href="/beers/{{ id }}">{{> beerpartial this}}</a>
+    {{/each}} --}}
+</div>

@@ -6,9 +6,36 @@ grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
 
-body {
+html, body {
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.nav-bar {
+    background-color: #2081c3;
+    margin-bottom: 10px;
+}
+
+.nav-bar-ul {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    height: 80px;
+}
+
+.nav-bar-ul li {
+    list-style-type: none;
+    text-align: center;
+    margin: 0 10px 0 10px;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
 
 #home {
     display: flex;
@@ -17,11 +44,49 @@ body {
     align-items: center;
 }
 
-a {
+#home img {
+    margin: 50px;
+    height: 400px;
+}
+
+.link-btn {
+    background-color: rgb(67, 163, 230);
+    color: white;
+    font-family: Roboto Condensed;
+    font-size: 1.3em;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+#beers a {
     text-decoration: none;
     color: black;
 }
 
-a:visited, a:hover, a:active {
+#beers a:visited, a:hover, a:active {
     color: inherit;
+}
+
+#beers img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+.tagline {
+    color: #bfbfbf;
+}
+
+.card-title {
+    font-size: 1.2em;
+}
+
+.card-link {
+    position: absolute !important;
+    width: 100%;
+    height: 100%;
 }
