@@ -1,21 +1,13 @@
 const express = require('express');
-
 const hbs = require('hbs');
+
 const path = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 
 const app = express();
 const punkAPI = new PunkAPIWrapper();
 
-// punkAPI
-//   .getBeers()
-//   .then(beersFromApi => console.log('Beers from the database: ', beersFromApi))
-//   .catch(error => console.log(error));
-// punkAPI
-//     .getRandom()
-//     .then(beer => console.log(beer))
-//     .catch(error => res.render('error', {type: "beer", error: error}))
-
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
