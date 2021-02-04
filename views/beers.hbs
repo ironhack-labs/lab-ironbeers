@@ -1,9 +1,6 @@
 <h1>Beers</h1>
 
 {{#each this.listado}}
-<img style= "width: 40px" src="{{this.image_url}}">
-<p>Name: {{this.name}}</p>
-<p>Description: {{this.description}}</p>
-<p><i>{{this.tagline}}</i></p>
+{{> beerpartial}}
 
 {{/each}}
