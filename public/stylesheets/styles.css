@@ -1,7 +1,82 @@
-/*
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #F3F4F6;
+}
+
+.nav-bar {
+    position: relative;
+    margin-top: 0;
+    height: 88px;
+    background-color: #A5B4FC;
+    display: flex;
+    justify-content: row;
+    align-items: center;
+}
+
+.nav-bar li {
+    width: 120px;
+    list-style-type: none;
+
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #373F41;
+}
+
+#intro {
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    background-color: white;
+    height: 500px;
+    box-shadow:  2px 4px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-page-pic {
+    width: 300px;
+}
+
+.home-link-container {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.home-link-container a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 18px;
+    background-color: #52525B;
+    width: 150px;
+    border-radius: 4px;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 150%;
+    margin: 10px 0; 
+}
+
+.btn-random-beer {
+    position: static;
+}
+
+.beer-symbol {
+    width: 50px;
+}
+
+h2 {
+    font-size: 32px;
+    text-decoration: none;
+    color: black;
+}
+
+/* 
 white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
-*/
+ */
