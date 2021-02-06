@@ -1,0 +1,16 @@
+
+<h1>Your Chosen Beer</h1>
+<div class = "chosen-beer">
+    
+{{> beerpartial this}}
+
+    <h2>Food pairing</h2>
+    <ul>
+        {{#each food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+     <h2>Brewer tips</h2>
+    <p>{{brewers_tips}}</p>
+
+ </div>
