@@ -13,11 +13,11 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 hbs.registerPartials(__dirname + '/views/partials');
-// hbs.registerHelper('additionalInfos');
 
 app.get('/', (req, res) => {
   res.render('index');
 });
+
 app.get('/beers', (req, res) => {
   punkAPI
     .getBeers()
@@ -27,14 +27,24 @@ app.get('/beers', (req, res) => {
     })
     .catch(error => console.log(error));
 });
+
+app.get('/beers/:id', (req, res) => {
+  punkAPI
+    .getBeer(req.params.id)
+    .then(beer => {
+      res.send(beer);
+    })
+    .catch(err => console.log('', err));
+});
+
 app.get('/random-beer', (req, res) => {
   punkAPI
     .getRandom()
     .then(responseFromAPI => {
-      // console.log('random beer', responseFromAPI);
-      res.render('random-beer', { responseFromAPI });
+      console.log('random beer', responseFromAPI[0]);
+      res.render('random-beer', responseFromAPI[0]);
     })
     .catch(error => console.log(error));
 });
 
-app.listen(3001, () => console.log('🏃‍ on port 3000'));
+app.listen(3001, () => console.log('🏃‍ on port 3001'));
