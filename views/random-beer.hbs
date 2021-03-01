@@ -1,0 +1,14 @@
+<h1>We picked a random beed, just for you! ;D</h1>
+
+<div>
+    {{#each beers}}
+    <h3>{{this.name}}</h3>
+    <img class="beer-image" src="{{this.image_url}}" alt="beer-image">
+    <p>
+        Description: {{this.description}} <br>
+        Food pairing: {{this.food_pairing}} <br>
+        Brewer tips: {{this.description}} <br>
+    
+    </p>
+    {{/each}}
+</div>
