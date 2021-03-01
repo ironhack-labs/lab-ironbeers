@@ -1,0 +1,12 @@
+<div class="grid-container">
+{{#each beers}}
+        <a href="/beers/{{this.id}}" class="beer-container">
+            <img src="{{this.image_url}}" alt="">
+            <aside>
+                <h1>{{this.name}}</h1>  
+                <p>{{this.description}}</p>   
+                <p><i>{{this.tagline}}</i></p>  
+            </aside>
+        </a>  
+{{/each}}
+</div>
