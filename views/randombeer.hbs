@@ -1,15 +1,10 @@
-<div id="random-beer">
-    <div>
-        <img src="{{beer.image}}" alt="image of {{beer.name}}">
-    </div>
-    <div>
-        <p>{{beer.name}}</p>
-        <p>{{beer.description}}</p>
-        <ul>{{beer.food_pairing}}
-            {{#each beer.food_pairing}}
-            <li>{{this}}</li>
-            {{/each}}
-        </ul>
-        <p>{{beer.brewers_tips}}</p>
-    </div>
+<div>
+  {{> beerpartial beer}}
+  <p>Food pairing:</p>
+  <ul>
+      {{#each beer.food_pairing}}
+      <li>{{this}}</li>
+      {{/each}}
+  </ul>
+  <p>{{this.brewers_tips}}</p>
 </div>

@@ -1,12 +1,9 @@
 <h1>List of Beers</h1>
 
 <ol>
-    {{#each arrayOfBeers}}
-    <div>
-        <li>name: {{this.name}}</li>
-        <li>tagline: {{this.tagline}}</li>
-        <li>description: {{this.description}}</li>
-        <img src="{{this.image}}" alt="image of {{this.name}}">
-    </div>
+    {{#each beers}}
+    <a href="/beers/beer-{{this.id}}">
+    {{> beerpartial}}
+    </a>
     {{/each}}
 </ol>
