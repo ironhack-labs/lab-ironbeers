@@ -13,6 +13,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Register the location for handlebars partials here:
+hbs.registerPartials(__dirname + "/views/partials");
 
 // ...
 
@@ -20,6 +21,33 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
   res.render('index');
+});
+
+app.get("/beers", (req,res) => {
+  punkAPI
+  .getBeers()
+  .then(beersFromApi => {
+    //console.log('Beers from the database: ', beersFromApi);
+    res.render('beers.hbs', {beersFromApi});
+  })
+  .catch(error => console.log(error));
+});
+
+
+app.get("/random-beers", (req,res) => {
+  // pay attention REALLY to the api response ... is it an object, is it an array ?
+  punkAPI
+  .getRandom()
+  .then(responseFromAPI => {
+    // your magic happens here
+    
+    console.log("print this to see", responseFromAPI);
+  
+  
+    res.render ('random-beers', responseFromAPI);
+  })
+  .catch(error => console.log(error));
+
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
