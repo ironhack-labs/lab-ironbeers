@@ -33,8 +33,19 @@ app.get('/beers', (req, res) => {
       // console.log(beersArray);
       res.render('beers.hbs', { listOfBeers: beersArray });
       console.log('Beers imported!');
+      
     })
     .catch(err => console.log(err));
+});
+
+app.get('/beers/beer:id', (req, res) => {
+  res.render('beer-info.hbs')
+  console.log(req.params.name)
+  punkAPI
+    .getBeer()
+  //   .then()
+  //   .then(console.log(req.params.id))
+  //   .catch(err => console.log(err));
 });
 
 //Random beer
@@ -44,7 +55,7 @@ app.get('/random-beer', (req, res) => {
 
   randomBeer
     .then(randBeer => {
-      res.render('random-beer.hbs', {beer: randBeer});
+      res.render('random-beer.hbs', { beer: randBeer });
       console.log(randBeer);
     })
     .catch(err => console.log(err));
