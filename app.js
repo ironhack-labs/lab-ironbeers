@@ -1,4 +1,5 @@
 const express = require('express');
+const { registerPartial } = require('hbs');
 
 const hbs = require('hbs');
 const path = require('path');
@@ -9,6 +10,7 @@ const punkAPI = new PunkAPIWrapper();
 
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
+hbs.registerPartials(__dirname + "/views/partials");
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -21,5 +23,22 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
   res.render('index');
 });
+
+app.get('/beers', (req, res, next) => {
+  punkAPI.getBeers()
+  .then((arrayOfBeers) => res.render("beers", {arrayOfBeers}))
+});
+
+app.get('/random-beer', (req, res, next) => {
+  punkAPI.getRandom()
+  .then((randomBeer) => {
+    const beer = randomBeer[0];
+    res.render("randombeer", {
+      beer: beer
+    })
+  })
+  .catch((err) => next(err));
+});
+
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
