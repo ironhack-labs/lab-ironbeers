@@ -1,0 +1,14 @@
+<h1>All the beers</h1>
+
+<div id="all-beers">
+
+{{#each apiBeers}}
+
+<article>
+<a href="/beers/beer-{{this.id}}">
+{{> beerpartial}}
+</a>
+</article>
+
+{{/each}}
+</div>
