@@ -5,3 +5,201 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    height: 100%;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+   
+    
+}
+
+
+
+footer {
+    color: white;
+    background: #0a2c42;
+    width: 100%;
+    height: 50px;
+   
+
+}
+
+footer h3 {
+    padding: 0px 20px;
+    font-size: 1rem;
+    
+}
+
+/* nav bar */
+
+#nav-bar {
+    height: 50px;
+    width: 100vw;
+    background: #2081c3;
+    display: flex;
+    align-items: center;
+}
+
+#links {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+    width: 300px;
+
+}
+
+#links a {
+    text-decoration: none;
+    color: white;
+
+}
+
+/* home page */
+
+.home-page-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0 250px 0;
+    width: 500px;
+
+}
+
+.beer-image {
+    height: 400px;
+    margin: 40px;
+}
+
+.home-page-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+    height: 75px;
+    align-items: center;
+}
+
+.btn {
+    text-decoration: none;
+    background: #2081c3;
+    color: white;
+    height: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+
+}
+/* beers */
+
+#beer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 90vw;
+    justify-content: space-between;
+    margin: 60px 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.beer-box {
+    width: 25vw; 
+    height: 400px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    
+}
+
+.beer-box .image {
+    height: 200px;
+    margin: 20px;
+    
+}
+
+.descriptions {
+    width: 25vw;
+   
+}
+
+.beer-box p, .beer-box h4, .beer-box h5 {
+    width: 25vw;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 0.65rem;
+   
+}
+
+h4 {
+    font-size: 1.3rem;
+    
+   
+}
+
+h5 {
+    font-size: 1rem;
+    color: #bfbfbf;
+   
+}
+
+/* random */
+
+.random-box {
+    width: 700px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 50px 50px 420px 50px;
+
+
+
+}
+
+.random-box .image {
+    height: 350px;
+    margin: 20px 30px;
+    
+}
+
+.random-box li, #random-box p, .random-box a {
+    font-size: 0.75rem;
+}
+
+.random-box ul {
+    padding: 0 50px;
+    margin: 10px 0;
+}
+
+.random-box h5, .random-box h4, .random-box p, .random-box a{
+    margin: 10px 0;
+    padding: 0 30px;
+    width: 50vw;
+}
+
+.random-box a h4 {
+    padding: 0;
+    
+}
+
+.random-box h4 {
+margin-top: 20px;
+}
+
+.random {
+    width: 90vw;
+    
+}
+
