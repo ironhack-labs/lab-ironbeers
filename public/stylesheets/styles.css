@@ -1,11 +1,36 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+*{
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body {
+    background-color: #f7f9f9;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+nav {
+    background-color: #2081c3;
+    padding: 1.5em;
+}
+
+footer{
+    background-color: #0a2c42;
+    bottom: 0;
+    color: grey;
+    height: 2em;
+    display: flex;
+    align-content:center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    margin: 0 0.5em;
+}
 
 img {
-    width: 20px;
+    width: 200px;
+    margin: 2em;
 }
