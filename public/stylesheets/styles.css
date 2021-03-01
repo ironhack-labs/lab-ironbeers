@@ -1,7 +1,62 @@
-/*
+/* 
 white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+font-family: Arial, Helvetica, sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    
+    font-family: 'Roboto', sans-serif;
+    height: auto;
+    width: auto;
+  
+    
+}
+
+body{
+   
+    box-sizing: border-box;
+    background: #f7f9f9;
+    height: 1000px;
+}
+
+#navbar{
+    background: #2081c3;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    
+}
+
+#navbar > a{
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+    font-weight: bold;
+
+}
+
+footer{
+    background: #0a2c42;
+    height: 50px;
+    width: 100%;
+
+}
+
+.beerimage{
+    width: 30%;
+    height: auto;
+}
+
+.centraldiv{
+    height: 80%;
+    width: auto;
+    display: flexbox;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}

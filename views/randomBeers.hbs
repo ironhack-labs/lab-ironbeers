@@ -1,0 +1,12 @@
+ {{> beerpartial}}
+ {{#each myRandomBeer}}
+
+    <div>
+      
+        <img src="{{this.image_url}}" alt="">
+        {{> beerpartial}}
+        {{this.food_pairing}}
+        {{this.brewers_tips}}
+     
+    </div>
+    {{/each}}
