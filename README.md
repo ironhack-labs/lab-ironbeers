@@ -84,8 +84,11 @@ This leads us to the conclusion that in this step, we have the two main focus ar
 In this step, we will have a couple of micro-steps:
 
 - Create a `/beers` route inside the `app.js` file.
+
+### --------------------- HELP ----------------------
 - Inside the `/beers` route, call the `getBeers()` method (the **PunkAPI** provides this method, and you can find more about it [here](https://www.npmjs.com/package/punkapi-javascript-wrapper#getbeersoptions)). **Calling the `.getBeers()` method returns a promise that should be resolved with an array of 25 beers**.
 - Down the road, you should pass that array to the `beers.hbs` view.
+### ------------------- END HELP --------------------
 
 The example of how this method works is shown below:
 
