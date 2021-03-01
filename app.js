@@ -9,6 +9,7 @@ const punkAPI = new PunkAPIWrapper();
 
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -20,6 +21,36 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
   res.render('index');
+});
+
+app.get('/beers', (req, res, next) => {
+  punkAPI.getBeers()
+  .then(beersFromApi  => {
+    res.render("beers", {beer: beersFromApi });
+  })
+    .catch((error) => {
+    next(error);
+  })
+});
+
+app.get('/random-beers', (req, res, next) => {
+  punkAPI.getRandom()
+  .then(beer  => {
+    res.render("random-beer", { beer });
+  })
+    .catch((error) => {
+    next(error);
+  })
+});
+
+app.get('/beers/:id', (req, res, next) => {
+  punkAPI.getBeer(req.params.id)
+  .then(beer  => {
+    res.render("one-beer", { beer });
+  })
+    .catch((error) => {
+    next(error);
+  })
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

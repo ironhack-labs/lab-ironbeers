@@ -1,0 +1,15 @@
+
+<section>
+{{#each beer}}
+<div>
+
+<a href="/beers/{{this.id}}">
+<img src="{{this.image_url}}" id="beer-img">
+</a>
+
+    {{> beerpartials}}
+
+</div>
+{{/each}}
+</section>
+
