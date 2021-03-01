@@ -22,4 +22,28 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-app.listen(3000, () => console.log('🏃‍ on port 3000'));
+app.get('/', (req, res, next) => res.render('index' ));
+
+app.get("/beers", (req, res, next)=> {
+  punkAPI
+    .getBeers()
+    .then(beersFromApi => {
+      console.log('Beers from the database: ', beersFromApi)
+      res.render("beers", {beers: beersFromApi})
+    })
+    .catch(error => console.log(error));
+})
+
+app.get("/random-beers", (req, res, next)=> {
+  punkAPI
+    .getRandom()
+    .then(responseFromAPI => {
+    console.log(responseFromAPI);
+    res.render("random-beer", {random: responseFromAPI})
+    })
+    .catch(error => console.log(error));
+})
+
+module.exports = app;
+
+app.listen(8000, () => console.log('🏃‍ on port 8000'));
