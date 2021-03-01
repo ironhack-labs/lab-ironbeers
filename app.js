@@ -37,7 +37,10 @@ app.get('/beers', (req, res) => {
 })
 
 app.get('/beers/beer:id', (req, res) => {
-  res.render('beer-info.hbs')
+  const id = req.params.id[1];
+  punkAPI.getBeer(id)
+  .then((dbRes) => res.render('beer-info.hbs', {beer: dbRes}))
+  .catch(err => res.send(err))
 });
 
 //Random beer
