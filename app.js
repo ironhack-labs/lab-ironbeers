@@ -12,6 +12,12 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+// const indexRouter = require("./routes/index");
+// const artistRouter = require("./routes/artist")
+
+// const beerRouter = require("./routes/beers")
+
 // Register the location for handlebars partials here:
 
 // ...
@@ -22,4 +28,28 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+app.get('/beers', async (req, res) => {
+  // res.render('beers');
+  try {
+    const beersArray = await punkAPI.getBeers()
+    res.render('beers', {beersArray});
+  }
+  catch (err) {
+    console.log(err)
+  }
+});
+
+app.get('/random-beers', async (req, res) => {
+  try {
+    const [ beerRandom ] = await punkAPI.getRandom();
+    res.render('random-beers', {beer:beerRandom});
+  }
+  catch (err) {
+    console.log(err)
+  }
+});
+
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
+
+
