@@ -38,9 +38,8 @@ app.get('/random-beer', (req, res) => {
   punkAPI
     .getRandom()
     .then(dataBack => {
-      console.log(dataBack);
-      const foodPairing = dataBack.food_pairing;
-      res.render('random-beer', { randomBeer: dataBack, pairing: foodPairing });
+      // console.log(dataBack);
+      res.render('random-beer', { randomBeer: dataBack });
     })
     .catch(err => {
       console.log(err);
