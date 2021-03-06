@@ -1,11 +1,3 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
-
 * {
   margin: 0;
   padding: 0;
@@ -87,4 +79,27 @@ strong {
 .random-beer-text li {
   padding-left: 40px;
   list-style: none;
+}
+
+.beer-list {
+  /* display: flex;
+  flex-direction: row; */
+  width: 100%;
+}
+
+.listed-beer {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 50px;
+  text-align: center;
+}
+
+.listed-beer-img {
+  height: 200px;
+  width: auto;
+}
+
+.listed-beer-text {
+  padding-top: 10px;
 }
