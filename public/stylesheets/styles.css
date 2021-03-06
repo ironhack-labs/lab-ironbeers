@@ -83,3 +83,8 @@ h3 {
 strong {
   color: #0a2c42;
 }
+
+.random-beer-text li {
+  padding-left: 40px;
+  list-style: none;
+}
