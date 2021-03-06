@@ -1,3 +1,4 @@
+const { error } = require('console');
 const express = require('express');
 
 const hbs = require('hbs');
@@ -34,6 +35,19 @@ app.get('/beers', (req, res) => {
     //failure status
     .catch(err => {
       console.log(err);
+    });
+});
+
+// Create a /random-beer route inside the app.js file
+app.get('/random-beer', (req, res) => {
+  punkAPI
+    .getRandom()
+    //success
+    .then(responseFromAPI => {
+      res.render('random-beer', { randombeer: responseFromAPI });
+    })
+    .catch(error => {
+      console.log(error);
     });
 });
 
