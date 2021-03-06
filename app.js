@@ -26,8 +26,20 @@ app.get('/beers', (req, res) => {
   punkAPI
     .getBeers()
     .then(dataBack => {
-      console.log(dataBack);
+      // console.log(dataBack);
       res.render('beers', { beers: dataBack });
+    })
+    .catch(err => {
+      console.log(err);
+    });
+});
+
+app.get('/random-beer', (req, res) => {
+  punkAPI
+    .getRandom()
+    .then(dataBack => {
+      console.log(dataBack);
+      res.render('random-beer', { randomBeer: dataBack });
     })
     .catch(err => {
       console.log(err);
