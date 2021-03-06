@@ -49,3 +49,37 @@ a {
   width: 350px;
   padding: 100px;
 }
+
+h2 {
+  color: #0a2c42;
+  font-size: 40px;
+}
+
+h3 {
+  color: #bfbfbf;
+}
+
+#random-beer {
+  display: flex;
+  flex-direction: row;
+}
+
+#random-beer-img {
+  height: 500px;
+  width: auto;
+  padding: 100px;
+}
+
+.random-beer-text {
+  padding: 100px;
+}
+
+.random-beer-text h2,
+.random-beer-text h3,
+.random-beer-text p {
+  padding: 10px;
+}
+
+strong {
+  color: #0a2c42;
+}

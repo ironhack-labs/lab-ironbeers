@@ -39,7 +39,8 @@ app.get('/random-beer', (req, res) => {
     .getRandom()
     .then(dataBack => {
       console.log(dataBack);
-      res.render('random-beer', { randomBeer: dataBack });
+      const foodPairing = dataBack.food_pairing;
+      res.render('random-beer', { randomBeer: dataBack, pairing: foodPairing });
     })
     .catch(err => {
       console.log(err);
