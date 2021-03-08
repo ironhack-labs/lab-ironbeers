@@ -14,16 +14,17 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Register the location for handlebars partials here:
-
+// Ignore partials for now
 // ...
 
 // Add the route handlers here:
 
+// Home
 app.get('/', (req, res) => {
   res.render('index');
 });
 
-// Create a /beers route inside the app.js file.
+// Create a /beers route inside the app.js file
 app.get('/beers', (req, res) => {
   punkAPI
     .getBeers()
@@ -33,6 +34,24 @@ app.get('/beers', (req, res) => {
       res.render('beers', { beers: dataBack });
     })
     // failure state
+    .catch(err => {
+      console.log(err);
+    });
+});
+
+// Create a /random-beer route inside the app.js file
+// app.get('/random-beers', (req, res) => {
+//   res.render('random-beer');
+// });
+
+app.get('/random-beer', (req, res) => {
+  punkAPI
+    .getRandom()
+    .then(dataBack => {
+      console.log('dataBack:', dataBack[0]);
+      // first arguement of render is the hbs file coming from views folder root, the object is then named as you would like it
+      res.render('random-beer', { randomBeer: dataBack[0] });
+    })
     .catch(err => {
       console.log(err);
     });
