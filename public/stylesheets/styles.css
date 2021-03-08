@@ -1,7 +1,103 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f7f9f9;
+}
+nav {
+  position: fixed;
+  width: 100vw;
+  height: 70px;
+  background-color: #2081c3;
+}
+nav > a {
+  padding: 0px 10px;
+
+  justify-content: space-between;
+}
+a {
+  color: #f7f9f9;
+  text-decoration: none;
+  text-decoration-color: #bfbfbf;
+}
+
+.index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 70vh;
+  padding: 60px 0px 60px 0px;
+}
+
+div > a {
+  background: #2081c3;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 3px;
+  box-shadow: 5px 5px 7px 0px #bfbfbf;
+}
+
+div > img {
+  max-height: 40vh;
+  min-width: 200px;
+  max-width: 400px;
+  padding: 40px;
+}
+
+.beer {
+  max-width: 75vw;
+  display: flex;
+  align-items: center;
+  margin: 0px auto;
+}
+
+.beer > img {
+  height: auto;
+  width: 80px;
+  padding: 50px;
+}
+
+.beer-text {
+  padding: 70px 0px;
+  margin: 0px 100px 0px 20px;
+}
+
+.beer_pic {
+  height: 350px;
+  width: 350px;
+  padding: 100px;
+}
+
+.randomBeer {
+  height: 350px;
+  width: 350px;
+  padding: 100px;
+}
+
+.randomText {
+  padding: 70px 0px;
+  margin: 0px 100px 0px 20px;
+}
+p {
+  margin: 20px 0 20px 0;
+}
+ul {
+  margin: 0px 0px 0 50px;
+}
+
+li {
+  margin: 10px 0 0 0;
+}
+footer {
+  background: #0a2c42;
+  color: #f7f9f9;
+  padding: 20px 30px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
