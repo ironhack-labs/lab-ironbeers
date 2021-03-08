@@ -1,6 +1,7 @@
 const express = require('express');
 
 const hbs = require('hbs');
+const { get } = require('http');
 const path = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 
@@ -20,6 +21,21 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
   res.render('index');
+});
+
+// Create a /beers route inside the app.js file.
+app.get('/beers', (req, res) => {
+  punkAPI
+    .getBeers()
+    // success
+    .then(dataBack => {
+      console.log('dataBack:', dataBack);
+      res.render('beers', { beers: dataBack });
+    })
+    // failure state
+    .catch(err => {
+      console.log(err);
+    });
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
