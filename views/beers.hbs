@@ -1,6 +1,6 @@
 {{#each beers}}
-<img scr="{{image_url}}">
-<h1>{{name}}</h1>
-<p>{{description}}</p>
-<p>{{tagline}}</p>
+<img scr="{{this.image_url}}">
+<h1>{{this.name}}</h1>
+<p>{{this.description}}</p>
+<p>{{this.tagline}}</p>
 {{/each}}
