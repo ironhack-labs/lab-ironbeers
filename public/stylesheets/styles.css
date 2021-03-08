@@ -16,6 +16,8 @@ body {
   background: #f7f9f9;
 }
 
+/* Main Home page with beer-img, nav and links btn */
+
 .nav-bar {
   background: #2081c3;
   padding: 35px;
@@ -59,4 +61,76 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: -90px;
+}
+
+/* Random-beer page  */
+
+.random-beer {
+  display: flex;
+  flex-direction: row;
+}
+
+#random-beer-img {
+  height: 400px;
+  width: auto;
+  padding: 100px;
+  margin-left: 100px;
+}
+
+.random-beer-content {
+  padding: 100px;
+  margin-left: -40px;
+  line-height: 1.5em;
+}
+
+.random-beer-content h2,
+.random-beer-content h3,
+.random-beer-content p {
+  padding: 10px;
+}
+
+.random-beer-content ul {
+  padding-left: 50px;
+}
+
+h2 {
+  color: #0a2c42;
+  font-size: 35px;
+}
+
+h3 {
+  color: #bfbfbf;
+}
+
+/* All beers page */
+
+.all-beers {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  flex-wrap: wrap;
+}
+
+.one-beer {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  /* text-align: center; */
+  align-items: center;
+  padding: 50px;
+  margin: 40px;
+}
+
+#all-beers-img {
+  height: 250px;
+  width: auto;
+}
+
+.all-beers h3,
+.all-beers p {
+  padding: 10px;
+}
+
+.one-beer p {
+  width: 350px;
 }
