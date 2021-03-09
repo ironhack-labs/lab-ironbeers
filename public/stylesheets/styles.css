@@ -83,16 +83,17 @@ strong {
 
 .beer-list {
   display: flex;
-  flex-direction: row;
-  width: 100vw;
+  flex-direction: column;
+  width: 100%;
 }
 
 .listed-beer {
   display: flex;
-  flex-direction: column;
-  width: 30%;
-  padding: 50px;
+  flex-direction: row;
+  width: 80%;
+  padding: 50px 0 0 10%;
   text-align: center;
+  justify-self: center;
 }
 
 .listed-beer-img {
@@ -101,5 +102,8 @@ strong {
 }
 
 .listed-beer-text {
-  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding-left: 10%;
 }
