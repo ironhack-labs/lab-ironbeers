@@ -107,3 +107,9 @@ strong {
   width: 80%;
   padding-left: 10%;
 }
+
+.listed-beer-text h2,
+.listed-beer-text h3,
+.listed-beer-text p {
+  padding: 10px;
+}
