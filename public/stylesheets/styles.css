@@ -13,6 +13,7 @@ body {
 }
 nav {
   position: fixed;
+  top: 0;
   width: 100vw;
   height: 70px;
   background-color: #2081c3;
@@ -42,19 +43,19 @@ footer {
   padding-left: 20px;
 }
 
-div {
+.home {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-div img {
+.home img {
   width: 300px;
   padding-top: 100px;
 }
 
-div ul {
+.home ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,14 +64,51 @@ div ul {
   font-size: 25px;
 }
 
-div li {
+.home li {
   background-color: #2081c3;
   padding: 10px 30px;
   border-radius: 8px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
-div li a {
+.home li a {
   color: #f7f9f9;
   text-decoration: none;
+}
+
+.randomBeer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.randomImage img {
+  width: 100px;
+  padding-right: 50px;
+  padding-left: 20px;
+}
+.randomText {
+  width: 800px;
+}
+
+.beers img {
+  width: 50px;
+  margin: 10px;
+}
+.beers {
+  padding-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.beersText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 850px;
 }
