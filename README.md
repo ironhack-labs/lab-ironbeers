@@ -59,7 +59,7 @@ Add a navbar that includes links to 3 pages:
 
 - _Home_ ==> should navigate to `/`.
 - _Beers_ ==> should navigate to `/beers`.
-- _Random Beer_ ==> should navigate to `/random-beers`.
+- _Random Beer_ ==> should navigate to `/random-beer`.
 
 Layout done, let's move to creating these three pages.
 
@@ -175,7 +175,7 @@ After creating the partial, and looping over the array of beers, on our `/beers`
 
 ![image](https://user-images.githubusercontent.com/23629340/36724392-61fa7336-1bb3-11e8-8468-189908167e10.png)
 
-- Also, you can use it in the `random-beers.hbs` page.
+- Also, you can use it in the `random-beer.hbs` page.
 
 Our code shrunk by a lot just because we managed to create a reusable piece of code (the partial), which we can now place wherever we need to use this set of properties.
 
