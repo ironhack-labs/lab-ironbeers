@@ -1,0 +1,10 @@
+<section  class="beers-container">
+    {{#each beers}}
+    <div class="beer-card">
+        <img src="{{this.image_url}}" alt="{{this.image}}-image">
+        
+        {{>beersPartial this}}
+        
+    </div>
+    {{/each}}
+</section>
