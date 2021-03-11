@@ -1,0 +1,14 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #2081c3;
+    width: 100vw;
+}
+
+nav > * {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
