@@ -21,5 +21,25 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
   res.render('index');
 });
+app.get('/beers', (req, res) => {
+  punkAPI
+    .getBeers()
+    .then(beers => {
+      console.log(beers);
+      res.render('beers', beers);
+    })
+    .catch(error => console.log(error));
+});
 
+app.get('/beers', (req, res) => {
+  punkAPI
+    .getBeers()
+    .then(dataBack => {
+      console.log('dataBack:', dataBack);
+      res.render('beers', { beers: dataBack });
+    })
+    .catch(err => {
+      console.log(err);
+    });
+});
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
