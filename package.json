@@ -3,12 +3,20 @@
   "version": "2.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js -e .js,.hbs",
+    "test": "jest --forceExit",
+    "test:dev": "jest --watch --forceExit"
   },
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "hbs": "^4.1.1",
     "punkapi-javascript-wrapper": "^1.0.2"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.5",
+    "jest": "^26.6.3",
+    "supertest": "^6.1.3"
   }
 }
