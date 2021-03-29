@@ -4,6 +4,7 @@ const cheerio = require('cheerio');
 
 beforeAll(() => {
   process.env.NODE_ENV = 'test';
+  process.env.PORT = 3020;
 });
 
 describe('Homepage', () => {
@@ -45,7 +46,7 @@ describe('Beers', () => {
     expect(response.status).toBe(200);
   });
 
-  test('should multiple beers', () => {
+  test('should display multiple beers', () => {
     $ = cheerio.load(response.text);
     const beers = $('.beer');
     expect(beers.length > 0).toBe(true);
@@ -53,5 +54,27 @@ describe('Beers', () => {
       const beer = $(element);
       expect(beer.find('img').attr('src').includes('.png')).toBe(true);
     });
+  });
+});
+
+describe('Random Beer', () => {
+  let response;
+  let $ = cheerio.load('');
+
+  beforeAll(async () => {
+    response = await request(app).get('/random-beer');
+    $ = cheerio.load(response.text);
+  });
+
+  test('should load', () => {
+    expect(response.status).toBe(200);
+  });
+
+  test('should display single random beer', () => {
+    $ = cheerio.load(response.text);
+    const randomBeerImage = $('img');
+    expect(randomBeerImage.length).toBe(1);
+    expect(randomBeerImage.attr('src').includes('.png')).toBe(true);
+    expect($('h1').text()).toBeTruthy();
   });
 });
