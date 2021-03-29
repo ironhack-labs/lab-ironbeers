@@ -52,7 +52,7 @@ describe('Beers', () => {
     expect(beers.length > 0).toBe(true);
     beers.each((i, element) => {
       const beer = $(element);
-      expect(beer.find('img').attr('src').includes('.png')).toBe(true);
+      expect(beer.find('img').attr('src')).toBeTruthy();
     });
   });
 });
@@ -74,7 +74,7 @@ describe('Random Beer', () => {
     $ = cheerio.load(response.text);
     const randomBeerImage = $('img');
     expect(randomBeerImage.length).toBe(1);
-    expect(randomBeerImage.attr('src').includes('.png')).toBe(true);
+    expect(randomBeerImage.attr('src')).toBeTruthy();
     expect($('h1').text()).toBeTruthy();
   });
 });
