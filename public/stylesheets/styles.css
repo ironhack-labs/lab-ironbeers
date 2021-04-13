@@ -9,13 +9,30 @@ font-family: Arial, Helvetica, sans-serif;
   display: block;
   margin: auto;
 } */
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+nav {
+  background-color: #2882c1;
+  height: 64px;
+  margin: 0;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
 .main img {
   height: 50%;
   object-fit: cover;
 }
 body {
   background-color: #f7f9f9;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 .main {
   display: flex;
   flex-direction: column;
@@ -29,4 +46,13 @@ main li {
 main img {
   height: 10%;
   object-fit: cover;
+}
+footer {
+  background-color: #0c2d41;
+  color: white;
+  display: flex;
+}
+footer p {
+  padding-left: 15px;
+  margin: revert;
 }

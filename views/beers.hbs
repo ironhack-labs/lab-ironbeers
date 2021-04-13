@@ -1,4 +1,5 @@
 <H1>BEERS</H1>
+<div>
 {{!-- image, name, description, tagline --}}
 {{#each beersFromApi}} 
 {{> beerpartial}}
@@ -7,3 +8,4 @@
  <li> Description: {{this.description}}</li>
  <li> Tagline: {{this.tagline}}</li> --}}
 {{/each}}
+</div>
