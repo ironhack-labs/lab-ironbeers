@@ -1,7 +1,8 @@
-<h1>Beer List</h1>
+<h1>All beers</h1>
 
 <div class="all-beers">
     {{#each beers}}
         {{> beerpartial}}
     {{/each}}
+    <a href="/beers/{{this.id}}" class="btn btn-primary">More info</a>
 </div>
