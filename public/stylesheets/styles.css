@@ -7,7 +7,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
 .homepage {
   display: flex;
   flex-direction: column;
@@ -66,22 +65,41 @@ h1 {
   margin-left: 15px;
 }
 
-.random{
-    width: 100%;
+.random {
+  width: 100%;
 }
 
-.random .card{
+.random .card {
   display: flex;
   flex-direction: row;
   width: 1000px !important;
   margin: 20px 80px;
 }
 
-.random .card-body{
-    width: 200pxs;
-    margin-left: 50px;
+.random .card-body {
+  width: 200pxs;
+  margin-left: 50px;
 }
 
+.extra-info {
+  position: absolute;
+  left: 330px;
+  top: 400px;
+}
 
+.beer-id {
+  width: 100%;
+  background-color: red;
+}
 
+.beer-id .card {
+  display: flex;
+  flex-direction: row;
+  width: 1000px !important;
+  margin: 20px 80px;
+}
 
+.beer-id .card-body {
+  width: 200pxs;
+  margin-left: 50px;
+}

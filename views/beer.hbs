@@ -1,7 +1,14 @@
-<main>
+<div class="beer-id">
     {{#each beer}}
         {{> beerpartial}}
-        <p>{{this.food_pairing}}</p>
-        <p>{{this.brewer_tips}}</p>
+       <div class="extra-info">
+            <p>Brewer Tips: {{this.brewer_tips}}</p>
+            <p>Food pairing:</p>
+            <ul> 
+            <p class="food"> {{#each this.food_pairing}}</p>
+            <li>{{this}}</li>
+            {{/each}}
+            </ul> 
+        </div>
     {{/each}}
-</main>
+</div>
