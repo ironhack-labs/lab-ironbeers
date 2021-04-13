@@ -27,4 +27,33 @@ a {
   margin: 20px 0;
 }
 
+h1{
+    color: red;
+}
+.all-beers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 100px;
+}
+
+.beer-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 20px;
+}
+
+.beer-info img{
+    width: 60px;
+    object-fit: cover;
+}
+
+.beer-info p{
+    font-size: 15px;
+    width: 100%;
+}
+
 
