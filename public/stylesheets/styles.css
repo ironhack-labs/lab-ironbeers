@@ -5,3 +5,59 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    font-family: Arial,
+    Helvetica,
+    sans-serif;
+}
+
+
+.first-image{
+    display: block;
+    margin: 50px auto;
+    width: 35%
+
+}
+
+.enlace {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.enlace button {
+    margin-bottom: 30px;
+    background-color: #0a2c42;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    padding: 5px 10px
+}
+
+footer {
+        background-color: rgb(37, 36, 36);
+        padding: 15px 10px;
+        color: white;
+}
+
+.images {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.images img {
+    width: 12%;
+    margin-bottom: 20px;
+}
+
+.images h1 {
+    margin-bottom: 20px;
+    font-size: 1.9em;
+}
+
+.paragraph-random{
+    text-align: center;
+
+}
