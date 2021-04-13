@@ -1,7 +1,59 @@
+:root {
+    --white: #f7f9f9;
+    --light-blue: #2081c3;
+    --dark-blue: #0a2c42;
+    --grey: #bfbfbf;
+}
+
 /*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.nav {
+    background-color: var(--light-blue);
+}
+
+.nav a {
+    color: var(--white);
+    padding: 20px;
+}
+
+.beer-jug-image {
+    width: 400px;
+}
+
+.beer-image-div {
+    text-align: center;
+    margin: 70px;
+}
+
+.home-btn-div {
+    text-align: center;
+    margin: 20px;
+}
+
+.beers {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.beer-image-div {
+    text-align: center;
+}
+
+.beers-images {
+    width: 100px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+p {
+   width: 600px;
+}
