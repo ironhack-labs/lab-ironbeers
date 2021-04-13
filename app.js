@@ -28,10 +28,21 @@ app.get('/beers', (req, res) => {
     .catch(error => console.error(error));
 });
 
+app.get('/beers/:id', (req, res) => {
+  punkAPI
+    .getBeer(req.params.id)
+    .then(data => {
+      console.log(data);
+      res.render('random-beer', data[0]);
+    })
+    .catch(error => console.error(error));
+});
+
 app.get('/random-beer', (req, res) => {
   punkAPI
     .getRandom()
     .then(data => {
+      console.log(data);
       res.render('random-beer', data[0]);
     })
     .catch(error => console.error(error));
