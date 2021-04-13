@@ -14,8 +14,22 @@ body{
     color: white;
 }
 
+.beer-img {
+    width: 150px;
+}
+
+.row {
+    margin-top: 70px;
+    text-align: left;
+}
+
 h1 {
     text-align: center;
+}
+
+.beers-title {
+    margin-top: 40px;
+    font-size: 3.5em;
 }
 .card img {
     width: 50px; 
@@ -31,8 +45,41 @@ main a {
     color: white;
     padding: 10px;
     margin-top: 20px;
+    border-radius: 8px;
+    text-decoration: none;
 }
 
-.home-imng {
-    margin: auto;
+#home-img {
+    height: 550px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-left: 40px;
+}
+
+.button {
+    margin: 25px;
+}
+
+.text-random{
+    font-size: 1.2em;
+}
+
+.text-random p {
+    margin-top: 10px;
+}
+
+.grey-color {
+    color: rgb(173, 173, 173);
+}
+
+footer {
+    position: fixed;
+    height: 7vh;
+    top: 95vh;
+    background-color: #0a2c42;
+    color: white;
+    width: 100vw;
+}
+footer p {
+    padding-top: 1vh;
 }
