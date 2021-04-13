@@ -1,17 +1,12 @@
 {{#each beers}}
-<div class="cards" style="width: 18rem">
-    <img src="{{this.image_url}}" alt="">
-    <div>
-        <h4 class="card-title">{{this.name}}</h4>
-        <p class="card-text">{{this.description}}</p>
-        <p class="">{{this.tagline}}</p>
-        <h5>Food Pairing</h5>
-        <ul>
-            <li>{{this.food_pairing.[0]}}</li>
-            <li>{{this.food_pairing.[1]}}</li>
-            <li>{{this.food_pairing.[2]}}</li>
-        </ul>
-        <p><span>Brewers Tips:</span>{{this.brewers_tips}}</p>
-    </div>
+{{> beerpartial}}
+<h5>Food Pairing</h5>
+<ul>
+    <li>{{this.food_pairing.[0]}}</li>
+    <li>{{this.food_pairing.[1]}}</li>
+    <li>{{this.food_pairing.[2]}}</li>
+</ul>
+<p><span>Brewers Tips:</span>{{this.brewers_tips}}</p>
+</div>
 </div>
 {{/each}}
