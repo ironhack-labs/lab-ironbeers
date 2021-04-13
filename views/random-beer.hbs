@@ -1,10 +1,9 @@
 {{!-- image, name, description, tagline, food pairing and brewer tips. --}}
 
 <main>
-    <img src="{{this.image_url}}" alt="">
-    <h3>{{this.name}}</h3>
-    <span>{{this.tagline}}</span>
-    <p>{{this.description}}</p>
+
+    {{> beerspartial this}} 
+   
     <ul>
         <h4>Food Pairing</h4>
         {{#each this.food_pairing}}
