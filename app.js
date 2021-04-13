@@ -1,4 +1,5 @@
 const express = require('express');
+const chalk = require('chalk')
 
 const hbs = require('hbs');
 const path = require('path');
@@ -19,15 +20,30 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Add the route handlers here:
 
 app.get('/', (req, res) => {
-  res.render('index');
-});
+  res.render('index')
+})
 
 app.get('/beers', (req, res) => {
-  res.render('beers');
+  const beersArray = punkAPI.getBeers()
+
+  beersArray.then((beersArray) => {
+    console.log(chalk.green(`${beersArray.length} beers received from the database`))
+    res.render('beers', {beersArray});
+  })
+  beersArray.catch((error) => {
+    console.log(chalk.red('It has been an error: ', error))
+  })
 })
 
 app.get('/random-beer', (req, res) => {
-  res.render('random-beer');
+  const randomBeer = punkAPI.getRandom()
+  randomBeer.then((randomBeer) => {
+    console.log('adsf', randomBeer)
+    res.render('random-beer', randomBeer[0])
+  })
+  randomBeer.catch((error) => {
+    console.log(chalk.red('Error: ', error))
+  })
 })
 
 app.listen(3002, () => console.log('🏃‍ on port 3002'));
