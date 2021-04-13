@@ -22,4 +22,14 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+app.get('/beers', (req, res) => {
+  .then(beers => {res.render('beers', {beers})})
+  .catch(error => console.error(error))
+})
+
+app.get('/random-beer', (req, res) => {
+  res.render('randomBeer');
+})
+
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
