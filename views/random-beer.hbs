@@ -1,21 +1,16 @@
-
 <div class="contenedor">
-    <img src="{{this.image_url}}" alt="{{this.name}} photo">
-    <div class="beertext">
-        <div class="name"> {{this.name}} </div>
-        <div class="description"> {{this.description}} </div>
-        <div class="tagline"> {{this.tagline}} </div>
-        <div class="food_pairing">
-            <p>Food Pairing: </p>
-            <ul>
-                {{#each this.food_pairing}}
-                <li>{{this}}</li>
-                {{/each}}
-            </ul>
-        </div>
-        <div class="brewers_tips">
-            <p>Brewer tips:</p>
-            {{this.brewers_tips}}
-        </div>
+    {{>beerpartial this}}
+    <div class="food_pairing">
+        <p>Food Pairing: </p>
+        <ul>
+            {{#each this.food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="brewers_tips">
+        <p>Brewer tips:</p>
+        {{this.brewers_tips}}
+    </div>
     </div>
 </div>
