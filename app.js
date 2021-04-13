@@ -23,8 +23,25 @@ app.get('/', (req, res) => {
 });
 
 app.get('/beers', (req, res) => {
+  punkAPI
+    .getBeers()
+    .then(beersFromApi =>
+      console.log('Beers from the database: ', beersFromApi)
+    )
+    .catch(error => console.log(error));
+
+  //res.render('beers');
+  //console.log('Beers from the database: ', beersFromApi)
   res.render('beers');
 });
+
+// app.get('/beers', (req, res) => {
+//   .getBeers()
+//     .then(beersFromApi =>
+//       console.log('Beers from the database: ', beersFromApi)
+//     )
+//     .catch(error => console.log(error));
+// });
 
 app.get('/randomBeer', (req, res) => {
   res.render('randomBeer');
