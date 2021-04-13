@@ -5,3 +5,56 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body{
+    background-color: #f7f9f9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-primary {
+    background-color: #2081c3 !important;
+}
+
+.main-index{
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-index img{
+    height: 340px;
+    margin-bottom: 35px;
+}
+
+.main-index .btn-primary{
+    background-color: #2081c3;
+    margin: 15px;
+}
+
+.main-beers{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding: 30px;
+}
+
+.main-beers .card {
+    background-color: #f7f9f9;
+}
+
+.main-beers .card img {
+    height: 200px;
+    object-fit: contain;
+}
+
+footer {
+    background-color: #0a2c42;
+    color: white;
+    display: flex;
+}
+footer p {
+    padding-left: 15px;
+    margin: revert;
+}
