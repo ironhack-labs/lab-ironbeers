@@ -1,0 +1,25 @@
+<div class="container individual-beer">
+    {{#each beer}}
+    {{> beerpartial}}
+    <strong>Food pairing</strong>
+
+    <ul>
+        {{#each food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+    <strong>Brewer tips:</strong> {{this.brewers_tips}}<br>
+    <strong>First brewed:</strong> {{this.first_brewed}}<br>
+    <strong>ABV:</strong> {{this.abv}}<br>
+    <strong>IBU:</strong> {{this.ibu}}<br>
+    <strong>Target FG:</strong> {{this.target_fg}}<br>
+    <strong>Target OG:</strong> {{this.target_og}}<br>
+    <strong>EBC:</strong> {{this.ebc}}<br>
+    <strong>SRM:</strong> {{this.srm}}<br>
+    <strong>PH:</strong> {{this.ph}}<br>
+    <strong>Attenuation level:</strong> {{this.attenuation_level}}<br>
+    <strong>Volume:</strong> {{this.volume.value}} {{this.volume.unit}}<br>
+    <strong>Boil volume:</strong> {{this.boil_volume.value}} {{this.boil_volume.unit}}<br>
+    <strong>Yeast:</strong> {{this.ingredients.yeast}}<br>
+    {{/each}}
+</div>

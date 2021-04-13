@@ -5,3 +5,78 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+/* GENERAL STYLES */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 5rem;
+}
+
+h2 a {
+    color: black;
+}
+
+.tagline {
+    color: #bfbfbf;
+}
+
+/* NAV AND FOOTER STYLES */
+.nav {
+    background-color: #2081c3;
+    padding: 10px 0 10px 50px;
+    margin-bottom: 50px;
+}
+
+.nav a{
+    color: white;
+}
+
+footer{
+    background-color: #0a2c42;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* HOME PAGE */
+.home img{
+    display:block;
+    margin: auto;
+}
+
+/* BEERS PAGE */
+.beers img{
+    height: 200px;
+    width: auto;
+    display: block;
+    margin: auto;
+    padding: 25px;
+}
+
+/* INDIVIDUAL BEER PAGE */
+.individual-beer img {
+    height: 700px;
+    width: auto;
+    float: left;
+    margin-right: 50px;
+}
+
+/* BUTTON */
+.button {
+    display: block;
+    margin: auto;
+    text-align: center;
+    background-color: #2081c3;
+    color: white;
+    width: 250px;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
