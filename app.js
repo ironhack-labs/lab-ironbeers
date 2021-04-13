@@ -26,14 +26,24 @@ app.get('/beers', (req, res) => {
   punkAPI
     .getBeers()
     .then(beersFromApi => res.render('beers', { beersFromApi }))
-    .catch(error => console.log(error));
+    .catch(error => console.error(error));
 });
 
 app.get('/random-beer', (req, res) => {
   punkAPI
     .getRandom()
     .then(responseFromAPI => res.render('random-beer', { responseFromAPI }))
-    .catch(error => console.log(error));
+    .catch(error => console.error(error));
+});
+
+app.get('/beers/:id', (req, res) => {
+  punkAPI
+    .getBeer(req.params.id)
+    .then(beer => {
+      console.log(beer);
+      res.render('singlebeer', beer[0]);
+    })
+    .catch(error => console.error(error));
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
