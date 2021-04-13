@@ -5,3 +5,94 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 200px;
+}
+
+.navbar {
+    margin-bottom: 30px;
+    background-color: #2081c3;
+    color: #f7f9f9;
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em 0;
+}
+
+.button {
+    padding: 0.5em 1.5em;
+    margin-top: 1.5em;
+    background-color: #2081c3;
+    border-radius: 8px;
+    box-shadow: 0px 4px 7px#bfbfbf;
+}
+
+a {
+    color: #f7f9f9;
+    font-weight: bold;
+    margin-left: 2em;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #f7f9f9;
+}
+
+footer {
+    background-color:#0a2c42;
+    padding: 1em 0 0.1em 1em;
+    color: #f7f9f9;
+}
+
+img {
+    display: block;
+    width: 25%;
+    height: auto;
+    margin-bottom: 2em;
+}
+
+.sameHeight {
+    width: auto;
+    height: 250px;
+    margin: 20px auto;
+}
+
+.customSize {
+    width: 85%;
+    max-width: 1600px;
+}
+
+.beerCard {
+    display: flex;
+    margin: 2em 10em;
+}
+
+.sameSize {
+    width: auto;
+    height: 500px;
+}
+
+.beerData {
+    margin: 60px 100px;
+}
+
+.beerData h3 {
+    font-size: 40px;
+    margin-bottom: 1em;
+}
+
+.beerData h4 {
+    color: #bfbfbf;
+    margin-bottom: 0.8em;
+}
+
+.bold {
+    font-weight: bold;
+}

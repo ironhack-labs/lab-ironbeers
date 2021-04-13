@@ -1,0 +1,14 @@
+<div class="container customSize">
+    <div class="row">
+        {{#each beers}}
+
+        <div class="col-4">
+            <img class="sameHeight" src="{{image_url}}" alt="{{name}}">
+            <h3>{{name}}</h3>
+            <h4>{{tagline}}</h4>
+            <p>{{description}}</p>
+        </div>
+
+        {{/each}}
+    </div>
+</div>
