@@ -19,17 +19,23 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Register the location for handlebars partials here:
 
-// ------ HASTA AQUI ES SETUP - NO HAY NADA QUE REPASAR, SE HACE SOLO UNA VEZ POR COMIENZO DE PROYECTO ------ //
-
+// ---------- HASTA AQUI ES SETUP - NO HAY NADA QUE REPASAR, SE HACE SOLO UNA VEZ POR COMIENZO DE PROYECTO ---------- //
 // Sgte: Build routes (connect URL to an HTML file, for render)
 app.get('/', (req, res) => {
   res.render('index');
 });
+
 app.get('/beers', (req, res) => {
-  res.render('beers');
+  punkAPI.getBeers()
+  .then(beersFromApi => res.render('beers', {beersFromApi}))
+  .catch(error => console.log(error))
 });
-app.get('/random-beers', (req, res) => {
-  res.render('random-beers');
+
+app.get('/random-beer', (req, res) => { //donde (routes)
+  punkAPI.getRandom()
+  .then(responseFromAPI => res.render(responseFromAPI[0], {responseFromAPI}) //que (views)
+  )
+  .catch(error => console.log(error))
 });
 
 //conecta el servidor con el puerto 3000 (para acceder a cualquier puerto el comando "Localhost");

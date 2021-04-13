@@ -1,0 +1,11 @@
+
+
+<main class="randomBeer">
+    {{#each responseFromApi}}
+    <img class="beer" src="{{this.image_url}}"">
+    <h3>{{this.name}}</h3>
+    <p>{{this.description}}</p>
+    <p>{{this.tagline}}</p>
+
+    {{/each}}
+</main>
