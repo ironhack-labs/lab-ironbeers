@@ -1,11 +1,11 @@
 <div>
-    {{#each this}}
-        <h3>Name</h3>
-        {{name}}
-        <img src={{image_url}} alt={{name}}>
-        <h3>Tagline</h3>
-        {{tagline}}
-        <h3>Description</h3>
-        {{description}}
+    {{#each beer}}
+        {{> beerpartial}}
+        <div>
+            <h3>Food Pairing</h3>
+            {{this.food_pairing}}
+            <h3>Brewer tips</h3>
+            {{this.brewers_tips}}
+        </div>
     {{/each}}
 </div>
