@@ -59,10 +59,54 @@ img {
     max-width: 100%;
     display: block;
 }
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
 
 /* Reset extension */
+
+/*
+white: #f7f9f9;
+light-blue: #2081c3;
+dark-blue: #0a2c42;
+grey: #bfbfbf;
+font-family: Arial, Helvetica, sans-serif;
+*/
 
 .card-img-top {
 	width: 80px;
 	object-fit: cover;
+}
+
+.btn-primary {
+	background-color: #2081c3;
+}
+
+button a {
+	color: #f7f9f9;
+	text-decoration: none;
+}
+
+.bg-light {
+	background-color: #2081c3!important;
+}
+
+.index {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.index button {
+	margin: 20px;
+}
+
+.cards {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card {
+	flex-basis: calc(33.3% - 1rem);
 }
