@@ -1,4 +1,18 @@
- <img src="{{this.image_url}}" alt="{{this.name}}">
- <a href="/beers/{{this.id}}">Name: {{this.name}}</a> 
- <li> Description: {{this.description}}</li>
- <li> Tagline: {{this.tagline}}</li>
+ <div>
+    <img src="{{this.image_url}}" alt="{{this.name}}">
+    <div>
+        <a href="/beers/{{this.id}}">Name: {{this.name}}</a> 
+        <p>Description: {{this.description}} </p>> 
+        <p>Tagline: {{this.tagline}}</p>
+    </div>
+</div>
+
+
+ <div class="card" style="width: 18rem;">
+  <img src="{{this.image_url}}" class="card-img-top" alt="{{this.name}}">
+  <div class="card-body">
+    <a href="/beers/{{this.id}}"><p>{{this.name}}</p></a>
+    <p>{{this.tagline}}</p>
+    <p class="card-text">{{this.description}}</p>
+  </div>
+</div>
