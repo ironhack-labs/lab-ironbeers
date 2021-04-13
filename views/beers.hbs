@@ -1,0 +1,12 @@
+<div>
+
+{{#each beers}}
+{{!-- {{@index}} --}}
+ <img src = {{this.image_url}}>
+<li>Name: {{this.name}}</li>
+    <li>description: {{this.description}}</li>
+    <li> {{this.tagline}}</li>
+
+{{/each}}
+
+</div>
