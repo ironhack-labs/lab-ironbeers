@@ -2,10 +2,11 @@
 
 {{#each responseFromAPI}}
 {{!-- image, name, description, tagline, food pairing and brewer tips. --}}
-<li><img src="{{this.image_url}}" alt="{{this.name}}"></li>
+{{!-- <li><img src="{{this.image_url}}" alt="{{this.name}}"></li>
 <li>{{this.name}}</li>
 <li>{{this.description}}</li>
-<li>{{this.tagline}}</li>
+<li>{{this.tagline}}</li> --}}
+    {{> beerpartial}}
 <li>Food pairing: {{this.food_pairing}}</li>
 <li>Brewer tips: {{this.brewers_tips}}</li>
 {{/each}}
