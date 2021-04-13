@@ -1,8 +1,6 @@
 <main>
-<img class="beer-img" src="{{this.image_url}}" alt="beer image">
-<h3>{{this.name}}</h3>
-<span>{{this.tagline}}</span>
-<p>{{this.description}}</p>
+{{> beerpartial this}}
+<p>{{this.description}}</p> 
 <ul>
     <h4>Food pairing</h4>
     {{#each this.food_pairing}}
