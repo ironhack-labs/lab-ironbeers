@@ -31,10 +31,9 @@ app.get('/beers', (req, res) => {
   .catch(error => console.log(error))
 });
 
-app.get('/random-beer', (req, res) => { //donde (routes)
+app.get('/random-beer', (req, res) => { //El dónde (routes)
   punkAPI.getRandom()
-  .then(responseFromAPI => res.render(responseFromAPI[0], {responseFromAPI}) //que (views)
-  )
+  .then(responseFromApi => res.render('random-beer', {responseFromApi})) // El qué (views)
   .catch(error => console.log(error))
 });
 
