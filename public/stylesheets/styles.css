@@ -5,29 +5,58 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+.centered{
+    margin: 0 auto;
+}
 
 img{
 width: 6rem;
-
 }
 .inicio{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 15rem auto;
+    margin: 0 auto;
+    height: 87vh;
 }
-
-.contenedor{
+.inicio img{
+    width: 15rem;
+}
+.links{
+    margin-top: 2rem;
+} 
+.links a{
+    text-decoration: none;
+    background-color: #2081c3;
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+}
+.page{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 90vw;
+    justify-content:space-evenly;
+    align-items: baseline;
+    align-content: center;
+    align-self: center;
+    margin: 0 auto;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin-top: 4rem;
+    width: 30%;
+    min-height: 72.5vh;
 }
 
 .beertext{
-    width: 50%;
+    margin-top: 1rem;
+    width: 90%;
     align-self: center;
 }
 .tagline{
@@ -37,6 +66,26 @@ width: 6rem;
     font-weight: bold;
 }
 footer{
+    width: 100%;
     margin-top: 5rem;
     text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: #0a2c42;
+    color: white;
+   
+    
+}
+footer p{
+    margin: 0;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+}
+.navbar-nav{
+    color: white;
+    margin-left: 4rem;
+}
+.bg-blue{
+    background-color: #2081c3;
 }
