@@ -1,0 +1,21 @@
+<div class="container">
+
+    <div class="row">
+
+
+        <div class="col-md-10 beerImg">
+            {{#each oneBeerObject}}
+            {{>beerpartial}}
+
+            <h2>First Brewed</h2>
+            <p>{{first_brewed}}</p>
+            <h2>Food Pairing</h2>
+            <p>{{food_pairing}}</p>
+            <h2>Brewers Tips</h2>
+            <p>{{brewers_tips}}</p>
+
+            {{/each}}
+        </div>
+
+    </div>
+</div>
