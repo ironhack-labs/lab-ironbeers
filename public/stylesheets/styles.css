@@ -19,6 +19,7 @@ body,html{
     font-size: 10px;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -92,31 +93,75 @@ footer > p {
 /* BEER PAGE */ 
 #random-container img {
     height: 350px;
+    margin-right: 60px;
 }
 #random-container > article {
     display: flex;
-    width: 700px;
+    width: 800px;
+}
+#random-container > article > div:first-child{
+    width: 352px;
 }
 #random-container > div {
-    width: 700px;
+    margin-left: 250px;
+    width: 550px;
+    margin-top: -30px;
 }
 #random-container h3 {
     font-size: 4rem;
     text-decoration: none;
     color: black;
+    margin-bottom: 30px;
 }
 #random-container > article > div > h4{
     font-size: 2rem;
     color: var(--grey);
+    margin-bottom: 30px;
 }
-#random-container p {
+#random-container p,
+#random-container li,
+#random-container > div > h4{
     font-size: 2rem;
+    margin-bottom: 10px;
 }
 #random-container li{
-    font-size: 2rem;
+    margin-left: 50px;
+    margin-bottom: 10px;
 }
-#random-container > div > h4 {
-    font-size: 2rem;
+
+/* COLLECTION BEERS PAGE */ 
+#beers-container{
+    max-width: 1260px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+#beers-container img{
+    height: 150px;
+    margin-bottom: 15px;
+}
+#beers-container > article{
+    width: 400px;
+    margin: 20px 10px;
+}
+#beers-container > article > div:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#beers-container h3{
+    font-size: 1.8rem;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+#beers-container h4{
+    color: var(--grey);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+#beers-container p{
+    font-size: 1.2rem;
 }
 
 @media (max-width: 768px){
