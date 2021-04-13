@@ -5,3 +5,25 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+img{
+width: 7rem;
+height: 20rem;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.beertext{
+    width: 50%;
+    align-self: center;
+}
+
+.name{
+    font-weight: bold;
+}
