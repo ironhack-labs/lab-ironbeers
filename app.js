@@ -36,7 +36,7 @@ app.get('/beers/:id', (req, res) => {
  punkAPI
   .getBeer(req.params.id)
   .then(individualBeer => {
-    console.log("selecting an individual beer: ", individualBeer)
+    // console.log("selecting an individual beer: ", individualBeer) test
     res.render('individual-beer', { beer: individualBeer})
   })
   .catch(error => console.log(error));
