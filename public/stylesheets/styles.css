@@ -5,3 +5,81 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body{
+    background-color:#f6f9f9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.beer-list img{
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+.beer-list h1{
+    font-size: 15px;
+    font-weight: 600;
+}
+.beer-list h2{
+    font-size: 10px;
+    font-weight: 600;
+    color: #bfbfbf;
+}
+.beer-list p{
+    font-size: 10px;
+    font-weight: 600;
+    
+}
+.beer-list p{
+    font-size: 10px;
+    padding-right: 10px;
+}
+.nav-color{
+    background-color:  #2081c3;
+}
+
+
+.beer-list{
+    padding-top: 40px;
+}
+.col-md-4{
+    margin-top: 30px;
+}
+
+.changeColor{
+    color: #fff;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home img{
+    width: 280px;
+    padding: 70px 0;
+}
+
+.btn{
+    margin-top: 20px;
+}
+.random img{
+    width: 40px;
+}
+.random h1{
+    font-size: 17px;
+}
+.random h2{
+    font-size: 10px;
+    font-weight: 600;
+    color: #bfbfbf;
+}
+.random{
+    width: 1200px;
+    margin-left: 100px;
+}
+.food{
+    font-size: 20px;
+    font-weight: 500px;
+}
