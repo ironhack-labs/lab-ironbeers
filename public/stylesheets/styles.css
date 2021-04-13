@@ -5,3 +5,16 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.home > img{
+width: 350px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 200px;
+}
