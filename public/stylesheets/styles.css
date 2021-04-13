@@ -5,13 +5,13 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
-img {
+/* img {
   display: block;
   margin: auto;
-}
+} */
 .main img {
   height: 50%;
-  /* object-fit: cover; */
+  object-fit: cover;
 }
 body {
   background-color: #f7f9f9;
@@ -21,4 +21,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+main li {
+  list-style: none;
+}
+
+main img {
+  height: 10%;
+  object-fit: cover;
 }
