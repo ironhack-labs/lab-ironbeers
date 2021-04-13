@@ -1,11 +1,12 @@
-<main>
-    {{#each responseFromAPI}}
+<main class="main-random">
     {{> beerpartial}}
-    <ul>
-        {{#each this.food_pairing}}
+    <div>
+        <p class="random-title">Food Pairing</p>
+        <ul>
+            {{#each food_pairing}}
             <li>{{this}}</li>
-        {{/each}}
-    </ul>
-    <p>{{this.brewers_tips}}</p>
-    {{/each}}
+            {{/each}}
+        </ul>
+        <p><b>Brewers Tips: </b> {{brewers_tips}}</p>
+    </div>
 </main>
