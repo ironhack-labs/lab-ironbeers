@@ -17,12 +17,17 @@ body,html{
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
+    display: flex;
+    flex-direction: column;
 }
 a{
     text-decoration: none;
 }
 
 /* NAV */
+header{
+    width: 100%;
+}
 nav{
     background-color: var(--light-blue);
     display: flex;
@@ -50,6 +55,7 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex: 1;
 }
 #home-beer-img{
     height: 380px;
@@ -71,7 +77,7 @@ main{
 footer {
     height: 80px;
     background-color: var(--dark-blue);
-    position: fixed;
+    position: sticky;
     bottom: 0;
     width: 100%;
     display: flex;
@@ -102,6 +108,15 @@ footer > p {
 #random-container > article > div > h4{
     font-size: 2rem;
     color: var(--grey);
+}
+#random-container p {
+    font-size: 2rem;
+}
+#random-container li{
+    font-size: 2rem;
+}
+#random-container > div > h4 {
+    font-size: 2rem;
 }
 
 @media (max-width: 768px){
