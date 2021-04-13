@@ -49,6 +49,8 @@ app.get('/random-beer', (req, res) => {
 
 });
 
+//you can make another view but I reused the one from random because it has additional info 
+// for code reusability
 app.get('/beers/:id', (req, res, next) => {
   const beerId = req.params.id
   punkAPI
