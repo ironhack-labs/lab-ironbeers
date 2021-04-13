@@ -1,12 +1,12 @@
 <div>
-
-{{#each beers}}
-{{!-- {{@index}} --}}
- <img src = {{this.image_url}}>
+{{> beerpartial }}
+{{!-- {{#each beers}}
+{{@index}}
+<img src = {{this.image_url}}>
 <li>Name: {{this.name}}</li>
-    <li>description: {{this.description}}</li>
-    <li> {{this.tagline}}</li>
+<li>description: {{this.description}}</li>
+<li> {{this.tagline}}</li>
 
-{{/each}}
+{{/each}} --}}
 
 </div>

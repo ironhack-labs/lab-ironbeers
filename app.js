@@ -16,8 +16,8 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Register the location for handlebars partials here:
-hbs.registerPartials("partials_absolute_path")
+// Register the location for handlebars PARTIALS here:
+
 hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 // App routes
@@ -28,21 +28,16 @@ app.get('/', (req, res) => {
 
 
 // app.get('/beers', (req, res) => {
-
-//   const beers = async()=>{
-//     const listaCerv = await punkAPI.getBeers()
-//     res.render('beers', listaCerv);
-
-//   } 
-
-//   beers();
-
+//   punkAPI
+//   .getBeers()
+//   .then(beersFromApi => res.render('beers', { beersFromApi }))
+//   .catch(error => console.log(error));
 // });
 
 app.get('/beers', (req, res) => {
   punkAPI
   .getBeers()
-  .then((beersFromApi) => {
+  .then(beersFromApi => {
   res.render('beers', {beers: beersFromApi}); //Name of the destiny, ()
   // console.log(beersFromApi);
   })
@@ -50,21 +45,12 @@ app.get('/beers', (req, res) => {
 });
 
 
-// app.get('/random-beers', (req, res) => {
-//   const randBeers = async()=>{
-//     const RandBeer = await punkAPI.getRandom();
-//     res.render('random-beers',RandBeer[0]);
-//     console.log(RandBeer)
-
-//   }
-//   randBeers();
-// });
-
 app.get('/random-beer', (req, res) => {
   punkAPI
   .getRandom()
   .then((beersFromApi) => {
   res.render('random-beer', {beers: beersFromApi}); //Name of the destiny, ()
+  // res.render('random-beer', beersFromApi[0])  extración de objeto individual  modifica "each"
   // console.log(beersFromApi);
   })
   .catch(error => console.log(error));
