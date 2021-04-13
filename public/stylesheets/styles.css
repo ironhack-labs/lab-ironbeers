@@ -7,10 +7,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.bg-light {
-  background-color: #2081c3;
-  color: #f7f9f9;
-}
 
 .homepage {
   display: flex;
@@ -28,9 +24,9 @@ a {
 }
 
 h1 {
-  color:black;
+  color: black;
   font-size: 3rem;
-  margin: 10px 50px ;
+  margin: 10px 50px;
 }
 
 .all-beers {
@@ -43,20 +39,49 @@ h1 {
 
 .card {
   border: none;
+  width: 18rem;
 }
 
 .card img {
   width: 80px;
   height: 320px;
   object-fit: cover;
-
 }
-
 
 .card p {
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;  
-    overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
+
+.more-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.more-info .btn {
+  width: 100px;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.random{
+    width: 100%;
+}
+
+.random .card{
+  display: flex;
+  flex-direction: row;
+  width: 1000px !important;
+  margin: 20px 80px;
+}
+
+.random .card-body{
+    width: 200pxs;
+    margin-left: 50px;
+}
+
+
+
 
