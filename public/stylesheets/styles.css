@@ -76,12 +76,13 @@ main{
 
 /* FOOTER */
 footer {
-    height: 80px;
+    min-height: 80px;
     background-color: var(--dark-blue);
     position: sticky;
     bottom: 0;
     width: 100%;
     display: flex;
+    
 }
 footer > p {
     align-self: center;
@@ -93,19 +94,19 @@ footer > p {
 /* BEER PAGE */ 
 #random-container img {
     height: 350px;
-    margin-right: 60px;
+    margin-right: 50px;
 }
 #random-container > article {
     display: flex;
     width: 800px;
 }
 #random-container > article > div:first-child{
-    width: 352px;
+    min-width: 190px;
 }
 #random-container > div {
-    margin-left: 250px;
-    width: 550px;
-    margin-top: -30px;
+    position: relative;
+    left: 190px;
+    width: 610px;
 }
 #random-container h3 {
     font-size: 4rem;
@@ -122,11 +123,11 @@ footer > p {
 #random-container li,
 #random-container > div > h4{
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 #random-container li{
     margin-left: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 /* COLLECTION BEERS PAGE */ 
