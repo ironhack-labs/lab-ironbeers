@@ -5,3 +5,25 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.nav{
+    background-color:#2981c1;
+}
+
+.nav a{
+    color: white;
+}
+
+div{
+    text-align: center;
+}
+
+#beer{
+    width: 400px;
+    margin: 60px;
+}
+
+a{
+    background-color: #2981c1;
+    margin-top: 20px;
+}
