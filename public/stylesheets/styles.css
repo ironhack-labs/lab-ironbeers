@@ -5,3 +5,24 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+p{
+    font-size: 0.8rem;
+}
+.beers img{
+    height: 150px;
+    margin:auto;
+    display:block
+}
+
+.beers a{
+    font-size: 1.6rem;
+}
+.beers{
+    margin-top: 10px;
+}
+.intro a{
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}
