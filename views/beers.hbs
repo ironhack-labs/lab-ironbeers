@@ -1,10 +1,7 @@
+<h1>Beer List</h1>
+
 <main>
     {{#each beers}}
-        <div>
-            <img src="{{this.image}}" alt="beer-image">
-            <h2>{{this.name}}</h2>
-            <p>{{this.description}}</p>
-            <p>{{this.tagline}}</p>
-        </div>
+        {{> beerpartial}}
     {{/each}}
 </main>
