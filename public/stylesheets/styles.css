@@ -5,3 +5,20 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+img {
+  display: block;
+  margin: auto;
+}
+.main img {
+  height: 50%;
+  /* object-fit: cover; */
+}
+body {
+  background-color: #f7f9f9;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
