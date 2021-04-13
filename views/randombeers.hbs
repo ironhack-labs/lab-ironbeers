@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="randombeers">
+
+{{#each responseFromAPI}}
+        <li>Name: {{this.name}} </li>
+        <li>Tagline: {{this.tagline}}</li>
+         <li>Description: {{this.description}}</li>
+         <li>Food Pairing: {{this.food_pairing}}</li>
+         <li>Brewertips: {{this.brewer_tips}}</li>
+          <img src="{{this.image_url}}">
+{{/each}}
+
+
+
+
+
+</div>
+
+</body>
+</html>
+
