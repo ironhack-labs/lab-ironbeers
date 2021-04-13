@@ -1,12 +1,12 @@
 {{#each beers}}
 {{> beerpartial}}
-<h5>Food Pairing</h5>
+<h5 class="random-title">Food Pairing</h5>
 <ul>
     <li>{{this.food_pairing.[0]}}</li>
     <li>{{this.food_pairing.[1]}}</li>
     <li>{{this.food_pairing.[2]}}</li>
 </ul>
-<p><span>Brewers Tips:</span>{{this.brewers_tips}}</p>
+<p class="brewers"><span>Brewers Tips:</span>{{this.brewers_tips}}</p>
 </div>
 </div>
 {{/each}}
