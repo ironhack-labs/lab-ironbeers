@@ -36,14 +36,13 @@ nav{
 }
 footer{
     background-color: var(--dark-blue);
-    color: white;
-    display: flex;
-    justify-content: flex-start;
-    /* position: absolute; */
+    color: white;        
+    position: absolute;
+    right: 0;
     bottom: 0;
-    position: sticky;
-    width: 100%;
-    height: 5rem;         
+    left: 0;
+    padding: 0.7rem;
+    text-align:left;
 }
 footer p{
     font-size: 1.1em;
@@ -53,6 +52,7 @@ footer p{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
 }
 .div-home img{
     width: 23%;
@@ -70,10 +70,41 @@ footer p{
 .random-div{
     display: flex;
     flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 100px;
+    
 }
-.random-div img{
-    width: 50px;
+.random-div a{
+    text-decoration: none;
+    color: black;
 }
-.beer-div{
-    align-self: flex-start;
+.random-div h2{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.random-div h4{
+    color: var(--grey);
+    font-size: 1.2em;
+    margin: 10px;
+}
+.random-div h3{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.random-div p{
+    margin-top: 10px;
+}
+.partial-div{
+    display: flex;
+    flex-direction: row;
+}
+.beer-text{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.partial-div img{
+    width: 20%;
 }
