@@ -10,23 +10,23 @@ font-family: Arial, Helvetica, sans-serif;
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .head{
     background-color: rgb(36,119,185);
     height: 70px;
-    text-align: right;
-    position: sticky;
+    text-align: left;
     width: 100vw;
-    margin-top: 0;
-
+    padding-top: 20px;
 }
 
 .head a{
     text-decoration: none;
     color: white;
-    font-size: 1.5em;
-    margin: 20px 30px;
+    font-size: 1.2em;
+    margin: 20px 5px 20px 40px;
 }
+    
 .home{
     display: flex;
     justify-content: center;
@@ -38,17 +38,93 @@ font-family: Arial, Helvetica, sans-serif;
     margin-top: 100px;
     height: 300px;
     width: 300px;
+    margin-bottom: 30px;
 }
 
 .home a{
     text-decoration: none;
-    margin: 20px;
     background-color: rgb(36,119,185);
     color: white;
     border-radius: 5px;
     padding: 15px;
-    width: 250px;
+    width: auto;
     text-align: center;
     
+    
 
+}
+.beerscontainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.beercard-container{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20vw;
+}
+
+.beercard-container img{
+    width: 100px;
+    height: 300px;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.beercard-container h5 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #0a2c42;
+    color: white;
+    height: 10vh;
+    position: sticky;
+    margin-top: 90vh;
+}
+.footertext{
+    margin-left: 30px;
+    padding-top: 30px;
+    
+}
+
+.randombeercontainer{
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+
+}
+
+.randombeercontainer img{
+    width: 100px;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+.randombeertextcontainer h2{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.rbdescription{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.rbtagline{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.rbfood{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.rbbrewer{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

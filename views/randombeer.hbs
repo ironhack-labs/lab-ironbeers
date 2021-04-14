@@ -1,14 +1,14 @@
 
 {{#each responseFromAPI}}
 <div>
-    <div>      
+    <div class="randombeercontainer">      
         <img src="{{this.image_url}}" alt="picture">
-        <div>
+        <div class="randombeertextcontainer">
             <h2>{{this.name}}</h2>
-            <p>{{this.description}}</p>
-            <p>{{this.tagline}}</p>
-            <p>{{this.food_pairing}}</p>
-            <p>{{this.brewers_tips}}</p>
+            <p class="rbdescription">{{this.description}}</p>
+            <p class="rbtagline">{{this.tagline}}</p>
+            <p class="rbfood"><b>Food Pairing</b> {{this.food_pairing}}</p>
+            <p class="rbbrewer"><b>Brewers Tips:</b> {{this.brewers_tips}}</p>
         </div>       
     </div>
 </div>
