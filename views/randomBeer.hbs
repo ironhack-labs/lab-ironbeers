@@ -1,10 +1,9 @@
-<div>
-    <article>
-        {{#each beer}}
+<main class="random-page">
+    {{#each beer}}
             {{> beerPartial}}
             <p>Food pairing: {{this.food_pairing}}</p>
             <p>Brewer tips: {{this.brewers_tips}} </p>
         {{/each}}
-    </article>
-
-</div>
+</main>
+        
+ 
