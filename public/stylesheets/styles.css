@@ -1,7 +1,87 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: blanchedalmond; */
+}
+
+.navbar ul {
+    color: #f7f9f9;
+    display: flex;
+    align-items: center;
+    background-color:#2081c3 ;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin-left: 50px;
+}
+
+.navbar ul li a {
+    color:#f7f9f9 ;
+}
+
+a {
+    text-decoration: none;
+}
+
+#home-content {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#home-content a {
+    margin: 20px;
+    padding: 10px;
+    background-color: #2081c3 ;
+    border: 1px solid #2081c3 ;
+    border-radius: 5px;
+    color:#f7f9f9 ;
+}
+
+#home-img {
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+.beerscontainer {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.beers-content {
+    margin: 50px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.beers-content img {
+    width: 50px;
+}
+
+#random-img {
+    width: 50px;
+}
+
+.r-container {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.r-content {
+    margin: 50px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
