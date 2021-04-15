@@ -1,11 +1,13 @@
-{{#each randomBeer}}
-{{> beerpartial}}
-<p>Food pairing:</p>
-<ul>
-    {{#each food_pairing}}
-    <li>{{this}}</li>
-    {{/each}}
-</ul>
+<div class="random-beer-div">
+    {{#each randomBeer}}
+    {{> beerpartial}}
+    <p><strong>Food pairing:</strong></p>
+    <ul>
+        {{#each food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
 
-<p>Brewer tips: {{brewers_tips}}</p>
-{{/each}}
+    <p><strong>Brewer tips: </strong>{{brewers_tips}}</p>
+    {{/each}}  
+</div>

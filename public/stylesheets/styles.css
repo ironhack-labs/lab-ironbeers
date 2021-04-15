@@ -42,8 +42,13 @@ nav a:visited, button:visited{
     justify-content: space-around;
 }
 
+#homePage > * {
+    margin-top: 40px;
+}
+
 #homePage img{
     width: 400px;
+    margin-top: 120px;
 }
 
 button{
@@ -86,17 +91,46 @@ button a{
     margin: 0 auto;
 }
 
-#beers h1{
+ h1{
     font-size: medium;
 }
 
-#beers p:first-of-type{
+ p:first-of-type,  p:first-of-type{
     color: #bfbfbf;
     font-size: small;
     
 }
 
-#beers p:nth-of-type(2){
+ p:nth-of-type(2){
     font-size: small;
     
 }
+
+.random-beer-div {
+    width: 56vw;
+    margin: auto;
+    padding: 100px;
+    position: relative;
+    font-size: small;
+
+}
+
+.random-beer-div img {
+    width: 60px;
+    position: absolute;
+    left: -40px;
+}
+
+.random-beer-div > * {
+    padding: 10px 0;
+}
+
+.random-beer-div li {
+    margin-left: 40px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
