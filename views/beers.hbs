@@ -1,0 +1,11 @@
+<ul>
+    {{#each beersData}}
+    <li>
+        <h2>{{this.name}}</h2>
+        <h3>{{this.tagline}}</h3>
+        <img src="{{this.image_url}}">
+        <p>{{this.description}}</p>
+
+    </li>
+    {{/each}}
+</ul>
