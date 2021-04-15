@@ -1,7 +1,112 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+:root {
+    --color-white: #f7f9f9;
+    --color-light-blue: #2081c3;
+    --color-dark-blue: #0a2c42;
+    --color-grey: #bfbfbf;
+    --font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 1rem;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: var(--color-white);
+}
+.nav {
+    background-color: var(--color-light-blue);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    position: fixed;
+    width: 100vw;
+}
+
+.nav a {
+    align-items: center;
+    padding: 10px;
+
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home img {
+    width: 300px;
+    margin-top: 10%;
+}
+
+.home a {
+    background-color: var(--color-light-blue);
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 7px 8px 7px -1px rgba(0,0,0,0.42);
+}
+
+.image-container img {
+    height: 200px;
+    border: 1px solid red;
+}
+
+/* .container {
+    display: flex;
+}
+
+.description {
+    width: 400px;
+} */
+
+.random-beer-container .info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+}
+
+.all-beers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+    padding: 100px 70px 80px 70px;
+}
+
+
+.one-beer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    width: 400px;
+}
+
+/* .random-beer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 500px;
+}
+
+.random-beer-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+} */
+
