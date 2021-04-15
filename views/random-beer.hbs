@@ -2,12 +2,13 @@
     <h1>Random Beer</h1>
     <div class="row">
         {{#each randomBeer}}
-        <img class="beerImg" src={{image_url}} alt="BeerImage" width="80" height="200">
-        <h4> {{name}} </h4>
-        <h3>{{description}}</h3>
-        <h2>{{tagline}}</h2>
+        
+        {{> beerpartial}}
+        
         <ul>
-            <h2>{{food_pairing}}</h2>
+            {{#each food_pairing}}
+                <li>{{this}}</li>
+            {{/each}}
         </ul>
         <h2>{{brewer_tips}}</h2>
         {{/each}}

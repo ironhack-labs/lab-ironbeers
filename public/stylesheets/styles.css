@@ -35,3 +35,25 @@ font-family: Arial, Helvetica, sans-serif;
 .button{
     display: flex;
 }
+
+.beerImg {
+    width: 100px;
+    height: 200px;
+}
+
+
+#beers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+}
+

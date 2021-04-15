@@ -2,11 +2,7 @@
     <h1>Beers</h1>
     <div class="row">
         {{#each beers}}
-            <img class = "beerImg" src ={{image_url}} alt="BeerImage">
-            <h2> {{name}} </h2>
-            <h3>{{description}}</h3>
-            <h3>{{tagline}}</h3>
-
+            {{> beerpartial}}
         {{/each}}
     </div>
 </div>
