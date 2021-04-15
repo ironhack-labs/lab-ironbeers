@@ -3,5 +3,139 @@ white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
 */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: #f7f9f9;
+  font-size: 18px;
+  margin: 0 0 60px;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  background-color: #2081c3;
+  margin: 0;
+}
+
+nav li {
+  padding: 20px;
+}
+
+nav li a {
+  color: #f7f9f9;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #0a2c42;
+  color: #f7f9f9;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.home-wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.home-img {
+  width: 320px;
+  height: auto;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #2081c3;
+  color: #f7f9f9;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px -3px rgba(0, 0, 0, 0.61);
+}
+
+/* common styles */
+h2 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.tagline {
+  color: #bfbfbf;
+  margin: 10px 0 20px;
+  font-size: 15px;
+}
+
+/* beers page */
+.beers-wrapper {
+  padding: 50px 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.beers-wrapper .beer-card {
+  display: flex;
+  flex-flow: column;
+  width: calc(100% / 3);
+  padding: 20px;
+}
+
+.beers-wrapper .beer-img {
+  text-align: center;
+}
+
+.beers-wrapper .beer-img img {
+  max-height: 200px;
+  width: auto;
+}
+
+/* random-beer */
+.random-beer-wrapper {
+  padding: 50px 100px;
+  display: flex;
+}
+
+.random-beer-wrapper .beer-img {
+  width: 30%;
+  text-align: center;
+}
+
+.random-beer-wrapper .beer-img img {
+  max-height: 300px;
+  width: auto;
+}
+
+.random-beer-wrapper .beer-info {
+  width: 70%;
+}
+
+.random-beer-wrapper .food-pairing,
+.random-beer-wrapper .brewer-tips {
+  margin-top: 10px;
+}
