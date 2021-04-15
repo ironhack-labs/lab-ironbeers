@@ -1,8 +1,14 @@
 <div class="beers-container">
-    {{#each}}
-        <h2>{{name}}</h2>
-        <img src={{image}} alt={{name}}>
-        <p>{{description}}</p>
-        <p>{{tagline}}</p>
-    {{/each}}
+    
+    <h2>Beers</h2>
+
+    {{#if beers}}
+        {{#each beers}}
+            {{> beerCard this}}
+        {{/each}}
+
+    {{else}}
+        <p>No beers found!</p>
+    {{/if}}
+
 </div>
