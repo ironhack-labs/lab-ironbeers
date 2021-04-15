@@ -59,3 +59,30 @@ a:visited {
   border: none;
   border-radius: 10px;
 }
+
+.beers-container {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 0 1 auto;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.beer-container {
+  max-width: 400px;
+  display: flex;
+  flex-flow: column;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+  margin: auto;
+}
+
+.beers-images {
+  width: 100px;
+  height: 350px;
+}
+
+.centered {
+  text-align: center;
+}
