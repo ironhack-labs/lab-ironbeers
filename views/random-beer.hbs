@@ -1,0 +1,11 @@
+<article class="single">
+    {{> detail this}}
+    <h3>Food Pairing</h3>
+    <ul>
+        {{#each this.food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+    <p><b>Brewer Tips: </b>{{this.brewers_tips}}</p>
+
+</article>
