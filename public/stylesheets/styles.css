@@ -6,12 +6,63 @@ grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
 body {
- background-color: aqua;
+ background-color: #bfbfbf;
+ font-family: Arial, Helvetica, sans-serif;
 }
 
-div {
+nav > ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+    text-align: center;
+    align-content: center;
+    background-color: #2081c3;
+    height: 50px;
+    margin-top: 0;
+}
+
+nav > ul li {
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    align-content: center;
+    margin-left: 50px;
+    align-content: center;
+}
+
+nav > ul li a {
+    display: block;
+    text-align: left;
+    align-content: center;
+
+}
+
+#beerbox-section {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#beerbox {
+    display: flex;
+    flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    align-content: center;
+    justify-content: center;
+    width: 50vh;
+    height: 50vh;
+    padding: 20px;
+    margin: 100px;
+}
+
+#beerbox img {
+    width: 20%;
+    height: 50%;
+    text-align: center;
+}
+
+#main {
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
