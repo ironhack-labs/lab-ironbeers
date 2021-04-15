@@ -5,3 +5,22 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+body{
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+img{
+    max-height: 200px ;
+}
+
+nav{
+    background-color: #2081c3;
+    padding:20px;
+}
+
+nav a{
+    color:aliceblue;
+    text-decoration: none;
+    margin: 10px;
+}
