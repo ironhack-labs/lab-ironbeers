@@ -5,6 +5,7 @@ const hbs = require('hbs');
 
 const path = require('path');
 // https://www.npmjs.com/package/punkapi-javascript-wrapper
+// https://punkapi.com/documentation/v2
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 
 const app = express();
@@ -27,7 +28,7 @@ app.get('/', (req, res) => {
 
 app.get('/beers', (req, res) => {
   punkAPI
-    .getBeers()
+    .getBeers(getRandomBeerOption())
     .then(beersFromApi => {
       console.log('Beers from the database: ', beersFromApi);
       res.render('beers', { beers: beersFromApi });
@@ -45,4 +46,24 @@ app.get('/random-beer', (req, res) => {
     .catch(error => console.log(error));
 });
 
+app.get('/beers/beer-:id', (req, res) => {
+  punkAPI
+    .getBeer(req.params.id)
+    .then(randomBeer => {
+      res.render('beer', randomBeer[0]);
+    })
+    .catch(error => console.log(error));
+});
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
+
+function getRandomBeerOption() {
+  const options = [
+    { abv_gt: 8 },
+    { abv_gt: 6 },
+    null,
+    { abv_lt: 8 },
+    { hops: 'Ahtanum' }
+  ];
+  return options[Math.floor(Math.random() * options.length)];
+}

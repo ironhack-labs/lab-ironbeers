@@ -1,11 +1,10 @@
-{{#each beers}}
+<div class="cards">
+    {{#each beers}}
 
-<article>
-    {{> detail this}}
+    <article>
+        {{> detail this}}
+        <a href="/beers/beer-{{this.id}}">Details</a>
+    </article>
 
-
-
-
-</article>
-
-{{/each}}
+    {{/each}}
+</div>

@@ -1,0 +1,30 @@
+<div class="single">
+    <article>
+        {{> detail this}}
+        <h3>Food Pairing</h3>
+        <ul>
+            {{#each this.food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p><b>Brewer Tips: </b>{{this.brewers_tips}}</p>
+
+        <h4>Ingredients</h4>
+        {{!-- did not manage to do 2 loops since id name not given --}}
+        {{#if this.ingredients.malt}}
+        <p>Malt:
+            {{#each this.ingredients.malt}}
+            {{this.name}} /
+            {{/each}}
+        </p>
+        {{/if}}
+        {{#if this.ingredients.hops}}
+        <p>Hops:
+            {{#each this.ingredients.hops}}
+            {{this.name}} /
+            {{/each}}
+        </p>
+        {{/if}}
+
+    </article>
+</div>
