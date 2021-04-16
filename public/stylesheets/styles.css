@@ -1,7 +1,133 @@
-/*
-white: #f7f9f9;
+/* white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: #f7f9f9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0 0 60px;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    background-color: #2081c3;
+    margin: 0;
+}
+
+nav li {
+    padding: 15px;
+}
+
+nav li a {
+    color: #f7f9f9;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #0a2c42;
+    color: #f7f9f9;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.home {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.home-img {
+    width: 320px;
+    height: auto;
+}
+
+.button {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+button {
+    background-color: #2081c3;
+    color: #f7f9f9;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px -3px rgba(0, 0, 0, 0.61);
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.tagline {
+    color: #bfbfbf;
+    margin: 10px 0 20px;
+    font-size: 15px;
+}
+
+.beers {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.beers .beer-card {
+    display: flex;
+    flex-flow: column;
+    width: calc(100% / 3);
+    padding: 20px;
+}
+
+.beers .beer-img {
+    text-align: center;
+}
+
+.beers .beer-img img {
+    height: 300px;
+    width: auto;
+}
+
+.random-beer {
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.random-beer .beer-img {
+    width: 60%;
+    text-align: center;
+}
+
+.random-beer .beer-img img {
+    height: 300px;
+    width: auto;
+}
+
+.random-beer .beer-info {
+    width: 60%;
+}
