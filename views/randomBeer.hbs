@@ -1,33 +1,12 @@
-{{!-- <p> {{ beers }} </p> --}}
 
-{{!-- <ul>
-    {{#each beers}} 
-    <li>{{this.name}}</li>
-    <li>{{this.description}}</li>
-    <li>{{this.name}}</li>
-    <li>{{this.name}}</li>
-</ul> --}}
-
-{{!-- <ul>
   {{#each beers}} 
-    <li>{{this.name}}</li>
-    <li><img src={{this.image}}/></li>
-    <li>{{this.description}}</li>
-    <li>{{this.tagline}}</li>
-
-  {{/each}}
-<ul> --}}
-
-<ul>
-    <li>
-  {{#each beers}} 
-    <p>{{this.name}}</p>
-    <img src="{{this.image}}">
+    {{!-- <h3>{{this.name}}</h3>
+    <img src="{{this.image_url}}">
     <p>{{this.description}}</p>
-    <p>{{this.tagline}}</p>
+    <p>{{this.tagline}}</p> --}}
+     {{> beerpartial}}
     <p>{{this.food_pairing}}</p>
     <p>{{this.brewer_tips}}</p>
 
   {{/each}}
-  </li>
-<ul>
+  

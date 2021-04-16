@@ -1,17 +1,20 @@
-{{!-- {{#each}} --}}
 
-{{!-- <pre>{{ beers.length }}</pre> --}}
-
-
-<ul>
+{{!-- <ul>
   {{#each beers}} 
     <li>{{this.name}}</li>
-    <li>{{this.image}}</li>
+    <li <img src="{{this.image_url}}"></li>
     <li>{{this.description}}</li>
     <li>{{this.tagline}}</li>
 
   {{/each}}
-<ul>
+<ul> --}}
 
 
-    
+    {{#each beers}} 
+        {{> beerpartial}}
+    {{!-- <h3>{{this.name}}</h3>
+    <img src="{{this.image_url}}">
+    <p>{{this.description}}</p>
+    <p>{{this.tagline}}</p> --}}
+
+  {{/each}}
