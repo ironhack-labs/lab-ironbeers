@@ -1,3 +1,8 @@
+// punkAPI
+//   .getBeers()
+//   .then(beersFromApi => console.log('Beers from the database: ', beersFromApi))
+//   .catch(error => console.log(error));
+
 const express = require('express');
 
 const hbs = require('hbs');
@@ -23,12 +28,24 @@ app.get('/', (req, res) => {
 });
 
 app.get('/beers', (req, res) => {
-  getBeers();
+   //res.render('beers');
+   punkAPI.getBeers().then(beersArray => {
+     res.render('beers', {arrayObject: beersArray })
+     console.log(beersArray)
+    }).catch(error => {
+      console.log(error)
+    });
+});
+
+app.get('/random-beer', (req, res) => {
+  punkAPI.getRandom().then(randomBeer => {
+    res.render('random-beer', {beerObject: randomBeer})
+    console.log(randomBeer)
+   }).catch(error => {
+     console.log(error)
+   });
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
 
-punkAPI
-  .getBeers()
-  .then(beersFromApi => console.log('Beers from the database: ', beersFromApi))
-  .catch(error => console.log(error));
+

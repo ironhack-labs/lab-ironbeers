@@ -1,0 +1,10 @@
+{{ this.name }} 
+    <img src=" {{ image_url }} "/> 
+    {{ description }}
+    {{ tagline }}
+
+    {{#each food_pairing}}
+        {{ this }}
+    {{/each}}
+    
+    {{ brewers_tips }}
