@@ -1,10 +1,10 @@
 const express = require('express');
-
 const hbs = require('hbs');
 const path = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 
 const app = express();
+
 const punkAPI = new PunkAPIWrapper();
 
 app.set('view engine', 'hbs');
@@ -19,6 +19,13 @@ hbs.registerPartials(path.join(__dirname, 'views/partials'));
 // Add the route handlers here:
 
 app.get('/', (req, res) => res.render('index'));
+
+app.get('/beer-*', (req, res) => {
+  const id = req.path.slice(6);
+  punkAPI
+  .getBeer(id)
+  .then(singleBeer => res.render('singleBeer', singleBeer[0]));
+});
 
 app.get('/beers', (req, res) => {
  punkAPI
