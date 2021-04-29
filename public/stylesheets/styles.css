@@ -5,3 +5,74 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.navbar{
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+
+.btn__wrapper {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-lg {
+    margin: .5rem;
+    font-weight: lighter;
+}
+
+a.btn-lg {
+    text-decoration: none;
+}
+
+footer {
+    padding-left: 3rem;
+}
+
+/* beers styling */
+.beer_cards__container {
+    margin: 2rem 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.beer_card__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+.beer_card__img_wrapper {
+    height: 100px;
+    align-self: center;
+    margin-bottom: 2rem;
+}
+
+.beer_card__img {
+    height: 100%;
+}
+
+h6 {
+    color: grey;
+}
+
+.random_beer_cards__container {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.random_beers__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.random_beers__wrapper .beer_card__img_wrapper {
+    height: 200px;
+}

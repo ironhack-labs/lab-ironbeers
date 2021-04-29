@@ -1,0 +1,13 @@
+    <div class="beer_card__img_wrapper">
+         {{#if this.image_url}}
+        <img class="beer_card__img" src="{{this.image_url}}" alt="{{this.name}}"/>
+        {{else}}
+        <img class="beer_card__img" src="/images/beers.png" alt="{{this.name}}"/>
+        {{/if}}
+    </div>
+    <div class="beer_card__body">
+        <h5 class="beer_card__title">{{this.name}}</h5>
+        <h6 class="beer_card__tagline">{{this.tagline}}</h6>
+        <p class="beer_card__description">{{this.description}}</p>
+    </div>
+

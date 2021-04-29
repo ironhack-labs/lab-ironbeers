@@ -1,0 +1,9 @@
+<section class="beer_cards__container">
+    {{#each beersFromAPI}} 
+    <div class="beer_card__wrapper">
+        {{> beerPartial this}} 
+    </div>
+    {{/each}}
+</section>
+
+
