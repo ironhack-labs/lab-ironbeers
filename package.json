@@ -1,14 +1,14 @@
 {
   "name": "lab-ironbeers",
   "version": "2.0.0",
+  "license": "UNLICENSED",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js -e .js,.hbs",
     "test": "jest --forceExit",
-    "test:browser": "jest --watchAll"
+    "test:watch": "jest --watchAll"
   },
-  "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "hbs": "^4.1.1",
@@ -22,18 +22,13 @@
     "supertest": "^6.1.3"
   },
   "jest": {
-    "moduleFileExtensions": [
-      "js",
-      "json",
-      "hbs"
-    ],
     "reporters": [
       "default",
       [
         "./node_modules/jest-html-reporter",
         {
-          "pageTitle": "Lab Correction",
-          "outputPath": "lab-correction.html"
+          "pageTitle": "Lab Solution",
+          "outputPath": "lab-solution.html"
         }
       ]
     ]
@@ -42,5 +37,9 @@
     "suiteNameTemplate": "{filepath}",
     "classNameTemplate": "{classname}",
     "titleTemplate": "{title}"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "none"
   }
 }

@@ -22,9 +22,9 @@ For this exercise, we will work with the **[PunkAPI](https://www.npmjs.com/packa
 - Upon completion, run the following commands:
 
 ```shell
-$ git add .
-$ git commit -m "done"
-$ git push origin master
+git add .
+git commit -m "done"
+git push origin master
 ```
 
 - Create Pull Request so your TAs can check up your work.
@@ -36,14 +36,13 @@ $ git push origin master
 To run our application, the first thing you have to do is to install all of its dependencies. Run the following command:
 
 ```shell
-$ npm install
+npm install
 ```
 
 To run the app:
 
 ```shell
-$ node app.js
-
+node app.js
 # you can also run: npm start
 ```
 
@@ -92,8 +91,10 @@ The example of how this method works is shown below:
 ```js
 punkAPI
   .getBeers()
-  .then(beersFromApi => console.log('Beers from the database: ', beersFromApi))
-  .catch(error => console.log(error));
+  .then((beersFromApi) => {
+    console.log('Beers from the database: ', beersFromApi);
+  })
+  .catch((error) => console.log(error));
 ```
 
 #### 3.2 The `beers.hbs` view
@@ -118,10 +119,10 @@ The example of how this method works is shown below:
 ```js
 punkAPI
   .getRandom()
-  .then(responseFromAPI => {
+  .then((responseFromAPI) => {
     // your magic happens here
   })
-  .catch(error => console.log(error));
+  .catch((error) => console.log(error));
 ```
 
 - Eventually, the received beer needs to be passed to the `random-beer.hbs` file. You still don't have this file, so let's proceed to create it.
