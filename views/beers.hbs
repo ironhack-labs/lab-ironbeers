@@ -1,0 +1,12 @@
+<div class="card-columns bg-dark">
+    {{#each beers}}
+        <div class="m-3 card bg-light text-center">
+            <img class="card-img-top" src="{{this.image_url}}" style="width: 10%; height: 10%" alt="Card image cap">
+            <div class="card-body">
+            <h5 class="card-title">{{this.name}}</h5>
+            <p class="card-text">{{this.description}}</p>
+            <p class="card-text"><small class="text-muted">{{this.tagline}}</small></p>
+            </div>
+        </div>
+    {{/each}}
+</div>
