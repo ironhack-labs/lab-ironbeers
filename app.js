@@ -23,13 +23,13 @@ app.get('/', (req, res) => {
 });
 
 app.get('/beers', (req, res) => {
-  const beers = punkAPI.getBeers()
+    punkAPI.getBeers()
     .then(beers => res.render('beers', {beers}))
     .catch(err => console.log(err));
 });
 
 app.get('/random-beer', (req, res) => {
-  const randomBeer = punkAPI.getRandom()
+    punkAPI.getRandom()
     .then(randomBeer => res.render('random-beer', {randomBeer}))
     .catch(err => console.log(err));
 });
