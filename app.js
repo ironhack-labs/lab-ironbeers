@@ -20,8 +20,9 @@ hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 app.get('/', (req, res) => res.render('index'));
 
-app.get('/beer-*', (req, res) => {
-  const id = req.path.slice(6);
+app.get('/beer/:id', (req, res) => {
+  console.log(req.params)
+  const id = req.params.id;
   punkAPI
   .getBeer(id)
   .then(singleBeer => res.render('singleBeer', singleBeer[0]));
