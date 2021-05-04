@@ -1,7 +1,136 @@
-/*
+/* 
 white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
-*/
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #bfbfbf;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Layout css */
+
+.navbar {
+    background-color: #2081c3;
+    width: 100%;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    margin-left: 50px;
+
+}
+
+.navbar li {
+    list-style-type: none;
+    font-size: 1.2rem;
+
+    margin: 0;
+    padding: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.footer {
+    background-color: #0a2c42;
+    width: 100%;
+    height: 70px;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+.footer p {
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 30px;
+
+}
+
+/* Home page css */
+
+.home-img img {
+    width: 400px;
+    margin: 75px;
+}
+
+.btn {
+    background-color: #2081c3;
+    border: none;
+    padding: 15px 35px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.home-btn,
+.home-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Beers css */
+.beers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* BeerPartial css */
+.beer-card {
+    width: 30%;
+}
+
+.beer-img {
+    width: 80px;
+}
+
+.image-container {
+    width: 100%;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+
+}
