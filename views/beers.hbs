@@ -1,0 +1,10 @@
+<!-- views/beers.hbs -->
+ 
+<div class="container">
+  <h1>Beers</h1>
+  <div class="row">
+      {{#each beersFromApi}} 
+        {{> beerPartial this}} 
+      {{/each}}
+  </div>
+</div>
