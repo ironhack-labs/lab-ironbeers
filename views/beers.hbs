@@ -1,0 +1,19 @@
+<div class="container">
+    <h1>Beer</h1>
+    <div class="row">
+        {{#each prueba}}
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <img class="card-img-top h-25 w-25" src="{{this.image_url}}" alt="{{this.name}}" />
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{this.name}}</h5>
+                    <p class="card-text">{{this.description}}</p>
+
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
