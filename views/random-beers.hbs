@@ -1,0 +1,12 @@
+<!-- views/random-beers.hbs -->
+
+<div class="col-md-4">
+  <div class="card">
+    {{#each responseFromAPI}}
+    {{> beerPartial this}} 
+    <p>{{this.food_pairing}}</p>
+    <p>{{this.brewers_tips}}</p>
+    {{/each}}
+    </div>
+  </div>
+</div>
