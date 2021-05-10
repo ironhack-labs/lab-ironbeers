@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+}
+
+.beer-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1000px;
+    height: 350px;
+
+    border: 2px solid #2081c3;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    margin: 50px;
+}
+
+.beer-info {
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.beer-image {
+    height: 250px;
+    margin: 25px;
+}
+
+.beer-description {
+    width: inherit;
+    margin: 50px;
+}
+
+.beer-name {
+    margin-top: 20px;
+}
+
+.beer-tagline {
+    margin: 25px;
+}
