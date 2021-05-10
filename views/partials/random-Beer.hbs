@@ -1,0 +1,13 @@
+<h1>Random Beer</h1>
+
+
+<div>
+    {{#each random }}
+    <img src="{{this.image_url}}" alt="{{this.name}}">
+    <p>{{this.name}}</p>
+    <p>{{this.tagline}}</p>
+    <p>{{this.description}}</p>
+    {{/each}}
+</div>
+
+<a href="/">Go Back</a>
