@@ -32,7 +32,7 @@ app.get('/random-beer', (req, res) => {
   .getRandom()
   .then(responseFromAPI => {
     console.log(responseFromAPI);
-    res.render("beers", { title: "Random Beer", beer: responseFromAPI[0] })
+    res.render("randomBeer", { title: "Random Beer", beer: responseFromAPI[0] })
   })
   .catch(error => console.log(error));
 
