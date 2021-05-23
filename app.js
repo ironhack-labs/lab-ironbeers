@@ -19,16 +19,20 @@ hbs.registerPartials(path.join(__dirname, 'views/partials'));
 // Add the route handlers here:
 
 app.get('/', (req, res) => {
-  res.render('index');
+  res.render('index', {
+    homePage: true
+  });
+  
 });
 
 app.get('/beers', (req, res) => {  
 
   punkAPI.getBeers()
     .then(beersFromApi => {
-      console.log(beersFromApi)
+      //console.log(beersFromApi)
       res.render('beers', {
-        beers: beersFromApi  
+        beers: beersFromApi,
+        beersPage: true
       })
 
   }) 
@@ -42,8 +46,11 @@ app.get('/random-beer', (req, res) => {
   punkAPI.getRandom()
   .then(responseFromAPI => {
     res.render('random-beer', {
-      randomBeer: responseFromAPI  
+      randomBeer: responseFromAPI,  
+      randomPage: true
+      
     })
+    
   })
   .catch(error => console.log(error));
 
@@ -53,7 +60,8 @@ app.get('/:id', (req, res) =>{
  punkAPI.getBeer(Number(req.params.id))
 .then(beer => {
   res.render('beer', {    
-    beerId: beer
+    beerId: beer,
+    beersPage: true
   })
  })
  .catch(error => console.log(error));

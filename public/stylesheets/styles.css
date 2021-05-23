@@ -21,7 +21,11 @@ z-index: 20;
 
 }
 
-nav a:link, nav a:visited {
+.navbar-light .navbar-brand{
+    color: gold;
+}
+
+.navbar-light .navbar-nav .nav-link {
     color: #fff;
     display: block;
     transition: color 2s ease,
@@ -30,12 +34,12 @@ nav a:link, nav a:visited {
     
 }
 
-nav a:hover{
+.nav-link a:hover{
     color:gold;
     background-color: #0a2c42
 }
 
-nav img{height: 100%; max-height: 80px; margin-right: 3%;}
+.navbar-light img{height: 100%; max-height: 80px; margin-right: 3%;}
 
 footer{
    background-color: #0a2c42;
@@ -88,6 +92,12 @@ footer{
     
 }
 
+.btn-primary{
+    background-color: #0a2c42;
+    border: none;
+
+}
+
 .singlecard{
     display: flex;
     flex-direction: row;
@@ -98,7 +108,7 @@ footer{
 #container .singlecard img{
   
     max-height: 500px;
-    padding-right: 5%;
+    padding-right: 35%;
 }
 
 .singlecard .card-text{
@@ -147,7 +157,51 @@ h4{
     font-size: 1.1rem;
 }
 
-h5{
+h5{ color: #0a2c42;
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+@media (max-width: 990px) {
+
+    .beercard{       
+        width: 100%;
+        margin: 10% 0;
+        border-bottom: solid thin #0a2c42;
+   
+    }
+
+    .btn-primary{
+        margin-bottom: 10%;
+    }
+
+    .singlecard{
+        
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+    
+    #container .singlecard img{
+        width: auto;
+        max-height: 400px;
+        padding-right: 0;
+    }
+
+    .nav-item {
+        background-color: rgb(255, 215, 0, 0.7);
+        text-align: left;
+        border-bottom: solid thin #0a2c42;
+        padding-left: 5%;
+       
+
+    }
+
+    .nav-item:nth-last-child(){
+        border-bottom: none
+    }
+
 }
