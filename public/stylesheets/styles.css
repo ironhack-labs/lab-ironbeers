@@ -1,7 +1,153 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
+body{
+
+background-color: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
-*/
+}
+
+i{
+    color: #999;
+}
+
+nav{
+color: gold;
+background-color: #2081c3;
+box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.2);
+margin-bottom: 2%;
+height: 100px;
+font-weight: bold;
+position: fixed;
+z-index: 20;
+
+
+}
+
+nav a:link, nav a:visited {
+    color: #fff;
+    display: block;
+    transition: color 2s ease,
+                background-color 0.5s ease;
+  
+    
+}
+
+nav a:hover{
+    color:gold;
+    background-color: #0a2c42
+}
+
+nav img{height: 100%; max-height: 80px; margin-right: 3%;}
+
+footer{
+   background-color: #0a2c42;
+   color: #fff;
+   text-align: center;
+   margin-top: 5%;
+   padding: 5%;
+}
+
+#container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row ;
+    box-sizing: border-box;
+    padding: 0 10%;
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+
+#vertical-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#vertical-container img{
+    padding-left: 80px;
+    margin-bottom: 3%;
+    width:80%;
+    max-width: 500px;
+
+}
+
+#container > div img{
+       max-height: 200px;
+       width: auto;
+       
+}
+
+.beercard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: 3% 0;
+    
+    
+}
+
+.singlecard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#container .singlecard img{
+  
+    max-height: 500px;
+    padding-right: 5%;
+}
+
+.singlecard .card-text{
+    font-size: 1.1rem;
+    line-height: normal;
+    
+}
+
+small{
+    font-size: 0.8rem;
+    color: #666;
+}
+
+p{
+    font-size: 0.8rem;
+    color: #333;
+}
+
+h1{
+    color: #0a2c42;
+    text-align: center;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin: 3%;
+}
+
+h1::before{
+    content:url('../images/lupulo.png'); 
+    position:relative; 
+    left:-50px;
+    
+    
+}
+
+
+h1::after{
+    content:url('../images/lupulo.png'); 
+    position:relative; 
+    right:-50px;
+  
+    
+}
+
+h4{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+h5{
+    font-weight: bold;
+    font-size: 1.2rem;
+}

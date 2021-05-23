@@ -1,0 +1,20 @@
+<div id="container">
+
+<div>
+    <h1>Beers Selection</h1>
+    <div id="container">
+
+        {{#each beers}}
+        <div class="beercard">
+
+            {{> beerpartial this}}
+
+        </div>
+        <a href='/{{this.id}}' class="btn btn-primary">More info</a>
+    </div>
+
+    {{/each}}
+
+</div>
+</div>
+</div>

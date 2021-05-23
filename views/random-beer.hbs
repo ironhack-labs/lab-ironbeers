@@ -1,0 +1,14 @@
+<div id="container">
+
+
+    {{#each randomBeer}}
+  
+     <h1>{{this.name}}</h1>
+     <div class="singlecard">
+    {{> beerpartial this}}
+    {{> singlepartial this}}
+
+   
+
+{{/each}}
+</div>

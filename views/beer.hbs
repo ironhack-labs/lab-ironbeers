@@ -1,0 +1,18 @@
+<div id="container">
+
+
+    {{#each beerId}}
+    <h1>{{this.name}}</h1>
+
+     <div class="singlecard">
+    {{> beerpartial this}}
+    {{> singlepartial this}}
+
+    
+    
+</div>
+
+</div>
+
+{{/each}}
+</div>
