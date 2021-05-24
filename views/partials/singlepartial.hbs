@@ -1,6 +1,10 @@
 <h5><i class="fas fa-utensils"></i>
     Food pairing:</h5>
-<p>{{this.food_pairing}}</p>
+    <ul>
+    {{#each this.food_pairing}}
+<li>{{this}}</li>
+{{/each}}
+</ul>
 <h5><i class="fas fa-beer"></i>
     Brewer tips:</h5>
 <p>{{this.brewers_tips}}</p>
@@ -13,6 +17,8 @@
 <h5><i class="fas fa-filter"></i>
     Ph:</h5>
 <p>{{this.ph}}</p>
+
+
 </div>
 
 </div>
