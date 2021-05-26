@@ -7,19 +7,17 @@ const port = 5001;
 
 const app = express();
 const punkAPI = new PunkAPIWrapper();
-// view engine will be hbs, 
+// view engine will be hbs,
 app.set('view engine', 'hbs');
-//app.set means configuring something with express, where views are storaged, folder for template 
+//app.set means configuring something with express, where views are storaged, folder for template
 app.set('views', path.join(__dirname, './views'));
-//.use public folder to work with express and used it to save static files: css, images, index.html... 
+//.use public folder to work with express and used it to save static files: css, images, index.html...
 app.use(express.static(path.join(__dirname, 'public')));
 //dirname related to location of plublic folder
-app.use(express.static("public"));
-app.use(morgan("dev"));
-
+app.use(express.static('public'));
+app.use(morgan('dev'));
 
 // Register the location for handlebars partials here:
-
 // ...
 
 // Add the route handlers here:
