@@ -5,5 +5,7 @@ const beers = require('../controllers/beers.controller');
 
 router.get('/', common.home);
 router.get('/beers', beers.list);
+router.get('/beers/rand', beers.random);
+router.get('/beers/:id', beers.get);
 
 module.exports = router;

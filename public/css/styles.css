@@ -3,3 +3,7 @@
   min-height: 150px;
   object-fit: scale-down;
 }
+
+.beer-detail img {
+  max-height: 200px;
+}
