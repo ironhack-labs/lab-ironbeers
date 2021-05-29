@@ -2,5 +2,7 @@ const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 const punkAPI = new PunkAPIWrapper();
 
 module.exports.list = (req, res, next) => {
-  res.render('beers/list');
+  punkAPI.getBeers()
+    .then(beers => res.render('beers/list', { beers }))
+    .catch(error => next(error));
 }
