@@ -1,15 +1,22 @@
 const express = require('express');
 
-const hbs = require('hbs');
 const path = require('path');
-const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 
 const app = express();
-const punkAPI = new PunkAPIWrapper();
+
+
+//Register configuration
+require('./config/hbs.config');
 
 // creamos motor renderizado de vistas//
 app.set('view engine', 'hbs');
-app.set('views',` ${__dirname}/views`);
+app.set('views', `${__dirname}/views`);
+
+app.use((req, res, next) => {
+    // res.locals.path => global variables at hbs views (active path at navbar)
+    res.locals.path = req.path;
+    next();
+  }); 
 
 //use para las carpetas de public
 
