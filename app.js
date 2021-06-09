@@ -44,6 +44,7 @@ app.get('/random-beer', (req, res) => {
     .catch(error => console.log(error));
 });
 app.get('/beer/:id', (req, res, id) => {
+  var id = req.params.id;
   punkAPI
     .getBeer(id)
     .then(beerId => {
