@@ -1,4 +1,13 @@
-{{#each beersFromApi}}
+<div>
+    {{#each beersFromApi}}
+        {{>beerpartial }}
+        <p>{{food_pairing}}</p>
+        <p>{{brewers_tips}}</p>
+    {{/each}}
+</div>
+
+
+{{!-- {{#each beersFromApi}}
 {{#with this}}
     <div>
         <img src="{{image_url}}" alt="">
@@ -9,4 +18,4 @@
         <p>{{brewer_tips}}</p>
     </div>
 {{/with}}
-{{/each}}
+{{/each}} --}}
