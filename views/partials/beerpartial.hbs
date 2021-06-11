@@ -1,0 +1,11 @@
+{{#with beer}}
+  <div class="col mb-3">
+    <div class="card beer">
+      <img class="card-img-top" src="{{ image_url }}" alt="{{ name }}">
+      <div class="card-body">
+        <h5 class="card-title"><a href="/beers/{{ id }}" class="stretched-link">{{ name }}</a></h5>
+        <p class="card-text">{{dotted description 100 }}</p>
+      </div>
+    </div>
+  </div>
+{{/with}}

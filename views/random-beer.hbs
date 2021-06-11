@@ -1,0 +1,23 @@
+{{!-- <div id='random-beer'>
+  {{#each data as |responseFromApi|}}
+    <div class='card' style='width: 18rem;'>
+      <img src={{this.image_url}} class='card-img-top' />
+      <div class='card-body'>
+        <h5 class='card-title'>{{this.name}}</h5>
+        <p class='card-text'>{{this.description}}</p>
+        <p class='card-text'>{{this.tagline}}</p>
+        <p class='card-text'>{{this.food_pairing}}</p>
+        <p class='card-text'>{{this.brewers_tips}}</p>
+      </div>
+    </div>
+  {{/each}}
+</div> --}}
+
+<div>
+  {{#each data}}
+    <div class='card' style='width: 18rem;'>
+      {{> beerpartial this}}
+      {{> singlepartial this}}
+    </div>
+  {{/each}}
+</div>sta
