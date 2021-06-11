@@ -5,9 +5,68 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+:root {
+  --color-blue-light: #2882c1;
+  --color-text-white: #f7f9f9;
+  --color-grey: #cad0d8;
+}
 
-.cerveza {
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+.bg-light-blue {
+  background-color: var(--color-blue-light);
+}
+
+.btn {
+  background-color: var(--color-blue-light) !important;
+}
+
+.btn a {
+  color: var(--color-text-white);
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.beers .beer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+
+.random-beer .beer {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.beer img {
+  margin: 0 30px;
+  height: 300px;
+  width: 180px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.beer .tagline {
+  color: var(--color-grey);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
