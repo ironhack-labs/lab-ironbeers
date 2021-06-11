@@ -1,0 +1,21 @@
+{{!-- <div class="card-group">
+<div class="card" style="width: 18rem;">
+
+  <img src="{{image_url}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{name}}</h5>
+    <p class="card-text">{{description}}</p>
+    <p class="card-text">{{tagline}}</p>
+  </div>
+  
+</div> --}}
+
+<div class="info" >
+  {{#each beers}}
+        {{#with this}}
+        
+         {{> beerInfo}}
+        
+        {{/with}}
+  {{/each}}
+</div>
