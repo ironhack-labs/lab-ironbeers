@@ -1,17 +1,35 @@
 {{#with this}}
-  <div class='card text-truncate col-3'>
-    <div class='card-body'>
-
-      <img
-        class='card-img-top'
-        alt='Responsive image'
-        src='{{image_url}}'
-        alt='{{name}}'
-        style='height: 15vh; width:auto'
-      />
-      <h5 class='card-title'><a href='/beer/{{id}}'>{{name}}</a></h5>
-      <p class='card-text'>{{tagline}}</p>
-      <p class='card-text'><small class='text-muted'>{{description}}</small></p>
+  {{#if moreBeers}}
+    {{> columns}}
+  {{else}}
+    <div class='my-4'>
+  {{/if}}
+      <a class='d-flex text-decoration-none text-dark' href='/beer/{{id}}'>
+        <div class='row g-0'>
+          <div class='col-md-4 d-flex justify-content-center'>
+            <img
+              src='{{image_url}}'
+              alt='{{name}}'
+              class='img-responsive mx-auto pl-4'
+              style='max-width: 150px; max-height: 250px;'
+            />
+          </div>
+          <div class='col-md-8'>
+            <div class='card-body'>
+              <h5 class='card-title text-center'>{{name}}</h5>
+              <p
+                class='card-text text-center'
+                style='color:#bfbfbf'
+              >{{tagline}}</p>
+              <p class='card-text text-justify'><small
+                  class='text-muted'
+                >{{description}}</small></p>
+                {{#if moreInfo}}
+                  {{> moreProperties this}}
+                {{/if}}
+            </div>
+          </div>
+        </div>
+      </a>
     </div>
-  </div>
 {{/with}}
