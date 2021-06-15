@@ -54,9 +54,8 @@ a {
 }
 
 .beer-img {
-    max-width:120px;
-    max-height: 300px;
-    margin: 0 20px;
+    height: 200px;
+    object-fit: contain;
 }
 
 .info-card {
