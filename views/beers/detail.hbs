@@ -1,0 +1,13 @@
+
+{{#with beer}}
+<div class="row">
+    <div class="col-12 col-md-2">
+        <img src="{{ image_url }}" class= "img-fluid" alt="{{ name }}"/>
+    </div>
+    <div class="col-12 col-md-10">
+        <h1>{{ name }}</h1>
+        <p class="text-muted mb-1">{{ tagline }}</p>
+        <p>{{ description }}</p>
+    </div>
+</div>
+{{/with}}

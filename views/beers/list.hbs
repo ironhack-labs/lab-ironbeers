@@ -1,0 +1,13 @@
+<div class="row row-cols-1 row-cols-md-3">
+    {{#each beers as |beer|}}
+    {{#with beer}}
+    <div class="card mb-2 beer border-0">
+        <img src="{{ image_url }}" class="card-img-top" alt="{{ name }}">
+        <div class="card-body">
+            <h5 class="card-title"><a href="/beers/{{ id }}">{{ name }}</a></h5>
+            <p class="card-text">{{ dotted description }}</p>
+        </div>
+    </div>
+    {{/with}}
+    {{/each}}
+</div>
