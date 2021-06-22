@@ -5,3 +5,14 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+nav{
+    margin-bottom: 40px;
+}
+img{
+    margin: auto 5px;
+    max-width: 30%;
+}
+/* .beer-glass{
+    width: 35%;
+    padding: 40% auto;
+} */
