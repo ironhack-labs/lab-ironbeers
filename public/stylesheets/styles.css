@@ -111,3 +111,22 @@ footer{
 .brewer-tips{
     margin:13px;
 }
+
+.new-flex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    margin-bottom: 200px;
+}
+
+.flex-random{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex-brewer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}

@@ -1,13 +1,16 @@
-<div>
+<div class="flex-random">
     {{#each randomBeer}}
     {{>beerPartial}}
-    <h5 class="food-pairing">Food Pairing:</h5>
+    <div class="new-flex">
+        <h5 class="food-pairing">Food Pairing:</h5>
     <ul>
         {{#each food_pairing}}
         <li>{{this}}</li>
         {{/each }}
     </ul> 
-    <div class="brewer-tips"><h5>Brewers Tips:</h5>{{brewers_tips}}</div>
+    <div class="brewer-tips flex-brewer"><h5>Brewers Tips:</h5>{{brewers_tips}}</div>
     {{/each}}
+    </div>
+    
 
 </div>
