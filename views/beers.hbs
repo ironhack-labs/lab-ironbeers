@@ -1,0 +1,9 @@
+<h2>List Of Beers</h2>
+
+<ul>
+    <div class="row">
+        {{#each beersFromTheAPI}}
+            {{> beerInfo}}
+        {{/each}}
+    </div>
+</ul>
