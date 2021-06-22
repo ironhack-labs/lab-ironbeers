@@ -8,6 +8,9 @@ font-family: Arial, Helvetica, sans-serif;
 nav{
     margin-bottom: 40px;
 }
+nav img{
+    margin: auto 5px;
+}
 /* .beer-glass{
     width: 35%;
     padding: 40% auto;
