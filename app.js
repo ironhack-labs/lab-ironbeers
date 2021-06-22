@@ -49,6 +49,12 @@ app.get('/random-beer', (req, res) => {
 
 });
 
+app.get('/salsa', (req, res) => {
+res.render('salsa')
+  
+
+});
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
 
 

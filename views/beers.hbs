@@ -1,13 +1,18 @@
-<div class="container">
+<div class="container allBeers">
     <div class="row">
 
         {{#each beersFromApi}}
 
-            <div class="card col-lg-4" style="width: 18rem;">
-                <a href="/beers/{{id}}">
-                    {{>beerPartial}}
-                </a> 
+            <div class="col-md-4 beerCard">
+                <article class="player-card">
+                    <a href="/beers/{{id}}">
+                        {{>beerPartial}}
+                    </a> 
+
+                </article>
             </div>
+
+
         
         {{/each}}
 
