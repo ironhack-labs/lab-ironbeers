@@ -44,4 +44,4 @@ app.get('/beers', async (req, res) => {
   res.render('beers', {beersFromTheAPI});
 });
 
-app.listen(7500, () => console.log('🏃‍ on port 5000'));
+app.listen(7500, () => console.log('🏃‍ on port 7500'));
