@@ -5,3 +5,16 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body{
+    
+    text-align: center;
+}
+
+img{
+    margin-top: 60px;
+   
+}
+.imgBeer{
+    width: 100px;
+}

@@ -1,0 +1,24 @@
+<!--En la beers.hbsvista, recorra la variedad de cervezas usando un bucle. Muestre una imagen , nombre ,descripción y lema -->
+<div>
+    <!--abro el forEach-->
+    {{#each beers}}
+    <p>
+        <img class="imgBeer" src="{{image_url}}" alt="">
+    </p>
+    <p>
+        {{name}}
+    </p>
+    <p>
+        {{description}}
+    </p>
+    <p>
+        {{tagline}}
+    </p>
+
+
+
+
+
+    {{/each}}
+
+</div>
