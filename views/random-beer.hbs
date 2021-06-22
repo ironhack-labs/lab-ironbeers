@@ -1,10 +1,25 @@
-{{!-- The random-beer.hbs should display the random beer that was retrieved from the database. 
-You should display an image,
-name, description, tagline, food pairing and brewer tips. 
+{{!-- The random-beer.hbs should display the random beer that was retrieved from the database.
+You should display an image, name, description, tagline, food pairing and brewer tips.
 The following image shows how this page could look like if you
-give it a bit of style. However, the styling will come later, so, for now, 
+give it a bit of style. However, the styling will come later, so, for now,
 focus on rendering all the information: --}}
-
+{{beersFromApi}}
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+        <div class="col-md-4">
+            <img src="{{image_url}}" class="card-img" alt="{{name}}">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">{{name}}</h5>
+                <p class="card-text">{{description}}</p>
+                <p class="card-text"><small class="text-muted">{{tagline}}</small></p>
+                <p class="card-text">{{food_pairing}}</p>
+                <p class="card-text">{{brewers_tips}}</p>
+            </div>
+        </div>
+    </div>
+</div>
 {{!-- random-beer {
 id: 230,
 name: 'Black Hammer',
