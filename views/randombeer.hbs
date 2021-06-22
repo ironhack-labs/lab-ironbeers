@@ -1,0 +1,18 @@
+
+        <div class="container">
+        
+            {{#each responseFromAPI}}
+        
+            <img class="beerImages" src="{{image_url}}" alt="">
+            <h1>{{name}}</h1>
+            <p>{{description}}</p>
+            <p>{{tagline}}</p>
+            <p><strong>{{food_pairing}}</strong></p>
+            <p>{{brewer_tips}}</p>
+            {{/each}}
+        
+        </div>
+        
+        <a class="btn btn-dark" href="/">Volver a inicio</a>
+        
+        </div>

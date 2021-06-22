@@ -1,0 +1,21 @@
+<div class="container">
+
+    <h1>Cervezas</h1>
+
+    <hr>
+
+    <div class="container">
+
+        {{#each beersFromApi}}
+    
+        <img class="beerImage" src="{{image_url}}" alt="">
+        <h1>{{name}}</h1>
+        <p>{{description}}</p>
+        <p>{{tagline}}</p>
+        {{/each}}
+
+    </div>
+
+    <a class="btn btn-dark" href="/">Volver a inicio</a>
+
+</div>
