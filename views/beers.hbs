@@ -1,0 +1,15 @@
+<div>
+    <h1>BEER LIST</h1>
+    <div class='container'>
+        <ul class='row beer-list justify-content-center'>
+            {{#each beersFromApi}}
+            <li class='col-3'>
+                <img src="{{this.image_url}}" alt="">
+                {{this.name}}
+                {{this.description}}
+                {{tagline}}
+            </li>
+
+    </div>
+    {{/each}}
+</div>
