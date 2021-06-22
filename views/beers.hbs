@@ -1,0 +1,23 @@
+<div class="container ">
+
+  <h1>Select your prefered beer</h1>
+
+  <hr>
+
+  <div class="row align-items-center justify-content-center">
+{{#each beers}}
+
+<div class='col-md-6'>
+
+  {{>beerpartial}}
+</div>
+
+{{else}}
+  <h1>no funca</h1>
+
+{{/each}}
+
+  </div>
+
+
+</div>

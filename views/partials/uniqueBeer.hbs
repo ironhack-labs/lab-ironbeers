@@ -1,0 +1,23 @@
+
+<div class="row col-md-12 justify-content-center mt-5">
+
+{{#each beer}}
+
+  <div>
+    
+      {{>beerpartial}}
+
+    <ul>
+      {{#each food_pairing}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+
+    <p>{{brewers_tips}}</p>
+
+  </div>
+
+{{else}}
+  <h3>Algo falla atento, el array esta vacio</h3>
+{{/each}}
+</div>
