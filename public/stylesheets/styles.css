@@ -5,3 +5,36 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+html{
+    font-size: 10px;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #2081c3;
+    height: 7.5rem;
+    width: 100%;
+    list-style-type: none;  
+}
+
+.navbar ul a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.footer{
+ background-color: #0a2c42;
+ height: 6rem;
+ color: white;   
+}
+
+
