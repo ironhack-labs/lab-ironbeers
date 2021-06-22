@@ -111,9 +111,11 @@ footer {
 
 .h5 {
     font-size: 1rem;
+    margin: 20px 40px 5px;
 }
 .text{
     font-size: 0.8rem;
+    margin: 20px 40px 5px;
 }
 
 .div-random-beer{
@@ -122,5 +124,5 @@ footer {
     
     justify-content: left;
     flex-direction: column;
-    margin: 20px 40px 5px;
+    
 }
