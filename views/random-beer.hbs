@@ -1,13 +1,8 @@
-{{!  }}
+<div class="container single-beer-container">
 
 {{#each responseFromAPI}}
 
     {{>beerpartial}}
-
-  {{!-- <img src={{this.image_url}} alt='beer image' class='beer-img' />
-  <h3 class='beer-name'> {{this.name}} </h2>
-  <p class='beer-tagline'> {{this.tagline}} </p>
-  <p class='beer-description'> {{this.description}} </p> --}}
 
   <h3> Food pairing </h3>
   <ul>
@@ -24,40 +19,4 @@
   <p>Couldn't choose a random beer</p>
 {{/each}}
 
-{{!-- {{#each responseFromAPI}}
-  <div class='container'>
-    <div class='row'>
-      <div class='col-3'>
-        <img src={{this.image_url}} alt='beer image' />
-      </div>
-
-      <div class='container col-9'>
-        <div class='row'>
-          <div class='col-12'><h2> {{this.name}} </h2></div>
-
-          <div class='col-12'><p> {{this.tagline}} </p></div>
-
-          <div class='col-12'><p> {{this.description}} </p></div>
-
-          <div class='col-12'>
-            <h3> Food pairing </h3>
-            <ul>
-              {{#each this.food_pairing}}
-                <li>{{this}}</li>
-              {{/each}}
-            </ul>
-          </div>
-
-          <div class='col-12'>
-            <p>
-              <strong>Brewers tips:</strong>
-              {{this.brewers_tips}}
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-{{else}}
-  <p>Couldn't choose a random beer</p>
-{{/each}} --}}
+</div>
