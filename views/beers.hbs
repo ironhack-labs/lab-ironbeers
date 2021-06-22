@@ -1,0 +1,18 @@
+<h2>Beers!</h2>
+<div class='container'>
+  <ul class='row beer-list justify-content-center'>
+    {{#each beersFromApi}}
+      <li class='col-3'>
+
+        {{>beerpartial}}
+        {{!-- <img src={{this.image_url}} alt='beer image' class='beer-img' />
+        <h3 class='beer-name'>{{this.name}}</h3>
+        <p class='beer-tagline'>{{this.tagline}}</p>
+        <p class='beer-description'>{{this.description}}</p> --}}
+
+      </li>
+    {{else}}
+      <li>No hay cervezas</li>
+    {{/each}}
+  </ul>
+</div>
