@@ -10,18 +10,26 @@ const punkAPI = new PunkAPIWrapper();
 
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
+// hbs.registerPartials( path.join(__dirname, 'views/partials'))
+
+hbs.registerPartials(`${__dirname}/views/partials`)
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Register the location for handlebars partials here:
 
-// ...
-
-// Add the route handlers here:
 
 app.get('/', (req, res) => {
-  // res.send('Test')
   res.render('index');
+});
+
+app.get('/beers/:id', (req, res) => {
+  // console.log(req.params)
+  const {id} = req.params  
+  punkAPI
+    .getBeer(id)
+    .then( beerFromApi => res.render('beer', beerFromApi[0]))
+    // .then( beerFromApi => console.log(beerFromApi[0]))
+    .catch(error => console.log(error))
 });
 
 app.get('/beers', (req, res) => {
@@ -33,7 +41,6 @@ app.get('/beers', (req, res) => {
 });
 
 app.get('/random-beer', (req, res) => {
-  // res.send(`Random beer :)`)
   punkAPI
   .getRandom()
   // .then( beerFromApi => console.log(beerFromApi[0].food_pairing))

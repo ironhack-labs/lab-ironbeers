@@ -4,16 +4,9 @@
         {{#each beersFromApi}}
 
             <div class="card col-lg-4" style="width: 18rem;">
-                <img src="{{this.image_url}}" class="card-img-top" alt="beer image">
-
-{{!-- how to do smth if this.image_url == "https://images.punkapi.com/v2/keg.png" ? --}}
-
-                <div class="card-body">
-                    <h5 class="card-title">{{this.name}}</h5>
-                    <p class="card-text">{{this.description}}</p>
-                    <p>{{this.tagline}}</p>
-                    {{!-- <a href="#" class="btn btn-primary">{{this.tagline}}</a> --}}
-                </div>
+                <a href="/beers/{{id}}">
+                    {{>beerPartial}}
+                </a> 
             </div>
         
         {{/each}}
@@ -22,4 +15,9 @@
 
     </div>
 </div>
+
+
+
+
+
 
