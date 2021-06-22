@@ -1,0 +1,14 @@
+<h1>Wanna try a Random Beer?</h1>
+<div class='container'>
+    <ul class='row beer-list justify-content-center'>
+        <li class='col-3'>
+            {{#each responseFromAPI}}
+            <img src="{{this.image_url}}" alt="">
+            {{description}}
+            {{tagline}}
+            {{food_pairing}}
+            {{ brewer_tips}}
+        </li>
+        {{/each}}
+
+</div>
