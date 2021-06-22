@@ -1,6 +1,18 @@
 <div class="container">
+
+    {{#each beersFromApi}}
+    {{!-- Display an image, name, description and tagline. --}}
     <div class="row">
-        {{#each beersFromApi}}
-        {{!-- Display an image, name, description and tagline. --}}
+
+        <div class="card col-sm-4" style="width: 18rem;">
+            <img class="card-img-top" src="{{image_url}}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{name}}</h5>
+                <p class="card-text">{{description}}</p>
+                <a href="#" class="btn btn-secondary">{{tagline}}</a>
+            </div>
+        </div>
     </div>
+    {{/each}}
+</div>
 </div>
