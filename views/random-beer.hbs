@@ -1,0 +1,15 @@
+
+<div class="container">
+
+    {{#each responseFromAPI}}
+    <article>
+        {{>beerpartial}}
+        <h2>Food Pairing</h2> 
+        <ul>{{food_pairing}}</ul>
+        <p>{{brewers_tips}}</p>
+
+    </article>
+  
+    {{/each}}
+
+</div>
