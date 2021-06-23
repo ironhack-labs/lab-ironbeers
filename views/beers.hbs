@@ -1,0 +1,10 @@
+<div class="beer-flex">
+    <div class="row">
+        {{#each beersFromTheAPI}}
+        {{!-- <li> {{this.name}}</li>
+        <h5><li>Team: {{this.team}}</li></h5> --}}
+            {{>beerPartial}}
+            {{!-- O maior que mostra que o Cards é um partial --}}
+        {{/each}}
+    </div>
+</div>
