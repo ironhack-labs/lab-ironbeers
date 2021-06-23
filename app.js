@@ -6,6 +6,8 @@ const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 
 const app = express();
 const punkAPI = new PunkAPIWrapper();
+const beers = punkAPI.getBeers({'abv_gt': 8})
+
 
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
@@ -19,6 +21,22 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Add the route handlers here:
 
 app.get('/', (req, res) => {
+  res.render('index');
+});
+
+app.get('/beers', (req, res) => {
+  punkAPI.getBeers()
+    .then((beersFromApi) => {
+    res.render('beers.hbs' , {beers:beersFromApi});
+    })
+    .catch(() => {
+      console.log("Catch")
+    })
+
+
+});
+
+app.get('/random-beer', (req, res) => {
   res.render('index');
 });
 
