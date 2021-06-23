@@ -1,0 +1,7 @@
+  
+<div class="beers-wrapper">
+{{#each beers}}
+  {{> beerPartial this}}
+  <img src="{{this.image_url}}" width="100px" alt="beer pic">
+{{/each}}
+</div>
