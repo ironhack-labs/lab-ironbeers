@@ -1,0 +1,17 @@
+<section class="horizontal-align">
+    <img class="random-beer-img"
+                src={{image_url}}
+                alt={{name}} />
+    <div class="vert-align">
+        <h5 >{{name}}</h5>
+        <p id="grey-tagline">{{tagline}}</p>
+        <p>{{description}}</p>
+        <h5>Food pairing</h5>
+        <ul>
+        {{#each food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}
+        </ul>
+        <p><h6>Brewers tips: </h6>{{brewers_tips}}</p>
+    </div>
+</section>
