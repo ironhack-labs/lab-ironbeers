@@ -1,0 +1,7 @@
+    <div>
+        {{#each randomBeerFromAPI}}
+                     {{!-- to save time and be DRY we have moved this code block into a partial to be re-used, see cards.hbs --}}
+                     {{!-- > great-than sign, means that card is a partial --}}
+        {{> randoms}}  {{!-- now we need to tell express where the partials are located --}}
+        {{/each}}
+    </div>
