@@ -1,11 +1,8 @@
-<div class="each-beer">
         {{!-- Beer ID needs to be made dynamic --}}
         <a href="/beers/{{this.id}}">
-          <h3 class="beer-name">{{this.name}} </h3>                         
-        </a>
-        <p>{{ this.description }}</p>
-        <a href="/beers/{{this.id}}">
+          <h2 class="beer-name">{{this.name}} </h2>                         
           <img src="{{ this.image_url }}" alt="{{this.name}}">
         </a>
-        <p>{{ this.tagline }}</p>
-</div>
+        <h3>{{ this.tagline }}</h3>
+        <p>{{ this.description }}</p>
+        

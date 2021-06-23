@@ -1,9 +1,3 @@
 <h1>Up for a random beer?</h1>
 
-{{! // image, name, description, tagline, food pairing and 
-brewer tips. }}
-
-{{#each beer}}
-    {{> basicinfo this}}
-    {{> extrainfo this}}
-{{/each}}
+{{> single this}}
