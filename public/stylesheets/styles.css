@@ -5,3 +5,20 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: gainsboro;
+}
+
+.nav-item {
+    padding: 10px;
+}
+
+.container {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 30px;
+}
