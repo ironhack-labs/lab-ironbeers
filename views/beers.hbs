@@ -1,0 +1,10 @@
+{{#if beersFromApi}}
+    <div class="container beer-container">
+        {{#each beersFromApi}}
+                    <div id="beer-div">
+                        {{> beerPartial this}}
+                        </div>
+                    </div>
+        {{/each}}
+    </div>
+{{/if}}

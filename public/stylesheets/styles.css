@@ -5,3 +5,133 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    font-family: "Spartan", sans-serif;
+    background-color: #f7f9f9;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #2081c3;
+    border-bottom: 2px groove #bfbfbf;
+}
+
+nav div {
+    margin-left: 20px;
+    padding: 20px 0 15px 0;
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: #f7f9f9;
+    margin: 0 0 0 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+#home-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home-div img {
+    width: 250px;
+    height: 250px;
+    margin: 40px 0 0 0;
+}
+
+#home-div a {
+    margin: 40px 0 0 0;
+    padding: 15px 20px;
+    background-color: #2081c3;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin: 20px 10px;
+}
+
+.random-container {
+    display: flex;
+    justify-content: center;
+}
+
+.beer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95vw;
+}
+
+#beer-div {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    margin: 20px 0;
+    font-size: 0.8em;
+}
+
+#random-beer-div {
+    display: flex;
+    align-items: center;
+    width: 700px;
+    height: 350px;
+    margin: 20px 0;
+    font-size: 0.8em;
+}
+
+#beer-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#beer-info a {
+    text-decoration: none;
+}
+
+#beer-info div {
+    margin: 10px 20px;
+}
+
+#beer-image {
+    height: 300px;
+}
+
+#beer-name {
+    color: red;
+    font-weight: bold;
+}
+
+#tips, #pairing {
+    font-weight: bold;
+}
+
+#food-pairing {
+    margin: 0 0 0 20px;
+}
+
+footer {
+    background-color: #0a2c42;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+footer div {
+    margin-left: 20px;
+    padding: 3px 0;
+    font-size: 0.9em;
+    font-weight: bold;
+}
