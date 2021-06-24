@@ -1,14 +1,10 @@
 {{#if beersFromApi}}
-    <div id="container">
+    <div class="container beer-container">
         {{#each beersFromApi}}
-            <div id="beer-div">
-                <img id="beer-image" src="{{this.image_url}}" alt="Beer {{this.name}}">
-                <div id="beer-info">
-                    <div><span id="beer-name">{{this.name}}</span></div>
-                    <div>{{this.description}}</div>
-                    <div>{{this.tagline}}</div>
-                </div>
-            </div>
+                    <div id="beer-div">
+                        {{> beerPartial this}}
+                        </div>
+                    </div>
         {{/each}}
     </div>
 {{/if}}

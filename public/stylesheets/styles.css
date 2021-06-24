@@ -8,12 +8,46 @@ font-family: Arial, Helvetica, sans-serif;
 
 body {
     font-family: "Spartan", sans-serif;
-    background-color: #23223e;
-    color: white;
+    background-color: #f7f9f9;
+    margin: 0;
 }
 
-#container {
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #2081c3;
+    border-bottom: 2px groove #bfbfbf;
+}
+
+nav div {
+    margin-left: 20px;
+    padding: 20px 0 15px 0;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: #f7f9f9;
+    margin: 0 0 0 20px;
+}
+
+.container {
     margin: 30px 10px;
+}
+
+.random-container {
+    display: flex;
+    justify-content: center;
+}
+
+.beer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95vw;
 }
 
 #home-div {
@@ -22,20 +56,39 @@ body {
     align-items: center;
 }
 
-#home-div a {
-    width: 300px;
-    margin: 20px 0 0 0;
-}
-
 #home-div img {
     width: 250px;
     height: 250px;
+    margin: 40px 0 0 0;
+}
+
+#home-div a {
+    margin: 40px 0 0 0;
+    padding: 15px 20px;
+    background-color: #2081c3;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
 }
 
 #beer-div {
     display: flex;
-    width: 1200px;
-    margin: 30px 0;
+    width: 350px;
+    height: 350px;
+    margin: 20px 0;
+    font-size: 0.8em;
+}
+
+#random-beer-div {
+    display: flex;
+    align-items: center;
+    width: 700px;
+    height: 350px;
+    margin: 20px 0;
+    font-size: 0.8em;
 }
 
 #beer-info {
@@ -48,15 +101,16 @@ body {
 }
 
 #beer-image {
-    height: 200px;
+    height: 300px;
 }
 
-#random-beer-image {
+/* #random-beer-image {
     height: 400px;
-}
+} */
 
 #beer-name {
     color: red;
+    font-weight: bold;
 }
 
 #tips, #pairing {
@@ -65,4 +119,19 @@ body {
 
 #food-pairing {
     margin: 0 0 0 20px;
+}
+
+footer {
+    background-color: #0a2c42;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+footer div {
+    margin-left: 20px;
+    padding: 3px 0;
+    font-size: 0.9em;
+    font-weight: bold;
 }

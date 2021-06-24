@@ -1,12 +1,8 @@
 {{#if responseFromAPI}}
-    <div id="container">
+    <div class="container random-container">
         {{#each responseFromAPI}}
-            <div id="beer-div">
-                <img id="random-beer-image" src="{{this.image_url}}" alt="Beer {{this.name}}">
-                <div id="beer-info">
-                    <div><span id="beer-name">{{this.name}}</span></div>
-                    <div>{{this.description}}</div>
-                    <div>{{this.tagline}}</div>
+            <div id="random-beer-div">
+                {{> beerPartial this}}
                     {{#if this.food_pairing}}
                     <div><span id="pairing">Food pairing:</span>
                         <ul>
