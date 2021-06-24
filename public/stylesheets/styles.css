@@ -5,3 +5,64 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    font-family: "Spartan", sans-serif;
+    background-color: #23223e;
+    color: white;
+}
+
+#container {
+    margin: 30px 10px;
+}
+
+#home-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home-div a {
+    width: 300px;
+    margin: 20px 0 0 0;
+}
+
+#home-div img {
+    width: 250px;
+    height: 250px;
+}
+
+#beer-div {
+    display: flex;
+    width: 1200px;
+    margin: 30px 0;
+}
+
+#beer-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#beer-info div {
+    margin: 10px 20px;
+}
+
+#beer-image {
+    height: 200px;
+}
+
+#random-beer-image {
+    height: 400px;
+}
+
+#beer-name {
+    color: red;
+}
+
+#tips, #pairing {
+    font-weight: bold;
+}
+
+#food-pairing {
+    margin: 0 0 0 20px;
+}

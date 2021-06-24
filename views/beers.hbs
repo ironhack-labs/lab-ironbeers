@@ -1,0 +1,14 @@
+{{#if beersFromApi}}
+    <div id="container">
+        {{#each beersFromApi}}
+            <div id="beer-div">
+                <img id="beer-image" src="{{this.image_url}}" alt="Beer {{this.name}}">
+                <div id="beer-info">
+                    <div><span id="beer-name">{{this.name}}</span></div>
+                    <div>{{this.description}}</div>
+                    <div>{{this.tagline}}</div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+{{/if}}
