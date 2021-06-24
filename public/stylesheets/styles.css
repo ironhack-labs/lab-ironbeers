@@ -13,7 +13,7 @@ font-family: Arial, Helvetica, sans-serif;
   }
   
     .nav-bar {
-    background-color: rgb(150, 224, 170);
+    background-color: rgb(65,105,225);
     padding: 14px 0;
     margin-bottom: 20px;
   }
@@ -58,5 +58,49 @@ font-family: Arial, Helvetica, sans-serif;
     margin-right: 200px;
 }
 
-  
-  
+.btn btn-primary{
+  height: 20px;
+  width: 50px;
+  background-color: green;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.horizontal{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.buttonOne{
+  height: 50px;
+  width: 80px;
+  background-color: black;
+  color: white;
+  margin-right: 10px;
+  font-size: large;
+  border: solid;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.buttonTwo{
+  height: 50px;
+  width: 80px;
+  background-color: black;
+  color: white;
+  margin-left: 10px;
+  font-size: large;
+  border: solid;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
