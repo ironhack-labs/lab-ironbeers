@@ -1,0 +1,15 @@
+{{#each beer}}
+    {{> beerpartial this}}
+    <p>
+      ABV:  {{abv}}
+    </p>
+    <p>
+      IBUs:  {{ibu}}
+    </p>
+    <p>
+      PH:  {{ph}}
+    </p>
+    <p>
+       Attenuation level: {{attenuation_level}}
+    </p>
+{{/each}}
