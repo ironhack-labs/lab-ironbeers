@@ -22,8 +22,6 @@ nav {
 nav div {
     margin-left: 20px;
     padding: 20px 0 15px 0;
-    font-size: 0.9em;
-    font-weight: bold;
 }
 
 nav a {
@@ -31,23 +29,8 @@ nav a {
     text-decoration: none;
     color: #f7f9f9;
     margin: 0 0 0 20px;
-}
-
-.container {
-    margin: 30px 10px;
-}
-
-.random-container {
-    display: flex;
-    justify-content: center;
-}
-
-.beer-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 95vw;
+    font-size: 0.9em;
+    font-weight: bold;
 }
 
 #home-div {
@@ -74,6 +57,23 @@ nav a {
     justify-content: center;
 }
 
+.container {
+    margin: 20px 10px;
+}
+
+.random-container {
+    display: flex;
+    justify-content: center;
+}
+
+.beer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95vw;
+}
+
 #beer-div {
     display: flex;
     width: 350px;
@@ -96,6 +96,10 @@ nav a {
     flex-direction: column;
 }
 
+#beer-info a {
+    text-decoration: none;
+}
+
 #beer-info div {
     margin: 10px 20px;
 }
@@ -103,10 +107,6 @@ nav a {
 #beer-image {
     height: 300px;
 }
-
-/* #random-beer-image {
-    height: 400px;
-} */
 
 #beer-name {
     color: red;

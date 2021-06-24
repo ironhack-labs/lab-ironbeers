@@ -1,0 +1,20 @@
+{{#if uniqueBeerFromAPI}}
+    <div class="container random-container">
+        {{#each uniqueBeerFromAPI}}
+            <div id="random-beer-div">
+                {{> beerPartial this}}
+                    {{#if this.food_pairing}}
+                    <div><span id="pairing">Food pairing:</span>
+                        <ul>
+                            {{#each this.food_pairing}}
+                            <li id="food-pairing">{{this}}</li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                    {{/if}}
+                    <div><span id="tips">Brewer's tips:</span> {{this.brewers_tips}}</div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+{{/if}}
