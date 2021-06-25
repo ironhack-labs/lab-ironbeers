@@ -1,17 +1,10 @@
 <div class = "infoBox">
 
-    <div class = "imageBox">
-        <img src="{{beer.image_url}}" width="100px" alt="beer pic">
-    </div>
+{{#with beer}}
+  {{> beerPartial this}}
+{{/with}}
 
-    <div class = "textBox">
-        <h3>{{ beer.name }}</h3>
-        <span>{{ beer.tagline }}</span>
-        <p>description <b> <br> {{beer.description }}</b></p>
-        <p>food pairing <b> <br>{{beer.food_pairing}}</b></p>
+        <p>food pairing: <b> <br>{{beer.food_pairing}}</b></p>
         <p>Brewers Tips: <b> <br>{{beer.brewers_tips}}</b></p>
-    </div>
 
 </div>
-
-
