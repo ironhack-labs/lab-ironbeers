@@ -1,7 +1,8 @@
 <div>
      {{#each objetoArrayDeCervezas}}
         <div>            
-            {{> beerpartial }}        
+            {{> beerpartial }}    
+            <a href="/beerProfile/{{id}}">{{name}}</a>    
         </div>
      {{/each}}
 

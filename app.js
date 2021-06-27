@@ -40,9 +40,9 @@ app.get('/', (req, res) => {
 });
 
 app.get("/beerProfile/:id", (req, res)=>{
-  punkAPI.getBeer(id)
+  punkAPI.getBeer(req.params.id)
   .then(beerId =>{
-    res.render("beerProfileid" , beerId)
+    res.render("beerProfileId" , beerId[0])
     console.log(beerId)
   })  
 })
