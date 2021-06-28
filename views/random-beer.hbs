@@ -1,0 +1,15 @@
+{{#beers}}
+{{>template this}}
+<p>
+<h1>Food Pairing</h1>
+    {{#each food_pairing}}
+    <ul>
+        <li>{{this}}</li>
+    </ul>
+
+    {{/each}}
+</p>
+<aside> <span>Brewers Tips :</span>
+    {{brewers_tips}}
+</aside>
+{{/beers}}
