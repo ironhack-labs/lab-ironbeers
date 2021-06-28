@@ -1,8 +1,14 @@
 const express = require('express');
 
 const hbs = require('hbs');
+
+
+
 const path = require('path');
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
+
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
+
 
 const app = express();
 const punkAPI = new PunkAPIWrapper();
@@ -22,4 +28,35 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+app.get('/beers', (req, res) => {
+
+punkAPI
+  .getBeers()
+  .then(beersFromApi => {
+    
+    res.render('beers', {listOfBeers: beersFromApi});
+  })
+  .catch(error => console.log(error));
+
+    // console.log('Beers from the database: ', beersFromApi)
+  });
+
+app.get('/random-beer', (req, res) => {
+
+  punkAPI
+  .getRandom()
+  .then(responseFromApi => {
+
+    res.render('random-beer', {randomBeer: responseFromApi});
+  })
+  .catch(error => console.log(error));
+});
+
+app.get('/beer/:id', (req, res) => {
+res.render('beer-details')
+}
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
+
+
+
