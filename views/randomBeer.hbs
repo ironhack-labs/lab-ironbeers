@@ -1,14 +1,14 @@
 <div class="infoBox">
 
-{{#with beer}}
-  {{> beerPartial this}}
-{{/with}}
+    {{#with beer}}
+      {{> beerPartial this}}
+    {{/with}}
 
-        <p>food pairing: <b> <br>{{beer.food_pairing}}</b></p>
-        <p>Brewers Tips: <b> <br>{{beer.brewers_tips}}</b></p>
-
-{{!-- {{beer.first_brewed}} --}}
-          
-
+            <p>food pairing: <b> <br>{{beer.food_pairing}}</b></p>
+            <p>Brewers Tips: <b> <br>{{beer.brewers_tips}}</b></p>
+            {{beer.abv}}
 
 </div>
+
+
+<a class="button" style="margin-bottom:50px; margin-left: 50px;" href="/"> back </a> 

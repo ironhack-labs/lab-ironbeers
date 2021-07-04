@@ -1,7 +1,7 @@
 .nav-bar a {
     font-size: 2em;
     text-decoration: none;
-    color: black);
+    color: black;
   }
   
     .nav-bar {
@@ -35,8 +35,18 @@
   margin-top: 50px;
 }
 
-.buttonOne {
-  background-color: #4CAF50; /* Green */
+#infoBox{
+  margin-left: 100px;
+  margin-right: 200px;
+  background-color: grey;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.button {
+  background-color: black;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -44,23 +54,9 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin-right: 10px;
-}
-
-.buttonTwo {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-right: 10px;
-}
-
-#home{
-  background-color: lightgray;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
 }
 
 .displayWelcome{

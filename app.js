@@ -40,10 +40,24 @@ app.get('/random-beer', (req, res, next) => {
   .catch(error => console.log(error))
 });
 
-// Render oldest beers
+// Render OLD beers
 
-app.get('/latest', (req, res) => {
+app.get('/old', (req, res) => {
   punkAPI.getBeers({'brewed_before':'01-2010'})
+      .then((beers) => {
+
+      //console.log(beers);
+
+      res.render('beers', {beers});
+       })
+      .catch(error => console.log(error))
+});
+
+
+// Render STRONG beers
+
+app.get('/strong', (req, res) => {
+  punkAPI.getBeers({'abv_gt': 10})
       .then((beers) => {
 
       console.log(beers);
@@ -52,6 +66,7 @@ app.get('/latest', (req, res) => {
        })
       .catch(error => console.log(error))
 });
+
 
 app.get('/', (req, res) => {
   //console.log('Hello')
