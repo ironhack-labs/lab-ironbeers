@@ -1,0 +1,6 @@
+{
+    "[handlebars]": {
+
+        "editor.suggest.insertMode": "replace",
+    }
+}
