@@ -5,3 +5,135 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  line-height: 1.5;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar {
+  background-color: rgb(25, 33, 41);
+  padding: 1% 0;
+position: relative;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 2em;
+  color: white;
+}
+
+.navbar-list {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar-list li {
+  list-style: none;
+  text-align: center;
+}
+
+/* CONTENT */
+h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 2rem;
+}
+
+/* INDEX */
+#root {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 5% 15%;
+}
+
+.rootImage {
+  width: 400px;
+}
+
+.indexLink {
+  background-color: #0a2c42;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(108, 113, 117);
+  padding: 1%;
+  margin: 2%;
+}
+
+.indexLink:hover {
+background-color: #2081c3;
+}
+
+.link {
+  text-decoration: none;
+  color:#f7f9f9;
+}
+
+/* BEERS */
+
+.beerContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.eachBeer {
+  background-color: #bfbfbf;
+  width: 300px;
+  margin: 2%;
+  padding: 1% 2%;
+}
+
+.beerContent {
+  width: 300px;
+  box-shadow: 5px;
+}
+
+.image {
+  height: 150px;
+}
+
+.randomHeading {
+  text-align: center;
+  margin: 2% 0;
+}
+
+.randomBeer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  background-color: rgb(25, 33, 41);
+  color: white;
+  text-align: center; 
+  padding: 1% 20%;
+  position: static;
+}
