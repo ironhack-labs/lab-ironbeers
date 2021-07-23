@@ -5,3 +5,96 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('/images/beerSweat.png');
+  background-size: cover;
+}
+
+nav {
+  background-color: #2081c3;
+  box-shadow: 0px 2px 4px black;
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 13px;
+}
+
+nav li {
+  padding-right: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+  text-shadow: 2px 2px 2px black;
+  padding: 10 10 10 10;
+  margin-top: 20px;
+}
+
+.beerMug {
+  width: 250px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+  margin-bottom: 30px;
+}
+
+/* .beerPic {
+      margin-top: 80px;
+      margin-bottom: 40px;
+      display: flex;
+      align-content: center;
+  } */
+
+.center {
+  margin: auto;
+  margin-top: 80px;
+  width: 200px;
+  /* border: 5px solid #FFFF00; */
+  padding: 10px;
+}
+
+div.buttonA {
+  width: 155px;
+  display: flex;
+  margin-left: 30px;
+}
+
+div.buttonB {
+  width: 155px;
+  display: flex;
+  margin-left: 25px;
+}
+
+div input {
+  background-image: linear-gradient(#6489a7, #1c5380);
+  padding: 5px 10px 5px 10px;
+  border: #06365f solid 1px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px black;
+  box-shadow: 0px 2px 4px black;
+}
+
+.beerPage {
+  margin: 10 50 50 50;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px white;
+}
+
+.smallBeers {
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+  margin-bottom: 30px;
+}
