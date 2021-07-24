@@ -1,7 +1,5 @@
 const express = require('express');
 
-//ironbeer test
-
 const hbs = require('hbs');
 const path = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
@@ -19,6 +17,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 // ...
 
 // Add the route handlers here:
+
+app.get('/beers', (req, res) => {
+  punkAPI
+    .getBeers()
+    .then(beersFromApi =>
+      console.log('Beers from the database: ', beersFromApi)
+    )
+    .catch(error => console.log(error));
+  res.render('beers');
+});
 
 app.get('/', (req, res) => {
   res.render('index');
