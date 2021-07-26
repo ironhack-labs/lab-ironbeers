@@ -2,10 +2,22 @@
 <p>{{randomBeer.name}}</p>
 <p>{{randomBeer.description}}</p>
 <p>{{randomBeer.tagline}}</p> --}}
+
+
+  
 {{>beerpartial randomBeer}}
-<ul>
-  {{#each randomBeer.food_pairing}}
-    <li>{{this}}</li>
-  {{/each}}
-</ul>
-<p>{{randomBeer.brewers_tips}}</p>
+
+<div class="right description">
+  <p class="bolder">Food Paring</p>
+  <ul>
+    {{#each randomBeer.food_pairing}}
+      <li class="indent">{{this}}</li>
+    {{/each}}
+  </ul>
+  <p><span class="bolder">Brewers Tips:</span> {{randomBeer.brewers_tips}}</p>
+</div>
+
+
+
+
+
