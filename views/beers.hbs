@@ -3,10 +3,10 @@
 <ul class = "container-grid">
 
 {{#each beers}}
-	<li class="grid-item">
+<li class="grid-item">
 
-		<a href="/beers/{{beers.name}}"></a>
+		<a href="/beers/{{this._id}}"></a>
 	</li>
-
+{{> beerpartial this}}
 {{/each}}
 </ul>

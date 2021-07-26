@@ -1,4 +1,4 @@
-require("dotenv/config");
+// require("dotenv/config");
 
 const express = require('express');
 
@@ -14,6 +14,10 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
+
+
 //app.use("/beers", require("beers"));
 
 // Register the location for handlebars partials here:
@@ -28,40 +32,41 @@ app.get('/', (req, res) => {
 
 
 app.get("/beers", (req, res, next)=> {
-    punkAPI.getBeers()
+    punkAPI
+  .getBeers()
   .then((apiRes) => {
-    const data = {
-      beers: apiRes.results,
-    };
-    console.log(apiRes.results);
-    res.render("beers.hbs", data);
-  })
+
+    res.render("beers.hbs", {
+    beers: apiRes
+  });
   
+})
   .catch((error) => {
-  next(error);
-  
+  console.log(error);
+
 
   });
 
 });
 
-app.get("/:id", (req, res, next) => {
-  const { id } = req.params;
-
-  punkAPI.getBeers(id)
-  .then((apiRes) => {
-    const data = {
-      beers: apiRes,
-    };
-
-    res.render("beers.hbs", data);
-  })
-
-  .catch((error) => {
-    next(error);
-  });
-});
-
+//app.get("/:id", (req, res, next) => {
+//  const { id } = req.params;
+//
+//  punkAPI
+//  .getBeers()
+//  .then((apiRes) => {
+//    const data = {
+//      beers: apiRes,
+//    };
+//
+//    res.render("beers.hbs", data);
+//  })
+//
+//  .catch((error) => {
+//    next(error);
+//  });
+//});
+//
 //app.get("/", (req, res, next) => {
 // punkAPI.getBeers()
 //  .then((apiRes) => {
@@ -79,7 +84,22 @@ app.get("/:id", (req, res, next) => {
 //  
 //
 //  });
+
+
+app.get('/random-beer', (req, res, next) => {
+  punkAPI
+  .getRandom()
+  .then(apiRes => { 
+    res.render('random-beer.hbs', {
+      randomBeer: apiRes[0]
+    });
+  }) 
+  
+  .catch(error => {
+    console.log(error);
+  });
+})
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
 
 
-module.exports = app;
+//module.exports = app;
