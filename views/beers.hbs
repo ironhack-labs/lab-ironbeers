@@ -1,0 +1,12 @@
+<h1> beers list </h1>
+
+<ul class = "container-grid">
+
+{{#each beers}}
+	<li class="grid-item">
+
+		<a href="/beers/{{beers.name}}"></a>
+	</li>
+
+{{/each}}
+</ul>
