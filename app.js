@@ -26,7 +26,7 @@ app.get('/beers', (req, res, next) => {
   punkAPI
     .getBeers()
     .then(dbRes => {
-      //console.log('Beers from the DB: ', dbRes);
+      console.log('Beers from the DB: ', dbRes);
       res.render('beers.hbs', {
         beers: dbRes
       });
@@ -43,6 +43,19 @@ app.get('/random-beer', (req, res, next) => {
       //console.log('Random beer from the DB: ', dbRes);
       res.render('random-beer.hbs', {
         randomBeer: dbRes[0]
+      });
+    })
+    .catch(error => {
+      console.log(error);
+    });
+});
+
+app.get('/beers/:id', (req, res, next) => {
+  punkAPI
+    .getBeer(req.params.id)
+    .then(dbRes => {
+      res.render('beerDetails.hbs', {
+        beer: dbRes[0]
       });
     })
     .catch(error => {
