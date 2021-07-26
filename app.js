@@ -22,14 +22,24 @@ app.get("/beers", (req, res, next) => {
     }).catch(error => console.log(error));
 });
 
-app.get("/random-beer", (req, res, next) => {
-    punkAPI.getRandom().then((beer) => {
-        console.log(beer);
-        res.render('random-beer.hbs', {
-            beer: beer[0]
-        })
+// app.get("/random-beer", (req, res, next) => {
+//     punkAPI.getRandom().then((beer) => {
+//         console.log(beer);
+//         res.render('random-beer.hbs', {
+//             beer: beer[0]
+//         })
 
-    }).catch(error => console.log(error));
+//     }).catch(error => console.log(error));
+// });
+
+app.get("/beers/beer-:id", (req, res, next) => {
+    punkAPI.getBeer(req.params.id)
+        .then((beer) => {
+            console.log(beer);
+            res.render('random-beer.hbs', {
+                beer: beer[0]
+            });
+        }).catch(error => console.log(error));
 });
 
 // Register the location for handlebars partials here:
@@ -41,5 +51,6 @@ app.get("/random-beer", (req, res, next) => {
 app.get('/', (req, res) => {
     res.render('index');
 });
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

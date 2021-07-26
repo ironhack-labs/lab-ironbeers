@@ -3,10 +3,7 @@
   <ul>
     {{#each beers}}
       <li>
-        {{this.name}}
-        <img src="{{this.image_url}}">
-         {{this.description}}
-        {{this.tagline}}
+        {{> beerpartial this}}
       </li>
 
     {{/each}}
