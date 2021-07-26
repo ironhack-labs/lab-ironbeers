@@ -1,7 +1,10 @@
 <div class="beer">
-    {{this.name}}
     <img src="{{this.image_url}}">
-    {{this.description}}
-    {{this.tagline}}
-    <a href="/beers/beer-{{this.id}}">{{this.name}}</a>
+    <h2>
+        <a href="/beers/beer-{{this.id}}">{{this.name}}</a>
+    </h2>
+    <h5>
+        {{this.tagline}}
+    </h5>
+    <p class="description">{{this.description}}</p>
 </div>
