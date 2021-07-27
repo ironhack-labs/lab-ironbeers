@@ -1,3 +1,3 @@
-<h1>
-  {{beers}}
-</h1>
+{{#each beersFromApi}}
+{{> beerCard this}}
+{{/each}}
