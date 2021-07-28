@@ -1,7 +1,37 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+.navigation {
+    background-color: #2882c1;
+    height: 5vh;
+    padding-top: 3vh;
+    color: white;
+}
+
+a {
+    margin-left: 5vw;
+    margin-top: 5vh;
+}
+
+a:visited {
+    color: white;
+}
+
+.beer {
+    height: 60vh;
+    width: auto;
+    margin-top: 5vh;
+    margin-left: 35vw;
+}
+
+.button {
+    background-color: #2882c1;
+    height: 2vh;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.beers {
+    height: 20vh;
+}
