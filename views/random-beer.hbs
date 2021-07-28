@@ -14,8 +14,10 @@
         <p>Description {{description}}</p> 
         <b>{{tagline}}</b>   
         <p><b>Food paring</b></p>
-        {{#each beers.food_pairing}}
-    
+        {{#each food_pairing}}
+            <ul>
+                <li>{{this}}</li>
+            </ul>
         {{/each}}
         <p><b>Brewers Tips:</b>{{brewers_tips}}</p>      
     {{/each}}
