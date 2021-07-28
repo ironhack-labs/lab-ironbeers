@@ -1,8 +1,5 @@
 <div>
-  {{#each this}}
-    <img height='100' src='{{image_url}}' alt='' />
-    <h2>{{name}}</h2>
-    <p>{{description}}</p>
-    <h3>{{tagline}}</h3>
-  {{/each}}
+    {{#each this}}
+        {{> beerpartial}}
+    {{/each}}
 </div>
