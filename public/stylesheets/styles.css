@@ -43,6 +43,8 @@ footer {
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 40px;
+  position: static;
+  bottom: 0;
 }
 
 /* hOME */

@@ -29,9 +29,18 @@ app.get('/beers', (req, res) => {
     .catch(error => console.log(error));
 });
 
-app.get('/', (req, res) => {
-  res.render('index');
+
+app.get('/beers/:id', (req, res) => {
+  const { id } = req.params;
+  punkAPI
+    .getBeer(id)
+    .then(beersFromApi => {
+      res.render('beer', { beer: beersFromApi }); //
+    })
+    .catch(error => console.log(error));
 });
+
+
 
 // add route for random beer
 
@@ -43,6 +52,12 @@ app.get('/random-beer', (req, res) => {
       console.log('THIS ARE RANDOM BEERS', responseFromApi);
     })
     .catch(error => console.log(error));
+});
+
+// add main route
+
+app.get('/', (req, res) => {
+  res.render('index');
 });
 
 // LISTEN
