@@ -34,6 +34,18 @@ app.get('/beers', (req, res) => {
     .catch(error => console.log(error));
 });
 
+app.get('/beers/:id', (req, res) => {
+  const splitParam = req.params.id.split('-');
+  const id = splitParam[splitParam.length - 1];
+  punkAPI
+    .getBeer(id)
+    .then(responseFromAPI => {
+      console.log('Beer from the database: ', responseFromAPI);
+      res.render('random-beer', { responseFromAPI });
+    })
+    .catch(error => console.log(error));
+});
+
 app.get('/random-beer', (req, res) => {
   punkAPI
     .getRandom()
