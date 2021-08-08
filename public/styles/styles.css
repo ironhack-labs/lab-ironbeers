@@ -84,8 +84,6 @@ img.bottle {
 }
 
 .button {
-    border-color: #3498db;
-    color: #fff;
     box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
     transition: all 150ms ease-in-out;
 }
@@ -98,7 +96,6 @@ img.bottle {
     appearance: none;
     background-color: transparent;
     border-radius: 0.6em;
-    color: #e74c3c;
     cursor: pointer;
     display: flex;
     -webkit-align-self: center;
@@ -117,18 +114,12 @@ img.bottle {
     width: 250px;
 }
 
-.btn:hover,
-.btn:focus {
-    color: #fff;
-    outline: 0;
-}
-
 li.btn.button {
     margin: 20px 0 0 30px;
 }
 
 li a {
-    color: #fff;
+    color: #2F4F4F;
     text-decoration: none;
     margin: 0 auto;
 }
