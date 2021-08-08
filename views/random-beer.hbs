@@ -1,0 +1,7 @@
+<div class="card">
+    {{#each responseFromAPI}}
+        {{> beerpartial}}
+    {{/each}}
+    <p>{{responseFromAPI.food_pairing}}</p>
+    <p>{{responseFromAPI.brewers_tips}}</p>
+</div>
