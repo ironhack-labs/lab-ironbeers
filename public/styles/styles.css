@@ -65,8 +65,9 @@ ul li {
     display: flex;
     flex-direction: column;
     text-align: left;
-    max-width: 33%;
+    max-width: 30%;
     margin: 0 auto;
+    padding: 0 7px;
 }
 
 img.bottle {
@@ -130,4 +131,8 @@ li a {
     color: #fff;
     text-decoration: none;
     margin: 0 auto;
+}
+
+p span {
+    font-weight: bold;
 }
