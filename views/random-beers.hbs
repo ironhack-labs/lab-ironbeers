@@ -1,0 +1,18 @@
+<div class='container'>
+  <h1>Random Beers</h1>
+  <hr />
+
+  <div>
+
+    {{#each responseFromAPI}}
+      <li> {{name}} </li>
+      <li><img src={{'image_url'}} alt='lolxd' /></li>
+      <li>{{description}}</li>
+      <li>{{tagline}}</li>
+      <li>{{food_pairing}}</li>
+
+    {{/each}}
+
+  </div>
+
+</div>

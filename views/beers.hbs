@@ -1,0 +1,19 @@
+<div class='container'>
+  <h1>Beers</h1>
+  <hr />
+
+  <div>
+    <img src='https://images.punkapi.com/v2/24.png' alt='beer' />
+
+    {{#each beersFromApi}}
+      <li>{{name}}</li>
+      <li>{{img}}</li>
+      <li>{{description}}</li>
+      <li>{{tagline}}</li>
+      <li></li>
+
+    {{/each}}
+
+  </div>
+
+</div>
