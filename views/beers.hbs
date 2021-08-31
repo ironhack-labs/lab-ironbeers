@@ -3,8 +3,6 @@
     <meta charset='UTF-8' />
     <meta http-equiv='X-UA-Compatible' content='IE=edge' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-    <title>IronBeers</title>
-
     <link
       href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css'
       rel='stylesheet'
@@ -12,16 +10,25 @@
       crossorigin='anonymous'
     />
     <link rel='stylesheet' href='./stylesheets/styles.css' />
+    <title>IronBeers</title>
   </head>
   <body>
-    <div class='container first-container'>
-      <div class='row image'>
-        <img src='./images/beer.png' alt='' />
-      </div>
+    <div class='cards-container'>
+
+      {{#each beersFromApi}}
+        {{>beerpartial}}
+        {{!-- <div class='card' style='width: 18rem;'>
+          <img src='{{image_url}}' class='card-img-top' alt='...' />
+          <div class='card-body'>
+            <h5 class='card-title'>{{name}}</h5>
+            <p class='card-text'>{{tagline}}</p>
+            <p class='card-text'>{{description}}</p>
+          </div>
+        </div> --}}
+
+      {{/each}}
+
     </div>
-    <div class='container second-container'>
-      <a class='btn' href='/beers' role='button'>Check the Beers!</a>
-      <a class='btn' href='/random-beer' role='button'>Check a Random Beer!</a>
-    </div>
+
   </body>
 </html>
