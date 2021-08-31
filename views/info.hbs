@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row beer-card d-flex justify-content-center">
+        <div class='card-text'> 
+            {{#each infoBeer}}
+
+            <div class="card-container col-12">
+                <div class="card">
+                    {{>beerpartial}}
+
+                    <p class='card-text'>
+                        <b>Food Pairing:</b>
+                    </p>
+                    <ul>
+                        {{#each this.food_pairing}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+                    
+                    <p class='card-text'>
+                        <b>Brewer Tips:</b>
+                        {{this.brewers_tips}}
+                    </p>
+                </div>
+            </div>
+            
+            </div>
+
+            {{/each}}
+        </div>
+    </div>
+  
+</div>
+
+    
+    
+    
