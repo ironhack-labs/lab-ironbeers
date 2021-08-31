@@ -5,3 +5,22 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.container {
+  height: 600px;
+}
+
+.card1 {
+  height: 300px;
+  text-align: center;
+}
+
+.card1 img {
+  height: 100%;
+  width: auto;
+}
+
+.row {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}

@@ -1,0 +1,15 @@
+<div class='container'>
+  <h1>Beers</h1>
+  <div class='row'>
+    {{#each responseFromAPI}}
+
+      <h1><img src='{{image_url}}' /> </h1>
+      <h1>Name: {{name}} </h1>
+      <h1>Description: {{description}} </h1>
+      <h1> Dagline: {{tagline}} </h1>
+      <h1>Food pairing: {{food_pairing}} </h1>
+      <h1> Brewer_tips: {{brewer_tips}} </h1>
+
+    {{/each}}
+  </div>
+</div>
