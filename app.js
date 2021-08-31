@@ -26,7 +26,7 @@ hbs.registerPartials(__dirname + "/views/partials");
       .getBeers()
       .then(beersFromApi => {
         console.log('Beers from the database: ', beersFromApi)
-        res.render('beers', {beersFromApi});
+        res.render("beers", {beersFromApi});
       })
     .catch(error => console.log(error));
   });
@@ -37,7 +37,7 @@ hbs.registerPartials(__dirname + "/views/partials");
       .getRandom()
       .then(responseFromAPI => {
         console.log('random beer from the database: ', responseFromAPI)
-        res.render('random-beer', {responseFromAPI});
+        res.render("random-beer", {responseFromAPI});
       })
     .catch(error => console.log(error));
   });
