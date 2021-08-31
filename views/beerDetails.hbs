@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+<body>
+    <br>
+    <div class="container" id="randombeer">
+        {{#each beersFromApi}}
+            {{>beerpartial}}
+            <p><b>Food Pairing:</b></p>
+            <ul>{{#each food_pairing}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p><b>Brewer Tips:</b>{{brewers_tips}}</p>
+        {{/each}} 
+            </div>
+        </div>
+    <div>
+</body>
+</html>

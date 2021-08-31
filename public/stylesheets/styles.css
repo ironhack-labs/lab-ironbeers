@@ -5,3 +5,75 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+nav {
+  background-color: #2081c3;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+}
+
+.home > img {
+  width: 30%;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+#beers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: center;
+}
+
+#beers img {
+  width: 10%;
+  padding-bottom: 1rem;
+  object-fit: cover;
+}
+
+h5 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+
+#beers p {
+  width: 20rem;
+}
+
+main {
+  padding-top: 3rem;
+}
+
+#randombeer img {
+  width: 10rem;
+  padding-right: 5rem;
+}
+
+#randombeer #partial {
+  display: flex;
+}
+
+#randombeer p {
+  width: 50rem;
+}
+
+#randombeer a {
+  cursor: default;
+  pointer-events: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+}
