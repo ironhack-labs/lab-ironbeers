@@ -26,6 +26,12 @@ h5{
     font-weight: 600;
     font-size: 1.1em;
 }
+h5 a, 
+h5 a:hover{
+text-decoration: none;
+color: black;
+}
+
 
 
 /* NAV GENERIC */

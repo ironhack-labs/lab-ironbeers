@@ -20,8 +20,16 @@ hbs.registerPartials(__dirname + "/views/partials");
   //Index (Home)
   app.get("/", (req, res, next) => res.render("index"))
 
+/*   app.get('/user/:id?', function userIdHandler (req, res) {
+    console.log(req.route)
+    res.send('GET')
+  })
+ */
+
+
   //Beers
   app.get('/beers', (req, res) => {
+    console.log('entra')
     punkAPI
       .getBeers()
       .then(beersFromApi => {
@@ -29,6 +37,16 @@ hbs.registerPartials(__dirname + "/views/partials");
         res.render("beers", {beersFromApi});
       })
     .catch(error => console.log(error));
+  });
+
+  app.get('/beers/:id', (req, res) => {
+     punkAPI
+      .getBeer(req.params.id)
+      .then(beersFromApi => {
+        console.log('Beers from the database: ', beersFromApi)
+        res.render("beers", {beersFromApi});
+      })
+    .catch(error => console.log(error)); 
   });
 
   app.get("/random-beer", (req, res, next) => {
