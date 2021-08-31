@@ -109,3 +109,8 @@ display: -webkit-box;
 -webkit-line-clamp: 3;
 -webkit-box-orient: vertical;
 }
+
+.maxLayout{
+    min-height: 700px !important;
+    max-height: 700px !important;
+}
