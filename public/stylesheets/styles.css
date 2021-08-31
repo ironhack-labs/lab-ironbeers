@@ -5,3 +5,139 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f9f9;
+    font-family: Arial, Helvetica, sans-serif!important;
+}
+
+nav {
+    background-color: #2081c3;
+    padding: 1rem!important;
+}
+
+nav a {
+    color: #f7f9f9!important;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 .5rem;
+    transition: color .15s ease-in-out;
+}
+
+nav a:hover {
+    color: #bfbfbf!important;
+}
+
+.container {
+    min-height: calc(100vh - 76.8px - 75.2px);
+}
+
+/*Home*/
+
+.image-wrapper {
+    width: 25rem;
+    margin: 0rem 0 2rem 5rem;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+.btn-home {
+    background-color: #2081c3;
+    padding: 1rem;
+    font-weight: bold;
+    margin: 1rem;
+    color: #f7f9f9;
+    width: 15rem;
+}
+
+.btn-home:hover {
+    color: #bfbfbf!important;
+}
+
+/*Beers*/
+
+.beers {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body h1 {
+    font-size: 2.5rem;
+    color: #2081c3;
+    font-weight: bold;
+}
+
+.card-body h5 {
+    color: #bfbfbf;
+    font-weight: bold;
+}
+
+.card-img-wrapper {
+    width: 10rem;
+    display: flex;
+    text-align: center;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/*Random beer*/
+
+.random {
+    display: flex;
+    align-items: center;
+}
+
+.random h1 {
+    color: #2081c3;
+}
+
+.random .row {
+    display: flex;
+    justify-content: center;
+}
+
+.random .img-wrapper {
+    width: 10rem;
+    margin-right: 6rem;
+}
+
+.random .img-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+.random .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    background-color: #0a2c42;
+    color: #f7f9f9;
+    padding: 1.6rem;
+}
+
+footer p {
+    margin: 0!important;
+    font-weight: bold;
+}

@@ -1,0 +1,35 @@
+<main>
+
+<div class='container random'>
+
+  <div class='row'>
+     
+    <div class='col col-md-6 img-wrapper'>
+      <img src='{{image_url}}' alt='{{name}}' />
+    </div>
+
+    <div class='col-md-5 text-wrapper '>
+      <h1 class='beer-name'>
+        {{name}}
+
+      </h1>
+      <h3 class='beer-tag-line'>
+        {{tagline}}
+      </h3>
+      <p class='beer-description'>
+        {{description}}
+      </p>
+      <h3>Food Pairing</h3>
+      <ul class='beer-food-pairing'>
+        {{#each food_pairing}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <p>
+        <b>Brewer Tips: </b>
+        {{brewers_tips}}
+      </p>
+    </div>
+  </div>
+</div>
+</main>
