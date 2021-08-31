@@ -1,3 +1,10 @@
-<div>
-    hola
+<div class='container'>
+  <h1>Beers</h1>
+  <div class='row'>
+    <ul>
+      {{#each data}}
+        <li> <img src="{{this.image_url}}" alt="">  {{this.name}} {{this.description}} {{this.tagline}} </li>
+      {{/each}}
+    </ul>
+  </div>
 </div>
