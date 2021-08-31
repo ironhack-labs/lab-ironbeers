@@ -1,7 +1,24 @@
-/*
+/* 
 white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+
+.card-img-beer>img {
+    height:150px;
+    padding: 10px
+}
+
+ .card {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border: 3px solid rgba(0, 0, 0, 0.432);
+} 
+ .totalBeers{
+     margin: 30px;
+ }
+
