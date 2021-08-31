@@ -1,10 +1,14 @@
-<div>
+<div class="container" id="random">
     {{#each responseFromAPI}}
+    <div class="img">
         <img src="{{image_url}}" alt="beer image">
+    </div> 
+    <div class="text">
         <h5>{{name}}</h5>
         <p>{{tagline}}</p>
         <p>{{description}}</p>
-        <p>{{food_pairing}}</p>
-        <p>{{brewers_tips}}</p>
+        <p>Food pairing: {{food_pairing}}</p>
+        <p>Brewer tips: {{brewers_tips}}</p>
+    </div>
     {{/each}} 
 </div>
