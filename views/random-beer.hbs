@@ -4,13 +4,19 @@
     {{#each random}}
     <div class="row">
         
-        <div class="col-3"><img class= "image" src="{{this.image_url}}" alt="{{this.name}}"></div>
+        <div class="col-3"><img class= "image" src="{{image_url}}" alt="{{name}}"></div>
         <div class="col-9">
             <div class="row">
-                <div class="col-12">{{this.name}}</div>
-                <div class="col-12">{{this.description}}</div>
-                <div class="col-12">{{this.tagline}}</div>
-                <div class="col-12">{{this.brewers_tips}}</div>
+                <div class="col-12">{{name}}</div>
+                <div class="col-12">{{description}}</div>
+                <div class="col-12">{{tagline}}</div>
+                
+                <div class="col-12">{{brewers_tips}}</div>
+                <div class="col-12">
+                    {{#each food_pairing}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </div>
             </div>
         </div>
 

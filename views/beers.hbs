@@ -3,14 +3,17 @@
     <h1>Cervezas</h1>
     <hr>
     <div class="row">
+    {{>partialsBeers}}
+    {{!-- <div class="row">
         {{#each beersList}}
-           <li class="col-6">
+           <li class="col-12">
              <img class ="image"src="{{image_url}}" alt="{{name}}">
             </li>
-            <li class="col-1"><p>{{name}}</p></li>
-            <li class="col-3"><p>{{description}}</p></li>
-            <li class="col-2"><p>{{tagline}}</p></li>   
+            <li class="col-12"><p>{{name}}</p></li>
+            <li class="col-12"><p>{{description}}</p></li>
+            <li class="col-12"><p>{{tagline}}</p></li>   
         
         {{/each}}
-        </div>
+        </div> --}}
     </div>
+</div>

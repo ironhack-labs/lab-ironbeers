@@ -1,0 +1,23 @@
+
+{{!-- <div class="row"> --}}
+    <div class="col-4"></div>
+    {{#each beersList}}
+    
+        <div class="row">
+    <li class="col">
+        <img class="image" src="{{image_url}}" alt="{{name}}">
+    </li>
+    <li class="col">
+        <p>{{name}}</p>
+    </li>
+    <li class="col">
+        <p>{{description}}</p>
+    </li>
+    <li class="col">
+        <p>{{tagline}}</p>
+    </li>
+    </div>
+
+    {{/each}}
+    </div>
+{{!-- </div> --}}
