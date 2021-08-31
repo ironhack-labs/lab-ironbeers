@@ -35,8 +35,8 @@ $ git push origin master
 
 To run our application, the first thing you have to do is to install all of its dependencies. Run the following command:
 
-```shell
-$ npm install
+```shellnpm install
+$
 ```
 
 To run the app:
@@ -74,7 +74,7 @@ Layout done, let's move to creating these three pages.
 
 The next thing we will be working on is a page where we can present all the beers we will retrieve from the remote database. This page will be rendered every time the user visits the the `/beers` route.
 
-This leads us to the conclusion that in this step, we have the two main focus areas:
+This leads us to the co1nclusion that in this step, we have the two main focus areas:
 
 - the `/beers` route and
 - the `beers.hbs` view.
