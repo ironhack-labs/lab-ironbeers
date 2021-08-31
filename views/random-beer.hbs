@@ -1,48 +1,10 @@
-<!-- views/index.hbs -->
-
-<div class="container">
-  <div class="row justify-content-around">
-    <div class="col-md-4">
-      <div class="card">
-        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_OERZ8iocfWup4uRUhjxY_zncbKN02QawHJMqp9qa2RjC6PaI"
-            alt="NBA teams">
-        <div class="card-body">
-          <h5 class="card-title">Teams</h5>
-          <p class="card-text">Here we can check all NBA Teams</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_OERZ8iocfWup4uRUhjxY_zncbKN02QawHJMqp9qa2RjC6PaI"
-            alt="NBA teams">
-        <div class="card-body">
-          <h5 class="card-title">Teams</h5>
-          <p class="card-text">Here we can check all NBA Teams</p>
-        </div>
-      </div>
-    </div>
-        <div class="col-md-4">
-      <div class="card">
-        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_OERZ8iocfWup4uRUhjxY_zncbKN02QawHJMqp9qa2RjC6PaI"
-            alt="NBA teams">
-        <div class="card-body">
-          <h5 class="card-title">Teams</h5>
-          <p class="card-text">Here we can check all NBA Teams</p>
-        </div>
-      </div>
-    </div>
-  </div>
+<div>
+    {{#each responseFromAPI}}
+        <img src="{{image_url}}" alt="beer image">
+        <h5>{{name}}</h5>
+        <p>{{tagline}}</p>
+        <p>{{description}}</p>
+        <p>{{food_pairing}}</p>
+        <p>{{brewers_tips}}</p>
+    {{/each}} 
 </div>
-
-
-
-<!-- views/players.hbs -->
-
-{{!-- <div class="container">
-  <h1>Randome Beer</h1>
-  <div class="row">
-    {{> beerCard}}
-  </div>
-</div> --}}
-
