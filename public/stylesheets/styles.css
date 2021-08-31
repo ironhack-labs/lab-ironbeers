@@ -5,3 +5,60 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    justify-items: center;
+}
+
+footer{
+    background-color: #0a2c42;
+    color: white;
+    font-size: .7em;
+    text-align: left;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.col-12{
+    justify-content: center;
+    display: flex;
+    padding: 8px;
+    color: white;
+}
+
+.col-4 {
+    padding: 40px;
+    /* background-color: red; */
+    height: fit-content;
+}
+
+.card-title{
+    line-height: 50px;
+}
+
+.image-beer{
+    height: 450px;
+    width: 450px;
+    padding: 30px;
+
+}
+
+.random {
+    margin: 10%;
+}
+
+.card-img-top{
+    height: 400px;
+    width: 150px;
+    margin-left: 60px;
+}
+
+.player-card{
+    /* background-color: black; */
+    height: 400px;
+    justify-content: center;
+}
+

@@ -1,0 +1,24 @@
+<div>
+    {{#each responseFromAPI}}
+    <div class="container">
+        <div class="row random">
+            <div class="col-6">
+                <img src="{{image_url}}" class=" col-2 offset-2 img-fluid" alt="{{name}}">
+            </div>
+            <div class="col-6">
+                <h3 class="card-title">{{name}}</h3>
+                <h4 class="card-subtitle mb-2 text-muted">{{tagline}}</h4>
+                <p class="card-text">{{description}}</p>
+                <h4>Food Pairing</h4>
+                <ul>
+                    {{#each food_pairing}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                
+                <p><strong>Brewers Tips:</strong> {{brewers_tips}}</p>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
