@@ -2,12 +2,7 @@
   <h1>Beers</h1>
   <div class="row">
       {{#each beersFromApi}} 
-	  	<div>
-		  <img src="{{image_url}}"/>
-          <h3>Name: {{name}}</h1> 
-		  <h3>Description: {{description}}</h3>
-		  <h3>Tagline: {{tagline}}</h3>
-		</div>
+        {{> beerCard this}}
       {{/each}}
   </div>
 </div>
