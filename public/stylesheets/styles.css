@@ -14,6 +14,19 @@ body{
     margin: 100px 0px;
 }
 
+p{
+    font-size: 0.8em;
+}
+p.tag{
+    font-size: 0.8em;
+    color: #bfbfbf;
+}
+
+h5{
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
 
 /* NAV GENERIC */
 nav{
@@ -77,27 +90,42 @@ footer p{
 
 /* Beers */
 #beers img{
-    max-width: 50px;
+    width:auto;
+    height:150px;
+}
+
+#beers .img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 0;
+}
+
+
+#beers .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* RANDOM BEER */
 
-#random {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
+
+#random .img{
+    width: 15%;
+    float: left;
+
 }
-.img{
-    display: flex;
-    justify-content: center;
-    padding: 0px 50px;
+#random img{
+    height: 200px;
 }
 
-.img img{
-    width: 100px;
-}
 
-.text {
-    padding: 20px 50px;
+#random p.padding{
+    padding-left: 15%;
+    
+}
+#random p.padding span{
+ font-weight: 600;
+
 }

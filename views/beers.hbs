@@ -1,16 +1,12 @@
 
 <div class="container" id="beers">
-    {{#each beersFromApi}}
-    <div class="imgb">
-        <img src="{{image_url}}" alt="beer image">
-    </div>
-    <div class="textb">
-        <h5>{{name}}</h5>
-        <p>{{tagline}}</p>
-        <p>{{description}}</p>
-    </div>    
-    {{/each}} 
+  <div class="row">
+        {{#each beersFromApi}}
+        <div class="col-md-4">
+        {{> beerpartial }} 
+{{!--         <button><a href="/beers{{id}}">go to beer</a></button> --}}
+        </div>
+        {{/each}}
+  </div>
 </div>
-
-
 

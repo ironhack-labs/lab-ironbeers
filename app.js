@@ -31,13 +31,13 @@ hbs.registerPartials(__dirname + "/views/partials");
     .catch(error => console.log(error));
   });
 
-  //Random Beer
   app.get("/random-beer", (req, res, next) => {
     punkAPI
       .getRandom()
-      .then(responseFromAPI => {
-        console.log('random beer from the database: ', responseFromAPI)
-        res.render("random-beer", {responseFromAPI});
+      .then(beersFromApi => {
+        console.log('random beer from the database: ', beersFromApi)
+        res.render("random-beer"
+        , {beersFromApi});
       })
     .catch(error => console.log(error));
   });
