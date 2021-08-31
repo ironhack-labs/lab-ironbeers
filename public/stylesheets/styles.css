@@ -74,24 +74,66 @@ font-family: Arial, Helvetica, sans-serif;
 
 .maestro {
   display: flex;
+  justify-content: space-around;
   flex-direction: row;
-  border: 3px solid blue;
-  width: 300px;
+  flex-wrap: wrap;
+  margin-top: 80px;
 }
 
 .container-card {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border: 3px solid black;
-  width: 300px;
+  align-items: center;
+  width: 400px;
 }
 
 .container-card-info {
-  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 30px;
 }
 
 .container-card-beerImg img {
-  width: 100px;
-  height: 300px;
+  width: 80px;
+  height: 260px;
+}
+
+.random-beer {
+  margin-top: 80px;
+  height: 320px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.random-beer-img {
+  margin-left: 200px;
+  margin-top: 0px;
+}
+
+.random-beer-info {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 50px;
+  width: 800px;
+}
+
+.random-beer-img img {
+  width: 80px;
+  height: 260px;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  margin-top: 5rem;
+  text-align: center;
+  justify-content: left;
+  padding-top: 1.2rem;
+  padding-bottom: 1.5rem;
+  background-color: #0a2c42;
+  color: white;
+}
+
+.footer p {
+  margin-left: 40px;
+  font-family: 'Courier New', Courier, monospace;
 }
