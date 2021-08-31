@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Register the location for handlebars partials here:
 
-// ...
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 // Add the route handlers here:
 
@@ -32,6 +32,15 @@ app.get('/beers', (req, res) => {
   })
   .catch(error => console.log(error));
 });
+// app.get('/beers', (req, res) => {
+//   punkAPI
+//   .getBeer(id)
+//   .then(idBeer =>{
+//     res.render('beers', {data: idBeer})
+//   }) 
+//MIRAR TEORIA req.param
+//   .catch(error=> console.log(error));
+// })
 
 app.get('/random-beer', (req, res) => {
   punkAPI

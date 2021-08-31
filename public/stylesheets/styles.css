@@ -5,3 +5,60 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif; */
 
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    background-color: #2081c3;
+}
+.navbar-nav > a{
+    font-size: 1.5em;
+    margin: 0 10px;
+}
+.navbar-nav > a:hover{
+    color: #0a2c42
+}
+.nav-item{
+    text-decoration: none;
+    color: #f7f9f9;
+}
+
+#beers{
+    height: 250px;
+    object-fit: scale-down;
+    margin-bottom: 25px;
+}
+
+.links{
+    text-decoration: none;
+    color: black;
+}
+
+p{
+    color:grey;
+}
+
+h6{
+    color: black;
+}
+
+.card{
+    border: none;
+    margin: 10px 40px;
+}
+
+.buttons > div> a{
+    font-size: 2em;
+    background-color: #0a2c42;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px #2081c3;
+}
+
+.buttons > div > a:hover{
+    font-size: 2.3em;
+}

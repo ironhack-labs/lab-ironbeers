@@ -1,10 +1,9 @@
 <div class='container'>
-  <h1>Random-beer</h1>
   <div class='row'>
     <ul>
       {{#each data}}
-        <li> <img src="{{this.image_url}}" alt=""> {{this.name}} {{this.description}} {{this.tagline}} {{this.food_pairing}} {{this.brewers_tips}} </li>
-      {{/each}}
+        {{> beerpartials}}      
+    {{/each}}
     </ul>
   </div>
 </div>

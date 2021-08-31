@@ -1,10 +1,12 @@
 <div class='container'>
-  <h1>Beers</h1>
-  <div class='row'>
-    <ul>
+  <div class='row py-5'>
       {{#each data}}
-        <li> <img src="{{this.image_url}}" alt="">  {{this.name}} {{this.description}} {{this.tagline}} </li>
+     <div class="col-4">
+        <a class="links" href="">
+             {{> beerpartials}}
+        </a>
+    </div>  
       {{/each}}
-    </ul>
+    
   </div>
 </div>
