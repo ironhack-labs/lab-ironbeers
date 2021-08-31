@@ -26,11 +26,6 @@ h5{
     font-weight: 600;
     font-size: 1.1em;
 }
-h5 a, 
-h5 a:hover{
-text-decoration: none;
-color: black;
-}
 
 
 
@@ -112,6 +107,11 @@ footer p{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#beers a {
+    text-decoration: none;
+    font-weight: 600;
 }
 
 /* RANDOM BEER */
