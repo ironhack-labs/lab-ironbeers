@@ -5,6 +5,10 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 footer{
     background-color: #0a2c42 !important;
     color:#f7f9f9;
@@ -56,7 +60,8 @@ nav p{
 }
 .btnBeer:hover{
     text-decoration: none;
-    color:black;
+    color: #f7f9f9;
+    background-color: #0a2c42;;
 }
 .imageBeers img{
     max-width: 100px;
@@ -67,4 +72,40 @@ nav p{
 
 .imageBeers{
     text-align: center;
+}
+.card-custom {
+    max-width: 500px;
+}
+.cardLink{
+    text-decoration: none !important;
+}
+
+.cardLink a{
+    text-decoration: none !important;
+}
+
+.row mt-5 justify-content-center a{
+    text-decoration: none !important;
+}
+
+.card-body h2{
+    color:black;
+}
+
+.card-body p{
+    color:#bfbfbf;
+    font-size:14px;
+}
+
+.card-text{
+    color:black !important;
+}
+
+.card {
+    min-height: 600px;
+    max-height: 600px;
+    overflow: hidden;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
 }
