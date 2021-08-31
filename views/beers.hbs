@@ -1,0 +1,15 @@
+
+<div class="container d-flex align-content-stretch flex-column">
+    {{#each beersFromApi}}
+    <div class="row margin-top margin-bottom">
+        <div class="col">
+            <img class="beers" src="{{image_url}}">
+        </div>
+        <div class="col">
+            <p class="bold">{{name}}</p>
+            <p>{{description}}</p>
+            <p class="tag">{{tagline}}</p>
+        </div>
+    </div>
+    {{/each}}
+</div>
