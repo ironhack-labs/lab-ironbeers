@@ -6,8 +6,20 @@ grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
 
+.container_index {
+  text-align: center;
+}
+
+.index_image img {
+  margin: 80px 80px;
+}
+
+.index_firstBut {
+  margin-bottom: 50px;
+}
+
 footer {
-  background-color: #2081c3;
+  background-color: #0a2c42;
   font-size: 1.2rem;
   text-align: center;
   color: white;
@@ -43,4 +55,9 @@ footer {
 
 .beer_tagline {
   color: grey;
+}
+
+#beerName {
+  font-size: 3rem;
+  text-align: center;
 }

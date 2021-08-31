@@ -43,4 +43,24 @@ app.get('/random-beer', (req, res) => {
   .catch(error => console.log(error));
 })
 
+app.get('/beer-info/:tagId', function(req, res) {
+  punkAPI
+  .getBeer(req.param("tagId"))
+  .then(getBeer => { console.log('This is your beer: ', getBeer)
+  res.render('beer-info', {beerInfo: getBeer})
+})
+  .catch(error => console.log(error));
+})
+
+
+
+// app.get('/beer-info', (req, res) => {
+//   punkAPI
+//   .getBeer()
+//   .then(getBeer => { console.log('This is your beer: ', getBeer)
+//   res.render('beer-info', {beerInfo: getBeer})
+// })
+//   .catch(error => console.log(error));
+// })
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
