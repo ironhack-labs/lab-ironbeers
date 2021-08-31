@@ -1,0 +1,24 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Document</title>
+  </head>
+  <body>
+    {{#each responseFromAPI}}
+      <div class="random-beer">
+        <img src='{{image_url}}' alt='beer image' />
+      </div>
+      <div>
+        <div class='info'>
+          <h3>{{name}}</h3>
+          <p>{{tagline}}</p>
+          <p>{{description}}</p>
+          <p>{{food_pairing}}</p>
+          <p>{{brewers_tips}}</p>
+        </div>
+      </div>
+    {{/each}}
+  </body>
+</html>

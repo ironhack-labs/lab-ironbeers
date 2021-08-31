@@ -6,19 +6,19 @@
     <link rel='stylesheet' href='/stylesheets/styles.css' />
     <title>Document</title>
   </head>
-  <body>
-    <div class='div'>
-      <div class='div-img'>
-        <img src='/images/beer.png' alt='' />
-      </div>
-      <div class='div-a'>
-        <div class="div-a-a1">
-          <a href='/beers'>Check the Beers!</a>
+  <body class="body">
+    <div class="maestro">
+      <div class='container-card'>
+        <div class='container-card-beerImg'>
+          <img src='{{this.image_url}}' alt='beer image' />
         </div>
-        <div class='div-a-a2'>
-          <a href='/random-beer'>Check a Random Beer!</a>
+        <div class='container-card-info'>
+          <h3>{{this.name}}</h3>
+          <p>{{this.tagline}}</p>
+          <p>{{this.description}}</p>
         </div>
       </div>
     </div>
+
   </body>
 </html>

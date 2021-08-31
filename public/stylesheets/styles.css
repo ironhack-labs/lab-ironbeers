@@ -5,3 +5,93 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #2081c3;
+  height: 80px;
+}
+
+.navbar a {
+  text-decoration: none;
+  margin-left: 50px;
+  color: white;
+}
+
+.div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.div-img img {
+  margin-top: 60px;
+  width: 350px;
+  height: 350px;
+}
+
+.div a {
+  text-decoration: none;
+  color: white;
+}
+
+.div-a {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.div-a-a1 {
+  display: flex;
+  width: 150px;
+  height: 40px;
+  background-color: #2081c3;
+  border-radius: 8%;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-a-a2 {
+  display: flex;
+  width: 200px;
+  height: 40px;
+  background-color: #2081c3;
+  border-radius: 8%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.maestro {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid blue;
+  width: 300px;
+}
+
+.container-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px solid black;
+  width: 300px;
+}
+
+.container-card-info {
+  color: black;
+}
+
+.container-card-beerImg img {
+  width: 100px;
+  height: 300px;
+}
