@@ -5,3 +5,26 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.image{
+    max-height: 300px;
+    min-height: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    margin:20px auto;
+
+}
+
+.btnBeer{
+   background-color: #2081c3;
+   color:white;
+   border-radius: 20px;
+   padding:20px;
+   text-align: center;
+   margin-bottom:10px;
+   text-decoration: none;
+}
+.btnBeer:hover{
+    text-decoration: none;
+    color:black;
+}
