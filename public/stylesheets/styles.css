@@ -5,14 +5,43 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+footer{
+    background-color: #0a2c42 !important;
+    color:#f7f9f9;
+}
+nav{
+    background-color: #2081c3;
+   
+}
+
+nav *{
+    color:#f7f9f9 !important;
+}
+
+nav p{
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-right:60px !important;
+}
+
+.hoverNav:hover{
+    color:#0a2c42 !important;
+}
 
 .image{
+    max-height: 300px;
+    min-height: 300px;
+    min-width: 100px;
+    max-width: 100px;
+    margin:20px auto;
+}
+
+.image2{
     max-height: 300px;
     min-height: 300px;
     min-width: 300px;
     max-width: 300px;
     margin:20px auto;
-
 }
 
 .btnBeer{
@@ -23,8 +52,19 @@ font-family: Arial, Helvetica, sans-serif;
    text-align: center;
    margin-bottom:10px;
    text-decoration: none;
+   margin-top:20px;
 }
 .btnBeer:hover{
     text-decoration: none;
     color:black;
+}
+.imageBeers img{
+    max-width: 100px;
+    min-width: 100px;
+    max-height: 300px;
+    min-height: 300px;
+}
+
+.imageBeers{
+    text-align: center;
 }
