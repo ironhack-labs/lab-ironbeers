@@ -6,18 +6,20 @@ grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
 
-
-.navigation-bar {
-
-    color: white
+.container {
+    margin-top: 4rem;
 }
-/* .footer{
+.footer{
     border: 1px solid green;
     background-color: #0a2c42 ;
     position: fixed;
     width: 100%;
+    height: 4%;
+    text-align: left;
+    color: white;
+    z-index: 1;
     bottom: 0;
-} */
+}
 
 .home {
     display: flex;
@@ -26,14 +28,19 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 .home img {
-    width: 40%;
-    margin: 0 auto;
+    margin-top: 4rem;
+    width: 20%;
+    margin-left: 39%;
+
+    /* margin: 0 auto; */
+
 }
 .home a {
-    margin-top:  2rem;
-    width: 30%;
-    margin: 0 auto;
+    margin-top: 1rem;
+    width: 20%;
+    margin-left: 38% ;
 }
+
 /* beers */
 .container-beers {
     display: flex;
@@ -53,7 +60,10 @@ font-family: Arial, Helvetica, sans-serif;
     width: 100px;
     height: 400px;
     object-fit: cover;
-    /* width: 15%; */
+}
+.container-random {
+
+    /* border: 1px solid green; */
 }
 
 .container-beers img {
@@ -62,11 +72,15 @@ font-family: Arial, Helvetica, sans-serif;
     height: 450px;
     object-fit: cover;
 }
-.card-img-top{
-    /* height: %; */
-    /* width: 40%; */
-    /* object-fit: cover; */
-}
 .card {
+    margin-top: 2rem;
     padding: 2rem;
+}
+.container-text {
+    height: 300px;
+    width: 290px;
+    white-space: wrap;
+    text-overflow: fade;
+    overflow: hidden;
+
 }
