@@ -1,0 +1,29 @@
+<div class="container">
+
+    {{>beerpartial}}
+
+    <h5>Food Pairing</h5>
+    <ul>
+        {{#each food_pairing}}
+            <li>{{this}}</li>
+        {{/each}}
+    </ul>
+
+    <h5>Brewer tips</h5>
+    <p>{{brewers_tips}}</p>
+
+    <h5>Volume</h5>
+    <p>{{volume.value}} {{volume.unit}}</p>
+
+    <h5>Ingredients</h5>
+    <ul>
+        {{#each ingredients.malt}}
+            <li>{{name}}</li>
+        {{/each}}
+        {{#each ingredients.hops}}
+            <li>{{name}}</li>
+        {{/each}}
+        <li>{{ingredients.yeast}}</li>
+    </ul>
+
+</div>

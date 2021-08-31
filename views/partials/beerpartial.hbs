@@ -1,0 +1,14 @@
+<div class="card beer-card column marginb">
+
+    <!-- To prevent broken images because some have null image_url -->
+    {{#if image_url}}
+        <img src="{{image_url}}" class="card-img-top" alt="{{name}}">
+    {{/if}}
+
+    <div class="card-body">
+        <a href="/beers/{{id}}"><h4 class="card-title">{{name}}</h4></a>
+        <h5 class="card-title">{{tagline}}</h5>
+        <p class="card-text">{{description}}</p>
+    </div>
+
+</div>
