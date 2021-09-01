@@ -6,8 +6,21 @@ grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
 
-nav {
+#navbar {
   background-color: #2081c3;
+}
+
+.btnHomepage {
+  background-color: #2081c3;
+  color: #0a2c42;
+  border: solid 2px #0a2c42;
+  height: 2.5rem;
+  width: 13rem;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  margin-right: 6rem;
 }
 
 .home {
@@ -19,7 +32,7 @@ nav {
 
 .home > img {
   width: 30%;
-  padding-top: 5rem;
+  padding-top: 1rem;
   padding-bottom: 3rem;
 }
 
@@ -33,9 +46,10 @@ nav {
 }
 
 #beers img {
-  width: 10%;
+  width: 15%;
   padding-bottom: 1rem;
   object-fit: cover;
+  height: 220px;
 }
 
 h5 {
