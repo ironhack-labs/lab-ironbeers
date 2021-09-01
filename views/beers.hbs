@@ -8,14 +8,14 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
+    <div class='beers'>
         {{#each beersFromApi}}
-    <div>
-        <img class="image" src="{{image_url}}">
-        <p class="title">{{name}}</p>
-        <p class="text">{{description}}</p>
-        <p class="tag">{{tagline}}</p>
-    </div>
+      <div>
+          <img class="image" src="{{image_url}}">
+          <p class="title">{{name}}</p>
+          <p class="text">{{description}}</p>
+          <p class="tag">{{tagline}}</p>
+      </div>
         {{/each}}
     </div>
 </body>

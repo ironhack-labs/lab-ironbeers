@@ -10,10 +10,43 @@ body{
     padding-left: 20px;
 }
 
-.navbar{
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     background-color: #2081c3;
+    height: 80px;
 }
 
-.nav-item.nav-link, .nav-link.active {
-    color: #f7f9f9;
+.navbar a {
+    text-decoration: none;
+    margin-left: 50px;
+    color: white;
+  }
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.beers{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+#random-beer{
+    margin-top: 80px;
+    height: 320px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.random-info{
+    justify-content: center;
+    flex-direction: column;
 }
