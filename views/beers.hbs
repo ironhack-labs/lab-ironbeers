@@ -1,0 +1,12 @@
+
+<div class="container" id="beers">
+  <div class="row">
+        {{#each beersFromApi}}
+        <div class="col-md-4">
+        {{> beerpartial }} 
+        <a href="/beers/{{id}}">See beer</a>
+        </div>
+        {{/each}}
+  </div>
+</div>
+
