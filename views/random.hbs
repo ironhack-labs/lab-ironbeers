@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row align-items-start">
+    <div class="col">
+        <img class="col-2 offset-2 img-fluid" src={{responseFromAPI.0.image_url}} alt="{{responseFromAPI.0.name}}"> 
+    </div>
+    <div class="col">
+        <h1>{{responseFromAPI.0.tagline}}</h1>
+        <h4 class="card-subtitle text-muted">My name is {{responseFromAPI.0.name}}</h4>
+        <p>{{responseFromAPI.0.description}}</p>
+        <h4>Food Pairing</h4>
+        <ul>
+        {{#each responseFromAPI.0.food_pairing}}
+            <li>{{this}}</li>
+        {{/each}}
+        </ul>
+        <p><strong>Brewers Tips:</strong> {{responseFromAPI.0.brewers_tips}}</p>
+    </div>
+  </div>
+
+
