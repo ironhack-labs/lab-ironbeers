@@ -1,0 +1,28 @@
+<div class="container">
+
+    <div class="row totalMargin">
+
+        {{#each beerArr}}
+        <div class="col-md-2 imgRandom">
+            <img src="{{image_url}}" class="imgRandom" alt="{{name}} ">
+        </div>
+        <div class="col-md-10">
+            <div class="beer-columTwo">
+                <h4>{{name}}</h4>
+            </div>
+            <div class="colorBlueFont">
+                <p>{{tagline}}</p>
+            </div>
+            <p>{{description}}</p>
+            {{#each food_pairing}}
+            <p>
+                {{this}}
+            </p>
+            {{/each}}
+            <p>{{brewers_tips}}</p>
+        </div>
+        {{/each}}
+
+    </div>
+
+</div>
