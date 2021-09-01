@@ -4,4 +4,58 @@ light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
-*/
+
+
+
+. 
+*/   
+.container{
+    margin-top: 20px;
+  
+}
+.btn{
+    margin-top: 30px;  
+    margin-right: 90px;
+}
+
+.bg-blue{
+    background-color: #2081c3;
+} 
+
+.nav-link{
+    color: white; 
+    margin-left: 30px;
+}  
+
+.nav-link2{
+    color: white;
+}
+
+footer{
+    background-color: #0a2c42;
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    right: 0 ;   
+    color: white;
+    
+} 
+
+img{
+    width: 320px;
+} 
+
+
+
+.card-image{
+    width: 820px; 
+    height: 500px; 
+    object-fit: contain;
+}
+ 
+
+.card__image__random{
+    width: 220px; 
+    height: 320px; 
+    object-fit: contain; 
+}
