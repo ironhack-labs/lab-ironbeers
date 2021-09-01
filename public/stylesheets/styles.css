@@ -5,3 +5,29 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+img{
+    height: 300px;
+}
+
+.random{
+    margin-top: 30px;
+}
+.tagline{
+    color:#bfbfbf;
+}
+.center{
+    text-align: center;
+    margin-top: 50px;
+    
+}
+footer {
+    background-color: #343a40;
+    font-size: .7em;
+    color: white;
+    padding: 4px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
