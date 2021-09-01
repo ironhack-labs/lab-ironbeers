@@ -1,7 +1,47 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+
+
+.tag  {
+    color: #bfbfbf
+}
+  
+.navbar {
+    margin-bottom: 80px; 
+}
+.bold{
+    font-weight: bold;
+}
+
+.center{
+    text-align: center;
+}
+
+.buttonsOne{
+    margin-bottom: 30px;
+}
+
+.dimension{
+    height: 300px;
+    width: 50%;
+}
+
+footer {
+    background-color: #0a2c42;
+    font-size: .7em;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.player-card {
+    margin-bottom: 40px;
+}
+
+.player-card img {
+    height: 900px;
+    object-fit: cover;
+    object-position: top;
+}
+
