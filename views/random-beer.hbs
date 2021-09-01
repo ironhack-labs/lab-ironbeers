@@ -1,0 +1,24 @@
+<div class='d-flex justify-content-between'>
+  {{#each beersFromApi}}
+    <div class='flex-shrink-0 text-center'>
+      <img class='me-5' src='{{image_url}}' alt='{{name}}' height='300px' />
+    </div>
+    <div class='flex-grow-1 ms-3'>
+      <h1 class='title'>{{name}}</h1>
+      <p class='text-muted subtitle'>{{tagline}}</p>
+      <p>
+        {{description}}
+      </p>
+      <h4>Food Pairing</h4>
+      <ul>
+        {{#each food_pairing}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <p>
+        <span class='fw-bold'>Brewers Tips:</span>
+        {{brewers_tips}}
+      </p>
+    </div>
+  {{/each}}
+</div>

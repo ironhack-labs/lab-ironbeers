@@ -1,0 +1,60 @@
+<html lang='en' class='h-100'>
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>lab-ironbeerse</title>
+    <link
+      href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css'
+      rel='stylesheet'
+      integrity='sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We'
+      crossorigin='anonymous'
+    />
+    <link rel='stylesheet' href='/stylesheets/styles.css' />
+  </head>
+  <body class='vh-100'>
+    <nav class='navbar navbar-expand-lg py-3 fixed-top shadow'>
+      <div class='container'>
+        <a href='/' class='navbar-brand'>Lab IronBeerse</a>
+        <button
+          class='navbar-toggler navbar-dark'
+          type='button'
+          data-bs-toggle='collapse'
+          data-bs-target='#navbar'
+        >
+          <span class='navbar-toggler-icon'></span>
+        </button>
+        <div class='collapse navbar-collapse' id='navbar'>
+          <ul class='navbar-nav ms-auto'>
+            <li class='nav-item'>
+              <a href='/' class='nav-link'>Home</a>
+            </li>
+            <li class='nav-item'>
+              <a href='/beers' class='nav-link'>Beers</a>
+            </li>
+            <li class='nav-item'>
+              <a href='/random-beer' class='nav-link'>Random Beer</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class='text-dark py-5'>
+      <div class='container'>
+        {{{body}}}
+      </div>
+    </section>
+    <footer class='fixed-bottom pt-2'>
+      <div class='container'>
+        <p class='lead mb-2'>Develop by Ironhack ;)</p>
+      </div>
+    </footer>
+    <script
+      src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js'
+      integrity='sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj'
+      crossorigin='anonymous'
+    ></script>
+  </body>
+
+</html>
