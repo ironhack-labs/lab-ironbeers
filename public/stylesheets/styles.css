@@ -5,3 +5,55 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #bfbfbf;
+    height: 100%;
+}
+nav {
+    overflow: hidden;
+    background-color: #2081c3;
+}
+nav a {
+    float: left;
+    color: #f7f9f9;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:40px; 
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: #0a2c42;
+    color: #f7f9f9;
+}
+#home_img {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+}
+.button {
+    background-color: #2081c3;
+    border: none;
+    color: aliceblue;
+    border-radius: 6px;
+    height: 30px;
+    padding: 10px;
+    margin: 14px;
+    width: 200px;
+}
+#button_container {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    flex-direction: column;
+    align-items: center;
+}

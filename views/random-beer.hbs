@@ -1,3 +1,6 @@
-{{#each allBeers}}
+{{#each allRandomBeers}}
+    {{> beerDetails this}}
+{{/each}}
+{{#each allRandomBeers}}
     {{> randomBeerDetails this}}
 {{/each}}

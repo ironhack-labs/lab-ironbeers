@@ -1,9 +1,10 @@
-<div>
-    <img src="/images/beer.png" alt="">
+<div id="home_img">
+    <img src="/images/beer.png" alt="Bierkrug" style="width: 150px;">
 </div>
-<div>
-    <a href="/beers">Check the Beers!</a>
+<div id="button_container">
+    <button class="button" onclick="window.location.href='/beers';">Check the Beers!</button>
+    {{!-- <a href="/beers">Check the Beers!</a> --}}
+    {{!-- <a href="/random-beer">Check a Random Beer</a> --}}
+    <button class="button" onclick="window.location.href='/random-beer';">Check a Random Beer</button>
 </div>
-<div>
-    <a href="/random-beer">Check a Random Beer</a>
-</div>
+<footer>Developed by an Ironhacker ;)</footer>
