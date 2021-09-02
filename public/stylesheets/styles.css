@@ -45,15 +45,15 @@ footer {
     border: none;
     color: aliceblue;
     border-radius: 6px;
-    height: 30px;
+    height: 40px;
     padding: 10px;
-    margin: 14px;
+    margin: 10px;
     width: 200px;
+    cursor: pointer;
 }
 #button_container {
     display: flex;
-    justify-content: center;
-    padding-top: 70px;
+    padding-top: 40px;
     flex-direction: column;
     align-items: center;
 }
