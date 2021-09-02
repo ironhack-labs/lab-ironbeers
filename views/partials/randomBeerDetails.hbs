@@ -1,0 +1,23 @@
+<div>
+    <img src="{{image_url}}" alt="Image for {{name}}">
+</div>
+<div>
+    {{name}}
+</div>
+<div>
+    {{description}}
+</div>
+<div>
+    {{tagline}}
+</div>
+<div>
+    <h3>Food Pairing</h3>
+    {{#each food_pairing}}
+        <ul>
+            <li>{{this}}</li>
+        </ul>
+    {{/each}}
+</div>
+<div>
+    {{brewers_tips}}
+</div>
