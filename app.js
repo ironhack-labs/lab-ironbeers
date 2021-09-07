@@ -1,11 +1,9 @@
 const express = require('express');
-///ghjgljgxcvlkkjdlkdjvlk
+
 const hbs = require('hbs');
 const path = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
-//pruegba de commit
 
-//prueba de commit
 const app = express();
 const punkAPI = new PunkAPIWrapper();
 
@@ -21,13 +19,26 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Add the route handlers here:
 
 app.get('/', (req, res) => {
-  res.send('éstoy en index');
-  /*   res.render('index'); */
+  //res.send('éstoy en index');
+  res.render('index');
 });
 
 app.get('/beers', (req, res) => {
-  res.send('éstoy en beers');
-  /*   res.render('index'); */
+  punkAPI
+    .getBeers()
+    .then(
+      (
+        beersFromApi //res.send(beersFromApi))
+      ) => res.render('beers', { beersFromApi })
+    )
+    .catch(error => console.log(error));
+
+  //res.send('éstoy en beers');
+});
+
+app.get('/random-beers', (req, res) => {
+  //res.send('éstoy en index');
+  res.render('random-beers');
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
