@@ -1,8 +1,19 @@
-<h1>With a sight of a beer we will you delight here</h1>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Document</title>
+    <link rel='stylesheet' href='../stylesheets/styles.css' />
+  </head>
+<body>
+<h1>BEERS</h1>
 <p></p>
 
-{{#each beersFromAPi}}
+{{#each data}}
 
-  <p>{{this.name}}</p>
-  <p>{{this.image}}</p>
+  <p>{{name}}</p>
+  
 {{/each}}
+
+</body>

@@ -26,11 +26,7 @@ app.get('/', (req, res) => {
 app.get('/beers', (req, res) => {
   punkAPI
     .getBeers()
-    .then(
-      (
-        beersFromApi //res.send(beersFromApi))
-      ) => res.render('beers', { beersFromApi })
-    )
+    .then(beersFromApi => res.render('beers', { data: beersFromApi }))
     .catch(error => console.log(error));
 
   //res.send('éstoy en beers');
@@ -42,3 +38,12 @@ app.get('/random-beers', (req, res) => {
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
+
+// HBS
+//hay q poner <htm>, <body></body> ???
+
+//HBS
+//Porque en beers no me aparece la frase que pongo en hbs?
+
+//APP.JS
+//IMPRIMIR o VIEW (?) el array de beers en beers.hbs, con su foto y nombre
