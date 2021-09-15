@@ -1,0 +1,15 @@
+{{#each beer}} 
+<img src="{{this.image_url}}" width="200" height="250" />
+        {{this.name}} 
+        {{this.description}} 
+        {{this.tagline}}
+        <ul>
+   
+     {{#each this.food_pairing}} {{! ITERE EL FOOD PAIRING }}
+
+      <li>{{this}}</li>  
+     {{/each}}
+</ul>
+        {{this.brewers_tips}}
+        
+{{/each}}
