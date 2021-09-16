@@ -5,3 +5,127 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+:root {
+    --white-color: #f7f9f9;
+    --light-blue-color: #2081c3;
+    --dark-blue-color: #0a2c42;
+    --grey-color: #bfbfbf;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    padding-bottom: 58px;
+}
+
+.main-navigation {
+    background-color: var(--light-blue-color);
+}
+
+.main-navigation ul {
+    display: flex;
+    padding: 10px;
+    margin: 0;
+}
+
+.main-navigation ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+.mt5 {
+    margin-top: 45px !important;
+}
+
+.main-navigation ul li a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+#beers-layout {
+    margin: 45px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card {
+    padding: 0 15px;
+    width: calc(33.33% - 30px);
+}
+
+.card h2,
+.card h4 {
+    margin-bottom: 5px;
+}
+
+.card .info-tag {
+    color: var(--grey-color);
+    margin: 0;
+}
+
+.card a {
+    color: var(--dark-blue-color);
+    text-decoration: none;
+}
+
+.card .card-top {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home img {
+    margin-top: 45px;
+}
+
+.home a {
+    width: 250px;
+    background-color: var(--light-blue-color);
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--white-color);
+    margin: 30px 0;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.50);
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--dark-blue-color);
+    padding: 20px 0;
+}
+
+footer span {
+    font-size: 15px;
+    color: var(--white-color);
+    font-weight: bold;
+}
