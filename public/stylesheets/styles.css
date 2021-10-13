@@ -5,3 +5,101 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: #2081c3;
+    padding: 24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 24px;
+}
+
+nav a:hover {
+    border: 1px solid white;
+    padding: 8px 24px;
+}
+
+.main-site {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-image {
+    display: flex;
+    margin: 40px auto;
+    width: 25vw;
+}
+
+.button {
+    margin: 16px;
+    width: 15vw;
+    text-align: center;
+    background-color: #2081c3;
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px black;
+}
+
+.button:hover {
+    color: #2081c3;
+    background-color: white;
+    border: 2px solid #2081c3;
+}
+
+.beer-basic-info{
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.beer-basic-info div {
+    width: 25vw;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.beer-basic-info div h3{
+    color: black;
+    margin: 8px 0;
+}
+
+.beer-basic-info div h4 {
+    color: #bfbfbf;
+    margin: 0;
+}
+
+.beer-basic-info div p {
+    color: black;
+    text-align: justify;
+}
+
+.beer-basic-info a {
+    text-decoration: none;
+}
+
+.beer-basic-info img {
+    max-height: 25vh;
+}
+
+.random-beer {
+    margin: 40px;
+}
+
+.random-beer img{
+ height: 50vh;
+}
