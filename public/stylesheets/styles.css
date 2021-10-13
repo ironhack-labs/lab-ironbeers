@@ -1,7 +1,42 @@
-/*
-white: #f7f9f9;
+
+/* white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+font-family: Arial, Helvetica, sans-serif; */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+nav {
+    background-color: #2081c3;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+ nav a {
+     color: white;
+     text-decoration: none;
+     margin: 10px;
+     font-size: 1.8rem;
+ }
+
+ div {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+     height: 50vh;
+ }
+
+ .beer {
+     max-width: 200px;
+ }
+
