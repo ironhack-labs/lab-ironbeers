@@ -29,4 +29,14 @@ app.get('/beers', (request, response, next) => {
   .catch(error => console.log(error));
 });
 
+app.get('/random-beer', (request, response, next) => {
+  punkAPI
+  .getRandom()
+  .then(beer => {
+    console.log(beer);
+    response.render('random-beer', beer[0]);
+  })
+  .catch(error => console.log(error));
+});
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
