@@ -1,15 +1,13 @@
-{{#each responseFromAPI}}
 
-<img src="{{this.image_url}}">
-
-<p>{{this.name}}</p>
-
-<p>{{this.description}}</p>
-
-<h4>{{this.tagline}}</h4>
 
 <p>{{this.food_pairing}}</p>
 
 <p>{{this.brewers_tips}}</p>
+
+
+
+{{#each this.responseFromAPI}}
+
+{{> beerpartial this}}
 
 {{/each}}
