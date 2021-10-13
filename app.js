@@ -37,7 +37,4 @@ app.get('/random-beer', (request, response) => {
 
 });
 
-punkAPI
-
-
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
