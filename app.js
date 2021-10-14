@@ -23,8 +23,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/beers', (request, response) => {
-  punkAPI
-    .getBeers()
+  punkAPI.getBeers()
     .then(beersFromApi => response.render('beers', beersFromApi))
     .catch(error => console.log(error));
 });
