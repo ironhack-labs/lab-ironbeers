@@ -1,4 +1,13 @@
 <div>
   <h1>Random beer</h1>
 
+  {{#each responseFromAPI}}
+      <img class='miniature' src='{{this.image_url}}' alt='img' />
+      <p class='title'> <strong>{{this.name}}</strong></p>
+      <p class='description'>{{this.description}}</p>
+      <p class='bottom'><i>"{{this.tagline}}"</i></p>
+      <p>{{this.food_pairing}}</p>
+      <p>{{this.brewer_tips}}</p>
+    {{/each}}
+
 </div>
