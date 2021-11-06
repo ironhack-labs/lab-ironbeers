@@ -1,4 +1,5 @@
-{{#each beer}}
-
-  {{name}}
-{{/each}}
+<ul>
+  {{#each beer}}
+    <li> <img src={{image_url}} />, {{name}}, {{desription}}, {{tagline}}</li>
+  {{/each}}
+</ul>
