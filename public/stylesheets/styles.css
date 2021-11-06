@@ -85,3 +85,13 @@ footer p {
     width: 25%;
     margin-bottom: 5%;
 }
+
+.random-beer {
+    display: flex;
+    flex-direction: row;
+}
+.random-beer img{
+    height: 450px;
+    width: auto;
+    padding: 5%;
+}
