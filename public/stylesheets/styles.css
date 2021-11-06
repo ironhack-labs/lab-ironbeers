@@ -6,8 +6,80 @@ grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
 
-
+body{
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
 .main-wrapper {
     text-align: center;
     margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  background-color: #2081c3;
+  font-size: .9rem;
+}
+
+.nav ul {
+  display: flex;
+}
+.nav li {
+  padding: 20px 30px;
+}
+
+.nav a{
+  color: #fff;
+}
+
+footer {
+  background-color: #0a2c42;
+  color: #fff;
+  padding: 20px;
+}
+
+.img-wrapper {
+  padding: 50px 0;
+}
+
+.wrapper-home-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.wrapper-home-btn a {
+  padding: 20px 30px;
+  margin: 10px 0;
+  background-color: #2081c3;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.beers-wrapper-img img {
+  width: 60px;
+  height: auto;
+}
+.beers-wrapper-img {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.beers-wrapper-info {
+  width: 60%;
+}
+
+.wrapper-img-info {
+  display: flex;
 }
