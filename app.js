@@ -21,10 +21,13 @@ hbs.registerPartials(__dirname+"/views/partials")
 app.get('/', (req, res) => {
   res.render('index');
 });
-app.get('/beers', (req, res) => {
-  res.render('beers');
+app.get('/beers', async (req, res) => {
+  const beers = await punkAPI.getBeers()
+  console.log(beers);
+
+  res.render('beers', {beers});
 });
-app.get('/random-beer', (req, res) => {
+app.get('/random-beer', async (req, res) => {
   res.render('random-beer');
 });
 

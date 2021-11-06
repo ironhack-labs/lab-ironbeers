@@ -58,13 +58,30 @@ body {
 }
 
 footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
     background-color: cornflowerblue;
-    margin: 0%;
-    bottom: 0%;
     color: cornsilk;
-    width: 100%;
-    position: absolute;
 }
 footer p {
     margin-left: 2%;
+}
+
+.beers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.beers p {
+    font-size: medium;
+}
+.beers img {
+    height: 200px;
+    width: auto;
+}
+.beers hr {
+    width: 25%;
+    margin-bottom: 5%;
 }
