@@ -1,9 +1,9 @@
-<div>
-  <img src='{{image_url}}' alt='{{name}}' />
-  <p>{{name}}</p>
-  <p>{{description}}</p>
+<div class="random-beer-container">
+  {{> beerpartial }}
+  <h3>Recommended Food Pairings:</h3>
   {{#each food_pairing}}
-    <p>{{this}}</p>
+    <p class="food-pairing">{{this}}</p>
   {{/each}}
-  <p>{{brewers_tips}}</p>
+  <h3>Brewer's tips</h3>
+  <p class="brewers-tips">{{brewers_tips}}</p>
 </div>
