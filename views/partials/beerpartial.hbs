@@ -1,7 +1,9 @@
 <div class='beer'>
-  <img src='{{this.image_url}}' alt='{{this.name}}' class='beer-image' />
+  {{#if this.image_url}}
+    <img src='{{this.image_url}}' alt='{{this.name}}' class='beer-image' />
+  {{/if}}
   <div class='beer-texts'>
-    <h2 class='beer-heading'>{{this.name}}</h2>
+    <h2 class='beer-heading'><a href='/beers/{{this.id}}'>{{this.name}}</a></h2>
     <p class='beer-tagline'>{{this.tagline}}</p>
     <p class='beer-description'>{{this.description}}</p>
   </div>
