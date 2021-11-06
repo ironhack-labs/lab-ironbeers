@@ -1,0 +1,11 @@
+{{!-- image_url
+name
+description
+tagline --}}
+<div>
+  {{#each beersData}}
+  {{!-- "this"--> is the current item/beer from the loop  --}}
+    {{>beerpartial this}}
+  {{/each}}
+</div>
+

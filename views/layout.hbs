@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/styles.css" />
+    {{!-- connect the stylesheet on this layout to have reference in all views --}}
+    <title>{{title}}</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/beers">Beers</a></li>
+      <li><a href="/random-beer">Random Beer</a></li>
+    </ul>
+  </nav> 
+  {{!-- the block for individual html to render here with triple curly braces
+  so, to say: inside this tripple curly braces, render this block statement with html --}}
+  {{{ body }}} 
+  <footer>Develop by Ironhack ;)</footer>
+</body>
+</html>
+
+

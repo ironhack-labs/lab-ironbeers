@@ -1,0 +1,21 @@
+{{!-- image_url
+name
+description
+tagline
+food_pairing // array -> [item1,item2,...]
+ brewers_tips --}}
+{{#each beerData}}
+  <div>
+    {{> beerpartial this}}
+    <div>
+      <h3>Food Pairing</h3>
+      <ul>
+        {{#each food_pairing}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </div>
+    <p><span>Brewer Tips: </span>{{brewers_tips}}</p>
+ </div>
+{{/each}}
+
