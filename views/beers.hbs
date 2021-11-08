@@ -1,5 +1,10 @@
-<ul>
-  {{#each beer}}
-    <li> <img src={{image_url}} />, {{name}}, {{desription}}, {{tagline}}</li>
+<div class='ctn-beers-all'>
+
+  {{#each beersArr}}
+<div class='ctn-beer'>
+
+   {{>beerpartial this}}
+   </div>
   {{/each}}
-</ul>
+</div>
+</div>

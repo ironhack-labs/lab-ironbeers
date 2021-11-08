@@ -1,0 +1,23 @@
+<div>
+  {{#if this.image_url}}
+    <img src='{{this.image_url}}' alt='{{this.image.name}}' />
+  {{/if}}
+</div>
+<div>
+  <div class='ctn-beer-title'>
+    <h2>
+      <a href='/beers/{{this.id}}'>
+        {{this.name}}
+      </a>
+    </h2>
+
+    <p class='beer-tagline'>
+      {{this.tagline}}
+    </p>
+  </div>
+  <div class='ctn-beer-text'>
+    <p class='beer-description'>
+      {{this.description}}
+    </p>
+  </div>
+</div>

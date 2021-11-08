@@ -1,0 +1,63 @@
+
+
+  <div class='ctn-beer'>
+
+ {{>beerpartial}}
+  <h3>Food Pairing:</h3>
+ {{#each food_pairing}}
+ <ul class='food-pairing'>
+
+<li>
+{{this}}
+</li>
+ </ul>
+{{/each}}
+<div>
+  
+<h3>
+  Brewers Tips: 
+</h3>
+<p class='brewers-tips'>
+{{brewers_tips}}
+</p>
+
+</div>
+<div>
+  
+<h3>
+  First Brewed: 
+</h3>
+<p class='brewers-tips'>
+{{first_brewed}}
+</p>
+
+</div>
+<div>
+  
+<h3>
+Ph: </h3>
+<p class='brewers-tips'>
+{{ph}}
+</p>
+
+</div>
+<div>
+  
+<h3>
+abv: </h3>
+<p class='brewers-tips'>
+{{abv}}
+</p>
+
+</div>
+ {{#ingredients}}
+ <p>
+
+ Yeast: {{yeast}}
+ 
+ </p>
+ {{/ingredients}}
+</div>
+
+
+
