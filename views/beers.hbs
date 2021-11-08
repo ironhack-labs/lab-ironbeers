@@ -1,9 +1,4 @@
 <!-- display: image, name, Discription, tagline -->
-<div class="beers">
     {{#each beers}}
-        <p>{{this.name}} - {{this.tagline}}</p>
-        <img src="{{this.image_url}}" alt="">
-        <p>{{this.description}}</p>
-        <hr>
+        {{> beerpartial}}
     {{/each}}
-</div>
