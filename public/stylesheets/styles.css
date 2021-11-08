@@ -15,6 +15,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 5%;
 }
 
 .navBar {
@@ -63,7 +64,7 @@ body {
 }
 
 footer {
-    position:absolute;
+    position:fixed;
     bottom:0;
     width:100%;
     background-color: cornflowerblue;
