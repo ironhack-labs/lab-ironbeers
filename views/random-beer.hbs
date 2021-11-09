@@ -1,0 +1,18 @@
+{{> menu }}
+<main>
+    <div class="container-beers">
+    <ul>
+    {{#each responseFromAPI}}
+    <li>
+        <img src="{{image_url}}" alt=""> 
+        <div>
+            <h2>{{name}} </h2><br>
+            <p>{{description}}</p><br>
+            <br>{{tagline}}
+        </div>
+    </li>
+    {{/each}} 
+    </ul>
+    </div>
+</main>
+{{> footer }}
