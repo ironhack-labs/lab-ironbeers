@@ -1,0 +1,21 @@
+<div>
+    <div class="container">
+        <div class="row justify-content flex-">
+            {{#each beersFromApi}}
+            {{> beerPartial this}}
+            </div>
+    {{!-- <div class="col-md-4">
+      <div class="beer">
+        <img width="20%" class="beer-img-top" src="{{this.image_url}}"
+          alt="beers images">
+        <div class="beer-body">
+          <h5 class="beer-title">{{this.name}}</h5>
+          <p class="beer-description">{{this.description}}</p>
+         <p class="beer-tagline">{{this.tagline}}</p>
+        </div>
+      </div>
+    </div> --}}
+            {{/each}}
+        </div>
+    </div>
+</div>
