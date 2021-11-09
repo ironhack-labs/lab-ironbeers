@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        {{#each responseFromAPI}}
+        <div class="card mb-3">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="{{this.image_url}}" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        {{>beerpartial this}}
+                        <p><strong>Food Pairing</strong></p>
+                        <ul>
+                            {{#each this.food_pairing}}
+                            <li>{{this}}</li>
+                            {{/each}}
+                        </ul>
+                        <p class="card-text"><strong>Brewer Tips:</strong>{{this.brewers_tips}}</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

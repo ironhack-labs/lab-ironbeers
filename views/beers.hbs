@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        {{#each beersFromApi}}
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="{{this.image_url}}" alt="" />
+                <div class="card-body">
+                    {{>beerpartial this}}
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
