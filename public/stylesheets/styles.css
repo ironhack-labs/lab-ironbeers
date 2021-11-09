@@ -5,3 +5,30 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+#index-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card img {
+    height: 200px;
+    object-fit: contain;
+    padding: 20px;
+}
+
+.beer {
+    width: 30%;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.buttons {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px auto;
+}
