@@ -3,18 +3,13 @@
 
     {{#each randomBeer}}
     
-    <img src="{{ image_url }}" alt="">
-    <br>
-    {{ name }}
-    <br>
-    {{ description }}
-    <br>
-    {{ tagline }}
-    <br>
-    {{ food_pairing }}
-    <br>
-    {{ brewers_tips }}
+    {{> beerpartial this}}
+
+    <div class="card-body">
+    <p class="card-text">{{ food_pairing }}</p>
     
+    <p class="card-text">{{ brewers_tips }}</p>
+    </div>
     
     {{/each}}
 
