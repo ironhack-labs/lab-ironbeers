@@ -1,21 +1,6 @@
 <div class="container">
-
     {{#each responseFromAPI}}
-
-    {{>beerpartial}}
-
-    <h4> Food pairing </h4>
-    <ul>
-        {{#each this.food_pairing}}
-        <li>{{this}}</li>
-        {{/each}}
-    </ul>
-
-    <p>
-        <strong>Brewers tips: </strong>
-        {{this.brewers_tips}}
-    </p>
-
+        {{>beerpartial}}
+        {{>beerpartial2}}
     {{/each}}
-
 </div>

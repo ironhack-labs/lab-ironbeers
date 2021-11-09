@@ -1,6 +1,14 @@
-<img src={{this.image_url}} alt='beer image' class='beer-img' />
-<a href='/beers/beer-{{this.id}}'>
-    <h2 class='beer-name'> {{this.name}} </h2>
-</a>
-<p class='beer-tagline'> {{this.tagline}} </p>
-<p class='beer-description'> {{this.description}} </p>
+<div class="card">
+    <img src={{this.image_url}} alt='beer image' class='card-img-top beer-img' />
+    <div class="card-body">
+        <a href='/beers/beer-{{this.id}}'>
+            <h2 class='card-title beer-name'> {{this.name}} </h2>
+        </a>
+    </div>
+    <div class="card-body">
+        <p class='card-text beer-tagline'> {{this.tagline}} </p>
+    </div>
+    <div class="card-body">
+        <p class='card-text beer-description'> {{this.description}} </p>
+    </div>
+</div>

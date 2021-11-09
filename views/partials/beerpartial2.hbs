@@ -1,0 +1,15 @@
+<div class="card-body">
+    <h3> Food pairing </h3>
+    <ul class="list-group">
+        {{#each this.food_pairing}}
+        <li class="list-group-item">{{this}}</li>
+        {{/each}}
+    </ul>
+</div>
+<div class="card-body">
+    <p class="card-text">
+        <strong>Brewers tips: </strong>
+        {{this.brewers_tips}}
+    </p>
+</div>
+

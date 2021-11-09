@@ -1,13 +1,9 @@
 <div class='container-fluid'>
     <ul class='row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 justify-content-between'>
         {{#each beersFromApi}}
-        <li class='col'>
-
+        <li class='col beer-list'>
             {{>beerpartial}}
-
         </li>
-        {{else}}
-        <li>No hay cervezas</li>
         {{/each}}
     </ul>
 </div>
