@@ -1,7 +1,56 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+
 font-family: Arial, Helvetica, sans-serif;
-*/
+
+}
+/* 
+light-blue: #2081c3;
+
+grey: #bfbfbf; */
+
+
+
+.beer img{
+ width: 400px;
+ padding: 50px;
+}
+
+.check, .randomb{
+    padding: 10px;
+}
+
+.card img {
+    
+    height: 200px;
+    object-fit: contain;
+    padding-top:20px;
+}
+
+.card p{
+    padding-top: 10px;
+}
+
+.randombeer{
+margin-top: 20px;
+}
+
+.random img{
+    width: 100px;
+    object-fit: cover;
+
+}
+
+footer{
+    background-color: #0a2c42;
+    color: #f7f9f9;
+    margin-bottom: 0px;
+    margin-top: 80px;
+    padding: 20px 0px;
+    
+}
+
