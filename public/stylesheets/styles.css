@@ -5,3 +5,36 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.card img {
+  height: 200px;
+  object-fit: contain;
+}
+
+.navBeer {
+  background-color: #2081c3;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main img {
+  margin-top: 20px;
+}
+.main a {
+  margin-top: 20px;
+}
+.footer {
+  background-color: #0a2c42;
+  color: white;
+}
+#link {
+  color: white;
+}
+.randomBeer img {
+  height: 500px;
+}
+p {
+  font-size: small;
+}
