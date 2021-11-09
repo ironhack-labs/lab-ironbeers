@@ -1,17 +1,28 @@
 <div class="container">
-    <h1>Cerveza random</h1>
     <div class="row">
+        
+    <div class="col-md-6"></div>
+    
         {{#each beers}}
         {{> beerpartial this}}
-        <p> Food Pairing: {{food_pairing}}  </p>
+    
+     <div class="col-md-6">
+        <ul>{{#each food_pairing}}
+            <li>
+                {{this}}
+            </li>
+                {{/each}}
+        </ul>
+        <p> Brewers Tips: {{brewers_tips}} </p>
             
-        {{!-- <ul> --}}
+        {{!-- <ul>}}
             {{!-- {{#each food_pairing}}
             {{this}}
              {{/each}} --}}
         {{!-- </ul> --}}
-        
-        <p> Brewers Tips: {{brewers_tips}}</p>
+
         {{/each}}
+      </div>  
     </div>
 </div>
+
