@@ -5,3 +5,19 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.card-img-top {
+    height: 300px;
+    width: 110px;
+    margin-left: 100px;
+}
+
+.card-title {
+    height: 120px;
+    width: 160px;
+}
+
+.card-text {
+    height: 300px;
+    width: 300px;
+}

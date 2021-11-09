@@ -1,0 +1,11 @@
+<body>
+        <h1>Beers</h1>
+    <div class="container">
+    <div class="row">
+    {{#each beersFromApi}}
+     <div class="col-md-4">
+       {{> beerPartials this}}
+       </div>
+    {{/each}}
+  </div>
+</div>
