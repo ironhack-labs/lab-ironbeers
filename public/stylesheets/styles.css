@@ -5,6 +5,10 @@ body {
   margin-bottom: 50px;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 h2 {
   font-size: 25px;
   font-weight: bold;
@@ -21,6 +25,12 @@ ul {
   list-style: none;
 }
 
+.card {
+  height: 500px;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+
 .beer-list > li {
   padding: 0 15px;
   margin-bottom: 15px;
@@ -29,6 +39,10 @@ ul {
 .beer-img {
   width: 100%;
   height: 200px;
+}
+
+.beer-description {
+  padding-bottom: 20px;
 }
 
 footer {
