@@ -1,11 +1,12 @@
 <h2>Beers</h2>
-<div>
+<div class="container">
+    <ul class='row beer-list justify-content-center'>
     {{#each beersFromApi}}
-        <img src={{this.image_url}}/>
-        <h3>{{this.name}}</h3>
-        <p>{{this.tagline}}</p>
-        <p>{{this.description}}</p>
+        <li class="col-3">
+            {{>beerpartial}}
+        </li>
     {{else}}
         <li>No beers to show</li>
     {{/each}}
+    </ul>
 </div>
