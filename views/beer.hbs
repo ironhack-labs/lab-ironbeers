@@ -1,0 +1,10 @@
+ <div class="container">
+<h2>beers</h2>
+<div class="row">
+ {{#each beersFromApi}}
+    <li> {{name}} <br> Description: {{description}} <br> <img style="height: 200px;" src="{{image_url}}" alt=""> </li>
+ {{/each}}
+ </div>
+</div>
+
+

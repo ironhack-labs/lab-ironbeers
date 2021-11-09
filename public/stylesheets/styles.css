@@ -9,3 +9,6 @@ font-family: Arial, Helvetica, sans-serif;
 body{
     background-color: rgba(75, 75, 75, 0.192);
 }
+.first-div{
+    text-align: center;
+}

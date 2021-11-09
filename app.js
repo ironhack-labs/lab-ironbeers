@@ -19,18 +19,35 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Add the route handlers here:
 
 
-app.get('/', (req, res) => {
+app.get('/', (req, res, next) => {
   res.render('index');
 });
 
-app.get('/beer', (req, res) => {
+app.get('/beer', (req, res, next) => {
+  punkAPI
+  .getBeers()
+  // .then(beersFromApi => console.log('Beers from the database: ', beersFromApi))
+  .then(beersFromApi =>  {
+    // console.log(beersFromApi);
+    res.render('beer', {beersFromApi})
+  })
 
-
-  res.render('beer');
+  .catch(error => console.log(error));
 });
 
-app.get('/random-beer', (req, res) => {
-  res.render('random-beer');
+
+
+app.get('/random-beer', (req, res, next) => {
+  punkAPI
+  .getRandom()
+  .then(responseFromAPI => {
+    // your magic happens here
+    // console.log(responseFromAPI);
+    res.render('random-beer', {responseFromAPI});
+  })
+  .catch(error => console.log(error));
+
 });
+
 
 app.listen(3000, () => console.log(':)‍ on port 3000'));
