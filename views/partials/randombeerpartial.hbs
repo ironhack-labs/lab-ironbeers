@@ -1,0 +1,21 @@
+<div class="card mb-3">
+    <div class="row no-gutters">
+        <div class="col-md-4">
+            <img src={{image_url}} class="card-img" alt="random beer">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">{{name}}</h5>
+                <h6 class="card-text"><small class="text-muted">{{tagline}}</small></h6>
+                <p class="card-text">{{description}}</p>
+                <h3>Food Pairing</h3>
+                <ul>
+                {{#each food_pairing}}
+                <li>{{this}}</li>
+                {{/each}}
+                </ul>
+                <p class="card-text"><strong>Brewer Tips: </strong>{{brewers_tips}}</p>
+            </div>
+        </div>
+    </div>
+</div>

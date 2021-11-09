@@ -1,3 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+nav {
+    height: 8%;
+}
+
+.bg-dark {
+    background-color: #2081c3!important;
+}
+/* main {
+    height: 80%;
+} */
+
+footer {
+    width: 100vw;
+    height: 8%;
+    background-color: #0a2c42;
+    color: #f7f9f9;
+    margin: 0;
+    padding: 20px 20px;
+    position: fixed;
+    bottom: 0;
+}
+
+#home {
+    height: 84vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.beer {
+    height: 350px;
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: contain;
+  }
+
+.card-img {
+    height: 500px;
+    object-fit: contain;
+}
+
+.random-beer {
+    height: 80%;
+}
+
+#home a {
+    padding: 10px;
+    text-decoration: none;
+    background-color: #2081c3;
+    color: #f7f9f9;
+}
+
 /*
 white: #f7f9f9;
 light-blue: #2081c3;
