@@ -1,4 +1,16 @@
 
 {{#each beerFromApi}}
     {{>beerpartial}}
+    
+    <h3> Food pairing </h3>
+    <ul>
+        {{#each this.food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+    
+    <p>
+        <strong>Brewers tips: </strong>
+        {{this.brewers_tips}}
+    </p>
 {{/each}}

@@ -1,12 +1,13 @@
-<h2>Beers</h2>
-<div class="container">
-    <ul class='row beer-list justify-content-center'>
-    {{#each beersFromApi}}
-        <li class="col-3">
+<div class='container-fluid'>
+    <ul class='row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 justify-content-between'>
+        {{#each beersFromApi}}
+        <li class='col'>
+
             {{>beerpartial}}
+
         </li>
-    {{else}}
-        <li>No beers to show</li>
-    {{/each}}
+        {{else}}
+        <li>No hay cervezas</li>
+        {{/each}}
     </ul>
 </div>
