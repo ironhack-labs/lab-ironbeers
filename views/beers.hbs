@@ -1,0 +1,11 @@
+<div>
+	<div class="container">
+		<div class="row">
+				{{#each beersFromApi}}
+				<div class="card-deck">
+					{{> beerPartial this}}
+				</div>
+				{{/each}}
+		</div>
+	</div>
+</div>
