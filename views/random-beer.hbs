@@ -1,0 +1,16 @@
+ 
+    <div>
+      <img src="{{image_url}}" alt="">
+    </div>
+
+
+    <div>
+      {{!-- <h3>{{name}}</h3>
+      <p>{{description}}</p>
+      <h4>{{tagline}}</h4> --}}
+      {{> beerpartial this}}
+      <p>Food pairing:{{this.food_pairing}}</p> 
+      <p>Brewers tips:{{this.brewers_tips}}</p>
+    </div>
+
+    
