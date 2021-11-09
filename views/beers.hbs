@@ -1,0 +1,37 @@
+<h2>Beers</h2>
+<div class="container">
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                {{#each beers}}
+                <img src='{{image_url}}' alt='beersimage' />
+                <h2>{{name}}</h2>
+                <p>{{description}}</p>
+                <p>{{tagline}}</p>
+
+                {{/each}}
+            </div>
+        </div>
+    </div>
+
+{{!-- 
+</div>
+<div class="container">
+    <h2>Beers</h2>
+    <div class="row">
+        {{#each beers}}
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src='{{image_url}}' alt='beersimage' />
+                <div class="card-body">
+                    <h2>{{name}}</h2>
+                    <p>{{description}}</p>
+                    <p>{{tagline}}</p>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div> --}}
