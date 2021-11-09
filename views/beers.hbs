@@ -4,11 +4,15 @@
     <ul>
     {{#each beersFromApi}}
     <li>
-        <img src="{{image_url}}" alt=""> 
-        <div>
-            <h2>{{name}} </h2><br>
-            <p>{{description}}</p><br>
-            <br>{{tagline}}
+        <div class="img-beer">
+            <img src="{{image_url}}" alt="">
+        </div>
+       
+        <div class="content-beers">
+            <h2>{{this.name}}</h2>
+            <h4>{{this.tagline}}</h4>
+            <p>{{this.description}}</p>
+            
         </div>
     </li>
     {{/each}} 

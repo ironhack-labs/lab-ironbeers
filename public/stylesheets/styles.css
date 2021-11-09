@@ -35,14 +35,17 @@ header {
 }
 
 .menu a {
-
     color: #f7f9f9;  
     display: block;  
     padding: 12px;  
-    text-decoration: none;  
+    text-decoration: none; 
+    -webkit-transition: .5s ease-out;
+    -moz-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+    transition: .5s ease-out;  
 }
 
-.vertical-menu a:hover {
+.menu a:hover  {
     background-color: #f7f9f9;  
     color: black; 
 }
@@ -56,6 +59,7 @@ header {
  
 main {
       width: 100%;
+      height: 100%;
       position: relative;
       display: block
       
@@ -72,12 +76,13 @@ section {
       -webkit-transform: translate(-50%, -50%);
   }
 main img {
-    width: 25%;
-    height: auto;
+    width: auto;
+    height: 450px;
     display: block;
     margin-bottom: 30px;
     margin: 0 auto;
-  }
+    margin-bottom: 10%;
+}
 .cont-btn {
     display: flex;
     flex-direction: column;
@@ -86,46 +91,181 @@ main img {
     align-items: center;
 }
 .cont-btn a {
-    padding: 5px 30px;
+    padding: 10px 30px;
     background-color: #2081c3;
     text-decoration: none;
     color: #bfbfbf;
     border-radius: 5px;
+    text-align: center;
     border: 1px solid #2081c3;
+    -webkit-transition: .5s ease-out;
+    -moz-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+    transition: .5s ease-out; 
   }
 .cont-btn a:hover {
-    padding: 5px 30px;
     background-color: #bfbfbf;
     text-decoration: none;
     color: #2081c3;
     border: 1px solid #bfbfbf;
+    
   }
-  .container-beers {
+.container-beers {
       width: 100%;
       height: 100%;
       display: block;
       padding: 5% 0%;
-  }
-  ul {
-      width: 70%;
-      display: block;
-      position: relative;
-      margin:0 auto;
-  }
-  li {
-      width: 80%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-  }
-  li img {
-      width: 100px;
-      height: 300px;
-      display:block;
-      position: relative;
-      padding:5px;
-  }
-  
+}
+.container-beers ul {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    align-content: stretch;
+    align-items: stretch;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.container-beers ul li {
+    width: 30%;
+     display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: start;
+    padding: 1%;
+    margin-bottom: 40px;
+} 
+.container-beers  div.img-beer {
+    width: 75px;
+    height: 150px;
+    margin: 0 auto;
+    order: 1;
+}
+.container-beers  div.img-beer img{
+    width: auto;
+    height: 150px;
+    margin: 0 auto;
+    order: 1;
+}
+div.content-beers  {
+    padding: 20px 10px;
+    order: 2;
+}
+div.content-beers h2 {
+    width: 100%;
+    height: auto;
+    display: block;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+div.content-beers h4 {
+    width: 100%;
+    height: auto;
+    display: block;
+    font-size: 18px;
+    color: #bfbfbf;
+    margin-bottom: 10px;
+}
+
+.container-random-beer {
+    width: 100%;
+    height: 50%;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    padding: 5% 0%;
+}
+.container-random-beer ul {
+    width: 50%;
+    display: block;
+    position: relative;
+    margin:0 auto;
+}
+.container-random-beer li {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+    list-style: disc;
+}
+.container-random-beer div.img-beer {
+    width: 100%;
+    height: 300px;
+    
+    order: 1;
+}
+div.content-random-beer {
+    padding: 20px 0px;
+    order:2;
+}
+div.container-random-beer h2{
+    width: 100%;
+    height: auto;
+    display: block;
+    font-size: 22px;
+    margin-bottom: 10px; 
+}
+div.container-random-beer h4{
+    width: 100%;
+    height: auto;
+    display: block;
+    font-size: 18px;
+    color:#bfbfbf;
+    margin-bottom: 10px; 
+}
+div.container-random-beer p {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px; 
+}
+.img-beer img {
+    width: 100px;
+    height: 300px;
+    display:block;
+    position: relative;
+    padding:5px;
+}
+img {
+    width: 80px;
+    height: 300px;
+    display:block;
+    position: relative;
+    padding:5px;
+}
+div.int {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+}
+div.int ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-between;
+    margin:10px 0px;
+    padding-left: 30px;
+     list-style-type: disc;
+}
+div.int ul li {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+    list-style: disc;
+}
+
 footer {
     width: 100%;
     display: flex;
@@ -135,7 +275,6 @@ footer {
     bottom: 0px;
     background-color: #0a2c42;  
     color: #f7f9f9;  
-    
     padding: 12px 0px;  
     text-decoration: none; 
     z-index: 100; 
@@ -143,4 +282,96 @@ footer {
 footer p{
     margin: 0px 30px;
 }
-  
+@media only screen and (max-width: 1024px) {
+    .container-beers ul li {
+        width: 48%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    main img {
+        width: auto;
+        height: 400px;
+        display: block;
+        margin-bottom: 30px;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    .container-random-beer {
+        width: 100%;
+        height: 50%;
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        padding: 5% 0%;
+    }
+    .container-random-beer ul {
+        width: 80%;
+        display: block;
+        position: relative;
+        margin:0 auto;
+        list-style: none;
+    }
+    .container-random-beer li {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .container-random-beer div.img-beer {
+        width: 100%;
+        height: 300px;
+        order: 1;
+    }
+    div.content-random-beer {
+        padding: 20px 0px;
+        order:2;
+    }
+}
+@media only screen and (max-width: 600px) {
+    main img {
+        width: auto;
+        height: 350px;
+        display: block;
+        margin-bottom: 30px;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    .menu {
+        width: 100%;
+   } 
+ 
+   .container-beers ul li {
+    width: 100%;
+    }
+}
+@media only screen and (max-width: 475px) {
+    main img {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .cont-btn a {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 375px) {
+    section {
+        width: 80%;
+        height: 80%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    main img {
+        width: 100%;
+   
+    }
+    .cont-btn a {
+        width: 90%;
+        padding: 10px 0px;
+
+         
+    }
+}
