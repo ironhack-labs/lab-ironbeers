@@ -1,0 +1,28 @@
+<div class='container'>
+
+  <div class='row random'>
+
+    <div class='col-md-4 randomLeft'>
+
+      <img class='card-img-top' src='{{responseFromAPI.0.image_url}}' alt='' />
+    </div>
+
+    <div class='col-md-4 col-lg-8 randomRight'>
+
+      <h5 class='card-title'>{{responseFromAPI.0.name}}</h5>
+      <p class='card-text'>{{responseFromAPI.0.description}}</p>
+      <h3 class='card-title'>{{responseFromAPI.0.tagline}}</h3>
+      <h4>Food Pairing</h4>
+      <ul>
+        {{#each responseFromAPI.0.food_pairing}}
+          <li>{{this}}</li>
+
+        {{/each}}
+      </ul>
+
+      <p class='card-text'>{{this.description}}</p>
+
+    </div>
+
+  </div>
+</div>
