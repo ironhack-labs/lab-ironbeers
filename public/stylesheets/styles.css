@@ -11,3 +11,31 @@ img {
     height: 200px;
     object-fit: contain;
 }
+
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #2081c3;
+    height: 10vh;
+    padding-left: 30px;
+    
+}
+
+nav a {
+    margin-left: 10px;
+    color: #f7f9f9;
+}
+
+footer {
+    background-color: #0a2c42;
+    padding: 20px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    margin-top: 52.5vh
+}
+
+footer p {
+    color: #f7f9f9;
+}
