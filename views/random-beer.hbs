@@ -1,0 +1,17 @@
+<div class='container'>
+  <h1 class="mt-5">Random Beer</h1>
+  <div class='row'>
+    {{#each randomBeerFromApi}}
+        {{> beerCard}}
+        <div  class="mx-5">
+        <h4>Food Pairing</h4>
+        <ul>
+          {{#each this.food_pairing}}
+          <li>{{this}}</li>
+          {{/each}}
+        </ul>
+        <p>Brewers tips: {{this.brewers_tips}}</p>
+        </div>
+    {{/each}}
+  </div>
+</div>
