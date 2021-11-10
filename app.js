@@ -30,7 +30,6 @@ app.get("/beers", async (req, res) => {
 app.get("/random-beer",async (req, res)=>{
   let randomBeerList = await punkAPI.getRandom();
   let randomBeer = randomBeerList[0];
-  console.log(randomBeer)
   res.render("random-beer",randomBeer);
 });
 

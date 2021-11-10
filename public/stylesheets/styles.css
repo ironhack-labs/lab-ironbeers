@@ -15,3 +15,11 @@ font-family: Arial, Helvetica, sans-serif;
     height: 520px;
     margin: 0.5em;
 }
+
+.random-img {
+  height: 200px;
+}
+
+.text-right{
+text-align: end;
+}
