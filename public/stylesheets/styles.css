@@ -12,3 +12,19 @@ body{
 .first-div{
     text-align: center;
 }
+.bg-light{
+    background-color: #2081c3 !important;
+}
+
+#menu-text{
+    color: white
+}
+#buttons{
+    border: solid #2081c3 1px;
+    background-color: #2081c3;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+
+}
