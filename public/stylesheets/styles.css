@@ -87,11 +87,6 @@ section.home {
 
 /* ======== Beers ========= */
 
-.beer-link {
-    text-decoration: none;
-    color: black;   
-}
-
 .beers {
     display: flex;
     width: 100vw;
@@ -105,17 +100,22 @@ section.home {
     padding: 16px 20px;
     border-radius: 20px; 
     width: 250px;
+    flex: auto;
+}
 
+.beer:hover {
+    background-color: #eaeaea;
+}
+
+.beer-link {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     flex: auto;
     align-items: center;
     text-align: justify;
-}
-
-.beer:hover {
-    background-color: #eaeaea;
+    text-decoration: none;
+    color: black;   
 }
 
 .beer img {
