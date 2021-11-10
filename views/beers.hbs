@@ -1,0 +1,12 @@
+<div class='main-container'>
+  {{#each beer}}
+    <div class='card-container'>
+      <img src='{{this.image_url}}' alt='' srcset='' width='50px' />
+      <div class='text-container'>
+        <h4>{{this.name}}</h4>
+        <p>{{this.tagline}}</p>
+        {{this.description}}
+      </div>
+    </div>
+  {{/each}}
+</div>
