@@ -1,0 +1,11 @@
+<article class='allBeers'>
+  <div>
+      <ul>
+      {{#each randombeer}}
+      {{>beercard this}}
+      {{this.food_pairing}}
+      {{this.brewers_tips}}
+      {{/each}}
+      </ul>
+  </div>
+</article>
