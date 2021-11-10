@@ -1,4 +1,4 @@
-/*
+/* /*
 navbar {
 white: #f7f9f9;
 light-blue: #2081c3;
@@ -69,10 +69,14 @@ footer p {
 }
 
 
-.card img {
+.card{
+	margin: auto;
+}
+
+.card-img-top{
 	width: auto;
     height: 200px;
     margin-left: 170px;
 	padding-top: 10px;
-  }
-  
+	margin-right: 30px;
+}

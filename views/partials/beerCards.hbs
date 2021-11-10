@@ -1,15 +1,10 @@
 
-   
-<div class="col-md-4">
-  <div class="card">
-    <img class="card-img-top" src="{{this.image_url}}" alt="{{this.name}}" />
-    <div class="card-body">
-      <div class="card-body">
-      <a href="/beers/{{this.id}}"><h5 class="card-title">{{this.name}}</h5></a>
-      <p class="card-description">{{this.description}}</p>
-      <p class="card-tagline">{{this.tagline}}</p>
-     </div>
-  </div>   
-</div>
-    
 
+<div class="card" style="width: 18rem;">
+  <img src="{{this.image_url}}" class="card-img-top" alt="{{this.name}}">
+  <div class="card-body">
+    <a href="/beers/{{this.id}}"><h5 class="card-title">{{this.name}}</h5></a>
+    <p class="card-text">{{this.description}}</p>
+    <p class="card-tagline">{{this.tagline}}</p>
+  </div>
+</div>
