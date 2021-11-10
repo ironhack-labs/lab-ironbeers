@@ -1,0 +1,11 @@
+<div class="col-4">
+  <img src="{{this.image_url}}" alt="{{this.name}}">
+  <h1>{{this.name}}</h1>
+  <p>{{this.tagline}}</p>
+  <p>{{this.description}}</p>
+  <h2>Food Pairing</h2>
+  <p>{{#each this.food_pairing}}</p>
+  <li>{{this}}</li>
+  {{/each}}
+  <p>{{this.brewers_tips}}</p>
+</div>

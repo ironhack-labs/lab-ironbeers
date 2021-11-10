@@ -27,6 +27,7 @@ app.get('/beers', (req, res) => {
   punkAPI
     .getBeers()
     .then(beersFromApi => {
+      // console.log('beers', {beersFromApi});
       res.render('beers', {beersFromApi});
     })
     .catch(err => {
@@ -34,9 +35,16 @@ app.get('/beers', (req, res) => {
     });
 });
 
-// app.get('/random-beers', (req, res) => {
-//   res.render('random-beers');
-// });
+app.get('/random-beers', (req, res) => {
+  punkAPI
+  .getRandom()
+  .then(responseFromApi => {
+    res.render('random-beers', {responseFromApi});
+  })
+  .catch(err => {
+    consolee.log(err);
+  });
+});
 
 app.listen(PORT, () => {
   console.log(`🏃‍ on port ${PORT}`);
