@@ -1,0 +1,10 @@
+<section class="beers">
+    <ul>
+        {{#each beer}}
+          <img src={{image_url}} alt="beers"/>
+          <li> {{ name }} </li>
+          <li> {{ description }} </li>
+          <li> {{ tagline }} </li>
+        {{/each}}
+    </ul>
+</section>
