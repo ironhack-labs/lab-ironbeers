@@ -1,8 +1,8 @@
 .nav-bar {
-    background-color: #227ca0;
+    background-color: #1b1b1a;
     margin: 0px;
     font-family:  Helvetica, Arial, sans-serif;
-    color: azure;
+    color: rgb(122, 120, 111);
     font-size: 18px;
     text-decoration: none;
     position: fixed;
@@ -10,19 +10,26 @@
     padding-bottom: 20px;
     width: 100%;
     top: 0px;
+    box-shadow: 0px 8px 20px 0px rgba(17, 17, 17, 0.452) ;
 }
 
 .nav-text {
     font-family:  Helvetica, Arial, sans-serif;
-    color: azure;
-    font-size: 18px;
+    color: rgb(167, 163, 157);
+    font-size: 16px;
     text-decoration: none;
     margin: 0px 20px;
     padding: 20px;
 }
 
+.nav-text:hover {
+    font-weight: 600;
+    color: rgb(216, 210, 202);
+}
+
 body {
     margin: 0px;
+    background-color: #dbdee6;
 }
 
 .landing {
@@ -31,6 +38,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 145px;
+    background-color: rgba(17, 17, 19, 0.473);
 }
 
 .landing img {
@@ -39,23 +47,81 @@ body {
 }
 
 
+.landing-btn {
+    padding: 40px 230px;
+    background-color: rgb(211, 201, 188);
+    margin-top: 400px;
+    mix-blend-mode: hard-light;
+    font-family:  Helvetica, Arial, sans-serif;
+    color: rgb(83, 79, 73);
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 20px;
+    transition-duration: 0.8s;
+}
+
+.landing-btn:hover {
+    background-color: rgb(87, 82, 75);
+    color: rgb(231, 223, 211);
+    mix-blend-mode: screen;
+}
+
+.landing-btn2 {
+    padding: 38px 246px;
+    margin-top: 10px;
+    background-color: rgba(211, 201, 188, 0);
+    mix-blend-mode: hard-light;
+    font-family:  Helvetica, Arial, sans-serif;
+    color: rgb(211, 201, 188);
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 4px solid rgb(211, 201, 188);
+    transition: ease-in-out;
+    transition-duration: 0.7s;
+}
+
+.landing-btn2:hover {
+    color: rgb(83, 79, 73);
+    border: 4px solid rgb(87, 82, 75);
+    background-color: rgb(87, 82, 75);
+    color: rgb(211, 201, 188);
+    mix-blend-mode: screen;
+}
+
+
 footer {
-    background-color: #25383f;
+    background-color: #131212;
     padding: 20px;
     margin: 0px;
     font-family:  Helvetica, Arial, sans-serif;
-    color: azure;
+    color: rgb(211, 201, 188);
     font-size: 18px;
     text-decoration: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    mix-blend-mode: normal ;
+    display: flex;
+    justify-content: end;
 }
 
 
 .foot-txt {
     font-family:  Helvetica, Arial, sans-serif;
-    color: rgb(134, 160, 160);
-    font-size: 18px;
+    color: rgb(148, 139, 127);
+    font-size: 16px;
     text-decoration: none;
-    margin: 0px 20px;
+    font-weight: 100;
+    margin: 0px 120px;
+    
+}
+
+.foot-txt:hover {
+    color: rgb(233, 223, 214);
+    font-weight: 400;
 }
 
 
@@ -92,10 +158,20 @@ footer {
 
 .beer-container {
     width: 500px;
-    margin: 100px;
+    margin: 100px 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: #e7eaf1;
+    padding: 50px;
+    border-radius: 45px;
+    box-shadow: 5px 10px 20px 0px rgba(155, 154, 160, 0.548), -6px -10px 15px 0px rgba(245, 245, 248, 0.863);
+}
+
+.beer-container:hover {
+    outline: 8px solid #cfc7b5;
+    outline-offset: -8px;
+    cursor: pointer;
 }
 
 .beer-img-container {
@@ -115,4 +191,126 @@ h4 {
 .beer-info-container {
     height: 135px;
     
+}
+
+#landing-video {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1000;
+    animation: ease-in-out;
+    animation-duration: 3s;
+    /* filter:blur(8px); */
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(42, 42, 44);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, rgb(202, 192, 177),rgb(160, 154, 145));
+}
+
+.beers-container {
+    background-color: #dbdee6;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.white-shadow {
+    box-shadow: -5px -10px 10px 0px rgba(245, 245, 248, 0.938);
+}
+
+
+.random-beer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 100px;
+}
+
+.random-beer-img {
+    height: 400px;
+    width: 200px;
+    padding: 60px;
+    margin-top: 60px;
+    background-color: #e7eaf1;
+    border-radius: 45px;
+    box-shadow: 5px 10px 20px 0px rgba(155, 154, 160, 0.548), -6px -10px 15px 0px rgba(245, 245, 248, 0.863);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.random-beer-img img {
+    height: 100%;
+}
+
+
+.random-img-info {
+    height: 400px;
+    width: 400px;
+}
+
+.photo-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.photo-title h4 {
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+.photo-title em {
+    margin-left: 40px;
+}
+
+.photo-title p {
+    margin-left: 40px;
+    font-family:  Helvetica, Arial, sans-serif;
+    color: rgb(92, 98, 107);
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 200;
+}
+
+.random-txt {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-top: 40px;
+}
+
+.random-txt div {
+    margin-left: 0px;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.random-txt p {
+    color: rgb(92, 98, 107);
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 200;
+}
+
+.random-txt em {
+    color: rgb(53, 57, 63);
+    font-family:  Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    font-style: normal;
 }

@@ -2,14 +2,34 @@
     <div class="random-beer">
 
         {{#each beer}}
-        <img src={{image_url}} alt="">
-            <div>
-                <h4>{{name}}</h4>
-                <em>{{tagline}}</em>
+            <div class="photo-title">
+                <div class="random-beer-img" >
+                    <img src={{image_url}} alt="">
+                </div>
+
+                <div class="random-img-info">
+                    <div>
+                        <h4>{{name}}</h4>
+                        <em>{{tagline}}</em>
+                        <p>{{description}}</p>
+                    </div>
+
+                    <div class="random-txt">
+                        <div>
+                            <em>Food pairing:</em>
+                            <p>{{food_pairing}}</p>
+                        </div>
+                        <div>
+                            <em>Brewers tips:</em>
+                            <p>{{brewers_tips}}</p>
+                        </div>
+                    </div> 
+
+                </div>
             </div>
-        <p>{{description}}</p>
-        <p>{{food_pairing}}</p>
-        <p>{{brewers_tips}}</p>
+                
+               
+            
         {{/each}}
 
     </div>
