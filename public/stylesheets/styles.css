@@ -6,3 +6,6 @@ grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
 
+nav {
+  height: 60px;
+}
