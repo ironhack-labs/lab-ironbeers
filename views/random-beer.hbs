@@ -1,0 +1,31 @@
+<div>
+  <div class="row p-3">
+      <div class="col-3 text-right">
+    <img class="random-img" src='{{image_url}}' alt='{{name}}'/>
+    </div>
+    <div class="col-9">
+      <h1>
+        {{name}}
+      </h1>
+      <h4>
+        {{tagline}}
+      </h4>
+      <p class='card-text'>
+        {{description}}
+      </p>
+      <ul>
+        <b>Food Pairing</b>
+        {{#each food_pairing}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <p class='card-text'>
+          <b>Brewers Tips:</b>
+        {{brewers_tips}}
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
