@@ -55,9 +55,12 @@ html {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
   background: #131c6e;
   color: white;
   padding: 10px 20px;
+  margin-top: 100px;
 }
 
 .navbar-nav a {
@@ -99,4 +102,14 @@ footer {
   border-radius: 4px;
   padding: 10px 20px;
   box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
+}
+.button {
+  margin: 10px 10px 10px 10px;
+  height: 40px;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #131c6e;
+  color: white;
 }
