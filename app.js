@@ -1,4 +1,7 @@
+
+//Variables
 const express = require('express');
+const chalk   = require('chalk')
 
 const hbs = require('hbs');
 const path = require('path');
@@ -7,19 +10,33 @@ const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 const app = express();
 const punkAPI = new PunkAPIWrapper();
 
+//Middleware for the view engine
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
+//Middleware for the static files located in public
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Register the location for handlebars partials here:
 
 // ...
 
-// Add the route handlers here:
-
+// Routes
 app.get('/', (req, res) => {
   res.render('index');
 });
 
-app.listen(3000, () => console.log('🏃‍ on port 3000'));
+app.get('/beers', (req, res) => {
+  res.render('beers');
+});
+
+app.get('/random-beer', (req, res) => {
+  res.render('random-beer');
+});
+
+
+
+
+
+
+app.listen(3000, () => console.log(chalk.bgBlue('🏃‍ on port 3000')));
