@@ -5,3 +5,20 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+.beer-image {
+    width: 15%;
+    object-fit: contain;
+    margin: 0 auto;
+}
+.card-img-top {
+    width: 15%;
+    object-fit: contain;
+    padding: 15px;
+}
