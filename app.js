@@ -17,7 +17,6 @@ app.use(express.static(path.join(__dirname, 'public')))
 // ...
 
 // Add the route handlers here:
-
 app.get('/', (req, res) => {
   res.render('index')
 })
