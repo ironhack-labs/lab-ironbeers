@@ -3,6 +3,7 @@ const express = require('express');
 const hbs = require('hbs');
 const path = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
+const PORT = 3000;
 
 const app = express();
 const punkAPI = new PunkAPIWrapper();
@@ -22,4 +23,14 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-app.listen(3000, () => console.log('🏃‍ on port 3000'));
+// app.get('/beers', (req, res) => {
+//   res.render('beers');
+// });
+
+// app.get('/random-beers', (req, res) => {
+//   res.render('random-beers');
+// });
+
+app.listen(PORT, () => {
+  console.log(`🏃‍ on port ${PORT}`)
+});
