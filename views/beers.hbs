@@ -1,14 +1,15 @@
-<div class="beers-container">
-    <div class="beers"></a>
+    <div class="beers-container">
+        <div class="beers">
 
-        {{#each beersFromApi}}
-        
-        {{>beerpartial}}
+            {{#each beersFromApi}}
+            <a class="no-decoration" href="/chosenbeer/{{id}}">
+                {{>beerpartial}}
+            </a>
 
-        {{!-- <a href='/chosenbeers/{{id}}'>{{name}}</a> --}}
-        {{/each}}
+            {{!-- <a href='/chosenbeers/{{id}}'>{{name}}</a> --}}
+            {{/each}}
 
+        </div>
     </div>
-</div>
 
 <p class="choose-beer">Choose your beer...</p>

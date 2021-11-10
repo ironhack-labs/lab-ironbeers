@@ -22,7 +22,6 @@ app.get("/beers", (req, res, next) => {
   punkAPI
   .getBeers()
   .then(beersFromApi => {
-    console.log(beersFromApi)
     res.render("beers", {beersFromApi})
   })
   .catch(error => console.log(error)); 
@@ -43,12 +42,11 @@ app.get("/random-beers", (req, res, next) => {
 )
 
 
-app.get("/chosenbeer", (req, res, next) => {
-  console.log("El desenladrillador que lo desenladrille");
-  
-  let chosenbeer = punkAPI.getBeer(ids)
+app.get("/chosenbeer/:id", (req, res, next) => {
+
+  let chosenbeer = punkAPI.getBeer(req.params.id)
   chosenbeer.then(beer => {
-    res.render("chosen-beers", {beer})
+    res.render("chosenbeer", {chosenbeer: beer})
   })
   .catch(error => console.log(error));
 }

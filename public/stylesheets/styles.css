@@ -131,6 +131,7 @@ footer {
     margin: 20px;
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .beers-description {
@@ -138,6 +139,7 @@ footer {
     text-overflow: ellipsis;
     overflow: hidden;
     height: 135px;
+    text-decoration: none;
 }
 
 .beers img {
@@ -154,6 +156,7 @@ footer {
     line-height: 22px;
     font-weight: 200;
     text-overflow: ellipsis;
+    text-decoration: none;
 }
 
 .beer-container {
@@ -164,6 +167,7 @@ footer {
     justify-content: space-between;
     background-color: #e7eaf1;
     padding: 50px;
+    text-decoration: none;
     border-radius: 45px;
     box-shadow: 5px 10px 20px 0px rgba(155, 154, 160, 0.548), -6px -10px 15px 0px rgba(245, 245, 248, 0.863);
 }
@@ -185,7 +189,12 @@ h4 {
     font-size: 26px;
     text-transform: uppercase;
     letter-spacing: 4px;
+    color: rgb(50, 50, 53);
     
+}
+
+.beer-info-container em {
+    color: rgb(32, 32, 34);
 }
 
 .beer-info-container {
@@ -326,4 +335,8 @@ h4 {
     margin: 0px;
     text-align: right;
     mix-blend-mode: overlay;
+}
+
+.no-decoration {
+    text-decoration: none;
 }
