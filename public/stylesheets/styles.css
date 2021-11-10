@@ -5,3 +5,141 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+/*
+white: #F7F9F9;
+light-blue: #2081C3;
+dark-blue: #0A2C42;
+grey: rgba(145, 145, 145, 0.481);
+font-family: Arial, Helvetica, sans-serif
+*/
+
+
+/* General CSS */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F7F9F9;
+}
+
+
+/* Layout CSS */
+.topNav {
+  background-color: #2081C3;
+  box-shadow: 0px 2px 2px rgba(145, 145, 145, 0.481);
+}
+
+.topNav a {
+  color: #F7F9F9;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #0A2C42;
+  height: 60px;
+  line-height: 60px;
+  color: #F7F9F9;
+  margin-top: 100px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+
+/* Index.html CSS */
+
+.index-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.beerMug {
+  height: 300px;
+  width: 300px;
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+.homeButtons {
+  width: 200px;
+  height: 40px;
+  margin-bottom: 20px;
+  background-color: #2081C3;
+  border-radius: 10px;
+  color: white;
+  border: 0px solid;
+  box-shadow: 0px 2px 2px rgba(145, 145, 145, 0.481);
+}
+
+.homeButtons:hover {
+  font-weight: bold;
+}
+
+
+
+/* Beers Page CSS */
+.beersList {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.beerCard {
+  width: 30%;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 25px;
+}
+
+.beerCard h3 {
+  font-size: 1.1em;
+  font-weight: 700;
+  line-height: 0;
+  margin-top: 25px;
+}
+
+.beerCard span {
+  font-size: .9em;
+  color: rgba(145, 145, 145, 0.481);
+}
+
+.beerCard p {
+  margin-top: 10px;
+}
+
+.beerImage img {
+  max-height: 150px;
+  margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+
+
+/* Random Beers CSS */
+.media {
+  margin-top: 50px;
+}
+
+.media-body {
+  margin-right: 200px;
+}
+
+.media-body h5 {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin-top: 15px !important;
+  margin-bottom: 25px;
+}
+
+#randomBeerDescription {
+  font-size: .9em;
+  color: rgba(145, 145, 145, 0.481);
+  margin-bottom: 15px;
+}
+
+#randomBeerImage {
+  max-height: 175px;
+  margin-left: 150px;
+  margin-right: 50px !important;
+}
