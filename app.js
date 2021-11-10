@@ -8,7 +8,7 @@ const app = express();
 const punkAPI = new PunkAPIWrapper();
 
 //CONFIGS
-console.log(__dirname);
+
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
