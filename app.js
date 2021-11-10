@@ -17,9 +17,8 @@ app.set('views', path.join(__dirname, 'views'));
 //Middleware for the static files located in public
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Register the location for handlebars partials here:
-
-// ...
+//Middleware for the partials
+hbs.registerPartials(__dirname + "/views/partials");
 
 // Routes
 app.get('/', (req, res) => {
@@ -27,12 +26,17 @@ app.get('/', (req, res) => {
 });
 
 app.get('/beers', (req, res) => {
-  res.render('beers');
+  punkAPI.getBeers()
+  .then(beersFromApi => res.render(console.log('beers', {beersFromApi})))
+  .catch(error => console.log(error));
 });
 
 app.get('/random-beer', (req, res) => {
-  res.render('random-beer');
+  punkAPI.getRandom()
+  .then(beer => res.render('random-beer', {beer}))
+  ;
 });
+
 
 
 

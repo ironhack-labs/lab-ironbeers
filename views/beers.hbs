@@ -1,1 +1,5 @@
-<p>Beers</p>
+<div class="container">
+{{#each beersFromApi}}
+    {{>cardBeers this}}
+{{/each}}
+</div>
