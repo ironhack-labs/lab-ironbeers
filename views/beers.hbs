@@ -1,7 +1,9 @@
-<h1>All the beers</h1>
+<h3>All the beers</h3>
 
-<div>
+<div class="container">
+  <div class="row">
     {{#each beersFromApi}}
-    {{> beersCard this}}
+      {{> beersCard this}}
     {{/each}}
+  </div>
 </div>
