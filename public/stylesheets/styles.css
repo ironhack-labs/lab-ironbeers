@@ -67,3 +67,12 @@ footer p {
 	padding-left: 20px;
 	color: #f7f9f9;
 }
+
+
+.card img {
+	width: auto;
+    height: 200px;
+    margin-left: 170px;
+	padding-top: 10px;
+  }
+  

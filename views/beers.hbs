@@ -1,0 +1,9 @@
+
+<div class="container">
+  <h1>Beers</h1>
+  <div class="row">
+  {{#each beersFromApi}}  {{!--por cada beer en el array de beer una carta  --}}
+        {{> beerCards this}} {{!--this para que acceda a la info de cada item del array --}}
+      {{/each}}
+  </div>
+</div>
