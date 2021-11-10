@@ -1,9 +1,15 @@
 
-    {{#each responseFromAPI}}
-        {{this.name}} 
+    
+    <div class="beers">
+        {{#each responseFromAPI}}
+        <article class="service-box">
+        <h1> {{this.name}} </h1>
         <img src={{this.image_url}} alt="imagesBeers">
-        {{this.tagline}}
-        {{this.description}}
-        {{this.food_pairing}}
-        {{this.brewers_tips}}
-    {{/each}}
+        <h3>{{this.tagline}}</h3>
+        <p>{{this.description}}</p>
+        <p>{{this.food_pairing}}</p>
+        <p>{{this.brewers_tips}}</p>
+        </article>
+          {{/each}}
+    </div>
+  
