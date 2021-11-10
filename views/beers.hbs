@@ -1,0 +1,9 @@
+<div class="beer-list">
+        {{#each beersFromApi}}
+        <div class="beer-card">
+                {{> beerpartials this}}
+        
+        <a class="read-more" href="/beers/{{this.id}}">Read More</a>
+        </div>
+        {{/each}}
+</div>

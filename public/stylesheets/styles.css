@@ -1,7 +1,123 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+:root{
+    --white: #f7f9f9;
+    --light-blue: #2081c3;
+    --dark-blue: #0a2c42;
+    --grey: #bfbfbf;
+    --main-font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font-family);
+    line-height: 1.2;
+}
+nav {
+    background-color: var(--light-blue);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.3rem;
+}
+footer {
+    background-color: var(--dark-blue);
+    padding: 0 20px;
+    height: 50px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+.main-container img{
+    height: 40vh;
+    margin-bottom: 50px;
+}
+.button {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    margin: 10px;
+    background-color: var(--light-blue);;
+    color: #f7f9f9;
+    text-decoration: none;
+    border-radius: 5px;
+    filter: drop-shadow(2px 2px 2px grey);
+}
+.beer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+}
+.beer-card {
+    display:flex;
+    width: 25vw;
+    flex-direction: column;
+    padding: 40px;
+}
+.beer-card a {
+    text-decoration: none;
+    color: black;
+    margin-top: 50px;
+}
+.beer-card a:hover {
+    color: var(--light-blue);
+}
+.beer-card figure {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.beer-card img {
+    max-height: 250px;
+}
+.tagline {
+    color: var(--grey);
+    padding-bottom: 10px;
+}
+.beer-card .read-more {
+    margin-top: 30px;
+    font-weight: bold;
+}
+.random {
+    width: 60vw;
+}
+.random figure{
+    float: left;
+    margin-right: 80px;
+}
+.random  h3 {
+    margin: 15px 0;
+}
+.random ul {
+    margin-bottom: 20px;
+    list-style-position: inside;
+}
+.random li {
+    padding-left: 50px;
+}
+.random a {
+    pointer-events: none;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+}
+@media (min-width: 768px){
+    .main-container{
+        padding: 0;
+        height: calc(100vh - 80px - 50px);
+    }
+}
+
+
