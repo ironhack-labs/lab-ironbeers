@@ -3,5 +3,172 @@ white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
 */
+
+/* ======== Main Elements ========= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f9f9;
+    margin: 0;
+    padding: 0;
+    color: black;
+    line-height: 1.5em;
+}
+.btn {
+    background-color: #2081c3;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #f7f9f9;
+}
+
+h1 {
+    color: #0a2c42;
+    font-size: 24px;
+    margin-left: 30px;
+}
+
+
+/* ======== Header and Footer ========= */
+
+nav, 
+footer {
+    display: flex;
+    height: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+}
+
+nav {
+    background-color: #2081c3;
+}
+
+nav a {
+    text-decoration: none;
+    margin-right: 40px;
+    color: #f7f9f9;
+}
+
+footer {
+    background-color: #0a2c42;
+    color: #f7f9f9;
+    height: 50px;
+}
+
+
+
+/* ======== Home ========= */
+
+section.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: calc(100vh - 100px);        /* 100px is the sum of header and footers' heights */
+}
+
+.home img.beer-img {
+   width: 40%;
+   max-width: 400px;
+   padding-left: 40px;          /* for it to look centered */
+}
+
+.home .btn {
+    margin-bottom: 20px;
+}
+
+
+/* ======== Beers ========= */
+
+.beer-link {
+    text-decoration: none;
+    color: black;   
+}
+
+.beers {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.beer {
+    border: solid 1px #ccc;
+    margin: 20px;
+    padding: 16px 20px;
+    border-radius: 20px; 
+    width: 250px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: auto;
+    align-items: center;
+    text-align: justify;
+}
+
+.beer:hover {
+    background-color: #eaeaea;
+}
+
+.beer img {
+   height: 100px;
+}
+
+.beer .name, 
+.single-beer .name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.beer .tagline,
+.single-beer .tagline {
+    color: grey;
+}
+
+
+
+/* ======== View of a single beer ========= */
+
+section.single-beer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);        
+}
+
+.single-beer {
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.single-beer .image-wrapper {
+    width: 20%;
+    text-align: center;
+    margin-right: 40px;
+}
+
+.single-beer .image-wrapper img{
+    height: 300px;
+}
+
+.single-beer .description-wrapper {
+    width: 60%;
+}
+
+.single-beer .food-pairing {
+    list-style: disc;
+}
+
+.single-beer .title {
+    font-weight: bold;
+}

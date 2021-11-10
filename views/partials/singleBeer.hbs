@@ -1,0 +1,23 @@
+
+<div class="single-beer">
+
+    <div class="image-wrapper">
+        <img class="image" src="{{ beer.image_url }}" alt="beer img"/>
+    </div>    
+
+    <div class="description-wrapper">
+        <p class="name"> {{ beer.name }} </p>
+        <p class="tagline">{{ beer.tagline }} </p>
+        <p class="description">{{ beer.description }} </p>
+
+        <p class="title">Food pairing</p>
+        <ul class="food-pairing">
+            {{#each beer.food_pairing }}
+                <li>{{ this }}</li>
+            {{/each}}
+        </ul>
+
+        <p><b>Brewers Tips:</b> {{ beer.brewers_tips }} </p>
+    </div>
+
+</div>
