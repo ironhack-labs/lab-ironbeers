@@ -5,3 +5,89 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body,
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #bfbfbf;
+  margin: 0;
+  padding: 0;
+}
+
+.view-container {
+  min-height: 600px;
+  padding: 20px 50px;
+}
+
+.navbar {
+  background: #2081c3;
+  color: white;
+  padding: 10px;
+}
+
+.navbar h3 {
+  margin-left: 20px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 30px;
+  margin: 10px;
+  box-shadow: 1px 1px 2px 1px rgba(255, 255, 255, 0.2);
+}
+
+.navbar-nav {
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background: #131c6e;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar-nav a {
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  border: 1px solid black;
+  padding: 0px 20px;
+  margin: 10px;
+  width: 300px;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.category-card {
+  border: 1px solid black;
+  padding: 25px 30px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.category-card h3,
+.card h3 {
+  margin-top: -10px;
+}
+
+.category-card a {
+  background: #131c6e;
+  color: white;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px 20px;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
+}

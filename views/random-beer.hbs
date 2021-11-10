@@ -1,0 +1,19 @@
+<h1> Random Beer </h1>
+<article Class='card'>
+  <img src='' alt='' />
+  <div>
+    {{#each random}}
+      <img src={{this.image_url}} height='200px' />
+      <h2>{{this.name}}</h2>
+      <ul>
+        {{#each foodparing}}
+          <li> {{this}} </li>
+        {{/each}}
+      </ul>
+      <h4>{{this.tagline}} </h4>
+      <p>{{this.description}} </p>
+
+    {{/each}}
+
+  </div>
+</article>

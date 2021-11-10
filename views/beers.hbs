@@ -1,0 +1,14 @@
+<h1> beers </h1>
+<article Class='card'>
+  <img src='' alt='' />
+  <div>
+    {{#each beers}}
+      <img src={{this.image_url}} height='200px' />
+      <h2>{{this.name}}</h2>
+      <h4>{{this.tagline}} </h4>
+      <p>{{this.description}} </p>
+
+    {{/each}}
+
+  </div>
+</article>
