@@ -1,8 +1,11 @@
-<div>
+<div class="flexbox">
     {{#each responseFromAPI}}
+    <div id="image-box">
     <img src={{this.image_url}} alt="">
-    <h2>{{this.name}}</h2>
-    <h5>{{this.tagline}}</h5>
+    </div>
+    <div>
+    <h2 class="names">{{this.name}}</h2>
+    <h5 class="taglines">{{this.tagline}}</h5>
     <p>{{this.description}}</p>
     
     <h4>Food Paring:</h4>
@@ -13,5 +16,6 @@
     </ul>
     <h4>Brewers Tips:</h4>
     <p>{{this.brewers_tips}}</p>
+    </div>
     {{/each}}
 </div>

@@ -45,3 +45,36 @@ p {
     text-align: justify;
     margin: 2%;
 }
+
+.big-beer {
+    width: 40%;
+    margin-bottom: 3%;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 2%;
+    padding: 2%;
+}
+.small-boxes {
+    display: flex;
+    justify-content: center;
+}
+.button {
+    margin: 2%;
+}
+#image-box {
+    /* width: 30%; */
+    height: 450px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 5%;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+}
