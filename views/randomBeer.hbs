@@ -1,0 +1,9 @@
+<div class="container">
+  <p>randomBeer</p>
+  <div class="row">
+      {{#each beersFromApi}}
+    {{> randomBeer this}}
+    
+    {{/each}}
+  </div>
+</div>

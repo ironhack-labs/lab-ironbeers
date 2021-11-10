@@ -1,0 +1,10 @@
+
+<div class="container">
+  <p>beer</p>
+  <div class="row">
+      {{#each beersFromApi}}
+    {{> cardBeer this}}
+    
+    {{/each}}
+  </div>
+</div>
