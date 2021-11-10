@@ -11,3 +11,8 @@ font-family: Arial, Helvetica, sans-serif;
     height: 800px;
     /* object-fit: cover; */
 }
+
+.random-image {
+    height: 800px;
+    object-fit: contain;
+}
