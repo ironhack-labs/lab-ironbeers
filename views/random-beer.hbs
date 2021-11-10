@@ -1,0 +1,16 @@
+<div class='container'>
+  <h1>Random Beers</h1>
+
+  {{#each responseFromAPI}}
+    <div class='row'>
+      <div class='col-md-4'>
+        <img src={{{image_url}}} alt='random-beer' />
+      </div>
+      <div class='col-md-8'>
+        <h5>{{{name}}}</h5>
+        <p>{{{description}}}</p>
+      </div>
+    </div>
+  {{/each}}
+
+</div>
