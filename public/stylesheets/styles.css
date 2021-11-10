@@ -5,3 +5,44 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-nav {
+  background-color: #2081c3;
+  color: #f7f9f9;
+  padding: 9px;
+  display: flex;
+  align-items: flex-start;
+}
+
+a {
+  padding: 10px;
+  text-decoration: dashed;
+}
+
+.home-beer{
+    display: flex;
+    justify-content: center;
+    width: 20em;
+}
+
+.listed-beers {
+  width: 6%;
+}
+
+p {
+  width: 20rem;
+}
+
+.deved  {
+    background-color: #0a2c42;
+    color: #f7f9f9;
+    padding: 9px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+ 
