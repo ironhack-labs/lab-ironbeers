@@ -314,3 +314,16 @@ h4 {
     text-decoration: none;
     font-style: normal;
 }
+
+
+.choose-beer {
+    color: rgb(53, 57, 63);
+    font-family:  Helvetica, Arial, sans-serif;
+    font-size: 140px;
+    line-height: 14px;
+    font-weight: 600;
+    padding: 10px 0px 0px 0px;
+    margin: 0px;
+    text-align: right;
+    mix-blend-mode: overlay;
+}
