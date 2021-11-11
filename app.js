@@ -24,10 +24,6 @@ app.get('/', (req, res) => {
 });
 
 
-// app.get("/beers", (req, res, next) => {
-//   res.render("beers")
-// });
-
 app.get('/beers', (req, res)=>{
   punkAPI
   .getBeers()
@@ -37,8 +33,6 @@ app.get('/beers', (req, res)=>{
 })
 
 
-
-
 app.get('/randomBeer', (req, res)=>{
   punkAPI
   .getRandom()
@@ -46,11 +40,5 @@ app.get('/randomBeer', (req, res)=>{
     res.render('randomBeer', {beer}))
   .catch(error => console.log(error));
 })
-    // app.get('/randomBeer', (req, res) => {
-    //   punkAPI.getRandom()
-    //       .then(beer => res.render('randomBeer', { beer }))
-    // });
-
-
-//cambiar el codigo del servidor a 3000
+  
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

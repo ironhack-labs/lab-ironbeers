@@ -9,16 +9,28 @@ font-family: Arial, Helvetica, sans-serif;
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-   
+    min-height: 100vh;
+    flex-wrap: wrap;
 }
+
+.nav-bar{
+    height: 80px;
+    background-color: #2081c3;
+    padding: 25px;
+}
+.nav-bar a{
+    color: #f7f9f9;
+    text-decoration: none;
+    padding:20px;
+}
+
 
 .home{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100%;  
+    /* min-height: 100%;   */
     margin: 4%;
-    
 }
 
 
@@ -38,8 +50,8 @@ body{
     display: flex;
     justify-content: center;
     margin: 8px;
+    margin-bottom: 4px;
     /* display: grid; */
-
 }
 
 .buttons button{
@@ -55,12 +67,12 @@ body{
 
 
 footer{
-    display: flex;
     background-color: #0a2c42;
     color: #f7f9f9;
     height: 65px;
+    padding-bottom: 0px;
+    align-self: flex-end;
     
-    /* padding-bottom: 10%; */
 }
 
 #footer-text{
@@ -72,32 +84,32 @@ footer{
 
 
 /* ----------------------------------------------------------------------------------- */
-
+/* 
 
 .card-container{
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    flex-grow: 1;
-    width: 100vw;
-    height: 100vh;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
+    /* align-items: center; */
+    /* flex-grow: 1; */
+    /* width: 100vw; */
+    /* height: 100vh; */
+    /* padding-top: 100px; */
+    /* padding-bottom: 100px; */
+} */
 
-.card-container div {
+/* .card-container div {
     width: 25vw;
     height: 650px;
     border: 1px solid rgba(0,0,0,0.7);
     border-radius: 12px;
     text-align: center;
-}
+} */
 
-.card-container *{
+/* .card-container *{
     margin: 2vw;
 }
-
+ */
 
 
 
