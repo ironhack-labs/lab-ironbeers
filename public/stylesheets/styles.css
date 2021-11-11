@@ -118,6 +118,9 @@ footer {
         padding: 0;
         height: calc(100vh - 80px - 50px);
     }
+    .random figure{
+        min-height: 60vh;
+    }
 }
 
 
