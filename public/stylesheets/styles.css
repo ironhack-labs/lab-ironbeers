@@ -15,6 +15,10 @@ h1{
     margin-right: 10vw;
 }
 
+.navbar-brand{
+    margin-left: 1vw;
+}
+
 .card img {
     height: 400px;
     /* object-fit: cover; */
