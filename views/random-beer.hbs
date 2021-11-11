@@ -1,0 +1,6 @@
+<h1>Welcome from the Randoms beer page!</h1>
+{{#each responseFromAPI}}
+        {{> beerpartial this}}
+        <p>{{food_pairing}}</p>
+        <p>{{brewers_tips}}</p>
+	{{/each}}

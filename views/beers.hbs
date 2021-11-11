@@ -1,5 +1,6 @@
-<h1>Welcome from the Beers Page!</h1>
+<div class="beer-container">
 {{#each beersFromApi}}
-		<li>{{this.name}}</li>
-        <li>{{this.image}}</li>
+        {{> beerpartial this}}
+        
 	{{/each}}
+</div>

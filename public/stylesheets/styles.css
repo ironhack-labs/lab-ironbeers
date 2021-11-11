@@ -54,3 +54,11 @@ h2 {
       width: 400px;
       padding-bottom: 70px;
   }
+
+  .beer-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
