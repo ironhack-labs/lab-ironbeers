@@ -1,10 +1,10 @@
 <section class="beers">
     <ul>
-        {{#each beer}}
+        {{#each beersFromApi}}
           <img src={{image_url}} alt="beers"/>
-          <li> {{ name }} </li>
-          <li> {{ description }} </li>
-          <li> {{ tagline }} </li>
+          <p> {{ name }} </p>
+          <p> {{ description }} </p>
+          <p> {{ tagline }} </p>
         {{/each}}
     </ul>
 </section>

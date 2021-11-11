@@ -1,12 +1,12 @@
 <section class='random-beer'>
   <ul>
-    {{#each this}}
+    {{#each responseFromApi}}
       <img src='{{this.image_url}}' alt='beer' />
-      <li> {{this.name}} </li>
-      <li> {{this.description}} </li>
-      <li> {{this.tagline}} </li>
-      <li> {{this.food_pairing}} </li>
-      <li> {{this.brewers_tips}} </li>
+      <p> {{this.name}} </p>
+      <p> {{this.description}} </p>
+      <p> {{this.tagline}} </p>
+      <p> {{this.food_pairing}} </p>
+      <p> {{this.brewers_tips}} </p>
     {{/each}}
   </ul>
 </section>
