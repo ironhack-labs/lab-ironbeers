@@ -1,0 +1,27 @@
+<div class="card">
+    <img src="{{image_url}}" alt="{{name}}">
+
+    <div class="content">
+        <h3>
+            {{#unless randomBeer}}
+            <a href="/beers/beer-{{id}}">{{ name }}</a>
+            {{else}}
+            {{ name }}
+            {{/unless}}
+        </h3>
+        <em>{{ tagline }}</em>
+        <p>{{ description }}</p>
+
+        {{#if randomBeer}}
+        <h4>Food pairing</h4>
+
+        <ul>
+            {{#each food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+
+        <p><strong>Brewer tips:</strong> {{brewers_tips}}</p>
+        {{/if}}
+    </div>
+</div>

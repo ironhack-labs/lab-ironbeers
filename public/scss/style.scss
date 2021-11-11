@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/* SASS Document */
+
+/*=============================================== Imports ===============================================*/
+
+@import "mixins";
+@import "reset";
+@import "variables";
+
+/*=============================================== General ===============================================*/
+
+* {
+    outline: none;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--light-blue);
+    width: 100%;
+    padding: var(--margin-m) 5vw;
+
+    a {
+        color: var(--white);
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:not(:last-child) {
+            margin-right: var(--margin-m);
+        }
+    }
+}
+
+main {
+    display: grid;
+    grid-template-columns: var(--grid-template);
+    padding: var(--grid-padding);
+
+    .container {
+        grid-column: 2;
+        margin-top: var(--margin-l);
+
+        &.container-home {
+            @include flexbox(center, center, nowrap);
+            flex-direction: column;
+
+            img {
+                margin-bottom: var(--margin-l);
+                width: 50%;
+            }
+
+            .buttons-container {
+                @include flexbox(center, center, nowrap);
+                flex-direction: column;
+
+                .btn:first-child {
+                    margin-bottom: var(--margin-m);
+                }
+            }
+        }
+
+        &.container-beers {
+            @include grid(repeat(3, 1fr), var(--margin-l), var(--margin-l));
+
+            .card {
+                h3 a {
+                    color: var(--light-blue);
+                    text-decoration: none;
+                    transition: all .2s ease;
+
+                    &:hover {
+                        color: var(--dark-blue);
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    height: 20vw;
+                    object-fit: contain;
+                    margin-bottom: var(--margin-m);
+                }
+
+                p {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3; /* number of lines to show */
+                    line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                }
+            }
+        }
+
+        &.container-beer {
+            h1 {
+                margin-bottom: var(--margin-l);
+            }
+
+            .card {
+                @include flexbox(center, flex-start, nowrap);
+                $imgWidth: 20%;
+
+                img {
+                    width: $imgWidth;
+                    height: 20vw;
+                    object-fit: contain;
+                    margin-right: var(--margin-xl);
+                }
+
+                .content {
+                    width: calc((100% - #{$imgWidth}) - var(--margin-xl));
+                }
+            }
+        }
+    }
+}
+
+.card .content {
+    @include grid(1fr, var(--margin-s), var(--margin-s));
+
+    em {
+        color: var(--grey);
+        font-style: normal;
+    }
+}
+
+.btn {
+    background-color: var(--light-blue);
+    padding: var(--margin-xxs) var(--margin-xs);
+    text-decoration: none;
+    color: var(--white);
+    transition: all 0.2s ease;
+    border-radius: var(--radius-m);
+    font-size: 18px;
+    font-weight: bold;
+
+    &:hover {
+        background-color: var(--dark-blue);
+    }
+}
+
+.title-random {
+    @include flexbox(center, space-between, nowrap);
+}
+
+/*=============================================== Components ===============================================*/
+
+/*=============================================== Pages ===============================================*/
+
+/*=============================================== Helpers ===============================================*/
+
+@import "helpers";

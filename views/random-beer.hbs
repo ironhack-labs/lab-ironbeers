@@ -1,0 +1,12 @@
+<div class="container container-beer">
+    <div class="title-random">
+        <h1>Random beer</h1>
+
+        <a href="/random-beer" class="btn">New random beer</a>
+    </div>
+    
+
+    {{#each randomBeer}}
+    {{>card randomBeer="this"}}
+    {{/each}}
+</div>

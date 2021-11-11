@@ -1,0 +1,42 @@
+/*=============================================== Variables ===============================================*/
+
+:root {
+    // Colors
+    --white: #f7f9f9;
+    --light-blue: #2081c3;
+    --dark-blue: #0a2c42;
+    --grey: #bfbfbf;
+
+    // Margins
+    --margin-xxl: 48px;
+    --margin-xl: 32px;
+    --margin-l: 24px;
+    --margin-m: 16px;
+    --margin-s: 12px;
+    --margin-xs: 8px;
+    --margin-xxs: 4px;
+
+    // Fonts
+    --font-family: Arial, Helvetica, sans-serif;
+    --line-height: 1.5;
+
+    // Border Radiuses
+    --radius-xl: 16px;
+    --radius-l: 12px;
+    --radius-m: 8px;
+    --radius-s: 4px;
+    --radius-round: 99em;
+
+    // Container
+    --grid-template: 1fr 800px 1fr;
+    --grid-column: 2;
+    --grid-padding: var(--margin-xxl) 0;
+
+    @include tablet() {
+        --grid-template: 5vw 1fr 5vw;
+    }
+
+    // Transitions
+    --transition-short: all 0.2s ease;
+    --transition-long: all 0.5s ease;
+}
