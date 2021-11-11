@@ -5,3 +5,59 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+article {
+    margin-top: 32px;
+    background-color: #bfbfbf;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    
+}
+h4 {
+   
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}   
+
+.nav-bar{
+    height: 50px;
+    background-color: #2081c3;
+    margin: 10px 0px 0px 0px;
+    
+}    
+.container{
+    height: 550px;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    justify-content:center ;
+    justify-items: center;
+    background-color: #bfbfbf;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 32px;
+}
+
+button {
+    color: white;
+    background-color: #2081c3;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    padding: 10px;
+}
+.footer{
+    height: 40px;
+    color: white;
+    background-color: #0a2c42;
+    margin: -20px 0px 0px 0px ;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+       
+}
