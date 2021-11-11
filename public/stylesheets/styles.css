@@ -5,15 +5,22 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    border: 1px solid navy;
-    background-color:navy;
+    border: 1px solid #2081c3;
+    background-color: #2081c3;
   }
   
 li {
@@ -22,7 +29,7 @@ li {
   
 li a {
     display: block;
-    color: white;
+    color:#f7f9f9;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -31,4 +38,67 @@ li a {
 li a:hover:not(.active) {
     background-color: lightblue;
   }
-  
+
+
+button {
+    background-color: #2081c3;
+    color:white;
+    padding:1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    border: 5px, solid, black;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    
+}
+
+#start-page {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+footer {
+    list-style-type: none;
+    margin: 0;
+    padding: 1.5rem;
+    overflow: hidden;
+    border: 1px solid #0a2c42;
+    background-color: #0a2c42;
+    color:#f7f9f9;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+  }
+
+  .beers-grid {
+        display: grid;
+        padding: 2rem;
+        grid-template-columns: 33% 34% 33%;
+        gap: 1rem;
+        align-items: center;
+        max-width: 800px;
+        margin: 0 auto;
+        font: 500 100%/1.5 system-ui;
+        flex-wrap: wrap;
+    }
+
+ img {
+    display:flex;
+    width: 120px;
+    max-width: 20%;
+ }
+
+ #beer-glass {
+    width: 30%;
+    max-width: 60%;
+ }
+
+  .nickname {
+      color: #bfbfbf;
+  }

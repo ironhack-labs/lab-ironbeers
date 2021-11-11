@@ -9,10 +9,7 @@
 <body>
     
     {{#each randomBeer}}
-        <img src={{this.image_url}} alt='' />
-        <p>{{this.name}}</p>
-        <p>{{this.description}}</p>
-        <p>{{this.tagline}}</p>
+        <p>{{> beerpartial this}}</p>
         <p>{{this.food_pairing}}</p>
         <p>{{this.brewers_tips}}</p>
     {{/each}}
