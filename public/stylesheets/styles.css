@@ -16,6 +16,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     height: 50px;
+    margin-bottom: 100px;
 }
 
 .nav-bar a {
