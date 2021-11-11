@@ -145,7 +145,8 @@ section.single-beer {
 }
 
 .single-beer {
-    width: 80%;
+    width: 90%;
+    margin: 0 auto;
     height: auto;
     display: flex;
     align-items: center;
@@ -162,7 +163,8 @@ section.single-beer {
 }
 
 .single-beer .description-wrapper {
-    width: 60%;
+    width: 90%;
+    max-width: 700px;
 }
 
 .single-beer .food-pairing {
