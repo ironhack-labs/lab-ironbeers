@@ -1,12 +1,11 @@
-<div class='container'>
+ <div class="py-5">
+    <div class="container">
+      <div class="row hidden-md-up">
 
-  <div class='row'>
     {{#each beersFromApi}}
-      <img src={{image_url}} alt='' />
-      <h2>{{name}}</h2>
-      <p>{{description}}</p>
-      <p>{{tagline}}</p>
-      <a href='/beerpartial'>Partial Beer</a>
-    {{/each}}
+      {{>beerpartial}}
+          {{/each}}
+
+    </div>
   </div>
 </div>

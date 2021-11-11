@@ -1,6 +1,40 @@
-<nav>
+{{! <nav class='navbar'>
   <a href='/'>Home</a>
   <a href='/beers'>Beers</a>
   <a href='/random-beer'>Random Beer</a>
-  <a href='/beerpartial'>Partial Beer</a>
+</nav> }}
+
+<nav
+  class='navbar navbar-expand-lg navbar-light bg-primary shadow p-3 mb-5 rounded'
+>
+  <div class='container-fluid'>
+    <a class='navbar-brand' href='#'>
+      <img
+        src='/images/transparent-beer-draft-draft-beer-glass-11562873951q9naj1s1bu.png'
+        alt=''
+        width='45'
+        height='auto'
+        class='d-inline-block align-text-top'
+      />
+    </a>
+
+    <button
+      class='navbar-toggler'
+      type='button'
+      data-bs-toggle='collapse'
+      data-bs-target='#navbarNavAltMarkup'
+      aria-controls='navbarNavAltMarkup'
+      aria-expanded='false'
+      aria-label='Toggle navigation'
+    >
+      <span class='navbar-toggler-icon'></span>
+    </button>
+    <div class='collapse navbar-collapse' id='navbarNavAltMarkup'>
+      <div class='navbar-nav h5'>
+        <a class='nav-link text-light' href='/'>Home</a>
+        <a class='nav-link text-light' href='/beers'>Beers</a>
+        <a class='nav-link text-light' href='/random-beer'>Random Beer</a>
+      </div>
+    </div>
+  </div>
 </nav>

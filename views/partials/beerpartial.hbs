@@ -1,9 +1,12 @@
-<div>
-  {{#each beersFromApi}}
-    <img src={{image_url}} alt='' />
-    <h2>{{name}}</h2>
-    <p>{{description}}</p>
-    <p>{{tagline}}</p>
+<div class='col-md-4'>
+  <div class='card'>
+    <div class='card-block'>
+      <a class='beer-link' href='/beers/{{beer.id}}'>
+        <img class='random' src={{image_url}} alt='beer img' /></a>
+      <h2 class='fw-bolder'>{{name}}</h2>
+      <p>{{description}}</p>
+      <p>{{tagline}}</p>
 
-  {{/each}}
+    </div>
+  </div>
 </div>

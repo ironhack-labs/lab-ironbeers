@@ -5,3 +5,79 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+  background-color: #f7f9f9;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  width: 100%;
+  overflow-y: visible;
+}
+
+.random {
+  width: 80px;
+  height: auto;
+}
+
+.images {
+  width: 150px;
+}
+
+.fw-bolder {
+  margin-top: 15px;
+}
+
+.container {
+  margin-top: 55px;
+  box-shadow: 3px 3px rgb(184, 192, 208), -1em 0 0.3em rgb(85, 85, 78);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.col-md-4 {
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.d-flex {
+  margin-bottom: 50px;
+}
+.card-block {
+  margin: 30px;
+}
+
+.card:hover {
+  background-color: #eaeaea;
+}
+
+.card {
+  width: 340px;
+  border-radius: 10px;
+  box-shadow: 3px 3px rgb(184, 192, 208), -1em 0 0.4em rgb(85, 85, 78);
+}
+
+.partial-p {
+  margin-top: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  font-size: x-large;
+}
+
+footer {
+  background-color: #0a2c42;
+  width: 100%;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+}
+
+.row {
+  padding: 10px;
+}
