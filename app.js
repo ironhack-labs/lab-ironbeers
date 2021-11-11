@@ -26,7 +26,8 @@ app.get('/', (req, res) => {
 app.get('/beers', async (req, res) => {
   const beersFromApi = await punkAPI.getBeers();
   //console.log(beersFromApi);
-  res.render('beers', { beers: beersFromApi });
+  const data = { beers: beersFromApi };
+  res.render('beers', data);
 });
 
 //Random Beer
