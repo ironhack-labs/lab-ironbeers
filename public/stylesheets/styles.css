@@ -6,13 +6,25 @@ grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
 
+h1{
+    margin: 30px;
+}
+
+.body-container{
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
 
 .card img {
-    height: 800px;
+    height: 400px;
     /* object-fit: cover; */
 }
 
 .random-image {
-    height: 800px;
+    height: 400px;
     object-fit: contain;
+}
+
+.beers-container {
+    margin-top: 50px;
 }

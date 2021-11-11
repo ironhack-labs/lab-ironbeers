@@ -1,23 +1,10 @@
-<div class="container">
-  <h1>Beers</h1>
-  <div class="row">
-    {{#each beers}}
-        <div class="col-md-4">
-            <div class="card">
-                <img class="card-img-top" src="{{image_url}}" alt="{{name}}"/>
-                <div class="card-body">
-                    <h5 class="card-title">
-                        {{name}}
-                    </h5>
-                    <p class="card-text">
-                        {{description}}
-                    </p>
-                    <p class="card-text">
-                        {{tagline}}
-                    </p>
-                </div>
+<div class="body-container">
+    <h1>Beers</h1>
+    <div class="row">
+        {{#each beers}}
+            <div class="row beers-container col-md-4 d-flex justify-content-center">
+                {{> beerInfo this}}
             </div>
-        </div>
-    {{/each}}
-  </div>
+        {{/each}}
+    </div>
 </div>
