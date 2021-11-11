@@ -7,12 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    
-    {{#each randomBeer}}
-        <p>{{> beerpartial this}}</p>
-        <p>{{this.food_pairing}}</p>
-        <p>{{this.brewers_tips}}</p>
-    {{/each}}
+    <div class="random-body">
+        {{#each randomBeer}}
+        <p>{{> beerpartial }}</p>
+        <p>Food Pairing: {{this.food_pairing}}</p>
+        <p>Brewers Tips: {{this.brewers_tips}}</p>
+        {{/each}}
+    </div>
 
 </body>
 </html>

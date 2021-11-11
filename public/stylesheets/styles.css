@@ -10,7 +10,7 @@ font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
-body {
+body, ul.fp, li.fp {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -42,7 +42,6 @@ li a:hover:not(.active) {
 
 button {
     background-color: #2081c3;
-    color:white;
     padding:1rem;
     margin: 1rem;
     display: flex;
@@ -52,6 +51,11 @@ button {
     border: 5px, solid, black;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     
+}
+
+button a {
+    color:white;
+    text-decoration: none;
 }
 
 #start-page {
@@ -83,7 +87,7 @@ footer {
         gap: 1rem;
         align-items: center;
         max-width: 100%;
-        margin: 0 auto;
+        margin: 0 auto 20px auto;
         font: 500 100%/1.5 system-ui;
         flex-wrap: wrap;
     }
@@ -91,7 +95,9 @@ footer {
  img {
     display:flex;
     width: 120px;
-    max-width: 20%;
+    max-width: 30%;
+    float:left;
+    padding: 1.5rem;
  }
 
  #beer-glass {
@@ -103,6 +109,11 @@ footer {
       color: #bfbfbf;
   }
 
-  #beer-box {
-  
-  }
+.random-body {
+    margin-top: 7%;
+    
+}
+
+p {
+    margin: 1rem;
+}
