@@ -2,11 +2,7 @@
     
     <div class="beers">
         {{#each responseFromAPI}}
-        <article class="service-box">
-        <h1> {{this.name}} </h1>
-        <img src={{this.image_url}} alt="imagesBeers">
-        <h3>{{this.tagline}}</h3>
-        <p>{{this.description}}</p>
+          {{> beerpartial this }} 
         <p>{{this.food_pairing}}</p>
         <p>{{this.brewers_tips}}</p>
         </article>
