@@ -3,6 +3,7 @@ const express = require('express');
 const hbs = require('hbs');
 const path = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
+const { runInNewContext } = require('vm');
 
 const app = express();
 const punkAPI = new PunkAPIWrapper();
@@ -48,5 +49,15 @@ app.get("/random-beer", (req, res) => {
         res.render("random-beer", singleBeerObj)})      
       .catch(error => console.log(error));
 });
+
+//bonus iteration //might still need to make the link
+app.get("beers/beer-:beerId", (req, res) => {
+  const beerId = req.params.beerId;
+  punkAPI.getBeer(beerId)
+    .then(oneBeerArray => {
+      const oneBerr = oneBeerArray[0];
+      res.render("random-beer", {oneBeer : oneBeer})
+    })
+})
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

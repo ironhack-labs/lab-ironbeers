@@ -48,8 +48,8 @@ button {
     justify-content: center;
     padding: 10px 30px 10px 30px;
     border-radius: 10px;
-    border: 5px, solid, black;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border: 5px, solid, white;
+    box-shadow: 0 2px 4px 0 lightgrey;
     
 }
 
