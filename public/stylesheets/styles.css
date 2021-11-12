@@ -1,7 +1,116 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+// navbar
+nav {
+  width: 100%;
+}
+
+nav ul {
+  background-color: #2081c3;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  list-style-type: none;
+  padding: 20px;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.beer-img {
+  width: 26vw;
+  margin-bottom: 1rem;
+}
+
+.button {
+  background-color: #2081c3;
+  padding: 15px 30px;
+  margin: 20px 0;
+  color: #f3f3f3;
+  border-radius: 5px;
+}
+
+.beer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+/* .beer-props {
+  position: relative;
+  left: 75%;
+  top: -45%;
+} */
+
+// random beer
+.random-beer-container {
+  display: flex;
+}
+
+.random-beer {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  margin: 3rem auto;
+}
+
+/* .additional-info {
+  position: absolute;
+  left: 28%;
+  top: 50%;
+} */
+
+.tips {
+  width: 40%;
+}
+
+.title {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000;
+}
+
+// beers page
+.beers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.beer-image {
+  height: 250px;
+  margin: 0 4rem;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  background-color: #0a2c42;
+  color: #fff;
+  padding: 20px;
+}
