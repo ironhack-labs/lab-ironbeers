@@ -53,3 +53,44 @@ font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
     border-radius: 6px;
 }
+
+.beerimg {
+    height: 200px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: center;
+    /* align-items: center; */
+    
+}
+
+.box {
+   
+    
+    width: 250px;
+    margin: 30px;
+}
+
+.beerImgRandom {
+    height: 500px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxRandom {
+   
+    display: flex;
+    flex-direction: column ;
+    width: 250px;
+    margin: 30px;
+}

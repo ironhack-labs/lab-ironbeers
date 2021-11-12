@@ -1,8 +1,12 @@
 
+
+
 <ul>
   {{#each responseFromAPI}}
 
-    <img src='{{this.image_url}}' alt='Beers'>
+    <div class = "boxRandom"></div>
+
+    <img class ="beerImgRandom" src='{{this.image_url}}' alt='Beers'>
 
     <h1>{{this.name}}</h1>
 
@@ -23,5 +27,5 @@
 
 
   {{/each}}
-
+    </div>
 </ul>

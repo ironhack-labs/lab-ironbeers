@@ -10,6 +10,8 @@ const punkAPI = new PunkAPIWrapper();
 
 app.use(express.static(__dirname + '/public'));
 
+hbs.registerPartials(__dirname + '/views/partials')
+
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 

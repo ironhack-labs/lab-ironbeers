@@ -1,20 +1,38 @@
 
-<ul>
+{{!-- 
+{{#each beersFromApi}}
+
+{{> beerCards this}}
+
+{{/ach}} --}}
+
+
+
+
+
+
+
+
+
+<div>
+  <div class = "order">
   {{#each beersFromApi}}
-
-    <img src='{{this.image_url}}' alt='Beers'>
-
-    <h1>{{this.name}}</h1>
+   <div class = "box">
+    <img class = "beerimg" src='{{this.image_url}}' alt='Beers'>
+     
+    <h2>{{this.name}}</h2>
+    <br>
 
     <p>{{this.description}}</p>
+    <br>
 
     <h6>{{this.tagline}}</h6>
 
-
+  </div>
 
   {{/each}}
-
-</ul>
+  </div>
+</div>
 
 
 
