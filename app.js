@@ -1,5 +1,4 @@
 const express = require('express');
-
 const hbs = require('hbs');
 const path = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
@@ -17,7 +16,6 @@ hbs.registerPartials(__dirname + '/views/partials');
 // ...
 
 // Add the route handlers here:
-
 app.get('/', (req, res) => {
   res.render('index');
 });
@@ -26,7 +24,6 @@ app.get('/beers', (req, res) => {
   punkAPI
     .getBeers()
     .then(beersFromApi => {
-      //console.log('Beers from the database: ', beersFromApi);
       res.render('beers', { beerList: beersFromApi, doctitle: 'Beers Page' });
     })
     .catch(err => console.log(err));
@@ -35,18 +32,17 @@ app.get('/beers', (req, res) => {
 app.get('/random-beer', (req, res) => {
   punkAPI
     .getRandom()
-    .then(beer => {
-      res.render('random-beer', { randomBeer: beer[0], doctitle: 'Random Beer' })
+    .then(beers => {
+      res.render('random-beer', { randomBeer: beers, doctitle: 'Random Beer' })
     })
 })
 
 app.get('/beers/:id', (req, res) => {
-  let id = req.params.id
+  const id = req.params.id
   punkAPI
   .getBeer(id)
   .then(beer => {
-    console.log(beer)
-    res.render('beer-details', { beer: beer, doctitle: 'Beer Details' });
+    res.render('beer-details', { beer, doctitle: 'Beer Details' });
   })
   .catch(err => console.log(err));
 })
