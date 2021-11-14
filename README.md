@@ -60,9 +60,7 @@ Add a navbar that includes links to 3 pages:
 - _Home_ ==> should navigate to `/`.
 - _Beers_ ==> should navigate to `/beers`.
 - _Random Beer_ ==> should navigate to `/random-beer`.
-
 Layout done, let's move to creating these three pages.
-
 ### Iteration 2 - Home _page_
 
 - The first page should be **Home** and should be rendered on **`/`**. The file that gets rendered is `index.hbs`.
