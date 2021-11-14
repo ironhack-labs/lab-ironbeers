@@ -15,25 +15,34 @@ hbs.registerPartials(path.join(__dirname, '/views/partial'));
 //   res.sendFile(__dirname + '/views/home.html');
 // });
 
-app.get("/", (req, res, next) => res.render("index"));
-app.get('/beer', (req, res, next) => {
-  punkAPI
-  .getBeers()
-  .then(beersFromApi => 
-    {
-    console.log('Beers from the database: ', beersFromApi)
-    res.render('beers',{beersFromApi:beersFromApi});
-    })
-  .catch(error => console.log(error));
+app.get('/', (req, res, next) => res.render('index'));
+
+app.get('/beers/:id', async (req, res, next) => {
+  const data = await punkAPI.getBeer(req.params.id);
+  if(data.length){
+  res.render('beerDetails', { beer: data[0] });
+  }else {
+    res.status(401).send('NOT FOUND')
+  }
 });
-  app.get('/Random-beer', (req, res, next) => {
+
+app.get('/beers', (req, res, next) => {
   punkAPI
-  .getRandom()
-  .then(RbeersFromApi => 
-    {
-      console.log('randomBeers from the database: ', RbeersFromApi)
-      res.render('Random-beer',{RbeersFromApi:RbeersFromApi});
+    .getBeers()
+    .then(beersFromApi => {
+      console.log('Beers from the database: ', beersFromApi);
+      res.render('beers', { beersFromApi: beersFromApi });
     })
-  .catch(error => console.log(error));
+    .catch(error => console.log(error));
+});
+app.get('/Random-beer', (req, res, next) => {
+  punkAPI
+    .getRandom()
+    .then(RbeersFromApi => {
+      console.log('randomBeers from the database: ', RbeersFromApi);
+      res.render('Random-beer', { RbeersFromApi: RbeersFromApi });
+    })
+
+    .catch(error => console.log(error));
 });
 app.listen(5555, () => console.log('🏃‍ on port 1000'));
