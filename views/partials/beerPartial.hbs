@@ -1,0 +1,14 @@
+<div class="wrap-container">
+    {{#each data}}
+    <div class="beers-container">
+        <div>
+            <a href=“”><img src="{{this.image_url}}" alt="{{this.name}}"></a>
+        </div>
+        <div class="text-container2">
+            <h1>{{this.name}}</h1>
+            <h2>{{this.tagline}}</h2>
+            <p>{{this.description}}</p>
+        </div>
+    </div>
+    {{/each}}
+</div>
