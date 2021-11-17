@@ -5,3 +5,9 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.footer {
+    margin: 0;
+    background-color: #0a2c42;
+    padding: 10px 15px 10px 15px;
+}
