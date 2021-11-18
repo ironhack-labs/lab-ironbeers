@@ -53,6 +53,29 @@ app.get('/beers', (req, res) => {
       console.log(error)
   });
 });
+//--------Root IDBeer--------------
+app.get('/id-beer', (req, res) => {
+  punkAPI
+  .getBeer()
+  .then(id => {
+    res.render('id-beer', { 
+      id: id 
+    });
+  })
+  .catch(error => {
+      console.log(error)
+  });
+});
+
+
+
+
+
+let id = punkAPI.getBeer()
+
+id.then((id) =>{
+  // console.log(id)            <-------- consologea el id de getBear para ir por solo un objeto de arreglo
+})
 
 let listaBeers = punkAPI.getBeers()
   //  console.log(listaBeers)   <-------- consologea la promesa, va por todos los datos a la API

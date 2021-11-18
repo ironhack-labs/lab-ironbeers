@@ -171,12 +171,12 @@ font-family: Arial, Helvetica, sans-serif;
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
-    margin-bottom: 50%;
+    margin-bottom: 55%;
 }
 
-footer{
+#footerDid{
     background-color: #2081c3;
-    height: 25px;
+    height: 100%;
     width: 100%;
     color: white;
 }
