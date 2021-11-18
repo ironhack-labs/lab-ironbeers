@@ -1,0 +1,148 @@
+/*
+white: #f7f9f9;
+light-blue: #2081c3;
+dark-blue: #0a2c42;
+grey: #bfbfbf;
+font-family: Arial, Helvetica, sans-serif;
+*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.image {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 50px;
+}
+
+.beer {
+    height: 300px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px
+}
+
+.button {
+    background-color: #2081c3;
+    align-self: center;
+    padding: 13px 28px;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+/* Parte k */
+.random-container {
+    margin: 5% 0 0 10%;
+    display: flex;
+}
+
+.random-container>div>img {
+    height: 300px;
+}
+
+.text-container {
+    width: 700px;
+    text-align: justify;
+    margin-left: 6em;
+}
+
+.text-container h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.text-container h2 {
+    font-size: 1.1em;
+    font-style: italic;
+    opacity: .5;
+}
+
+.text-container h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.text-container p span {
+    font-weight: bold;
+}
+/* beers */
+.beers-container{
+    margin: 5% 0 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:400px;
+    padding: 20px;
+}
+.beers-container>div>a>img {
+    height: 300px;
+    margin-bottom: 2em;
+}
+.text-container2 {
+    text-align: justify;
+}
+
+.text-container2 h1 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.text-container2 h2 {
+    font-size: 1.1em;
+    font-style: italic;
+    opacity: .5;
+}
+
+.text-container2 h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.text-container2 p span {
+    font-weight: bold;
+}
+
+.wrap-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#homebeer{
+    align-items: center;
+    text-align: -webkit-center;
+    width: 25%;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+}
+
+#container{
+    position: fixed; 
+    left: 0px; 
+    bottom: 20px; 
+    height: 10%; 
+    width: 100%;
+}
+
+
+#homeBeerImg {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 80%;
+}
+
+
+
+
+
