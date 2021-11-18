@@ -1,34 +1,53 @@
-const express = require('express');
 
+// 1. Importaciones.
+
+const { response } = require('express');
+const express = require('express');
 const hbs = require('hbs');
 const path = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
-
 const app = express();
 require ("dotenv").config()
 const punkAPI = new PunkAPIWrapper();
 
+// 2. Middlewares.
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
-
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Register the location for handlebars partials here:
+// Partials.
+hbs.registerPartials(__dirname + "/views/partials")
 
-// ...
+// 3. Rutas.
 
-// Add the route handlers here:
-
+// Index.
 app.get('/', (req, res) => {
   res.render('index');
 });
 
+// Beers.
 app.get('/beers', (req, res) => {
-  res.render('beers');
+  punkAPI
+  .getBeers()
+  .then(beersFromApi => 
+  res.render('beers', {
+    beersFromApi: beersFromApi
+  })
+  )
+  .catch(error => console.log(error));
 });
 
+// Random-beer
 app.get('/random-beer', (req, res) => {
-  res.render('random-beer');
+  punkAPI
+  .getRandom()
+  .then(responseFromAPI =>
+    res.render('random-beer', {
+      responseFromAPI: responseFromAPI
+    })
+  )
+  .catch(error => console.log(error));
 });
 
+//4. Servidor.
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

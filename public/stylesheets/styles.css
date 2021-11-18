@@ -8,6 +8,7 @@ font-family: Arial, Helvetica, sans-serif;
 
 body {
     background-color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .index {
@@ -34,4 +35,42 @@ body {
     background-color: #0a2c42;
     padding: 10px 15px 10px 15px;
     color: white;
+}
+
+.wrap-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 10px auto;
+  }
+
+.card {
+    margin: 20px;
+    border: 2px solid blue
+}
+
+.card-img-top {
+  height: 300px;
+  object-fit: contain;
+  margin: 10px auto;
+}
+
+.card-tagline {
+  color: #bfbfbf;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.img-fluid {
+  height: 300px;
+  object-fit: contain;
+  display: block;
+  margin: 25px auto;
+}
+
+.row {
+    border: 2px solid blue
 }
