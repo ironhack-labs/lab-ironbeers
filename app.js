@@ -29,10 +29,8 @@ app.get('/', (req, res) => {
 app.get('/beers', (req, res) => {
   punkAPI
   .getBeers()
-  .then(beersFromApi => 
-  res.render('beers', {
-    beersFromApi: beersFromApi
-  })
+  .then(beers => 
+  res.render('beers', {beers})
   )
   .catch(error => console.log(error));
 });
@@ -41,11 +39,9 @@ app.get('/beers', (req, res) => {
 app.get('/random-beer', (req, res) => {
   punkAPI
   .getRandom()
-  .then(responseFromAPI =>
-    res.render('random-beer', {
-      responseFromAPI: responseFromAPI
-    })
-  )
+  .then(beer =>
+    res.render('random-beer', {beer})
+    )
   .catch(error => console.log(error));
 });
 
