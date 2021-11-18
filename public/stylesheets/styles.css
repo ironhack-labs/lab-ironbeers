@@ -3,5 +3,66 @@ white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
+
 */
+body{
+    background:  #f7f9f9;
+}
+.myNavbar{
+    background: #2081c3;
+}
+.myNavbar a{
+    color:#f7f9f9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.myFooter{
+    background: #0a2c42;
+    color: #f7f9f9;
+    padding: 15px;
+}
+a.myBtn{
+    background: #2081c3;
+    color:#f7f9f9;
+    padding: 10px 30px;
+    margin: 15px;
+}
+.nameBeer{
+    font-size: 1.5em;
+    display: block;
+}
+.descBeer{
+    font-size: 1em;
+    display: block;
+    color: #aeabab;
+}
+a.myBtn:hover{
+    color:#f7f9f9;
+   box-shadow: 0px 3px 6px 0px #5c5c5c96;
+   ;
+}
+
+.beerPhoto{
+    display: flex;
+    width: auto;
+    height: 250px;
+    justify-content: center;
+}
+
+.beerContenedor{
+    padding: 5%;
+}
+.description{
+    height: 115px;
+    overflow: auto;
+}
+.myCard{
+    border: 1px solid #cdcbcb;
+    padding: 20px;
+    border-radius: 10px;
+    height:520px;
+    margin:15px 0px;
+}
+
+.randomBeer{
+    height: 72vh;
+}
