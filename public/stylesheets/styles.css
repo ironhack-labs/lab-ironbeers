@@ -5,3 +5,58 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f9f9;
+}
+.nav {
+  background-color: #2081c3;
+}
+#container-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+.btn-primary {
+  margin: 20px 0px;
+  background-color: #2081c3;
+}
+footer {
+  background-color: #0a2c42;
+  color: #f7f9f9;
+  align-items: center;
+  font-size: 12px;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.wrap-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 10px auto;
+}
+
+.card {
+  margin: 20px;
+}
+.card-img-top {
+  height: 300px;
+  object-fit: contain;
+}
+.card-tagline {
+  color: #bfbfbf;
+}
+.card-title {
+  font-weight: bold;
+}
+.img-fluid {
+  height: 300px;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
