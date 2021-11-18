@@ -1,4 +1,4 @@
-<div class="wrap-container">
+{{!-- <div class="wrap-container">
     {{#each data}}
     <div class="beers-container">
         <div>
@@ -10,5 +10,23 @@
             <p>{{this.description}}</p>
         </div>
     </div>
+    {{/each}}
+</div> --}}
+<div class="wrap-container">
+ {{#each data}}
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+    <a href="{{this.id}}">  <img src="{{this.image_url}}" class="thumbnail-image" width="150px" alt="{{this.name}}"></a>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{this.name}}</h5>
+        <p class="card-text"><small class="text-muted">{{this.tagline}}</small></p>
+        <p class="card-text">{{this.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>
     {{/each}}
 </div>
