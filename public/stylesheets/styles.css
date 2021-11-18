@@ -5,3 +5,16 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.beer{
+   position: absolute;
+   left: 200px;
+}
+
+.button{
+    border: solid 2px blue;
+}
+
+body{
+    background-color: brown;
+}
