@@ -1,0 +1,17 @@
+<section id="beersGrid">
+{{#each beersFromAPI}}
+    <div id="beersSect" class="uk-width-1-3">
+            <div class="uk-card uk-card-small">
+                <div class="uk-card-media-top">
+                    <img class="uk-align-center" src="{{image_url}}" alt="">
+                </div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">{{name}}</h3>
+                    <h6>{{tagline}}</h6>
+                    <p>{{description}}</p>
+                </div>
+            </div>
+    </div>
+    {{!-- {{image_url}} {{description}} {{name}} --}}
+{{/each}}
+</section>
