@@ -1,0 +1,21 @@
+<div class="uk-child-width-1@m" uk-grid>
+    {{#each beers}}
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="{{image_url}}" alt="{{name}}" height="300" width="150">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">{{name}}</h3>
+                <p><i>{{tagline}}</i></p>
+                <p>{{description}}</p>
+                <h3>Food Pairing</h3>
+                <ul>
+                    {{#each this.food_pairing}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                <p><strong>Brewer Tips</strong> <span>{{brewers_tips}}</span></p>
+            </div>
+        </div>
+    {{/each}}
+</div>
