@@ -1,0 +1,9 @@
+
+{{#each randomBeer}}
+<div class='uk-container uk-column-1-2'>
+{{> beerpartial this}}
+<p><b>Food Pairing:</b> <br>
+{{food_pairing}}</p>
+<p><b>Brewer Tips: </b>{{brewers_tips}}</p>
+</div>
+{{/each}}
