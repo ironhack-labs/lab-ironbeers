@@ -1,1 +1,12 @@
-<h1>aqui van beers</h1>
+{{#each beersFromAPI}}
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+      <img src="{{image_url}}" alt="beers">
+    <h5 class="card-title">{{name}}</h5>
+    <p class="card-text">{{description}}</p>
+    <a href="#" class="card-link">{{tagline}}</a>
+  
+  </div>
+</div>
+{{/each}}
