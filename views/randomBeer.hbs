@@ -1,0 +1,12 @@
+<div class="uk-child-width-1-1 uk-margin-medium-top uk-grid-match" uk-grid>
+    <div>
+        {{> beerpartial this}}
+        <h3>Food Pairing</h3>
+        <ul>
+            {{#each food_pairing}}
+                <li>{{this}}</li>
+            {{/each}}
+            </ul>
+        <p><strong>Brewer tips: </strong>{{brewers_tips}}</p>
+    </div>
+</div>
