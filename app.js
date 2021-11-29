@@ -1,25 +1,59 @@
-const express = require('express');
+// 1. IMPORTACIONES
+const express 		= require("express")
+const app			= express()
 
-const hbs = require('hbs');
-const path = require('path');
-const PunkAPIWrapper = require('punkapi-javascript-wrapper');
+const hbs			= require("hbs")
 
-const app = express();
-const punkAPI = new PunkAPIWrapper();
+const PunkAPIWrapper	= require("punkapi-javascript-wrapper")
+const punkAPI			= new PunkAPIWrapper()
 
-app.set('view engine', 'hbs');
-app.set('views', path.join(__dirname, 'views'));
 
-app.use(express.static(path.join(__dirname, 'public')));
 
-// Register the location for handlebars partials here:
+// 2. MIDDLEWARES
+app.use(express.static("public"))
 
-// ...
+app.set("views", __dirname + "/views")
+app.set("view engine", "hbs")
 
-// Add the route handlers here:
+hbs.registerPartials(__dirname + "/views/partials")
 
-app.get('/', (req, res) => {
-  res.render('index');
-});
+// 3. RUTAS
 
-app.listen(3000, () => console.log('🏃‍ on port 3000'));
+app.get("/random-beer", (req, res) => {
+	res.render("random-beer")
+})
+
+app.get("/beers", (req, res) => {
+
+
+	const listBeers = punkAPI.getBeers()
+	console.log(listBeers)
+
+    listBeers
+		.then((beers) => { 
+			
+			console.log(beers)
+
+			res.render("beers", {
+				data: beers
+			})
+
+		})
+		.catch((error) => { 
+			console.log(error)
+		})
+	
+	
+})
+
+
+
+app.get("/", (req,res) => {
+	res.render("home")
+})
+
+// 4. SERVIDOR
+
+app.listen(3000, () => {
+	console.log(`Servidor escuchando en el puerto 3000`)
+})

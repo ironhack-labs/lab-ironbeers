@@ -1,0 +1,13 @@
+{{#each beer}}
+{{this}}
+
+    <div class="beers-container">
+            <ul class="text-container2">
+                 {{#each this.food_pairing }}
+                    <li>{{this}}</li>
+                 {{/each}}
+            </ul>
+            <p><b>Brewers Tips: </b>{{this.brewers_tips}}</p>
+    </div>
+
+{{/each}}
