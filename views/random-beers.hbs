@@ -1,4 +1,5 @@
-<ul>
+<div class="ramdon-beer">
+  <ul>
   {{#each responseFromAPI}}
 
     <img src='{{this.image_url}}' alt='Beers'>
@@ -12,11 +13,13 @@
 
     <h1>Food pairing </h1>
 
-    {{#each food_pairing}}
     <ul>
-        <li>this</li>
+       {{#each food_pairing}}
+ 
+          <li>{{this}}</li>
+   
+      {{/each}}
     </ul>
-    {{/each}}
 
     <h4>Brewer Tips</h4>
     {{this.brewers_tips}}
@@ -26,4 +29,5 @@
 
 </ul>
 
-<a href="/index">home</a>
+<a class="home-btn" href="/index">home</a>
+</div>
