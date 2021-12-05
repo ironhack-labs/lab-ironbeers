@@ -1,0 +1,22 @@
+<div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row text-center">
+
+            {{#each beers}}
+
+            <div class="col-md-4">
+                <div class="card" style="width: 23rem;">
+                <img class="mx-auto card-img-top"  alt={{name}} style="height: 125px; width:50px" src={{image_url}}>
+                        <div class="card-body scard-body">
+                        <h5 class="card-title">{{name}}</h5>
+                        <p class="card-text">{{tagline}}</p>
+                        <a href="/product-details/{{id}}" class="btn btn-primary">Details</a>
+                        </div>
+                </div>
+            </div>
+            
+            {{/each}}
+
+          </div>
+        </div>
+      </div>

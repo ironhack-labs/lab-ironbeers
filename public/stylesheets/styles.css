@@ -5,3 +5,77 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+.py-5 {
+  padding-top: 15px !important;
+}
+body {
+  background-color: dimgray;
+}
+.col-md-4 {
+  padding: 20px;
+}
+
+.card-img-top {
+  padding: 10px;
+  margin-top: 10px;
+  width: 50px;
+  height: 120px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: -10px;
+}
+
+.btn-primary {
+  margin: 10px;
+}
+rand-img-top {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.rand {
+  flex-direction: row;
+}
+.rand img {
+  width: auto;
+  height: 300px;
+  padding: 30px;
+}
+.boldy {
+  font-weight: bolder;
+}
+.imageWrap {
+  width: 188px;
+  height: 300px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  place-self: flex-end;
+}
+
+.navbarW {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 39%;
+}
+
+.row {
+  justify-content: center;
+}
+
+.card-title {
+  margin: 0;
+}
+
+.scard-body {
+  padding-top: 0;
+}
+
+.album {
+  background-color: rgb(219, 219, 219);
+}
