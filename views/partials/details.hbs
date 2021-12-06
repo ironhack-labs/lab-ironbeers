@@ -7,8 +7,14 @@
         <div class="card-body">
           <h3 class="card-title">{{this.name}}</h3>
           <p class="card-text" style="color: darkgray;">{{this.tagline}}</p>
-          <p class="card-text"><span class="boldy">Description:</span> {{this.description}}</p>
-          <p class="card-text"><span class="boldy">Food pairing:</span> {{this.food_pairing}}</p>
+          <p class="card-text"><span class="boldy">Description:</span>{{this.description}}</p>
+          <p class="card-text"><span class="boldy">Food pairing:</span></p>
+          <ul>
+                        {{#each this.food_pairing}}
+              <li>{{this}}</li>           
+                        {{/each}}
+   
+          </ul> 
           <p class="card-text"><span class="boldy">Brewers tips:</span> {{this.brewers_tips}}</p>
           <p class="card-text"><span class="boldy">Contributed by:</span> {{this.contributed_by}}</p>
          
