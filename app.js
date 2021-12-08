@@ -35,7 +35,6 @@ app.get('/random-beer', (req, res) => {
   punkAPI
     .getRandom()
     .then(responseFromAPI => {
-      console.log('Random Beer from the database: ', responseFromAPI);
       if (!responseFromAPI[0].image_url)
         responseFromAPI[0].image_url = 'https://images.punkapi.com/v2/207.png';
       res.render('random.hbs', { beer: responseFromAPI[0] });
