@@ -3,3 +3,7 @@
   width: 100%;
   object-fit: contain;
 }
+
+.beer .stretched-link {
+  text-decoration: none;
+}

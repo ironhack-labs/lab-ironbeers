@@ -11,3 +11,22 @@ module.exports.list = (req, res, next) => {
     })
     .catch(error => next(error));
 }
+
+module.exports.random = (req, res, next) => {
+  PunkApi. getRandom()
+    .then(([beer]) => res.render('beers/detail', { beer }))
+    .catch(error => next(error));
+}
+
+module.exports.detail = (req, res, next) => {
+  const { id } = req.params;
+  PunkApi.getBeer(id)
+  .then((beers) => {
+    if (beers && beers.length > 0) {
+      res.render('beers/detail', { beer: beers[0] })
+    } else {
+      res.redirect('/beers');
+    }
+  })
+  .catch(error => next(error));
+}

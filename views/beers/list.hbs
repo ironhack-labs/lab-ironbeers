@@ -4,7 +4,9 @@
       <div class="card beer">
         <img src="{{ beer.image_url }}" class="card-img-top p-3" alt="{{ beer.name }} - {{ beer.tagline }}">
         <div class="card-body">
-          <h5 class="card-title">{{ beer.name }}</h5>
+          <a href="/beers/{{ beer.id }}" class="stretched-link text-dark">
+            <h5 class="card-title">{{ beer.name }}</h5>
+          </a>
           <p class="card-text">{{ beer.short_description }}...</p>
         </div>
       </div>

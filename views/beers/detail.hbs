@@ -1,0 +1,24 @@
+<div class="row g-6">
+  <div class="col-12 col-md-1">
+      <img src="{{#if beer.image_url}}{{ beer.image_url }}{{ else }}/images/no-beer.jpeg{{/if}}" 
+        class="img-fluid" alt="{{ beer.name }}" />
+  </div>
+
+  <div class="col-12 col-md-11">
+    <h5 class="mb-2">{{ beer.name }}</h5>
+    <h6 class="text-muted mb-2">{{ beer.tagline }}</h6>
+    <p class="mb-4">{{ beer.description }}</p>
+
+    <div class="row mb-3">
+      <div class="col-12 col-md-6">
+        <ul class="list-group">
+          {{#each beer.food_pairing as |pairing|}}
+            <li class="list-group-item">{{ pairing }}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+
+    <p><strong>Brewers tips:</strong> {{ beer.brewers_tips }}</p>
+  </div>
+</div>

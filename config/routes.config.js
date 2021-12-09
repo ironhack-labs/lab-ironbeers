@@ -7,4 +7,8 @@ router.get('/', misc.home);
 
 router.get('/beers', beers.list);
 
-module.exports = router;
+router.get('/beers/:id', beers.detail);
+
+router.get('/random-beer', beers.random);
+
+module.exports = router; 
