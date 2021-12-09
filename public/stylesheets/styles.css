@@ -5,3 +5,20 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.center-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-btns {
+    margin-top: 10px;
+    height: 30px;
+    width: 140px;
+    border: 2px solid darkblue;
+}
+
+.beer-card {
+    
+}

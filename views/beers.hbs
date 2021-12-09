@@ -1,0 +1,14 @@
+<div class="container">
+    <div id="beers-album" class="row">
+        {{#each beers}}
+            <div class="col-md-4">
+                <div class="beer-card">
+                    <img src={{image_url}} alt={{name}} style="height: 125px">
+                    <h3>{{name}}</h3>
+                    <p>{{description}}</p>
+                    <p>{{tagline}}</p>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>
