@@ -44,13 +44,13 @@ app.get('/random-beer', (req, res, next) => {
   .catch(error => console.log(error));
 });
 
-/*app.get('/product-details/:beer', (req, res) => {
+app.get('/product-details/:beer', (req, res) => {
   punkAPI
   .getBeer(req.params.beer)
   .then(beerFromApi => {
-    beerFromApi
-  }
+    res.render('product-details', {beer: beerFromApi});
+  })
 
-})*/
+})
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

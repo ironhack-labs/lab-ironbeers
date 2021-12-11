@@ -47,6 +47,49 @@ html {
     justify-content: center;
 }
 
-.beers-page{
+.card{
+/*    padding: 0px 20px;
+    width: 300px;
+    margin: 15px;
+    border: 1px solid black;
+    */
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.cards-container{
+    max-width: 300px;
+    overflow: auto;
+    margin: 15px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+#beer-picture{
+    max-height: 200px;
+    object-fit: scale-down;
     
+}
+
+.random-beer {
+    display: flexbox;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 800px;
+    margin: 100px 200px;
+    
+}
+
+#random-beer-picture{
+    max-height: 250px;
+}
+
+#beer-link{
+    text-decoration: none;
 }

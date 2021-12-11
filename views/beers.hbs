@@ -1,13 +1,12 @@
-<div>
-    <h2>Beers</h2>
-    
-</div class="beers-page">
-<ul>
+
+<div class="card">
   {{#each beers}}
-    <img src ={{image_url}} alt={{name}}>
-    <h2>{{name}}</h2>
+    <div class = "cards-container">
+    <img src ={{image_url}} alt={{name}} id="beer-picture"/>
+    <a id ="beer-link" href="/product-details/{{id}}">{{name}}</a>
     <h4>{{tagline}}</h4>
-    <p>{{description}}</p>
-    
+    <p>{{description}}</p> 
+    </div>
   {{/each}}
-</ul>
+
+</div>
