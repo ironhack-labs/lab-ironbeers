@@ -1,0 +1,14 @@
+<h1>These are Beers!!</h1>
+<div class="container">
+  <div class="row">
+{{#each beersFromApi}}
+<div class="card" style="max-width:150px">
+  <img src="{{image_url}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{name}}</h5>
+    <p class="card-text text-truncate">{{description}}</p>
+  </div>
+</div>
+{{/each}} 
+  </div>
+</div>
