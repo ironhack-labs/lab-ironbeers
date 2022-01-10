@@ -1,0 +1,35 @@
+<div>
+    {{#each detailedBeer}}
+
+        {{> beerPartial this}}
+        
+    {{/each}}
+
+    {{#each detailedBeer}}
+
+        <p><b>First Brewed:</b> {{first_brewed}}</p>
+        <p><b>Attenuation Level:</b> {{attenuation_level}}</p>
+        <p><b>PH:</b> {{ph}}</p>
+        <p><b>Ingredients:</b></p>
+        {{#each ingredients}}
+            {{#unless [{}]}}
+            <li>{{@key}}: {{this}}</li>
+            {{else}}
+                <p><b>Malt:</b></p>
+                {{#each malt}}
+                <li>{{this}}</li>
+                {{/each}}
+                <p><b>Hops:</b></p>
+                {{#each hops}}
+                <li>{{this}}</li>
+                {{/each}}
+                <p><b>Yeast:</b>{{yeast}}</p>
+            {{/unless}}
+        {{/each}}
+        {{#each food_pairing}}
+            <li>{{this}}</li>
+        {{/each}}
+
+        <p><b>Brew Tips:</b> {{brewers_tips}}</p>
+    {{/each}}
+</div>
