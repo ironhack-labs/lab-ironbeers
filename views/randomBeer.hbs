@@ -1,6 +1,11 @@
-<h1> Random Beer </h1>
-<div class="card-container">
-    {{#each beer}}
-        {{> beerPartial this}}
-    {{/each}}
+<div class="row">
+    <div class="random-beer">
+        {{#each beer}}
+            {{> randomBeerPartial this}}
+        {{/each}}
+    </div>
 </div>
+
+{{!-- <footer>
+    <nav id="footer-text">Develop by Ironhack ;) </nav>
+</footer> --}}

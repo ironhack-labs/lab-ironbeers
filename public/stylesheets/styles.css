@@ -11,17 +11,20 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
     flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
 }
 
 .nav-bar{
-    height: 80px;
+    height: 60px;
     background-color: #2081c3;
-    padding: 25px;
+    padding: 20px;
+    padding-top: 20px;
 }
 .nav-bar a{
     color: #f7f9f9;
     text-decoration: none;
-    padding:20px;
+    padding:30px;
 }
 
 
@@ -29,7 +32,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* min-height: 100%;   */
     margin: 4%;
 }
 
@@ -69,10 +71,9 @@ body{
 footer{
     background-color: #0a2c42;
     color: #f7f9f9;
-    height: 65px;
+    height: 70px;
     padding-bottom: 0px;
     align-self: flex-end;
-    
 }
 
 #footer-text{
@@ -80,108 +81,28 @@ footer{
 }
 
 
-
+.main-container{
+    display: flex;
+}
 
 
 /* ----------------------------------------------------------------------------------- */
-/* 
 
-.card-container{
+.beer-container{
     display: flex;
-    justify-content: center;
+    /* flex-direction: column; */
+    width: 200px;
+    
+}
+.random-beer{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: 200px;
+}
+
+.card {
+    display: flex;
     flex-wrap: wrap;
-    /* align-items: center; */
-    /* flex-grow: 1; */
-    /* width: 100vw; */
-    /* height: 100vh; */
-    /* padding-top: 100px; */
-    /* padding-bottom: 100px; */
-} */
-
-/* .card-container div {
-    width: 25vw;
-    height: 650px;
-    border: 1px solid rgba(0,0,0,0.7);
-    border-radius: 12px;
-    text-align: center;
-} */
-
-/* .card-container *{
-    margin: 2vw;
 }
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-html {
-    font-size: 20px;
-    font-family: Arial,
-        Helvetica,
-        sans-serif;
-    margin: 0;
-    padding: 0;
-}
-body {
-    margin: 0;
-    padding: 0;
-}
-.fixed-nav {
-    height: 6rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #0a2c42;
-    color: #ffffff;
-} */
-
-
 
