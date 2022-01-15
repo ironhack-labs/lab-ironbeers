@@ -1,0 +1,24 @@
+<section class="bg-light py-3 py-md-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 text-center">
+                <img src="{{beer.image_url}}" alt="Picture of {{beer.name}} Beer" height="350" class="mx-auto my-3"/>
+            </div>
+            <div class="col-12 col-md-6">
+                <h1 class="h2">{{beer.name}}</h1>
+                <p class="lead">{{beer.tagline}}</p>
+                <h2 class="h5">Description</h2>
+                <p class="card-text">{{beeer.description}}</p>
+                <h2 class="h5">food pairing</h2>
+                <ul>
+                    {{#each beer.food_pairing}}
+                        <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                <h2 class="h5">Brewing Tips</h2>
+                <p class="card-text">{{beer.brewers_tips}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+

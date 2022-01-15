@@ -1,0 +1,18 @@
+<section class="bg-light py-3 py-md-5">
+    <div class="container">
+        <div>
+           <h1 class="h2">All Beers</h1>
+           <p class="lead">A curated list of the finest beers.</p>
+        </div>
+  
+        <div class="row" data-masonry='{"percentPosition": true }'>
+            
+            {{#each beers}}
+                <div class="col-12 col-md-6 col-lg-4">
+                    {{> beercard this}} 
+                </div> 
+            {{/each}}
+        </div>
+    </div>
+</section>
+
