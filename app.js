@@ -12,7 +12,8 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Register the location for handlebars partials here:
+hbs.registerPartials(__dirname + "/views/partials");
+
 
 // ...
 
@@ -23,3 +24,4 @@ app.get('/', (req, res) => {
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
+
