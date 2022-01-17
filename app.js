@@ -12,6 +12,8 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+hbs.registerPartials(__dirname + "/views/partials");
+
 // Register the location for handlebars partials here:
 
 // ...
