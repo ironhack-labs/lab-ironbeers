@@ -22,5 +22,19 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+app.get('/beers', (req, res) => {
+  res.render('beers');
+});
+
+app.get('/random', (req, res) => {
+  res.render('random');
+});
+
+
+// Default route
+app.use((req, res) => {
+  res.status(404).send("Not found wey");
+});
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
 
