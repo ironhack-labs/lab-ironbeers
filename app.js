@@ -30,7 +30,7 @@ hbs.registerPartials(__dirname + '/views/partials');
 
 app.get("/randomBeer", (req, res) => {
   punkAPI.getRandom().then(randomBeer => {
-    res.render("randomBeer", { randomBeer });
+    res.render("randomBeer", { randomBeer: randomBeer });
   });
 });
 
