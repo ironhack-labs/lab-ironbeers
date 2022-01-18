@@ -1,0 +1,23 @@
+<div class="card" style="padding-left: 30px" style="max-width: 1000px; ">
+  <div class="row">
+    <div class="col">
+      <img src="{{ this.image_url}}" class="img-fluid rounded-start" width="150px" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+
+        {{!-- {{adding image/name/description/tagline/food pairing/brewer tips}} --}}
+
+        <h5>{{ name }}</h5>
+        <p><small>{{ tagline }}</small></p>
+        <p>{{ description }} 
+            {{ food_pairing}} 
+            {{brewers_tips}} </p>
+        <h6>Food pairing</h6>
+         <p>{{ food_pairing}}</p>
+         <h6>Brewers tips</h6>
+          <p>{{brewers_tips}} </p>
+      </div>
+    </div>
+  </div>
+</div> 
