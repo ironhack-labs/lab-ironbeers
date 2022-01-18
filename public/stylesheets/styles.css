@@ -18,6 +18,10 @@ font-family: Arial, Helvetica, sans-serif;
     margin-top: 50px;
 }
 
-#home-div button {
+#home-div a {
     margin-top: 25px;
+}
+
+.beer-img {
+    width: 50px;
 }
