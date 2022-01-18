@@ -23,23 +23,18 @@ app.get('/', (req, res, next) => {
 });
 
 app.get('/beers', (req, res) => {
-  res.render('beers');
+  punkAPI
+    .getBeers()
+    .then(beers => res.render('beers', {beers}))
+    .catch((err) => console.log(err));  
 });
 
 app.get('/randomBeer', (req, res) => {
-  res.render('randomBeer');
-});
-
-app.get("/beers", (req, res) => {
   punkAPI
-    .getBeers()
-      .then(beers => {
-        console.log("hello")
-        res.render("beers", { beers: beers })
-      })
-      .catch(err => {
-        console.log(err)
-      })
-})
+    .getRandom()
+    .then(randomBeer => res.render('randomBeer', {randomBeer}))
+    .catch((err) => console.log(err));
+    
+});
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
