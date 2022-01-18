@@ -1,10 +1,15 @@
 <div id="random-beer-div">
     <div class="card">
-        <img src={{this.image_url}} class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">{{this.name}}</h5>
-          <p class="card-text"><small class="text-muted">{{this.tagline}}</small></p>
-          <p class="card-text">{{this.description}}</p>
+        {{>beerPartial}}
+          <h6>Food Pairing</h6>
+          <ul>
+              {{#with food_pairing}}
+                {{#each this as | food |}}
+                    <li>{{food}}</li>
+                {{/each}}
+              {{/with}}
+          </ul>
+          <p class="card-text"><span style="font-weight: bold;">Brewers Tips:</span> {{this.brewers_tips}}</p>
         </div>
     </div>
 </div>
