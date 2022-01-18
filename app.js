@@ -18,6 +18,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Add the route handlers here:
 
+hbs.registerPartials(__dirname + "/views/partials")
+
+
 app.get('/', (req, res, next) => {
   res.render('index');
 });
