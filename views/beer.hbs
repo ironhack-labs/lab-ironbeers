@@ -1,19 +1,7 @@
 <div class='container'>
   <div class='row'>
     {{#each beers}}
-      <div class='col-md-3'>
-        <img
-          width='20px'
-          src='{{this.image_url}}'
-          class='card-img-top'
-          alt='{{this.name}}'
-        />
-        <div class='card-body'>
-          <h5 class='card-title'>{{this.name}}</h5>
-          <h6>{{this.tagline}}</h6>
-          <p class='card-text'>{{this.description}}</p>
-        </div>
-      </div>
+{{> beerpartial this }}
     {{/each}}
   </div>
 </div>
