@@ -22,3 +22,9 @@ font-family: Arial, Helvetica, sans-serif;
     flex-direction: column;
     
 }
+
+.card-img-top {
+
+   width: 50px;
+  
+}

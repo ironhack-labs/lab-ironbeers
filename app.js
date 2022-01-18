@@ -22,7 +22,12 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 app.get('/beers', (req, res) => {
-  res.render('beers');
+  punkAPI
+  .getBeers()
+  .then(beers => {
+    res.render('beers', { beers })
+    .catch(error => console.log(error))
+  })
 });
 app.get('/beers', (req, res) => {
   res.render('randomBeer');
