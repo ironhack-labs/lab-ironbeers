@@ -1,0 +1,20 @@
+<div>
+{{#each selectedBeer}}
+{{> beerpartial this}}
+{{/each}}
+
+{{#each selectedBeer}}
+<h4><strong>First brewed</strong></h4>
+<p>{{first_brewed}}</p>
+
+<h4>Attenuation level</h4>
+<p>{{attenuation_level}}</p>
+
+<h4>PH</h4>
+<p>{{ph}}</p>
+
+<ul>Ingredients</ul>
+{{#each ingredients}}
+<li>{{this}}</li>
+{{/each}}
+</div>

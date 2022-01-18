@@ -43,6 +43,17 @@ app.get('/random-beer', (req, res) => {
     .catch(error => console.log(error));
 });
 
+//Iteration 6
+app.get('/beer/:id?', (req, res) => {
+  punkAPI
+    .getBeer(req.params.id)
+    .then(selectedBeer => {
+      console.log(selectedBeer);
+      res.render('selectedBeer', { selectedBeer });
+    })
+    .catch(err => console.log(err));
+});
+
 hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
