@@ -12,8 +12,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-hbs.registerPartials(__dirname + "/views/partials");
-
+hbs.registerPartials(__dirname + '/views/partials');
 
 // ...
 
@@ -22,6 +21,11 @@ hbs.registerPartials(__dirname + "/views/partials");
 app.get('/', (req, res) => {
   res.render('index');
 });
+app.get('/beers', (req, res) => {
+  res.render('beers');
+});
+app.get('/beers', (req, res) => {
+  res.render('randomBeer');
+});
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
-
