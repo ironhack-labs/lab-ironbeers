@@ -15,6 +15,8 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+hbs.registerPartials(__dirname + "/views/partials"); //load all partials from a specific directory.
+
 
 
 app.get('/', (req, res) => {
@@ -41,6 +43,15 @@ app.get('/random', (req, res) => {
     .catch(error => console.log(error));
 });
 
+app.get("/bonusPage", (req, res) => {
+  punkAPI
+    .getBeers()
+    .then(beersArray => {
+      console.log('Beers from the database: ', beersArray)
+      res.render("bonusPage", { newname: beersArray })
+    })
+    .catch(error => console.log(error));
+})
 
 // Default route
 app.use((req, res) => {
