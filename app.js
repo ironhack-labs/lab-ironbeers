@@ -31,7 +31,7 @@ hbs.registerPartials(__dirname + '/views/partials');
 app.get("/randomBeer", (req, res) => {
   punkAPI.getRandom().then(randomBeer => {
     res.render("randomBeer", { randomBeer: randomBeer });
-  });
+  }).catch(error => console.log(error))
 });
 
 // Register the location for handlebars partials here:
