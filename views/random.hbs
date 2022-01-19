@@ -1,3 +1,24 @@
-<div>
-random asdasd
-</div>
+
+{{#each randomBeer}}
+  <div class="row d-flex align-items-center justify-content-between py-4">
+    <div class="col-md-4 d-flex justify-content-center">
+      <img style="height:700px; width:auto" src={{this.image_url}} alt="image">
+    </div>
+    <div class="col-md-8 ">
+      <h1>{{this.name}}</h1>
+      <p>{{this.description}}</p>
+      <i>"{{this.tagline}}"</i>
+
+      <h5 class="mt-5">Food Pairing:</h5>
+      <ul>
+          {{#each this.food_pairing}}
+              <li>{{this}}</li>
+          {{/each}}
+      </ul>
+      
+      <h5>Brewer Tips:</h5>
+      <p>{{this.brewers_tips}}</p>
+    </div>
+  </div>
+  
+{{/each}}
