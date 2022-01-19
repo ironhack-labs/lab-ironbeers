@@ -124,3 +124,63 @@ footer a:hover {
 .beer-description {
     font-size: 12px;
 }
+
+/* styling RANDOM BEER */
+
+#random-beer-div {
+    width: 50%;
+    position: absolute;
+    left: 24%;
+    top: 20%;
+}
+
+.random-beer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: -20px;
+    position: relative;
+}
+
+.random-beer h6 {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.beer-food-pairing li {
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.beer-brewers-tips {
+    font-size: 12px;
+}
+
+.beer-brewers-tips span {
+    font-weight: bold;
+}
+
+.random-beer .beer-img {
+    width: 70px;
+    height: 160px;
+    position: absolute;
+    left: -100px;
+    top: 0px;
+}
+
+.random-beer .beer-img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* .beer-img {
+    width: 60px;
+    height: 130px;
+    margin-bottom: 10px;
+}
+
+.beer-img img {
+    max-width: 100%;
+    max-height: 100%;
+} */

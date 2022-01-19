@@ -33,7 +33,6 @@ app.get('/beers', (req, res) => {
 app.get('/beers/beer/:id', (req, res) => {
   punkAPI.getBeer(req.params.id)
     .then(beer => {
-      console.log({beers: beer});
       res.render('beers', {beers: beer});
     })
 })
