@@ -1,0 +1,11 @@
+<h1 class="h1 text-center m-4 border-bottom mt-5">Beers</h1>
+
+<div class="container ">
+    <div class="row">
+        {{#each beers }}
+        <div class="col-6">
+        {{> beerCard this }}
+        </div>
+        {{/each}}
+    </div>
+</div>

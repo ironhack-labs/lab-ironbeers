@@ -21,12 +21,23 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-app.get('/beers', (req, res) => {
-  res.render('beers')
+app.get("/beers", (req, res) => {
+  punkAPI
+    .getBeers()
+      .then(beers => {
+        res.render("beers", { beers: beers })
+      })
+      .catch(error => console.log(error))
 })
 
-app.get('/randomBeers', (req, res)=> {
-  res.render('randomBeers')
+app.get('/randomBeers', (req, res) => {
+  punkAPI
+  .getRandom()
+    .then(randomBeers => {
+      res.render('randomBeers',{randomBeers})
+      console.log("randomBeers", {randomBeers});
+    })
+    .catch(error => console.log(error))
 })
 
 // 404 error
