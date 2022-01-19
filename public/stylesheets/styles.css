@@ -6,6 +6,25 @@ grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-collapse {
+  background-color: #2081c3;
+}
+
+.navbar-nav {
+  padding: 6px;
+  font-size: 14px;
+}
+
+.nav-item {
+  color: white !important;
+}
+
+/* Home Style */
+
 .home-beer {
   width: 300px;
   height: 300px;
@@ -13,18 +32,49 @@ font-family: Arial, Helvetica, sans-serif;
   margin-left: auto;
   margin-right: auto;
   margin-top: 120px;
- 
 }
 
 .home-buttons {
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column;
-    
+  margin-top: 45px;
+  position: relative;
+  text-align: center;
+  right: 25px;
 }
 
+.button {
+  margin-top: 25px;
+  text-decoration: none;
+  background-color: #2081c3;
+  border-radius: 3px;
+  color: white;
+  padding: 8px;
+  font-size: 14px;
+}
 .card-img-top {
+  width: 50px;
+}
 
-   width: 50px;
-  
+footer {
+  margin-top: 40px;
+  padding: 6px;
+  background-color: #0a2c42;
+  color: white;
+  font-size: 12px;
+  height: 42px;
+  line-height: 42px;
+}
+
+/* Random Beer styling */
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 13px;
+}
+
+.card-text-subtitles {
+  font-weight: bold;
 }
