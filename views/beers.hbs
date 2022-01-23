@@ -1,0 +1,17 @@
+<div class="container-beer">
+    <div class="row header">
+        <div class="col-3">Image</div>
+        <div class="col-3">Name</div>
+        <div class="col-3">description</div>
+        <div class="col-3">Tagline</div>
+    </div>
+  <div class="row">
+      {{#each beersFromApi}}
+        <div class="col-3"><img class="images" src="{{this.image_url}}"></div>
+        <div class="col-3">{{this.name}}</div>
+        <div class="col-3">{{this.description}}</div>
+        <div class="col-3">{{this.tagline}}</div>
+    {{/each}}
+  </div>
+</div>
+

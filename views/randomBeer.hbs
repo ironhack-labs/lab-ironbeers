@@ -1,0 +1,13 @@
+<div class='container-beer'>
+  <div class='row'>
+    {{#each beersFromApi}}
+      <div class='col-4'><img class='images' src='{{this.image_url}}' /></div>
+      <div class='col-8'>
+        <b>Name:</b>{{this.name}}<br /><b>Description</b>{{this.description}}<br/>
+        <b>Tagline</b>{{this.tagline}}<br /><b
+        >Food_pairing</b>{{this.food_pairing}}<br />
+        <b>brewers_tips</b>{{this.brewers_tips}}
+      </div>
+    {{/each}}
+  </div>
+</div>
