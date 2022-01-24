@@ -1,0 +1,12 @@
+{{#each newname}}
+<div class="col-md-4 my-3 d-flex flex-column align-items-center">
+    <div>
+        <img style="height: 200px; width:auto;" src={{this.image_url}} alt="image">
+    </div>
+    <div>
+        <h1>{{this.name}}</h1>
+        <i class="text-muted">"{{this.tagline}}"</i>
+        <p>{{this.description}}</p>
+    </div>
+</div>
+{{/each}}
