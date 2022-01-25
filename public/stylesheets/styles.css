@@ -61,3 +61,8 @@ font-family: Arial, Helvetica, sans-serif;
     max-width: 100%;
     padding: 0;
 }
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+  }
