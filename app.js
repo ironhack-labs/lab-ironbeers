@@ -33,7 +33,20 @@ app.get('/beers', (req, res) => {
 })
 
 app.get('/random-beer', (req, res) => {
-  res.render('random-beer')
+  punkAPI
+  .getRandom()
+  .then(randomBeer => {
+    res.render("random-beer", { randomBeer: randomBeer})
+  })
+  .catch(error => console.log(error));
 })
+
+
+
+// Default route
+app.use((req, res) => {
+  res.status(404).send("Not found wey");
+});
+
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

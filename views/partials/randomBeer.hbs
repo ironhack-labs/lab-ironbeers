@@ -1,0 +1,28 @@
+<div class="card mt-3" style="max-width: 60%; margin: auto">
+  <div class="row p-5">
+    <div class="col-md-2">
+      <img src="{{this.image_url}}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-10">
+      <div class="card-body">
+        <h2 class="card-title">{{this.name}}</h2>
+        <p class="card-text text-secondary">{{this.tagline}}</p>
+        <p class="card-text">{{this.description}}</p>
+
+        <div class="food-pairing mt-5">
+            <h5 class="card-title">Food Pairing</h5>
+            <ul>
+                {{#each this.food_pairing}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </div>
+
+        <div class="brewers-tips mt-4">
+            <p class="card-text"><strong>Brewers Tips:</strong> {{this.brewers_tips}}</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
