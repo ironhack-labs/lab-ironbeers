@@ -9,13 +9,12 @@ const punkAPI = new PunkAPIWrapper();
 
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
-hbs.registerPartials(__dirname + "/views/partials");
 
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Register the location for handlebars partials here:
 
-// ...
+hbs.registerPartials(__dirname + "/views/partials");
 
 // Add the route handlers here:
 
@@ -28,6 +27,15 @@ app.get('/beers', (req, res) => {
   .getBeers()
   .then(beers => {
     res.render("beers", { beers: beers })
+  })
+  .catch(error => console.log(error));
+})
+
+app.get('/beers/beer/:id', (req, res) => {
+  punkAPI
+  .getBeer(req.params.id)
+  .then(beer => {
+    res.render("beers", { beers: beer })
   })
   .catch(error => console.log(error));
 })

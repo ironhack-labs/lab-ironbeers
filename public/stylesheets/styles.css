@@ -18,12 +18,15 @@ grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
 
+body {
+    background-color: #F7F9F9;
+}
+
 .home-intro {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #F7F9F9;
     padding: 100px 0px;
 }
 
@@ -55,6 +58,13 @@ font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     padding: 10px 0px;
 
+}
+
+.footer p {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    margin: 0;
 }
 
 .container {
