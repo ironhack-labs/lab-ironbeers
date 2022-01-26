@@ -1,8 +1,7 @@
 {{#each randomBeer}}
-<img src="{{this.image_url}}" alt="">
-{{this.name}}
-{{this.description}}
-{{this.tagline}}
+    
+    {{>beerpartial this}}
+ 
 {{this.food_pairing}}
 {{this.brewers_tips}}
 {{/each}}

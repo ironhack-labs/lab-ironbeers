@@ -17,6 +17,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // ...
 
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
+
 // Add the route handlers here:
 
 app.get('/', (req, res) => {
@@ -32,8 +34,6 @@ app.get("/beers", (req, res) => {
   res.render("beers", {beers: myBeers});
 
   console.log("it works")
-
-
 
 })
   
