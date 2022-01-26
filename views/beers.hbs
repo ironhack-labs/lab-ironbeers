@@ -1,0 +1,10 @@
+<div class='container'>
+  <div class='row'>
+    {{#each beers}}
+      <div>
+        <h2>{{this.name}}</h2>
+      {{> beerpartial}}
+      </div>
+    {{/each}}
+  </div>
+</div>
