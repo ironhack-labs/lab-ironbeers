@@ -11,3 +11,14 @@ font-family: Arial, Helvetica, sans-serif;
   object-fit: contain;
 }
 
+.container {
+    margin-top: 50px;
+}
+
+.card a {
+    margin-top: 20px;
+}
+
+.card {
+    border: 0px white !important;
+}
