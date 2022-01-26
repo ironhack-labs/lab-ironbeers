@@ -1,0 +1,10 @@
+{{#each responseFromAPI}} 
+<div class="container">
+{{> beerpartial this}} 
+      <h5>Food Pairing</h5>
+      <p>{{this.food_pairing }}</p>
+      <h5>Brewers Tips</h5>
+      <p>{{this.brewers_tips}}</p>
+
+  </div>
+{{/each}}
