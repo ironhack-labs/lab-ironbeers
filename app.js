@@ -1,4 +1,5 @@
 const express = require('express');
+const res = require('express/lib/response');
 
 const hbs = require('hbs');
 const path = require('path');
@@ -21,5 +22,42 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
   res.render('index');
 });
+
+app.get("/beers", (req, res) => {
+  punkAPI
+  .getBeers()
+  .then((beersFromApi) => {//console.log('Beers from the database: '//, beersFromApi);
+  let myBeers = beersFromApi;
+  
+  res.render("beers", {beers: myBeers});
+
+  console.log("it works")
+
+
+
+})
+  
+  
+
+  .catch(error => console.log(error));
+  
+});
+
+app.get("/random-beer", (req, res) => {
+punkAPI
+  .getRandom()
+  .then(responseFromAPI => {
+    // your magic happens here
+console.log(responseFromAPI)
+res.render("random-beer", {randomBeer: responseFromAPI});
+
+}
+
+  )
+  .catch(error => console.log(error));
+
+});
+
+
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
