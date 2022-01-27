@@ -1,7 +1,26 @@
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.color-nav {
+    color: #2081c3;
+}
+
+.nav-link {
+    color: #f7f9f9;
+
+}
+
+.img-beer {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+}
 /*
-white: #f7f9f9;
-light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
 */
