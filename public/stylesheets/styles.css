@@ -14,17 +14,17 @@ body {
 }
 
 .img-beer {
-    width: 30%;
+    width: 25%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 120px;
+    margin-top: 15px;
     padding-bottom: 50px;
 }
 
 .button {
     color: #2081c3;
-    padding: 20px;
+    padding: 15px;
     display: flex;
     justify-content: center;
 }
@@ -34,7 +34,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100vw;
-    height: 50px;
+    height: 40px;
     margin: 0;
     font-size: 14px;
 }
@@ -42,7 +42,7 @@ footer {
 .footer p {
     color: #f7f9f9;
     margin-left: 20px;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 
 .footer a {
