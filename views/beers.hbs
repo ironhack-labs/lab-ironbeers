@@ -1,0 +1,32 @@
+<section class='md:overflow-x-scroll'>
+  <div class='flex container p-5 py-12 mx-auto md:p-20 max-w-7xl items-stretch'>
+    <div class='flex flex-wrap mx-auto md:flex-nowrap items-stretch'>
+      {{#each beersFromApi}}
+        <a href="/beers/{{id}}">
+          <div class='flex w-full items-stretch'>
+            <div
+              class='relative flex flex-col items-stretch m-1 transition duration-300 ease-in-out delay-150 transform bg-white shadow-2xl rounded-xl md:w-80 md:hover:-translate-x-16 md:hover:-translate-y-8'
+            >
+              <img
+                class='object-contain object-center w-full rounded-t-xl lg:h-48 md:h-36'
+                src='{{image_url}}'
+                alt='blog'
+              />
+              <div class='px-6 py-8'>
+                <h4 class='mt-4 text-2xl font-semibold text-neutral-600'>
+                  <span class=''>{{name}}
+                  </span></h4>
+                <p
+                  class='mt-4 text-base font-normal text-gray-500 leading-relax'
+                >
+                  {{description}}
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+      {{/each}}
+
+    </div>
+  </div>
+</section>
