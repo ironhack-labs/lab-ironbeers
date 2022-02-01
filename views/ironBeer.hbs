@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row">
+        {{#each theBeers}}
+    <div class="carde" style="width: 18rem;">
+        <img src="{{image_url}}" alt="beer imagen">
+        
+           {{>beerpartial}}
+        
+    </div>
+        {{/each}}
+    </div>
+</div>

@@ -5,3 +5,39 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+body {
+    font-weight: 400;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+    margin-left: 40%;
+
+}
+
+.der {
+    padding: 5px;
+}
+.carde{
+    padding: 2px;
+}
+.carde img{
+    width: 39px;
+    height:100px;
+}
+.card-body{
+    padding: 2rem 4rem;
+}
+footer{
+    color: white;
+    background-color: chocolate;
+padding: 20px;
+margin: 20px;
+}
+button{
+ padding: 20px;
+margin-left: 50%;   
+}
