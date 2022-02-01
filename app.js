@@ -18,8 +18,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Add the route handlers here:
 
-app.get('/', (req, res) => {
-  res.render('index');
-});
+// app.get('/', (req, res) => {
+//   res.render('index');
+// });
+
+app.use("/", require("./routes/index"))
 
 app.listen(3000, () => console.log('http://localhost:3000'));
