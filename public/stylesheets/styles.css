@@ -43,3 +43,11 @@ body{
 .randomTagline{
     color: #bfbfbf;
 }
+.cont{
+    display: flex;
+    flex-direction: column;
+}
+.cont img{
+    display: flex;
+    
+}
