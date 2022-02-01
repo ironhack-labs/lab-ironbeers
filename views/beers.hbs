@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        {{#each theBeers}}
+        <div class="card mb-3" style="max-width: 480px;">
+            <div class="row g-0">
+                <div class="col-md-12">
+                    <img src="{{image_url}}" class="img-fluid rounded-start" alt="{{name}}">
+                </div>
+                <div class="col-md-10">
+                    <div class="card-body">
+                        <h5 class="card-title">"{{name}}"</h5>
+                        <p class="card-text">{{description}}</p>
+                        <p class="card-text">{{tagline}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
