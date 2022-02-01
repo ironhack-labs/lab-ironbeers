@@ -24,21 +24,19 @@ app.get('/', (req, res) => {
 });
 
 app.get('/beers', (req, res) => {
-  punkAPI.getBeers().then(beers => {
+  punkAPI.getBeers({ abv_gt: 0 }).then(beers => {
     res.render('beers', { beers });
   });
 });
 
 app.get('/random-beer', (req, res) => {
   punkAPI.getRandom().then(beer => {
-    console.log(beer);
     res.render('random-beer', { beer: beer[0] });
   });
 });
 
 app.get('/beers/:index', (req, res) => {
-  let index = req.params.index;
-  punkAPI.getBeer(index).then(beer => {
+  punkAPI.getBeer(req.params.index).then(beer => {
     res.render('random-beer', { beer: beer[0] });
   });
 });

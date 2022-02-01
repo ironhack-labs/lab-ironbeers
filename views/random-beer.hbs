@@ -1,10 +1,14 @@
-<div>
-    {{> beerpartial beer}}
-    <p><strong>Food Pairing</strong></p>
-    <ul>
-        {{#each beer.food_pairing}}
-        <li>{{this}}</li>
-        {{/each}}
-    </ul>
-    <p><strong>Brewer's Tips:</strong> {{beer.brewers_tips}}</p>
+<div class="onebeer">
+    <div>
+        {{> beerpartial beer}}
+        <div class="specifics">
+            <p><strong>Food Pairing</strong></p>
+            <ul>
+                {{#each beer.food_pairing}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p><strong>Brewer's Tips:</strong> {{beer.brewers_tips}}</p>
+        </div>
+    </div>
 </div>

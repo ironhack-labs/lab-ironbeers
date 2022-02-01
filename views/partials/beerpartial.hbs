@@ -1,4 +1,7 @@
-<img src="{{this.image_url}}" alt="beer-img" class="beer-imgs">
-        <h2>{{this.name}}</h2>
-        <p>"{{this.tagline}}"</p>
-        <p>{{this.description}}</p>
+
+    <div class="beerPartial">
+        <img src="{{this.image_url}}" alt="beer-img" class="beer-imgs">
+        <a href="/beers/{{this.id}}" class="beerLink">{{this.name}}</a>
+        <p class="tagline">{{this.tagline}}</p>
+        <p class="description">{{this.description}}</p>
+    </div>
