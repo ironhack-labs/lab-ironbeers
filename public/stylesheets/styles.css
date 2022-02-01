@@ -5,3 +5,18 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    background-color: #2081c3;
+    text-decoration: none;
+    color: initial;
+    padding: 15px 15px 15px 15px;
+}
+
+.beer-imgs {
+    height: 300px
+}
