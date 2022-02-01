@@ -18,8 +18,10 @@ a.button {
     appearance: button;
     background-color: #2081c3;
     text-decoration: none;
-    color: initial;
-    padding: 15px 15px 15px 15px;
+    color: white;
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.4);
 }
 
 
@@ -30,7 +32,10 @@ a.button {
     display: flex;
     align-items: center;
     padding-left: 35px;
-    box-shadow: 0 3px 5px 0 rgba(0,0,0,.4);
+    box-shadow: 3px 3px 5px 0 rgba(0,0,0,.4);
+    position: fixed;
+    width: 100%;
+    top: 0
 }
 
 .navbar a {
@@ -49,7 +54,7 @@ a.button {
 }
 
 .tagline {
-    color: grey;
+    color: #bfbfbf;
     font-size: 15px;
     margin-top: 0;
 }
@@ -61,7 +66,7 @@ a.button {
     align-items: left;
     margin: 20px;
     width: 575px;
-    margin-top: 70px;
+    margin-top: 100px;
     margin-bottom: 0px
 }
 
@@ -99,4 +104,32 @@ a.button {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.homediv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 600px;
+    margin-top: 50px;
+}
+
+.homediv img {
+    height: 400px;
+    margin-left: 75px;
+    
+}
+
+footer {
+    height: 45px;
+    background-color: #0a2c42;;
+    color: white;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0
 }
