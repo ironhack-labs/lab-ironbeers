@@ -6,6 +6,7 @@ const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 
 const app = express();
 const punkAPI = new PunkAPIWrapper();
+const async = require("hbs/lib/async")
 
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
@@ -22,8 +23,13 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-app.get('/beers', (req, res) => {
-  res.render('beers');
+app.get('/beers', async(req, res) => {
+
+  const allBeers = await punkAPI.getBeers()
+  // console.log(allBeers)
+  res.render('beers',{
+    allBeers: allBeers
+  });
 });
 
 app.get('/random-beer', (req, res) => {
