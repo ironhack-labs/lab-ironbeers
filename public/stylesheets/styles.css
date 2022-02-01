@@ -1,3 +1,63 @@
+.container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+.beer {
+    position: absolute;
+    width: 300px;
+    top: 50px
+}
+
+.btn-index{
+    position: absolute;
+    top: 380px
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.card {
+    height: 750px;
+    padding: 10px;
+    margin: 30px;
+}
+
+.beer-img {
+    display: flex;
+    position: relative;
+    left: 115px;
+    width: 100px;
+    height: 300px
+}
+
+.title {
+    display: flex;
+    position: relative;
+    left: 700px;
+    margin: 40px
+}
+
+
+.page-footer {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color:#0a2c42;
+    color: white
+
+}
+
+.page-footer div {
+    text-decoration: none;
+}
+
 /*
 white: #f7f9f9;
 light-blue: #2081c3;
