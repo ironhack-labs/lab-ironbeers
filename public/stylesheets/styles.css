@@ -5,3 +5,38 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+img{
+    width: 100px;
+}
+
+.beer-img{
+    width: 80px;
+    height: 350px;
+    object-fit: cover;
+    object-position: top;
+}
+
+nav {
+    background-color: #2982c1;
+}
+
+footer {
+    background-color: #0c2d41;
+    color: white;
+    text-align: center;
+    font-size: .8em;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.home{
+    width: 500px;
+}
