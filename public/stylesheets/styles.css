@@ -1,10 +1,9 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+
+
+
+/* GENERAL STYLE */
+
+
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -28,6 +27,8 @@ h2{
 h5{
     color:#bfbfbf ;
 }
+
+/* NAVBAR STYLE */
 .navbar{
     background-color: #2081c3;
     
@@ -38,9 +39,10 @@ h5{
 .navbar a:hover{
     color: #40a6eb;
 }
-.btn {
-    background-color:  #2081c3;
-}
+
+
+/* VIEWS STYLE */
+
 .smallPage{
     min-height:92vh;
     padding-top: 200px;
@@ -49,8 +51,7 @@ h5{
 .singleBeer{
     display: flex;
 
-}
-   
+}   
 
 .beerimg{
     width: 100%;
@@ -61,6 +62,9 @@ h5{
 .bold{
     font-weight: bold;
 }
+
+
+/* FOOTER STYLE */
 footer  {
     
     
@@ -78,8 +82,12 @@ footer p{
 
     padding-left: 75px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 10px; 
     
-   
-    
+}
+
+/* COMPONENT STYLE */
+
+.btn {
+    background-color:  #2081c3;
 }
