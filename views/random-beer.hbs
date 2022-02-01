@@ -2,7 +2,7 @@
 <hr>
 <div class="container">
     {{#each rBeer}}
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-3">
                 <img src="{{ image_url }}" class="img-beer">
             </div>
@@ -11,11 +11,12 @@
                 <h3>{{ tagline }}</h3>
                 <br>
                 <p>{{ description }}</p>
-                <br>
-                <p>{{ food_pairing }}</p>
-                <br>
-                <p>{{ brewers_tips }}</p>
             </div>
-        </div>
+        </div> -->
+        {{> beerpartial this}}
+        <br>
+        <p>{{ food_pairing }}</p>
+        <br>
+        <p>{{ brewers_tips }}</p>
     {{/each}}
 </div>

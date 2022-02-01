@@ -2,12 +2,7 @@
 <hr>
 
 <div>
-    {{#each allBeers}}
-        <div class="beer-list">
-            <img class="img-beer" src="{{ image_url }}" />
-            <h2>{{ name }}</h2>
-            <p>{{ description }}</p>
-            <p>{{ tagline }}</p>
-        </div>
+    {{#each aBeers}}
+        {{> beerpartial this}}
     {{/each}}
 </div>
