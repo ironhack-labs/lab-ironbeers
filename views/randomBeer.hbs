@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+        {{#each theBeers}}
+
+        {{>beerpartial}}
+        <p class="card-text">Food Pairing: {{food_pairing}}</p>
+        <p class="card-text">Brewer Tips: {{brewers_tips}}</p>
+    </div>
+
+    {{/each}}
+</div>

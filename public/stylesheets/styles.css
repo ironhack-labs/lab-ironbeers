@@ -5,3 +5,44 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+ img {
+    width: 30%;
+    margin-top: 30px; 
+
+} 
+.home {
+    display:flex;
+    flex-direction: column;  
+    align-items: center;
+    margin: 20px, auto;
+
+}
+.home img{
+    width: 30%;
+    display:flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 65px;
+   
+}
+.btn{
+    margin-top: 20px;
+
+}
+
+.footer{
+    margin-top: 40px;
+    background-color: #0a2c42;
+    color: white;
+    padding: 10px;
+}
+
+.card{
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+.card-img-top{
+    width: 20%;
+}
