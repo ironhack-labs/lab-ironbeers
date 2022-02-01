@@ -5,3 +5,58 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-weight: 800;
+}
+
+.player-card img {
+    width: 100px;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+.navbar {
+    margin-bottom: 40px;
+    padding-left: 40px;  
+    
+
+}
+
+footer {
+    background-color: #0d6efd;;
+    color: white;
+    text-align: center;
+    font-size: .9em;
+    padding: 3px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+.front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.container img {
+  width: 30%;
+  margin: 20px;
+  object-fit: cover;
+  object-position: top;
+    
+}
+
+.container div {
+    margin: 10px;
+}

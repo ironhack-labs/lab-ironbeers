@@ -1,0 +1,16 @@
+<h1>ENJOY A RANDOM BEER</h1>
+
+    <div clas="row">
+
+        {{#each theBeers}}
+
+        {{>beerPartial}}
+
+        <p class="card-text"><strong>Food pairing :</strong>{{food_pairing}}</p>
+        <p class="card-text"><strong>Brewers tips:</strong>{{brewers_tips}} </p>
+
+
+        {{/each}}
+
+    </div>
+
