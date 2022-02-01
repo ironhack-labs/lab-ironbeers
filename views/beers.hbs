@@ -1,0 +1,22 @@
+<div class="container">
+
+    <div class="row justify-content-center">
+
+        {{#each theBeers}}
+
+        {{!-- image, name, description, tagline --}}
+
+        {{!-- <div class="beerCard">
+            <img src="{{image_url}}" alt="{{name}}">
+            <h5>{{name}}</h5>
+            <p>{{description}}</p>
+            <p>{{tagline}}</p>
+        </div> --}}
+
+        {{>beerpartial}}
+
+        {{/each}}
+
+    </div>
+
+</div>

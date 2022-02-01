@@ -5,3 +5,35 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+.padding-childs div{
+    padding: 20px 0px;
+}
+
+.beer{
+    width: 100%;
+    height: auto;
+}
+
+.beer-card {
+    margin-bottom: 40px;
+}
+
+.beer-card img {
+    width: 80px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+}
+
+

@@ -1,0 +1,28 @@
+<div class="container">
+
+    <div class="row">
+
+        {{#each randomFinalBeer}}
+
+        {{!-- image, name, description, tagline, food pairing and brewer tips --}}
+
+        {{!-- <div class="beerCard">
+            <img src="{{image_url}}" alt="{{name}}">
+            <h5>{{name}}</h5>
+            <p>{{description}}</p>
+            <p>{{tagline}}</p>
+            <p>{{food_pairing}}</p>
+            <p>{{brewers_tips}}</p>
+        </div> --}}
+
+
+        {{>beerpartial}}
+
+        <p>{{food_pairing}}</p>
+        <p>{{brewers_tips}}</p>
+
+        {{/each}}
+
+    </div>
+
+</div>
