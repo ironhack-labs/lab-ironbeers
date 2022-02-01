@@ -1,16 +1,14 @@
-<div class="card" style="width: 18rem;">
-
-
-    <div class="card-body">
-
-
-        <a href="../beers/{{id}}">
-            <div class="row justify-content-center imgheight">
-                <img src={{image_url}} alt="{{name}}" class="card-img-top allBeers img-fluid">
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+        <div class="col-md-4">
+            <img src={{image_url}} class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">{{name}}</h5>
+                <p class="card-text">{{description}}</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
-            <h5 class="card-title">{{name}}</h5>
-            <p class="card-text">{{description}}</p>
-
-        </a>
+        </div>
     </div>
 </div>
