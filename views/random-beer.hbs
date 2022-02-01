@@ -1,0 +1,25 @@
+<div class="container">
+        {{#each randomBeers}}
+        <div class="card mb-3" style="max-width: 1280px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="{{image_url}}" class="img-fluid rounded-start beersImg" alt="{{name}}">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">{{name}}</h5>
+                        <p class="card-text"><small class="text-muted">{{tagline}}</small></p>
+                        <p class="card-text">{{description}}</p>
+                        <p class="card-text"><strong>Food Pairing:</strong></p>
+                        <ul>
+                            {{#each food_pairing}}
+                            <li>{{this}}</li>
+                            {{/each}}
+                        </ul>
+                        <p class="card-text">{{brewers_tips}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+</div>
