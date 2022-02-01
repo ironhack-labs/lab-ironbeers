@@ -5,6 +5,10 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+    padding: 5px 5px;
+}
  .card-body img {
     max-width: 100%;
     max-height:100%;
@@ -22,6 +26,9 @@ background-color: #2882c3;
 color: white;
 }
 
+.main-container {
+    padding: 25px;
+}
 footer {
     
   position: fixed;
@@ -38,10 +45,32 @@ footer {
     padding-bottom: 30px;
 }
 
-div {
-    padding-bottom: 30px;
+button {
+    padding: 20px;
 }
 
-a p{
+a {
+    padding: 20px;
+      color: black
+}
+
+a:link, a:visited,  a:hover, a:active
+{
+    color: #000000;
     text-decoration: none;
+}
+
+
+.allBeers {
+  
+    width: 65px
+}
+
+h5 {
+  
+}
+
+
+.imgheight {
+    height: 200px
 }
