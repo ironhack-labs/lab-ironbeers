@@ -1,13 +1,20 @@
-<div>
-    <img src="{{image_url}}" alt="">
-    <h5>{{name}}</h5>
-    <p>{{description}}</p>
-    <p>{{tagline}}</p>
-    <ul>{{#each food_pairing}}
-       <li>{{this}}</li> 
-        {{/each}}
-    </ul>
-    <p>{{description}}</p>
-    <p>{{brewer_tips}}</p>
+<div class="randBeer">
+    {{!-- <div class="col-6"> --}}
+    <div class="randImg"><img src="{{image_url}}" alt=""></div>
+    {{!-- </div> --}}
+    <div class="col-6">
+    <article class="beer-paragraph">
+        <h5>{{name}}</h5>
+        <p>{{description}}</p>
+        <p>{{tagline}}</p>
+        <ul>{{#each food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{description}}</p>
+        <p>{{brewer_tips}}</p>
+    </article>
+    </div>
+   
     
 </div>

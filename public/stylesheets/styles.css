@@ -6,9 +6,59 @@ grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
 
-
+img{
+   width: 100%;
+}
 footer{
    background-color: #0a2c42;
    color: white;
    padding: 20px;
+   bottom: 0;
+   position: fixed;
+   width: 100%;
+}
+
+.home{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  
+}
+.beerImg{
+   width: 400px;
+   margin: 50px;
+}
+.btn-dark {
+    color: #fff;
+    background-color: #212529;
+    border-color: #212529;
+    margin: 10px;
+}
+.navbar{
+   background-color: #9acaeb;
+}
+.randBeer{
+   display: flex;
+   margin-top: 200px;
+}
+
+.randImg{
+   width: 100px;   
+   margin-left: 20%; 
+   
+   
+   
+}
+.beer-paragraph{
+   margin-right: 10%;
+   margin-left: 10%; 
+}
+.beer-card{   
+    height: 200px;
+}
+.beersdisplay{
+   display: flex;
+}
+.partialImg{
+   width: 50px;
 }

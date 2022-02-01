@@ -1,16 +1,16 @@
 <div>
     <h1>beers</h1>
     
-    <div>
+    <div class="beersdisplay">
         {{#each beer}}
 
 
-        <h5>{{name}}</h5>
+        {{!-- <h5>{{name}}</h5>
         <img src="{{image_url}}" alt="">
         <p>{{description}}</p>
-        <p>{{tagline}}</p>
+        <p>{{tagline}}</p> --}}
 
-        
+        {{>beerpartial}}
 
 
         {{/each}}
