@@ -5,3 +5,14 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.card-img-top{
+    height: 400px;
+    width: 100%;
+    object-fit: scale-down;
+    object-position: top;
+}
+
+.card{
+    align-items: center;
+}
