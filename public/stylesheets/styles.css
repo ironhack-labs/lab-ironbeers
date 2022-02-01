@@ -5,3 +5,62 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+
+.container-fluid{
+    background-color: #2081c3;
+    
+}
+
+.nav-link{
+    font-family:Arial, Helvetica, sans-serif; 
+    color :#f7f9f9 !important ;
+
+
+}
+.flex{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.flex div{
+    margin: 10px 0px 20px 0px
+}
+
+
+
+.buttons{
+    background-color:#2081c3;
+    padding: 10px 20px;
+    border-radius: .6em;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    
+
+   
+
+
+}
+
+.flex img{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    
+  
+}
+
+.foot{
+    background-color: #0a2c42;
+    color: white;
+    margin-top: 50px;
+    padding: 20px 0px 20px 20px;
+
+    
+}

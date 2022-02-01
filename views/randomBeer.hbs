@@ -1,0 +1,30 @@
+<hr>
+
+<div>
+
+    {{#each responseFromAPI}}
+
+    <img src="{{image_url}}" alt="randomBeer-image">
+    <h4>{{name}}</h4>
+    <p>{{description}}</p>
+    <p>{{tagline}}</p>
+
+
+
+    <ul>
+        {{#each food_pairing}}
+
+        <li>{{this}}</li>
+
+        {{/each}}
+    </ul>
+
+
+    <p>{{brewers_tips}}</p>
+
+
+
+    {{/each}}
+
+
+</div>
