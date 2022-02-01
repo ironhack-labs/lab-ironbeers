@@ -1,4 +1,21 @@
-<img src="{{image_url}}" alt="">
-<p>{{name}}</p>
-<p>{{tagline}}</p>
-<p>{{description}}</p>
+<div class="card mb-3">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src="{{image_url}}" class="img-fluid rounded-start" alt="{{name}} Beer">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h2 class="card-title">{{name}}</h2>
+                <p class="card-text"><small class="text-muted">{{tagline}}</small></p>
+                <p class="card-text">{{description}}</p>
+                <h4 class="card-text">Food Pairing</h4>
+                <ul>
+                    <li>{{food_pairing.[0]}}</li>
+                    <li>{{food_pairing.[1]}}</li>
+                    <li>{{food_pairing.[2]}}</li>
+                </ul>
+                <p class="card-text"><strong>Brewers tips:</strong>{{brewers_tips}}</p>
+            </div>
+        </div>
+    </div>
+</div>

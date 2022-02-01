@@ -1,6 +1,11 @@
-{{#each theBeers}}
-<a href="/beers/{{id}}">
-    {{>beerpartial}}
-</a>
+<div class="container">
+    <div class="row">
 
-{{/each}}
+        {{#each theBeers}}
+
+        {{>beercard}}
+
+        {{/each}}
+
+    </div>
+</div>

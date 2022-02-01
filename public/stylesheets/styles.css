@@ -5,3 +5,55 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.nav-item a {
+    color: white;
+}
+
+.index-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.index-style img {
+    width: 500px;
+}
+
+.index-style a {
+    margin: 20px;
+}
+
+.img-fluid {
+    height: 300px;
+}
+
+.card-img-top {
+    /* height: 50px; */
+    width: 70px;
+    margin: 50px;
+    display: flex;
+    align-self: center;
+}
+
+.col-md-4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.col-md-4 a {
+    text-decoration: none;
+    color: black
+}
+
+footer {
+    background-color: #212429;
+    color: white;
+    font-size: 1em;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
