@@ -1,0 +1,94 @@
+/*
+white: #f7f9f9;
+light-blue: #2081c3;
+dark-blue: #0a2c42;
+grey: #bfbfbf;
+font-family: Arial, Helvetica, sans-serif;
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.container {
+    margin-bottom: 5em;
+}
+
+.navbar {
+    background-color: #2081c3;
+    margin-bottom: 40px;
+}
+
+.navbar a {
+    color: #f7f9f9;
+}
+
+.navbar a:hover {
+    color: #fff;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #0a2c42;
+    color: #f7f9f9;
+    font-size: 1em;
+    padding: 1em;
+}
+
+.btn {
+    background-color: #2081c3;
+    color: #f7f9f9;
+    padding: 1em 2em;
+    margin: 1em auto;
+}
+
+.btn:hover {
+    background-color: #0a2c42;
+    color: #f7f9f9;
+    transition: all 600ms ease-in-out;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border: none;
+    margin: 2em auto;
+}
+
+.card img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    object-position: top;
+    margin: 0 auto;
+}
+
+h5 {
+    color: #bfbfbf;
+}
+
+ul li {
+    margin: 1em auto;
+    margin-left: 50px;
+}
+
+ul span,
+p span {
+    font-weight: 800;
+}
+
+.beers img {
+    width: 27%;
+    height: 350px;
+    object-fit: cover;
+    object-position: top;
+    margin: 0 auto;
+}
