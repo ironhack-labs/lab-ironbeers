@@ -1,0 +1,19 @@
+<h1 class="mt-5 mb-5">Random beer</h1>
+
+<div class="container">
+	{{#each data}}
+        <div class="row mb-5">
+            <div class="col-4 d-flex justify-content-evenly">
+                <img class="beer-img" src={{ image_url }} />
+            </div>
+            <div class="col-8">
+                <h1>{{name}}</h1>
+                <p>{{ description }}</p>
+                <p>{{ brewers_tips }}</p>
+            </div>
+        </div>
+        
+
+		
+	{{/each}}
+</div>
