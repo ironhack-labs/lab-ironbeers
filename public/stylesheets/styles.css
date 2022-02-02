@@ -5,3 +5,14 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+img {
+    width: 50%;
+ }
+
+.card-group{
+
+    margin-top: 20px;
+
+}
+
