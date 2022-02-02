@@ -22,6 +22,9 @@ hbs.registerPartials(path.join(__dirname, "views/partials"));
 app.get('/', (req, res) => {
   res.render('index');
 });
+app.get('/beer-info', (req, res) => {
+  res.render('beer-info');
+});
 
 app.get('/beers', (req, res) => {
   
