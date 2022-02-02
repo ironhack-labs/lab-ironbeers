@@ -1,7 +1,20 @@
-/*
-white: #f7f9f9;
+
+/*white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+h5 {
+    
+    font-size: 35px;
+    font-weight: bold;
+
+  }
+
+  h6 {
+    
+    font-size: 20px;
+    font-weight: normal;
+  }
