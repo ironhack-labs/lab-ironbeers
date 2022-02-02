@@ -40,13 +40,17 @@ app.get('/random-beer', (req, res) => {
     .catch(error => console.log(error));
 });
 
-app.get('/beer-details', (req, res) => {
+app.get('/beers/:id', (req, res) => {
   punkAPI
-    .getRandom()
-    .then(beerFromApi => {
-      res.render('beer-details', { randomFromApi });
+    .getBeer(req.params.id)
+    .then((beerDetails)=>{
+      
+      //console.log(beerDetails)
+      res.render('beer-details', {beerDetails:beerDetails});
+      console.log(beer)
     })
     .catch(error => console.log(error));
+    
 });
 
 app.listen(3001, () => console.log('🏃‍ on port 3001'));
