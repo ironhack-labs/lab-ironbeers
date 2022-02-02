@@ -22,21 +22,31 @@ hbs.registerPartials(path.join(__dirname, "views/partials"));
 app.get('/', (req, res) => {
   res.render('index');
 });
-app.get('/beer-info', (req, res) => {
-  res.render('beer-info');
+
+
+app.use('/beers', (req, res) => {  
+  if (req.path === '/') {
+    punkAPI.getBeers()
+    .then((beersFromApi) => {
+      res.render('beers', {beers: beersFromApi});
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+  } else {
+    const beerId = parseInt(req.path.replace("/beer", ""));
+    punkAPI.getBeer(beerId)
+    .then((specificBeer) => {
+      res.render('beer-info', {beer: specificBeer[0]});
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+  }
 });
 
-app.get('/beers', (req, res) => {
-  
-  punkAPI.getBeers()
-  .then((beersFromApi) => {
-    res.render('beers', {beers: beersFromApi});
-  })
-  .catch((err) => {
-    console.log(err);
-  });
-  
-});
+
+
 app.get('/random-beer', (req, res) => {
   punkAPI.getRandom()
   .then((randomBeer) => {
