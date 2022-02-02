@@ -1,9 +1,7 @@
-<div class='beers'>
+{{! Partial for beers & random beer }}
 
+<img src='{{image_url}}' alt='{{name}}' />
 
-  <img src='{{image_url}}' alt='beerImage' />
-  <h3>{{name}}</h3>
-  <p>{{tagline}}</p>
-  <p>{{tagline}}</p>
-  <p>{{description}}</p>
-</div>
+<a href='/beers/{{id}}'><h4>{{name}}</h4></a>
+<p>{{description}}</p>
+<p>{{tagline}}</p>
