@@ -1,0 +1,13 @@
+<div>
+{{#each beersFromApi}}
+
+{{#if this.image_url}}
+    <img src="{{this.image_url}}" alt="{{this.name}}">
+{{/if}}
+
+   <h1>{{this.name}}</h1>
+   <p>{{this.description}}</p>
+   <p>{{this.tagline}}</p>
+ 
+{{/each}}
+</div>
