@@ -1,0 +1,19 @@
+{{! <h2>PROBANDO PROBANDO</h2> }}
+
+<div class='container'>
+  <div class='row'>
+    {{#each theBeers}}
+      <div class='col-md-4'>
+        {{! ME LO LLEVO A PARTIALS  }}
+
+        {{!-- <img src='{{image_url}}' alt='{{name}}' />
+        <h5>{{name}}</h3>
+        <h6>{{tagline}}</h4>
+        <p>{{description}}</p> --}}
+
+        {{>beerpartial}}
+
+      </div>
+    {{/each}}
+  </div>
+</div>

@@ -5,3 +5,18 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+footer {
+  background-color: #212429;
+  color: white;
+  text-align: left;
+  font-size: 1.5em;
+  padding: 3px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+img {
+  width: 100%;
+}

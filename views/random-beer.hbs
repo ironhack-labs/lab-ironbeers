@@ -1,0 +1,26 @@
+{{! <h1>probandoooooooooooooooooooooo</h1> }}
+<div class='container'>
+  <div class='row'>
+   
+    {{>beerpartial}}
+      {{!-- esta en partials --}}
+    {{!-- <div class='col-md-3'>
+      <img src='{{image_url}}' alt='{{name}}' />
+    </div>
+    <div class='col-md-9'>
+      <h5> {{name}}</h5>
+      <br />
+      <h6>{{tagline}}</h6>
+      <br />
+      <p> {{description}}</p>
+      <br /> --}}
+      <ul>
+        {{#each food_pairing}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <br />
+      <p> {{brewers_tips}}</p>
+    </div>
+  </div>
+</div>
