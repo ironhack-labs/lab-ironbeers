@@ -1,11 +1,21 @@
 <h1>Cerveza aleatoria</h1>
 <div>
 	{{#each randomBeer }}
+    <div class="column">
     <img class="beer-img" src={{ image_url }} />
-	<h1>{{name}}</h1>
-    <p>{{ description }}</p>
+	<div class="column1">
+    <h1>{{name}}</h1>
+    <div class="column2">
     <p>{{ tagline }}</p>
-    <p>{{ food_pairing }}</p>
-	<p>{{ brewers_tips }}</p>
+    </div>
+    <div class="column3">
+        <p>{{ description }}</p>
+    </div>
+        
+        <p>{{ food_pairing }}</p>
+        <p>{{ brewers_tips }}</p>
+    
+    </div>
+    </div>
 	{{/each}}
 </div>
