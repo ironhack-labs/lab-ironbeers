@@ -20,3 +20,14 @@ font-family: Arial, Helvetica, sans-serif;
 .links{
     margin: 1rem 0;
 }
+
+.card-css {
+    text-align: center;
+    align-items: center;
+}
+
+.beer-images {
+    width: 50px;
+    height: 200px;
+    margin: 10px;
+}
