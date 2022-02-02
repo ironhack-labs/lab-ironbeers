@@ -5,3 +5,153 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+*{
+    background-color: #f7f9f9;
+    /* outline: 1px solid red; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* LAYOUT */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    background-color: #2081c3;
+    padding: 25px;
+}
+
+footer {
+    height: 5vh;
+    color: #bfbfbf;
+    background-color:#0a2c42;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    width: 98vw;
+}
+
+/* INDEX - HOME */
+
+a {
+    background-color: #2081c3;
+    text-decoration: none;
+    color: #f7f9f9;
+    font-size: 1.3em;
+    margin: 0px 20px;
+}
+
+#beer-image-container-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto 20px auto;
+    width: 30%;
+}
+
+#img-home-page {
+    width: 95%;
+}
+
+#buttons-container-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 40px;
+}
+
+#buttons-container-home a {
+    margin: 10px;
+    color: #f7f9f9;
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #2081c3;
+}
+
+ a buttons {
+    margin: 10px;
+    color: #f7f9f9;
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #2081c3;
+}
+
+/* PARTIALS PAGE */
+
+.beer-image-container-partial {
+        width: 30vh;
+        margin: 30px;
+}
+
+
+.beer-image-container-partial img {
+    width: 40%;
+}
+
+.text-container-partial {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto 20px 0px;
+    width: 30vw;
+}
+
+.beer-name-partial {
+
+
+}
+
+.tagline-partial {
+    color: #bfbfbf;
+    }
+
+.description-partial {
+    width: 25vw;
+
+}
+
+.food-pairing-title-partial {
+
+}
+
+.unordered-list-random-page-partial {
+
+}
+
+.brewers-tips-partial {
+
+}
+
+/* BEERS PAGE */
+
+#global-container-beers-page {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
+.image-and-text-container-beers-page {
+    width: 25vw;
+    margin: 0px 25px;
+}
+
+
+/* RANDOM BEER PAGE */
+
+#img-and-text-container-random {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 100px 200px 50px 200px;
+}

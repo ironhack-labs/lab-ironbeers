@@ -1,0 +1,17 @@
+<div class="beer-image-container-partial">
+    <img class="image-partial" src={{image_url}} alt="Beer image">
+</div>
+<div class="text-container-partial">
+    <h1 class="beer-name-partial">{{name}}</h1>
+    <h4 class="tagline-partial">{{tagline}}</h4>
+    <p class="description-partial">{{description}}</p> 
+{{#if randomBeerPage}}
+    <h4 class="food-pairing-title-partial">Food Pairing</h4>
+    <ul class="unordered-list-random-page-partial">
+        {{#each food_pairing}}
+            <li>{{this}}</li>
+        {{/each}}
+    </ul>
+    <p class="brewers-tips-partial"><strong>Brewers Tips: </strong>{{brewers_tips}}</p>
+{{/if}}
+</div>
