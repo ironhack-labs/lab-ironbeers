@@ -29,9 +29,16 @@ app.get('/beers', async (req, res) => {
   res.render('beers.hbs', { beers });
   });
 
+  app.get('/beers/:id', async (req, res) => {
+    let beer = await punkAPI.getBeer(req.params.id);
+    let beerDetails = {beer: beer[0]}
+    console.log("BeerDetails: ", beerDetails);
+    res.render('beerDetails.hbs', beerDetails);
+    });
+
 app.get('/random-beer', async (req, res) => {
   const randomBeer = await punkAPI.getRandom();
-  console.log("Logging randomBeer: ", randomBeer[0]);
+  // console.log("Logging randomBeer: ", randomBeer[0]);
   randomBeer[0].randomBeerPage = true; 
   res.render('random-beer.hbs', randomBeer[0]);
 });

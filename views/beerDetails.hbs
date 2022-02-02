@@ -1,0 +1,6 @@
+<h2>Full details of beer {{beer.name}}</h2>
+<ul>
+ {{#each beer}}
+    <li>{{@key}}: {{this}}</li>
+ {{/each}}
+</ul>
