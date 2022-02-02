@@ -5,3 +5,39 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.main {
+    text-align: center;
+}
+
+nav,
+nav a {
+  background-color: #2081c3;
+  color: #f7f9f9;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+}
+
+#mainImage {
+  max-width: 400px;
+  margin: 30px;
+}
+
+button,
+button a {
+  border-radius: 1rem;
+  border: none;
+  background-color: #2081c3;
+  color: #f7f9f9;
+  padding: 20px 15px;
+  text-decoration: none;
+}
+
+.beers img {
+    max-height: 200px;
+}
+
