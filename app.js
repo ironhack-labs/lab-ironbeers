@@ -1,25 +1,30 @@
 // importaciones 
-const express = require('express');
+const express = require("express");
+const hbs = require("hbs");
+const app = express();
+const async = require("hbs/lib/async")
+const router		= express.Router()
 
-const hbs = require('hbs');
 const path = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 
-const app = express();
+
 const punkAPI = new PunkAPIWrapper();
 
 // Middlewares
-
-
 require("dotenv").config()
-app.set('view engine', 'hbs');
-app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'hbs');
+
+
+
+
 // Register the location for handlebars partials here:
 
-//hbs.registerPartial(__dirname + "/views/partials")
+//hbs.registerPartial(path.join(__dirname + "./views/partial"))
 
 // ...
 
@@ -29,14 +34,17 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 
-app.get("/", (req, res) => {
+app.get("/", async(req, res) => {
 res.render("index");
 });
 
-app.get("/beer", (req,res)=> {
+app.get("/beer", async(req,res)=> {
   res.render("beer")
 })
 
+app.get("/layout", async(req,res) =>{
+  res.render("layout")
+})
 
 
 
