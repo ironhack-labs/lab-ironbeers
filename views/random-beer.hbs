@@ -1,15 +1,11 @@
 <div>
     
-    <img src={{beer.image_url}} alt={{beer.name}}>
-    <h1>{{beer.name}}</h1>
-    <h5>{{beer.tagline}}</h5>
-    <p>{{beer.description}}</p>
+    {{> beerpartial beer}}
     <h4>Food Paaring</h4>
     <ul>
-
-            {{#each beer.food_pairing}}
-            <li>{{this}}</li>
-            {{/each}}  
+        {{#each beer.food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}  
     </ul>
    
     <p><span> Brewing Tips: </span>{{beer.brewers_tips}}</p>
