@@ -26,10 +26,11 @@ app.get('/beers', (req, res) => {
   punkAPI
     .getBeers()
     .then(beersFromApi => {
-      const data = {
-        beers: beersFromApi
-      };
-      res.render('beers', data);
+      return beersFromApi;
+    })
+    .then(function (data) {
+      console.log(data);
+      res.render('beers', { beers: data });
     })
     .catch(error => console.log(error));
 });
