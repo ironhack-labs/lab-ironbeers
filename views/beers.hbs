@@ -1,0 +1,24 @@
+<!--
+<h1>Listado de cervezas</h1>
+
+<div>
+	{{#each allBeers }}
+	<h1>{{name}}</h1>
+	<img class="beer-img" src={{ image_url }} />
+	<p>{{ description }}</p>
+	<p>{{ tagline }}</p>
+	{{/each}}
+</div>-->
+
+<div class="container">
+  <h1>Beers</h1>
+  <div class="row">
+    
+	{{#each allBeers }}
+
+		{{> beerPartial this }}
+
+	{{/each}}
+	
+  </div>
+</div>
