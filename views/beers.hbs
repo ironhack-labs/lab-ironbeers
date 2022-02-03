@@ -1,0 +1,13 @@
+<ul>
+    {{#each beers}}
+        <li>
+            <img class="beers-images" src="{{this.image_url}}" alt="picture of a beer"/>
+
+            Name: {{this.name}}
+            <p></p>
+            Description: {{this.description}}
+            <p></p> 
+            Tagline: {{this.tagline}}
+        </li>
+    {{/each}}
+</ul>
