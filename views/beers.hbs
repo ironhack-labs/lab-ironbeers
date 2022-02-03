@@ -1,0 +1,11 @@
+
+{{!-- Iteration 3 - Beers page - 3.1 The /beers route - 3.2 The beers.hbs view --}}
+ {{!-- Display an image, name, description and tagline. --}}
+ <div class='beers-container'>
+     {{#each beersArr}}
+     <div class='beer'>
+         {{!-- Bonus: Iteration 5 - Beer partial --}}
+        {{> beerpartial beer=this moreDetails=false}}
+     </div>
+     {{/each}}
+ </div>

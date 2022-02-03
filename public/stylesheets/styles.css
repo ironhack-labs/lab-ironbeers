@@ -1,7 +1,96 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f9f9;
+    color: black;
+    font-size: 16px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 30px;
+    background-color: #2081c3;
+    height: 40px;
+    padding: 20px 50px;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-content img {
+    width: 300px;
+}
+
+div>img {
+    width: 350px;
+    padding: 40px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.button {
+    font: bold 20px Arial;
+    text-decoration: none;
+    background-color: #2081c3;
+    color: white;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    margin: 10px;
+}
+
+.beers-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+p {
+    text-align: justify;
+}
+
+ul {
+    line-height: 1.5em;
+}
+
+div img {
+    width: 100px;
+    height: auto;
+}
+
+.beer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    margin: 4vw;
+    background-color: cornsilk;
+}
+
+.beer-description {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.a-beer-container {
+    display: flex;
+    flex-direction: row;
+    padding: 10vh 15vw;
+    gap: 5vw;
+}

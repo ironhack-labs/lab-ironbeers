@@ -1,0 +1,23 @@
+
+{{!-- Bonus: Iteration 5 - Beer partial --}}
+{{!-- https://handlebarsjs.com/guide/partials.html#basic-partials --}}
+
+{{!-- display 4 common properties: image, name, description, and tagline of the beer. --}}
+<img src="{{beer.image_url}}" alt="beer image">
+<div class="beer-description">
+
+    {{!-- Bonus: Iteration 6 - wrap an anchor tag around every beer that has the beer id in the href property --}}
+    <h2><a href="/beers/{{beer.id}}">{{beer.name}}</a></h2>
+    <p>{{beer.description}}</p>
+    <p>{{beer.tagline}}</p>
+
+    {{#if moreDetails}}
+        <h3>Food Pairing</h3>
+        <ul>
+         {{#each beer.food_pairing}}
+            <li>{{this}}</li>
+         {{/each}}
+        </ul>
+        <p><strong>Brewers Tips: </strong>{{beer.brewers_tips}}</p>
+    {{/if}}
+</div>
