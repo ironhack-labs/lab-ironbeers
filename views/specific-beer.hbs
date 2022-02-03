@@ -1,0 +1,23 @@
+    <div class="specificbeer">
+        {{> beerpartial }}
+        <div class="ingredients">
+            <p><strong>Malt:</strong></p>
+            <ul>
+                {{#each specificBeer.ingredients.malt}}
+                <li>{{this.name}}</li>
+                {{/each}}
+            </ul>
+            <p><strong>Hops:</strong></p>
+            <ul>
+                {{#each specificBeer.ingredients.hops}}
+                <li>{{this.name}}</li>
+                {{/each}}
+            </ul>
+            <p><strong>Yeast: </strong></p>
+            <p>{{specificBeer.ingredients.yeast}}</p>
+            <p><strong>IBU: </strong> </p>
+            <p>{{specificBeer.ibu}}</p>
+            <p><strong>Brewer's Tips:</strong></p>
+            <p>{{specificBeer.brewers_tips}}</p>
+        </div>
+    </div>

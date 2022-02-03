@@ -5,3 +5,140 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+  color: #0a2c42;
+  background-color: #f7f9f9;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+.spacer {
+  margin-top: 100px;
+}
+
+.index {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50vw;
+}
+
+.index > div {
+  margin-top: 5em;  
+}
+
+.index-buttons {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  background: #0a2c42;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.index-buttons:hover {
+  background: #2081c3;
+  text-decoration: none;
+}
+
+.randombeer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50vw;
+}
+
+.beers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.specificbeer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ingredients > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ingredients > ul {
+  text-align: center;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+img {
+  max-width: 150px;
+  max-height: 300px;
+}
+
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+ul > li {
+  border-width: 2px;
+  border-style: dotted;
+  border-color: #0a2c42;
+  border-radius: 20px;
+  margin: 2em;
+  width: 10vw;
+}
+
+hr {
+  margin-top: 5em;
+  max-width: 30vw;
+}
+
+.navMenu {
+  background-color: #2081c3;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  margin-bottom: 5em;
+}
+
+.navMenu a {
+  color: #f7f9f9;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 1em;
+  width: 100%;
+  float: left;
+}
+
+.navMenu a:hover {
+  color: #0a2c42;
+}
