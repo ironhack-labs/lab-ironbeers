@@ -1,1 +1,6 @@
-<p>{{beerDetails[0]}}</p>
+<div>
+{{#each beerDetail}}
+{{> beerPartial this}}
+ 
+{{/each}}
+</div>
