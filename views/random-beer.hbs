@@ -1,0 +1,26 @@
+<div class="randomBeer">
+    {{#each randomBeer}}
+        
+        <img class="beers-images" src="{{this.image_url}}" alt="picture of a random beer"/>
+        <div class="text-randomBeer">
+        <h2>{{this.name}}</h2>
+        <p></p>
+        <h4 class="randomBeerTagline">{{this.tagline}}</h4>
+        <p></p>
+        <h4>{{this.description}}</h4>
+        <p></p> 
+        
+        <h4>Food Pairing </h4>
+            <ul>
+                {{#each food_pairing}}
+                <li>
+                    {{[]}}
+                </li>
+                {{/each}}
+            </ul>
+            <p></p> 
+        <h4>Breweres Tips</h4>
+        <p>{{this.brewers_tips}}</p>
+       </div>
+    {{/each}}
+</div>

@@ -54,18 +54,22 @@ app.get("/beers", (req, res) => {
 });
 
 
-
-
 // random-beer route
-app.get("/random-beers", (req, res) => {
-  res.render("random-beers", {
-    doctitle: "Random-beers",
-    links: [
-      { href: "/", linkText: "Home Page" },
-      { href: "/beers", linkText: "Beers" },
-      { href: "/random-beer", linkText: "Random Beer" },
-    ],
-  });
+app.get("/random-beer", (req, res) => {
+  punkAPI.getRandom()
+  
+  .then(randomBeersFromAPI => {
+    res.render("random-beer", {
+      doctitle: "Random-beer",
+      links: [
+        { href: "/", linkText: "Home Page" },
+        { href: "/beers", linkText: "Beers" },
+        { href: "/random-beer", linkText: "Random Beer" },
+      ],
+      randomBeer: randomBeersFromAPI
+    });
+  })
+  .catch(error => console.log(error));
 });
 
 
