@@ -1,0 +1,18 @@
+<a href="/beers">Check the Beers!</a>
+<a href="/random-beer">Check a Random Beer</a>
+
+  {{#each beers}}
+
+    <div class="card">
+      <a href="/beers/{{id}}">
+        <h1>{{name}}</h1>
+        <img src={{image_url}} alt="">
+      </a>
+      <p>{{tagline}}</p>
+      <p>{{description}}</p>
+
+    </div>
+
+
+
+  {{/each}}

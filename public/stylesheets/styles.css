@@ -5,3 +5,15 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+img {
+  height: 200px;
+}
+
+.card {
+  border: 1px solid black;
+  /* background-color: red; */
+  padding: 10px;
+  margin: 10px;
+  width:400px;
+}
