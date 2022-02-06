@@ -5,3 +5,22 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+a {
+  text-decoration: none;
+}
+.beers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  /* grid-gap: 3rem; */
+  text-align: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.beers-grid > article {
+  width: 80%;
+}
+
+.beers-grid a {
+  color: black;
+}

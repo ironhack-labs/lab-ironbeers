@@ -1,4 +1,11 @@
-<img src='{{this.image_url}}' alt='beer pic' />
-<h2>{{this.name}}</h2>
-<p>{{this.tagline}}</p>
-<p>{{this.description}}</p>
+<article class='flex flex-column tc'>
+  <a class='black' href='/beers/{{this.id}}'>
+    <img src='{{this.image_url}}' alt='beer pic' />
+
+    <h2>{{this.name}}</h2>
+    <p>{{this.tagline}}</p>
+    <p>{{this.description}}</p>
+  </a>
+</article>
+
+{{! css framework above }}

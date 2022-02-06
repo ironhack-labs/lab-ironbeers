@@ -21,14 +21,17 @@ hbs.registerPartial('beerpartial', '{{beerpartial}}');
 // Add the route handlers here:
 
 app.get('/', (req, res) => {
-  res.render('index');
+  res.render('index', {
+    docTitle: 'IronBeers'
+  });
 });
 
 app.get('/beers', (req, res) => {
   punkAPI.getBeers().then(beersFromApi => {
     // console.log('Beers from the database: ', beersFromApi);
     res.render('beers', {
-      beersArr: beersFromApi
+      beersArr: beersFromApi,
+      docTitle: 'Top 20 beers from Punk API'
     });
   });
 });
@@ -37,7 +40,19 @@ app.get('/random-beer', (req, res) => {
   punkAPI.getRandom().then(beer => {
     // console.log(beer);
     res.render('random-beer', {
-      ranBeer: beer
+      ranBeer: beer,
+      docTitle: 'Random Beer from punk API'
+    });
+  });
+});
+
+app.get('/beers/:beerId', (req, res) => {
+  // console.log(req.params);
+  punkAPI.getBeer(req.params.beerId).then(beer => {
+    // console.log(String(beer[0].name));
+    res.render('beer', {
+      beer: beer,
+      docTitle: beer[0].name
     });
   });
 });
