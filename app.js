@@ -23,8 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
   app.get('/beers', (req,res) => {
     punkAPI.getBeers()
     .then(beersFromApi => res.render('beers',{
-      doctitle: 'Beers', beersFromApi,
-    }))
+      doctitle: 'Beers', beersFromApi,}))
   })
 
   
@@ -33,5 +32,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
   res.render('index');
 });
+
+app.get('/random-beer', (req,res) => {
+  punkAPI.getRandom()
+  .then(randomBeerApi => {
+    res.render('random-beer',{
+      doctitle: 'Random Beer', randomBeer: randomBeerApi
+    })
+  })
+})
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
