@@ -1,3 +1,30 @@
-<div>
-
+<div class="container d-flex align-self-center justify-content-center flex-column w-50  mt-5">
+  <div>
+    <img src="../images/beer.png" class="rounded mx-auto d-block" width="400" height="400" alt="beer">
+  </div>
+  <div class="position-relative align-self-center">
+    <div class="position-relative col-sm-2 me-5 " style="width: 200px; height: 100px">
+      <a class="btn btn-primary mx-3 mt-3" href="/beers" role="button">Check the Beers!</a>
+      <a class="btn btn-primary mt-3 d-grid" href="/randombeer" role="button">Check a Random Beer!</a>
+    </div>
+  </div>
 </div>
+
+{{!-- <div>
+  {{#each beers as | beer |}}
+  <div>
+    <h4>{{beer.name}}</h4>
+    <img src="{{beer.image_url}}" alt="...">
+    <p>{{beer.description}}</p>
+  </div>
+  {{/each}}
+</div> --}}
+{{!-- <div>
+  {{#each randomBeer as | randomBeers |}}
+  <div>
+    <h4>{{beer.name}}</h4>
+    <img src="{{beer.image_url}}" alt="...">
+    <p>{{beer.description}}</p>
+  </div>
+  {{/each}}
+</div> --}}
