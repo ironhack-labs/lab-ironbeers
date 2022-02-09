@@ -1,0 +1,13 @@
+{{#each beer}}
+    {{> beerpartials this}}
+
+    <h3>Food Pairing</h3>
+        <ul>
+        {{#each food_pairing}}
+
+            <li>{{this}}</li>
+        {{/each}}
+        </ul>
+
+        <h3>Brewers Tips</h3>{{brewers_tips}}
+{{/each}}
