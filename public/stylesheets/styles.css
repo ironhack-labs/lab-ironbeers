@@ -59,7 +59,7 @@ button a {
 #beers img {
   width: 100px;
   height: auto;
-  display:flex;
+  display: flex;
   align-self: center;
 }
 
@@ -70,6 +70,6 @@ button a {
 }
 
 .col-md-4 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
