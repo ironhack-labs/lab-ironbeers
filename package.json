@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "main": "app.js",
   "scripts": {
+    "dev": "nodemon --delay 500ms -e hbs,css,js,json app.js",
     "start": "node app.js"
   },
   "license": "ISC",
