@@ -1,0 +1,10 @@
+<ul class="beers-container">
+    {{#each beersFromApi}}
+    <a href="/beers/{{id}}">
+        <img src="{{image_url}}">
+            <h3>{{name}}</h3>
+        <p>{{description}}</p>
+        <p><i>{{tagline}}</i></p>
+    </a>
+    {{/each}}
+</ul> 
