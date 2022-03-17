@@ -7,6 +7,8 @@ const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 const app = express();
 const punkAPI = new PunkAPIWrapper();
 
+const PORT = process.env.PORT || 3000;
+
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
@@ -34,4 +36,4 @@ app.get('/random-beers', async (req, res) => {
   console.log('Random beer from the database: ', randomBeersFromApi)
 })
 
-app.listen(3000, () => console.log('🏃‍ on port 3000'));
+app.listen(PORT, () => console.log(`🏃‍ on port ${PORT}`));
