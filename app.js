@@ -24,6 +24,10 @@ app.get('/home', (req, res) => {
   res.render('index.hbs');
 });
 
+app.get('/', (req, res) => {
+  res.render('index.hbs');
+});
+
 app.get('/beers', async (req, res) => {
   const beersFromApi = await punkAPI.getBeers();
   res.render("beers.hbs", { beersFromApi });
