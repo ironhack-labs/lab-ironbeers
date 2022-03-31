@@ -1,0 +1,12 @@
+<div class='list-container'>
+  {{#each data}}
+    <a href='/beers/{{id}}'>
+      <div class='list-item'>
+        <div class='beer-name'>{{name}}</div>
+        <div class='beer-img'>
+          <img class='item-img' src='{{image_url}}' alt='{{tagline}}' />
+        </div>
+      </div>
+    </a>
+  {{/each}}
+</div>

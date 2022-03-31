@@ -1,0 +1,10 @@
+<header>
+   <div class="logo"><a href="/"><img src='/images/beer.png' alt='beer for all' /></a></div>
+   <nav>
+      <ul>
+         <li><a href='/' {{#if home}} class="active"{{/if}}>Home</a></li>
+         <li><a href='/beers' {{#if beers}} class="active"{{/if}}>Beers</a></li>
+         <li><a href='/random-beer' {{#if randombeer}} class="active"{{/if}}>Random Beer</a></li>
+      </ul>
+   </nav>
+</header>
