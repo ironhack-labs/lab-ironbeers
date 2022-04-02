@@ -1,26 +1,34 @@
 <div class='beer-info'>
-  {{#each data}}
 
-    <div class='beer-info-img'>
-      <img class='item-img' src='{{image_url}}' alt='{{tagline}}' />
+  <div class='beer-info-img'>
+    {{#if beer.image_url}}
+      <img class='item-img' src='{{beer.image_url}}' alt='{{beer.tagline}}' />
+    {{else}}
+      <img
+        class='item-img'
+        src='/images/image-placeholder.jpg'
+        alt='image placeholder'
+      />
+    {{/if}}
+  </div>
+
+  <div class='beer-info-text'>
+    <h1>{{beer.name}}</h1>
+    <p class='beer-tagline'>{{beer.tagline}}</p>
+    <p class='beer-desc'>{{beer.description}}</p>
+    <div class='beer-pair'>
+      <h5>Food Pairing</h5>
+      {{#each beer.food_pairing}}
+        <li>{{this}}</li>
+      {{/each}}
     </div>
 
-    <div class='beer-info-text'>
-      <h1>{{name}}</h1>
-      <p class='beer-tagline'>{{tagline}}</p>
-      <p class='beer-desc'>{{description}}</p>
-      <div class='beer-pair'>
-        <h5>Food Pairing</h5>
-        {{#each food_pairing}}
-          <li>{{this}}</li>
-        {{/each}}
-      </div>
-
-      <div class='beer-brew'>
-        <p><span>Brewers Tips:</span> {{brewers_tips}}</p>
-      </div>
+    <div class='beer-brew'>
+      <p><span>Brewers Tips:</span> {{beer.brewers_tips}}</p>
+      <small><span>Beer reference:</span> {{beer.id}}</small>
     </div>
-  {{/each}}
+  </div>
+
 </div>
 
 {{!-- {{#unless randomBeer}}{{/unless}} --}}

@@ -6,12 +6,12 @@ const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 const app = express();
 const port = 3000;
 
-hbs.registerPartials(path.join(__dirname + '/views/partials'));
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 const punkAPI = new PunkAPIWrapper();
 
 app.set('view engine', 'hbs');
-app.set('views', path.join(__dirname + '/views'));
+app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -23,9 +23,8 @@ app.get('/', (req, res) => {
 app.get('/beers', (req, res) => {
     punkAPI
         .getBeers()
-        .then(beersFromApi => {
-            const data = beersFromApi;
-            res.render('beers', { beers: true, title: 'Our Selection', data: data })
+        .then(beers => {
+            res.render('beers', { beers: true, title: 'Our Selection', beers: beers })
         })
         .catch(error => console.error())
 });
@@ -33,19 +32,20 @@ app.get('/beers', (req, res) => {
 app.get('/random-beer', (req, res) => {
     punkAPI
         .getRandom()
-        .then(beersFromApi => {
-            const data = beersFromApi;
-            res.render('random-beer', { randombeer: true, title: 'Beers at Random', data: data });
+        .then(beers => {
+            const beer = beers[0];
+            res.render('random-beer', { randombeer: true, title: 'Beers at Random', beer: beer });
         })
         .catch(error => console.error())
 });
 
 app.get('/beers/:id', (req, res) => {
+    const id = req.params.id;
     punkAPI
-        .getBeer(req.params.id)
-        .then(beersFromApi => {
-            const data = beersFromApi;
-            res.render('random-beer', { randombeer: true, title: 'Beer', data: data });
+        .getBeer(id)
+        .then(beers => {
+            const beer = beers[0];
+            res.render('random-beer', { randombeer: true, title: 'Beer', beer: beer });
         })
         .catch(error => console.error())
 });

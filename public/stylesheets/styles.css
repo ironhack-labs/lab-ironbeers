@@ -147,6 +147,10 @@ main {
 .beer-brew {
   padding: 2rem 0 0.5rem 0;
 }
+.beer-brew small {
+  display: block;
+  padding-top: 1rem;
+}
 .beer-brew span {
   font-weight: bold;
 }
