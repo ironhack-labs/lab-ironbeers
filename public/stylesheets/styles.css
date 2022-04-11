@@ -4,4 +4,98 @@ light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
+}
 */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-bar {
+  background-color: #2081c2;
+  align-items: flex-start;
+  padding: 20px 20px;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  float: left;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#main-img {
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.beer-info {
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+}
+#beers {
+  float: left;
+  padding: 5px;
+}
+#check {
+  align-items: center;
+  background-color: #2081c2;
+  padding: 1em;
+  border-radius: 1em;
+}
+#check a {
+  text-decoration: none;
+  color: white;
+}
+#main-page {
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#sub-links {
+  margin-top: 1em;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 20px auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.beer-info a {
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 30%;
+  margin: 1em 0;
+}
+.beer-info a img {
+  max-width: 4em;
+}
+
+.random-beer {
+  display: flex;
+  float: right;
+  align-items: center;
+  display: inline-flex;
+}
+.random-img img {
+  max-width: 5em;
+  align-items: center;
+}
