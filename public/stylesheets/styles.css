@@ -5,3 +5,83 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+html {
+    min-height: 100%;
+    position: relative;
+  }
+  
+body {
+    margin: 0;
+    margin-bottom: 40px;
+    
+  }
+
+footer {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+
+  .beer-img {
+    width: 40%;
+    margin: 0 auto;
+    
+  }
+
+
+main{
+  margin: 0 auto;
+}
+
+  .buttons{
+
+
+    margin-bottom: 40px;
+    
+  }
+  
+  .random-beer {
+
+    margin: 0 auto;
+    width: 40%;
+  }
+  
+  .beer img {
+    
+   
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    object-fit:scale-down; 
+
+    
+  }
+
+.header > nav{
+  background-color: rgb(8, 115, 238);
+}
+
+.custon-img{
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  object-fit:scale-down;
+}
+
+.random-img{
+
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+  object-fit:scale-down;
+}
+
+.btn-primary a{
+  color: aliceblue;
+  text-decoration: none;
+}
