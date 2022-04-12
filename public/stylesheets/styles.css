@@ -1,7 +1,35 @@
-/*
+/* 
 white: #f7f9f9;
 light-blue: #2081c3;
-dark-blue: #0a2c42;
+dark-blue: ;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+font-family: Arial, Helvetica, sans-serif; */
+
+.beer-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.player-card {
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: #0a2c42;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  font-size: 0.7em;
+
+  width: 100%;
+  bottom: 0;
+}
+
+.container {
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.index img {
+  padding: 20px;
+}
