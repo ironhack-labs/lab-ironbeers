@@ -1,0 +1,14 @@
+<div class='container'>
+<br>
+    <div class="row">
+        {{#each beersFromApi}}
+
+        <div class="card beers-card col-md-4">
+            {{>beerimagePartial}}
+            {{>beerPartial}}
+        </div>
+
+        {{/each}}
+    </div>
+
+</div>
