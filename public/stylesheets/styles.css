@@ -5,3 +5,49 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+
+footer {
+    background-color: #264679;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    font-size: .7em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.popino{
+    margin: auto;
+    /* display: block; */
+    align-items: center;
+    width: 80px;
+    height: 200px;
+    margin-top: 50px;
+}
+.img{
+margin: auto;
+/* display: block; */
+align-items: center;
+width: 400px;
+height: 400px;
+margin-top: 50px;
+}
+
+.boton {
+margin-top: 200px;
+
+}
+.boton a{
+    background-color: #264679;
+    color: white;
+}
+
+.navbar{
+    background-color: #264679;
+    color: white;
+    padding-left: 40px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
