@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+            {{#if beers.0.image_url}}
+            <img id="beer-image" src="{{beers.0.image_url}}" class="float-left" alt="a random beer">
+            {{/if}}
+        </div>    
+        <div class="col-7">
+            <h1>{{beers.0.name}}</h1>
+            <blockquote class="blockquote mb-0">
+                <footer class="blockquote-footer">{{beers.0.tagline}}</footer>
+            </blockquote>
+            <p>{{beers.0.description}}</p>
+            <p>Food Pairing:</p>
+            <ul>
+            {{#each beers.0.food_pairing}}
+                <li>{{this}}</li>
+            {{/each}}
+            </ul>                
+            <p>Bewers Tips:
+                {{beers.0.brewers_tips}}
+            </p>
+        </div>
+    </div>
+</div>

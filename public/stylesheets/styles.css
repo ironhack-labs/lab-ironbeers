@@ -1,7 +1,26 @@
-/*
-white: #f7f9f9;
+
+
+/* white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+font-family: Arial, Helvetica, sans-serif; */
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+ #beer-image{
+    width: 100px;
+  }  
+
+ .footer {
+    /* position: absolute; */
+    /* bottom: 0;
+    width: 100%;
+    line-height: 60px; */
+    height: 60px;    
+    background-color: #0a2c42;
+    color: white;
+}  
