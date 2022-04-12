@@ -1,0 +1,13 @@
+<div class="container">
+    <article>
+        {{#each theBeers}}
+        {{>beerpartial}}
+        <ul>
+            {{#each food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{brewers_tips}}</p>
+        {{/each}}
+    </article>
+</div> 
