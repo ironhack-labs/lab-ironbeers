@@ -1,0 +1,15 @@
+<div class="container">
+
+    <h1>BEERS</h1>
+
+    <hr>
+
+    <div class="row">
+
+        {{#each beersFromApi}}
+        {{>beerpartial}}
+        {{/each}}
+
+    </div>
+    <a href="/" class="btn btn-dark">HOME</a>
+</div>
