@@ -5,3 +5,53 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+
+footer {
+    background-color: #0C2D41;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+}
+
+.glass {
+    margin: auto;
+    padding: 50px;
+    width: 300px;
+    height: 300px;
+    display: block;
+    align-items: center;
+
+}
+
+.bottles {
+    margin: 30px auto;
+    width: 175 px;
+    height: 250px;
+    display: block;
+    align-items: flex-end;
+
+}
+
+.button {
+    margin: auto;
+    text-align: center;
+
+}
+
+.button a {
+    margin: 20px;
+
+}
+
+.idRoute {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 800;
+}

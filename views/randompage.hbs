@@ -1,0 +1,19 @@
+<div class="container">
+
+    <div class="row">
+        {{#each responseFromAPI}}
+
+        <div class="col-lg-4">
+            <img class="bottles" src="{{image_url}}" alt="">
+        </div>
+        <div class="col-lg-6">
+            {{>beerpartial}}
+            {{#each food_pairing}}
+            <p>{{this}}</p>
+            {{/each}}
+            <p>{{brewer_tips}}</p>
+        </div>
+        {{/each}}
+
+    </div>
+</div>
