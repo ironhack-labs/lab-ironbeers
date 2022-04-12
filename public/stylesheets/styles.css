@@ -4,4 +4,42 @@ light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
+
 */
+
+#navbar1 {
+    color: aliceblue;
+    background-color: #2081c3;
+}
+
+#beer-pic {
+    margin-top: 20px;
+    width: 300px;
+}
+
+#btn1 {
+    margin-bottom: 2%;
+    margin-top: 5%;
+    margin-left: 40%;
+    margin-right: 30%;
+}
+
+#btn2 {
+    margin-left: 38%;
+    margin-right: 30%;
+    text-align: center;
+}
+
+footer {
+    background-color: #212429;
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.container {
+    margin-top: 20px;
+}
