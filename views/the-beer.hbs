@@ -1,20 +1,17 @@
 <div clas="container">
 
   {{#each theBeer}}
-    <div>
 
+    <div>
       <article class='card beer-card'>
 
-         {{>beerPartial}}
-          <p>food pairing: {{food_pairing}}</p>
-          <p>tips: {{brewers_tips}}</p>
-
-        </div>
+        {{>beerPartial}}
+        <p>food pairing: {{food_pairing}}</p>
+        <p>tips: {{brewers_tips}}</p>
 
       </article>
-
     </div>
 
   {{/each}}
-
+  
 </div>
