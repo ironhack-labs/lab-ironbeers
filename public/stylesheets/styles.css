@@ -5,3 +5,52 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.mainImg {
+    display: block;
+    margin: auto;
+    width: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+button {
+    width: 400px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    padding: 10px;
+    background-color: #0a2c42;
+    color: #bfbfbf;
+    margin-top: 30px;
+}
+
+.card-img-top {
+    width: 20%;
+    align-self: center;
+
+}
+
+h6 {
+    color: #bfbfbf
+}
+
+.random img {
+    width: 10%;
+    display: flex;
+    align-self: auto;
+    margin-left: 20px;
+}
+
+.random .card {
+    display: flex;
+}
