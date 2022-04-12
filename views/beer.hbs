@@ -1,0 +1,25 @@
+<div class="row">
+
+
+    {{#each oneBeer}}
+    <div class="col-md-4">
+        <div class="beer-card" style="width: 18rem;">
+            <img src="{{image_url}}" class="card-img-top" alt="{{name}}">
+
+        </div>
+    </div>
+    <div class="col-5">
+        {{>beerPartial}}
+        <h4>Food Pairing</h4>
+        <ul>
+            {{#each food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <h4>Brewers Tips</h4>
+        <p>{{brewers_tips}}</p>
+
+    </div>
+
+    {{/each}}
+</div>
