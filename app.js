@@ -18,6 +18,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.get('/', (req, res) => {
+    console.log("hola eric")
     res.render('index')
 })
 
@@ -35,5 +36,6 @@ app.get('/random', (req, res) => {
         .then(beersFromApi => res.render('random-beer', { beersFromApi }))
         .catch(error => console.log(error))
 })
+
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

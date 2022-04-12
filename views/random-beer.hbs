@@ -1,12 +1,10 @@
-<div class="container">
+    <div class="container">
     <div class="row">
+    {{#each beersFromApi}}
 
-    {{!-- /* image, name, description, tagline, food pairing and brewer tips --}}
-
-        {{#each beersFromApi}}
         <div class="col-md-2">
 
-            <div class="card player-card">
+            <div class="card ">
                 <img src="{{image_url}}" class="card-img-top" alt="{{name}} {{lastName}}">               
 
             </div>
@@ -17,13 +15,19 @@
                     <h5 class="card-title">{{name}} </h5>
                     <p class="card-text">{{description}}</p>
                     <p class="card-text">{{tagline}}</p>
+                   <ul>
+                    {{#each food_pairing}}
+                    <li>
+                        {{this}}
+
+                    </li>
+                     {{/each}}
+                    </ul>
+                    <h5>Brewers Tips: {{brewers_tips}}</h5>
                 </div>
         </div>
-
-
-   
-        
-
-        {{/each}}
+    </div>
 </div>
+    {{/each}}
 </div>
+    
