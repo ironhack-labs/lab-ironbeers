@@ -1,1 +1,42 @@
-<h1>random beers page</h1>
+<div>
+    {{#with randomBeer}}
+    <img src="{{image_url}}" alt="{{description}}">
+    <h2>{{name}}</h2>
+    <p>{{description}}</p>
+    <p>{{tagline}}</p>
+    <p>{{food_pairing}}</p>
+    <p>{{brewers_tips}}</p>
+    {{/with}}
+</div>
+
+<div class="col-md-4">
+  <div class="card">
+    <img class="card-img-top" src="{{this.photo}}" alt="{{this.name}} {{this.lastName}}"/>
+    <div class="card-body">
+      <h5 class="card-title">
+        {{this.name}} {{this.lastName}}
+      </h5>
+      <p class="card-text">
+        {{this.team}}
+      </p>
+      <h5>
+        <div class="row">
+          <div class="col-md-6">
+            <p>Year</p>
+          </div>
+          <div class="col-md-6">
+            <p>Average</p>
+          </div>
+          {{#each average}}
+            <div class="col-md-6">
+              <p>{{year}}</p>
+            </div>
+            <div class="col-md-6">
+              <p>{{points}}</p>
+            </div>
+          {{/each}}
+        </div>
+      </h5>
+    </div>
+  </div>
+</div>
