@@ -1,0 +1,12 @@
+<div class="beers-container">
+ <div class="row">
+    {{#each beersFromApi}}
+        <div class="col-md-4 beers">
+            <article class="complete-product"></article>
+                {{>beerimagepartial}}
+                {{>beerpartial}}
+            </article>
+        </div>
+    {{/each}}
+ </div>
+ </div>
