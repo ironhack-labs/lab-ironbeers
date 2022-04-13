@@ -1,10 +1,7 @@
-<div>
-    {{#each beersList}}   {{!- now we loop through our array of beers retreived, using their key values below}}
-    <div>
-        <img src="{{image_url}}" alt="{{description}}">
-        <h2>{{name}}</h2>
-        <p>{{description}}</p>
-        <p>{{tagline}}</p>
+<div class="container-fluid">
+    <div class="row">
+        {{#each beersList}}
+            {{> beerpartial this}}
+        {{/each}}
     </div>
-    {{/each}}
 </div>

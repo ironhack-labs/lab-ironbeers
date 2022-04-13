@@ -1,0 +1,22 @@
+<div class="col-md-3">
+    <div class="card">
+        <img class="card-img-top" src="{{image_url}}" alt="{{description}}">
+        <div class="card-body">
+            <h2 id="name">{{name}}</h2>
+            <p id="tag-line">{{tagline}}</p>
+            <p>{{description}}</p>
+            <p id="pairings"><b>Food Pairing</b></p>
+            <ul>
+                {{#each food_pairing}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p><b>Brewers Tips:</b> {{brewers_tips}}</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
