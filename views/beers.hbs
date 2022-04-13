@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+
+        {{#each allBeers}}
+        <div class="col-md-4">
+
+            <figure>
+                <img src="{{image_url}}" alt="{{name}}">
+            </figure>
+
+            <div>
+                <span><strong>{{name}}</strong></span>
+                <p>{{tagline}}</p>
+                <p>{{description}}</p>
+            </div>
+        </div>
+        {{/each}}
+
+    </div>
+
+</div>

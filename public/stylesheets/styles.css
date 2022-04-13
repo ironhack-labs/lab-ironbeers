@@ -5,3 +5,54 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+}
+
+.beer {
+    margin-left: 600px;
+    margin-top: 40px;
+    height: 300px;
+}
+
+.formsButtons {
+    margin-top: 100px;
+}
+
+form {
+    margin-bottom: 20px;
+    margin-left: 600px;
+}
+
+img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.container {
+    padding-bottom: 60px;
+}
+
+.navbar {
+    margin-bottom: 40px;
+    background-color: #2081c3;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #0a2c42;
+    color: #f7f9f9;
+    text-align: left;
+    padding: 4px;
+    font-size: .7em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
