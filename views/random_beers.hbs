@@ -1,0 +1,30 @@
+<div class="row">
+
+    {{#each responseFromAPI}}
+
+    <div class="col-3"> <img class="imgIz" src="{{image_url}}" alt="{{name}}">
+
+    </div>
+
+    <div class="col-8">
+      
+            {{>beerpartial}}
+
+
+<div class="box">
+            <ul>
+                {{#each food_pairing}}
+
+                <li>{{this}}</li>
+
+                {{/each}}
+            </ul>
+
+            {{brewers_tips}}
+
+
+            {{/each}}
+        </div>
+    </div>
+
+</div>
