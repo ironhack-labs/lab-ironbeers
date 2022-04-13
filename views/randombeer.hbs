@@ -3,6 +3,8 @@
         <div class="col-2">
             {{#if beers.0.image_url}}
             <img id="beer-image" src="{{beers.0.image_url}}" class="float-left" alt="a random beer">
+            {{else}}
+            <img id="beer-image" src="/images/beer.png" class="float-left" alt="beer placeholder">
             {{/if}}
         </div>    
         <div class="col-7">

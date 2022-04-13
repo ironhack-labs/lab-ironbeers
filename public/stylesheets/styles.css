@@ -1,14 +1,16 @@
-
-
 /* white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif; */
 
+body * {
+    font-family: Arial, Helvetica, sans-serif;     
+}
+
 .card img {
     height: 200px;
-    object-fit: cover;
+    object-fit: contain;
   }
 
  #beer-image{
@@ -16,11 +18,25 @@ font-family: Arial, Helvetica, sans-serif; */
   }  
 
  .footer {
-    /* position: absolute; */
-    /* bottom: 0;
-    width: 100%;
-    line-height: 60px; */
     height: 60px;    
     background-color: #0a2c42;
     color: white;
 }  
+
+#beer-list > * img {
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.blockquote-footer {
+    color: #bfbfbf !important;
+}
+
+h5 > a {
+    color: black;
+    font-weight: bolder;
+}
+
+a.btn {
+    color: white;
+}

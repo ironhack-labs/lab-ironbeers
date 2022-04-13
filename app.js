@@ -16,20 +16,25 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 hbs.registerPartials(__dirname + "/views/partials");
 
-// ...
 
-// Add the route handlers here:
+// Basic iterations
 
 app.get('/', (req, res) => {
   res.render('index');
 });
 
-app.get('/beers', (req, res) => {
-
+app.get('/beer-list', (req, res) => {
   punkAPI.getBeers()
     .then( beerList => res.render('beers', { beerList } ) )
     .catch(error => console.log(error));
+});
 
+//
+app.get('/beer/:id?', (req, res) => {
+  const beerID = req.params.id;
+  punkAPI.getBeer(beerID)
+    .then( beers => res.render('randombeer', { beers } ) )
+    .catch(error => console.log(error));
 });
 
 app.get('/random-beer', (req, res) => {
@@ -38,20 +43,29 @@ app.get('/random-beer', (req, res) => {
     .catch(error => console.log(error));
 });
 
-app.get('/beer', (req, res) => {
-  const beerID = req.query.id;
-
-  punkAPI.getBeer(beerID)
+// Messing around with things
+//
+app.get('/beers/:id?', (req, res) => {
+  let call = (!isNaN(req.params.id) ? `getBeer` : `getRandom` )
+  let param = (!isNaN(req.params.id) ? `${req.params.id}` : `` )
+  punkAPI[call](param)
     .then( beers => res.render('randombeer', { beers } ) )
-    .catch(error => console.log(error));
+    .catch(error => console.log(error));  
 });
 
-app.get('/beer/:id?', (req, res) => {
-  const beerID = req.params.id;
-  punkAPI.getBeer(beerID)
-    .then( beers => res.render('randombeer', { beers } ) )
-    .catch(error => console.log(error));
+// Bonus 'DRY' iteration
+//
+app.get('/dry-beer/:id?', (req, res) => {
+  punkAPI.getBeer(req.params.id)
+    .then( beers => res.render('drybeer', { beers } ) )
+    .catch(error => console.log(error));  
 });
+app.get('/dry-beer-list/', (req, res) => {
+  punkAPI.getBeers()
+    .then( beers => res.render('beersdry', { beers } ) )
+    .catch(error => console.log(error));  
+});
+
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
 

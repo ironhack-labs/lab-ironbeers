@@ -1,16 +1,10 @@
-<div class="col-3">
-  <div class="card">
-    <img
-      class="card-img-top"
-      src="{{this.image_url}}"
-      alt="photo of beer"
-    />
-    <div class="card-body">
-      <h5 class="card-title"><a href="/beer/{{this.id}}">{{this.name}}</a></h5>
-      <p class="card-text">{{this.tagline}}</p>
-        <div class="card-body">
-            <p class="card-text">{{this.description}}</p>   
-        </div>    
-    </div>
-  </div>
+<div class="col-4 d-flex flex-column align-self-center">
+            {{#if image_url}}
+            <img id="beer-image" src="{{image_url}}" alt="a beer" class="align-self-center">
+            {{else}}
+            <img id="beer-image" src="/images/beer.png" alt="beer placeholder" class="align-self-center">
+            {{/if}}  
+      <h5><a href="/beer/{{id}}">{{name}}</a></h5>
+      <p class="card-text blockquote-footer">{{tagline}}</p>
+      <p class="card-text">{{description}}</p>   
 </div>
