@@ -1,0 +1,16 @@
+<div class="random-beer-container">
+
+    {{> beerpartial beer}}
+    <p>food pairing: </p>
+    {{#each beer.food_pairing}}
+        {{this}}
+    {{/each}}
+    {{beer.brewers_tips}}
+    {{route}}
+    {{!-- {{#if route==='random-beer'}} --}}
+    <h1>YES</h1>
+    {{!-- {{/if}} --}}
+
+</div>
+
+

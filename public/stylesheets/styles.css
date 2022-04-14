@@ -5,3 +5,78 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f9f9;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+nav {
+    height: 80px;
+    background-color: #2081c3;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    box-shadow: 3px 3px 3px #d0d0d0;
+}
+
+nav a {
+    margin: 0 10px;
+    color: #f7f9f9;
+    text-decoration: none;
+}
+
+.index-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.index-container a {
+    background-color: #2081c3;
+    border-radius: 5px;
+    padding: 20px 60px;
+    box-shadow: 3px 3px 3px #d0d0d0;
+}
+
+.index-container a:hover {
+    background-color: #2f86c0;
+}
+
+.index-container a, img {
+    margin: 30px 0;
+    text-decoration: none;
+    color: #f7f9f9;
+}
+
+.beerpartial-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 200px;
+}
+
+.beerpartial-img {
+    flex: 1;
+}
+
+.beerpartial-infos {
+    flex: 2;
+}
+
+.beerpartial-container img {
+    height: 400px;
+}
+
+.beerpartial-container h1 {
+    margin: 40px 0;
+}
+
+.beerpartial-container p {
+    margin: 30px 0;
+}
