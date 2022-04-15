@@ -11,10 +11,6 @@ body {
     background-color: #f7f9f9;
 }
 
-h1 {
-    font-size: 24px;
-}
-
 nav {
     height: 80px;
     background-color: #2081c3;
@@ -75,6 +71,13 @@ nav a {
 
 .beerpartial-container h1 {
     margin: 40px 0;
+    font-size: 24px;
+}
+
+.beerpartial-container h2 {
+    margin: 40px 0 20px 0;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .beerpartial-container p {
