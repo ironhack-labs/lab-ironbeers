@@ -1,0 +1,35 @@
+<div>
+
+  <div class='single-beer'>
+    <img src='{{randomBeer.image_url}}' alt='' />
+    <h2>{{randomBeer.name}}</h2>
+    <p>{{randomBeer.description}}</p>
+    <p>{{randomBeer.tagline}}</p>
+  </div>
+
+</div>
+
+{{!-- or
+ 
+ {{#with randomBeer}}
+
+<div>
+
+  <div class='single-beer'>
+    <img src='{{randomBeer.image_url}}' alt='' />
+    <h2>{{randomBeer.name}}</h2>
+    <p>{{randomBeer.description}}</p>
+    <p>{{randomBeer.tagline}}</p>
+  </div>
+
+</div>
+
+
+ {{/width}}
+ 
+ bumps us down one level of context isnide of ranombeer api so we can access it directly and dont need the dot notation
+ this refers to the whole object?
+ 
+ 
+ 
+  --}}
