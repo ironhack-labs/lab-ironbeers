@@ -5,3 +5,98 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+    background-color: #2081c3;
+    padding: 15px 0;
+    margin-bottom: 40px;
+}
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+}
+.navbar li {
+    list-style: none;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+.beerGlass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.beerGlass img {
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.beerGlass a {
+    margin: 0 auto;
+    text-decoration: none;
+    color: #f7f9f9;
+}
+.beerGlass button {
+    background-color: #2081c3;
+    width: fit-content;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow: 3px 3px 3px gainsboro;
+    margin-bottom: 10px;
+}
+footer {
+    background-color: #0a2c42;
+    color: #f7f9f9;
+    padding: 5px 50px;
+    margin-top: 20px;
+}
+.beers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.beers h2 {
+    margin-bottom: 0;
+}
+.beersTagline {
+    color:	rgb(192,192,192);
+    margin-top: 0;
+}
+.beers p{
+    width: 300px;
+}
+.beersImg {
+    height: 50vh;
+}
+.randomBeer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.randomBeer h2 {
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.randomBeerAbout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.randomBeerAbout img {
+    height: 400px;
+}
+.randomBeerDescription {
+    width: 30%;
+    margin-left: 150px; 
+}
+.randomBeerDescription p {
+    margin-top: 0;
+}
