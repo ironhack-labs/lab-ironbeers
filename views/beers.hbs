@@ -1,11 +1,15 @@
-<div>
+<article class='box'>
 
   {{#each beersFromApi}}
+
     <div class='single-beer'>
+
       <img src='{{image_url}}' alt='' />
-      <h2>{{name}}</h2>
-      <p>{{description}}</p>
-      <p>{{tagline}}</p>
+      <h2 class='alignLeft'>{{name}}</h2>
+
+      <p class='alignLeft grayIt'>{{tagline}}</p>
+      <p class='alignLeft'>{{description}}</p>
     </div>
+
   {{/each}}
-</div>
+</article>
