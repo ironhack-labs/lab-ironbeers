@@ -9,12 +9,39 @@ font-family: Arial, Helvetica, sans-serif;
 .items {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 750px;
 }
 .beerimg {
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
 }
 
 .single-beer img {
   height: 100px;
 }
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+}
+.resize {
+  width: 170px;
+}
+footer {
+  background-color: #0c3352;
+  height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+/* .button {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+} */
