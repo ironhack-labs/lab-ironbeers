@@ -1,0 +1,11 @@
+<div>
+    <div class="single-beer"> 
+        {{!-- ALT SYNTAX FOR PULLING SPECIFICALLY FROM randomBeerFromApi --}}
+        {{!-- {{#with randomBeerFromApi}} --}}
+        <img src="{{randomBeerFromApi.image_url}}" alt="{{randomBeerFromApi.description}}">
+        <h2>{{randomBeerFromApi.name}}</h2>
+        <p>{{randomBeerFromApi.description}}</p>
+        <p>{{randomBeerFromApi.tagline}}</p>
+        {{!-- {{/with}} --}}
+    </div>
+</div>

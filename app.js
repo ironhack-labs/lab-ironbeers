@@ -22,4 +22,34 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+app.get('/beers', (req, res, next) => {
+  punkAPI.getBeers()
+    .then(beersFromApi => {
+      console.log('beers from api', beersFromApi)
+      res.render('beers', { beersFromApi });
+    })
+    .catch(err => {
+      console.log('error', err);
+      res.status(500).send('sorry a server error has occured');
+    })
+
+
+});
+
+app.get('/layout', (req, res, next) => {
+  res.render('layout');
+});
+
+app.get('/random-beer', (req, res, next) => {
+  punkAPI.getRandom()
+    .then(randomBeerFromApi => {
+      console.log(randomBeerFromApi)
+      res.render('random-beer', { randomBeerFromApi: randomBeerFromApi[0] })
+    })
+    .catch(err => {
+      console.log('error', err);
+      res.status(500).send('sorry a server error has occured');
+    })
+});
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
