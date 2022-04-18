@@ -7,8 +7,16 @@
 
   <div class='rightSide'>
     <h2>{{randomBeer.name}}</h2>
-    <p>{{randomBeer.tagline}}</p>
+    <p class='grayIt'>{{randomBeer.tagline}}</p>
     <p>{{randomBeer.description}}</p>
+    <p class='font-weight-bold text'>Food Pairing</p>
+    {{#each randomBeer.food_pairing}}
+      <ul>
+        <li>{{this}}</li>
+      </ul>
+    {{/each}}
+    <span class='font-weight-bold text'>Brewers Tips: </span><span
+    >{{randomBeer.brewers_tips}}</span>
 
   </div>
 

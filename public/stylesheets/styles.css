@@ -5,6 +5,9 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 .items {
   display: flex;
@@ -38,9 +41,12 @@ font-family: Arial, Helvetica, sans-serif;
 .single-beer img {
   height: 200px;
 }
-.single-beer .grayIt {
+.grayIt {
   color: #bfbfbf;
   font-weight: bold;
+}
+.rightSide .text {
+  font-size: 1.2rem;
 }
 .center_random_beer {
   display: flex;
@@ -50,7 +56,8 @@ font-family: Arial, Helvetica, sans-serif;
   height: 800px;
 }
 .center_random_beer .rightSide {
-  width: 700px;
+  margin-left: 70px;
+  width: 1000px;
 }
 .buttons {
   display: flex;
