@@ -5,3 +5,124 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f9f9;
+}
+
+header{
+    background-color:#2081c3 ;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0 ;
+}
+
+.divImagenbeer{
+    width: 100%;
+    text-align: center;
+}
+.divImagenbeer img{
+    margin-top: 40px;
+    width: 25%;
+}
+.botones{
+    margin-top: 40px;
+    margin-bottom: 75px;
+}
+
+.boton{
+    display: flex;
+    width: 100%;
+    margin:20px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.boton a{
+    background-color: #2081c3;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 7px;
+    padding: 7px 20px;
+}
+.beers{
+    margin: 100px 120px;
+}
+.divChela{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.divChela img{
+    width: 18%;
+    height: 150px;
+}
+.DescriptionBeer{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.randomBeer{
+    display: flex;
+    flex-direction: row;
+    height: 537px;
+}
+.divImgRandom{
+    display: flex;
+    width: 10%;
+    margin-top: 30px;
+    margin-left: 200px;
+    text-align: center;
+}
+.divImgRandom img{
+    display: flex;
+    width:50%;
+    height: 200px;
+    text-align: center;
+} 
+.DescripcionRandom{
+    margin-top: 60px;
+    margin-right: 35%;
+}
+.listaFood{
+    display: flex;
+    flex-direction: column;
+}
+.listaFood li{
+    list-style:circle;
+    font-size: 13px;
+}
+
+
+.randomBeer{
+    height: 633px;
+}
+footer{
+    background-color: #0a2c42;
+    height: 50px;
+    
+}
+footer p {
+    color: white;
+    margin-left: 20px;
+    padding-top: 15px;
+}
+
+
+
+/* dark-blue: #0a2c42;
+grey: #bfbfbf; */
