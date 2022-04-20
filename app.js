@@ -32,16 +32,16 @@ app.get('/beers', (req, res, next) => {
 });
 
 app.get('/random-beer', (req, res, next) => {
-
-  const randomBeer = PunkAPI.getRandom()
-  .then(responseFromApi => {
+  
+    punkAPI
+  .getRandom()
+  .then(randomBeer => {
     // console.log("Beers from the database: ", beersFromApi)
     
-  res.render("randomBeer", {randomBeer});
+  res.render("randomBeer", randomBeer[0]);
   }) 
   .catch(error => console.log(error));
 });
-
 
 
 
