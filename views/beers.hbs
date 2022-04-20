@@ -1,0 +1,14 @@
+<h1>Check Our Beers</h1>
+
+{{#each beersFromApi}}
+<div>
+    <h2>{{name}}</h2>
+    <h3>{{tagline}}</h3>
+    {{#if image_url}}
+    <img src="{{image_url}}" alt="{{name}}">
+    {{else}}
+    <img src="./images/beer-placeholder.png" alt="beer placeholder image">
+    {{/if}}
+    <p>{{description}}</p>
+</div>
+{{/each}}
