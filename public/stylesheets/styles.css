@@ -6,6 +6,32 @@ grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
 
-/* img{
-    max-width: 50vw;
-} */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background-color: #2081c3;
+}
+
+.navbar{
+    background-color: #0a2c42;
+}
+
+p{
+    color: #bfbfbf;
+}
+
+#grid div div img{
+    max-height: 200px;
+    object-fit: contain;
+}
+
+#homepage img{
+    max-height: 400px;
+    object-fit: contain;
+}
+
+#homepage a{
+    background-color: #2081c3;
+}
