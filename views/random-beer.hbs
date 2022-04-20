@@ -1,0 +1,20 @@
+<div>
+  {{#each randomBeer}}
+    {{#if this.image_url}}
+      <img src='{{this.image_url}}' alt='this.name' />
+    {{else}}
+      <img src='https://via.placeholder.com/600x400' alt='{{this.name}}' />
+    {{/if}}
+    <h2>{{this.name}}</h2>
+    <p>{{this.description}}</p>
+    <p>{{this.tagline}}</p>
+    <h3>Food Pairing</h3>
+    {{#each this.food_pairing}}
+      <ul>
+        <li>{{this}}</li>
+      </ul>
+    {{/each}}
+    <h4>Brewer Tips:</h4>
+    <p>{{this.brewers_tips}}</p>
+  {{/each}}
+</div>
