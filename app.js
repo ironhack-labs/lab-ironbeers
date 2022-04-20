@@ -1,4 +1,5 @@
 const express = require('express');
+const { redirect } = require('express/lib/response');
 
 const hbs = require('hbs');
 const path = require('path');
@@ -22,4 +23,24 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+app.get('/beers', (req, res) => {
+  punkAPI.getBeers()
+  .then((beersFromAPI) => {
+    res.render('beers', {beersArr: beersFromAPI});
+    console.log(beersFromAPI);
+  })
+  .catch()
+})
+
+app.get('/random-beer', (req, res) => {
+  punkAPI.getRandom()
+  .then((randomFromAPI) => {
+    res.render('random-beer', {randomObj: randomFromAPI});
+    console.log(randomFromAPI);
+  })
+  .catch()
+})
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
+
+// worked together until iteration 3 
