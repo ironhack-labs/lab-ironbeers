@@ -5,3 +5,80 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body{
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    height: 400px;
+}
+
+#nav{
+    margin: 0 auto;
+    background-color: #2081c3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav a{
+    color: white;
+    text-decoration: none;
+}
+
+#nav ul{
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#nav li{
+    padding: 15px;
+    font-size: 18px;
+}
+
+
+#index{
+    height: 1200px;
+    width: 100%;
+    padding-top: 100px;
+    text-align:center;
+}
+
+#index img{
+    height: 300px;
+    
+}
+
+#a{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding: 100px;
+}
+
+.beerLink, .randomLink{
+    width: 170px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #2081c3;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 1px 1px 3px gray;
+}
+
+#footer{
+    padding: 1px;
+    color: white;
+    background-color: #0a2c42;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
+}
