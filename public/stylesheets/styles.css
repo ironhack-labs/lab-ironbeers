@@ -5,6 +5,14 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+.navbar{
+    background-color: #2081c3;
+    padding: 20px 7px;
+}
+
+.nav-link{
+    color: #f7f9f9;
+}
 
 #home-box{
     display: flex;
@@ -25,4 +33,22 @@ font-family: Arial, Helvetica, sans-serif;
     margin-top: 20px;
     border-radius: 5px;
     background-color: #2081c3;
+    box-shadow: 0px 5px #00000017;
+}
+
+footer{
+    margin-top: 40px;
+    padding: 20px 0px 20px 15px;
+    background-color: #0a2c42;
+    color: #f7f9f9;
+}
+
+#beer-partial{
+    display: flex;
+    flex-direction: row;
+}
+
+#beer-partial img{
+    width: 100px;
+    height: 250px;
 }

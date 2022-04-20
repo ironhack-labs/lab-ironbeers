@@ -2,7 +2,12 @@
         {{>beerpartial}}
         <div>
            
-            <p><strong>Food Pairing:</strong>  {{food_pairing}}</p>
+            <p><strong>Food Pairing:</strong></p>
+            <ul>
+                {{#each food_pairing}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ul>
             <p><strong>Brewers Tips:</strong>  {{brewers_tips}}</p>
         </div>
 </div>
