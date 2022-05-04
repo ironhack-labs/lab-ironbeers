@@ -1,0 +1,14 @@
+<div class="flexrandom">
+<div class="card max-width">
+  {{#each randomBeer}}
+ {{> beerpartial }}
+    <h4>Food Pairing</h4>
+    <ul>
+      {{#each this.food_pairing}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p><b>Brewers Tips: </b>{{brewers_tips}}</p>
+  {{/each}}
+</div>
+</div> 
