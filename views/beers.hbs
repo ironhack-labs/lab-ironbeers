@@ -1,0 +1,8 @@
+<div class='beer-box'>
+  {{#each beersFromApi}}
+    <img class='beer-img' src='{{image_url}}' alt='{{name}}' />
+    <p>{{name}}</p>
+    <p>{{tagline}}</p>
+    <p>{{description}}</p>
+  {{/each}}
+</div>
