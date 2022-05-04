@@ -3,10 +3,10 @@
 </head>
 
 <div class='random-beer'>
-  <div class='information-random-beer'>
-     {{#each responseFromAPI}}
+    {{#each responseFromAPI}}
    <img class='beer-image' src='{{this.image_url}}' alt='beer-image' />
    
+  <div class='information-random-beer'>
      {{> beerpartial this}}
      <br>
       <h6><b>Food Pairing</b></h6>

@@ -1,5 +1,5 @@
 .main-beer {
-  height: 90vh;
+  height: 88vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,13 +26,4 @@
   background-color: #2081c3;
   color: white;
   border-radius: 3%;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-  color: white;
 }
