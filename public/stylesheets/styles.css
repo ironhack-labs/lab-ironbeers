@@ -5,17 +5,34 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
-
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.beerImg{
-    text-align: center;
-    width: 350px;
+.header {
+  margin: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.beerImg {
+  margin: 50px;
+  text-align: center;
+  width: 300px;
+}
+
+footer {
+  position: sticky;
+  font-size: 20px;
+  height: 60px;
+  color: #f7f9f9;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
 }
 
 nav {
@@ -27,11 +44,80 @@ nav {
 }
 nav a {
   font-size: 20px;
-  margin: 50px;
+  margin: 30px;
   color: #f7f9f9;
   text-decoration: none;
 }
 
+.button1 {
+  font-size: 15px;
+  box-shadow: 3px 3px #bfbfbf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 5px;
+  color: #f7f9f9;
+  background-color: #2081c3;
+  margin: 10px;
+  text-align: center;
+  width: 140px;
+  height: 30px;
+  text-decoration: none;
+}
+
+.button2 {
+  font-size: 15px;
+  box-shadow: 3px 3px #bfbfbf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 5px;
+  color: #f7f9f9;
+  background-color: #2081c3;
+  margin: 10px;
+  text-align: center;
+  width: 180px;
+  height: 30px;
+  text-decoration: none;
+}
+
+.randomImg {
+  margin: 50px;
+  width: 8%;
+}
+
 .randomDiv {
-  width: 150px;
+  height: 500px;
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.randomText {
+  width: 500px;
+}
+
+.beerContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.beersDiv {
+  width: 30%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.beersDivImg {
+  width: 60px;
 }

@@ -1,8 +1,10 @@
-<div >
+<div class='randomDiv'>
   {{#each resApi}}
-    <img class="randomDiv" src='{{image_url}}' alt='' />
-    <p>{{name}}</p>
-    <p>{{description}}</p>
-    <p>{{tagline}}</p>
+    <img class='randomImg' src='{{image_url}}' alt='' />
+    <div class='randomText'><h2>{{name}}</h2>
+      <p>{{description}}</p>
+      <p>{{tagline}}</p>
+      <p><b>Brewers Tips: </b>{{brewers_tips}}</p>
+    </div>
   {{/each}}
 </div>
