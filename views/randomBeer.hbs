@@ -1,0 +1,18 @@
+<div class='rbContainer'>
+
+  <img src='{{this.image_url}}' alt='{{this.name}}' class='beerImg' />
+
+  <div class='rbcText'>
+    <h5>{{this.name}}</h5>
+    <h6>{{this.tagline}}</h6>
+    <p>{{this.description}}</p>
+
+    <h5>Food Pairing</h5>
+    <ul>
+      {{#each food_pairing}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p><b>Brewers Tips:</b>{{brewers_tips}}</p>
+  </div>
+</div>
