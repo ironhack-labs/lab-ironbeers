@@ -27,7 +27,7 @@
       </button>
       <div class='collapse navbar-collapse' id='navbarNavAltMarkup'>
         <div class='navbar-nav'>
-          <a class='nav-item nav-link active' href='/'>
+          <a class='nav-item nav-link' href='/'>
             Home
           </a>
           <a class='nav-item nav-link' href='/beers'>Beers</a>
@@ -44,5 +44,13 @@
       integrity='sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p'
       crossorigin='anonymous'
     ></script>
+    <script>
+      window.addEventListener('load',()=>{ const
+      currentUrl=location.pathname.split('/'); const element =
+      document.getElementsByClassName('nav-link'); for(let
+      i=0;i<element.length;i++){
+      if(element[i].getAttribute('href').split('/')[1]===currentUrl[1]){
+      element[i].classList.toggle('active') } } })
+    </script>
   </body>
 </html>

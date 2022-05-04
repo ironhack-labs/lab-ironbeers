@@ -68,11 +68,14 @@ body {
 .random-beer main {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 0.5em;
   max-width: 50vw;
 }
 footer {
   padding: 1em;
   background-color: #0a2c42;
   color: #f7f9f9;
+}
+.muted {
+  color: #bfbfbf;
 }

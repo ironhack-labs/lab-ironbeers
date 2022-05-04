@@ -2,11 +2,11 @@
   <img src='{{image_url}}' alt='Beer {{name}}' />
   <main>
     <h4><b>{{name}}</b></h4>
-    <span class="text-muted">{{tagline}}</span>
+    <p class="muted">{{tagline}}</p>
     <article>
       {{description}}
     </article>
-    <p><b>Food Pairing:</b></p>
+    <p><b>Food Pairing</b></p>
     <ul>
       {{#each food_pairing}}
       {{> foodPairing this}}
