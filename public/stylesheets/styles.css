@@ -8,6 +8,7 @@ font-family: Arial, Helvetica, sans-serif;
 body {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -74,7 +75,4 @@ footer {
   padding: 1em;
   background-color: #0a2c42;
   color: #f7f9f9;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
