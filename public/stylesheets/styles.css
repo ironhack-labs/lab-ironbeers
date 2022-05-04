@@ -5,3 +5,17 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+nav {
+  height: 80px;
+  background-color: #2081c3;
+  text-align:left;
+  display: flex;
+  align-items: center;
+}
+nav a {
+    font-size: 20px;
+    margin: 50px;
+  color: #f7f9f9;
+  text-decoration: none;
+}
