@@ -1,8 +1,11 @@
-<div>
+<div class="beersection">
   {{#each beers}}
-    <img src='{{image_url}}' alt='' />
+    <img class="randomimg" src='{{image_url}}' alt='' />
+    <div class="randomtext">
     <p>{{name}}</p>
     <p>{{description}}</p>
     <p>{{tagline}}</p>
+    </div>
+    <hr>
   {{/each}}
 </div>

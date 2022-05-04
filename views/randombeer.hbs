@@ -1,8 +1,10 @@
-<div>
+<div class="randomsection"> 
   {{#each resApi}}
-    <img src='{{image_url}}' alt='' />
+    <img class="randomimg" src='{{image_url}}' alt='' />
+    <div class="randomtext">
     <p>{{name}}</p>
     <p>{{description}}</p>
     <p>{{tagline}}</p>
+    </div>
   {{/each}}
 </div>
