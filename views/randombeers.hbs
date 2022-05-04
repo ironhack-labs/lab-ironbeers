@@ -1,0 +1,19 @@
+<div class='randomB'>
+  {{#each responseFromAPI}}
+    <img class='randombeer' src='{{image_url}}' alt='' />
+    <div class='rbeer'>
+      <p class='text'>{{name}}</p>
+      <p class='text'>{{description}}</p>
+      <p class='text'>{{tagline}}</p>
+      <h5 class='text'>Food Pairing</h5>
+      <ul class='text'>
+        {{#each food_pairing}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <h5 class='text'>Brewers Tips</h5>
+      <p class='text'>{{brewers_tips}}</p>
+    </div>
+  {{/each}}
+
+</div>
