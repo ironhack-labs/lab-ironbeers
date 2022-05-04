@@ -1,0 +1,22 @@
+<div class='col-sm-6 col-md-6 col-xs-6'></div>
+{{#each beer}}
+
+  
+
+    <div class='thumbnail px-5' style='border:none; background:white;'>
+
+      <div class='col-sm-6 col-md-6 col-xs-12 image-container'>
+        <img src={{this.image_url}} style='height:200px; margin-left:-15px;' />
+      </div>
+
+      <div class='col-sm-6 col-md-6 col-xs-12'>
+
+        <h3>{{this.name}}</h3>
+        <p style='font-size:10px; color:#03225C;'>{{this.description}}</p>
+         <p style='font-size:10px; color:#03225C;'>{{this.tagline}}</p>
+      </div>
+    </div>
+
+
+{{/each}}
+  </div>
