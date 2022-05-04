@@ -11,6 +11,9 @@ body {
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
+.navbar {
+  background-color: #2081c3;
+}
 .home {
   display: flex;
   flex-direction: column;
@@ -20,8 +23,8 @@ body {
   padding: 2em 0;
 }
 .home img {
-  width: 40%;
-  height: auto;
+  width: auto;
+  height: 50vh;
 }
 .home a {
   padding: 0.7em;
@@ -47,14 +50,6 @@ body {
   width: auto;
   align-self: center;
 }
-footer {
-  padding: 1em;
-  background-color: #0a2c42;
-  color: #f7f9f9;
-}
-.navbar {
-  background-color: #2081c3;
-}
 .home-img {
   width: 32em;
   height: 100%;
@@ -74,4 +69,12 @@ footer {
   flex-direction: column;
   gap: 1em;
   max-width: 50vw;
+}
+footer {
+  padding: 1em;
+  background-color: #0a2c42;
+  color: #f7f9f9;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
