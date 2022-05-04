@@ -1,8 +1,13 @@
 <h1>Birras</h1>
-{{#if id}}
-    {{>partials this}}
+
+    {{>partials}}
         {{#each this.food_pairing}}
             <li>{{this}}</li>
         {{/each}}
         {{this.brewers_tips}}
-{{/if}}
+        {{this.first_brewed}}
+        {{this.ph}}
+        {{this.abv}}
+        {{this.yeast}}
+        {{ingredients}}
+

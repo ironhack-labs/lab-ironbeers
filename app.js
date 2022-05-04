@@ -49,18 +49,11 @@ app.get('/random-beer', (req, res) => {
   
 });
 
-app.get('/id-beer', (req, res) => {
+app.get('/beers/:id', async (req, res) => {
 
   
-  punkAPI.getBeers()
-  .then(id => {
-    
-    res.render('id-beer.hbs', {
-     id:id
-      
-    });
-  })
-  .catch(error => console.log(error));
+  const beerID = await punkAPI.getBeer(req.params.id);
+  res.render('id-beer', ...beerID);
 });
 
 
