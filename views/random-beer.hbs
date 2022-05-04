@@ -1,0 +1,14 @@
+
+<div class="card bg-transparent border-0 beerRandom" style="width: 30rem;">
+<img class="beers" src={{beer.image_url}} />
+ <div class="card-body">
+<h2 class="card-title">{{beer.name}}</h2>
+<p "card-text">{{beer.description}}</p>
+<p "card-text">{{beer.tagline}}</p>
+<ul "card-text">
+  {{#each beer.food_pairing}}
+    <li>{{this}}</li>
+  {{/each}}
+</ul>
+</div>
+</div>
