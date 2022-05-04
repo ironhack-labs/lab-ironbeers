@@ -6,16 +6,32 @@ grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
 
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.beerImg{
+    text-align: center;
+    width: 350px;
+}
+
 nav {
   height: 80px;
   background-color: #2081c3;
-  text-align:left;
+  text-align: left;
   display: flex;
   align-items: center;
 }
 nav a {
-    font-size: 20px;
-    margin: 50px;
+  font-size: 20px;
+  margin: 50px;
   color: #f7f9f9;
   text-decoration: none;
+}
+
+.randomDiv {
+  width: 150px;
 }
