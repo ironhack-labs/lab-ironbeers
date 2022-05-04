@@ -1,0 +1,38 @@
+.main-beer {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.beer-img {
+  height: 70vh;
+  width: 35vw;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10%;
+}
+
+.each-button {
+  margin-top: 1rem;
+  padding: 0.5rem 0.9rem;
+  background-color: #2081c3;
+  color: white;
+  border-radius: 3%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}

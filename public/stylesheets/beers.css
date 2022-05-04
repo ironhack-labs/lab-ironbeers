@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  background-color: #f7f9f9;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  color: #bfbfbf;
+  font-size: 0.7rem;
+}
+
+h5 {
+  font-style: italic;
+  font-size: 0.7rem;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+.beer-image {
+  height: 20vh;
+  width: 3vw;
+}
+
+.beers {
+  margin: 3rem 3.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+
+.img {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.each-beer {
+  margin-top: 0.5rem;
+  width: 30vw;
+}

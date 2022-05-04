@@ -1,0 +1,25 @@
+<head>
+  <link rel="stylesheet" href="/stylesheets/randomBeer.css">
+</head>
+
+<div class='random-beer'>
+  <div class='information-random-beer'>
+     {{#each responseFromAPI}}
+   <img class='beer-image' src='{{this.image_url}}' alt='beer-image' />
+   
+     {{> beerpartial this}}
+     <br>
+      <h6><b>Food Pairing</b></h6>
+      <ul>
+   {{#each this.food_pairing}}
+          <li>{{this}}</li>
+         
+{{/each}}
+      </ul>
+      <br>
+      <p class="brewer-tips"><b>Brewers Tips: </b>{{this.brewers_tips}}</p>
+    {{/each}}
+    </div>
+   
+  </div>
+</div>

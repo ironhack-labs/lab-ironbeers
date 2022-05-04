@@ -1,0 +1,50 @@
+body {
+  background-color: #f7f9f9;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  color: #bfbfbf;
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+p {
+  width: 50vw;
+  font-size: 1.5rem;
+}
+
+.beer-info {
+  display: flex;
+  flex-direction: column;
+}
+.beer-image {
+  height: 35vh;
+  width: 8vw;
+}
+
+.random-beer {
+  gap: 20%;
+  height: 52vh;
+  display: flex;
+  align-items: center;
+  margin: 5rem 10rem 18.2rem 10rem;
+}
+
+.information-random-beer {
+  margin-top: 5rem;
+  display: flex;
+  gap: 5%;
+}

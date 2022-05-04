@@ -1,0 +1,16 @@
+<head>
+  <link rel="stylesheet" href="/stylesheets/beers.css">
+</head>
+
+<body>
+<div class="beers">
+  {{#each beersFromApi}}
+    <article class="each-beer">
+      <div class="img">
+      <img class='beer-image' src='{{this.image_url}}' alt='beer-image' />
+      </div>
+   {{> beerpartial this}}
+    </article>
+  {{/each}}
+</div>
+</body>
