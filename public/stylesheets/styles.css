@@ -5,3 +5,7 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+.img {
+  height: 50px;
+  width: fit-content;
+}
