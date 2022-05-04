@@ -5,3 +5,85 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav {
+  background-color: #2081c3;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.class-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.big-beer-img {
+  margin-top: 20px;
+  width: 400px;
+  height: 400px;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #2081c3;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  box-shadow: 5px 5px #888888;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: 0a2c42;
+  color: white;
+}
+
+p {
+  margin-left: 10px;
+  font-size: 10px;
+}
+
+.b-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 30vw;
+}
+
+.b-class img {
+  width: 60px;
+  height: 190px;
+}
+
+.div-random {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
