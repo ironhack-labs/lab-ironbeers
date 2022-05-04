@@ -21,5 +21,21 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
   res.render('index');
 });
-
+app.get('/beers', (req, res) => {
+  punkAPI
+  .getBeers()
+  .then(beers => {
+    console.log('Beers from the database: ', beers)
+    res.render('beer', {beers});})
+  .catch(error => console.log(error));
+});
+app.get('/random-beer', (req, res) => {
+  punkAPI
+  .getRandom()
+  .then(randomBeers => {
+    res.render('randomBeer', {randomBeers});
+  })
+  .catch(error => console.log(error));
+  
+});
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
