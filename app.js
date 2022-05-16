@@ -30,10 +30,16 @@ app.get("/beers", (req, res, next) => {
   .catch(error =>console.log('what is it?', error))
 })
 
-app.get("/random-beer", (req, res, next) => {
+app.get("random-beer", (req, res, next) => {
   punkAPI.getRandom()
-  .
-
+  .then((beers)=> { 
+    console.log('beers', beers)
+    res.render('beers', {beers})
 })
+  .catch(error =>console.log('what is it?', error))
+})
+  
+
+
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
