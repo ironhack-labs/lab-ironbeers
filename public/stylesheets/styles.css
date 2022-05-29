@@ -21,3 +21,14 @@ footer a {
 body {
   background-color: blanchedalmond;
 }
+
+.center-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+button {
+  margin: 20px 0px;
+}
