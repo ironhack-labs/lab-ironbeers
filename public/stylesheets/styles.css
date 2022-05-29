@@ -5,3 +5,19 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0a2c42;
+  color: white;
+  text-align: center;
+}
+footer a {
+  color: white;
+}
+body {
+  background-color: blanchedalmond;
+}
