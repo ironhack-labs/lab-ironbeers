@@ -1,6 +1,18 @@
 <title>Beers</title>
 <div class='container-center'>
-{{#each beerApi}}
-{{> beerpartials }}
-{{/each}}
+  {{#each beerApi}}
+    {{!-- {{> beerpartials this }} --}}
+    <div>
+      <div class='two-columns'>
+        <div class='container-center'>
+          <img class='beer-img' src='{{image_url}}' alt='{{name}}' />
+        </div>
+        <div class='container-center'>
+          <p><b>{{name}}</b></p>
+          <p><b>Description: </b>{{description}}</p>
+          <p><b>Tagline: </b>{{tagline}}</p>
+        </div>
+      </div>
+    </div>
+  {{/each}}
 </div>

@@ -9,8 +9,8 @@ const punkAPI = new PunkAPIWrapper();
 
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
-app.use(express.static('public'));
-//It used to be: app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Register the location for handlebars partials here:
 
@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 });
 
 //all beers
-app.get('/beers', (req, res) => {
+app.get('/beers', (req, res, next) => {
   punkAPI
     .getBeers()
     .then(beerApi => {
@@ -31,11 +31,12 @@ app.get('/beers', (req, res) => {
     })
     .catch(error => {
       console.log('Error fetching api', error);
+      res.send('No random beers were found');
     });
 });
 
 //random beers
-app.get('/random-beer', (req, res) => {
+app.get('/random-beer', (req, res, next) => {
   punkAPI
     .getRandom()
     .then(randomBeerApi => {
