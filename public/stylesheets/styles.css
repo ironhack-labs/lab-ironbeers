@@ -35,3 +35,8 @@ color:white;
       padding: 9px;
       
   }
+
+  .card img {
+    height: 200px;
+    object-fit: cover;
+  }

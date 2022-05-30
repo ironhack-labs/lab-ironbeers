@@ -1,0 +1,35 @@
+
+
+<div>
+  {{#each beerID}}
+
+
+      <div>
+          {{> beerpartial }}
+      </div>
+
+      <div>
+          <h3>First brewed</h3>
+          {{first_brewed}}
+      </div>
+
+      <div>
+          <h3>ABV</h3>
+          {{abv}}
+      </div>
+
+      <div>
+          <h3>Food Pairing</h3>
+          {{food_pairing}}
+      </div>
+
+      <div>
+          <h3>Brewer Tips</h3>
+          {{brewers_tips}}
+      </div>
+  {{/each}}
+</div>
+
+{{!-- all properties:
+"first_brewed","","ibu","target_fg","target_og","ebc","srm","ph","attenuation_level","volume","boil_volume","method","ingredients""
+ --}}
