@@ -1,0 +1,37 @@
+<p>
+  si jalo
+</p>
+
+<div>
+
+  {{#each responseFromAPI}}
+
+    <div>
+      <div>
+        <img src={{image_url}} {{! width="190.5" height="380" }} alt={{name}} />
+      </div>
+      <div>
+        <h3>{{name}}</h3>
+        <p>{{description}}</p>
+      </div>
+      <p>{{tagline}}</p>
+
+      <div>
+          <h3>Food Pairing</h3>
+          
+          {{food_pairing}}
+
+          </div>
+
+
+
+      <div>
+          
+          <h3>Brewer Tips</h3>
+
+          {{brewers_tips}}</div>
+
+    </div>
+
+  {{/each}}
+</div>
