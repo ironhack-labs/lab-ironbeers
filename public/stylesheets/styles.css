@@ -22,6 +22,9 @@ body {
   background-color: blanchedalmond;
 }
 
+nav {
+  background-color: #2882c1 !important;
+}
 .center-container {
   display: flex;
   align-items: center;
@@ -31,4 +34,9 @@ body {
 
 button {
   margin: 20px 0px;
+}
+
+.beer-img {
+  width: 80px;
+  height: auto;
 }

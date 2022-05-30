@@ -3,7 +3,7 @@
     <meta charset='UTF-8' />
     <meta http-equiv='X-UA-Compatible' content='IE=edge' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-    <title>Navbar and Footer Layout</title>
+
     <link
       rel='stylesheet'
       href='https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css'
@@ -12,37 +12,19 @@
   </head>
   <body>
 
-    <nav class='uk-navbar-container uk-margin' uk-navbar='mode: click'>
-      <div class='uk-navbar-left'>
-
-        <ul class='uk-navbar-nav'>
-          <li class='uk-active'><a href='/'>HOME</a></li>
-          <li>
-            <a href='/beers'>BEERS</a>
-          </li>
-          <li><a href='/random-beers'>RANDOM BEERS</a></li>
-        </ul>
-
-      </div>
-    </nav>
+{{> header}}
 
     {{{body}}}
 
-    <footer class='uk-margin'>
-      <div class='uk-navbar-left'>
+{{> footer}}
 
-        <ul class='uk-navbar-nav'>
-          <li><a href='https://github.com/analuzma'>Developed by Ana Luz MA</a></li>
 
-        </ul>
-
-      </div>
-    </footer>
     <script
       src='https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js'
     ></script>
     <script
       src='https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js'
     ></script>
+
   </body>
 </html>
