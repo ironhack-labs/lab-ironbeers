@@ -5,3 +5,125 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+/* layout */
+
+#layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#nav-layout {
+    background-color: #2081c3;
+    padding: 10px;
+    margin: -8px;
+}
+
+#nav-layout ul {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#nav-layout li {
+    margin: 0px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
+#nav-layout a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
+#main-layout {
+    height: 532px;
+    background-color: #bfbfbf;
+    margin-top: 8px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+#footer-layout {
+    background-color: #0a2c42;
+    color: white;
+    margin: -8px;
+    padding: 1px 10px;
+}
+
+#footer-layout h4 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* fin layout */
+/* home */
+
+#home {
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home img {
+    width: 200px;
+    height: 200px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+#home a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    margin: 20px;
+    background-color: #2081c3;
+    border-radius: 5px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+/*end home*/
+
+#beers {
+    height: 532px;
+    width: 1260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+} 
+
+#beers section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#beers div {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+}
+
+#beers img {
+    height: 80px;
+    width: 30px;
+}
