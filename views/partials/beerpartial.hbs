@@ -1,0 +1,24 @@
+
+
+
+<div >
+
+{{#each beersFromApi}} {{!-- nota que ya estamos iterando en el players x lo tanto las keys del objeto pueden ser mencionadas directamente --}}
+
+    <div>
+<div>
+<img src={{image_url}} {{!-- width="190.5" height="380" --}} alt={{name}}>
+</div>
+<div>
+<h3>{{name}}</h3>
+<p>{{description}}</p>
+</div>
+<p>{{tagline}}</p>
+
+                
+
+    </div>
+
+    {{/each}}
+</div>
+
