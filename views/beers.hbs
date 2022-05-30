@@ -1,14 +1,15 @@
 
-<div>
-  <h1>Beers</h1>
+<div id="beerCointainer">
 
   <div id="beerApi">
   {{#each beersApi }}
 
-    {{name}}
+    <div id="eachBeer">
+      {{name}}
     <img src=" {{image_url}} " alt=" {{name}} ">
     {{description}}
     {{tagline}}
+    </div>
 
   {{/each}}
 </div>
