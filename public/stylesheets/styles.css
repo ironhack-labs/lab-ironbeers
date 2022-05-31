@@ -5,3 +5,43 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+  background-color: #f7f9f9;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+  background-color: #2081c3;
+  color: white;
+  padding: 20;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+img {
+  padding: 50;
+}
+.card-columns {
+  display: inline-block;
+  -webkit-column-break-inside: avoid;
+}
+
+#random {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-right: 250;
+  padding-left: 250;
+  padding-bottom: 100;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: #2081c3;
+  color: #fff;
+}
+#home {
+  padding-bottom: 50;
+}

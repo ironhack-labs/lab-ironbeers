@@ -1,0 +1,13 @@
+<div id='random'>
+  {{#each responseFromAPI}}
+    <div>
+      <p> <img src='{{image_url}}' height='400' width='200' /></p>
+      <div class='card-body'></div>
+      <h3 class='card-title'>{{name}}</h3>
+      <h6 class='card-subtitle mb-2 text-muted'>{{tagline}}</h6>
+      <p class='card-text'><b>Description: </b>{{description}}</p>
+      <p class='card-text'><b>Food Pairing: </b>{{food_pairing}}</p>
+      <p class='card-text'><b>Brewers Tips: </b>{{brewers_tips}}</p>
+    </div>
+  {{/each}}
+</div>
