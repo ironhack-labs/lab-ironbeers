@@ -1,21 +1,8 @@
 <title>Random Beer</title>
 <div class='container-center'>
 
-  {{!-- {{> beerpartials randomBeerApi }} --}}
-  {{#each randomBeerApi}}
-    <div>
-      <div class='two-columns'>
-        <div class='container-center'>
-          <img class='beer-img' src='{{image_url}}' alt='{{name}}' />
-        </div>
-        <div class='container-center'>
-          <p><b>{{name}}</b></p>
-          <p><b>Description: </b>{{description}}</p>
-          <p><b>Tagline: </b>{{tagline}}</p>
-        </div>
-      </div>
-    </div>
-  {{/each}}
+  {{> beerpartials randomBeerApi }}
+
   {{#each randomBeerApi}}
 
     <p><b>Food pairings: </b>{{this.food_pairing}}</p>
