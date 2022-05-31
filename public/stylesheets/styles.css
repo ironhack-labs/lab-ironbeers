@@ -5,3 +5,21 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+/* body{
+    background-color: rgb(30, 28, 28);
+    color: beige;
+   
+  } */
+
+.cover {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
