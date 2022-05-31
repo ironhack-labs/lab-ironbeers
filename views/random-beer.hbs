@@ -1,0 +1,16 @@
+<br> <br> <br> <br> <br>
+<div class='container'>
+  <div class='row'>
+    
+      {{#each responseFromAPI}}
+        {{>beerpartial}}
+        {{food_pairing}}
+        {{brewer-tips}}
+      
+      {{else}}
+        <p>No beers yet!</p>
+      {{/each}}
+    
+  </div>
+</div>
+<br> <br>

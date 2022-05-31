@@ -1,0 +1,13 @@
+<br> <br> <br> 
+<div class='container'>
+  <div class='row'>
+    
+      {{#each beersFromApi}}
+        {{>beerpartial this}}
+      {{else}}
+        <p>No beers yet!</p>
+      {{/each}}
+    
+  </div>
+</div>
+<br> <br>
