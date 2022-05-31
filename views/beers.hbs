@@ -1,0 +1,9 @@
+<div class="beers-page">
+    <ul>
+        {{#each beersFromApi}}
+            <li>{{this}}</li>
+        {{else}}
+            <p>No beers!</p>
+        {{/each}}
+    </ul>
+</div>
