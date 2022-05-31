@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, 'public'))); //all static files are 
 
 // Register the location for handlebars partials here:
 
-q
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 // Add the route handlers here:
 
