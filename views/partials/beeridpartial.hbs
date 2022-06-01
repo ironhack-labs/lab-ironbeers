@@ -1,0 +1,29 @@
+<div>
+    {{#each beerId}}
+        <div>
+            {{> beeridpartial this}}
+        </div>
+
+        <div>
+            <h3>Ingredients:</h3>
+            <ol>
+                {{#each ingredients}}
+                    <li>{{@key}}</li>
+                 {{/each}}
+            </ol>
+        </div>
+        <div>
+            <h3>ABV</h3>
+            <p>{{abv}}</p>
+        </div>
+        <div>
+            <h3>Food Pairing</h3>
+            <p>{{food_pairing}}</p>
+        </div>
+    {{/each}}
+</div>
+
+
+{{!-- all properties:
+"first_brewed","","ibu","target_fg","target_og","ebc","srm","ph","attenuation_level","volume","boil_volume","method","ingredients""
+ --}}

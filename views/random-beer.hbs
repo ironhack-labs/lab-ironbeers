@@ -3,7 +3,7 @@
 <div>
     {{#each beer}}
         <div>
-            {{> cardBeer this}}
+            {{> beerpartial this}}
         </div>
 
         <div>
@@ -16,7 +16,6 @@
             <p>{{brewers_tips}}</p>
         </div>
 
-        {{> cardBeer this}}
     {{/each}}
 
 
