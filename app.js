@@ -31,12 +31,17 @@ app.get('/beers', (req, res) => {
   .catch(err => {
     console.log(err);
   });
-
-  
 });
 
-/* app.get('/random-beer', (req, res) => {
-  res.render('beers');
-}); */
+app.get('/random-beer', (req, res) => {
+  punkAPI
+  .getRandom()
+  .then (beer => {
+    res.render('random-beer', { beer });
+  })
+  .catch(err => {
+    console.log(err);
+  })
+});
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

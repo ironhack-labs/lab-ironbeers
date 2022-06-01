@@ -1,0 +1,23 @@
+{{!-- para usar el partial --}}
+{{!-- this hace referenacia al objeto --}}
+<div>
+    {{#each beer}}
+        <div>
+            {{> cardBeer this}}
+        </div>
+
+        <div>
+            <h3>food Piring</h3>
+            <p>{{food_pairing}}</p>
+        </div>
+
+        <div>
+            <h3>Beer Tips</h3>
+            <p>{{brewers_tips}}</p>
+        </div>
+
+        {{> cardBeer this}}
+    {{/each}}
+
+
+</div>
