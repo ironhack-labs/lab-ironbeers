@@ -4,35 +4,25 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <title>Layout</title>
-    <link
-      rel='stylesheet'
-      href='https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css'
-    />
+    <link rel="stylesheet" href="stylesheets/styles.css">
   </head>
   <body>
-    <nav class='uk-navbar-container uk-margin' uk-navbar='mode: click'>
-      <div class='uk-navbar-left'>
-        <ul class='uk-navbar-nav'>
-          <li class='uk-active'><a href='/'>Home</a></li>
-          <li><a href='/beers'>Beers</a>
-            <div class='uk-navbar-dropdown'>
-              <ul class='uk-nav uk-navbar-dropdown-nav'>
-                <li class='uk-active'><a href='/'>Home</a></li>
-                <li><a href='#'>Item</a></li>
-                <li><a href='#'>Item</a></li>
-              </ul>
-            </div>
-          </li>
+    <nav id='nav-bar'>
+      <ul>
+          <li><a href='/'>Home</a></li>
+          <li><a href='/beers'>Beer</a></li>
           <li><a href='/random-beer'>Random Beer</a></li>
         </ul>
-      </div>
     </nav>
-    {{{body}}}
-    <script
-      src='https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js'
-    ></script>
-    <script
-      src='https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js'
-    ></script>
+
+    <main>
+      {{{body}}}
+    </main>
+
+    <footer class="footer">
+      <div>
+        <p>Developed by Emmanuel Solis ;)</p>
+      </div>
+    </footer>
   </body>
 </html>
