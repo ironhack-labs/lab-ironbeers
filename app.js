@@ -1,3 +1,4 @@
+const { response } = require('express');
 const express = require('express');
 const req = require('express/lib/request');
 const res = require('express/lib/response');
@@ -35,13 +36,16 @@ app.get('/beers', (req, res) => {
 
 })
 
-//app.get('/beers/:id', (req, res) => {
-// punkAPI
-// .getBeer(req.params.id)
-//  .then(id =>
-//res.render('beer-id', { id })) ¿HAY QUE CREAR UNA NUEVA PAG EN VIEWS PARA EL ID?
-//.catch(error => console.log(error));
-//})
+
+app.get('/beers/:id', (req, res) => {
+  punkAPI
+    .getBeer(req.params.id)
+    .then(id => {
+      res.render('detail-beer', { id })
+    })
+})
+
+
 
 app.get('/', (req, res) => {
   res.render('index');
