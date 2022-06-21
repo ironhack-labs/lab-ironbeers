@@ -1,0 +1,33 @@
+{{!-- <div class="container">
+    <div class="row">
+        {{#each beersFromApi }}
+        <div class="col-md-4">
+            <div class="card player-card">
+                <img src="{{image_url}}" class="card-img-top" alt="{{name}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{name}}</h5>
+                    <p class="card-text">{{description}}</p>
+                    <p class="card-text">{{tagline}}</p>
+                </div>
+                <br>
+                <div>
+                    <p>{{food_pairing}}</p>
+                    <p>{{brewers_tips}}</p>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div> --}}
+
+<div class="container">
+    {{#each randomFromApi }}
+    <div class="beers-random-card">
+        {{>beerpartial}}
+        <div>
+            <p>{{food_pairing}}</p>
+            <p>{{brewers_tips}}</p>
+        </div>
+    </div>
+    {{/each}}
+</div>
