@@ -5,3 +5,20 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+.beer {
+    width: 20%;
+    justify-content: center;
+}
+
+.marg {
+    margin-top: 10px;
+}
+
+.wid {
+    height: 150px;
+    object-fit: contain;
+}
+
+nav {
+    margin-bottom: 100px;
+}
