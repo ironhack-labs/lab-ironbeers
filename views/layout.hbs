@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+
+    {{!-- BOOTSTRAP --}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    {{!-- STYLESHEET --}}
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar nav-content navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">IronBros</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/beers">Beers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/random-beer">Random Beer</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        {{{body}}}
+    </main>
+
+    <footer class="footer">
+        <nav class="navbar navbar-dark bg-dark">
+            <span class="navbar-text">
+                Developed by Daniel Jimenez, God of Bootstrap
+            </span>
+        </nav>
+    </footer>
+</body>
+
+</html>
