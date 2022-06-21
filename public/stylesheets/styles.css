@@ -5,3 +5,67 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+img {
+    width: 100%;
+
+}
+
+.img-fixed {
+    height: 200px;
+    object-fit: contain;
+}
+
+.beer-img {
+    margin-left: 500px;
+    width: 30%;
+}
+
+#navbarTogglerDemo02 {
+    background-color: #00a2ff;
+    padding: 15px;
+}
+
+nav a {
+    color: #ffffff
+}
+
+.buttons-index {
+    position: fixed;
+    bottom: 150px;
+    margin-left: 500px;
+
+}
+
+footer {
+    background-color: #1f1fe7;
+    color: #ffffff;
+    padding: 12px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.container h1 {
+
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.image-div {
+    margin-top: 30px;
+}
+
+p {
+    color: #808080
+}
+
+.random-beer {
+
+    height: 400px;
+    object-fit: contain;
+}
+
+.random-div {
+    margin: 30px;
+}
