@@ -1,0 +1,27 @@
+<div class="container">
+
+    <div class="row align-items-center">
+
+        <div class="col-3">
+
+            {{#each responseFromAPI}}
+            
+            {{>beerpartial}}
+            
+            <hr>
+            
+            <h3>{{food_pairing}}</h3>
+            
+            <hr>
+            
+            <h3>{{brewer_tips}}</h3>
+            
+            </p>
+            
+            {{/each}}
+
+        </div>
+
+    </div>
+
+</div>

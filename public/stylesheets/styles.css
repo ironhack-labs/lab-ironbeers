@@ -5,3 +5,23 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+img {
+    width: auto;
+}
+
+nav {
+    color: #f7f9f9;
+    background-color: #0a2c42;
+}
+
+footer {
+    background-color: #212429;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    font-size: .6em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
