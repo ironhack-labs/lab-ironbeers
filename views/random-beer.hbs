@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+        {{#each responseFromAPI}}
+        <div class="col-4">
+            {{>beerpartial}}
+            <p>{{food_pairing}}</p>
+            <p>{{brewers_tips}}</p>
+        </div>
+        {{/each}}
+    </div>
+</div>

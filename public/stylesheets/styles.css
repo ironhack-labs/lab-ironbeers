@@ -5,3 +5,35 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #bfbfbf;
+    padding-bottom: 80px;
+}
+
+img {
+    margin-top: 50px;
+    margin-left: 100px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.navbar {
+    margin-bottom: 50px;
+    background-color: #2081c3;
+}
+
+.navbar a {
+    color: white;
+}
+
+footer {
+    background-color: #0a2c42;
+    color: white;
+    padding: 3px;
+    font-size: 1.5em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
