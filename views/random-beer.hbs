@@ -1,0 +1,16 @@
+{{#each responseFromAPI}}
+<div class="card mb-3 border-light" style="max-width: 800px;">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src="{{image_url}}" class="img-fluid rounded-start random-img" alt="{{name}}">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                {{>beerpartials}}
+                <p class="card-text"> {{food_pairing}}</p>
+                <p class="card-text"><small class="text-muted">{{brewers_tips}}</small></p>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}

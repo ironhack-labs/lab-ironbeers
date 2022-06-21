@@ -5,3 +5,56 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+main {
+    margin-top: 80px;
+}
+
+footer {
+    background-color: #212429;
+    color: white;
+    padding: 10px;
+    font-size: .9em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+img {
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.beer-card {
+    min-height: 400px;
+}
+
+.beer-img {
+
+    width: 80px;
+    height: auto;
+    align-self: center;
+}
+
+
+
+.index-btn {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    align-items: center;
+}
+
+
+.index-btn a {
+
+    margin-top: 5px;
+
+}
+
+.random-img {
+    padding-left: 20px;
+    width: 100px;
+    height: auto;
+}

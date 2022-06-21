@@ -1,0 +1,17 @@
+<div class="row">
+
+
+    {{#each beersFromApi}}
+
+    <div class="col-md-4">
+
+        <div class="card border-light beer-card">
+            <img src="{{image_url}}" class="card-img-top beer-img" alt="{{name}}">
+            <div class="card-body">
+                {{>beerpartials}}
+            </div>
+        </div>
+
+    </div>
+    {{/each}}
+</div>
