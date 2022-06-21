@@ -1,3 +1,25 @@
+.button {
+    margin: 20px 2.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+.index-image {
+    width: 80%;
+    margin: 20px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 0 5px 20px;
+}
+
 /*
 white: #f7f9f9;
 light-blue: #2081c3;
