@@ -5,3 +5,36 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+img {
+    height: 200px;
+    margin: 20px auto;
+    display: block;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button {
+    margin: 10px;
+}
+
+button a {
+    color: #212429;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #212429;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: .6em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
