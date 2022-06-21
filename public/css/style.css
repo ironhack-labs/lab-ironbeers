@@ -1,0 +1,70 @@
+/* white: #f7f9f9;
+light-blue: #2081c3;
+dark-blue: #0a2c42;
+grey: #bfbfbf;
+font-family: Arial,
+Helvetica,
+sans-serif; */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    margin-top: 5rem;
+}
+
+.bluelight {
+    background-color: #2081c3;
+}
+
+.whiteFont {
+    color: white;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 6rem;
+}
+
+.home {
+    text-align: center;
+}
+
+.home img {
+    padding: 2rem;
+    width: 40%;
+    margin-bottom: 2rem;
+}
+
+.beerCards {
+    margin-bottom: 3rem;
+    border: none;
+}
+
+.beerCards img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 21rem;
+    object-fit: cover;
+}
+
+.random img {
+    padding: 1rem;
+    float: left;
+    width: 10%;
+}
+
+footer {
+    padding-top: 1rem;
+    background-color: #0a2c42;
+    color: white;
+}
