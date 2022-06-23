@@ -1,12 +1,14 @@
-<div class="row">
-    {{#each beers as | beer |}}
-        <div class="col-3">
-            <div>
-                <img class="w-25" src="{{beer.image_url}}" >
-                <p>{{beer.name}}</p>
-                <p>{{beer.description}}</p>
-                <p>{{beer.tagline}}</p>
+<div class="container-beers">
+    <div class="row">
+        {{#each beers as | beer |}}
+            <div class="col-4">
+                <div class="container-beer">
+                    <img src="{{beer.image_url}}" >
+                    <p class="container-beer-name">{{beer.name}}</p>
+                    <p class="container-beer-tag">{{beer.tagline}}</p>
+                    <p class="container-descr"> {{beer.description}}</p>
+                </div>
             </div>
-        </div>
-    {{/each}}
+        {{/each}}
+    </div>
 </div>
