@@ -1,0 +1,37 @@
+{{#each beer}}
+  <div class='container col-8 mt-5'>
+    <div class='row'>
+      <div class='col-3'>
+        <a href='#'>
+          <img
+            src='{{this.image_url}}'
+            alt='Poster for {{this.name}}'
+            class='col-3'
+          />
+        </a>
+      </div>
+      <div class='col-9'>
+        <h2>
+          {{this.name}}
+        </h2>
+        <p class='text-black-50'>
+          {{this.tagline}}
+        </p>
+        <p>
+          {{this.description}}
+        </p>
+        <h4>
+          Food Pairing:
+        </h4>
+        <ul>
+          {{#each food_pairing}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+        <p><strong>Brewers Tips:</strong>{{this.brewers_tips}}
+        </p>
+      </div>
+    </div>
+  </div>
+
+{{/each}}
