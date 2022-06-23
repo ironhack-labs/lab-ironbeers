@@ -1,0 +1,13 @@
+{{#each beersList}}
+	{{!-- this is the syntax to use a partial --}}
+	{{!-- {{> *name of the partial* *the data you want to show*}} --}}
+	<img src="{{this.image_url}}" alt="">
+  
+<h2> {{name}}</h2>
+    
+<p>
+   {{description}}
+</p>
+   
+
+{{/each}}
