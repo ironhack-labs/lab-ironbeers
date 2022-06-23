@@ -1,0 +1,20 @@
+<div class="container-random">
+    <div>
+        <img class="random-img" src="{{responseFromAPI.image_url}}">
+    </div>
+    <div class="random-text">
+        <h3>{{responseFromAPI.name}}</h3>
+        <p>{{responseFromAPI.description}}</p>
+        <p>{{responseFromAPI.tagline}}</p>
+        <h5>Food pairing</h5>
+        <ul>{{#each responseFromAPI.food_pairing}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p><b>Brewers Tips: </b>{{responseFromAPI.brewers_tips}}</p>
+    </div>
+</div>
+
+
+
+
