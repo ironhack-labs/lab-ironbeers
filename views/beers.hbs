@@ -1,0 +1,7 @@
+<div class="beers-container">
+{{#each beerList}}
+	{{!-- this is the syntax to use a partial --}}
+	{{!-- {{> *name of the partial* *the data you want to show*}} --}}
+	{{> beerCard this}}
+{{/each}}
+</div>
