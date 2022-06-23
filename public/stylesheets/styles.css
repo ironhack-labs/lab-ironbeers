@@ -5,3 +5,21 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: #0a2c42;
+    min-height: 50px;
+    color: white;
+}
+
+.navbar{
+    background-color: #2081c3!important;
+}
+
+.main-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
