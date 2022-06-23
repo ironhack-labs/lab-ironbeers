@@ -1,0 +1,24 @@
+<div>
+
+
+    <img class="beers-photo" src="{{oneBeer.image_url}}" alt="Poster for {{oneBeer.name}}">
+
+    <h2>
+        {{oneBeer.name}}
+    </h2>
+    <ul>
+        <li> {{oneBeer.description}}</li>
+        <li> {{oneBeer.tagline}}</li>
+        <li><ul>Food Pairing
+            <li>{{oneBeer.food_pairing.[0]}} </li>
+            <li>{{oneBeer.food_pairing.[1]}} </li>
+            <li> {{oneBeer.food_pairing.[2]}}</li>
+          
+        </ul> </li>
+        <li> {{oneBeer.brewers_tips}}</li>
+
+
+
+    </ul>
+
+</div>

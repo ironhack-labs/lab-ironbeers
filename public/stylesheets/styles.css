@@ -5,3 +5,11 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.beers-photo {
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
