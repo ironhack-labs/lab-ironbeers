@@ -1,20 +1,34 @@
-<article class='col-12 col-md-4 mt-2'>
-  <div class='border border-0 rounded rounded-3'>
-    <a href='#'>
-      <img
-        src='{{this.image_url}}'
-        alt='Poster for {{this.name}}'
-        class='col-3'
-      />
-    </a>
-    <h2>
-      {{this.name}}
-    </h2>
-    <p class='text-black-50'>
-      {{this.tagline}}
-    </p>
-    <p>
-      {{this.description}}
-    </p>
+  <div class='container col-8 mt-5'>
+    <div class='row'>
+      <div class='col-3'>
+        <a href='/beers/{{this.id}}'>
+          <img
+            src='{{this.image_url}}'
+            alt='Poster for {{this.name}}'
+            class='col-3'
+          />
+        </a>
+      </div>
+      <div class='col-9'>
+        <h2>
+          {{this.name}}
+        </h2>
+        <p class='text-black-50'>
+          {{this.tagline}}
+        </p>
+        <p>
+          {{this.description}}
+        </p>
+        <h4>
+          Food Pairing:
+        </h4>
+        <ul>
+          {{#each food_pairing}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+        <p class='mb-5'><strong>Brewers Tips:</strong>{{this.brewers_tips}}
+        </p>
+      </div>
+    </div>
   </div>
-</article>
