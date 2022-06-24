@@ -1,0 +1,46 @@
+.nav-container {
+    width: 100%;
+    height: 10 vh;
+    align-items: left;
+    background-color: rgb(69, 132, 210);
+    display: flex;
+    
+}
+
+
+nav li{
+    display: inline-block;
+    margin-inline: 30px;
+    font-size: 20px;
+   
+    
+}
+a{
+    text-decoration:none;
+    color: white;
+    font-weight: bold;
+}
+
+.home {
+    height: 800 px;
+    align-items: center;
+    justify-content: center;   
+}
+.bimg{
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+   
+}
+.box{
+    background-color: rgb(69, 132, 210);
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
