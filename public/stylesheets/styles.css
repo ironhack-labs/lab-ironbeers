@@ -22,4 +22,46 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    min-height: 50rem;
+}
+
+.main-page img{
+    width: 25%;
+}
+
+.description__image-beer{
+    width: 4.5rem;
+    height: 15rem;
+}
+
+.description__image-beer-margin{
+    margin-right: 5rem;
+}
+
+.description__name{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.description__tagline{
+    font-size: 0.9rem;
+    opacity: 0.5;
+}
+
+.description__description{
+    font-size: 0.9rem;
+}
+
+.beers__action{
+    text-decoration: none;
+    color: black;
+}
+
+.beers__action:hover{
+    color: black;
+}
+
+.beer__selected{
+    min-height: 50rem;
 }

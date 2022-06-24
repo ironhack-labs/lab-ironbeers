@@ -1,0 +1,14 @@
+<img class="description__image-beer {{#if selected}}description__image-beer-margin{{/if}} " src="{{beer.image_url}}">
+<div class="d-flex flex-column">
+    <p class="description__name">{{beer.name}}</p>
+    <p class="description__tagline">{{beer.tagline}}</p>
+    <p class="description__description">{{beer.description}}</p>
+    {{#if selected}}
+        <ul>
+            {{#each beer.food_pairing as | food_pairing |}}
+                <li>{{food_pairing}}</li>
+            {{/each}}
+        </ul>
+        <p>{{beer.brewers_tips}}</p>
+    {{/if}} 
+</div>

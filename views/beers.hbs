@@ -1,10 +1,11 @@
-<div class="row">
-    {{#each beers as | beer |}}
-        <div class="col-3">
-            <img src="{{beer.image_url}}">             
-            <p>{{beer.name}}</p>
-            <p>{{beer.description}}</p>
-            <p>{{beer.tagline}}</p>
-        </div>
-    {{/each}}
+<div class="container">
+    <div class="row mt-5 mb-5">
+        {{#each beers as | beer |}}
+            <div class="col-4 mt-2 mb-2">
+                <a class="beers__action d-flex flex-column align-items-center" href="/beers/beer-{{beer.id}}">
+                    {{> beerpartial beer = beer }}
+                </a>
+            </div>
+        {{/each}}
+    </div>
 </div>
