@@ -4,9 +4,9 @@
     </div>
     <div class="random-text">
         <h3>{{responseFromAPI.name}}</h3>
+        <p class="random-text-tagline">{{responseFromAPI.tagline}}</p>
         <p>{{responseFromAPI.description}}</p>
-        <p>{{responseFromAPI.tagline}}</p>
-        <h5>Food pairing</h5>
+        <h6>Food pairing</h6>
         <ul>{{#each responseFromAPI.food_pairing}}
                 <li class="random-text-li">{{this}}</li>
             {{/each}}

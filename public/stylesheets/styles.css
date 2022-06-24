@@ -64,6 +64,18 @@ body, html {
     margin-top: 10px;
     margin-left: 5px;
 }
+.random-text h3 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.random-text h6 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.random-text-tagline{
+    color: #bfbfbf;
+}
 .container-beers{
     display: flex;
     margin-top: 100px;
