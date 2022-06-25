@@ -5,8 +5,8 @@
     <p class="description__description">{{beer.description}}</p>
     {{#if selected}}
         <ul>
-            {{#each beer.food_pairing as | food_pairing |}}
-                <li>{{food_pairing}}</li>
+            {{#each beer.food_pairing}}
+                <li>{{this}}</li>
             {{/each}}
         </ul>
         <p>{{beer.brewers_tips}}</p>
