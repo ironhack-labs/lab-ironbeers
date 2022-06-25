@@ -1,3 +1,8 @@
 <div>
-
+    {{#each beersFromApi as |beer|}}
+    <img src="{{beer.image_url}}" alt="">
+    <li>{{>beerpartial}}</li>
+    <li>{{beer.description}}</li>
+    <li>{{beer.tagline}}</li>
+    {{/each}}
 </div>
