@@ -1,9 +1,6 @@
 <ul>
 {{#each beers as |beer|}}
-<img src="{{beer.image_url}}" alt="">
-<h2>{{beer.name}}</h2>
-<p>{{beer.tagline}}</p>
-<h3>{{beer.description}}</h3>
+{{> beerpartial beer = beer}}
 <hr>
 {{/each}}
 </ul>
