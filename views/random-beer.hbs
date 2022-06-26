@@ -1,7 +1,8 @@
-<div>
-    <div>
-        <img src="{{beers.image_url}}" alt="">
+<div class="rContainer">
+    <div class="rBox">
+        <img style="height:30vh" src="{{beers.image_url}}" >
     </div>
+    <div class="rBox">
     <h1> {{beers.name}}</h1>
     <p> <small>{{beers.tagline}}</small></p>
     <p>{{beers.description}}</p>
@@ -12,5 +13,6 @@
         <li>{{beers.food_pairing.[2]}}</li>
     </ul>
     <p><b>Brewing Tips: </b>{{beers.brewers_tips}}</p>
+    </div>
 </div>
 

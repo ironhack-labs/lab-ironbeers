@@ -44,3 +44,12 @@ a{
     margin-right: auto;
   
 }
+.rBox{
+    margin:20px;
+     justify-content:center;
+}
+.rContainer{
+    display:flex;
+    align-items:center;
+  margin-inline: 10%;
+}
