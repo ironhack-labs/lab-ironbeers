@@ -5,18 +5,90 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
-nav {
-    background-color: #2081c3;
-    color: white;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
-nav ul{
-    display: flex;
-    flex-direction:row;
-    justify-content: space-evenly;
-    padding: 20px;
-    padding-right: 80%;
+img {
+  max-height: 250px;
+  max-width: 125px;
 }
-nav ul li{
-    
-    list-style: none;
+.index-image {
+  max-width: 250;
+  max-height: 500;
 }
+
+.card-text {
+  color: #bfbfbf;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.footer {
+  margin-left: 0%;
+  background: linear-gradient(270deg, transparent, #0a2c42);
+}
+.navbar-brand {
+  color: white;
+}
+
+.beers-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.beers-container div {
+  margin-left: 2%;
+  margin-top: 2%;
+}
+.beerpartial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.beerpartial-description {
+  line-height: 30px;
+  height: calc(5 * 30px);
+  overflow: hidden;
+  position: relative;
+}
+.beerpartial-description::after {
+  content: '';
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 25px;
+  width: 85%;
+
+  background: linear-gradient(90deg, transparent, white);
+}
+
+.index-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+.index-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3%;
+}
+.index-buttons button {
+  background-color: #2081c3;
+  border: none;
+  margin-bottom: 3%;
+}
+.index-buttons button a {
+  text-decoration: none;
+  color: white;
+}
+
+.random-beer {
+  margin: 2%;
+}
+

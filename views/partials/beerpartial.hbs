@@ -1,6 +1,13 @@
 <div>
-        <img src="{{beer.image_url}}" alt="">
-        <h2>{{beer.name}}</h2>
-        <p>{{beer.tagline}}</p>
-        <h3>{{beer.description}}</h3>
+  <div class='beerpartial'>
+    <div>
+      <img src='{{beer.image_url}}' class='card-img-top' alt='' />
+    </div>
+
+    <div class='card-body'>
+      <h5 class='card-title'>{{beer.name}}</h5>
+      <p class='card-text'>{{beer.tagline}}</p>
+      <h4 class='beerpartial-description'>{{beer.description}}</h4>
+    </div>
+  </div>
 </div>

@@ -1,6 +1,7 @@
-<ul>
-{{#each beers as |beer|}}
-{{> beerpartial beer = beer}}
-<hr>
-{{/each}}
-</ul>
+<div class="beers-container">
+    {{#each beers as |beer|}}
+        <div class='card' style='width: 18rem;'>
+            {{> beerpartial beer = beer}}
+        </div>
+    {{/each}}    
+</div>
