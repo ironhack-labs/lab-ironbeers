@@ -2,7 +2,7 @@
     <div class="row mt-5 mb-5">
         {{#each beers }}
             <div class="col-4 mt-2 mb-2">
-                <a class="beers__action d-flex flex-column align-items-center" href="/beers/beer-{{beer.id}}">
+                <a class="beers__action d-flex flex-column align-items-center" href="/beers/beer-{{this.id}}">
                     {{> beerpartial beer = this }}
                 </a>
             </div>
