@@ -1,5 +1,9 @@
-<div>
+<div class="container">
+    <div class="row">
         {{#each beers as |beer|}}
-            {{> beerpartial beer=beer}}
+            <div class="col-4">
+                {{>beerpartial beer=beer}}
+            </div>
         {{/each}}
+    </div>
 </div>
