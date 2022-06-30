@@ -5,3 +5,24 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.img-beer{
+    padding-left: 40%;
+    padding-top: 8%;
+    height: 200px;
+
+}
+
+.buttons{
+    padding-top: 300px;
+    padding-left: 40%;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    color: black;
+    font-style: oblique;
+}
+
+.img-beers{
+    width: 70px;
+}
+
