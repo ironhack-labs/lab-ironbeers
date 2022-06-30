@@ -17,9 +17,20 @@ app.use(express.static(path.join(__dirname, 'public')));
 // ...
 
 // Add the route handlers here:
+app.get('/',(req, res) => {
+  res.render('index', {
+    
+  });
+})
 
-app.get('/', (req, res) => {
-  res.render('index');
+app.get('/beers', async (req, res) => {
+  const beers = await punkAPI.getBeers()
+  console.log("beers", beers)
+  
+  res.render('beers', {
+    beers: beers,
+    horacio: 'puk'
+  });
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
