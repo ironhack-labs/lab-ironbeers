@@ -1,0 +1,15 @@
+<h1>Beers</h1>
+<main> 
+{{#each beerArray}}
+<div>
+    <img src="{{this.image_url}}" alt="" height="100px"/>
+</div>
+<div>
+<h3>{{this.name}}</h3>
+<p>{{this.description}}</p>
+<small>{{this.tagline}}</small>
+
+
+</div>
+{{/each}}
+</main>
