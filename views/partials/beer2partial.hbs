@@ -1,0 +1,15 @@
+<div class='left'>
+  <img src='{{oneBeer.image_url}}' alt='No Image Found' />
+</div>
+<div class='right'>
+  <h2>{{oneBeer.name}}</h2>
+  <h3>{{oneBeer.tagline}}</h3>
+  <span>{{oneBeer.description}}</span>
+  <h3>Food Pairing</h3>
+  <ul>
+    {{#each oneBeer.food_pairing}}
+      <li>{{this}}</li>
+    {{/each}}
+  </ul>
+  <span><strong>Brewers Tips: </strong> {{oneBeer.brewers_tips}}</span>
+</div>

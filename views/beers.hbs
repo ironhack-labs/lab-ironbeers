@@ -1,10 +1,7 @@
 <section class='beers-list'>
   {{#each beerArray}}
     <div class='wrapper'>
-      <h3>{{this.name}}</h3>
-      <img class='beer-img' src='{{this.image_url}}' alt='No Image Found' />
-      <p>{{this.description}}</p>
-      <span>{{this.tagline}}</span>
+      {{>beerpartial}}
     </div>
   {{/each}}
 </section>
