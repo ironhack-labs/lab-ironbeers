@@ -1,0 +1,47 @@
+.beer-card {
+  display: flex;
+  padding-left: 13rem;
+  margin-top: 3rem;
+}
+
+img {
+  height: 15rem;
+  align-self: flex-start;
+  margin-right: 5rem;
+}
+
+.container {
+  max-width: 40rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1.6rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1.3rem;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.description {
+  margin-bottom: 1rem;
+}
+
+.tag {
+  color: var(--grey);
+  margin-bottom: 1.2rem;
+}
+
+.ex-info {
+  display: block;
+}
+
+.ex-info ul {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}

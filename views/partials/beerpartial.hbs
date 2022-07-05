@@ -1,0 +1,31 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class='beer-card'>
+      <div>
+        <img src='{{image_url}}' alt='Beer' />
+      </div>
+      <div class='container'>
+        <h3>{{name}}</h3>
+        <p class='tag'>{{tagline}}</p>
+        <p class='description'>{{description}}</p>
+
+        <div class='ex-info'>
+          <h4>Food Pairing</h4>
+          <ul>
+            {{#each food_pairing}}
+              <li>{{this}}</li>
+            {{/each}}
+          </ul>
+          <p><b>Brewer Tips: </b>{{brewers_tips}}</p>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
