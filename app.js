@@ -32,7 +32,14 @@ app.get('/beers', (req, res) => {
 })
 
 app.get('/random-beers', (req, res) => {
-  res.render('random-beers')
+  punkAPI
+    .getRandom()
+    .then(beer => {
+      res.render('random-beers', beer[0])
+    })
+    .catch(error => {
+      console.log(error)
+    })
 })
 
 app.listen(portNum, () => console.log(`🏃‍ on port ${portNum}`))
