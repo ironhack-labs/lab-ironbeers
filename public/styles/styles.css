@@ -41,7 +41,7 @@ body {
   margin-top: 3%;
 }
 
-.wrapper > img {
+.wrapper>img {
   width: 25vw;
   margin-bottom: 3%;
 }
@@ -80,17 +80,38 @@ body {
   flex-direction: column;
 }
 
-.beer-frame > img {
+.beer-frame>img {
   height: 10rem;
   align-self: center;
   margin-bottom: 0.8rem;
 }
 
-.beer-frame > p {
+p {
   color: var(--grey);
   margin-bottom: 0.8rem;
 }
 
-.beer-frame:last-child > article {
+.beer-frame:last-child>article {
   padding-bottom: 20%;
+}
+
+#beer-wrapper {
+  display: flex;
+  margin: 5% 10%;
+  column-gap: 7%;
+}
+
+#beer-wrapper>img {
+  height: 30rem;  
+}
+.beer-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5%;
+}
+ul {
+  padding-left: 5%;
+}
+li {
+  padding-bottom: 0.8rem;
 }
