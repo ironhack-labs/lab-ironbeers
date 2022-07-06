@@ -1,0 +1,13 @@
+
+<div class = "beers">
+    {{#if this.image_url}} {{!--added this if to account for the beers with no image available--}}
+        <img src="{{this.image_url}}" alt="beer image" class="beerImg">
+    {{else}}
+        <p>No image buddy, you just need to run with your imagination</p>
+    {{/if}}
+    <div class = "text">
+        <h1><a href="/beers/{{this.id}}">{{this.name}}</a></h1>
+        <p>{{this.description}}</p>
+        <p>{{this.tagline}}</p>
+    </div>
+</div>

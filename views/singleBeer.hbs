@@ -1,0 +1,23 @@
+{{#each singleBeer}}
+    <p>First brewed: {{this.first_brewed}}</p>
+    {{>beerpartial}}
+    <p>Average: {{this.abv}}</p>
+    <p>Ibu: {{this.ibu}}</p>
+    <p>Target FG: {{this.target_fg}}</p>
+    <p>Target OG: {{this.target_og}}</p>
+    <p>EBC: {{this.ebc}}</p>
+    <p>SRM: {{this.srm}}</p>
+    <p>PH: {{this.ph}}</p>
+    <p>Attenuation level: {{this.attenuation_level}}</p>
+    <p>Food pairing:
+        <ul>
+            {{#each this.food_pairing}}
+                <li>
+                    {{this}}
+                </li>
+            {{/each}}
+        </ul>
+    </p>
+    <p>Brewer's tips: {{this.brewers_tips}}</p>
+    <p>Contributed by: {{this.contributed_by}}</p>
+{{/each}}
