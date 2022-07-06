@@ -40,7 +40,6 @@ app.get('/random-beer', (req, res) => {
 });
 
 app.get ('/beers/:id', (req, res) => { // source: https://stackoverflow.com/questions/20089582/how-to-get-a-url-parameter-in-express
-  console.log(req.params.id);
   punkAPI.getBeer(req.params.id)
     .then((singleBeer) => {
       res.render('singleBeer',{singleBeer});
