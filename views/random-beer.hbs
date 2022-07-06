@@ -1,0 +1,23 @@
+<div>
+    {{> beerpartial aBeer}}
+
+    {{#if aBeer.food_pairing}}
+    <div>
+        <h3>Food Pairing</h3>
+        <ul>
+            {{#each aBeer.food_pairing}}
+            <li>
+                <p>{{this}}</p>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    {{/if}}
+
+    {{#if aBeer.brewers_tips}}
+    <div>
+        <h3>Brewer's Tips</h3>
+        <p>{{aBeer.brewers_tips}}</p>
+    </div>
+    {{/if}}
+</div>
