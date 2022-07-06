@@ -1,0 +1,11 @@
+{{#if beers}}
+    {{#each beers}}
+        <ul>
+            <li><img src="{{this.image_url}}"/>"</li>
+            <li>{{this.name}}</li>
+            <li>{{this.description}}</li>
+            <li>{{this.tagline}}</li>
+        </ul>
+        
+    {{/each}}
+{{/if}}

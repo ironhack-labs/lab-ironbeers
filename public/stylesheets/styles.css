@@ -28,8 +28,13 @@ button {
     background-color: #2081c3;
     color: white;
 }
+
 img {
-    width: 30vw;
-    height: auto;
+    max-width: 30vw;
+    max-height: 30vh;
     margin: 4rem;
+}
+
+ul {
+    list-style: none;
 }
