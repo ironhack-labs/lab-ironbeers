@@ -1,0 +1,10 @@
+<div id='grid-container'>
+  {{#each beers}}
+    <div class='beer-frame'>
+      <img src={{this.image_url}} alt='beer-image' />
+      <h2>{{this.name}}</h2>
+      <p>{{this.tagline}}</p>
+      <article>{{this.description}}</article>
+    </div>
+  {{/each}}
+</div>

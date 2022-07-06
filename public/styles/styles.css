@@ -65,3 +65,32 @@ body {
 .button:active {
   box-shadow: inset 0px 0px 2px var(--white);
 }
+
+#grid-container {
+  margin: 5% 10%;
+  padding-bottom: 20%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+  row-gap: 1%;
+  column-gap: 5%;
+}
+
+.beer-frame {
+  display: flex;
+  flex-direction: column;
+}
+
+.beer-frame > img {
+  height: 10rem;
+  align-self: center;
+  margin-bottom: 0.8rem;
+}
+
+.beer-frame > p {
+  color: var(--grey);
+  margin-bottom: 0.8rem;
+}
+
+.beer-frame:last-child > article {
+  padding-bottom: 20%;
+}

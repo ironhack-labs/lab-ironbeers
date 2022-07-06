@@ -24,12 +24,11 @@ app.get('/', (req, res) => {
 
 app.get('/beers', (req, res) => {
   punkAPI
-  .getBeers()
-  .then(beersFromApi => {    
-    res.render('beers', {beers: beersFromApi})
-  })
-  .catch (error => console.log(error)) 
-  
+    .getBeers()
+    .then(beersFromApi => {
+      res.render('beers', { beers: beersFromApi })
+    })
+    .catch(error => console.log(error))
 })
 
 app.get('/random-beers', (req, res) => {
