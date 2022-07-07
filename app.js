@@ -39,12 +39,12 @@ app.get('/random-beer', (req, res) => {
     .catch(error => console.log(error))
 });
 
-app.get ('/beers/:id', (req, res) => { // source: https://stackoverflow.com/questions/20089582/how-to-get-a-url-parameter-in-express
+app.get ('/beers/:id', (req, res) => { // source for the ID: https://stackoverflow.com/questions/20089582/how-to-get-a-url-parameter-in-express
   punkAPI.getBeer(req.params.id)
     .then((singleBeer) => {
-      res.render('singleBeer',{singleBeer});
+      res.render('singleBeer',{singleBeer}); // to render we need an object, but this method gives me an array, so the way to turn it into an object, we include the curly brackets {}.
     })
-    .catch(error => console.log(error))
-})
+    .catch(error => console.log(error));
+});
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
