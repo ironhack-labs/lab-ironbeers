@@ -1,0 +1,14 @@
+<div id='beers-flex'>
+
+  {{#each myData}}
+    <div class='beer-wrapper'>
+      <div>
+        <img class='bottle-img' src='{{this.image_url}}' />
+        <h1>{{this.name}}</h1>
+        <p>{{this.description}}</p>
+        <span>{{this.tagline}}</span>
+      </div>
+    </div>
+  {{/each}}
+
+</div>

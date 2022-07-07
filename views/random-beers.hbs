@@ -1,0 +1,15 @@
+<div id='beers-flex'>
+  <img class='bottle-img' src='{{this.image_url}}' alt='' srcset='' />
+
+  <div id='beer-random-wrapper'>
+    <h1>{{this.name}}</h1>
+    <span>{{this.tagline}}</span>
+    <p>{{this.description}}</p>
+    <ul>
+      {{#each food_pairing}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p><strong>Brewers tips:</strong> {{this.brewers_tips}}</p>
+  </div>
+</div>
