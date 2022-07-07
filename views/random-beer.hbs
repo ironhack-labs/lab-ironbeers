@@ -1,0 +1,15 @@
+<h1>Random Beer</h1>
+
+<main>
+    
+    <img height="190px" src="{{responseFromAPI.image_url}}" alt="">
+
+   <h3>{{responseFromAPI.name}}</h3>  <p>{{responseFromAPI.description}}</p> <small><i>{{responseFromAPI.tagline}}</i></small> 
+    
+    {{#each responseFromAPI.food_pairing}}
+    <ul><li>{{this}}</li></ul>
+    {{/each}}
+
+{{responseFromAPI.brewers_tips}}
+
+</main>
