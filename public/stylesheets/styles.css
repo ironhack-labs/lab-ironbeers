@@ -70,7 +70,7 @@ nav a {
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
     background-color:#0a2c42;
     color: white;
     width: 100%;
@@ -82,4 +82,26 @@ nav a {
 .footer p {
     padding-top: 3px;
     margin-left: 30px;
+}
+
+.beer{
+    text-align: left;
+    margin-left: 70px;
+}
+
+.beers{
+    height:300px;
+}
+
+.all{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.tag{
+    color: #bfbfbf;
+}
+
+.desc{
+    width: 700px;
 }

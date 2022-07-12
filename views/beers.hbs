@@ -1,0 +1,12 @@
+{{#each beers as |beer|}}
+<div class="all">
+    <a href="beers/{{beer.id}}"></a>
+    <img class="beers" src="{{beer.image_url}}" alt="">
+    <h2>{{beer.name}}</h2>
+    <p class="tag">{{beer.tagline}}</p>
+    <p class="desc">{{beer.description}}</p>
+</div>
+
+  {{/each}}
+
+
