@@ -1,0 +1,17 @@
+
+    <div class="d-flex justify-content-around align-items-center flex-row">
+        <img src="{{beerRandom.[0].image_url}}" class="img-fluid rounded-start w-25" alt="beer img">
+        <div>
+            <h2 class="card-title">{{beerRandom.[0].name}}</h2>
+            <p class="text-secondary">{{beerRandom.[0].tagline}}</p>
+            <p class="card-text">{{beerRandom.[0].description}}</p>
+            <h3>Food pairing:</h3>
+            {{#each beerRandom.[0].food_pairing as |food|}}
+                <ul>
+                    <li>{{food}}</li>
+                </ul>
+            {{/each}}
+            <h3>Brewers tips:</h3>
+            <p>{{beerRandom.[0].brewers_tips}}</p>
+        </div>
+    </div>    

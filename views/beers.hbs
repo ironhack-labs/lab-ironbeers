@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    {{#each beers}}
+      {{> beerpartial 
+      name= name
+      tagline= tagline
+      description= description
+      }}
+    {{/each}}
+  </div>
+</div>
+
