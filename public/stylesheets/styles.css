@@ -105,3 +105,11 @@ nav a {
 .desc{
     width: 700px;
 }
+
+.random{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 25px;
+}
