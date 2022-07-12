@@ -85,3 +85,8 @@ body {
 .small-beer {
     height: 150px;
 }
+
+.a-card {
+    text-decoration: none;
+    color: black;
+}

@@ -27,22 +27,22 @@ app.get('/beers', (req, res) => {
 });
 
 app.get('/random-beer', (req, res) => {
-  const randomBeer = punkAPI.getRandom();
-  randomBeer
+  punkAPI
+    .getRandom()
     .then(beer => {
       res.render('random-beer', beer);
     })
     .catch(error => console.log(error));
 });
 
+//ITERATION 6
+app.get('/beers/:id', (req, res) => {
+  const idParam = req.params.id;
+
+  punkAPI.getBeer(idParam).then(beer => {
+    res.render('detail', beer);
+    console.log(beer);
+  });
+});
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
-
-// app.get("/users/:id", (req, res, next) => {
-//   const idParam = req.params.id;
-
-//   fetch(`https://jsonplaceholder.typicode.com/users/${idParam}`)
-//     .then((response) => response.json())
-//     .then((user) => {
-//       res.render("detail", { user });
-//     });
-// });

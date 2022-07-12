@@ -1,8 +1,11 @@
 <div>
   <div class="r-beer-img">
-    <img class="big-beer" src="{{image_url}}" alt="beer-image">
+    <img class="big-beer" src="{{beer.[0].image_url}}" alt="beer-image">
   </div>
   <div class="r-beer-txt">
-    <h5>Name: {{name}}</h5>
+    <h5>Name: {{beer.[0].name}}</h5>
+    <p>Description: {{beer.[0].description}}</p>
+    <p>Tagline: {{beer.[0].tagline}}</p>
+    <p>Food Pairing: {{beer.[0].food_pairing}}</p>
   </div>
 </div>

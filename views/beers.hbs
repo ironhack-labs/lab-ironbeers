@@ -2,6 +2,7 @@
   <div class="row">
     {{#each beers as |beer|}}
       <div class="col-3 gy-3">
+        <a href="beers/{{beer.id}}" class="a-card">
         <div class="card" style="width: 18rem;">
           <div class="card-body">
             <img class="small-beer" src="{{beer.image_url}}" alt="beer-image">
@@ -10,6 +11,7 @@
             <p>Tagline: {{beer.tagline}}</p>
           </div>
         </div>
+        </a>
       </div>
     {{/each}}
   </div>
