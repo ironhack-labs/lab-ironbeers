@@ -5,3 +5,62 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+html body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+nav {
+    margin-top: -17px;
+    width: 100%;
+    background-color: #2081c3;
+    height: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding-top: 20px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    padding-left: 70px;
+    margin-left: -20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+}
+
+.menu img {
+    height: 300px;
+}
+
+.menu div {
+    background-color: #2081c3;
+    margin-top: 25px;
+    padding: 10px 20px;
+    margin-left: -40px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    
+}
