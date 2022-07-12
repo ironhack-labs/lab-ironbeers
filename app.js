@@ -30,7 +30,7 @@ app.get('/random-beer', (req, res) => {
   punkAPI
     .getRandom()
     .then(beer => {
-      res.render('random-beer', beer);
+      res.render('random-beer', { beer });
     })
     .catch(error => console.log(error));
 });
@@ -40,8 +40,7 @@ app.get('/beers/:id', (req, res) => {
   const idParam = req.params.id;
 
   punkAPI.getBeer(idParam).then(beer => {
-    res.render('detail', beer);
-    console.log(beer);
+    res.render('detail', { beer });
   });
 });
 

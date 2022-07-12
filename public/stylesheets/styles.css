@@ -7,6 +7,8 @@ font-family: Arial, Helvetica, sans-serif;
 */
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar {
@@ -89,4 +91,44 @@ body {
 .a-card {
     text-decoration: none;
     color: black;
+}
+
+.random-beer {
+    width: 1000px;
+    height: 550px;
+    padding: 40px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #0a2c42;
+    border-radius: 40px;
+}
+
+.big-beer {
+    height: 470px;
+    margin: 0 50px;
+}
+
+#random-beer-name {
+    margin-bottom: 30px;
+}
+
+.all-beers {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.all-beers p{
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.individual-beer {
+    background-color: #bfbfbf;
+    border: 3px solid #bfbfbf;
+    border-radius: px;
+    padding: 15px;
+    margin: 20px;
+    width: 300px;
+    height: 600px;
 }

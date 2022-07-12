@@ -1,18 +1,16 @@
-<div class="container">
-  <div class="row">
-    {{#each beers as |beer|}}
-      <div class="col-3 gy-3">
-        <a href="beers/{{beer.id}}" class="a-card">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <img class="small-beer" src="{{beer.image_url}}" alt="beer-image">
-            <h5 class="card-title">{{beer.name}}</h5>
-            <p>Description: {{beer.description}}</p>
-            <p>Tagline: {{beer.tagline}}</p>
-          </div>
+<div class="all-beers">
+  {{#each beers as |beer|}}
+    <div class="individual-beer">
+      <a href="beers/{{beer.id}}" class="a-card">
+      <div class="card">
+        <div class="card-body">
+          <img class="small-beer" src="{{beer.image_url}}" alt="beer-image">
+          <h3 class="card-title">{{beer.name}}</h3>
+          <p>{{beer.description}}</p>
+          <h5> {{beer.tagline}}</h5>
         </div>
-        </a>
       </div>
-    {{/each}}
-  </div>
+      </a>
+    </div>
+  {{/each}}
 </div>

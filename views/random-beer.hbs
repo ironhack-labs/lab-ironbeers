@@ -1,11 +1,14 @@
-<div>
+<div class="random-beer">
   <div class="r-beer-img">
     <img class="big-beer" src="{{beer.[0].image_url}}" alt="beer-image">
   </div>
   <div class="r-beer-txt">
-    <h5>Name: {{beer.[0].name}}</h5>
-    <p>Description: {{beer.[0].description}}</p>
-    <p>Tagline: {{beer.[0].tagline}}</p>
-    <p>Food Pairing: {{beer.[0].food_pairing}}</p>
+    <h3 id="random-beer-name">{{beer.[0].name}}</h5>
+    <h5>Description:</h5>
+    <p>{{beer.[0].description}}</p>
+    <h5>Tagline:</h5>
+    <p>{{beer.[0].tagline}}</p>
+    <h5>Food Pairing:</h5>
+    <p>{{beer.[0].food_pairing}}</p>
   </div>
 </div>
