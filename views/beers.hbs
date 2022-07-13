@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    {{#each beers as |beer|}}
+      <div class="col-4">
+        <div class="card" style="width: 18rem;">
+         <img class="card-image">{{beer.image_url}}
+          <div class="card-body">
+            <h5 class="card-title">{{beer.name}}</h5>
+            <p class="card-text">{{beer.description}}</p>
+            <p class="card-text">{{beer.tagline}}</p>
+            <a href="/detail/{{beer.id}}" class="btn btn-primary">View detail</a>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>
