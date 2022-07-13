@@ -1,13 +1,23 @@
-<div class="container">
-  <div class="row">
+<div id="beers-container" class="row row-cols-1 row-cols-md-3 g-4">
     {{#each beers}}
-      {{> beerpartial 
-        image_url=image_url
-        name=name
-        tagline=tagline
-        description=description
-      }}
+    <div id="beer-col" class="col">
+      <div id="beer-img" class="card-img-top">
+        {{> beerimg 
+          image_url=image_url
+        }}
+      </div>
+      <div id="beer-info">        
+        {{> beerinfo         
+          name=name
+          tagline=tagline
+          description=description
+        }}
+      </div>  
+      <div id="beer-detail">
+        <a href="/beers/{{id}}">More details</a> 
+      </div>   
+    </div> 
     {{/each}}
-  </div>
 </div>
+
 

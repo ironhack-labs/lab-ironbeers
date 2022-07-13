@@ -5,3 +5,157 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+#navbar {
+    background-color: #2081c3;
+    box-shadow: -1px 0px 4px 4px rgba(173, 173, 173, 1);
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+/* HOME */
+#home-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+#home-beer-img {
+    margin-top: 40px;
+    margin-left: 50px;
+    height: 350px;
+}
+
+.home-btns {
+    background-color: #2081c3;
+    width: 200px;
+    height: 30px;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0px 1px 4px 4px rgba(173, 173, 173, 1);
+    padding-top: 3px;
+}
+
+#footer-container {
+    position: absolute;
+    bottom: 0%;
+    width: 100vw;
+}
+
+footer {
+    background-color: #0a2c42;
+    color: white;
+    height: 40px;
+    padding-top: 8px;
+}
+
+/* BEERS */
+#beers-container {
+    width: 100vw;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#beer-col{
+    width: 400px;
+    height: 400px;
+    border: 1px solid #0a2c42c7;
+    border-radius: 5px;
+    margin-right: 20px;
+    box-shadow: 0px 1px 3px 3px #0a2c42c7;
+    position: relative;
+}
+
+#beer-img {
+    display: flex;
+    justify-content: center;
+}
+
+#beer-img img {
+    height: 150px;    
+}
+
+#beer-info h2 {
+    margin-top: 15px;
+    margin-bottom: 2px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+#beer-info span {
+    font-size: 0.9rem;
+}
+
+#beer-info p{
+    font-size: 0.7rem;
+}
+
+#beer-detail{
+    position: absolute;
+    bottom: 1%;
+}
+
+/* DETAIL & RANDOM BEER */
+.detail-container {
+    margin-top: 40px;
+    width: 1200px;
+}
+
+.detail-beer-img {
+    display: flex;
+    justify-content: center;    
+}
+
+.detail-beer-img img { 
+    height: 500px;
+}
+
+.detail-beer-info h2 {
+    margin-bottom: 5px;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.detail-beer-info span {
+    font-size: 1.2rem;
+}
+
+.detail-beer-info p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.info-extra-beer h5 {
+    margin-top: 25px;
+    font-size: 1.2rem;
+}
+
+.info-extra-beer ul {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.info-extra-beer p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
