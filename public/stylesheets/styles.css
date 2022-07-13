@@ -23,6 +23,9 @@
 body {
   font-family: Poppins;
   margin: 0;
+  background-color: #f4f4f4;
+  font-family:'Courier New', Courier, monospace;
+
 }
 
 /**
@@ -416,4 +419,31 @@ template {
 
 .beer-image {
   height: 200px;
+}
+
+.op-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.op-beer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.op-img {
+  width: 40px;
+}
+
+.op-title {
+
 }
