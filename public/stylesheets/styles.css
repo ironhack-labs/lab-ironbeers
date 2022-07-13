@@ -444,6 +444,25 @@ template {
   width: 40px;
 }
 
-.op-title {
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
+}
 
+.home-container img {
+  width: 10vw;
+  margin-bottom: 50px;
+}
+
+.home-buttons button{
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  border-style: none;
+  padding: 10px 20px;
+  background-color: teal;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
