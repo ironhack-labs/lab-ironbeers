@@ -5,3 +5,17 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.content {
+	width:600px;
+	height:400px;
+	line-height:400px;
+	margin:20px auto;
+	text-align:center;
+	
+}
+ 
+.content img {
+	vertical-align:middle;
+}
+
