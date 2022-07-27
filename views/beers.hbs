@@ -1,0 +1,13 @@
+<section class="container">
+{{#each data}}
+
+<div class="beers-selection">
+    <img src="{{this.image.url}}" alt="">
+    <p class="name">{{this.name}}</p>
+    <p class="description">{{this.description}}</p>
+    <p class="tagline">{{this.tagline}}</p>
+</div>
+
+{{/each}}
+
+</section>
