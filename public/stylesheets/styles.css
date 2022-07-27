@@ -5,3 +5,134 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    background-color: #bfbfbf;
+}
+
+nav {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	align-content: flex-start;
+    background-color: #2081c3;
+    height: 8vh;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #f7f9f9;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home img {
+    display: flex;
+    width: 24vw;
+}
+
+.beer-info img {
+    width: 8vw;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+    display: flex;
+    justify-content: justify;
+}
+
+.tagline {
+    display: flex;
+    justify-content: justify;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 8vh;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 32vw;
+}
+
+.info img{
+    width: 8vw;
+}
+
+.title1 {
+    display: flex;
+    justify-content: left;
+    font-size: 20px;
+}
+
+.beer-description {
+    display: flex;
+    justify-content: justify;
+}
+
+.tag {
+    display: flex;
+    justify-content: justify;
+}
+.food-pairing {
+    display: flex;
+    justify-content: justify;
+}
+.brewer-tips {
+    display: flex;
+    justify-content: justify;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+        background-color: #2081c3;
+        border: none;
+        border-radius: 4px;
+        padding: 12px 12px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+  }
+
+  .btn a {
+    text-decoration: none;
+    color: #f7f9f9;
+  }
+
+  .btn1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+        background-color: #2081c3;
+        border: none;
+        border-radius: 4px;
+        padding: 12px 12px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+  }
+
+  .btn1 a {
+    text-decoration: none;
+    color: #f7f9f9;
+  }
