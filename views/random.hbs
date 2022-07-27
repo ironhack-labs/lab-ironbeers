@@ -1,0 +1,20 @@
+<section class="container">
+
+{{#each data}}
+
+<div class="beers-div">
+<img src="{{this.image_url}}" alt="">
+<p>{{this.name}}</p>
+<p>{{this.description}}</p>
+<p>{{this.tagline}}</p>
+<p>{{this.brewers_tips}}</p>
+
+{{#each this.food_pairing}}
+<p>{{this}}</p>
+{{/each}}
+
+</div>
+
+{{/each}}
+
+</section>
