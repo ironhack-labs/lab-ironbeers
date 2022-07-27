@@ -5,3 +5,176 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+nav {
+
+    background-color: #2081c3;
+    color: #f7f9f9;
+    height: 12vh;
+    display: flex;
+    justify-content:left;
+   
+    align-items: center;
+    box-shadow: 2px 2px 4px 1px rgba(92, 92, 92, 0.3)
+    
+}
+
+#menu {
+
+    margin-left: 3vw;
+}
+
+nav a {
+    color: whitesmoke;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 1.5vw;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+nav a:active {
+    text-decoration: none;
+    color: #f7f9f9;
+}
+
+nav a:visited {
+    text-decoration: none;
+    color: #f7f9f9;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: #f7f9f9;
+}
+
+/* IMAGES */
+
+#ironbeer {
+margin-top: 10vh;
+margin-bottom: 5vh;
+width: 18vw;    
+}
+
+#randomImg {
+margin-top: 5vh;  
+
+height: 40vh; 
+}
+
+/* HOME */
+
+.home-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+}
+
+.card-links a {
+
+    padding: 10px 15px 10px 15px;
+    background-color: #2081c3;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+    border: 2px;
+    border-radius: 3px;
+    margin-top: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 2px 2px 4px 1px rgba(92, 92, 92, 0.3);
+    
+}
+
+.card-links a:link {
+    text-decoration: none;
+    color: #f7f9f9;
+}
+
+/* BEERRS PAGE */
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 8vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 45VW; /* double the size og the card img */
+    height: 95vh;
+    border: 1px solid rgb(136, 134, 134);
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin-top: 5px;
+
+    align-items: center;
+
+}
+
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+#beer {
+    height: 20vh;
+}
+
+.card-body {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+}
+
+/* RANDOM BEER */
+
+.card-random {
+    width: 90vw;
+    display: flex;
+    
+    
+    
+}
+
+.card-randomImg {
+
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-beer {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+
+    width: 60vw;
+}
+
