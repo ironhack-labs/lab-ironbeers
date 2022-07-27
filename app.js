@@ -1,3 +1,4 @@
+const { getRandomValues } = require('crypto');
 const express = require('express');
 
 const hbs = require('hbs');
@@ -10,11 +11,26 @@ const punkAPI = new PunkAPIWrapper();
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
+
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Register the location for handlebars partials here:
+app.get('/beer', (req, res, next) => {
+  punkAPI
+    .getBeers()
+    .then(beers => res.render('beers', { beers }))
 
-// ...
+    .catch(error => console.log(error));
+});
+
+app.get('/random-beer', (req, res, next) => {
+  punkAPI
+    .getRandom()
+    .then(randomBeer => res.render('random-beer', { randomBeer }))
+
+    .catch(error => console.log(error));
+});
+// Register the location for handlebars partials here:
 
 // Add the route handlers here:
 
