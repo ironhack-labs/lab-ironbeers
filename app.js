@@ -12,6 +12,35 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('/', (req, res, next) => res.render('index'));
+
+app.get('/beers', (req, res, next) => {
+  let data;
+
+  punkAPI
+  .getBeers()
+  .then((value) => {
+   data = value;
+   res.render('beers', {data})
+  })
+
+  .catch(error => console.log(error));
+});
+
+app.get('/random-beer', (req, res, next) => {
+  let random;
+
+  punkAPI
+  .getRandom()
+  .then((value) => {
+    random = value;
+    res.render('random', {random})
+  })
+  .catch(error => console.log(error));
+});
+
+// app.get('/random-beer', (req, res, next) => res.render('randomBeer'));
+
 // Register the location for handlebars partials here:
 
 // ...
@@ -22,4 +51,4 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-app.listen(3000, () => console.log('🏃‍ on port 3000'));
+app.listen(3001, () => console.log('🏃‍ on port 3001'));
