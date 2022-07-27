@@ -5,3 +5,42 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+    font-family: 'Helvetica', sans-serif;
+}
+
+nav {
+    display: flex;
+    background-color: #2081c3;
+    height: 8vh;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+nav a {
+    color: #f7f9f9;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: bisque;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 8vh;
+}
+
+.beers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 32vw;
+    border: 2px solid #444;
+    border-radius: 4px;
+}
