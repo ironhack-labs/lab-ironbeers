@@ -30,9 +30,6 @@ app.get('/random-beer', (req, res, next) => {
 
     .catch(error => console.log(error));
 });
-// Register the location for handlebars partials here:
-
-// Add the route handlers here:
 
 app.get('/', (req, res) => {
   res.render('index');
