@@ -29,10 +29,20 @@ app.get('/beers', (req, res) => {
 
   //res.render('beers', { beersFromApi });
 });
-app.get('/random-beer', (req, res) => {
-  punkAPI.getRandom()
-  .then(responseFromAPI => res.render('randomBeers', {responseFromAPI}))
-  .catch(error => console.log(error));
-});
+//   punkAPI.getRandom()
+//   .then(responseFromAPI => res.render('randomBeers', {responseFromAPI}))
+//   .catch(error => console.log(error));
+app.get('/random-beer', async (req, res) => {
+
+  try {
+    let randomBeer = await punkAPI.getRandom()
+    let oneBeer = randomBeer[0]
+    
+    console.log(oneBeer)
+    res.render('randomBeers', oneBeer)
+  } catch (error) {
+    
+  }
+ });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
