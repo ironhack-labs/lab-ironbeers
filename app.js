@@ -24,6 +24,28 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+//using async await
+/* app.get('/route', async (req, res) => {
+  try {
+    let beers = await punkAPI.getBeers();
+
+    res.render('beers', {beers})
+  } catch (error) {
+    console.log(error)
+  }
+}); */
+
+/* app.get('/random-beer', async (req, res) => {
+  try {
+    let beerFromApi = await punkAPI.getRandom();
+    let oneBeer = beerFromApi[0]
+
+    res.render('random-beer', oneBeer)
+  } catch (error) {
+    console.log(error);
+  }
+}); */
+
 app.get('/beers', (req, res) => {
   
   punkAPI
