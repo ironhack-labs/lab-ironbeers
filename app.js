@@ -18,6 +18,16 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+app.get('/beers/beer', (req,res)=> {
+  punkAPI
+  .getBeer(req.query.id)
+  .then(beer => {
+    res.render('beer',{beer});
+  })
+  .catch(error => console.log(error));
+  console.log(req.query.id);
+})
+
 app.get('/beers', (req,res)=> {
   punkAPI
   .getBeers()
