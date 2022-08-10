@@ -82,3 +82,23 @@ body {
     object-fit: cover;
 }
 
+
+.beer-title>h1{
+    color: #2081c3;
+    padding-left: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.random-beer{
+    margin-top: 2rem;
+}
+.random-beer-image > img{
+    height: 40%;
+    padding-left: 2rem;
+}
+
+.product-content>.decription{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
