@@ -5,3 +5,80 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+body {
+    background-color: #f2f2f2;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-m {
+    display: flex;
+    padding: 1rem;
+    padding-left : 2rem;
+    background-color: #2081c3;
+}
+
+.navbar-m>a {
+    margin-right: 1rem;
+    color:#f7f9f9;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    
+}
+.beer-buttons {
+
+    background-color: #2081c3;
+    border: none;
+    color: #f7f9f9;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.image-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.image-div>img {
+    width: 30%;
+    height: 30%;
+}
+
+.beer-list{
+    display:flex;
+    justify-content: left;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.beer-list > .card {
+    margin-left : 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+

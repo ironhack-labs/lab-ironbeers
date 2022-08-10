@@ -1,0 +1,14 @@
+{{!-- Display Beer list --}}
+<div class="beer-list">
+    {{#each beers}}
+    <div class="card" style="width: 18rem;">
+        <img src="{{this.image_url}}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{this.name}}</h5>
+            <p class="card-text">{{this.description}}</p>
+            <h6 class="card-title">{{this.tagline}}v</h6>
+        </div>
+    </div>
+    {{/each}}
+</div>
+
