@@ -1,13 +1,18 @@
-<html lang='en'>
-  <head>
-    <meta charset='UTF-8' />
-    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
-    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-    <link rel='stylesheet' href='/stylesheets/random-beers.css' />
-    <title>Document</title>
-  </head>
-  <body>
-    {{> beerpartial}}
-   
-  </body>
-</html>
+<div>
+  {{#each randomBeer}}
+    <p>{{this.name}}</p>
+    <p>{{this.tagline}}</p>
+    <img src={{this.image_url}} />
+    <p>food pairing:</p>
+    {{#each this.food_pairing}}
+      <ul>
+        <li> {{this}}</li>
+      </ul>
+
+    {{/each}}
+
+    <p>brewer tips:</p>
+    {{this.brewers_tips}}
+  {{/each}}
+
+</div>
