@@ -1,0 +1,14 @@
+
+<div class="container row justify-content-center">
+    {{#each beersFromApi}}
+    <div class="card img-fluid col-3" style="width: 18rem;">
+        <img src={{image_url}} class="card-img-top w-25 img-fluid" alt="...">
+        <div class="card-body">
+            <h5 class="card-title text-center">{{name}}</h5>
+            <p class="card-text text-center">{{description}}</p>
+            <p class="card-text text-center">{{tagline}}</p>
+
+        </div>
+    </div>
+    {{/each}}
+</div>

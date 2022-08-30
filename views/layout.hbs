@@ -1,0 +1,46 @@
+<!-- views/layout.hbs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>IronBeers</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    {{!-- any page we want to render will be "plugged in" here, in the "body" with triple stashes --}}
+    {{!-- this is the only page that will have full html setup --}}
+    {{!-- if there's anything you want to have on each page, it will come from here
+    ex. navbar, header, footer, etc --}}
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <div class="container-fluid">
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active text-light" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="/beers">Beers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="/random-beer">Random Beer</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    {{{ body }}} 
+<footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+    <div class="container text-center">
+      <small>Develop by Ironhack</small>
+    </div>
+  </footer>
+  </body>
+</html>
