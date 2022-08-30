@@ -5,3 +5,15 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.beer-img {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.flex-div {
+    display: flex;
+    flex-direction: column;
+}
