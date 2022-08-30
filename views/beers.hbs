@@ -1,0 +1,10 @@
+<div class="beers" style="width: 18rem d-flex">
+    {{#each beersFromApi}}
+    <img class="card-img-top" style="width: 4rem" src=" {{image_url}}" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">{{name}}</h5>
+        <p class="card-text">{{description}}</p>
+        <a href="#" class="btn btn-primary">{{tagline}}</a>
+    </div>
+    {{/each}}
+</div>

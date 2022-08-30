@@ -1,0 +1,12 @@
+<div class="random-beer" style="width: 18rem d-flex flex-row text-center">
+    {{#each responseFromAPI}}
+    <img class="card-img-top" style="width: 4rem" src=" {{image_url}}" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">{{name}}</h5>
+        <p class="card-text">{{description}}</p>
+        <p class="card-title">{{food_pairing}}</p>
+        <p class="card-title">{{brewers_tips}}</p>
+        <a href="#" class="btn btn-primary">{{tagline}}</a>
+    </div>
+    {{/each}}
+</div>
