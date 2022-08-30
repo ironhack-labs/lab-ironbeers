@@ -2,12 +2,13 @@
     <h1>Random Beer</h1>
     <div class="row">
         {{#each newRandomBeer}}
-        {{> partialBeer this}}
-        {{/each}}
+        {{> partialBeer}}
+        <!--como acceder a un elemento concreto del array?
+        newRandomBeer.0.name?
+        -->
     </div>
     <div class="pair-food-section">
         <h5 class="text-bg-dark rounded p-2">Food pairing</h5>
-        {{#each newRandomBeer}}
         <ul>
             {{#each this.food_pairing}}
             <li>{{this}}</li>
