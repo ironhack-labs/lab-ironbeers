@@ -1,0 +1,32 @@
+<body>
+    <div id="randCard">
+  <div class="card mb-3 p-3 m-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{{image_url}}" id="randBeer" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{name}}</h5>
+        <p class="card-text">{{description}}</p><br>
+        <p class="card-text">{{tagline}}</p><br>
+        <p class="card-text">
+            <ul>
+                {{#each food_pairing}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            </p><br>
+        <p class="card-text"><small class="text-muted">{{brewer_tips}}</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+
+{{!-- que hacer cuando la url es null --}}
+{{!-- image, name, description, tagline, food pairing and brewer tips --}}
+
+
