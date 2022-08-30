@@ -1,0 +1,8 @@
+<div class="container">
+    <h1>Beers</h1>
+    <dir class="row">
+        {{#each beersFromApi}}
+        {{> beerCards this}}
+        {{/each}}
+    </dir>
+</div>
