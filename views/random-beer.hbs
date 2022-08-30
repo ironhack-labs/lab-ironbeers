@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row mx-auto">
+        <h1 class="mt-5 mb-3 text-center">Try this beer!</h1>
+        {{#each responseFromAPI}}
+        <div class="card col-6 mx-auto mb-5">
+            <img class="mx-auto mt-5" src="{{this.image_url}}" />
+            <div class="card-body">
+                <h1 class="text-center mb-4">{{this.name}}</h1>
+                <h2 class="text-center mb-3">{{this.tagline}}</h>
+                    <p class="mb-5">{{this.description}}</p>
+                    <h5>Food Pairing</h3>
+                        <ul class="mx-auto mb-5">
+                            {{#each this.food_pairing}}
+                            <li>{{this}}</li>
+                            {{/each}}
+                        </ul>
+                        <p class="">{{this.brewers_tips}}</p>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
