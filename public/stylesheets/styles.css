@@ -5,3 +5,27 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+.container{
+    display: flex;
+    justify-content:space-around;
+    
+   
+}
+.container-img{
+    width: 20%;
+   margin-top: 40px;
+   margin-left: 50px;
+}
+.btn{
+   display: flex;
+   justify-content: space-around;
+}
+.container{
+    width: 10%;
+}
+.card{
+    width: 5%;
+}
+.card-img-top{
+    width: 10%;
+}
