@@ -1,0 +1,17 @@
+{{#each responseFromAPI}}
+<div class="card" style="width: 12rem;">
+    <div class="card">
+        <img src="{{image_url}}" width="40%" height="40%" alt="">
+    </div>
+</div>
+<h1>{{name}}</h1>
+<p>{{description}}</p>
+<p>{{tagline}}</p>
+<p><b>Food pairing:</b></p>
+<ul>
+    <li>
+        <p>{{food_pairing}}</p>
+    </li>
+</ul>
+<p><b> Brewers tips: </b>{{brewers_tips}} </p>
+{{/each}}
