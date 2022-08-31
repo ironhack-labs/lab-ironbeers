@@ -22,4 +22,44 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+app.get('/beers', (req, res) => {
+  punkAPI
+    .getBeers()
+    .then(beersFromApi => {
+
+      // console.log(beersFromApi) Vemos lo que se recibe por consola
+      // res.json(beersFromApi) Vemos lo que se recibe por el HBS destino en formato json
+      res.render('beers', { beersFromApi })
+    })
+    .catch(error => console.log(error));
+  //res.render('beers');
+
+});
+
+app.get('/random-beer', (req, res) => {
+  punkAPI
+    .getRandom()
+    .then(responseFromAPI => {
+      console.log(responseFromAPI)
+      res.render('random-beer', { responseFromAPI[0] });
+      //res.json(responseFromAPI)
+
+    })
+    .catch(error => console.log(error));
+  //res.render('beers');
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
