@@ -21,5 +21,18 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
   res.render('index');
 });
+// get for /beers url
+app.get('/beers', (req,res) => {
+  punkAPI.getBeers()
+  .then(beersArr => {
+    console.log('Beers from the array:', beersArr)
+    const data = {doctitle: 'Beers', beers: beersArr}
+    res.render('beers', data)
+  })
+  .catch(err => {
+    console.log(err)
+  })
 
-app.listen(3000, () => console.log('🏃‍ on port 3000'));
+})
+
+app.listen(3001, () => console.log('🏃‍ on port 3001'));
