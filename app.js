@@ -19,7 +19,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Add the route handlers here:
 
 app.get('/', (req, res) => {
-  res.render('index');
+  const data = {doctitle: 'Home of beers'}
+  res.render('index',data);
 });
 //register the partials:
 hbs.registerPartials(path.join(__dirname, 'views/partials'));
@@ -53,7 +54,6 @@ app.get('/beer-:id', (req,res) => {
   punkAPI.getBeer(id)
   .then(beer => {
     const selectedBeer = beer[0];
-    console.log(selectedBeer)
     const data = {doctitle: selectedBeer.name, selectedBeer}
     res.render('singleBeer', data)
   })
