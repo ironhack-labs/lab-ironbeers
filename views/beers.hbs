@@ -1,8 +1,10 @@
 <div>
     {{#each beers}}
-    <li> Name: {{this.name}}<br>
+    <li> 
+        <img src="{{this.image_url}}" width="200" alt=""><br>
+        Name: {{this.name}}<br>
+        Description: {{this.description}}
         Tagline: {{this.tagline}}<br>
-        <img src="{{this.image_url}}" width="200" alt="">
     </li>
     {{/each}}
 </div>
