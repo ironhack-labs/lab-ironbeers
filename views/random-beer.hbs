@@ -1,0 +1,12 @@
+<section class="randomBeersSection">
+    {{#each responseFromAPI}}
+        {{> beerpartial this}}
+        <h4>Food Pairing</h4>
+        <ul>
+            {{#each food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p class="brewers_tips"><strong>Brewer tips: </strong>{{brewers_tips}}</p>
+    {{/each}}
+</section>    
