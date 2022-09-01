@@ -25,34 +25,33 @@ app.get('/', (req, res) => {
 
 app.get('/beers', (req, res) => {
   punkAPI
-  .getBeers()
-  .then(beersFromApi => {
-    // console.log('Beers from the database: ', beersFromApi)
-    res.render('beers',{ beersFromApi});})
-  .catch(error => console.log(error));
-  
+    .getBeers()
+    .then(beersFromApi => {
+      // console.log('Beers from the database: ', beersFromApi)
+      res.render('beers', { beersFromApi });
+    })
+    .catch(error => console.log(error));
 });
 
-app.get(`/beers/beer-:id`, (req, res) => {
+app.get('/beers/beer-:id', (req, res) => {
   punkAPI
-  .getBeer(req.params.id)
-  .then(beerFromApi => {
-    // console.log('Beers from the database: ', beerFromApi)
-    res.render('random-beer',{ responseFromAPI:beerFromApi});})
-  .catch(error => console.log(error));
-  
+    .getBeer(req.params.id)
+    .then(beerFromApi => {
+      console.log('Beers from the database: ', beerFromApi)
+      res.render('random-beer', { responseFromAPI: beerFromApi });
+    })
+    .catch(error => console.log(error));
 });
 
 app.get('/random-beer', (req, res) => {
   punkAPI
-  .getRandom()
-  .then(responseFromAPI => {
-    // your magic happens here
-    // console.log(responseFromAPI);
-    res.render('random-beer',{ responseFromAPI })
-  })
-  .catch(error => console.log(error));
-  
+    .getRandom()
+    .then(responseFromAPI => {
+      // your magic happens here
+      // console.log(responseFromAPI);
+      res.render('random-beer', { responseFromAPI });
+    })
+    .catch(error => console.log(error));
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
