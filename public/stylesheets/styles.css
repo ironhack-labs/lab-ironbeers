@@ -1,7 +1,30 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+body {
+    background-color: #f7f9f9;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    align-content: center;
+}
+
+nav {
+    background-color: #308ecd;
+    color: white;
+    text-decoration: none;
+    height: 60px;
+    text-align: center;
+    margin-top: 0%;
+    margin-left: 0%   
+}
+
+.bt {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #f7f9f9;
+    background-color: #7aa8b7;
+    border-radius: 6px;
+    outline: none;
+}    
+ 

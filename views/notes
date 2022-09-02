@@ -1,0 +1,4 @@
+Aprendizados:
+1. Uma vez criada a rota para um diretório, não é preciso criar uma rota para os arquivos contidos nele.
+2. Na página de cerveja aleatória, foi preciso especificar o objeto informando o índice na rota, já que fazia parte de uma array.
+3. Na página de cerveja aleatória, foi preciso especificar o objeto informando a chave na parcial "{{> beerCard beer}}"
