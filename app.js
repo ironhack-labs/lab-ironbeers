@@ -18,8 +18,35 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Add the route handlers here:
 
+// const index = require('./index')
+
 app.get('/', (req, res) => {
   res.render('index');
 });
 
+
+
+
+app.get('/beers', (req, res) => {
+  punkAPI
+  .getBeers({'beers': 25})
+  .then(beersFromApi => {console.log('Beers from the database: ', beersFromApi)
+  // 'beers' verweist auf die view --> name muss der selbe sein wie im view folder 
+  res.render('beers', {beers:beersFromApi})
+})
+  .catch(error => console.log(error));
+});
+
+
+app.get('/random-beer', (req, res) => {
+  punkAPI
+  .getRandom() 
+  .then(oneRandomBeerFromAPI => {console.log('random Beer:', oneRandomBeerFromAPI )
+  res.render('random-beer', {beer:oneRandomBeerFromAPI[0]})
+})
+  .catch(error => console.log(error));
+})
+
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
+
