@@ -1,0 +1,15 @@
+<div id="beersPage"> 
+
+{{!-- what we recieved from app.js is an object(key-value pair) with the value of an array so we select the object with the key within the each methode
+ and loop through the array wich is the value. in each itteration we use the this. to pick the property inside the objects inside the array by their key 
+ --}}
+{{#each beers}}
+  <p>{{ this.name}}</p> 
+   <p>{{this.tagline}}</p> 
+   <p>{{this.image_url}}</p>
+   <p>{{this.description}}</p>
+
+   
+{{/each}}
+
+</div>
