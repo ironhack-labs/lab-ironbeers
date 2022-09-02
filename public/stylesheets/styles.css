@@ -1,7 +1,47 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+main{
+    margin: 50px;
+    padding: 30px;
+}
+.nav-link{
+    color: #fff;
+}
+.img-fluid{
+    margin: 20px 500px;
+}
+.btn-grupales{
+    display: flex;
+    margin: auto;
+    max-width: 600px;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+.btn-grupales .btn{
+    margin: 20px;
+}
+footer{
+    background-color: rgb(9, 9, 97);
+    color: #fff;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.principal img {
+width: 15%;
+}
+.principal button{
+    width: 15%;
+}
+.beer {
+    width: 150px;
+}
+.global {
+    *display: flex;
+    *align-items: center;
+    *flex-direction:column;
+}
+
