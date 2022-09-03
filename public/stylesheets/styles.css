@@ -1,7 +1,36 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+.navbar {
+    color: #f7f9f9;
+    background-color: #2081c3;
+    /* dark-blue: #0a2c42;
+    grey: #bfbfbf; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+img {
+    display: block;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+
+}
+
+.btn {
+    display: block;
+    width: 200px;
+    height: 35px;
+    margin: 0px auto 0px auto;
+    padding: 0;
+    background-color: #2081c3;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.btn a {
+
+    color: #fff;
+    text-decoration: none;
+
+}
