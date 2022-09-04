@@ -58,14 +58,6 @@ app.get('/beer-:id', (req,res) => {
     res.render('singleBeer', data)
   })
 
-  //works but punkAPI supports single ID call 
-  // .then(beersArr => {
-  //   const id = req.params.id
-  //   const selectedBeer = beersArr[id-1]
-  //   console.log(selectedBeer)
-  //   const data = {doctitle: selectedBeer.name, selectedBeer}
-  //   res.render('singleBeer', data)
-  // })
 
 })
 
