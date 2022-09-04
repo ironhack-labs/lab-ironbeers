@@ -11,6 +11,7 @@ app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 // Register the location for handlebars partials here:
 
@@ -22,4 +23,44 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-app.listen(3000, () => console.log('🏃‍ on port 3000'));
+app.get('/Beers',(req, res)=> {
+
+  punkAPI.getBeers().then(beersFromApi => {
+    res.render('Beers',{Beers:beersFromApi,Doctitle:'Beers'});
+  })
+  .catch(error => console.log(error));
+});
+
+
+app.get('/random-beer', (req, res) => {
+  punkAPI
+  .getRandom()
+  .then(randomBeer => {
+    res.render('random-beer', {beer:randomBeer[0]})
+  }) 
+
+  .catch(error => console.log(error))
+});
+
+
+app.get('/about', function (req, res) {
+	// layout: false disables the layout for this route
+	res.render('about', { title: 'About', layout: false})
+})
+
+// app.get('/Beers/:id', (req, res) => {
+//   punkAPI
+//   .getBeer()
+//   .then(beerid => {
+//     res.render('Beers', {beer:beerid(1),Doctitle:'Detail Page'})
+//   }) 
+
+//   .catch(error => console.log(error))
+// });
+
+
+
+
+
+
+app.listen(4000, () => console.log('🏃‍ on port 4000'));
