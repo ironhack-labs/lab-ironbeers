@@ -5,3 +5,74 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.principal{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.principal img{
+    width: 20%;
+
+}
+
+.principal button{
+    width: 15%;
+    margin-top: 20px;
+}
+
+.beer{
+    width: 100px;
+}
+
+.infoCervezas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 70px 200px 70px 500px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    margin-right: 50px;
+}
+
+.light{
+    font-size: 15px;
+    color: lightgray;
+}
+
+.negritas{
+    font-weight: bold;
+}
+
+.list{
+    padding-top: 10px;
+}
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+
+footer{
+    bottom: 0px;
+    color: white;
+    background-color: darkcyan;
+    height: 30px;
+    width: 100%;
+}
+
+.develop{
+    padding-left: 30px;
+}
+
