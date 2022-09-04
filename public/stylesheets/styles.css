@@ -5,3 +5,115 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: #f7f9f9;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #f7f9f9;
+}
+
+li {
+  list-style-type: disc;
+}
+
+nav,
+footer {
+  position: fixed;
+  width: 100%;
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+nav {
+  top: 0;
+  background-color: #2081c3;
+  box-shadow: 0 3px 6px gray;
+  justify-content: space-evenly;
+}
+
+footer {
+  bottom: 0;
+  background-color: #0a2c42;
+  color: #f7f9f9;
+}
+
+main {
+  position: relative;
+  top: 8%;
+  bottom: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-img {
+  height: 40vh;
+  padding: 10px;
+}
+
+.btn {
+  background-color: #2081c3;
+  margin-top: 20px;
+  padding: 20px 20px;
+  width: 300px;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 0 3px 6px grey;
+}
+
+.btn:hover {
+  transform: scale(1.01);
+}
+
+/* .beer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+} */
+
+/* .beer img {
+  height: 300px;
+}
+
+.beer h1 {
+  font-size: 2em;
+  font-weight: bold;
+} */
