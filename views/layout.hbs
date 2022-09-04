@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar" style="background-color: #e3f2fd;">
+  <!-- Navbar content -->
+  {{!-- <nav class="upper-header"> --}}
+    <div class="container-md">
+    {{!-- <a class="navbar-brand" href="#">Navbar</a> --}}
+    <a class="navbar-brand" href="/">Home</a>
+        <a class="navbar-brand" href="/beers">Beers</a>
+        <a class="navbar-brand" href="/random-beer">Random Beer</a>
+  </div>     
+  </nav>
+
+    {{!-- <div class="navbar">
+        <nav class="upper-header">
+            <a class="header-list" href="/">Home</a>
+            <a class="header-list" href="/beers">Beers</a>
+            <a class="header-list" href="/random-beer">Random Beer</a>
+        </nav>
+    </div> --}}
+    {{{ body }}}
+  <nav class="navbar fixed-bottom " style="background-color: #0a2c42;">
+<div class="container-md">
+    <a class="navbar-brand" href="#">Develop by Erika</a>
+</div>
+  </nav>
+
+</body>
+</html>

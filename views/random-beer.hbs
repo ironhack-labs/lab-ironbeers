@@ -1,0 +1,15 @@
+
+<div class="beer-container">
+<div class="beer-row">
+<div class="beer-card">
+      <div class="body-beers">
+{{#each response}} 
+        {{> beerpartial this}} 
+        <p> {{this.food_pairing}}</p>
+        <p>{{this.brewers_tips}}</p>
+{{/each}}
+
+</div>
+</div>
+</div>
+</div>
