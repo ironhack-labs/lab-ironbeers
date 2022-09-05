@@ -24,49 +24,43 @@ app.get('/', (req, res) => {
   });
 });
 
-app.get('/beers', (req, res) => {
-  punkAPI
-    .getBeers()
-    .then(beersFromApi => {
-      res.render('beers', { doctitle: 'Beers', beersFromApi: beersFromApi });
-    })
-    .catch(error => console.log(error));
+app.get('/beers', async (req, res) => {
+  try {
+    const callBeerAPI = await punkAPI.getBeers();
+    res.render('beers', {
+      doctitle: 'Beers',
+      callBeerAPI: callBeerAPI
+    });
+  } catch (error) {
+    console.log(error);
+  }
 });
 
-// app.get('/beers', async (req, res) => {
-//   try {
-//     const beerAPI = await punkAPI.getBeers();
-//     // const renderBeer = await (beersFromApi => {
-//     //   res.render('beers', { beersFromApi: beersFromApi });
-//     // });
-//   } catch (error) {
-//     console.log(error);
-//   }
-// });
-
-app.get('/random-beer', (req, res) => {
-  punkAPI
-    .getRandom()
-    .then(randomBeerFromApi => {
-      let [{ name }] = randomBeerFromApi;
-      res.render('random-beer', {
-        doctitle: name,
-        randomBeerFromApi: randomBeerFromApi
-      });
-    })
-    .catch(error => console.log(error));
+app.get('/random-beer', async (req, res) => {
+  try {
+    const callRandomBeer = await punkAPI.getRandom();
+    let [{ name }] = callRandomBeer;
+    res.render('random-beer', {
+      doctitle: name,
+      callRandomBeer: callRandomBeer
+    });
+  } catch (error) {
+    console.log(error);
+  }
 });
 
-app.get('/beers/:id', (req, res) => {
-  const beerId = req.params.id;
-
-  punkAPI.getBeer(beerId).then(singleBeer => {
-    let [{ name }] = singleBeer;
+app.get('/beers/:id', async (req, res) => {
+  try {
+    const beerId = req.params.id;
+    const specificBeer = await punkAPI.getBeer(beerId);
+    let [{ name }] = specificBeer;
     res.render('beer', {
       doctitle: name,
-      beerId: singleBeer
+      specificBeer: specificBeer
     });
-  });
+  } catch (error) {
+    console.log(error);
+  }
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
