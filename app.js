@@ -3,6 +3,7 @@ const express = require('express');
 const hbs = require('hbs');
 const path = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
+const { getEnabledCategories } = require('trace_events');
 
 const app = express();
 const punkAPI = new PunkAPIWrapper();
@@ -21,5 +22,28 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
   res.render('index');
 });
+
+app.get('/beers', (req, res) => {
+
+  punkAPI.getBeers().then(beersFromApi => {
+    const data = {
+      content: beersFromApi
+    }
+    // console.log(data);
+    res.render('beers', data)
+    // console.log('Beers from the databases', beersFromApi) 
+  }).catch(err => console.log({err}));
+});
+
+
+app.get('/random-beer', (req, res) => {
+  punkAPI.getRandom().then(beerFromApi => {
+    const randomBeer = {
+      content: beerFromApi
+    }
+    // console.log(randomBeer)
+    res.render('random-beer', randomBeer)
+  }).catch(err => console.log({err}));
+})
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
