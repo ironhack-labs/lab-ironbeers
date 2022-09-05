@@ -1,0 +1,9 @@
+{{#if this.image_url}}
+  <img id='random-beer-img' src='{{this.image_url}}' alt='{{this.name}}' />
+{{else}}
+  <h2 id='no-image-header'>No Image</h2>
+{{/if}}
+<a href='/beers/{{this.id}}'>
+  <h3>{{this.name}}</h3>
+</a>
+<p>{{this.description}}</p>

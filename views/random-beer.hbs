@@ -1,25 +1,7 @@
-<div class='beers'>
+<div class='single-beer'>
   {{#each randomBeerFromApi}}
     <div class='random-beer'>
-      {{! not all beers have images, fix this }}
-      {{#if this.image_url}}
-        <img
-          id='random-beer-img'
-          src='{{this.image_url}}'
-          alt='{{this.name}}'
-        />
-      {{else}}
-        <h2 id='no-image-header'>No Image</h2>
-      {{/if}}
-      <h3>{{this.name}}</h3>
-      <h4>{{this.description}}</h4>
-      <p>{{this.tagline}}</p>
-      {{#each food_pairing}}
-        <ul>
-          <li>{{this}}</li>
-        </ul>
-      {{/each}}
-      <p>Brewers Tips: {{brewers_tips}}</p>
-    </div>
-  {{/each}}
+{{> beerpartial}}
+{{> singlebeerpartial}}
+{{/each}}
 </div>
