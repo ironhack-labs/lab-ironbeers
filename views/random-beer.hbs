@@ -1,0 +1,12 @@
+<div class='container'>
+  <h1>{{doctitle}}</h1>
+</div>
+<div class='container'>
+  <div class='row'>
+    {{#each randomBeerFromApi}} 
+        {{> beerpartial this}}
+        {{this.food_pairing}}
+        {{this.brewer_tips}}
+    {{/each}}
+  </div>
+</div>
