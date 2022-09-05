@@ -29,7 +29,6 @@ app.get('/beers', (req, res) => {
     .getBeers()
     .then(beersFromApi => {
       res.render('beers', { doctitle: 'Beers', beersFromApi: beersFromApi });
-      console.log(beersFromApi);
     })
     .catch(error => console.log(error));
 });
@@ -49,20 +48,22 @@ app.get('/random-beer', (req, res) => {
   punkAPI
     .getRandom()
     .then(randomBeerFromApi => {
+      let [{ name }] = randomBeerFromApi;
       res.render('random-beer', {
-        doctitle: 'Random Beer',
+        doctitle: name,
         randomBeerFromApi: randomBeerFromApi
       });
-      console.log(randomBeerFromApi);
     })
     .catch(error => console.log(error));
 });
 
 app.get('/beers/:id', (req, res) => {
   const beerId = req.params.id;
+
   punkAPI.getBeer(beerId).then(singleBeer => {
+    let [{ name }] = singleBeer;
     res.render('beer', {
-      doctitle: 'Beer',
+      doctitle: name,
       beerId: singleBeer
     });
   });
