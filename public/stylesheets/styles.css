@@ -1,7 +1,66 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
+
+
+nav {
+display: flex;
+width: 100vw;    
+color: white;
+background-color: #2081c3;
+font-family: Roboto;
+text-decoration: none;
+border-radius: 10px;
+
+
+}
+
+ul {
+    display: flex;
+    width: 20vw;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+    text-decoration: none;
+    color: white;
+}
+
+a {
+    list-style:none;
+    text-decoration: none;
+    color: white
+}
+
+li {
+    list-style:none;
+    font-weight: bolder;
+}
+
+.bottomButtonsDiv {
+    display: flex;
+    height: 10vw;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    margin: 50px 0px 0px 0px;
+}
+
+.bottomButtons {
+    width: 10vw;
+    background-color: #2081c3;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    font-family: Roboto;
+    font-weight: bolder;
+}
+
+
+
+.beerImg {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 30px 0px 0px 0px
+}
+/*dark-blue: #0a2c42;
+grey: #bfbfbf;*/
