@@ -11,6 +11,7 @@ body {
     padding: 0;
     overflow-x: hidden;
     background-color: #f7f9f9;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar {
@@ -55,5 +56,28 @@ body {
 }
 
 .beer-image {
-    height: 
+    height: 15vh;
+    width: auto;
+}
+
+#tagline {
+    color: bfbfbf;
+}
+
+#all-beers {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#all-beers div {
+    width: 25vw;
+    height: 25vw;
+    margin: 3vw;
+}
+
+#all-beers div img {
+    justify-self: center;
+    align-self: center;
 }
