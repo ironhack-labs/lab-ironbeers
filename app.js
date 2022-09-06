@@ -29,7 +29,7 @@ app.get('/beers', async (req, res) => {
     const callBeerAPI = await punkAPI.getBeers();
     res.render('beers', {
       doctitle: 'Beers',
-      callBeerAPI: callBeerAPI
+      callBeerAPI
     });
   } catch (error) {
     console.log(error);
@@ -42,7 +42,7 @@ app.get('/random-beer', async (req, res) => {
     let [{ name }] = callRandomBeer;
     res.render('random-beer', {
       doctitle: name,
-      callRandomBeer: callRandomBeer
+      callRandomBeer
     });
   } catch (error) {
     console.log(error);
@@ -56,7 +56,7 @@ app.get('/beers/:id', async (req, res) => {
     let [{ name }] = specificBeer;
     res.render('beer', {
       doctitle: name,
-      specificBeer: specificBeer
+      specificBeer
     });
   } catch (error) {
     console.log(error);
