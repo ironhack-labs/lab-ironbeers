@@ -30,6 +30,23 @@ footer {
   flex-direction: column;
 }
 
+.nav-bar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.nav-bar li {
+  margin-right: 10px;
+}
+
 #single-beer-img {
   height: 30vh;
   width: auto;
