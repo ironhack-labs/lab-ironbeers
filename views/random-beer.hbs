@@ -1,8 +1,8 @@
-<div class='container'>
+<div class='container align-center'>
   <h1>{{doctitle}}</h1>
 </div>
 <div class='container'>
-  <div class='row'>
+  <div class='column'>
     {{#each randomBeerFromApi}} 
         {{> beerpartial this}}
         {{this.food_pairing}}

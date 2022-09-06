@@ -1,7 +1,11 @@
 
 <div class='beer-card'>
-    <img class='beer-pic' src='{{this.image_url}}' alt='{{this.name}}' />
-    <h2>{{this.name}}</h2>
-    <h3 class="grey-headline">{{this.tagline}}</h3>
-    <p>{{this.description}}</p>
+    <a href="/beers/{{this.id}}">
+        <div>
+        <img class='beer-pic' src='{{this.image_url}}' alt='{{this.name}}' />
+        </div>
+        <h2>{{this.name}}</h2>
+        <h3 class="grey-headline">{{this.tagline}}</h3>
+        <p>{{this.description}}</p>
+    </a>
 </div>
