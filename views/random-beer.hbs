@@ -1,0 +1,37 @@
+<style>
+    .ranBeer {
+        display:flex;
+        justify-content: space-around;
+        margin: 5% 0 auto 0
+    }
+    .title{
+        font-weight: bold
+    }
+    .beer{
+        width: 100px
+    }
+    .colBeer{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+</style>
+    <section class="ranBeer">
+    {{#if randomBeer.image_url}}
+    <img class="beer" src="{{randomBeer.image_url}}">
+    {{/if}}
+    {{#unless randomBeer.image_url}}
+    <p>No image</p>
+    {{/unless}}
+    <div class="colBeer">
+    <p class="title">{{randomBeer.name}}</p>
+    <p>{{randomBeer.description}}</p>
+    <p>{{randomBeer.tagline}}</p>
+    <ul>
+        {{#each randomBeer.food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}
+        </ul>
+    <p>{{randomBeer.brewers_tips}}</p>
+    </div>
+    </section>

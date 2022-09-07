@@ -1,0 +1,25 @@
+<style>
+    .title{
+        font-weight: bold
+    }
+    .beer{
+        width:50px;
+    }
+    .beersection{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .threeBeers{
+        width: 30%;
+    }
+    footer{
+        position: relative;
+    }
+</style>
+<section class="beersection">
+    {{#each punkAPI}}
+   
+    {{> beerpartial this}}
+    {{/each}}
+    </section>
