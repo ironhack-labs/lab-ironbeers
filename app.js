@@ -24,18 +24,26 @@ app.get('/', (req, res) => {
 // Beers route:
 app.get('/beers', (req, res) => { // the path can be any name
   punkAPI
-  .getBeers()
-  .then(beersFromApi => {console.log('Beers from the database: ', beersFromApi) 
-  res.render('beers.hbs'); // the render path MUST be that of the file
-})
-  
-  .catch(error => console.log(error));
-  
+    .getBeers()
+    .then(beersFromApi => {
+      res.render('beers.hbs', { // the render path MUST be that of the file
+        allBeers: beersFromApi
+      });
+    })
+    .catch(error => console.log(error));
+
 });
 
 // Random beers route
 app.get('/random-beer', (req, res) => {
-  res.render('random-beer.hbs');
+  punkAPI
+    .getRandom()
+    .then(randomBeersFromAPI => { console.log('Random Beers from database:', randomBeersFromAPI)
+      // your magic happens here
+      res.render('random-beer.hbs', {
+        allRandomBeers: randomBeersFromAPI
+      });
+    })
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
