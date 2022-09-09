@@ -75,3 +75,34 @@ body {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   text-decoration: none;
 }
+
+/* beer */
+
+.beer-card {
+  width: 24vw;
+  padding: 10px;
+  margin: 0 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 5vh;
+}
+
+.beer-card img {
+  height: 20vh;
+  align-self: center;
+}
+
+.beer-cards-wrap {
+  padding: 10vh 5vh 5vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.tagline {
+  color: var(--grey);
+  margin: 0;
+}
