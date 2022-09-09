@@ -1,13 +1,15 @@
-<div class='random-beer-card'>
+      {{> beerpartial beer}}
+      <h3>Food pairing</h3>
+      <ul>
+      {{#each beer.food_pairing}}
+        <li>{{this}}</li>
+      {{/each}}
+      </ul>
+        <p><span>Brewer Tips: </span>{{beer.brewers_tips}}</p>
+      </p>
 
-    {{> randomBeerpartial}}
-
-</div>
-
-{{!-- <div class='beer-cards-wrap'>
-    <div class='random-beer-card'>
-
-      {{#if beer.image_url}}
+{{!-- <div class='random-beer-card'>
+{{#if beer.image_url}}
         <img
           src='{{beer.image_url}}'
           alt='image of a beer named {{beer.name}}'
@@ -29,5 +31,4 @@
       </ul>
         <p><span>Brewer Tips: </span>{{beer.brewers_tips}}</p>
       </p>
-    </div>
 </div> --}}
