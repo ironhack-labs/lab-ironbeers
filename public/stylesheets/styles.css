@@ -106,3 +106,21 @@ body {
   color: var(--grey);
   margin: 0;
 }
+
+.random-beer-card {
+  width: 75vw;
+  padding: 10px;
+  margin: 0 5vh;
+  margin-bottom: 5vh;
+}
+
+.random-beer-card img {
+  height: 20vh;
+  align-self: center;
+}
+
+#noImgH1 {
+  font-size: 150px;
+  align-self: center;
+  margin: 0;
+}
