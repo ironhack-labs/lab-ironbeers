@@ -5,3 +5,55 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+:root {
+  --light-blue: #2081c3;
+  --dark-blue: #0a2c42;
+  --grey: #bfbfbf;
+  --white: #f7f9f9;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#body-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+}
+
+.nav-bar {
+  height: 20px;
+  background-color: var(--light-blue);
+  padding: 15px 15px 15px 40px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.nav-bar a,
+.footer a {
+  color: var(--white);
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+#index-content-wrap {
+  flex-grow: 1;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 20px;
+  width: 100%;
+  background-color: var(--dark-blue);
+  padding: 15px 15px 15px 40px;
+}
