@@ -57,3 +57,21 @@ body {
   background-color: var(--dark-blue);
   padding: 15px 15px 15px 40px;
 }
+
+/* index */
+
+#index-img {
+  margin: 50px;
+  height: 50vh;
+}
+
+#btn {
+  background-color: var(--light-blue);
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 10px;
+  color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
