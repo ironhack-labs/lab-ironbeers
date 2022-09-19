@@ -1,34 +1,25 @@
-      {{!-- {{> beerpartial beer}}
-      <h3>Food pairing</h3>
-      <ul>
-      {{#each beer.food_pairing}}
-        <li>{{this}}</li>
-      {{/each}}
-      </ul>
-        <p><span>Brewer Tips: </span>{{beer.brewers_tips}}</p>
-      </p> --}}
 
 <div class='random-beer-card'>
-{{#if beer.image_url}}
+{{#if image_url}}
         <img
-          src='{{beer.image_url}}'
-          alt='image of a beer named {{beer.name}}'
+          src='{{image_url}}'
+          alt='image of a beer named {{name}}'
         />
       {{/if}}
 
-      {{#unless beer.image_url}}
+      {{#unless image_url}}
         <h1 id="noImgH1">🥴</h1>
       {{/unless}}
 
-      <h2>{{beer.name}}</h2>
-      <p class='tagline'>{{beer.tagline}}</p>
-      <p>{{beer.description}}</p>
+      <h2>{{name}}</h2>
+      <p class='tagline'>{{tagline}}</p>
+      <p>{{description}}</p>
       <h3>Food pairing</h3>
       <ul>
-      {{#each beer.food_pairing}}
+      {{#each food_pairing}}
         <li>{{this}}</li>
       {{/each}}
       </ul>
-        <p><span>Brewer Tips: </span>{{beer.brewers_tips}}</p>
+        <p><span>Brewer Tips: </span>{{brewers_tips}}</p>
       </p>
 </div>

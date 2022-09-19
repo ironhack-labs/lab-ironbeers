@@ -23,27 +23,42 @@ app.get('/', (req, res) => {
 });
 
 app.get('/beers', async (req, res) => {
-  punkAPI
-    .getBeers()
-    .then(beerArray => {
-      res.render('beers', {
-        doctitle: 'Beers',
-        beers: beerArray
-      });
-    })
-    .catch(error => console.log(error));
+  const beerArray = await punkAPI.getBeers();
+  try {
+    res.render('beers', {
+      doctitle: 'Beers',
+      beers: beerArray
+    });
+  } catch (err) {
+    console.log(err);
+  }
 });
 
-app.get('/random-beer', (req, res) => {
-  punkAPI
-    .getRandom()
-    .then(data => {
-      res.render('random-beer', {
-        doctitle: 'Random Beers',
-        beer: data[0]
-      });
-    })
-    .catch(error => console.log(error));
+app.get('/random-beer', async (req, res) => {
+  const [
+    {
+      name,
+      image_url,
+      tagline,
+      food_pairing,
+      brewers_tips,
+      description,
+      doctitle: doctitle = 'Random Beers'
+    }
+  ] = await punkAPI.getRandom();
+  try {
+    res.render('random-beer', {
+      name,
+      image_url,
+      tagline,
+      food_pairing,
+      brewers_tips,
+      description,
+      doctitle
+    });
+  } catch (err) {
+    console.log(err);
+  }
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
