@@ -5,3 +5,56 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+* {
+  margin: 0;
+  padding: 50;
+}
+
+.principal {
+  padding: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: bisque;
+
+}
+
+.principal img {
+  width: 25%;
+}
+
+button {
+  width: 20%;
+}
+
+h1 {
+  font-size: 10px;
+}
+
+.cards{
+  display:flex;
+  justify-content:center;  
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  margin: 20px 50px;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center; 
+
+}
+
+.result {
+  padding: 20px;
+  width: 20vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;  
+}
+.result img{
+  width: 100px;
+  height: 300px;  
+}
+
