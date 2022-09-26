@@ -21,5 +21,22 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
   res.render('index');
 });
+app.get('/beers', (req, res) => {
+  //punkAPI.getBeers(); //aqui estamos pidiendole a punkAPI que dispare una acción y pida la info
+  punkAPI.getBeers().then(cervezas =>{ //aquí tenemos que agregar la promesa
+    console.log(cervezas);//mando a llamar, mi objeto
+    res.render('beers', {cervezas: cervezas});
+  })
+  .catch(err => console.log(err));
+});
+
+app.get('/randombeer', (req, res) => {
+  punkAPI.getRandom().then(cerveza =>{ 
+    console.log(cerveza);
+    res.render('random-beer', {cerveza: cerveza[0]});
+  })
+  .catch(err => console.log(err));
+});
+
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
