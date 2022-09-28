@@ -15,8 +15,28 @@ a{
     color:#f7f9f9;
     padding: 1%;
 }
-
-
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+img{
+    width:15%;
+}
+h1{
+    text-align: center;
+}
+.center{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 1px solid #0a2c42;
+    padding: 3%;
+    margin: 2%;
+    line-height: 1.5rem;
+}
 #main-div{
     display: flex;
     justify-content: center;
