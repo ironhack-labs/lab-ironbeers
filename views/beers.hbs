@@ -1,28 +1,8 @@
-{{#if image_url}}
-    {{#each image_url}}
-    <h1>image</h1>
-        <div><img src="https://images.punkapi.com/v2/{{this}}" />
-            </div>
-    {{/each}}
-{{/if}}
-
-{{#if name}}
-<h1>name:</h1>
-    {{#each name}}
-        <h3>{{this}}</h3>
-    {{/each}}
-{{/if}}
-
-{{#if description}}
-<h1>description:</h1>
-    {{#each description}}
-        <p>{{this}}</p>
-    {{/each}}
-{{/if}}
-
-{{#if tagline}}
-<h1>tagline:</h1>
-    {{#each tagline}}
-        <p>{{this}}</p>
-    {{/each}}
-{{/if}}
+{{#each beers}}
+    <div>
+        <img src="{{this.image_url}}" />
+        <h3>{{this.name}}</h3>
+        <p>{{this.description}}</p>
+        <p>{{this.tagline}}</p>
+    </div>
+{{/each}}
