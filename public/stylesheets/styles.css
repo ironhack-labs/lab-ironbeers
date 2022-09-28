@@ -3,5 +3,66 @@ white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
+
+ border: 1px solid black;
 */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: rgb(57, 183, 113);
+  max-width: 100%;
+}
+header {
+  margin-top: 0%;
+  width: 100%;
+}
+nav {
+  background-color: #2802e862;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: rgb(255, 240, 251);
+  padding: 30px;
+}
+nav > a {
+  text-decoration: none;
+}
+
+img {
+  width: 200px;
+  text-align: center;
+}
+.bigBeer {
+  text-align: center;
+  padding: 20px;
+}
+.B {
+  padding: 20px;
+}
+
+.B > button {
+  padding: 10px;
+  border-radius: 10%;
+  margin: 5px;
+}
+.box {
+  text-align: center;
+}
+.box > img {
+  text-align: center;
+  width: 200px;
+  height: 500px;
+  margin: 20px;
+  padding: 10px;
+}
+.box > h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  margin-top: 2px;
+}
