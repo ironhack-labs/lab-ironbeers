@@ -33,36 +33,12 @@ app.get("/beers", (req, res, next) => {
     const data ={
       beers: beersFromAPI
     }
-
     res.render('beers', data);
-
   })
   .catch(error => console.log(error));
-
-  
-});
-
-app.get("/beers", (req, res, next) => {
-  console.log("beer page");
-
-  punkAPI.getBeers()
-  .then(beersFromAPI => {
-    console.log('Beers from the database: ', beersFromAPI[0]);
-    const data ={
-      beers: beersFromAPI
-    }
-
-    res.render('beers', data);
-
-  })
-  .catch(error => console.log(error));
-
-  
 });
 
 ////////////////////////// RANDOM BEER //////////////////
-
-
 
 app.get("/random-beer", (req, res, next) => {
   console.log("random beers");
@@ -79,8 +55,6 @@ app.get("/random-beer", (req, res, next) => {
   })
   .catch(error => console.log(error));
 
-
-  
 });
 
 
