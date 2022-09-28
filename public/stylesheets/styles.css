@@ -39,10 +39,21 @@ nav a {
   display: flex;
   flex-direction: row;
   padding: 20px 10px;
+  justify-content: center;
 }
 .bear img {
   width: 50px;
 }
 .bear div {
-  padding: 0 20px;
+  padding: 0 100px;
+  width: 50%;
+}
+.bear p span {
+    font-weight: bold;
+}
+#randomimg {
+    width: 80px;
+}
+#myname {
+    color: gray;
 }
