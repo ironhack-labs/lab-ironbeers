@@ -6,33 +6,43 @@ grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  nav {
-    background-color: #2081C3;
-    padding: 1rem;
-  }
-  nav a {
-    padding: 3rem 1rem;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  #capofbeer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    
-  }
-  #capofbeer img {
-    width: 20%;
-    padding: 5%;
-  }
-  #capofbeer a {
-    padding: 20px;
-    background-color: #2081C3;
-    margin: 10px;
-    text-decoration: none;
-    color: white;
-    border-radius: 10px;
-  }
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+  background-color: #2081c3;
+  padding: 1rem;
+}
+nav a {
+  padding: 3rem 1rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+#capofbeer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#capofbeer img {
+  width: 20%;
+  padding: 5%;
+}
+#capofbeer a {
+  padding: 20px;
+  background-color: #2081c3;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+}
+.bear {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 10px;
+}
+.bear img {
+  width: 50px;
+}
+.bear div {
+  padding: 0 20px;
+}
