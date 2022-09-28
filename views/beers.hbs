@@ -3,11 +3,10 @@
 <div>
     <ul>
     {{#each beersFromApi}}
+        
         <div class = "center">
             <li><img src="{{this.image_url}}"/></li>
-            <li><b>{{this.name}}</b></li>
-            <li>{{this.description}}</li>
-            <li>{{this.tagline}}</li>
+            {{> beerpartial }}
         </div>
     
     {{/each}}
