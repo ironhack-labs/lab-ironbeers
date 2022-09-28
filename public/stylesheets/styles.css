@@ -5,7 +5,10 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
-
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
 header{
     background-color: #2081c3 ;
     padding: 2%;
@@ -24,6 +27,9 @@ img{
 }
 h1{
     text-align: center;
+}
+h4{
+    color:#bfbfbf;
 }
 .center{
     display:flex;
@@ -57,4 +63,33 @@ h1{
     text-decoration: none;
     border-radius: 5px;
     margin:1%;
+}
+
+#container{
+    display:flex;
+    flex-direction: row;
+}
+#sub-div{
+    display:flex;
+    flex-direction: column;
+}
+
+#container img{
+    width:auto;
+    height:50vh;
+    margin:5%;
+}
+
+#sub-div ul{
+    display:table;
+    list-style-type: disc;
+    text-align: left;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 2rem;
+   
+}
+#sub-div p{
+    font-weight: normal;
+    font-size: 1rem;
 }

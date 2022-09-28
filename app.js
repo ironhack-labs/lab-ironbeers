@@ -33,4 +33,15 @@ app.get('/beers', (req, res) => {
 
 });
 
+app.get('/random-beer', (req, res) => {
+  punkAPI
+  .getRandom()
+  .then(responseFromAPI => {
+    // your magic happens here
+    console.log(responseFromAPI);
+    res.render("random-beer",{responseFromAPI});
+  })
+  .catch(error => console.log(error));
+
+});
 app.listen(3002, () => console.log('🏃‍ on port 3002'));
