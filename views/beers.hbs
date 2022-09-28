@@ -1,12 +1,3 @@
 {{#each beers}}
-
-<div class="bear">
-    <img src="{{this.image_url}}"></img>
-    <div>    
-        <h3>{{this.name}}</h3>
-        <p>{{this.description}}</p>
-        <p>{{this.tagline}}</p>
-    </div>
-</div>
-
+    {{>beerpartial}}
 {{/each}}
