@@ -15,3 +15,26 @@ a{
     color:#f7f9f9;
     padding: 1%;
 }
+
+
+#main-div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin:5%;
+}
+
+#main-div img{
+    width:20%;
+    padding:3%;  
+
+}
+
+
+#main-div a{
+    background-color: #2081c3;
+    text-decoration: none;
+    border-radius: 5px;
+    margin:1%;
+}
