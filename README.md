@@ -92,7 +92,7 @@ The example of how this method works is shown below:
 ```js
 punkAPI
   .getBeers()
-  .then(beersFromApi => console.log('Beers from the database: ', beersFromApi))
+  .then(beersFromApi => console.log('Beers from the database: ', beersFromAPI))
   .catch(error => console.log(error));
 ```
 
