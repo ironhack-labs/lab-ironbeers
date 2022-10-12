@@ -7,8 +7,11 @@ const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 const app = express();
 const punkAPI = new PunkAPIWrapper();
 
+//middlewares
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
+
+hbs.registerPartials(path.join(__dirname + '/views/partials'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -37,9 +40,22 @@ app.get('/beers', (req,res) => {
 
 app.get('/random-beer', (req,res) => {
   punkAPI.getRandom()
-  .then((responseFromAPI) => {
+  .then((randomBeer) => {
     res.render('random-beers.hbs',{
-      responseFromAPI
+      randomBeer
+    })
+  })
+  .catch((error) => {
+    console.log(error);
+  })
+})
+
+app.get('/beers/:beer', (req,res) => {
+  const {beer} = req.params
+  punkAPI.getBeer(beer)
+  .then((beerPicked) => {
+    res.render('beer-picked.hbs', {
+      beerPicked: beerPicked
     })
   })
   .catch((error) => {
