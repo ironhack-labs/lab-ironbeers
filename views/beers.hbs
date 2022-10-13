@@ -1,0 +1,19 @@
+
+
+<div class="">
+    <div class="row gx-3">
+        {{#each bs}}
+        {{#if @last}}
+        <div class="col-lg-4 col-md-6 mt-3 card-group mb-3">
+            {{> beerPartial this}}
+            
+        </div>
+        {{else}}
+        <div class="col-lg-4 col-md-6 mt-3 card-group">
+            {{> beerPartial this}}
+           
+        </div>
+        {{/if}}
+        {{/each}}
+    </div>
+</div>

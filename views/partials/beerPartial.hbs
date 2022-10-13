@@ -1,0 +1,20 @@
+<div class="card">
+    {{#if this.image_url}}
+    <img src="{{this.image_url}}" class="card-img-top beerImgFromAPI" alt="Image of {{this.name}}">
+    {{/if}}
+    <div class="card-body">
+        <h5 class="card-title">{{this.name}}</h5>
+        <p class="card-text">{{this.description}}</p>
+        <h6>Food Pairings:</h6>
+        <ul class="">
+            {{#each this.food_pairing}}
+            <li class="">{{this}}</li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <div class="card-footer">
+        <small class="text-muted">{{this.tagline}}</small>
+    </div>
+</div>
+
