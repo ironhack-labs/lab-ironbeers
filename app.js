@@ -54,8 +54,9 @@ app.get('/beers/:beer', (req,res) => {
   const {beer} = req.params
   punkAPI.getBeer(beer)
   .then((beerPicked) => {
+    // console.log(beerPicked[0].id);
     res.render('beer-picked.hbs', {
-      beerPicked: beerPicked
+      beerPicked: beerPicked[0]
     })
   })
   .catch((error) => {
@@ -64,5 +65,5 @@ app.get('/beers/:beer', (req,res) => {
 })
 
 
-app.get('*', () => {console.log('Lo siento, tu pagina no existe');})
+// app.get('*', () => {console.log('Lo siento, tu pagina no existe');})
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
