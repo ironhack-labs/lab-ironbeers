@@ -7,7 +7,7 @@ const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 const app = express();
 const punkAPI = new PunkAPIWrapper();
 
-//middlewares
+
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
@@ -15,11 +15,6 @@ hbs.registerPartials(path.join(__dirname + '/views/partials'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Register the location for handlebars partials here:
-
-// ...
-
-// Add the route handlers here:
 
 app.get('/', (req, res) => {
   res.render('index');
@@ -28,7 +23,6 @@ app.get('/', (req, res) => {
 app.get('/beers', (req,res) => {
   punkAPI.getBeers()
   .then((beersFromApi) => {
-    // console.log('Beers from the database', beersFromApi)
     res.render('beers.hbs',{
       beersFromApi: beersFromApi
     })
@@ -54,9 +48,8 @@ app.get('/beers/:beer', (req,res) => {
   const {beer} = req.params
   punkAPI.getBeer(beer)
   .then((beerPicked) => {
-    // console.log(beerPicked[0].id);
     res.render('beer-picked.hbs', {
-      beerPicked: beerPicked[0]
+      beerPicked: beerPicked
     })
   })
   .catch((error) => {
