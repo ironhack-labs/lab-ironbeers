@@ -1,4 +1,4 @@
-<div>
+{{!-- <div>
     <p>
         <img src="{{randomBeer.0.image_url}}" alt="{{randomBeer.0.name}}">
     </p>
@@ -7,4 +7,19 @@
     <p>{{randomBeer.0.tagline}}</p>
     <p>{{randomBeer.0.food_pairing}}</p>
     <p>{{randomBeer.0.brewers_tips}}</p>
+</div> --}}
+
+<div>
+{{#each randomBeer}}
+
+  {{> beerpartial}}
+
+  <ul>
+    {{#each food_pairing}}
+   <li>{{this}}</li>
+   {{/each}}
+  </ul>
+  {{brewer_tips}}
+
+{{/each}}
 </div>
