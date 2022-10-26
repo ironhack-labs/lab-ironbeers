@@ -5,3 +5,147 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+*{
+    margin: 0;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background-color: #2081c3;
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    box-shadow: 0 3px 3px #bfbfbf;
+}
+
+.nav-box{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    margin-left: 3vw;   
+}
+
+.nav-box > a{
+    font-size: 1.5rem;
+    margin: 1vw;
+    text-decoration: none;
+    color:#f7f9f9
+    
+}
+
+.nav-box > a:hover{
+    color:black
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    background-color: #0a2c42;
+    width: 100vw;
+    height: 7vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+footer > p{
+    color: #f7f9f9;
+    font-size: 1.4rem;
+    margin: 1vw;
+}
+
+.home-box{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home-img{
+    width: 25vw;
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+}
+
+.home-link{
+    text-decoration: none;
+    background-color:#2081c3;
+    color: #f7f9f9;
+    padding: 1vh 1vw;
+    font-size: 1.3rem;
+    margin-bottom: 1vw;
+    border-radius: 5px;
+    box-shadow: 0 3px 3px #bfbfbf;
+}
+
+.allbeers-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 11vh;
+    padding-bottom: 8vh;
+}
+
+.beer-partial-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    border-bottom: 1px solid black;
+}
+
+.beer-img{
+    width: 50px;
+    padding: 1vh;
+}
+
+.beer-partial-box > p{
+    padding: 1vh;
+    text-align: justify;
+}
+
+.beers-name{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.beers-tag{
+    font-size: 1.5rem;
+    color: grey;
+    margin-bottom: 4vh;
+}
+
+.beers-description{
+    font-size: 1.2rem;
+}
+
+.random-beer-box{
+    padding-top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.random-info-box{
+    width: 40vw;
+}
+
+.random-info-box > h2{
+    font-size: 1.6rem;
+    margin-top: 2vh;
+}
+
+.info-text{
+    font-size: 1.2rem;
+    padding: 1vh;
+    text-align: justify;
+}
+
+ul{
+    padding: 15px;
+}

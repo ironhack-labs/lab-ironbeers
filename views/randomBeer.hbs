@@ -1,0 +1,16 @@
+
+
+<div class="random-beer-box">
+    {{> beerpartial this}}
+    <div class="random-info-box">
+      <p class="info-text">{{brewers_tips}}</p>
+      <h2>Food pairing</h2>
+      <ul>
+      {{#each food_pairing}}
+      <li
+      class="info-text">{{this}}</li>
+      {{/each}}
+      </ul>
+
+    </div>   
+</div>
