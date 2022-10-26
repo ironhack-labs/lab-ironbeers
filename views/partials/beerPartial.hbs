@@ -1,0 +1,19 @@
+
+<section class="partialSec">
+    <div id="partialContainer">
+        <div >
+            <img src='{{this.image_url}}' alt='{{this.name}}' id="imgContainer"/>
+        </div>
+        <div class="infoContainer">
+            <h1 class="beerName">{{this.name}}</h1>
+            <p id="desP">{{this.description}}</p>
+            <p class="tagP">{{this.tagline}}</p>
+            {{#if food_pairing}}
+            <ul>Food Pairing</ul>
+            <li>{{food_pairing}}
+            {{else brewer_tips}}
+            <p>{{this.brewer_tips}}</p>
+            {{/if}}
+        </div>
+    </div>
+</section>
