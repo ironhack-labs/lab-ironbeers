@@ -7,7 +7,31 @@ font-family: Arial, Helvetica, sans-serif;
 border-radius: 10px;
 padding: 25px; 
 
+
+}
+
+.navbar{
+    background-color: #2081c3;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    align-items: center;
+    box-shadow: grey 0px 4px 5px;
+       
+}
+nav a{
+    text-decoration: none;
+    color: #f7f9f9;
+    padding-left: 10px;
+    font-style: Arial, Helvetica, sans-serif;
 }
 
 
+.center{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
 
