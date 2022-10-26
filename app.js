@@ -22,4 +22,26 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+app.get('/beers', (req, res) => {
+  punkAPI.getBeers()
+  .then(beersFromApi => {
+    console.log('Beers from API:', beersFromApi)
+    res.render('beers', { beersFromApi });
+  })
+  .catch(error => console.log(error))
+});
+
+app.get('/random-beer', (req, res) => {
+  /* let randomBeer = Math.floor(Math.random() * 25 + 1);
+  let beer = punkAPI.beer(randomBeer); */
+  punkAPI.getRandom()
+  .then(randomBeer => {
+    res.render('randombeer',  randomBeer[0]);
+  })
+  
+});
+
+
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
