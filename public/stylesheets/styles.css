@@ -5,3 +5,42 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+html {
+    background-color: whitesmoke;
+}
+
+nav {
+    background-color: #2081c3;
+    font-size: 2rem;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    background-color: #0a2c42;
+    color: #bfbfbf;
+}
+
+#indexFlexbox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    padding: 20px;
+}
+
+#indexFlexbox > a {
+    color:black
+}
