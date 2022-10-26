@@ -5,3 +5,76 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+#nav{
+    background-color: #2081c3;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: auto;
+    height: 9vh;
+    padding-left: 4vw;
+}
+.nav-beers{
+    padding-left: 2vw;
+}
+.nav-random{
+    padding-left: 2vw;
+}
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; color: #f7f9f9;; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+
+.homeImg{
+    display: block;
+    height: 30%;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+}
+.btn1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vh;   
+    background-color: #2081c3;
+    border-radius: 4px;
+    color: #f7f9f9;
+    border: 0px;
+    padding: 5px;
+}
+.btn2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vh;   
+    background-color: #2081c3;
+    border-radius: 4px;
+    color: #f7f9f9;
+    border: 0px;
+    padding: 5px;
+}
+.conText{
+    position: absolute;
+    height: 40vh;
+    width: 70vw;
+    padding-top: 4vh;
+    margin-left: 25vw;
+}
+#beersImg{
+    margin-left: 14vw;
+    position: absolute;
+    height: 29vh;
+    width: 4vw;
+    padding-top: 4vh;
+}
