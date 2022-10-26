@@ -47,6 +47,11 @@ font-family: Arial, Helvetica, sans-serif;
     flex-wrap: wrap;
   }
   
+.containerHome img{
+    width: 300px;
+    height: 300px;
+}
+
   .container div {
     display: flex;
     margin-top: 10vh;
@@ -177,4 +182,5 @@ div.beerDiv li {
     color:#f7f9f9;
     height: 40px;
     padding-top: 20px;
+    position: fixed;
   }
