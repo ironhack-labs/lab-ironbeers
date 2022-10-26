@@ -5,3 +5,184 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+img{
+    width: 50vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    
+}
+
+
+
+.container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.beerssize{
+    width: 100px;
+   
+    
+}
+
+.random{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 10vw;
+}
+
+.sizeBeers{
+    width: 100px;
+   
+    
+}
+
+nav {
+    display: flex;
+    background-color: #2081c3;
+    height: 8vh;
+    justify-content: flex-start;
+    align-items: center;
+}
+  
+nav a {
+    color: #f7f9f9;
+    font-size: 15px;
+    font-family: monospace;
+    text-decoration: none;
+    padding: 0px 35px;
+}
+  
+nav a:hover {
+    text-decoration: none;
+    color: yellow;
+}
+
+.buttonCheck {
+    background-color: #2081c3;
+    max-width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+    height: fit-content;
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+}
+  
+.buttonCheck:hover {
+    background-color: #196a9f;
+}
+
+
+.buttonRandom {
+    background-color: #2081c3;
+    max-width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+    height: fit-content;
+    color: white;
+    
+}
+.buttons{
+    padding-bottom: 70px;
+    display:flex;
+    flex-direction: column;
+}
+  
+.buttonRandom:hover {
+    background-color: #196a9f;
+}
+
+.beers2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container{
+    display: flex;
+    margin-top: 10vh;
+    flex-direction: column;
+    max-width: 25vw;
+  
+    padding: 15px;
+}
+      
+.container div:hover {
+    background-color: #f6f3f3;
+    transform: scale(0.9);
+    transition: ease-in-out 0.5s;
+}
+
+.container div img {
+    max-height: 30vh;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+  
+.container div p,
+.container div h2 {
+    color: black;
+}
+  
+.container div p {
+    padding: 10px 0;
+}
+  
+.container div .tagline {
+    color: #bfbfbf;
+}
+  
+.container a {
+    text-decoration: none;
+    height: fit-content;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+  
+.beerssize {
+    max-width: 5vw;
+    height: auto;
+}
+
+footer{
+    width: 100%;
+    background-color: #0a2c42;
+    padding-left: 10px;
+    bottom: 0;
+    color:#f7f9f9;
+    height: 30px;
+    padding-top: 10px;
+    position: fixed;
+}
+  
