@@ -1,0 +1,12 @@
+<div>
+    {{#each allBeersFromApi}}
+
+    <img src="{{image_url}}" alt="{{name}}">
+    <p>{{name}}</p>
+    <p>{{description}}</p>
+    <p>{{tagline}}</p>
+
+    {{else}}
+    <p>No beers yet!</p>
+    {{/each}}
+</div>
