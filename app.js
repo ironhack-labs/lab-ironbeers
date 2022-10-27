@@ -31,13 +31,16 @@ app.get('/beers', (req, res) => {
   .catch(error =>console.log(error))
 });
 
-/* app.get("/beers/:id", (req, res) => {
-  punkAPI.getBeers()
-  .then(allBeers => {
-    allBeers.forEach(beer => )
+app.get("/beer/:id", (req, res) =>{
+  punkAPI.getBeer(req.params.id)
+  .then(beer =>{
+    res.render("beerDetails", {beer})
+    console.log({beer})
+
   })
-  res.render(req.params.beerID)
-}); */
+  .catch(error =>console.log(error))
+
+})
 
 
 app.get("/randomBeer", (req, res) => {
