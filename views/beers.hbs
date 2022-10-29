@@ -1,0 +1,15 @@
+<h1> Testing2 </h1>
+
+<ul>
+{{#each beer}}
+    <div>
+        <div id="image">
+        <img src='{{this.image_url}}'>
+        </div>
+        <div>
+            <h1>{{this.name}}</h1>
+        </div>
+        
+    </div>
+    {{/each}}
+</ul>
