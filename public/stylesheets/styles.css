@@ -54,6 +54,29 @@ body{
     justify-content: center;
     align-items: center;
 }
+.bold{
+    font-weight: bold;
+}
+
+.no-margin{
+    margin-bottom: 0;
+}
+
+.top{
+    margin-top: 15px;
+}
+
+.margin-top{
+    margin-top: 25px;
+}
+
+.margin-left{
+    margin-left: 45px;
+}
+
+.tips{
+    margin-top: 35px;
+}
 
 .random{
     margin-right: 25px;
@@ -87,6 +110,16 @@ body{
     justify-content: start;
     width:650px;
     margin-bottom: 25px;
+    border-radius: 35px;
+}
+
+.random-beer-card{
+    border-radius: 55px;
+    width:900px;
+    padding-bottom: 55px;
+    padding-top: 55px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .tagline{
