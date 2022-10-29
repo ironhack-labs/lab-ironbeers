@@ -98,7 +98,10 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 25px;
-    
+}
+
+h1{
+    margin-bottom: 15px;
 }
 
 .beer-card{
@@ -115,7 +118,7 @@ body{
 
 .random-beer-card{
     border-radius: 55px;
-    width:900px;
+    width:700px;
     padding-bottom: 55px;
     padding-top: 55px;
     padding-left: 40px;
@@ -132,6 +135,22 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+footer{
+    position: fixed;
+    bottom:0;
+    background-color:#0a2c42 ;
+    height:50px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    color:white;
+
+}
+
+footer p{
+    margin-left: 55px;
 }
 
 #image img{

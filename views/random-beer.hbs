@@ -1,21 +1,19 @@
 <div id="main-container">
-{{#each beer}}
-    <div class="beer-card random-beer-card">
-        <div id="image" class="random">
-        <img src='{{this.image_url}}'>
-        </div>
-        <div class="flexy flexy2">
-            <h1>{{this.name}}</h1>
-            <p class="margin-lefttagline">"{{this.tagline}}"</p>
-            <p class="description">{{this.description}}</p>
-            <p class="bold margin-top no-margin">Food Pairings: </p>
+    {{#each beer}}
+         {{> beerpartial}}
+         <div class="margin-left">
+    <p class="bold margin-top no-margin">Food Pairings: </p>
             <ul class="pairings">
                 {{#each this.food_pairing}}
                 <li class='margin-left top' >{{this}}</li>
                 {{/each}}
             </ul>
             <p class="tips"><span class="bold">Brewer Tips: </span>{{this.brewers_tips}}</p>
-        </div>
-        {{/each }}
     </div>
-    </div>
+</div>
+</div>
+    {{/each }}
+    
+   
+    
+   
