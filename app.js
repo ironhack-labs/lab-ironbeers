@@ -25,14 +25,14 @@ app.get('/', (req, res) => {
 });
 
 let beers; 
-let beersNameArray;
-let beer1;
+
+let randomBeer;
+let randomPairing;
 
 app.get('/beers', (req, res) => {
 
   beers = punkAPI.getBeers()
   .then(beer => {
-    console.log('Beers from the database: ', beer)
     res.render('beers', {beer})
   })
   //beers.then( beersArray => {
@@ -42,5 +42,21 @@ app.get('/beers', (req, res) => {
   .catch(error => console.log(error))
   
 });
+
+
+app.get('/random-beer', (req, res) => {
+  randomBeer = punkAPI.getRandom()
+  .then((beer => {
+    randomPairing = beer[0].food_pairing
+    console.log(beer);
+    console.log(randomPairing)
+    res.render('random-beer', {beer: beer, randomPairing: randomPairing})
+}))
+  
+  .catch(error => console.log(error));
+})
+
+
+
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

@@ -55,6 +55,59 @@ body{
     align-items: center;
 }
 
+.random{
+    margin-right: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+}
+
+.description{
+    font-size: 15px;
+}
+
+.pairings{
+    margin-top: 25px;
+}
+
+#main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+    
+}
+
+.beer-card{
+    border:1px black solid;
+    margin-right: 10px;
+    margin-left:10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width:650px;
+    margin-bottom: 25px;
+}
+
+.tagline{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+#image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image img{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom:10px; 
+    width:75px;
+}
+
 .centered button{
     margin-top: 35px;
     padding-top:15px;
@@ -70,4 +123,15 @@ body{
 
 a:hover{
     cursor: pointer;
+}
+
+.flexy{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    flex-wrap: wrap;
+}
+
+.flexy2{
+    justify-content: center;
 }

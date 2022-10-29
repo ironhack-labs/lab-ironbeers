@@ -1,15 +1,21 @@
 <div id="main-container">
 {{#each beer}}
     <div class="beer-card">
-        <div id="image">
+        <div id="image" class="random">
         <img src='{{this.image_url}}'>
         </div>
-        <div class="flexy">
+        <div class="flexy flexy2">
             <h1>{{this.name}}</h1>
             <p class="tagline">"{{this.tagline}}"</p>
             <p class="description">{{this.description}}</p>
+            <ul class="pairings">
+                {{#each this.food_pairing}}
+                <li>{{this}}</li>
+                {{/each}}
+              
+                
+            </ul>
         </div>
-        
+        {{/each }}
     </div>
-    {{/each}}
     </div>
