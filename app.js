@@ -23,12 +23,14 @@ app.get('/', (req, res) => {
 });
 
 //beers route
-app.get('/beers', (res, req) => {
+app.get('/beers', (req, res) => {
   punkAPI
     .getBeers()
-    .then(beersFromApi =>
-      console.log('Beers from the database: ', beersFromApi)
-    )
+    .then(beersFromApi => {
+      console.log('Beers from the database: ', beersFromApi);
+      console.log(beersFromApi[0].name);
+      res.render('beers', { beers: beersFromApi });
+    })
     .catch(error => console.log(error));
 });
 
