@@ -12,23 +12,27 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use("/public", express.static(path.join(__dirname, '/public')));
 
-punkAPI
-  .getBeers()
-  .then(beersFromApi => console.log('Beers from the database: ', beersFromApi))
-  .catch(error => console.log(error));
-
 // Register the location for handlebars partials here:
 
 // ...
 
 // Add the route handlers here:
 
+//Route for Homepage
 app.get('/', (req, res) => {
   res.render('index');
 });
 
+
+//Route for Beers Page
 app.get('/beers', (req, res) => {
-  res.render('beers');
+  punkAPI
+    .getBeers()
+    .then(beersFromApi => {
+      res.render('beers', { beers: beersFromApi });
+    })
+    .catch(error => console.log(error));
 });
+
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
