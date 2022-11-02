@@ -3,5 +3,120 @@ white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
+
 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HOME */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 50px;
+  height: 700px;
+}
+
+.container img {
+  width: 400px;
+  height: 400px;
+}
+
+button a {
+  text-decoration: none;
+  outline: none;
+  color: white;
+  font-size: 20px;
+}
+
+button {
+  background-color: #2081c3;
+  height: 80px;
+  width: 300px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: -1px 0px 18px -1px #000000;
+}
+
+/* NAV */
+
+nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  background-color: #2081c3;
+  box-shadow: 0px 10px 13px -9px #000000;
+}
+
+span a {
+  text-decoration: none;
+  outline: none;
+  color: white;
+  font-size: 20px;
+}
+
+/* BEERS */
+
+.container-beers {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+picture {
+  height: 200px;
+}
+
+img {
+  height: 200px;
+}
+
+.card {
+  border-bottom: grey solid 2px;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card h1 {
+  font-size: 20px;
+}
+
+/* RANDOM */
+
+.container-random-beers {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 700px;
+  gap: 30px;
+}
+
+.container-random-beers p {
+  text-align: center;
+}
+
+.card-random {
+  width: 800px;
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
