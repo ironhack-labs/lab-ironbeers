@@ -1,8 +1,5 @@
 <section id="beerList">
     {{#each beers}}
-    <img src="{{image_url}}" width="100">
-    <h2>{{name}}</h2>
-    <h5>{{tagline}}</h5>
-    <p>{{description}}</p>
+    {{> beerpartial this}}
     {{/each}}
 </section>

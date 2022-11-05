@@ -1,8 +1,5 @@
 <section id="random-beer">
-    <img src="{{image_url}}" width="100">
-    <h2>{{name}}</h2>
-    <h5>{{tagline}}</h5>
-    <p>{{description}}</p>
+    {{> beerpartial this}}
     <h4>Food Pairing</h4>
     <ul>
         {{#each food_pairing}}
