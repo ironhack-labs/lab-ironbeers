@@ -1,10 +1,8 @@
-<div class="card" style="width: 18rem;">
-  <img src="{{image_url}}" class="card-img-top" alt='{{name}}'>
-  <div class="card-body">
-    <a href="beers/beer-{{id}}">
-    <h5 class="card-title">{{name}}</h5>
-    </a>
-    <p class="card-description">{{description}}</p>
-    <p class="card-tagline">{{tagline}}</p>
-  </div>
+<div>
+  <img src='{{image_url}}' alt='{{name}}' />
+  <a href='/beers/{{id}}'>
+    <h2>{{name}}</h2>
+  </a>
+  <p class='tagline'>{{tagline}}</p>
+  <p>{{description}}</p>
 </div>
