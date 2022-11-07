@@ -4,12 +4,13 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "node --watch app.js"
+    "dev": "nodemon app.js"
   },
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "hbs": "^4.1.1",
+    "express-handlebars": "^6.0.6",
+    "nodemon": "^2.0.20",
     "punkapi-javascript-wrapper": "^1.0.2"
   }
 }

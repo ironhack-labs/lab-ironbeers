@@ -1,0 +1,48 @@
+body {
+  height: 100vh;
+}
+
+.navbar {
+  height: 5rem;
+}
+
+section .central-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.central-block {
+  align-items: center;
+  justify-content: center;
+  margin: 3em auto;
+}
+
+.central-block img {
+  width: 30rem;
+}
+
+.btns-group {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.btn-main {
+  padding: 0.8rem 3rem;
+  margin: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.shadow {
+  box-shadow: 5px 5px 5px lightgray;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 1rem;
+  background-color: #0c2d41;
+  color: #fff;
+}
