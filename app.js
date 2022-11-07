@@ -35,15 +35,34 @@ app.get('/', (req, res) => {
   });
 });
 
-app.get('/beers', (req, res) => {
+app.get('/beers', async (req, res) => {
+  let beers;
+
+  try {
+    beers = await punkAPI.getBeers();
+  } catch (err) {
+    throw err;
+  }
+
+  console.log(beers);
+
   res.render('beers', {
-    isBeers: true
+    isBeers: true,
+    beers
   });
 });
 
-app.get('/random-beer', (req, res) => {
+app.get('/random-beer', async (req, res) => {
+  let randomBeer;
+
+  try {
+    randomBeer = await punkAPI.getRandom()
+  } catch (err) {
+    throw err
+  }
   res.render('randomBeer', {
-    isRandom: true
+    isRandom: true,
+    randomBeer
   });
 });
 
