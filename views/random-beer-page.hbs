@@ -1,0 +1,23 @@
+<div class="container mt-5">
+    <h1>Random-beer</h1>
+    <hr>
+    <div class="row">
+
+        {{#each randomBeer}}
+
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <img src="{{image_url}}" class="card-img-top" alt="{{name}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{tagline}}</h5>
+                    <p class="card-text">Description: {{description}}</p>
+                </div>
+            </div>
+        </div>
+
+
+        {{/each}}
+    </div>
+    <hr>
+    <a href="/" class="btn btn-dark">Ir a inicio</a>
+</div>
