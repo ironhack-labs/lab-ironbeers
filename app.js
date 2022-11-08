@@ -37,8 +37,6 @@ app.get('/random-beer', (req, res) => {
   randomBeer.then(beersFromApi => {
     alert(beersFromApi[0].name)
   })
-
-  res.render('random-beer');
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
