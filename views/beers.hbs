@@ -1,0 +1,14 @@
+<div class="container d-flex flex-wrap justify-content-center">
+    {{#each beerList}}
+
+    <div class="col-lg-4 mb-3">
+        <div class="text-center" style="width: 18rem">
+            <img class="text-center" style="height: 11rem" src="{{image_url}}" alt="{{name}}">
+            <h5 class="card-title">{{name}} {{lastName}}</h5>
+            <p class="card-text" style="width: 24rem">{{description}}</p>
+            <p class="card-text">{{tagline}}</p>
+        </div>
+    </div>
+
+    {{/each}}
+</div>
