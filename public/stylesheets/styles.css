@@ -5,3 +5,52 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+* {
+    margin: 0;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.navbar {
+    background-color: #2081c3;
+    width: 100vw;
+    height: 10vh;
+    box-shadow: 0 3px 3px #bfbfbf;
+}
+
+.navbar-box {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    margin-left: 30px;
+}
+
+.navbar-box a {
+    font-size: 15px;
+    margin: 10px;
+    text-decoration: none;
+    color: #f7f9f9
+}
+
+.navbar-box>a:hover {
+    color: black
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    background-color: #0a2c42;
+    width: 100vw;
+    height: 7vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.footer>p {
+    color: #f7f9f9;
+    font-size: 20px;
+    margin: 20px;
+}
