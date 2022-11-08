@@ -1,11 +1,9 @@
-<div class="container d-flex align-items-center justify-content-center mt-4">
-    <h1>BEERS</h1>
+<div class="container mt-4">
+    <h1 class="py-1">BEERS</h1>
     <hr>
-    <div class="row d-flex gap-4 justify-content-center align-items-center">
-        <div class="col-md-4">
-            <div class="card m-1 p-3">
-                {{#each beersInfo}}
-                {{>beerpartial}}
-                {{/each}}
-            </div>
-        </div>
+    <div class="row d-flex justify-content-center gap-3">
+        {{#each beersInfo}}
+        {{>beerpartial}}
+        {{/each}}
+    </div>
+</div>

@@ -5,8 +5,35 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+* {
+    margin: 0;
+    padding: 0;
+}
 
-.beer-img {
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 50px;
+}
+
+.beer-icon {
+    max-width: 300px;
+}
+
+
+.beers-img {
     width: 75px;
     height: 300px;
+    margin-inline: auto;
+    margin-block: 20px;
+    object-fit: cover;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0a2c42;
+    color: whitesmoke;
+    padding: 15px;
 }
