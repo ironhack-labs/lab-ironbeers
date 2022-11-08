@@ -41,3 +41,5 @@ app.get('/random-beer', (req, res) => {
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
+
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
