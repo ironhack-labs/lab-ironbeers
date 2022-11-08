@@ -1,0 +1,30 @@
+<div class='container mt-4 d-flex align-items-center justify-content-between'>
+  <div class='row gap-4'>
+    {{!-- <img
+      class='col-md-2'
+      src={{randomBeer.image_url}}
+      alt={{randomBeer.name}}
+    />
+    <div class='col-md-9'>
+      <h1>{{randomBeer.name}}</h1>
+      <h3>{{randomBeer.tagline}}</h3>
+      <p>{{randomBeer.description}}</p> --}}
+
+      {{>beerCard}}
+
+      <div class="col-md-6">
+        <h5>Food Pairing:</h5>
+      <ul>
+        {{#each food_pairing}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <h5>Brewer Tips</h5>
+      <p>
+        {{brewers_tips}}
+      </p>
+      </div>
+
+    </div>
+  </div>
+</div>

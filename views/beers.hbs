@@ -1,0 +1,16 @@
+<div class='container mt-4'>
+  <h1 class="py-4">Beers</h1>
+  <div class='row d-flex justify-content-center gap-3'>
+    {{#each beers}}
+      {{!-- <div class='card col-md-4 mb-3"' style='width: 18rem;'>
+        <img src={{image_url}} class='card-img-top beers-img' alt={{name}} />
+        <div class='card-body'>
+          <h2 class='card-title'>{{name}}</h2>
+          <h4 class='card-subtitle'>{{tagline}}</h4>
+          <p class='card-text'>{{description}}</p>
+        </div>
+      </div> --}}
+      {{>beerCard}}
+    {{/each}}
+  </div>
+</div>
