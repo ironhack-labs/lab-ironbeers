@@ -1,7 +1,29 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+img{
+
+    width: 100%;
+
+}
+.imgbeers{
+    width: 20%;
+    height:20%;
+}
+
+.card-img-top{
+    width: 180px;
+    height: 180px;
+    align-items: center;
+    margin-inline: auto;
+    object-fit: contain;
+}
+
+.card-text{
+    text-align: justify
+}
+
+.card-title{
+    text-align: justify;
+}
+
+
+
+
