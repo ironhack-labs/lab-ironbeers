@@ -1,8 +1,8 @@
-<div class='d-flex card col-md-4 mb-3' style='width: 18rem;'>
-  <img src={{image_url}} class='card-img-top beers-img' alt={{name}} />
-  <div class='card-body d-flex'>
-    <h2 class='card-title text-secondary'>{{name}}</h2>
-    <h4 class='card-subtitle'>{{tagline}}</h4>
-    <p class='card-text'>{{description}}</p>
-  </div>
+<div class="d-flex card col-lg-3 col-md-4 mb-3" style="width: 18rem;">
+	<img src={{image_url}} class="card-img-top beers-img" alt={{name}} />
+	<div class="card-body d-flex">
+		<h2 class="card-title text-secondary"><a href="/beers/{{id}}">{{name}}</a></h2>
+		<h4 class="card-subtitle">{{tagline}}</h4>
+		<p class="card-text">{{description}}</p>
+	</div>
 </div>

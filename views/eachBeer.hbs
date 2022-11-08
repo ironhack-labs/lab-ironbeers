@@ -1,0 +1,31 @@
+<div class="container mt-4 d-flex gap-3 flex-column align-items-center justify-content-between">
+  {{#each eachBeer}}
+    {{>beerCard}}
+    <div class="beer-info">
+      <div class="d-flex col-lg-7 flex-wrap gap-3">
+        <p><span>First brewed:</span> {{first_brewed}}</p>
+        <p><span>Average:</span> {{abv}}</p>
+        <p><span>Ibu:</span> {{ibu}}</p>
+        <p><span>Target FG:</span> {{target_fg}}</p>
+        <p><span>Target OG:</span> {{target_og}}</p>
+        <p><span>EBC:</span> {{ebc}}</p>
+        <p><span>SRM:</span> {{srm}}</p>
+        <p><span>PH:</span> {{ph}}</p>
+        <p><span>Attenuation level:</span> {{attenuation_level}}</p>
+      </div>
+      <div class="mt-3">
+        <p><span>Food pairing:</span>
+          <ul>
+            {{#each food_pairing}}
+              <li>
+                {{this}}
+              </li>
+            {{/each}}
+          </ul>
+        </p>
+        <p><span>Brewer's tips:</span> {{brewers_tips}}</p>
+        <p><span>Contributed by:</span> {{contributed_by}}</p>
+      </div>
+    </div>
+  {{/each}}
+</div>
