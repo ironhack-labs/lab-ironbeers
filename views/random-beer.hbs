@@ -1,0 +1,21 @@
+<div class="container mt-5">
+    <h1>Random Beer</h1>
+    <hr>
+    <div class="row">
+        <div class="col-md-4 mb-3">
+            <div class="card m-3 p-5">
+                {{>beerpartial}}
+                <p class="card-text"> Food Pairing</p>
+                <ul>
+                    {{#each food_pairing}}
+                    <li class="card-text">{{this}}</li>
+                    {{/each}}
+                </ul>
+                <p class="card-text">Brewers Tips:
+                    {{brewers_tips}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
