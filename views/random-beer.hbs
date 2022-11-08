@@ -1,10 +1,12 @@
 {{#each beersFromApi}}
 <div>
     <img src={{image_url}} alt="">
-    <li>{{name}}</li>
+    <p>{{name}}</p>
     <p>{{description}}</p>
     <p>{{tagline}}</p>
-    <li>{{food_pairing}}</li>
+    <ul>
+        <li>{{food_pairing}}</li>
+    </ul>
     <p>{{brewers_tips}}</p>
 </div>
 {{/each}}
