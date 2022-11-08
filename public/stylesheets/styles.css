@@ -5,3 +5,27 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+body {
+    margin: 0px;
+    padding: 0%;
+}
+
+.beer img {
+    display: block;
+    margin: auto;
+}
+
+img {
+    padding: 10px;
+    width: 100%;
+}
+
+.card-img-top {
+    width: 20px;
+    height: 20px;
+}
+
+.imgbeers {
+    width: 20px;
+    height: 20px;
+}
