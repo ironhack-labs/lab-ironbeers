@@ -1,0 +1,21 @@
+<div class="container">
+    {{#each randomBeer}}
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0 beer-img d-flex flex-row">
+            {{>beerPartial}}
+            <ul class="list-group list-group-flush ">
+                <h6>Food Pairing</h6>
+                {{#each food_pairing}}
+                <li class="ms-5">{{this}}</li>
+                {{/each}}
+            </ul>
+
+            <p clas><span class="fw-bold">Brewers tips: </span> {{{brewers_tips}}}</p>
+
+        </div>
+
+    </div>
+</div>
+</div>
+{{/each}}
+</div>

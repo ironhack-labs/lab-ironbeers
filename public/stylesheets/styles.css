@@ -1,7 +1,19 @@
-/*
-white: #f7f9f9;
+/* white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+font-family: Arial,
+Helvetica,
+sans-serif; */
+
+
+.beer-img img {
+    width: 35%;
+}
+
+footer {
+    background-color: #0a2c42;
+    color: white;
+    padding: 50px;
+    margin-bottom: 0;
+}
