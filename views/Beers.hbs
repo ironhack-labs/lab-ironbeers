@@ -1,0 +1,23 @@
+<div class="container d-flex flex-wrap justify-content-center">
+
+
+
+    {{#each beersColection}}
+    <div class="card m-3">
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="{{image_url}}" style="width: 10rem" alt="Beer">
+            <div class="card-body">
+                <h5 class="card-title">{{name}}</h5>
+                <p class="card-text">{{description}}</p>
+                <p class="card-text">{{tagline}}</p>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    {{/each}}
+
+</div>
