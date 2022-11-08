@@ -37,6 +37,19 @@ section .central-block {
   box-shadow: 5px 5px 5px lightgray;
 }
 
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.beer-bottle {
+  height: 25rem;
+}
+
+.food-pairing {
+  margin-left: 3.5rem;
+}
+
 footer {
   position: absolute;
   bottom: 0;

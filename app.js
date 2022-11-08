@@ -2,7 +2,7 @@ const path = require('path');
 
 const express = require('express');
 // using express-handlebars instead standard hbs installation
-// due facing several issues by frozen content on page reload
+// due facing several issues with frozen content on page reload
 const handlebars = require('express-handlebars');
 
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
@@ -27,8 +27,6 @@ app.use(express.urlencoded({ extended: true }));
 // Register the location for handlebars partials here:
 // hbs.registerPartials(__dirname + '/views/partials');
 
-// Add the route handlers here:
-
 app.get('/', (req, res) => {
   res.render('index', {
     isIndex: true
@@ -36,34 +34,25 @@ app.get('/', (req, res) => {
 });
 
 app.get('/beers', async (req, res) => {
-  let beers;
-
   try {
-    beers = await punkAPI.getBeers();
+    res.render('beers', {
+      isBeers: true,
+      beers: await punkAPI.getBeers()
+    });
   } catch (err) {
     throw err;
   }
-
-  console.log(beers);
-
-  res.render('beers', {
-    isBeers: true,
-    beers
-  });
 });
 
 app.get('/random-beer', async (req, res) => {
-  let randomBeer;
-
   try {
-    randomBeer = await punkAPI.getRandom()
+    res.render('randomBeer', {
+      isRandom: true,
+      beer: await punkAPI.getRandom()
+    });
   } catch (err) {
-    throw err
+    throw err;
   }
-  res.render('randomBeer', {
-    isRandom: true,
-    randomBeer
-  });
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

@@ -1,1 +1,35 @@
-<h1>Random Beer</h1>
+<div class='mt-5'>
+  {{#each beer as |b|}}
+    <div class='row'>
+      <div class='col-3 col-md-3 col-lg-3'>
+        {{#if b.image_url}}
+          <img src='{{b.image_url}}' alt='{{b.name}}' class='beer-bottle' />
+          {{else}}
+          <img
+            src='https://www.systempack.de/fileadmin/katalog/Bier/Einweg/330ml_Longneck_pivo_CC26_gruen_EW_0811.jpg'
+            alt='Beer Placeholder'
+            class="beer-bottle"
+          />
+        {{/if}}
+      </div>
+      <div class='col-9 col-md-9 col-lg-9'>
+        <div class='row'>
+          <h2>{{b.name}}</h2>
+          <h5 class='text-muted mt-4'>{{b.tagline}}</h5>
+          <p class="mt-2">{{b.description}}</p>
+          <p>
+            <h5>Food Pairing</h5>
+            <ul class="food-pairing">
+              {{#each b.food_pairing}}
+                 <li>{{.}}</li>
+              {{/each}}
+            </ul>
+          </p>
+          <p>
+            <strong>Brewers Tips:</strong> {{b.brewers_tips}}
+          </p>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>
