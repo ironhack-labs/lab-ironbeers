@@ -5,6 +5,11 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+* {
+    margin: 0.3%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
 .center {
     display: flex;
     flex-direction: column;
@@ -15,8 +20,19 @@ font-family: Arial, Helvetica, sans-serif;
 .link-like-thinhs {
     margin-top: 1%;
     margin-bottom: 1%;
-    align-items: center; 
+    /* align-items: center;  */
     width: 250px;
+}
+.btn-b {
+  background-color: #0a2c42;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 200px;
 }
 .center img {
     height: 400px;
@@ -28,5 +44,14 @@ img {
     object-fit: contain;
 }
 .a img{
-    height: 500px;
+    height: 400px;
+}
+.a .beer  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20%;
+}
+.a .beer-body {
+    margin-left: 10%; 
 }
