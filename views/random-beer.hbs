@@ -1,0 +1,14 @@
+
+<div class = "random-beers">
+    <ul class="beer-list2">
+    {{#each responseFromAPI }}
+        <h2>{{this.name}}</h2>
+        <img src="{{this.image_url}}" alt="{{this.tagline}}">
+        <p>{{this.tagline}}</p>
+        {{#each this.food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}
+        <p>Brewers Tips:{{this.brewers_tips}}</p>
+        {{/each}}
+    </ul>
+</div>
