@@ -1,0 +1,10 @@
+<div class="col-md-4 mb-3">
+    {{>beerpartial}}
+    <ul>
+        {{#each food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+    <p class="card-text">Brewers Tips: {{brewers_tips}}</p>
+
+</div>
