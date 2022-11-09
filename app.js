@@ -49,17 +49,21 @@ app.get('/beers', async (req, res) => {
 });
 
 app.get(`/beers/:id`, async (req, res) => {
-  const id = req.params.id;
-  const beer = await punkAPI.getBeer(id);
+  try {
+    const id = req.params.id;
+    const beer = await punkAPI.getBeer(id);
 
-  res.render('beers', {
-    isRandom: true,
-    title: `Beer | Ironbeers`,
-    beer: {
-      beer,
-      isSingle: true
-    }
-  });
+    res.render('beers', {
+      isRandom: true,
+      title: `Beer | Ironbeers`,
+      beer: {
+        beer,
+        isSingle: true
+      }
+    });
+  } catch (err) {
+    throw err;
+  }
 });
 
 app.get('/beers/random', async (req, res) => {
