@@ -11,6 +11,12 @@ main {
   height: 100%;
 }
 
+a,
+a:hover {
+  text-decoration: none;
+}
+
+
 .center {
   margin: 0;
   position: absolute;
