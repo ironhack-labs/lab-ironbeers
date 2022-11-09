@@ -17,9 +17,27 @@ app.use(express.static(path.join(__dirname, 'public')));
 // ...
 
 // Add the route handlers here:
-
 app.get('/', (req, res) => {
   res.render('index');
 });
 
+app.get('/beers', (req, res) => {
+  punkAPI
+    .getBeers()
+    .then(beersFromApi => {
+      res.render('beers', { beerlist: beersFromApi })
+    })
+});
+
+app.get('/random-beer', (req, res) => {
+
+  punkAPI
+    .getRandom()
+    .then(responseFromAPI => {
+      // console.log('esta es la cerveza random', { randomBeer: responseFromAPI })
+      res.render('random-beer', { randomBeer: responseFromAPI })
+    })
+  // .catch(error => console.log(error));
+});
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

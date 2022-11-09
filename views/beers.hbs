@@ -1,0 +1,25 @@
+<div class="container mt-5">
+    <h1>BEERS</h1>
+    {{!-- <a href="/" class="btn btn-primary">HOME</a> --}}
+    <hr>
+
+    <div class="row">
+
+        {{#each beerlist}}
+
+        {{>beerpartial}}
+
+
+
+        {{!--
+        {{name}}
+        {{images}}
+        {{description}}
+        {{tagline}} --}}
+
+
+        {{/each}}
+
+    </div>
+    <hr>
+</div>
