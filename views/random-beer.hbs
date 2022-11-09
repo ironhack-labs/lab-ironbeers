@@ -1,0 +1,25 @@
+<div>
+  <div>
+    <div>
+        <img src="{{responseFromApi.image_url}}" alt="{{responseFromApi.name}}"/>
+    </div>
+
+    <div>
+        <h5>{{responseFromApi.name}} {{responseFromApi.tagline}}</h5>
+    </div>
+
+    <div>
+        <p>{{responseFromApi.description}}</p>
+    </div>
+        
+    <div
+        <p>
+        {{#each responseFromApi.food_pairing}}
+        <ul>
+            <li>{{this}}</li>
+        </ul>
+        {{/each}}
+        </p>
+      <p>{{responseFromApi.brewers_tips}}</p>
+    </div>
+</div>
