@@ -1,25 +1,22 @@
-<div>
-  <div>
-    <div>
-        <img src="{{responseFromApi.image_url}}" alt="{{responseFromApi.name}}"/>
+<div class="random-page">
+
+    <div class="random-img">
+      <img src="{{responseFromApi.image_url}}" alt="{{responseFromApi.name}}"/>
     </div>
 
-    <div>
-        <h5>{{responseFromApi.name}} {{responseFromApi.tagline}}</h5>
-    </div>
-
-    <div>
+    <div class="random-body">        
+        <h5>{{responseFromApi.name}}</h5>
+        <h6>{{responseFromApi.tagline}}</h6>
         <p>{{responseFromApi.description}}</p>
-    </div>
-        
-    <div
         <p>
+        <h4>Food Pairing</h4>
         {{#each responseFromApi.food_pairing}}
         <ul>
             <li>{{this}}</li>
         </ul>
         {{/each}}
         </p>
-      <p>{{responseFromApi.brewers_tips}}</p>
+      <p> <b>Brewers Tip:</b> {{responseFromApi.brewers_tips}}</p>
     </div>
+
 </div>
