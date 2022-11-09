@@ -19,11 +19,6 @@ app.engine('hbs', hbs.engine);
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
-// app.set('view options', { layout: 'layouts/main' });
-
-// app.use(express.static('/', 'public'));
-// app.use('/', express.static(path.join(__dirname, 'public')));
-// app.use('/*', express.static(path.join(__dirname, 'public')));
 app.use('/', express.static(path.join(__dirname, 'public')));
 app.use('/beers', express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
@@ -61,7 +56,7 @@ app.get(`/beers/:id`, async (req, res) => {
 
   res.render('beers', {
     isRandom: true,
-    title: ` | Ironbeers`,
+    title: `Beer | Ironbeers`,
     beer: {
       beer,
       isSingle: true
