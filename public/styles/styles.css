@@ -59,13 +59,8 @@ section .central-block {
   object-fit: contain;
 }
 
-/* .row-beer {
-  height: 250px;
-} */
 
 .beer-container {
-  /* height: 300px; */
-  /* width: 400px; */
 }
 
 .food-pairing {
