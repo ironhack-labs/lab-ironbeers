@@ -1,10 +1,8 @@
 const path = require('path');
-
 const express = require('express');
 // using express-handlebars instead standard hbs installation
 // due facing several issues with frozen content on page reload
 const handlebars = require('express-handlebars');
-
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 
 const app = express();
@@ -67,6 +65,7 @@ app.get(`/beers/:id`, async (req, res) => {
 app.get('/beers/random', async (req, res) => {
   try {
     const beer = await punkAPI.getRandom();
+
     res.render('beers', {
       isRandom: true,
       title: 'Random Beer | Ironbeers',
