@@ -1,0 +1,12 @@
+<div class="container d-flex">
+    {{>beerpartial}}
+    <div class="d-flex flex-column justify-content-around">
+        <h4 class="card-title">Food Pairings</h4>
+        <ul>
+            {{#each this.food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p class="card-text"><span style="font-weight: bold;">Brewer Tips:</span> {{this.brewers_tips}}</p>
+    </div>
+</div>
