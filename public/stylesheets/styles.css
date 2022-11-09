@@ -5,3 +5,22 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.center{
+align-items: center;
+text-align: center;
+display: flex;
+flex-direction: column
+
+}
+
+.image{
+    margin-top: 20px;
+    width: 400px;
+    height: 400px;
+}
+
+.center a{
+  margin-top: 10px;
+    
+    }
