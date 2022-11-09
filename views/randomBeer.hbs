@@ -1,0 +1,29 @@
+<div class="mt-5 pt-5 container d-flex flex-row justify-content-center">
+    {{#each randomBeerData}}
+        <div class="col-2">   
+                <img 
+                class="h-25"
+                src="{{this.image_url}}" 
+                alt="{{this.name}}"/>
+        </div>
+        <div class="col-7">
+            <h4 class="mt-4 font-weight-bold">{{this.name}}</h4>
+            <br>
+            <p class="text-muted">{{this.tagline}}</p>
+            <p class="font-weight-bold">{{this.description}}</p>  
+            <br> 
+            <h5>Food Pairing</h5>
+            <br>
+            <ul class="list-group">
+                {{#each food_pairing}}
+                    <li class="ms-5">{{this}}</li>
+                {{/each}}
+            </ul>
+            <br>
+            <p><strong class="font-weight-bold">Brewers Tips: </strong>{{brewers_tips}}</p>
+        </div>
+    {{/each}}
+</div>
+
+
+
