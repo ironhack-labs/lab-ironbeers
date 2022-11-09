@@ -1,0 +1,12 @@
+<h1>Beers</h1>
+
+<ul>
+    {{#each beer}}
+    <li>{{this.name}}</li>
+    <img src={{this.image_url}}/>
+    <li>{{this.description}}</li>
+    <li>{{this.tagline}}</li>
+    {{else}}
+    <p>No beers yet!</p>
+    {{/each}}
+</ul>
