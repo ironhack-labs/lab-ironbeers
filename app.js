@@ -21,7 +21,11 @@ app.set('views', path.join(__dirname, 'views'));
 
 // app.set('view options', { layout: 'layouts/main' });
 
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static('/', 'public'));
+// app.use('/', express.static(path.join(__dirname, 'public')));
+// app.use('/*', express.static(path.join(__dirname, 'public')));
+app.use('/', express.static(path.join(__dirname, 'public')));
+app.use('/beers', express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 
 // Register the location for handlebars partials here:
@@ -29,26 +33,52 @@ app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
   res.render('index', {
-    isIndex: true
+    isIndex: true,
+    title: 'Ironbeers'
   });
 });
 
 app.get('/beers', async (req, res) => {
   try {
+    const beer = await punkAPI.getBeers();
+
     res.render('beers', {
       isBeers: true,
-      beers: await punkAPI.getBeers()
+      title: 'All Beers | Ironbeers',
+      beer: {
+        beer,
+        isBeer: true
+      }
     });
   } catch (err) {
     throw err;
   }
 });
 
-app.get('/random-beer', async (req, res) => {
+app.get(`/beers/:id`, async (req, res) => {
+  const id = req.params.id;
+  const beer = await punkAPI.getBeer(id);
+
+  res.render('beers', {
+    isRandom: true,
+    title: ` | Ironbeers`,
+    beer: {
+      beer,
+      isSingle: true
+    }
+  });
+});
+
+app.get('/beers/random', async (req, res) => {
   try {
-    res.render('randomBeer', {
+    const beer = await punkAPI.getRandom();
+    res.render('beers', {
       isRandom: true,
-      beer: await punkAPI.getRandom()
+      title: 'Random Beer | Ironbeers',
+      beer: {
+        beer,
+        isSingle: true
+      }
     });
   } catch (err) {
     throw err;

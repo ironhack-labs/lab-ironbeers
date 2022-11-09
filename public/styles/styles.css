@@ -1,9 +1,14 @@
 body {
-  height: 100vh;
+  /* height: 100vh; */
+}
+
+main {
+  margin-top: 10rem;
 }
 
 .navbar {
-  height: 5rem;
+  /* height: 5rem; */
+  /* margin-bottom: 5rem; */
 }
 
 section .central-block {
@@ -42,8 +47,25 @@ section .central-block {
   font-weight: 700;
 }
 
+.col-3 {
+  /* padding: 0;
+  margin-bottom: 0; */
+  /* border: 1px solid tomato; */
+}
+
 .beer-bottle {
-  height: 25rem;
+  width: 70%;
+  max-height: 250px;
+  object-fit: contain;
+}
+
+/* .row-beer {
+  height: 250px;
+} */
+
+.beer-container {
+  /* height: 300px; */
+  /* width: 400px; */
 }
 
 .food-pairing {

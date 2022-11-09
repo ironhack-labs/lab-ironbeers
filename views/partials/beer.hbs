@@ -1,0 +1,47 @@
+{{#with beer}}
+  {{#beer}}
+    <div class="row row-beer">
+      <div class='col-3 col-md-3 col-lg-3'>
+        <div class="text-center">
+          {{#if ../isBeer}}
+             <a href="/beers/{{id}}">
+          {{/if}}
+          {{#if image_url}}
+            <img src='{{image_url}}' alt='{{name}}' class='beer-bottle img-fluid' />
+          {{else}}
+            <img
+              src='https://www.systempack.de/fileadmin/katalog/Bier/Einweg/330ml_Longneck_pivo_CC26_gruen_EW_0811.jpg'
+              alt='Beer Placeholder'
+              class="beer-bottle"
+            />
+          {{/if}}
+          {{#if ../isBeer}}
+            </a>
+          {{/if}}
+        </div>
+      </div>
+
+      <div class='col-9 col-md-9 col-lg-9'>
+        <div class='row'>
+          <h2>{{name}}</h2>
+          <h5 class='text-muted mt-4'>{{tagline}}</h5>
+          <p class="mt-2">{{description}}</p>
+          {{#if ../isSingle}}
+            <p>
+              <h5>Food Pairing</h5>
+              <ul class="food-pairing">
+                {{#each food_pairing}}
+                  <li>{{.}}</li>
+                {{/each}}
+              </ul>
+            </p>
+            <p>
+              <strong>Brewers Tips:</strong> {{brewers_tips}}
+            </p>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/beer}}
+{{/with}}
