@@ -1,0 +1,12 @@
+<ul class="list-group beers">
+    {{#each beer}}
+    <li class="list-group-item">{{this.name}}</li>
+    <div class="text-center">
+        <img class="rounded" src={{this.image_url}} />
+    </div>
+    <li class="list-group-item">{{this.description}}</li>
+    <li class="list-group-item">{{this.tagline}}</li>
+    {{else}}
+    <p>No beers yet!</p>
+    {{/each}}
+</ul>
