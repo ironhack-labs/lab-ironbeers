@@ -1,10 +1,25 @@
 <div>
-    <div class="text-center">
-        <img src="/images/beer.png" class="img-fluid rounded beer" alt="Big beer in a glass">
+  <div class='container'>
+    <div class='d-flex flex-column align-items-center pt-5'>
+      <img src='/images/beer.png' alt='' class='col-6 m-3' />
     </div>
-    <nav class="navbar">
-        <a type="button" class="btn btn-dark button-beer" href="/beers">Check the Beers!</a>
-        <a type="button" class="btn btn-dark button-random" class="site-button" href="/random-beer">Check a Random
-            Beer</a>
-    </nav>
+    <div class='d-flex flex-column align-items-center mt-5'>
+      <a
+        class='nav-link text-white text-center col-6 col-md-5 col-lg-3 mt-2'
+        aria-current='page'
+        href='/beers'
+      ><button
+          type='button'
+          class='btn btn-primary text-white col-12 col-md-10'
+        >Check the Beers!</button></a>
+      <a
+        class='nav-link text-white text-center col-6 col-md-5 col-lg-3 mt-3'
+        aria-current='page'
+        href='/random-beer'
+      ><button
+          type='button'
+          class='btn btn-primary text-white col-12 col-md-10'
+        >Check a Random Beer</button></a>
+    </div>
+  </div>
 </div>

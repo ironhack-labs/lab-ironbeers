@@ -1,11 +1,18 @@
-<ul class="list-group beers">
+<ul class="list-group beers ">
     {{#each beer}}
     <li class="list-group-item">{{this.name}}</li>
+    <div class="d-flex flex-row ">
     <div class="text-center">
-        <img class="rounded" src={{this.image_url}} />
+        <img class="rounded col-5" src={{this.image_url}} />
     </div>
-    <li class="list-group-item">{{this.description}}</li>
+    <div class="d-flex  align-items-center col-8">
+        <div class="d-flex flex-column align-items-center">
+<li class="list-group-item col-8">{{this.description}}</li>
     <li class="list-group-item">{{this.tagline}}</li>
+    </div>
+    </div>
+    </div>
+    
     {{else}}
     <p>No beers yet!</p>
     {{/each}}
