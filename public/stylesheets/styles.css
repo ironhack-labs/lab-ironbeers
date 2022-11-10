@@ -3,5 +3,38 @@ white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
 */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.img-beer {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    margin-top: 30px;
+}
+
+.buttons-main {
+    display: flex;
+    justify-content: center;    
+}
+.buttons-main a {
+    margin: 30px 20px;
+
+}
+button {
+    color: #f7f9f9;
+    margin: 20px;
+    padding: 10px;
+    background-color: #2081c3;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.beer-container {
+    /* display: flex;
+    justify-content: center; */
+    align-items: center;
+    margin-left: 50%;
+}
