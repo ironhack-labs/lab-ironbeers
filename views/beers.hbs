@@ -1,0 +1,10 @@
+<div class="beers">
+    {{#each beer}}
+        <img class="beer-image" src="{{this.image_url}}">
+        <article class="description">
+            <h1 class="text">{{this.name}}</h1> 
+            <p class="text-dimmed">{{this.tagline}}</p>
+            <p class="text">{{this.description}}</p>
+        </article>
+    {{/each}}
+</div>
