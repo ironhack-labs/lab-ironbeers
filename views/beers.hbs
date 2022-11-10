@@ -1,0 +1,11 @@
+<h1 class="text-center m-5">Beers List</h1>
+
+<div class="row beers-container">
+  
+  {{#each beers}}
+    {{> beerpartial this}}
+  {{/each}}
+
+  {{> beerpartial singleBeer}}
+
+</div>
