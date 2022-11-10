@@ -1,0 +1,21 @@
+{{!-- 
+    {{#each beerSliced}} 
+       <p>{{this.name}}</p> 
+       <p> {{this.description}}</p> 
+       <p>{{this.tagline}}</p>
+    
+    <img src={{this.image_url}} alt="image of beer">
+
+    {{/each}} --}}
+
+
+<div class="index-container">
+    {{#each beerSliced}}
+        <div class="beer">
+            <li>
+                {{!-- "this" refers to the CURRENT beer in each loop --}}
+                {{> beerpartial this }}
+            </li>
+        </div>
+    {{/each}}
+</div>
