@@ -5,3 +5,27 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+img {
+    width: 20%;
+}
+
+
+.logo {
+    width: 300px;
+}
+
+.random-image {
+    width: 150px;
+}
+
+.random p {
+    font-size: small;
+}
+
+.beerimg {
+    width: 40%;
+}
+
+
+

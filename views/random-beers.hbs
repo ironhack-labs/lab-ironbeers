@@ -1,0 +1,15 @@
+<div class="mt-5 pt-5 container d-flex flex-row justify-content-center">
+    {{#each beersInfo}}
+        <div class="col-2">
+                <img
+                class="h-25"
+                src="{{this.image_url}}"
+                alt="{{this.name}}"/>
+        </div>
+        <div class="col-7">
+            <h4 class="mt-4 font-weight-bold">{{this.name}}</h4>
+            <br>
+            <p class="text-muted">{{this.tagline}}</p>
+            <p class="font-weight-bold">{{this.description}}</p>
+    {{/each}}
+</div>
