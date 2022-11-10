@@ -1,9 +1,3 @@
-<h1>BEERS</h1>
-<div>
-    {{#each beers}}
-        <img src="{{image_url}}" alt="">
-        <p>{{name}}</p>
-        <cite>{{tagline}}</cite>
-        <p>{{description}}</p>
-    {{/each}}
+<div class="beers-all">
+    {{> beerPartial this}}
 </div>

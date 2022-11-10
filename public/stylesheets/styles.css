@@ -14,17 +14,130 @@ font-family: Arial, Helvetica, sans-serif;
 
 html {
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.25em;
+    background-color: #f7f9f9;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 2em;
+}
+
+img[alt] {
+    color: #bfbfbf;
+    font-style: italic;
+}
+
+nav, footer {
+    width: 100%;
+    padding: 2vh 4vw;
+    display: flex;
+    justify-content: flex-start;
+    position: sticky;
 }
 
 nav {
     background-color: #2882C1;
-    padding: 2vh 4vw;
-    display: flex;
-    justify-content: flex-start;
+    box-shadow: 0 0 10px;
+    top: 0;
+}
+
+footer {
+    background-color: #0a2c42;
+    color: #f7f9f9;
+    position: fixed;
+    bottom: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 nav a {
-    text-decoration: none;
+    font-weight: bold;
     color: #f7f9f9;
     margin: 0 4vw;
+}
+
+.index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index img {
+    width: 25%;
+    margin: 2%;
+}
+
+.index a {
+    background-color: #2882C1;
+    color: #f7f9f9;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 3vh 3vw;
+    margin: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0.1em 0.25em black;
+}
+
+.beer-title {
+    margin-bottom: 1em 0;
+}
+
+.beer-title p {
+    color: #bfbfbf;
+}
+
+.beers-all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.beers-all > .beer-card {
+    width: 30vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2em;
+    margin: 1em;
+}
+
+.beers-all > .beer-card img {
+    height: 40%;
+    margin-bottom: 2em;
+    object-fit: contain;
+}
+
+.random-beer {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.random-beer > .beer-card {
+    display: flex;
+    padding: 2em;
+    margin: 3em;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    min-height: 10vh;
+    height: fit-content;
+}
+
+.random-beer > .beer-card img {
+    height: 60vh;
+    object-fit: contain;
+    margin-right: 6em;
+}
+
+.random-beer > .beer-card section {
+    min-height: 10vh;
+    height: fit-content;
+}
+
+.random-beer > .beer-card p {
+    margin: 1.5em 0;
 }
