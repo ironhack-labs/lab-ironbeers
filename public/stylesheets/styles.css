@@ -5,3 +5,32 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.navigationBar {
+  background-color: #2081c3;
+  color: white;
+  text-decoration: none;
+}
+li {
+  display: inline;
+}
+body {
+  background-color: white;
+  color: black;
+}
+
+footer {
+  background-color: #0a2c42;
+  color: white;
+}
+
+button {
+  background-color: #2081c3;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
