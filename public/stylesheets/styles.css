@@ -38,7 +38,8 @@ footer {
   margin: 20px;
 }
 
-.button {
+button {
+  width: 200px;
   background-color: #2081c3;
   color: white;
   text-decoration: none;
@@ -48,4 +49,7 @@ footer {
   margin: 10px;
   cursor: pointer;
   box-shadow: 2px 2px rgba(228, 233, 237, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
