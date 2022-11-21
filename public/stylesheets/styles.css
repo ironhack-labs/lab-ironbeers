@@ -5,3 +5,117 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.uk-navbar-nav {
+    position:fixed;
+    background-color: #2081c3;
+    margin: 0;
+    padding: 20px;
+    border-top: 1px solid white;
+    box-shadow: 2px 2px 5px #999;
+    width: 100%;
+}
+
+.uk-navbar-nav li{
+    display: inline;
+    padding: 10px;
+}
+
+.uk-navbar-nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px;
+    color: white;
+    background-color: #2081c3;
+    text-decoration: none;
+  }
+
+  
+  /* Footer */
+
+  footer {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+    line-height:50px;
+    background: #0a2c42;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  footer p{
+    padding-left: 20px;
+  }
+
+  /* Home container */
+
+  .home-container {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0px 50px 0px;
+  }
+
+  .home-container img{
+    width: 300px;
+    height: 300px;
+  }
+
+/* Bootoms Check */
+
+.button-check-the-beers {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.button-check-the-beers input {
+    width: 130px;
+    height: 30px;
+    background-color: #2081c3;
+    border: none;
+    color: white;
+    box-shadow: 2px 2px 5px #999;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-check-the-beers a {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 130px;
+    height: 30px;
+    background-color: #2081c3;
+    border: none;
+    color: white;
+    box-shadow: 2px 2px 5px #999;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.button-check-Random-beers {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 30px 0px;
+}
+
+.button-check-Random-beers input {
+    width: 180px;
+    height: 30px;
+    background-color: #2081c3;
+    border: none;
+    color: white;
+    box-shadow: 2px 2px 5px #999;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
