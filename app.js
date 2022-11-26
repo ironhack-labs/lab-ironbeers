@@ -15,6 +15,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Register the location for handlebars partials here:
 
 // ...
+// terminar depois, lab incompleto
 
 // Add the route handlers here:
 
