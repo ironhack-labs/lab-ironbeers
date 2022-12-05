@@ -1,0 +1,18 @@
+<div class="random-beer">
+
+<ul class="uk-card uk-card-default uk-card-body uk-margin-left">
+    {{#each randomBeer}}
+    <img src="{{image}}" alt="Photo">
+    <h2>{{name}}</h2>
+    <br>
+    <li><b>Description:</b> {{description}}</li>
+    <br>
+    <li><b>Tagline:</b> {{tagline}}</li>
+    <br>
+    <li><b>Foor pairing:</b> {{food_pairing}}</li>
+    <br>
+    <li><b>Brewers tips:</b> {{brewers_tips}}</li>
+    {{/each}}
+</ul>
+
+</div>
