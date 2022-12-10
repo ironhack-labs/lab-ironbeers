@@ -22,11 +22,12 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-app.get('/beer', (req, res) => {
-  res.render('beer');
+app.get('/beers', (req, res) => {
+  res.render('beers');
 });
 
 app.get('/random-beer', (req, res) => {
+  
   res.render('random-beer');
 });
 
