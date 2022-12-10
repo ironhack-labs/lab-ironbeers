@@ -1,8 +1,5 @@
 <section>
-  <img src={{image_url}} alt={{name}} />
-  <h1>{{name}}</h1>
-  <small>{{tagline}}</small>
-  <p>{{description}}</p>
+  {{> beerpartial this}}
   <h3>Food Pairing</h3>
   <ul>
       {{#each food_pairing}}
