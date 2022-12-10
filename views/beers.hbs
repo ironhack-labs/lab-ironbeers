@@ -1,0 +1,17 @@
+<div>
+    {{#each beersFromApi}}
+    <img src="{{this.image_url}}" alt="">
+    {{!-- {{#each beersFromApi}} --}}
+    {{!-- {{this.image_url}} --}}
+    {{this.name}}
+    {{this.tagline}}
+    {{this.description}}
+    {{/each}}
+</div>
+{{!-- <div>
+    {{#each beersFromApi}}
+{{this.name}}
+{{this.description}}
+{{this.tagline}}
+{{/each}}
+</div> --}}
