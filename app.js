@@ -23,8 +23,12 @@ app.get('/', (req, res) => {
 });
 
 app.get('/beers', (req, res) => {
- punkAPI.getBeer()
-  res.render('beers');
+ punkAPI
+ .getBeers()
+ // a promise , then render the page, storing in a variable 
+ .then(beersFromApi => res.render('beers', {beersFromApi}))
+ // then catch always, next makes there be a page for errors and will be added later
+ .catch(error => console.log(error));
 });
 
 app.get('/random-beer', (req, res) => {
@@ -32,4 +36,5 @@ app.get('/random-beer', (req, res) => {
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
+
 
