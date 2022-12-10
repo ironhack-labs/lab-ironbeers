@@ -22,12 +22,16 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-app.get('/beers', (req, res) => {
-  res.render('beers');
+app.get('/beers', async (req, res) => {
+  try {
+    const beersReq = await punkAPI.getBeers();
+    res.render('beers', { beersReq });
+  } catch (error) {
+    error.log(error);
+  }
 });
 
 app.get('/random-beer', (req, res) => {
-  
   res.render('random-beer');
 });
 
