@@ -1,0 +1,13 @@
+<section>
+  <img src={{image_url}} alt={{name}} />
+  <h1>{{name}}</h1>
+  <small>{{tagline}}</small>
+  <p>{{description}}</p>
+  <h3>Food Pairing</h3>
+  <ul>
+      {{#each food_pairing}}
+      <li>{{this}}</li>
+      {{/each}}
+  </ul>
+  <p><strong>Brewers Tips:</strong> {{brewers_tips}}</p>
+</section>

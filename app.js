@@ -31,8 +31,13 @@ app.get('/beers', async (req, res) => {
   }
 });
 
-app.get('/random-beer', (req, res) => {
-  res.render('random-beer');
+app.get('/random-beer', async (req, res) => {
+  try {
+    const [randomBeer] = await punkAPI.getRandom();
+    res.render('random-beer', randomBeer);
+  } catch (error) {
+    error.log(error);
+  }
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
