@@ -5,3 +5,56 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  nav {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 1rem 2rem; 
+    background: #2081c3; 
+  
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none; 
+  }
+  
+  nav li {
+    padding-left: 1rem; 
+  }
+
+  a {
+    color: #f7f9f9;
+    text-decoration: none;
+  }
+
+
+  img {
+     padding-top: 40px;
+     padding-bottom: 40px;
+  }
+
+.myButton {
+    background-color: #2081c3;
+    color: #f7f9f9;
+    padding-top: 20px;
+    padding-top: 20px;
+}
+
+footer{
+    background-color:#0a2c42 ;
+    color:  #f7f9f9;
+    padding: 10px 10px 10px 10px;
+    text-align: left;
+}
