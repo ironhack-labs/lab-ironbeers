@@ -105,11 +105,12 @@ li a:active {
     display: flex;
     flex-direction: row; 
     align-items:  flex-start;
+    justify-content: center;
     margin-top: 70px;
 
 } 
 #beerCardImages {
-    margin-left: 350px;
+    margin-left: 100px;
     margin-right: 60px;
     width: 50px;
 }
