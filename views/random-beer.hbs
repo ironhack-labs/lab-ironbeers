@@ -1,5 +1,7 @@
 {{#each randomBeer}}
 <div id="generalContainer">
+     <div id="rowContainer">
+   
 <div id="beerImages">
    
     <img id="beerCardImages" src="{{this.image_url}}" alt="">
@@ -7,11 +9,12 @@
     {{!-- {{this.image_url}} --}}
 </div>
 <div id="contentContainer">
-    <p class="beerContent">Beer Name: {{this.name}}</p> <br>
-    <p class="beerContent">What makes it special? {{this.tagline}}</p> <br>
+    <p class="beerContent" id="nameContent">Beer Name: {{this.name}}</p> 
+    <p class="beerContent">What makes it special? {{this.tagline}}</p>
     <p class="beerContent"> Description: {{this.description}}</p>
     <p class="beerContent">Food pairing: {{this.food_pairing}}</p>
     <p class="beerContent">Brewers tips: {{this.brewers_tips}}</p>
+</div>
 </div>
    
     {{/each}}
