@@ -1,5 +1,5 @@
 <div>
-    {{#each beersFromApi }}
-    <li>{{this.name}} <img src={{this.image_url}}></li>
+   {{#each beersFromApi }}
+        {{> beerpartials this}}
     {{/each}}
 </div>
