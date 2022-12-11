@@ -1,10 +1,11 @@
-{{!-- random selection of beer --}}
-<div>
+{{! random selection of beer }}
+<div id='beerSelection'>
+  <div class='beerCard'>
 
-    <img src='{{this.image_url}}' alt='Beer bottle' class="beerImage" />
-    <h2 class='beerName'><a href="/more-info">{{this.name}}</a></h2>
-    <p class='beerDescription'>{{this.description}}</p>
+    <img src='{{this.image_url}}' alt='Beer bottle' class='beerImage' />
+    <h2 class='beerName'><a href='/beers/:id'>{{this.name}}</a></h2>
     <h5 class='beerTagline'>{{this.tagline}}</h5>
+    <p class='beerDescription'>{{this.description}}</p>
 
+  </div>
 </div>
-

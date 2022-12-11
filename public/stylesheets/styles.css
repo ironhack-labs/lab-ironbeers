@@ -1,58 +1,104 @@
 html {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
-color: white;
-background-color: #2081c3;
-list-style: none;
-display: flex;
-justify-content: flex-start;
+  color: #fff;
+  background-color: #2081c3;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
 }
 
 li {
-    margin: 30px;
-    font-size: 20px;
+  margin: 30px;
+  font-size: 20px;
 }
 
-
 .nav-links > a:link {
-    color: white;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .nav-links > a:visited {
-    color: white;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .nav-links > a:hover {
-    color: #0a2c42;
-    text-decoration: none;
+  text-decoration: none;
+  background-color: #0a2c42;
+  padding: 10px;
 }
-  
+
+.btn:hover {
+  background-color: #0a2c42;
+}
+
 .nav-links > a:active {
-    color: white;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
+  background-color: #0a2c42;
+}
+
+.active {
+  background-color: #0a2c42;
 }
 
 button {
-    background: #2081c3;
-    text-decoration: none;
-    border-radius: 4px;
-    padding: 10px 30px;
-    margin: 20px;
-    box-shadow: 2px 2px #bfbfbf;
+  background: #2081c3;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 10px 30px;
+  margin: 20px;
+  box-shadow: 2px 2px #bfbfbf;
 }
 
 .home-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
 }
 
+.beerType {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-dark-blue: #0a2c42;
-grey: #bfbfbf;
+.beerImage {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+.beerName a {
+  color: #000;
+  text-decoration: none;
+}
+
+.beerName a:hover {
+  background-color: #2081c3;
+  color: #fff;
+  padding: 10px;
+}
+
+.beerCard {
+  width: 400px;
+  padding: 30px;
+  margin: 10px;
+}
+
+.beerTagline {
+  color: #bfbfbf;
+}
+
+footer {
+  background-color: #0a2c42;
+  color: #fff;
+  padding: 20px;
+}
+
+/* dark-blue: #0a2c42; */
+/* grey: #bfbfbf; */
