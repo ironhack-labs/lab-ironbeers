@@ -3,11 +3,7 @@
 <div class='beerType'>
 
   {{#each beersFromApi}}
-    <img src='{{this.image_url}}' alt='Beer bottle' class="beerImage" />
-    <h2 class='beerName'>{{this.name}}</h2>
-    <p class='beerDescription'>{{this.description}}</p>
-    <h5 class='beerTagline'>{{this.tagline}}</h5>
-
+    {{> beerpartials this }}
   {{/each}}
 
 </div>

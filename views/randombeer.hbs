@@ -4,13 +4,9 @@
 
 
   {{#each getRandomBeer}}
-    <img src='{{this.image_url}}' alt='Beer bottle' class="beerImage" />
-    <h2 class='beerName'>{{this.name}}</h2>
-    <p class='beerDescription'>{{this.description}}</p>
-    <h5 class='beerTagline'>{{this.tagline}}</h5>
+   {{> beerpartials this}}
     <h5 class='food-pairing'>{{this.food_pairing}}</h5>
     <h5 class='brewer-tips'>{{brewers_tips}}</h5>
-
   {{/each}}
 
 </div>
