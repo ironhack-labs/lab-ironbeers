@@ -24,14 +24,15 @@ app.get('/', (req, res) => {
 
 app.get('/beers', (req, res) => {
   punkAPI
-  .getBeers({'abv_gt': 8})
+  .getBeers()
   .then(beersFromApi =>{
     console.log('Beers from the database: ', beersFromApi)
+    res.render('beers', {beer: beersFromApi});
   } )
-  res.render('beers');
+  .catch(error => console.log(error));
 })
   
-  // .catch(error => console.log(error));
+  
    
 
 
