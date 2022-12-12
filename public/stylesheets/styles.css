@@ -1,7 +1,29 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar-nav  {
+    background-color: rgba(83, 84, 87, 0.753);
+    overflow: hidden;
+    margin-bottom: 50px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .navbar-nav  a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  h1{
+    margin-bottom: 30px;
+    text-align: center;
+  }
