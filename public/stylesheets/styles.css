@@ -18,7 +18,6 @@ ul {
     padding: 0px; 
     display: block; 
     overflow: hidden; 
-    /* background: #dddddd; */
 }   
  
 li { 
@@ -30,28 +29,23 @@ li a {
     display:block; 
     padding:15px; 
     text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f7f9f9;
     font-size: 18px;
-   
-    /* background-color: #dddddd; */
 }
 
 li a:hover {
-    color: darkblue;
+    color: #0a2c42;
 }
 
 li a:active {
-    color: darkblue;
+    color: #0a2c42;
     font-weight: bold;
 }
 
-/* #navList:active {
-    color: green;
-} */
 
 #navBar {
-    background-color: lightskyblue;
+    background-color: #2081c3;
    
 }
 
@@ -68,20 +62,20 @@ li a:active {
 }
 
 .btnHome {
-    background-color: darkblue;
-    color: white;
+    background-color: #0a2c42;;
+    color: #f7f9f9;
     margin: 10px;
     text-decoration: none;
     padding: 10px;
     border-radius: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     width: 200px;
     text-align: center;
 }
 
 .btnHome:hover {
-    background-color: lightskyblue;
-    color: darkblue;
+    background-color: #2081c3;
+    color: #0a2c42;;
 }
 
 #beerCards {
@@ -97,8 +91,6 @@ li a:active {
     display: flex;
     flex-direction: column; 
     justify-content: flex-start;
-    
-
 }
 
 #rowContainer{
@@ -107,8 +99,8 @@ li a:active {
     align-items:  flex-start;
     justify-content: center;
     margin-top: 70px;
-
 } 
+
 #beerCardImages {
     margin-left: 100px;
     margin-right: 60px;
@@ -116,7 +108,7 @@ li a:active {
 }
 
 .beerContent {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     max-width: 500px;
     margin-top: -3px;
@@ -126,21 +118,31 @@ li a:active {
 #nameContent {
     font-weight: bold;
     font-size: 14px;
-    color: darkblue;
+    color: #0a2c42;;
 } 
 
-#footer {
-    background-color: red;
-    color: white;
-    padding-top: 5px;
-    padding-bottom: 200px;
-    margin-top: 130px;
-    margin-bottom: -10px;
-    height: 300px;
-    font-size: 14px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-
+ul {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
 }
 
+li {
+    text-decoration: dotted;
+}
+
+
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #bfbfbf;
+    color: #f7f9f9;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }

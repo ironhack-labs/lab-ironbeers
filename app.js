@@ -36,20 +36,11 @@ app.get('/random-beer', (req, res) => {
   punkAPI
     .getRandom()
     .then(randomBeer => {
-      // console.log('Beers from the database: ', beersFromApi);
+      console.log('Random beer from the database: ', randomBeer);
       res.render('random-beer', { randomBeer });
+      // res.render('random-beer', randomBeer);
     })
     .catch(error => console.log(error));
 });
-
-// app.get('/random-beer', (req, res) => {
-//   punkAPI
-//   .getRandom()
-//   .then(resFromAPI => {
-//    alert(beer[0].name)
-//     res.render('random-beer', { resFromAPI });
-//   })
-//   .catch(error => console.log(error));
-// });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
