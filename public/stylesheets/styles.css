@@ -45,12 +45,17 @@ font-family: Arial, Helvetica, sans-serif;
      padding-bottom: 40px;
   }
 
-.myButton {
-    background-color: #2081c3;
+button {
+    display: inline-block;
+    background: #2081c3;
     color: #f7f9f9;
-    padding-top: 20px;
-    padding-top: 20px;
-}
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
 
 footer{
     background-color:#0a2c42 ;
