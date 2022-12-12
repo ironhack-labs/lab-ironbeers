@@ -9,10 +9,10 @@
   "dependencies": {
     "express": "^4.17.1",
     "hbs": "^4.1.1",
+    "nodemon": "^2.0.20",
     "punkapi-javascript-wrapper": "^1.0.2"
   },
   "description": "![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Pachi2011/lab-ironbeers.git"

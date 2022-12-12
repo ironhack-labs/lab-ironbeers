@@ -3,11 +3,13 @@
 <ul>
   {{#each beer}}
 
-    <li>
+    {{> beerpartial this}} 
+
+    {{!-- <li>
       {{image}}
       {{name}}
       {{descriptipn}}
       {{tagline}}
-    </li>
+    </li> --}}
   {{/each}}
 </ul>
