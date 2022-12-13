@@ -1,4 +1,3 @@
- {{#each randomBeer}}
 <div id="generalContainer">
      
     <div id="rowContainer">
@@ -8,21 +7,21 @@
         </div>
 
         <div id="contentContainer">
-            <p class="beerContent" id="nameContent">Beer Name: {{name}}</p> 
-            <p class="beerContent">What makes it special? {{tagline}}</p>
-            <p class="beerContent"> Description: {{description}}</p>
-            <p class="beerContent">Food pairing: 
-                <ul>
-                    <li>{{food_pairing.[0]}}</li>
+            <p class="nameContent">{{tagline}}</p> 
+            <p class="beerContent" id="beerContentGrey">Hello My Name Is {{name}}</p>
+            <p class="beerContent">{{description}}</p>
+            <p class="beerContent">
+                <h4 class="beerContent">Food pairing:</h4>
+                <ul class="beerContent">
+                    <li class="random-beer-food-pairing">{{food_pairing.[0]}}</li>
                     <br>
-                    <li>{{food_pairing.[1]}}</li>
+                    <li class="random-beer-food-pairing">{{food_pairing.[1]}}</li>
                     <br>
-                    <li>{{food_pairing.[2]}}</li>
+                    <li class="random-beer-food-pairing">{{food_pairing.[2]}}</li>
                 </ul>
                 
                 </p>
-            <p class="beerContent">Brewers tips: {{brewers_tips}}</p>
+            <p class="beerContent"><b>Brewers tips: </b>{{brewers_tips}}</p>
         </div>
     </div>
-{{/each}}
 </div>

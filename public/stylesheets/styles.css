@@ -8,28 +8,25 @@ font-family: Arial, Helvetica, sans-serif;
 
 html {
     margin: -20px -10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
-ul { 
-    list-style-type: none; 
-    text-align: center; 
-    margin: 0auto; 
-    padding: 0px; 
+#navList { 
+    margin: 20px; 
     display: block; 
     overflow: hidden; 
 }   
  
-li { 
+.navListItem { 
     display: inline-block;
     list-style: none;
 }
   
 li a {
-    display:block; 
-    padding:15px; 
+    display: block; 
+    padding: 15px; 
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
     color: #f7f9f9;
     font-size: 18px;
 }
@@ -38,21 +35,15 @@ li a:hover {
     color: #0a2c42;
 }
 
-li a:active {
-    color: #0a2c42;
-    font-weight: bold;
-}
-
-
-#navBar {
+#navbar {
     background-color: #2081c3;
-   
 }
 
 #beerImageHome {
     width: 30%;
     margin-top: 60px;
     margin-bottom: 30px;
+    align-items: center;
 }
 
 #blockStyle {
@@ -62,30 +53,26 @@ li a:active {
 }
 
 .btnHome {
-    background-color: #0a2c42;;
+    background-color: #2081c3;;
     color: #f7f9f9;
     margin: 10px;
     text-decoration: none;
     padding: 10px;
     border-radius: 10px;
-    font-family: Arial, Helvetica, sans-serif;
     width: 200px;
     text-align: center;
 }
 
 .btnHome:hover {
-    background-color: #2081c3;
-    color: #0a2c42;;
+    background-color: #0a2c42;
+    color: #f7f9f9;;
 }
 
 #beerCards {
     display: flex;
     flex-direction: column; 
     justify-content: flex-start;
-
 }
-
-
 
 #generalContainer {
     display: flex;
@@ -108,26 +95,27 @@ li a:active {
 }
 
 .beerContent {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     max-width: 500px;
     margin-top: -3px;
     line-height: 17px;
     }
 
-#nameContent {
+.nameContent {
     font-weight: bold;
-    font-size: 14px;
-    color: #0a2c42;;
+    font-size: 18px;
 } 
 
-ul {
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+#beerContentGrey{
+    color: #bfbfbf;
 }
 
-li {
+.beerContentBold {
+    font-weight: bold;
+}
+
+
+li #random-beer-food-pairing {
     text-decoration: dotted;
 }
 
@@ -140,9 +128,8 @@ footer {
     bottom: 0;
     width: 100%;
     height: 50px;
-    background-color: #bfbfbf;
-    color: #f7f9f9;
+    background-color: #0a2c42;
+    color: #bfbfbf;
     font-size: 1rem;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 30px;
   }

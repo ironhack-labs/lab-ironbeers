@@ -37,8 +37,7 @@ app.get('/random-beer', (req, res) => {
     .getRandom()
     .then(randomBeer => {
       console.log('Random beer from the database: ', randomBeer);
-      res.render('random-beer', { randomBeer });
-      // res.render('random-beer', randomBeer);
+      res.render('random-beer', randomBeer[0]);
     })
     .catch(error => console.log(error));
 });
