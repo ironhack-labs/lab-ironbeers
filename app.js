@@ -42,14 +42,14 @@ app.get('/random-beer', (req, res) => {
     .getRandom()
     .then(randomBeer => {
       console.log(randomBeer);
-      const [a,b,c] = randomBeer[0].food_pairing;
-      console.log(a);
-      res.render('random-beer', { randomBeer});
+      const [a, b, c] = randomBeer[0].food_pairing;
+      randomBeer[0].a = a;
+      randomBeer[0].b = b;
+      randomBeer[0].c = c;
+      res.render('random-beer', { randomBeer });
     })
-    .catch(error => console.log(error));   
-    
+    .catch(error => console.log(error));
 });
-
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
 console.log(4);
