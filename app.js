@@ -25,12 +25,22 @@ app.get('/', (req, res) => {
 app.get('/beers', (req, res) => {
   punkAPI
     .getBeers()
-    .then((displayBeers) => {
+    .then(displayBeers => {
       console.log(displayBeers);
       const data = {
-       beersArr: displayBeers
-      }
+        beersArr: displayBeers
+      };
       res.render('beers', data);
+    })
+    .catch(error => console.log(error));
+});
+
+app.get('/random-beers', (req, res) => {
+  punkAPI
+    .getRandom()
+    .then(randomBeer => {
+      // console.log('random-beers')
+      res.render('random-beers', randomBeer[0]);
     })
     .catch(error => console.log(error));
 });
