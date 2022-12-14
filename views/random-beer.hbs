@@ -1,10 +1,8 @@
 <ul>
     {{#each responseFromAPI}}
-        <li><img src="{{image_url}}" /></li>
-        <li>{{name}}</li>
-        <li>{{description}}</li>
-        <li>{{tagline}}</li>
-        <li>{{food_pairing}}</li>
-        <li>{{brewers_tips}}</li>
+    {{> beerpartial}}
+    <li></li>
+    <li>{{food_pairing}}</li>
+    <li>{{brewers_tips}}</li>
     {{/each}}
 </ul>
