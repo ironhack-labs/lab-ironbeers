@@ -1,0 +1,22 @@
+{{!-- <div>
+    <h1>{{name}}</h1>
+    {{#if image_url}}
+    <img src="{{image_url}}" alt="">
+    {{else}}
+    <h3>Image on Request (our bartenders are busy)</h3>
+    {{/if}}
+    <p>{{description}}</p>
+    <p>{{food_pairing}}</p>
+    <p>{{brewers_tips}}</p>
+    <h3>{{tagline}}</h3>
+</div> --}}
+
+{{> beerpartial}}
+
+<p>Food pairing:</p>
+<ul>
+    {{#each food_pairing}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+<p>Brewer's tips: {{brewers_tips}}</p>

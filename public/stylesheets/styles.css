@@ -1,7 +1,79 @@
-/*
-white: #f7f9f9;
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background-color:  #2081c3;
+    height:4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+}
+nav a{
+    padding-left: 2rem;
+    color:white;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+
+.buttons{
+    background-color: #2081c3;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 5%;
+    margin: 20px;
+}
+.home{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+#img-beer{
+    padding:6rem;
+    width:400px;
+    
+}
+
+.beers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.beer{
+    
+    margin: 2rem;
+    width: 30%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.beer img{
+    margin:1rem;
+    height:200px;
+    width: 90px
+}
+.img-des{
+    display:flex;
+
+
+}
+/* white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+grey: #bfbfbf; */
+
