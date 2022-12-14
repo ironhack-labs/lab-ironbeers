@@ -1,7 +1,33 @@
-<nav>
-        <a href="/">Home</a>
-        <a href="/beers">Beers</a>
-        <a href="/random-beer">Random Beer</a>
-    </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronBeers</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-items">
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/beers" title="View All Beers">Beers</a></li>
+                    <li><a href="/random-beer" title="Show me a random beer">Random Beer</a></li>
+                </ul>
+            </nav>
+        </div>
 
-{{{body}}}
+        <div class="flex-items">
+            {{{body}}}
+        </div>
+
+        <div class="flex-items">
+            Developed by Laura and Sarah
+        </div>
+
+    </div>
+
+</body>
+</html>

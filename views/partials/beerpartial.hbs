@@ -1,5 +1,12 @@
-<a href="/beers/beer-{{id}}"><img src="{{image_url}}" alt=""></a>
-<li>{{name}}</li>
-<li>{{description}}</li>
-<li>{{tagline}}</li>
-<li>Something</li>
+{{#if image_url}}
+<div id="beerImg">
+    <a href="/beers/beer-{{id}}">
+        <img src="{{image_url}}" alt="{{name}}" width="100px">
+    </a>
+</div>
+{{/if}}
+<div id="beerInfo">
+    <h1>{{name}}</h1>
+    <p>{{description}}</p>
+    <p>{{tagline}}</p>
+</div>
