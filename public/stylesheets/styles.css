@@ -89,11 +89,11 @@ footer {
     width: auto;
 }
     
-.beer-container h2 {
+.beer-container h1 {
         font-size: 0.8rem;
 }
 
-.beer-container h3 {
+.beer-container h2 {
         color: rgb(162, 162, 162);
         font-size: 0.6rem;
 }
@@ -101,6 +101,10 @@ footer {
 .beer-container p {
         margin-top: 1rem;
         font-size: 0.6rem;
+}
+
+.beer-container .randomBeer-part {
+    visibility: hidden;
 }
 
 /* random beer page */
@@ -129,11 +133,11 @@ footer {
     width: 28rem;
 }
 
-.randombeer-page .beer-text h2 {
+.randombeer-page .beer-text h1 {
     font-size: 1.2rem;
 }
 
-.randombeer-page .beer-text h3 {
+.randombeer-page .beer-text h2 {
     font-size: 1rem;
     margin-top: 1.5rem;
 }
@@ -142,7 +146,6 @@ footer {
     font-size: 0.8rem;
 }
 
-.randombeer-page .randombeer-info {
-    position: relative
-    width: 28rem;
+.randombeer-page .randomBeer-part {
+    visibility: visible;
 }
