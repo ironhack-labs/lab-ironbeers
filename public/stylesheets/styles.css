@@ -69,7 +69,8 @@ nav ul li {
   text-align: center;
 }
 
-.home a {
+.home a,
+.details__beer a {
   background-color: #2081c3;
   padding: 10px;
   color: #f7f9f9;
@@ -104,12 +105,13 @@ nav ul li {
   height: 250px;
 }
 
-.beer__list--beer-tagline {
+.beer__list--beer-tagline,
+.details__beer--info-tagline {
   color: #bfbfbf;
   font-weight: bold;
 }
 
-.random__beer {
+.details__beer {
   width: 80vw;
   /* justify-self: flex-start; */
   align-self: center;
@@ -119,17 +121,17 @@ nav ul li {
   margin: 50px 0;
 }
 
-.random__beer span {
+.details__beer span {
   font-weight: bold;
 }
-.random__beer-img {
+.details__beer-img {
   padding: 0 50px;
 }
-.random__beer img {
+.details__beer img {
   width: 150px;
   max-height: 450px;
 }
-.random__beer-info {
+.details__beer-info {
   display: flex;
   flex-direction: column;
   gap: 20px;

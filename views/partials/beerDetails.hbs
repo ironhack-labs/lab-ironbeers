@@ -1,0 +1,28 @@
+<div class='details__beer'>
+  <div class='details__beer-img'>
+    <img src='{{beer.image_url}}' alt='{{beer.name}}' />
+  </div>
+  <div class='details__beer-info'>
+    <div class='details__beer--info-title'><h2>{{beer.name}}</h2></div>
+    <div class='details__beer--info-tagline'>{{beer.tagline}}</div>
+    <div class='details__beer--info-description'>{{beer.description}}</div>
+    <div class='details__beer--info-pairing'>
+      <span>Food Pairing</span>
+      <div>
+        <ul>
+          {{#each beer.food_pairing}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+
+    </div>
+    <div class='details__beer--info-brewersTips'><span>Brewers Tips:</span>
+      {{beer.brewers_tips}}</div>
+    {{#if this.goback}}
+      <div>
+        <a href='/beers'>Go Back</a>
+      </div>
+    {{/if}}
+  </div>
+</div>
