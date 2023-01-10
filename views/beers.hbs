@@ -1,0 +1,22 @@
+<h1>Beers</h1>
+<div class = 'list-beers'>
+    
+    {{#each this as |beer|}}
+    <div class = 'each-beer'>
+        <img class = 'img-beer' src="{{beer.image_url}}" alt="{{beer.name}}-beer">
+        <h2>{{beer.name}}</h2>
+        <p>{{beer.description}}</p>
+        <p>{{beer.tagline}}</p>
+    </div>
+     {{/each}}
+
+      {{!-- {{#each beersFromApi}}
+    <div class = 'each-beer'>
+        <img class = 'img-beer' src="{{this.image_url}}" alt="{{this.name}}-beer">
+        <h2>{{this.name}}</h2>
+        <p>{{this.description}}</p>
+        <p>{{this.tagline}}</p>
+    </div>
+     {{/each}} --}}
+</div>
+</div>
