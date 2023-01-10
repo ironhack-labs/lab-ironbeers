@@ -1,0 +1,10 @@
+<div class="allpartials">
+{{#each this as |beer|}}
+<div class="partialcard">
+  <img class="imgcard" src="{{beer.image_url}}">
+  <a class="infocard" href="/beers/beer-{{beer.id}}">{{beer.name}}</a>
+  <p class="infocard">{{beer.description}}</p>
+  <p class="infocard">{{beer.tagline}}</p>
+  </div>
+  {{/each}}
+</div>

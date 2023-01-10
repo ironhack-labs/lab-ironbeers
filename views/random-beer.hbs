@@ -1,12 +1,15 @@
+<!--{{> beerpartial }} me salen 3 imagenes--> 
+<div>
+  {{#each this as |beer|}}
+  <img src="{{beer.image_url}}">
+  <h1>{{beer.name}}</h1>
+  <p>{{beer.description}}</p>
+  <p>{{beer.tagline}}</p>
+  {{/each}}
+</div>
 
 <div>
-      {{#each this as |beer|}}
-        <img src="{{beer.image_url}}">
-        <h1>{{beer.name}}</h1>
-        <p>{{beer.description}}</p>
-        <p>{{beer.tagline}}</p>
-        {{/each}}
-<h3>Food Pairing</h3> <!-- si no lo hago así, se me cuatriplica este h3 -->
+<h3>Food Pairing</h3> 
 <ul>
     {{#each this as |beer|}}
             {{#each food_pairing}}
