@@ -1,13 +1,5 @@
-<!--{{> beerpartial }} me salen 3 imagenes--> 
 <div>
-  {{#each this as |beer|}}
-  <img src="{{beer.image_url}}">
-  <h1>{{beer.name}}</h1>
-  <p>{{beer.description}}</p>
-  <p>{{beer.tagline}}</p>
-  {{/each}}
-</div>
-
+  {{> beerpartial }}
 <div>
 <h3>Food Pairing</h3> 
 <ul>
@@ -18,6 +10,6 @@
         </ul>
     {{/each}}
 </div>
-      
+</div>  
   
   
