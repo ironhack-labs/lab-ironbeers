@@ -47,7 +47,7 @@ body{
     color: var(--white);
 }
 
-.beer-text {
+.beers-page .beer-text {
     height: 200px;
     overflow-y: scroll;
     margin: 20px 0;
@@ -58,7 +58,7 @@ body{
 }
 
 .beer-text .tagline {
-    color: lightgray;
+    color: var(--grey);
 }
 
 .beers-page > div{
@@ -68,7 +68,7 @@ body{
     justify-content: space-around;
 }
 
-.beer-card {
+.beers-page .beer-card {
     width: 420px;
     padding: 20px;
     margin: 20px;
@@ -77,9 +77,34 @@ body{
     text-align: start;
 }
 
-.beer-card img {
+.beers-page .beer-card img {
     height: 250px;
     width: min-content;
     margin-left: 120px;
 }
+
+.random-beer-page .beer-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 100px 0;
+}
+
+.random-beer-page .beer-card img {
+    height: 250px;
+    width: min-content;
+}
+
+.random-beer-page .beer-text {
+    margin: 50px 0 0 50px;
+}
+
+.random-beer-page .extra-text {
+    margin: 10px 60px 0 220px;
+}
+
+.random-beer-page .extra-text .parr2 {
+    margin-top: 20px;
+}
+
 
