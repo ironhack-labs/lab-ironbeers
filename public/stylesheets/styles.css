@@ -5,3 +5,51 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar {
+  background-color: #2081c3;
+  padding: 20px;
+  margin-bottom: 30px;
+  padding-left: 70px;
+  font-size: 20px;
+  color: #f7f9f9;
+}
+
+a:link {
+  text-decoration: none;
+  margin: 10px;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.index-page img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px 800px;
+}
+
+button {
+  padding: 10px;
+  background-color: #2081c3;
+  margin: 5px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  color: #f7f9f9;
+}
