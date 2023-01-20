@@ -1,0 +1,12 @@
+<div>
+  <ul>
+    {{#each beers as |beer|}}
+      <li>
+        <img src='{{beer.image_url}}' alt='beerImg' />
+        <h1>{{beer.name}}</h1>
+        <p>{{beer.description}}</p>
+        <p>{{beer.tagline}}</p>
+      </li>
+    {{/each}}
+  </ul>
+</div>
