@@ -1,0 +1,26 @@
+<div>
+  <ul>
+    {{#each responseFromAPI as |beer|}}
+      <li>
+        <h1>{{beer.name}} </h1>
+        <h3>{{beer.tagline}}</h3>
+        <img src='{{beer.image_url}}' alt='image' />
+        <p>
+          {{beer.description}}
+        </p>
+        <h2>Food Pairing</h2>
+        {{#each beer.food_pairing as |food|}}
+        
+          <li>
+            {{food}}
+          </li>
+        {{/each}}
+      </li>
+      <p>
+        <h2>Brewers tips:</h2>
+        {{beer.brewers_tips}}
+      </p>
+    {{/each}}
+  </ul>
+
+</div>
