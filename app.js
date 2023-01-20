@@ -18,7 +18,7 @@ hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 // Add the route handlers here:
 
-app.get('/', (req, res) => { 
+app.get('/', (req, res) => {
   res.render('index');
 });
 
@@ -55,20 +55,19 @@ todas sus claves, entonces: array[0].clave
 // });
 
 app.get('/beers/:id', (req, res) => {
-  
   // Puedo manipular req.params.id? slice() eliminará beer- que trae por defecto en beerpartial.hbs?
   // const id = req.params.id
   // console.log(typeof id);
   // console.log(id.slice(5));
 
-  const id = req.params.id.slice(5)
+  const id = req.params.id.slice(5);
 
   punkAPI
     .getBeer(id)
-    .then( beers => {
-      const singleBeer = beers[0]
-      
-      res.render('beer', { singleBeer }); 
+    .then(beers => {
+      const singleBeer = beers[0];
+
+      res.render('beer', { singleBeer });
     })
     .catch(error => console.log(error));
 });

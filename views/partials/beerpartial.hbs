@@ -1,9 +1,9 @@
-<div>
-  <div>
+<div class='template'>
+  <div class='img'>
     <img src='{{image}}' alt='' />
   </div>
   <div>
-    {{#if sinbleBeer}}
+    {{#if beer}}
 
       <h1><strong>{{name}}</strong></h1>
 
@@ -15,9 +15,9 @@
     <h3>{{tagline}}</h3>
     <p>{{description}}</p>
 
-    {{#if randomBeer}}
+    {{#if beer}}
 
-      <h3>Food Pairing</h3>
+      <h2>Food Pairing</h2>
       <ul>
 
         {{#each food_pairing as |food|}}

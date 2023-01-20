@@ -1,15 +1,17 @@
-{{#each responseFromAPI as |beer|}}
-
-{{> beerpartial 
-
-  name = beer.name
-  image = beer.image_url
-  tagline = beer.tagline
-  description = beer.description
-  food_pairing = beer.food_pairing
-  brewers_tips = beer.brewers_tips
-  randomBeer = true
+<div class="beer">
+  {{#each responseFromAPI as |beer|}}
   
-}}
-
-{{/each}}
+  {{> beerpartial
+  
+    name = beer.name
+    image = beer.image_url
+    tagline = beer.tagline
+    description = beer.description
+    food_pairing = beer.food_pairing
+    brewers_tips = beer.brewers_tips
+    beer = true
+  
+  }}
+  
+  {{/each}}
+</div>
