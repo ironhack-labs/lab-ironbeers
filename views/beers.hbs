@@ -1,11 +1,11 @@
 <div class='container'>
   {{#each beers as |beer|}}
     <div class='card' style='width: 18rem;'>
-      <img src= {{beer.image_url}} class='card-img-top' alt='...' />
+      <img src='{{beer.image_url}}' class='card-img-top' alt='...' />
       <div class='card-body'>
         <h5 class='card-title'>{{beer.name}}</h5>
         <p class='card-text'>{{beer.description}}</p>
-        <a href='#' class='btn btn-primary'>{{beer.tagline}}</a>
+        <p class='card-text'>{{randomBeer.tagline}}</p>
       </div>
     </div>
   {{/each}}
