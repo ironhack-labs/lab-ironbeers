@@ -1,18 +1,8 @@
-{{!-- <div class='container-content'>
-  <img src='{{this.image_url}}' alt='BeerImg' />
+<div class='container-content'>
+  <img class='beer-img' src='{{this.image_url}}' alt='BeerImg' />
   <div class='content'>
-    <div>{{this.name}}</div>
-    <div>{{this.description}}</div>
-    <div>{{this.tagline}}</div>
+    <h1 class='name-beer'>{{this.name}}</h1>
+    <p class='tagline'>{{this.tagline}}</p>
+    <p class='description'>{{this.description}}</p>
   </div>
-</div> --}}
-
-<div class="card" style="width: 2rem;">
-  <img src="{{this.image_url}}" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">{{this.name}}</h5>
-    <p class="card-text"> {{this.description}}  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">{{this.tagline}}/li>
-  </ul>
 </div>

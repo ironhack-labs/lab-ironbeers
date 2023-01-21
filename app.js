@@ -37,6 +37,7 @@ app.get('/random-beer', (req, res) => {
   punkAPI
     .getRandom()
     .then(random => {
+      console.log(random);
       res.render('random-beer', { random });
     })
     .catch(error => console.log('error'));
