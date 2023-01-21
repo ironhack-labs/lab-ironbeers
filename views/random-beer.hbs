@@ -1,0 +1,12 @@
+<h1>Random Beer</h1>
+
+<img src='{{beer.image_url}}' alt='beerImg' />
+<h1>{{beer.name}}</h1>
+<h4>{{beer.tagline}}</h4>
+<p>{{beer.description}}</p>
+<ul>Food Pairing
+    {{#each ramdomBeerforApi.food_pairing as |pairing| }}
+        <li>{{pairing}}</li>
+</ul>
+<h2>{{beer.food_pairing}}</h2>
+<h4>Brewers Tips : {{beer.brewers_tips}}</h4>
