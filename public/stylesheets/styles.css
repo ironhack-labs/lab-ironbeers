@@ -5,3 +5,16 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+img {
+    width: 200px;
+    height: 250px;
+}
+
+.btn-primary {
+    background-color: #2081c3 !important;
+    color: white;
+  }
