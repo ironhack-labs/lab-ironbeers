@@ -5,3 +5,207 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    font-family: 'Raleway';
+    background: rgb(200,226,196);
+    background: linear-gradient(90deg, rgba(200,226,196,1) 0%, rgba(147,198,247,1) 42%, rgba(248,164,209,1) 100%);
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.webName a{
+    /* background-color: red; */
+    color: rgb(48, 73, 126);
+    padding-left: 200px;
+    font-size: 50px;
+    font-weight: bold;
+    width: 50%;
+    text-decoration: none;
+}
+
+nav {
+    /* background-color: greenyellow; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 30%;
+    margin-right: 13.8%;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(48, 73, 126);
+    font-weight: bolder;
+    width: 150px;
+    height: 25px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 5px;
+    transition: background-color .7s;
+}
+
+nav a:hover {
+    color: white;
+    transition: color .5s;
+  }
+
+.contentHome {
+    display: flex;
+    justify-content: space-between;
+    height: 620px;
+}
+
+.BeerImg {
+    width: 860px;
+    height: 860px;
+    margin-left: 120px;
+    margin-top: -30px;
+    /* background-color: red; */
+}
+
+.right-site {
+    /* background-color: blue; */
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 15%;
+}
+
+.text-home {
+    /* background-color: yellow; */
+    width: 60%;
+    text-align: end;
+}
+
+.text-home h1 {
+    color: rgb(48, 73, 126);
+}
+
+.text-home h2 {
+    color: rgb(85, 85, 85);
+}
+
+.btns-home {
+    /* background-color: greenyellow; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.btns-home a {
+    text-decoration: none;
+    color: rgb(48, 73, 126);
+    font-weight: bolder;
+    width: 220px;
+    height: 40px;
+    border: 1px solid rgb(48, 73, 126);
+    border-radius: 50px;
+    text-align: center;
+    margin: 20px 0;
+    padding-top: 20px;
+    transition: background-color .5s;
+    transition: transform .4s;
+}
+
+.btns-home a:hover {
+    background-color: rgb(48, 73, 126);
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    transform: scale(1.2);
+  }
+
+.footer {
+    /* background-color: yellowgreen; */
+    color: white;
+    margin-top: 185px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+.productsTable {
+    /* background-color: red; */
+    width: 80%;
+    margin-top: 2%;
+    margin-left: 7.5%;
+    column-count: 3;
+    /* border: 2px solid black; */
+  }
+
+.eachProduct {
+    /* background-color: yellowgreen; */
+    /* border: 2px solid grey; */
+    margin-bottom: 50px;
+}
+
+.eachProduct h1 {
+    font-weight: bold;
+}
+
+.eachProduct h3 {
+    color: grey;
+    margin-top: -20px;
+}
+.eachProduct p {
+    font-size: 15px;
+}
+
+.beerImage {
+    /* background-color: red; */
+    height: 250px;
+  }
+
+  .eachProductText {
+    /* background-color: blue; */
+    height: 250px;
+  }
+
+  .eachProductText h3 {
+    color: white;
+    font-weight: normal;
+  }
+
+  .detailProductPage {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .detailProduct {
+    /* background-color: red; */
+    width: 1100px;
+    height: 400px;
+    display: flex;
+  }
+
+  .detailImg {
+    /* background-color: blue; */
+    height: 200px;
+    margin-right: 80px;
+  }
+
+  .detailImg img{
+    height: 100%;
+  }
+
+  .detailtext {
+    background-color: yellowgreen;
+  }
+
+  .detailText h3 {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: normal;
+  }

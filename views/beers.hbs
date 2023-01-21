@@ -1,6 +1,12 @@
+<div class="productsTable">
 {{#each beersFromApi as |beer|}}
-    <img src="{{beer.image_url}}" alt="{{beer.name}}">
-    <h1>{{beer.name}}</h1>
-    <h3>{{beer.tagline}}</h3>
-    <p>{{beer.description}}</p>
+    <div class="eachProduct">
+        <div class="eachProductImage"><img class="beerImage" src="{{beer.image_url}}" alt="{{beer.name}}"></div>
+        <div class="eachProductText">
+            <h1>{{beer.name}}</h1>
+            <h3>{{beer.tagline}}</h3>
+            <p>{{beer.description}}</p>
+        </div>
+    </div>
 {{/each}}
+</div>
