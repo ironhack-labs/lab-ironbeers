@@ -1,12 +1,7 @@
 <div class='container'>
   {{#each beers as |beer|}}
-    <div class='card' style='width: 18rem;'>
-      <img src='{{beer.image_url}}' class='card-img-top' alt='...' />
-      <div class='card-body'>
-        <h5 class='card-title'>{{beer.name}}</h5>
-        <p class='card-text'>{{beer.description}}</p>
-        <p class='card-text'>{{randomBeer.tagline}}</p>
-      </div>
-    </div>
+  {{!-- // aqui SI hace falta pasar beer=beer porque en el app.js NO LE HE PASADO UN ELEMENTO si no un array y el renderizado es de cada elemento en los archivos .hbs--}}
+  {{!-- el primer beer es el nombre de la variable que usará el partial y el segundo beer es la variable definida en el #each --}}
+      {{> beerpartial beer=beer}}
   {{/each}}
 </div>
