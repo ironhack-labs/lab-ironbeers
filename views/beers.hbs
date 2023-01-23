@@ -1,6 +1,9 @@
 {{#each beersFromApi as |beer|}}
-    <img src="{{beer.image_url}}" alt="{{beer.name}} image">
-    <h1>{{beer.name}}</h1>
-    <h2>{{beer.tagline}}</h2>
-    <p>{{beer.description}}</p>
+    {{> beerpartial
+    id = beer.id
+    name = beer.name
+    image_url = beer.image_url
+    tagline = beer.tagline
+    description = beer.description
+    }}
 {{/each}}

@@ -1,13 +1,13 @@
-{{#each responseFromAPI as |beer|}}
-    <img src="{{beer.image_url}} " alt="{{beer.name}} picture">
-    <h1>{{beer.name}}</h1>
-    <h2>{{beer.tagline}}</h2>
-    <p>{{beer.description}}</p>
-    <h3>Food Pairings</h3>
-    <ul>
-        {{#each beer.food_pairing as |food|}}
-            <li>{{food}}</li>
-        {{/each}}
-    </ul>
-    <p>{{beer.brewers_tips}}</p>
-{{/each}}
+{{> beerpartial 
+name = beer.name
+image_url = beer.image_url
+tagline = beer.tagline
+description = beer.description
+}}
+
+<ul>
+    {{#each beer.food_pairing as |food|}}
+        <li>{{food}}</li>
+    {{/each}}
+</ul>
+<p>{{beer.brewers_tips}}</p>

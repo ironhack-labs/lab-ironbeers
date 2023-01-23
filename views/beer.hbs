@@ -1,0 +1,16 @@
+{{#each Alex as |beer|}}
+
+    {{> beerpartial 
+    name = beer.name
+    image_url = beer.image_url
+    tagline = beer.tagline
+    description = beer.description
+    }}
+
+    <ul>
+        {{#each beer.food_pairing as |food|}}
+            <li>{{food}}</li>
+        {{/each}}
+    </ul>
+    <p>{{beer.brewers_tips}}</p>
+{{/each}}
