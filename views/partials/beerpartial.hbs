@@ -3,7 +3,9 @@
         <img src="{{beer.image_url}}" alt="image" class="img-fluid" style="width:100px; height:200px;">
     </div>
     <div class="col-md-6">
-        <h1>{{beer.name}}</h1>
+        <a href="/beers/{{beer.id}}">
+            <h1>{{beer.name}}</h1>
+        </a>
         <h3>{{beer.tagline}}</h3>
         <p>
             {{beer.description}}

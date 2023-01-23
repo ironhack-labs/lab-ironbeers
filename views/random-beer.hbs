@@ -1,6 +1,5 @@
 <div>
   <ul>
-    {{#each responseFromAPI as |beer|}}
       <li>
         {{> beerpartial beer=beer }}
 
@@ -16,7 +15,5 @@
         <h2>Brewers tips:</h2>
         {{beer.brewers_tips}}
       </p>
-    {{/each}}
   </ul>
-
 </div>
