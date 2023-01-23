@@ -1,4 +1,8 @@
- <img src='{{beer.image_url}}' alt='image' />
- <h1>{{beer.name}} </h1>
-  <h3>{{beer.description}}</h3> 
- <h4>{{beer.tagline}}</h4>
+<div>
+  <a href='/beers/{{beer.id}}'>
+    <h1>{{beer.name}} </h1>
+  </a>
+  <img src='{{beer.image_url}}' alt='image' />
+  <h3>{{beer.description}}</h3>
+  <h4>{{beer.tagline}}</h4>
+</div>
