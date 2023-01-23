@@ -7,6 +7,7 @@ font-family: Arial, Helvetica, sans-serif;
 */
 body {
     font-family: Arial, Helvetica, sans-serif; 
+    background-color: #f7f9f9;
 }
 
 img {
@@ -16,5 +17,5 @@ img {
 
 .btn-primary {
     background-color: #2081c3 !important;
-    color: white;
+    color: #f7f9f9;
   }
