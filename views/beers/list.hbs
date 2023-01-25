@@ -1,0 +1,9 @@
+<div>
+  <ul>
+    {{#each beers as |beer|}}
+      <li class = beerList>
+        {{> beerpartial beer = beer}}
+      </li>
+    {{/each}}
+  </ul>
+</div>

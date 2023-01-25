@@ -1,0 +1,17 @@
+<div>
+  <ul>
+    <li>
+      <img src='{{random.image_url}}' alt='image' />
+      <p><b>{{random.name}}</b></p>
+      <p>{{random.tagline}}</p>
+      <p>{{random.description}}</p>
+      <p>Food Pairing</p>
+      <ul>
+        {{#each random.food_pairing as |food|}}
+          <li>{{food}}</li>
+        {{/each}}
+      </ul>
+      <p><b>Brewers Tips:</b>{{random.brewers_tips}}</p>
+    </li>
+  </ul>
+</div>

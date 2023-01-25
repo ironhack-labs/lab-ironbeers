@@ -10,14 +10,28 @@ body {
   font: Arial, Helvetica, sans-serif;
 }
 
-.button {
+.index-button {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  padding-bottom: 50px;
+  justify-content: center;
+  padding: 100px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  height: 400px;
 }
 
 .footer {
   color: aliceblue;
   background-color: #0a2c42;
 }
+
+.btn-primary {
+  background-color: #2081c3;
+}
+
+
