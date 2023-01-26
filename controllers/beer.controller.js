@@ -17,3 +17,12 @@ module.exports.random = (req, res) => {
         })
         .catch(error => console.log(error));
 }
+
+module.exports.specific = (req, res) => {
+    punkAPI.getBeer(req.params.id)
+        .then(responseFromAPI => {
+            console.log('Beer: ', responseFromAPI);
+            res.render('specific-beer', {beer: responseFromAPI[0]});
+        })
+        .catch(error => console.log(error));
+}; 

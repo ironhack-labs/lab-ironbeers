@@ -1,18 +1,5 @@
 <h1>Your random beer is...🤩</h1>
 <br>
-<div class="row">
-    <div class="col-4">
-        <img class="float-end" src="{{beer.image_url}}" alt="img for {{beer.name}}" height="300px">
-    </div>
-    <div class="col-md-6">
-        <h1>{{beer.name}}</h1>
-        <p>{{beer.description}}</p>
-        <h3>Food pairing</h3>
-        <div class="p-4">
-        {{#each beer.food_pairing as |ingredients|}}
-            <li>{{ingredients}}.</li>
-        {{/each}}
-        </div>
-        <p><b>Brewer tips: </b>{{beer.brewers_tips}}</p>
-    </div>    
+<div>
+    {{> fullinfobeer}}
 </div>

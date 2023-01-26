@@ -7,6 +7,7 @@ router.get('/', (req, res) => {
     res.render('index');
 });
 
+router.get('/beers/:id', beers.specific);
 router.get('/beers', beers.list);
 router.get('/random-beer', beers.random);
 

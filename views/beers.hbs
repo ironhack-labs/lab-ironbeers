@@ -1,7 +1,7 @@
-<h2>This is our selection👌</h2>
-
-<ul>
+<h1>This is our selection👌</h1>
+<br>
+<div class="row justify-content-center">
     {{#each beers as |beer|}}
-        <li>{{beer.name}}</li>
+        {{> beerpartial beer=beer}}
     {{/each}}
-</ul>
+</div>
