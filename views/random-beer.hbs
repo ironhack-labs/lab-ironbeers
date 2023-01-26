@@ -2,7 +2,7 @@
   <div class="card-body">
     {{> beerpartial beer = beer}}
     {{#each beer.food_pairing as |food|}}
-    <li>{{food}}</li>
+      <li>{{food}}</li>
     {{/each}}
     <p class="card-text">{{beer.brewers_tips}}</p>
   </div>

@@ -6,7 +6,7 @@ module.exports.beers = (req, res) => {
     .getBeers()
     .then(beersFromApi => {
       //console.log('Beers from the database:', beersFromApi)
-      res.render('beers', {beersFromApi});
+      res.render('beers', { beersFromApi });
     })
     .catch(error => console.log(error));
 };
