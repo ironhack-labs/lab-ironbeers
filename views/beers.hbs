@@ -1,0 +1,8 @@
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  {{#each beersFromApi as |beer|}}
+    <div class="col"></div>
+    <div class="card  h-450 w-350">
+      {{> beerpartial beer = beer}}  
+    </div>
+  {{/each}}
+</div>
