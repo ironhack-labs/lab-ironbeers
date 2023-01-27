@@ -1,8 +1,4 @@
-<div class='container'>
-  <div class='card' style='width: 18rem;'>
+<div class='main-container random'>
     {{!-- // aqui no hace falta pasar beer=beer porque ya le he pasado un elemento en concreto en el app.js--}}
-    {{> beerpartial}}  
-    <p class='card-text'>{{beer.food_pairing}}</p>
-    <p class='card-text'>{{beer.brewer_tips}}</p>
-  </div>
+    {{> beerpartial beer=beer random=true}}  
 </div>

@@ -4,15 +4,50 @@ light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
-*/
+*/ 
 
 img {
   width: 15em;
 }
 
-.container {
+.main-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
+}
+
+.list .card {
+  margin-top: 50px;
+  align-items: center;
+  border-width: 0px;
+}
+
+.list .card-body {
+  text-align: left;
+}
+
+.list img {
+  height: 8em;
+  width: fit-content;
+}
+
+.random>.card {
+  width: 100% !important;
+  flex-flow: row nowrap !important;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.random .card-body{
+  margin-left: 40px !important;
+}
+
+.random img {
+  width: 4em !important;
+  height: fit-content;
+}
+
+.nav {
+  --bs-nav-link-color: var(--bs-light-text);
 }

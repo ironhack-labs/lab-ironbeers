@@ -1,7 +1,12 @@
-<div class='container'>
+<div class='container text-center list'>
+    <div class='row row-cols-auto'>
   {{#each beers as |beer|}}
-  {{!-- // aqui SI hace falta pasar beer=beer porque en el app.js NO LE HE PASADO UN ELEMENTO si no un array y el renderizado es de cada elemento en los archivos .hbs--}}
-  {{!-- el primer beer es el nombre de la variable que usará el partial y el segundo beer es la variable definida en el #each --}}
-      {{> beerpartial beer=beer}}
+    {{! // aqui SI hace falta pasar beer=beer porque en el app.js NO LE HE PASADO UN ELEMENTO si no un array y el renderizado es de cada elemento en los archivos .hbs}}
+    {{! el primer beer es el nombre de la variable que usará el partial y el segundo beer es la variable definida en el #each }}
+      <div class='col'>
+        {{> beerpartial beer=beer}}
+        {{!-- Column --}}
+      </div>
   {{/each}}
+    </div>
 </div>

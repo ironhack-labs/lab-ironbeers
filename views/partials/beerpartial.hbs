@@ -4,5 +4,17 @@
     <h5 class='card-title'>{{beer.name}}</h5>
     <p class='card-text'>{{beer.description}}</p>
     <p class='card-text'>{{beer.tagline}}</p>
+    {{#if random}}
+      <p><b>Food Pairing</b></p>
+      {{!-- <p class='card-text'>{{beer.food_pairing}}</p> --}}
+      {{#each beer.food_pairing as |food_pairing|}}
+        <ul>
+          <li>
+            {{food_pairing}}
+          </li>
+        </ul>
+      {{/each}}
+      <p class='card-text'><b>Brewer Tips:</b> {{beer.brewers_tips}}</p>
+    {{/if}}
   </div>
 </div>
