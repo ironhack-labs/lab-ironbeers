@@ -1,0 +1,18 @@
+<a href="http://localhost:3000/">Home</a>
+<h1>BEERS</h1>
+<div>
+    <ul>
+        {{#each beersFromApi as |beer|}}
+            <li>
+                <img src="{{beer.image_url}}">            
+                <p>{{beer.name}}</p>
+                <p>{{beer.description}}</p>
+                <p>{{beer.tagline}}</p>
+
+            </li>
+        {{/each}}    
+    </ul>
+</div>
+
+
+
