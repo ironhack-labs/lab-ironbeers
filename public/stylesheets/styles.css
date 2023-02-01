@@ -5,3 +5,61 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+
+.navbar {
+    background-color: #2081c3;
+    height: 100px;
+    margin-bottom: 70px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.navbar-text {
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+    justify-content: center;
+}
+
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-btn{
+    background-color: #2081c3;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin: 15px 0;
+    text-decoration: none;
+}
+
+.home img {
+    height: 400px;
+    margin: 0 auto 30px auto;
+}
+
+.partial img {
+    height: 150px;
+}
+
+.partial {
+    width: 300px;
+
+}
+
+.beer-blocks {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: baseline;
+	align-content: space-evenly;
+    margin-bottom: 50px;
+}
