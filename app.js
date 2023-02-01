@@ -18,10 +18,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Add the route handlers here:
 
-
-
 app.get('/', (req, res) => {
-  res.render('index');
+  const image = '/images/beer.png'
+  res.render('index', {image : image} );
 });
+
 
 app.listen(5000, () => console.log('🏃‍ on port 5000'));
