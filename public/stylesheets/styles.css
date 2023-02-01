@@ -15,16 +15,13 @@ footer {
   margin: 0;
 }
 
-nav a {
-  padding: 20px;
+a {
   text-decoration: none;
-  cursor: pointer;
   color: inherit;
 }
 
-.beer-collection a {
-  text-decoration: none;
-  color: inherit;
+nav a {
+  padding: 20px;
 }
 
 footer {

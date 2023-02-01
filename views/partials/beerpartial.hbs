@@ -2,8 +2,14 @@
 
 <div class='beer-details'>
 
-  <h2 class='beer-name'>{{name}}</h2>
+  {{#if isRandom}}
+    <h2 class='beer-name'>{{name}}</h2>
+  {{else}}
+    <h2 class='beer-name'><a href='/beers/{{id}}'>{{name}}</a></h2>
+  {{/if}}
+
   <p class='beer-tagline'>{{tagline}}</p>
+
   <p class='beer-description'>{{description}}</p>
 
   {{! If the beer is random, show the food pairing and brewer's tips }}
