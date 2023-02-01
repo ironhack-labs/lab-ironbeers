@@ -19,9 +19,18 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Add the route handlers here:
 
 app.get('/', (req, res) => {
-  const image = '/images/beer.png'
-  res.render('index', {image : image} );
+  const image = '/images/beer.png';
+  res.render('index', { image: image });
 });
 
+app.get('/beers', (req, res) => {
+  punkAPI
+  .getBeers()
+  .then(beersFromApi =>{
+    console.log(beersFromApi)
+     res.render('beers',{ beerList : beersFromApi})})
+  .catch(error => console.log(error));  
+  
+});
 
 app.listen(5000, () => console.log('🏃‍ on port 5000'));
