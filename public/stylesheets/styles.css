@@ -54,30 +54,54 @@ footer {
   cursor: pointer;
 }
 
-.beer,
+.beer-collection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.beer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 25vw;
+  margin: 25px;
+}
+
 .random-beer {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   margin: 50px;
+  height: 75vh;
+  width: 75vw;
 }
 
-.random-beer {
-  height: 75vh;
+.beer img {
+  height: 10rem;
 }
 
 .random-beer img {
   height: 25rem;
+  margin: 50px;
 }
 
-.beer-description {
+.beer-details {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   margin: 50px;
 }
 
+.beer-name {
+  margin: 0px;
+}
+
 .beer-tagline {
   color: grey;
+  margin: 0px;
 }

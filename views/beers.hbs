@@ -1,9 +1,13 @@
-{{#each beers}}
+<div class='beer-collection'>
 
-  <div class='beer'>
+  {{#each beers}}
   
-    {{> beerpartial this isRandom=false}}
+    <div class='beer'>
+    
+      {{> beerpartial this isRandom=false}}
+    
+    </div>
   
-  </div>
+  {{/each}}
 
-{{/each}}
+</div>
