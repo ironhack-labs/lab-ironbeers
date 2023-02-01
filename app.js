@@ -37,7 +37,7 @@ app.get('/random-beer', (req, res) => {
 });
 
 app.get('/beers/:id', (req, res) => {
-  const { id } = req.params;
+  const id = req.params.id;
   punkAPI
     .getBeer(id)
     .then(beerFromApi => res.render('beer', { beer: beerFromApi[0] }))
