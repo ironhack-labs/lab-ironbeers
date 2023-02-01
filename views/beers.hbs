@@ -1,7 +1,3 @@
 {{#each allBeers}}
-	<img id="beer-image" src="{{this.image_url}}" alt="beer">
-	<h2>{{this.name}}</h2>
-    <h4>{{this.tagline}}</h4>
-    <p>{{this.description}}</p>
-	
+    {{> beerpartial this}}    
 {{/each}}
