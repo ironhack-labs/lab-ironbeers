@@ -65,6 +65,7 @@ footer {
   justify-content: space-evenly;
   align-items: space-around;
   flex-wrap: wrap;
+  margin-top: 35px;
 }
 
 .beer {
