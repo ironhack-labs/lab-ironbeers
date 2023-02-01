@@ -1,0 +1,22 @@
+<div class='beer-container'>
+  {{!-- {{! pass image }}
+  <img class='beer-img' src='{{imageUrl}}' alt='{{imageAlt}}' />
+
+  {{! buttons }}
+  <button class='beer-btn'>Check the Beers!</button>
+  <button class='beer-btn'>Check a Random Beer!</button> --}}
+
+  {{! display beer array }}
+
+  {{#each data}}
+    <div class='beer-card'>
+      <img class='beer-img' src='{{image_url}}' alt='' />
+      <div class='beer-text'>
+        <p class='beer-name'>Name: {{name}}</p>
+        <p class='beer-description'>Description: {{description}}</p>
+        <p class='beer-tagline'>Tagline: {{tagline}}</p>
+      </div>
+    </div>
+  {{/each}}
+
+</div>
