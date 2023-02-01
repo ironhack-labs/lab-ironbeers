@@ -7,10 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <nav></nav>
-    <a href="/">Home Page</a>
-    <a href="/beers">Beers</a>
-    <a href="/random-beer">Random-Beers</a>
-    {{{body}}}
+<div>{{#each beers}}
+<img src="{{this.image_url}}" alt="Image">
+<h2>{{this.name}}</h2>
+<h5>{{this.tagline}}</h5>
+<p>{{this.description}}</p>
+
+{{/each}}
+</div>
+
 </body>
 </html>
