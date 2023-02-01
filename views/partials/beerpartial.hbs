@@ -1,13 +1,29 @@
-<div class='beer'>
+<img src={{image_url}} />
 
-  <img src={{image_url}} />
+<div class='beer-description'>
 
-  <div class='beer-description'>
+  <h2>{{name}}</h2>
+  <p class='beer-tagline'>{{tagline}}</p>
+  <p>{{description}}</p>
 
-    <h2>{{name}}</h2>
-    <p class='beer-tagline'>{{tagline}}</p>
-    <p>{{description}}</p>
+  {{! If the beer is random, show the food pairing and brewer's tips }}
 
-  </div>
+  {{#if isRandom}}
+
+    <p>
+      <b>Food Pairing:</b>
+    </p>
+    <ul>
+      {{#each food_pairing}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+
+    <p>
+      <b>Brewer's Tips:</b>
+      {{brewers_tips}}
+    </p>
+
+  {{/if}}
 
 </div>

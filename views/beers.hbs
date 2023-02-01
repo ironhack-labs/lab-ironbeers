@@ -1,5 +1,9 @@
 {{#each beers}}
 
-  {{> beerpartial this}}
+  <div class='beer'>
+  
+    {{> beerpartial this isRandom=false}}
+  
+  </div>
 
 {{/each}}

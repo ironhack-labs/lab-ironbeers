@@ -2,29 +2,7 @@
 
   <div class='random-beer'>
 
-    <img src={{image_url}} />
-
-    <div class='beer-description'>
-
-      <h2>{{name}}</h2>
-      <p class='beer-tagline'>{{tagline}}</p>
-      <p>{{description}}</p>
-
-      <p>
-        <b>Food Pairing:</b>
-      </p>
-      <ul>
-        {{#each food_pairing}}
-          <li>{{this}}</li>
-        {{/each}}
-      </ul>
-
-      <p>
-        <b>Brewer's Tips:</b>
-        {{brewers_tips}}
-      </p>
-
-    </div>
+    {{> beerpartial this isRandom=true}}
 
   </div>
 

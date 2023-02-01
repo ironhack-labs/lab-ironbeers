@@ -54,12 +54,16 @@ footer {
   cursor: pointer;
 }
 
+.beer,
 .random-beer {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   margin: 50px;
+}
+
+.random-beer {
   height: 75vh;
 }
 
