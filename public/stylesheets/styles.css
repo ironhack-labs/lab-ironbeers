@@ -1,7 +1,58 @@
-/*
+/* 
 white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
-*/
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+} 
+
+#beer{
+    width: 400px;
+    height: 400px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.botones{
+    background-color:grey;
+    color: white;
+    margin: 20px;
+    padding: 8px;
+}
+
+#image-random{
+    width: 100px;
+    height: 250px;
+}
+
+.imageRandom{
+    display: flex;
+
+
+}
+
+.randomBeer{
+display: flex;
+justify-content: center;
+margin-left: 15px ;
+margin-top: 30px;
+}
+
+.textoRandom{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
