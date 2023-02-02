@@ -1,6 +1,19 @@
-   
-        {{> beerpartial randomBeer}} 
-        <p>{{randomBeer.food_pairing}}</p>
-        <p>{{randomBeer.brewers_tips}}</p>
+<div class="random-container">  
 
+        <div class="element-image">
+                <img class="beer-image" src="{{randomBeer.image_url}}" alt="beer">
+        </div>
+
+        <div class="random-description">
+                <h3>{{randomBeer.name}}</h3>
+                <h4>{{randomBeer.tagline}}</h4>
+                <p>{{randomBeer.description}}</p>
+
+                <p class="sub" id="sub-food">Food Pairing</p>
+                <p id="sub-food-description">{{randomBeer.food_pairing}}</p>
+        
+                <p id="sub-random"><span class="sub">Brewers Tips: </span>{{randomBeer.brewers_tips}}</p>
+        </div>
+
+</div> 
 
