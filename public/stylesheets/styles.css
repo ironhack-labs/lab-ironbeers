@@ -1,11 +1,133 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
 */
-.card img {
-    height: 200px;
-    object-fit: cover;
-  }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Above - CSS reset */
+
+:root {
+--white: #f7f9f9;
+--light-blue: #2081c3;
+--dark-blue: #0a2c42;
+--grey: #bfbfbf;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+
+}
+
+.navbar {
+  background-color: var(--light-blue);
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  flex: 1;
+  top: 0;
+  position: fixed;
+  width: 100%;
+ 
+}
+
+.navbar a {
+    font-size: 1.6em;
+    text-decoration: none;
+    padding: 1.8em;
+    color: var(--white);
+}
+
+.index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4em;
+
+}
+
+main {
+    padding-top: 8em;
+    padding-bottom: 6em;
+}
+
+.index img {
+    width: 400px;
+    height: auto;
+    margin-bottom: 1.2em;
+}
+
+.index a {
+    background-color: var(--light-blue);
+    color: var(--white);
+    font-size: 1.7em;
+    text-decoration: none;
+    padding: 0.4em 0.8em;
+    margin-top: 0.8em;
+    border-radius: 8.5px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1.6em;
+    padding: 1em;
+    color: var(--white);
+    background-color: var(--dark-blue);
+}
+
+/* Random beer + beer section */
+
