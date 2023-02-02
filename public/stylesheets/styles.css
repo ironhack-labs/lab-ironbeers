@@ -67,3 +67,46 @@ footer{
     text-decoration: none;
     color: white;
 }
+
+
+
+.beer-holder{
+    width: 330px;
+    height: 350px;
+    margin: 1.5vw;
+    display:flex;
+    flex-direction: column;
+}
+
+.beer-image{
+    height: 150px;
+}
+
+.element-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.beers-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5vw 8vw;
+
+}
+
+h3{
+    font-size: 1.1rem;
+    padding-top: 10px;
+}
+
+h4{
+    font-size: 0.9rem;
+color: #bfbfbf;
+padding-bottom: 20px;}
+
+p{
+    font-size: 0.8rem;
+}
+
