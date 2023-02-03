@@ -1,0 +1,20 @@
+<div class="beerpartial-container">
+    <div class="beerpartial-img">
+        <a href="/beers/{{this.id}}"><img src=""</a>
+    </div>
+
+    <div class="beerpartial-info">
+        <h1>{{this.name}}</h1>
+        <p>{{this.description}}</p>
+        <p>{{this.tagline}}</p>
+        {{#if this.random}}
+        <h2>Food Pairing</h2>
+        <ul>
+            {{#each this.food-pairing}}
+             <li>{{this}}</li>
+             {{/each}}
+        </ul>
+        <p>{{this.brewers-tips}}</p>
+        {{/if}}
+    </div>
+</div>

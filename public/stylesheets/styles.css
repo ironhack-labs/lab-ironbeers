@@ -5,3 +5,73 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    background-color: #e0e0e0; 
+    color: #f7f9f9;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;   
+    align-content: stretch;
+    }
+    
+
+/* Navbar */
+.nav-bar{
+    display: flex;
+    background-color:#2081c3 ;
+    font-size: 20px;
+    flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+    max-width:400px ;
+    padding-left:60px ;
+}
+
+.nav-bar a {
+    color:white;
+    text-decoration: none;
+   
+}
+
+img{
+    display: flex;
+    justify-items:center ;
+    max-width: 400px;
+    height: 100px;
+    
+}
+.buttons{
+    background-color:#2081c3 ;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: stretch;
+    
+}
+.buttons a {
+    color: white;
+    text-decoration: none;
+    
+}
+.footer {
+  
+    display: flex;
+    background: #0a2c42; 
+    font-size: 10px;
+    flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: stretch;
+	align-content: stretch;
+    width: 500px;
+    
+}
