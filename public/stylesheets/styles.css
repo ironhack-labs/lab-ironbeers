@@ -129,5 +129,70 @@ footer p {
     background-color: var(--dark-blue);
 }
 
+footer em {
+    color: red;
+}
+
 /* Random beer + beer section */
 
+.detailed-view {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 12em;
+    margin-top: 2em;
+    width: 60%;
+    text-align: start;
+}
+.detailed-view img {
+    width: auto;
+    height: 250px;
+}
+
+.detailed-view .content {
+    padding: 5em;
+}
+
+.detailed-view a{
+    text-decoration: none;
+}
+
+.detailed-view h4 {
+    font-size: 2em;
+    font-weight: 800;
+    color: black;
+}
+
+.detailed-view .tagline {
+    font-size: 1.2em;
+    color: var(--grey);
+    padding-top: 1.6em;
+}
+
+.detailed-view .description {
+    color: black;
+    font-size: 1em;
+    padding-top: 1.4em;
+}
+
+.detailed-view h5 {
+    font-size: 1.4em;
+    font-weight: 800;
+    padding: 0.8em 0em;
+}
+
+.food-pairing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 4em;
+    font-size: 1em;
+    list-style-type: disc;
+    margin-left: 4em;
+}
+
+.brewers-tips {
+    padding-top: 20em;
+    margin-top: 24px;
+    positio;
+}
