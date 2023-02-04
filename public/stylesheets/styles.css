@@ -44,6 +44,14 @@ nav a{
     border-radius: 10px;
     
 }
+
+.partialImg {
+    height: 50px;
+    width: 50px
+}
+
+
+
 /*
 white: #f7f9f9;
 light-blue: 
