@@ -1,0 +1,83 @@
+<!--id: 1,
+  name: 'Buzz',
+  tagline: 'A Real Bitter Experience.',
+  first_brewed: '09/2007',
+  description: 'A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once.',
+  image_url: 'https://images.punkapi.com/v2/keg.png',
+  abv: 4.5,
+  ibu: 60,
+  target_fg: 1010,
+  target_og: 1044,
+  ebc: 20,
+  srm: 10,
+  ph: 4.4,
+  attenuation_level: 75,
+  volume: { value: 20, unit: 'litres' },
+  boil_volume: { value: 25, unit: 'litres' },
+  method: {
+    mash_temp: [ [Object] ],
+    fermentation: { temp: [Object] },
+    twist: null
+  },
+  ingredients: {
+    malt: [ [Object], [Object], [Object] ],
+    hops: [ [Object], [Object], [Object], [Object], [Object] ],
+    yeast: 'Wyeast 1056 - American Ale™'
+  },
+  food_pairing: [
+    'Spicy chicken tikka masala',
+    'Grilled chicken quesadilla',
+    'Caramel toffee cake'
+  ],
+  {{#each object}}
+  {{@key}}: {{this}}
+{{/each}}
+  -->
+
+  <div id="beerdetailsdiv">
+
+<p>First Brewed: {{ this.first_brewed }}</p>
+<p>abv: {{ this.abv }}</p>
+<p>ibu: {{ this.ibu }}</p>
+<p>Target fg: {{ this.target_fg }}</p>
+<p>Target og: {{ this.target_og }}</p>
+<p>ebc: {{ this.ebc }}</p>
+<p>srm: {{ this.srm }}</p>
+<p>ph: {{ this.ph }}</p>
+<p>Attenuation Level: {{ this.attenuation_level }}</p>
+<p>Volume:</p>
+ <ul>
+     {{#each this.volume}}
+    <li> {{@key}}: {{this}}</li>
+    {{/each}}
+  </ul>
+  <p>Boil Volume:</p>
+   <ul>
+     {{#each this.boil_volume}}
+    <li> {{@key}}: {{this}}</li>
+    {{/each}}
+  </ul>
+<p>Method:</p>
+<ul>
+    <li>Mash Temp:</li>
+        <ul>{{#each this.method.mash_temp}}
+    <li>{{#each this}}</li>
+    {{/each}}</ul>
+    <li>Fermentation</li>
+    <li>Twist</li>
+</ul>
+
+
+  </div>
+
+<!--{"mash_temp":[{"temp":{"value":69,"unit":"celsius"},"duration":null}],
+"fermentation":{"temp":{"value":18,"unit":"celsius"}},
+"twist":null}
+ 
+  method: {
+    mash_temp: [ [Object] ],
+    fermentation: { temp: [Object] },
+    twist: null
+  },-->
+
+ 

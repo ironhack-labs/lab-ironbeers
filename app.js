@@ -14,7 +14,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-hbs.registerPartials(path.join(__dirname, "/views/partials"));
+hbs.registerPartials(path.join(__dirname, "./", "/views/partials"));
 
 // Register the location for handlebars partials here:
 
@@ -65,11 +65,13 @@ app.get('/beers/:id',(req,res)=>{
   beerDetailsToDisplay
   .then(beer => {
   res.render(`beer-details`, {beer});
-  console.log(JSON.stringify(beer[0].ingredients));
+  console.log(JSON.stringify(beer[0].method));
    
   })
   
 })
+
+
 
 //----------------------------------------------------------------------------------
 
