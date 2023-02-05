@@ -79,6 +79,12 @@ nav a{
     width:80%;
     margin-bottom:2%;
 }
+#footerDiv{
+    margin-left: 2%;
+}
+#beerDetails{
+    margin-left: 5%
+}
 /*
 white: #f7f9f9;
 light-blue: 

@@ -29,55 +29,188 @@
     'Grilled chicken quesadilla',
     'Caramel toffee cake'
   ],
-  {{#each object}}
-  {{@key}}: {{this}}
-{{/each}}
   -->
 
-  <div id="beerdetailsdiv">
+<div id="beerdetailsdiv">
+    <p><b>ID:</b> {{this.id}}</p>
 
-<p>First Brewed: {{ this.first_brewed }}</p>
-<p>abv: {{ this.abv }}</p>
-<p>ibu: {{ this.ibu }}</p>
-<p>Target fg: {{ this.target_fg }}</p>
-<p>Target og: {{ this.target_og }}</p>
-<p>ebc: {{ this.ebc }}</p>
-<p>srm: {{ this.srm }}</p>
-<p>ph: {{ this.ph }}</p>
-<p>Attenuation Level: {{ this.attenuation_level }}</p>
-<p>Volume:</p>
- <ul>
-     {{#each this.volume}}
-    <li> {{@key}}: {{this}}</li>
-    {{/each}}
-  </ul>
-  <p>Boil Volume:</p>
-   <ul>
-     {{#each this.boil_volume}}
-    <li> {{@key}}: {{this}}</li>
-    {{/each}}
-  </ul>
-<p>Method:</p>
-<ul>
-    <li>Mash Temp:</li>
-        <ul>{{#each this.method.mash_temp}}
-    <li>{{#each this}}</li>
-    {{/each}}</ul>
-    <li>Fermentation</li>
-    <li>Twist</li>
-</ul>
+    <p><b>First Brewed:</b> {{ this.first_brewed }}</p>
 
+    <p><b>abv:</b> {{ this.abv }}</p>
 
-  </div>
+    <p><b>ibu:</b> {{ this.ibu }}</p>
+
+    <p><b>Target fg:</b> {{ this.target_fg }}</p>
+
+    <p><b>Target og:</b> {{ this.target_og }}</p>
+
+    <p><b>ebc:</b> {{ this.ebc }}</p>
+
+    <p><b>srm:</b> {{ this.srm }}</p>
+
+    <p><b>ph:</b> {{ this.ph }}</p>
+
+    <p><b>Attenuation Level:</b> {{ this.attenuation_level }}</p>
+
+    <p><b>Volume:</b></p>
+
+    <ul>
+        {{#each this.volume}}
+        <li><b>{{@key}}:</b>  {{this}}</li>
+        {{/each}}
+      </ul>
+      <p><b> Boil Volume:</b></p>
+      <ul>
+        {{#each this.boil_volume}}
+        <li><b>{{@key}}:</b>{{this}}</li>
+        {{/each}}
+      </ul>
+    <p><b>Method:</b></p>
+    <ul>
+        <li><b>Mash Temp:</b></li>
+            <ul>{{#each this.method.mash_temp}}
+        <li>
+          <ul>
+            {{#each this}}
+            <li>{{@key}}:
+              <ul>
+                {{#each this}}
+                <li>{{@key}}:{{this}}</li>
+                {{/each}}
+              </ul>
+            </li>
+            {{/each}}
+          </ul>
+        </li>
+
+        {{/each}}</ul>
+        <li><b>Fermentation</b>
+          <ul>
+                    {{#each this.method.fermentation}}
+                    <li>{{@key}}: 
+                        <ul>
+                            {{#each this}}
+                            <li>{{@key}}: {{this}}</li>
+                            {{/each}}
+                        </ul>
+                    </li>
+                    {{/each}}
+                </ul>
+        </li>
+        <li><b>Twist</b></li>
+    </ul>
+    <p><b>Ingredients:</b></p>
+
+        <ul>
+            <li><b>Malt:</b>
+                <ul>
+                    {{#each this.ingredients.malt}}
+                    <li>
+                        <ul>
+                            {{#each this}}
+
+                            {{#if this.value}} <!--if statement to check if the object contains a value
+                                                then iterate through the object, otherwise, just display the string 
+                                                values of the other keys. E.g.
+
+                                                { name: malt
+                                                  attribute: bitter
+                                                  amount: {value:34, unit: Kg}  }
+
+                                                if any of the keys above has a value that is an object... 
+                                                e.g. contains this.value... then iterate that object...
+                                                Otherwise only display the string values (malt & bitter)-->
+
+                            <li>{{@key}}:
+                                  
+                                <ul>
+                                    {{#each this}}
+                                    <li>{{@key}}: {{this}}</li>
+                                    {{/each}}    
+                                </ul>
+
+                            </li>
+                            {{else}}
+                            <li>{{@key}}:{{this}}</li>
+
+                            {{/if}}
+                            
+                            {{/each}}
+                        </ul>
+                    </li>
+                    {{/each}}
+                </ul>
+            </li>
+            <li><b>Hops:</b>
+                <ul>
+                    {{#each this.ingredients.hops}}
+                    
+                    <li>
+                        <ul>
+                            {{#each this}}
+
+                            {{#if this.value}} <!--if statement to check if the object contains a value
+                                                then iterate through the object, otherwise, just display the string 
+                                                values of the other keys. E.g.
+
+                                                { name: malt
+                                                  attribute: bitter
+                                                  amount: {value:34, unit: Kg}  }
+
+                                                if any of the keys above has a value that is an object... 
+                                                e.g. contains this.value... then iterate that object...
+                                                Otherwise only display the string values (malt & bitter)-->
+
+                            <li>{{@key}}:
+                                  
+                                <ul>
+                                    {{#each this}}
+                                    <li>{{@key}}: {{this}}</li>
+                                    {{/each}}    
+                                </ul>
+
+                            </li>
+                            {{else}}
+                            <li>{{@key}}:{{this}}</li>
+
+                            {{/if}}
+                            
+                            {{/each}}
+                            
+                        </ul>
+                    </li>
+                    {{/each}}
+                </ul>
+            </li>
+
+            <li><b>Yeast:</b>{{this.ingredients.yeast}}</li>
+        </ul>
+
+        <p><b>Food Pairing:</b></p>            
+                        
+                    <ul>
+                        {{#each this.food_pairing}}
+                        <li>
+                            {{this}}
+                        </li>
+                        {{/each}}
+                    </ul>
+
+        <p><b>Brewers Tips:</b></p>            
+                    <p>
+                            {{this.brewers_tips}}
+                    </p>
+
+</div>
 
 <!--{"mash_temp":[{"temp":{"value":69,"unit":"celsius"},"duration":null}],
 "fermentation":{"temp":{"value":18,"unit":"celsius"}},
 "twist":null}
  
-  method: {
-    mash_temp: [ [Object] ],
-    fermentation: { temp: [Object] },
-    twist: null
-  },-->
+method: {
+  mash_temp: [ [Object] ],
+  fermentation: { temp: [Object] },
+  twist: null
+}-->
 
  

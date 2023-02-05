@@ -1,5 +1,24 @@
  <div>
+
     {{#each randomFromApi}}
     {{>beerPartial this}}
-       {{/each}}
-        </div>
+       
+
+       <div id="footerDiv">
+         <p><b>Food Pairing:</b></p>            
+                     
+                <ul>
+                    {{#each this.food_pairing}}
+                    <li>
+                        {{this}}
+                    </li>
+                    {{/each}}
+                </ul>
+
+         <p><b>Brewers Tips:</b></p>            
+                <p>
+                        {{this.brewers_tips}}
+                </p>
+       </div>
+   {{/each}}
+</div>
