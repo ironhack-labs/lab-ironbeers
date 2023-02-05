@@ -1,8 +1,8 @@
-<div>
-  {{#each beers}}
-    {{> beers.image}}
-    {{> beers.name}}
-    {{> beers.description}}
-    {{> beers.tagline}}
+<div class='beers-description'>
+  {{#each beersFromApi}}
+    <img class='img-beers' src={{image_url}} />
+    {{name}}
+    {{description}}
+    {{tagline}}
   {{/each}}
 </div>

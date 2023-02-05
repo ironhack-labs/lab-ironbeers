@@ -23,6 +23,22 @@ img {
   padding-bottom: 40px;
 }
 
+footer {
+  background-color: #0a2c42;
+  color: white;
+  padding: 20px 0 20px 40px;
+}
+
+.img-beers {
+  width: 50px;
+  height: 130px;
+}
+
+.beers-description {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .navbar {
   background-color: #2081c3;
   padding: 20px 40px;
