@@ -4,6 +4,8 @@ const hbs = require('hbs');
 const path = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 
+//----------------------------------------------------------------------------------
+
 const app = express();
 const punkAPI = new PunkAPIWrapper();
 
@@ -12,7 +14,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-hbs.registerPartials(path.join(__dirname, "./", "/views/partials"));
+hbs.registerPartials(path.join(__dirname, "/views/partials"));
 
 // Register the location for handlebars partials here:
 
@@ -20,13 +22,18 @@ hbs.registerPartials(path.join(__dirname, "./", "/views/partials"));
 
 // Add the route handlers here:
 
+//----------------------------------------------------------------------------------
+
 app.get('/', (req, res) => {
   res.render('index');
 });
 
+//----------------------------------------------------------------------------------
+
 app.get('/beers', (req, res) => {
   punkAPI
   .getBeers()
+
   .then(beersFromApi => {res.render('beers', { beersFromApi});
   console.log(beersFromApi[0])
 }) 
@@ -35,14 +42,37 @@ app.get('/beers', (req, res) => {
   //res.render('beers');
 });
 
+//----------------------------------------------------------------------------------
+
 app.get('/random-beer', (req, res) => {
   punkAPI
   .getRandom()
+
   .then(randomFromApi => {res.render('random-beer', { randomFromApi});
   console.log(randomFromApi[0])
 }) 
  .catch(error => console.log(error));
 });
+
+//----------------------------------------------------------------------------------
+
+app.get('/beers/:id',(req,res)=>{
+  
+//req.params collects the :id and stores it in an object e.g { id: :id }   or {id: 245}
+
+  let beerDetailsToDisplay = punkAPI.getBeer(req.params.id)
+  
+  beerDetailsToDisplay
+  .then(beer => {
+  res.render(`beer-details`, {beer});
+  console.log(JSON.stringify(beer[0].ingredients));
+   
+  })
+  
+})
+
+//----------------------------------------------------------------------------------
+
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
 
@@ -82,3 +112,10 @@ app.listen(3000, () => console.log('🏃‍ on port 3000'));
   brewers_tips: 'The earthy and floral aromas from the hops can be overpowering. Drop a little Cascade in at the end of the boil to lift the profile with a bit of citrus.',
   contributed_by: 'Sam Mason <samjbmason>'
 }*/
+
+
+/*{"malt":[{"name":"Maris Otter Extra Pale","amount":{"value":3.25,"unit":"kilograms"}},{"name":"Caramalt","amount":{"value":0.2,"unit":"kilograms"}},{"name":"Munich","amount":{"value":0.4,"unit":"kilograms"}}],
+
+"hops":[{"name":"Amarillo","amount":{"value":13.8,"unit":"grams"},"add":"start","attribute":"bitter"},{"name":"Simcoe","amount":{"value":13.8,"unit":"grams"},"add":"start","attribute":"bitter"},{"name":"Amarillo","amount":{"value":26.3,"unit":"grams"},"add":"end","attribute":"flavour"},{"name":"Motueka","amount":{"value":18.8,"unit":"grams"},"add":"end","attribute":"flavour"}],
+
+"yeast":"Wyeast 1056 - American Ale™"}*/

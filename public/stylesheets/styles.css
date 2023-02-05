@@ -46,12 +46,39 @@ nav a{
 }
 
 .partialImg {
-    height: 50px;
-    width: 50px
+    height: 200px;
+    width: 5%;
+    padding:5%;
+    
+}
+.h1partial{
+    width:20%;
+
+}
+.taglinepartial{
+    width:20%;
 }
 
+.descriptionpartial{
+    width:55%;
+}
+#bodyDiv{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
 
+    
+}
 
+#partialDiv{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    width:80%;
+    margin-bottom:2%;
+}
 /*
 white: #f7f9f9;
 light-blue: 
