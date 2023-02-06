@@ -27,6 +27,29 @@ footer {
   background-color: #0a2c42;
   color: white;
   padding: 20px 0 20px 40px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+h1 {
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+p {
+  font-size: 15px;
+  padding-bottom: 15px;
+}
+
+ul {
+  padding-bottom: 15px;
 }
 
 .img-beers {
@@ -34,9 +57,15 @@ footer {
   height: 130px;
 }
 
-.beers-description {
+.beers-list {
   display: flex;
   flex-wrap: wrap;
+  width: 70%;
+  margin: 50px auto;
+}
+
+.beer-item {
+  flex-basis: 33.333333%;
 }
 
 .navbar {
@@ -62,4 +91,14 @@ footer {
   justify-content: center;
   align-items: center;
   margin: 40px 0;
+}
+
+.tagline {
+  color: #bfbfbf;
+}
+
+#random-beer {
+  width: 60%;
+  margin: 0 auto;
+  padding: 50px 0;
 }
