@@ -5,3 +5,61 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.beer img {
+    width: 16%;
+    margin-bottom: 6%;
+}
+
+.index-container {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.index-inner {
+    width: 40%;
+    margin: 5%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.buttons {
+    width: 40%;
+    margin: 5%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.index-inner {
+    width: 40%;
+    margin: 5%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.button-magin {
+    margin: 8px;
+}
+
+#coolFooter {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 8%;
+    background-color: #09334e !important;
+}
+
+#footer-div {
+    padding-top: 1%;
+}
