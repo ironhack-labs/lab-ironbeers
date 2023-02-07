@@ -31,7 +31,6 @@ font-family: Arial, Helvetica, sans-serif;
     height: 300px;
     padding: 30px;
 
-
 }
 
 .random-img {
@@ -44,7 +43,9 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 .random-beer {
-    margin: 40px;
+    margin: 80px;
+    padding-bottom: 45px;
+
 }
 
 .navbar-style {
@@ -55,6 +56,7 @@ font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
     width: 100%;
+
 }
 
 .nav-item {
@@ -66,7 +68,14 @@ footer {
     color: white;
     font-size: 1em;
     margin-top: 20px;
-    padding-bottom: 3px;
+    margin-bottom: 0;
+    padding-bottom: 4px;
     width: 100%;
     text-align: justify;
+}
+
+.text-footer {
+    margin: 0;
+    padding: 3px;
+
 }
