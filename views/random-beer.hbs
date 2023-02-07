@@ -1,0 +1,14 @@
+<div>
+  <h1>Random Beers</h1>
+  <ul>
+    {{#each beers}}
+      <li>{{name}}</li>
+      <p>{{tagline}}</p>
+      <p>{{food}}</p>
+      
+       <img src="{{images_url}}">
+      <p>{{description}}</p>
+      <br>
+    {{/each}}
+  </ul>
+</div>
