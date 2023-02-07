@@ -1,0 +1,11 @@
+<div class="container text-center mt-5">
+    <div class="row justify-content-center">
+        {{#each beersData}}
+        <div class=" col-12 col-lg-4 col-md-6 mb-3 p-4">
+            <div class="card img-beers">
+                {{>beerpartial}}
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

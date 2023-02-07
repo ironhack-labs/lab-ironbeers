@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card random-beer">
+                {{>beerpartial}}
+                <h3 class="random">Food Pairing</h3>
+                <ul class="random">
+                    {{#each food_pairing}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                <p class="random">Brewers tips: {{brewers_tips}}</p>
+            </div>
+        </div>
+    </div>
+</div>
