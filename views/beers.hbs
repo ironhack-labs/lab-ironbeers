@@ -5,20 +5,20 @@
   <ul>
     {{#each beers}}
     <div>
-      <img class="img-beers" src={{image_url}}>
+      {{!-- <img class="img-beers" src={{image_url}}>
       <div class="li-beers">
         <li class="name-of-beer">{{name}}</li>
         <br>
         <li class="tag-line">{{tagline}}</li>
         <br>
         <li>{{description}}</li>
-        <br>
+        <br> --}}
+        {{> beerpartial this}}
         <h2>Food Pairing</h2>
         <br>
         <ul>
           <li>{{food_pairing}}</li>
           </ul>
-
        </div>
     </div>
     {{/each}}
