@@ -1,0 +1,9 @@
+<div>
+    {{#each beersFromApi}}
+    <img src={{image_url}} alt="beers">
+    <a href="/beers/:id?">{{name}}</a>
+    <p>{{name}}</p>
+    <p>{{description}}</p>
+    <p>{{tagline}}</p>
+    {{/each}}
+</div>
