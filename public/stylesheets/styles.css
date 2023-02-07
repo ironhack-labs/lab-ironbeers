@@ -2,6 +2,11 @@
   margin: 0;
 }
 
+footer {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #f3fbfa;
 }
@@ -73,6 +78,7 @@ footer {
   background-color: #0b283d;
   color: white;
   padding: 1% 0 1% 1%;
+  width: 100%;
 }
 
 .beers {
