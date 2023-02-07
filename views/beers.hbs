@@ -1,0 +1,19 @@
+<div class="m-3">
+    <h1>Cervezas</h1>
+    <p>Conoce a todas nuestras cervezas</p>
+
+    <hr>
+
+    <div class="row justify-content-center">
+        {{#each beersFromApi}}
+
+        <div class="col-3 m-2 p-3 beer-card card">
+            <img src=" {{image_url}}" class="card-img-top" alt="{{name}}">
+            <div class="card-body">
+                {{>beerInfo}}
+            </div>
+        </div>
+
+        {{/each}}
+    </div>
+</div>
