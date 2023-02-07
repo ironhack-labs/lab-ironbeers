@@ -1,0 +1,18 @@
+<div class="container">
+
+    <h1>Beers</h1>
+    <p>Check all the Beers</p>
+
+    <hr>
+
+    <div class="row">
+
+        {{#each beers}}
+        {{>randomBeerCard}}
+        {{/each}}
+
+    </div>
+
+    <a href="/" class="btn btn-dark mb-5">Volver a inicio</a>
+
+</div>

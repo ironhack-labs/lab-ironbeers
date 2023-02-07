@@ -5,3 +5,23 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+footer {
+    background-color: #6c757d;
+    color: white;
+    text-align: center;
+    font-size: .6em;
+    padding: 4px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%
+}
+
+footer p {
+    margin: 0
+}
+
+.beer-card img {
+    height: 200px;
+    object-fit:contain;
+}
