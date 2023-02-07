@@ -1,0 +1,12 @@
+<div class:"row">
+
+    {{#each pickBeer}}
+
+    <div class="col-6 card object-fit-contain beer-card">
+        {{>beerpartial}}
+        <p class="beer-text">Food Pairing: {{food_pairing}}</p>
+        <p class="beer-text">Brewer Tips: {{brewers_tips}}</p>
+    </div>
+
+    {{/each}}
+</div>
