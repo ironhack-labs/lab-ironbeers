@@ -1,0 +1,17 @@
+<article class="d-flex random-article">
+    <figure class="beer-img">
+        <img src="{{image_url}}" alt="" srcset="">
+    </figure>
+    <div>
+        <h2>{{name}}</h2>
+        <p>{{tagline}}</p>
+        <p>{{description}}</p>
+        <h3>Food Pairing</h3>
+        <ul>
+            {{#each food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p><strong>Brewers Tips:</strong> {{brewers_tips}}</p>
+    </div>
+</article>
