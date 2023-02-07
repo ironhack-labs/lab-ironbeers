@@ -1,26 +1,8 @@
 <div>
   <h1>Beers</h1>
 </div>
-<div class="beers">
-  <ul>
+<div class=“beers”>
     {{#each beers}}
-    <div>
-      <img class="img-beers" src={{image_url}}>
-      <div class="li-beers">
-        <li class="name-of-beer">{{name}}</li>
-        <br>
-        <li class="tag-line">{{tagline}}</li>
-        <br>
-        <li>{{description}}</li>
-        <br>
-        <h2>Food Pairing</h2>
-        <br>
-        <ul>
-          <li>{{food_pairing}}</li>
-          </ul>
-
-       </div>
-    </div>
+    {{> beerpartial this}}
     {{/each}}
-  </ul>
 </div>
