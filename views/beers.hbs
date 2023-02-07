@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: grey ;
+    }
+    .one{
+        display:flex;
+        justify-content: flex-start;
+        position: relative;
+        margin: 40px;
+        background-color: white;
+        border-radius: 20px;
+        border-color:black;
+    }
+    .desc{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end ;
+        position: absolute;
+        padding: 50px;
+        margin-left: 200px;
+        
+    }
+    .image{
+        height: 250px;
+        margin-left: 100px;
+    }
+    .pres{
+        padding-bottom: 20px;
+    }
+</style>
+
+<body>
+
+    <div>
+        {{#each beers}}
+        <div class="one">
+            <img class="image" src={{this.image_url}} alt="">
+            <div class="desc">
+                <div class="pres">
+                    <div> <strong>Name : {{this.name}} </strong></div>    
+                    <div><strong>#{{this.tagline}}</strong> </div>
+                </div>
+                <div><strong>SHORT DESCRIPTION:</strong>{{this.description}} </div>
+            </div>    
+        </div>    
+        {{/each}}
+    </div>
+</body>
+</html>
