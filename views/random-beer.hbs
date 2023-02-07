@@ -1,14 +1,26 @@
 <div>
-  <h1>Random Beers</h1>
+  <h1>Beers</h1>
+</div>
+<div class="beers">
   <ul>
     {{#each beers}}
-      <li>{{name}}</li>
-      <p>{{tagline}}</p>
-      <p>{{food}}</p>
-      
-       <img src="{{images_url}}">
-      <p>{{description}}</p>
-      <br>
+    <div>
+      <img class="img-beers" src={{image_url}}>
+      <div class="li-beers">
+        <li class="name-of-beer">{{name}}</li>
+        <br>
+        <li class="tag-line">{{tagline}}</li>
+        <br>
+        <li>{{description}}</li>
+        <br>
+        <h2>Food Pairing</h2>
+        <br>
+        <ul>
+          <li>{{food_pairing}}</li>
+          </ul>
+
+       </div>
+    </div>
     {{/each}}
   </ul>
 </div>
