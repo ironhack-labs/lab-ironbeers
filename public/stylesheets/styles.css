@@ -1,7 +1,35 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+img {
+    width: 100%;
+}
+
+body {
+    color: black;
+
+}
+
+
+footer {
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    font-size: .6em;
+    padding: 4px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%
+}
+
+footer p {
+    margin: 0
+}
+
+.newIma img {
+    height: 300px;
+    object-fit: contain;
+}
+
+.beerRan img {
+    height: 300px;
+    object-fit: contain;
+}
