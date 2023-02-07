@@ -2,7 +2,7 @@
 
     <div class="row beers">
         {{#each beers}}
-        <div class="col-md-4">
+        {{!-- <div class="col-md-4">
             <div class="card mb-4 player-card">
                 <img src="{{image_url}}" class="card-img-top object-fit-scale" alt="{{name}}">
                 <div class="card-body">
@@ -11,8 +11,8 @@
                     <p class="card-text "> {{tagline}}</p>
                 </div>
             </div>
-        </div>
-        {{!-- {{>beerpartial}} --}}
+        </div> --}}
+        {{>beerpartial}}
         {{/each}}
     </div>
 </div>
