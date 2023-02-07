@@ -1,0 +1,6 @@
+<link rel="stylesheet" href="/stylesheets/styles.css">
+<div id="beers-list">
+    {{#each beersFromApi}}
+        {{>beerpartials this}}
+    {{/each}}
+</div>

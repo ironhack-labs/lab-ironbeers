@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="/stylesheets/styles.css">
+<div id="random-beer">
+    {{#each randomBeerFromApi}}
+    <div id="random-beer-img">
+        <img src="{{this.image_url}}" alt="beer image">
+    </div>
+    <div id="random-beer-des">
+        <h2>{{this.name}}</h2>
+        <p class="tagline">{{this.tagline}}</p>
+        <p>{{this.description}}</p>
+        <h6>Food Pairing</h6>
+        <ul>
+            {{#each this.food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p><b>Brewer Tips:</b> {{this.brewers_tips}}</p>
+    </div>
+     {{/each}}
+</div>
