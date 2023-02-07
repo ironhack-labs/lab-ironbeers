@@ -5,3 +5,31 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    text-align: center;
+}
+
+body img {
+    padding: 50px 20px;
+}
+
+footer {
+    text-align: left;
+    background-color: grey;
+    padding: 10px;
+    width: 100%;
+}
+
+.mybutton {
+    margin: 10px 10px;
+    padding: 10px 20px;
+}
+
+.cards img {
+    height: 400px;
+}
+
+.beerimage {
+    height: 800px;
+}
