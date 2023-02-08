@@ -1,0 +1,13 @@
+{{#each getRandom}}
+    <div class="many">
+    {{> beerpartial}}
+    <div class="ul-div">
+    <ul>
+      {{#each food_pairing}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+   <p>{{brewers_tips}}</p>
+    </div>
+    </div>
+{{/each}}
