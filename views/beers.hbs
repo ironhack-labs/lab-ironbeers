@@ -1,6 +1,7 @@
-<h1>Beers</h1>
-<ul>
-  {{#each beers}}
-    {{> oneBeer this}}
-  {{/each}}
-</ul>
+<div id="beers">
+    {{#each beers}}
+        <div class="service-box">
+            {{>beerpartial this}}
+        </div>
+    {{/each}}
+</div>

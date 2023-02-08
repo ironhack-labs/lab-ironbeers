@@ -15,6 +15,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //app.use(express.static(`${__dirname}/public`))
 // Register the location for handlebars partials here:
 hbs.registerPartials(path.join(__dirname, 'views', 'partials'))
+//hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 // ...
 
@@ -68,6 +69,33 @@ app.get('/random-beer', async (req, res, next) => {
   } catch (error) {
       next(error)
   }
+})
+
+//I cannot solve it!!
+app.get('beers/beer-{{this.id}}', async (req, res, next) => {
+  try {
+    const beerDetail = await punkAPI.getBeer(':id')
+    console.log(beerDetail)
+    res.send('beers/beerDetail', {
+      navbar:true,
+      title: 'Beers',
+      beers: beerDetail,
+      css: 'styles.css'
+    })
+  } catch (error) {
+      next(error)
+  }
+})
+
+app.get('*', (req, res) => {
+  console.log(req.originalUrl)
+  res.statusCode = 404
+
+  res.render('error', {
+    title: 'Error page',
+    badLink: req.originalUrl,
+    css: ['error', 'modal'],
+  })
 })
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
