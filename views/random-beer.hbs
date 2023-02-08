@@ -1,0 +1,7 @@
+<section class="container">
+    {{#each random}}
+        {{> beerpartial}}
+        <p>{{this.food_pairing}}</p>
+        <p>{{this.brewers_tips}}</p>
+{{/each}}
+</section>
