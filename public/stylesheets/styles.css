@@ -83,7 +83,10 @@ footer {
 
 .beers {
   display: flex;
+<<<<<<< HEAD
   flex-direction: column;
+=======
+>>>>>>> fd6a62b5b975a9a8ffbd117374b91e00683bfca0
 }
 
 .img-beers {
@@ -108,4 +111,7 @@ footer {
   color: grey;
   list-style-type: none;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> fd6a62b5b975a9a8ffbd117374b91e00683bfca0
