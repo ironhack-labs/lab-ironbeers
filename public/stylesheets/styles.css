@@ -5,3 +5,44 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+
+body{
+    min-height: 100vh;
+}
+.nav-bar {
+  color: white;
+  background-color: #2081c3;
+  text-decoration: none;
+  height: 7vh;
+  margin-top: -10px;
+  width: 100vw;
+  margin-left: -8px;
+  
+
+}
+
+nav a {
+display: inline-block;
+    margin-top: 15px;
+  text-align:justify;
+  color: inherit;
+  text-decoration: none;
+  margin-left: 35px;
+}
+
+
+.footer {
+    background-color:#0a2c42;
+    color: white;
+    height:6vh;
+    width: 100vw;
+   margin-bottom: -25px;
+    margin-left: -8px;
+}
+
+.footer p {
+padding-top: 10px;
+  text-align:justify;
+  margin-left: 35px;
+}
