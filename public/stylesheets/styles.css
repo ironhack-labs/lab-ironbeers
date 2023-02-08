@@ -5,3 +5,39 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body{
+margin: 0px;
+padding: 0px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    height: 4em;
+    background-color: #2081c3 ;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 1em 0 1em;
+}
+
+.home{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3vw;
+}
+.home-img{
+    width: 27vw;
+}
+
+.beer-imgs{
+    width: 10vw;
+}
