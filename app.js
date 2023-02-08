@@ -21,5 +21,32 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
   res.render('index');
 });
+app.get('/beers', (req, res) => {
+  punkAPI
+    .getBeers()
+    .then(beersFromApi => res.render('beers', { beersFromApi }))
+    .catch(error => console.log(error));
+});
+app.get('/randombeer', (req, res) => {
+  punkAPI
+    .getRandom()
+    .then(responseFromAPI => res.render('randombeer', { responseFromAPI }))
+    // your magic happens here
+    .catch(error => console.log(error));
+});
+
+app.get('/beer-detailed', (req, res) => {
+  res.render('beer-detailed');
+});
+
+app.get('/beers/beer-:id', (req, res) => {
+  const id = req.params.id;
+  punkAPI
+    .getBeer(id)
+    .then(beerApi => res.render('beer-detailed', { beerApi }))
+    .catch(error => console.log(error));
+});
+
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
