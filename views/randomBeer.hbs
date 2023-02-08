@@ -4,13 +4,15 @@
    {{#each randBeer}}
       {{> beerpartial}}
     
-    <ul>
+    <ul class="pairings-ul">
+      <h3 class="bold">Food pairing</h3>
         {{#each food_pairing}}
          <li>{{this}}</li>
          {{/each}}
     </ul>
     
-    <p>{{brewers_tips}}</p>
+    
+    <p><span class="bold">Brewer tips:</span>{{brewers_tips}}</p>
     {{/each}}
 
     </div>
