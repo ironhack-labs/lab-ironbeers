@@ -39,3 +39,21 @@ font-family: Arial, Helvetica, sans-serif;
     height: 40px;   /* Height of the footer */
    
 }
+
+.beer{
+
+    text-align:center;
+    max-height:500px;
+    max-width:400px;
+}
+
+.beers{
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.beer-img{
+   max-width:auto;
+   max-height:200px;
+}
