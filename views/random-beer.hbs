@@ -1,0 +1,17 @@
+
+<div class="random-flex">
+    {{#each responseFromAPI}}
+        {{> beerpartial this}}
+   <div>
+    <h6 class="bold-title">Food Pairing</h6>
+    <ul>
+        {{#each food_pairing}}
+            <li class="partial-text">{{this}}</li>
+        {{/each}}
+    </ul>
+    <p class="partial-text"> <b>Brewers Tips:</b> {{brewers_tips}} </p>
+    </div>
+</div>
+    
+    {{/each}}
+</div>
