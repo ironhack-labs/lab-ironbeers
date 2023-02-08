@@ -52,6 +52,10 @@ ul {
   padding-bottom: 15px;
 }
 
+.link-beer {
+  color: #0a2c42;
+}
+
 .img-beers {
   width: 50px;
   height: 130px;
@@ -62,6 +66,7 @@ ul {
   flex-wrap: wrap;
   width: 70%;
   margin: 50px auto;
+  row-gap: 40px;
 }
 
 .beer-item {

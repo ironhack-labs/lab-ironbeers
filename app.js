@@ -10,7 +10,7 @@ const punkAPI = new PunkAPIWrapper();
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/public')));
 
 // Register the location for handlebars partials here:
 hbs.registerPartials(path.join(__dirname, 'views/partials'));
@@ -27,6 +27,18 @@ app.get('/beers', (req, res) => {
     .then(beersFromApi => {
       console.log('Beers from the database: ', beersFromApi);
       res.render('beers', { beersFromApi });
+    })
+    .catch(error => console.log(error));
+});
+
+app.get('/beers/:id', (req, res) => {
+  const id = req.params.id;
+
+  punkAPI
+    .getBeer(id)
+    .then(beersFromApi => {
+      // console.log('Beers from the database: ', beersFromApi);
+      res.render('beer', { beersFromApi });
     })
     .catch(error => console.log(error));
 });
