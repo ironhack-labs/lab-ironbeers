@@ -1,0 +1,15 @@
+<div class="beercards col-9 gap-5 mx-auto mt-4">
+    {{#each beers}}
+    <div class="card " style="width: 20rem">
+
+        {{>beerCard}}
+
+        {{!-- <img src="{{image_url}}" class="cardimage" alt="beer image">
+        <div class="card-body">
+            <h5 class="card-title">{{name}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{tagline}}</h6>
+            <p class="card-text">{{description}}</p> --}}
+        </div>
+    </div>
+    {{/each}}
+</div>
