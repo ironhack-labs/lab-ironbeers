@@ -1,7 +1,59 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+:root {
+    --white: #f7f9f9;
+    --light-blue: #2081c3;
+    --dark-blue: #0a2c42;
+    --grey: #bfbfbf;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+nav {
+    background-color: var(--light-blue);
+}
+
+.nav-link {
+    color: var(--white);
+}
+
+body {
+    color: var(--dark-blue);
+}
+
+footer {
+    text-align: center;
+    align-content: center;
+    padding-top: 4px;
+    color: var(--white);
+    background-color: var(--dark-blue);
+}
+
+.btn {
+    background-color: var(--light-blue);
+}
+
+.btn-primary {
+    width: 200px;
+}
+
+.header-img {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    translate: 48px;
+    width: 480px;
+}
+
+.card {
+    margin-bottom: 24px;
+}
+
+.card-img {
+    height: 200px;
+}
+
+.highlight-img {
+    width: 120px;
+    align-self: center;
+}

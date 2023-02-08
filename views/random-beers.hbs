@@ -1,0 +1,18 @@
+<div class="container-fluid my-4">
+    <div class="row">
+
+        {{#each randomFromAPI}}
+        <div class="col-4">
+            <img class="highlight-img" src="{{image_url}}" alt="{{name}}">
+        </div>
+        <div class="col-8">
+            <h2>{{name}}</h2>
+            <h6>{{tagline}}</h6>
+            <p>Description: {{description}}</p>
+            <p>Food pairing: {{food_pairing}}</p>
+            <p>Brewer's tips: {{brewers_tips}}</p>
+        </div>
+        {{/each}}
+
+    </div>
+</div>
