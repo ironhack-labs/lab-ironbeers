@@ -1,7 +1,110 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+/* common */
+* {
+  box-sizing: border-box;
+}
+body {
+  background:#2081c3;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+/* header */
+main {
+  flex: 1;
+  background:#f7f9f9;
+}
+.headernav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 2rem;
+  list-style: none;
+  padding: 10px 0 10px 80px;
+}
+a {
+  color: #f7f9f9;
+  text-decoration: none;
+}
+
+/* main */
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: auto;
+  margin-bottom: 50px;
+}
+#container img {
+  margin: 50px 0;
+  width: 300px;
+  height: 300px;
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+button {
+  background-color: #2081c3;
+  color: #f7f9f9;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 0 #555454;
+}
+
+/* random-beer */
+.randomBeer {
+  width: auto;
+  margin: 50px 200px 50px 200px;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  gap: 6rem;
+}
+.randomBeer img {
+  width: 150px;
+  height: 300px;
+}
+.randomName {
+  font-weight: bold;
+  list-style: none;
+}
+.randomTagline {
+  list-style: none;
+  color: #948f8f;
+  padding: 20px 0;
+  font-weight: bold;
+}
+.randomDescription {
+  list-style: none;
+  line-height: 1.5rem;
+  padding: 20px 0;
+  font-weight: bold;
+}
+.randomDescription ul li{
+  margin-left: 100px;
+}
+.randomBrewers {
+  padding: 20px 0;
+  list-style: none;
+  line-height: 1.5rem;
+}
+.randomBrewers span {
+  font-weight: bold;
+}
+/* footer */
+footer {
+  background-color: #0a2c42;
+  color: #f7f9f9;
+  padding: 15px;
+}
