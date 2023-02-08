@@ -1,0 +1,23 @@
+<div class="randomBeerContainer">
+<div class="picture">
+        {{#if random.image_url}}
+        <img src={{random.image_url}} alt="">
+        {{else}}
+        <img src="https://images.punkapi.com/v2/keg.png" alt="">
+          {{/if}}
+</div>
+<div class="description">
+        <h1>{{random.name}}</h1>
+        <p>{{random.tagline}}</p>
+        <p>{{random.description}}</p>
+        <div class="foodPairing">
+            <h2>Food Pairing:</h2>
+            <ul>
+                {{#each random.food_pairing}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </div>
+        <p><span>Brewer Tips:</span>{{random.brewers_tips}}</p>
+</div>
+</div>
