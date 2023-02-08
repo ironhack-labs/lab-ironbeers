@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row align-self-center object-fit-scale">
+        {{#each beers}}
+        <div class="col-md-4 rounded mx-auto d-block">
+            <div class="card md-4 beer">
+                <img src={{"image_url"}} class="beerscard" alt="{{name}}">
+            </div>
+
+
+            <div class="col-md-4 rounded mx-auto d-block">
+                <div class="card md-4 beer">
+                    <p>{{name}}"</p>
+                    <p>{{description}}"</p>
+                    <p>{{tagline}}"</p>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+
+
+    </div>
+</div>
