@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
 /*
 white: #f7f9f9;
 light-blue: #2081c3;
@@ -5,3 +6,176 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.nav-bar {
+  background-color: #2081c3;
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  justify-content: start;
+}
+.nav-bar ul li {
+  padding: 20px 20px;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 80px;
+}
+
+.beer-image {
+  width: 25vw;
+}
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px;
+  justify-content: space-between;
+}
+
+.btn1 {
+  margin: 30px;
+  text-decoration: none;
+  justify-content: space-between;
+  padding: 15px 30px;
+  color: white;
+  border-radius: 5px;
+  background-color: #2081c3;
+}
+
+.btn2 {
+  margin: 30px;
+  text-decoration: none;
+  padding: 15px 40px;
+  color: white;
+  border-radius: 5px;
+  background-color: #2081c3;
+}
+
+
+.beer-holder {
+  width: 400px;
+  height: 400px;
+  margin: 3vw;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  flex-grow: 1;
+}
+.name {
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+}
+.name a {
+  text-decoration: none;
+  color: black;
+}
+
+.tag {
+  font-size: 0.9rem;
+  color: #bfbfbf;
+  padding-bottom: 10px;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+.beers-container img {
+  height: 200px;
+}
+
+.beers-container .element-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.beers-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10vw 12vw 0 12vw;
+}
+
+.random {
+  padding: 10vh 30vw 8vw 20vw;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.random img {
+  height: 250px;
+}
+
+.random .element-image {
+  padding-right: 100px;
+}
+
+.random h3 {
+  padding-bottom: 25px;
+}
+
+.random h4 {
+  color: #bfbfbf;
+  padding-bottom: 25px;
+}
+
+.sub {
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding-top: 25px;
+}
+
+#random {
+  padding-top: 25px;
+}
+
+#food {
+  padding-bottom: 20px;
+}
+
+.pairing {
+  padding-left: 30px;
+  font-size: 0.8rem;
+}
+
+footer {
+  background-color: #0a2c42;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  font-size: 1rem;
+}
