@@ -6,7 +6,7 @@ grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
 header{
-    display: flex;
+    display: block;
     width: 100vw;
     position: fixed;
     top: 0;
@@ -15,17 +15,31 @@ header{
     background-color: #2081c3;
 }
 
-body{
-    display: inline-flex;
+header ul {
+    display: flex;
+    justify-content: row;
+}
+
+header ul li {
+    flex: 1;
+    list-style: none;
+}
+
+#index-div{
+    display: flex;
+    margin-top: 100px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 img{
-    display: block;
+    display: flex;
     margin: auto;
+    padding-bottom: 50px;
     width: 300px;
+    justify-content: center;
+    align-items: center;
 }
 
 button{
