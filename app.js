@@ -1,5 +1,6 @@
 const express = require('express');
 
+//hbsモジュールをapp.jsファイルに追加
 const hbs = require('hbs');
 const path = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
@@ -7,14 +8,15 @@ const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 const app = express();
 const punkAPI = new PunkAPIWrapper();
 
-
+//expressにテンプレートエンジンとして登録
 app.set('view engine', 'hbs');
+//app.jsを基点にモジュールでパスを確定する
 app.set('views', path.join(__dirname, 'views'));
-
+//rootフォルダからのpublicディレクトリへのパスをモジュールで割り出してexpressで静的ディレクトリとして登録。（静的ファイルは全てここだとexpressに伝えている）
 app.use(express.static(path.join(__dirname, 'public')));
 //app.use(express.static(`${__dirname}/public`))
 // Register the location for handlebars partials here:
-hbs.registerPartials(path.join(__dirname, 'views', 'partials'))
+hbs.registerPartials(path.join(__dirname, 'views', 'partials'));
 //hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 // ...
@@ -22,10 +24,11 @@ hbs.registerPartials(path.join(__dirname, 'views', 'partials'))
 // Add the route handlers here:
 
 app.get('/', (req, res) => {
+  //テンプレートをレンダリング
   res.render('index', {
-    navbar:true,
+    navbar: true,
     title: 'Main page',
-    css:'styles.css'
+    css: 'styles.css'
   });
 });
 
@@ -37,17 +40,17 @@ app.get('/', (req, res) => {
 app.get('/beers', async (req, res, next) => {
   try {
     //console.log(punkAPI)
-    const beerList = await punkAPI.getBeers()
+    const beerList = await punkAPI.getBeers();
     res.render('beers', {
-      navbar:true,
+      navbar: true,
       title: 'Beers',
       beers: beerList,
       css: 'styles.css'
-    })
+    });
   } catch (error) {
-      next(error)
+    next(error);
   }
-})
+});
 
 // punkAPI
 //   .getRandom()
@@ -58,44 +61,44 @@ app.get('/beers', async (req, res, next) => {
 
 app.get('/random-beer', async (req, res, next) => {
   try {
-    const beerRandomList = await punkAPI.getRandom()
-    console.log(beerRandomList)
+    const beerRandomList = await punkAPI.getRandom();
+    console.log(beerRandomList);
     res.render('random-beer', {
-      navbar:true,
+      navbar: true,
       title: 'Random Beer',
       beers: beerRandomList,
       css: 'styles.css'
-    })
+    });
   } catch (error) {
-      next(error)
+    next(error);
   }
-})
+});
 
 //I cannot solve it!!
 app.get('beers/beer-{{this.id}}', async (req, res, next) => {
   try {
-    const beerDetail = await punkAPI.getBeer(':id')
-    console.log(beerDetail)
-    res.send('beers/beerDetail', {
-      navbar:true,
+    const beerDetail = await punkAPI.getBeer(':id');
+    console.log(beerDetail);
+    res.render('beers/beer-{{this.id}}', {
+      navbar: true,
       title: 'Beers',
       beers: beerDetail,
       css: 'styles.css'
-    })
+    });
   } catch (error) {
-      next(error)
+    next(error);
   }
-})
+});
 
 app.get('*', (req, res) => {
-  console.log(req.originalUrl)
-  res.statusCode = 404
+  console.log(req.originalUrl);
+  res.statusCode = 404;
 
   res.render('error', {
     title: 'Error page',
     badLink: req.originalUrl,
-    css: ['error', 'modal'],
-  })
-})
+    css: ['error', 'modal']
+  });
+});
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
