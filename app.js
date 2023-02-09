@@ -26,7 +26,10 @@ app.get('/', (req, res) => {
 app.get('/beers', (req, res) => {
   punkAPI
     .getBeers()
-    .then(beersFromApi => res.render('beers', { beers: beersFromApi }))
+    .then(beersFromApi => {
+      console.log(beersFromApi);
+      res.render('beers', { beers: beersFromApi });
+    })
     .catch(error => console.log(error));
 });
 
@@ -35,7 +38,7 @@ app.get('/beer/:id', (req, res) => {
   punkAPI
     .getBeer(id)
     .then(
-      beerId => res.render('id', { id: beerId })
+      beerId => res.render('id', { singlebeer: beerId })
       // res.render('beers/:id', { id: beersId })
     )
     .catch(error => console.log(error));
