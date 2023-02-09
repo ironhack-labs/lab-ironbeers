@@ -1,7 +1,82 @@
-/*
+*{
 white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
-*/
+}
+#button1 {
+    background-image: url(https://www.thebeertimes.com/wp-content/uploads/2017/07/Carbonataci%C3%B3n.jpg);
+    background-size: cover;
+    padding:  15px 10px;
+    border-radius: 5px;
+    margin-top: 1px;
+    margin-right: 10px;
+    border: solid;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+
+  }
+  #button2 {
+    background-image: url(https://www.thebeertimes.com/wp-content/uploads/2017/07/Carbonataci%C3%B3n.jpg);
+    background-size: cover;
+    color: white;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: solid;
+    margin-top: -10px;
+    margin-left: -20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  
+  .navbar {
+    background-color: aliceblue;
+    padding: 20px;
+   
+    text-align: center;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home-view {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/008/482/673/non_2x/international-beer-day-background-free-vector.jpg);
+    height: 100vh;
+  }
+  .home-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  nav {
+    text-align: center;
+    background-image: url(https://www.thebeertimes.com/wp-content/uploads/2017/07/Carbonataci%C3%B3n.jpg);
+    padding: 20px;
+    border: solid; color:#f7f9f9
+  }
+  
+  h1 {
+    margin-top: 20px;
+  }
+  
+  img {
+    margin-top: 20px;
+  }
+  
+  button {
+    margin-top: 20px;
+  }
+  h1{
+    color: #f7f9f9;
+  }
