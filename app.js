@@ -30,11 +30,12 @@ app.get('/beers', (req, res) => {
     .catch(error => console.log(error));
 });
 
-app.get('/beers/:id', (req, res) => {
+app.get('/beer/:id', (req, res) => {
+  const id = req.params.id;
   punkAPI
-    .getBeer()
+    .getBeer(id)
     .then(
-      beersId => res.render('id', { id: beersId })
+      beerId => res.render('id', { id: beerId })
       // res.render('beers/:id', { id: beersId })
     )
     .catch(error => console.log(error));
