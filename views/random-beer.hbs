@@ -1,25 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<link rel="stylesheet" href="/stylesheets/styles.css">
     
-    <div>
+<div>
+    {{#each}}
         responseFromAPI[Math.random()*25]
 
-            <img class="beers-img" src={{image_url}}> </br>
-            <b>Name</b>: {{name}} </br>
-            <b>Description</b>: {{description}} </br>
-            <b>Tagline</b>: {{tagline}} </br>
+        <img class="beers-img" src={{image_url}}> </br>
+        <b>Name</b>: {{name}} </br>
+        <b>Description</b>: {{description}} </br>
+        <b>Tagline</b>: {{tagline}} </br>
 
-        {{/each}}
-    </div>
+    {{/each}}
+</div>
 
 
     
-</body>
-</html>
