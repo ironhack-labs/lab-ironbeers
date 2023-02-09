@@ -1,9 +1,9 @@
 
-<div>
+<div class="random-box">
     {{#each responseFromAPI}}
     {{> beerpartial}}
 
-    <p>{{this.food_pairing}}</p>
-    <p>{{this.brewers_tips}}</p>
+    <p>{{food_pairing}}</p>
+    <p>{{brewers_tips}}</p>
     {{/each}}
 </div>

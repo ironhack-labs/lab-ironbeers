@@ -48,14 +48,14 @@ body {
 
 .footer-final {
   background-color: #0a2c42;
-  height: 8vh;
   font-family: Arial, Helvetica, sans-serif;
   color: #f7f9f9;
   display: flex;
-  font-size: 17px;
+  font-size: 16px;
   position: fixed;
   bottom: 0;
   width: 100%;
+  padding: 10px;
 }
 
 .img-beer {
@@ -81,4 +81,17 @@ img {
 
 .size-box {
   width: 200px;
+}
+
+.random-box{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h2{
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-decoration: none;
 }
