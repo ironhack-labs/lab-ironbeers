@@ -74,14 +74,28 @@ app.get('/random-beer', async (req, res, next) => {
   }
 });
 
-//I cannot solve it!!
-app.get('/beers/:id', async (req, res, next) => {
+// app.get('/beers/:id', async (req, res, next) => {
+//   try {
+//     //console.log(req.params);
+//     //console.log('beers');
+//     const beerDetail = await punkAPI.getBeer(req.params.id);
+//     //console.log(beerDetail);
+//     res.render('beers', {
+//       //ここからページに飛ぶ
+//       navbar: true,
+//       title: 'Beers',
+//       beers: beerDetail,
+//       css: 'styles.css'
+//     });
+//   } catch (error) {
+//     next(error);
+//   }
+// });
+
+app.get('/beers/beer-:id', async (req, res, next) => {
   try {
-    //console.log(req.params);
-    //console.log('beers');
     const beerDetail = await punkAPI.getBeer(req.params.id);
-    //console.log(beerDetail);
-    res.render('beers', {
+    res.render('random-beer', {
       navbar: true,
       title: 'Beers',
       beers: beerDetail,
