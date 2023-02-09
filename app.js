@@ -75,11 +75,13 @@ app.get('/random-beer', async (req, res, next) => {
 });
 
 //I cannot solve it!!
-app.get('beers/beer-{{this.id}}', async (req, res, next) => {
+app.get('/beers/:id', async (req, res, next) => {
   try {
-    const beerDetail = await punkAPI.getBeer(':id');
-    console.log(beerDetail);
-    res.render('beers/beer-{{this.id}}', {
+    //console.log(req.params);
+    //console.log('beers');
+    const beerDetail = await punkAPI.getBeer(req.params.id);
+    //console.log(beerDetail);
+    res.render('beers', {
       navbar: true,
       title: 'Beers',
       beers: beerDetail,
@@ -91,7 +93,7 @@ app.get('beers/beer-{{this.id}}', async (req, res, next) => {
 });
 
 app.get('*', (req, res) => {
-  console.log(req.originalUrl);
+  console.log(404, req.originalUrl);
   res.statusCode = 404;
 
   res.render('error', {
