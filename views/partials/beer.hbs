@@ -1,15 +1,10 @@
 <div class="beer-container">
     <div class="image-container">
-        {{#if image_url}}
             <img src="{{image_url}}" alt="{{name}} image" class="beer-name">
-        {{else}}
-            <img src="images/beer.png" alt="Beer default image">
-        {{/if}}
     </div>
     <div class="text-container">
         <h2 class="beer-name">{{name}}</h2>
         <p class="beer-description">{{description}}</p>
         <p class="beer-tagline">{{tagline}}</p>
-        {{/if}}
     </div>
 </div>

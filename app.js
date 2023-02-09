@@ -24,40 +24,42 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-app.get('/beers', (req, res, next) => {
-  // try {
-    // const beers = punkAPI.getBeers()
-    // console.log(beers)
-      punkAPI
-        .getBeers()
-        .then(beersFromApi => {
-          res.locals.beers = [];
-          beersFromApi.forEach(element => {
-            res.locals.beers.push({
-              id: element.id,
-              image_url: element.image_url,
-              name: element.name,
-              description: element.description,
-              tagline: element.tagline
-            });
-          });
-          console.log(res.locals.beers)
-          res.render('beers',{
-          beers : res.locals.beers,
-          }) ;
-        })
-        .catch(error => {
-          res.statusCode = 500;
-          res.render('server-error', {code: 500, message: error.message});
-        });
-})
+app.get('/beers', async (req, res, next) => {
+   try {
+     const Allbeers = await punkAPI.getBeers()
+     console.log(Allbeers)
 
-// app.get("/random-beer", (req, res) => {
-//   console.log(req.query);
-//   res.render("random-beer", {
-//     navbar: true
-//   });
-// });
+    res.render('beers', {
+      Allbeers
+    })
+  } catch (error) {
+    next(error)
+  }
+})
+// .then .catch method :
+//       punkAPI
+//         .getBeers()
+//         .then(beersFromApi => {
+//           res.locals.beers = [];
+//           beersFromApi.forEach(element => {
+//             res.locals.beers.push({
+//               id: element.id,
+//               image_url: element.image_url,
+//               name: element.name,
+//               description: element.description,
+//               tagline: element.tagline
+//             });
+//           });
+//           console.log(res.locals.beers)
+//           res.render('beers',{
+//           beers : res.locals.beers,
+//           }) ;
+//         })
+//         .catch(error => {
+//           res.statusCode = 500;
+//           res.render('server-error', {code: 500, message: error.message});
+//         });
+// })
 
 app.use((error, req, res, next) => {
   res.statusCode = 500;
