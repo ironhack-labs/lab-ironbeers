@@ -26,20 +26,22 @@ app.get('/beers', (req, res) => {
 
   punkAPI
   .getBeers()
-  .then(beersFromApi => {
- /*      image: this.image_url,
-      name: this.name,
-      description: this.description,
-      tagline: this.tagline */
-    })
+  .then(beersFromApi => 
+    res.render("beers", {beersFromApi})
+  )
   .catch(error => console.log(error));
 
-  
-  res.render("beers", punkAPI);
 });
 
-app.get('/randombeer', (req, res) => {
-  res.render("randombeer");
+app.get('/random-beer', (req, res) => {
+
+  punkAPI
+  .getRandom()
+  .then(responseFromAPI => {
+    res.render("random-beer", {responseFromAPI})
+  })
+  .catch(error => console.log(error));
+
 });
 
 
