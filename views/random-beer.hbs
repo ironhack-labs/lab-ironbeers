@@ -1,14 +1,21 @@
 <link rel="stylesheet" href="/stylesheets/styles.css">
     
-<div>
-    {{#each}}
-        responseFromAPI[Math.random()*25]
-
-        <img class="beers-img" src={{image_url}}> </br>
-        <b>Name</b>: {{name}} </br>
-        <b>Description</b>: {{description}} </br>
-        <b>Tagline</b>: {{tagline}} </br>
-
+<div id="random-page">
+    {{#each randomBeer}}
+        <img id="beer-img" src={{image_url}}> </br>
+        <div>
+            <b>Name</b>: {{name}} </br>
+            <b>Description</b>: {{description}} </br>
+            <b>Tagline</b>: {{tagline}} </br>
+            <b>Food Pairing</b>: 
+                <ul>
+                    {{#each food_pairing}}
+                        <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </br>
+            <b>Brewer Tips</b>: {{brewers_tips}} </br>
+        </div>
     {{/each}}
 </div>
 

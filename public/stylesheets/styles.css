@@ -64,6 +64,10 @@ footer{
     min-height: 30px;
     background-color: #0a2c42;
 }
+footer p{
+    color: #f7f9f9;
+    margin-left: 20px;
+}
 
 #beers-page{
     display: flex;
@@ -75,6 +79,17 @@ footer{
     margin-bottom: 10px;
 }
 
-.beers-img{
+.beers-img, #beer-img{
     width: 100px;
+}
+
+#random-page{
+    margin-top: 100px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#beer-img{
+    margin: 10px;
 }
