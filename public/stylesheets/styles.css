@@ -1,7 +1,83 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /*
 white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
+;
 */
+/* ---------------------------------------------------------------------------------------------------------- */
+/* Navbar styling -> with position fixed for the scroll */
+.navbar-container {
+  background-color: #2081c3;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  border: 0px solid #2081c3;
+  box-shadow: 5px 5px 5px #bfbfbf;
+  position: fixed;
+}
+
+.navbar-ul {
+  margin-left: 5vw;
+}
+
+.navbar-a {
+  padding-right: 2vw;
+  text-decoration: none;
+  color: #f7f9f9;
+}
+/* ---------------------------------------------------------------------------------------------------------- */
+/* homepage (we call it "index" for this lab. styling. */
+
+.homepage-img {
+  background: transparent;
+  padding-top: 25vh;
+  height: 75vh;
+}
+
+.homepage-img-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.homepage-buttons-container {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-button {
+  width: 20vw;
+  height: 8vh;
+  margin-top: 6vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  border: 0px solid #2081c3;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #bfbfbf;
+  background-color: #2081c3;
+}
+
+.homepage-a-tag {
+  text-decoration: none;
+  font-size: 3vh;
+  color: #f7f9f9;
+}
+
+.homepage-footer {
+  height: 20vh;
+}

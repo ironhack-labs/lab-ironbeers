@@ -1,0 +1,30 @@
+{{#each randomBeer}}
+  <section class='container'>
+    {{!-- <div>
+      <img src='{{image_url}}' alt='{{name}}' class='beer-img' />
+    </div>
+
+    <div>
+      <p>{{name}}</p>
+    </div>
+
+    <div>
+      <p>{{description}}</p>
+    </div>
+
+    <div>
+      <p>{{tagline}}</p>
+    </div> --}}
+
+    {{> beerpartial this}}
+
+    <div>
+      <p>{{food_pairing}}</p>
+    </div>
+
+    <div>
+      <p>{{brewers_tips}}</p>
+    </div>
+
+  </section>
+{{/each}}
