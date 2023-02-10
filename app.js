@@ -25,17 +25,17 @@ app.get('/', (req, res) => {
 });
 
 app.get('/beers', async (req, res, next) => {
-   try {
-     const Allbeers = await punkAPI.getBeers()
-     console.log(Allbeers)
+  try {
+    const Allbeers = await punkAPI.getBeers();
+    console.log(Allbeers);
 
     res.render('beers', {
       Allbeers
-    })
+    });
   } catch (error) {
-    next(error)
+    next(error);
   }
-})
+});
 // .then .catch method :
 //       punkAPI
 //         .getBeers()
@@ -60,6 +60,18 @@ app.get('/beers', async (req, res, next) => {
 //           res.render('server-error', {code: 500, message: error.message});
 //         });
 // })
+app.get('/random-beer', async (req, res, next) => {
+  try {
+    const randomBeer = await punkAPI.getRandom();
+    console.log(randomBeer);
+
+    res.render('random-beer', {
+      randomBeer
+    });
+  } catch (error) {
+    next(error);
+  }
+});
 
 app.use((error, req, res, next) => {
   res.statusCode = 500;
@@ -68,3 +80,4 @@ app.use((error, req, res, next) => {
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000 http://localhost:3000'));
+

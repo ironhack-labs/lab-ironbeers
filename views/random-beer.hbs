@@ -1,1 +1,9 @@
-<h1>random beer</h1>
+<div>
+    <ul>
+    {{#each randomBeer}}
+        <li>
+          {{> beer this}}
+        </li>
+    {{/each}}
+    </ul>
+</div>
