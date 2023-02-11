@@ -1,0 +1,11 @@
+<ul>
+  {{#each beersFromApi}}
+    <li>{{this.name}}</li>
+    <li>{{this.image_url}}</li>
+    <li>{{this.description}}</li>
+    <li>{{this.tagline}}</li>
+    <img src="{{this.image_url}}" alt="Beer">
+  {{/each}}
+</ul>
+Day 3/lab-ironbeers (master)
+
