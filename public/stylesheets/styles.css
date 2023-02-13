@@ -112,6 +112,11 @@ p {
   height: 200px;
 }
 
+.element-image {
+  display: flex;
+  flex-direction: wrap;
+}
+
 .beers-container .element-image {
   display: flex;
   align-items: center;
@@ -130,6 +135,7 @@ p {
   padding: 10vh 30vw 8vw 20vw;
   flex-grow: 1;
   display: flex;
+  
   flex-direction: row;
 }
 
@@ -151,9 +157,13 @@ p {
 }
 
 .sub {
+  padding-top: 25px;
   font-weight: bold;
   font-size: 0.9rem;
-  padding-top: 25px;
+  
+}
+.descrip {
+  padding-bottom: 20px;
 }
 
 #random {
@@ -178,4 +188,47 @@ footer {
   align-items: center;
   padding-left: 20px;
   font-size: 1rem;
+}
+
+
+/* .button-margin {
+  margin: 7.5px;
+} */
+
+.beer-inner {
+  color: black;
+  margin-left: 5%;
+}
+
+.beer {
+  width: 40%;
+  height: 20%;
+  margin: 5%;
+}
+
+.beer img {
+  width: 20%;
+  margin-bottom: 5%;
+}
+
+.index-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 40%;
+  margin: 5%;
+}
+
+/* .beer-img {
+  width: 300px;
+} */
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 40%;
+  margin: 10%;
 }
