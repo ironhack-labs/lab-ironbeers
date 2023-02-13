@@ -1,0 +1,10 @@
+<h1>Beers</h1>
+{{#each beers}}
+  <div>
+    <img src="{{ this.image_url }}" alt="{{ this.name }}">
+    <h2>{{ this.name }}</h2>
+    <p>{{ this.description }}</p>
+    <p>{{ this.tagline }}</p>
+  </div>
+{{/each}}
+<link rel="stylesheet" href="/stylesheets/styles.css">
