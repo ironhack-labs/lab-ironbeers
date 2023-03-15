@@ -1,0 +1,19 @@
+<h1>Random beers page</h1>
+
+
+<section>
+    {{#if image_url}}
+    <img src="{{image_url}}" alt="{{name}}" />
+    {{else}}
+    <p>no image exist</p>
+    {{/if}}
+    <h3>{{name}}</h3>
+    <p>{{description}}</p>
+    <p>{{tagline}}</p>
+    <ul>
+        {{#each food_pairing}}
+            <li>{{this}}</li>
+        {{/each}}
+    </ul>
+    <p>{{brewers_tips}}</p>
+</section>
