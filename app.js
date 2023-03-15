@@ -19,7 +19,21 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Add the route handlers here:
 
 app.get('/', (req, res) => {
-  res.render('index');
+  const data = {
+    image: "beer.png",
+    cta: [
+      {
+        text: 'Check the Beers!',
+        target: '/beers'
+      },
+      {
+        text: 'Check a Random Beer',
+        target: '/random-beer'
+      }
+    ]
+
+};
+res.render('index', data);
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
