@@ -2,8 +2,9 @@
 
 {{#each beers}}
   <section>
-    <h2>{{this.name}}</h2>
-    <p>{{this.description}}</p>
+    <h2>Name : {{this.name}}</h2>
+    <p>Description: {{this.description}}</p>
+    <p>Tagline: {{this.tagline}}</p>
     <img src='{{this.image_url}}' alt='{{this.name}}' />
   </section>
 {{/each}}

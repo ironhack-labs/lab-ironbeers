@@ -57,11 +57,29 @@ app.get('/image', (req, res) => {
 });
 
 
+app.get('/tagline', (req, res) => {
+  punkAPI
+    .getBeers().then((beersFromApi)=>{
+      console.log('image from the database: ', beersFromApi);
+     res.render('beers',{tagline: beersFromApi});
+    })
+
+    .catch(error => console.log('description', error));
+});
 
 
 app.get('/random-beer', (req, res) => {
-  res.render('random-beer');
-});
+  let beerData = {};
+  punkAPI.getRandom()
+  .then(randomBeer =>{
+    beerData = {
+      beers: randomBeer
+    }
+     res.render('random-beer', beerData.beers[0]);
+    })
+
+  .catch(error => console.log(error));
+  });
 
 app.listen(3000, () => console.log('🏃 on port 3000'));
 

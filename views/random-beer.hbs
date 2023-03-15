@@ -1,10 +1,18 @@
 <h1>Random Beers</h1>
 
 <section>
-    
-
-
-
-
-
+  {{#if image_url}}
+    <img src='{{image_url}}' alt='{{this.name}}' />
+  {{else}}
+    <p>no image</p>
+  {{/if}}
+  <h2>{{this.name}}</h2>
+  <p>{{this.description}}</p>
+  <p>{{this.tagline}}</p>
+  <ul>
+    {{#each food_pairing}}
+      <li>{{this}}</li>
+    {{/each}}
+  </ul>
+  <p>{{this.brewers_tips}}</p>
 </section>
