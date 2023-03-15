@@ -4,9 +4,7 @@
             <img src={{this.image_url}} alt={{this.name}}>
 
             <div>
-                <h2>Name: <a href="/beers/{{this.id}}">{{this.name}}</a></h2>     
-                <p>Description: {{this.description}}</p>
-                <span>Tagline: {{this.tagline}}</span>
+                {{> beerpartial}}
                 <h4>Food Paring</h4>
                 <ul>
                     {{#each this.food_pairing}}

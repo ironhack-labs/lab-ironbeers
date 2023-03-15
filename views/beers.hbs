@@ -2,8 +2,10 @@
     {{#each beersFromAPI}}
 
         <div class="beer">
-
-            {{> beerpartial}}  
+            <img src={{this.image_url}} alt={{this.name}}>
+            <div>
+                {{> beerpartial}}  
+            </div>
 
         </div>
        
