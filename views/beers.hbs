@@ -1,0 +1,18 @@
+
+{{#if beers}}
+    <h1>List of beers</h1>
+
+    <ul>
+        {{#each beers}}
+            <li> <img src="{{image_url}}"></li>
+            <li>{{name}}</li>
+            <li>{{description}}</li>
+            <li>{{tagline}}</li>
+            <hr>
+        {{/each}}
+    </ul>
+
+{{/if}}
+
+
+
