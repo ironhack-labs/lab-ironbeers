@@ -1,7 +1,9 @@
-<div>
-  {{#each beers}}
+<h1>Beers Page</h1>
+
+{{#each beers}}
+  <section>
     <h2>{{this.name}}</h2>
-  {{/each}}
-
-</div>
-
+    <p>{{this.description}}</p>
+    <img src='{{this.image_url}}' alt='{{this.name}}' />
+  </section>
+{{/each}}

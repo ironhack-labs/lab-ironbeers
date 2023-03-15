@@ -6,11 +6,8 @@ dark-blue: #0a2c42;
 
 */
 
-body{
-    display: flex;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
+
+
 
 nav {
    display: flex;
@@ -62,3 +59,11 @@ margin: 10px;
 button {
     
 }
+/*
+.name,.description {
+   
+text-align: center;
+flex-direction: column;
+display: flex;
+}
+*/

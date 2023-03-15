@@ -36,6 +36,26 @@ app.get('/beers', (req, res) => {
 
 
 
+app.get('/description', (req, res) => {
+  punkAPI
+    .getBeers().then((beersFromApi)=>{
+      console.log('description from the database: ', beersFromApi);
+     res.render('beers',{description: beersFromApi});
+    })
+
+    .catch(error => console.log('description', error));
+});
+
+app.get('/image', (req, res) => {
+  punkAPI
+    .getBeers().then((beersFromApi)=>{
+      console.log('image from the database: ', beersFromApi);
+     res.render('beers',{image_url: beersFromApi});
+    })
+
+    .catch(error => console.log('description', error));
+});
+
 
 
 
