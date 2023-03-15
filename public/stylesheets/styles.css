@@ -1,7 +1,47 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+body {
+  background-color: #f7f9f9;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+nav {
+  background-color: #2081c3;
+  width: 100vw;
+  height: 10vh;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding-left: 10px;
+  line-height: 10vh;
+  font-weight: 700;
+}
+
+.home {
+  margin-left: 50px;
+}
+
+.beerimg {
+  height: 50vh;
+  margin-left: 40%;
+  margin-top: 5%;
+}
+
+button {
+  background-color: #1274b6;
+  height: 40px;
+  display: block;
+  margin-left: 45vw;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+}

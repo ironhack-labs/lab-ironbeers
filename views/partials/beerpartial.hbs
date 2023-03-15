@@ -1,0 +1,13 @@
+  <ul>
+  {{#each beers}}
+  {{!--  We managed to add a link to our images but we cannot make a new page with the details.
+   So please let us know about it! :)    --}}
+    <a href="/beers/{{id}}">
+    <img  src="{{image_url}}" /> 
+     </a> 
+    <li>{{name}}</li>
+    <li>{{id}}</li>
+    <li>{{description}}</li>
+    <li>{{tagline}}</li>
+    {{/each}}
+  </ul>
