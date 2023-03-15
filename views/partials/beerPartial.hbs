@@ -5,7 +5,9 @@
   <h2>
     {{this.tagline}}
   </h2>
-  <img src='{{this.image_url}}' alt='' />
+  {{#if this.image_url}}
+    <img src='{{this.image_url}}' alt='' />
+  {{/if}}
   <p class='description'>
     {{this.description}}
   </p>
