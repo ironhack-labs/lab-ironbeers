@@ -1,8 +1,11 @@
 
 {{#each beersArr}}
 
-<a href="/beers/{{id}}">
+<section class="card">
+  <a href="/beers/{{id}}">
+    {{> beerImg}}
     {{> beerPartial}}
-</a>
+  </a>
+</section>
 
 {{/each}}
