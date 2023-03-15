@@ -1,5 +1,8 @@
-{{log beersArr}}
 
 {{#each beersArr}}
-{{> beerPartial}}
+
+<a href="/beers/{{id}}">
+    {{> beerPartial}}
+</a>
+
 {{/each}}

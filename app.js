@@ -33,13 +33,27 @@ app.get('/beers', (req, res, next) => {
     })
     .catch(error => console.error(error));
 });
+
 app.get('/random-beer', (req, res, next) => {
   punkAPI
     .getRandom()
     .then(beerArr => {
       const [beer] = beerArr;
-      res.render('randomBeer', beer);
+      res.render('beer', beer);
     })
     .catch(err => console.error(err));
 });
+
+app.get('/beers/:id', (req, res, next) => {
+  // res.send(req.params.id);
+
+  punkAPI
+    .getBeer(req.params.id)
+    .then(beerArr => {
+      const [beer] = beerArr;
+      res.render('beer', beer);
+    })
+    .catch(err => console.error(err));
+});
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
