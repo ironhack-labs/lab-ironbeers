@@ -1,0 +1,17 @@
+{{!-- <h1>{{beersFromApi}}</h1> --}}
+
+{{! <h1>beers</h1>  }}
+
+{{#each beers}}
+  <section id='beers'>
+
+    <img src='{{this.image_url}}' alt='{{this.name}}' />
+
+    <h3>{{this.name}}</h3>
+
+    <p>{{this.description}}</p>
+
+    <p>{{this.tagline}}</p>
+
+  </section>
+{{/each}}
