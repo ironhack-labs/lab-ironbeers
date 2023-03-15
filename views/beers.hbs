@@ -1,10 +1,29 @@
 <div>
     {{#each beers}}
+        {{> beerPartial }}
+    {{/each}}
+</div>
+
+
+
+
+
+
+{{!-- 
+
+
+<div>
+    {{#each beers}}
     <div>
         <img src={{image_url}} alt="">
         <p>{{name}}</p>
         <p>{{description}}</p>
         <p>{{tagline}}</p>
     </div>
+
+    {{> beerPartial }}
     {{/each}}
-</div>
+</div> --}}
+
+
+
