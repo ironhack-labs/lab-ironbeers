@@ -1,16 +1,5 @@
 {{log beersArr}}
 
 {{#each beersArr}}
-  <section class='beer'>
-    <h1>
-      {{this.name}}
-    </h1>
-    <h2>
-      {{this.tagline}}
-    </h2>
-    <img src='{{this.image_url}}' alt='' />
-    <p class='description'>
-      {{this.description}}
-    </p>
-  </section>
+{{> beerPartial}}
 {{/each}}

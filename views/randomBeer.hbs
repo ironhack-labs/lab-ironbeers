@@ -1,8 +1,4 @@
-<h1>
-  {{name}}
-</h1>
-<h2>{{tagline}}</h2>
-<p class='description'>{{description}}</p>
+{{> beerPartial}}
 {{#if food_pairing}}
   <h3>{{food_pairing}}</h3>
   <ul>
@@ -11,4 +7,4 @@
     {{/each}}
   </ul>
 {{/if}}
-<img src='{{image_url}}' alt='Picture of {{name}}' />
+<p><strong>Brewers Tips: </strong>{{brewers_tips}}</p>
