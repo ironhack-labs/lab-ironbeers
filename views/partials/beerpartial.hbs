@@ -1,0 +1,14 @@
+<span id="partials">
+    {{log this}}
+<li>{{this.name}}</li>
+    {{#if this.image_url}}
+    <a href="/beers/{{this.id}}">
+    <img src="{{this.image_url}}" alt="{{this.name}}">
+    </a>
+    {{else}}
+    <h1>No img</h1>
+    {{/if}}
+    <li>{{this.description}}</li>
+    <li>{{this.tagline}}</li>
+</span>
+    
