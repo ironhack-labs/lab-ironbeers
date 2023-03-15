@@ -1,8 +1,10 @@
+ <h1>List of beers</h1>
 
-{{#if beers}}
-    <h1>List of beers</h1>
-    {{> beerpartial}}
-{{/if}}
+    {{#each beers}}
+        <hr>
+         {{> beerpartial}}
+    {{/each}}
+
 
 
 
