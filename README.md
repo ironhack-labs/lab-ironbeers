@@ -42,9 +42,9 @@ $ npm install
 To run the app:
 
 ```shell
-$ node app.js
+$ nodemon app.js
 
-# you can also run: npm start
+# you can also run: npm run dev
 ```
 
 ### Iteration 1: Layout barebones
@@ -218,6 +218,23 @@ Happy Coding! :heart:
   For example, is it a concept that you don't understand, or are you receiving an error message that you don't know how to fix? It is usually helpful to try to state the problem as clearly as possible, including any error messages you are receiving. This can help you communicate the issue to others and potentially get help from classmates or online resources. 
 
   Once you have a clear understanding of the problem, you will be able to start working toward the solution.
+
+  <br>
+
+  [Back to top](#faqs)
+
+</details>
+
+<details>
+  <summary>When I try to run the app, I get an error "command not found: nodemon"</summary>
+
+  <br>
+
+  Make sure you have `nodemon` installed globally:
+
+  ```bash
+  npm install -g nodemon
+  ```
 
   <br>
 
