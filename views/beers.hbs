@@ -1,0 +1,10 @@
+<h1>List of beers</h1>
+
+<div id="beer-list">
+    {{#each beers}}
+    <div class="one-beer">
+        {{> beerPartial this}}
+    </div>
+    {{/each}}
+</div>
+
