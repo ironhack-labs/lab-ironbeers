@@ -236,6 +236,8 @@ Happy Coding! :heart:
   npm install -g nodemon
   ```
 
+  This will install nodemon globally on your system, making it available to all of your projects.
+
   <br>
 
   [Back to top](#faqs)
