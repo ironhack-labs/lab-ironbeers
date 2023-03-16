@@ -38,13 +38,17 @@ img {
   margin: 3vw;
   width: 25vw;
   height: 50vh;
-  text-align: left;
+  text-align: justify;
 }
 
 .name {
   font-weight: 700;
-  font-size: 1.3em;
+  font-size: 1.5em;
   margin-right: auto;
+}
+
+.name a {
+  color: #2081c3;
 }
 
 .tagline {
@@ -56,4 +60,59 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.randomBeer {
+  margin: 1vh auto;
+}
+
+.randomBeer h3 {
+  margin: 2vh;
+  color: #2081c3;
+}
+
+.center {
+  text-align: left;
+  margin: 0.1vh;
+  font-weight: 600;
+  color: rgb(92, 92, 92);
+}
+
+.buttons a {
+  background-color: #2081c3;
+  padding: 2vh 4vw;
+  font-size: 1.5em;
+  border-radius: 7px;
+  display: flex;
+  margin: 2vh;
+  justify-content: center;
+}
+
+.buttons a:hover {
+  background-color: #1e76b1;
+  transition: all ease 100ms;
+}
+
+#homepageDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#homepageDiv img {
+  margin-bottom: 5vh;
+  width: 20vw;
+  height: 50vh;
+  margin-left: 3.5vw;
+  margin-top: 5vh;
+}
+
+.combos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.combos h3 {
+  margin: 1.5vh 0;
 }

@@ -1,11 +1,16 @@
 {{#each responseFromAPI}}
-  <div>
-    <img src='{{image_url}}' alt='{{name}}' />
+  <div class='beers randomBeer'>
 
-    <p>{{name}} </p>
+    {{>beer}}
 
-    <p>{{description}} </p>
+<div class="combos">
+    <h3>Best combined with:</h3>
+    {{#each food_pairing}}
+    <p class="center"> {{this}}</p>
+    {{/each}}
 
-    <p>{{tagline}} </p>
+    <h3>Brewer Tips:</h3>
+    <p class="center">{{this.brewers_tips}}</p>
+</div>
   </div>
-{{/each}}
+{{/each}} 
