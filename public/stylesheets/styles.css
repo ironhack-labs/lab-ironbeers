@@ -8,16 +8,20 @@ font-family: Arial, Helvetica, sans-serif; */
 a {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  /* background-color: #2081c3; */
-text-decoration: none;}
+  background-color: #2081c3;
+  text-decoration: none;
+  padding: 10px;
+  
+}
+  
 
 nav{
   font-size: 1.0rem;
-  padding: 10px;
+  padding: 20px;
   margin: 10px;
   background-color: #2081c3;
   box-shadow: 0 2px 6px 0 #9e9f9f;
-  height: 20px;
+
 
 }
 h2 {
@@ -29,13 +33,16 @@ h5 {
   padding-bottom: 20px;
 }
   #beer-image {
-  width: 50%;
-  height: 25%;
-  margin-left: 2rem;
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 footer {
   font-size: 1rem;
   padding: 10px;
+  margin: 10px;
   position: fixed;
   bottom: 0px;
   width: 100%;
@@ -43,11 +50,32 @@ footer {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-#buttons{
-  background-color: #2081c3;
-  color: white;
-  display: flexbox;
-
+.buttons{
+  padding: 20px;
+  margin: 20px;
+  
 }
+.button1{
+  background-color: #2081c3;
+  font-size: 20px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  color: white;
+  display: block;
+  justify-content: center;
+  border-radius: 5px;
+}
+.button2{
+  background-color: #2081c3;
+  font-size: 20px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  display: block;
+  border-radius: 5px;
+}
+
 
