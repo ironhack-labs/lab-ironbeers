@@ -23,6 +23,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/beers', (req, res) => {
+  getBeers();
   res.render('beers');
 });
 
