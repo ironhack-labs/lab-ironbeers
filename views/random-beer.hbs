@@ -1,0 +1,20 @@
+<head>
+  <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+
+
+<ul>
+  {{#each randomBeer}}
+  <ul>
+        <img src="{{this.image_url}}">
+        <h4>Tagline: {{this.tagline}}</h4>
+        <h2>Name:  {{this.name}}</h2>
+        <p>Description: {{this.description}}</p>
+        <h3>Food Pairing</h3> {{#each food_pairing}}
+        <li>{{this}}</li>
+            {{/each}}
+        <p><strong> Brewer tips: </strong>{{brewers_tips}}</p>
+    </ul>
+  
+  {{/each}}
+</ul>
