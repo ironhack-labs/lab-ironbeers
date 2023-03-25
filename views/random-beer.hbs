@@ -1,0 +1,19 @@
+<div class="container">
+
+<p> <strong> Food Pairing:  </strong> </p>
+<a href="/beer-details/{{id}}" role="button">
+                <img src="{{image_url}}">
+                {{beerCard}}
+            </a>
+<ul> 
+{{#each food_pairing}}
+<li> 
+{{this}}
+</li>
+
+{{/each}}
+
+{{!-- (/ul) --}}
+
+<p> <strong> Brewers' Tips: :  </strong> {{brewers_tips}}</p>
+</div>
