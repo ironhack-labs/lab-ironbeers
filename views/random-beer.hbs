@@ -1,0 +1,24 @@
+
+
+
+{{> beerpartial randomBeer}}
+ <ul>
+
+ {{!-- <img src="{{randomBeer.image_url}}" alt="beerImg"> 
+    <li><h2>{{randomBeer.name}}</h2><ul>
+        
+        <li>{{randomBeer.description}}</li>
+        <li>{{randomBeer.tagline}}</li>
+         --}}
+        <h2>Food Pairing</h2>
+        <ul>{{#each randomBeer.food_pairing}}
+           <li>{{this}}</li> 
+            {{/each}}</ul>
+            
+
+        <li>{{randomBeer.brewers_tips}}</li>
+        </ul></li>  
+        <hr>
+ 
+</ul>
+
