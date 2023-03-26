@@ -5,14 +5,20 @@
     <h1>{{beer.name}}</h1><br><br>
     <p>{{beer.description}}</p><br><br>
     <p><strong>Tagline:</strong> {{beer.tagline}}</p><br><br> --}}
-
-    {{> beerpartial}}
-    <p><strong>Best served with:</strong></p>
-    <ul>
-      {{#each beer.food_pairing}}
-       <li>{{this}}</li>
-      {{/each}}
-    </ul><br><br>
-    <p><strong>Brewer tips:</strong> {{beer.brewers_tips}}</p>
- </dev>
-</dev>
+{{#each randomBeer}}
+    <dev id="image-and-text">
+      <img src={{this.image_url}}/>
+      <dev id="text">
+       <h1>{{this.name}}</h1><br><br>
+       <p>{{this.description}}</p><br><br>
+       <p><strong>Tagline:</strong> {{this.tagline}}</p><br><br>
+       <p><strong>Best served with:</strong></p>
+       <ul>
+         {{#each food_pairing}}
+         <li>{{this}}</li>
+         {{/each}}
+       </ul><br><br>
+       <p><strong>Brewer tips:</strong> {{this.brewers_tips}}</p>
+       </dev>
+    </dev>
+{{/each}}

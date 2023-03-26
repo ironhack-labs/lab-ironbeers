@@ -3,7 +3,7 @@ img {
     width: 200px;
 }
 
-#image-and-text-rb {
+#image-and-text {
     /* border: solid red 2px; */
     margin: 100px auto;
     display: flex;
@@ -11,10 +11,10 @@ img {
     width: 800px;
 }
 
-#text-rb {
+#text {
     padding-left: 100px;
 }
 
-#text-rb ul li {
+#text ul li {
     margin-left: 40px;
 }
