@@ -1,3 +1,6 @@
+body {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
 .beer-logo {
   background-size: cover;
   width: 100px;
@@ -7,6 +10,8 @@
   text-align: center;
   margin: 50px 150px;
   border: 2px solid black;
+  background-color: rgb(243, 255, 243);
+  padding: 20px;
 }
 
 .beer-name {
@@ -16,12 +21,25 @@
   text-shadow: 2px 2px #ff5100;
 }
 
+.beer-tagline {
+  font-size: 15pt;
+  font-style: italic;
+  padding: 20px;
+}
+
+.beer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .beer-img {
   height: 200px;
 }
 
 .beer-description {
-}
-
-.beer-tagline {
+  text-align: justify;
+  margin: 10px 50px;
+  padding: 20px;
+  width: 300px;
 }
