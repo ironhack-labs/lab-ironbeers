@@ -5,9 +5,9 @@
 <body>
     {{{ body }}}
     {{> navpartial}}
-<div class="randombeer-ul">
+<div class="randombeer-div">
   {{#each randomBeer}}
-  <ul>
+  
     {{> beerpartial this}}
     
       <h3 class="foodpairing">Food Pairing</h3> {{#each food_pairing}}
@@ -15,7 +15,7 @@
         {{/each}}
       <p class="brewertips"><strong> Brewer tips: </strong>{{brewers_tips}}</p>
       </div>
-  </ul>
+  
   
   {{/each}}
 </div>

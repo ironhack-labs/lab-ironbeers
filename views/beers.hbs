@@ -10,15 +10,17 @@
         <li class="nav-bar-li"><a class="nav-bar-link"  href="/random-beer">Random Beer</a></li>
 
     </div>
-<ul>
+
+<div class="allbeers-div">
+
   {{#each beers}}
-  <ul>
     {{> beerpartial this}}
     </div>
-  </ul>
+    {{/each}}
+</div>
  
-  {{/each}}
-</ul>
+  
 
-    {{> footerpartial}}
+
+{{> footerpartial}}
 </body>
