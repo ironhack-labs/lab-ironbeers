@@ -2,16 +2,23 @@
   <link rel="stylesheet" href="/stylesheets/styles.css">
 </head>
 
-
-<ul>
+<body>
+    {{{ body }}}
+    {{> navpartial}}
+<div class="randombeer-ul">
   {{#each randomBeer}}
   <ul>
     {{> beerpartial this}}
-      <h3>Food Pairing</h3> {{#each food_pairing}}
-      <li>{{this}}</li>
+    
+      <h3 class="foodpairing">Food Pairing</h3> {{#each food_pairing}}
+      <li class="foodpairing-li">{{this}}</li>
         {{/each}}
-      <p><strong> Brewer tips: </strong>{{brewers_tips}}</p>
+      <p class="brewertips"><strong> Brewer tips: </strong>{{brewers_tips}}</p>
+      </div>
   </ul>
   
   {{/each}}
-</ul>
+</div>
+
+    {{> footerpartial}}
+  </body>
