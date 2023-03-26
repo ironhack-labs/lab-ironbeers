@@ -6,20 +6,77 @@ grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
 
-body{
-    background-color: #f7f9f9;
-}
 
-nav{
+body {
+  background-color: #f7f9f9;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+nav {
     background-color: #2081c3;
     color: #f7f9f9;
     display: flex;
     justify-content: left;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  nav a {
+  margin: 10px;
+  color: #f7f9f9;
+  text-decoration: none;
+  
+  }
+.homePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.homePage img {
+    height: 300px;
+    width: 300px;
+    padding: 20px;
 }
 
-a{
+.homePage a {
     text-decoration: none;
-    color: #f7f9f9;
+    color: #f7f9f9; 
+    background-color: #2081c3;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
 }
 
+.beerPage img {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    width: 50px;
+    margin: 10px;
+    margin-left: 20px;
+    
+}
 
+h2 {
+   color: #bfbfbf; 
+}
+.randomBeerPage {
+    display: flex;
+    flex-direction:row;
+}
+
+.randomBeerPage img {
+    height: 300px;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+}
+.randomText{
+display: flex;
+flex-direction:column;
+}
