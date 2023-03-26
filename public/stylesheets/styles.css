@@ -24,8 +24,9 @@ a {
 
 #index-page-content {
     display: flex;
+    /* justify-content: center; <- work only for row */
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 
 }
 
@@ -39,17 +40,23 @@ a {
 #index-buttons{
     display: flex;
     flex-direction: column;
-
 }
 
 #index-buttons a {
     background-color: #2081c3;
-    height: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 200px;
     margin-top: 10px;
     font-size: 20px;
     text-align: center;
+}
 
+footer {
+    color: #f7f9f9;
+    background-color: #0a2c42;
+    margin-top: 50px;
+    padding: 30px 10px;
 }
 
 
