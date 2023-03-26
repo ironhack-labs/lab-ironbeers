@@ -6,9 +6,15 @@ body {
   width: 100px;
 }
 
+.beers {
+  display: inline-grid;
+  column-gap: 30px;
+  row-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .beer {
   text-align: center;
-  margin: 50px 150px;
   border: 2px solid black;
   background-color: rgb(243, 255, 243);
   padding: 20px;

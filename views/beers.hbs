@@ -1,14 +1,14 @@
-{{#each beersFromApi}}
+<div class='beers'>{{#each beersFromApi}}
 
-  <div class='beer'>
-    <div class='beer-name'>{{name}}</div>
+    <div class='beer'>
+      <div class='beer-name'>{{name}}</div>
 
-    <div class='beer-tagline'> {{tagline}}</div>
-    <div class='beer-container'>
-      <img class='beer-img' src='{{image_url}}' />
+      <div class='beer-tagline'> {{tagline}}</div>
+      <div class='beer-container'>
+        <img class='beer-img' src='{{image_url}}' />
 
-      <div class='beer-description'> {{description}}</div></div>
+        <div class='beer-description'> {{description}}</div></div>
 
-  </div>
+    </div>
 
-{{/each}}
+  {{/each}}</div>
