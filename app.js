@@ -42,5 +42,10 @@ app.get('/random-beer', (req, res, next) => {
     .catch((err) => console.log("there was an error", err));
 });
 
-
+app.get('/beers/beer-:id', (req, res) => {
+  const id = req.params.id
+  punkAPI.getBeer(id)
+  .then(beerApi => res.render('beerDetails', {beerApi}))
+  .catch(error => console.log(error));
+});
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
