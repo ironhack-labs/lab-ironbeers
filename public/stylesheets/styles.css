@@ -1,7 +1,27 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+.beer-logo {
+  background-size: cover;
+  width: 100px;
+}
+
+.beer {
+  text-align: center;
+  margin: 50px 150px;
+  border: 2px solid black;
+}
+
+.beer-name {
+  color: rgb(17, 78, 4);
+  font-size: 25pt;
+  font-weight: bold;
+  text-shadow: 2px 2px #ff5100;
+}
+
+.beer-img {
+  height: 200px;
+}
+
+.beer-description {
+}
+
+.beer-tagline {
+}
