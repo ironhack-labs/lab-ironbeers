@@ -1,3 +1,17 @@
-{{#each beersFromApi }}
- {{> beerpartial}}
-{{/each}}
+<link rel="stylesheet" href="stylesheets/beers.css" />
+ {{!-- {{> beerpartial}} --}}
+<dev id="page-wrapper"></dev>
+
+  {{#each beers}}
+
+  <dev id="image-and-text">
+  <img src={{this.image_url}}/>
+  <dev id="text">
+    <h1>{{this.name}}</h1><br><br>
+    <p>{{this.description}}</p><br><br>
+    <p><strong>Tagline:</strong> {{this.tagline}}</p><br><br>
+    </dev>
+  </dev>
+  {{/each}}
+</dev>
+

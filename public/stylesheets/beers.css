@@ -1,0 +1,24 @@
+#page-wrapper {
+    display: flex;
+    flex-direction: row;
+    /* border: solid green 2px; */
+}
+
+#image-and-text {
+    display: flex;
+    flex-direction: row;
+    /* border: solid red 2px; */
+    width: 500px;
+    padding-top: 50px;
+    margin-left: 10px;
+}
+
+img {
+    height: 300px;
+    width: 100px;
+}
+
+#text {
+    margin-left: 50px;
+   
+}
