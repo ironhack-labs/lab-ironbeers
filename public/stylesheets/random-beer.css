@@ -1,9 +1,20 @@
-body {
-    background-color: yellow;
-}
-
 img {
     height: 300px;
-    width: 100px;
-    
+    width: 200px;
+}
+
+#image-and-text-rb {
+    /* border: solid red 2px; */
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    width: 800px;
+}
+
+#text-rb {
+    padding-left: 100px;
+}
+
+#text-rb ul li {
+    margin-left: 40px;
 }

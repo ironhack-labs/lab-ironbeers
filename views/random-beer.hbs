@@ -1,12 +1,18 @@
 <link rel="stylesheet" href="stylesheets/random-beer.css" />
-<img src={{beer.image_url}}/>
-<h1>{{beer.name}}</h1>
-<p>{{beer.description}}</p>
-<p><strong>Tagline:</strong> {{beer.tagline}}</p>
-<p><strong>Best served with:</strong></p>
-<ul>
-    {{#each beer.food_pairing}}
-      <li>{{this}}</li>
-    {{/each}}
-</ul>
-<p><strong>Brewer tips:</strong> {{beer.brewers_tips}}</p>
+{{!-- <dev id="image-and-text-rb">
+ <img src={{beer.image_url}}/>
+ <dev id="text-rb">
+    <h1>{{beer.name}}</h1><br><br>
+    <p>{{beer.description}}</p><br><br>
+    <p><strong>Tagline:</strong> {{beer.tagline}}</p><br><br> --}}
+
+    {{> beerpartial}}
+    <p><strong>Best served with:</strong></p>
+    <ul>
+      {{#each beer.food_pairing}}
+       <li>{{this}}</li>
+      {{/each}}
+    </ul><br><br>
+    <p><strong>Brewer tips:</strong> {{beer.brewers_tips}}</p>
+ </dev>
+</dev>
