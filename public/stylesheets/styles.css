@@ -1,7 +1,70 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
+/*white: #24bcbc;
+  light-blue: #2081c3;
+  dark-blue: #0a2c42;
+  grey: #bfbfbf;
+  font-family: Arial, Helvetica, sans-serif;
 */
+.header {
+  padding: 1.5%;
+  padding-left: 4%;
+  min-height: 5vh;
+  background-color: #2081c3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header a {
+  text-decoration: none;
+  color: white;
+  padding-right: 8vw;
+}
+
+#main-image,
+.images {
+  margin-top: 5%;
+  max-width: 30vw;
+  max-height: 30vw;
+  margin-left: 37vw;
+}
+
+.buttons button {
+  border-radius: 5px;
+  padding: 1%;
+  margin-top: 2%;
+  background-color: #2081c3;
+  border: none;
+  color: white;
+  align-self: center;
+}
+
+.buttons {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#footer {
+  background-color: #0a2c42;
+  color: white;
+  padding: 2%;
+  margin-top: 4%;
+}
+
+.images {
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.random-beer-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: smaller;
+}
+
+.whole-random-beer {
+  display: flex;
+  flex-direction: row;
+}
