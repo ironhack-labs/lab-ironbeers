@@ -1,5 +1,9 @@
-{{#each beersArr}}
-<div class="beer">
-    {{> beerpartial}}
-</div>
-{{/each}}
+{{#if beersArr}}
+<ul>
+    {{#each beersArr}}
+    <li>
+        {{> beerpartial}}
+    </li>
+    {{/each}}
+</ul>
+{{/if}}

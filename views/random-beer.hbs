@@ -1,9 +1,17 @@
-{{#each randombeersArr}}
+{{#if randombeerObj}}
 <div class="beer">
     {{> beerpartial}}
-    <h3>Food Pairing:</h3>
-    <p>{{this.food_pairing}}</p>
-    <h3>Brewer Tips:</h3>
-    <p>{{this.brewers_tips}}</p>
+    {{#if food_pairing}}
+        <h3>Food Pairing:</h3>
+        <ul>
+            {{#food_pairing}}
+            <li>{{#each this}}</li>
+            {{/food_pairing}}
+        </ul>
+    {{/if}}
+    {{#if brewers_tips}}
+        <h3>Brewer Tips:</h3>
+        <p>{{this.brewers_tips}}</p>
+    {{/if}}
 </div>
-{{/each}}
+{{/if}}
