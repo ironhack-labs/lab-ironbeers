@@ -4,6 +4,7 @@ const hbs = require('hbs');
 const path = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 
+hbs.registerPartials(path.join(__dirname, 'views', 'partials'));
 const app = express();
 app.use(express.static(__dirname + 'stylesheets' + 'public'));
 const punkAPI = new PunkAPIWrapper();
@@ -25,11 +26,12 @@ app.get('/', (req, res) => {
 app.get('/beers', (req, res) => {
   punkAPI
     .getBeers()
-    .then(beersFromApi =>
-      console.log('Beers from the database: ', beersFromApi)
-    )
+    .then(beersFromApi => {
+      const beers = beersFromApi;
+      console.log('Beers from the database: ', beersFromApi);
+      res.render('beers', { beers });
+    })
     .catch(error => console.log(error));
-  res.render('beers');
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
