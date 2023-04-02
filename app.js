@@ -1,3 +1,4 @@
+const { error } = require('console');
 const express = require('express');
 
 const hbs = require('hbs');
@@ -37,9 +38,19 @@ app.get('/random-beer', (req, res) => {
   punkAPI
     .getRandom()
     .then(responseFromAPI => {
-      const randomBeer = responseFromAPI;
-      console.log(randomBeer);
-      res.render('randomBeer', { randomBeer });
+      const beer = responseFromAPI;
+      res.render('beer', { beer });
+    })
+    .catch(error => console.log(error));
+});
+
+app.get('/beer-:uid', (req, res) => {
+  punkAPI
+    .getBeer(req.params.uid)
+    .then(beerfromAPI => {
+      const beer = beerfromAPI;
+      console.log(beer);
+      res.render('beer', { beer });
     })
     .catch(error => console.log(error));
 });

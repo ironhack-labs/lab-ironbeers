@@ -1,0 +1,14 @@
+<div class="ramdon-beer">  
+    {{#each beer}}
+        {{> beerCard this}}
+          <p><span>Food Pairing</span></p>
+          <ul>
+            {{#each food_pairing}}
+              <li>
+                {{this}}
+              </li>
+            {{/each}}
+          </ul>
+          <p><span>Brewers Tips: </span>{{brewers_tips}}</p>
+    {{/each}}
+</div>
