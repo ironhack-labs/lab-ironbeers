@@ -24,5 +24,15 @@ app.get('/', (req, res, next) => {
   res.render('index');
 });
 
+app.get('/beers', (req, res, next) => {
+  const filePath = path.join(__dirname, "views", "beers.html");
+  const strongBeers = punkAPI.getBeers({}).then(beersFromApi => res.render('beers'));
+});
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
+
+// punkAPI
+//   .getBeers()
+//   .then(beersFromApi => console.log('Beers from the database: ', beersFromApi))
+//   .catch(error => console.log(error));
 
