@@ -5,3 +5,155 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+body{
+    background-color:#f7f9f9;
+}
+/* .space-beer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+} */
+
+nav{
+   background-color: #2081c3;
+   height: 3.5rem;
+   box-shadow:5px 5px 6px #bfbfbf;
+   padding-top: 2rem;
+   padding-left: 3rem;
+   width: 100%;
+   
+}
+
+a{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2rem;
+}
+
+footer{
+    background-color:#0a2c42 ;
+    height: 3.5rem;
+    padding-top: 0.1rem;
+    padding-left: 3rem;
+    width: 100%;
+}
+
+.text-footer{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+button{
+    background-color: #2081c3;
+    border: none;
+    box-shadow: 5px 5px 3px #bfbfbf;
+    width: fit-content;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+
+}
+
+.just-img-beer{
+    width: 20em; 
+    height: 20em;
+}
+.margin-center{
+    display: flex;
+    justify-content: center;
+
+}
+
+.buttons-style{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    border-radius: 6px;  
+}
+
+.zone-buttons{
+text-align: center;
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+}
+
+
+
+/* style random beer */
+
+.size-beer-random{
+    width: 6rem; 
+    padding: 60px;
+    margin: 100px;
+    
+}
+.just-center{
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.text-beer{
+    padding-top: 100px;
+}
+
+/* plp beer */
+ 
+  .plp-beer {
+    width: 1200px;
+    padding: 50px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+  }
+  
+  .plp-beer img {
+    height: 300px;
+  }
+
+  .space-beer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* beer-plp */
+
+.beer-plp{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+  
+  .beer-plp {
+    width: 500px;
+    height: 40%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .beer-plp img {
+    height: 350px;
+  }
+  
+  .beer h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding: 10px 0;
+  }
+  
+  .beer p {
+    text-align: center;
+    font-size: 12px;
+  }
