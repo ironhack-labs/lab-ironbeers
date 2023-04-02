@@ -28,8 +28,18 @@ app.get('/beers', (req, res) => {
     .getBeers()
     .then(beersFromApi => {
       const beers = beersFromApi;
-      console.log('Beers from the database: ', beersFromApi);
       res.render('beers', { beers });
+    })
+    .catch(error => console.log(error));
+});
+
+app.get('/random-beer', (req, res) => {
+  punkAPI
+    .getRandom()
+    .then(responseFromAPI => {
+      const randomBeer = responseFromAPI;
+      console.log(randomBeer);
+      res.render('randomBeer', { randomBeer });
     })
     .catch(error => console.log(error));
 });
