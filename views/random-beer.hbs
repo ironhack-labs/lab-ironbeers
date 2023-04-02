@@ -1,0 +1,12 @@
+<div class="container">
+  <a href="/">Home</a>
+  <h1>Beers</h1>
+  {{#each responseFromAPI}}
+    <div class="beer-card">
+      <img src="{{ this.image_url }}" alt="{{ this.name }}">
+      <h2>{{ this.tagline }}</h2>
+      <h2>{{ this.food_pairing }}</h2>
+      <h2>{{ this.brewers_tips }}</h2>
+    </div>
+  {{/each}}
+</div>
