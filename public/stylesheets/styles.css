@@ -15,6 +15,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/*
+██   ██ ███████  █████  ██████  ███████ ██████      
+██   ██ ██      ██   ██ ██   ██ ██      ██   ██     
+███████ █████   ███████ ██   ██ █████   ██████      
+██   ██ ██      ██   ██ ██   ██ ██      ██   ██     
+██   ██ ███████ ██   ██ ██████  ███████ ██   ██     */
+
 header {
   background-color: #2081c3;
 }
@@ -34,6 +41,17 @@ header {
 .navigation-element a:hover {
   text-decoration: underline;
 }
+
+.container {
+  margin-inline: 15rem;
+  margin-block: 4rem;
+}
+/*
+██████  ███████ ███████ ██████  
+██   ██ ██      ██      ██   ██ 
+██████  █████   █████   ██████  
+██   ██ ██      ██      ██   ██ 
+██████  ███████ ███████ ██   ██ */
 
 .beer-index {
   display: flex;
@@ -57,17 +75,24 @@ header {
   text-decoration: none;
 }
 
-.container {
-  margin-inline: 15rem;
-  margin-block: 4rem;
-}
-
+/*
+██████  ███████ ███████ ██████  ███████ 
+██   ██ ██      ██      ██   ██ ██      
+██████  █████   █████   ██████  ███████ 
+██   ██ ██      ██      ██   ██      ██ 
+██████  ███████ ███████ ██   ██ ███████ */
 .beers {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
 }
 
+/*
+██████  ███████ ███████ ██████         ██████  █████  ██████  ██████      
+██   ██ ██      ██      ██   ██       ██      ██   ██ ██   ██ ██   ██     
+██████  █████   █████   ██████  █████ ██      ███████ ██████  ██   ██     
+██   ██ ██      ██      ██   ██       ██      ██   ██ ██   ██ ██   ██     
+██████  ███████ ███████ ██   ██        ██████ ██   ██ ██   ██ ██████      */
 .beer-card__img {
   display: block;
   margin: auto;
@@ -83,6 +108,10 @@ header {
   margin-top: 1rem;
 }
 
+.beer-card__name {
+  margin-top: 2rem;
+}
+
 .beer-card__name a {
   text-decoration: none;
   color: inherit;
@@ -92,6 +121,12 @@ header {
   text-decoration: underline;
 }
 
+/*
+██████  ███████ ███████ ██████  
+██   ██ ██      ██      ██   ██ 
+██████  █████   █████   ██████  
+██   ██ ██      ██      ██   ██ 
+██████  ███████ ███████ ██   ██ */
 .beer {
   display: flex;
   gap: 5rem;
@@ -104,7 +139,6 @@ header {
 .beer__food-pairings {
   padding-left: 1.5rem;
 }
-
 .beer__tips {
   margin-top: 1rem;
 }
