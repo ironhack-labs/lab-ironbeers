@@ -18,13 +18,23 @@ app.get('/beers', (req, res, next) => {
     .getBeers()
     .then(beersFromApi => {
       console.log('Beers from the database: ', beersFromApi);
-      const data = { beersArr: beersFromApi };
-      res.render('beers', data);
+      res.render('beers', {beersArr: beersFromApi});
     })
     .catch(error => console.log(error));
 });
 
 // ...
+
+app.get('/random-beer', (req, res, next) => {
+  punkAPI
+    .getRandom()
+    .then(responseFromApi => {
+      console.log('randomBeer from the database: ', responseFromApi);
+      
+      res.render('random-beer', {randomBeer: responseFromApi[0]});
+    })
+    .catch(error => console.log(error));
+});
 
 // Add the route handlers here:
 
