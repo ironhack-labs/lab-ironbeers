@@ -5,22 +5,42 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
 nav{
     background-color:#2081c3;
-    padding: 10px 5px; 
+    padding: 20px 30px;
+    box-shadow: #bfbfbf; 
+    text-align: left;
   }
 
   div {
-    display: flex;
+
+    text-align: center;
   }
 
+
   .beer {
-    display: block;
+    
+    
+  }
+
+  .little {
+    height: 100px;
+    width: auto;
+  }
+
+  .front-beer {
+    height: 400px;
+    width: auto;
+    margin: 50px 200px 30px 50px;
+    justify-content: center;
+    align-items: center;
   }
 
   a {
     text-decoration: none;
-    color: #f7f9f9
+    color: #f7f9f9;
+    margin: 0 10px;
   }
 
   button {
@@ -30,6 +50,11 @@ nav{
     justify-content: center;
   }
 
-  li {
+  ul, li {
     text-decoration: none;
+  }
+
+  .randomBeer {
+    height: 150px;
+    width: auto;
   }
