@@ -45,3 +45,22 @@ nav a {
     text-decoration: none;
     font-family: sans-serif;
 }
+
+#beersContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.beerContainer {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+
+}
+img{
+   width: 150px;
+}
