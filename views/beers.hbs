@@ -1,22 +1,18 @@
-    <link />
-
-
-<div>
     <nav>
         <a href="/">Home</a>
         <a href="/beers">Beers</a>
         <a href="/random-beer">Random Beer</a>
     </nav>
+
+<h1>Beers page</h1>
+
+<div class="beer">
+{{#each beerArr}}
+
+<li><img src="{{image_url}}"></li>
+<li>{{name}}</li>
+<li>{{description}}</li>
+<li>{{tagline}}</li>
+
+{{/each}}
 </div>
-
-<img src="/images/beer.png">
-    <a href="/beers">Check the beers!</a>
-    <a href="/random-beer">Check a random beer</a>
-
-    {{!-- const randomBeer = PunkAPI.getRandom()
-
-randomBeer.then(beer => {
-  alert(beer[0].name)
-} --}}
-
-    {{!-- <script type="text/javascript" src="/path/to/punkapi-javascript-wrapper/dist/punkapi-javascript-wrapper.js"></script> --}}

@@ -5,6 +5,31 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
-a{
-    color:red  
+nav{
+    background-color:#2081c3;
+    padding: 10px 5px; 
+  }
+
+  div {
+    display: flex;
+  }
+
+  .beer {
+    display: block;
+  }
+
+  a {
+    text-decoration: none;
+    color: #f7f9f9
+  }
+
+  button {
+    background-color: #2081c3;
+    margin: 10px ;
+    align-items: center;
+    justify-content: center;
+  }
+
+  li {
+    text-decoration: none;
   }

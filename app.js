@@ -8,6 +8,7 @@ const app = express();
 const punkAPI = new PunkAPIWrapper();
 app.use(express.static("public"));
 
+
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
@@ -25,14 +26,27 @@ app.get('/', (req, res, next) => {
 });
 
 app.get('/beers', (req, res, next) => {
-  const filePath = path.join(__dirname, "views", "beers.html");
-  const strongBeers = punkAPI.getBeers({}).then(beersFromApi => res.render('beers'));
+  // const berrArr = path.join(__dirname, "views", "beers.html");
+  const beerArr = punkAPI.getBeers();
+  beerArr
+  .then(beerArr => {
+    res.render('beers', {beerArr});
+    console.log('Beers from the database: ', beerArr);
+  })
+  // console.log(allBeers);
+  
 });
+
+app.get('/random-beer', (req, res, next) => {
+  const filePath = path.join(__dirname, "views", "random-beer.html");
+  res.render('random-beer');
+  
+});
+
+// const allBeers = punkAPI.getBeers().then(beersFromApi => beersFromApi).then(beersFromApi).catch(error => console.log(error));
+
+
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
 
-// punkAPI
-//   .getBeers()
-//   .then(beersFromApi => console.log('Beers from the database: ', beersFromApi))
-//   .catch(error => console.log(error));
 
