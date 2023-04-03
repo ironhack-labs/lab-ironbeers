@@ -26,25 +26,20 @@ app.get('/', (req, res, next) => {
 });
 
 app.get('/beers', (req, res, next) => {
-  // const berrArr = path.join(__dirname, "views", "beers.html");
   const beerArr = punkAPI.getBeers();
   beerArr
   .then(beerArr => {
     res.render('beers', {beerArr});
-    console.log('Beers from the database: ', beerArr);
-  })
-  // console.log(allBeers);
-  
+  })  
 });
 
 app.get('/random-beer', (req, res, next) => {
-  const filePath = path.join(__dirname, "views", "random-beer.html");
-  res.render('random-beer');
-  
+  const randomBeer = punkAPI.getRandom();
+  randomBeer
+  .then(randomBeer => {
+    res.render('random-beer', {randomBeer});
+  })  
 });
-
-// const allBeers = punkAPI.getBeers().then(beersFromApi => beersFromApi).then(beersFromApi).catch(error => console.log(error));
-
 
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
