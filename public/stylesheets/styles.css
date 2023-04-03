@@ -6,6 +6,16 @@ grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    align-items: center;
+  }
+
 nav{
     background-color:#2081c3;
     padding: 20px 30px;
@@ -20,13 +30,23 @@ nav{
 
 
   .beer {
-    
-    
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
   }
 
   .little {
-    height: 100px;
+    height: 200px;
     width: auto;
+    display: flex;
+  }
+
+  .little2 {
+    height: 200px;
+    width: auto;
+    display: flex;
+    margin-right: 6%;
   }
 
   .front-beer {
@@ -41,20 +61,58 @@ nav{
     text-decoration: none;
     color: #f7f9f9;
     margin: 0 10px;
+    text-align: center;
   }
 
   button {
     background-color: #2081c3;
-    margin: 10px ;
+   
     align-items: center;
     justify-content: center;
+    margin-left: -15%;
   }
 
   ul, li {
     text-decoration: none;
+    text-align: left;
+    display: flex;
+  }
+
+  .btn2 {
+    margin-left: 2%;
+
   }
 
   .randomBeer {
     height: 150px;
     width: auto;
   }
+
+  .name {
+    font-size: 1.8em;
+    font-weight: 800;
+
+  }
+
+  .description {
+    font-size: 1em;
+  }
+
+  .tagline {
+    font-size: 1em;
+    font-style: oblique;
+    color: #bfbfbf;
+  }
+
+  .rightSide {
+    flex-direction: column;
+    width: 50%;
+    margin-left: 6%;
+  }
+
+  .rightSide2 {
+    flex-direction: column;
+    width: 20%;
+
+  }
+

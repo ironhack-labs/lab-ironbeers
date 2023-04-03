@@ -9,12 +9,14 @@
 <div class="beer">
 
 {{#each beerArr}}
-
-
+<div>
 <li><img class="little" src="{{image_url}}"></li>
-<li>{{name}}</li>
-<li>{{description}}</li>
-<li>{{tagline}}</li>
+<div class="rightSide2">
+<li class="name">{{name}}</li>
+<li class="tagline">{{tagline}}</li>
+<li class="description">{{description}}</li>
+</div>
+</div>
 
 {{/each}}
 </div>

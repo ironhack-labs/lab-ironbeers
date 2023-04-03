@@ -10,13 +10,19 @@
 
 <div class="beer">
 {{#each randomBeer}}
+<div class="leftSide">
+<li><img class="little" src="{{image_url}}"></li>
+</div>
+<div class="rightSide">
+<li class="name">{{name}}</li>
+<li class="tagline">{{tagline}}</li>
+<li class="description">{{description}}</li>
+<li class="foodpairing">{{food_pairing}}</li>
+<li class="brewertips">{{brewer_tips}}</li>
+</div>
 
-<li><img class="randomBeer" src="{{image_url}}"></li>
-<li>{{name}}</li>
-<li>{{description}}</li>
-<li>{{tagline}}</li>
-<li>{{food_pairing}}</li>
-<li>{{brewer_tips}}</li>
+    
+
 
 {{/each}}
 </div>
