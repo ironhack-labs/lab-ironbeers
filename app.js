@@ -32,4 +32,6 @@ app.get('/randomBeer', (req, res) => {
   });
 });
 
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
