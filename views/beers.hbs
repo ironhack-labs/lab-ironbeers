@@ -1,11 +1,17 @@
-<div>
+<div id="beers-columns">
+
+
  {{#each beerArr}}
  
- <img src="{{image_url}}"></li>
- <li>{{name}}</li>
- <li>{{tagline}}</li>
- <li> {{description}}</li>
+ <div class="beers-columns-data">
+    <img src="{{image_url}}">
+    <li>{{name}}</li>
+    <li>{{tagline}}</li>
+    <li> {{description}}</li>
+ </div>
  
     
 {{/each}}
+
+
 </div>
