@@ -41,12 +41,12 @@ app.get('/random-beer', (req, res) => {
     .catch(error => console.log(error));
 });
 
-app.get('beers/:id', (req, res) => {
+app.get('/beers-:id', (req, res) => {
   punkAPI
     .getBeer(req.params.id)
     .then(beerfromAPI => {
-      res.send(rez.params.id);
-      res.render('beers/:id', { beerfromAPI });
+      console.log(beerfromAPI);
+      res.render('beers', { beers: beerfromAPI });
     })
     .catch(error => console.log(error));
 });
