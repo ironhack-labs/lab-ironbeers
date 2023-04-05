@@ -96,20 +96,30 @@ nav a{
 .beers{
     display : flex;
     flex-direction : row;
+    justify-content:center;
     flex-wrap: wrap;
     list-style: none;
-    background: #bfbfbf;;
+    background: #bfbfbf;
 }
 
 .beers img{
-    width : 40px;
+    height : 150px;
 }
 .container{
-    width : 30vh;
-    border : solid 1px black;
-    text-align : center;
+    width : 25vw;
     padding : 5px;
-    margin : 5px;
+    margin : 40px 20px;
+    text-align: center;
 }
 
+.BeerContent{
+    text-align : left;
+}
+.BeerContent h1{
+    font-size: 1.5rem;
+}
+
+.BeerContent h3{
+    color:grey;
+}
 

@@ -1,11 +1,8 @@
 hello BEEEEEEEERS
 
 <ul class="beers">
-{{#each allBeers}} 
-       <li class = "container">  {{this.name}} / {{this.tagline}} //
-              <br> <img src="{{this.image_url}}" alt = 'img'/>
-              <br> {{this.description}} 
-       </li>
-{{/each}}
+       {{#each allBeers}} 
+              <li class = "container">{{>beerspartial this}} </li>
+       {{/each}}
 
 </ul>
