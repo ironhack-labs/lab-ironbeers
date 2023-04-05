@@ -1,9 +1,11 @@
 hello BEEEEEEEERS
 
-<ul>
+<ul class="beers">
 {{#each allBeers}} 
-       <li>  / {{this.tagline}} // </li>
-       <br> <img src="{{this.image_url}}" alt = 'img'/>
+       <li class = "container">  {{this.name}} / {{this.tagline}} //
+              <br> <img src="{{this.image_url}}" alt = 'img'/>
+              <br> {{this.description}} 
+       </li>
 {{/each}}
 
 </ul>
