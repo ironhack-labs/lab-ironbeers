@@ -5,9 +5,14 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
 body{
-margin: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #bfbfbf;
 }
+
+/*---------------------- NAVBAR ---------------------------*/ 
 
 nav{
     margin: 0;
@@ -18,22 +23,82 @@ nav{
 #navbar{
     display: flex;
     flex-direction: row;
-    font-family: Arial, Helvetica, sans-serif;
     list-style: none;
 }
 
-a{
+nav a{
     color: #f7f9f9;
     text-decoration: none;
     padding-left: 30px;
 
 }
 
+/*---------------------- MAIN PAGE ---------------------------*/ 
+
+#mainpage{
+    display : flex;
+    flex-direction : column;
+    margin : 5px 0px;
+}
+
+#mainpage img{
+    margin : 40px auto;
+    width : 350px;
+}
+#mainpage .links{
+    display: flex;
+    flex-direction: column;
+    margin : auto;
+}
+.links a{
+    color : #f7f9f9;
+    text-decoration: none;
+    text-align: center;
+    padding : 10px 15px;
+    background : #2081c3;
+    border-radius: 5px;
+    margin-top: 20px
+}
+
+/*---------------------- RANDOM BEER PAGE ---------------------------*/ 
+#randomBeerPage{
+    display:flex;
+    flex-direction : row;
+    align-items:flex-start;
+    justify-content : center;
+    padding:50px 40px;
+}
+
+#randomBeerPage img{
+    width:70px;
+    padding-right : 60px;
+}
+#randomBeerContent{
+    width: 70vh;
+}
+#randomBeerPage h1{
+    margin-top:0px;
+}
+
+#randomBeerPage h3{
+    color:grey;
+}
+#randomBeerPage li{
+    padding:5px;
+}
+#randomBeerPage em{
+    font-style: normal;
+    font-weight:bolder;
+}
+
+/*---------------------- BEERS PAGE ---------------------------*/ 
+
 .beers{
     display : flex;
     flex-direction : row;
     flex-wrap: wrap;
     list-style: none;
+    background: #bfbfbf;;
 }
 
 .beers img{

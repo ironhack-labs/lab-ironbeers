@@ -14,6 +14,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //hbs.registerPartials(__dirname)
 
+app.get('/', (req, res) => {
+    res.render('index');
+  });
+
 app.get('/beers', function (req, res, next) {
     
     punkAPI.getBeers() 
@@ -24,8 +28,16 @@ app.get('/beers', function (req, res, next) {
             });
         })
         .catch(error => console.log(error));
-    
-    
+});
+
+app.get('/random-beer', function (req, res, next) {
+    punkAPI.getRandom() 
+        .then(responseFromAPI => {
+            console.log('RandomBeer ', responseFromAPI)
+            res.render('random-beer', responseFromAPI[0],
+            );
+        })
+        .catch(error => console.log(error));
 });
 
 
@@ -35,8 +47,6 @@ app.get('/beers', function (req, res, next) {
 
 // Add the route handlers here:
 
-app.get('/', (req, res) => {
-  res.render('index');
-});
+
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
