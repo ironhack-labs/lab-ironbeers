@@ -1,8 +1,10 @@
-<div id="beers">
-{{#each allBeers}}
-<img src="{{image_url}}" alt="">
-<h2>{{name}}</h2>
-<p>{{tagline}}</p>
-<p>{{description}}</p>
-{{/each}}
+<div class='beers-container'>
+  {{#each allBeers}}
+    <div>
+      <img src='{{image_url}}' />
+      <h2 class='name'>{{name}}</h2>
+      <p class='tagline'>{{tagline}}</p>
+      <p class='description'>{{description}}</p>
+    </div>
+  {{/each}}
 </div>
