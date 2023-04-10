@@ -1,14 +1,15 @@
 
 <div class="beers-div">
 
-{{#each allBeers}}
+    <div class="random-beer">
+{{#each beer}}
 <div class="each-beer">
     {{> beerpartial }}
-    <a href="/beer/{{id}}">More about {{this.name}}</a>
 </div>
 
 
 {{/each}}
 
 
+</div>
 </div>
