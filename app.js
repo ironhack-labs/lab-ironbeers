@@ -27,7 +27,11 @@ const imageBeer = "/images/beer.png"
 });
 
 app.get('/beers', (req, res) => {
-  res.render('Beers');
+  punkAPI
+  .getBeers()
+  .then(beersFromApi => {console.log('Beers from the database: ', beersFromApi)
+  res.render('beers', {beersFromApi});})
+  .catch(error => console.log(error));
 });
 
 app.get('/beer-random', (req, res) => {
