@@ -1,7 +1,20 @@
+{{#each randomBeer}}
+<div class="beercard"></div>
+
+{{>beerpartial this}}
+<p>{{this.tagline}}</p>
+<p>{{this.food_pairing}}</p>
+<p>{{this.brewers_tips}}</p>
+</div>
+
+{{/each}}
+
+
+{{!-- 
 <h2>{{randomBeer.0.name}}</h2>
 <img src="{{randomBeer.0.image_url}}" alt="beer image">
 <p>{{randomBeer.0.description}}</p>
 <p>{{randomBeer.0.tagline}}</p>
 <p>{{randomBeer.0.food_pairing}}</p>
-<p>{{randomBeer.0.brewers_tips}}</p>
+<p>{{randomBeer.0.brewers_tips}}</p> --}}
 

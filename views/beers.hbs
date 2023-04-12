@@ -1,6 +1,6 @@
-{{#each beers}}
-<h2>{{this.name}}</h2>
-<img src="{{this.image_url}}" alt="beer image">
-<p>{{this.description}}</p>
 
+{{#each beers}}
+<div class="beercard"></div>
+{{>beerpartial this}}
+</div>
 {{/each}}

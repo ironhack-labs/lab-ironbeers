@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #2bc5fb;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: #2bc5fb;
+    margin: 15px;
+    padding: 15px;
+}
+
+img {
+    width: 15%;
+}
+
+.beercard {
+    background-color: white;
+}
