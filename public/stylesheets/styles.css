@@ -2,6 +2,129 @@
 white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
 */
+
+/* All pages */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f9f9;
+    color: black;
+}
+
+nav {
+    background-color: #2081c3;
+    display: flex;
+    width: 100vw;
+    height: 7vh;
+    align-items: center;
+}
+
+nav > a {
+    text-decoration: none;
+    background-color: #2081c3;
+    color: #f7f9f9;
+    padding: 20px;
+}
+
+/* Index page */
+
+body > div > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2081c3;
+    padding: 10px;
+    border: 1px solid #2081c3;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px;
+}
+
+button > a {
+    text-decoration: none;
+    background-color: #2081c3;
+    color: #f7f9f9;
+}
+
+/* Beers page */
+
+.beers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 15px;
+}
+
+.beers > div {
+    width: 25vw;
+    padding: 50px;
+    text-align: center;
+}
+
+.beers > div > img {
+    height: 250px;
+}
+
+.beers > div > p {
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.name {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.tagline {
+    color: #bfbfbf;
+}
+
+/* Random beer page */
+
+.randomBeer {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.randomBeer > div {
+    width: 50vw;
+    padding-left: 50px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.randomBeer > div > img {
+    height: 250px;
+}
+
+.randomBeer > div > p {
+    text-align: left;
+    padding-top: 20px;
+}
+
+.randomBeer > div > ul > li {
+    text-align: left;
+    margin-left: 30px;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.name {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.randomBeer > div > p > span {
+    font-weight: bold;
+}
