@@ -1,9 +1,5 @@
 {{#each beer}}
-<img src={{image_url}} alt="error">
-    <p>Name : {{name}}</p>
-    <p>Description: {{description}}</p>
-    <p>{{tagline}}</p>
-    <p>Goes well with:</p>
+ {{>beerpartials}}
     <ul>
         {{#each food_pairing}}
             <li>{{this}}</li>
