@@ -1,0 +1,12 @@
+{{#each randomBeer}}
+{{#if image_url}}
+<img src="{{image_url}}" alt="Beers">
+{{else}}
+<h1>No image found.</h1>
+{{/if}}
+<p>{{name}}</p>
+<p>{{description}}</p>
+<p>{{tagline}}</p>
+<p>{{food_pairing}}</p>
+<p>{{brewers_tips}}</p>
+{{/each}}
