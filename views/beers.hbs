@@ -1,18 +1,9 @@
 
 
 {{#each beers}}
+	{{> beerpartial this}}
 
-<p>
-     Name: {{this.name}}
-</p>
-    <p>
-      Tagline: {{this.tagline}}
-    </p>
- <p>
-      Description: {{this.description}}
-    </p>
 
-     <p>
-      	<img src= "{{this.image_url}}" alt="beer" width="100">
-    </p>
     {{/each}}
+
+    
