@@ -21,5 +21,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
   res.render('index');
 });
+// app.get('/beer', (req, res) => {
+//   res.render('test');
+// });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
