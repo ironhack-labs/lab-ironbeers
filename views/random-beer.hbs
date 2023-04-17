@@ -1,0 +1,22 @@
+<div>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/beers">Beers</a>
+        <a href="/random-beer">Random Beer</a>
+    </nav>
+</div>
+
+<h1>random Beer</h1>
+
+<div class="beer">
+{{#each randomBeer}}
+<li><img class="small" src="{{image_url}}"></li>
+</div>
+<div>
+<li class="name">{{name}}</li>
+<li class="tagline">{{tagline}}</li>
+<li class="description">{{description}}</li>
+<li class="foodpairing">{{food_pairing}}</li>
+<li class="brewertips">{{brewer_tips}}</li>
+{{/each}}
+</div>
