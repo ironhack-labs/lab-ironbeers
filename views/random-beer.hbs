@@ -1,0 +1,54 @@
+<h1>Funciona</h1>
+
+{{!-- randomBeerFromApi --}}
+
+{{#each randomBeerFromApi }}
+        Name: {{name}}
+{{/each}}
+
+<h2>Mis perros son</h2>
+
+<ul>
+    {{#each perros}}
+        <li>{{this}}</li>
+    {{/each}}
+</ul>
+
+
+{{!-- En js sería perros[1]
+perros.[1]
+    const artists= [
+    {name: "leo", 
+    lastName: "diCaprio"},
+
+    {name: "Tom",
+    lastName: "Cruise"},
+    ]
+
+    // 1. Array de objetos
+
+            //js
+            artist.forEach((artist)=>{
+                console.log(artist.name)
+            })
+            // hbs
+            {{#each artist}}
+                {{name}}
+            {{/each}}
+
+    //2. Array de !objetos
+
+    const perros = ["tobby ","cery"]
+    
+            //js 
+            perros.forEach((this)=>{
+            console.log(this)
+            })
+
+            //hbs
+            {{#each perro}}
+                {{this}}
+            {{/each}}
+
+
+  --}}
