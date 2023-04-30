@@ -1,0 +1,25 @@
+<br>
+<center><img src="/images/beer.png" alt="beer" class="beer" width="30%"></center>
+<br>
+<center>
+<a href="/beers" class="button">Check the Beers!</a>
+<a href="/random-beer" class="button">Check a Random Beer</a>
+</center>
+<br>
+<br>
+<div class="beers-container">
+  {{#each beersFromApi}}
+  <div class="beer-card">
+    <img src="{{image_url}}" alt="beer" class="beer-img" height="200px">
+    <div class="beer-info">
+      <h3>{{name}}</h3>
+      <h4>{{tagline}}</h4>
+      <p>Description: {{description}}</p>
+    </div>
+  </div>
+  {{/each}}
+</div>
+
+
+
+
