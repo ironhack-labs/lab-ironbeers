@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row justify-content-center my-5">
+        {{#each responseFromAPI}}
+        <div class="mb-3 col-12 col-md-6 col-lg-4">
+            <div class="card px-2 py-4">
+                <img class="card-img-top mx-auto" src="{{image_url}}" alt="{{name}}">
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-8 card-body px-2">
+            <h4 class="card-title">{{name}}</h4>
+            <p class="card-text">{{description}}</p>
+            <p class="card-tagline">{{tagline}}</p>
+            <h5>Food Pairing</h5>
+            <ul>
+                {{#each food_pairing}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <h5>Brewers Tips</h5>
+            <p>{{brewers_tips}}</p>
+        </div>
+        {{/each}}
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row d-flex justify-content-between">
+        {{#each beersFromApi}}
+        <div class="mb-3 col-md-6 col-lg-4 col-xl-3">
+            <div class="card px-2 py-2">
+                <img class="card-img-top mx-auto" src="{{image_url}}" alt="{{name}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{name}}</h5>
+                    <p class="card-text">{{description}}</p>
+                    <p class="card-tagline">{{tagline}}</p>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
