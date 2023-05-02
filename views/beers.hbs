@@ -1,0 +1,26 @@
+<div class="container">
+
+    <h1>Cervezas</h1>
+
+    <hr>
+
+    <div class="row">
+
+        {{#each beersFromApi}}
+        <div class="col-md-4">
+            <article class="beer-card1">
+                <img src="{{image_url}}" alt="{{name}}">
+            </article>
+            <p><b>{{name}}</b></p>
+            <p>{{description}}</p>
+            <p><i>{{tagline}}</i></p>
+        </div>
+        {{/each}}
+
+    </div>
+
+    <hr>
+
+    <a href="/" class="btn btn-dark mt-3 mb-5">Home</a>
+
+</div>
