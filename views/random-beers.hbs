@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>Random Beers</h1>
+    <hr>
+    <div class="row">
+        <div class="col-md-4">
+            <article class="player-card">
+                {{!--<img src="{{image_url}}" alt="{{name}}">
+                <p>{{name}}</p>
+                <p>{{description}}</p>
+                <p>{{tagline}}</p>--}}
+                {{>beerpartial}}
+                <p>{{#each food_pairing}}
+                <p>{{this}}</p>
+                {{/each}}</p>
+                <p>{{brewers_tips}}</p>
+            </article>
+            {{!-- bonus con partial --}}
+            {{!-- {{>playerCard}} --}}
+        </div>
+    </div>
+    <hr>
+    <a href="/" class="btn btn-dark mt-3 mb-5">Volver a inicio</a>
+</div>
