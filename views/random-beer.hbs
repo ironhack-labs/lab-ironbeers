@@ -1,0 +1,27 @@
+<div class="container">
+
+    <h1>Random beer just 4 u :3</h1>
+
+    <hr>
+
+    <div class="column">
+        <article class="beer-card d-flex flex-row">
+            {{>beerpartial}}
+            <div class=" d-flex flex-column justify-content-start">
+                <h3>Food Pairing</h3>
+                <ul>
+                    {{#each food_pairing}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                <p><strong>Brewer tips: </strong> {{brewers_tips}}</p>
+            </div>
+        </article>
+    </div>
+</div>
+
+<hr>
+
+<a href="/" class="btn btn-dark mt-3 mb-5">Back to Home</a>
+
+</div>
