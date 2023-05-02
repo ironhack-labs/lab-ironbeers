@@ -1,0 +1,37 @@
+<div class="container">
+
+    <h1>Beers</h1>
+
+    <hr>
+
+    <div class="row">
+
+        {{#each beerList}}
+
+            <div class="col-md-4">
+
+                <div class="card">
+
+                    <img class="card-img-top" src="{{image_url}}" alt="{{name}}">
+
+                    {{!-- <div class="card-body">
+                        <h5 class="card-title">{{name}}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{tagline}}</h6>
+                        <p class="card-text">{{description}}</p>
+                    </div> --}}
+
+                    {{!-- bonus con partial --}}
+                    {{>beerpartial}}
+                </div>
+
+            </div>
+
+        {{/each}}
+
+    </div>
+
+    <hr>
+
+    <a href="/" class="btn btn-secondary mt-3 mb-5">Volver a inicio</a>
+
+</div>
