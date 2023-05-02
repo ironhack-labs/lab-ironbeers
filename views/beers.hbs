@@ -1,0 +1,15 @@
+<div class="container row align-items-center">
+
+    {{#each beersInfo}}
+    <div class="col-md-4 col-gd-4">
+
+        <article class="container">
+            <a href="/selected"><img src="{{image_url}}" alt="{{name}}" class="mx-auto d-block beer-img-list"></a>
+            {{>beerCard}}
+        </article>
+
+
+    </div>
+    {{/each}}
+
+</div>
