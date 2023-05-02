@@ -5,3 +5,67 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    background-color: #bfbfbf;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-custom {
+    background-color: #3c3c3c;
+}
+
+.home-link {
+    text-decoration: none;
+    color: #3c3c3c
+}
+
+.card-pic {
+    padding: 10px;
+    align-self: center;
+}
+
+.img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tagline {
+    color: #bfbfbf;
+    text-decoration: none;
+}
+
+.description {
+    text-align: justify;
+    color: #3c3c3c;
+    text-decoration: none;
+}
+
+h5 {
+    color: #3c3c3c;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+.bonus {
+    text-decoration: none;
+    color: #3c3c3c;
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #3c3c3c;
+    color: #FFF000;
+    text-align: center;
+    padding: 10px;
+    font-size: .8em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%
+}
