@@ -5,3 +5,101 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: bold;
+    color: #bfbfbf;
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: bold;
+    display: inline-block;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: rgb(140, 157, 156);
+    padding: 10px
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+}
+
+footer {
+    background-color: rgb(140, 157, 156);
+    color: Black;
+    text-align: right;
+    padding: 13px;
+    font-size: 0.8em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+/* INDEX-HOME */
+
+.beer-img {
+    display: block;
+    margin: auto;
+    width: 400px;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* BEERS VIEW */
+
+.beer-view {
+    margin-bottom: 30px;
+}
+
+.beer-card {
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.card-img {
+    max-width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+
+
+
+/* RANDOM BEERS VIEW */
+
+.random-beers {
+    padding-top: 50px;
+}
+
+.brewers-tips {
+    font-weight: normal;
+}
