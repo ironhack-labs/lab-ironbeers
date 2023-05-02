@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row">
+        {{#each randomBeer}}
+        <div class="col">
+            <article>
+                {{>beerpartial}}
+                <p>{{food_pairing}}</p>
+                <p>{{brewer_tips}}</p>
+            </article>
+        </div>
+        {{/each}}
+    </div>
