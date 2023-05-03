@@ -1,0 +1,8 @@
+<!--image, name, description, tagline, food pairing and brewer tips-->
+{{#each randomBeer}}
+{{> beerPartial this}}
+<div class="extras">
+<p>Food pairing:{{this.food_pairing}}</p>
+<p>Brewer Tips:{{this.brewers_tips}}</p>
+</div>
+{{/each}}
