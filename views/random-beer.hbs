@@ -1,0 +1,19 @@
+<div>
+    {{#each response}}
+    
+    {{> beerpartial}}
+
+    <div>
+        <ul>
+            {{#each this.food_pairing}} 
+                <li>{{this}}</li>
+            {{/each}}
+
+        </ul>
+    </div>
+    <article>{{this.tagline}}</article>
+
+    {{/each}}
+
+
+</div>
