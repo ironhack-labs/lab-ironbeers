@@ -1,7 +1,7 @@
-
+<section id="beer-gallery">
     {{#each beersFromApi}}
-    <img src="{{this.image_url}}">
-    <p>Name:{{this.name}}</p>
-    <p>Description:{{this.description}}</p>
-    <p>Tagline:{{this.tagline}}</p>
+   <article class="beer-card">
+    {{> beerCard this}}
+    </article>
     {{/each}}
+</section>
