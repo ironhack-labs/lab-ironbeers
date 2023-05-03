@@ -1,0 +1,12 @@
+<section class="ante-kevin">
+    {{#each response}}
+    <div class="subKevin">
+        <div class="kevin">
+            <img src="{{this.image_url}}" style="height:300px">
+            <h2>{{this.name}}</h2>
+            <p>{{this.description}}</p>
+            <h6 style="font-weight: bold">{{this.tagline}}</h6>
+        </div>
+    </div>
+    {{/each}}
+</section>
