@@ -1,7 +1,53 @@
-/*
-white: #f7f9f9;
+body {
+    /* white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+grey: #bfbfbf; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    height: 400px;
+    padding: 20px
+}
+
+h6 {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.brewersFinalLine {
+    padding-bottom: 50px
+}
+
+footer {
+    background-color: #212529;
+    color: white;
+
+
+
+    padding: 10px;
+    font-size: 1em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%
+}
+
+.buttonA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.buttonB {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
