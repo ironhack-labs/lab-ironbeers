@@ -5,3 +5,47 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.navbar .navbar-nav .nav-link {
+    color: #000;
+    font-size: 1.1em;
+    padding: 0.8em;
+  }
+  .navbar {
+    border-bottom: 5px solid #3a0ca3;
+  }
+  
+  .navbar .navbar-nav .nav-link.active {
+    background-color: #3a0ca3;
+    color: #fff;
+  }
+  @media screen and (min-width: 992px) {
+    .navbar {
+      padding: 0;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .navbar-nav {
+      padding-top: 0.5em;
+    }
+  }
+  
+  .container {
+    margin-top: 100px;
+   
+  }
+  .card-body a{
+    margin: 5px;
+
+  }
+  .row img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px;
+    height: 200px;
+    width: auto;
+
+  }
+  
+  
