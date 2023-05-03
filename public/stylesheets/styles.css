@@ -5,3 +5,47 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+#footer {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    padding: 0 1%;
+    height: 40px;
+
+    background-color: #0a2c42;
+    color: #f7f9f9;
+}
+
+#home-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-page img{
+    height: 200px;
+    margin: 20px 0;
+}
+.buttons{
+    background-color: #2081c3;
+    color: #f7f9f9;
+
+    height: 40px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border-radius: 3px;
+    border: 1px solid black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
