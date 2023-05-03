@@ -6,7 +6,11 @@
         {{>beerpartial}}
 
         <p class="text-left"> <strong> Food pairing:</strong> </p>
-        <p class="text-left">{{food_pairing}} </p>
+        <p class="text-left">{{#each food_pairing}}
+
+            <li>{{this}}</li>
+            {{/each}}
+        </p>
         <p class="text-left brewersFinalLine "> <strong>Brewers tips:</strong>{{brewers_tips}} </p>
 
 
