@@ -5,3 +5,12 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.container {
+    margin-top: 10%;
+}
+
+.card img{
+    height: 200px;
+    object-fit: cover;
+}
