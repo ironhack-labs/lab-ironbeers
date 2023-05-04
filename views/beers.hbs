@@ -1,0 +1,13 @@
+{{!-- loop over the array of beers using an {{#each}} loop. 
+Display an image, name, description and tagline. --}}
+<div class="container">
+<h1>Beers</h1>
+<div class="row">
+{{#each selectBeer}}
+<img src="{{this.image_url}}">
+<h1>{{this.name}}</h1>
+
+{{/each}}
+</div>
+</div>
+
