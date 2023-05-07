@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="row">
+        <div class="col mb-4 img-box">
+            <img class="card-pic" src="{{beer.image_url}}" alt="{{beer.name}}" style="max-height: 300px;" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col mb-4">
+            <article>
+                <h5>{{beer.name}}</h5>
+                <p class="tagline">{{beer.tagline}}</p>
+                <p class="description">{{beer.description}}</p>
+                <p class="food_pairing">
+                    <strong>Food Pairing:</strong>
+                <ul>
+                    {{#each beer.food_pairing}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                </p>
+                <p class="brewer_tips">{{beer.brewer_tips}}</p>
+
+                <p class="ingredients">
+                    <strong>Ingredients:</strong>
+                <ul>
+                    {{#each beer.ingredients}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                </p>
+                <p>{{beer.abv}}</p>
+                <p>{{beer.ibu}}</p>
+                <p>{{beer.target_fg}}</p>
+                <p>{{beer.target_og}}</p>
+                <p>{{beer.ebc}}</p>
+                <p>{{beer.srm}}</p>
+                <p>{{beer.ph}}</p>
+                <p>{{beer.attenuation_level}}</p>
+                <p>
+                    <strong>Volume:</strong>
+                <ul>
+                    {{#each beer.volume}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                </p>
+                <p>{{beer.boil_volume}}</p>
+                <p>
+                    <strong>Method:</strong>
+                <ul>
+                    {{#each beer.method}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                </p>
+                <p>{{beer.contributed_by}}</p>
+            </article>
+        </div>
+    </div>
+</div>

@@ -43,11 +43,22 @@ app.get('/random-beer', (req, res) => {
 });
 
 app.get('/beers/:beerId', (req, res) => {
-  const value = res.send(req.params)
-  const beerDeets = punkAPI.getBeer(value)
-    .then(beerDeets => {
-      res.render('beer-details', { beers: beerDeets });
+  const clickedBeer = req.params.beerId
+
+  punkAPI.getBeer(clickedBeer)
+    .then(beerDetails => {
+      console.log('Beer details from the database: ', beerDetails);
+      res.render('beerdetails', { beer: beerDetails[0] });
     })
+    .catch(error => console.log(error));
 });
+
+
+
+// app.get('/expressions/:id', (req, res, next) => {
+//   const gottenExpression = getElementById([req.params.id], expressions);
+//   res.send(gottenExpression)
+// })
+
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
