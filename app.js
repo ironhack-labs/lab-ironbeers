@@ -1,43 +1,39 @@
-app.get('/beers', (req, res) => {
-  punkAPI
-    .getBeers()
-    .then((beersFromApi) => {
-      console.log(beersFromApi);
-      res.render('beers', { beers: beersFromApi });
-    })
-    .catch((error) => {
-      console.log(error);
-      res.render('error', { message: 'Error fetching beers' });
-    });
+app.use(express.static(path.join(__dirname, 'public')));
+
+
+hbs.registerPartials(__dirname + '/views/partials');
+
+	app.get('/', (req, res) => {
+  res.render('index');
 });
 
-app.get('/random-beer', (req, res) => {
-  punkAPI
-    .getRandom()
-    .then((beer) => {
-      const [randomBeer] = beer;
-      console.log(randomBeer);
-      res.render('random-beer', randomBeer);
-    })
-    .catch((error) => {
-      console.log(error);
-      res.render('error', { message: 'Error fetching random beer' });
-    });
+app.get('/beers', (req, res) =>{
+  punkAPI.getBeers()
+  .then(beersFromApi => { 
+    console.log(beersFromApi)
+    res.render('beers', {beers: beersFromApi})
+  })
+  .catch(error => console.log(error));
+
 });
 
-app.get('/beers/:beerId', (req, res) => {
-  const beerId = req.params.beerId;
-  punkAPI
-    .getBeer(beerId)
-    .then((beer) => {
-      const [detailedBeer] = beer;
-      console.log(detailedBeer);
-      res.render('beer-details', detailedBeer);
-    })
-    .catch((error) => {
-      console.log(error);
-      res.render('error', { message: 'Error fetching beer details' });
-    });
+app.get('/random-beer', (req,res) => {
+  punkAPI.getRandom()
+  .then((beer)=>{
+    const [randomBeer] = beer
+    console.log(randomBeer)
+    res.render('random-beer', randomBeer);
+  })
 });
 
-app.listen(3000, () => console.log('🏃‍ on port 3000'));
+app.get('/beers/:beerId', (req,res)=>{
+  punkAPI.getBeer(req.params.beerId)
+  .then(beer =>{
+    const [detailedBeer] = beer
+    console.log(detailedBeer)
+    res.render('beer-details', detailedBeer)
+  })
+  .catch(err=>console.log(err))
+})
+
+app.listen(3000, () => console.log('on port 3000'));
