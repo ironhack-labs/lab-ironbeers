@@ -25,6 +25,12 @@ font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
 
+.nav-item a:hover {
+    background-color: #0056b3;
+    padding: 15px;
+    border-radius: 5px;
+}
+
 .nav-item a:visited {
     color: #f7f9f9;
 }
@@ -32,6 +38,7 @@ font-family: Arial, Helvetica, sans-serif;
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    margin: 0px;
 }
 
 .home-body {
