@@ -30,8 +30,10 @@ punkAPI
   })
   .catch(error => {
     console.log(error);
-  })
+    res.status(500).send('Error retrieving beers');
+  });
 });
+
 
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
