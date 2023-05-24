@@ -1,19 +1,12 @@
 <div class="beers">
     <h1>Beers</h1>
   {{#each beers}}
-   <div class="beer">
+   <div class="beersSpecs">
         <img src="{{image_url}}" alt="{{name}}"><br></br>
         <h2>{{name}}</h2>
         <h3>{{tagline}}</h3>
-        <p>First Brewed: {{first_brewed}}</p>
-        <p>ABV: {{abv}}%</p>
         <p>Description: {{description}}</p>
-        <p>Food Pairing: {{food_pairing}}</p>
-    
     </div>
     <br>
   {{/each}}
-  <br>
-</ul>
- <br>
 </div>

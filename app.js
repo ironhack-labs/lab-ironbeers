@@ -6,6 +6,7 @@ const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 
 const app = express();
 const punkAPI = new PunkAPIWrapper();
+const randomBeer = punkAPI.getRandom();
 
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
@@ -37,16 +38,14 @@ punkAPI
 
 app.get('/random-beer', (req, res) => {
   punkAPI
-  .getRandom()
-  .then(randomFromApi => {
-    res.render('random-beer', {randomBeer: randomFromApi});
-  })
-
-  .catch(error => {
-    console.log(error);
-    res.status(400).send('Error retriving random beer. Try again later!')
-  })
+    .getRandom()
+    .then(randomBeer => {
+      res.render('random-beer', {randomBeer: randomBeer});
+    })
+    .catch(error => {
+      console.log(error);
+      res.status(400).send('Error retrieving random beer. Try again later!');
+    });
 });
-
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
