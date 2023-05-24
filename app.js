@@ -28,12 +28,25 @@ punkAPI
   .then(beersFromApi => {
     res.render('beers', {beers: beersFromApi});
   })
+
   .catch(error => {
     console.log(error);
-    res.status(500).send('Error retrieving beers');
+    res.status(400).send('Error retrieving beers. Try again later!');
   });
 });
 
+app.get('/random-beer', (req, res) => {
+  punkAPI
+  .getRandom()
+  .then(randomFromApi => {
+    res.render('random-beer', {randomBeer: randomFromApi});
+  })
+
+  .catch(error => {
+    console.log(error);
+    res.status(400).send('Error retriving random beer. Try again later!')
+  })
+});
 
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
