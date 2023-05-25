@@ -1,0 +1,9 @@
+
+<div>
+  <img src="{{ beer.image_url }}" alt="{{ beer.name }}" />
+  <h2>{{ beer.name }}</h2>
+  <p>{{ beer.description }}</p>
+  <p>Tagline: {{ beer.tagline }}</p>
+  <p>Food Pairing: {{ beer.food_pairing.join(', ') }}</p>
+  <p>Brewer Tips: {{ beer.brewers_tips }}</p>
+</div>
