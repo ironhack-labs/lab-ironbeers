@@ -1,3 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    background-color: #2081c3;
+    color: white;
+}
+
+.home-buttons{
+    color:#2081c3;
+    
+}
+
+footer{
+    background-color: #0a2c42;
+    color: white;
+    height: 50px;
+    justify-content: end;
+}
+
+.footer{
+    display: block;
+    justify-content: center;
+}
+
+
+
 /*
 white: #f7f9f9;
 light-blue: #2081c3;
