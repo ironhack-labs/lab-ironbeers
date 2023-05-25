@@ -1,5 +1,5 @@
 const express = require('express');
-
+const port = 3000;
 const hbs = require('hbs');
 const path = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
@@ -12,6 +12,7 @@ app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.listen(`${port}`, () => console.log(`🏃‍ on port ${port}`));
 
 // Register the location for handlebars partials here:
 
@@ -23,29 +24,32 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+
 app.get('/beers', (req, res) => {
 punkAPI
   .getBeers()
   .then(beersFromApi => {
     res.render('beers', {beers: beersFromApi});
-  })
-
-  .catch(error => {
+  })})
+  /*.catch(error => {
     console.log(error);
     res.status(400).send('Error retrieving beers. Try again later!');
   });
-});
+});*/
 
-app.get('/random-beer', (req, res) => {
+
+/*app.get('/random-beer', (req, res) => {
   punkAPI
     .getRandom()
-    .then(randomBeer => {
-      res.render('random-beer', {randomBeer: randomBeer});
+    .then(beerFromApi => {
+     res.render('random-beer', {randombeer: beerFromApi[0]});
     })
     .catch(error => {
       console.log(error);
-      res.status(400).send('Error retrieving random beer. Try again later!');
+      res.status(400).send('Error retrieving random beer.');
     });
-});
-
-app.listen(3000, () => console.log('🏃‍ on port 3000'));
+  });
+ /*
+    randomBeer.then(beer => {
+    alert(beer[0].name)
+    }) */
