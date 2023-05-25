@@ -6,7 +6,7 @@ const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 
 const app = express();
 const punkAPI = new PunkAPIWrapper();
-const randomBeer = punkAPI.getRandom();
+const getRandomBeer = punkAPI.getRandom();
 
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
@@ -28,28 +28,26 @@ app.get('/', (req, res) => {
 app.get('/beers', (req, res) => {
 punkAPI
   .getBeers()
-  .then(beersFromApi => {
-    res.render('beers', {beers: beersFromApi});
-  })})
-  /*.catch(error => {
+  .then(beers => {
+    res.render('beers', {beers: beers});
+  })
+  .catch(error => {
     console.log(error);
     res.status(400).send('Error retrieving beers. Try again later!');
   });
-});*/
+})
 
 
-/*app.get('/random-beer', (req, res) => {
+
+app.get('/random-beer', (req, res) => {
   punkAPI
     .getRandom()
-    .then(beerFromApi => {
-     res.render('random-beer', {randombeer: beerFromApi[0]});
+    .then(randomBeer => {
+  
+     res.render('random-beer', {randombeer: randomBeer});
     })
     .catch(error => {
       console.log(error);
       res.status(400).send('Error retrieving random beer.');
     });
   });
- /*
-    randomBeer.then(beer => {
-    alert(beer[0].name)
-    }) */
