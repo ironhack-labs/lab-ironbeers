@@ -1,6 +1,6 @@
 <div class="random-beer">
     <h1>Random Beer</h1>
-    {{#each getRandomBeer}}
+    {{#each randomBeer}}
     <div class="randomBeerSpecs">
       <img src="{{image_url}}" alt="{{name}}"><br>
         <h2>{{name}}</h2>
@@ -13,5 +13,5 @@
         <br>
         <p>Brewer Tips: {{brewer_tips}}</p>
     </div>
-      {{/each}}
+    {{/each}}
 </div>
