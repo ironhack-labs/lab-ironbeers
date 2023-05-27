@@ -5,3 +5,20 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.bg-blue {
+  background-color: #2081c3;
+}
+
+.button {
+  text-decoration: none;
+  color: white;
+  padding: 6px;
+  margin: 10px 0;
+}
+
+.button:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #0a2c42;
+}
