@@ -9,6 +9,9 @@ font-family: Arial, Helvetica, sans-serif;
 .bg-blue {
   background-color: #2081c3;
 }
+.bg-dark-blue {
+  background-color: #0a2c42;
+}
 
 .button {
   text-decoration: none;
@@ -16,9 +19,17 @@ font-family: Arial, Helvetica, sans-serif;
   padding: 6px;
   margin: 10px 0;
 }
-
 .button:hover {
   text-decoration: none;
   color: white;
   background-color: #0a2c42;
+}
+
+.footer {
+  position: absolute;
+  background-color: #0a2c42;
+  color: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
