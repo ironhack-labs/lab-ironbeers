@@ -12,14 +12,16 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Register the location for handlebars partials here:
+/* ---------- Route Handlers ---------- */
+app.get('/', (req, res) => res.render('index')) // Route handler to / (home page)
 
-// ...
+app.get('/beers', (req, res, next) => {
+  punkAPI.getBeers()
+    .then(beersFromAPI => { // the type of beersFromAPI is Object not Array
+      res.render('beers', { beersFromAPI }); // To assign an object to the render need to add {}
+    })
+    .catch(err => console.error(err))
+}) // Route handler to /beers
 
-// Add the route handlers here:
-
-app.get('/', (req, res) => {
-  res.render('index');
-});
-
+/* ---------- Middleware ---------- */
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

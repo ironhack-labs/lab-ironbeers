@@ -26,10 +26,9 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer {
-  position: absolute;
   background-color: #0a2c42;
   color: white;
   width: 100%;
-  position: absolute;
+  position: static;
   bottom: 0;
 }
