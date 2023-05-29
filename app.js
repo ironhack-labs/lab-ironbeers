@@ -35,7 +35,17 @@ app.get('/random-beer', (req, res, next) => {
     })
 })
 
+// The :id sets the number given after the dash as the ID sent from the beerpartial.hbs 
+app.get('/beer-:id', (req, res, next) => {
+  const beerId = req.params.id // Sets the number given after the dash as the ID
+  punkAPI
+    .getBeer(beerId) // The method obtains the beer from the ID given.
+    .then(beer => {
+      res.render('random-beer',beer[0]) // rendes the beer obtained from the getBeer
+    })
+})
+
 /* ---------- Middleware ---------- */
-app.listen(3000, () => console.log('🏃‍ on port 3000'));
+app.listen(3000, () => console.log('Server started @ :3000'));
 
 // .render works only with objects.

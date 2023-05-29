@@ -47,7 +47,9 @@ body {
   text-align: left;
 }
 .rand-beer img {
-  width: 50px;
+  margin-top: 10px;
+  height: 200px;
+  width: auto;
   margin-bottom: 10px;
 }
 .description {
@@ -55,6 +57,7 @@ body {
 }
 .food-pair {
   width: 100%;
+  margin-top: 10px;
 }
 .brew-tips {
   width: 100%;
