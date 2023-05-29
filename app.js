@@ -23,5 +23,16 @@ app.get('/beers', (req, res, next) => {
     .catch(err => console.error(err))
 }) // Route handler to /beers
 
+app.get('/random-beer', (req, res, next) => {
+  punkAPI
+    .getRandom()
+    .then(randomBeer => {
+      console.log(randomBeer[0])
+      res.render('random-beer', randomBeer[0])
+    })
+})
+
 /* ---------- Middleware ---------- */
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
+
+// .render works only with objects.

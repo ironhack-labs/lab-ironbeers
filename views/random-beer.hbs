@@ -1,0 +1,25 @@
+<div class="media mr-0 pr-0">
+  <img src="{{this.image_url}}" class="align-self-center mr-5" alt="beer-img" height="300">
+  <div class="media-body">
+    <h3 class="mt-0">{{this.name}}</h3>
+    <h5>{{this.tagline}}</h5>
+    
+    <p class="mb-3">
+      {{this.description}}
+    </p>
+    
+    <p class="mb-0">
+      <strong class="pb-0 mb-0">Pairing Food</strong>
+      <ul id="pairing-foods">
+        {{#each this.food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </p>
+    <p>
+      <strong>Brewers tips:</strong>
+      {{this.brewers_tips}}
+    </p>
+  </div>
+    
+</div>
