@@ -10,7 +10,11 @@ const punkAPI = new PunkAPIWrapper();
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
+// Set up of public path
 app.use(express.static(path.join(__dirname, 'public')));
+
+/* ---------- Partials ---------- */
+hbs.registerPartials(path.join(__dirname, 'views/partials'))
 
 /* ---------- Route Handlers ---------- */
 app.get('/', (req, res) => res.render('index')) // Route handler to / (home page)
@@ -27,7 +31,6 @@ app.get('/random-beer', (req, res, next) => {
   punkAPI
     .getRandom()
     .then(randomBeer => {
-      console.log(randomBeer[0])
       res.render('random-beer', randomBeer[0])
     })
 })

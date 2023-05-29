@@ -40,23 +40,47 @@ body {
   bottom: 0;
 }
 
-ul {
-  list-style: none;
+
+.rand-beer {
+  width: 60%;
+  margin-left: 20%;
+  text-align: left;
+}
+.rand-beer img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+.description {
+  width: 100%;
+}
+.food-pair {
+  width: 100%;
+}
+.brew-tips {
+  width: 100%;
 }
 
-.media {
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
-}
-
-#pairing-foods {
-  list-style: disc;
-}
-
-main {
+.all-beers .beer-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
+  margin: 3px;
+  border: none;
+}
+.all-beers .beer-card img {
+  height: 80px;
+  width: auto;
+  margin-top: 10px;
+}
+.all-beers .beer-card h5 {
+  font-size: 14px;
+}
+.all-beers .beer-card h6 {
+  font-size: 12px;
+}
+.all-beers .beer-card .description {
+  text-align: center;
+  font-size: 10px;
+  margin-bottom: 10px;
 }

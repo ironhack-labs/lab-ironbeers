@@ -1,28 +1,7 @@
-<ul>
+<div class="all-beers d-flex flex-wrap justify-content-around">
   {{#each beersFromAPI}}
-  {{!-- <li>
-    <div class="uk-card uk-card-default">
-      <div class="uk-card-media-top">
-        <img src={{image_url}} width="50" height="150" alt="">
-      </div>
-      <div class="uk-card-body">
-        <h3 class="uk-card-title">{{name}} {{tagline}}</h3>
-        <p>{{description}}</p>
-      </div>
+    <div class="beer-card card" style="width: 18rem;">
+      {{>beerpartial this}}
     </div>
-  </li> --}}
-
-  <div class="media mt-5 mb-4">
-  <img src="{{image_url}}" class="align-self-center mr-4" alt="beer-img" width="40">
-  <div class="media-body">
-    <h5 class="mt-0">{{name}}</h5>
-    <h6>{{tagline}}</h6>
-    <p class="mb-3">
-      {{this.description}}
-    </p>
-  </div>
-</div>
-
   {{/each}}
-</ul>
-
+</div>
