@@ -13,6 +13,8 @@ padding: 0;
 margin: 0;
 padding-top: 1.5%;
 padding-bottom: 1.5%;
+box-shadow: 0 4px 2px #bfbfbf;
+
   }
   
 .nav-links {
@@ -49,4 +51,16 @@ height: 100vh;
 max-width: 60%; 
 max-height: 60%;
 }
-  
+
+#footer-container {
+background-color: #0a2c42;
+flex-direction: row;
+padding-top: 1,5%;
+padding-bottom: 1,5%;
+}
+
+#footer-container p {
+display: inline-block;
+color: #f7f9f9;
+font-family: Arial, Helvetica, sans-serif;
+}
