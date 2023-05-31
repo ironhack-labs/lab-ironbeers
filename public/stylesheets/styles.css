@@ -9,7 +9,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  overflow: hidden;
   font-size: 0.7rem;
 }
 
@@ -19,7 +18,11 @@ body {
 } */
 
 nav {
+  position: fixed;
   padding-left: 20px;
+  width: 100%;
+  top: 0px;
+  left: 0px;
   background-color: #2081c3;
   color: #f7f9f9;
   display: flex;
@@ -39,6 +42,11 @@ a:hover {
   text-decoration: underline;
 }
 
+.beer-img {
+  max-width: 80px;
+  max-height: 200px;
+}
+
 #home a {
   border: 1px solid #0a2c42;
   margin: 5px;
@@ -52,9 +60,29 @@ div#home {
   height: 90vh;
 }
 
+#all-beers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: space-evenly;
+  /* align-items: center; */
+}
+
+#content {
+  position: relative;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#all-beers > div {
+  width: 30%;
+}
+
 footer {
   padding: 10px;
-  position: absolute;
+  position: fixed;
   color: #f7f9f9;
   width: 100%;
   /* height: 30px; */

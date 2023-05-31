@@ -1,7 +1,7 @@
 {{#if this.image_url}}
-<img src="{{this.image_url}}" alt="{{this.name}}">
+<img class="beer-img" src="{{this.image_url}}" alt="{{this.name}}">
 {{else}}
-<img src="/images/beer.png" alt="placeholder: No image available">
+<img class="beer-img" src="/images/beer.png" alt="placeholder: No image available">
 {{/if}}
 <h1><a href="/beers/beer-{{this.id}}">{{this.name}}</a></h1>
 <p>{{this.tagline}}</p>
