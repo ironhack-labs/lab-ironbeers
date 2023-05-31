@@ -1,0 +1,16 @@
+<div>
+<ul>
+{{#each beerFromApi}}
+<h1>{{name}}</h1>
+{{#if image_url}}
+<img src="{{image_url}}" alt="Beer Image"/>
+{{else}}
+<img src="/images/beer.png" alt="No beer" />
+{{/if}}
+<li>{{description}} </li>
+<li>{{tagline}} </li>
+<li>{{food_pairing}} </li>
+<li>{{brewers_tips}} </li>
+{{/each}}
+</ul>
+</div>
