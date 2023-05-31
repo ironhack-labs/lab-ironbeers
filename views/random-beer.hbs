@@ -1,0 +1,12 @@
+<div>
+  <img src='{{lonelyBeer.image_url}}' />
+  <h1>{{lonelyBeer.name}}</h1>
+  <p>{{lonelyBeer.description}}</p>
+  <h2>{{lonelyBeer.tagline}}</h2>
+  <ul>
+    {{#each lonelyBeer.food_pairing}}
+      <li>{{this}}</li>
+    {{/each}}
+  </ul>
+  <h2><b>Brewer Tips: </b>{{lonelyBeer.brewers_tips}}</h2>
+</div>
