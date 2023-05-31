@@ -35,15 +35,19 @@ app.get('/random-beer', (req, res) => {
   punkAPI
     .getRandom()
     .then(lonelyArr => {
-      console.log(req.params);
       res.render('random-beer', lonelyArr[0]);
     })
     .catch(err => console.log('Sorry, we are dry.'));
 });
 
-// app.get('/beers/:beer', (req, res) => {
-//   res.send(req.params);
-
-// });
+app.get('/beers/:beer', (req, res) => {
+  punkAPI
+    .getBeer(req.params['beer'])
+    .then(ourBeer => {
+      console.log(ourBeer);
+      res.render('beers', { finalBeerList: ourBeer });
+    })
+    .catch(err => console.log('Sorry, we are dry.'));
+});
 
 app.listen(4000, () => console.log('🏃‍ on port 4000'));
