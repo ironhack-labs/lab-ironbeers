@@ -48,8 +48,19 @@ app.get('/random-beer', (req, res) => {
     });
 });
 
-app.get('/beer-page', (req, res) => {
-  punkAPI.getBeer(1)
-} )
+app.get('/beer/:id', (req, res) => {
+console.log(req.params)
+
+  punkAPI.getBeer(req.params.id)
+  .then((beerId) => {
+    const data = {
+      listOfBeers: beerId
+    }
+    res.render("beer-id", data)
+  })
+  .catch((error) => {
+    console.log("There was an error", error)
+  });
+});
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

@@ -30,6 +30,8 @@ a {
     text-decoration: none;
 }
 
+
+
 a:hover {
     color: #0a2c42;
 }
@@ -73,11 +75,26 @@ footer {
 
 ul {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content:space-evenly ;
+    flex-basis: 20%;
+    align-items: center;
+}
+li {
+   list-style-type: none;
+}
+
+img {
+    height: 10vh;
+}
+.beer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     flex-basis: 20%;
 }
 
-#beer-image {
-    height: 10vh;
+.beer a {
+    color: #2081c3
 }
+
