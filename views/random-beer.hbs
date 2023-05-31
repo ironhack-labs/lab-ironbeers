@@ -1,0 +1,17 @@
+<div class='random-beer-container'>
+  {{#if this.image_url}}
+    {{> beerpartial}}
+    <p> {{this.food_pairing}} </p>
+    <p> {{this.brewers_tips}} </p>
+  {{else}}
+    <img
+      src='https://milwaukeerecord.com/wp-content/uploads/2019/05/MysteryBeerMain.jpg?x60396'
+      alt={{this.name}}
+    />
+    <p> {{this.name}} </p>
+    <p> {{this.tagline}} </p>
+    <p> {{this.description}} </p>
+    <p> {{this.food_pairing}} </p>
+    <p> {{this.brewers_tips}} </p>
+  {{/if}}
+</div>
