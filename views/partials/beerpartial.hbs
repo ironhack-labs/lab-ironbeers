@@ -1,0 +1,14 @@
+<div class="beer-item">
+<div><img src='{{image}}' /></div>
+<div><a href='/beer/{{id}}'><h3>{{name}}</h3></a></div>
+<div><p>{{tagline}}</p></div>
+<div><p>{{description}}</p></div>
+<div><ul>
+    <b>Food pairing:</b>
+    {{#each food_pairing}}
+      <li>{{this}}</li>
+    {{/each}}
+  </ul>
+</div>
+<div><p><b>Tips:</b> {{brewers_tips}}</p></div>
+</div>
