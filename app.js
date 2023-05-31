@@ -26,13 +26,12 @@ app.get('/beers', (req, res) => {
   punkAPI.getBeers()
   .then((beersArr) => {
 
-    console.log(beersArr)
+    console.log(beersArr[0])
     res.render('beers', beersArr);
   })
   .catch((error) => {
     console.log("oops, there was an error", error); 
-  });
-  
+  });  
 })
 
 app.get('/random-beers', (req, res) => {
