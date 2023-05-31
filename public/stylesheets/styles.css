@@ -3,5 +3,62 @@ white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
+
 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  font-size: 0.7rem;
+}
+
+/* body>div{
+  position: relative;
+  height: 100%;
+} */
+
+nav {
+  padding-left: 20px;
+  background-color: #2081c3;
+  color: #f7f9f9;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+a {
+  padding: 5px 10px;
+  color: #f7f9f9;
+  background-color: #2081c3;
+  text-decoration: none;
+  border-radius: 5px;
+  line-height: 1.5;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+#home a {
+  border: 1px solid #0a2c42;
+  margin: 5px;
+}
+
+div#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 90vh;
+}
+
+footer {
+  padding: 10px;
+  position: absolute;
+  color: #f7f9f9;
+  width: 100%;
+  /* height: 30px; */
+  bottom: 0px;
+  left: 0px;
+  background-color: #0a2c42;
+}
