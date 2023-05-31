@@ -26,12 +26,7 @@ app.get('/beers', (req, res) => {
   punkAPI
     .getBeers()
     .then(arr => {
-      const beerList = arr.slice(0, 25);
-      const data = {
-        finalBeerList: beerList
-      };
-
-      res.render('beers', data);
+      res.render('beers', { finalBeerList: arr });
     })
     .catch(err => console.log('Sorry, we are dry.'));
 });
@@ -40,13 +35,15 @@ app.get('/random-beer', (req, res) => {
   punkAPI
     .getRandom()
     .then(lonelyArr => {
-      const data = {
-        lonelyBeer: lonelyArr[0]
-      };
-
-      res.render('random-beer', data);
+      console.log(req.params);
+      res.render('random-beer', lonelyArr[0]);
     })
     .catch(err => console.log('Sorry, we are dry.'));
 });
+
+// app.get('/beers/:beer', (req, res) => {
+//   res.send(req.params);
+
+// });
 
 app.listen(4000, () => console.log('🏃‍ on port 4000'));
