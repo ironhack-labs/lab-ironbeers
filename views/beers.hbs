@@ -1,0 +1,10 @@
+{{#each beers}}
+{{> beerpartial}}
+{{!-- For each beer, we create an anchor tag and we pass 
+in the ID of that beer, which we already know from the listing page
+"/beerdetails/" must match one of our defined routes
+
+Now whenever somebody clicks on this link, we are redirecting
+to the /beerdetails/ URL and appending the ID of that beer --}}
+<a href="/beerdetails/{{id}}">CHECK OUT THE BEER DETAILS</a>
+{{/each}}
