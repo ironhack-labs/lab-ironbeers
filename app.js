@@ -13,39 +13,38 @@ app.set('views', path.join(__dirname, 'views'));
 // Set up of public path
 app.use(express.static(path.join(__dirname, 'public')));
 
-/* ---------- Partials ---------- */
-hbs.registerPartials(path.join(__dirname, 'views/partials'))
 
-/* ---------- Route Handlers ---------- */
-app.get('/', (req, res) => res.render('index')) // Route handler to / (home page)
+// Register the location for handlebars partials here:
+hbs.registerPartials(path.join(__dirname, 'views/partials'))
+// ...
+
+// Add the route handlers here:
+
+app.get('/', (req, res) => res.render('index'))
 
 app.get('/beers', (req, res, next) => {
-  punkAPI.getBeers()
-    .then(beersFromAPI => { // the type of beersFromAPI is Object not Array
-      res.render('beers', { beersFromAPI }); // To assign an object to the render need to add {}
-    })
-    .catch(err => console.error(err))
-}) // Route handler to /beers
+  punkAPI
+    .getBeers()
+    .then(beersFromApi => res.render('beers', {beersFromApi}))
+    .catch(error => console.log(error))
+})
 
-app.get('/random-beer', (req, res, next) => {
+app.get('/random-beer', (req, res) => {
   punkAPI
     .getRandom()
-    .then(randomBeer => {
-      res.render('random-beer', randomBeer[0])
-    })
+    .then(beerFromApi => res.render('random-beer', beerFromApi[0]))
+    .catch(error => console.log(error))
 })
 
-// The :id sets the number given after the dash as the ID sent from the beerpartial.hbs 
-app.get('/beer-:id', (req, res, next) => {
-  const beerId = req.params.id // Sets the number given after the dash as the ID
+
+app.get('/beer-:id', (req, res) => {
+  const beerId = req.params.id;
   punkAPI
-    .getBeer(beerId) // The method obtains the beer from the ID given.
+    .getBeer(beerId)
     .then(beer => {
-      res.render('random-beer',beer[0]) // rendes the beer obtained from the getBeer
+      res.render('random-beer', beer[0]);
     })
+    .catch(error => console.log(error))
 })
 
-/* ---------- Middleware ---------- */
-app.listen(3000, () => console.log('Server started @ :3000'));
-
-// .render works only with objects.
+app.listen(3000, () => console.log('🏃‍ on port 3000'));
