@@ -1,10 +1,17 @@
-<div>
+<div class="rand-beer d-flex flex-column justify-content-center align-items-center">
   {{>beerpartial this}}
 
-  <img src="{{this.image_url}}" alt="{{this.name}}" style="width: 100px;">
-  <h2>{{this.name}}</h2>
-  <p>{{this.description}}</p>
-  <p>{{this.tagline}}</p>
-  <p><strong>Food Pairing:</strong> {{this.food_pairing}}</p>
-  <p><strong>Brewer Tips:</strong> {{this.brewers_tips}}</p>
+  <div class="food-pair d-flex flex-column justify-content-start align-items-start">
+    <strong>Pairing Food</strong>
+    <ul>
+        {{#each this.food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+  </div>
+
+  <div class="brew-tips">
+    <strong>Brewers tips:</strong>
+    {{this.brewers_tips}}
+  </div>
 </div>
