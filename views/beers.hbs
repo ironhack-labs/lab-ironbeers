@@ -1,9 +1,6 @@
 <h4>All Beers</h4>
 {{#each beersFromApi}}
 <div>
-  <img src="{{image_url}}" alt="{{name}}" style="width: 100px;">
-  <p><b>Name:</b>{{name}}</p>
-  <p><b>Description:</b>{{description}}</p>
-  <p><b>Tag line:</b>{{tagline}}</p>
+  {{>beerpartial}}
 </div>
 {{/each}}
