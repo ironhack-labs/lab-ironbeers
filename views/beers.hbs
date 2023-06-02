@@ -1,6 +1,7 @@
-<h4>All Beers</h4>
-{{#each beersFromApi}}
-<div>
-  {{>beerpartial}}
+<div class="d-flex flex-wrap justify-content-around">
+  {{#each beersFromApi}}
+  <div>
+    {{>beerpartial}}
+  </div>
+  {{/each}}
 </div>
-{{/each}}
