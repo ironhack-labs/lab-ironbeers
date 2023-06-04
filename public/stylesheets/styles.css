@@ -5,3 +5,125 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+   
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    background-color: #bfbfbf;
+    flex-wrap: nowrap;
+}
+
+nav {
+    background-color: #2081c3;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:flex-start;
+    box-shadow: 5px 5px 15px #2081c3;
+    padding-left: 20px;
+    position:sticky;
+
+}
+
+nav a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: white;
+}
+
+.div-index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+   
+}
+
+.beer-image{
+    width: 400px;
+    height: 400px;
+    margin: 50px 50px;
+}
+.button{
+    width: 200px;
+    height: 30px;
+    background-color: #2081c3;
+    color: white;
+    font-size: 15px;
+    border-style: none;
+    border-radius: 5px;
+    margin: 10px 10px;
+    text-decoration: none;
+    box-shadow: 5px 5px 15px #2081c3;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.beer-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content:space-between;
+    flex-wrap: wrap;
+    border: none;
+}
+
+.beer-item{
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+    border: none;
+    flex-wrap: nowrap;
+}
+.beer-item img{
+    width: 60px;
+    width: 60px;
+
+}
+.beer-item h3{
+    font-size: 20px;
+}
+
+.beer-item p{
+    font-size: 15px;
+}
+.random-beers{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 3px;
+    border: none;
+    flex-wrap: nowrap;
+
+}
+.random-beers img{
+    width: 120px;
+    width: 120px;
+}
+
+footer{
+    background-color: #0a2c42;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    position:sticky;
+    height: 50px;
+}
+
+footer p{
+    margin-left: 30px;
+}
