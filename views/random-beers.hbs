@@ -1,15 +1,13 @@
-<div>
-    <img src={{this.image_url}} width="50" height="150" alt="">
-    <h3>{{name}} </h3>
-    <p>{{tagline}}</p>
-    <p>{{description}}</p>
+<div class="random-beers">
+        {{>beerpartial}}
+
     <ul>
-        <h3>Food Pairing</h3>
+        <h2>Food Pairing</h2>
         {{#each this.food_pairing}}
     <li>{{this}}</li>
         {{/each}}
     </ul>
-    <p>Brewers Tips: {{this.brewers_tips}}</p>
-    
+    <p><b>Brewers Tips: </b>{{this.brewers_tips}}</p>
 
+    
 </div>
