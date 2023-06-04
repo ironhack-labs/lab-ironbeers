@@ -45,25 +45,26 @@ nav a:hover {
 
 main {
   display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+.hero{
+  display: flex;
   justify-content: center;
   align-items: center;
   flex: 1 0 auto;
 }
 
-.hero{
-  display: flex;  
-}
-
 #beer-image {
-  width: 300px;
-  height: auto;
+  height: 300px;
+  width: auto;
 }
 
 .buttons-div{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-bottom: 50px;
 }
 
 .button {
@@ -82,6 +83,47 @@ main {
   background-color: #366483;
 }
 
+h1{
+  font-size: 3em;
+  font-weight: 700;
+  margin:40px
+}
+
+.all-beers{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px;
+  justify-content: space-evenly;
+}
+
+.single-beer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  max-width: 350px;
+  gap: 20px;
+  margin:20px
+}
+
+.single-beer img{
+  height: 80%;
+  width: auto;
+  align-self: flex-start;
+}
+
+.beer-details{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap:10px;
+  align-self: flex-start;
+}
+
+.beer-details p {
+  text-align: justify;
+}
 
 footer {
   height: 40px;

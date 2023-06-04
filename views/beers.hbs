@@ -1,0 +1,13 @@
+<h1>Catalogue</h1>
+<section class='all-beers'>
+  {{#each beers}}
+    <div class='single-beer'>
+      <img src='{{this.image_url}}' alt='{{this.name}}' />
+      <div class='beer-details'>
+        <h2>{{this.name}}</h2>
+        <h3>{{this.tagline}}</h3>
+        <p>{{this.description}}</p>
+      </div>
+    </div>
+  {{/each}}
+</section>
