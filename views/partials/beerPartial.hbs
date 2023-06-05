@@ -1,0 +1,12 @@
+<div class='{{#if isDetailedBeer}}detailed-beer{{else}}catalog-beer{{/if}}'>
+  <img src='{{image_url}}' alt='{{name}}'/>
+  <div class='beer-details'>
+    <h2>{{name}}</h2>
+    <h3>{{tagline}}</h3>
+    <p>{{description}}</p>
+    {{#if isDetailedBeer}}
+      <p><strong>Food Pairing:</strong> {{food_pairing}}</p>
+      <p><strong>Brewer Tips:</strong> {{brewers_tips}}</p>
+    {{/if}}
+  </div>
+</div>

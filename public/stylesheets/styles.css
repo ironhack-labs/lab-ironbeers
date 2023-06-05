@@ -1,7 +1,180 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f9f9;
+  color: #0a2c42;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+body a{
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  display: flex;
+  background-color: #2081c3;
+  height: 50px;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin-left: 30px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  color: #f7f9f9;
+  text-decoration: none;
+  font-size: larger;
+  font-weight: 700;
+}
+
+nav a:hover {
+  color: #bfbfbf;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  align-items: center;
+}
+
+.hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 auto;
+}
+
+#beer-image {
+  height: 300px;
+  width: auto;
+}
+
+.buttons-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  color: #f7f9f9;
+  background-color: #2081c3;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #366483;
+}
+
+h1{
+  font-size: 3em;
+  font-weight: 700;
+  margin:40px
+}
+
+.all-beers{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.catalog-beer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  gap: 20px;
+  padding: 20px;
+  margin:10px;
+}
+
+.catalog-beer:hover{
+  border: solid 1px black;
+  border-radius: 20px;
+}
+
+.catalog-beer img{
+  max-height: 200px;
+  width: auto;
+  align-self: center;
+}
+
+.beer-details{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap:10px;
+  align-self: center;
+  align-items: center;
+}
+
+.beer-details p {
+  text-align: justify;
+  font-size: small;
+}
+
+footer {
+  height: 40px;
+  background-color: #194d70;
+  color: #f7f9f9;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.detailed-beer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  gap: 30px;
+  margin:50px;
+  padding: 20px;
+  flex-shrink: 1;
+  width: 800px;
+}
+
+
+.detailed-beer img {
+  width: auto;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.beer-details p {
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+.beer-details p strong {
+  font-size: 1.25em;
+}

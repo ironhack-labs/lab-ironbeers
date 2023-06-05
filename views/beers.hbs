@@ -1,0 +1,8 @@
+<h1>Catalog</h1>
+<section class='all-beers'>
+  {{#each beers}}
+    <a href="/beers/{{this.id}}">
+    {{> beerPartial this}}
+    </a>
+  {{/each}}
+</section>
