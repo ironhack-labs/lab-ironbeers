@@ -1,5 +1,23 @@
-<!-- beerpartial.hbs -->
-<img src='{{beer.image_url}}' alt='{{beer.name}}' />
-<h2>{{beer.name}}</h2>
-<p>{{beer.description}}</p>
-<p>{{beer.tagline}}</p>
+<div class='card'>
+  <div class='card-image'>
+
+    {{#if this.image_url}}
+      <img class='card-img' src='{{this.image_url}}' alt='{{this.name}}' />
+    {{else}}
+      <img
+        id='card-img'
+        src='https://www.gasagdeals.de/wp-content/uploads/2020/09/brewdog-008-Logo-Web-klein-275px-80px.png'
+        alt='beer'
+      />
+    {{/if}}
+
+  </div>
+
+  <div class='card-body'>
+    <h5>{{this.name}}</h5>
+    <p>{{this.abv}}% {{this.ibu}}IBU</p>
+    <p>Released: {{this.first_brewed}}</p>
+    <p>{{this.tagline}}</p>
+  </div>
+
+</div>

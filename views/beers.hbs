@@ -1,10 +1,6 @@
 <!-- beers.hbs -->
-<h1>All Beers</h1>
-{{#each beers}}
-  <div>
-    <img src='{{image_url}}' alt='{{name}}' />
-    <h2>{{name}}</h2>
-    <p>{{description}}</p>
-    <p>{{tagline}}</p>
-  </div>
-{{/each}}
+<div class="beer-flex">
+        {{#each beers}}  
+            {{>beerpartial this}}       
+        {{/each}}
+</div>
