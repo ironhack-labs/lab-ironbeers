@@ -1,7 +1,140 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+:root {
+  --white: #f7f9f9;
+  --light-blue: #2081c3;
+  --dark-blue: #0a2c42;
+  --grey: #bfbfbf;
+  --font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  position: relative;
+  /* overflow: hidden; */
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  background-color: var(--light-blue);
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  padding: 30px;
+  gap: 20px;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  background-color: var(--dark-blue);
+  padding: 20px;
+  color: white;
+}
+
+h1 {
+  margin: 50px 0;
+}
+
+.homeImageContainer {
+  width: 100%;
+  display: flex;
+}
+
+.homeImageContainer img {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.linksContainer a {
+  background-color: var(--light-blue);
+  color: white;
+  text-decoration: none;
+  padding: 25px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  padding: 20px;
+}
+
+footer span {
+  padding-left: 30px;
+}
+
+/* beers section */
+.beersContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin: 0 0 100px 0;
+}
+
+.beer {
+  display: flex;
+  gap: 30px;
+}
+
+.beersContainer img {
+  /* max-height: 200px; */
+  max-width: 50px;
+}
+
+.beerTextContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.beerTextContent p {
+  max-width: 55ch;
+  line-height: 130%;
+}
+
+.foodReco {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.foodReco li {
+  margin-left: 50px;
+}
