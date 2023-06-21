@@ -1,24 +1,14 @@
-<!-- views/teams.hbs -->
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Beers</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <ul>
-      {{#each beers}}
+<div class="row all">
+  {{#each beers}}
+    <div class="col-xl-3">
+      <ul class="beer">
         <li><img src="{{image_url}}" alt=""></li>
         <br>
-        <li><h5>{{name}}</h3></li>
+        <li><h5><b>{{name}}</b></h3></li>
         <br>
         <li><p>{{description}}</p></li>
-        <li><p>{{tagline}}</p></li>
-        <br>
-        <br>
-      {{/each}}
-    </ul>
-  </body>
-</html>
+        <li><p><i>{{tagline}}</i></p></li>
+      </ul>
+    </div>
+  {{/each}}
+</div>

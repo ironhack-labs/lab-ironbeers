@@ -5,3 +5,35 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+  background-color: black !important;
+}
+
+.all {
+  margin: 50px 50px;
+}
+
+.beer {
+  border: 3px solid grey;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+  height: 600px;
+  width: 320px;
+  text-align: center;
+  overflow: auto;
+  margin: 30px auto;
+}
+
+.beer img {
+  height: 300px;
+}
+
+.beer li {
+  list-style: none;
+}
+
+.beer p {
+  text-align: left;
+}

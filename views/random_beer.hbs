@@ -1,24 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Random Beers</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <ul>
-        {{#if beer.image_url}}
-          <img src="{{ beer.image_url }}" alt="{{ beer.tagline }}"/>
-        {{/if}}
-        <br>
-        <br>
-        <li><h5>{{beer.name}}</h3></li>
-        <br>
-        <li><p>{{beer.description}}</p></li>
-        <li><p>{{beer.tagline}}</p></li>
-        <li><p>{{beer.food_pairing}}</p></li>
-        <li><p>{{beer.brewers_tips}}</p></li>
-    </ul>
-  </body>
-</html>
-
+<ul>
+    {{#if beer.image_url}}
+      <img src="{{ beer.image_url }}" alt="{{ beer.tagline }}"/>
+    {{/if}}
+    <br>
+    <br>
+    <li><h5>{{beer.name}}</h3></li>
+    <br>
+    <li><p>{{beer.description}}</p></li>
+    <li><p>{{beer.tagline}}</p></li>
+    <li><p>{{beer.food_pairing}}</p></li>
+    <li><p>{{beer.brewers_tips}}</p></li>
+</ul>
