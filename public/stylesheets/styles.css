@@ -5,3 +5,40 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.card {
+  height: 30vh;
+  width: 30vw;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: inherit;
+  margin: 1%;
+}
+
+.card-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+
+.card-body {
+  background-color: black;
+  color: white;
+  width: 50%;
+  height: 100%;
+
+  font-size: 2vh;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 15%;
+}
+
+.beer-flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
