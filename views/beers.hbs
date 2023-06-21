@@ -1,0 +1,22 @@
+<nav>
+  <a href='/'>Home</a>
+  <a href='/beers'>Beers</a>
+  <a href='/random-beer'>Random Beer</a>
+</nav>
+<center><h1 style='font-size: 50px'>Beers</h1></center>
+<div class='beer'>
+  {{#each beerArray}}
+    <div>
+      <li>
+        <img class='small' src='{{image_url}}' />
+      </li>
+      <div>
+        <li class='name'>{{name}}</li>
+        <li class='tagline'>{{tagline}}</li>
+        <li class='description'>{{description}}</li>
+      </div>
+    </div>
+  {{/each}}
+
+</div>
+<a href='/home'>Home</a>
