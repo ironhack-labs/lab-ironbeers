@@ -33,14 +33,15 @@ app.get('/beers', async (req, res) => {
   }
 });
 
-app.get('/random-beer', async (req, res) => {
-  try {
-    const randomBeer = await punkAPI.getRandom();
-    console.log('Random Beer: ', randomBeer);
-    res.render('random-beer', { randomBeer });
-  } catch (error) {
-    console.log(error);
-    res.render('error');
-  }
+app.get('/random-beer', (req, res) => {
+  punkAPI
+    .getRandom()
+    .then(dataBack => {
+      console.log('dataBack: ', dataBack);
+      res.render('random-beer', { randomBeer: dataBack });
+    })
+    .catch(err => {
+      console.log(err);
+    });
 });
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

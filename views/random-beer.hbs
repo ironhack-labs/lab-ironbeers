@@ -5,8 +5,21 @@
   </head>
   <body>
     <h1>Fancy an Adventure? Here's a Random Beer</h1>
-        <div class="random-beer">
-            {{> randomBeer}}
-        </div>
-    </ul>
+<div class='random-beer-info'>
+{{#each randomBeer}}
+
+    <img src="{{image_url}}" alt="">
+    <h1>{{name}}</h2>
+    <h1>{{tagline}}</h3>
+    <p>{{description}}</p>
+    <p><strong>Food Pairing: </strong></p>
+        <ul>
+            {{#each food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    <p><strong>Brewers Tips: </strong>{{brewers_tips}}</p>
+
+{{/each}} 
+</div>
   </body>
