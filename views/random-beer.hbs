@@ -1,25 +1,20 @@
-  <head>
-    <meta charset='utf-8' />
-    <title>Random Beer</title>
-    <link rel='stylesheet' href='/stylesheets/styles.css' />
-  </head>
-  <body>
-    <h1>Fancy an Adventure? Here's a Random Beer</h1>
-<div class='random-beer-info'>
-{{#each randomBeer}}
+<body>
+  <h1>Fancy an Adventure? Here's a Random Beer</h1>
+  <div class='random-beer-info'>
+    {{#each randomBeer}}
 
-    <img src="{{image_url}}" alt="">
-    <h1>{{name}}</h2>
-    <h1>{{tagline}}</h3>
-    <p>{{description}}</p>
-    <p><strong>Food Pairing: </strong></p>
-        <ul>
-            {{#each food_pairing}}
-            <li>{{this}}</li>
-            {{/each}}
-        </ul>
-    <p><strong>Brewers Tips: </strong>{{brewers_tips}}</p>
+      <img src='{{image_url}}' alt='' />
+      <h2>{{name}}</h2>
+      <h5>{{tagline}}</h5>
+      <p>{{description}}</p>
+      <p><strong>Food Pairing: </strong></p>
+      <ul>
+        {{#each food_pairing}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <p><strong>Brewers Tips: </strong>{{brewers_tips}}</p>
 
-{{/each}} 
-</div>
-  </body>
+    {{/each}}
+  </div>
+</body>
