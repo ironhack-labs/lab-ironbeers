@@ -6,6 +6,79 @@ grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
 
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: space-around;
+  height: 10vh;
+  width: 100vw;
+  background-color: #2081c3;
+}
+
+nav > a {
+  font-size: 4em;
+  color: white;
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: space-around;
+  height: 10vh;
+  width: 100vw;
+  background-color: #0a2c42;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:visited {
+  text-decoration: none !important;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none !important;
+  color: white;
+}
+
+/* PAGES */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.random {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* PAGES */
 .card {
   height: 30vh;
   width: 30vw;
@@ -41,4 +114,8 @@ font-family: Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+#brewdog {
+  width: 80vw;
 }

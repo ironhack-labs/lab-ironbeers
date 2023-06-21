@@ -2,7 +2,14 @@
 
   <div class="card">
     <div class="card-image">
-        <img class="card-img" src="{{this.image_url}}" alt="{{this.name}} image"/>
+        
+          {{#if this.image_url}}
+            <img class="card-img" src="{{this.image_url}}" alt="{{this.name}}"/>
+          {{else}}
+            <img id="card-img" src="https://www.gasagdeals.de/wp-content/uploads/2020/09/brewdog-008-Logo-Web-klein-275px-80px.png" alt="beer" >
+          {{/if}}
+        
+        
     </div>
     
     <div class="card-body">
@@ -11,5 +18,6 @@
       <p>Released: {{this.first_brewed}}</p>
       <p>{{this.tagline}}</p>
     </div>
+
   </div>
 
