@@ -8,6 +8,7 @@ font-family: Arial, Helvetica, sans-serif;
 
 body {
   background-color: black !important;
+  padding-top: 70px;
 }
 
 .all {
@@ -20,10 +21,9 @@ body {
   background-color: white;
   padding: 20px;
   height: 600px;
-  width: 320px;
   text-align: center;
   overflow: auto;
-  margin: 30px auto;
+  margin: 30px 15px;
 }
 
 .beer img {
@@ -36,4 +36,65 @@ body {
 
 .beer p {
   text-align: left;
+}
+
+.rando {
+  margin: 70px 200px;
+  border: 3px solid grey;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+  width: 800px;
+  height: 600px;
+  overflow: auto;
+}
+
+
+.rando img {
+  height: 400px;
+  margin: 0 auto;
+}
+
+.text li {
+  list-style: none;
+}
+
+.text {
+  margin-left: -30px;
+}
+
+.button {
+  height: 100px;
+  width: 400px;
+  display: block;
+}
+
+.button a {
+  color: white;
+  font-size: 30px;
+}
+
+.button a:hover {
+  text-decoration: none;
+  color: yellow;
+}
+
+.home {
+  width: 1000px;
+  margin: 130px 200px;
+  border: 3px solid grey;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+}
+
+.home img {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
