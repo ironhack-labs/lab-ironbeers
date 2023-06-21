@@ -1,0 +1,29 @@
+{{#each randomBeer}}
+<div class="card mb-3 m-5 p-5">
+  <div class="row g-0">
+
+    <div class="col-md-4 d-flex justify-content-center align-items-center">
+      <img src="{{this.image_url}}" class="img-fluid rounded-start" alt="{{this.name}}" style="max-height: 300px">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+
+        {{> beerpartial this}}
+        <div class="p-3">
+
+        <h6>Food pairing</h6>
+        <ul>
+            {{#each this.food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+
+        <h6>Brewers tips</h6>
+        <p>{{this.brewers_tips}}</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{/each}}
