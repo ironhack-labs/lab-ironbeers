@@ -1,0 +1,10 @@
+<ul class='beers'>
+  {{#each this.productArray}}
+    <li style='list-style-type:none'>
+      <p>Name : {{this.name}}</p>
+      <p>Description : {{this.description}}</p>
+      <p>Tag Line : {{this.tagline}}</p>
+      <img src=' {{this.image_url}}' alt='' />
+    </li>
+  {{/each}}
+</ul>

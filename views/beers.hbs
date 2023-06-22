@@ -1,13 +1,2 @@
-<div>
-  hehesss
-  <ul>
-    {{#each beers}}
-      <li>
-        <p>{{this.name}}</p>
-        <p>{{this.description}}</p>
-        <p>{{this.tagline}}</p>
-        <img src='{{this.image_url}}' alt='' />
-      </li>
-    {{/each}}
-  </ul>
-</div>
+{{> beerpartial productArray=beers}}
+
