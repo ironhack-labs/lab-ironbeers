@@ -5,3 +5,126 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container img {
+  height: 200px;
+  width: 200px;
+  margin-top: 50px;
+}
+
+.btn-1 button {
+  background-color: #2081c3;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.btn-2 button {
+  background-color: #2081c3;
+  margin-bottom: 10px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: ivory; */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: space-around;
+  height: 10vh;
+  width: 100vw;
+  background-color: #2081c3;
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: space-around;
+  height: 10vh;
+  width: 100vw;
+  background-color: #0a2c42;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:visited {
+  text-decoration: none !important;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none !important;
+  color: red;
+}
+
+/* PAGES */
+
+.random {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* PAGES */
+.card {
+  height: 30vh;
+  width: 30vw;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: inherit;
+  margin: 1%;
+  border-radius: 20px;
+}
+
+.card-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+
+.card-body {
+  background-color: ivory;
+  color: black;
+  width: 50%;
+  height: 100%;
+  border: 3px solid red;
+  font-size: 2vh;
+  overflow: hidden;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.card-img {
+  width: 15%;
+}
+
+.beer-flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#brewdog {
+  width: 80vw;
+}
