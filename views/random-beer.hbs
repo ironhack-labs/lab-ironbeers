@@ -1,9 +1,9 @@
 {{#each randomBeer}}
-<div class="card mb-3 m-5 p-5">
+<div class="card m-4 p-4">
   <div class="row g-0">
 
     <div class="col-md-4 d-flex justify-content-center align-items-center">
-      <img src="{{this.image_url}}" class="img-fluid rounded-start" alt="{{this.name}}" onerror="this.src='images/default-image.png'" style="max-height: 300px">
+      <img src="{{this.image_url}}" class="img-fluid" alt="{{this.name}}" onerror="this.src='images/default-image.png'" style="max-height: 300px">
     </div>
     <div class="col-md-8">
       <div class="card-body">
