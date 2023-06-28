@@ -24,11 +24,28 @@ app.get('/', (req, res) => {
 });
 
 app.get ('/beers', (req, res) => {
-  res.render('beers')
+  punkAPI
+    .getBeers()
+    .then(beersFromApi => {
+      res.render ('beers', { beers: beersFromApi } );
+    })
+    .catch(error => {
+      console.log(error);
+      res.status(500).send('Error retrieving beers');
+    });
 });
 
 app.get ('/random-beer', (req, res) => {
-  res.render('random-beer')
+  punkAPI
+  .getRandom()
+    .then(responseFromAPI => {
+      
+      res.render('random-beer', { beer: responseFromAPI[0] });
+    })
+    .catch(error => {
+      console.log(error);
+      res.status(500).send('Error retrieving random beer');
+    });
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
