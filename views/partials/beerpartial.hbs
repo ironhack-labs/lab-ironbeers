@@ -1,0 +1,19 @@
+
+<div class="col-md-4">
+  <div class="card">
+    <a href="/beer/{{this.id}}">
+      <img class="img-fluid" width="80" src="{{this.image_url}}" alt="{{this.name}}" />
+    </a>
+    <div class="card-body">
+      <h5 class="card-title">{{this.name}}</h5>
+      <p class="card-text">{{this.description}}</p>
+      <p class="card-text">{{this.tagline}}</p>
+      {{#if show_food_pairing}}
+        <p class="card-text">{{this.food_pairing}}</p>
+      {{/if}}
+      {{#if show_brewers_tips}}
+        <p class="card-text">{{this.brewers_tips}}</p>
+      {{/if}}
+    </div>
+  </div>
+</div>
