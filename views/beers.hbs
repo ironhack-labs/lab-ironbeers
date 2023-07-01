@@ -1,0 +1,15 @@
+<h1> beers</h1>
+
+<section id="beers">
+  {{#each beers}}
+  {{!-- <div class="card" style="width: 18rem;">
+    <img src="{{this.image_url}}" class="card-img-top" alt="">
+    <div class="card-body">
+      <p class="card-text">{{this.name}}</p>
+      <p class="card-text">{{this.description}}</p>
+    </div>
+  </div> --}}
+
+  {{> beerPartial}}
+  {{/each}}
+</section>
