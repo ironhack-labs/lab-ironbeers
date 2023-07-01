@@ -80,6 +80,13 @@ nav li a:hover {
   width: 30%;
 }
 
+.random{
+  margin-top: 40px;
+}
+
+.grey {
+  color: #bfbfbf;
+}
 
 footer {
   background-color: #0a2c42;
