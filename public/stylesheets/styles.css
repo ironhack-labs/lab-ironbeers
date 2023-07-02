@@ -6,6 +6,48 @@ grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
 
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: rgb(47, 150, 247);
+}
+
+nav > ul {
+  display: flex;
+  justify-content: start;
+  gap: 25px;
+  font-size: 18px;
+  list-style: none;
+  padding: 25px;
+  margin: 0;
+}
+
+ul a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ul li:first-child {
+  margin-right: 25px;
+} */
+
 .beer-img {
   width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+/* random-beers.hbs */
+.beer-random-container {
+  display: flex;
+  justify-content: center;
+  width: 1400px;
+  margin: 100px auto;
+  gap: 100px;
+}
+
+span {
+  font-weight: bold;
 }

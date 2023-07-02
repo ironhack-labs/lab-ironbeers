@@ -1,3 +1,4 @@
+const { error } = require('console');
 const express = require('express');
 
 const hbs = require('hbs');
@@ -33,7 +34,18 @@ app.get('/beers', (req, res) => {
 });
 
 app.get('/random-beer', (req, res) => {
-  res.render('random-beer');
+  punkAPI
+    .getRandom()
+    .then(responseFromApi => {
+      console.log(responseFromApi);
+      res.render('random-beer', { randomBeer: responseFromApi });
+
+      // extracting each individual food pairing string from the food_pairing array
+      const foodPairing = responseFromApi[0].food_pairing[0];
+      console.log(foodPairing);
+    })
+
+    .catch(error => console.log(error));
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000 server is running'));
