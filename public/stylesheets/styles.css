@@ -55,6 +55,16 @@ ul a {
   flex-direction: column;
 }
 
+.beer-info-container > h2 {
+  margin-bottom: 0;
+}
+
+.tagline {
+  color: rgb(175, 174, 174);
+  font-size: 14px;
+  margin-top: 5px;
+}
+
 /* random-beers.hbs */
 .beer-random-container {
   display: flex;
