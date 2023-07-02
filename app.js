@@ -41,8 +41,8 @@ app.get('/random-beer', (req, res) => {
       res.render('random-beer', { randomBeer: responseFromApi });
 
       // extracting each individual food pairing string from the food_pairing array
-      const foodPairing = responseFromApi[0].food_pairing[0];
-      console.log(foodPairing);
+      // const foodPairing = responseFromApi[0].food_pairing[0];
+      // console.log(foodPairing);
     })
 
     .catch(error => console.log(error));
