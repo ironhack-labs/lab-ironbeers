@@ -37,6 +37,22 @@ ul a {
   width: 150px;
   height: 150px;
   object-fit: contain;
+  align-self: center;
+}
+
+/* beers.hbs */
+
+.beers-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 1200px;
+  margin: 100px auto;
+  gap: 25px;
+}
+
+.beer-info-container {
+  display: flex;
+  flex-direction: column;
 }
 
 /* random-beers.hbs */

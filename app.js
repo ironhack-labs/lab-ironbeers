@@ -10,6 +10,7 @@ const punkAPI = new PunkAPIWrapper();
 
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
+hbs.registerPartials(__dirname + '/views/partials');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -27,7 +28,6 @@ app.get('/beers', (req, res) => {
   punkAPI
     .getBeers()
     .then(beersFromApi => {
-      console.log(beersFromApi);
       res.render('beers', { beers: beersFromApi });
     })
     .catch(error => console.log(error));
@@ -37,12 +37,7 @@ app.get('/random-beer', (req, res) => {
   punkAPI
     .getRandom()
     .then(responseFromApi => {
-      console.log(responseFromApi);
       res.render('random-beer', { randomBeer: responseFromApi });
-
-      // extracting each individual food pairing string from the food_pairing array
-      // const foodPairing = responseFromApi[0].food_pairing[0];
-      // console.log(foodPairing);
     })
 
     .catch(error => console.log(error));
