@@ -33,6 +33,50 @@ ul a {
   margin-right: 25px;
 } */
 
+/* ========homepage =============== */
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.homepage > img {
+ height: 350px;
+ width: 350px;
+}
+
+.page-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  justify-content: center;
+}
+
+.page-buttons button {
+  width: fit-content;
+  align-self: center;
+  background-color: rgb(47, 150, 247);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.page-buttons > button {
+  margin-bottom: 15px;
+}
+
+.page-buttons button a {
+  color: white;
+  text-decoration: none;
+}
+
+
+/* ========== end homepage ============== */
+
 .beer-img {
   width: 150px;
   height: 150px;
