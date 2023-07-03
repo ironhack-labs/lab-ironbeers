@@ -43,7 +43,6 @@ ul a {
 .homepage > img {
   height: 350px;
   width: 350px;
-  cursor: pointer;
 }
 
 .page-buttons {
@@ -79,7 +78,6 @@ ul a {
   height: 150px;
   object-fit: contain;
   align-self: center;
-  cursor: pointer;
 }
 
 /* beers.hbs */
