@@ -33,6 +33,17 @@ app.get('/beers', (req, res) => {
     .catch(error => console.log(error));
 });
 
+// route for clickable beers
+
+app.get('/specific-beer', (req, res) => {
+  punkAPI
+    .getBeer(1)
+    .then(beer => {
+      res.render('specific-beer', { beerId: beer });
+    })
+    .catch(error => console.log(error));
+});
+
 app.get('/random-beer', (req, res) => {
   punkAPI
     .getRandom()
