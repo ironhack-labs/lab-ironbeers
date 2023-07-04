@@ -5,3 +5,85 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+   background-color: #2081c3; 
+   height: 50px;
+}
+
+nav > div {
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.beers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 10px;
+    display: flex;
+    padding: 5px;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    height: 200px;
+}
+
+.card > .card-img {  
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bfbfbf;
+    padding: 15px;
+    border-radius: 5px 0 0 5px;
+}
+
+.card > .card-info {
+    padding: 20px;
+    width: 300px;
+    border-top: 3px solid #bfbfbf;
+    border-bottom: 3px solid #bfbfbf;
+    border-right: 3px solid #bfbfbf;
+    border-radius: 0 5px 5px 0;
+}
+
+.card-info > h2 {
+    font-size: 25px;
+}
+
+.card-info > .tagline {
+    margin: 10px 0;
+    color: rgba(0,0,0,0.5)
+}
+
+.card-info > .desc {
+    font-size: 14px;
+}
