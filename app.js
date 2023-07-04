@@ -31,7 +31,7 @@ app.get('/beers', (req, res) => {
     })
     .catch(error => {
       console.log(error);
-      // Handle the error if needed
+
       res.send('Error retrieving beers');
     });
 });
@@ -39,12 +39,11 @@ app.get('/random-beer', (req, res) => {
   punkAPI
     .getRandom()
     .then(responseFromAPI => {
-      // Pass the random beer object to the random-beer.hbs view
       res.render('random-beer', { beer: responseFromAPI[0] });
     })
     .catch(error => {
       console.log(error);
-      // Handle the error if needed
+
       res.send('Error retrieving random beer');
     });
 });
