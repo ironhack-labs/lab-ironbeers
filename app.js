@@ -28,4 +28,4 @@ app.get('/random-beer', (req, res) => {
 })
 
 
-app.listen(3001, () => console.log('🏃‍ on port 3001'));
+app.listen(3000, () => console.log('🏃‍ on port 3000'));
