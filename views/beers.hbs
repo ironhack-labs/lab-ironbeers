@@ -1,0 +1,12 @@
+<div class="row p-4">
+  {{#each beers}}
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
+      <div class="card h-100 p-4">
+        <div>
+          <img src="{{this.image_url}}" class="card-img-top" alt="{{this.name}}" onerror="this.src='images/default-image.png'" style="max-height: 200px; object-fit: contain;">
+        </div>
+      {{> beerpartial this}}
+      </div>
+    </div>
+  {{/each}}
+</div>
