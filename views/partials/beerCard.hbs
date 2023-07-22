@@ -1,0 +1,14 @@
+<!-- views/partials/playerCard.hbs -->
+
+{{#each beers as |beer|}}
+<div class="col-md-4">
+  <div class="card">
+<img src="{{beer.image_url}}" width="25" height="75"/> <br>
+    <div class="card-body">
+      <h5 class="card-title">{{beer.name}}</h5>
+      <p class="card-text">{{beer.description}}</p>
+      <p class="card-text">{{beer.tagline}}</p>
+    </div>
+  </div>
+</div> 
+{{/each}}

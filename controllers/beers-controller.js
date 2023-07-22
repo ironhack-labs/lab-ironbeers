@@ -7,10 +7,18 @@ module.exports.beers = (req, res) => {
   .then(beersFromApi => {
     console.log('Beers from the database: ', beersFromApi)
     res.render("beers", {beers: beersFromApi})
+    
+    
   })
   .catch(error => console.log(error));
 };
 
 module.exports.randomBeer = (req, res) => {
-  res.render('random-beer')
+  punkAPI
+  .getRandom()
+  .then(responseFromAPI => {
+    res.render('randomBeer', {beers: responseFromAPI})
+  })
+  .catch(error => console.log(error));
+  
 };
