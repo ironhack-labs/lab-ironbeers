@@ -18,6 +18,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Add the route handlers here:
 
+const router = require("./config/routes-config");
+app.use(router);
+
 app.get('/', (req, res) => {
   res.render('index');
 });
