@@ -4,7 +4,8 @@ module.exports = (req, res) => {
   punkAPI
     .getRandom()
     .then(responseFromAPI => {
-      res.render('random-beer', { randomBeer: responseFromAPI[0] });
+      const randomBeer = responseFromAPI
+      res.render('random-beer', { randomBeer: randomBeer });
     })
     .catch(error => console.log(error));
 };

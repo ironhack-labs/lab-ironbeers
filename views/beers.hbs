@@ -1,8 +1,10 @@
-{{#each beers}}
+{{!-- {{#each beers}}
     <div class="beer-card">
         <img src="{{image_url}}" alt="{{name}}">
         <h2>{{name}}</h2>
         <p>Description: {{description}}</p>
         <p>Tagline: {{tagline}}</p>
     </div>
-{{/each}}
+{{/each}} --}}
+
+{{> beerpartial products=beers}}

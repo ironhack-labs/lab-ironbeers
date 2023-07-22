@@ -22,17 +22,16 @@ ul {
     display: flex;
     flex-direction: row;
     gap: 71px;
-    color: white;
+    /* color: white; */
     list-style: none;
 }
 
 .index {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrar verticalmente */
-    justify-content: center; /* Centrar horizontalmente */
-    height: 100vh; /* Ajusta la altura del contenedor según tus necesidades */
-    /* Otros estilos para .index si los tienes */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
   }
   
   .index img {
@@ -44,8 +43,8 @@ ul {
   button {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrar horizontalmente los botones */
-    margin-top: 20px; /* Espacio entre la imagen y los botones */
+    align-items: center;
+    margin-top: 20px;
     background-color: #2081c3;
     border-radius: 3px;
     height: 36px;
