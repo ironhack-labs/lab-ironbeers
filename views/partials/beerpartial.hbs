@@ -1,0 +1,10 @@
+<ul class="beer-card">
+        {{#each products}}
+        <li>
+        <img src="{{image_url}}" alt="{{name}}" width="100px">
+        <a href="/beer/{{id}}"><h1>{{name}}</h1></a>
+        <p>Description: {{description}}</p>
+        <p>Tagline: {{tagline}}</p>
+        </li>
+{{/each}}
+</ul>
