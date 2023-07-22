@@ -1,7 +1,23 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+nav a {
+  text-decoration: none;
+  color: #f7f9f9;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+h1 {
+  color: #2081c3; 
+}
+
+p {
+  color: #0a2c42;
+}
+
+
+.header {
+  background-color: #bfbfbf;
+}
