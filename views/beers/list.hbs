@@ -1,0 +1,9 @@
+<ul>
+{{#each beers as |beer|}}
+    <li>
+        <a href="/beers/{{beer.id}}">
+        {{beer.id}} - {{beer.name}}
+        </a>
+    </li>
+{{/each}}
+</ul>
