@@ -1,6 +1,6 @@
 const punkAPI = require('../app');
 
-module.exports = (req, res) => {
+module.exports.getBeers = (req, res) => {
   punkAPI
     .getBeers()
     .then(beersFromApi => {
@@ -8,3 +8,4 @@ module.exports = (req, res) => {
     })
     .catch(error => console.log(error));
 };
+
