@@ -1,0 +1,8 @@
+<h1>CERVEZAS</h1>
+<div>
+    <div class="row">
+        {{#each beers}}
+            {{> beerpartial show_food_pairing=false show_brewers_tips=false}}
+        {{/each}}
+    </div>
+</div>
