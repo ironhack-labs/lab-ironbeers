@@ -1,14 +1,15 @@
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 const punkAPI = new PunkAPIWrapper();
 
-module.exports.beers = (req, res) => {
+module.exports.home = (req, res) => {
+  res.render("beers/index");
+}
+
+module.exports.list = (req, res) => {
   punkAPI
   .getBeers()
   .then(beersFromApi => {
-    console.log('Beers from the database: ', beersFromApi)
-    res.render("beers", {beers: beersFromApi})
-    
-    
+    res.render("beers/list", {beers: beersFromApi})
   })
   .catch(error => console.log(error));
 };
@@ -17,7 +18,7 @@ module.exports.randomBeer = (req, res) => {
   punkAPI
   .getRandom()
   .then(responseFromAPI => {
-    res.render('randomBeer', {beers: responseFromAPI})
+    res.render('beers/randomBeer', {beers: responseFromAPI})
   })
   .catch(error => console.log(error));
   

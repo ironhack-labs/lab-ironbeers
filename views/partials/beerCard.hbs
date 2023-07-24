@@ -1,14 +1,16 @@
 <!-- views/partials/playerCard.hbs -->
-
-{{#each beers as |beer|}}
-<div class="col-md-4">
-  <div class="card">
-<img src="{{beer.image_url}}" width="25" height="75"/> <br>
-    <div class="card-body">
-      <h5 class="card-title">{{beer.name}}</h5>
-      <p class="card-text">{{beer.description}}</p>
-      <p class="card-text">{{beer.tagline}}</p>
-    </div>
-  </div>
-</div> 
-{{/each}}
+<div class="container text-center row">
+    {{#each beers as |beer|}}
+        <div class="col-md-4">
+            <div class="card m-3" style="width:22rem; height:auto" id="no-border">
+                <img src="{{beer.image_url}}" class="img-fluid rounded-start p-3 mx-auto d-block"  style="height: 220px;" alt="..."/>
+                <div class="card-body">
+                    <h4 class="card-title"><b>{{beer.name}}</b></h4>
+                    <p class="card-text text-muted">{{beer.tagline}}</p>
+                    <p class="card-text">{{beer.description}}</p>
+                    
+                </div>
+            </div>
+        </div> 
+    {{/each}}
+</div>

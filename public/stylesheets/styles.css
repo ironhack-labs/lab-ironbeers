@@ -5,3 +5,47 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+
+.body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#nav-background{
+    background-color: #2081c3;
+    color: #f7f9f9;
+}
+#index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#no-border{
+    border: none;
+}
+
+.card-body {
+    text-align: left !important;
+  }
+
+.btn{
+    background-color: #2081c3 !important;
+}  
+
+.footer{
+    height: 8vh !important;
+    width: 100vw;
+    background-color: #0a2c42;
+    color: #f7f9f9;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    
+}

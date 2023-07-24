@@ -22,8 +22,5 @@ hbs.registerPartials(__dirname + "/views/partials")
 const router = require("./config/routes-config");
 app.use(router);
 
-app.get('/', (req, res) => {
-  res.render('index');
-});
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
