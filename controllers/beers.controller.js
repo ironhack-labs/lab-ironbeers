@@ -1,48 +1,28 @@
-module.exports.beer = (req, res) => {
-  res.render("beers", {});
+const PunkAPIWrapper = require('punkapi-javascript-wrapper');
+const punkAPI = new PunkAPIWrapper();
+
+module.exports.home = (req, res) => {
+  res.render('index', {});
 };
 
+module.exports.list = (req, res) => {
+  punkAPI
+    .getBeers()
+    .then(beers => {
+      res.render('beers/list', { beers });
+    })
+    .catch(err => {
+      console.error(err);
+    });
+};
 
-// const Beer = require("../models/beer.model");
-
-// module.exports.list = (req, res) => {
-//   Beer.find()
-//     .then((beers) => {
-//       res.render("beers/list", { beers });
-//     })
-//     .catch((err) => {
-//       // TODO
-//     });
-// };
-
-// module.exports.detail = (req, res) => {
-//   Beer.findById(req.params.id)
-//     .then((beer) => {
-//       if (beer) {
-//         res.render("beers/detail", { beer });
-//       } else {
-//         req.redirect("/beers");
-//       }
-//     })
-//     .catch((err) => {});
-// };
-
-// module.exports.create = (req, res) => {
-//   // TODO
-// };
-
-// module.exports.doCreate = (req, res) => {
-//   // TODO
-// };
-
-// module.exports.edit = (req, res) => {
-//   // TODO
-// };
-
-// module.exports.doEdit = (req, res) => {
-//   // TODO
-// };
-
-// module.exports.delete = (req, res) => {
-//   // TODO
-// };
+module.exports.random = (req, res) => {
+  punkAPI
+    .getRandom()
+    .then(beers => {
+      res.render('beers/detail', { beer: beers[0] });
+    })
+    .catch(err => {
+      console.error(err);
+    });
+};
