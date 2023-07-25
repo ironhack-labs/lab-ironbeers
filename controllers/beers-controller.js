@@ -7,19 +7,30 @@ module.exports.home = (req, res) => {
 
 module.exports.list = (req, res) => {
   punkAPI
-  .getBeers()
-  .then(beersFromApi => {
-    res.render("beers/list", {beers: beersFromApi})
-  })
-  .catch(error => console.log(error));
+    .getBeers()
+    .then(beersFromApi => {
+      res.render("beers/list", {beers: beersFromApi})
+    })
+    .catch(error => console.log(error));
 };
 
 module.exports.randomBeer = (req, res) => {
   punkAPI
-  .getRandom()
-  .then(responseFromAPI => {
-    res.render('beers/randomBeer', {beers: responseFromAPI})
-  })
-  .catch(error => console.log(error));
+    .getRandom()
+    .then(luis => {
+      res.render('beers/randomBeer', { beers: luis })
+    })
+    .catch(error => console.log(error));
   
 };
+module.exports.details = (req,res) => {
+  punkAPI
+    .getBeer(req.params.id)
+    .then((beers) => {
+      if(beers){
+        res.render('beers/randomBeer', { beers })
+      } else {
+        req.redirect("beers/index")
+      }       
+    }).catch(() => {})
+}

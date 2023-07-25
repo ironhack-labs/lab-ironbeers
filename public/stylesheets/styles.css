@@ -40,12 +40,10 @@ font-family: Arial, Helvetica, sans-serif;
 }  
 
 .footer{
-    height: 8vh !important;
     width: 100vw;
     background-color: #0a2c42;
     color: #f7f9f9;
     display: flex;
     align-items: center;
-    padding-left: 20px;
-    
+    padding: 20px 20px;
 }

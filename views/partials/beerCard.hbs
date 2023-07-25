@@ -5,7 +5,7 @@
             <div class="card m-3" style="width:22rem; height:auto" id="no-border">
                 <img src="{{beer.image_url}}" class="img-fluid rounded-start p-3 mx-auto d-block"  style="height: 220px;" alt="..."/>
                 <div class="card-body">
-                    <h4 class="card-title"><b>{{beer.name}}</b></h4>
+                    <a href="/beers/{{beer.id}}"><h4 class="card-title"><b>{{beer.name}}</b></h4></a>
                     <p class="card-text text-muted">{{beer.tagline}}</p>
                     <p class="card-text">{{beer.description}}</p>
                     
