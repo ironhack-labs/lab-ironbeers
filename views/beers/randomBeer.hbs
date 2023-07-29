@@ -1,0 +1,10 @@
+{{!-- 
+<div class="container">
+  <h1 class="p-5">Random Beer!</h1>
+  <div class="row">
+
+  </div>
+</div> --}}
+    {{#each beers as |beer|}}
+      {{> randomBeerCard beer}}
+    {{/each}}
