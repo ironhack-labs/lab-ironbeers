@@ -1,0 +1,9 @@
+<div class="beer-list">
+  {{#each finalBeerList}}
+    <div>
+      <a href="/beers/{{id}}">
+    {{> beerpartial}}
+    </a>
+    </div>
+  {{/each}}
+</div>
