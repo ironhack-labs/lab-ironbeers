@@ -5,3 +5,88 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+/* ---------- [LAYOUT STYLE] -----------*/
+
+.navbar {
+    background-color: #2081c3;
+    padding: 75px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: none;
+    box-shadow: 5px 2.5px 2.5px rgba(50, 49, 49, 0.428);
+}
+
+nav .nav-link {
+    color: white
+}
+
+footer {
+    background-color: #0a2c42;
+    color: #f7f9f9;
+    padding: 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+/* ---------- [LAYOUT STYLE] -----------*/
+
+div .container.mt-5 {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 75px;
+    width: 100%;
+}
+
+a.btn.btn-primary {
+    background-color: #2081c3;
+    margin-top: 50px;
+    margin-right: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 1.5em;
+    border-color: #2081c3;
+    box-shadow: 2.5px 2.5px rgba(50, 49, 49, 0.428);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/* ---------- [BEER PAGE STYLE] -----------*/
+
+
+.beer-card {
+    border: white;
+    width: 400px;
+    height: 750px;
+}
+
+.card-image {
+    width: 25%;
+    height: 45%;
+
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.tagline {
+    color: lightgray
+}
+
+/* ---------- [RANDOM BEER PAGE STYLE] -----------*/
