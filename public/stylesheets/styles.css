@@ -5,3 +5,58 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.card {
+    text-align: center;
+    width: 100%;
+    height: 600px;
+    margin-top: 25PX;
+}
+
+
+.card img {
+
+    height: 300px;
+    object-fit: contain;
+}
+
+.card1 {
+    justify-content: center;
+    text-align: right;
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.card1 img {
+
+    height: 500px;
+    width: 50%;
+}
+
+.card-body {
+
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 120px;
+}
+
+.beer {
+
+    justify-content: center;
+    margin-left: 35%;
+    margin-top: 35px;
+}
+
+.beer img {
+
+    width: 40%;
+}
+
+.buttons {
+    margin-top: 5%;
+    margin-left: 35%;
+    align-content: center;
+    align-items: center;
+}
