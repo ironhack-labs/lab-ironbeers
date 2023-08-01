@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>All Beers</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="my-4">All Beers</h1>
+        <div class="row">
+            {{#each beers}}
+            <div class="col-md-4">
+                <img src=" {{image_url}}" class="img-fluid mr-3" style="max-width: 150px;" alt="Beer Image">
+            </div>
+            <div class="col-md-8">
+                <h2>{{name}}</h2>
+                <p>{{tagline}}</p>
+                <p>{{description}}</p>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+
+</html>
