@@ -1,0 +1,37 @@
+<div class="container mt-5">
+
+    <div class="row">
+
+        {{#each beers}}
+
+        {{!-- ojo, este beers tiene que tener el mismo nombre que el que has puesto en el render de beer:
+        beersFromApi--}}
+
+        <div class="col-md-4">
+
+
+            <div class="card-mb3 beer-card">
+
+                <img src="{{image_url}}" class="beer-img-top" alt="{{name}}">
+
+                <div class="card-body">
+
+                    <h5 class="card-name">{{name}}</h5>
+
+                    <p>{{description}}</p>
+                    <p>{{tagline}}</p>
+
+                </div>
+
+            </div>
+
+        </div>
+        {{/each}}
+
+    </div>
+
+
+
+</div>
+
+</div>
