@@ -1,7 +1,22 @@
 /*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
+{
+    white: #f7f9f9;
+    light-blue: #2081c3;
+    dark-blue: #0a2c42;
+    rey: #bfbfbf;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
 */
+
+.beer img{
+        height: 500px;
+        margin-top: 10%;
+        margin-left: 35%;
+}
+
+.homeButtons {
+    margin-top: 5%;
+    margin-left: 43%;
+}
