@@ -63,8 +63,12 @@ div img {
 
 div a {
     text-decoration: none;
-    color: black;
+    color: white;
     margin: 10px 0px;
+}
+
+div h1 {
+  font-size: 20px;
 }
 
 div p {

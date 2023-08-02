@@ -2,8 +2,14 @@
     {{#each responseFromAPI}} <!-- Loop -->
         {{> beerpartial}}
         <div>
-            <p>{{food_pairing}}</p>
+            {{#if food_pairing}}
+                <h1>Food Pairing:</h1>
+                <p>{{food_pairing}}</p>
+            {{/if}}
+            {{#if brewer_tips}}
+            <h1>Brewer tips:</h1>
             <p>{{brewer_tips}}</p>
+            {{/if}}
         </div>
     {{/each}} <!-- Close Loop -->
 </div>  
