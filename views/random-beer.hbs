@@ -1,7 +1,9 @@
-{{#each responseFromAPI}} <!-- Loop -->
-    {{> beerpartial}}
-    <div>
-    <p>{{food_pairing}}</p>
-    <p>{{brewer_tips}}</p>
-    </div>
-{{/each}} <!-- Close Loop -->
+<div>
+    {{#each responseFromAPI}} <!-- Loop -->
+        {{> beerpartial}}
+        <div>
+            <p>{{food_pairing}}</p>
+            <p>{{brewer_tips}}</p>
+        </div>
+    {{/each}} <!-- Close Loop -->
+</div>  
