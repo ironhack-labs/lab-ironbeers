@@ -5,3 +5,119 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* layout */
+
+.navbar-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2081c3;
+}
+
+.navbar-nav ul li {
+  float: left;
+  font-size: 1.6rem;
+}
+
+.navbar-nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  background-color: #111;
+}
+
+.beer-img {
+  height: 400px;
+  padding: 10px 40px;
+  display: block;
+  margin: 0 auto;
+  
+}
+
+.beer-info {
+  padding: 20px 40px 40px 40px;
+}
+
+.beer-info > p {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.tagline {
+  margin: 10px 0 20px 0;
+  color: grey;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 40px;
+  margin: 0 10%;
+  gap: 40px;
+}
+
+
+.container-random{
+  margin: 0 auto;
+  width: 500px !important;
+
+}
+
+.container-random > :not(:first-child) {
+  padding: 0 40px 40px 40px;
+} 
+
+.food-pairing {
+  margin-bottom: 20px;
+}
+
+.brewers-tips {
+  margin-bottom: 20px;
+}
+
+.list-food-pairing {
+  padding-left: 50px;
+}
+
+.list-food-pairing > li {
+  margin-bottom: 20px;
+}
+
+.container-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  
+}
+
+.container-home img {
+  width: 400px;
+  margin: 40px 0;
+
+}
+
+.container-home a {
+  padding: 20px 40px;
+  background-color: #2081c3;
+  border-radius: 5px;
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.6);
+  margin: 20px 0px;
+  text-decoration: none;
+  color: white;
+}
+
