@@ -5,3 +5,49 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+main {
+    background-color: blanchedalmond;
+}
+
+.navbar {
+     
+    color: white;
+    
+}
+ .mug {
+    width: 35%;
+    height: 70vh;
+    margin: 20px auto;
+}
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: blanchedalmond;
+}
+a {
+    margin: 5px;
+    color: white;
+    z-index: 1
+    
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card img {
+    height: 200px;
+    width: 70px;
+    margin: 0 auto;
+
+}
+.card {
+    height: 600px;
+    margin: 5px;
+    overflow: scroll;
+}
+
