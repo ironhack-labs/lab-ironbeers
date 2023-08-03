@@ -30,10 +30,17 @@ nav a {
   margin: 50px;
 }
 
+.index-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .index-button {
   background-color: #2081c3;
   height: auto;
-  width:auto;
+  width: auto;
   color: white;
   padding: 10px;
   border-radius: 10px;
@@ -44,35 +51,65 @@ nav a {
 #ironbeer-logo {
   width: 300px;
   height: auto;
-  margin-right: 5px;
+  margin: 80px 80px 60px 140px;
 }
 
-div {
+.beer-partial {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-div img {
-  width: 100px;
+  text-align: justify;
+  width: 350px;
   height: auto;
   margin: 50px;
 }
 
-div a {
-    text-decoration: none;
-    color: white;
-    margin: 10px 0px;
+#beer-partial-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-div h1 {
-  font-size: 20px;
+.beer-partial img {
+  width: 100px;
+  height: auto;
 }
 
-div p {
-    margin: 20px;
+.beer-partial h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.beer-partial #tagline {
+  color: grey;
+}
+
+.beers-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px 80px 10px 80px;
+}
+
+.random-beer-page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.random-beer-page h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.random-beer-page #beer-partial-img {
+  display: flex;
+  flex-wrap: nowrap;
+  align-self: center;
+  width: 150px;
+  height: auto;
 }
 
 footer {
