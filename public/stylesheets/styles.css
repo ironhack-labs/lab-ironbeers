@@ -46,6 +46,7 @@ nav a {
   border-radius: 10px;
   box-shadow: 5px 5px 5px #bfbfbf;
   margin: 10px;
+  text-decoration: none;
 }
 
 #ironbeer-logo {
@@ -108,7 +109,7 @@ nav a {
   display: flex;
   flex-wrap: nowrap;
   align-self: center;
-  width: 150px;
+  width: 100vh;
   height: auto;
 }
 
