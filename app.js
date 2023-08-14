@@ -16,7 +16,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // ...
 
-
+app.get('/', (req, res) => {
+res.render('index')
+});
 // Add the route handlers here:
 
 app.get('/beers', (req, res) => {
@@ -32,7 +34,7 @@ app.get('/random-beer', (req, res) => {
       .then(beer => {
           res.render('random-beer', { beer });
       })
-      .catch(error => console.log(error));
+      .catch(error => console.log(error));  
 });
 
 
