@@ -5,3 +5,83 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100vh; /* Ensure the footer stays at the bottom */
+}
+
+nav {
+    display: flex; 
+    flex-direction: row;
+    justify-content: start;
+    padding-left: 5%;
+    background-color: #2081c3;
+    align-items: center; /* Vertically align navigation items */
+    height: 60px; /* Adjust as needed */
+}
+
+a {
+    color: #f7f9f9;
+    text-decoration: none;
+    margin: 0 20px; /* Adjust as needed */
+}
+
+.start-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-page img {
+    max-width: 30%;
+    margin: 100px;
+}
+
+.button {
+    background-color: #2081c3;
+    font-size: 1.5em;
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+/* .beer-partial-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 20%;
+} */
+
+.main-content {
+    padding: 20px; /* Add spacing around the main content */
+}
+  
+  .beer-images {
+    max-width: 5%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain the image's aspect ratio */
+  }
+  
+  .beer-general-info {
+    flex: 1; /* Allow the info to grow to fill available space */
+  }  
+
+footer {
+    display: flex;
+    background-color: #0a2c42;
+    height: 50px;
+    align-items: center;
+    color: #f7f9f9;
+    text-align: center;
+    margin-top: auto;
+}
