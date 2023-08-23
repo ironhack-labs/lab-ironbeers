@@ -1,6 +1,8 @@
 <ul>
-		<h2>{{this.name}}</h2>
+	{{#each beersFromApi}}
+		<h2>{{name}}</h2>
 		<h3>{{tagline}}</h3>
-		<img src="{{this.image}}" alt="the image of {{this.title}}">
-		<p> About the Beer : {{this.description}}</p>
+		<img src="{{image}}" alt="the image of {{title}}">
+		<p> About the Beer : {{description}}</p>
+	{{/each}}
 </ul>

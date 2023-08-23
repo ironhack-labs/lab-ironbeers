@@ -52,7 +52,6 @@ app.get('/random-beer', (req, res, next) => {
         foodPairing: data.food_pairing,
         brewerTips: data.brewers_tips
       };
-      console.log(randomBeerData);
       res.render('random-beer', randomBeerData);
     })
     .catch(error => console.log(error));
