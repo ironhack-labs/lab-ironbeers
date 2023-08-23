@@ -26,6 +26,18 @@ font-family: Arial, Helvetica, sans-serif;
     text-align:center;
     display:block;
 }
+/* .pointer{
+    background-color: #2081c3;
+    color: #f7f9f9; 
+    padding: 0px 10px;
+    margin-left: 0%;
+} */
+.pointer a {
+    background-color: #2081c3;
+    color: #f7f9f9; 
+   
+}
+
 .foot{
     background-color: #0a2c42;
    color: #f7f9f9; 
