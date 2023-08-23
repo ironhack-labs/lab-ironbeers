@@ -14,12 +14,6 @@ hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Register the location for handlebars partials here:
-
-// ...
-
-// Add the route handlers here:
-
 app.get('/', (req, res) => {
   res.render('index');
 });
@@ -31,8 +25,6 @@ app.get('/beers', (req, res) => {
       const beerListData = {
         listOfBeers: beersFromApi
       };
-      // console.log('Beers from the database: ', beersFromApi);
-      // console.log(data.name);
       res.render('beers', beerListData);
     })
     .catch(error => console.log(error));
@@ -45,7 +37,7 @@ app.get('/random-beer', (req, res) => {
       const randomBeerData = {
         randomBeer: randomBeerFromApi
       };
-      console.log(randomBeerData)
+      console.log(randomBeerData);
       res.render('random-beer', randomBeerData);
     })
     .catch(error => console.log(error));
