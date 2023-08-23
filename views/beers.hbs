@@ -1,0 +1,7 @@
+<div id="beers">
+{{#each this}}
+<a href="/beers/beer-{{this.id}}"><!-- name of the beer -->
+{{>beerpartial this = this}}
+</a>
+{{/each}}
+</div>
