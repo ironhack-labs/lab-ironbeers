@@ -30,10 +30,6 @@ punkAPI
 
 })
 
-app.get('/', (req, res) => {
-  res.render('index');
-});
-
 app.get('/random-beer', (req, res) => {
   punkAPI.getRandom()
       .then(beer => {
