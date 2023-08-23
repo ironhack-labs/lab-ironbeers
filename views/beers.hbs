@@ -1,0 +1,15 @@
+{{!-- TO ACCESS INDEX OF AN ARRAY IN HBS YOU HAVE TO DO variable.[*indexhere*] --}}
+
+
+{{#each beers}}
+<div class="beers-container">
+    <div class="images">
+        <img src="{{image_url}}" alt="Beer Image">
+    </div>
+    <div class="content">
+        <h1>{{name}}</h1>
+        <p>{{description}}</p>
+        <h3>{{tagline}}</h3>
+    </div>
+</div>
+{{/each}}
