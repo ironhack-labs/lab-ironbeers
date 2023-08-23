@@ -1,0 +1,16 @@
+
+  {{#each this}}
+    {{#if image_url}}
+    <div class="beer-element">
+        {{#if image_url}}
+        {{> beerpartial}}
+        {{/if}}
+        <ul>
+        {{#each food_pairing}}
+            <li>{{this}}</li>
+        {{/each}}
+        </ul>
+        <p>{{brewers_tips}}</p>
+    </div>
+    {{/if}}
+  {{/each}}
