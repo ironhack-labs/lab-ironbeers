@@ -67,8 +67,65 @@ nav > a {
   vertical-align: center;
 }
 
-#beers {
+.beerCard {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  width: 30vw;
+  height: 50vh;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.beerCard a {
+  text-decoration: none;
+  color: inherit;
+  position: absolute;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.beerCard a:hover {
+  background-color: #005290;
+  transform: scale(1.05);
+}
+
+.beer-img {
+  width: 5vw;
+  height: auto;
+  position: absolute;
+  top: 10vh;
+}
+
+.beer-name {
+  font-size: 24px;
+  margin: 10px 0;
+  position: absolute;
+  text-align: center;
+  top: 1vh;
+  width: 30vw;
+  display: block;
+}
+
+.beer-description {
+  font-size: 1.2rem;
+  color: #444;
+  margin: 0;
+  position: absolute;
+  width: 15vw;
+  left: 10vw;
+  top: 10vh;
+}
+
+.beer-tagline {
+  font-size: 14px;
+  color: #777;
+  margin: 5px 0;
+  position: absolute;
+  width: 30vw;
+  text-align: center;
+  top: 5vh;
 }
