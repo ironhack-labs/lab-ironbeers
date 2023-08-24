@@ -7,54 +7,47 @@ const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 const app = express();
 const punkAPI = new PunkAPIWrapper();
 
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Register the location for handlebars partials here:
-
-// ...
-
-// Add the route handlers here:
-app.get('/beers', (req, res, next) => {
+app.get('/beers', (req, res) => {
   punkAPI
     .getBeers()
-    .then(beersFromApi => {
-      const beerDataArray = [];
-
-      beersFromApi.forEach(element => {
-        const dataBeer = {
-          name: element.name,
-          image: element.image_url,
-          description: element.description,
-          tagline: element.tagline
-        };
-        beerDataArray.push(dataBeer);
-      });
-
-      res.render('beers', { beersFromApi: beerDataArray });
+    .then(result => {
+      const beersArr = result;
+      res.render('beers', beersArr);
     })
-    .catch(error => console.log(error));
+    .catch(error => {
+      console.error('oopsie retrieving beers');
+    });
 });
 
-app.get('/random-beer', (req, res, next) => {
+app.get('/random-beer', (req, res) => {
   punkAPI
     .getRandom()
-    .then(responseFromAPI => {
-      const data = responseFromAPI[0];
-
-      const randomBeerData = {
-        image: data.image_url,
-        name: data.name,
-        description: data.description,
-        tagline: data.tagline,
-        foodPairing: data.food_pairing,
-        brewerTips: data.brewers_tips
-      };
-      res.render('random-beer', randomBeerData);
+    .then(result => {
+      const randomBeer = result;
+      res.render('randomBeer', randomBeer);
     })
-    .catch(error => console.log(error));
+    .catch(error => {
+      console.error('oopsie retrieving the random beer');
+    });
+});
+
+app.get('/beer/:beer', (req, res) => {
+  let id = req.params.beer;
+  punkAPI
+    .getBeer(id)
+    .then(result => {
+      const randomBeer = result;
+      res.render('randomBeer', randomBeer);
+    })
+    .catch(error => {
+      console.error('oopsie retrieving the random beer');
+    });
 });
 
 app.get('/', (req, res) => {
