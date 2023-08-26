@@ -5,27 +5,34 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
 .navbar {
   background-color: #2081c3;
 }
 .navbar ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
 }
 
 .navbar ul li {
   float: left;
-  font-size: 1rem;
 }
 
 .navbar ul li a {
-  display: block;
   color: white;
   text-align: center;
-  padding: 0 16px;
   text-decoration: none;
+}
+.navbar ul li a:hover {
+  color: #0a2c42;
 }
 
 .beer-img-top {
@@ -42,16 +49,24 @@ font-family: Arial, Helvetica, sans-serif;
 }
 .buttons > a {
   margin: 5px;
+  width: 200px;
 }
 
-.row {
+.wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 .beer-img {
-  width: 130px;
+  width: 90px;
   padding: 20px;
 }
 .beer-info {
+  display: flex;
+  flex-direction: column;
   width: 900px;
   padding: 20px;
+}
+.info-random {
+  display: flex;
+  flex-direction: column;
 }
