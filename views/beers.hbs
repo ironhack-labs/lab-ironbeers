@@ -1,0 +1,30 @@
+{{!-- <h1>All Beers</h1>
+
+{{#each beers}}
+<img src ={{image_url}} alt ={{name}} class ="beer-picture">
+  <h3>{{name}}!!</h3>
+  <h3>{{description}}</h3>
+  <h3{{tagline}}></h3>
+{{/each}} --}}
+
+{{!-- Bonus 5 : Partial --}}
+
+{{!-- <div class="container">
+  <h1>Beers</h1> 
+  <div>   
+      {{#each beers}} 
+        {{> beerpartial this}} 
+      {{/each}}
+  </div> --}}
+
+{{!-- Partials way --}}
+  <div>
+{{#each beers}} 
+<a ref="/beers/{{id}}"> 
+{{> beerpartial this}} </a>
+{{/each}}
+  </div>
+</div>
+
+
+
