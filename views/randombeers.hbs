@@ -1,25 +1,37 @@
 
-<h1>Random Beers</h1> 
+{{!-- <h1>Random Beers</h1> 
 {{#each randombeers}}
-<img src ={{image_url}} alt ={{name}} class ="randombeer-picture">
-  <h3>{{name}}!!</h3>
-  <h3>{{description}}</h3>
-  <h3{{tagline}}></h3>
-  <h3{{food_pairing}}></h3>
-  <h3>{{brewers_tips}}</h3>
-{{/each}}
+  <div class="beer-container">
+    <img src="{{image_url}}" alt="{{name}}" class="randombeer-picture">
+    <h3>{{name}}!!</h3>
+    <p>{{description}}</p>
+    <p>{{tagline}}</p>
+    <p><strong>Food Pairing</strong></p>
+    <ul>
+      {{#each food_pairing}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p><strong>Brewers Tips:</strong> {{brewers_tips}}</p>
+  </div>
+{{/each}} --}}
 
-
-
-{{!-- Using Partial
-
+{{!-- using Partials--}}
+<h1>Random Beers</h1>
 <div class="container">
-  <h1>Random Beers</h1> 
   <div class="row">
       {{#each randombeers}} 
         {{> beerpartial this}} 
+         <p><strong>Food Pairing</strong></p>
+    <ul>
+      {{#each food_pairing}}
+        <li>{{this}}</li>
       {{/each}}
-  </div>
-</div> --}}
+    </ul>
+    <p><strong>Brewers Tips:</strong> {{brewers_tips}}</p>
+      {{/each}}
 
+      
+  </div>
+</div>
 
