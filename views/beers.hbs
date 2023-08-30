@@ -1,9 +1,9 @@
- 
- 
-{{#each beers}}
-  <h2>{{this.name}}</h2>
-  <p>{{this.description}}</p>
-  <img src="{{this.image}}" alt="{{this.name}} Image">
-{{/each}}
-
- 
+<div class="beer-list">
+  {{#each beers}}
+    <div class="beer-item">
+      <img class="beer-image" src="{{this.image_url}}" alt="{{this.name}} Image">
+      <h3 class="beer-name">{{this.name}}</h3>
+      <p class="beer-description">{{this.description}}</p>
+    </div>
+  {{/each}}
+</div>

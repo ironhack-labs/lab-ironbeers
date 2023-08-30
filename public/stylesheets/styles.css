@@ -36,6 +36,8 @@ font-family: Arial, Helvetica, sans-serif;
 .button:hover {
     background-color: #0056b3;
 }
+
+/* API BEERS */
 .beer{
     position: relative;
         top: 20%;
@@ -43,4 +45,36 @@ font-family: Arial, Helvetica, sans-serif;
         transform: translate(-50%, -50%);
         height: 300px;
         object-fit: cover;
+}
+
+.beer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.beer-item {
+    flex: 0 0 calc(33.33% - 20px);
+    /* Adjust the width as needed */
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.beer-image {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.beer-name {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.beer-description {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 5px 0;
 }
