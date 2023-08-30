@@ -6,6 +6,41 @@ grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
  */
 
- body{
-    background-color: rgb(202, 202, 234);
- }
+/* Add these styles to your existing CSS */
+/* Keep your existing styles for html and body */
+
+/* Keep your existing styles for html and body */
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+    max-width: 200px;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+.beer{
+    position: relative;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 300px;
+        object-fit: cover;
+}
