@@ -1,3 +1,4 @@
+const { error } = require('console');
 const express = require('express');
 
 const hbs = require('hbs');
@@ -17,6 +18,20 @@ app.use(express.static(path.join(__dirname, 'public')));
 // ...
 
 // Add the route handlers here:
+
+app.get('/beers', (req, res) => {
+  const getBeers = async () => {
+    try {
+      const beers = await punkAPI.getBeers();
+      res.render('beers', { beers });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  getBeers();
+});
+
+app.get('/random-beer', (req, res, next) => res.render('random-beer'));
 
 app.get('/', (req, res) => {
   res.render('index');
