@@ -5,3 +5,119 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* home page */
+header {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+nav {
+    padding: 30px;
+    background-color: #4E4848;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links {
+    justify-content: flex-end;
+}
+.nav-links a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-right: 20px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+}
+.nav-links a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fae433;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.nav-links a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    color: #fae433; 
+}
+.ironbeers p {
+    margin-left: 20px;
+    color: white;
+    font-size: 35px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container img {
+    padding: 30px;
+    width: 500px;
+}
+.buttons-wrapper {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.buttons-wrapper a {
+    text-decoration: none;
+    color: white;
+    background-color: #4E4848;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-right: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.buttons-wrapper a:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    color: #fae433;
+    border: 2px solid #fae433;
+    font-weight: bold;
+}
+/* beers page */
+.beers-container {
+    padding: 50px;
+    
+}
+.beers-container h1 {
+    color: #fae433;
+    background-color: #4E4848;
+    text-align: center;
+}
+.beers-row {
+    width: 300px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.beers-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.beers-item img {
+    width: 200px;
+}
