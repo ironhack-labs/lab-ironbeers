@@ -1,9 +1,10 @@
 <div>
   {{#each beer}}
-    <img src={{this.image_url}} />
+  {{> beerpartial this}}
+    {{!-- <img src={{this.image_url}} />
     {{this.name}}
     {{this.description}}
-    {{this.tagline}}
+    {{this.tagline}} --}}
     {{this.food_pairing}}
     {{this.brewer_tips}}
   {{/each}}
