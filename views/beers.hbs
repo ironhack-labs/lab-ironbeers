@@ -1,0 +1,31 @@
+{{! <div>
+  <div class='name'>
+    <p>Name</p>
+  </div>
+  <div class='image'>
+    <p>Image</p>
+  </div>
+  <div class='description'>
+    <p>Description </p>
+  </div>
+  <div class='tagline'>
+    <p>Tagline </p>
+  </div> }}
+<div>
+  <h1>Beers</h1>
+  {{#each beers}}
+
+    <div class='name'>
+      <p>{{this.name}} </p>
+    </div>
+    <div class='image'>
+      <img src='{{this.image_url}} ' alt='' />
+    </div>
+    <div class='description'>
+      <p>{{this.description}} </p>
+    </div>
+    <div class='tagline'>
+      <p>{{this.tagline}} </p>
+    </div>
+  {{/each}}
+</div>
