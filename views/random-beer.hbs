@@ -1,0 +1,12 @@
+<head>
+    <title>Random Beers</title>
+</head>
+     <body>
+        <h1>Random Beers</h1>
+            <div id="random-beer-container">
+                {{#each randomBeer}}
+                    {{> beerpartial this}}
+                {{/each}}
+            </div>
+  
+    </body>
