@@ -1,0 +1,11 @@
+<head>
+    <title>Beers</title>
+</head>
+     <body>
+        <div class="beers-container"></div>
+        <h1>Beers</h1>
+        {{#each beers}}
+            <div class="ind-beer">{{> beerpartial this}}</div>
+        {{/each}}
+        </div>
+</body>
