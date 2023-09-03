@@ -1,10 +1,14 @@
 <div class="beers-container">
         <h1>Beers</h1>
         <div class="beers-row">
-            <div class="beers-item">
-                {{#each beersFromApi}}
-                    {{> beerpartial this}} 
-                {{/each}}
-            </div>    
+            {{#each beersFromApi}}
+                <div class="beers-item">
+                    <div class="beer-image">
+                        <div class="beer-details">
+                            {{> beerpartial this}}
+                        </div>
+                    </div>     
+                </div>        
+            {{/each}}
         </div>
 </div>

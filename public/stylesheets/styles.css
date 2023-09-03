@@ -108,16 +108,28 @@ nav {
     text-align: center;
 }
 .beers-row {
-    width: 300px;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
 }
 .beers-item {
+    text-align: center;
+    width: calc(33.33% - 20px); 
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 .beers-item img {
-    width: 200px;
+    max-width: 100%; 
+    height: auto;
+}
+.beers-item p {
+    margin: 10px 0; 
+    width: 400px;
+}
+.beer-details h3 {
+    font-weight: bolder;
+    font-size: 20px;
 }
