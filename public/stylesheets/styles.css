@@ -11,6 +11,10 @@ font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
 
+h1{
+    text-align: center;
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
@@ -23,4 +27,18 @@ font-family: Arial, Helvetica, sans-serif;
     flex-direction: column;
     padding: 10px;
     gap: 20px;
+}
+
+.card img {
+    height: 500px;
+    object-fit: cover;
+}
+
+
+.beer-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
 }

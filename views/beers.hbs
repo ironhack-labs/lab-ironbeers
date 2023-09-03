@@ -1,8 +1,19 @@
 <div class="container">
   <h1>Beers</h1>
   <div class="row">
-      {{#each beers}} 
-        {{> name}} 
+    <div class="card-columns">
+      {{#each beers}}
+        <div class="card">
+          <img src="{{image_url}}" class="card-img-top" alt="{{name}}">
+          <div class="card-body">
+            <h5 class="card-title">{{name}}</h5>
+            <p class="card-text">{{description}}</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">{{tagline}}</small>
+          </div>
+        </div>
       {{/each}}
+    </div>
   </div>
 </div>
