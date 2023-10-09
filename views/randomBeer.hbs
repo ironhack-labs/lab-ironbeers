@@ -11,5 +11,14 @@
         <a class="home" href="/">Home</a>
         <a class="nav-beer" href="/beers">Beers</a>    
     </nav>
+    <div>
+        {{#each this}}
+        <p> {{image}}</p>
+        <p> Beer: {{name}}</p>
+        <p> {{tagline}}</p>
+        <p> {{food_pairing}}</p>
+        <p> {{brewers_tips}}</p>
+    {{/each}}
+    </div>
 </body>
 </html>
