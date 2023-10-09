@@ -26,7 +26,8 @@ app.get('/beers', (req, res) => {
     .getBeers()
     .then(beersFromApi =>{
       console.log ('Beers from the databse: ', beersFromApi)
-      res.render('beers', beersFromApi);
+      const firstTwentyFive = beersFromApi.slice(0,25);
+      res.render('beers', firstTwentyFive);
     })
     .catch((err) => {
       console.log(err)});
