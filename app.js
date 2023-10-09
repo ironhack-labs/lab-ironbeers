@@ -22,8 +22,17 @@ app.get('/', (req, res) => {
   res.render('index.hbs');
 });
 app.get('/beers', (req, res) => {
-  res.render('beers.hbs');
-});
+  punkAPI
+    .getBeers()
+    .then(beersFromApi =>{
+      console.log ('Beers from the databse: ', beersFromApi)
+      res.render('beers', beersFromApi);
+    })
+    .catch((err) => {
+      console.log(err)});
+  });
+
+
 app.get('/randomBeer', (req, res) => {
   res.render('randomBeer.hbs');
 });

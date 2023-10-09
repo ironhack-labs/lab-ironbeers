@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css" />
     <title>Document</title>
 </head>
 <body>
@@ -12,6 +13,12 @@
         <a class="home" href="/">Home</a>
         <a class="nav-randomBeer" href="/randomBeer">Random Beer</a>
     </nav>
+
+    <div>
+    {{#each this}}
+      <p> Beer: {{name}}</p>
+    {{/each}}
+    </div>
     
 </body>
 </html>
