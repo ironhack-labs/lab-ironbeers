@@ -1,7 +1,165 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Main Styling*/
+html,
+body {
+    /* color: #f7f9f9;
+    light-blue: #2081c3;
+    dark-blue: #0a2c42;
+    grey: #bfbfbf;*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1, 8 em;
+    color: #333;
+
+}
+
+/*Navbar*/
+#navbar {
+    background: #2081c3;
+    color: #f7f9f9;
+    overflow: auto;
+    margin-bottom: 50px;
+}
+
+#navbar a {
+    color: #fff;
+}
+
+#navbar h1 {
+    float: left;
+    padding-top: 20px;
+}
+
+#navbar ul {
+    list-style: none;
+    float: left;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+    background: #2081c3;
+    color: #0a2c42;
+
+}
+
+.image-container {
+
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.image-container img {
+    max-width: 40%;
+    height: auto;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.button-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.btn-one {
+    background-color: #2081c3;
+    color: #f7f9f9;
+    width: 250px;
+    border: 0;
+    padding: 10px 0;
+    margin: 5px 0;
+    text-decoration: none;
+
+}
+
+.btn-two {
+    background-color: #2081c3;
+    color: #f7f9f9;
+    width: 302px;
+    border: 0;
+    padding: 10px 0;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.btn-one:hover,
+.btn-two:hover {
+    background: #2081c3;
+    color: #0a2c42;
+}
+
+/*BEERS*/
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    line-height: none;
+    font-size: 20px;
+}
+
+.card>div {
+    width: calc(33.33% - 10px);
+    margin-bottom: 80px;
+}
+
+
+.card img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-width: none;
+    cursor: zoom-in;
+}
+
+.card h3 strong {
+    font-weight: bold;
+    color: #000;
+}
+
+
+
+.random {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 16px;
+}
+
+.random img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto 10px;
+    cursor: zoom-in;
+
+}
+
+.random h3 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
