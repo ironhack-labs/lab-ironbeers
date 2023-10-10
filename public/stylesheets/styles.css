@@ -53,3 +53,17 @@ button {
     border-radius: 10px;
     border: none;
 }
+
+#beer-image {
+    height: 300px;
+}
+
+#all-beers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 70px;
+    
+}
