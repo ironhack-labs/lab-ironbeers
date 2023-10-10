@@ -8,9 +8,12 @@
 </head>
 <body>
    <div>
-    <img src="/public/images">
-     <a href="/beers">Check the Beers!</a>
-     <a href="/random-beer">Check a Random Beer!</a>
+    {{#each beers}}
+    {{this.name}}
+    <img src={{this.image}}/>
+    {{this.description}}
+    {{this.tagline}}
+    {{/each}}
    </div>
 </body>
 </html>

@@ -8,9 +8,14 @@
 </head>
 <body>
    <div>
-    <img src="/public/images">
-     <a href="/beers">Check the Beers!</a>
-     <a href="/random-beer">Check a Random Beer!</a>
+    {{#each getmyRandomBeer}}
+    {{this.name}}
+    <img src={{this.image}}/>
+    {{this.description}}
+    {{this.tagline}}
+    {{this.foodpairing}}
+    {{this.brewertips}}
+    {{/each}}
    </div>
 </body>
 </html>
