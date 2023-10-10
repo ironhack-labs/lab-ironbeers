@@ -64,6 +64,24 @@ button {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    margin: 70px;
-    
+    margin: 70px;   
+}
+
+span {
+    font-weight: bold;
+}
+
+#random-beers-all {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px ;
+    text-align: justify;
+}
+
+#random-beers {
+    margin-left: 60px;
+}
+
+#random-beer-image {
+    height: 400px;
 }
