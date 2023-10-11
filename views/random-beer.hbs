@@ -1,0 +1,19 @@
+<div class="random-beer-page">
+    {{#each responseFromAPI}} <!-- Loop -->
+        {{> beerpartial}}
+        <div>
+            {{#if food_pairing}}
+                <h1>Food Pairing:</h1>
+                {{#each food_pairing}}
+                    <ul>
+                        <li>{{this}}</li>
+                    </ul>
+                {{/each}}
+            {{/if}}
+            {{#if brewers_tips}}
+                <h1>Brewer tips:</h1>
+                <p>{{brewers_tips}}</p>
+            {{/if}}
+        </div>
+    {{/each}} <!-- Close Loop -->
+</div>  
