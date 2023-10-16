@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-// All Beers
+// Display All Beers
 app.get('/beers', (req, res) => {
   punkAPI
     .getBeers()
@@ -35,7 +35,7 @@ app.get('/beers', (req, res) => {
     });
 });
 
-// Random Beer
+// Display a Random Beer
 app.get('/random-beer', (req, res) => {
   punkAPI
     .getRandom()
