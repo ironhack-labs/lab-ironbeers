@@ -1,17 +1,22 @@
+<div class='nav-bar'>
+  <ul class="container">
+    <li><a href='/'>Home</a></li>
+    <li><a href='/beers'>Beers</a></li>
+    <li><a href='/random-beer'>Random Beer</a></li>
+  </ul>
+</div>
+
 <div class='container'>
   <h1>Random Beer</h1>
-  <div class='row'>
-    {{#each beers}}    
-        {{> beerpartial this}}
-        <div class="info-random">
-          <h5>Food Pairing</h5>
-          <ul>
-            <li>{{this.food_pairing}}</li>
-          </ul>         
-          <h5>Brewers Tips</h5>
-          <p>{{this.brewers_tips}}</p>
-        </div>
-      </div>
-    {{/each}}
-  </div>
+  {{#each beers}}    
+    {{> beerpartial this}}
+    <div class="info-random">
+      <h5>Food Pairing</h5>
+      <ul>
+        <li>{{this.food_pairing}}</li>
+      </ul>         
+      <h5>Brewers Tips</h5>
+      <p>{{this.brewers_tips}}</p>
+    </div>      
+  {{/each}}
 </div>
