@@ -4,25 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css" />
-    <title>Ironbeers</title>
+    <title>Document</title>
 </head>
 <body>
+    <h1>Welcome to beers</h1>
+
     <nav class="navbar">
-        <a class="nav-beer" href="/beers">Beers</a>
+        <a class="home" href="/">Home</a>
         <a class="nav-randomBeer" href="/randomBeer">Random Beer</a>
     </nav>
 
     <div>
-        <h1> Welcome to beerville!</h1>
-    </div>
-
-    <div class="beer-image">
-        <img src="/images/beer.png" alt="beer-img">
-    </div>
-
-    <div>
-        <a href="/beers">Check the Beers!</a>
-        <a href="/randomBeer">Check a Random Beer!</a>
+    {{#each this}}
+        <p> {{image}}</p>
+        <p> Beer: {{name}}</p>
+        <p> {{description}}</p>
+        <p> {{tagline}}</p>
+    {{/each}}
     </div>
     
 </body>
