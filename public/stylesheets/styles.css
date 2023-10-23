@@ -5,3 +5,48 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+.navbar-nav {
+    background-color: #2081c3;
+    padding: 15px 50px 20px 50px;
+    text-align:left;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.navbar-nav a{
+    color: #f7f9f9; 
+    margin-left: 20px;
+
+}
+.glass{
+    text-align:center;
+}
+.glass a{
+    text-align:center;
+    display:block;
+}
+/* .pointer{
+    background-color: #2081c3;
+    color: #f7f9f9; 
+    padding: 0px 10px;
+    margin-left: 0%;
+} */
+.pointer a {
+    background-color: #2081c3;
+    color: #f7f9f9; 
+   
+}
+
+.foot{
+    background-color: #0a2c42;
+   color: #f7f9f9; 
+   padding: 5px 30px 20px 20px;
+    text-align:left;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 0px;
+    padding-bottom: 0%;
+}
