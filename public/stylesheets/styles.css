@@ -5,3 +5,23 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+
+.myButtons {
+    text-align: center;
+    margin-top: 5%;
+    padding: 10px;
+}
+
+.randomImage {
+    text-align: center;
+}
+
+.randomInfo {
+    text-align: center;
+}
+
+.imageBeers {
+    text-align: center;
+    height: 200px;
+}
