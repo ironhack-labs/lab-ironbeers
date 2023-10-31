@@ -5,3 +5,12 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.the-beer {
+    height: 525px;
+}
+
+.beer-image {
+    height: 400px;
+    object-fit: contain;
+}
