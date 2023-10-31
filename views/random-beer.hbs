@@ -8,6 +8,13 @@
                 <p>{{name}}</p>
                 <p>{{description}}</p>
                 <p>{{tagline}}</p>
+                <p>Food pairing</p>
+                <ul>
+                    {{#each food_pairing}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                <p>{{brewers_tips}}</p>
             </div>
         </div>
         {{/each}}
