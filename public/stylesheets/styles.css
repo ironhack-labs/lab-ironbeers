@@ -18,23 +18,28 @@ font-family: Arial, Helvetica, sans-serif;
     margin: 25px;
 }
 
-h1 {
-    padding-bottom: 20px;
-}
-
 footer {
     background-color: #0a2c42;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: #f7f9f9;
+    position: fixed;
     width: 100%;
     bottom: 0;
-    padding: 25px;
+    padding: 10px;
 }
 
-.allBeers img {
-    width: 20%;
+.beerClass img {
+    height: 200px;
+    display: block;
+    margin: auto;
 }
 
-.randomBeer img {
-    width: 7%;
+p.name_beer {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p.tagline {
+    font-size: 16px;
+    color: #bfbfbf;
 }

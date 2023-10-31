@@ -4,7 +4,7 @@
 
         {{#each beers}}
 
-        <div class="col-lg-4">
+        <div>
 
             {{>beerpartial}}
             <p>Food pairing</p>
@@ -16,6 +16,9 @@
             <p>{{brewers_tips}}</p>
 
         </div>
+
+        {{!-- no se como con un partial hacer que en una página el diseño de los productos sea de una manera y en otra
+        pagina sea de otra --}}
 
         {{/each}}
     </div>
