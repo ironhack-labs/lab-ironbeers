@@ -1,0 +1,19 @@
+<div class="row">
+    {{#each randomBeer}}
+    <div class="col-6">
+        <div class="randomImage">
+            <img src="{{image_url}}" alt="this beer" height="300px">
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="randomInfo">
+            <h2>{{name}}</h2>
+            <p style="color:rgb(57, 191, 175)">{{tagline}}</p>
+            <p>{{description}}</p>
+
+            <h6>{{food_pairing}}</h6>
+            <h6>{{brewer_tips}}</h6>
+        </div>
+    </div>
+    {{/each}}
+</div>
