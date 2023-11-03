@@ -1,0 +1,22 @@
+{{#each beers}}
+<hr>
+<h3>
+    {{name}}
+</h3>
+<h5>
+    {{tagline}}
+</h5>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <img src={{image_url}} alt="Logotipo" class="beerimg">
+        </div>
+        <div class="col">
+            <h3>Description</h3>
+            {{description}}
+            <hr>
+        </div>
+    </div>
+</div>
+
+{{/each}}

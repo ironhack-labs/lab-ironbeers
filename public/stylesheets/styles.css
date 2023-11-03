@@ -1,7 +1,22 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+.beerimg {
+    width: 15%;
+    padding-top: 6%;
+    padding-bottom: 7%;
+}
+
+body {
+    padding-top: 60px;
+    padding-left: 2%;
+}
+
+footer {
+    background-color: #25292c;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    font-size: .8em;
+    text-align: center;
+    padding: 3px;
+}
