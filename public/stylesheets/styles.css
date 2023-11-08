@@ -24,7 +24,11 @@ nav {
     align-items: center;
     margin: 0;
     height: 5em;
-    background-color: #2081c3;  
+    background-color: #2081c3;
+    position: fixed;
+    top: 0;
+    z-index: 100; 
+    width: 100%; 
 }
 
 nav ul {
@@ -59,6 +63,7 @@ section  {
     align-items: center;
     text-align: center;
     position: relative;
+    margin-top: 5em;
 }
 
 section .home-wrapper {
@@ -87,6 +92,37 @@ section .home-wrapper button:hover {
     cursor: pointer;
     text-decoration: underline;
     text-underline-offset: 0.25em;
+}
+
+section .beers-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fetchedBeers-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    align-items: center;
+    border: 1px solid blue;
+    width: 20em;
+}
+
+.card-img img {
+    max-width: 15em;
+    max-height: 15em;
+    padding: 2em 0;
 }
 
 footer {
