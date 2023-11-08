@@ -84,7 +84,7 @@ This leads us to the conclusion that in this step, we have two main focus areas:
 In this step, we will have a couple of micro-steps:
 
 - Create a `/beers` route inside the `app.js` file.
-- Inside the `/beers` route, call the `getBeers()` method (the **PunkAPI** provides this method, and you can find more about it [here](https://www.npmjs.com/package/punkapi-javascript-wrapper#getbeersoptions)). **Calling the `.getBeers()` method returns a promise that should be resolved with an array of 25 beers**.
+- Inside the `/beers` route, call the `getBeers()` method (the **PunkAPI** provides this method, and you can find more about it [here](https://www.npmjs.com/package/punkapi-javascript-wrapper#getbeersoptions)). **Calling the `  ` method returns a promise that should be resolved with an array of 25 beers**.
 - Down the road, you should pass that array to the `beers.hbs` view.
 
 An example of how this method works is shown below:
@@ -207,21 +207,20 @@ Happy Coding! :heart:
 
 ## FAQs
 
-
 <details>
   <summary>I am stuck and don't know how to solve the problem or where to start. What should I do?</summary>
 
   <br>
 
-  If you are stuck in your code and don't know how to solve the problem or where to start, you should take a step back and try to form a clear question about the specific issue you are facing. This will help you narrow down the problem and come up with potential solutions.
+If you are stuck in your code and don't know how to solve the problem or where to start, you should take a step back and try to form a clear question about the specific issue you are facing. This will help you narrow down the problem and come up with potential solutions.
 
-  For example, is it a concept that you don't understand, or are you receiving an error message that you don't know how to fix? It is usually helpful to try to state the problem as clearly as possible, including any error messages you are receiving. This can help you communicate the issue to others and potentially get help from classmates or online resources. 
+For example, is it a concept that you don't understand, or are you receiving an error message that you don't know how to fix? It is usually helpful to try to state the problem as clearly as possible, including any error messages you are receiving. This can help you communicate the issue to others and potentially get help from classmates or online resources.
 
-  Once you have a clear understanding of the problem, you will be able to start working toward the solution.
+Once you have a clear understanding of the problem, you will be able to start working toward the solution.
 
   <br>
 
-  [Back to top](#faqs)
+[Back to top](#faqs)
 
 </details>
 
@@ -230,17 +229,17 @@ Happy Coding! :heart:
 
   <br>
 
-  Make sure you have `nodemon` installed globally:
+Make sure you have `nodemon` installed globally:
 
-  ```bash
-  npm install -g nodemon
-  ```
+```bash
+npm install -g nodemon
+```
 
-  This will install nodemon globally on your system, making it available to all of your projects.
+This will install nodemon globally on your system, making it available to all of your projects.
 
   <br>
 
-  [Back to top](#faqs)
+[Back to top](#faqs)
 
 </details>
 
@@ -249,59 +248,62 @@ Happy Coding! :heart:
 
   <br>
 
-  When working with Promises or a *function that returns a promise*, you can attach `.then()` method to handle the resolved value and a `catch()` method to handle the possible rejection value.
+When working with Promises or a _function that returns a promise_, you can attach `.then()` method to handle the resolved value and a `catch()` method to handle the possible rejection value.
 
-  Here is an example of how to use `.then()` and `.catch()` to handle a simple promise:
+Here is an example of how to use `.then()` and `.catch()` to handle a simple promise:
 
-  ```js
-  myPromise
-    .then((result) => {
-      console.log(result);
-    })
-    .catch((error) => {
-      console.log(error);
-    });
-  ```
+```js
+myPromise
+  .then(result => {
+    console.log(result);
+  })
+  .catch(error => {
+    console.log(error);
+  });
+```
 
   <br>
 
-  Here is an example of using `.then()` and `.catch()` to handle a promise returned by a function/method:
+Here is an example of using `.then()` and `.catch()` to handle a promise returned by a function/method:
 
-  ```js
-  someAPI.getData()
-    .then((result) => {
-      console.log(result);
-    })
-    .catch((error) => {
-      console.log(error);
-    });
-  ```
+```js
+someAPI
+  .getData()
+  .then(result => {
+    console.log(result);
+  })
+  .catch(error => {
+    console.log(error);
+  });
+```
 
 <br>
 
-  If you are trying to execute multiple promises in a sequence, you can do so by returning a promise from a `.then()` block. Example:
+If you are trying to execute multiple promises in a sequence, you can do so by returning a promise from a `.then()` block. Example:
 
-  ```js
-  someAPI.getData()
-      .then((result1) => {
-          console.log(result1);
-          return someAPI.getData(); // Return another pending promise
-      })  
-      .then((result2) => { // Handle the returned promise
-          console.log(result2);
-      })
-      .catch((error) => {
-          console.log(error);
-      })
-  ```
+```js
+someAPI
+  .getData()
+  .then(result1 => {
+    console.log(result1);
+    return someAPI.getData(); // Return another pending promise
+  })
+  .then(result2 => {
+    // Handle the returned promise
+    console.log(result2);
+  })
+  .catch(error => {
+    console.log(error);
+  });
+```
 
-  The first line `someAPI.getData()` initiates an asynchronous operation, which returns a promise. The `.then()` method is then called on the promise to handle the resolved value.
+The first line `someAPI.getData()` initiates an asynchronous operation, which returns a promise. The `.then()` method is then called on the promise to handle the resolved value.
 
-  The first `then()` returns another promise with another call to `someAPI.getData()`, which allows to chain another `then()` function that handles the second resolved value, logging it to the console.
+The first `then()` returns another promise with another call to `someAPI.getData()`, which allows to chain another `then()` function that handles the second resolved value, logging it to the console.
 
   <br>
 
-  [Back to top](#faqs)
+[Back to top](#faqs)
 
 </details>
 
@@ -310,105 +312,105 @@ Happy Coding! :heart:
 
   <br>
 
-  You create an asynchronous function by using the `async` keyword before the function definition.
+You create an asynchronous function by using the `async` keyword before the function definition.
 
-  An `async` function allows you to use the `await` keyword inside the function body to wait for a promise to resolve.
+An `async` function allows you to use the `await` keyword inside the function body to wait for a promise to resolve.
 
-  When using an `async` function to handle asynchronous code (e.g. API call) that may potentially throw an error, we have to add a `try`/`catch` block to be able to handle any potential errors.
+When using an `async` function to handle asynchronous code (e.g. API call) that may potentially throw an error, we have to add a `try`/`catch` block to be able to handle any potential errors.
 
-  ##### Syntax
+##### Syntax
 
-  ```js
-  async function doSomething() {
-    try {
-      // Code that will be executed asynchronously
-      // that might throw an error
-    }
-    catch (error) {
-      // Handle the error
-    }
+```js
+async function doSomething() {
+  try {
+    // Code that will be executed asynchronously
+    // that might throw an error
+  } catch (error) {
+    // Handle the error
   }
-  ```
+}
+```
 
   <br>
 
-  ##### Using `await` inside an `async` function
+##### Using `await` inside an `async` function
 
-  Here is an example of using `await` inside of an `async` function to await for a promise to resolve:
+Here is an example of using `await` inside of an `async` function to await for a promise to resolve:
 
-  ```js
-  async function getData() {
-    try {
-      let response = await fetch('https://api.github.com/search/repositories?q=js');
-      let data = await response.json();
-      console.log(data);
-    }
-    catch (error) {
-      // error message
-    } 
+```js
+async function getData() {
+  try {
+    let response = await fetch(
+      'https://api.github.com/search/repositories?q=js'
+    );
+    let data = await response.json();
+    console.log(data);
+  } catch (error) {
+    // error message
   }
-  ```
+}
+```
 
-  In the above example, the first `await` is used to wait for the promise returned by `fetch()` to resolve. The value of the resolved promise is then assigned to the variable `response`.
+In the above example, the first `await` is used to wait for the promise returned by `fetch()` to resolve. The value of the resolved promise is then assigned to the variable `response`.
 
-  The second `await` is used to parse the response as json object, and is used to wait for the promise returned by `response.json()`. The resolved value is then assigned to the variable `data`.
+The second `await` is used to parse the response as json object, and is used to wait for the promise returned by `response.json()`. The resolved value is then assigned to the variable `data`.
 
-  The function uses the `return` keyword to return the `data` to allow consuming the value outside of the function.
+The function uses the `return` keyword to return the `data` to allow consuming the value outside of the function.
 
   <br>
 
-  ##### An `async` function always returns a Promise
+##### An `async` function always returns a Promise
 
-  The difference between a *regular function* and an `async` function is that the **`async` function always returns a Promise**. 
+The difference between a _regular function_ and an `async` function is that the **`async` function always returns a Promise**.
 
-  Once defined, you can invoke an `async` function just like a regular function and **handle the Promise it returns using `.then()` and `.catch()` or `await`**.
+Once defined, you can invoke an `async` function just like a regular function and **handle the Promise it returns using `.then()` and `.catch()` or `await`**.
 
-  Here's an example of using `then` and `catch` to handle a Promise returned by an `async` function:
+Here's an example of using `then` and `catch` to handle a Promise returned by an `async` function:
 
-  ```js
-  async function greeting() {
-    // An `async` function always returns a promise
-    // This value will be returned as a Promise
-    return "HELLO IRONHACKERS!";
-  }
+```js
+async function greeting() {
+  // An `async` function always returns a promise
+  // This value will be returned as a Promise
+  return 'HELLO IRONHACKERS!';
+}
 
-  greeting()
-    .then((result) => {
-      console.log(result);
-    })
-    .catch((error) => {
-      console.log("Error:", error);
-    })
-  ```
-
-  <br>
-
-  Here's an example of handling the same `async` function but this time using `await`:
-
-  ```js
-  async function greeting() {
-    // Async function always returns a promise
-    // This value will be returned as a Promise
-    return "HELLO IRONHACKERS!";
-  }
-
-  // We need another wrapper `async` function so that we can use `await`
-  async function wrapperFunction() {
-    try {
-      const result = await greeting(
-      console.log(result);
-    }
-    catch (error) {
-      console.log("Error:", error);
-    }
-  }
-  ```
-
-  Note that we needed another wrapper `async` function to be able to use `await`.
+greeting()
+  .then(result => {
+    console.log(result);
+  })
+  .catch(error => {
+    console.log('Error:', error);
+  });
+```
 
   <br>
 
-  [Back to top](#faqs)
+Here's an example of handling the same `async` function but this time using `await`:
+
+```js
+async function greeting() {
+  // Async function always returns a promise
+  // This value will be returned as a Promise
+  return "HELLO IRONHACKERS!";
+}
+
+// We need another wrapper `async` function so that we can use `await`
+async function wrapperFunction() {
+  try {
+    const result = await greeting(
+    console.log(result);
+  }
+  catch (error) {
+    console.log("Error:", error);
+  }
+}
+```
+
+Note that we needed another wrapper `async` function to be able to use `await`.
+
+  <br>
+
+[Back to top](#faqs)
 
 </details>
 
@@ -419,44 +421,41 @@ Happy Coding! :heart:
   
   The `try`/`catch`  block is used to handle errors that occur during the execution of a program.
 
-  The `try` block contains the code that might throw an error, and the `catch` block contains the code that will handle the error.
+The `try` block contains the code that might throw an error, and the `catch` block contains the code that will handle the error.
 
-  Here is an example of using a `try`/`catch` block:
+Here is an example of using a `try`/`catch` block:
 
-  ```js
+```js
+try {
+  // Code that might throw an error
+} catch (error) {
+  // Handle the error
+}
+```
+
+  <br>
+
+The `try`/`catch` block is typically used in `async` functions when handling asynchronous code that may potentially throw an error.
+
+Here is an example of using a `try`/`catch` block in an `async` function when handling a promise:
+
+```js
+async function doSomething() {
   try {
     // Code that might throw an error
+    const result = await someAsyncFunction();
   } catch (error) {
     // Handle the error
+    console.error(error);
   }
-  ```
+}
+```
+
+In the above example, the `try` block contains an asynchronous operation that might throw an error: `await someAsyncFunction()`. If an error is thrown, execution will automatically jump to the `catch` block.
 
   <br>
 
-  The `try`/`catch` block is typically used in `async` functions when handling asynchronous code that may potentially throw an error.
-
-  Here is an example of using a `try`/`catch` block in an `async` function when handling a promise:
-
-  ```js
-  async function doSomething() {
-
-    try {
-      // Code that might throw an error
-      const result = await someAsyncFunction();
-    }
-    catch (error) {
-      // Handle the error
-      console.error(error);
-    }
-    
-  }
-  ```
-
-  In the above example, the `try` block contains an asynchronous operation that might throw an error:  `await someAsyncFunction()`. If an error is thrown, execution will automatically jump to the `catch` block.
-
-  <br>
-
-  [Back to top](#faqs)
+[Back to top](#faqs)
 
 </details>
 
@@ -465,26 +464,26 @@ Happy Coding! :heart:
 
   <br>
 
-  The error "Cannot find module" in a Node.js application means that the module you are trying to import or use does not exist in your project or cannot be found by Node.js.
-  There are a few things you can try to resolve the issue:
+The error "Cannot find module" in a Node.js application means that the module you are trying to import or use does not exist in your project or cannot be found by Node.js.
+There are a few things you can try to resolve the issue:
 
-  1. **Dependencies are not installed**: Make sure that all dependencies are installed.
+1. **Dependencies are not installed**: Make sure that all dependencies are installed.
    To do this, run the command `npm install` in the root folder of your project.
    This will install all of the dependencies listed in the project's `package.json` file, and ensure that all of the modules that your Node'js application requires are available.
 
-  2. **Module is not installed**: Make sure that the *package* you are trying to use is listed in the project's `package.json` and that it is installed.
+2. **Module is not installed**: Make sure that the _package_ you are trying to use is listed in the project's `package.json` and that it is installed.
    To do this, run the command `npm install <package_name>`, replacing the `<package_name>` with the name of the package.
    This will add the package to the list of dependencies in the `package.json` file, and install it in the project.
 
-  3. **Module is not imported:** Make sure that you've imported the module/package correctly and that the `require` statement is spelled correctly and available in the correct place in your code.
+3. **Module is not imported:** Make sure that you've imported the module/package correctly and that the `require` statement is spelled correctly and available in the correct place in your code.
 
-  4. **Wrong file path:** If you are importing another file as a module, make sure that the file you are trying to require is located in the correct folder and that you are using the correct file path.
+4. **Wrong file path:** If you are importing another file as a module, make sure that the file you are trying to require is located in the correct folder and that you are using the correct file path.
 
-  5. **Wrong module/package name:** Check the spelling of the package name you are trying to import.
+5. **Wrong module/package name:** Check the spelling of the package name you are trying to import.
 
   <br>
 
-  [Back to top](#faqs)
+[Back to top](#faqs)
 
 </details>
 
@@ -495,38 +494,38 @@ Happy Coding! :heart:
   
   There are a few reasons why your CSS styles might not be loading after linking the stylesheet:
 
-  1. **Incorrect file path**: Make sure that the file path for the stylesheet in the `link` tag of your Handlebars template is correct. If the path is incorrect, the browser will not be able to locate the stylesheet and the styles will not be applied.
+1. **Incorrect file path**: Make sure that the file path for the stylesheet in the `link` tag of your Handlebars template is correct. If the path is incorrect, the browser will not be able to locate the stylesheet and the styles will not be applied.
 
-   For example, if the file structure of your project is as follows:
+For example, if the file structure of your project is as follows:
 
-   ```
-   - views/
-       - layout.hbs
-       - index.hbs
-   
-   - public/
-       - stylesheets/
-           - style.css
-   ...
-   ```
+```
+- views/
+    - layout.hbs
+    - index.hbs
 
-   The correct file path for the stylesheet in the `link` tag of the `layout.hbs` file would be:
+- public/
+    - stylesheets/
+        - style.css
+...
+```
 
-   ```html
-   <link rel="stylesheet" href="/stylesheets/style.css">
-   ```
+The correct file path for the stylesheet in the `link` tag of the `layout.hbs` file would be:
 
-   ***Important***: The `href` path starts with a `/`, representing the path starting from the base folder where the static files are being served from, in this case, the `public/` folder.
+```html
+<link rel="stylesheet" href="/stylesheets/style.css" />
+```
 
-  2. **Incorrect file name:** Make sure that you are referring to the file by its right name in the `href` of the `link` tag.
+**_Important_**: The `href` path starts with a `/`, representing the path starting from the base folder where the static files are being served from, in this case, the `public/` folder.
 
-  3. **Middleware not configured correctly**: Make sure that you have the `express.static` middleware, that serves static files correctly configured in your Express app and that the right folder path and name are specified. If this middleware is not set up correctly, the server will not send the stylesheet when requested.
+2. **Incorrect file name:** Make sure that you are referring to the file by its right name in the `href` of the `link` tag.
 
-  4. **Restart the server:**  Sometimes, even if you made the correct changes, the browser might still be loading an old version of the file. You should try restarting your Express server. This will ensure that the new changes are loaded and being served by the server, making sure the browser will load the most recent version of the stylesheet."
+3. **Middleware not configured correctly**: Make sure that you have the `express.static` middleware, that serves static files correctly configured in your Express app and that the right folder path and name are specified. If this middleware is not set up correctly, the server will not send the stylesheet when requested.
+
+4. **Restart the server:** Sometimes, even if you made the correct changes, the browser might still be loading an old version of the file. You should try restarting your Express server. This will ensure that the new changes are loaded and being served by the server, making sure the browser will load the most recent version of the stylesheet."
 
   <br>
 
-  [Back to top](#faqs)
+[Back to top](#faqs)
 
 </details>
 
@@ -537,38 +536,38 @@ Happy Coding! :heart:
   
   There are a few reasons why your images might not be loading after linking the file:
 
-  1. **Incorrect file path**: Make sure that the file path for the image in the `img` tag of your Handlebars template is correct. If the path is incorrect, the browser will not be able to locate the stylesheet and the styles will not be applied.
+1. **Incorrect file path**: Make sure that the file path for the image in the `img` tag of your Handlebars template is correct. If the path is incorrect, the browser will not be able to locate the stylesheet and the styles will not be applied.
 
-   For example, if the file structure of your project is as follows:
+For example, if the file structure of your project is as follows:
 
-   ```
-   - views/
-       - layout.hbs
-       - index.hbs
-   
-   - public/
-       - images/
-           - dog.jpg
-   ...
-   ```
+```
+- views/
+    - layout.hbs
+    - index.hbs
 
-   The correct file path for loading the image in the `index.hbs` file would be:
+- public/
+    - images/
+        - dog.jpg
+...
+```
 
-   ```html
-   <img alt="dog" src="/images/dog.jpg" />
-   ```
+The correct file path for loading the image in the `index.hbs` file would be:
 
-   ***Important***: The `src` path starts with a `/`, representing the path starting from the base folder where the static files are being served from, in this case, the `public/` folder.
+```html
+<img alt="dog" src="/images/dog.jpg" />
+```
 
-  2. **Incorrect file name:** Make sure that you are referring to the file by its right name in the `src` of the `img` tag.
+**_Important_**: The `src` path starts with a `/`, representing the path starting from the base folder where the static files are being served from, in this case, the `public/` folder.
 
-  3. **Middleware not configured correctly**: Make sure that you have the `express.static` middleware, that serves static files correctly configured in your Express app and that the right folder path and name are specified. If this middleware is not set up correctly, the server will not send the images when requested.
+2. **Incorrect file name:** Make sure that you are referring to the file by its right name in the `src` of the `img` tag.
 
-  4. **Restart the server:**  Sometimes, even if you made the correct changes, the browser might still be loading an old version of the file. You should try restarting your Express server. This will ensure that the new changes are loaded and served by the server.
+3. **Middleware not configured correctly**: Make sure that you have the `express.static` middleware, that serves static files correctly configured in your Express app and that the right folder path and name are specified. If this middleware is not set up correctly, the server will not send the images when requested.
+
+4. **Restart the server:** Sometimes, even if you made the correct changes, the browser might still be loading an old version of the file. You should try restarting your Express server. This will ensure that the new changes are loaded and served by the server.
 
   <br>
 
-  [Back to top](#faqs)
+[Back to top](#faqs)
 
 </details>
 
@@ -577,13 +576,13 @@ Happy Coding! :heart:
 
   <br>
 
-  A `.hbs` file is a Handlebars template file. Handlebars is a templating library, used on the server side in Node.js to generate HTML pages from template files. Handlebars allow you to write templates that are more expressive and readable than plain HTML, and it also allows you to reuse code. Handlebars uses double curly brace `{{ }}` syntax to specify placeholders for data in templates.
+A `.hbs` file is a Handlebars template file. Handlebars is a templating library, used on the server side in Node.js to generate HTML pages from template files. Handlebars allow you to write templates that are more expressive and readable than plain HTML, and it also allows you to reuse code. Handlebars uses double curly brace `{{ }}` syntax to specify placeholders for data in templates.
 
-  So in short, `.hbs` is the format of the Handlebars template files and `.html` is the end format and the file generated after the `.hbs` template has been processed.
+So in short, `.hbs` is the format of the Handlebars template files and `.html` is the end format and the file generated after the `.hbs` template has been processed.
 
   <br>
 
-  [Back to top](#faqs)
+[Back to top](#faqs)
 
 </details>
 
@@ -594,29 +593,29 @@ Happy Coding! :heart:
   
   When linking to other pages within your Express app, as a general rule you should use relative paths that start with a forward slash `/`.
 
-  This way you ensure that the links will work correctly both in your development environment and when the app is deployed.
+This way you ensure that the links will work correctly both in your development environment and when the app is deployed.
 
-  For example, instead of linking to a page with an absolute path like this:
+For example, instead of linking to a page with an absolute path like this:
 
-  ```html
-  <a href="http://yourdomain.com/contact"> Contact </a>
-  ```
+```html
+<a href="http://yourdomain.com/contact"> Contact </a>
+```
 
-  You should use a relative path starting with a forward slash `/` like this:
+You should use a relative path starting with a forward slash `/` like this:
 
-  ```html
-  <a href="/contact"> Contact </a>
-  ```
+```html
+<a href="/contact"> Contact </a>
+```
 
-  If you are embedding values in your Handlebars template, you should still use the relative path that starts with a forward slash `/` like this:
+If you are embedding values in your Handlebars template, you should still use the relative path that starts with a forward slash `/` like this:
 
-  ```hbs
-  <a href="/projects/{{id}}" > About </a>
-  ```
+```hbs
+<a href='/projects/{{id}}'> About </a>
+```
 
   <br>
 
-  [Back to top](#faqs)
+[Back to top](#faqs)
 
 </details>
 
@@ -625,60 +624,60 @@ Happy Coding! :heart:
 
   <br>
 
-  This error means that the port is taken by another process that is still running on that port. 
+This error means that the port is taken by another process that is still running on that port.
 
-  To fix the issue, you need to kill the process using the port and then run the command again. Here's how to do it:
+To fix the issue, you need to kill the process using the port and then run the command again. Here's how to do it:
 
-  #### On Mac/Linux
+#### On Mac/Linux
 
-  To kill the process running on port `3000`, run the following command in the terminal:
+To kill the process running on port `3000`, run the following command in the terminal:
 
-  ```bash
-  sudo kill -9 $(lsof -t -i:3000)   
-  ```
+```bash
+sudo kill -9 $(lsof -t -i:3000)
+```
 
-  **Important:** Replace the above example port *3000* with the port number of the process you are trying to kill.
-
-  <br>
-
-  #### On Windows
-
-  ##### 1. Using the Task Manager
-
-  To kill the running process on Windows using the Task Manager do the following:
-
-  1. Open the **Task Manager** by pressing: **<kbd>Ctrl</kbd>** + **<kbd>Shift</kbd>** + **<kbd>Esc</kbd>** 
-  2. Find the Node process you want to terminate.
-  3. Right-click and select **End Task**
+**Important:** Replace the above example port _3000_ with the port number of the process you are trying to kill.
 
   <br>
 
-  ##### 2. Using Command Prompt
+#### On Windows
 
-  To kill the running process on Windows using the Command Prompt do the following:
+##### 1. Using the Task Manager
 
-  1. Open the windows **Start** menu
-  2. Search for **CMD** in the search bar
-  3. In the search results, right-click on **Command Prompt** and select **Run as administrator**. This will open the Command Prompt terminal.
-  4. In the Command Prompt terminal, run the following command to find the process ID:
+To kill the running process on Windows using the Task Manager do the following:
 
-   ```bash
-   netstat -ano|findstr "PID :3000"
-   ```
-
-   > If the process happens to be running on another port, simply replace `3000` with the number the port number the process is running on.
-
-   This will return the process id (PID). You should then run the following command using the process id (PID) you got in the previous step to terminate the process:
-
-   ```bash
-   taskkill /PID 12345 /f
-   ```
-
-   **Important:** Replace the above example PID *12345*, with the process id (PID) you got in the previous step.
+1. Open the **Task Manager** by pressing: **<kbd>Ctrl</kbd>** + **<kbd>Shift</kbd>** + **<kbd>Esc</kbd>**
+2. Find the Node process you want to terminate.
+3. Right-click and select **End Task**
 
   <br>
 
-  [Back to top](#faqs)
+##### 2. Using Command Prompt
+
+To kill the running process on Windows using the Command Prompt do the following:
+
+1. Open the windows **Start** menu
+2. Search for **CMD** in the search bar
+3. In the search results, right-click on **Command Prompt** and select **Run as administrator**. This will open the Command Prompt terminal.
+4. In the Command Prompt terminal, run the following command to find the process ID:
+
+```bash
+netstat -ano|findstr "PID :3000"
+```
+
+> If the process happens to be running on another port, simply replace `3000` with the number the port number the process is running on.
+
+This will return the process id (PID). You should then run the following command using the process id (PID) you got in the previous step to terminate the process:
+
+```bash
+taskkill /PID 12345 /f
+```
+
+**Important:** Replace the above example PID _12345_, with the process id (PID) you got in the previous step.
+
+  <br>
+
+[Back to top](#faqs)
 
 </details>
 
@@ -687,60 +686,60 @@ Happy Coding! :heart:
 
   <br>
 
-  This error means that the port is taken by another process that is still running on that port. 
+This error means that the port is taken by another process that is still running on that port.
 
-  To fix the issue, you need to kill the process using the port and then run the command again. Here's how to do it:
+To fix the issue, you need to kill the process using the port and then run the command again. Here's how to do it:
 
-  #### On Mac/Linux
+#### On Mac/Linux
 
-  To kill the process running on port `3000`, run the following command in the terminal:
+To kill the process running on port `3000`, run the following command in the terminal:
 
-  ```bash
-  sudo kill -9 $(lsof -t -i:3000)   
-  ```
+```bash
+sudo kill -9 $(lsof -t -i:3000)
+```
 
-  **Important:** Replace the above example port *3000* with the port number of the process you are trying to kill.
-
-  <br>
-
-  #### On Windows
-
-  ##### 1. Using the Task Manager
-
-  To kill the running process on Windows using the Task Manager do the following:
-
-  1. Open the **Task Manager** by pressing: **<kbd>Ctrl</kbd>** + **<kbd>Shift</kbd>** + **<kbd>Esc</kbd>** 
-  2. Find the Node process you want to terminate.
-  3. Right-click and select **End Task**
+**Important:** Replace the above example port _3000_ with the port number of the process you are trying to kill.
 
   <br>
 
-  ##### 2. Using Command Prompt
+#### On Windows
 
-  To kill the running process on Windows using the Command Prompt do the following:
+##### 1. Using the Task Manager
 
-  1. Open the windows **Start** menu
-  2. Search for **CMD** in the search bar
-  3. In the search results, right-click on **Command Prompt** and select **Run as administrator**. This will open the Command Prompt terminal.
-  4. In the Command Prompt terminal, run the following command to find the process ID:
+To kill the running process on Windows using the Task Manager do the following:
 
-   ```bash
-   netstat -ano|findstr "PID :3000"
-   ```
-
-   > If the process happens to be running on another port, simply replace `3000` with the number the port number the process is running on.
-
-   This will return the process id (PID). You should then run the following command using the process id (PID) you got in the previous step to terminate the process:
-
-   ```bash
-   taskkill /PID 12345 /f
-   ```
-
-  **Important:** Replace the above example PID *12345*, with the process id (PID) you got in the previous step.
+1. Open the **Task Manager** by pressing: **<kbd>Ctrl</kbd>** + **<kbd>Shift</kbd>** + **<kbd>Esc</kbd>**
+2. Find the Node process you want to terminate.
+3. Right-click and select **End Task**
 
   <br>
 
-  [Back to top](#faqs)
+##### 2. Using Command Prompt
+
+To kill the running process on Windows using the Command Prompt do the following:
+
+1. Open the windows **Start** menu
+2. Search for **CMD** in the search bar
+3. In the search results, right-click on **Command Prompt** and select **Run as administrator**. This will open the Command Prompt terminal.
+4. In the Command Prompt terminal, run the following command to find the process ID:
+
+```bash
+netstat -ano|findstr "PID :3000"
+```
+
+> If the process happens to be running on another port, simply replace `3000` with the number the port number the process is running on.
+
+This will return the process id (PID). You should then run the following command using the process id (PID) you got in the previous step to terminate the process:
+
+```bash
+taskkill /PID 12345 /f
+```
+
+**Important:** Replace the above example PID _12345_, with the process id (PID) you got in the previous step.
+
+  <br>
+
+[Back to top](#faqs)
 
 </details>
 
@@ -749,19 +748,19 @@ Happy Coding! :heart:
 
   <br>
 
-  This error most commonly occurs when the browser attempts to load a resource (i.e., stylesheet) but the server instead returns an HTML page. For example, if there is an issue with the file path and the server is unable to serve the file, it may return a 404 HTML page.
+This error most commonly occurs when the browser attempts to load a resource (i.e., stylesheet) but the server instead returns an HTML page. For example, if there is an issue with the file path and the server is unable to serve the file, it may return a 404 HTML page.
 
-  There are a few things you should look at to troubleshoot this:
+There are a few things you should look at to troubleshoot this:
 
-  1. **Try accessing the file directly:** To verify that the server is returning an HTML page instead of the requested file, copy the file path and try to access the file directly from a new browser tab.
+1. **Try accessing the file directly:** To verify that the server is returning an HTML page instead of the requested file, copy the file path and try to access the file directly from a new browser tab.
 
-  2. **Check the file path**: Make sure that the file path used is correct and that the file actually exists in that location. If there is a typo or error in the file path, the server will not be able to find the file.
+2. **Check the file path**: Make sure that the file path used is correct and that the file actually exists in that location. If there is a typo or error in the file path, the server will not be able to find the file.
 
-  3. **Check the static files middleware configuration**: Check that your `express.static` middleware, which serves static files, is correctly configured and that the right folder path and name are specified. If this middleware is not set up correctly, the server will not send the images when requested.  
+3. **Check the static files middleware configuration**: Check that your `express.static` middleware, which serves static files, is correctly configured and that the right folder path and name are specified. If this middleware is not set up correctly, the server will not send the images when requested.
 
   <br>
 
-  [Back to top](#faqs)
+[Back to top](#faqs)
 
 </details>
 
@@ -770,13 +769,13 @@ Happy Coding! :heart:
 
   <br>
 
-  The "ReferenceError: variable is not defined" error in JavaScript occurs when you try to access a variable or a function that has not been defined yet, or is out of scope. 
-  To fix the issue, check that you have defined the variable or function that you are trying to use and double-check the spelling to make sure you are using the correct name.
-  In case the variable or a function is defined in another file, make sure that the file has been imported or loaded correctly.
+The "ReferenceError: variable is not defined" error in JavaScript occurs when you try to access a variable or a function that has not been defined yet, or is out of scope.
+To fix the issue, check that you have defined the variable or function that you are trying to use and double-check the spelling to make sure you are using the correct name.
+In case the variable or a function is defined in another file, make sure that the file has been imported or loaded correctly.
 
   <br>
 
-  [Back to top](#faqs)
+[Back to top](#faqs)
 
 </details>
 
@@ -785,30 +784,29 @@ Happy Coding! :heart:
 
   <br>
 
-  There are a couple of possible reasons why you may be unable to *push* changes to a Git repository:
+There are a couple of possible reasons why you may be unable to _push_ changes to a Git repository:
 
-  1. **You have not committed your changes:** Before you can push your changes to the repository, you need to commit them using the `git commit` command. Make sure you have committed your changes and try pushing again. To do this, run the following terminal commands from the project folder:
+1. **You have not committed your changes:** Before you can push your changes to the repository, you need to commit them using the `git commit` command. Make sure you have committed your changes and try pushing again. To do this, run the following terminal commands from the project folder:
 
-   ```bash
-   git add .
-   git commit -m "Your commit message"
-   git push
-   ```
+```bash
+git add .
+git commit -m "Your commit message"
+git push
+```
 
+2. **You do not have permission to push to the repository:** If you have cloned the repository directly from the main Ironhack repository without making a _Fork_ first, you do not have write access to the repository.
+   To check which remote repository you have cloned, run the following terminal command from the project folder:
 
-  2. **You do not have permission to push to the repository:** If you have cloned the repository directly from the main Ironhack repository without making a *Fork* first, you do not have write access to the repository.
-  To check which remote repository you have cloned, run the following terminal command from the project folder:
+```bash
+git remote -v
+```
 
-   ```bash
-   git remote -v
-   ```
+If the link shown is the same as the main Ironhack repository, you will need to fork the repository to your GitHub account first, and then clone your fork to your local machine to be able to push the changes.
 
-  If the link shown is the same as the main Ironhack repository, you will need to fork the repository to your GitHub account first, and then clone your fork to your local machine to be able to push the changes.
-
-  Note: You may want to make a copy of the code you have locally, to avoid losing it in the process.
+Note: You may want to make a copy of the code you have locally, to avoid losing it in the process.
 
   <br>
 
-  [Back to top](#faqs)
+[Back to top](#faqs)
 
 </details>
