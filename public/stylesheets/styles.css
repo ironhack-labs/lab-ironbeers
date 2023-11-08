@@ -5,94 +5,73 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
 body {
-  margin: 0;
-  padding: 0;
-}
-
-nav {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #2081c3;
-  height: 50px;
-  position: fixed;
-  width: 100%;
-}
-
-nav a {
+  background-color: white;
   color: white;
-  text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  padding: 10px;
-  margin-left: 10px;
 }
 
-footer {
-  background-color: #bfbfbf;
-  height: 50px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+.button-margin {
+  margin: 7.5px;
 }
 
-footer p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  padding: 10px;
-  margin-left: 10px;
-}
-
-.buttons {
-  margin-top: 60px;
-}
-
-.buttons-a,
-.buttons-b {
+.index-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-top: 10px;
-  line-height: 40px;
-  background-color: #2081c3;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.buttons-a a,
-.buttons-b a {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  font-size: 15px;
-  padding: 10px;
+.beer-inner {
+  color: black;
+  margin-left: 5%;
 }
 
 .beer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 40%;
+  height: 20%;
+  margin: 5%;
 }
 
 .beer img {
-  max-width: 100%;
-  max-height: 100%;
-  margin-top: 60px;
-  margin-left: 130px;
+  width: 15%;
+  margin-bottom: 5%;
 }
 
-.beers {
+.index-inner {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 40%;
+  margin: 5%;
 }
 
-.beers p {
-  margin-top: 50px;
-  line-height: 15px;
+.beer-img {
+  width: 300px;
 }
 
-.beers img {
-  width: 200px;
-  height: auto;
-}
-
-.random-beer {
+.buttons {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 40%;
+  margin: 10%;
+}
+
+#footer {
+  position: fixed;
+  width: 100%;
+  height: 7.5%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0a2c42 !important;
+}
+
+#footer-div {
+  padding-top: 1%;
 }
