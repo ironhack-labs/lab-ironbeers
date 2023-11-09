@@ -1,0 +1,11 @@
+<h1>List of Beers</h1>
+
+{{#each beers}}
+  <div>
+    <h2>{{name}}</h2>
+    <img src="{{image_url}}" alt="{{name}} Image" class="beer-images">
+    <p>{{description}}</p>
+    <p><strong>Tagline:</strong> {{tagline}}</p>
+  </div>
+{{/each}}
+
