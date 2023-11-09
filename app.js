@@ -48,19 +48,16 @@ app.get('/random-beer', (req, res) => {
     });
 });
 
-app.get('/beer-info/:beerId', (req, res) => {
-  const beerId = req.params.beerId;
+app.get('/beers/:beerId', (req, res) => {
+  console.log('params:', req.params);
 
   punkAPI
-    .getBeer(beerId)
-    .then(beer => {
-      res.render('beers-info', { beer });
-      console.log(beer);
+    .getBeer(req.params.beerId)
+    .then(responseFromApi => {
+      //   console.log(responseFromApi);
+      res.render('beers-info.hbs', { beers: responseFromApi });
     })
-    .catch(err => {
-      console.error(err);
-      res.status(500).send('An error occurred while fetching data.');
-    });
+    .catch(err => console.log(err));
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
