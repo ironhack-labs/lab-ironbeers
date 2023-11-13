@@ -18,8 +18,18 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Add the route handlers here:
 
+/* no sale correcto. iteracion 3
+app.get('/beers', (req, res) => {
+  .getBeers()
+    .then(beersFromApi => console.log('Beers from the database: ', beersFromApi))
+      res.render('beers.hbs')
+    
+  .catch(error => console.log(error));
+})
+*/
+
 app.get('/', (req, res) => {
-  res.render('index');
+  res.render('index.hbs');
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
