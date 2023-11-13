@@ -1,1 +1,12 @@
-<h1>hola</h1>
+
+    {{#each beers}}
+      <div>
+        <img class="img-random" src="{{image_url}}" alt="{{name}}">
+        <h2>{{name}}</h2>
+        <p>{{description}}</p>
+        <p>{{tagline}}</p>
+        <p>{{food_pairing}}</p>
+        <p>{{brewer_tips}}</p>
+      </div>
+    {{/each}}
+  
