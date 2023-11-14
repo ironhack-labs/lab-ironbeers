@@ -1,0 +1,19 @@
+1. Create folder
+2. npm init -y
+3. install express via npm 
+intall hbs
+5. Create app.js
+
+express
+
+1. Initialie express
+2. Define routes
+3. Listen to the port with app listen
+
+4. define public folder
+5. define views and engine with hbs
+6. Create a layout
+7. Create views and render them via res.render(); inside app.get
+
+app.get('/about) y dentro res.render
+
