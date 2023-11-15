@@ -1,0 +1,16 @@
+<div class="container d-flex align-items-center">
+    <img src="{{selectedBeer.image_url}}" alt="" style="width: 70px;" class="m-4">
+    <div>
+        <h1>{{selectedBeer.name}}</h1>
+        <p>{{selectedBeer.tagline}}</p>
+        <p>{{selectedBeer.description}}</p>
+        <h2>Food Pairings</h2>
+        <ul>
+            {{#each selectedBeer.food_pairing as |food|}}
+                <li>{{food}}</li>
+            {{/each}}
+        </ul>
+        <h2>Brews Tips:</h2>
+        <p>{{selectedBeer.brewers_tips}}</p>
+        </div>
+</div>
