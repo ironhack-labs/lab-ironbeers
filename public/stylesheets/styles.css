@@ -6,4 +6,25 @@ grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
 
+nav {
+    background-color: #2081c3;
+}
 
+img {
+    max-width: 300;
+}
+
+.card {
+    width: 25vw;
+    background-color: lightgray;
+    margin: 0.5rem;
+}
+
+.allBeers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card img{
+    max-width: 2rem;
+}

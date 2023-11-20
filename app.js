@@ -16,20 +16,30 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // ...
 
-// Add the route handlers here:
-
-/* no sale correcto. iteracion 3
-app.get('/beers', (req, res) => {
-  .getBeers()
-    .then(beersFromApi => console.log('Beers from the database: ', beersFromApi))
-      res.render('beers.hbs')
-    
-  .catch(error => console.log(error));
-})
-*/
-
 app.get('/', (req, res) => {
   res.render('index.hbs');
+});
+
+// Add the route handlers here:
+
+app.get('/beers', async (req, res) => {
+  const beers = await punkAPI.getBeers();
+  //console.log(beers[0]);
+  res.render('allBeers', { beers });
+});
+
+app.get('/randomBeer', async (req, res) => {
+  const [randomBeer] = await punkAPI.getRandom();
+  //console.log('random', randomBeer);
+  res.render('randomBeer', { randomBeer });
+});
+
+app.get('/beers/:beerId', async (req, res) => {
+  const beerId = req.params.beerId;
+  //console.log(beerId)
+  const [selectedBeer] = await punkAPI.getBeer(id);
+  //console.log(selectedBeer)
+  res.render('beerDetails', {selectedBeer})
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
