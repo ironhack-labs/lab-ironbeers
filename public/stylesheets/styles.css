@@ -5,3 +5,61 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+hr {
+  color: #0a2c42;
+}
+
+.image_home {
+  max-width: 150px;
+  text-align: center;
+  margin-top: 10em;
+  margin-bottom: 2em;
+}
+
+.images {
+  max-width: 100px;
+  margin-left: 100px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+}
+.column {
+  flex-direction: column;
+  align-items: center;
+}
+
+.itens {
+  margin: 1em 4em;
+  padding: 2em;
+}
+
+.text {
+  max-width: 300px;
+  text-align: center;
+}
+
+nav {
+  background-color: #0a2c42;
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 1em;
+  font-weight: 700;
+  font-size: 1.5em;
+}
