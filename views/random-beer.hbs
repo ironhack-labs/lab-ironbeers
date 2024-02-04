@@ -1,0 +1,12 @@
+<div class='d-flex'>
+  <div class='p-2 flex-shrink-1'>
+    {{> beerpartial beer}} 
+    <p class='fw-bold'>Food pairings</p>
+    <ul>
+      {{#each beer.food_pairing as |food_pair|}}
+        <li>{{food_pair}}</li>
+      {{/each}}
+    </ul>
+    <p><strong>Brewers tips: </strong>{{beer.brewers_tips}}</p>
+  </div>
+</div>
