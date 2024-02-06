@@ -115,12 +115,6 @@ body {
   width: 80%;
   row-gap: 1rem;
   margin: 4rem auto;
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5rem;
-  gap: 5rem; */
 }
 
 .container-card {
@@ -136,10 +130,6 @@ body {
   height: 220px;
   padding: 1rem;
   margin-bottom: 2rem;
-}
-
-.container-info {
-
 }
 
 .name {
