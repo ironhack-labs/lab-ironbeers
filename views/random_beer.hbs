@@ -1,16 +1,9 @@
-<div>
-    {{#each data as |beer|}}
-<div class="card" style="width: 18rem;">
-  <img src={{beer.image_url}} class="card-img-top" alt="...">
- <div class="card-body">
-    <h5 class="card-title">{{beer.name}}</h5>
-    <p class="card-text">{{beer.description}}</p>
-    <h6><strong> Food Pairing</strong></h6>
-     <p class="card-ingredients">{{beer.food_pairing}}</p>
-     <p> <strong>Brewers Tips :</strong> {{brewers_tips}}</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
 
-{{/each}}
+   <div>
+  {{#each data as |beer|}}
+    {{> beersPartials beer=beer}}
+    <h6><strong>Food Pairing</strong></h6>
+    <p class="card-ingredients">{{beer.food_pairing}}</p>
+    <p><strong>Brewers Tips:</strong> {{beer.brewers_tips}}</p>
+  {{/each}}
 </div>
