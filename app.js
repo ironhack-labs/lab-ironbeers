@@ -10,27 +10,33 @@ app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
 // Register the location for handlebars partials here:
-hbs.registerPartials(path.join(__dirname, '/views/partials'));
+hbs.registerPartials(`${__dirname}/views/partials`);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/beers', (req, res) => {
-  punkAPI.getBeers().then((beers) => {
-    console.log(beers);
+  punkAPI.getBeers().then(beers => {
     res.render('beers', { data: beers });
+    console.log(`${beers}`)
   });
 });
 
-app.get('/random_beer', (req, res) => {
-  punkAPI.getRandom().then((beer) => {
-    console.log(beer);
-    res.render('random_beer', { data: beer });
+app.get('/random-beer', (req, res) => {
+  punkAPI.getRandom().then(beer => {
+    res.render('random-beer', { beer: beer[0] });
+  });
+});
+app.get('/infoBeer/:id', (req, res) => {
+  const idBeer = req.params.id;
+  
+
+  punkAPI.getBeer(idBeer).then(beer => {
+    res.render('infoBeer', { beer: beer[0] });
   });
 });
 
 app.get('/', (req, res) => {
-  punkAPI.getRandom().then((beer) => {
-    console.log(beer);
+  punkAPI.getRandom().then(beer => {
     res.render('index', { data: beer });
   });
 });
