@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/beers', (req, res) => {
   punkAPI.getBeers().then(beers => {
     res.render('beers', { data: beers });
-    console.log(`${beers}`)
+    console.log(beers)
   });
 });
 

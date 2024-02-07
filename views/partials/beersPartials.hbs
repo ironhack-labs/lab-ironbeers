@@ -1,7 +1,15 @@
-<div class='card' style='width: 18rem;'>
-  <img src={{beer.image_url}} class='card-img-top' alt='...' />
+<div class='card ' style=' 
+    '>
+  <img src={{beer.image_url}} class='card-img-top img_beer ' alt='...' />
   <div class='card-body'>
+    {{#if anchor}}
     <a href='/infoBeer/{{beer.id}}'><h5 class='card-title'>{{beer.name}}</h5></a>
+    {{else}}
+    
+    <h5 class='card-title'>{{beer.name}}</h5>
+    {{/if}}
+    
+   
     <p class='tagline'>{{beer.tagline}}</p>
     <p class='card-text'>{{beer.description}}</p>
 
