@@ -5,3 +5,37 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: #2081c3;
+    font-weight: bold; 
+}
+
+.link {
+    color: #f7f9f9;
+}
+
+footer {
+    background-color: #0a2c42;
+    color: #f7f9f9;
+    padding: 0.75em;
+}
+
+main {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+div .btn {
+    background-color:#2081c3;
+    color: #f7f9f9;
+}
+
+.tagline {
+    color: #bfbfbf;
+}
+
