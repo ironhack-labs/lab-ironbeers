@@ -1,0 +1,20 @@
+<div class="d-flex" style="justify-content: center">
+    {{#each beers as |beer|}}
+    <div style="margin-right: 50px;">
+        <img src="{{beer.image_url}}" alt="..." height="300px">
+    </div>
+    <div style="max-width: 600px;">
+    <h2>{{beer.name}}</h2>
+    <p>{{beer.description}}</p>
+    <p>{{beer.tagline}}</p>
+    <h3>Food Pairing</h3>
+    <ul>
+        <li>
+            {{beer.food_pairing}}
+        </li>
+        
+    </ul>
+    <p>Brewers Tips:{{beer.brewers_tips}}</p>
+    </div>
+    {{/each}}
+</div>
