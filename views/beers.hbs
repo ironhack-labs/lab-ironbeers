@@ -1,8 +1,13 @@
-<ul>
-    {{#each beersFromApi as |beer|}}
-    <li>{{beer.name}}</li>
-    <img src="{{beer.image_url}}" height="150"/>
-    <p>{{beer.description}}</p>
-    <p>{{beer.tagline}}</p>
-    {{/each}}
-</ul>
+<div class="d-flex flex-wrap gap-3 justify-content-between">
+{{#each beersFromApi as |beer|}}
+    <div class="card gap p-2" style="width: 22rem;">
+        <img src="{{beer.image_url}}" class="card-img-top object-fit-scale" height="200"/>
+        <div class="card-body">
+            <h5 class="card-title"><b>{{beer.name}}</b></h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">{{beer.tagline}}</h6>
+            <p class="card-text">{{beer.description}}</p>
+            <!--<a href="#" class="card-link">Beer info</a>-->
+        </div>
+    </div>
+{{/each}}
+</div>
