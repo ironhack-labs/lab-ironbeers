@@ -1,15 +1,15 @@
-<div class='card ' style=' 
-    '>
-  <img src={{beer.image_url}} class='card-img-top img_beer ' alt='...' />
+<div class='beer card' style="font-size: 10px;">
+  <img src={{beer.image_url}} class='img-beer-top' alt='' />
   <div class='card-body'>
     {{#if anchor}}
-    <a href='/infoBeer/{{beer.id}}'><h5 class='card-title'>{{beer.name}}</h5></a>
+      <a href='/infoBeer/{{beer.id}}';><h6
+          class='card-title'
+        >{{beer.name}}</h6></a>
     {{else}}
-    
-    <h5 class='card-title'>{{beer.name}}</h5>
+
+      <h5 class='card-title'>{{beer.name}}</h5>
     {{/if}}
-    
-   
+
     <p class='tagline'>{{beer.tagline}}</p>
     <p class='card-text'>{{beer.description}}</p>
 
@@ -20,44 +20,42 @@
     {{/if}}
 
     {{#if info}}
-    <ul>
-    <li>Abv : {{beer.abv}}</li>
-    <li> Ibu : {{beer.ibu}}</li>
-    <li>Target_fg : {{beer.target_fg}}</li>
-   <!----><li>Target_og : {{beer.target_og}}</li>
-    <li>Ebc : {{beer.ebc}}</li>
-    <li>Srm : {{beer.srm}}</li>
-    <li>Ph : {{beer.ph}}</li>
-    <li>Attenuation Level : {{beer.attenuation_level}}</li>
-      <li>Volume : 
-        <ul>
-        <li>value : {{beer.volume.value}}</li>
-        <li>unit : {{beer.volume.unit}}</li>
-        </ul>
-      </li>
-     
-    <li>Boil volume : 
-        <ul>
-        <li>value : {{beer.boil_volume.value}}</li>
-        <li>unit : {{beer.boil_volume.unit}}</li>
-        </ul>
-      </li>
-    <li>Ingredients : 
-        <ul>
-        <li>Malt : {{beer.ingredients.malt}}</li>
-        <li>Hops : {{beer.ingredients.hops}}</li>
-        <li>Yeast : {{beer.ingredients.yeast}}</li>
-        </ul>
-      </li>
-      <li>Method : 
-        <ul>
-        <li>Mash temp : {{beer.method.mash_temp}}</li>
-        <li>Fermentation : {{beer.method.fermentation}}</li>
-        <li>Twist : {{beer.method.twist}}</li>
-        </ul>
-      </li></ul>
-    
-   
+      <ul>
+        <li>Abv : {{beer.abv}}</li>
+        <li> Ibu : {{beer.ibu}}</li>
+        <li>Target_fg : {{beer.target_fg}}</li>
+        <li>Target_og : {{beer.target_og}}</li>
+        <li>Ebc : {{beer.ebc}}</li>
+        <li>Srm : {{beer.srm}}</li>
+        <li>Ph : {{beer.ph}}</li>
+        <li>Attenuation Level : {{beer.attenuation_level}}</li>
+        <li>Volume :
+          <ul>
+            <li>value : {{beer.volume.value}}</li>
+            <li>unit : {{beer.volume.unit}}</li>
+          </ul>
+        </li>
+
+        <li>Boil volume :
+          <ul>
+            <li>value : {{beer.boil_volume.value}}</li>
+            <li>unit : {{beer.boil_volume.unit}}</li>
+          </ul>
+        </li>
+        <li>Ingredients :
+          <ul>
+            <li>Malt : {{beer.ingredients.malt}}</li>
+            <li>Hops : {{beer.ingredients.hops}}</li>
+            <li>Yeast : {{beer.ingredients.yeast}}</li>
+          </ul>
+        </li>
+        <li>Method :
+          <ul>
+            <li>Mash temp : {{beer.method.mash_temp}}</li>
+            <li>Fermentation : {{beer.method.fermentation}}</li>
+            <li>Twist : {{beer.method.twist}}</li>
+          </ul>
+        </li></ul>
 
     {{/if}}
 

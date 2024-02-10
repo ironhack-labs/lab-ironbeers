@@ -5,11 +5,12 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
-.img_beer{
-    width: 25%;
-    height: 25%;
+
+.beer .card-img-top {
+    object-fit: contain;
+    height:100% ;
+    max-height:70px ;
+    
+    
 }
-.card{
-    width: 200px;
-    height: 400px;
-}
+
