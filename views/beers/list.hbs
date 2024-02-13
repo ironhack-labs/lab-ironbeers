@@ -1,0 +1,16 @@
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-1">
+  {{#each beers as |beer|}}
+    <div class="col">
+      <div class="beer card">
+        <img src="{{beer.image_url}}" class="card-img-top" alt="{{beer.name}}" />
+        <div class="card-body">
+          <h5 class="card-title">{{beer.name}}</h5>
+          <p class="card-text">{{ellipsis beer.description 100}}</p>
+          <a href="/beers/{{beer.id}}" class="stretched-link">More info</a>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>
+
+
