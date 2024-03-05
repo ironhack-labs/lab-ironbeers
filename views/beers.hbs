@@ -2,11 +2,10 @@
   <h1>All Beers</h1>
   <div class='beer'>
     {{#each beers}}
-      <img src='{{image_url}}' alt='{{name}}' width='100' />
-      <h2> {{name}} </h2>
-      <p> {{description}} </p>
-      <p><em> {{tagline}} </em></p>
-
+    {{!-- anchor to macke it clickable --}}
+        <a href="/beers/{{id}}">
+         {{> beerpartial}}
+        </a>
     {{/each}}
   </div>
 </div>

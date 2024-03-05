@@ -1,9 +1,6 @@
 <div id='random-beer'>
   {{#with beer}}
-    <img src='{{image_url}}' alt='{{name}}' width='100' />
-    <h2> <strong>{{name}}</strong> </h2>
-    <p id="random-beer-tagline">{{tagline}}</p>
-    <p> {{description}} </p>
+     {{> beerpartial}}
     <p> <strong>Food Pairing:</strong></p>
     <ul>
       {{#each food_pairing}}

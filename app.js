@@ -13,8 +13,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Register the location for handlebars partials here:
-
-// ...
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 // Add the route handlers here:
 
@@ -45,6 +44,22 @@ app.get('/random-beer', (req, res) => {
     .catch(error => {
       res.status(500).send('Error fetching from the database');
       console.log(error);
+    });
+});
+
+app.get('/beers/:id', (req, res) => {
+  const beerId = req.params.id;
+  console.log('beerId', beerId);
+  // Call the getBeer(id) method to retrieve the details of the specific beer
+  punkAPI
+    .getBeer(beerId)
+    .then(responseFromAPI => {
+      console.log("beer", responseFromAPI[0]);
+      res.render('beer-details', { beer: responseFromAPI[0] });
+    })
+    .catch(error => {
+      console.log(error);
+      res.status(500).send('Error fetching from the database');
     });
 });
 
