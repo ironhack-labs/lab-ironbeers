@@ -5,3 +5,21 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+#ul {
+  display: flex;
+  background-color: #2081c3;
+  list-style-type: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: 1px 2px 2px gr;
+}
+
+.a {
+  text-decoration: none;
+  color: #f7f9f9;
+}
+
+.li {
+  margin-right: 50px;
+}
