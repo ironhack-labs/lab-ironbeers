@@ -1,0 +1,19 @@
+<div class="container">
+    <h1>RANDOM TYPES OF BEERS</h1>
+    <hr>
+
+    <div class="row">
+        {{#each beers}}
+        <div class="card">
+            <div class="col-md-2">
+                <h3>{{this.name}}</h3>
+                <img src="{{this.image_url}}" alt="{{this.name}}">
+                <div class="card-text"></div>
+                <p> {{this.description}} </p>
+                <p>{{this.tagline}}</p>
+            </div>
+        </div>
+        <p>{{food_pairing}}</p>
+        <p>{{brewer_tips}}</p>
+        {{/each}}
+    </div>
