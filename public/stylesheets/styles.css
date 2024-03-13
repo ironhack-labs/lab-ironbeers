@@ -5,3 +5,43 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 800px
+    
+    
+
+}
+.inicio img {
+    width: 400px;
+    height: 400px;
+}
+.navegadores {
+    background-color:#2081c3;
+    list-style: none;
+    display: flex;
+    padding: 30px 0px;
+    margin: 0;
+}
+.navegadores a {
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+    font-size: 30px;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#bfbfbf;
+}
+.inicio a {
+    background-color: #2081c3;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 20px 20px;
+    border-radius: 5px;
+}
