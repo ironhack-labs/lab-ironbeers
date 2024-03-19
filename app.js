@@ -22,4 +22,13 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+app.get('/beers', (req, res) => {
+  const beerList = punkAPI.getBeers();
+  //'Beers from the database: ', 
+  beerList.then(item => console.log(beerList))
+  .catch(error => console.log(error));
+
+  res.render('beers');
+});
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
