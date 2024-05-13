@@ -1,6 +1,6 @@
 <h1>Breweries</h1>
 <ul>
     {{#each breweries}}
-    <li>{{name}}</li>
+    <a href="https://api.openbrewerydb.org/v1/breweries/{obdb-id}"> <li>{{name}}</li></a>
     {{/each}}
 </ul>
