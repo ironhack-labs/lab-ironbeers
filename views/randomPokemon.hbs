@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Pokémon</title>
+</head>
+<body>
+    <h1>Random Pokémon</h1>
+    <h2>Name: {{name}}</h2>
+    <h3>Abilities:</h3>
+    <ul>
+        {{#each abilities}}
+            <li>{{this}}</li>
+        {{/each}}
+    </ul>
+</body>
+</html>
