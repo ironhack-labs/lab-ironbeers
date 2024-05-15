@@ -6,11 +6,11 @@
 
 Sometimes you would just like to have a very descriptive list of all beers so you could see their type, color, each beer's percentage of alcohol, or which beer is well pared with some food. In this lab, you will create a web app where the user will be able to see a list of beers, get random suggestions, and read a very descriptive explanation of each beer.
 
-"How will we get all of this information?", you might ask. Well, we will be using an npm package :package: as our data source.
+"How will we get all of this information?", you might ask.[Well, we will be using an npm package :package: as our data source.
 
-For this exercise, we will work with the **[PunkAPI](https://www.npmjs.com/package/punkapi-javascript-wrapper)** npm package. In the background, the package communicates with a remote _database_ that contains all of the beers. The package enables us to use its methods that can help us to retrieve beers. Each beer has some properties, and we can play around with this data to practice working with Handlebars templates, `layouts` and `partials`.
+For this exercise, we will work with the **Beers API**. The API enables us to retrieve information about beers, and we can use this data to practice working with Handlebars templates, `layouts`, and `partials`.
 
-**In this lab, we can also practice reading external (PunkAPI) docs and learn how to get what we need from the database.**
+**In this lab, we will also practice making HTTP requests to an external API
 
 ## Requirements
 
@@ -28,6 +28,41 @@ $ git push origin master
 ```
 
 - Create Pull Request so your TAs can check up your work.
+
+<br>
+
+
+
+## Introduction
+
+### Beers API (backend)
+
+We will be building a React app, so the API (backend) needs to be built somewhere for us, right? You are completely right, we will be using a public API called Beers API. The base URL of the API is:
+
+**`https://ih-beers-api2.herokuapp.com/beers`**
+
+<br>
+
+The API provides the following endpoints:
+
+| Method | Endpoint            | Response (200)                                         | Action                                                       |
+| ------ | ------------------- | ------------------------------------------------------ | ------------------------------------------------------------ |
+| `GET`  | `/`                 | [beers]                                                | Get all the beers from the DB                                |
+| `GET`  | `/:id`              | { beer }                                               | Get a single/specific beer                                   |
+| `GET`  | `/random`           | { beer }                                               | Get a random beer from the DB                                |
+| `GET`  | `/search?q={query}` | [beers]                                                | Search beers by name containing the specified term.<br/>Example: `/search?q=lager` query will return all beers with the word lager in their name. |
+
+<br>
+
+
+
+You can refer to this section any time during the exercise for information about the API endpoints and their usage.
+
+
+
+**Note:** The first time you make a request to the API, it might take a bit longer to respond.
+
+<br>
 
 ## Instructions
 
@@ -72,7 +107,7 @@ The layout is done, let's move to create these three pages.
 
 ### Iteration 3 - Beers _page_
 
-The next thing we will be working on is a page where we can present all the beers we will retrieve from the remote database. This page will be rendered every time the user visits the `/beers` route.
+The next thing we will be working on is a page where we can present all the beers we will retrieve from the Beers API. This page will be rendered every time the user visits the `/beers` route.
 
 This leads us to the conclusion that in this step, we have two main focus areas:
 
@@ -84,22 +119,22 @@ This leads us to the conclusion that in this step, we have two main focus areas:
 In this step, we will have a couple of micro-steps:
 
 - Create a `/beers` route inside the `app.js` file.
-- Inside the `/beers` route, call the `getBeers()` method (the **PunkAPI** provides this method, and you can find more about it [here](https://www.npmjs.com/package/punkapi-javascript-wrapper#getbeersoptions)). **Calling the `.getBeers()` method returns a promise that should be resolved with an array of 25 beers**.
+- Inside the `/beers` route, make a HTTP request to the Beers API endpoint that returns all the beers: `https://ih-beers-api2.herokuapp.com/beers`.<br>This endpoint responds with an array of beers.
 - Down the road, you should pass that array to the `beers.hbs` view.
 
-An example of how this method works is shown below:
+An example of how to make a request to the API:
 
 ```js
-punkAPI
-  .getBeers()
-  .then(beersFromApi => console.log('Beers from the database: ', beersFromApi))
+fetch("https://ih-beers-api2.herokuapp.com/beers")
+  .then(response => response.json())
+  .then(beersFromApi => console.log('Beers from the API: ', beersFromApi))
   .catch(error => console.log(error));
 ```
 
 #### 3.2 The `beers.hbs` view
 
 - Create a `beers.hbs` file to render every time we call this route.
-- This file should have access to the beers we get as a response from the database. Remember, you should call the `render` method after getting the _beers_ array. _Hint:_ That means inside of the function you're passing to the `then` method. :wink:
+- This file should have access to the beers we get as a response from the API. Remember, you should call the `render` method after getting the _beers_ array. _Hint:_ That means inside of the function you're passing to the `then` method. :wink:
 - On the `beers.hbs` view, loop over the **array of beers** using an `{{#each}}` loop. Display an **image**, **name**, **description** and **tagline**.
 
 Now, when you click on the `Beers` link on the top navigation or on the `Check the beers` button, you should be able to see all the beers. Boom! :boom:
@@ -111,13 +146,13 @@ As in the previous step, we will have to focus on creating a route to display a 
 #### 4.1 The `/random-beer` route
 
 - Let's create the `/random-beer` route.
-- Inside the route, you should call the PunkAPI `getRandom()` method. It returns a promise that will resolve with a different beer object on every call. Look at the [documentation](https://www.npmjs.com/package/punkapi-javascript-wrapper#getrandom) to understand the structure of the data that you're supposed to get back. :+1:
+- Inside the route, you should make a HTTP request to the Beers API endpoint that returns a random beer: `https://ih-beers-api2.herokuapp.com/beers/random`.<br>The endpoint responds with a single beer object. You can console.log the response to see the structure of the data you're working with.
 
-An example of how this method works is shown below:
+An example of how to make a request to the API to get a random beer:
 
 ```js
-punkAPI
-  .getRandom()
+fetch("https://ih-beers-api2.herokuapp.com/beers/random")
+  .then(response => response.json())
   .then(responseFromAPI => {
     // your magic happens here
   })
@@ -128,7 +163,7 @@ punkAPI
 
 #### 4.2 The `random-beer.hbs` view
 
-- The `random-beer.hbs` should display the random beer that was retrieved from the database. You should display an **image**, **name**, **description**, **tagline**, **food pairing** and **brewer tips**. The following image shows how this page could look if you give it a bit of style. However, the styling will come later, so, for now, focus on rendering all the information:
+- The `random-beer.hbs` should display the random beer that was retrieved from the Beers API. You should display an **image**, **name**, **description**, **tagline**, **food pairing** and **brewer tips**. The following image shows how this page could look if you give it a bit of style. However, the styling will come later, so, for now, focus on rendering all the information:
 
 ![image](https://user-images.githubusercontent.com/23629340/36724536-c5924892-1bb3-11e8-8f22-fd1f8ce316af.png)
 
@@ -189,7 +224,7 @@ Make all the beers on the beers page clickable. If users click on a specific bee
 
 To understand how you can get the `id` from the URL, read this section of the [Express docs](http://expressjs.com/en/4x/api.html#req.params).
 
-To find out how you can get an individual beer from the punkAPI using the _beerId_, check out the [`.getBeer(id)` method on the punkAPI docs](https://www.npmjs.com/package/punkapi-javascript-wrapper#getbeerid).
+To get an individual beer from the Beers API, you can should the following endpoint: `https://ih-beers-api2.herokuapp.com/beers/:id`. The `:id` parameter should be replaced with the actual `id` of the beer you want to retrieve.
 
 ### Bonus: Iteration 7
 
@@ -268,7 +303,7 @@ Happy Coding! :heart:
   Here is an example of using `.then()` and `.catch()` to handle a promise returned by a function/method:
 
   ```js
-  someAPI.getData()
+fetch("https://example.com/api/data")
     .then((result) => {
       console.log(result);
     })
@@ -282,22 +317,23 @@ Happy Coding! :heart:
   If you are trying to execute multiple promises in a sequence, you can do so by returning a promise from a `.then()` block. Example:
 
   ```js
-  someAPI.getData()
-      .then((result1) => {
-          console.log(result1);
-          return someAPI.getData(); // Return another pending promise
+fetch("https://example.com/api/data")
+      .then((reponse) => {
+          console.log(reponse);
+          return response.json(); // Return another pending promise
       })  
-      .then((result2) => { // Handle the returned promise
-          console.log(result2);
+      .then((data) => { // Handle the returned promise
+          console.log(data);
       })
       .catch((error) => {
           console.log(error);
       })
   ```
 
-  The first line `someAPI.getData()` initiates an asynchronous operation, which returns a promise. The `.then()` method is then called on the promise to handle the resolved value.
+  The first line `fetch()` initiates an asynchronous operation, a HTTP request to the specified URL, which returns a promise. The `.then()` method is then called on the promise to handle the resolved value.
 
-  The first `then()` returns another promise with another call to `someAPI.getData()`, which allows to chain another `then()` function that handles the second resolved value, logging it to the console.
+  At the end of the first `.then()` block, we call `response.json()` to parse the response as JSON, which is an asynchronous operation that returns a promise. We then return this promise at the end of the block to allow chaining another `.then()` block to handle the resolved value.
+  In the second `.then()` block, we access the resolved value of the promise from `response.json()` and log it to the console.
 
   <br>
 
