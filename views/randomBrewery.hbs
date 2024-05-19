@@ -1,17 +1,19 @@
-<h1>Random Brewery</h1>
-<ul>
-    {{#each random}}
-    <li>{{id}}</li>
-    <li>{{name}}</li>
-    <li>{{brewery_type}}</li>
-    <li>{{address_1}}</li>
-    <li>{{city}}</li>
-    <li>{{state_province}}</li>
-    <li>{{postal_code}}</li>
-    <li>{{country}}</li>
-    <li>{{phone}}</li>
-    <li>{{website_url}}</li>
-    <li>{{state}}</li>
-    <li>{{street}}</li>
-    {{/each}}
-</ul>
+<h1>Selected Brewery</h1>
+<div class="random">
+<p>Name: {{brewery.name}}</p>
+<p>Brewery Type: {{brewery.brewery_type}}</p>
+<p>Adress 1: {{brewery.address_1}}</p>
+{{#if brewery.adress_2}}<p>Adress 2: {{brewery.adress_2}}</p>{{/if}}
+{{#if brewery.adress_3}}<p>Adress 3: {{brewery.adress_3}}</p>{{/if}}
+<p>City: {{brewery.city}}</p>
+<p>State/Province: {{brewery.state_province}}</p>
+<p>Postal Code: {{brewery.postal_code}}</p>
+<p>Country: {{brewery.country}}</p>
+{{#if brewery.longitude}}<p>Longitude: {{brewery.longitude}}</p>{{/if}}
+{{#if brewery.latitude}}<p>Latitude: {{brewery.latitude}}</p>{{/if}}
+<p>Phone: {{brewery.phone}}</p>
+<p>Website URL: 
+    <a href="{{brewery.website_url}}">{{brewery.website_url}}</a></p>
+<p>State: {{brewery.state}}</p>
+<p>Street: {{brewery.street}}</p>
+</div>

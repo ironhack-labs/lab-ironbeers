@@ -13,7 +13,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Register the location for handlebars partials here:
 
 hbs.registerPartials(__dirname + "/views/partials");
-
+hbs.registerHelper("eq", function (a, b) {
+  return a===b;
+});
 
 // ...
 
@@ -34,10 +36,15 @@ app.get(`/breweries`, (req, res) => {
 app.get(`/randomBrewery`, (req, res) => {
   fetch(`https://api.openbrewerydb.org/v1/breweries/random`)
   .then((response) => response.json())
-  .then((response) => {
-      const random = response;
-        res.render(`randomBrewery`, { random });
-  });
+  .then((response) => res.render(`randomBrewery`, { brewery: response[0] }));
+});
+
+
+app.get(`/breweries/:id`, (req, res) => {
+  const id = req.params.id;
+  fetch(`https://api.openbrewerydb.org/v1/breweries/${id}`)
+    .then((response) => response.json())
+    .then((response) => res.render(`randomBrewery`, { brewery: response}));
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

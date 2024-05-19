@@ -5,6 +5,19 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.random {
+    text-align: center;
+}
+
 .navbar {
     background-color: #2081c3;
     color: #f7f9f9;
@@ -20,9 +33,9 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 #home-img {
-    padding: 100px;
+    padding: 100px 100px 40px;
     height: 500px;
-    width: 500px;
+    width: 700px;
     margin: auto;
     display: block;
 }
@@ -43,7 +56,67 @@ font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 10px;
 }
 
-footer {
-    background-color: #111010;
-    color: #f7f9f9;
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px
+}
+
+.card {
+    border : 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.card a {
+    text-decoration: none;
+    color: #111010;
+}
+
+.micro {
+    padding: 5px;
+    border-radius: 15px;
+    background-color: orange;
+    color: white;
+    font-size: 12px;
+}
+
+.large {
+    padding: 5px;
+    border-radius: 15px;
+    background-color: green;
+    color: white;
+    font-size: 12px;
+}
+
+.brewpub {
+    padding: 5px;
+    border-radius: 15px;
+    background-color: purple;
+    color: white;
+    font-size: 12px;
+}
+
+.closed {
+    padding: 5px;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+}
+
+.proprietor {
+    padding: 5px;
+    border-radius: 15px;
+    background-color: blue;
+    color: white;
+    font-size: 12px;
+}
+
+.contract {
+    padding: 5px;
+    border-radius: 15px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
 }

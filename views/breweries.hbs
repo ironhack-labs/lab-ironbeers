@@ -1,6 +1,24 @@
 <h1>Breweries</h1>
-<ul>
+<div class="grid">
     {{#each breweries}}
-    <a href="https://api.openbrewerydb.org/v1/breweries/{obdb-id}"> <li>{{name}}</li></a>
+    <div class="card">
+        {{#if (eq brewery_type "micro")}}
+        <span class="micro">{{brewery_type}}</span>
+        {{else if (eq brewery_type "large")}}
+        <span class="large">{{brewery_type}}</span>
+        {{else if (eq brewery_type "brewpub")}}
+        <span class="brewpub">{{brewery_type}}</span>
+        {{else if (eq brewery_type "closed")}}
+        <span class="closed">{{brewery_type}}</span>
+        {{else if (eq brewery_type "proprietor")}}
+        <span class="proprietor">{{brewery_type}}</span>
+        {{else if (eq brewery_type "contract")}}
+        <span class="contract">{{brewery_type}}</span>
+        {{else}}
+        <span>{{brewery_type}}</span>
+        {{/if}}
+            <h2><a href="/breweries/{{id}}">{{name}}</a></h2>
+            <p>{{city}}</p>
+    </div>
     {{/each}}
-</ul>
+</div>
