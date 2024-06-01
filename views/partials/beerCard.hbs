@@ -1,0 +1,14 @@
+<div id="beer-card">
+    <img src="{{image}}" alt="">
+    <h2><a href="/beers/beer-{{id}}">{{name}}</a></h2>
+    <p id="brewery-type">{{brewery_type}}</p>
+    <p>{{state}}</p>
+    {{#if website_url}}
+        <h3>Website</h3>
+        <p>{{website_url}}</p>
+    {{/if}}
+    {{#if phone}}
+        <h3>Phone</h3>
+        <p>{{phone}}</p>
+    {{/if}}
+</div>
