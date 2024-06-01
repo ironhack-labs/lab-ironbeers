@@ -35,7 +35,17 @@ app.get('/random-beer', (req, res) => {
     .get('https://api.openbrewerydb.org/v1/breweries/random')
     .then(response => {
       let data = response.data[0];
-      res.render('random-beer', data);
+      res.render('beer', data);
+    })
+    .catch(error => console.log(error));
+});
+
+app.get('/beers/beer-:id', (req, res) => {
+  axios
+    .get(`https://api.openbrewerydb.org/v1/breweries/${req.params.id}`)
+    .then(response => {
+      let data = response.data;
+      res.render('beer', data);
     })
     .catch(error => console.log(error));
 });

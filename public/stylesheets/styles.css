@@ -32,7 +32,7 @@ body {
 #navbar ul {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;;
+  justify-content: flex-start;
   align-items: center;
   list-style-type: none;
   padding: 0;
@@ -70,9 +70,9 @@ body {
 }
 
 #hero-section button a {
-    color: #f7f9f9;
-    text-decoration: none;
-  }
+  color: #f7f9f9;
+  text-decoration: none;
+}
 
 #footer {
   background-color: #0a2c42;
@@ -91,7 +91,12 @@ body {
   margin: 20px;
   background-color: #f7f9f9;
   border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#beer-card a {
+  color: #000000;
+  text-decoration: none;
 }
 
 #brewery-type {
@@ -100,8 +105,8 @@ body {
 }
 
 #beers-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
