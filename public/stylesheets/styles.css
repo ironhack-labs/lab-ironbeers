@@ -50,7 +50,7 @@ body {
 #hero-section {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   padding: 100px 0;
