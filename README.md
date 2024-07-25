@@ -6,11 +6,11 @@
 
 Sometimes you would just like to have a very descriptive list of all beers so you could see their type, color, each beer's percentage of alcohol, or which beer is well pared with some food. In this lab, you will create a web app where the user will be able to see a list of beers, get random suggestions, and read a very descriptive explanation of each beer.
 
-"How will we get all of this information?", you might ask.[Well, we will be using an npm package :package: as our data source.
+"How will we get all of this information?", you might ask. Well, we will be using an npm package :package: as our data source.
 
 For this exercise, we will work with the **Beers API**. The API enables us to retrieve information about beers, and we can use this data to practice working with Handlebars templates, `layouts`, and `partials`.
 
-**In this lab, we will also practice making HTTP requests to an external API
+**In this lab, we will also practice making HTTP requests to an external API.**
 
 ## Requirements
 
@@ -47,10 +47,10 @@ The API provides the following endpoints:
 
 | Method | Endpoint            | Response (200)                                         | Action                                                       |
 | ------ | ------------------- | ------------------------------------------------------ | ------------------------------------------------------------ |
-| `GET`  | `/`                 | [beers]                                                | Get all the beers from the DB                                |
+| `GET`  | `/`                 | **[** { beer }, { beer }, ... **]**                    | Get all the beers from the DB                                |
 | `GET`  | `/:id`              | { beer }                                               | Get a single/specific beer                                   |
 | `GET`  | `/random`           | { beer }                                               | Get a random beer from the DB                                |
-| `GET`  | `/search?q={query}` | [beers]                                                | Search beers by name containing the specified term.<br/>Example: `/search?q=lager` query will return all beers with the word lager in their name. |
+| `GET`  | `/search?q={query}` | **[** { beer }, { beer }, ... **]**                    | Search beers by name containing the specified term.<br/>Example: `/search?q=lager` query will return all beers <br>with the word lager in their name. |
 
 <br>
 
@@ -82,6 +82,8 @@ $ nodemon app.js
 # you can also run: npm run dev
 ```
 
+<br>
+
 ### Iteration 1: Layout barebones
 
 Our starter code includes the basic configuration needed to run our app. The **`/`** route is set to render the `index.hbs` file. Let's start by creating a layout.
@@ -96,14 +98,22 @@ Add a navbar that includes links to 3 pages:
 - _Beers_ ==> should navigate to `/beers`.
 - _Random Beer_ ==> should navigate to `/random-beer`.
 
+<br>
+
 The layout is done, let's move to create these three pages.
+
+<br>
 
 ### Iteration 2 - Home _page_
 
 - The first page should be **Home** and should be rendered on **`/`**. The file that gets rendered is `index.hbs`.
 - This file should include the _beer image_, which you can find at `/public/images`. Together with the image, `index.hbs` should have two links: `Check the Beers!` and `Check a Random Beer`. Both links should navigate to the corresponding routes (which we previously defined in our navbar as well). Later, you can style these `a` tags to make them look like buttons.
 
+<br>
+
 ![image](https://user-images.githubusercontent.com/23629340/36723774-7d791ef2-1bb1-11e8-991b-39dbf4fd8a59.png)
+
+<br>
 
 ### Iteration 3 - Beers _page_
 
@@ -114,13 +124,19 @@ This leads us to the conclusion that in this step, we have two main focus areas:
 - the `/beers` route and
 - the `beers.hbs` view.
 
+<br>
+
 #### Iteration 3.1 The `/beers` route
 
 In this step, we will have a couple of micro-steps:
 
 - Create a `/beers` route inside the `app.js` file.
-- Inside the `/beers` route, make a HTTP request to the Beers API endpoint that returns all the beers: `https://ih-beers-api2.herokuapp.com/beers`.<br>This endpoint responds with an array of beers.
+- Inside the `/beers` route, make a HTTP request to the Beers API endpoint that returns all the beers:
+  - **`https://ih-beers-api2.herokuapp.com/beers`**
+  - This endpoint responds with an array of beers.
 - Down the road, you should pass that array to the `beers.hbs` view.
+
+<br>
 
 An example of how to make a request to the API:
 
@@ -131,22 +147,34 @@ fetch("https://ih-beers-api2.herokuapp.com/beers")
   .catch(error => console.log(error));
 ```
 
+<br>
+
 #### 3.2 The `beers.hbs` view
 
 - Create a `beers.hbs` file to render every time we call this route.
 - This file should have access to the beers we get as a response from the API. Remember, you should call the `render` method after getting the _beers_ array. _Hint:_ That means inside of the function you're passing to the `then` method. :wink:
 - On the `beers.hbs` view, loop over the **array of beers** using an `{{#each}}` loop. Display an **image**, **name**, **description** and **tagline**.
 
+<br>
+
 Now, when you click on the `Beers` link on the top navigation or on the `Check the beers` button, you should be able to see all the beers. Boom! :boom:
+
+<br>
 
 ### Iteration 4 - Random beer _page_
 
 As in the previous step, we will have to focus on creating a route to display a random beer. When a random beer is retrieved, we have to pass it to the view.
 
+<br>
+
 #### 4.1 The `/random-beer` route
 
 - Let's create the `/random-beer` route.
-- Inside the route, you should make a HTTP request to the Beers API endpoint that returns a random beer: `https://ih-beers-api2.herokuapp.com/beers/random`.<br>The endpoint responds with a single beer object. You can console.log the response to see the structure of the data you're working with.
+- Inside the route, you should make a HTTP request to the Beers API endpoint that returns a random beer:
+  - **`https://ih-beers-api2.herokuapp.com/beers/random`**
+  - The endpoint responds with a single beer object. You can `console.log` the response to see the structure of the data you're working with.
+
+<br>
 
 An example of how to make a request to the API to get a random beer:
 
@@ -161,11 +189,15 @@ fetch("https://ih-beers-api2.herokuapp.com/beers/random")
 
 - Eventually, the received beer needs to be passed to the `random-beer.hbs` file. You still don't have this file, so let's proceed to create it.
 
+<br>
+
 #### 4.2 The `random-beer.hbs` view
 
 - The `random-beer.hbs` should display the random beer that was retrieved from the Beers API. You should display an **image**, **name**, **description**, **tagline**, **food pairing** and **brewer tips**. The following image shows how this page could look if you give it a bit of style. However, the styling will come later, so, for now, focus on rendering all the information:
 
 ![image](https://user-images.githubusercontent.com/23629340/36724536-c5924892-1bb3-11e8-8f22-fd1f8ce316af.png)
+
+<br>
 
 Now, every time the user clicks on the _Random beer_ link in the navbar or on the _Check a random beer_ button on the home page, they should see this page with a new, random beer.
 
@@ -176,6 +208,8 @@ Let's proceed to the bonus iterations.
 :::info
 On every iteration, you should render a `partial` passing the information regarding the corresponding beer.
 :::
+
+<br>
 
 ### Bonus: Iteration 5 - Beer partial
 
@@ -192,6 +226,8 @@ Let's see what beer properties we display on the `/beers` _(the beers page)_ and
 |   food pairing   |        :x:         | :white_check_mark: |
 |   brewer tips    |        :x:         | :white_check_mark: |
 
+<br>
+
 As we can see, we have 4 in common properties, which means our code could be a bit more **DRY** if we refactor it using _partials_.
 
 You should create a partial to show each beer.
@@ -202,17 +238,25 @@ You should create a partial to show each beer.
 hbs.registerPartials(path.join(__dirname, 'views/partials'));
 ```
 
+<br>
+
 - Next, you should create a `partials` folder inside the `views`, and a `beerpartial.hbs` file inside the `partials` folder (**Note**: We're not including dashes in the `hbs` partial names, since handlebars partials need to follow the same naming conventions as JavaScript variables).
 - Our `beerpartial.hbs` will display the properties that both views share: **image**, **name**, **description**, and **tagline** of the beer.
 - Now, you can go ahead and plug in this partial in the `beers.hbs` view inside the `each` loop.
+
+<br>
 
 After creating the partial, and looping over the array of beers, on our `/beers` route, we should have the following:
 
 ![image](https://user-images.githubusercontent.com/23629340/36724392-61fa7336-1bb3-11e8-8468-189908167e10.png)
 
+<br>
+
 - Also, you can use it on the `random-beer.hbs` page.
 
 Our code shrunk by a lot just because we managed to create a reusable piece of code (the partial), which we can now place wherever we need to use this set of properties.
+
+<br>
 
 ### Bonus: Iteration 6
 
@@ -224,7 +268,11 @@ Make all the beers on the beers page clickable. If users click on a specific bee
 
 To understand how you can get the `id` from the URL, read this section of the [Express docs](http://expressjs.com/en/4x/api.html#req.params).
 
-To get an individual beer from the Beers API, you can should the following endpoint: `https://ih-beers-api2.herokuapp.com/beers/:id`. The `:id` parameter should be replaced with the actual `id` of the beer you want to retrieve.
+To get an individual beer from the Beers API, you can should the following endpoint:
+  - `https://ih-beers-api2.herokuapp.com/beers/:id`.
+  - The `:id` parameter should be replaced with the actual `id` of the beer you want to retrieve.
+
+<br>
 
 ### Bonus: Iteration 7
 
