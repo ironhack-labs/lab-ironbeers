@@ -47,10 +47,10 @@ The API provides the following endpoints:
 
 | Method | Endpoint            | Response (200)                                         | Action                                                       |
 | ------ | ------------------- | ------------------------------------------------------ | ------------------------------------------------------------ |
-| `GET`  | `/`                 | **[** { beer }, { beer }, ... **]**                    | Get all the beers from the DB                                |
+| `GET`  | `/`                 | **[** { beer }, { beer }, ...**]**                     | Get all the beers from the DB                                |
 | `GET`  | `/:id`              | { beer }                                               | Get a single/specific beer                                   |
 | `GET`  | `/random`           | { beer }                                               | Get a random beer from the DB                                |
-| `GET`  | `/search?q={query}` | **[** { beer }, { beer }, ... **]**                    | Search beers by name containing the specified term.<br/>Example: `/search?q=lager` query will return all beers <br>with the word lager in their name. |
+| `GET`  | `/search?q={query}` | **[** { beer }, { beer }, ...**]**                     | Search beers by name containing the specified term.<br/>Example: `/search?q=lager` query will return all beers <br>with the word lager in their name. |
 
 <br>
 
