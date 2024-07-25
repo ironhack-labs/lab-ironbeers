@@ -5,3 +5,131 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+*{
+    font-family: Arial, Helvetica, sans-serif
+}
+.nav-bar{
+ 
+    background-color:#2081c3 ;
+    display: border-box;
+    padding: 20px;
+}
+button{
+    color:#f7f9f9 ;
+    background-color:#2081c3 ;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+
+}
+
+
+.nav-bar ul {
+    list-style:  none;
+}
+a{
+    text-decoration: none;
+    color:#f7f9f9 ;
+    font-size: 16px;
+}
+.nav-bar li{
+    display: inline;
+    padding: 10px;
+}
+.beerimage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.randombeer-wrapper{
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.randombeer-wrapper img{
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+    padding: 40px;
+}
+
+.randombeer-info{
+    margin-left: 100px;
+    flex-wrap: wrap;
+
+}
+
+
+.beerimage img{
+    padding: 20px;
+}
+
+.random-beer{
+    display: inline;
+}
+
+footer{
+    background-color:#0a2c42 ;
+    padding: 20px;
+    color:#f7f9f9 ;
+    
+}
+.cardwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(33.33% - 20px); /* 33.33% to create three cards in a row with spacing */
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card img {
+    width: 100px;
+    height: 300px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.card-content a {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #2081c3;
+    font-weight: bold;
+}
+
+.card-content a:hover {
+    text-decoration: underline;
+}
