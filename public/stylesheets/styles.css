@@ -5,3 +5,51 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+
+body {
+    background-color: lightgreen;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.navbar a {
+    color: darkgreen;
+    text-decoration: none;
+    padding: 25px;
+    background-color: greenyellow;
+    font-size: 18px;
+    text-transform: uppercase;
+    width: auto;
+    height: 2vh;
+}
+
+.home img {
+    max-height: 150vh;
+    position: absolute;
+    left: 37vw;
+    top: 15vh;
+}
+
+#a1 {
+    position: absolute;
+    left: 37vw;
+    top: 85vh;
+    margin: 15px;
+    padding: 10px;
+}
+
+#a2 {
+    position: absolute;
+    right: 37vw;
+    top: 85vh;
+    margin: 15px;
+    padding: 10px;
+
+}
