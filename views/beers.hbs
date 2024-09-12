@@ -11,12 +11,15 @@
     </head>
 
     <body>
-        <div class="container">
-            <img src="/images/beer.png" alt="Logotipo" class="logo">
-            <div class="buttons">
-                <a href="/beers" class="btn btn-dark">Check the Beers!</a>
-                <a href="/random-beer" class="btn btn-dark">Check a Random Beer!</a>
-            </div>
+        <div>
+            <ul>
+                {{#each beers}}
+                <img src="{{image_url}}">
+                <h1>"{{name}}"</h1>
+                <p>"{{description}}"</p>
+                <p>"{{tagline}}"</p>
+                {{/each}}
+            </ul>
         </div>
     </body>
 
