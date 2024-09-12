@@ -5,3 +5,97 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.navbar {
+  background-color: #2081c3;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.464);
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+.navbar-nav {
+  justify-content: flex-end;
+}
+
+.nav-item {
+  margin-right: 50px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.beerslist > div,
+.randomicList > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer {
+  background-color: #0a2c42;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.footer p {
+  color: white;
+  margin: 20px;
+}
+
+.beerslist img,
+.randomicList img {
+  width: 100px;
+  height: auto;
+  margin: 20px;
+}
+
+.beerslist h2,
+.randomicList h2,
+.beerslist p,
+.randomicList p {
+  margin: 0;
+}
+.index-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.index-links img {
+  width: 150px;
+  height: auto;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ajuste a altura conforme necessário */
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px;
+  margin-top: 0%;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2081c3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin: 20px;
+}
+
+.button:hover {
+  background-color: #106fb3;
+}
