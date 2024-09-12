@@ -5,3 +5,165 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+
+html,
+body {
+    background: #000;
+}
+
+.glow-on-hover {
+    display: flex;
+    width: 500px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-family: fantasy;
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    padding: 20px
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+#main-pic {
+    height: 300px;
+    width: auto;
+    display: table-cell;
+    align-content: center;
+    padding: 20px;
+}
+
+#navbar{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 5px;
+    background-color: wheat;
+    padding: 5px 5px 5px 5px;
+}
+nav > a {
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(245, 198, 179);
+    text-decoration: none;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    vertical-align: center;
+}
+div {
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    vertical-align: middle;
+    align-items:center;
+
+}
+
+#beers {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 0.7rem;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#beers img {
+    background-color: white;
+    width: auto;
+    height: 250px;
+    padding: 20px;
+    text-align: center;
+}
+
+#beers a {
+    max-width: 300px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    height: 500px;
+    text-align: center;
+    padding:30px;
+    margin: 5px;
+}
+
+#singlebeer {
+    display: flex;
+    align-items:center;
+    color: black;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    background-color: white;
+    margin-left: 200px;
+    margin-right: 200px;
+
+}
+
+#singlebeer img{
+    height: 300px;
+    background-color: white;
+    padding:30px;
+    margin: 5px;
+}
+
+#singlebeer p{
+    margin-left: 200px;
+    margin-right: 200px;
+}
