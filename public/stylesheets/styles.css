@@ -5,3 +5,15 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+.index {
+    margin-left: 35%;
+}
+
+.index img {
+    width: 400px;
+    margin: 20px;
+}
+
+.index a {
+    margin: 10px;
+}
