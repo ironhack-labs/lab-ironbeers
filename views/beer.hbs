@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+        img {
+
+
+            height: 200px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <ul>
+       
+     {{#each beersFromApi }}
+        
+        <li> 
+        <p>Name: {{this.name}}</p>  
+        <p>{{this.tagline}}</p>  
+        <p><img src="{{this.image_url}}"></p>   
+        <p>Pairing: {{this.food_pairing}}</p>    
+        </li>
+      {{/each}}
+      
+    </ul>
+
+</body>
+</html>
