@@ -1,0 +1,20 @@
+
+   
+<div class="beer-grid">
+  {{#each beers}}
+   <div class="beersSpecs">
+
+      <div class="beer-image">  
+        <img src="{{image_url}}" alt="{{name}}" class="resize-img">
+      </div>
+
+      <div class="beer-info">
+          <h2>{{name}}</h2>
+          <h3>{{tagline}}</h3>
+          <p>{{description}}</p>
+      </div>
+
+     </div>
+  {{/each}}
+  </div>
+
