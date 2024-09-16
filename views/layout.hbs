@@ -1,0 +1,23 @@
+<!-- views/layout.hbs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ironBeers</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">   
+    <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="/">
+        Home</a>
+        <a class="nav-item nav-link" href="/beers">Beers</a>
+        <a class="nav-item nav-link" href="/random-beer">Random Beer</a>
+    </div>
+    </nav>
+    <main>
+    {{{ body }}}
+    </main>
+  </body>
+</html>
