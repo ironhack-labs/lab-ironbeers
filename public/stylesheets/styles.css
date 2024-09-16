@@ -5,3 +5,19 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+.rounded {
+    padding: 10%;
+}
+
+
+.card-beers {
+
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    height: 150px;
+    object-fit: cover;
+}
