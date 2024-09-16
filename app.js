@@ -22,4 +22,23 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+app.get('/beers', (req, res) => {
+  const username = 'Celia';
+  punkAPI
+    .getBeers()
+    .then(beersFromApi => res.render('beers', { username: 'Celia' }))
+    .catch(error => console.log(error));
+});
+
+app.get('/random', (req, res) => {
+  punkAPI
+    .getRandom()
+    .then(beersFromApi => res.render('random', { username: 'Celia' }))
+
+    .catch(error => console.log(error));
+});
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
+
+// hbs.registerPartials(__dirname + '/views/partials');
+// app.get('/players', (req, res, next) => res.render('players'));
