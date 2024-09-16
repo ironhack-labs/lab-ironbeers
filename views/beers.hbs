@@ -1,0 +1,30 @@
+<div class="container">
+
+    <h1>Beers</h1>
+
+    <hr>
+
+    <div class="row">
+
+        {{#each beersObj}}
+        <div class="col-md-4">
+            {{!-- <article class="beer-card">
+                <img src="{{image_url}}" alt="{{name}}">
+                <p>NAME: {{name}}</p>
+                <p>DESC: {{description}}</p>
+                <p>TAG: {{tagline}}</p> --}}
+
+
+                {{>beerPartial}}
+            </article>
+
+        </div>
+        {{/each}}
+
+    </div>
+
+    <hr>
+
+    <a href="/" class="btn btn-dark mt-3 mb-5">Home</a>
+
+</div>
