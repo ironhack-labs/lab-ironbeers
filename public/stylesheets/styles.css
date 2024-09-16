@@ -1,7 +1,42 @@
-/*
-white: #f7f9f9;
+/* white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+font-family: Arial,
+Helvetica,
+sans-serif; */
+
+
+
+
+body {
+    background-color: #bfbfbf;
+}
+
+.jar {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    height: 450px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: #0a2c42;
+    margin-top: 10px;
+    color: white;
+    padding: 10px;
+    margin-top: 101px;
+}
+
+
+img.beer-img-top {
+    height: 450px;
+    align-items: center;
+    display: flex;
+
+}
