@@ -5,3 +5,31 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+img {
+    width: 100%
+}
+
+footer {
+
+    background-color: black;
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white
+}
+
+.tagline {
+    color: #bfbfbf;
+}
+
+.link-beer {
+    font-weight: bold;
+}
+
+.description,
+.food-pairing,
+.tips {
+    font-size: 0.8em;
+}
