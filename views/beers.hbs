@@ -1,0 +1,13 @@
+<h1>Beers</h1>
+<div class="container d-flex flex-row">
+    <div class="col-12 col-md-3 m-4 d-flex flex-column align-items-center">
+        {{#each beers}}
+        <img src="{{image_url}}" alt="{{name}}" style="width: 60px;">
+        <h2>{{name}}</h2>
+        <a href="/beers/{{this.id}}">{{this.name}} </a>
+        <p class="card-text">{{this.description}}</p>
+        <p class="card-text">{{this.tagline}}</p>
+
+        {{/each}}
+    </div>
+</div>
