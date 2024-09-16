@@ -1,0 +1,7 @@
+<h1>TENGO CERVEZA</h1>
+<div>
+    {{#each allbeers}}
+    <img src={{this.image_url}} alt='types.beers'>
+    <a href="/beers/{{this.id}}">{{this.name}}</a>
+    {{/each}}
+</div>
