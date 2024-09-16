@@ -1,0 +1,25 @@
+<!-- beers.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beers</title>
+  <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+<body>
+
+<div class="beers-container">
+  {{#each beers}}
+  <div class="beer-card">
+    <img src="{{ image_url }}" alt="{{ name }}" class="beer-image">
+    <h2 class="beer-name">{{ name }}</h2>
+    <p class="beer-description">{{ description }}</p>
+    <p class="beer-tagline">{{ tagline }}</p>
+  </div>
+  {{/each}}
+</div>
+
+
+</body>
+</html>
