@@ -1,0 +1,32 @@
+<div class="container">
+
+    <h1>Cervezas</h1>
+
+    <hr>
+
+    <div class="row">
+
+        {{#each beersInfo}}
+        <div class="col-md-4">
+            <article class="beers-cards">
+                <img src="{{image_url}}" alt="{{name}}">
+                <p class="name">{{name}}</p>
+                <p class="description">{{descritption}}</p>
+                <p>{{tagline}}</p>
+
+
+
+            </article>
+
+
+        </div>
+        {{/each}}
+
+
+    </div>
+
+    <hr>
+
+    <a href="/" class="btn btn-dark mt-3 mb-5">Volver a inicio</a>
+
+</div>
