@@ -17,9 +17,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // ...
 
 // Add the route handlers here:
-
-app.get('/', (req, res) => {
-  res.render('index');
-});
+const router = require ('../config/routes.config');
+app.use(router);
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
