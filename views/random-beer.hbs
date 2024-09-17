@@ -1,0 +1,16 @@
+<div class="rand-beer d-flex flex-column justify-content-center align-items-center">
+  {{>beerpartial this}}
+  <div class="food-pair d-flex flex-column justify-content-start align-items-start">
+    <strong>Pairing Food</strong>
+    <ul>
+        {{#each this.food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+  </div>
+
+  <div class="brew-tips">
+    <strong>Brewers tips:</strong>
+    {{this.brewers_tips}}
+  </div>
+</div>
