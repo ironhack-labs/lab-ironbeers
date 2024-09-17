@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="beer-list">
+        <div class="row">
+            {{#each beerList}}
+            <div class="col-md-3">
+                <div class="card mb-2 beer-card">
+                    <a href="/beers/{{id}}">
+                        {{>beerpartial}}
+                    </a>
+                </div>
+            </div>
+
+            {{/each}}
+        </div>
+    </div>
+
+</div>
