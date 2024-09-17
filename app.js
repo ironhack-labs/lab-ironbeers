@@ -1,3 +1,4 @@
+const { log } = require('console');
 const express = require('express');
 
 const hbs = require('hbs');
@@ -21,5 +22,24 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
   res.render('index');
 });
+
+app.get('/beers', (req, res, send)=>{
+  
+  punkAPI.getBeers()
+  .then((getBeers) => {
+    console.log(getBeers);
+    res.render('beers', {getBeers:getBeers})
+  })
+  .catch((error => {
+    console.log(error)
+  }));
+})
+
+app.get('/random-beer', (req, res, send) => {
+  punkAPI.getRandom()
+  .then((beerFromApi)=>{
+    res.render('random-beer', {beerFromApi})
+  })
+})
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
