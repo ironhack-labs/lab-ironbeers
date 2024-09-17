@@ -5,3 +5,107 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #2081c3;
+    height: 10vh;
+}
+
+header nav {
+    margin-left: 2vw;;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #f7f9f9;
+    font-size: 3vh;
+    margin: 1vw;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: #0a2c42;
+    height: 8vh;
+    font-size: 3vh;
+    color: #f7f9f9;
+}
+
+footer span {
+    margin: 2vw;
+}
+
+.beer {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 25vw;
+    margin: 2vw;
+}
+
+.beer a {
+    text-decoration: none;
+    color: black;
+}
+
+.beer img {
+    height: 40vh;
+}
+
+.beers-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5vh 5vw;
+    
+}
+
+.icon{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10vh;
+}
+
+.icon img{
+    width:30vw;
+    margin:5vh;
+}
+.icon a{
+    background-color: #2081c3;
+    color: #f7f9f9;
+    border-radius: 1vh;
+    padding: 2vh;
+    text-decoration: none;
+    margin: 1vh;
+    box-shadow: 0px 5px 10px grey;
+}
+
+.single-beer {
+    min-height: 82vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.single-beer img {
+    height: 25vh;
+    margin: 3vw;
+}
+
+.single-beer > div {
+    width: 55%;
+    margin: 3vw 10vw 3vw 3vw;
+
+}
+.single-beer a{
+    text-decoration: none;
+    color:black;
+}

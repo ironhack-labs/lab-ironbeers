@@ -1,0 +1,15 @@
+<div class="beers-container">
+    {{#each beersFromAPI}}
+
+        <div class="beer">
+            <img src={{this.image_url}} alt={{this.name}}>
+            <div>
+                {{> beerpartial}}  
+            </div>
+
+        </div>
+       
+    
+    {{/each}}
+
+</div>
