@@ -10,6 +10,8 @@ const punkAPI = new PunkAPIWrapper();
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
+hbs.registerPartials(path.join(__dirname, '/views/partials'));
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Register the location for handlebars partials here:
@@ -17,9 +19,34 @@ app.use(express.static(path.join(__dirname, 'public')));
 // ...
 
 // Add the route handlers here:
-
 app.get('/', (req, res) => {
-  res.render('index');
+  res.render('index')
+})
+app.get('/beers', (req, res) => {
+  punkAPI
+    .getBeers()
+    .then((beersFromApi) => {
+      console.log('Beers from the database: ', beersFromApi)
+      const data = {
+        listOfBeers: beersFromApi
+      }
+      res.render('beers', data);
+    })
+    .catch(error => console.log(error));
 });
+
+app.get('/random-beer', (req, res) => {
+  punkAPI
+    .getRandom()
+    .then(responseFromAPI => {
+      console.log('Random beers from the database', responseFromAPI)
+      const data = {
+        randomBeer: responseFromAPI
+      }
+      res.render('random-beer', data)
+    })
+    .catch(error => console.log(error));
+})
+
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
