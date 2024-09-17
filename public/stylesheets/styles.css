@@ -1,7 +1,80 @@
-/*
+/* 
 white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
-*/
+ */
+
+/* Add these styles to your existing CSS */
+/* Keep your existing styles for html and body */
+
+/* Keep your existing styles for html and body */
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+    max-width: 200px;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* API BEERS */
+.beer{
+    position: relative;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 300px;
+        object-fit: cover;
+}
+
+.beer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.beer-item {
+    flex: 0 0 calc(33.33% - 20px);
+    /* Adjust the width as needed */
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.beer-image {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.beer-name {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.beer-description {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 5px 0;
+}
