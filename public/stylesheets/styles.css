@@ -5,3 +5,127 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+  position: relative;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f9f9;
+  margin: 0px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: #2081c3;
+  color: white;
+  box-shadow: 0px 5px 10px #bfbfbf;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 50px;
+}
+
+.index-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-button {
+  background-color: #2081c3;
+  height: auto;
+  width: auto;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #bfbfbf;
+  margin: 10px;
+  text-decoration: none;
+}
+
+#ironbeer-logo {
+  width: 300px;
+  height: auto;
+  margin: 80px 80px 60px 140px;
+}
+
+.beer-partial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  width: 350px;
+  height: auto;
+  margin: 50px;
+}
+
+#beer-partial-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.beer-partial img {
+  width: 100px;
+  height: auto;
+}
+
+.beer-partial h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.beer-partial #tagline {
+  color: grey;
+}
+
+.beers-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px 80px 10px 80px;
+}
+
+.random-beer-page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.random-beer-page h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.random-beer-page #beer-partial-img {
+  display: flex;
+  flex-wrap: nowrap;
+  align-self: center;
+  width: 100vh;
+  height: auto;
+}
+
+footer {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  bottom: 0px;
+  width: 100vw;
+  height: 60px;
+  background-color: #0a2c42;
+  color: white;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+footer p {
+  margin-left: 20px;
+}
