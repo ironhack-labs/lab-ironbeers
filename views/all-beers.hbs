@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>Beers</h1>
+    <hr>
+    <div class="row d-flex">
+        {{#each beersInfo}}
+
+        <div class="col-12 col-md-3">
+            {{>beerpartial}}
+        </div>
+        {{/each}}
+
+    </div>
+    <hr>
+    <a href="/" class="btn btn-dark mt-3 mb-5">Back to Home</a>
+</div>
