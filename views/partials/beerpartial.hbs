@@ -1,0 +1,16 @@
+<div class="container">
+
+    {{#each beers}}
+    <div class="beers">
+        <div class="row">
+            <div class="col-6 col-md-6 col-lg-6">
+                <img src="{{image_url}}" alt="{{name}}">
+                <h1>{{name}}</h1>
+                <p>{{description}}</p>
+                <h2>{{tagline}}</h2>
+                <hr>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
