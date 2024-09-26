@@ -1,0 +1,11 @@
+{{> beerpartial products=randomBeer}}
+<ul class="random-beer">
+    {{#each randomBeer}}
+    <li>
+    <p>Food Pairing: {{food_pairing}} </p>
+    <p>Brewer Tips: {{brewers_tips}}</p>
+    </li>
+    {{/each}}
+</ul>
+
+
