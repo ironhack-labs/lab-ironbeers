@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un montón de cerveza</title>
+</head>
+<body>
+    
+    <div class="serve container">
+        <div class="row">
+            {{#each beers}}
+            <div class="col-4">
+
+                
+        
+                <p> {{name}} </p> 
+                <img src="{{image_url}}" alt="imgBeers"> 
+                <p> {{description}} </p>
+                <p> {{tagline}} </p>
+               
+             </div>
+              {{/each}}
+        </div>
+    
+    </div>
+</body>
+</html>

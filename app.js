@@ -19,7 +19,33 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Add the route handlers here:
 
 app.get('/', (req, res) => {
+  //res.send('<h1> hi there! index</h1>')
   res.render('index');
+
 });
 
-app.listen(3000, () => console.log('🏃‍ on port 3000'));
+app.get('/beers', (req, res)=>{
+//res.send('<h1> hi there! beers </h1>')
+// getBeers()
+// console.log('Beers from the database: ', beersFromApi)
+
+punkAPI
+.getBeers()
+.then(beersFromApi => res.render('beers', {beers: beersFromApi}))
+.catch(error => console.log(error));
+ 
+})
+
+
+app.get('/random-beer', (req, res) => {
+  //res.send('<h1> me salen las random beers?yaaas</h1>')
+  punkAPI
+  .getRandom()
+  .then(responseFromAPI => {
+    // your magic happens here
+    res.render('random-beer', { beers: responseFromAPI})
+  })
+  .catch(error => console.log(error));
+})
+
+app.listen(5005, () => console.log('🏃‍ on port 5005'));
