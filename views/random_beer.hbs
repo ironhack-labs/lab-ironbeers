@@ -1,0 +1,20 @@
+<div class="container">
+
+    {{>beerPartial}}
+    <hr>
+    <p>
+        <b>Food Pairing</b>
+    <ul>
+        {{#each food_pairing as |alias|}}
+        <li>{{alias}}</li>
+        {{/each}}
+    </ul>
+    </p>
+    <hr>
+    <p>
+        <b>Brewers tips: </b>{{brewers_tips}}
+    </p>
+
+
+
+</div>
