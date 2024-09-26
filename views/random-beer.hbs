@@ -1,0 +1,40 @@
+<h1>RANDOM BEER</h1>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-3">
+
+            {{!-- la card de RandomBeer, es el partial, más info adicional --}}
+            <div class="card" style="width: 25rem;">
+                {{>beerpartial}}
+
+
+
+
+
+
+
+
+
+                {{#each food_pairing}}
+                <ul>
+                    <li>{{this}}</li>
+                </ul>
+                {{/each}}
+
+                <p class="card-text"> <strong>BREWERS</strong>{{brewers_tips}}</p>
+            </div>
+
+
+            {{!-- ESTA INFO SE AÑADE ADEMÁS DEL PARTIAL EN EL RANDOM --}}
+
+            {{!-- each >this --}}
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
