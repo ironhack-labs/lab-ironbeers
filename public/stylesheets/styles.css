@@ -5,3 +5,17 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 50%;
+    padding: 20px;
+
+}
+
+row {
+    justify-content: space-between;
+}
