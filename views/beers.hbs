@@ -1,0 +1,19 @@
+<div class="container mt-4">
+    <div class="row">
+        {{#each beers}}
+        {{!-- image, name, description and tagline. --}}
+        <div class="col-sm-4">
+
+            <div class="card" style="width: 10rem;">
+                <img src="{{image_url}}" class="card-img-top" alt="{{name}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{name}}</h5>
+                    <p>{{description}}</p>
+                    <p>{{tagline}}</p>
+                </div>
+            </div>
+
+        </div>
+        {{/each}}
+    </div>
+</div>
