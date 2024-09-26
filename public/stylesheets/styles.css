@@ -1,7 +1,18 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+#navbar {
+  white: #f7f9f9;
+  light-blue: #2081c3;
+  dark-blue: #0a2c42;
+  grey: #bfbfbf;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+div.card {
+  height: 100%;
+  cursor: pointer;
+}
