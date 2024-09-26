@@ -1,0 +1,19 @@
+<div class="container mb-5">
+    <div class="row align-items-center ">
+        <div class="col-md-6 beer-image">
+            <img src={{image_url}} alt="{{name}}" class="rounded mx-auto d-block">
+        </div>
+        <div class="col-md-6">
+            <h3>{{name}}</h3>
+            <p class="color-grey">{{tagline}}</p>
+            <p>{{description}}</p>
+            <h4>Foot Pairing</h4>
+            <ul>
+                {{#each food_pairing}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p><strong>Brewers Tips: </strong>{{brewers_tips}}</p>
+        </div>
+    </div>
+</div>
