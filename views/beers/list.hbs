@@ -1,0 +1,11 @@
+<h1>Beers</h1>
+
+{{#each beers as |beer|}}
+  <div class='card w-25 mb-4'>
+    <img src='{{ beer.image_url }} ' class='card-img-top' alt='...' />
+    <div class='card-body'>
+      <h5 class='card-title'>{{beer.image}} </h5>
+      <p class='card-text'>{{beer.description}}</p>
+    </div>
+  </div>
+{{/each}}
