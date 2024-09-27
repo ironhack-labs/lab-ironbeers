@@ -1,0 +1,12 @@
+<div class="container beerAlone d-flex flex-column">
+	{{#each randomBeer}}
+		{{>beerpartial}}
+		<h7><strong>Food Pairing</strong></h7>
+		<ul>
+			{{#each food_pairing}}
+			<li>{{this}}</li>
+			{{/each}}
+		</ul>
+		<p><strong>Brewers Tips: </strong>{{brewers_tips}}</p>
+	{{/each}}
+</div>

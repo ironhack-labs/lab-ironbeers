@@ -1,0 +1,13 @@
+<div class="container beer">
+	<div class="row d-flex justify-content-space-betweenr">
+		{{#each beers}}
+		<div class="col-md-4 mt-3 p-3">
+		<a href="/beers/{{id}}">
+		<div class="row d-flex flex-column justify-content-center align-items-center mt-4">
+			{{>beerpartial}}
+		</div>
+		</a>
+		</div>
+		{{/each}}
+	</div>
+</div>
