@@ -1,0 +1,17 @@
+<div class="d-inline-flex gap-5">
+    <div>
+        <img src="{{random.image_url}}" height="300"/>
+    </div>
+    <article>
+        <h1>{{random.name}}</h1>
+        <p class="tagline">{{random.tagline}}</p>
+        <p>{{random.description}}</p>
+        <h3>Food Pairing</h2>
+        <ul>
+            {{#each random.food_pairing as |food|}}
+            <li>{{food}}</li>
+            {{/each}}
+        </ul>
+        <p><b>Brewers Tips: </b>{{random.brewers_tips}}</p>
+    </article>
+</div>
