@@ -1,0 +1,10 @@
+<h1>beer details</h1>
+
+<p>{{selectedBeer.name}}</p>
+<p>{{selectedBeer.description}}</p>
+
+{{#if selectedBeer.image_url}}
+    <img src="{{selectedBeer.image_url}}" alt="">
+{{else}}
+    <img src="/images/beer.png" alt="">
+{{/if}}
