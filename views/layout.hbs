@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{#if this.name}}
+        <title>Beer {{this.name}}</title>
+    {{else}}
+        <title>Beers</title>
+    {{/if}}
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+<body>
+    <nav>
+        <a class="nav-bar" href="/">Home</a>
+        <a class="nav-bar" href="/beers">Beers</a>
+        <a class="nav-bar" href="/random-beer">Random Beer</a>
+    </nav>
+    <div>
+        {{{body}}}
+
+        <footer>
+            <div>
+            Developped by Ironhack 😉
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
