@@ -5,3 +5,89 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #2081c3;
+  text-align: center;
+  color: white;
+
+  font-size: 1.5em;
+}
+
+.center-image {
+  text-align: center;
+}
+
+.image {
+  max-height: 250px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2em;
+}
+
+.beers {
+  flex-basis: 30%;
+  margin: 10px;
+}
+
+h4 {
+  color: gray;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+ul a {
+  display: block;
+  padding: 8px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04aa6d;
+}
+
+.random-beer {
+  padding: 4 100 4 10em;
+}
+
+footer {
+  background-color: #0a2c42;
+  color: white;
+  font-size: 1em;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  padding: 1em;
+}
