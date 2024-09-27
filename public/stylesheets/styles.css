@@ -5,3 +5,26 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+img {
+    height: 300px;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.logo {
+    height: 300px;
+    margin: 100px;
+}
+
+.tagline {
+    color: #bfbfbf;
+}
+
+.beerrow {
+    display: flex;
+    flex-wrap: wrap;
+}
