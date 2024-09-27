@@ -1,0 +1,17 @@
+<div class="container">
+    {{#each responseFromAPI as |beer|}}
+        <div class="beer-container">
+            <img src={{beer.image_url}} height="400px" alt="Beer image">
+            <div class="beer-content">
+                {{> beerPartial beer=beer}}
+                <h3>Food Pairing</h3>
+                <ul>
+                    {{#each beer.food_pairing as |pairing|}}
+                        <li>{{pairing}}</li>
+                    {{/each}}
+                </ul>
+                <p><b>Brewers Tips:</b> {{beer.brewers_tips}}</p>
+            </div>
+        </div>
+    {{/each}}
+</div>
