@@ -13,13 +13,54 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Register the location for handlebars partials here:
-
-// ...
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 // Add the route handlers here:
 
 app.get('/', (req, res) => {
   res.render('index');
+});
+
+app.get('/beers', (req, res) => {
+  punkAPI
+    .getBeers()
+    .then(beersFromApi => {
+      res.render('beers', { beers: beersFromApi });
+      console.log('Beers from the database: ', beersFromApi);
+    })
+    .catch(error => {
+      res.status(500).send('Error fetching from the database');
+      console.log(error);
+    });
+});
+
+app.get('/random-beer', (req, res) => {
+  punkAPI
+    .getRandom()
+    .then(responseFromAPI => {
+      res.render('random-beer', { beer: responseFromAPI[0] });
+      console.log(responseFromAPI[0]);
+    })
+    .catch(error => {
+      res.status(500).send('Error fetching from the database');
+      console.log(error);
+    });
+});
+
+app.get('/beers/:id', (req, res) => {
+  const beerId = req.params.id;
+  console.log('beerId', beerId);
+  // Call the getBeer(id) method to retrieve the details of the specific beer
+  punkAPI
+    .getBeer(beerId)
+    .then(responseFromAPI => {
+      console.log("beer", responseFromAPI[0]);
+      res.render('beer-details', { beer: responseFromAPI[0] });
+    })
+    .catch(error => {
+      console.log(error);
+      res.status(500).send('Error fetching from the database');
+    });
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

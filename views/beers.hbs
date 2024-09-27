@@ -1,0 +1,11 @@
+<div class='beers'>
+  <h1>All Beers</h1>
+  <div class='beer'>
+    {{#each beers}}
+    {{!-- anchor to macke it clickable --}}
+        <a href="/beers/{{id}}">
+         {{> beerpartial}}
+        </a>
+    {{/each}}
+  </div>
+</div>
