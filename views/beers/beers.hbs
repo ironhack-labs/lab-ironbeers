@@ -1,0 +1,8 @@
+
+<section class="container-beers">
+  {{#each beers}}
+    <a class="beer-link" href="/beers/{{this.id}}">
+      {{> beerpartial beer = this}}
+    </a>
+  {{/each}}
+</section>
