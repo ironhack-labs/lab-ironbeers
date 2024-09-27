@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(238, 237, 235);
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+nav a {
+    padding: 0 1rem;
+}
