@@ -5,3 +5,33 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.imgBeer {
+    height: 20px;
+
+}
+
+
+footer {
+    background-color: #0a2c42;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0px;
+    font-size: .9em;
+    text-align: left;
+    padding-left: 20px;
+    height: 3.5rem;
+    padding-top: 10px;
+
+}
+
+.beer-card img {
+    object-fit: none;
+    object-position: top;
+}
