@@ -1,0 +1,13 @@
+
+<div class="container">
+  <div class="row">
+      {{#each beersFromApi}}
+       <div class="col-md-4">
+        <a href="/cervezas/{{this._id}}" style="text-decoration: none; color: inherit;">
+                    {{> beerpartial }} <!-- Reutiliza el partial "beerCard" para mostrar cada cerveza -->
+                </a>
+            
+      </div>
+      {{/each}}
+  </div>
+</div>

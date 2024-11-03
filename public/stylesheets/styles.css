@@ -5,3 +5,27 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.container{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 1000px;
+    height: 700px;
+
+}
+
+
+.beer{
+    width: 400px;
+}
+.button{
+    display: flex;
+    align-content: space-around;
+    justify-content: space-between;
+}
+.card-title{
+    font-size: 20px!important;
+}
