@@ -1,0 +1,12 @@
+#random-beer-card {
+    display: flex;
+  img {
+    margin: 25px;
+    width: 30%;
+  }
+  div {
+    margin: 25px;
+    padding: 10px;
+  }
+  
+}
