@@ -8,8 +8,10 @@
   },
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "express": "^4.17.1",
     "hbs": "^4.1.1",
+    "nodemon": "^3.1.7",
     "punkapi-javascript-wrapper": "^1.0.2"
   }
 }

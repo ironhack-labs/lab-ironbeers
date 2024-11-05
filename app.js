@@ -4,6 +4,8 @@ const hbs = require('hbs');
 const path = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 
+hbs.registerPartials(__dirname + "/views/partials");
+
 const app = express();
 const punkAPI = new PunkAPIWrapper();
 
@@ -21,5 +23,28 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
   res.render('index');
 });
+app.get("/beers", (req, res) => {
+  fetch("https://ih-beers-api2.herokuapp.com/beers")
+  .then(res => res.json())
+  .then(beersFromApi => {
+  console.log('Beers from the API: ', beersFromApi);
+  res.render("beers", { beers: beersFromApi});
+
+})
+
+.catch(error => console.log(error));
+});
+
+app.get("/random-beer", (req, res) => {
+  fetch("https://ih-beers-api2.herokuapp.com/beers/random")
+  .then(res => res.json())
+  .then(beerFromAPI => {
+    console.log('Beer: ', beerFromAPI)
+    res.render("random-beer", { beer: beerFromAPI });
+  })
+  .catch(error => console.log(error));
+});
+
+
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
