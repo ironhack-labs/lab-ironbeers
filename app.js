@@ -18,8 +18,27 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Add the route handlers here:
 
+
+app.get('/beers', (req, res) => {
+  fetch("https://ih-beers-api2.herokuapp.com/beers")
+      .then(response => response.json())
+      .then(beersFromApi => {
+          res.render('beers', { beers: beersFromApi });
+      })
+      .catch(error => console.log(error));
+    });
+
 app.get('/', (req, res) => {
   res.render('index');
+});
+
+app.get('/random-beer', (req, res) => {
+  fetch("https://ih-beers-api2.herokuapp.com/beers/random")
+      .then(response => response.json())
+      .then(randomBeer => {
+          res.render('random-beer', { beer: randomBeer[0] });
+      })
+      .catch(error => console.log(error));
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

@@ -1,0 +1,10 @@
+<!-- views/beers.hbs -->
+<h1>All Beers</h1>
+{{#each beers}}
+    <div>
+        <img src="{{this.image_url}}" alt="{{this.name}}" />
+        <h3>{{this.name}}</h3>
+        <p>{{this.tagline}}</p>
+        <p>{{this.description}}</p>
+    </div>
+{{/each}}
