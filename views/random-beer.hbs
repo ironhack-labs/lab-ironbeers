@@ -1,0 +1,18 @@
+<h1>hello world</h1>
+
+
+{{#each listOfRandomBeers}}
+
+<div>
+<img src={{this.image_url}} alt="" />
+
+<h1>{{this.name}}</h1>
+
+<p>{{this.description}}</p>
+<p>{{this.tagline}}</p>
+<p>{{this.food_pairing}}</p>
+<p>{{this.brewers_tips}}</p>
+</div>
+
+{{/each}}
+
