@@ -5,3 +5,64 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+/* Reset default margin and padding for the body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style for the navbar */
+.navbar {
+  background-color: #2081c3; /* Blue background */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 60px; /* Adjust height as needed */
+}
+
+/* Style for each navigation item */
+.nav-item {
+  text-decoration: none;
+  color: #f7f9f9; /* White text color */
+  margin: 0 20px; /* Add some spacing between items */
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+.footer {
+  background-color: #0a2c42;
+  margin-top: auto;
+  color: #f7f9f9;
+}
+
+.button {
+  display: block; /* Make anchor tags behave like block-level elements */
+  width: 200px; /* Set a fixed width for the buttons */
+  background-color: #2081c3; /* Blue background color */
+  color: white; /* White text color */
+  text-align: center;
+  padding: 10px 20px; /* Add padding inside the button */
+  margin: 10px auto; /* Center the buttons horizontally and add margin between them */
+  text-decoration: none; /* Remove default underline */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add rounded corners */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* .beer-container {
+  width: 200px;
+  height: 200px;
+  background-color: #0a0a23;
+} */
+.beer-container img {
+  width: 300px;
+  margin: auto;
+  display: block;
+}
