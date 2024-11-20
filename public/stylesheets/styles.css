@@ -5,3 +5,56 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.index {
+    margin-left: 35%;
+    padding: 50px;
+}
+
+.index img {
+    height: 300px;
+    object-fit: contain;
+}
+
+.index .btn {
+    margin: 10px 10px 10px 40px;
+}
+
+nav .nav-link {
+    color: white;
+    font-size: 20px;
+    margin: 0px 15px;
+
+}
+
+footer {
+    background-color: #0a2c42;
+    color: white;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.card {
+    margin: 20px;
+
+}
+
+.card img {
+    height: 300px;
+    object-fit: contain;
+
+}
+
+.randomBeerStyle {
+    margin: 50px
+}
+
+.randomBeerStyle img {
+    height: 300px;
+    object-fit: contain;
+
+}

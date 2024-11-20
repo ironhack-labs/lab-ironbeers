@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        {{#each beers}}
+        <div class="col-12 col-md-4">
+            <div class="card" style="width: 25rem;">
+                <img src="{{image_url}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{name}}</h5>
+                    <p class="card-text" style="color:#bfbfbf">{{tagline}}</p>
+                    <hr>
+                    <p class="card-text">{{description}}</p>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
