@@ -1,0 +1,10 @@
+  <body>
+    <h1>Beers, Beers, and More Beers!</h1>
+    <ul>
+      {{#each beers}}
+        <li>
+            {{> beerInfo this}}
+        </li>
+      {{/each}}
+    </ul>
+  </body>
