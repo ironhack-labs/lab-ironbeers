@@ -1,0 +1,10 @@
+<article id="beers">
+    {{#each beers}} 
+        <article class="beer-card">
+            <img src="{{this.image_url}}" alt="{{this.name}}" height="150px" width="56px">
+            <h3>{{this.name}}</h3>
+            <p>{{this.description}}</p>
+            <i>{{this.tagline}}</i>
+        </article>
+    {{/each}}
+</article>
