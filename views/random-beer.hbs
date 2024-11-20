@@ -1,0 +1,16 @@
+
+<section class="random-beer">
+
+
+    <ul>
+
+        {{#each beers}}
+            
+    <h1>{{name}}</h1>
+    <p>{{description}}</p>
+    <p>{{tagline}}</p>
+    <h3>Brewer Tips: </h3><p>{{brewers_tips}}</p>
+    <h3>Food Paring: </h3><p>{{food_pairing}}</p>
+    <img src="{{image_url}}" alt="beer image" style="width: 100px, height: 100px"/>
+        {{/each}}
+    </ul>
