@@ -1,0 +1,14 @@
+<h1>Breweries page</h1>
+
+
+<div class="grid">
+
+    {{#each breweries}}
+        <div class="card"> 
+            <h3><a href="/breweries/{{id}}">{{name}}</a></h3>
+            <p>{{brewery_type}}</p>
+    
+        </div>
+    {{/each}}
+    
+</div>
