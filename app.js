@@ -17,7 +17,54 @@ app.use(express.static(path.join(__dirname, 'public')));
 // ...
 
 // Add the route handlers here:
+//Beers Route here
+app.get('/beers', (req, res) => {
+  punkAPI
+    .getBeers()
+    .then(beersFromApi => {
+      console.log(beersFromApi);
+      res.render('beers', { beersFromApi });
+    })
+    .catch(error => console.log(error));
+  //.then is equivalent to the promise so no need to repeat
+});
 
+
+// Random beer Route
+app.get('/random-beer', (req,res)=> {
+  punkAPI
+  .getRandom()
+  .then(randomBeersFromApi => {
+    res.render('random-beer', {randomBeersFromApi});
+  })
+  .catch(error => console.log(error));
+});
+
+
+
+
+
+// Beer Partial Route
+  app.get('/beers', (req, res) => {
+    punkAPI
+      .getBeers()
+      .then(partialFromApi => {
+        res.render('beers', { partialFromApi });
+      })
+      .catch(error => console.log(error));
+    //.then is equivalent to the promise so no need to repeat
+  });
+  
+
+
+
+
+//  Beer partial
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
+
+
+
+//correct / dont touch:
 app.get('/', (req, res) => {
   res.render('index');
 });
