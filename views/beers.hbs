@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>All Beers</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+
+<div class="container">
+    <div class="row">
+        {{#each beers}}
+        <div class="col-md-4">
+            <div class="card mb-3 beers">
+                <img src="{{image_url}}" class="card-img-top" alt="{{name}}">
+                <div class="card-body">
+                    <h2 class="card-title">{{name}}</h2>
+                    <p class="card-text">{{tagline}}</p>
+                    <p class="card-text">{{description}}</p>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+</html>
