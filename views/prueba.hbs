@@ -1,0 +1,39 @@
+<div class="container py-4">
+  <div class="row g-4 align-items-start">
+    {{#each beers}}
+    <!-- Imagen a la IZQUIERDA -->
+    <div class="col-12 col-md-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <img
+            src="{{this.image}}"
+            alt="{{this.name}}"
+            class="img-fluid w-100"
+            style="max-height: 350px; object-fit: contain;"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Texto a la DERECHA -->
+    <div class="col-12 col-md-8">
+      <h1 class="h3 mb-3">{{this.name}}</h1>
+
+      <ul class="list-unstyled mb-4">
+          <li><strong>Price:</strong> {{this.price}}</li>
+          <li>
+            <strong>Rating:</strong>
+            {{this.rating.average}} ⭐ ({{this.rating.reviews}} reviews)
+          </li>
+      </ul>
+        <p class="text-body-secondary">{{this.description}}</p>
+        <div>
+        <a href="/random" class="btn btn-primary">🔁 Otra aleatoria</a>
+      </div>
+      </div>
+
+
+    </div>
+    {{/each}}
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="container">
+<h1>Random Beer</h1>
+<ul>
+  {{#each beers}}
+    {{> beerPartialX this}}
+  {{/each}}
+  <div>
+    <a href="/random">Otra cerveza</a>
+  </div>
+</ul>
+</div>
